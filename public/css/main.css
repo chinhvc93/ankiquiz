@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #1f2430;
+    --bg-primary-color: #f5f7fa;
+    
+    --dark-primary-color: #c1c1c1;
+    --dark-bg-primary-color: #24262c;
+
+    /* Custom */
+    --bs-body-color: #c1c1c1 !important;
+}
+
+body {
+    /* overflow-x: hidden; */
+    color: var(--primary-color);
+    background: var(--bg-primary-color) !important;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 400;
+}
+
+.banner-small {
+    color: #fff;
+    background-color: #7e838d;
+}
+
+.container,
+.container-small {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1330px;
+}
+
+.ip-radio {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* DARK-MODE CSS */
+body.dark-mode,
+body.dark-mode .examBlock {
+    background:var(--dark-bg-primary-color) !important;
+    color: var(--dark-primary-color);
+}

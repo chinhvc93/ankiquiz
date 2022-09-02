@@ -1,0 +1,403 @@
+.examBlock {
+    background: #fff;
+    margin: -50px 0 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.exam-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    justify-content: end;
+}
+
+.notification {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.notification.danger {
+    color: #ff615e;
+}
+
+.notification.success {
+    color: #60dd65;
+}
+
+.btn-clearQuiz {
+    color: #ff615e !important;
+    background: rgba(255, 97, 94, .2) !important;
+    min-width: 120px;
+    font-size: 14px;
+    margin: 0 0 0 15px;
+    border-radius: 8px;
+}
+
+.btn-saveQuiz {
+    color: #60dd65 !important;
+    background: rgb(25 135 84 / 20%) !important;
+    min-width: 120px;
+    font-size: 14px;
+    margin: 0 0 0 15px;
+    border-radius: 8px;
+}
+
+.btnPrevQue, .btnNextQue {
+    color: #60dd65 !important;
+    background: rgb(25 135 84 / 20%) !important;
+    min-width: 60px !important;
+    font-size: 14px !important;
+    border-radius: 8px !important;
+    margin: 0 5px;
+}
+
+.starMarkToReview {
+    display: inline;
+    text-align: center;
+    padding: 7px 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+
+    color: #fdf3ea;
+    background-color: rgb(255 255 255 / 20%);
+    border: 1px solid #fdf3ea;
+    font-size: 18px;
+}
+
+.starMarkToReview.true {
+    color: #fab005 !important;
+    background: rgb(235 235 235 / 20%);
+    border: 1px solid #fab005 !important;
+}
+
+.ExamQuestionsBlock {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    min-height: 540px;
+    margin: 0;
+}
+
+.ExamQuestionsBlock .left .block-head {
+    position: relative;
+}
+
+.ExamQuestionsBlock .left {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    max-width: calc(100% - 375px);
+    width: 100%;
+    padding: 15px 20px 0 15px;
+    margin: 0;
+    border-right: 1px solid #ddd;
+}
+
+.ExamQuestionsBlock .right {
+    /* position: relative; */
+    max-width: 375px;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+}
+
+.ExamQuestionsBlock .left .content {
+    max-width: 830px;
+    width: 100%;
+    margin: 0;
+    -webkit-flex: 1 1;
+    flex: 1 1;
+}
+
+.MuiFormControl-root {
+    border: 0;
+    margin: 0;
+    display: inline-flex;
+    padding: 0;
+    position: relative;
+    min-width: 0;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+.ExamQuestionsBlock .left .content .Questions-list {
+    margin: 0 0 30px;
+    width: 100%;
+}
+
+.custom_label {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    font-size: 1em !important;
+    margin-bottom: 5px;
+}
+
+.ExamQuestionsBlock .left .content p {
+    /* font-size: 14px; */
+    overflow-x: auto;
+}
+
+.que-content {
+    margin-left: 0px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+
+.que-content p {
+    margin-bottom: 0 !important;
+}
+
+.que-content.true {
+    border-radius: 10px !important;
+    background-color: rgb(0 190 126 / 50%) !important;
+}
+
+.que-content.false {
+    border-radius: 10px;
+    background-color: rgb(255 97 94 / 50%) !important;
+}
+
+.exam-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    margin: 0 -20px 0 -15px;
+    border-top: 1px solid #ddd;
+}
+
+.exam-nav.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-top: none !important;
+    position: absolute;
+    right: 55px;
+    top: 4px;
+}
+
+/* btn reviewAttemts*/
+.ExamQuestionsBlock .right .btn-review {
+    display: block;
+    color: #796eff;
+    background: rgb(149 117 205 / 20%);
+    margin-bottom: 10px;
+}
+
+.ExamQuestionsBlock .right .attempts-que ul {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(8,1fr);
+    margin: 0;
+    padding-left: 0 !important;
+}
+
+.ExamQuestionsBlock .right .attempts-que ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #62646a;
+    background: #f5f7fa;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.ExamQuestionsBlock .right .attempts-que ul li:hover {
+    background: #e8e9ec;
+}
+
+.ExamQuestionsBlock .right .attempts-que ul li.attempted.true {
+    color: #00be7e;
+    background: #e5f9f2;
+}
+
+body.dark-mode .ExamQuestionsBlock .right .attempts-que ul li.current,
+.ExamQuestionsBlock .right .attempts-que ul li.current {
+    color: #007cff;
+    background: #cce5ff;
+    border: 2px solid #007cff;
+}
+
+body.dark-mode .ExamQuestionsBlock .right .attempts-que ul li.review,
+.ExamQuestionsBlock .right .attempts-que ul li.review {
+    color: #fab005 !important;
+    background: rgb(235 235 235 / 20%) !important;
+}
+
+body.dark-mode .ExamQuestionsBlock .right .attempts-que ul li.choice,
+.ExamQuestionsBlock .right .attempts-que ul li.choice {
+    color: #00be7e;
+    background: #e5f9f2;
+}
+
+.symbolAnswer {
+    margin-right: 5px;
+}
+
+.resultBlock .btnViewQue {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.resultBlock .btnViewQue:hover {
+    border: 1px solid #fff;
+    color: #000;
+    background-color: #fff;
+}
+
+.resultBlock .btnViewQue.mark {
+    border: 1px solid #fab005;
+    color: #fab005;
+}
+
+.resultBlock .btnViewQue.mark:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #fab005;
+}
+
+/* DARK-MODE */
+body.dark-mode .ExamQuestionsBlock .left .exam-nav {
+    border-top: 1px solid #46484d;
+}
+
+body.dark-mode .ExamQuestionsBlock .left {
+    border-right: 1px solid #46484d;
+}
+
+body.dark-mode .exam-header {
+    border-bottom:  1px solid #46484d;
+}
+
+body.dark-mode .ExamQuestionsBlock .right .attempts-que ul li {
+    border: 1px solid #ffffff4a;
+    background: hsl(216deg 33% 97% / 20%);
+    color: #fff;
+}
+
+.pointBlock {
+    color: #fdf3ea;
+}
+.pointBlock.pass {
+    color: #00be7e;
+}
+.pointBlock.not-pass {
+    color: #ff615e;
+}
+
+/* CSS FOR IPAD DEVICES */
+@media only screen and (min-device-width: 500px)  and (max-device-width: 900px)  and (orientation: portrait)  {
+    .ExamQuestionsBlock .left {
+        max-width: calc(100% - 100px);
+    }
+
+    .ExamQuestionsBlock .right {
+        max-width: 100px;
+        max-height: 768px;
+        overflow-y: scroll;
+    } 
+
+    .ExamQuestionsBlock .right .attempts-que ul {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .ExamQuestionsBlock .right .btn-review {
+        font-size: 12px;
+    }
+
+    .ExamQuestionsBlock .right .attempts-que ul li {
+        width: 30px;
+        height: 30px;
+        /* font-size: 12px; */
+    }
+
+    body {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-device-width: 1200px) and (orientation: landscape) {
+    .ExamQuestionsBlock .left {
+        max-width: calc(100% - 200px);
+    }
+
+    .ExamQuestionsBlock .right {
+        max-width: 200px;
+        max-height: 475px;
+        overflow-y: scroll;
+    }
+
+    .ExamQuestionsBlock .right .attempts-que ul {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    body {
+        font-size: 14px !important;
+    }
+}
+
+/* CSS FOR IPHONES DEVICES */
+@media only screen and (max-device-width: 500px)  and (orientation: portrait)  {
+    .ExamQuestionsBlock {
+        flex-direction: column-reverse;
+    }
+
+    .ExamQuestionsBlock .left {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .ExamQuestionsBlock .right {
+        width: 100%;
+        max-width: unset;
+    } 
+
+    .ExamQuestionsBlock .right .attempts-que ul {
+        grid-template-columns: repeat(8,1fr);
+    }
+
+    .ExamQuestionsBlock .right .btn-review {
+        font-size: 12px;
+    }
+
+    .ExamQuestionsBlock .right .attempts-que ul li {
+        width: 30px;
+        height: 30px;
+        /* font-size: 12px; */
+    }
+
+    body {
+        font-size: 14px !important;
+    }
+
+    .exam-header {
+        justify-content: center;
+    }
+}
