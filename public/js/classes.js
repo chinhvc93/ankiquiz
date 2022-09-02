@@ -82,23 +82,23 @@ class Question {
   }
 
   markCurrentQuestion(queNo = 0) {
-    $(".attempts-que li").removeClass("current");
-    $(`.attempts-que li[data-queno="${queNo}"]`).addClass("current");
+    $("#attempts-que li").removeClass("current");
+    $(`#attempts-que li[data-queno="${queNo}"]`).addClass("current");
   }
 
   markChoice(queNo, isChoice = true) {
     if (isChoice) {
-      $(`.attempts-que li[data-queno="${queNo}"]`).addClass("choice");
+      $(`#attempts-que li[data-queno="${queNo}"]`).addClass("choice");
     } else {
-      $(`.attempts-que li[data-queno="${queNo}"]`).removeClass("choice");
+      $(`#attempts-que li[data-queno="${queNo}"]`).removeClass("choice");
     }
   }
 
   markToReview(queNo, isMarked = false) {
     if (isMarked) {
-      $(`.attempts-que li[data-queno="${queNo}"]`).addClass("review");
+      $(`#attempts-que li[data-queno="${queNo}"]`).addClass("review");
     } else {
-      $(`.attempts-que li[data-queno="${queNo}"]`).removeClass("review");
+      $(`#attempts-que li[data-queno="${queNo}"]`).removeClass("review");
     }
   }
 
@@ -139,7 +139,7 @@ class Question {
       <li data-queno="${i}" class="">${i + 1}</li>
       `;
     }
-    $(".attempts-que ul").html(liQuestHtml);
+    $("#attempts-que ul").html(liQuestHtml);
   }
 
   nextQue(queNo) {
@@ -343,10 +343,10 @@ class Exam {
   loadQueListNumber() {
     let self = this;
     self.choices.forEach(function (choiceItem) {
-      $(`.attempts-que li[data-queno="${choiceItem.queNo}"]`).addClass("choice");
+      $(`#attempts-que li[data-queno="${choiceItem.queNo}"]`).addClass("choice");
     });
     self.markedQuestion.forEach(function (markedItem) {
-      $(`.attempts-que li[data-queno="${markedItem.queNo}"]`).addClass("review");
+      $(`#attempts-que li[data-queno="${markedItem.queNo}"]`).addClass("review");
     });
   }
 }

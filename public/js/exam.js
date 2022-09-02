@@ -1,32 +1,15 @@
-// INIT
+// INIT, GLOBAL VARIABLES
+var examId, exam, queDataCount, que;
+
 function init() {
-  var examId = getExamId();
-  let examIndex = listExam.findIndex((exam) => exam.id == examId);
-  $("#selectExam").text(listExam[examIndex].name);
-  return new Exam(listExam[examIndex].data, `cache${listExam[examIndex].id}`);
+  examId = getExamId();
+  switchDesk(examId);
 }
-
-var exam = init();
-var queDataCount = exam.count;
-
-var que = new Question();
-que.showQueNumber(exam.current);
-que.showQueListNumber(exam.count);
-
-//Load from local cache
-exam.loadFromLocalCache();
-exam.loadQueListNumber();
-
-//Show first question
-que.getQuestion(
-  exam.current,
-  exam.currentQuestion(),
-  exam.getChoice(),
-  exam.getMarkToReview()
-);
+init();
 
 // LOAD QUESTION
-$(".attempts-que ul > li").on("click", function () {
+$("#attempts-que").on("click", "ul > li", function () {
+  console.log(11);
   exam.current = $(this).data("queno");
   que.getQuestion(
     exam.current,
@@ -125,8 +108,8 @@ $(".btn-return").on("click", function () {
 $(".btn-saveQuiz").on("click", function () {
   exam.saveToLocalCache();
   console.log(11111);
- $(".notification").text("Save to local successfully!!");
- $(".notification").removeClass("dange").addClass("success");
+  $(".notification").text("Save to local successfully!!");
+  $(".notification").removeClass("dange").addClass("success");
 });
 
 //CLEAR CACHE
@@ -138,5 +121,39 @@ $(".btn-clearQuiz").on("click", function () {
 
 //CHOICE DESK
 $("#deskList .deskItem").on("click", function () {
-  console.log(111);
+  switchDesk($(this).data("examid"));
 });
+
+function switchDesk(examId) {
+  let examIndex = listExam.findIndex((exam) => exam.id == examId);
+  if(examIndex < 0) {
+    examIndex = 0;
+    examId = listExam[examIndex].id
+  }
+  //Set dropdown status
+  $("#deskList .deskItem").removeClass("active");
+  $(`#deskList .deskItem[data-examid="${examId}"]`).addClass("active");
+  $("#selectExam").text(listExam[examIndex].name);
+
+  //Set URL
+  setSearchParam("exam", examId);
+
+  exam = new Exam(listExam[examIndex].data, `cache${listExam[examIndex].id}`);
+  queDataCount = exam.count;
+
+  que = new Question();
+  que.showQueNumber(exam.current);
+  que.showQueListNumber(exam.count);
+
+  //Load from local cache
+  exam.loadFromLocalCache();
+  exam.loadQueListNumber();
+
+  //Show first question
+  que.getQuestion(
+    exam.current,
+    exam.currentQuestion(),
+    exam.getChoice(),
+    exam.getMarkToReview()
+  );
+}
