@@ -330,7 +330,6 @@ class Exam {
     if(!exam) return;
     
     exam = JSON.parse(exam);
-    // console.log(exam);
 
     this.choices = exam.choices;
     this.markedQuestion = exam.markedQuestion;
@@ -348,5 +347,49 @@ class Exam {
     self.markedQuestion.forEach(function (markedItem) {
       $(`#attempts-que li[data-queno="${markedItem.queNo}"]`).addClass("review");
     });
+  }
+
+  showStarQuestion() {
+    var starBlock = "";
+    var self = this;
+    var SYMBOL_ANSWERS = ["A", "B", "C", "D", "E", "F", "G", "H"];
+    let markedQuestions = self.markedQuestion.filter(item => item["isMarked"]);
+    markedQuestions.forEach(function (markedQue, index) {
+      let question = self.listQuestions[markedQue["queNo"]];
+
+      let queAnswers = question["answer_list"][0]["answers"];
+      let answer_text = "";
+      
+      let htmlRadioCheckbox = "";
+      if (!question["is_partially_correct"]) {
+        // One Choice: radio input
+        htmlRadioCheckbox = `<input class="ip-radio" type="radio" name="que-${markedQue['queNo']}" value="${SYMBOL_ANSWERS[index]}">`;
+      } else {
+        // Multiple Choices: checkbox input
+        htmlRadioCheckbox = `<input class="ip-radio" type="checkbox" name="que-${markedQue['queNo']}" value="${SYMBOL_ANSWERS[index]}">`;
+      }
+
+      queAnswers.forEach(function (answer, index) {
+        answer_text +=`
+        <label class="my-2 custom_label">
+          ${htmlRadioCheckbox}
+          <span class="que-content hiddenColor ${answer["correct"] == true ? 'true' : 'false'}">
+              <span class="symbolAnswer">${SYMBOL_ANSWERS[index]}.</span>
+              ${answer["choice"]}
+          </span>
+        </label>
+        `;
+      });
+      starBlock += `
+      <div>
+        Question: ${markedQue["queNo"] + 1}.
+        ${question.question_text}
+        ${answer_text}
+      </div>
+      <br>
+      `;
+    });
+
+    $("#starBlock").html(starBlock);
   }
 }

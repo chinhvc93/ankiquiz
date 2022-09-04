@@ -9,7 +9,6 @@ init();
 
 // LOAD QUESTION
 $("#attempts-que").on("click", "ul > li", function () {
-  console.log(11);
   exam.current = $(this).data("queno");
   que.getQuestion(
     exam.current,
@@ -102,6 +101,7 @@ $("#resultBlock").on("click", ".btnViewQue", function () {
 $(".btn-return").on("click", function () {
   $(".ExamQuestionsBlock").removeClass("d-none");
   $(".resultBlock").addClass("d-none");
+  $(".starBlock").addClass("d-none");
 });
 
 //SAVE QUIZ TO CACHE
@@ -157,3 +157,14 @@ function switchDesk(examId) {
     exam.getMarkToReview()
   );
 }
+
+//STAR BLOCK
+$(".btn-starQuiz").on("click", function () {
+  $(".starBlock").removeClass("d-none");
+  $(".ExamQuestionsBlock").addClass("d-none");
+  exam.showStarQuestion();
+});
+
+$(".btnShowStarResult").on("click", function () {
+  $("#starBlock .que-content").removeClass("hiddenColor");
+});

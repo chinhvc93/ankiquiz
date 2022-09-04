@@ -45,6 +45,15 @@
     border-radius: 8px;
 }
 
+.btn-starQuiz {
+    color: #fab005 !important;
+    background: rgb(255 193 7 / 20%) !important;
+    min-width: 120px;
+    font-size: 14px;
+    margin: 0 0 0 15px;
+    border-radius: 8px;
+}
+
 .btnPrevQue, .btnNextQue {
     color: #60dd65 !important;
     background: rgb(25 135 84 / 20%) !important;
@@ -172,6 +181,11 @@
 .que-content.false {
     border-radius: 10px;
     background-color: rgb(255 97 94 / 50%) !important;
+}
+
+.que-content.hiddenColor.true,
+.que-content.hiddenColor.false {
+    background-color: initial !important; 
 }
 
 .exam-nav {
