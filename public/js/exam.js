@@ -168,3 +168,16 @@ $(".btn-starQuiz").on("click", function () {
 $(".btnShowStarResult").on("click", function () {
   $("#starBlock .que-content").removeClass("hiddenColor");
 });
+
+$("#starBlock").on("click", ".starMarkToReview", function () {
+  let queNo = $(this).data("queno");
+  let isMarked = $(`#starBlock .starMarkToReview[data-queno="${queNo}"]`).hasClass("true");
+  
+  exam.saveMarkToReview(queNo, !isMarked);
+  que.markToReview(queNo, !isMarked);
+  if(isMarked) {
+    $(`#starBlock .starMarkToReview[data-queno="${queNo}"]`).removeClass("true").addClass("false");
+  } else {
+    $(`#starBlock .starMarkToReview[data-queno="${queNo}"]`).removeClass("false").addClass("true");
+  }
+});

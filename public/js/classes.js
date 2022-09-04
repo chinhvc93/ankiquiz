@@ -354,6 +354,7 @@ class Exam {
     var self = this;
     var SYMBOL_ANSWERS = ["A", "B", "C", "D", "E", "F", "G", "H"];
     let markedQuestions = self.markedQuestion.filter(item => item["isMarked"]);
+    markedQuestions.sort((a, b) => a.queNo - b.queNo);
     markedQuestions.forEach(function (markedQue, index) {
       let question = self.listQuestions[markedQue["queNo"]];
 
@@ -369,6 +370,12 @@ class Exam {
         htmlRadioCheckbox = `<input class="ip-radio" type="checkbox" name="que-${markedQue['queNo']}" value="${SYMBOL_ANSWERS[index]}">`;
       }
 
+      let htmlStarIcon = `
+        <div data-queno="${markedQue['queNo']}" class="starMarkToReview true">
+            <i class="fa-solid fa-star"></i>
+        </div>
+      `;
+
       queAnswers.forEach(function (answer, index) {
         answer_text +=`
         <label class="my-2 custom_label">
@@ -381,7 +388,8 @@ class Exam {
         `;
       });
       starBlock += `
-      <div>
+      <div class="starQuestionBlock">
+        ${htmlStarIcon}
         Question: ${markedQue["queNo"] + 1}.
         ${question.question_text}
         ${answer_text}
