@@ -257,25 +257,25 @@ var PracticeTest3 = {
                 "question_id": "45129",
                 "choice": "<p>With AWS CLI, the user calls the AssumeRoleWithSAML function to obtain credentials for the &ldquo;EC2Update&rdquo; role.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "45129",
                 "choice": "<p>The user chooses the account name on the navigation bar and clicks &ldquo;Switch Role&rdquo;. The user specifies the account ID (or alias) and role name.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "45129",
                 "choice": "<p>The user can click on a link sent in an email by the administrator which takes the user to the Switch Role page with the details already filled in. The link can be found when the role &ldquo;EC2Update&rdquo; was created.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "45129",
                 "choice": "<p>In the AWS console, the user clicks its account name and chooses &ldquo;Switch Accounts&rdquo;. The user then specifies the account ID, key credentials, and the role name for account A.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -1970,25 +1970,25 @@ var PracticeTest3 = {
                 "question_id": "28773",
                 "choice": "<p>Select both of the private subnets which contain the webserver instances when configuring the ELB.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28773",
                 "choice": "<p>Move the webserver instances from&nbsp;the private subnets to the public subnets and then configure the ELB with those subnets.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28773",
                 "choice": "<p>Select both of the public subnets when configuring the ELB.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "28773",
                 "choice": "<p>You can&#39;t. The ELB must be in the same private subnets as the webserver instances.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -2017,25 +2017,25 @@ var PracticeTest3 = {
                 "question_id": "28729",
                 "choice": "<p>Configure Auto Scaling to launch one Windows Server 2016&nbsp;instance each in us-west-1a and us-west-1b. Copy the web files from an on-premises web server to each Amazon EC2 web server, using Amazon S3 as the repository. Launch a Multi-AZ MySQL Amazon RDS Instance in us-west-1a and us-west-1b. Import the data into Amazon RDS from the latest MySQL backup. Create an elastic load balancer (ELB) to front your web servers. Use Amazon Route53 and create an alias ( Type: A-IP4 Address ) record pointing to the ELB.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28729",
                 "choice": "<p>Export web files to an Amazon S3 bucket in us-west-1. Run the website directly out of Amazon S3. Launch a Multi-AZ MySQL Amazon RDS instance in us-west-1a. Import the data into Amazon RDS from the latest MySQL backup. Use Route 53 and create an alias record pointing to the elastic load balancer.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28729",
                 "choice": "<p>Use AWS VM Import/Export to create an Amazon EC2 AMI of the webserver. Configure Auto Scaling to launch one web server in us-west-1a and one in us-west-1b. Create an Elastic Load Balancer to distribute the traffic. Launch a Multi-AZ MySQL Amazon RDS instance in us-west-1. Import the data Into Amazon RDS from the latest MySQL backup. Use Amazon Route 53 and create an Alias record pointing to the Elastic Load Balancer.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "28729",
                 "choice": "<p>Use AWS VM Import/Export to create an Amazon EC2 AMI of the webserver. Configure Auto Scaling to launch one webserver in us-west-1a and one in us-west-1b. Launch a Multi-AZ MySQL Amazon RDS instance in us-west-1. Import the data into Amazon RDS from the latest MySQL backup. Use Amazon Route 53 to create a hosted zone and point an A record to the EC2 IP addresses.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -2809,31 +2809,31 @@ var PracticeTest3 = {
                 "question_id": "28960",
                 "choice": "<p>Define an Amazon RDS Read-Replica in the load-testing AWS CloudFormation stack and define a dependency relation between master and replica via the DependsOn attribute.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28960",
                 "choice": "<p>Define an update policy to prevent the deletion of the Amazon RDS database after the AWS CloudFormation stack is deleted.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28960",
                 "choice": "<p>Define a deletion policy of type Retain for the Amazon RDS resource to assure that the RDS database is not deleted with the AWS CloudFormation stack.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "28960",
                 "choice": "<p>Define a deletion policy of type Snapshot for the Amazon RDS resource to assure that the RDS database can be restored after the AWS CloudFormation stack is deleted.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "28960",
                 "choice": "<p>Define automated backups with a backup retention period of 30 days for the Amazon RDS database and perform point-in-time recovery of the database after the AWS CloudFormation stack is deleted.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -2862,31 +2862,31 @@ var PracticeTest3 = {
                 "question_id": "28961",
                 "choice": "<p>Network stack updates will fail upon attempts to delete a subnet with EC2 instances.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "28961",
                 "choice": "<p>Restricting the launch of EC2 instances into VPCs requires resource level permissions in the IAM policy of the application group.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "28961",
                 "choice": "<p>Nesting network stacks within application stacks simplifies management and debugging, but requires resource-level permissions in the network group&#39;s IAM policy.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28961",
                 "choice": "<p>The application stack cannot be deleted before all network stacks are deleted.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28961",
                 "choice": "<p>Unless account&nbsp;level permissions are used on the cloud formation: Delete Stack action, network administrators could tear down application stacks.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -3574,31 +3574,31 @@ var PracticeTest3 = {
                 "question_id": "28733",
                 "choice": "<p>Assign a custom recipe to each layer that replaces the underlying AMI. Use OpsWorks life-cycle events to incrementally execute this custom recipe and update the instances with the new AMI.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28733",
                 "choice": "<p>Specify the latest AMI in the custom AMI at the stack level. Terminate&nbsp;instances of the stack and let OpsWorks launch new instances with the new AMI.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28733",
                 "choice": "<p>Identify all EC2 instances of your OpsWorks stack, stop each instance, replace the AMI ID property with the latest AMI ID, and restart the instance. To avoid downtime, make sure no more than one instance is stopped at the same time.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28733",
                 "choice": "<p>Create a new stack and layers with identical configuration, add instances with the latest AMI specified as a custom AMI to the new layers, switch DNS to the new stack, and tear down the old stack.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "28733",
                 "choice": "<p>Add new instances with the latest AMI as a custom AMI to all OpsWorks layers of your stack and terminate the old ones.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               }
             ]
           }

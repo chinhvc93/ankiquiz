@@ -373,25 +373,25 @@ var MigrationToAWSCloud = {
                 "question_id": "49778",
                 "choice": "<p>Configure AWS Transfer for SFTP service to transfer files directly into Amazon S3 using the Secure File Transfer Protocol (SFTP).</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "49778",
                 "choice": "<p>Use AWS Snowmobile to transfer an extremely large amount of data as it is secure, fast, and cost-effective. KMS encrypts all data transferred in Snowmobile.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "49778",
                 "choice": "<p>Use one Snowball Edge Compute Optimized product. Perform machine learning analysis at remote location and transfer the data. After the equipment is shipped back, AWS can store the data in S3.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "49778",
                 "choice": "<p>Configure Snowball Edge Storage Optimized service. Perform machine learning and processing at edge location before copying the data. AWS can store the data in S3 after the device is returned to AWS.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }

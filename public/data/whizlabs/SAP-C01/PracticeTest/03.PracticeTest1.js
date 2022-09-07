@@ -153,31 +153,31 @@ var PracticeTest1 = {
               "question_id": "28384",
               "choice": "<p>Store the data in the DynamoDB table with a Time to Live (TTL) and the data will be deleted automatically.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28384",
               "choice": "<p>Have the mobile app access Amazon DynamoDB directly instead of JSON files stored on Amazon S3.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28384",
               "choice": "<p>Introduce an Amazon SQS queue to buffer writes to the Amazon DynamoDB table and reduce provisioned write throughput.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28384",
               "choice": "<p>Introduce Amazon Elasticache to cache reads from the Amazon DynamoDB table and reduce provisioned read throughput.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28384",
               "choice": "<p>Write data directly into an Amazon Redshift cluster replacing both Amazon DynamoDB and Amazon S3.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -790,25 +790,25 @@ var PracticeTest1 = {
               "question_id": "28397",
               "choice": "<p>Use the AWS account access Keys. The application retrieves the credentials from the source code of the application.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28397",
               "choice": "<p>Create an IAM user for the application with permissions that allow list access to the S3 bucket, launch the instance as the IAM user, and retrieve the IAM user&rsquo;s credentials from the EC2 instance user data.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28397",
               "choice": "<p>Create an IAM role for EC2 that allows permission to list objects in the S3 bucket. Launch the instance with that&nbsp;role and assume&nbsp;the role&rsquo;s credentials from the EC2 Instance metadata.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28397",
               "choice": "<p>Create an IAM user for the application with permissions that allow list access to the S3 bucket. The application retrieves the IAM user credentials from a temporary directory with permissions that allow read access only to the application user.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -1153,25 +1153,25 @@ var PracticeTest1 = {
               "question_id": "28404",
               "choice": "<p>Duplicate entries into two different buckets and create two separate CloudFront distributions where S3 access is restricted only to Cloud Front identity.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28404",
               "choice": "<p>Create a CloudFront distribution with &ldquo;US&rsquo;Europe price class for US/Europe users and a different CloudFront distribution with All Edge Locations&rsquo; for the remaining users.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28404",
               "choice": "<p>Create a CloudFront distribution with S3 access restricted only to the CloudFront identity and partition the blog entry&rsquo;s location in S3 according to the month it was uploaded to be used with CloudFront behaviors.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28404",
               "choice": "<p>Create a CloudFront distribution with Restrict Viewer Access Forward Query string set to true and minimum TTL of 0.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -1372,25 +1372,25 @@ var PracticeTest1 = {
               "question_id": "28409",
               "choice": "<p>Stateless instances for the web application tier in an auto-scaling group monitored with CloudWatch. RDS configured with read replicas. Add Amazon ElastiCache for RDS.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28409",
               "choice": "<p>Stateful instances for the web application tier in an auto-scaling group monitored with CloudWatch. RDS with read replicas.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28409",
               "choice": "<p>Stateful instances for the web application tier in an auto-scaling group monitored with CloudWatch. RDS with Multi-AZ.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28409",
               "choice": "<p>Stateless instances for the web application tier in an auto-scaling group monitored with CloudWatch. RDS with Multi-AZ.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -1419,25 +1419,25 @@ var PracticeTest1 = {
               "question_id": "28410",
               "choice": "<p>Lower the scale-up trigger of your Auto Scaling group to 30%, so it scales more aggressively.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28410",
               "choice": "<p>Add an Amazon ElastiCache caching layer to your application for storing sessions and frequent DB queries.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28410",
               "choice": "<p>Configure Amazon CloudFront dynamic content support to enable caching of re-usable content from your site.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28410",
               "choice": "<p>Configure read replicas for RDS Database Instance.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -1643,25 +1643,25 @@ var PracticeTest1 = {
               "question_id": "28414",
               "choice": "<p>Create your RDS instance as part of your Elastic Beanstalk environment and alter its security group to allow access to it from valid client machines in your application subnets.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28414",
               "choice": "<p>Create your RDS instance separately and add its IP address to your application&rsquo;s DB connection strings in your code. Alter its security group to allow access to it from hosts within your VPC&rsquo;s IP address block.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28414",
               "choice": "<p>Use the ElasticBeanstalk to deploy your application in various environments. Create your RDS instance separately, controlled by automation, and pass its DNS name to your app&#39;s DB connection string as an environment variable. After this, restore the sanitized copy of production data to the RDS instance. Create a security group to allow access to it from hosts in your application subnets.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28414",
               "choice": "<p>Create your RDS instance separately and pass its DNS name to your&nbsp;DB connection string as an environment variable. Alter its security group to allow access to it from hosts in your application subnets.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -2360,25 +2360,25 @@ var PracticeTest1 = {
               "question_id": "28429",
               "choice": "<p>Disable sticky sessions on the ELB.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28429",
               "choice": "<p>Reduce the frequency of the health checks.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28429",
               "choice": "<p>Increase the number of instances hosting the web application in each AZ.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28429",
               "choice": "<p>Recreate the ELB again.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -3106,7 +3106,7 @@ var PracticeTest1 = {
       "lab_id": 0,
       "question_text": "<p>A mobile App developer just made an App in both IOS and Android with a feature to count step numbers. He has used AWS Cognito to authorize users to provide access to the AWS DynamoDB table. The App uses the DynamoDB table to store user subscriber data and many steps. Now the developer also needs Cognito to integrate with Google to provide federated authentication for the mobile application users so that the user does not need to remember extra login access. &nbsp;What should the developer do to authenticate and authorize the users with suitable permissions for the IOS and Android App? (Select TWO.)</p>",
       "mark": 1,
-      "is_partially_correct": false,
+      "is_partially_correct": true,
       "question_type": "2",
       "difficulty_level": "0",
       "general_feedback": "<p>Correct Answer &ndash;&nbsp;A and C</p>\n\n<p>Explanation:</p>\n\n<p>One common use case for Amazon Cognito is to access AWS Services with an Identity Pool. For the Identity pool itself, it can include:</p>\n\n<ul>\n\t<li>Users in an Amazon Cognito identity&nbsp;pool.</li>\n\t<li>Users who authenticate with external identity providers such as Facebook, Google, or a SAML-based identity provider.</li>\n\t<li>Users authenticated via your own existing authentication process.</li>\n</ul>\n\n<p>Option A is CORRECT&nbsp;because Identity pool can be used to set up the federated identities through third-party identity providers such as Google.</p>\n\n<p>Option B is&nbsp;incorrect:&nbsp;Because Google federated identities work for both Android and IOS. Refer to&nbsp;<a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/google.html\" target=\"_blank\">https://docs.aws.amazon.com/cognito/latest/developerguide/google.html</a> on the details.</p>\n\n<p>Option C is CORRECT because the User Pool is where the federated identity would be set-up and the Identity Pool is where permissions would be granted.&nbsp;Please also check <a href=\"https://aws.amazon.com/premiumsupport/knowledge-center/cognito-user-pools-identity-pools/\">https://aws.amazon.com/premiumsupport/knowledge-center/cognito-user-pools-identity-pools/</a> for the differences between User pools and Identify pools. User pools are for authentication (identify verification), while Identity pools are for authorization (access control).</p>\n\n<p>Option D is incorrect:&nbsp;Same reason as Option B.</p>",
@@ -3206,25 +3206,25 @@ var PracticeTest1 = {
               "question_id": "44756",
               "choice": "<p>Deploy the application in one Elastic Beanstalk web server environment. Make sure that the environment uses a load-balancing, autoscaling configuration. Therefore, it can auto-scale depending on the traffic level.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "44756",
               "choice": "<p>Deploy the application in one Elastic Beanstalk worker environment. Create an SQS queue and an SQS daemon in EC2 to handling with the queue messages. Make sure that the environment uses a load-balancing and autoscaling configuration.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "44756",
               "choice": "<p>Create one Elastic Beanstalk worker environment and deploy the application in the new environment. Make sure that the application performs the short-running task in response to the POST from SQS daemon. Uses an auto-scaling configuration for the environment.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "44756",
               "choice": "<p>Create an Elastic Beanstalk web server environment and add the application bundle to it. Make sure that the environment uses an autoscaling configuration with a maximum at 10 and a minimum at 1.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }

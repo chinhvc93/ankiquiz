@@ -24,25 +24,25 @@ var Compute = {
               "question_id": "58123",
               "choice": "<p>In AWS Resource Access Manager (RAM), create shared pipelines by selecting the shared components, images, or recipes in EC2 Image Builder and select the target organizational units or AWS accounts.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58123",
               "choice": "<p>In the EC2 Image Builder, select the shared resources such as components, recipes or images and distribute the resources to other organizational units or AWS accounts.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58123",
               "choice": "<p>In the EC2 Image Builder image pipelines, share the resources to other organizational units or AWS accounts after the pipelines are finished successfully.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58123",
               "choice": "<p>In AWS Resource Access Manager (RAM), add the shared components, images, or recipes in resource shares and configure the principals which are allowed to access the shared resources.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             }
           ]
         }
@@ -71,25 +71,25 @@ var Compute = {
               "question_id": "58124",
               "choice": "<p>Use the VM Import/Export tool to install the Server Migration Connector, generate ova files and migrate the EC2 instances to VMware vSphere.</p>",
               "feedback": "",
-              "correct": "0"
+              "correct": false
             },
             {
               "question_id": "58124",
               "choice": "<p>Use the VM Import/Export tool to deploy the AWS discovery tools in EC2 instances and trigger migration jobs to VMware vSphere.</p>",
               "feedback": "",
-              "correct": "0"
+              "correct": false
             },
             {
               "question_id": "58124",
               "choice": "<p>Use the &ldquo;aws ec2 create-instance-export-task&rdquo; command to export EC2 instances and store the exported ova files in an S3 bucket.</p>",
               "feedback": "",
-              "correct": "1"
+              "correct": true
             },
             {
               "question_id": "58124",
               "choice": "<p>Use the &ldquo;aws ec2 export-image&rdquo; command to export EC2 instances and download the exported ova files in a local disk.</p>",
               "feedback": "",
-              "correct": "0"
+              "correct": false
             }
           ]
         }
@@ -118,25 +118,25 @@ var Compute = {
               "question_id": "58155",
               "choice": "<p>In the Dockerfile, assume the IAM role through the &ldquo;aws sts assume-role&rdquo; CLI for the Lambda function during runtime.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58155",
               "choice": "<p>Install the CloudWatch Log agent in the container image for the Lambda function to forward its logs to a CloudWatch Log group.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58155",
               "choice": "<p>Install the Amazon Elastic Container Registry (Amazon ECR) agent for the Lambda function to interact with ECR to fetch the Docker image.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58155",
               "choice": "<p>Install the runtime interface client in the container image to make it compatible with Lambda.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             }
           ]
         }
@@ -165,25 +165,25 @@ var Compute = {
               "question_id": "58156",
               "choice": "<p>5 &gt; 2 &gt; 1 &gt; 4</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58156",
               "choice": "<p>2 &gt; 3 &gt; 1 &gt; 5</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58156",
               "choice": "<p>3 &gt; 4 &gt; 1 &gt; 5</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "58156",
               "choice": "<p>4 &gt; 2 &gt; 3 &gt; 1</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -212,31 +212,31 @@ var Compute = {
               "question_id": "58157",
               "choice": "<p>The update level.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "58157",
               "choice": "<p>The operating system.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58157",
               "choice": "<p>The weekly update period.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "58157",
               "choice": "<p>Instance reboot.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58157",
               "choice": "<p>Patch baseline from Systems Manager.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -265,25 +265,25 @@ var Compute = {
               "question_id": "58158",
               "choice": "<p>Create a NAT Gateway in the public subnet. Modify the route table to connect other applications and the Elastic Beanstalk service through the NAT Gateway.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58158",
               "choice": "<p>Configure an interface VPC endpoint for the Elastic Beanstalk service. Requests are sent to Elastic Beanstalk through AWS PrivateLink.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "58158",
               "choice": "<p>Disable DNS name in the Elastic Beanstalk environment to disallow the connections through the public endpoint of Elastic Beanstalk.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58158",
               "choice": "<p>Nothing needs to be done as Elastic Beanstalk provides the private DNS &ldquo;com.amazonaws.region.elasticbeanstalk&rdquo; by default.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }

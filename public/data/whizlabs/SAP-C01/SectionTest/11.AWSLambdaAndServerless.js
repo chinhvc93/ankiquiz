@@ -153,25 +153,25 @@ var AWSLambdaAndServerless = {
                 "question_id": "50010",
                 "choice": "<p>Implement the below policy in the API Gateway Resource Policy:</p>\r\n\r\n<p>{&nbsp;&quot;Version&quot;: &quot;2012-10-17&quot;,<br />\r\n&nbsp;&nbsp;&quot;Statement&quot;: [<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&quot;Effect&quot;: &quot;Allow&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Principal&quot;: &quot;vpce-11bb22cc&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Action&quot;: &quot;execute-api:Invoke&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Resource&quot;: [ &quot;arn:aws:execute-api:region:account-id:api-id/*&quot;&nbsp;]&nbsp;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;}<br />\r\n&nbsp;&nbsp;&nbsp;]<br />\r\n}</p>\r\n\r\n<p>&nbsp;</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "50010",
                 "choice": "<p>Implement the below policy in the API Gateway Resource Policy:</p>\r\n\r\n<p>{&nbsp;&quot;Version&quot;: &quot;2012-10-17&quot;,<br />\r\n&nbsp;&nbsp;&quot;Statement&quot;: [<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&quot;Effect&quot;: &quot;Allow&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Principal&quot;: &quot;*&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Action&quot;: &quot;execute-api:Invoke&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Resource&quot;: [ &quot;arn:aws:execute-api:region:account-id:api-id/*&quot;&nbsp;]&nbsp;&nbsp;<br />\r\n&nbsp;&nbsp; &nbsp; &nbsp;},<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&quot;Effect&quot;: &quot;Deny&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Principal&quot;: &quot;*&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Action&quot;: &quot;execute-api:Invoke&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Resource&quot;: [&nbsp;&quot;arn:aws:execute-api:region:account-id:api-id/*&quot;&nbsp;],<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Condition&quot; : {<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;StringNotEquals&quot;: {&nbsp;&quot;aws:SourceVpce&quot;: &quot;vpce-11bb22cc&quot;&nbsp;}<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />\r\n&nbsp;&nbsp;&nbsp;]<br />\r\n}</p>\r\n\r\n<p>&nbsp;</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "50010",
                 "choice": "<p>Implement the below policy in the API Gateway Resource Policy:</p>\r\n\r\n<p>{&nbsp;&quot;Version&quot;: &quot;2012-10-17&quot;,<br />\r\n&nbsp;&nbsp;&quot;Statement&quot;: [<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&quot;Effect&quot;: &quot;Allow&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Principal&quot;: &quot;*&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Action&quot;: &quot;execute-api:Invoke&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Resource&quot;: [&nbsp;&quot;arn:aws:execute-api:region:account-id:api-id/*&quot;&nbsp;],<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Condition&quot; : {<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;StringEquals&quot;: {&nbsp;&quot;aws:SourceVpce&quot;: &quot;vpce-11bb22cc&quot; }<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />\r\n&nbsp;&nbsp;&nbsp;]<br />\r\n}</p>\r\n\r\n<p>&nbsp;</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "50010",
                 "choice": "<p>Implement the below policy in the API Gateway Resource Policy:</p>\r\n\r\n<p>{&nbsp;&quot;Version&quot;: &quot;2012-10-17&quot;,<br />\r\n&nbsp;&nbsp;&quot;Statement&quot;: [<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&quot;Effect&quot;: &quot;Deny&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Principal&quot;: &quot;*&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Action&quot;: &quot;execute-api:Invoke&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Resource&quot;: [&nbsp;&quot;arn:aws:execute-api:region:account-id:api-id/*&quot;&nbsp;]&nbsp;&nbsp;<br />\r\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;},<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&quot;Effect&quot;: &quot;Allow&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Principal&quot;: &quot;*&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Action&quot;: &quot;execute-api:Invoke&quot;,<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Resource&quot;: [&nbsp;&quot;arn:aws:execute-api:region:account-id:api-id/*&quot;&nbsp;],<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Condition&quot; : {<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;StringEquals&quot;: {&nbsp;&quot;aws:SourceVpce&quot;: &quot;vpce-11bb22cc&quot;&nbsp;}<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;]<br />\r\n}</p>\r\n\r\n<p>&nbsp;</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -200,25 +200,25 @@ var AWSLambdaAndServerless = {
                 "question_id": "50011",
                 "choice": "<p>The logical tier contains Amazon API Gateway and AWS Lambda. The API Gateway endpoints are secured via Amazon Certificate Manager. Amazon RDS MySQL is used for the data tier.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "50011",
                 "choice": "<p>The logic tier contains Amazon API Gateway and AWS ECS with EC2 instances. The API Gateway endpoints are secured via third-party identity providers. The data tier includes the resource of Amazon DynamoDB.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "50011",
                 "choice": "<p>The logic tier contains Amazon CloudFront and AWS Auto Scaling Group. Amazon Cognito identity pools provide identity services. Amazon DocumentDB is used for the data tier.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "50011",
                 "choice": "<p>The logic tier contains Amazon API Gateway and AWS Lambda. The API Gateway endpoints are secured via Amazon Cognito user pools. Amazon DynamoDB is used for the data tier.<br />\r\n&nbsp;</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               }
             ]
           }
@@ -247,31 +247,31 @@ var AWSLambdaAndServerless = {
                 "question_id": "50012",
                 "choice": "<p>In the DynamoDB table, enable auto-scaling for the read and write capacities.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "50012",
                 "choice": "<p>Adding retries to the AWS Lambda function if ProvisionedThroughputExceededException happens.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "50012",
                 "choice": "<p>Configure an SQS queue to control the traffic to the DynamoDB table. The extra messages are put in the queue first before they reach the table.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "50012",
                 "choice": "<p>Configure AWS CloudFront as a caching layer in front of DynamoDB to reduce traffic to the DynamoDB table.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "50012",
                 "choice": "<p>Create a CloudWatch alarm for ProvisionedThroughputExceededException. Enlarge the provisioned capacities if the alarm is triggered.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }

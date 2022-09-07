@@ -339,25 +339,25 @@ var AWSOrganizations = {
                 "question_id": "49706",
                 "choice": "<p>Create an SCP that denies required actions and attach it to Root. Attach another SCP that contains an Allow list in Project_OU.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "49706",
                 "choice": "<p>In Project_OU, attach an SCP that contains a Deny list to restrict the deletion of IAM roles.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "49706",
                 "choice": "<p>Make sure that Root, Project_OU, and Security_OU are attached with a full access SCP. Attach another SCP that contains the Deny list to DEV1_OU, DEV2_OU, and QA1_OU.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "49706",
                 "choice": "<p>Create an SCP that denies the required actions. Attach it to Project_OU, DEV_OU, and QA_OU.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }

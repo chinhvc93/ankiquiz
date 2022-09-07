@@ -72,25 +72,25 @@ var SecurityAndIdentity = {
                 "question_id": "49903",
                 "choice": "<p>{ &quot;Version&quot;: &quot;2012-10-17&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&quot;Statement&quot;: [&nbsp; {</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&quot;Effect&quot;: &quot;Allow&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&quot;Principal&quot;: {&quot;AWS&quot;: [</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;arn:aws:iam::444455556666:user/Admin&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;arn:aws:iam::444455556666:root&quot; ]&nbsp; },</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Action&quot;: &quot;s3:*&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Resource&quot;: [</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;arn:aws:s3:::BUCKETNAME&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;arn:aws:s3:::BUCKETNAME/*&quot;&nbsp;]</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp; ]</p>\r\n\r\n<p>}</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "49903",
                 "choice": "<p>{ &quot;Version&quot;: &quot;2012-10-17&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&quot;Statement&quot;: [{</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&quot;Effect&quot;: &quot;Deny&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&quot;NotPrincipal&quot;: {&quot;AWS&quot;: [</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;arn:aws:iam::444455556666:user/Admin&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;arn:aws:iam::444455556666:root&quot; ]&nbsp; },</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Action&quot;: &quot;s3:*&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Resource&quot;: [</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&quot;arn:aws:s3:::BUCKETNAME&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&quot;arn:aws:s3:::BUCKETNAME/*&quot; ]</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp; ]</p>\r\n\r\n<p>}</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "49903",
                 "choice": "<p>{ &quot;Version&quot;: &quot;2012-10-17&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&quot;Statement&quot;: [{</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&quot;Effect&quot;: &quot;Allow&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&quot;NotPrincipal&quot;: {&quot;AWS&quot;: [</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;arn:aws:iam::444455556666:user/User1&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;arn:aws:iam::444455556666:user/User2&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&hellip;</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;arn:aws:iam::444455556666:user/UserX&quot; ]&nbsp; },</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Action&quot;: &quot;s3:*&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Resource&quot;: [</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&quot;arn:aws:s3:::BUCKETNAME&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&quot;arn:aws:s3:::BUCKETNAME/*&quot;&nbsp;]</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp; ]</p>\r\n\r\n<p>}</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "49903",
                 "choice": "<p>{ &quot;Version&quot;: &quot;2012-10-17&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&quot;Statement&quot;: [{</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&quot;Effect&quot;: &quot;Deny&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&quot;Principal&quot;: {&quot;AWS&quot;: [</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;arn:aws:iam::444455556666:user/User1&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;arn:aws:iam::444455556666:user/User2&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&hellip;</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;arn:aws:iam::444455556666:user/UserX&quot; ]&nbsp; },</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Action&quot;: &quot;s3:*&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Resource&quot;: [</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;arn:aws:s3:::BUCKETNAME&quot;,</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;arn:aws:s3:::BUCKETNAME/*&quot; ]</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp; ]</p>\r\n\r\n<p>}</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -205,25 +205,25 @@ var SecurityAndIdentity = {
                 "question_id": "49906",
                 "choice": "<p>Copy the snapshot to account B&nbsp;and do not encrypt it. Share the new snapshot to account B.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "49906",
                 "choice": "<p>Create an AMI using the encrypted snapshot. Launch an EC2 instance using the AMI and encrypt the EBS volume with CMK-B.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "49906",
                 "choice": "<p>Share the snapshot with account B and encrypt&nbsp;it with CMK-B. Create an AMI using the new snapshot and launch an EC2 instance.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "49906",
                 "choice": "<p>Create an AMI&nbsp;in account B and change the encryption key to CMK-B. Launch an EC2 instance using the AMI.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }

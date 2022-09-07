@@ -158,31 +158,31 @@ var PracticeTest2 = {
               "question_id": "44804",
               "choice": "<p>Configure the DynamoDB Global Tables to replicate the data into multi-regions.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "44804",
               "choice": "<p>Create VPC Endpoints for S3 and DynamoDB.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "44804",
               "choice": "<p>Use the NAT Gateway for all the egress communication to these AWS services.&nbsp;</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "44804",
               "choice": "<p>Set up VPC gateway endpoint for S3 and interface endpoint for DynamoDB to communicate with these services over the private AWS network.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "44804",
               "choice": "<p>Use the S3 Cross-Region Replication to save the configurations in the multiple regions.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             }
           ]
         }
@@ -542,31 +542,31 @@ var PracticeTest2 = {
               "question_id": "58122",
               "choice": "<p>EC2 Image Builder pipelines always use the latest operating system in which the latest security patches are installed.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58122",
               "choice": "<p>In an EC2 Image Builder pipeline, users can choose to install Amazon managed components such as the CloudWatch agent and the CodeDeploy agent.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "58122",
               "choice": "<p>With an EC2 Image Builder pipeline, users can automatically deploy the AMIs in EC2 instances or Auto Scaling groups in different AWS Regions.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58122",
               "choice": "<p>In an EC2 Image Builder pipeline, the generated AMIs can be automatically distributed to multiple AWS Regions or shared with other AWS accounts.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "58122",
               "choice": "<p>EC2 Image Builder pipelines are based on Packer so that Packer templates can be reused.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -1159,25 +1159,25 @@ var PracticeTest2 = {
               "question_id": "58125",
               "choice": "<p>Deploy Lambda extensions through Lambda layers by adding the extensions in the Lambda .zip archives.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "58125",
               "choice": "<p>Deploy the required tools in other dedicated Lambda functions and integrate existing Lambda functions with these dedicated Lambda functions.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58125",
               "choice": "<p>Extend Lambda function with CloudWatch event rules by configuring third-party Lambda functions to process events.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "58125",
               "choice": "<p>Integrate the Lambda function with Amazon SQS and process the queue messages by Lambda extensions.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -2230,25 +2230,25 @@ var PracticeTest2 = {
               "question_id": "28698",
               "choice": "<p>Backup RDS using automated daily DB backups. Backup the EC2 instances using AMIs and supplement with file-level backup to S3 using traditional enterprise backup software to provide file-level restore.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28698",
               "choice": "<p>Backup RDS using a Multi-AZ Deployment. Backup the EC2 instances using AMIs and supplement by copying file system data to S3 to provide file-level restore.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28698",
               "choice": "<p>Backup RDS using automated daily DB backups. Backup the EC2 instances using EBS snapshots and supplement with file-level backups to Amazon Glacier using traditional enterprise backup software to provide file-level restore.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28698",
               "choice": "<p>Backup the EC2 instances using AMIs and supplement with EBS snapshots for individual volume restore.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -2426,31 +2426,31 @@ var PracticeTest2 = {
               "question_id": "28702",
               "choice": "<p>Cluster placement group</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28702",
               "choice": "<p>Enhanced networking</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28702",
               "choice": "<p>Amazon PV AMI</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28702",
               "choice": "<p>Amazon HVM AMI</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28702",
               "choice": "<p>Amazon VPC Endpoints</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -2957,25 +2957,25 @@ var PracticeTest2 = {
               "question_id": "28713",
               "choice": "<p>Create a second table that contains all the information, but make UserName the primary key.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28713",
               "choice": "<p>Create a hash and change the primary key.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28713",
               "choice": "<p>Create a Global secondary index.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28713",
               "choice": "<p>Partition the table using UserName rather than UserID.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -3267,25 +3267,25 @@ var PracticeTest2 = {
               "question_id": "28719",
               "choice": "<p>Increase your network bandwidth to provide faster throughput to S3.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28719",
               "choice": "<p>Use Multipart upload to upload the data to s3.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28719",
               "choice": "<p>Pack all files into a single archive, upload it to S3, and then extract the files in AWS.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28719",
               "choice": "<p>Use AWS Import/Export to transfer the video files.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }

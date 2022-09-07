@@ -1043,25 +1043,25 @@ var PracticeTest4 = {
                 "question_id": "45403",
                 "choice": "<p>Amazon DynamoDB</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "45403",
                 "choice": "<p>AWS CodeBuild&nbsp;</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "45403",
                 "choice": "<p>AWS Storage Gateway (Volume Gateway)</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "45403",
                 "choice": "<p>Amazon CloudFront</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -2382,25 +2382,25 @@ var PracticeTest4 = {
                 "question_id": "29031",
                 "choice": "<p>EBSConfig Service</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "29031",
                 "choice": "<p>AMIConfig Service</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "29031",
                 "choice": "<p>EC2Config</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "29031",
                 "choice": "<p>EC2-AMIConfig Service</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -2429,25 +2429,25 @@ var PracticeTest4 = {
                 "question_id": "29032",
                 "choice": "<p>Configure a single routing table with a default route via the Virtual Private Gateway. Propagate a default route via BGP on the AWS Direct Connect customer router. Associate the routing table with all VPC subnets.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "29032",
                 "choice": "<p>Configure a single routing table with a default route via the Virtual Private Gateway. Propagate specific routes for the on-premises networks via BGP on the AWS Direct Connect customer router. Associate the routing table with all VPC subnets.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "29032",
                 "choice": "<p>Configure a single routing table with two default routes: one to the Internet via a Virtual Private Gateway the other to the on-premises network via the VPN gateway. Use this routing table across all subnets in your VPC.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "29032",
                 "choice": "<p>Configure two routing tables: one that has a default route via the Virtual Private Gateway and another that has a default route via the VPN gateway. Associate both routing tables with each VPC subnet.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -2519,25 +2519,25 @@ var PracticeTest4 = {
                 "question_id": "28980",
                 "choice": "<p>Modify the application code to get the client IP from the X-Forwarded-Proto header or the X-Forwarded-Port header.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28980",
                 "choice": "<p>Configure ELB access logs. Then create a Data Pipeline job that imports the logs from an S3 bucket into EMR for analyzing and output the EMR data into a new S3 bucket.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28980",
                 "choice": "<p>Modify the application code to get the client IP from the x-forwarded-for header.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "28980",
                 "choice": "<p>Configure ELB error logs and create a Data Pipeline job that imports the logs from an S3 bucket into EMR for analyzing and outputs the EMR data into a new S3 bucket.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -2609,25 +2609,25 @@ var PracticeTest4 = {
                 "question_id": "29035",
                 "choice": "<p>It is used specifically for the Edge-based programing language.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "29035",
                 "choice": "<p>It is used for running Lambda functions at edge locations defined by S3.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "29035",
                 "choice": "<p>It is used for running Lambda functions at edge locations used by CloudFront.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "29035",
                 "choice": "<p>It can support any type of programming language.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -2800,31 +2800,31 @@ var PracticeTest4 = {
                 "question_id": "44780",
                 "choice": "<p>Shift the snapshots from S3 to the Redshift cluster. This will help to scale based on the additional load and take periodic backups of Redshift to Glacier.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "44780",
                 "choice": "<p>Use the S3 standard option to store snapshots. After the processing is complete, change the storage class to Glacier after a month.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "44780",
                 "choice": "<p>Use the S3 Infrequent Access storage class to save the snapshots. Use a lifecycle rule to migrate the snapshots to Glacier</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "44780",
                 "choice": "<p>Save the snapshots with the Glacier class and use the low-cost bulk retrieval option to fetch required snapshots for the deep learning program.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "44780",
                 "choice": "<p>Migrate the snapshots to EFS attached to the machine where the deep learning program is running. Once the program completes the processing, migrate the snapshots to the Glacier.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -3245,25 +3245,25 @@ var PracticeTest4 = {
                 "question_id": "58126",
                 "choice": "<p>In the Lambda console, edit the Lambda function code and add the my-extension.zip file to the /opt/extensions/ folder to install the governance tools.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "58126",
                 "choice": "<p>In the Dockerfile, add the my-extension.zip file to the /opt folder. Rebuild the Docker image and deploy the Docker container image to the Lambda function.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "58126",
                 "choice": "<p>Use AWS Lambda CLI update-function-code or update-function-configuration command to upload the my-extension.zip file, unzip it and install the extensions.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "58126",
                 "choice": "<p>Lambda extensions cannot be added to a container image. Instead, the Lambda function should use Lambda layers and the extension zip file should be added as a layer.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }

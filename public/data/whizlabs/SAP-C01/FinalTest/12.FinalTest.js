@@ -302,25 +302,25 @@ var FinalTest = {
               "question_id": "29048",
               "choice": "<p>VPC will create two main route tables associated with the public subnet and private subnet.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "29048",
               "choice": "<p>VPC will create a&nbsp;private subnet with a size x.x.x.x/24 IPv4 CIDR block.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "29048",
               "choice": "<p>VPC will create an&nbsp;Internet gateway.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "29048",
               "choice": "<p>VPC will create a&nbsp;NAT Gateway in the public&nbsp;subnet.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -483,25 +483,25 @@ var FinalTest = {
               "question_id": "28980",
               "choice": "<p>Modify the application code to get the client IP from the X-Forwarded-Proto header or the X-Forwarded-Port header.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28980",
               "choice": "<p>Configure ELB access logs. Then create a Data Pipeline job that imports the logs from an S3 bucket into EMR for analyzing and output the EMR data into a new S3 bucket.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28980",
               "choice": "<p>Modify the application code to get the client IP from the x-forwarded-for header.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28980",
               "choice": "<p>Configure ELB error logs and create a Data Pipeline job that imports the logs from an S3 bucket into EMR for analyzing and outputs the EMR data into a new S3 bucket.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -530,25 +530,25 @@ var FinalTest = {
               "question_id": "29032",
               "choice": "<p>Configure a single routing table with a default route via the Virtual Private Gateway. Propagate a default route via BGP on the AWS Direct Connect customer router. Associate the routing table with all VPC subnets.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "29032",
               "choice": "<p>Configure a single routing table with a default route via the Virtual Private Gateway. Propagate specific routes for the on-premises networks via BGP on the AWS Direct Connect customer router. Associate the routing table with all VPC subnets.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "29032",
               "choice": "<p>Configure a single routing table with two default routes: one to the Internet via a Virtual Private Gateway the other to the on-premises network via the VPN gateway. Use this routing table across all subnets in your VPC.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "29032",
               "choice": "<p>Configure two routing tables: one that has a default route via the Virtual Private Gateway and another that has a default route via the VPN gateway. Associate both routing tables with each VPC subnet.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -810,25 +810,25 @@ var FinalTest = {
               "question_id": "45403",
               "choice": "<p>Amazon DynamoDB</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "45403",
               "choice": "<p>AWS CodeBuild&nbsp;</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "45403",
               "choice": "<p>AWS Storage Gateway (Volume Gateway)</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "45403",
               "choice": "<p>Amazon CloudFront</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -1350,31 +1350,31 @@ var FinalTest = {
               "question_id": "28733",
               "choice": "<p>Assign a custom recipe to each layer that replaces the underlying AMI. Use OpsWorks life-cycle events to incrementally execute this custom recipe and update the instances with the new AMI.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28733",
               "choice": "<p>Specify the latest AMI in the custom AMI at the stack level. Terminate&nbsp;instances of the stack and let OpsWorks launch new instances with the new AMI.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28733",
               "choice": "<p>Identify all EC2 instances of your OpsWorks stack, stop each instance, replace the AMI ID property with the latest AMI ID, and restart the instance. To avoid downtime, make sure no more than one instance is stopped at the same time.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28733",
               "choice": "<p>Create a new stack and layers with identical configuration, add instances with the latest AMI specified as a custom AMI to the new layers, switch DNS to the new stack, and tear down the old stack.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28733",
               "choice": "<p>Add new instances with the latest AMI as a custom AMI to all OpsWorks layers of your stack and terminate the old ones.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             }
           ]
         }
@@ -1580,31 +1580,31 @@ var FinalTest = {
               "question_id": "28961",
               "choice": "<p>Network stack updates will fail upon attempts to delete a subnet with EC2 instances.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28961",
               "choice": "<p>Restricting the launch of EC2 instances into VPCs requires resource level permissions in the IAM policy of the application group.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28961",
               "choice": "<p>Nesting network stacks within application stacks simplifies management and debugging, but requires resource-level permissions in the network group&#39;s IAM policy.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28961",
               "choice": "<p>The application stack cannot be deleted before all network stacks are deleted.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28961",
               "choice": "<p>Unless account&nbsp;level permissions are used on the cloud formation: Delete Stack action, network administrators could tear down application stacks.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -1848,25 +1848,25 @@ var FinalTest = {
               "question_id": "28729",
               "choice": "<p>Configure Auto Scaling to launch one Windows Server 2016&nbsp;instance each in us-west-1a and us-west-1b. Copy the web files from an on-premises web server to each Amazon EC2 web server, using Amazon S3 as the repository. Launch a Multi-AZ MySQL Amazon RDS Instance in us-west-1a and us-west-1b. Import the data into Amazon RDS from the latest MySQL backup. Create an elastic load balancer (ELB) to front your web servers. Use Amazon Route53 and create an alias ( Type: A-IP4 Address ) record pointing to the ELB.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28729",
               "choice": "<p>Export web files to an Amazon S3 bucket in us-west-1. Run the website directly out of Amazon S3. Launch a Multi-AZ MySQL Amazon RDS instance in us-west-1a. Import the data into Amazon RDS from the latest MySQL backup. Use Route 53 and create an alias record pointing to the elastic load balancer.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28729",
               "choice": "<p>Use AWS VM Import/Export to create an Amazon EC2 AMI of the webserver. Configure Auto Scaling to launch one web server in us-west-1a and one in us-west-1b. Create an Elastic Load Balancer to distribute the traffic. Launch a Multi-AZ MySQL Amazon RDS instance in us-west-1. Import the data Into Amazon RDS from the latest MySQL backup. Use Amazon Route 53 and create an Alias record pointing to the Elastic Load Balancer.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28729",
               "choice": "<p>Use AWS VM Import/Export to create an Amazon EC2 AMI of the webserver. Configure Auto Scaling to launch one webserver in us-west-1a and one in us-west-1b. Launch a Multi-AZ MySQL Amazon RDS instance in us-west-1. Import the data into Amazon RDS from the latest MySQL backup. Use Amazon Route 53 to create a hosted zone and point an A record to the EC2 IP addresses.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -2525,25 +2525,25 @@ var FinalTest = {
               "question_id": "28698",
               "choice": "<p>Backup RDS using automated daily DB backups. Backup the EC2 instances using AMIs and supplement with file-level backup to S3 using traditional enterprise backup software to provide file-level restore.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28698",
               "choice": "<p>Backup RDS using a Multi-AZ Deployment. Backup the EC2 instances using AMIs and supplement by copying file system data to S3 to provide file-level restore.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28698",
               "choice": "<p>Backup RDS using automated daily DB backups. Backup the EC2 instances using EBS snapshots and supplement with file-level backups to Amazon Glacier using traditional enterprise backup software to provide file-level restore.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28698",
               "choice": "<p>Backup the EC2 instances using AMIs and supplement with EBS snapshots for individual volume restore.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -3402,31 +3402,31 @@ var FinalTest = {
               "question_id": "28384",
               "choice": "<p>Store the data in the DynamoDB table with a Time to Live (TTL) and the data will be deleted automatically.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28384",
               "choice": "<p>Have the mobile app access Amazon DynamoDB directly instead of JSON files stored on Amazon S3.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28384",
               "choice": "<p>Introduce an Amazon SQS queue to buffer writes to the Amazon DynamoDB table and reduce provisioned write throughput.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28384",
               "choice": "<p>Introduce Amazon Elasticache to cache reads from the Amazon DynamoDB table and reduce provisioned read throughput.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28384",
               "choice": "<p>Write data directly into an Amazon Redshift cluster replacing both Amazon DynamoDB and Amazon S3.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }
@@ -3455,25 +3455,25 @@ var FinalTest = {
               "question_id": "28410",
               "choice": "<p>Lower the scale-up trigger of your Auto Scaling group to 30%, so it scales more aggressively.</p>",
               "feedback": "",
-              "correct": 1
+              "correct": true
             },
             {
               "question_id": "28410",
               "choice": "<p>Add an Amazon ElastiCache caching layer to your application for storing sessions and frequent DB queries.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28410",
               "choice": "<p>Configure Amazon CloudFront dynamic content support to enable caching of re-usable content from your site.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             },
             {
               "question_id": "28410",
               "choice": "<p>Configure read replicas for RDS Database Instance.</p>",
               "feedback": "",
-              "correct": 0
+              "correct": false
             }
           ]
         }

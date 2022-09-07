@@ -201,25 +201,25 @@ var DiagnosticTest = {
                 "question_id": "28305",
                 "choice": "<p>Deploy a Windows Bastion host on the corporate network that has RDP access to all instances in the VPC.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28305",
                 "choice": "<p>Deploy a Windows Bastion host with an Elastic IP address in the public subnet and allow SSH access to the bastion from anywhere.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28305",
                 "choice": "<p>Deploy a Windows Bastion host with an Elastic IP address in the private subnet, and restrict RDP access to the bastion from only the corporate public IP addresses.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28305",
                 "choice": "<p>Deploy a Windows Bastion host with an elastic IP address in the public subnet, and allow RDP access to the bastion from only the corporate public IP addresses.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               }
             ]
           }
@@ -381,25 +381,25 @@ var DiagnosticTest = {
                 "question_id": "52239",
                 "choice": "<p>They can send through AWS Direct Connect and store the data in Amazon S3.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "52239",
                 "choice": "<p>They can store the data in Amazon S3 and send it through Snowball.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "52239",
                 "choice": "<p>They can send through S3 Transfer acceleration and store the data in Amazon S3.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "52239",
                 "choice": "<p>They can store in Amazon Glacier and send through S3 Transfer acceleration.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -610,25 +610,25 @@ var DiagnosticTest = {
                 "question_id": "28313",
                 "choice": "<p>Set up AWS Transit Gateway between the company&#39;s VPC and each of the clients&#39; VPCs.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "28313",
                 "choice": "<p>Set up VPC peering between your company&#39;s VPC and each of the clients&#39; VPCs, but block the IPs from CIDR of the clients&#39; VPCs to deny access between each other.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28313",
                 "choice": "<p>Set up VPC peering between your company&#39;s VPC and each of the clients&#39; VPC. Each client should have VPC peering set up between each other to speed up access time.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28313",
                 "choice": "<p>Set up all the VPCs with the same CIDR but have your company&#39;s VPC as a centralized VPC.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -1017,25 +1017,25 @@ var DiagnosticTest = {
                 "question_id": "52243",
                 "choice": "<p>Use a Kinesis agent to collect the clickstream data and send data to a Kinesis data stream. Store in Amazon S3 bucket for further analysis.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "52243",
                 "choice": "<p>Use Kinesis agent to collect the clickstream data in Kinesis data stream and store it in DynamoDB for further analysis.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "52243",
                 "choice": "<p>Use the IoT Core to collect the clickstream data in the Kinesis data stream and store the logs in Dynamo DB.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "52243",
                 "choice": "<p>Use the Kinesis agent to collect the clickstream data in the Kinesis data stream and store it in Amazon Glacier.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -1365,25 +1365,25 @@ var DiagnosticTest = {
                 "question_id": "28329",
                 "choice": "<p>Provide Elastic Network Interfaces to communicate between the subnets.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28329",
                 "choice": "<p>Rely on a Transit Gateway, enable multicast, and create a multicast domain associated with the relevant subnets.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "28329",
                 "choice": "<p>Create all the subnets in a single VPC&nbsp;</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "28329",
                 "choice": "<p>Create all the subnets on a different VPC and use VPC peering between them.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
@@ -2473,25 +2473,25 @@ var DiagnosticTest = {
                 "question_id": "52248",
                 "choice": "<p>Directly configure Amazon Redshift as the destination of the Kinesis Data Firehose Delivery Stream.</p>",
                 "feedback": "",
-                "correct": 1
+                "correct": true
               },
               {
                 "question_id": "52248",
                 "choice": "<p>Use Amazon S3 to store raw data and send the data to Amazon Redshift using Load Command.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "52248",
                 "choice": "<p>Directly send the data to Amazon Redshift using an SQS queue.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               },
               {
                 "question_id": "52248",
                 "choice": "<p>Directly send the data to Amazon Redshift using a custom Lambda fuction.</p>",
                 "feedback": "",
-                "correct": 0
+                "correct": false
               }
             ]
           }
