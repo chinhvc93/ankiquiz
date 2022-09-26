@@ -93,4 +93,12 @@ var listExam = [
     group: "ExamTopic SAP C01",
     data: ExamTopic_401_430.data,
   },
+
+  //GROUP 3
+  {
+    id: "FreeCam_v20220826q100",
+    name: "FreeCam_v20220826q100",
+    group: "FreeCam SAP C01",
+    data: FreeCam_v20220826q100.data,
+  },
 ];
