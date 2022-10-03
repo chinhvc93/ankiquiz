@@ -181,3 +181,14 @@ $("#starBlock").on("click", ".starMarkToReview", function () {
     $(`#starBlock .starMarkToReview[data-queno="${queNo}"]`).removeClass("false").addClass("true");
   }
 });
+
+//EXPORT
+$(".btn-exportQuiz").on("click", function () {
+  exam.export();
+});
+
+$("#modals").on("click", "#btnCopyExportContent", function () {
+  console.log("btnCopyExportContent")
+  exam.copyText("exportContent");
+  $("#modals #btnCopyExportContent").text("Copied")
+});

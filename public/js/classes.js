@@ -400,4 +400,31 @@ class Exam {
 
     $("#starBlock").html(starBlock);
   }
+
+  export() {
+    let listQuestion = this.listQuestions;
+    let html = `
+      <div id="exportModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content m-3 p-3">
+            <h5>
+              Content
+              <a id="btnCopyExportContent" style="width: 100px" class="btn btn-warning btn-sm">Copy</a>
+            </h5>
+            <div id="exportContent" style="max-height: 350px; overflow: scroll;">
+              <code><pre>${JSON.stringify(listQuestion, null, 2)}</pre></code>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    $("#modals").html(html);
+    $('#exportModal').modal('show');
+  }
+
+  copyText(eleIndex="#exportContent pre") {
+    let copyText = JSON.stringify(this.listQuestions, null, 2);
+    navigator.clipboard.writeText(copyText);
+  }
 }
