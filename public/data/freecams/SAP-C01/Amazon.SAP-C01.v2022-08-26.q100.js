@@ -3434,12 +3434,12 @@ var FreeCam_v20220826q100 = {
       case_study_id: null,
       lab_id: 0,
       question_text:
-        "<p>a company needs to create a centralized logging architecture for all of its AWS accounts. The architecture should provide near-real-time data analysis for all AWS CloudTrail logs and VPC Flow logs across an AWS accounts. The company plans to use Amazon Elasticsearch Service (Amazon ES) to perform log analyses in me logging account.<br>Which strategy should a solutions architect use to meet These requirements?</p>",
+        "<p>A company needs to create a centralized logging architecture for all of its AWS accounts. The architecture should provide near-real-time data analysis for all AWS CloudTrail logs and VPC Flow logs across an AWS accounts. The company plans to use Amazon Elasticsearch Service (Amazon ES) to perform log analyses in me logging account.<br>Which strategy should a solutions architect use to meet These requirements?</p>",
       mark: 1,
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: B</p>",
+      general_feedback: "<p>Correct Answer: D</p> https://www.examtopics.com/discussions/amazon/view/35842-exam-aws-certified-solutions-architect-professional-topic-1/ <br> https://aws.amazon.com/vi/solutions/implementations/centralized-logging/",
       is_active: true,
       answer_list: [
         {
@@ -3455,7 +3455,7 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Configure CloudTrail and VPC Flow Logs m each AWS account to send data to a centralized Amazon S3 Ducket in the fogging account. Create an AWS Lambda function to load data from the S3 bucket to Amazon ES m the togging account</p>",
-              correct: true,
+              correct: false,
               feedback: "",
             },
             {
@@ -3467,7 +3467,7 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Configure CloudTrail and VPC Flow Logs to send data to a fog group m Amazon CloudWatch Logs n each AWS account Configure a CloudWatch subscription filter m each AWS account to send data to Amazon Kinesis Data Firehose In the fogging account Load data from Kinesis Data Firehose Into Amazon ES in the logging account</p>",
-              correct: false,
+              correct: true,
               feedback: "",
             },
           ],
@@ -3487,7 +3487,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: C</p>",
+      general_feedback: "<p>Correct Answer: A</p> <p>How do I use datasync to migrate data to AWS? Configure DataSync to make an initial copy of your entire dataset, and schedule subsequent incremental transfers of changing data until the final cut-over from on-premises to AWS</p><p>https://www.examtopics.com/discussions/amazon/view/74180-exam-aws-certified-solutions-architect-professional-topic-1/</p>",
       is_active: true,
       answer_list: [
         {
@@ -3497,7 +3497,7 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Deploy an AWS DataSync agent to an on-premises server that has access to the NFS file system Send data over the Direct Connect connection to an AWS PrivateLink interface VPC endpoint for Amazon EFS by using a private VIF Configure a DataSync scheduled task to send the images to the EFS file system every 24 hours.</p>",
-              correct: false,
+              correct: true,
               feedback: "",
             },
             {
@@ -3509,7 +3509,7 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Configure a periodic process to run the aws s3 sync command from the on-premises file system to Amazon S3 Configure an AWS Lambda function to process event notifications from Amazon S3 and copy the images from Amazon S3 to the EFS file system</p>",
-              correct: true,
+              correct: false,
               feedback: "",
             },
             {
@@ -3530,12 +3530,12 @@ var FreeCam_v20220826q100 = {
       case_study_id: null,
       lab_id: 0,
       question_text:
-        '<p>A solutions architect is importing a VM from an on-premises environment by using the Amazon EC2 VM Import feature of AWS Import/Export The solutions architect has created an AMI and has provisioned an Amazon EC2 instance that is based on that AMI The EC2 instance runs inside a public subnet in a VPC and has a public IP address assigned<br>The EC2 instance does not appear as a managed instance in the AWS Systems Manager console<br>Which combination of steps should the solutions architect take to troubleshoot this issue"? (Select TWO )</p>',
+        '<p>A solutions architect is importing a VM from an on-premises environment by using the Amazon EC2 VM Import feature of AWS Import/Export The solutions architect has created an AMI and has provisioned an Amazon EC2 instance that is based on that AMI The EC2 instance runs inside a public subnet in a VPC and has a public IP address assigned<br>The EC2 instance does not appear as a managed instance in the AWS Systems Manager console<br>Which combination of steps should the solutions architect take to troubleshoot this issue? (Select TWO )</p>',
       mark: 1,
       is_partially_correct: true,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: B,C,E</p>",
+      general_feedback: "<p>Correct Answer: C,E</p><p>https://www.examtopics.com/discussions/amazon/view/74169-exam-aws-certified-solutions-architect-professional-topic-1/</p>",
       is_active: true,
       answer_list: [
         {
@@ -3551,7 +3551,7 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Verify that the AWS Application Discovery Agent is configured</p>",
-              correct: true,
+              correct: false,
               feedback: "",
             },
             {
@@ -3589,7 +3589,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: D</p>",
+      general_feedback: "<p>Correct Answer: D</p><p>https://www.examtopics.com/discussions/amazon/view/69343-exam-aws-certified-solutions-architect-professional-topic-1/</p><p>https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways-intro.html</p>",
       is_active: true,
       answer_list: [
         {
@@ -3637,7 +3637,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: C</p>",
+      general_feedback: "<p>Correct Answer: C</p><p>Parameter store can store DB credentials as secure string but CANNOT rotate secrets. And, Cannot enable encryption on existing MySQL RDS instance, must create a new encrypted one from unencrypted snapshot.</p><p>https://www.examtopics.com/discussions/amazon/view/51254-exam-aws-certified-solutions-architect-professional-topic-1/</p>",
       is_active: true,
       answer_list: [
         {
@@ -3685,7 +3685,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: A</p>",
+      general_feedback: "<p>Correct Answer: B</p><p>B. DynamoDB with TTL, cheaper for sustained throughput of small items + suited for fast retrievals. S3 cheaper for storage only, much higher costs with writes. RDS not designed for this use case.</p><p>https://www.examtopics.com/discussions/amazon/view/28419-exam-aws-certified-solutions-architect-professional-topic-1/</p>",
       is_active: true,
       answer_list: [
         {
@@ -3695,13 +3695,13 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Design the application to batch incoming records before writing them to an Amazon S3 bucket. Update the metadata for the object to contain the list of records in the batch and use the Amazon S3 metadata search feature to retrieve the data. Configure a lifecycle policy to delete the data after 120 days.</p>",
-              correct: true,
+              correct: false,
               feedback: "",
             },
             {
               choice:
                 "<p> Design the application to store each incoming record in an Amazon DynamoDB table properly configured for the scale. Configure the DynamoOB Time to Live (TTL) feature to delete records older than 120 days.</p>",
-              correct: false,
+              correct: true,
               feedback: "",
             },
             {
@@ -3733,7 +3733,8 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: D</p>",
+      general_feedback: `<p>Correct Answer: D</p><p>Existing configuration is workings with Host Header forwarding - means both CloudFront and ALB are configured with same SSL certificates (same host name definition in SSL cert).
+      If you remove host header, CloudFront will add Custom Origin host (hostname defined in ALB) to the host header (host potion of URL). When this request reaches ALB, the request will be failed at ALB as SSL hostname defined in ALB SSL certificate will not match with host portion of URL hence Host Header is required when we have same SSL certificate deployed on CloudFront and ALB. This works if ALB has its own SSL certificate matching its own host name definition which means CloudFront, and ALB have different SSL certificates.</p><p>https://www.examtopics.com/discussions/amazon/view/5106-exam-aws-certified-solutions-architect-professional-topic-1/</p>`,
       is_active: true,
       answer_list: [
         {
@@ -3742,7 +3743,7 @@ var FreeCam_v20220826q100 = {
           answers: [
             {
               choice:
-                "<p> Create two cache behaviors for static and dynamic content Remove the user-Agent and Host HTTP headers from the allow list headers section on both of the cache behaviors Remove the session cookie from the allow list cookies section and the Authorization HTTP header from the allow list headers section for cache behavior configured for static content</p>",
+                "<p> Create two cache behaviors for static and dynamic content. Remove the User-Agent and Host HTTP headers from the whitelist headers section on both of the cache behaviors. Remove the session cookie from the whitelist cookies section and the Authorization HTTP header from the whitelist headers section for cache behavior configured for static content.</p>",
               correct: false,
               feedback: "",
             },
@@ -3760,7 +3761,7 @@ var FreeCam_v20220826q100 = {
             },
             {
               choice:
-                "<p> Create two cache behaviours for static and dynamic content Remove the User-Agent HTTP header from the allow list headers section on both of the cache behaviours</p>",
+                "<p> Create two cache behaviors for static and dynamic content. Remove the User-Agent HTTP header from the whitelist headers section on both of the cache behaviors. Remove the session cookie from the whitelist cookies section and the Authorization HTTP header from the whitelist headers section for cache behavior configured for static content.</p>",
               correct: true,
               feedback: "",
             },
@@ -3781,7 +3782,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: C</p>",
+      general_feedback: "<p>Correct Answer: C</p><p>https://www.examtopics.com/discussions/amazon/view/59933-exam-aws-certified-solutions-architect-professional-topic-1/</p>",
       is_active: true,
       answer_list: [
         {
@@ -3802,7 +3803,7 @@ var FreeCam_v20220826q100 = {
             },
             {
               choice:
-                "<p> Use AWS DMS to run the conversion report for Oracle to Aurora MySQL. Remediate any issues Then use AWS DMS to migrate the data</p>",
+                "<p> Use AWS DMS to run the conversion report for Oracle to Aurora MySQL. Remediate any issues. Then use AWS DMS to migrate the data</p>",
               correct: true,
               feedback: "",
             },
