@@ -3986,7 +3986,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: B</p>",
+      general_feedback: "<p>Correct Answer: B</p><p>B is good for simulation part which can be interrupted and restarted + data retrieve within 5 hours -> best cost-effective</p><p>https://www.examtopics.com/discussions/amazon/view/68849-exam-aws-certified-solutions-architect-professional-topic-1/</p>",
       is_active: true,
       answer_list: [
         {
@@ -4034,7 +4034,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: true,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: A,B,F</p>",
+      general_feedback: "<p>Correct Answer: A,B,F</p><p>https://www.examtopics.com/discussions/amazon/view/59937-exam-aws-certified-solutions-architect-professional-topic-1/</p>",
       is_active: true,
       answer_list: [
         {
@@ -4094,7 +4094,13 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: true,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: A,E</p>",
+      general_feedback: `<p>Correct Answer: A,E</p><p>https://www.examtopics.com/discussions/amazon/view/5011-exam-aws-certified-solutions-architect-professional-topic-1/</p>
+          A: the question does not say anything about keeping the same DB architect! Dynamo is so scalable, for indefinitely solution.<br>
+          B: 6TB will not resolve the issue permanently.<br>
+          C: does not make sense.<br>
+          D: the issue in the question is writing issue. So why we need read replica!<br>
+          E: Kinesis is always best for IoT and load.<br>
+      `,
       is_active: true,
       answer_list: [
         {
@@ -4148,7 +4154,14 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: true,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: B,C</p>",
+      general_feedback: `<p>Correct Answer: B,C</p>
+      <p>https://www.examtopics.com/discussions/amazon/view/27952-exam-aws-certified-solutions-architect-professional-topic-1/</p>
+      AWS Org operating in all features mode, to be able to use SCP with deny list (blacklist).<br>
+      https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp-strategies.html <br>
+      Use AWS Organization together with SCP <br>
+      SCPs are available only in an organization that has all features enabled.<br>
+      An SCP restricts permissions for IAM users and roles in member accounts <br>
+      `,
       is_active: true,
       answer_list: [
         {
@@ -4202,7 +4215,14 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: B</p>",
+      general_feedback: `
+      <p>Correct Answer: B</p>
+      <p>https://www.examtopics.com/discussions/amazon/view/27789-exam-aws-certified-solutions-architect-professional-topic-1/</p>
+      <p>
+      A is correct, Before CloudFront serves content from the cache it will trigger any Lambda function associated with the Viewer Request, in which we can normalize parameters.<br>
+      B is incorrect, this will ignore any query parameters and will cache all requests which will cause CloudFront to return incorrect cached items to users.
+      </p>
+      `,
       is_active: true,
       answer_list: [
         {
@@ -4212,13 +4232,13 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Deploy a Lambda@Edge function to sort parameters by name and force them to be lowercase. Select the CloudFront viewer request trigger to invoke the function.</p>",
-              correct: false,
+              correct: true,
               feedback: "",
             },
             {
               choice:
                 "<p> Deploy a reverse proxy after the load balancer to post-process the emitted URLs in the application to force the URL strings to be lowercase.</p>",
-              correct: true,
+              correct: false,
               feedback: "",
             },
             {
@@ -4250,7 +4270,15 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: B</p>",
+      general_feedback: `<p>Correct Answer: B</p>
+      <p>https://www.examtopics.com/discussions/amazon/view/5179-exam-aws-certified-solutions-architect-professional-topic-1/</p>
+      <p>
+      B: The runbook is having the "Website, and content management software on the servers". That means, the installation and configuration is required in the CloudFormation.
+      A: The runbook is still considered manual configuration. Only B is fully automated.
+      C: This cannot be easily re-used for future.
+      D: This is not automated.
+      </p>
+      `,
       is_active: true,
       answer_list: [
         {
@@ -4298,7 +4326,10 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: C</p>",
+      general_feedback: `<p>Xem lại đáp án. Correct Answer: A (57%), C (43%)</p>
+      <p>https://www.examtopics.com/discussions/amazon/view/47371-exam-aws-certified-solutions-architect-professional-topic-1/</p>
+      
+      `,
       is_active: true,
       answer_list: [
         {
@@ -4346,7 +4377,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: A</p>",
+      general_feedback: "<p>Correct Answer: A</p><p>https://www.examtopics.com/discussions/amazon/view/74113-exam-aws-certified-solutions-architect-professional-topic-1/</p><p>It should be A. S3 Glacier Deep Archive bulk retrieval time is max 48 hours.</p>",
       is_active: true,
       answer_list: [
         {
@@ -4394,7 +4425,9 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: B</p>",
+      general_feedback: `<p>Correct Answer: D</p><p>https://www.examtopics.com/discussions/amazon/view/28051-exam-aws-certified-solutions-architect-professional-topic-1/</p>
+      Amazon Macie is for S3 Service, not for CodeCommit.
+      `,
       is_active: true,
       answer_list: [
         {
@@ -4403,26 +4436,26 @@ var FreeCam_v20220826q100 = {
           answers: [
             {
               choice:
-                "<p> Use a scheduled AWS Lambda function to download and scan the application code from CodeCommit If credentials are found, generate new credentials and store them in AWS KMS</p>",
+                "<p> Run a script nightly using AWS Systems Manager Run Command to search for credentials on the development instances. If found, use AWS Secrets Manager to rotate the credentials.</p>",
               correct: false,
               feedback: "",
             },
             {
               choice:
-                "<p> Run a script nightly using AWS Systems Manager Run Command to search for credentials on the development instances If found use AWS Secrets Manager to rotate the credentials.</p>",
+                "<p>  Use a scheduled AWS Lambda function to download and scan the application code from CodeCommit. If credentials are found, generate new credentials and store them in AWS KMS.</p>",
+              correct: false,
+              feedback: "",
+            },
+            {
+              choice:
+                "<p> Configure Amazon Macie to scan for credentials in CodeCommit repositories. If credentials are found, trigger an AWS Lambda function to disable the credentials and notify the user.</p>",
+              correct: false,
+              feedback: "",
+            },
+            {
+              choice:
+                "<p> Configure a CodeCommit trigger to invoke an AWS Lambda function to scan new code submissions for credentials. If credentials are found, disable them in AWS IAM and notify the user.</p>",
               correct: true,
-              feedback: "",
-            },
-            {
-              choice:
-                "<p> Configure a CodeCommit trigger to invoke an AWS Lambda function to scan new code submissions for credentials If credentials are found, disable them in AWS 1AM and notify the user.</p>",
-              correct: false,
-              feedback: "",
-            },
-            {
-              choice:
-                "<p> Configure Amazon Macie to scan for credentials in CodeCommit repositories If credentials are found, trigger an AWS Lambda function to disable the credentials and notify the user</p>",
-              correct: false,
               feedback: "",
             },
           ],
@@ -4442,7 +4475,14 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: D</p>",
+      general_feedback: `<p>Correct Answer: D</p>
+      <p>https://www.examtopics.com/discussions/amazon/view/59998-exam-aws-certified-solutions-architect-professional-topic-1/</p>
+      <p>D <br>
+      - Export an OVF Template<br>
+      - Create / use an Amazon S3 bucket for storing the exported images. The bucket must be in the Region where you want to import your VMs.<br>
+      - Create an IAM role named vmimport.<br>
+      - You'll use AWS CLI to run the import commands.</p>
+      `,
       is_active: true,
       answer_list: [
         {
