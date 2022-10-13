@@ -4722,7 +4722,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: true,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: C,D,F</p>",
+      general_feedback: "<p>Correct Answer: A,C,F</p><p>https://www.examtopics.com/discussions/amazon/view/80929-exam-aws-certified-solutions-architect-professional-topic-1/</p>",
       is_active: true,
       answer_list: [
         {
@@ -4732,7 +4732,7 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Replatform the database to Amazon Aurora MySQL Serverless.</p>",
-              correct: false,
+              correct: true,
               feedback: "",
             },
             {
@@ -4750,7 +4750,7 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Create an API layer with Amazon API Gateway. Rehost the microservices on Amazon Elastic Container Service (Amazon ECS) containers.</p>",
-              correct: true,
+              correct: false,
               feedback: "",
             },
             {
@@ -4878,7 +4878,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: B</p>",
+      general_feedback: "<p>Correct Answer: B</p><p>Apache Kafka: nền tảng stream dữ liệu</p><p>https://www.examtopics.com/discussions/amazon/view/46693-exam-aws-certified-solutions-architect-professional-topic-1/</p>",
       is_active: true,
       answer_list: [
         {
@@ -4926,7 +4926,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: true,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: B,C</p>",
+      general_feedback: "<p>Correct Answer: A,C,F</p><p>Câu hỏi khó, xem thảo luận ở link</p><p>https://www.examtopics.com/discussions/amazon/view/74154-exam-aws-certified-solutions-architect-professional-topic-1/</p>",
       is_active: true,
       answer_list: [
         {
@@ -4935,26 +4935,38 @@ var FreeCam_v20220826q100 = {
           answers: [
             {
               choice:
-                "<p> Run the web service on an ECS cluster that has a Fargate launch type Use AWS CodePipeline and AWS CodeDeploy to perform a blue/green deployment with validation testing to update the ECS service.</p>",
-              correct: false,
-              feedback: "",
-            },
-            {
-              choice:
-                "<p> Configure an Amazon Simple Queue Service (Amazon SQS) queue as an event source to receive the POST requests from the web service Configure an AWS Lambda function to poll the queue Write the data to the database.</p>",
+                "<p> Run the web service on an ECS cluster that has a Fargate launch type. Use AWS CodePipeline and AWS CodeDeploy to perform a blue/green deployment with validation testing to update the ECS service.</p>",
               correct: true,
               feedback: "",
             },
             {
               choice:
-                "<p> Run the web service on an ECS cluster that has a Fargate launch type Use AWS CodePipeline and AWS CodeDeploy to perform a canary deployment to update the ECS service.</p>",
+                "<p> Migrate the MySQL database to run on an Amazon RDS for MySQL Multi-AZ DB instance that uses Provisioned IOPS SSD (io2) storage.</p>",
+              correct: false,
+              feedback: "",
+            },
+            {
+              choice:
+                "<p> Configure an Amazon Simple Queue Service (Amazon SQS) queue as an event source to receive the POST requests from the web service. Configure an AWS Lambda function to poll the queue. Write the data to the database.</p>",
               correct: true,
               feedback: "",
             },
             {
               choice:
-                "<p> Migrate the MySQL database to run on an Amazon RDS for MySQL Multi-AZ DB instance that uses Provisioned IOPS SSD (io2) storage</p>",
+                "<p> Run the web service on an ECS cluster that has a Fargate launch type. Use AWS CodePipeline and AWS CodeDeploy to perform a canary deployment to update the ECS service.</p>",
               correct: false,
+              feedback: "",
+            },
+            {
+              choice:
+                "<p> Configure an Amazon Simple Queue Service (Amazon SQS) queue. Install the SQS agent on the containers that run in the ECS cluster to poll the queue. Write the data to the database.</p>",
+              correct: false,
+              feedback: "",
+            },
+            {
+              choice:
+                "<p> Migrate the MySQL database to run on an Amazon RDS for MySQL Multi-AZ DB instance that uses General Purpose SSD (gp3) storage.</p>",
+              correct: true,
               feedback: "",
             },
           ],
@@ -4974,7 +4986,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: true,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: B,C</p>",
+      general_feedback: "<p>Correct Answer: B,C</p><p>suspicious requests: request đáng ngờ</p>",
       is_active: true,
       answer_list: [
         {
