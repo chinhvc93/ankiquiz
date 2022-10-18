@@ -1754,12 +1754,12 @@ var FreeCam_v20220826q100 = {
       case_study_id: null,
       lab_id: 0,
       question_text:
-        "<p>A startup company hosts a fleet of Amazon EC2 instances in private subnets using the latest Amazon Linux 2 AMI. The company's engineers rely heavily on SSH access to the instances for troubleshooting.<br>The company's existing architecture includes the following:<br>* A VPC with private and public subnets, and a NAT gateway<br>* Site-to-Site VPN for connectivity with the on-premises environment<br>* EC2 security groups with direct SSH access from the on-premises environment<br>The company needs to increase security controls around SSH access and provide auditing of commands executed by the engineers.<br>Which slrategy should a solutions architect use?</p>",
+        "<p>A startup company hosts a fleet of Amazon EC2 instances in private subnets using the latest Amazon Linux 2 AMI. The company's engineers rely heavily on SSH access to the instances for troubleshooting.<br>The company's existing architecture includes the following:<br>* A VPC with private and public subnets, and a NAT gateway<br>* Site-to-Site VPN for connectivity with the on-premises environment<br>* EC2 security groups with direct SSH access from the on-premises environment<br>The company needs to increase security controls around SSH access and provide auditing of commands executed by the engineers.<br>Which slrategy should a solutions architect use? (Select TWO)</p>",
       mark: 1,
-      is_partially_correct: false,
+      is_partially_correct: true,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: E</p>",
+      general_feedback: "<p>Correct Answer: B,D</p>",
       is_active: true,
       answer_list: [
         {
@@ -1775,7 +1775,7 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Create an 1AM role with the Ama2onSSMManagedlnstanceCore managed policy attached. Attach the 1AM role to all the EC2 instances. Remove all security group rules attached to the EC2</p>",
-              correct: false,
+              correct: true,
               feedback: "",
             },
             {
@@ -1787,13 +1787,13 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Install and configure EC2 instance Connect on the fleet of EC2 instances. Remove all security group rules attached to EC2 instances that allow inbound TCP on port 22. Advise the engineers to remotely access the instances by using the EC2 Instance Connect CLI.</p>",
-              correct: false,
+              correct: true,
               feedback: "",
             },
             {
               choice:
                 "<p> Update the EC2 security groups to only allow inbound TCP on port 22 to the IP addresses of the engineer's devices. Enable AWS Config for EC2 security group resource changes. Enable AWS Firewall Manager and apply a security group policy that automatically remediates changes to rules.</p>",
-              correct: true,
+              correct: false,
               feedback: "",
             },
           ],
@@ -1813,7 +1813,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: C</p>",
+      general_feedback: "<p>Correct Answer: A</p> Kiểu nhanh và dễ mở rộng. CloudFormation setting lâu và phức tạp hơn.",
       is_active: true,
       answer_list: [
         {
@@ -1823,7 +1823,7 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Set up a transit gateway in each Region Establish a redundant AWS Site-to-Site VPN connection between the on-premises firewalls and the transit gateway in the Region that is closest to the on-premises network Peer all the transit gateways with each other Connect all the VPCs to the transit gateway in their Region</p>",
-              correct: false,
+              correct: true,
               feedback: "",
             },
             {
@@ -1835,7 +1835,7 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Create an AWS CloudFormation template for a redundant AWS Site-to-Site VPN tunnel to the on-premises network Deploy the CloudFormation template for each VPC Set up VPC peering between all the VPCs for VPC-to-VPC communication</p>",
-              correct: true,
+              correct: false,
               feedback: "",
             },
             {
@@ -1913,7 +1913,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: B</p>",
+      general_feedback: "<p>Correct Answer: B</p><p>Nếu muốn đồng bộ giờ với on-premises thì sử dụng Amazon Time Sync Service at 169.254.169.123.</p>",
       is_active: true,
       answer_list: [
         {
@@ -1955,7 +1955,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: C</p>",
+      general_feedback: "<p>Correct Answer: B</p><p>Về mobile game và UDP => muốn cân bằng tải => NLB + CloudFront</p>",
       is_active: true,
       answer_list: [
         {
@@ -1971,13 +1971,13 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Provision game servers in each AWS Region Provision a Network Load Balancer (NLB) in front of the game servers Create an Amazon CloudFront distribution that has no geographical restrictions Set the NLB as the origin Perform DNS lookups for the cloudfront net domain name. Use the resulting IP addresses in the game's client application</p>",
-              correct: false,
+              correct: true,
               feedback: "",
             },
             {
               choice:
                 "<p> Provision an Application Load Balancer (ALB) in front of the game servers Create an Amazon CloudFront distribution that has no geographical restrictions Set the ALB as the origin Perform DNS lookups for the cloudfront net domain name Use the resulting IP addresses in the game's client application.</p>",
-              correct: true,
+              correct: false,
               feedback: "",
             },
             {
@@ -4377,7 +4377,7 @@ var FreeCam_v20220826q100 = {
       is_partially_correct: false,
       question_type: "1",
       difficulty_level: "0",
-      general_feedback: "<p>Correct Answer: A</p><p>https://www.examtopics.com/discussions/amazon/view/74113-exam-aws-certified-solutions-architect-professional-topic-1/</p><p>It should be A. S3 Glacier Deep Archive bulk retrieval time is max 48 hours.</p>",
+      general_feedback: "<p>Correct Answer: B</p><p>https://www.examtopics.com/discussions/amazon/view/74113-exam-aws-certified-solutions-architect-professional-topic-1/</p><p>It should be A. S3 Glacier Deep Archive bulk retrieval time is max 48 hours.</p>",
       is_active: true,
       answer_list: [
         {
@@ -4387,13 +4387,13 @@ var FreeCam_v20220826q100 = {
             {
               choice:
                 "<p> Set up an S3 batch operation to copy logs from each EC2 instance to the S3 bucket with S3 Standard storage Use a NAT gateway with the private subnets to connect to Amazon S3 Create S3 Lifecycle policies to move logs that are older than 90 days to S3 Glacier Deep Archive</p>",
-              correct: true,
+              correct: false,
               feedback: "",
             },
             {
               choice:
                 "<p> Set up an S3 sync job to copy logs from each EC2 instance to the S3 bucket with S3 Standard storage Use a gateway VPC endpoint for Amazon S3 to connect to Amazon S3. Create S3 Lifecycle policies to move logs that are older than 90 days to S3 Glacier Deep Archive</p>",
-              correct: false,
+              correct: true,
               feedback: "",
             },
             {
