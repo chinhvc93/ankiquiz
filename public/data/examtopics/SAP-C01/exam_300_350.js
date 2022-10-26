@@ -2,7 +2,7 @@ var ExamTopic_300_350 = {
     "msg": "Quiz Questions",
     "data": [
       {
-        "question_id": "#301",
+        "question_id": "301",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -17,7 +17,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#301",
+            "question_id": "301",
             "answers": [
               {
                 "choice": "<p>The organization should write a boot strapping script which will get the MAC address from the instance metadata and use that script to register with the application.</p>",
@@ -45,7 +45,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#302",
+        "question_id": "302",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -60,7 +60,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#302",
+            "question_id": "302",
             "answers": [
               {
                 "choice": "<p>Modify the web application to upload the video files directly to Amazon S3. Use Amazon CloudWatch Events to trigger an AWS Lambda function every time a file is uploaded, and have this Lambda function put a message into an Amazon SQS queue. Modify the video processing application to read from SQS queue for new files and use the queue depth metric to scale instances in the video processing Auto Scaling group.</p>",
@@ -88,7 +88,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#303",
+        "question_id": "303",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -103,7 +103,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#303",
+            "question_id": "303",
             "answers": [
               {
                 "choice": "<p>Purchase Reserved instances for baseline capacity requirements and use On-Demand instances for the demand spikes. [1]</p>",
@@ -126,7 +126,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#304",
+        "question_id": "304",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -141,7 +141,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#304",
+            "question_id": "304",
             "answers": [
               {
                 "choice": "<p>Attempts provide robust data management.</p>",
@@ -169,7 +169,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#305",
+        "question_id": "305",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -184,7 +184,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#305",
+            "question_id": "305",
             "answers": [
               {
                 "choice": "<p>All applications on the instance share the same role, but different permissions.</p>",
@@ -212,7 +212,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#306",
+        "question_id": "306",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -227,7 +227,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#306",
+            "question_id": "306",
             "answers": [
               {
                 "choice": "<p>Configure CodePipeline with a deploy stage using AWS CodeDeploy configured for in-place deployment. Monitor the newly deployed code, and, if there are any issues, push another code update.</p>",
@@ -255,7 +255,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#307",
+        "question_id": "307",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -270,7 +270,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#307",
+            "question_id": "307",
             "answers": [
               {
                 "choice": "<p>Deploy the storage gateway to AWS in file gateway mode. Use Amazon EBS volume encryption using an AWS KMS key to encrypt the storage gateway volumes.</p>",
@@ -298,7 +298,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#308",
+        "question_id": "308",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -313,7 +313,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#308",
+            "question_id": "308",
             "answers": [
               {
                 "choice": "<p>Use an SCP in Organizations to implement a deny list of AWS servers. Apply this SCP at the level. For any specific exceptions for an OU, create a new SCP for that OU and add the required AWS services to the allow list.</p>",
@@ -341,7 +341,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#309",
+        "question_id": "309",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -356,7 +356,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#309",
+            "question_id": "309",
             "answers": [
               {
                 "choice": "<p>After 2 minutes</p>",
@@ -384,7 +384,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#310",
+        "question_id": "310",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -399,7 +399,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#310",
+            "question_id": "310",
             "answers": [
               {
                 "choice": "<p>Use a custom-built SAML-compatible solution for authentication and AWS SSO for authorization.</p>",
@@ -432,7 +432,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#311",
+        "question_id": "311",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -447,7 +447,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#311",
+            "question_id": "311",
             "answers": [
               {
                 "choice": "<p>Use an AWS Server Migration Service (AWS SMS) replication job to migrate the database server VM to AWS.</p>",
@@ -480,7 +480,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#312",
+        "question_id": "312",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -495,7 +495,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#312",
+            "question_id": "312",
             "answers": [
               {
                 "choice": "<p>Increase the size of the instances.</p>",
@@ -528,7 +528,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#313",
+        "question_id": "313",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -543,7 +543,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#313",
+            "question_id": "313",
             "answers": [
               {
                 "choice": "<p>Use Cost Explorer to troubleshoot the reason for the additional costs. Set up an AWS Lambda function to monitor the company's AWS bill by each AWS account in an OU. Store the threshold amount set by the Finance team in the AWS Systems Manager Parameter Store. Write the custom rules in the Lambda function to verify any hidden costs for the AWS accounts. Trigger a notification from the Lambda function to an Amazon SNS topic when a budget threshold is breached.</p>",
@@ -571,7 +571,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#314",
+        "question_id": "314",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -586,7 +586,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#314",
+            "question_id": "314",
             "answers": [
               {
                 "choice": "<p>A blue/green deployment</p>",
@@ -614,7 +614,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#315",
+        "question_id": "315",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -629,7 +629,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#315",
+            "question_id": "315",
             "answers": [
               {
                 "choice": "<p>Use CloudFormer to create AWS CloudFormation stacks from the current resources. Deploy that stack by using AWS CloudFormation in the same region. Use Amazon CloudWatch alarms to send notifications about underutilized resources to provide cost-savings suggestions.</p>",
@@ -657,7 +657,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#316",
+        "question_id": "316",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -672,7 +672,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#316",
+            "question_id": "316",
             "answers": [
               {
                 "choice": "<p>Amazon Rekognition to identify who is calling.</p>",
@@ -710,7 +710,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#317",
+        "question_id": "317",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -725,7 +725,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#317",
+            "question_id": "317",
             "answers": [
               {
                 "choice": "<p>Develop a Python script to capture the data from Amazon EC2 in real time and store the data in Amazon S3. Use a copy command to copy data from Amazon S3 to Amazon Redshift. Connect a business intelligence tool running on Amazon EC2 to Amazon Redshift and create the visualizations.</p>",
@@ -753,7 +753,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#318",
+        "question_id": "318",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -768,7 +768,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#318",
+            "question_id": "318",
             "answers": [
               {
                 "choice": "<p>Use AWS Application Discovery Service and deploy the data collection agent to each virtual machine in the data center.</p>",
@@ -796,7 +796,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#319",
+        "question_id": "319",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -811,7 +811,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#319",
+            "question_id": "319",
             "answers": [
               {
                 "choice": "<p>Configure ELB with TCP listeners on TCP/443. And place the Web servers behind it.</p>",
@@ -839,7 +839,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#320",
+        "question_id": "320",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -854,7 +854,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#320",
+            "question_id": "320",
             "answers": [
               {
                 "choice": "<p>An inbound rule for port 80 from source 0.0.0.0/0.</p>",
@@ -887,7 +887,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#321",
+        "question_id": "321",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -902,7 +902,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#321",
+            "question_id": "321",
             "answers": [
               {
                 "choice": "<p>Create a new AWS CloudTrail trail. Use an existing Amazon S3 bucket in the organization's management account to store the logs. Deploy the trail to all AWS Regions. Enable MFA delete and encryption on the S3 bucket.</p>",
@@ -930,7 +930,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#322",
+        "question_id": "322",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -945,7 +945,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#322",
+            "question_id": "322",
             "answers": [
               {
                 "choice": "<p>Place the Tomcat server in an Auto Scaling group with multiple EC2 instances behind an Application Load Balancer.</p>",
@@ -983,7 +983,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#323",
+        "question_id": "323",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -998,7 +998,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#323",
+            "question_id": "323",
             "answers": [
               {
                 "choice": "<p>Upload the certificate on an S3 bucket owned by the security officers and accessible only by EC2 Role of the web servers.</p>",
@@ -1026,7 +1026,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#324",
+        "question_id": "324",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1041,7 +1041,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#324",
+            "question_id": "324",
             "answers": [
               {
                 "choice": "<p>Modify the EMR cluster by turning on automatic scaling of the core nodes and task nodes with a custom policy that is based on cluster utilization. Purchase Reserved Instance capacity to cover the master node.</p>",
@@ -1069,7 +1069,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#325",
+        "question_id": "325",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1084,7 +1084,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#325",
+            "question_id": "325",
             "answers": [
               {
                 "choice": "<p>Order a second Direct Connect connection to a different Direct Connect location. Terminate the second Direct Connect connection at the same Direct Connect gateway.</p>",
@@ -1112,7 +1112,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#326",
+        "question_id": "326",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1127,7 +1127,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#326",
+            "question_id": "326",
             "answers": [
               {
                 "choice": "<p>A web tier deployed across 2 AZs with 3 EC2 (Elastic Compute Cloud) instances in each AZ inside an Auto Scaling Group behind an ELB (elastic load balancer), and an application tier deployed across 2 AZs with 3 EC2 instances in each AZ inside an Auto Scaling Group behind an ELB and one RDS (Relational Database Service) instance deployed with read replicas in the other AZ.</p>",
@@ -1155,7 +1155,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#327",
+        "question_id": "327",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1170,7 +1170,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#327",
+            "question_id": "327",
             "answers": [
               {
                 "choice": "<p>Use Amazon CloudWatch to monitor the Sample Count statistic for each service in the ECS cluster. Set an alarm for when the math expression sample count/ SERVICE_QUOTA(service)*100 is greater than 80. Notify the development team by using Amazon Simple Notification Service (Amazon SNS).</p>",
@@ -1198,7 +1198,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#328",
+        "question_id": "328",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1213,7 +1213,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#328",
+            "question_id": "328",
             "answers": [
               {
                 "choice": "<p>Increase the write capacity units to the DynamoDB table.</p>",
@@ -1246,7 +1246,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#329",
+        "question_id": "329",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1261,7 +1261,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#329",
+            "question_id": "329",
             "answers": [
               {
                 "choice": "<p>Update the ingestion process to use Amazon Kinesis Data Firehose to save data to Amazon S3. Use a fleet of On-Demand EC2 instances that launches each night to perform the batch processing of the S3 data and terminates when the processing completes.</p>",
@@ -1289,7 +1289,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#330",
+        "question_id": "330",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1304,7 +1304,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#330",
+            "question_id": "330",
             "answers": [
               {
                 "choice": "<p>Upload files from the mobile software directly to Amazon S3. Use S3 event notifications to create a message in an Amazon MQ queue.</p>",
@@ -1342,7 +1342,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#331",
+        "question_id": "331",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1357,7 +1357,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#331",
+            "question_id": "331",
             "answers": [
               {
                 "choice": "<p>File a change request to implement Alias Resource support in the application. Use Route 53 Alias Resource Record to distribute load on two application servers in different Azs.</p>",
@@ -1385,7 +1385,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#332",
+        "question_id": "332",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1400,7 +1400,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#332",
+            "question_id": "332",
             "answers": [
               {
                 "choice": "<p>Create a transit gateway in the infrastructure account.</p>",
@@ -1433,7 +1433,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#333",
+        "question_id": "333",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1448,7 +1448,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#333",
+            "question_id": "333",
             "answers": [
               {
                 "choice": "<p>Check that the NACL is attached to the logging service subnet to allow communications to and from the NLB subnets. Check that the NACL is attached to the NLB subnet to allow communications to and from the logging service subnets running on EC2 instances.</p>",
@@ -1481,7 +1481,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#334",
+        "question_id": "334",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1496,7 +1496,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#334",
+            "question_id": "334",
             "answers": [
               {
                 "choice": "<p>Private address IP 10.201.31.6 is currently assigned to another interface</p>",
@@ -1524,7 +1524,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#335",
+        "question_id": "335",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1539,7 +1539,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#335",
+            "question_id": "335",
             "answers": [
               {
                 "choice": "<p>It is not possible to implement your own health check system due to compatibility issues.</p>",
@@ -1567,7 +1567,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#336",
+        "question_id": "336",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1582,7 +1582,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#336",
+            "question_id": "336",
             "answers": [
               {
                 "choice": "<p>Bring Your Own License</p>",
@@ -1610,7 +1610,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#337",
+        "question_id": "337",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1625,7 +1625,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#337",
+            "question_id": "337",
             "answers": [
               {
                 "choice": "<p>It is not possible to give permission to multiple IAM users</p>",
@@ -1653,7 +1653,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#338",
+        "question_id": "338",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1668,7 +1668,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#338",
+            "question_id": "338",
             "answers": [
               {
                 "choice": "<p>Create an AWS Lambda function that applies all policy for users who are not authenticated. Create a scheduled event to invoke the Lambda function.</p>",
@@ -1696,7 +1696,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#339",
+        "question_id": "339",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1711,7 +1711,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#339",
+            "question_id": "339",
             "answers": [
               {
                 "choice": "<p>SOC 1/SSAE 16/ISAE 3402 (formerly SAS 70 Type II), SOC 2 and SOC 3</p>",
@@ -1744,7 +1744,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#340",
+        "question_id": "340",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1759,7 +1759,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#340",
+            "question_id": "340",
             "answers": [
               {
                 "choice": "<p>GetSessionName</p>",
@@ -1787,7 +1787,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#341",
+        "question_id": "341",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1802,7 +1802,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#341",
+            "question_id": "341",
             "answers": [
               {
                 "choice": "<p>Create a single VPC with three NAT gateways in a shared services account. Configure each account VPC with a default route through a transit gateway to the NAT gateway in the shared services account VPC.  Remove all NAT gateways from the standard VPC template.</p>",
@@ -1830,7 +1830,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#342",
+        "question_id": "342",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1845,7 +1845,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#342",
+            "question_id": "342",
             "answers": [
               {
                 "choice": "<p>Use the AWS Agentless Discovery Connector for data collection on physical servers and all VMs. Store the collected data in Amazon S3. Query the data with S3 Select. Generate reports by using Kibana hosted on Amazon EC2.</p>",
@@ -1873,7 +1873,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#343",
+        "question_id": "343",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1888,7 +1888,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#343",
+            "question_id": "343",
             "answers": [
               {
                 "choice": "<p>Create an Amazon CloudFront distribution to serve assets from the S3 bucket. Configure S3 Cross-Region Replication. Create a new DynamoDB table in a new Region. Use the new table as a replica target for DynamoDB global tables.</p>",
@@ -1916,7 +1916,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#344",
+        "question_id": "344",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1931,7 +1931,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#344",
+            "question_id": "344",
             "answers": [
               {
                 "choice": "<p>Add additional task nodes, but have the team purchase an all-upfront convertible Reserved Instance for each additional node to offset the costs.</p>",
@@ -1959,7 +1959,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#345",
+        "question_id": "345",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -1974,7 +1974,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#345",
+            "question_id": "345",
             "answers": [
               {
                 "choice": "<p>False, you can specify it in attributes</p>",
@@ -2002,7 +2002,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#346",
+        "question_id": "346",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -2017,7 +2017,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#346",
+            "question_id": "346",
             "answers": [
               {
                 "choice": "<p>Run a website from an Amazon S3 bucket with a separate S3 bucket for images and messaging data. Call AWS Lambda functions from embedded JavaScript to manage the dynamic content, and use Amazon Cognito for user and sharing management.</p>",
@@ -2045,7 +2045,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#347",
+        "question_id": "347",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -2060,7 +2060,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#347",
+            "question_id": "347",
             "answers": [
               {
                 "choice": "<p>Use new Amazon EC2 instances and reinstall all application code.</p>",
@@ -2093,7 +2093,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#348",
+        "question_id": "348",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -2108,7 +2108,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#348",
+            "question_id": "348",
             "answers": [
               {
                 "choice": "<p>Create an AWS account for each business unit. Move each business unit's instances to its own account and set up a federation to allow users to access their business unit's account.</p>",
@@ -2136,7 +2136,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#349",
+        "question_id": "349",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -2151,7 +2151,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#349",
+            "question_id": "349",
             "answers": [
               {
                 "choice": "<p>The organization must create a subnet group with public and private subnets. Both the subnets can be in the same or separate AZ.</p>",
@@ -2179,7 +2179,7 @@ var ExamTopic_300_350 = {
         "topic_name": ""
       },
       {
-        "question_id": "#350",
+        "question_id": "350",
         "topic_id": 1,
         "course_id": 1,
         "case_study_id": null,
@@ -2194,7 +2194,7 @@ var ExamTopic_300_350 = {
         "answer_list": [
           {
             "question_answer_id": 1,
-            "question_id": "#350",
+            "question_id": "350",
             "answers": [
               {
                 "choice": "<p>https://999988887777.aws.amazon.com/ABC/</p>",

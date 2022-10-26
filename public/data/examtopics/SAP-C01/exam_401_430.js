@@ -2,7 +2,7 @@ var ExamTopic_401_430 = {
   "msg": "Quiz Questions",
   "data": [
     {
-      "question_id": "#401",
+      "question_id": "401",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -17,7 +17,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#401",
+          "question_id": "401",
           "answers": [
             {
               "choice": "<p>Set up an Amazon CloudFront distribution. Set the ALB as the origin. Move all customer traffic to the CloudFront distribution endpoint.</p>",
@@ -45,7 +45,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#402",
+      "question_id": "402",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -60,7 +60,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#402",
+          "question_id": "402",
           "answers": [
             {
               "choice": "<p>Setup VPC peering between the VPCs of Admin and HR.</p>",
@@ -88,7 +88,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#403",
+      "question_id": "403",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -103,7 +103,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#403",
+          "question_id": "403",
           "answers": [
             {
               "choice": "<p>Create one transit gateway in eu-west-1. Attach the VPCs in us-east-2 and the VPC in eu-west-1 to the transit gateway. Create the necessary route entries in each VPC so that the traffic is routed through the transit gateway.</p>",
@@ -131,7 +131,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#404",
+      "question_id": "404",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -146,7 +146,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#404",
+          "question_id": "404",
           "answers": [
             {
               "choice": "<p>Implement a strong identity and access management model that includes users, groups, and roles in various AWS accounts. Ensure that centralized AWS CloudTrail logging is enabled to detect anomalies. Build automation with AWS Lambda to tear down unapproved AWS resources for governance.</p>",
@@ -174,7 +174,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#405",
+      "question_id": "405",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -189,7 +189,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#405",
+          "question_id": "405",
           "answers": [
             {
               "choice": "<p>Adapt the deployment scripts to detect and report CloudFormation error conditions when performing deployments. Write test plans for a testing team to execute in a non-production environment before approving the change for production.</p>",
@@ -217,7 +217,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#406",
+      "question_id": "406",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -232,7 +232,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#406",
+          "question_id": "406",
           "answers": [
             {
               "choice": "<p>Create a DynamoDB table for each tenant by using the tenant ID in the table name. Create a service that uses the JWT token to retrieve the appropriate Lambda execution role that is tenant-specific. Attach IAM policies to the execution role to allow access only to the DynamoDB table for the tenant.</p>",
@@ -260,7 +260,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#407",
+      "question_id": "407",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -275,7 +275,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#407",
+          "question_id": "407",
           "answers": [
             {
               "choice": "<p>No, you cannot load all the data from DynamoDB table to a Redshift table as it limited by size constraints.</p>",
@@ -303,7 +303,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#408",
+      "question_id": "408",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -318,7 +318,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#408",
+          "question_id": "408",
           "answers": [
             {
               "choice": "<p>get</p>",
@@ -346,7 +346,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#409",
+      "question_id": "409",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -361,7 +361,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#409",
+          "question_id": "409",
           "answers": [
             {
               "choice": "<p>Run the web service on an ECS cluster that has a Fargate launch type. Use AWS CodePipeline and AWS CodeDeploy to perform a blue/green deployment with validation testing to update the ECS service.</p>",
@@ -399,7 +399,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#410",
+      "question_id": "410",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -414,7 +414,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#410",
+          "question_id": "410",
           "answers": [
             {
               "choice": "<p>Create individual accounts for each business unit and add the account to an OU in AWS Organizations. Modify the OU to ensure that the particular services are blocked. Federate each account with an IdP, and create separate roles for the business units and the Security team.</p>",
@@ -442,7 +442,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#411",
+      "question_id": "411",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -457,7 +457,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#411",
+          "question_id": "411",
           "answers": [
             {
               "choice": "<p>Specify a weight of 100 for the record pointing to the primary Application Load Balancer in us-east-1 and a weight of 60 for the pointing to the primary Application Load Balancer in eu-central-1.</p>",
@@ -490,7 +490,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#412",
+      "question_id": "412",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -505,7 +505,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#412",
+          "question_id": "412",
           "answers": [
             {
               "choice": "<p>Lambda is in a subnet that does not have a NAT gateway attached to it to connect to the SaaS provider.</p>",
@@ -533,7 +533,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#413",
+      "question_id": "413",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -548,7 +548,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#413",
+          "question_id": "413",
           "answers": [
             {
               "choice": "<p>Create a transit VPC across two AZs using a third-party routing appliance. Create a VPN connection to each VPC.  Default route internet traffic to the transit VPC. </p>",
@@ -576,7 +576,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#414",
+      "question_id": "414",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -591,7 +591,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#414",
+          "question_id": "414",
           "answers": [
             {
               "choice": "<p>In the centralized account, create an IAM role that has the Lambda service as a trusted entity. Add an inline policy to assume the roles of the other AWS accounts.</p>",
@@ -624,7 +624,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#415",
+      "question_id": "415",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -639,7 +639,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#415",
+          "question_id": "415",
           "answers": [
             {
               "choice": "<p>Increase the backend processing timeout to 30 seconds to match the visibility timeout.</p>",
@@ -667,7 +667,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#416",
+      "question_id": "416",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -682,7 +682,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#416",
+          "question_id": "416",
           "answers": [
             {
               "choice": "<p>Configure data replication based on RTO.</p>",
@@ -710,7 +710,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#417",
+      "question_id": "417",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -725,7 +725,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#417",
+          "question_id": "417",
           "answers": [
             {
               "choice": "<p>Use Amazon EC2 Image Builder to create AMIs for the legacy servers. Use the AMIs to provision EC2 instances to recreate the applications in the AWS Cloud. Place an Application Load Balancer (ALB) in front of the EC2 instances. Use Amazon Route 53 to point the DNS names of the web forms to the ALB. </p>",
@@ -753,7 +753,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#418",
+      "question_id": "418",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -768,7 +768,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#418",
+          "question_id": "418",
           "answers": [
             {
               "choice": "<p>Yes, you can increase the number of automatic retries to 6.</p>",
@@ -796,7 +796,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#419",
+      "question_id": "419",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -811,7 +811,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#419",
+          "question_id": "419",
           "answers": [
             {
               "choice": "<p>Configure multiple AWS Direct Connect (DX) 10 Gbps dedicated connections from a DX partner for each on-premises location. Create private virtual interfaces on each connection for each AWS account VPC.  Associate the private virtual interface with a virtual private gateway attached to each VPC. </p>",
@@ -839,7 +839,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#420",
+      "question_id": "420",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -854,7 +854,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#420",
+          "question_id": "420",
           "answers": [
             {
               "choice": "<p>Run a physical-to-virtual conversion on the application server. Transfer the server image over the internet, and transfer the static data to Amazon S3.</p>",
@@ -882,7 +882,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#421",
+      "question_id": "421",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -897,7 +897,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#421",
+          "question_id": "421",
           "answers": [
             {
               "choice": "<p>Use AWS Config rules to periodically audit changes to AWS resources and monitor the compliance of the configuration. Develop AWS Config custom rules using AWS Lambda to establish a test-driven development approach, and further automate the evaluation of configuration changes against the required controls.</p>",
@@ -930,7 +930,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#422",
+      "question_id": "422",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -945,7 +945,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#422",
+          "question_id": "422",
           "answers": [
             {
               "choice": "<p>Create Amazon EC2 instances with an Elastic IP address for each instance. Create a Network Load Balancer (NLB) and expose the static TCP port. Register EC2 instances with the NLB.  Create a new name server record set named my.service.com, and assign the Elastic IP addresses of the EC2 instances to the record set. Provide the Elastic IP addresses of the EC2 instances to the other companies to add to their allow lists.</p>",
@@ -973,7 +973,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#423",
+      "question_id": "423",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -988,7 +988,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#423",
+          "question_id": "423",
           "answers": [
             {
               "choice": "<p>Configure CloudTrail and VPC Flow Logs in each AWS account to send data to a centralized Amazon S3 bucket in the logging account. Create and AWS Lambda function to load data from the S3 bucket to Amazon ES in the logging account.</p>",
@@ -1016,7 +1016,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#424",
+      "question_id": "424",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -1031,7 +1031,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#424",
+          "question_id": "424",
           "answers": [
             {
               "choice": "<p>Create a dashboard by using AWS Systems Manager OpsCenter. Configure visualizations for Amazon CloudWatch metrics that are associated with the EC2 instances and their EBS volumes. Review the dashboard periodically, and identify usage patterns. Rightsize the EC2 instances based on the peaks in the metrics.</p>",
@@ -1059,7 +1059,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#425",
+      "question_id": "425",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -1074,7 +1074,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#425",
+          "question_id": "425",
           "answers": [
             {
               "choice": "<p>Use a multi-part upload in Amazon S3 client to parallel-upload the data to the Amazon S3 bucket over the Internet. Use the throttling feature to ensure that the Amazon S3 client does not use more than 30 percent of available Internet capacity.</p>",
@@ -1102,7 +1102,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#426",
+      "question_id": "426",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -1117,7 +1117,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#426",
+          "question_id": "426",
           "answers": [
             {
               "choice": "<p>Implement at least two backend endpoints for the backend REST API, and use Route 53 health checks to monitor the availability of each backend endpoint and perform DNS-level failover.</p>",
@@ -1145,7 +1145,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#427",
+      "question_id": "427",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -1160,7 +1160,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#427",
+          "question_id": "427",
           "answers": [
             {
               "choice": "<p>Create two cache behaviors for static and dynamic content. Remove the User-Agent and Host HTTP headers from the whitelist headers section on both of the cache behaviors. Remove the session cookie from the whitelist cookies section and the Authorization HTTP header from the whitelist headers section for cache behavior configured for static content.</p>",
@@ -1188,7 +1188,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#428",
+      "question_id": "428",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -1203,7 +1203,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#428",
+          "question_id": "428",
           "answers": [
             {
               "choice": "<p>Migrate the database to an Amazon RDS MySQL Multi-AZ DB instance. Deploy the application in an Auto Scaling group on Amazon EC2 instances behind an Application Load Balancer Store sessions in Amazon Neptune.</p>",
@@ -1231,7 +1231,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#429",
+      "question_id": "429",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -1246,7 +1246,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#429",
+          "question_id": "429",
           "answers": [
             {
               "choice": "<p>It will deny access</p>",
@@ -1274,7 +1274,7 @@ var ExamTopic_401_430 = {
       "topic_name": ""
     },
     {
-      "question_id": "#430",
+      "question_id": "430",
       "topic_id": 1,
       "course_id": 1,
       "case_study_id": null,
@@ -1289,7 +1289,7 @@ var ExamTopic_401_430 = {
       "answer_list": [
         {
           "question_answer_id": 1,
-          "question_id": "#430",
+          "question_id": "430",
           "answers": [
             {
               "choice": "<p>Enable EC2 detailed monitoring, and include network logs. Send all logs through Amazon Kinesis Data Firehose to an Amazon Elasticsearch Service (Amazon ES) cluster that the security team uses for analysis.</p>",

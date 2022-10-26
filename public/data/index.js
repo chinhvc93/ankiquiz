@@ -93,6 +93,24 @@ var listExam = [
     group: "ExamTopic SAP C01",
     data: ExamTopic_401_430.data,
   },
+  {
+    id: "ExamTopic_700_799",
+    name: "ExamTopic_700_799",
+    group: "ExamTopic SAP C01",
+    data: ExamTopic_700_799.data,
+  },
+  {
+    id: "ExamTopic_800_899",
+    name: "ExamTopic_800_899",
+    group: "ExamTopic SAP C01",
+    data: ExamTopic_800_899.data,
+  },
+  {
+    id: "ExamTopic_900_946",
+    name: "ExamTopic_900_946",
+    group: "ExamTopic SAP C01",
+    data: ExamTopic_900_946.data,
+  },
 
   //GROUP 3
   {
