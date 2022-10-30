@@ -2409,22 +2409,22 @@ var ExamTopic_800_899 = {
               "feedback": ""
             },
             {
-              "choice": "<p>B.  InAccountA, set the S3 bucket policy to the following: </p>",
+              "choice": "<p>B.  InAccountA, set the S3 bucket policy to the following: <img src='https://www.examtopics.com//media/exam-media/04241/0056300001.png'></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>C.  InAccount A, set the S3 bucket policy to the following: </p>",
+              "choice": "<p>C.  InAccount A, set the S3 bucket policy to the following: <img src='https://www.examtopics.com//media/exam-media/04241/0056400001.png'></p>",
               "correct": true,
               "feedback": ""
             },
             {
-              "choice": "<p>D.  InAccount B, set the permissions of User_DataProcessor to the following: </p>",
+              "choice": "<p>D.  InAccount B, set the permissions of User_DataProcessor to the following: <img src='https://www.examtopics.com//media/exam-media/04241/0056400002.png'></p>",
               "correct": true,
               "feedback": ""
             },
             {
-              "choice": "<p>E.  InAccount B, set the permissions of User_DataProcessor to the following: </p>",
+              "choice": "<p>E.  InAccount B, set the permissions of User_DataProcessor to the following: <img src='https://www.examtopics.com//media/exam-media/04241/0056500001.png'></p>",
               "correct": false,
               "feedback": ""
             }
