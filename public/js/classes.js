@@ -349,13 +349,12 @@ class Exam {
     });
   }
 
-  showStarQuestion() {
-    var starBlock = "";
+  renderContent(listQuestion) {
     var self = this;
     var SYMBOL_ANSWERS = ["A", "B", "C", "D", "E", "F", "G", "H"];
-    let markedQuestions = self.markedQuestion.filter(item => item["isMarked"]);
-    markedQuestions.sort((a, b) => a.queNo - b.queNo);
-    markedQuestions.forEach(function (markedQue, index) {
+
+    var starBlock = "";
+    listQuestion.forEach(function (markedQue, index) {
       let question = self.listQuestions[markedQue["queNo"]];
 
       let queAnswers = question["answer_list"][0]["answers"];
@@ -399,6 +398,42 @@ class Exam {
     });
 
     $("#starBlock").html(starBlock);
+  }
+
+  filterQuestion(options) {
+    let self = this;
+    let list = [];
+    let EXAM_TYPE = options.exam_type;
+    let MAX_QUESTION = options.max_question;
+    
+    if(EXAM_TYPE == "STAR") {
+      list = self.markedQuestion.filter(item => item["isMarked"]);
+      // list.sort((a, b) => a.queNo - b.queNo);
+      list.sort((b, a) => a.queNo - b.queNo);
+      list = list.splice(0, MAX_QUESTION);
+      list.sort((a, b) => a.queNo - b.queNo);
+    } else if (EXAM_TYPE == "NEVER_ANSWERS") {
+      let quesChoice = self.choices.map(obj => obj.queNo);
+      for (let i = 0; i < self.listQuestions.length; i++) {
+        if (!quesChoice.includes(i)) {
+          list = [...list, {queNo: i, isMarked: false}]
+        }
+      }
+      list = list.splice(0, MAX_QUESTION);
+    }
+
+    return list;
+  }
+
+  getFilterQuestion(type = "STAR", max = 100) {
+    //FILTER OPTIONS
+    let listQuestion = this.filterQuestion({
+      "exam_type": type,
+      "max_question": max
+    });
+    this.renderContent(listQuestion);
+
+    return listQuestion;
   }
 
   export() {

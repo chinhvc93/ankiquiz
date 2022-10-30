@@ -162,7 +162,24 @@ function switchDesk(examId) {
 $(".btn-starQuiz").on("click", function () {
   $(".starBlock").removeClass("d-none");
   $(".ExamQuestionsBlock").addClass("d-none");
-  exam.showStarQuestion();
+  let type = $("#filterOptionType").val();
+  let max = $("#filterOptionMaxQuestion").val();
+
+  exam.getFilterQuestion(type, max);
+});
+
+$("#filterOptionType").on("change", function () {
+  let type = $("#filterOptionType").val();
+  let max = $("#filterOptionMaxQuestion").val();
+
+  exam.getFilterQuestion(type, max);
+});
+
+$("#filterOptionMaxQuestion").on("change", function () {
+  let type = $("#filterOptionType").val();
+  let max = $("#filterOptionMaxQuestion").val();
+  
+  exam.getFilterQuestion(type, max);
 });
 
 $(".btnShowStarResult").on("click", function () {
