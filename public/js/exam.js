@@ -31,7 +31,9 @@ $(".btn-showAnswer").on("click", function () {
     $(".btn-showAnswer").addClass("show");
     $(".btn-showAnswer").text("Hide Answer");
   }
+
   que.showQueAnswerHtml(exam.currentQuestion(), exam.getChoice(), isShowAnswer);
+  que.showCommentHtml(exam.getComment(), isShowAnswer);
 });
 
 // NEXT QUESTION
@@ -107,7 +109,6 @@ $(".btn-return").on("click", function () {
 //SAVE QUIZ TO CACHE
 $(".btn-saveQuiz").on("click", function () {
   exam.saveToLocalCache();
-  console.log(11111);
   $(".notification").text("Save to local successfully!!");
   $(".notification").removeClass("dange").addClass("success");
 });
@@ -164,22 +165,19 @@ $(".btn-starQuiz").on("click", function () {
   $(".ExamQuestionsBlock").addClass("d-none");
   let type = $("#filterOptionType").val();
   let max = $("#filterOptionMaxQuestion").val();
+  let from = $("#filterOptionFromQuestion").val();
+  let to = $("#filterOptionToQuestion").val();
 
-  exam.getFilterQuestion(type, max);
+  exam.getFilterQuestion(type, max, from, to);
 });
 
-$("#filterOptionType").on("change", function () {
+$("#filterOptionType, #filterOptionMaxQuestion, #filterOptionFromQuestion, #filterOptionToQuestion").on("change", function () {
   let type = $("#filterOptionType").val();
   let max = $("#filterOptionMaxQuestion").val();
-
-  exam.getFilterQuestion(type, max);
-});
-
-$("#filterOptionMaxQuestion").on("change", function () {
-  let type = $("#filterOptionType").val();
-  let max = $("#filterOptionMaxQuestion").val();
+  let from = $("#filterOptionFromQuestion").val();
+  let to = $("#filterOptionToQuestion").val();
   
-  exam.getFilterQuestion(type, max);
+  exam.getFilterQuestion(type, max, from, to);
 });
 
 $(".btnShowStarResult").on("click", function () {
@@ -208,4 +206,35 @@ $("#modals").on("click", "#btnCopyExportContent", function () {
   console.log("btnCopyExportContent")
   exam.copyText("exportContent");
   $("#modals #btnCopyExportContent").text("Copied")
+});
+
+//EDIT COMMENT
+$(".comment-block").on("click", ".btnEditComment", function () {
+  if($(this).hasClass("nextCancelWhenClick")) {
+    // Cancel when click 2 times
+    $(this).removeClass("nextCancelWhenClick");
+    $(".comment-block .textComment").show();
+    $(".edit-comment-block").html("");
+    return "Cancel";
+  } else {
+    $(this).addClass("nextCancelWhenClick");
+  }
+  
+  let content = exam.getComment(exam.current);
+  let htmlEditComment = `
+    <textarea class="txtContent form-control" aria-label="Enter comment" rows="5">${content}</textarea>
+    <a class="btnSave btn btn-sm btn-success mt-1">Save</a>
+  `;
+
+  $(".comment-block .textComment").hide();
+  $(".edit-comment-block").html(htmlEditComment);
+});
+
+$(".comment-block").on("click", ".btnSave", function () {
+  let content = $(".comment-block .txtContent").val();
+  exam.setComment(exam.current, content);
+
+  $(".edit-comment-block").html("");
+  que.showCommentHtml(content, true);
+  $(".comment-block .textComment").show();
 });

@@ -71,6 +71,7 @@
                         <button class="btn-showAnswer btn btn-warning">Show Answer</button>
                         
                         <!-- Show Memo -->
+                        <div class="my-3 comment-block"></div>
                         <div class="my-3 explanation-block"></div>
 
                         <div class="exam-nav">
@@ -111,20 +112,31 @@
             <h3 class="text-center">Re-test Star Question</h6>
             <h4>Options:</h4>
             <div class="row mb-3">
-                <div class="col">
+                <div class="col-4">
                     <select id="filterOptionType" class="form-select" aria-label="Default select example">
-                        <option selected value="STAR">STAR</option>
+                        <option selected value="RETEST">RETEST</option>
+                        <option value="STAR">STAR</option>
                         <option value="MOST_WRONG_ANSWERS">MOST_WRONG_ANSWERS</option>
                         <option value="NEVER_ANSWERS">NEVER_ANSWERS</option>
                     </select>
                 </div>
-                <div class="col">
-                    <select id="filterOptionMaxQuestion" class="form-select" aria-label="Default select example">
-                        <option value="5">5</option>
-                        <option selected  value="10">10</option>
-                        <option value="15">15</option>
-                        <option value="20">20</option>
-                    </select>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col">
+                          <input id="filterOptionFromQuestion" type="text" class="form-control" placeholder="From question" aria-label="From question" value="1">
+                        </div>
+                        <div class="col">
+                          <input id="filterOptionToQuestion" type="text" class="form-control" placeholder="To question" aria-label="To question" value="100">
+                        </div>
+                        <div class="col">
+                            <select id="filterOptionMaxQuestion" class="form-select" aria-label="Default select example">
+                                <option value="5">5</option>
+                                <option selected  value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                            </select>
+                        </div>
+                      </div>
                 </div>
             </div>
             <div id="starBlock">

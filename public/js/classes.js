@@ -24,6 +24,7 @@ class Question {
 
     // Clean
     $(".explanation-block").html("");
+    $(".comment-block").html("");
     $(".btn-showAnswer").removeClass("show");
     $(".btn-showAnswer").text("Show Answer");
 
@@ -124,6 +125,23 @@ class Question {
     );
   }
 
+  showCommentHtml(myComment = "", isShowAnswer = false) {
+    let htmlMyComment = `<h6>My Comment <a class="btnEditComment btn btn-sm btn-warning">Edit</a></h6>`
+    if(myComment != "" && isShowAnswer == true) {
+      htmlMyComment += `
+        <div class="textComment p-3 mb-2 bg-success text-white">
+          ${myComment.replaceAll("\n", "<br>")}
+        </div>
+      `;
+    }
+
+    htmlMyComment += `
+      <div class="edit-comment-block"></div>
+    `
+
+    $(".comment-block").html(htmlMyComment);
+  }
+
   showMarkToReview(queNo = 0, isMarked) {
     if(isMarked) {
       $("#starMarkToReview").addClass("true");
@@ -169,6 +187,7 @@ class Exam {
     this.choices = [];
     this.markedQuestion = [];
     this.cacheItemId = cacheItemId;
+    this.comments = [];
   }
 
   currentQuestion() {
@@ -320,6 +339,7 @@ class Exam {
     let exam = JSON.stringify({
       choices: this.choices,
       markedQuestion: this.markedQuestion,
+      comments: this.comments
     });
 
     localStorage.setItem(this.cacheItemId, exam);
@@ -333,6 +353,7 @@ class Exam {
 
     this.choices = exam.choices;
     this.markedQuestion = exam.markedQuestion;
+    this.comments = exam.comments ?? [];
   }
 
   clearLocalCache() {
@@ -405,6 +426,8 @@ class Exam {
     let list = [];
     let EXAM_TYPE = options.exam_type;
     let MAX_QUESTION = options.max_question;
+    let FROM_QUESTION = options.from_question;
+    let TO_QUESTION = options.to_question;
     
     if(EXAM_TYPE == "STAR") {
       list = self.markedQuestion.filter(item => item["isMarked"]);
@@ -420,16 +443,24 @@ class Exam {
         }
       }
       list = list.splice(0, MAX_QUESTION);
+    } else if (EXAM_TYPE == "RETEST") {
+      let from = FROM_QUESTION < 1 ? 1 : FROM_QUESTION;
+      let to = (self.count < TO_QUESTION) ? self.count : (TO_QUESTION)
+      for (let i = from; i <= to; i++) {
+          list = [...list, {queNo: (i - 1), isMarked: false}]
+      }
     }
 
     return list;
   }
 
-  getFilterQuestion(type = "STAR", max = 100) {
+  getFilterQuestion(type = "STAR", max = 100, from = 0, to = 100) {
     //FILTER OPTIONS
     let listQuestion = this.filterQuestion({
       "exam_type": type,
-      "max_question": max
+      "max_question": max,
+      "from_question": from,
+      "to_question": to
     });
     this.renderContent(listQuestion);
 
@@ -461,5 +492,29 @@ class Exam {
   copyText(eleIndex="#exportContent pre") {
     let copyText = JSON.stringify(this.listQuestions, null, 2);
     navigator.clipboard.writeText(copyText);
+  }
+
+  getComment(queNo = this.current) {
+    let elementIndex = this.comments.findIndex((obj) => obj.queNo == queNo);
+    if (elementIndex == -1) {
+      return "";
+    } else {
+      return this.comments[elementIndex].content;
+    }
+  }
+  
+  setComment(queNo, content) {
+    let elementIndex = this.comments.findIndex((obj) => obj.queNo == queNo);
+    let newElement = {
+      queNo: queNo,
+      content: content,
+    };
+    if (elementIndex == -1) {
+      this.comments = [...this.comments, newElement];
+    } else {
+      this.comments[elementIndex] = newElement;
+    }
+
+    return "Success"
   }
 }
