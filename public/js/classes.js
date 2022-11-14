@@ -1,26 +1,47 @@
 class Question {
-  constructor() {}
+  constructor() {
+    this.queNo = "";
+    this.question_id = "";
+    this.question_text = "";
+    this.question_type = 1;
+    this.general_feedback = "";
+    this.answer_list = "";
+    this.topic_name = "";
+    this.is_partially_correct = false;
+  }
+
+  loadData(queData, queNo) {
+    this.queNo = queNo;
+    this.question_id = queData.question_id;
+    this.question_text =  queData.question_text;
+    this.question_type = queData.question_type;
+    this.general_feedback = queData.general_feedback;
+    this.answer_list = queData.answer_list[0].answers;
+    this.topic_name = queData.topic_name;
+    this.is_partially_correct = queData.is_partially_correct;
+  }
 
   getQuestion(queNo, queData, choiceAnswer, isMarked = false) {
+    // Load Question Data
+    this.loadData(queData, queNo);
+
     // Show Question Number
-    this.showQueNumber(queNo);
+    this.showQueNumber(this.queNo);
 
     // Load Quesion
-    this.loadQueTextHtml(queData.question_text, queData.topic_name, queData.question_id);
+    this.loadQueTextHtml();
 
     // Load Answer
     this.loadQueAnswerHtml(
-      queData.answer_list[0].answers,
-      queData.is_partially_correct,
       false,
       choiceAnswer
     );
 
     //Mark Current Question
-    this.markCurrentQuestion(queNo);
+    this.markQuestion();
 
     // Load isMarked
-    this.showMarkToReview(queNo, isMarked);
+    this.showMarkToReview(isMarked);
 
     // Clean
     $(".explanation-block").html("");
@@ -31,20 +52,19 @@ class Question {
     return "Load Question Successfully!";
   }
 
-  loadQueTextHtml(queText, queDomain = "", queId = "") {
-    $(".que-text").html(queText);
-    $("#queDomain").text(`${queId} ${queDomain}`);
+  loadQueTextHtml() {
+    $(".que-text").html(this.question_text);
+    $("#queDomain").text(`${this.question_id} ${this.topic_name}`);
   }
 
   loadQueAnswerHtml(
-    queAnswers,
-    isPartiallyCorrect,
     isShowAnswer = false,
     choiceAwswer
   ) {
+    let self = this;
     var htmlText = "";
     var SYMBOL_ANSWERS = ["A", "B", "C", "D", "E", "F", "G", "H"];
-    queAnswers.forEach(function (answer, index) {
+    this.answer_list.forEach(function (answer, index) {
       let queContentAwnswer = "";
       if (isShowAnswer) {
         queContentAwnswer = answer.correct ? "true" : "false";
@@ -59,7 +79,7 @@ class Question {
       }
 
       let htmlRadioCheckbox = "";
-      if (!isPartiallyCorrect) {
+      if (!self.isPartiallyCorrect) {
         // One Choice: radio input
         htmlRadioCheckbox = `<input class="ip-radio" type="radio" name="radio" ${checked} value="${SYMBOL_ANSWERS[index]}">`;
       } else {
@@ -82,9 +102,9 @@ class Question {
     });
   }
 
-  markCurrentQuestion(queNo = 0) {
+  markQuestion() {
     $("#attempts-que li").removeClass("current");
-    $(`#attempts-que li[data-queno="${queNo}"]`).addClass("current");
+    $(`#attempts-que li[data-queno="${this.queNo}"]`).addClass("current");
   }
 
   markChoice(queNo, isChoice = true) {
@@ -118,8 +138,6 @@ class Question {
     }
 
     this.loadQueAnswerHtml(
-      queData.answer_list[0].answers,
-      queData.is_partially_correct,
       isShowAnswer,
       choiceAnswer
     );
@@ -142,7 +160,7 @@ class Question {
     $(".comment-block").html(htmlMyComment);
   }
 
-  showMarkToReview(queNo = 0, isMarked) {
+  showMarkToReview(isMarked) {
     if(isMarked) {
       $("#starMarkToReview").addClass("true");
     } else {
@@ -159,24 +177,6 @@ class Question {
     }
     $("#attempts-que ul").html(liQuestHtml);
   }
-
-  nextQue(queNo) {
-    queNo = queNo + 1;
-    if (queNo >= queDataCount) {
-      queNo = 0;
-    }
-
-    return queNo;
-  }
-
-  prevQue(queNo) {
-    queNo = queNo - 1;
-    if (queNo < 0) {
-      queNo = queDataCount - 1;
-    }
-
-    return queNo;
-  }
 }
 
 class Exam {
@@ -192,6 +192,24 @@ class Exam {
 
   currentQuestion() {
     return this.listQuestions[this.current];
+  }
+
+  nextQuestion() {
+    this.current += 1;
+    if (this.current >= this.count) {
+      this.current = 0;
+    }
+
+    return this.current;
+  }
+
+  prevQuestion() {
+    this.current -= 1;
+    if (this.current < 0) {
+      this.current = this.count - 1;
+    }
+
+    return this.current;
   }
 
   getQuestion(queNo = 0) {
@@ -370,55 +388,61 @@ class Exam {
     });
   }
 
-  renderContent(listQuestion) {
-    var self = this;
+  renderQuestion(markedQue, index) {
     var SYMBOL_ANSWERS = ["A", "B", "C", "D", "E", "F", "G", "H"];
+    let question = this.listQuestions[markedQue["queNo"]];
 
-    var starBlock = "";
-    listQuestion.forEach(function (markedQue, index) {
-      let question = self.listQuestions[markedQue["queNo"]];
+    let queAnswers = question["answer_list"][0]["answers"];
+    let answer_text = "";
+    
+    let htmlRadioCheckbox = "";
+    if (!question["is_partially_correct"]) {
+      // One Choice: radio input
+      htmlRadioCheckbox = `<input class="ip-radio" type="radio" name="que-${markedQue['queNo']}" value="${SYMBOL_ANSWERS[index]}">`;
+    } else {
+      // Multiple Choices: checkbox input
+      htmlRadioCheckbox = `<input class="ip-radio" type="checkbox" name="que-${markedQue['queNo']}" value="${SYMBOL_ANSWERS[index]}">`;
+    }
 
-      let queAnswers = question["answer_list"][0]["answers"];
-      let answer_text = "";
-      
-      let htmlRadioCheckbox = "";
-      if (!question["is_partially_correct"]) {
-        // One Choice: radio input
-        htmlRadioCheckbox = `<input class="ip-radio" type="radio" name="que-${markedQue['queNo']}" value="${SYMBOL_ANSWERS[index]}">`;
-      } else {
-        // Multiple Choices: checkbox input
-        htmlRadioCheckbox = `<input class="ip-radio" type="checkbox" name="que-${markedQue['queNo']}" value="${SYMBOL_ANSWERS[index]}">`;
-      }
-
-      let htmlStarIcon = `
-        <div data-queno="${markedQue['queNo']}" class="starMarkToReview true">
-            <i class="fa-solid fa-star"></i>
-        </div>
-      `;
-
-      queAnswers.forEach(function (answer, index) {
-        answer_text +=`
-        <label class="my-2 custom_label">
-          ${htmlRadioCheckbox}
-          <span class="que-content hiddenColor ${answer["correct"] == true ? 'true' : 'false'}">
-              <span class="symbolAnswer">${SYMBOL_ANSWERS[index]}.</span>
-              ${answer["choice"]}
-          </span>
-        </label>
-        `;
-      });
-      starBlock += `
-      <div class="starQuestionBlock">
-        ${htmlStarIcon}
-        Question: ${markedQue["queNo"] + 1}.
-        ${question.question_text}
-        ${answer_text}
+    let htmlStarIcon = `
+      <div data-queno="${markedQue['queNo']}" class="starMarkToReview ${markedQue['isMarked'] ? 'true' : 'false'}">
+          <i class="fa-solid fa-star"></i>
       </div>
-      <br>
+    `;
+
+    queAnswers.forEach(function (answer, index) {
+      answer_text +=`
+      <label class="my-2 custom_label">
+        ${htmlRadioCheckbox}
+        <span class="que-content hiddenColor ${answer["correct"] == true ? 'true' : 'false'}">
+            <span class="symbolAnswer">${SYMBOL_ANSWERS[index]}.</span>
+            ${answer["choice"]}
+        </span>
+      </label>
       `;
     });
+    
+    let html_starBlock = `
+    <div class="starQuestionBlock">
+      ${htmlStarIcon}
+      Question: ${markedQue["queNo"] + 1}.
+      ${question.question_text}
+      ${answer_text}
+    </div>
+    <br>
+    `;
 
-    $("#starBlock").html(starBlock);
+    return html_starBlock;
+  }
+
+  renderContent(listQuestion) {
+    var self = this;
+    var htmlText = "";
+    listQuestion.forEach(function (markedQue, index) {
+      htmlText += self.renderQuestion(markedQue, index);
+    });
+
+    $("#starBlock").html(htmlText);
   }
 
   filterQuestion(options) {
@@ -448,6 +472,15 @@ class Exam {
       let to = (self.count < TO_QUESTION) ? self.count : (TO_QUESTION)
       for (let i = from; i <= to; i++) {
           list = [...list, {queNo: (i - 1), isMarked: false}]
+      }
+    }
+
+    // Set Mark if have
+    for (let i = 0; i < self.markedQuestion.length; i++) {
+      let elementIndex = list.findIndex((obj) => obj.queNo == self.markedQuestion[i].queNo);
+      if (elementIndex == -1) {
+      } else {
+        list[elementIndex].isMarked = self.markedQuestion[i].isMarked;
       }
     }
 

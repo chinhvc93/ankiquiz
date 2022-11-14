@@ -38,7 +38,7 @@ $(".btn-showAnswer").on("click", function () {
 
 // NEXT QUESTION
 $(".btnNextQue").on("click", function () {
-  exam.current = que.nextQue(exam.current);
+  exam.nextQuestion();
   que.getQuestion(
     exam.current,
     exam.currentQuestion(),
@@ -49,7 +49,7 @@ $(".btnNextQue").on("click", function () {
 
 // PREVIOUS QUESTION
 $(".btnPrevQue").on("click", function () {
-  exam.current = que.prevQue(exam.current);
+  exam.prevQuestion();
   que.getQuestion(
     exam.current,
     exam.currentQuestion(),
@@ -78,7 +78,7 @@ $("#starMarkToReview").on("click", function () {
   let isMarked = $("#starMarkToReview").hasClass("true");
   exam.saveMarkToReview(exam.current, !isMarked);
   que.markToReview(exam.current, !isMarked);
-  que.showMarkToReview(exam.current, !isMarked);
+  que.showMarkToReview(!isMarked);
 });
 
 // REVIEW RESULT
