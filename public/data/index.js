@@ -76,22 +76,22 @@ var listExam = [
 
   //GROUP 2
   {
-    id: "ExamTopic_300_350",
-    name: "ExamTopic_300_350",
+    id: "ExamTopic_400_499",
+    name: "ExamTopic_400_499",
     group: "ExamTopic SAP C01",
-    data: ExamTopic_300_350.data,
+    data: ExamTopic_400_499.data,
   },
   {
-    id: "ExamTopic_351_400",
-    name: "ExamTopic_351_400",
+    id: "ExamTopic_500_599",
+    name: "ExamTopic_500_599",
     group: "ExamTopic SAP C01",
-    data: ExamTopic_351_400.data,
+    data: ExamTopic_500_599.data,
   },
   {
-    id: "ExamTopic_401_430",
-    name: "ExamTopic_401_430",
+    id: "ExamTopic_600_699",
+    name: "ExamTopic_600_699",
     group: "ExamTopic SAP C01",
-    data: ExamTopic_401_430.data,
+    data: ExamTopic_600_699.data,
   },
   {
     id: "ExamTopic_700_799",
@@ -106,10 +106,16 @@ var listExam = [
     data: ExamTopic_800_899.data,
   },
   {
-    id: "ExamTopic_900_946",
-    name: "ExamTopic_900_946",
+    id: "ExamTopic_900_999",
+    name: "ExamTopic_900_999",
     group: "ExamTopic SAP C01",
-    data: ExamTopic_900_946.data,
+    data: ExamTopic_900_999.data,
+  },
+  {
+    id: "ExamTopic_1000_1027",
+    name: "ExamTopic_1000_1027",
+    group: "ExamTopic SAP C01",
+    data: ExamTopic_1000_1027.data,
   },
 
   //GROUP 3

@@ -2419,7 +2419,7 @@ var ExamTopic_700_799 = {
         "lab_id": 0,
         "question_text": "<p>A travel company built a web application that uses Amazon Simple Email Service (Amazon SES) to send email notifications to users. The company needs to enable logging to help troubleshoot email delivery issues. The company also needs the ability to do searches that are based on recipient, subject, and time sent.<br>Which combination of steps should a solutions architect take to meet these requirements? (Choose two.)<br><br><br></p>",
         "mark": 1,
-        "is_partially_correct": false,
+        "is_partially_correct": true,
         "question_type": "1",
         "difficulty_level": "0",
         "general_feedback": "<p>Correct Answer: A</p>",
@@ -2441,7 +2441,7 @@ var ExamTopic_700_799 = {
               },
               {
                 "choice": "<p>C.  Use Amazon Athena to query the logs in the Amazon S3 bucket for recipient, subject, and time sent.</p>",
-                "correct": false,
+                "correct": true,
                 "feedback": ""
               },
               {
