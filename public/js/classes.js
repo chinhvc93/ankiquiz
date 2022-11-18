@@ -79,7 +79,7 @@ class Question {
       }
 
       let htmlRadioCheckbox = "";
-      if (!self.isPartiallyCorrect) {
+      if (!self.is_partially_correct) {
         // One Choice: radio input
         htmlRadioCheckbox = `<input class="ip-radio" type="radio" name="radio" ${checked} value="${SYMBOL_ANSWERS[index]}">`;
       } else {
