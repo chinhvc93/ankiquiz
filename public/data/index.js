@@ -125,4 +125,19 @@ var listExam = [
     group: "FreeCam SAP C01",
     data: FreeCam_v20220826q100.data,
   },
+  
+  //GROUP 4
+  {
+    id: "SOA_C02_Exam_001_050",
+    name: "[SOA_C02] ExamTopic 001_050",
+    group: "ExamTopic SOA-C02",
+    data: SOA_C02_Exam_001_050.data,
+  },
+  {
+    id: "SOA_C02_Exam_051_099",
+    name: "[SOA_C02] ExamTopic 051_099",
+    group: "ExamTopic SOA-C02",
+    data: SOA_C02_Exam_051_099.data,
+  },
+  
 ];
