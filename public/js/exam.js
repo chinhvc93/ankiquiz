@@ -181,7 +181,15 @@ $("#filterOptionType, #filterOptionMaxQuestion, #filterOptionFromQuestion, #filt
 });
 
 $(".btnShowStarResult").on("click", function () {
-  $("#starBlock .que-content").removeClass("hiddenColor");
+  let type = $("#filterOptionType").val();
+  let max = $("#filterOptionMaxQuestion").val();
+  let from = $("#filterOptionFromQuestion").val();
+  let to = $("#filterOptionToQuestion").val();
+  
+  let listQuestion = exam.getFilterQuestion(type, max, from, to);
+  
+  exam.renderContent(listQuestion, "#starBlock", true);
+
 });
 
 $("#starBlock").on("click", ".starMarkToReview", function () {
@@ -195,6 +203,34 @@ $("#starBlock").on("click", ".starMarkToReview", function () {
   } else {
     $(`#starBlock .starMarkToReview[data-queno="${queNo}"]`).removeClass("false").addClass("true");
   }
+});
+
+// CREATE TEST
+$(".btn-createTest").on("click", function () {
+  $(".testBlock").removeClass("d-none");
+  $(".ExamQuestionsBlock").addClass("d-none");
+});
+
+$("#testBlock").on("click", ".btnCreateTest", function () {
+  let type = $("#filterOptionType2").val();
+  let max = $("#filterOptionMaxQuestion2").val();
+  let from = $("#filterOptionFromQuestion2").val();
+  let to = $("#filterOptionToQuestion2").val();
+  
+  let listQuestion = exam.getFilterQuestion(type, max, from, to);
+  exam.renderContent(listQuestion, "#testBlock .testContent", false);
+});
+
+$("#testBlock").on("click", ".btnShowAnswer", function () {
+  let type = $("#filterOptionType2").val();
+  let max = $("#filterOptionMaxQuestion2").val();
+  let from = $("#filterOptionFromQuestion2").val();
+  let to = $("#filterOptionToQuestion2").val();
+  
+  let listQuestion = exam.getFilterQuestion(type, max, from, to);
+  
+  exam.renderContent(listQuestion, "#testBlock .testContent", true);
+
 });
 
 //EXPORT

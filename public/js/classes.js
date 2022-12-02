@@ -8,6 +8,9 @@ class Question {
     this.answer_list = "";
     this.topic_name = "";
     this.is_partially_correct = false;
+    this.options = {
+      isShowAnswer: false
+    };
   }
 
   loadData(queData, queNo) {
@@ -19,6 +22,31 @@ class Question {
     this.answer_list = queData.answer_list[0].answers;
     this.topic_name = queData.topic_name;
     this.is_partially_correct = queData.is_partially_correct;
+    this.options = {
+      isShowAnswer: false
+    };
+  }
+
+  renderQuestionHtml() {
+    let html = "";
+
+    html += `
+      <div>Question: ${this.queNo + 1} (${this.question_id})</div>
+      <div class="que-text">${this.question_text}</div>
+    `;
+
+    html += `
+      ${this.loadQueAnswerHtml(this.options.isShowAnswer, "")}
+    `;
+
+    html = `
+      <div class="QuestionBlockItem">
+        ${html}
+      </div>
+    `;
+
+    return html;
+    
   }
 
   getQuestion(queNo, queData, choiceAnswer, isMarked = false) {
@@ -30,12 +58,9 @@ class Question {
 
     // Load Quesion
     this.loadQueTextHtml();
-
+    
     // Load Answer
-    this.loadQueAnswerHtml(
-      false,
-      choiceAnswer
-    );
+    $("fieldset.que-list").html(this.loadQueAnswerHtml(false, choiceAnswer));
 
     //Mark Current Question
     this.markQuestion();
@@ -64,6 +89,7 @@ class Question {
     let self = this;
     var htmlText = "";
     var SYMBOL_ANSWERS = ["A", "B", "C", "D", "E", "F", "G", "H"];
+    
     this.answer_list.forEach(function (answer, index) {
       let queContentAwnswer = "";
       if (isShowAnswer) {
@@ -81,10 +107,10 @@ class Question {
       let htmlRadioCheckbox = "";
       if (!self.is_partially_correct) {
         // One Choice: radio input
-        htmlRadioCheckbox = `<input class="ip-radio" type="radio" name="radio" ${checked} value="${SYMBOL_ANSWERS[index]}">`;
+        htmlRadioCheckbox = `<input class="ip-radio" type="radio" name="input_select_${self.question_id}" ${checked} value="${SYMBOL_ANSWERS[index]}">`;
       } else {
         // Multiple Choices: checkbox input
-        htmlRadioCheckbox = `<input class="ip-radio" type="checkbox" ${checked} value="${SYMBOL_ANSWERS[index]}">`;
+        htmlRadioCheckbox = `<input class="ip-radio" type="checkbox" name="input_select_${self.question_id}" ${checked} value="${SYMBOL_ANSWERS[index]}">`;
       }
 
       htmlText += `
@@ -96,10 +122,9 @@ class Question {
           </span>
       </label>
       `;
-
-      // load html
-      $("fieldset.que-list").html(htmlText);
     });
+
+    return htmlText;
   }
 
   markQuestion() {
@@ -137,10 +162,7 @@ class Question {
       $(".explanation-block").html("");
     }
 
-    this.loadQueAnswerHtml(
-      isShowAnswer,
-      choiceAnswer
-    );
+    $("fieldset.que-list").html(this.loadQueAnswerHtml(isShowAnswer, choiceAnswer));
   }
 
   showCommentHtml(myComment = "", isShowAnswer = false) {
@@ -188,6 +210,7 @@ class Exam {
     this.markedQuestion = [];
     this.cacheItemId = cacheItemId;
     this.comments = [];
+    this.childExam = [];
   }
 
   currentQuestion() {
@@ -435,14 +458,37 @@ class Exam {
     return html_starBlock;
   }
 
-  renderContent(listQuestion) {
+  renderQuestion2(queData, index, isShowAnswer) {
+    let html=`This question ${index} <br>`;
+    let question = new Question();
+    question.loadData(queData, index);
+    
+    //Set show answer or not 
+    question.options.isShowAnswer = isShowAnswer;
+
+    html = question.renderQuestionHtml();
+
+    return html;
+  }
+
+  renderContent(listQuestion, htmlSelection = "#starBlock", isShowAnswer) {
     var self = this;
     var htmlText = "";
+    self.childExam = [];
+
     listQuestion.forEach(function (markedQue, index) {
-      htmlText += self.renderQuestion(markedQue, index);
+      let queData = self.listQuestions[markedQue["queNo"]];
+      let question = new Question();
+      question.loadData(queData, index);
+      question.options.isShowAnswer = isShowAnswer;
+      
+      // Add question to childExam
+      self.childExam = [...self.childExam, question];
+
+      htmlText += question.renderQuestionHtml();
     });
 
-    $("#starBlock").html(htmlText);
+    $(`${htmlSelection}`).html(htmlText);
   }
 
   filterQuestion(options) {
@@ -549,5 +595,9 @@ class Exam {
     }
 
     return "Success"
+  }
+
+  createTestHtml() {
+
   }
 }

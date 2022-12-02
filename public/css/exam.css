@@ -339,6 +339,13 @@ body.dark-mode .ExamQuestionsBlock .right .attempts-que ul li {
     color: #ff615e;
 }
 
+.QuestionBlockItem {
+    border: 1px solid;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
 /* CSS FOR IPAD DEVICES */
 @media only screen and (min-device-width: 500px)  and (max-device-width: 900px)  and (orientation: portrait)  {
     .ExamQuestionsBlock .left {
