@@ -1,7 +1,9 @@
 // INIT, GLOBAL VARIABLES
 var examId, exam, queDataCount, que;
+var SCREEN_MODE = "dark-mode";
 
 function init() {
+  loadDarkMode();
   examId = getExamId();
   switchDesk(examId);
 }
@@ -104,6 +106,7 @@ $(".btn-return").on("click", function () {
   $(".ExamQuestionsBlock").removeClass("d-none");
   $(".resultBlock").addClass("d-none");
   $(".starBlock").addClass("d-none");
+  $(".testBlock").addClass("d-none");
 });
 
 //SAVE QUIZ TO CACHE
@@ -273,4 +276,47 @@ $(".comment-block").on("click", ".btnSave", function () {
   $(".edit-comment-block").html("");
   que.showCommentHtml(content, true);
   $(".comment-block .textComment").show();
+});
+
+// DARK MODE
+function toogleDarkMode() {
+  let cacheScreenMode = localStorage.getItem("DarkMode");
+  if (cacheScreenMode) {
+    SCREEN_MODE = cacheScreenMode;
+  }
+
+  if(SCREEN_MODE == "dark-mode") {
+    SCREEN_MODE = "white-mode";
+    $("body").addClass(SCREEN_MODE);
+    $("body").removeClass("dark-mode");
+  } else {
+    SCREEN_MODE = "dark-mode";
+    $("body").addClass(SCREEN_MODE);
+    $("body").removeClass("white-mode");
+  }
+
+  localStorage.setItem("DarkMode", SCREEN_MODE);
+
+  return SCREEN_MODE;
+}
+
+function loadDarkMode() {
+  let cacheScreenMode = localStorage.getItem("DarkMode");
+  if (cacheScreenMode) {
+    SCREEN_MODE = cacheScreenMode;
+  }
+
+  if(SCREEN_MODE == "dark-mode") {
+    $("body").addClass(SCREEN_MODE);
+    $("body").removeClass("white-mode");
+  } else {
+    $("body").addClass(SCREEN_MODE);
+    $("body").removeClass("dark-mode");
+  }
+
+  return "Load Dark Mode Successfull"
+}
+
+$(".btnToogleDarkMode").on("click", function () {
+  toogleDarkMode();
 });

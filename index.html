@@ -19,36 +19,47 @@
 
 <body class="dark-mode">
     <!-- BANNER -->
-    <div class="banner-small pt-3 pb-3">
+    <!-- <div class="banner-small pt-3 pb-3">
       <h4 class="text-center mb-5">CHINHVC EXAM</h4>
+    </div> -->
+    <div class="container">
+        <div class="text-end">
+            <span>Shared Anki Test</span>
+            <a href="javascript:void(0)" class="btnToogleDarkMode btn btn-common btn-info btn-sm">Toogle DarkMode</a>
+        </div>
     </div>
-
     <!-- MAIN -->
     <div class="container">
         <div class="examBlock" style="user-select: auto;">
             <div class="notification">
                 <!-- This is message!!! -->
             </div>
-            <div class="exam-header">
-                <div class="dropdown">
-                    <a id="selectExam" class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="exam-header row">
+                <div class="col-sm-12 col-md-6 col-lg-3 item1 dropdown">
+                    <a id="selectExam" class="btn btn-common btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                       Select Exam
                     </a>
                     <ul id="deskList" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     </ul>
                 </div>
-                <a href="javascript:void(0)" class="btn btn-starQuiz">Test Star</a>
-                <a href="javascript:void(0)" class="btn btn-createTest btn-info">Create Test</a>
-                <a href="javascript:void(0)" class="btn btn-success btn-exportQuiz">Export</a>
-                <a href="javascript:void(0)" class="btn btn-saveQuiz">Save</a>
-                <a href="javascript:void(0)" class="btn btn-clearQuiz">Clear Cache</a>
+                <div class="col-sm-12 col-md-6 col-lg-3 item2">
+                    <a href="javascript:void(0)" class="btn btn-common btn-createTest btn-warning">Test</a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 item3">
+                    <a href="javascript:void(0)" class="btn btn-common btn-saveQuiz">Save</a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 item4">
+                    <a href="javascript:void(0)" class="btn btn-common btn-clearQuiz">Clear Cache</a>
+                </div>
+                <!-- <a href="javascript:void(0)" class="btn btn-starQuiz">Test Star</a> -->
+                <!-- <a href="javascript:void(0)" class="btn btn-success btn-exportQuiz">Export</a> -->
             </div>
             <div class="ExamQuestionsBlock">
                 <!-- LEFT BLOCK -->
                 <div class="left">
                     <div class="block-head">
                         <div class="top-head">
-                            <span class="que-category"><strong>Domain:</strong> <span id="queDomain"></span></span>
+                            <span class="que-category"><strong>Exam No:</strong> <span id="queDomain"></span></span>
                         </div>
                         <div class="exam-nav top">
                             <a class="btnPrevQue btn btn-success" href="javascript:void(0)">Prev</a>
@@ -88,8 +99,6 @@
                     <a class="btn rounded-pill btn-review">Review</a>
                     <div id="attempts-que" class="attempts-que">
                         <ul>
-                            <!-- <li data-queno="0" class="current">1</li>
-                            <li data-queno="1" class="">2</li> -->
                         </ul>
                     </div>
                 </div>
@@ -113,23 +122,23 @@
             <h3 class="text-center">Re-test Star Question</h6>
             <h4>Options:</h4>
             <div class="row mb-3">
-                <div class="col-4">
+                <div class="col-sm-9 col-md-3 col-lg-3">
                     <select id="filterOptionType" class="form-select" aria-label="Default select example">
                         <option selected value="RETEST">RETEST</option>
                         <option value="STAR">STAR</option>
-                        <option value="MOST_WRONG_ANSWERS">MOST_WRONG_ANSWERS</option>
-                        <option value="NEVER_ANSWERS">NEVER_ANSWERS</option>
+                        <!-- <option value="MOST_WRONG_ANSWERS">MOST_WRONG_ANSWERS</option>
+                        <option value="NEVER_ANSWERS">NEVER_ANSWERS</option> -->
                     </select>
                 </div>
-                <div class="col-8">
+                <div class="col-sm-12 col-md-9">
                     <div class="row">
-                        <div class="col">
-                          <input id="filterOptionFromQuestion" type="text" class="form-control" placeholder="From question" aria-label="From question" value="1">
+                        <div class="col-3">
+                          <input id="filterOptionFromQuestion" type="number" class="form-control" placeholder="From question" aria-label="From question" value="1">
                         </div>
-                        <div class="col">
-                          <input id="filterOptionToQuestion" type="text" class="form-control" placeholder="To question" aria-label="To question" value="100">
+                        <div class="col-3">
+                          <input id="filterOptionToQuestion" type="number" class="form-control" placeholder="To question" aria-label="To question" value="100">
                         </div>
-                        <div class="col">
+                        <div class="col-6">
                             <select id="filterOptionMaxQuestion" class="form-select" aria-label="Default select example">
                                 <option value="5">5</option>
                                 <option selected  value="10">10</option>
@@ -153,26 +162,25 @@
                 <a class="btn btn-danger btn-return">Return</a>
             </div>
             <h3 class="text-center">Re-test Star Question</h6>
-            <h4>Options:</h4>
             <div class="row mb-3">
-                <div class="col-4">
+                <div class="col-sm-9 col-md-3 col-lg-3">
                     Options:
                     <select id="filterOptionType2" class="form-select" aria-label="Default select example">
                         <option selected value="RETEST">RETEST</option>
                         <option value="STAR">STAR</option>
-                        <option value="MOST_WRONG_ANSWERS">MOST_WRONG_ANSWERS</option>
-                        <option value="NEVER_ANSWERS">NEVER_ANSWERS</option>
+                        <!-- <option value="MOST_WRONG_ANSWERS">MOST_WRONG_ANSWERS</option>
+                        <option value="NEVER_ANSWERS">NEVER_ANSWERS</option> -->
                     </select>
                 </div>
-                <div class="col-8">
+                <div class="col-sm-12 col-md-9">
                     <div class="row">
                         <div class="col">
                             From:
-                            <input id="filterOptionFromQuestion2" type="text" class="form-control" placeholder="From question" aria-label="From question" value="1">
+                            <input id="filterOptionFromQuestion2" type="number" class="form-control" placeholder="From question" aria-label="From question" value="1">
                         </div>
                         <div class="col">
                             To:
-                            <input id="filterOptionToQuestion2" type="text" class="form-control" placeholder="To question" aria-label="To question" value="100">
+                            <input id="filterOptionToQuestion2" type="number" class="form-control" placeholder="To question" aria-label="To question" value="100">
                         </div>
                         <div class="col">
                             Max Question:
@@ -211,12 +219,13 @@
     <div id="modals"></div>
 
     <!-- SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
         integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
     <!-- My scripts -->
     <!-- DATA -->
@@ -246,6 +255,10 @@
     <!-- SOA-C02 ExamTopics-->
     <script src="./public/data/examtopics/SOA-C02/soa_c02_exam_001_050.js"></script>
     <script src="./public/data/examtopics/SOA-C02/soa_c02_exam_051_099.js"></script>
+
+    <!-- SAA-C03 ExamTopics-->
+    <script src="./public/data/examtopics/SAA-C03/saa_c03_exam_001_100.js"></script>
+    <script src="./public/data/examtopics/SAA-C03/saa_c03_exam_101_200.js"></script>
 
     <!-- SAP-C01 Freecams-->
     <script src="./public/data/freecams/SAP-C01/Amazon.SAP-C01.v2022-08-26.q100.js"></script>

@@ -1,17 +1,15 @@
 .examBlock {
     background: #fff;
-    margin: -50px 0 0;
+    /* margin: -50px 0 0; */
     border-radius: 8px;
     overflow: hidden;
 }
 
 .exam-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
+    text-align: center;
     padding: 10px 15px;
     border-bottom: 1px solid #ddd;
-    justify-content: end;
 }
 
 .notification {
@@ -27,30 +25,29 @@
     color: #60dd65;
 }
 
+.btn-common {
+    min-width: 200px;
+    margin: 5px auto;
+}
+
 .btn-clearQuiz {
     color: #ff615e !important;
     background: rgba(255, 97, 94, .2) !important;
-    min-width: 120px;
     font-size: 14px;
-    margin: 0 0 0 15px;
     border-radius: 8px;
 }
 
 .btn-saveQuiz {
     color: #60dd65 !important;
     background: rgb(25 135 84 / 20%) !important;
-    min-width: 120px;
     font-size: 14px;
-    margin: 0 0 0 15px;
     border-radius: 8px;
 }
 
 .btn-starQuiz {
     color: #fab005 !important;
     background: rgb(255 193 7 / 20%) !important;
-    min-width: 120px;
     font-size: 14px;
-    margin: 0 0 0 15px;
     border-radius: 8px;
 }
 
@@ -63,6 +60,48 @@
     margin: 0 5px;
 }
 
+body.white-mode .btn-clearQuiz {
+    color: #fff !important;
+    background: rgba(255, 97, 94, 0.8) !important;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+body.white-mode .btn-saveQuiz {
+    color: #fff !important;
+    background: rgb(25 135 84 / 80%) !important;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+body.white-mode .btn-starQuiz {
+    color: #fff !important;
+    background: rgb(255 193 7 / 80%) !important;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+body.white-mode .btnPrevQue, body.white-mode .btnNextQue {
+    color: #fff !important;
+    background: rgb(25 135 84 / 80%) !important;
+    min-width: 60px !important;
+    font-size: 14px !important;
+    border-radius: 8px !important;
+    margin: 0 5px;
+}
+
+
+body.white-mode .starMarkToReview {
+    background-color: rgb(12 0 0 / 20%);
+    border: 1px solid #cbcbcb;
+}
+
+body.white-mode .starMarkToReview.true {
+    color: #3a311a !important;
+    background: #ffc107;
+    border: 1px solid #fab005 !important;
+}
+
 .starMarkToReview {
     display: inline;
     text-align: center;
@@ -72,7 +111,6 @@
     right: 0;
     top: 0;
     cursor: pointer;
-
     color: #fdf3ea;
     background-color: rgb(255 255 255 / 20%);
     border: 1px solid #fdf3ea;
@@ -346,6 +384,25 @@ body.dark-mode .ExamQuestionsBlock .right .attempts-que ul li {
     border-radius: 10px;
 }
 
+.QuestionBlockItem img {
+    max-width: 100%;
+}
+
+body.dark-mode .btnToogleDarkMode {
+    background-color: #388e3cb3;
+    color: #ffffff !important;
+}
+body.white-mode .btnToogleDarkMode {
+    background-color: #322f2fcc;
+    color: #ffffff !important;
+}
+
+body.white-mode {
+    color: #4d5156;
+    background-color: #e6e2eb;
+}
+
+
 /* CSS FOR IPAD DEVICES */
 @media only screen and (min-device-width: 500px)  and (max-device-width: 900px)  and (orientation: portrait)  {
     .ExamQuestionsBlock .left {
@@ -427,11 +484,16 @@ body.dark-mode .ExamQuestionsBlock .right .attempts-que ul li {
         /* font-size: 12px; */
     }
 
+    .ExamQuestionsBlock img {
+        max-width: 100%;
+    }
+
     body {
         font-size: 14px !important;
     }
 
-    .exam-header {
-        justify-content: center;
+    .ExamQuestionsBlock .my-2 {
+        margin-top: 0.2rem !important;
+        margin-bottom: 0.2rem !important;
     }
 }
