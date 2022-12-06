@@ -23,7 +23,8 @@ class Question {
     this.topic_name = queData.topic_name;
     this.is_partially_correct = queData.is_partially_correct;
     this.options = {
-      isShowAnswer: false
+      isShowAnswer: false,
+      userChoice: ""
     };
   }
 
@@ -36,7 +37,7 @@ class Question {
     `;
 
     html += `
-      ${this.loadQueAnswerHtml(this.options.isShowAnswer, "")}
+      ${this.loadQueAnswerHtml(this.options.isShowAnswer, this.options.userChoice)}
     `;
 
     html = `
@@ -89,7 +90,7 @@ class Question {
     let self = this;
     var htmlText = "";
     var SYMBOL_ANSWERS = ["A", "B", "C", "D", "E", "F", "G", "H"];
-    
+
     this.answer_list.forEach(function (answer, index) {
       let queContentAwnswer = "";
       if (isShowAnswer) {
@@ -107,10 +108,10 @@ class Question {
       let htmlRadioCheckbox = "";
       if (!self.is_partially_correct) {
         // One Choice: radio input
-        htmlRadioCheckbox = `<input class="ip-radio" type="radio" name="input_select_${self.question_id}" ${checked} value="${SYMBOL_ANSWERS[index]}">`;
+        htmlRadioCheckbox = `<input class="ip-radio" type="radio" name="input_select_${self.queNo}" ${checked} value="${SYMBOL_ANSWERS[index]}">`;
       } else {
         // Multiple Choices: checkbox input
-        htmlRadioCheckbox = `<input class="ip-radio" type="checkbox" name="input_select_${self.question_id}" ${checked} value="${SYMBOL_ANSWERS[index]}">`;
+        htmlRadioCheckbox = `<input class="ip-radio" type="checkbox" name="input_select_${self.queNo}" ${checked} value="${SYMBOL_ANSWERS[index]}">`;
       }
 
       htmlText += `
@@ -211,6 +212,7 @@ class Exam {
     this.cacheItemId = cacheItemId;
     this.comments = [];
     this.childExam = [];
+    this.childExamChoice = [];
   }
 
   currentQuestion() {
@@ -375,6 +377,19 @@ class Exam {
     return correctAnswer;
   }
 
+  setUserChoice(userChoice) {
+    let choices = [];
+    userChoice.forEach(function (item, index) {
+      choices = [...choices, {
+        "queNo": parseInt(item.name.replaceAll("input_select_", "")),
+        "answer": item.value
+      }];
+    });
+
+    this.childExamChoice = choices;
+    return this.choices;
+  }
+
   saveToLocalCache() {
     // console.log("Save to LocalCache");
     let exam = JSON.stringify({
@@ -474,17 +489,17 @@ class Exam {
   renderContent(listQuestion, htmlSelection = "#starBlock", isShowAnswer) {
     var self = this;
     var htmlText = "";
-    self.childExam = [];
-
+    // this.childExamChoice.filter(item => item.queNo == "")
     listQuestion.forEach(function (markedQue, index) {
       let queData = self.listQuestions[markedQue["queNo"]];
       let question = new Question();
-      question.loadData(queData, index);
+      let userChoice = self.childExamChoice.filter(item => item.queNo == markedQue["queNo"]).map(item => item.answer).toString();
+      question.loadData(queData, markedQue["queNo"]);
       question.options.isShowAnswer = isShowAnswer;
+      if(isShowAnswer) {
+        question.options.userChoice = userChoice;
+      }
       
-      // Add question to childExam
-      self.childExam = [...self.childExam, question];
-
       htmlText += question.renderQuestionHtml();
     });
 
@@ -495,33 +510,18 @@ class Exam {
     let self = this;
     let list = [];
     let EXAM_TYPE = options.exam_type;
-    let MAX_QUESTION = options.max_question;
     let FROM_QUESTION = options.from_question;
     let TO_QUESTION = options.to_question;
+    let MAX_QUESTION = options.max_question;
+    let RAMDOM = options.random;
     
-    if(EXAM_TYPE == "STAR") {
-      list = self.markedQuestion.filter(item => item["isMarked"]);
-      // list.sort((a, b) => a.queNo - b.queNo);
-      list.sort((b, a) => a.queNo - b.queNo);
-      list = list.splice(0, MAX_QUESTION);
-      list.sort((a, b) => a.queNo - b.queNo);
-    } else if (EXAM_TYPE == "NEVER_ANSWERS") {
-      let quesChoice = self.choices.map(obj => obj.queNo);
-      for (let i = 0; i < self.listQuestions.length; i++) {
-        if (!quesChoice.includes(i)) {
-          list = [...list, {queNo: i, isMarked: false}]
-        }
-      }
-      list = list.splice(0, MAX_QUESTION);
-    } else if (EXAM_TYPE == "RETEST") {
-      let from = FROM_QUESTION < 1 ? 1 : FROM_QUESTION;
-      let to = (self.count < TO_QUESTION) ? self.count : (TO_QUESTION)
-      for (let i = from; i <= to; i++) {
-          list = [...list, {queNo: (i - 1), isMarked: false}]
-      }
+    let from = FROM_QUESTION < 1 ? parseInt(1) : parseInt(FROM_QUESTION);
+    let to = (self.count < TO_QUESTION) ? self.count : parseInt(TO_QUESTION);
+    for (let i = from; i <= to; i++) {
+      list = [...list, {queNo: (i - 1), isMarked: false}];
     }
 
-    // Set Mark if have
+    // Set STAR if have
     for (let i = 0; i < self.markedQuestion.length; i++) {
       let elementIndex = list.findIndex((obj) => obj.queNo == self.markedQuestion[i].queNo);
       if (elementIndex == -1) {
@@ -530,18 +530,43 @@ class Exam {
       }
     }
 
+    // STAR
+    if(EXAM_TYPE == "STAR") {
+      list = list.filter(item => (item.isMarked == true));
+    }
+
+    // MAX_QUESTION
+    if (MAX_QUESTION != "ALL") {
+      list = list.splice(0, MAX_QUESTION);
+    }
+
+    // RAMDOM
+    if(RAMDOM == "RANDOM") {
+      this.shuffleArray(list);
+    }
+
     return list;
   }
 
-  getFilterQuestion(type = "STAR", max = 100, from = 0, to = 100) {
+  shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+  getFilterQuestion(type = "STAR", from = 0, to = 20, random = "RANDOM", max = 100) {
     //FILTER OPTIONS
     let listQuestion = this.filterQuestion({
       "exam_type": type,
-      "max_question": max,
       "from_question": from,
-      "to_question": to
+      "to_question": to,
+      "max_question": max,
+      "random": random
     });
+
     this.renderContent(listQuestion);
+    this.childExam = listQuestion;
 
     return listQuestion;
   }

@@ -496,4 +496,9 @@ body.white-mode {
         margin-top: 0.2rem !important;
         margin-bottom: 0.2rem !important;
     }
+
+    .btn-common {
+        min-width: 140px;
+        margin: 5px auto;
+    }
 }

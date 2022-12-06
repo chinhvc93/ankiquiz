@@ -104,9 +104,14 @@ $("#resultBlock").on("click", ".btnViewQue", function () {
 
 $(".btn-return").on("click", function () {
   $(".ExamQuestionsBlock").removeClass("d-none");
+  $(".settingBlock").removeClass("d-none");
+  $(".examBlock").removeClass("d-none");
+  $(".examBlock").removeClass("d-none");
   $(".resultBlock").addClass("d-none");
   $(".starBlock").addClass("d-none");
   $(".testBlock").addClass("d-none");
+  $(".testContent ").html("No Contents");
+  $(".btnShowAnswer").addClass("d-none");
 });
 
 //SAVE QUIZ TO CACHE
@@ -162,56 +167,51 @@ function switchDesk(examId) {
   );
 }
 
-//STAR BLOCK
-$(".btn-starQuiz").on("click", function () {
-  $(".starBlock").removeClass("d-none");
-  $(".ExamQuestionsBlock").addClass("d-none");
-  let type = $("#filterOptionType").val();
-  let max = $("#filterOptionMaxQuestion").val();
-  let from = $("#filterOptionFromQuestion").val();
-  let to = $("#filterOptionToQuestion").val();
+// //STAR BLOCK
+// $(".btn-starQuiz").on("click", function () {
+//   $(".starBlock").removeClass("d-none");
+//   $(".ExamQuestionsBlock").addClass("d-none");
+//   let type = $("#filterOptionType").val();
+//   let max = $("#filterOptionMaxQuestion").val();
+//   let from = $("#filterOptionFromQuestion").val();
+//   let to = $("#filterOptionToQuestion").val();
+//   let random = $("#filterOptionRandom").val();
 
-  exam.getFilterQuestion(type, max, from, to);
-});
+//   exam.getFilterQuestion(type, from, to, random, max);
+// });
 
-$("#filterOptionType, #filterOptionMaxQuestion, #filterOptionFromQuestion, #filterOptionToQuestion").on("change", function () {
-  let type = $("#filterOptionType").val();
-  let max = $("#filterOptionMaxQuestion").val();
-  let from = $("#filterOptionFromQuestion").val();
-  let to = $("#filterOptionToQuestion").val();
+// $(".btnShowStarResult").on("click", function () {
+//   let type = $("#filterOptionType").val();
+//   let max = $("#filterOptionMaxQuestion").val();
+//   let from = $("#filterOptionFromQuestion").val();
+//   let to = $("#filterOptionToQuestion").val();
+//   let random = $("#filterOptionRandom").val();
   
-  exam.getFilterQuestion(type, max, from, to);
-});
-
-$(".btnShowStarResult").on("click", function () {
-  let type = $("#filterOptionType").val();
-  let max = $("#filterOptionMaxQuestion").val();
-  let from = $("#filterOptionFromQuestion").val();
-  let to = $("#filterOptionToQuestion").val();
+//   let listQuestion = exam.getFilterQuestion(type, from, to, random, max);
   
-  let listQuestion = exam.getFilterQuestion(type, max, from, to);
-  
-  exam.renderContent(listQuestion, "#starBlock", true);
+//   exam.renderContent(listQuestion, "#starBlock", true);
 
-});
+// });
 
-$("#starBlock").on("click", ".starMarkToReview", function () {
-  let queNo = $(this).data("queno");
-  let isMarked = $(`#starBlock .starMarkToReview[data-queno="${queNo}"]`).hasClass("true");
+// $("#starBlock").on("click", ".starMarkToReview", function () {
+//   let queNo = $(this).data("queno");
+//   let isMarked = $(`#starBlock .starMarkToReview[data-queno="${queNo}"]`).hasClass("true");
   
-  exam.saveMarkToReview(queNo, !isMarked);
-  que.markToReview(queNo, !isMarked);
-  if(isMarked) {
-    $(`#starBlock .starMarkToReview[data-queno="${queNo}"]`).removeClass("true").addClass("false");
-  } else {
-    $(`#starBlock .starMarkToReview[data-queno="${queNo}"]`).removeClass("false").addClass("true");
-  }
-});
+//   exam.saveMarkToReview(queNo, !isMarked);
+//   que.markToReview(queNo, !isMarked);
+//   if(isMarked) {
+//     $(`#starBlock .starMarkToReview[data-queno="${queNo}"]`).removeClass("true").addClass("false");
+//   } else {
+//     $(`#starBlock .starMarkToReview[data-queno="${queNo}"]`).removeClass("false").addClass("true");
+//   }
+// });
 
 // CREATE TEST
 $(".btn-createTest").on("click", function () {
-  $(".testBlock").removeClass("d-none");
   $(".ExamQuestionsBlock").addClass("d-none");
+  $(".examBlock").addClass("d-none");
+  $(".settingBlock").addClass("d-none");
+  $(".testBlock").removeClass("d-none");
 });
 
 $("#testBlock").on("click", ".btnCreateTest", function () {
@@ -219,21 +219,19 @@ $("#testBlock").on("click", ".btnCreateTest", function () {
   let max = $("#filterOptionMaxQuestion2").val();
   let from = $("#filterOptionFromQuestion2").val();
   let to = $("#filterOptionToQuestion2").val();
+  let random = $("#filterOptionRandom").val();
   
-  let listQuestion = exam.getFilterQuestion(type, max, from, to);
+  let listQuestion = exam.getFilterQuestion(type, from, to, random, max);
   exam.renderContent(listQuestion, "#testBlock .testContent", false);
+  $(".btnShowAnswer").removeClass("d-none");
 });
 
+// SHOW ANSWER
 $("#testBlock").on("click", ".btnShowAnswer", function () {
-  let type = $("#filterOptionType2").val();
-  let max = $("#filterOptionMaxQuestion2").val();
-  let from = $("#filterOptionFromQuestion2").val();
-  let to = $("#filterOptionToQuestion2").val();
-  
-  let listQuestion = exam.getFilterQuestion(type, max, from, to);
-  
+  let userChoice = $("#test_form").serializeArray()
+  let listQuestion = exam.childExam;
+  exam.setUserChoice(userChoice);
   exam.renderContent(listQuestion, "#testBlock .testContent", true);
-
 });
 
 //EXPORT
@@ -242,7 +240,6 @@ $(".btn-exportQuiz").on("click", function () {
 });
 
 $("#modals").on("click", "#btnCopyExportContent", function () {
-  console.log("btnCopyExportContent")
   exam.copyText("exportContent");
   $("#modals #btnCopyExportContent").text("Copied")
 });

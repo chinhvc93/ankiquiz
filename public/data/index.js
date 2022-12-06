@@ -1,5 +1,77 @@
 // CONFIG
 var listExam = [
+  //GROUP 5
+  {
+    id: "SAA_C03_Exam_001_100",
+    name: "[SAA_C03] ExamTopic 001_100",
+    group: "ExamTopic SAA-C03",
+    data: SAA_C03_Exam_001_100.data,
+  },
+  {
+    id: "SAA_C03_Exam_101_200",
+    name: "[SAA_C03] ExamTopic 101_200",
+    group: "ExamTopic SAA-C03",
+    data: SAA_C03_Exam_101_200.data,
+  },
+
+  //GROUP 4
+  {
+    id: "SOA_C02_Exam_001_050",
+    name: "[SOA_C02] ExamTopic 001_050",
+    group: "ExamTopic SOA-C02",
+    data: SOA_C02_Exam_001_050.data,
+  },
+  {
+    id: "SOA_C02_Exam_051_099",
+    name: "[SOA_C02] ExamTopic 051_099",
+    group: "ExamTopic SOA-C02",
+    data: SOA_C02_Exam_051_099.data,
+  },
+
+  //GROUP 2
+  {
+    id: "ExamTopic_400_499",
+    name: "ExamTopic_400_499",
+    group: "ExamTopic SAP C01",
+    data: ExamTopic_400_499.data,
+  },
+  {
+    id: "ExamTopic_500_599",
+    name: "ExamTopic_500_599",
+    group: "ExamTopic SAP C01",
+    data: ExamTopic_500_599.data,
+  },
+  {
+    id: "ExamTopic_600_699",
+    name: "ExamTopic_600_699",
+    group: "ExamTopic SAP C01",
+    data: ExamTopic_600_699.data,
+  },
+  {
+    id: "ExamTopic_700_799",
+    name: "ExamTopic_700_799",
+    group: "ExamTopic SAP C01",
+    data: ExamTopic_700_799.data,
+  },
+  {
+    id: "ExamTopic_800_899",
+    name: "ExamTopic_800_899",
+    group: "ExamTopic SAP C01",
+    data: ExamTopic_800_899.data,
+  },
+  {
+    id: "ExamTopic_900_999",
+    name: "ExamTopic_900_999",
+    group: "ExamTopic SAP C01",
+    data: ExamTopic_900_999.data,
+  },
+  {
+    id: "ExamTopic_1000_1027",
+    name: "ExamTopic_1000_1027",
+    group: "ExamTopic SAP C01",
+    data: ExamTopic_1000_1027.data,
+  },
+
   //GROUP 1
   {
     id: "FreeTest",
@@ -74,50 +146,6 @@ var listExam = [
     data: FinalTest.data,
   },
 
-  //GROUP 2
-  {
-    id: "ExamTopic_400_499",
-    name: "ExamTopic_400_499",
-    group: "ExamTopic SAP C01",
-    data: ExamTopic_400_499.data,
-  },
-  {
-    id: "ExamTopic_500_599",
-    name: "ExamTopic_500_599",
-    group: "ExamTopic SAP C01",
-    data: ExamTopic_500_599.data,
-  },
-  {
-    id: "ExamTopic_600_699",
-    name: "ExamTopic_600_699",
-    group: "ExamTopic SAP C01",
-    data: ExamTopic_600_699.data,
-  },
-  {
-    id: "ExamTopic_700_799",
-    name: "ExamTopic_700_799",
-    group: "ExamTopic SAP C01",
-    data: ExamTopic_700_799.data,
-  },
-  {
-    id: "ExamTopic_800_899",
-    name: "ExamTopic_800_899",
-    group: "ExamTopic SAP C01",
-    data: ExamTopic_800_899.data,
-  },
-  {
-    id: "ExamTopic_900_999",
-    name: "ExamTopic_900_999",
-    group: "ExamTopic SAP C01",
-    data: ExamTopic_900_999.data,
-  },
-  {
-    id: "ExamTopic_1000_1027",
-    name: "ExamTopic_1000_1027",
-    group: "ExamTopic SAP C01",
-    data: ExamTopic_1000_1027.data,
-  },
-
   //GROUP 3
   {
     id: "FreeCam_v20220826q100",
@@ -125,33 +153,5 @@ var listExam = [
     group: "FreeCam SAP C01",
     data: FreeCam_v20220826q100.data,
   },
-  
-  //GROUP 4
-  {
-    id: "SOA_C02_Exam_001_050",
-    name: "[SOA_C02] ExamTopic 001_050",
-    group: "ExamTopic SOA-C02",
-    data: SOA_C02_Exam_001_050.data,
-  },
-  {
-    id: "SOA_C02_Exam_051_099",
-    name: "[SOA_C02] ExamTopic 051_099",
-    group: "ExamTopic SOA-C02",
-    data: SOA_C02_Exam_051_099.data,
-  },
 
-  //GROUP 5
-  {
-    id: "SAA_C03_Exam_001_100",
-    name: "[SAA_C03] ExamTopic 001_100",
-    group: "ExamTopic SAA-C03",
-    data: SAA_C03_Exam_001_100.data,
-  },
-  {
-    id: "SAA_C03_Exam_101_200",
-    name: "[SAA_C03] ExamTopic 101_200",
-    group: "ExamTopic SAA-C03",
-    data: SAA_C03_Exam_101_200.data,
-  },
-  
 ];

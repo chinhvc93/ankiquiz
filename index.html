@@ -23,7 +23,7 @@
       <h4 class="text-center mb-5">CHINHVC EXAM</h4>
     </div> -->
     <div class="container">
-        <div class="text-end">
+        <div class="settingBlock text-end">
             <span>Shared Anki Test</span>
             <a href="javascript:void(0)" class="btnToogleDarkMode btn btn-common btn-info btn-sm">Toogle DarkMode</a>
         </div>
@@ -157,11 +157,8 @@
             </div>
         </div>
 
-        <div id="testBlock" class="mt3 testBlock d-none">
-            <div class="text-end">
-                <a class="btn btn-danger btn-return">Return</a>
-            </div>
-            <h3 class="text-center">Re-test Star Question</h6>
+        <div id="testBlock" class="mt-2 testBlock d-none">
+            <h3 class="text-center">=== TEST ===</h6>
             <div class="row mb-3">
                 <div class="col-sm-9 col-md-3 col-lg-3">
                     Options:
@@ -180,15 +177,26 @@
                         </div>
                         <div class="col">
                             To:
-                            <input id="filterOptionToQuestion2" type="number" class="form-control" placeholder="To question" aria-label="To question" value="100">
+                            <input id="filterOptionToQuestion2" type="number" class="form-control" placeholder="To question" aria-label="To question" value="20">
                         </div>
-                        <div class="col">
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            Random:
+                            <select id="filterOptionRandom" class="form-select" aria-label="Default select example">
+                                <option value="RANDOM" selected>YES</option>
+                                <option value="NOT_RANDOM">NO</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4">
                             Max Question:
                             <select id="filterOptionMaxQuestion2" class="form-select" aria-label="Default select example">
                                 <option value="5">5</option>
-                                <option selected  value="10">10</option>
+                                <option selected value="10">10</option>
                                 <option value="15">15</option>
                                 <option value="20">20</option>
+                                <option value="65">65</option>
+                                <option value="75">75</option>
+                                <option value="15">100</option>
+                                <option value="ALL">All</option>
                             </select>
                         </div>
                     </div>
@@ -196,15 +204,18 @@
             </div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <button class="btn btn-success btnCreateTest">Create Test</button>
+                    <button class="btnCreateTest btn btn-success btn-common">Create Test</button>
+                    <button class="btn-return btn btn-danger btn-common">Exit</button>
                 </div>
             </div>
-            <div class="testContent pt-3">
-                This is test content
-            </div>
+            <form id="test_form">
+                <div class="testContent pt-3">
+                    This is test content
+                </div>
+            </form>
             <div class="row pb-3">
                 <div class="col-12 text-center">
-                    <button class="btn btn-success btnShowAnswer">Show Answer</button>
+                    <button class="btn btn-success btnShowAnswer d-none">Show Answer</button>
                 </div>
             </div>
         </div>
