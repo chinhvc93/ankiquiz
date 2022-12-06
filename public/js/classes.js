@@ -9,7 +9,9 @@ class Question {
     this.topic_name = "";
     this.is_partially_correct = false;
     this.options = {
-      isShowAnswer: false
+      isShowAnswer: false,
+      userChoice: "",
+      userMarked: true,
     };
   }
 
@@ -24,16 +26,24 @@ class Question {
     this.is_partially_correct = queData.is_partially_correct;
     this.options = {
       isShowAnswer: false,
-      userChoice: ""
+      userChoice: "",
+      userMarked: true,
     };
   }
 
   renderQuestionHtml() {
     let html = "";
 
+    let htmlStarIcon = `
+      <div data-queno="${this.queNo}" class="starMarkToReview ${this.options.userMarked ? 'true' : 'false'}">
+          <i class="fa-solid fa-star"></i>
+      </div>
+    `;
+
     html += `
       <div>Question: ${this.queNo + 1} (${this.question_id})</div>
       <div class="que-text">${this.question_text}</div>
+      ${htmlStarIcon}
     `;
 
     html += `
@@ -489,12 +499,12 @@ class Exam {
   renderContent(listQuestion, htmlSelection = "#starBlock", isShowAnswer) {
     var self = this;
     var htmlText = "";
-    // this.childExamChoice.filter(item => item.queNo == "")
     listQuestion.forEach(function (markedQue, index) {
       let queData = self.listQuestions[markedQue["queNo"]];
       let question = new Question();
       let userChoice = self.childExamChoice.filter(item => item.queNo == markedQue["queNo"]).map(item => item.answer).toString();
       question.loadData(queData, markedQue["queNo"]);
+      question.options.userMarked = markedQue["isMarked"];
       question.options.isShowAnswer = isShowAnswer;
       if(isShowAnswer) {
         question.options.userChoice = userChoice;

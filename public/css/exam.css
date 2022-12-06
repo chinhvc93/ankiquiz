@@ -117,6 +117,13 @@ body.white-mode .starMarkToReview.true {
     font-size: 18px;
 }
 
+#testBlock .starMarkToReview {
+    padding: 3px 6px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
 .starMarkToReview.true {
     color: #fab005 !important;
     background: rgb(235 235 235 / 20%);
@@ -382,6 +389,7 @@ body.dark-mode .ExamQuestionsBlock .right .attempts-que ul li {
     padding: 10px;
     margin: 15px 0;
     border-radius: 10px;
+    position: relative;
 }
 
 .QuestionBlockItem img {
@@ -500,5 +508,12 @@ body.white-mode {
     .btn-common {
         min-width: 140px;
         margin: 5px auto;
+    }
+
+    #testBlock .starMarkToReview {
+        padding: 1px 4px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
     }
 }
