@@ -38,6 +38,55 @@ $(".btn-showAnswer").on("click", function () {
   que.showCommentHtml(exam.getComment(), isShowAnswer);
 });
 
+// SHOW DISSUSTION
+$(".btn-showDiscussion").on("click", function () {
+  let isShowDiscussion = false;
+  let discusstion = exam.currentQuestion()["discusstion"];
+  let discusstion_count = discusstion ? discusstion.length : 0;
+  if ($(".btn-showDiscussion").hasClass("show")) {
+    isShowDiscussion = false;
+    $(".btn-showDiscussion").removeClass("show");
+    $(".discussion-container").addClass("d-none");
+    $(".btn-showDiscussion").text(`Show Discussion (${discusstion_count})`);
+  } else {
+    isShowDiscussion = true;
+    $(".btn-showDiscussion").addClass("show");
+    $(".discussion-container").removeClass("d-none");
+    $(".btn-showDiscussion").text(`Hide Discussion (${discusstion_count})`);
+  }
+ 
+  if(discusstion) {
+    let html_discusstion = "";
+    discusstion.forEach(function (comment, index) {
+      let selected_answers = comment.selected_answers;
+      let html_selected_answers = "";
+      if(selected_answers !== undefined && selected_answers != "") {
+        html_selected_answers = `<span class="comment-selected-answers">${comment.selected_answers}</span>`;
+      }
+      html_discusstion += `
+        <li id="comment-${comment.id}" class="comment-container" data-comment-id="${comment.id}">
+          <div class="pb-1">
+            <span class="fw-bold">#${index + 1}</span> 
+            ${html_selected_answers}
+            (<span class="comment-voted">${comment.upvote_count}</span> Voted)
+          </div>
+          <div class="comment-content">${comment.content}</div>
+          <div class="pt-1"><span class="comment-username">${comment.username}</span> (<span class="comment-date">${comment.date}</span>)</div>
+        </li>
+      `;
+    });
+    html_discusstion = `
+      <div class="p-1 mb-1 bg-info text-black">Discussion</div>
+      <ul class="comment-list">
+        ${html_discusstion}
+      </ul>
+    `;
+    $(".discussion-container").html(html_discusstion);
+  } else {
+    $(".discussion-container").html("Have not comments!");
+  }
+});
+
 // NEXT QUESTION
 $(".btnNextQue").on("click", function () {
   exam.nextQuestion();

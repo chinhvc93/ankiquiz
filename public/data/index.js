@@ -60,16 +60,10 @@ var listExam = [
     data: ExamTopic_800_899.data,
   },
   {
-    id: "ExamTopic_900_999",
-    name: "ExamTopic_900_999",
-    group: "ExamTopic SAP C01",
-    data: ExamTopic_900_999.data,
-  },
-  {
-    id: "ExamTopic_1000_1027",
+    id: "ExamTopic_900_1027",
     name: "ExamTopic_1000_1027",
     group: "ExamTopic SAP C01",
-    data: ExamTopic_1000_1027.data,
+    data: ExamTopic_900_1027.data,
   },
 
   //GROUP 1

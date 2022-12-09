@@ -355,6 +355,39 @@ body.dark-mode .ExamQuestionsBlock .right .attempts-que ul li.choice,
     background-color: #fab005;
 }
 
+.comment-list {
+    padding-inline-start: 0;
+}
+.comment-container {
+    list-style-type: none;
+    border-bottom: 1px solid grey;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.comment-selected-answers {
+    font-weight: bold;
+    background-color: #fab005;
+    color: #000;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.comment-voted {
+    color: #ff5722;
+    /* font-weight: bold; */
+}
+.comment-username {
+    /* color: #ff5722; */
+    font-weight: bold;
+}
+.comment-date {
+    font-style: italic;
+    /* color: #ff5722; */
+    /* font-weight: bold; */
+}
+
+
 /* DARK-MODE */
 body.dark-mode .ExamQuestionsBlock .left .exam-nav {
     border-top: 1px solid #46484d;

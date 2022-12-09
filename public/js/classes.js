@@ -13,6 +13,7 @@ class Question {
       userChoice: "",
       userMarked: true,
     };
+    this.discusstion = "";
   }
 
   loadData(queData, queNo) {
@@ -29,6 +30,7 @@ class Question {
       userChoice: "",
       userMarked: true,
     };
+    this.discusstion = queData.discusstion;
   }
 
   renderQuestionHtml() {
@@ -84,6 +86,13 @@ class Question {
     $(".comment-block").html("");
     $(".btn-showAnswer").removeClass("show");
     $(".btn-showAnswer").text("Show Answer");
+    $(".btn-showDiscussion").removeClass("show");
+    $(".discussion-container").text("");
+    if(this.discusstion !== undefined) {
+      $(".btn-showDiscussion").text(`Show Discussion (${this.discusstion.length})`);
+    } else {
+      $(".btn-showDiscussion").text(`Show Discussion (0)`);
+    }
 
     return "Load Question Successfully!";
   }
