@@ -12,9 +12,8 @@ init();
 // LOAD QUESTION
 $("#attempts-que").on("click", "ul > li", function () {
   exam.current = $(this).data("queno");
-  que.getQuestion(
-    exam.current,
-    exam.currentQuestion(),
+  let question = exam.currentQuestion();
+  question.getQuestion(
     exam.getChoice(),
     exam.getMarkToReview()
   );
@@ -34,8 +33,14 @@ $(".btn-showAnswer").on("click", function () {
     $(".btn-showAnswer").text("Hide Answer");
   }
 
-  que.showQueAnswerHtml(exam.currentQuestion(), exam.getChoice(), isShowAnswer);
-  que.showCommentHtml(exam.getComment(), isShowAnswer);
+  let question = exam.currentQuestion();
+  question.showQueAnswerHtml(exam.getChoice(), isShowAnswer);
+  question.showCommentHtml(exam.getComment(), isShowAnswer);
+});
+
+// EDIT QUESION
+$(".btn-editQuestion").on("click", function () {
+  console.log("btn editques");
 });
 
 // SHOW DISSUSTION
@@ -93,9 +98,8 @@ $(".btn-showDiscussion").on("click", function () {
 // NEXT QUESTION
 $(".btnNextQue").on("click", function () {
   exam.nextQuestion();
-  que.getQuestion(
-    exam.current,
-    exam.currentQuestion(),
+  let question = exam.currentQuestion();
+  question.getQuestion(
     exam.getChoice(),
     exam.getMarkToReview()
   );
@@ -104,9 +108,8 @@ $(".btnNextQue").on("click", function () {
 // PREVIOUS QUESTION
 $(".btnPrevQue").on("click", function () {
   exam.prevQuestion();
-  que.getQuestion(
-    exam.current,
-    exam.currentQuestion(),
+  let question = exam.currentQuestion();
+  question.getQuestion(
     exam.getChoice(),
     exam.getMarkToReview()
   );
@@ -145,9 +148,8 @@ $(".btn-review").on("click", function () {
 // GO TO QUESTION IN REVIEW RESULT SCREEN
 $("#resultBlock").on("click", ".btnViewQue", function () {
   exam.current = $(this).data("queno");
-  que.getQuestion(
-    exam.current,
-    exam.currentQuestion(),
+  let question = exam.currentQuestion();
+  question.getQuestion(
     exam.getChoice(),
     exam.getMarkToReview()
   );
@@ -211,52 +213,12 @@ function switchDesk(examId) {
   exam.loadQueListNumber();
 
   //Show first question
-  que.getQuestion(
-    exam.current,
-    exam.currentQuestion(),
+  let firstQuestion = exam.listQuestions[0];
+  firstQuestion.getQuestion(
     exam.getChoice(),
     exam.getMarkToReview()
   );
 }
-
-// //STAR BLOCK
-// $(".btn-starQuiz").on("click", function () {
-//   $(".starBlock").removeClass("d-none");
-//   $(".ExamQuestionsBlock").addClass("d-none");
-//   let type = $("#filterOptionType").val();
-//   let max = $("#filterOptionMaxQuestion").val();
-//   let from = $("#filterOptionFromQuestion").val();
-//   let to = $("#filterOptionToQuestion").val();
-//   let random = $("#filterOptionRandom").val();
-
-//   exam.getFilterQuestion(type, from, to, random, max);
-// });
-
-// $(".btnShowStarResult").on("click", function () {
-//   let type = $("#filterOptionType").val();
-//   let max = $("#filterOptionMaxQuestion").val();
-//   let from = $("#filterOptionFromQuestion").val();
-//   let to = $("#filterOptionToQuestion").val();
-//   let random = $("#filterOptionRandom").val();
-  
-//   let listQuestion = exam.getFilterQuestion(type, from, to, random, max);
-  
-//   exam.renderContent(listQuestion, "#starBlock", true);
-
-// });
-
-// $("#starBlock").on("click", ".starMarkToReview", function () {
-//   let queNo = $(this).data("queno");
-//   let isMarked = $(`#starBlock .starMarkToReview[data-queno="${queNo}"]`).hasClass("true");
-  
-//   exam.saveMarkToReview(queNo, !isMarked);
-//   que.markToReview(queNo, !isMarked);
-//   if(isMarked) {
-//     $(`#starBlock .starMarkToReview[data-queno="${queNo}"]`).removeClass("true").addClass("false");
-//   } else {
-//     $(`#starBlock .starMarkToReview[data-queno="${queNo}"]`).removeClass("false").addClass("true");
-//   }
-// });
 
 // CREATE TEST
 $(".btn-createTest").on("click", function () {
@@ -273,9 +235,24 @@ $("#testBlock").on("click", ".btnCreateTest", function () {
   let to = $("#filterOptionToQuestion2").val();
   let random = $("#filterOptionRandom").val();
   
+  exam.childExamChoice = [];
   let listQuestion = exam.getFilterQuestion(type, from, to, random, max);
   exam.renderContent(listQuestion, "#testBlock .testContent", false);
   $(".btnShowAnswer").removeClass("d-none");
+});
+
+// MARK STAR
+$("#testBlock").on("click", ".starMarkToReview", function () {
+  let queNo = $(this).data("queno");
+  let isMarked = $(`#testBlock .starMarkToReview[data-queno="${queNo}"]`).hasClass("true");
+  
+  exam.saveMarkToReview(queNo, !isMarked);
+  que.markToReview(queNo, !isMarked);
+  if(isMarked) {
+    $(`#testBlock .starMarkToReview[data-queno="${queNo}"]`).removeClass("true").addClass("false");
+  } else {
+    $(`#testBlock .starMarkToReview[data-queno="${queNo}"]`).removeClass("false").addClass("true");
+  }
 });
 
 // SHOW ANSWER

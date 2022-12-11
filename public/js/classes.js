@@ -62,9 +62,9 @@ class Question {
     
   }
 
-  getQuestion(queNo, queData, choiceAnswer, isMarked = false) {
+  getQuestion(choiceAnswer, isMarked = false) {
     // Load Question Data
-    this.loadData(queData, queNo);
+    // this.loadData(queData, queNo);
 
     // Show Question Number
     this.showQueNumber(this.queNo);
@@ -109,8 +109,8 @@ class Question {
     let self = this;
     var htmlText = "";
     var SYMBOL_ANSWERS = ["A", "B", "C", "D", "E", "F", "G", "H"];
-
-    this.answer_list.forEach(function (answer, index) {
+    
+    self.answer_list.forEach(function (answer, index) {
       let queContentAwnswer = "";
       if (isShowAnswer) {
         queContentAwnswer = answer.correct ? "true" : "false";
@@ -172,11 +172,11 @@ class Question {
     $(".total-questions").text(`Question ${queNo + 1} of ${queDataCount}`);
   }
 
-  showQueAnswerHtml(queData, choiceAnswer, isShowAnswer = false) {
+  showQueAnswerHtml(choiceAnswer, isShowAnswer = false) {
     if (isShowAnswer) {
       $(".explanation-block").html(`
         <h6>Explanation: </h6>
-        ${queData.general_feedback}
+        ${this.general_feedback}
       `);
     } else {
       $(".explanation-block").html("");
@@ -219,11 +219,21 @@ class Question {
     }
     $("#attempts-que ul").html(liQuestHtml);
   }
+
+  editQuestionHtml() {
+    console.log("Edit Question");
+
+  }
+  saveQuestion() {
+    console.log("save Question");
+
+  }
 }
 
 class Exam {
   constructor(listQuestions = [], cacheItemId = "default") {
-    this.listQuestions = listQuestions;
+    this.listQuestions = this.loadQuestions(listQuestions);
+    // this.listQuestions = listQuestions;
     this.count = listQuestions.length;
     this.current = 0;
     this.choices = [];
@@ -232,6 +242,18 @@ class Exam {
     this.comments = [];
     this.childExam = [];
     this.childExamChoice = [];
+  }
+
+  //Load all question from list
+  loadQuestions(questions) {
+    let list = [];
+    questions.forEach(function (question, index) {
+      let quesObj = new Question();
+      quesObj.loadData(question, index);
+      list = [...list, quesObj];
+    });
+
+    return list;
   }
 
   currentQuestion() {
@@ -259,6 +281,10 @@ class Exam {
   getQuestion(queNo = 0) {
     return this.listQuestions[queNo];
   }
+
+  // getQuestion(queNo = 0) {
+  //   return this.listQuestions[queNo];
+  // }
 
   saveChoice(queNo, aws) {
     let elementIndex = this.choices.findIndex((obj) => obj.queNo == queNo);
@@ -329,7 +355,7 @@ class Exam {
 
     var self = this;
     this.listQuestions.forEach(function (question, index) {
-      let correctAnswers = self.getAnswer(question.answer_list[0].answers);
+      let correctAnswers = self.getAnswer(question.answer_list);
       let choiceAnswerText = self.getChoice(index);
       let choiceAnswers = choiceAnswerText.split("").sort();
       let isMarkToReview = self.getMarkToReview(index);
@@ -509,14 +535,14 @@ class Exam {
     var self = this;
     var htmlText = "";
     listQuestion.forEach(function (markedQue, index) {
-      let queData = self.listQuestions[markedQue["queNo"]];
-      let question = new Question();
+      let question = self.listQuestions[markedQue["queNo"]];
       let userChoice = self.childExamChoice.filter(item => item.queNo == markedQue["queNo"]).map(item => item.answer).toString();
-      question.loadData(queData, markedQue["queNo"]);
       question.options.userMarked = markedQue["isMarked"];
       question.options.isShowAnswer = isShowAnswer;
       if(isShowAnswer) {
         question.options.userChoice = userChoice;
+      } else {
+        question.options.userChoice = "";
       }
       
       htmlText += question.renderQuestionHtml();
