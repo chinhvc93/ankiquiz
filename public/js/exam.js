@@ -54,9 +54,12 @@ $(".btn-showDiscussion").on("click", function () {
     $(".discussion-container").removeClass("d-none");
     $(".btn-showDiscussion").text(`Hide Discussion (${discusstion_count})`);
   }
- 
+  
   if(discusstion) {
     let html_discusstion = "";
+    //Sort by voted count
+    discusstion.sort((a, b) => b.upvote_count - a.upvote_count);
+    
     discusstion.forEach(function (comment, index) {
       let selected_answers = comment.selected_answers;
       let html_selected_answers = "";

@@ -27,6 +27,12 @@ var listExam = [
     group: "ExamTopic SOA-C02",
     data: SOA_C02_Exam_051_099.data,
   },
+  {
+    id: "SOA_C02_Exam_Extra1",
+    name: "[SOA_C02] ExamTopic Extra 1",
+    group: "ExamTopic SOA-C02",
+    data: SOA_C02_Exam_Extra1.data,
+  },
 
   //GROUP 2
   {
