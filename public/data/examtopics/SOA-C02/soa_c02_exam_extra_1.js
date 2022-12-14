@@ -3683,6 +3683,3187 @@ var SOA_C02_Exam_Extra1 = {
           "selected_answers": "Selected Answer: A"
         }
       ]
+    },
+    {
+      "question_id": "#105",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>An AWS Lambda function is intermittently failing several times a day. A SysOps administrator must find out how often this error has occurred in the last 7 days.<br>Which action will meet this requirement in the MOST operationally efficient manner?<br><br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: C</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#105",
+          "answers": [
+            {
+              "choice": "<p>A. Use Amazon Athena to query the Amazon CloudWatch logs that are associated with the Lambda function.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Use Amazon Athena to query the AWS CloudTrail logs that are associated with the Lambda function.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Use Amazon CloudWatch Logs Insights to query the associated Lambda function logs.</p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Use Amazon OpenSearch Service (Amazon Elasticsearch Service) to stream the Amazon CloudWatch logs for the Lambda function.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 741450,
+          "date": "Sun 11 Dec 2022 07:00",
+          "username": "michaldavid",
+          "content": "ccccccc",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 720248,
+          "date": "Thu 17 Nov 2022 06:58",
+          "username": "Liongeek",
+          "content": "Ans: C",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 696973,
+          "date": "Mon 17 Oct 2022 08:08",
+          "username": "Surferbolt",
+          "content": "C is the answer",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 659382,
+          "date": "Sun 04 Sep 2022 18:16",
+          "username": "princajen",
+          "content": "Voting for C!<br><br>https://aws.amazon.com/blogs/compute/operating-lambda-using-cloudwatch-logs-insights/",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 657879,
+          "date": "Sat 03 Sep 2022 00:35",
+          "username": "Rick365",
+          "content": "C.  Use Amazon CloudWatch Logs Insights to query the associated Lambda function logs.",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
+    },
+    {
+      "question_id": "#115",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company’s SysOps administrator deploys four new Amazon EC2 instances by using the standard Amazon Linux 2 Amazon Machine Image (AMI). The company needs to be able to use AWS Systems Manager to manage the instances. The SysOps administrator notices that the instances do not appear in the Systems Manager console.<br><br>What must the SysOps administrator do to resolve this issue?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#115",
+          "answers": [
+            {
+              "choice": "<p>A. Connect to each instance by using SSH. Install Systems Manager Agent on each instance. Configure Systems Manager Agent to start automatically when the instances start up.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Use AWS Certificate Manager (ACM) to create a TLS certificate. Import the certificate into each instance. Configure Systems Manager Agent to use the TLS certificate for secure communications.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Connect to each instance by using SSH. Create an ssm-user account. Add the ssm-user account to the /etc/sudoers.d directory.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Attach an IAM instance profile to the instances. Ensure that the instance profile contains the AmazonSSMManagedInstanceCore policy.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 741469,
+          "date": "Sun 11 Dec 2022 07:28",
+          "username": "michaldavid",
+          "content": "ddddddd",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 720503,
+          "date": "Thu 17 Nov 2022 14:58",
+          "username": "Liongeek",
+          "content": "Ans: D<br>If instances were deployed with Amazon Linux 2, they already have the SSM Agent installed.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 719940,
+          "date": "Wed 16 Nov 2022 20:11",
+          "username": "Xelnak",
+          "content": "D.  for sure<br>https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-profile.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#113",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company hosts an application on an Amazon EC2 instance in a single AWS Region. The application requires support for non-HTTP TCP traffic and HTTP traffic.<br>The company wants to deliver content with low latency by leveraging the AWS network. The company also wants to implement an Auto Scaling group with an<br>Elastic Load Balancer.<br>How should a SysOps administrator meet these requirements?<br><br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#113",
+          "answers": [
+            {
+              "choice": "<p>A. Create an Auto Scaling group with an Application Load Balancer (ALB). Add an Amazon CloudFront distribution with the ALB as the origin.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create an Auto Scaling group with an Application Load Balancer (ALB). Add an accelerator with AWS Global Accelerator with the ALB as an endpoint.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an Auto Scaling group with a Network Load Balancer (NLB). Add an Amazon CloudFront distribution with the NLB as the origin.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create an Auto Scaling group with a Network Load Balancer (NLB). Add an accelerator with AWS Global Accelerator with the NLB as an endpoint.</p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 732373,
+          "date": "Thu 01 Dec 2022 08:42",
+          "username": "Akaza",
+          "content": "D for sure",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 697352,
+          "date": "Mon 17 Oct 2022 13:19",
+          "username": "Surferbolt",
+          "content": "D is the answer.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 670834,
+          "date": "Fri 16 Sep 2022 14:42",
+          "username": "Gorille69",
+          "content": "It is not A or B because ALB works with layer 7 of OSI model ( HTTP, HTTPS ) , NLB works with layer 4 ( TCP, UDP, TLS ) . it remains C or D .it is possible to have the eLB as the origin Cloudfront but CloudFront is designed to handle the HTTP protocol, while Global Accelerator is best used for HTTP and non-HTTP protocols such as TCP and UDP. So, my answer is D too.",
+          "upvote_count": "3",
+          "selected_answers": ""
+        },
+        {
+          "id": 666471,
+          "date": "Sun 11 Sep 2022 23:56",
+          "username": "Balliache520505",
+          "content": "Answer D.  AWS Global Accelerator and Amazon CloudFront are separate services that use the AWS global network and its edge locations around the world. CloudFront improves performance for both cacheable content (such as images and videos) and dynamic content (such as API acceleration and dynamic site delivery). Global Accelerator improves performance for a wide range of applications over TCP or UDP by proxying packets at the edge to applications running in one or more AWS Regions. Global Accelerator is a good fit for non-HTTP use cases, such as gaming (UDP), IoT (MQTT), or Voice over IP, as well as for HTTP use cases that specifically require static IP addresses or deterministic, fast regional failover. Both services integrate with AWS Shield for DDoS protection.",
+          "upvote_count": "3",
+          "selected_answers": ""
+        },
+        {
+          "id": 661046,
+          "date": "Tue 06 Sep 2022 11:35",
+          "username": "kati2k22cz",
+          "content": "Yes, found 2 references. I agree with D. <br>https://medium.com/awesome-cloud/aws-difference-between-application-load-balancer-and-network-load-balancer-cb8b6cd296a4<br>https://aws.amazon.com/global-accelerator/faqs/?nc1=h_ls",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 659976,
+          "date": "Mon 05 Sep 2022 11:14",
+          "username": "Lolaadmin",
+          "content": "Ans:D<br>CloudFront is designed to handle HTTP protocol meanwhile Global Accelerator is best used for both HTTP and non-HTTP protocols such as TCP and UDP.<br>https://tutorialsdojo.com/aws-global-accelerator-vs-amazon-cloudfront/",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 659623,
+          "date": "Mon 05 Sep 2022 01:25",
+          "username": "AAAaat",
+          "content": "I think it is D because it says NON HTTP traffic.<br>https://aws.amazon.com/elasticloadbalancing/features/",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 659621,
+          "date": "Mon 05 Sep 2022 01:24",
+          "username": "AAAaatAAAaat",
+          "content": "I think it is C because it says NON HTTP traffic. <br>https://aws.amazon.com/elasticloadbalancing/features/I meant D",
+          "upvote_count": "12",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 659624,
+          "date": "Mon 05 Sep 2022 01:25",
+          "username": "AAAaat",
+          "content": "I meant D",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 659402,
+          "date": "Sun 04 Sep 2022 18:45",
+          "username": "haxaffee",
+          "content": "In my opinion every answer so far is wrong. The question states it needs HTTP and NON-HTTP TCP tarffic. Therefore it cannot be an ALB and must be a NLB.  AWS Global Accelerator: \\\"When the internet is congested, AWS Global Accelerator optimizes the path to your application to keep packet loss, jitter, and latency consistently low.\\\"<br><br>D is correct in my world.",
+          "upvote_count": "4",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 658761,
+          "date": "Sat 03 Sep 2022 21:00",
+          "username": "andrerkn",
+          "content": "Looks B works better for now.<br>https://jayendrapatil.com/aws-cloudfront-vs-global-accelerator/<br><br>\\\"Global Accelerator improves performance for a wide range of applications over TCP or UDP by proxying packets at the edge to applications running in one or more AWS Regions\\\".<br><br>\\\"Global Accelerator is a good fit for non-HTTP use cases, such as gaming (UDP), IoT (MQTT), or VoIP, as well as for HTTP use cases that require static IP addresses or deterministic, fast regional failover.\\\"",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 657938,
+          "date": "Sat 03 Sep 2022 02:53",
+          "username": "Rick365",
+          "content": "A.  Create an Auto Scaling group with an Application Load Balancer (ALB). Add an Amazon CloudFront distribution with the ALB as the origin.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
+    },
+    {
+      "question_id": "#112",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company has an application that runs on a fleet of Amazon EC2 instances behind an Elastic Load Balancer. The instances run in an Auto Scaling group. The application's performance remains consistent throughout most of each day. However, an increase in user traffic slows the performance during the same 4-hour period of time each day.<br>What is the MOST operationally efficient solution that will resolve this issue?<br><br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: C</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#112",
+          "answers": [
+            {
+              "choice": "<p>A. Configure a second Elastic Load Balancer in front of the Auto Scaling group with a weighted routing policy.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Configure the fleet of EC2 instances to run on larger instance types to support the increase in user traffic.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create a scheduled scaling action to scale out the number of EC2 instances shortly before the increase in user traffic occurs.</p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Manually add a few more EC2 instances to the Auto Scaling group to support the increase in user traffic.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 656911,
+          "date": "Fri 02 Sep 2022 05:16",
+          "username": "princajen",
+          "content": "I'm voting for C!<br>They see the same slow performance at the same time each day. Scheduled scaling makes sense.<br>Scheduled scaling helps you to set up your own scaling schedule according to predictable load changes. For example, let's say that every week the traffic to your web application starts to increase on Wednesday, remains high on Thursday, and starts to decrease on Friday. You can configure a schedule for Amazon EC2 Auto Scaling to increase capacity on Wednesday and decrease capacity on Friday.<br><br>To use scheduled scaling, you create scheduled actions. Scheduled actions are performed automatically as a function of date and time. When you create a scheduled action, you specify when the scaling activity should occur and the new desired, minimum, and maximum sizes for the scaling action. You can create scheduled actions that scale one time only or that scale on a recurring schedule.<br><br>https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html",
+          "upvote_count": "7",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 741465,
+          "date": "Sun 11 Dec 2022 07:21",
+          "username": "michaldavid",
+          "content": "ccccccc",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 720260,
+          "date": "Thu 17 Nov 2022 07:14",
+          "username": "Liongeek",
+          "content": "Ans: C",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 697279,
+          "date": "Mon 17 Oct 2022 12:09",
+          "username": "Surferbolt",
+          "content": "C.  Since peak traffic is predictable, they can schedule a scale out.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 659397,
+          "date": "Sun 04 Sep 2022 18:41",
+          "username": "haxaffee",
+          "content": "Vote C.  No way its A. ",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 657928,
+          "date": "Sat 03 Sep 2022 02:33",
+          "username": "Rick365",
+          "content": "C.  Create a scheduled scaling action to scale out the number of EC2 instances shortly before the increase in user traffic occurs.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
+    },
+    {
+      "question_id": "#108",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A SysOps administrator is designing a solution for an Amazon RDS for PostgreSQL DB instance. Database credentials must be stored and rotated monthly. The applications that connect to the DB instance send write-intensive traffic with variable client connections that sometimes increase significantly in a short period of time.<br>Which solution should a SysOps administrator choose to meet these requirements?<br><br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: C</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#108",
+          "answers": [
+            {
+              "choice": "<p>A. Configure AWS Key Management Service (AWS KMS) to automatically rotate the keys for the DB instance. Use RDS Proxy to handle the increases in database connections.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Configure AWS Key Management Service (AWS KMS) to automatically rotate the keys for the DB instance. Use RDS read replicas to handle the increases in database connections.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Configure AWS Secrets Manager to automatically rotate the credentials for the DB instance. Use RDS Proxy to handle the increases in database connections.</p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Configure AWS Secrets Manager to automatically rotate the credentials for the DB instance. Use RDS read replicas to handle the increases in database connections.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 741458,
+          "date": "Sun 11 Dec 2022 07:11",
+          "username": "michaldavid",
+          "content": "cccccccc",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 720252,
+          "date": "Thu 17 Nov 2022 07:07",
+          "username": "Liongeek",
+          "content": "Ans: C",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 697259,
+          "date": "Mon 17 Oct 2022 11:58",
+          "username": "Surferbolt",
+          "content": "C. <br>https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotate-secrets_turn-on-for-db.html",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 685131,
+          "date": "Mon 03 Oct 2022 02:36",
+          "username": "bakjeeone",
+          "content": "Secret Manager can rotate secret in database.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 681104,
+          "date": "Tue 27 Sep 2022 21:12",
+          "username": "Gianilucaxenodamus",
+          "content": "It’s A as Secrets Manager does not auto rotate credentialsKMS does not handle database credentials.It handles encryption keys.<br>This is secrets manager.",
+          "upvote_count": "11",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 718317,
+          "date": "Mon 14 Nov 2022 23:27",
+          "username": "xenodamus",
+          "content": "KMS does not handle database credentials.It handles encryption keys.<br>This is secrets manager.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 659388,
+          "date": "Sun 04 Sep 2022 18:25",
+          "username": "haxaffee",
+          "content": "I thinnk C is correct since we are talking about writing to the DB.  It is indeed available: Amazon RDS Proxy is available for Amazon Aurora with MySQL compatibility, Amazon Aurora with PostgreSQL compatibility, Amazon RDS for MariaDB, Amazon RDS for MySQL, and Amazon RDS for PostgreSQL.",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
+    },
+    {
+      "question_id": "#107",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>An Amazon CloudFront distribution has a single Amazon S3 bucket as its origin. A SysOps administrator must ensure that users can access the S3 bucket only through requests from the CloudFront endpoint.<br>Which solution will meet these requirements?<br><br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: C</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#107",
+          "answers": [
+            {
+              "choice": "<p>A. Configure S3 Block Public Access on the S3 bucket. Update the S3 bucket policy to allow the GetObject action from only the CloudFront distribution.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Configure Origin Shield in the CloudFront distribution. Update the CloudFront origin to include a custom Origin_Shield header.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an origin access identity (OAI). Assign the OAI to the CloudFront distribution. Update the S3 bucket policy to restrict access to the OAI.</p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create an origin access identity (OAI). Assign the OAI to the S3 bucket. Update the CloudFront origin to include a custom Origin header with the OAI value.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 741456,
+          "date": "Sun 11 Dec 2022 07:09",
+          "username": "michaldavid",
+          "content": "cccccccc",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 697251,
+          "date": "Mon 17 Oct 2022 11:50",
+          "username": "Surferbolt",
+          "content": "C is the answer",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 691412,
+          "date": "Mon 10 Oct 2022 20:28",
+          "username": "elnurguSurferbolt",
+          "content": "Answer C says, \\\"..restrict access to OAI\\\" I obviously didn't understand it. Why do we restrict access to OAI? Actually, I think we need to allow read-only access to OAI.They probably typed wrongly. If I recall correctly, the button reads somewhere along the lines of 'bucket can restrict access to only OAI', and what it achieves is allowing S3 objects to be accessed only through CloudFront.",
+          "upvote_count": "22",
+          "selected_answers": ""
+        },
+        {
+          "id": 697256,
+          "date": "Mon 17 Oct 2022 11:54",
+          "username": "Surferbolt",
+          "content": "They probably typed wrongly. If I recall correctly, the button reads somewhere along the lines of 'bucket can restrict access to only OAI', and what it achieves is allowing S3 objects to be accessed only through CloudFront.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 660401,
+          "date": "Mon 05 Sep 2022 19:30",
+          "username": "kati2k22cz",
+          "content": "C is the correct answer<br>https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
+    },
+    {
+      "question_id": "#119",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company using AWS Organizations requires that no Amazon S3 buckets in its production accounts should ever be deleted.<br><br>What is the SIMPLEST approach the SysOps administrator can take to ensure S3 buckets in those accounts can never be deleted?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#119",
+          "answers": [
+            {
+              "choice": "<p>A. Set up MFA Delete on all the S3 buckets to prevent the buckets from being deleted.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Use service control policies to deny the s3:DeleteBucket action on all buckets in production accounts.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an IAM group that has an IAM policy to deny the s3:DeleteBucket action on all buckets in production accounts.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Use AWS Shield to deny the s3:DeleteBucket action on the AWS account instead of all S3 buckets.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 741483,
+          "date": "Sun 11 Dec 2022 07:39",
+          "username": "michaldavid",
+          "content": "bbbbbbb",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 720580,
+          "date": "Thu 17 Nov 2022 16:18",
+          "username": "Liongeek",
+          "content": "Ans: B",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#121",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A development team recently deployed a new version of a web application to production. After the release, penetration testing revealed a cross-site scripting vulnerability that could expose user data.<br><br>Which AWS service will mitigate this issue?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#121",
+          "answers": [
+            {
+              "choice": "<p>A. AWS Shield Standard<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. AWS WAF<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Elastic Load Balancing<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Amazon Cognito<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 741490,
+          "date": "Sun 11 Dec 2022 07:52",
+          "username": "michaldavid",
+          "content": "bbbbbb",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
+    },
+    {
+      "question_id": "#123",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company’s customers are reporting increased latency while accessing static web content from Amazon S3. A SysOps administrator observed a very high rate of read operations on a particular S3 bucket.<br><br>What will minimize latency by reducing load on the S3 bucket?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: C</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#123",
+          "answers": [
+            {
+              "choice": "<p>A. Migrate the S3 bucket to a region that is closer to end users’ geographic locations.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Use cross-region replication to replicate all of the data to another region.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an Amazon CloudFront distribution with the S3 bucket as the origin.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Use Amazon ElastiCache to cache data being served from Amazon S3.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 741492,
+          "date": "Sun 11 Dec 2022 07:55",
+          "username": "michaldavid",
+          "content": "ccccccccc",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 737934,
+          "date": "Wed 07 Dec 2022 14:58",
+          "username": "Pepepep",
+          "content": "Discussion on this link.<br>https://www.examtopics.com/discussions/amazon/view/7004-exam-aws-sysops-topic-1-question-611-discussion/",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 737533,
+          "date": "Wed 07 Dec 2022 08:39",
+          "username": "grka25beznika",
+          "content": "The answer is C.  You can find this question in the old dump. Most people voted C there.<br><br>Cloudfront will cache the static content reducing the load on the S3 bucketC definitely. D doesn't even make any sense with static website. Elasticache works together with a DataBase.",
+          "upvote_count": "21",
+          "selected_answers": ""
+        },
+        {
+          "id": 738187,
+          "date": "Wed 07 Dec 2022 18:52",
+          "username": "beznika",
+          "content": "C definitely. D doesn't even make any sense with static website. Elasticache works together with a DataBase.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 734604,
+          "date": "Sat 03 Dec 2022 18:35",
+          "username": "CloudHandsOn",
+          "content": "The answer should be D. <br>Elasticache used with S3 for high reads is ideal to help with this kind of issue.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 722247,
+          "date": "Sat 19 Nov 2022 21:55",
+          "username": "FatochBiggerStaff",
+          "content": "Those questions are new .Where is the discussion ? after 120 no discussion. how do I believe default answer is correct. Anyone recently trying to get certificatesI agree, why no discussion. How are the correct answers picked?",
+          "upvote_count": "41",
+          "selected_answers": ""
+        },
+        {
+          "id": 725147,
+          "date": "Wed 23 Nov 2022 14:22",
+          "username": "BiggerStaff",
+          "content": "I agree, why no discussion. How are the correct answers picked?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#125",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company hosts a web application on Amazon EC2 instances behind an Application Load Balancer. The instances are in an Amazon EC2 Auto Scaling group. The application is accessed with a public URL.<br><br>A SysOps administrator needs to implement a monitoring solution that checks the availability of the application and follows the same routes and actions as a customer. The SysOps administrator must receive a notification if less than 95% of the monitoring runs find no errors.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: A</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#125",
+          "answers": [
+            {
+              "choice": "<p>A. Create an Amazon CloudWatch Synthetics canary with a script that follows customer routes. Schedule the canary to run on a recurring schedule. Create a CloudWatch alarm that publishes a message to an Amazon Simple Notification Service (Amazon SNS) topic when the SuccessPercent metric is less than 95%.<br><br>Most Voted<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create Amazon Route 53 health checks that monitor the availability of the endpoint. Create Amazon CloudWatch alarms that publish a message to an Amazon Simple Notification Service (Amazon SNS) topic when the HealthCheckPercentageHealthy metric is less than 95%.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create a single AWS Lambda function to check whether the endpoints are available for each customer path. Schedule the Lambda function by using Amazon EventBridge (Amazon CloudWatch Events). Configure the Lambda function to publish a message to an Amazon Simple Notification Service (Amazon SNS) topic when an endpoint returns an error.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create an AWS Lambda function for each customer path to check whether that specific endpoint is available. Schedule the Lambda functions by using Amazon EventBridge (Amazon CloudWatch Events). Configure each Lambda function to publish a custom metric to Amazon CloudWatch for the endpoint status. Create CloudWatch alarms based on each custom metric to publish a message to an Amazon Simple Notification Service (Amazon SNS) topic when an alarm is in the ALARM state.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 741495,
+          "date": "Sun 11 Dec 2022 08:02",
+          "username": "michaldavid",
+          "content": "aaaaaaaa",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 740822,
+          "date": "Sat 10 Dec 2022 11:00",
+          "username": "BugsBunny9998666",
+          "content": "canary forscripts",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 720724,
+          "date": "Thu 17 Nov 2022 19:10",
+          "username": "hardwiredmanhardwiredman",
+          "content": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.htmlThink Canary in the coal mine...",
+          "upvote_count": "11",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 720725,
+          "date": "Thu 17 Nov 2022 19:11",
+          "username": "hardwiredman",
+          "content": "Think Canary in the coal mine...",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 720713,
+          "date": "Thu 17 Nov 2022 19:01",
+          "username": "Liongeek",
+          "content": "Ans: A<br>Synthetics it's the only one who follows the same routes and actions as a customer.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 719973,
+          "date": "Wed 16 Nov 2022 20:52",
+          "username": "Xelnak",
+          "content": "A for sure<br>You can use Amazon CloudWatch Synthetics to create canaries, configurable scripts that run on a schedule, to monitor your endpoints and APIs. Canaries follow the same routes and perform the same actions as a customer, which makes it possible for you to continually verify your customer experience even when you don't have any customer traffic on your applications. By using canaries, you can discover issues before your customers do.<br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
+    },
+    {
+      "question_id": "#133",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A SysOps administrator is unable to authenticate an AWS CLI call to an AWS service.<br><br>Which of the following is the cause of this issue?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#133",
+          "answers": [
+            {
+              "choice": "<p>A. The IAM password is incorrect.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. The server certificate is missing.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. The SSH key pair is incorrect.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. There is no access key.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 742452,
+          "date": "Mon 12 Dec 2022 07:18",
+          "username": "michaldavid",
+          "content": "dddddd",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 720804,
+          "date": "Thu 17 Nov 2022 20:44",
+          "username": "Liongeek",
+          "content": "Ans: D<br>You don't use passwords in AWS CLI. You use access and secret access key.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#134",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company requires that all IAM user accounts that have not been used for 90 days or more must have their access keys and passwords immediately disabled. A SysOps administrator must automate the process of disabling unused keys using the MOST operationally efficient method.<br><br>How should the SysOps administrator implement this solution?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#134",
+          "answers": [
+            {
+              "choice": "<p>A. Create an AWS Step Functions workflow to identify IAM users that have not been active for 90 days. Run an AWS Lambda function when a scheduled Amazon EventBridge (Amazon CloudWatch Events) rule is invoked to automatically remove the AWS access keys and passwords for these IAM users.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Configure an AWS Config rule to identify IAM users that have not been active for 90 days. Set up an automatic weekly batch process on an Amazon EC2 instance to disable the AWS access keys and passwords for these IAM users.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Develop and run a Python script on an Amazon EC2 instance to programmatically identify IAM users that have not been active for 90 days. Automatically delete these IAM users.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Set up an AWS Config managed rule to identify IAM users that have not been active for 90 days. Set up an AWS Systems Manager automation runbook to disable the AWS access keys for these IAM users.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 742454,
+          "date": "Mon 12 Dec 2022 07:20",
+          "username": "michaldavid",
+          "content": "ddddddd",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 741013,
+          "date": "Sat 10 Dec 2022 14:42",
+          "username": "Pepepep",
+          "content": "D. <br>https://docs.aws.amazon.com/config/latest/developerguide/iam-user-unused-credentials-check.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 728352,
+          "date": "Sun 27 Nov 2022 16:01",
+          "username": "marcelodba",
+          "content": "I'll go for D",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: D"
+        }
+      ]
+    },
+    {
+      "question_id": "#136",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company runs workloads on 90 Amazon EC2 instances in the eu-west-1 Region in an AWS account. In 2 months, the company will migrate the workloads from eu-west-1 to the eu-west-3 Region.<br><br>The company needs to reduce the cost of the EC2 instances. The company is willing to make a 1-year commitment that will begin next week. The company must choose an EC2 instance purchasing option that will provide discounts for the 90 EC2 instances regardless of Region during the 1-year period.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#136",
+          "answers": [
+            {
+              "choice": "<p>A. Purchase EC2 Standard Reserved Instances.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Purchase an EC2 Instance Savings Plan.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Purchase EC2 Convertible Reserved Instances.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Purchase a Compute Savings Plan.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 742457,
+          "date": "Mon 12 Dec 2022 07:25",
+          "username": "michaldavid",
+          "content": "ddddddd",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 720706,
+          "date": "Thu 17 Nov 2022 18:47",
+          "username": "Xelnak",
+          "content": "EC2 Instance Savings Plans provide the lowest prices, offering savings up to 72% (just like Standard RIs) in exchange for commitment to usage of individual instance families in a Region (for example, M5 usage in N. Virginia).<br>https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-reservation-models/savings-plans.html",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 720161,
+          "date": "Thu 17 Nov 2022 04:10",
+          "username": "Liongeek",
+          "content": "Ans: D<br>Compute Saving Plans are global<br>The other ones are regional.<br>Question asks for global",
+          "upvote_count": "2",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#138",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company plans to run a public web application on Amazon EC2 instances behind an Elastic Load Balancer (ELB). The company’s security team wants to protect the website by using AWS Certificate Manager (ACM) certificates. The ELB must automatically redirect any HTTP requests to HTTPS.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#138",
+          "answers": [
+            {
+              "choice": "<p>A. Create an Application Load Balancer that has one HTTPS listener on port 80. Attach an SSL/TLS certificate to listener port 80. Create a rule to redirect requests from HTTP to HTTPS.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create an Application Load Balancer that has one HTTP listener on port 80 and one HTTPS protocol listener on port 443. Attach an SSL/TLS certificate to listener port 443. Create a rule to redirect requests from port 80 to port 443.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an Application Load Balancer that has two TCP listeners on port 80 and port 443. Attach an SSL/TLS certificate to listener port 443. Create a rule to redirect requests from port 80 to port 443.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create a Network Load Balancer that has two TCP listeners on port 80 and port 443. Attach an SSL/TLS certificate to listener port 443. Create a rule to redirect requests from port 80 to port 443.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 742462,
+          "date": "Mon 12 Dec 2022 07:29",
+          "username": "michaldavid",
+          "content": "bbbbbbbb",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 728357,
+          "date": "Sun 27 Nov 2022 16:08",
+          "username": "marcelodba",
+          "content": "I'll go for B",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
+    },
+    {
+      "question_id": "#140",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company is using Amazon Elastic Container Service (Amazon ECS) to run a containerized application on Amazon EC2 instances. A SysOps administrator needs to monitor only traffic flows between the ECS tasks.<br><br>Which combination of steps should the SysOps administrator take to meet this requirement? (Choose two.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: BC</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#140",
+          "answers": [
+            {
+              "choice": "<p>A. Configure Amazon CloudWatch Logs on the elastic network interface of each task.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Configure VPC Flow Logs on the elastic network interface of each task.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Specify the awsvpc network mode in the task definition.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Specify the bridge network mode in the task definition.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Specify the host network mode in the task definition.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 742620,
+          "date": "Mon 12 Dec 2022 10:44",
+          "username": "Arnaud92",
+          "content": "B,C : https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking-awsvpc.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 728376,
+          "date": "Sun 27 Nov 2022 16:30",
+          "username": "marcelodba",
+          "content": "I'll go for B,C",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: BC"
+        }
+      ]
+    },
+    {
+      "question_id": "#141",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company uses AWS Organizations to manage multiple AWS accounts. The company’s SysOps team has been using a manual process to create and manage IAM roles. The team requires an automated solution to create and manage the necessary IAM roles for multiple AWS accounts.<br><br>What is the MOST operationally efficient solution that meets these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#141",
+          "answers": [
+            {
+              "choice": "<p>A. Create AWS CloudFormation templates. Reuse the templates to create the necessary IAM roles in each of the AWS accounts.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Use AWS Directory Service with AWS Organizations to automatically associate the necessary IAM roles with Microsoft Active Directory users.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Use AWS Resource Access Manager with AWS Organizations to deploy and manage shared resources across the AWS accounts.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Use AWS CloudFormation StackSets with AWS Organizations to deploy and manage IAM roles for the AWS accounts.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 742475,
+          "date": "Mon 12 Dec 2022 07:46",
+          "username": "michaldavid",
+          "content": "ddddddd",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 728387,
+          "date": "Sun 27 Nov 2022 16:41",
+          "username": "marcelodba",
+          "content": "I'll go for D<br>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        }
+      ]
+    },
+    {
+      "question_id": "#142",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A SysOps administrator needs to configure automatic rotation for Amazon RDS database credentials. The credentials must rotate every 30 days. The solution must integrate with Amazon RDS.<br><br>Which solution will meet these requirements with the LEAST operational overhead?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#142",
+          "answers": [
+            {
+              "choice": "<p>A. Store the credentials in AWS Systems Manager Parameter Store as a secure string. Configure automatic rotation with a rotation interval of 30 days.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Store the credentials in AWS Secrets Manager. Configure automatic rotation with a rotation interval of 30 days.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Store the credentials in a file in an Amazon S3 bucket. Deploy an AWS Lambda function to automatically rotate the credentials every 30 days.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Store the credentials in AWS Secrets Manager. Deploy an AWS Lambda function to automatically rotate the credentials every 30 days.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 742476,
+          "date": "Mon 12 Dec 2022 07:47",
+          "username": "michaldavid",
+          "content": "bbbbbbb",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 728389,
+          "date": "Sun 27 Nov 2022 16:43",
+          "username": "marcelodba",
+          "content": "Ans. B",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
+    },
+    {
+      "question_id": "#144",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A SysOps administrator recently configured Amazon S3 Cross-Region Replication on an S3 bucket.<br><br>Which of the following does this feature replicate to the destination S3 bucket by default?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#144",
+          "answers": [
+            {
+              "choice": "<p>A. Objects in the source S3 bucket for which the bucket owner does not have permissions<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Objects that are stored in S3 Glacier<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Objects that existed before replication was configured<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Object metadata<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 742484,
+          "date": "Mon 12 Dec 2022 07:54",
+          "username": "michaldavid",
+          "content": "ddddddd",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 742230,
+          "date": "Mon 12 Dec 2022 01:07",
+          "username": "gsotiriou",
+          "content": "I think D as well<br><br>https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-what-is-isnot-replicated.html#:~:text=Object%20metadata%20from%20the%20source%20objects%20to%20the%20replicas.%20For%20information%20about%20replicating%20metadata%20from%20the%20replicas%20to%20the%20source%20objects%2C%20see%20Replicating%20metadata%20changes%20with%20Amazon%20S3%20replica%20modification%20sync.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 741101,
+          "date": "Sat 10 Dec 2022 17:31",
+          "username": "Fatoch",
+          "content": "In this case it is not A.  By default S3 bucket does not have permissions. Why D? I didn't get yet",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 737939,
+          "date": "Wed 07 Dec 2022 15:10",
+          "username": "grka25",
+          "content": "I think D.  <br>https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#145",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company has a workload that is sending log data to Amazon CloudWatch Logs. One of the fields includes a measure of application latency. A SysOps administrator needs to monitor the p90 statistic of this field over time.<br><br>What should the SysOps administrator do to meet this requirement?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#145",
+          "answers": [
+            {
+              "choice": "<p>A. Create an Amazon CloudWatch Contributor Insights rule on the log data.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create a metric filter on the log data.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create a subscription filter on the log data.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create an Amazon CloudWatch Application Insights rule for the workload.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 741025,
+          "date": "Sat 10 Dec 2022 15:04",
+          "username": "Pepepep",
+          "content": "B<br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/MonitoringLogData.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#148",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company must migrate its applications to AWS. The company is using Chef recipes for configuration management. The company wants to continue to use the existing Chef recipes after the applications are migrated to AWS.<br><br>What is the MOST operationally efficient solution that meets these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#148",
+          "answers": [
+            {
+              "choice": "<p>A. Use AWS CloudFormation to create an Amazon EC2 instance, install a Chef server, and add Chef recipes.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Use AWS CloudFormation to create a stack and add layers for Chef recipes.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Use AWS Elastic Beanstalk with the Docker platform to upload Chef recipes.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Use AWS OpsWorks to create a stack and add layers with Chef recipes.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 742490,
+          "date": "Mon 12 Dec 2022 08:05",
+          "username": "michaldavid",
+          "content": "ddddddd",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 728404,
+          "date": "Sun 27 Nov 2022 17:02",
+          "username": "marcelodba",
+          "content": "https://docs.aws.amazon.com/opsworks/latest/userguide/welcome_opscm.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        }
+      ]
+    },
+    {
+      "question_id": "#150",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A SysOps administrator is reviewing VPC Flow Logs to troubleshoot connectivity issues in a VPC.  While reviewing the logs, the SysOps administrator notices that rejected traffic is not listed.<br><br>What should the SysOps administrator do to ensure that all traffic is logged?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: A</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#150",
+          "answers": [
+            {
+              "choice": "<p>A. Create a new flow log that has a filter setting to capture all traffic.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create a new flow log. Set the log record format to a custom format. Select the proper fields to include in the log.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Edit the existing flow log. Change the filter setting to capture all traffic.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Edit the existing flow log. Set the log record format to a custom format. Select the proper fields to include in the log.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 719888,
+          "date": "Wed 16 Nov 2022 19:07",
+          "username": "Liongeek",
+          "content": "Ans: A<br>You CANNOT modify a VPC Flow Log<br>Ref: https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html#flow-logs-limitations \\\"After you create a flow log, you cannot change its configuration or the flow log record format. For example, you can't associate a different IAM role with the flow log, or add or remove fields in the flow log record. Instead, you can delete the flow log and create a new one with the required configuration.\\\"",
+          "upvote_count": "8",
+          "selected_answers": ""
+        },
+        {
+          "id": 740766,
+          "date": "Sat 10 Dec 2022 08:54",
+          "username": "marcelodba",
+          "content": "Ans: A",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
+    },
+    {
+      "question_id": "#151",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company is expanding its use of AWS services across its portfolios. The company wants to provision AWS accounts for each team to ensure a separation of business processes for security, compliance, and billing. Account creation and bootstrapping should be completed in a scalable and efficient way so new accounts are created with a defined baseline and governance guardrails in place. A SysOps administrator needs to design a provisioning process that saves time and resources.<br><br>Which action should be taken to meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#151",
+          "answers": [
+            {
+              "choice": "<p>A. Automate using AWS Elastic Beanstalk to provision the AWS accounts, set up infrastructure, and integrate with AWS Organizations.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create bootstrapping scripts in AWS OpsWorks and combine them with AWS CloudFormation templates to provision accounts and infrastructure.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Use AWS Config to provision accounts and deploy instances using AWS Service Catalog.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Use AWS Control Tower to create a template in Account Factory and use the template to provision new accounts.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743582,
+          "date": "Tue 13 Dec 2022 05:35",
+          "username": "michaldavid",
+          "content": "ddddddd",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 741210,
+          "date": "Sat 10 Dec 2022 20:52",
+          "username": "tyfta6",
+          "content": "Elastic Beanstalk is for Deploying Web Apps, NOT for automating MultiAccount AWS Infrastructures (which is all that Control Tower does)",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 719928,
+          "date": "Wed 16 Nov 2022 20:00",
+          "username": "Liongeek",
+          "content": "Ans: D",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#152",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A SysOps administrator noticed that the cache hit ratio for an Amazon CloudFront distribution is less than 10%.<br><br>Which collection of configuration changes will increase the cache hit ratio for the distribution? (Choose two.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: AE</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#152",
+          "answers": [
+            {
+              "choice": "<p>A. Ensure that only required cookies, query strings, and headers are forwarded in the Cache Behavior Settings.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Change the Viewer Protocol Policy to use HTTPS only.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Configure the distribution to use presigned cookies and URLs to restrict access to the distribution.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Enable automatic compression of objects in the Cache Behavior Settings.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Increase the CloudFront time to live (TTL) settings in the Cache Behavior Settings.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743583,
+          "date": "Tue 13 Dec 2022 05:36",
+          "username": "michaldavid",
+          "content": "A and E",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AE"
+        },
+        {
+          "id": 719930,
+          "date": "Wed 16 Nov 2022 20:02",
+          "username": "Liongeek",
+          "content": "Ans: A&E",
+          "upvote_count": "3",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#160",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A SysOps administrator notices a scale-up event for an Amazon EC2 Auto Scaling group. Amazon CloudWatch shows a spike in the RequestCount metric for the associated Application Load Balancer. The administrator would like to know the IP addresses for the source of the requests.<br><br>Where can the administrator find this information?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#160",
+          "answers": [
+            {
+              "choice": "<p>A. Auto Scaling logs<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. AWS CloudTrail logs<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. EC2 instance logs<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Elastic Load Balancer access logs<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743594,
+          "date": "Tue 13 Dec 2022 05:51",
+          "username": "michaldavid",
+          "content": "dddddd",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 719966,
+          "date": "Wed 16 Nov 2022 20:46",
+          "username": "Liongeek",
+          "content": "Ans: D!",
+          "upvote_count": "4",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#161",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company’s SysOps administrator deploys a public Network Load Balancer (NLB) in front of the company’s web application. The web application does not use any Elastic IP addresses. Users must access the web application by using the company’s domain name. The SysOps administrator needs to configure Amazon Route 53 to route traffic to the NLB. <br><br>Which solution will meet these requirements MOST cost-effectively?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#161",
+          "answers": [
+            {
+              "choice": "<p>A. Create a Route 53 AAAA record for the NLB. <br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create a Route 53 alias record for the NLB. <br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create a Route 53 CAA record for the NLB. <br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create a Route 53 CNAME record for the NLB. <br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743597,
+          "date": "Tue 13 Dec 2022 05:54",
+          "username": "michaldavid",
+          "content": "bbbbbb",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 738862,
+          "date": "Thu 08 Dec 2022 10:53",
+          "username": "BugsBunny9998666",
+          "content": "As a good reminder:<br>A record = URL to IPv4<br>AAAA record = URL to IPv6<br>CNAME record = URL to URL (All the same, one url = Many URL's)<br>Alias record = AWS service",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 719968,
+          "date": "Wed 16 Nov 2022 20:48",
+          "username": "Liongeek",
+          "content": "Ans: B<br>Alias record doesn't charge when you associate it to AWS resources like NLB",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#162",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company runs an encrypted Amazon RDS for Oracle DB instance. The company wants to make regular backups available in another AWS Region.<br><br>What is the MOST operationally efficient solution that meets these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: A</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#162",
+          "answers": [
+            {
+              "choice": "<p>A. Modify the DB instance. Enable cross-Region automated backups.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create an RDS read replica in another Region. Create a snapshot of the read replica.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Use AWS Database Migration Service (AWS DMS) to copy the data to a DB instance in another Region.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Temporarily turn off encryption on the DB instance. Take a snapshot. Copy the snapshot to another Region.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743600,
+          "date": "Tue 13 Dec 2022 05:56",
+          "username": "michaldavid",
+          "content": "aaaaaaaa",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 719971,
+          "date": "Wed 16 Nov 2022 20:51",
+          "username": "Liongeek",
+          "content": "Ans: A<br>REF: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReplicateBackups.html<br>\\\"Enabling cross-Region automated backups<br>You can enable backup replication on new or existing DB instances using the Amazon RDS console. You can also use the start-db-instance-automated-backups-replication AWS CLI command or the StartDBInstanceAutomatedBackupsReplication RDS API operation. You can replicate up to 20 backups to each destination AWS Region for each AWS account\\\"",
+          "upvote_count": "3",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#163",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company is rolling out a new version of its website. Management wants to deploy the new website in a limited rollout to 20% of the company’s customers. The company uses Amazon Route 53 for its website’s DNS solution.<br><br>Which configuration will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#163",
+          "answers": [
+            {
+              "choice": "<p>A. Create a failover routing policy. Within the policy, configure 80% of the website traffic to be sent to the original resource. Configure the remaining 20% of traffic as the failover record that points to the new resource.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create a multivalue answer routing policy. Within the policy, create 4 records with the name and IP address of the original resource. Configure 1 record with the name and IP address of the new resource.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create a latency-based routing policy. Within the policy, configure a record pointing to the original resource with a weight of 80. Configure a record pointing to the new resource with a weight of 20.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create a weighted routing policy. Within the policy, configure a weight of 80 for the record pointing to the original resource. Configure a weight of 20 for the record pointing to the new resource.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743601,
+          "date": "Tue 13 Dec 2022 05:57",
+          "username": "michaldavid",
+          "content": "ddddddd",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 728487,
+          "date": "Sun 27 Nov 2022 18:43",
+          "username": "marcelodba",
+          "content": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-weighted.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 719993,
+          "date": "Wed 16 Nov 2022 21:43",
+          "username": "Liongeek",
+          "content": "Ans: D",
+          "upvote_count": "3",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#165",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A SysOps administrator needs to automate the invocation of an AWS Lambda function. The Lambda function must run at the end of each day to generate a report on data that is stored in an Amazon S3 bucket.<br><br>What is the MOST operationally efficient solution that meets these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#165",
+          "answers": [
+            {
+              "choice": "<p>A. Create an Amazon EventBridge (Amazon CloudWatch Events) rule that has an event pattern for Amazon S3 and the Lambda function as a target.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create an Amazon EventBridge (Amazon CloudWatch Events) rule that has a schedule and the Lambda function as a target.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an S3 event notification to invoke the Lambda function whenever objects change in the S3 bucket.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Deploy an Amazon EC2 instance with a cron job to invoke the Lambda function.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743603,
+          "date": "Tue 13 Dec 2022 06:00",
+          "username": "michaldavid",
+          "content": "bbbbbbbb",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 720001,
+          "date": "Wed 16 Nov 2022 22:03",
+          "username": "Liongeek",
+          "content": "Ans B<br>S3 Event notification has nothing to do here since the lambda will be triggered based on a daily schedule not every time an object is uploaded",
+          "upvote_count": "3",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#177",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A SysOps administrator is reviewing AWS Trusted Advisor recommendations. The SysOps administrator notices that all the application servers for a finance application are listed in the Low Utilization Amazon EC2 Instances check. The application runs on three instances across three Availability Zones. The SysOps administrator must reduce the cost of running the application without affecting the application’s availability or design.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#177",
+          "answers": [
+            {
+              "choice": "<p>A. Reduce the number of application servers.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Apply rightsizing recommendations from AWS Cost Explorer to reduce the instance size.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Provision an Application Load Balancer in front of the instances.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Scale up the instance size of the application servers.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743621,
+          "date": "Tue 13 Dec 2022 06:33",
+          "username": "michaldavid",
+          "content": "bbbbbbbb",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 741232,
+          "date": "Sat 10 Dec 2022 22:08",
+          "username": "Fatochgsotiriou",
+          "content": "is this B? Anyone have idea?Well... For me it's is certainly not:<br>C -> LoadBalancing will not reduce your cost in the end <br>D -> Increasing the size of your servers is pretty much obvious why is not a good idea<br><br>That leaves A or B.  <br>I believe it is not A because the use case tells us to NOT mess with the application's \\\"high availability and design\\\". That means that the application should still be running on a 3-server configuration across 3 availability zones as that ensures HA and might have special design considerations in its programming.<br><br>So that leaves us with B and trusting the AWS Cost Explorer and its right sizing.",
+          "upvote_count": "21",
+          "selected_answers": ""
+        },
+        {
+          "id": 742294,
+          "date": "Mon 12 Dec 2022 02:36",
+          "username": "gsotiriou",
+          "content": "Well... For me it's is certainly not:<br>C -> LoadBalancing will not reduce your cost in the end <br>D -> Increasing the size of your servers is pretty much obvious why is not a good idea<br><br>That leaves A or B.  <br>I believe it is not A because the use case tells us to NOT mess with the application's \\\"high availability and design\\\". That means that the application should still be running on a 3-server configuration across 3 availability zones as that ensures HA and might have special design considerations in its programming.<br><br>So that leaves us with B and trusting the AWS Cost Explorer and its right sizing.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#178",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company hosts its website in the us-east-1 Region. The company is preparing to deploy its website into the eu-central-1 Region. Website visitors who are located in Europe should access the website that is hosted in eu-central-1. All other visitors access the website that is hosted in us-east-1. The company uses Amazon Route 53 to manage the website’s DNS records.<br><br>Which routing policy should a SysOps administrator apply to the Route 53 record set to meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: A</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#178",
+          "answers": [
+            {
+              "choice": "<p>A. Geolocation routing policy<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Geoproximity routing policy<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Latency routing policy<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Multivalue answer routing policy<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743622,
+          "date": "Tue 13 Dec 2022 06:33",
+          "username": "michaldavid",
+          "content": "aaaaaaa",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 741235,
+          "date": "Sat 10 Dec 2022 22:11",
+          "username": "Fatoch",
+          "content": "It's A",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#179",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>An organization with a large IT department has decided to migrate to AWS. With different job functions in the IT department, it is not desirable to give all users access to all AWS resources. Currently the organization handles access via LDAP group membership.<br><br>What is the BEST method to allow access using current LDAP credentials?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#179",
+          "answers": [
+            {
+              "choice": "<p>A. Create an AWS Directory Service Simple AD.  Replicate the on-premises LDAP directory to Simple AD. <br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create a Lambda function to read LDAP groups and automate the creation of IAM users.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Use AWS CloudFormation to create IAM roles. Deploy Direct Connect to allow access to the on-premises LDAP server.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Federate the LDAP directory with IAM using SAML. Create different IAM roles to correspond to different LDAP groups to limit permissions.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 742010,
+          "date": "Sun 11 Dec 2022 20:05",
+          "username": "tyfta6",
+          "content": "Vote for D",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 739270,
+          "date": "Thu 08 Dec 2022 17:32",
+          "username": "grka25",
+          "content": "Answer is D",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#180",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A SysOps administrator has created an Amazon EC2 instance using an AWS CloudFormation template in the us-east-1 Region. The administrator finds that this template has failed to create an EC2 instance in the us-west-2 Region.<br><br>What is one cause for this failure?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#180",
+          "answers": [
+            {
+              "choice": "<p>A. Resource tags defined in the CloudFormation template are specific to the us-east-1 Region.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. The Amazon Machine Image (AMI) ID referenced in the CloudFormation template could not be found in the us-west-2 Region.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. The cfn-init script did not run during resource provisioning in the us-west-2 Region.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. The IAM user was not created in the specified Region.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743623,
+          "date": "Tue 13 Dec 2022 06:35",
+          "username": "michaldavid",
+          "content": "bbbbbbbb",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 742018,
+          "date": "Sun 11 Dec 2022 20:08",
+          "username": "tyfta6",
+          "content": "Vote for B<br><br>AMI is region specific. So it might not be available in another region.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 739271,
+          "date": "Thu 08 Dec 2022 17:33",
+          "username": "grka25",
+          "content": "Answer is B",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#181",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A global gaming company is preparing to launch a new game on AWS. The game runs in multiple AWS Regions on a fleet of Amazon EC2 instances. The instances are in an Auto Scaling group behind an Application Load Balancer (ALB) in each Region. The company plans to use Amazon Route 53 for DNS services. The DNS configuration must direct users to the Region that is closest to them and must provide automated failover.<br><br>Which combination of steps should a SysOps administrator take to configure Route 53 to meet these requirements? (Choose two.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: AD</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#181",
+          "answers": [
+            {
+              "choice": "<p>A. Create Amazon CloudWatch alarms that monitor the health of the ALB in each Region. Configure Route 53 DNS failover by using a health check that monitors the alarms.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create Amazon CloudWatch alarms that monitor the health of the EC2 instances in each Region. Configure Route 53 DNS failover by using a health check that monitors the alarms.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Configure Route 53 DNS failover by using a health check that monitors the private IP address of an EC2 instance in each Region.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Configure Route 53 geoproximity routing. Specify the Regions that are used for the infrastructure.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Configure Route 53 simple routing. Specify the continent, country, and state or province that are used for the infrastructure.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743625,
+          "date": "Tue 13 Dec 2022 06:39",
+          "username": "michaldavid",
+          "content": "A and D",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        }
+      ]
+    },
+    {
+      "question_id": "#182",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A SysOps administrator is investigating a company’s web application for performance problems. The application runs on Amazon EC2 instances that are in an Auto Scaling group. The application receives large traffic increases at random times throughout the day. During periods of rapid traffic increases, the Auto Scaling group is not adding capacity fast enough. As a result, users are experiencing poor performance.<br><br>The company wants to minimize costs without adversely affecting the user experience when web traffic surges quickly. The company needs a solution that adds more capacity to the Auto Scaling group for larger traffic increases than for smaller traffic increases.<br><br>How should the SysOps administrator configure the Auto Scaling group to meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#182",
+          "answers": [
+            {
+              "choice": "<p>A. Create a simple scaling policy with settings to make larger adjustments in capacity when the system is under heavy load.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create a step scaling policy with settings to make larger adjustments in capacity when the system is under heavy load.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create a target tracking scaling policy with settings to make larger adjustments in capacity when the system is under heavy load.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Use Amazon EC2 Auto Scaling lifecycle hooks. Adjust the Auto Scaling group’s maximum number of instances after every scaling event.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743626,
+          "date": "Tue 13 Dec 2022 06:41",
+          "username": "michaldavid",
+          "content": "B for me",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 743381,
+          "date": "Mon 12 Dec 2022 23:28",
+          "username": "Pepepep",
+          "content": "I will go with C.  From Amazon documentation: \\\"We strongly recommend that you use a target tracking scaling policy to scale on a metric like average CPU utilization or the RequestCountPerTarget metric from the Application Load Balancer. Metrics that decrease when capacity increases and increase when capacity decreases can be used to proportionally scale out or in the number of instances using target tracking. This helps ensure that Amazon EC2 Auto Scaling follows the demand curve for your applications closely.\\\"<br>https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 742026,
+          "date": "Sun 11 Dec 2022 20:23",
+          "username": "tyfta6",
+          "content": "I vote for D",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 741248,
+          "date": "Sat 10 Dec 2022 22:24",
+          "username": "Fatoch",
+          "content": "for me D",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 739960,
+          "date": "Fri 09 Dec 2022 10:33",
+          "username": "beznika",
+          "content": "I think it's B https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 739419,
+          "date": "Thu 08 Dec 2022 21:02",
+          "username": "grka25",
+          "content": "I will go with C",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#183",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company has a compliance requirement that no security groups can allow SSH ports to be open to all IP addresses. A SysOps administrator must implement a solution that will notify the company’s SysOps team when a security group rule violates this requirement. The solution also must remediate the security group rule automatically.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: C</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#183",
+          "answers": [
+            {
+              "choice": "<p>A. Create an Amazon EventBridge (Amazon CloudWatch Events) rule that invokes an AWS Lambda function when a security group changes. Configure the Lambda function to evaluate the security group for compliance, remove all inbound security group rules on all ports, and notify the SysOps team if the security group is noncompliant.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create an AWS CloudTrail metric filter for security group changes. Create an Amazon CloudWatch alarm to notify the SysOps team through an Amazon Simple Notification Service (Amazon SNS) topic when the metric is greater than 0. Subscribe an AWS Lambda function to the SNS topic to remediate the security group rule by removing the rule.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Activate the AWS Config restricted-ssh managed rule. Add automatic remediation to the AWS Config rule by using the AWS Systems Manager Automation AWS-DisablePublicAccessForSecurityGroup runbook. Create an Amazon EventBridge (Amazon CloudWatch Events) rule to notify the SysOps team when the rule is noncompliant.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create an AWS CloudTrail metric filter for security group changes. Create an Amazon CloudWatch alarm for when the metric is greater than 0. Add an AWS Systems Manager action to the CloudWatch alarm to suspend the security group by using the Systems Manager Automation AWS-DisablePublicAccessForSecurityGroup runbook when the alarm is in ALARM state. Add an Amazon Simple Notification Service (Amazon SNS) topic as a second target to notify the SysOps team.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743628,
+          "date": "Tue 13 Dec 2022 06:44",
+          "username": "michaldavid",
+          "content": "I go for C",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 742036,
+          "date": "Sun 11 Dec 2022 20:38",
+          "username": "tyfta6",
+          "content": "Vote for C",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
+    },
+    {
+      "question_id": "#184",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company has an application that runs only on Amazon EC2 Spot Instances. The instances run in an Amazon EC2 Auto Scaling group with scheduled scaling actions. However, the capacity does not always increase at the scheduled times, and instances terminate many times a day. A SysOps administrator must ensure that the instances launch on time and have fewer interruptions.<br><br>Which action will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: A</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#184",
+          "answers": [
+            {
+              "choice": "<p>A. Specify the capacity-optimized allocation strategy for Spot Instances. Add more instance types to the Auto Scaling group.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Specify the capacity-optimized allocation strategy for Spot Instances. Increase the size of the instances in the Auto Scaling group.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Specify the lowest-price allocation strategy for Spot Instances. Add more instance types to the Auto Scaling group.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Specify the lowest-price allocation strategy for Spot Instances. Increase the size of the instances in the Auto Scaling group.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743629,
+          "date": "Tue 13 Dec 2022 06:46",
+          "username": "michaldavid",
+          "content": "aaaaaa",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 721365,
+          "date": "Fri 18 Nov 2022 16:34",
+          "username": "Xelnak",
+          "content": "in August 2019 AWS launched the capacity-optimized allocation strategy for Spot Instances, which helps customers tap into the deepest Spot Instance pools by analyzing capacity metrics. Since then, customers have seen a significantly lower interruption rate with capacity-optimized strategy<br>https://aws.amazon.com/blogs/compute/introducing-price-capacity-optimized-allocation-strategy-for-ec2-spot-instances/",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
+    },
+    {
+      "question_id": "#186",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A SysOps administrator is setting up an automated process to recover an Amazon EC2 instance in the event of an underlying hardware failure. The recovered instance must have the same private IP address and the same Elastic IP address that the original instance had. The SysOps team must receive an email notification when the recovery process is initiated.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#186",
+          "answers": [
+            {
+              "choice": "<p>A. Create an Amazon CloudWatch alarm for the EC2 instance, and specify the StatusCheckFailed_Instance metric. Add an EC2 action to the alarm to recover the instance. Add an alarm notification to publish a message to an Amazon Simple Notification Service (Amazon SNS) topic. Subscribe the SysOps team email address to the SNS topic.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create an Amazon CloudWatch alarm for the EC2 instance, and specify the StatusCheckFailed_System metric. Add an EC2 action to the alarm to recover the instance. Add an alarm notification to publish a message to an Amazon Simple Notification Service (Amazon SNS) topic. Subscribe the SysOps team email address to the SNS topic.<br><br>Most Voted<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an Auto Scaling group across three different subnets in the same Availability Zone with a minimum, maximum, and desired size of 1. Configure the Auto Scaling group to use a launch template that specifies the private IP address and the Elastic IP address. Add an activity notification for the Auto Scaling group to send an email message to the SysOps team through Amazon Simple Email Service (Amazon SES).<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create an Auto Scaling group across three Availability Zones with a minimum, maximum, and desired size of 1. Configure the Auto Scaling group to use a launch template that specifies the private IP address and the Elastic IP address. Add an activity notification for the Auto Scaling group to publish a message to an Amazon Simple Notification Service (Amazon SNS) topic. Subscribe the SysOps team email address to the SNS topic.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743633,
+          "date": "Tue 13 Dec 2022 06:55",
+          "username": "michaldavid",
+          "content": "bbbbbb",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 732272,
+          "date": "Thu 01 Dec 2022 06:12",
+          "username": "tyfta6",
+          "content": "Answer is B<br><br>You can create an Amazon CloudWatch alarm that monitors an Amazon EC2 instance and automatically recovers the instance if it becomes impaired due to an underlying hardware failure or a problem that requires AWS involvement to repair. Terminated instances cannot be recovered.<br><br>A recovered instance is identical to the original instance, including the instance ID, private IP addresses, Elastic IP addresses, and all instance metadata. If the impaired instance has a public IPv4 address, the instance retains the public IPv4 address after recovery. If the impaired instance is in a placement group, the recovered instance runs in the placement group.<br><br>When the StatusCheckFailed_System alarm is triggered, and the recover action is initiated, you will be notified by the Amazon SNS topic that you selected when you created the alarm and associated the recover action.<br><br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 721372,
+          "date": "Fri 18 Nov 2022 16:44",
+          "username": "Xelnak",
+          "content": "To automatically recover an instance when a system status check failure occurs, you can use the default configuration of the instance or create an Amazon CloudWatch alarm. If an instance becomes unreachable because of an underlying hardware failure or a problem that requires AWS involvement to repair, the instance is automatically recovered.<br><br>A recovered instance is identical to the original instance, including the instance ID, private IP addresses, Elastic IP addresses, and all instance metadata.<br>https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Managing.Backtrack.html",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
+    },
+    {
+      "question_id": "#189",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>An ecommerce company has built a web application that uses an Amazon Aurora DB cluster. The DB cluster includes memory optimized instance types with both a writer node and a reader node. Traffic volume changes throughout the day. During sudden traffic surges, Amazon CloudWatch metrics for the DB cluster indicate high RAM consumption and an increase in select latency.<br><br>A SysOps administrator must implement a configuration change to improve the performance of the DB cluster. The change must minimize downtime and must not result in the loss of data.<br><br>Which change will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#189",
+          "answers": [
+            {
+              "choice": "<p>A. Add an Aurora Replica to the DB cluster.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Modify the DB cluster to convert the DB cluster into a multi-master DB cluster.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Take a snapshot of the DB cluster. From that snapshot, create a new DB cluster that has larger memory optimized instances.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Increase the disk storage capacity of the DB cluster to double the existing disk capacity.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 742098,
+          "date": "Sun 11 Dec 2022 22:05",
+          "username": "tyfta6",
+          "content": "Vote for B<br><br>In a multi-master cluster, all DB instances have read/write capability. Multi-master clusters have different availability characteristics, support for database features, and procedures for monitoring and troubleshooting than single-master clusters.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 741600,
+          "date": "Sun 11 Dec 2022 11:42",
+          "username": "marcelodba",
+          "content": "not mentioning that is writing intensive workload",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
+    },
+    {
+      "question_id": "#190",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company has a simple web application that runs on a set of Amazon EC2 instances behind an Elastic Load Balancer in the eu-west-2 Region. Amazon Route 53 holds a DNS record for the application with a simple routing policy. Users from all over the world access the application through their web browsers.<br><br>The company needs to create additional copies of the application in the us-east-1 Region and in the ap-south-1 Region. The company must direct users to the Region that provides the fastest response times when the users load the application.<br><br>What should a SysOps administrator do to meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#190",
+          "answers": [
+            {
+              "choice": "<p>A. In each new Region, create a new Elastic Load Balancer and a new set of EC2 instances to run a copy of the application. Transition to a geolocation routing policy.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. In each new Region, create a copy of the application on new EC2 instances. Add these new EC2 instances to the Elastic Load Balancer in eu-west-2. Transition to a latency routing policy.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. In each new Region, create a copy of the application on new EC2 instances. Add these new EC2 instances to the Elastic Load Balancer in eu-west-2. Transition to a multivalue routing policy.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. In each new Region, create a new Elastic Load Balancer and a new set of EC2 instances to run a copy of the application. Transition to a latency routing policy.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 742115,
+          "date": "Sun 11 Dec 2022 22:28",
+          "username": "tyfta6",
+          "content": "Does Elastic load balancer work across regions?<br>Amazon has made the creation and management of load balancers in the cloud a lot simpler when they created elastic load balancers. But elastic load balancers have one fatal flaw. They exist within a single AWS region and if that region is having an outage, then your whole application goes down.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 742114,
+          "date": "Sun 11 Dec 2022 22:26",
+          "username": "tyfta6",
+          "content": "Vote for D.  Anybody look into B choice?",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 739973,
+          "date": "Fri 09 Dec 2022 10:58",
+          "username": "beznika",
+          "content": "Correct is D.  The fastest response time so latency based routing has to be used.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 739474,
+          "date": "Thu 08 Dec 2022 22:09",
+          "username": "grka25",
+          "content": "Answer is A",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#192",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A SysOps administrator creates two VPCs, VPC1 and VPC2, in a company’s AWS account The SysOps administrator deploys a Linux Amazon EC2 instance in VPC1 and deploys an Amazon RDS for MySQL DB instance in VPC2. The DB instance is deployed in a private subnet. An application that runs on the EC2 instance needs to connect to the database.<br><br>What should the SysOps administrator do to give the EC2 instance the ability to connect to the database?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#192",
+          "answers": [
+            {
+              "choice": "<p>A. Enter the DB instance connection string into the VPC1 route table.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Configure VPC peering between the two VPCs.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Add the same IPv4 CIDR range for both VPCs.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Connect to the DB instance by using the DB instance’s public IP address.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743648,
+          "date": "Tue 13 Dec 2022 07:13",
+          "username": "michaldavidbamishr",
+          "content": "bbbbbbbhi michal when you are giving the exam?",
+          "upvote_count": "21",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 744429,
+          "date": "Tue 13 Dec 2022 21:01",
+          "username": "bamishr",
+          "content": "hi michal when you are giving the exam?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 742032,
+          "date": "Sun 11 Dec 2022 20:32",
+          "username": "Fatoch",
+          "content": "B is correct",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#195",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company stores sensitive data in an Amazon S3 bucket. The company must log all access attempts to the S3 bucket. The company’s risk team must receive immediate notification about any delete events.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: A</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#195",
+          "answers": [
+            {
+              "choice": "<p>A. Enable S3 server access logging for audit logs. Set up an Amazon Simple Notification Service (Amazon SNS) notification for the S3 bucket. Select DeleteObject for the event type for the alert system.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Enable S3 server access logging for audit logs. Launch an Amazon EC2 instance for the alert system. Run a cron job on the EC2 instance to download the access logs each day and to scan for a DeleteObject event.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Use Amazon CloudWatch Logs for audit logs. Use Amazon CloudWatch alarms with an Amazon Simple Notification Service (Amazon SNS) notification for the alert system.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Use Amazon CloudWatch Logs for audit logs. Launch an Amazon EC2 instance for the alert system. Run a cron job on the EC2 instance each day to compare the list of the items with the list from the previous day. Configure the cron job to send a notification if an item is missing.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743654,
+          "date": "Tue 13 Dec 2022 07:22",
+          "username": "michaldavid",
+          "content": "aaaaaaa",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 742044,
+          "date": "Sun 11 Dec 2022 20:45",
+          "username": "Fatoch",
+          "content": "is it not C?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#200",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company recently migrated its application to a VPC on AWS. An AWS Site-to-Site VPN connection connects the company’s on-premises network to the VPC.  The application retrieves customer data from another system that resides on premises. The application uses an on-premises DNS server to resolve domain records. After the migration, the application is not able to connect to the customer data because of name resolution errors.<br><br>Which solution will give the application the ability to resolve the internal domain names?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#200",
+          "answers": [
+            {
+              "choice": "<p>A. Launch EC2 instances in the VPC.  On the EC2 instances, deploy a custom DNS forwarder that forwards all DNS requests to the on-premises DNS server. Create an Amazon Route 53 private hosted zone that uses the EC2 instances for name servers.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create an Amazon Route 53 Resolver outbound endpoint. Configure the outbound endpoint to forward DNS queries against the on-premises domain to the on-premises DNS server.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Set up two AWS Direct Connect connections between the AWS environment and the on-premises network. Set up a link aggregation group (LAG) that includes the two connections. Change the VPC resolver address to point to the on-premises DNS server.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create an Amazon Route 53 public hosted zone for the on-premises domain. Configure the network ACLs to forward DNS requests against the on-premises domain to the Route 53 public hosted zone.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743708,
+          "date": "Tue 13 Dec 2022 08:32",
+          "username": "michaldavid",
+          "content": "bbbbbb",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
+    },
+    {
+      "question_id": "#205",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company recently purchased Savings Plans. The company wants to receive email notification when the company’s utilization drops below 90% for a given day.<br><br>Which solution will meet this requirement?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: C</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#205",
+          "answers": [
+            {
+              "choice": "<p>A. Create an Amazon CloudWatch alarm to monitor the Savings Plan check in AWS Trusted Advisor. Configure an Amazon Simple Queue Service (Amazon SQS) queue for email notification when the utilization drops below 90% for a given day.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create an Amazon CloudWatch alarm to monitor the SavingsPlansUtilization metric under the AWS/SavingsPlans namespace in CloudWatch. Configure an Amazon Simple Queue Service (Amazon SQS) queue for email notification when the utilization drops below 90% for a given day.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create a Savings Plans alert to monitor the daily utilization of the Savings Plans. Configure an Amazon Simple Notification Service (Amazon SNS) topic for email notification when the utilization drops below 90% for a given day.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Use AWS Budgets to create a Savings Plans budget to track the daily utilization of the Savings Plans. Configure an Amazon Simple Notification Service (Amazon SNS) topic for email notification when the utilization drops below 90% for a given day.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743718,
+          "date": "Tue 13 Dec 2022 08:44",
+          "username": "michaldavid",
+          "content": "cccccccc",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
+    },
+    {
+      "question_id": "#206",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company uses an Amazon Simple Queue Service (Amazon SQS) standard queue with its application. The application sends messages to the queue with unique message bodies. The company decides to switch to an SQS FIFO queue.<br><br>What must the company do to migrate to an SQS FIFO queue?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: A</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#206",
+          "answers": [
+            {
+              "choice": "<p>A. Create a new SQS FIFO queue. Turn on content-based deduplication on the new FIFO queue. Update the application to include a message group ID in the messages.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create a new SQS FIFO queue. Update the application to include the DelaySeconds parameter in the messages.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Modify the queue type from SQS standard to SQS FIFO. Turn off content-based deduplication on the queue. Update the application to include a message group ID in the messages.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Modify the queue type from SQS standard to SQS FIFO. Update the application to send messages with identical message bodies and to include the DelaySeconds parameter in the messages.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743949,
+          "date": "Tue 13 Dec 2022 12:53",
+          "username": "michaldavid",
+          "content": "I think A as well",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 741875,
+          "date": "Sun 11 Dec 2022 17:09",
+          "username": "beznika",
+          "content": "I think it's A.  https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-moving.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#208",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company runs hundreds of Amazon EC2 instances in a single AWS Region. Each EC2 instance has two attached 1 GiB General Purpose SSD (gp2) Amazon Elastic Block Store (Amazon EBS) volumes. A critical workload is using all the available IOPS capacity on the EBS volumes.<br><br>According to company policy, the company cannot change instance types or EBS volume types without completing lengthy acceptance tests to validate that the company’s applications will function properly. A SysOps administrator needs to increase the I/O performance of the EBS volumes as quickly as possible.<br><br>Which action should the SysOps administrator take to meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: C</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#208",
+          "answers": [
+            {
+              "choice": "<p>A. Increase the size of the 1 GiB EBS volumes.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Add two additional elastic network interfaces on each EC2 instance.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Turn on Transfer Acceleration on the EBS volumes in the Region.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Add all the EC2 instances to a cluster placement group.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743953,
+          "date": "Tue 13 Dec 2022 12:56",
+          "username": "michaldavid",
+          "content": "This is C to me",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
+    },
+    {
+      "question_id": "#209",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p><br><br>A company needs to deploy a new workload on AWS. The company must encrypt all data at rest and must rotate the encryption keys once each year. The workload uses an Amazon RDS for MySQL Multi-AZ database for data storage.<br><br>Which configuration approach will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: C</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#209",
+          "answers": [
+            {
+              "choice": "<p>A. Enable Transparent Data Encryption (TDE) in the MySQL configuration file. Manually rotate the key every 12 months.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Enable RDS encryption on the database at creation time by using the AWS managed key for Amazon RDS.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create a new AWS Key Management Service (AWS KMS) customer managed key. Enable automatic key rotation. Enable RDS encryption on the database at creation time by using the KMS key.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create a new AWS Key Management Service (AWS KMS) customer managed key. Enable automatic key rotation. Enable encryption on the Amazon Elastic Block Store (Amazon EBS) volumes that are attached to the RDS DB instance.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 743954,
+          "date": "Tue 13 Dec 2022 12:57",
+          "username": "michaldavid",
+          "content": "Agree with C",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
     }
   ]
 }
