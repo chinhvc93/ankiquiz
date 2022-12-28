@@ -1,11 +1,64 @@
 // INIT, GLOBAL VARIABLES
-var examId, exam, queDataCount, que;
-var SCREEN_MODE = "dark-mode";
+var groupId, examId, exam, queDataCount, que;
+var USER_STORAGE = {
+  screen_mode: "white-mode",
+  group_id: "",
+  exam_id: "",
+};
+
+function getUserStorage(id) {
+  let currentLocalStorage = localStorage.getItem("USER_STORAGE");
+  if (currentLocalStorage) {
+    USER_STORAGE = JSON.parse(currentLocalStorage);
+  }
+
+  let output = "";
+  switch (id) {
+    case "screen_mode":
+      output = USER_STORAGE.screen_mode;
+      break;
+    case "group_id":
+      output = USER_STORAGE.group_id;
+      break;
+    case "exam_id":
+      output = USER_STORAGE.exam_id;
+      break;
+    case "all":
+      output = USER_STORAGE;
+      break;
+    default:
+      output = USER_STORAGE;
+  }
+
+  return output;
+}
+
+function setUserStorage(id, value) {
+  switch(id) {
+    case "screen_mode":
+      USER_STORAGE["screen_mode"] = value;
+      break;
+    case "group_id":
+      USER_STORAGE["group_id"] = value;
+      break;
+    case "exam_id":
+      USER_STORAGE["exam_id"] = value;
+      break;
+  }
+  localStorage.setItem("USER_STORAGE", JSON.stringify(USER_STORAGE));
+
+  return USER_STORAGE;
+}
 
 function init() {
   loadDarkMode();
-  examId = getExamId();
-  switchDesk(examId);
+  groupId = getUserStorage("group_id");
+  $("#groupList").val(groupId);
+  switchGroup(groupId);
+
+  examId = getUserStorage("exam_id");
+  $("#deskList").val(examId);
+  switchDesk(groupId, examId);
 }
 init();
 
@@ -182,12 +235,41 @@ $(".btn-clearQuiz").on("click", function () {
   $(".notification").removeClass("success").addClass("danger");
 });
 
-//CHOICE DESK
-$("#deskList .deskItem").on("click", function () {
-  switchDesk($(this).data("examid"));
+//CHOICE GROUP
+$("#groupList").on("change", function () {
+  switchGroup($("#groupList").val());
 });
 
-function switchDesk(examId) {
+//CHOICE DESK
+$("#deskList").on("change", function () {
+  groupId = $("#groupList").val();
+  examId = $("#deskList").val();
+  switchDesk(groupId, examId);
+  setUserStorage("exam_id", examId);
+});
+
+function switchGroup(groupId) {
+  let groupIndex = listExamGroup.findIndex((group) => group.id == groupId);
+  if(groupIndex < 0) { 
+    groupIndex = 0;
+  }
+
+  let listItem = listExamGroup[groupIndex].list;
+  let itemHtml = "";
+  listItem.forEach(function (item) {
+    itemHtml += `<option value="${item.id}">${item.name}</option>`
+  });
+  $("#deskList").html(itemHtml);
+
+  setUserStorage("group_id", groupId);
+  switchDesk(groupId, examId);
+}
+
+function switchDesk(groupId, examId) {
+  let groupIndex = listExamGroup.findIndex((group) => group.id == groupId);
+  if(groupIndex < 0) return;
+
+  let listExam = listExamGroup[groupIndex].list;
   let examIndex = listExam.findIndex((exam) => exam.id == examId);
   if(examIndex < 0) {
     examIndex = 0;
@@ -197,8 +279,10 @@ function switchDesk(examId) {
   $("#deskList .deskItem").removeClass("active");
   $(`#deskList .deskItem[data-examid="${examId}"]`).addClass("active");
   $("#selectExam").text(listExam[examIndex].name);
+  $("#examName").text(listExam[examIndex].name);
 
   //Set URL
+  setSearchParam("group", groupId);
   setSearchParam("exam", examId);
 
   exam = new Exam(listExam[examIndex].data, `cache${listExam[examIndex].id}`);
@@ -306,37 +390,30 @@ $(".comment-block").on("click", ".btnSave", function () {
 
 // DARK MODE
 function toogleDarkMode() {
-  let cacheScreenMode = localStorage.getItem("DarkMode");
-  if (cacheScreenMode) {
-    SCREEN_MODE = cacheScreenMode;
-  }
-
-  if(SCREEN_MODE == "dark-mode") {
-    SCREEN_MODE = "white-mode";
-    $("body").addClass(SCREEN_MODE);
+  let screen_mode = getUserStorage("screen_mode");
+  if(screen_mode == "dark-mode") {
+    screen_mode = "white-mode";
+    $("body").addClass(screen_mode);
     $("body").removeClass("dark-mode");
   } else {
-    SCREEN_MODE = "dark-mode";
-    $("body").addClass(SCREEN_MODE);
+    screen_mode = "dark-mode";
+    $("body").addClass(screen_mode);
     $("body").removeClass("white-mode");
   }
 
-  localStorage.setItem("DarkMode", SCREEN_MODE);
+  setUserStorage("screen_mode", screen_mode);
 
-  return SCREEN_MODE;
+  return screen_mode;
 }
 
 function loadDarkMode() {
-  let cacheScreenMode = localStorage.getItem("DarkMode");
-  if (cacheScreenMode) {
-    SCREEN_MODE = cacheScreenMode;
-  }
+  let screen_mode = getUserStorage("screen_mode");
 
-  if(SCREEN_MODE == "dark-mode") {
-    $("body").addClass(SCREEN_MODE);
+  if(screen_mode == "dark-mode") {
+    $("body").addClass(screen_mode);
     $("body").removeClass("white-mode");
   } else {
-    $("body").addClass(SCREEN_MODE);
+    $("body").addClass(screen_mode);
     $("body").removeClass("dark-mode");
   }
 

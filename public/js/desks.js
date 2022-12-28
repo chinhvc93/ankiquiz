@@ -1,10 +1,12 @@
 // SHOW LIST EXAM
 var examListHtml = "";
-listExam.forEach(function (item) {
-  examListHtml += `<li><a class="deskItem dropdown-item" href="javascript:void(0)" data-examId="${item.id}">${item.name}</a></li>`
+var examGroupHtml = "";
+
+listExamGroup.forEach(function (item) {
+  examGroupHtml += `<option value="${item.id}">${item.name}</option>`
 });
 
-$("#deskList").html(examListHtml);
+$("#groupList").html(examGroupHtml);
 
 function getExamId(key = "exam") {
   let searchParams = new URLSearchParams(window.location.search);

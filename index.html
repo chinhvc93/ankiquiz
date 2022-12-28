@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="dark-mode">
+<body class="white-mode">
     <!-- BANNER -->
     <div class="container">
         <div class="settingBlock text-end">
@@ -41,12 +41,28 @@
                 <!-- This is message!!! -->
             </div>
             <div class="exam-header row">
-                <div class="col-sm-12 col-md-6 col-lg-3 item1 dropdown">
-                    <a id="selectExam" class="btn btn-common btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                      Select Exam
-                    </a>
-                    <ul id="deskList" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    </ul>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="input-group input-group mb-1">
+                        <label class="input-group-text bg-secondary text-white" for="groupList">Group</label>
+                        <select class="form-select text-black" id="groupList">
+                          <option selected>Choose...</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="input-group mb-1">
+                        <label class="input-group-text bg-primary text-white" for="deskList">Exam</label>
+                        <select class="form-select text-black" id="deskList">
+                          <option selected>Choose...</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 item2">
                     <a href="javascript:void(0)" class="btn btn-common btn-createTest btn-warning">Test</a>
@@ -54,12 +70,13 @@
                 <div class="col-sm-12 col-md-6 col-lg-3 item3">
                     <a href="javascript:void(0)" class="btn btn-common btn-saveQuiz">Save</a>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 item4">
+                <!-- <div class="col-sm-12 col-md-6 col-lg-3 item4">
                     <a href="javascript:void(0)" class="btn btn-common btn-clearQuiz">Clear Cache</a>
-                </div>
+                </div> -->
                 <!-- <a href="javascript:void(0)" class="btn btn-starQuiz">Test Star</a> -->
                 <!-- <a href="javascript:void(0)" class="btn btn-success btn-exportQuiz">Export</a> -->
             </div>
+            <h4 class="pt-2 text-center fw-bold font-monospace text-uppercase" id="examName">Exam Name</h4>
             <div class="ExamQuestionsBlock">
                 <!-- LEFT BLOCK -->
                 <div class="left">
