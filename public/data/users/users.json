@@ -1,0 +1,17 @@
+{
+  "filename": "users.json",
+  "users": [
+    {
+      "username": "chinhvc",
+      "pass": "ABCD1234",
+      "name": "Chinh Vu Cong",
+      "datafile": "data-chinhvc.json"
+    },
+    {
+      "username": "huypd",
+      "pass": "ABCD1234",
+      "name": "Huy Pham Duc",
+      "datafile": "data-huypd.json"
+    }
+  ]
+}

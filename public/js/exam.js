@@ -1,5 +1,5 @@
 // INIT, GLOBAL VARIABLES
-var groupId, examId, exam, queDataCount, que;
+var groupId, examId, exam, queDataCount, que, examApi, userApi;
 var USER_STORAGE = {
   screen_mode: "white-mode",
   group_id: "",
@@ -49,6 +49,12 @@ function setUserStorage(id, value) {
 
   return USER_STORAGE;
 }
+
+// examApi = new ExamApi();
+// examApi.getData();
+
+userApi = new UserApi();
+userApi.getData();
 
 function init() {
   loadDarkMode();
