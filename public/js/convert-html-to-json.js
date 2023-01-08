@@ -100,7 +100,11 @@ function convert(html) {
     $("#tempHtml").html(questionBlock);
 
     $("#tempHtml .question-title-topic").remove();
+    //Fix bug with dissucustion type
+    $("#tempHtml .question-discussion-header div").addClass("card-header");
+
     var questionNumber = $("#tempHtml .card-header").text();
+    questionNumber = questionNumber.replaceAll("#: ", "#");
     questionNumber = questionNumber.match(/#([0-9]{1,4})/g)[0];
 
     // Question
@@ -118,7 +122,7 @@ function convert(html) {
     
     // Correct Answer
     var correctAnswer = $("#tempHtml .correct-answer").text();
-    var votedAnswer = $("#tempHtml .vote-distribution-bar .vote-bar.bg-primary").text()
+    var votedAnswer = $("#tempHtml .vote-distribution-bar .vote-bar.bg-primary").text();
 
     // Discustion
     var comments = [];
@@ -132,6 +136,7 @@ function convert(html) {
             let username = $("#tempHtmlComment .comment-username").text();
             let content = $("#tempHtmlComment .comment-content").text();
             let upvote_count = $("#tempHtmlComment .upvote-count").text();
+            let selected_answers = $("#tempHtmlComment .comment-selected-answers").text();
 
             username = username.replaceAll('  ', '').replaceAll('\n', '');
             content = commonReplace(content);
@@ -141,7 +146,8 @@ function convert(html) {
                 "date": date,
                 "username": username,
                 "content": content,
-                "upvote_count": upvote_count
+                "upvote_count": upvote_count,
+                "selected_answers": selected_answers
             };
     
             comments.push(comment);
@@ -196,10 +202,22 @@ function convertFreeCam(html) {
 function splitQuestionRaw(htmlRaw) {
     $("#tempHtml").html(htmlRaw);
 
+    //Fix to discussion-header-container
+    // $("#tempHtml .discussion-header-container").addClass("exam-question-card");
+    $("#tempHtml .sec-spacer").addClass("exam-question-card");
+
+    // return $("#tempHtml .discussion-header-container");
     return $("#tempHtml .exam-question-card");
 }
 
+function splitQuestionRawFreeCam(htmlRaw) {
+    $("#tempHtml").html(htmlRaw);
+
+    return $("#tempHtml .qa");
+}
+
 $("#btn-submit-json").on("click", function () {
+    $("#csv-result").text("");
     var htmlRaw = $("#html-source").val();
     var listQuestionRawHtml = splitQuestionRaw(htmlRaw);
 
