@@ -5,13 +5,14 @@ $("#split_card").text(SPLIT_CARD);
 $("#split_question").html("\\n\\n\\n");
 
 class Question {
-    constructor(questionNumber, questionBody, questionChoices, correctAnswer, votedAnswer, comments = []) {
+    constructor(questionNumber, questionBody, questionChoices, correctAnswer, votedAnswer, comments = [], topicName = "") {
         this.questionNumber = questionNumber;
         this.questionBody = questionBody;
         this.questionChoices = questionChoices;
         this.correctAnswer = correctAnswer;
         this.votedAnswer = votedAnswer;
         this.comments = comments;
+        this.topicName = topicName;
     }
 
     getCorrectAnswer() {
@@ -35,7 +36,7 @@ class Question {
             let item = `
             {
                 "choice": "<p>${choice}</p>",
-                "correct": ${ correctAnswer.indexOf(SYMBOL_ANSWER[index]) > -1 ? "true" : "false"},
+                "correct": ${correctAnswer.indexOf(SYMBOL_ANSWER[index]) > -1 ? "true" : "false"},
                 "feedback": ""
             }`;
 
@@ -66,7 +67,7 @@ class Question {
                 "answers": ${answerText}
               }
             ],
-            "topic_name": "",
+            "topic_name": "${this.topicName}",
             "discusstion": ${JSON.stringify(this.comments)}
         }
         `
@@ -116,6 +117,10 @@ function convert(html) {
     questionNumber = questionNumber.replaceAll("#: ", "#");
     questionNumber = questionNumber.match(/#([0-9]{1,4})/g)[0];
 
+    // TopicName
+    $("#tempHtml .question-body i").remove();
+    var topicName = $("#tempHtml .discussion-list-header > h1").text();
+    
     // Question
     var questionBody = $("#tempHtml .question-body > p.card-text:first-child").html();
     questionBody = commonReplace(questionBody);
@@ -163,7 +168,7 @@ function convert(html) {
         });
     }
     
-    question = new Question(questionNumber, questionBody, questionChoices, correctAnswer, votedAnswer, comments);
+    question = new Question(questionNumber, questionBody, questionChoices, correctAnswer, votedAnswer, comments, topicName);
 
     return question;
 }
