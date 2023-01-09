@@ -26,7 +26,7 @@ Function CutReplaceTextInfile([string]$filename)
     (Get-Content $fileIn)[$lineFrom..$lineTo] > $fileOut
 
     # Replace
-    (Get-Content $fileOut -Raw).Replace("=`r`n","").replace('3D"', '"').replace('=3D', '').replace('=20', '') | Set-Content $fileOut
+    (Get-Content $fileOut -Raw).Replace("=`r`n","").replace('3D"', '"').replace('=3D', '').replace('=20', '').replace('=E2=9C=91', '- ').replace('=D7=92=E2=82=AC', '"') | Set-Content $fileOut
 }
 
 #

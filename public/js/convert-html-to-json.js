@@ -78,8 +78,10 @@ function commonReplace(text) {
     text = text.replaceAll('"', '\\"');
     text = text.replaceAll('  ', '');
     text = text.replaceAll('\n\n\n', '');
+    text = text.replaceAll('\n\n \n', '');
+    text = text.replaceAll('\n \n', '');
     text = text.replaceAll('\n', '<br>');
-    text = text.replaceAll('assets/media', 'https://examtopics.com/assets/media');
+    text = text.replaceAll('src="assets/media', 'src="https://examtopics.com/assets/media');
     text = text.replaceAll('<br>Most Voted<br>', '');
 
     text = text.replaceAll('A.', 'A. ');
@@ -88,6 +90,13 @@ function commonReplace(text) {
     text = text.replaceAll('D.', 'D. ');
     text = text.replaceAll('E.', 'E. ');
     text = text.replaceAll('F.', 'F. ');
+
+    text = text.replaceAll('<br>A.', 'A.');
+    text = text.replaceAll('<br>B.', 'B.');
+    text = text.replaceAll('<br>C.', 'C.');
+    text = text.replaceAll('<br>D.', 'D.');
+    text = text.replaceAll('<br>E.', 'E.');
+    text = text.replaceAll('<br>F.', 'F.');
 
     return text;
 }
