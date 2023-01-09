@@ -99,5 +99,103 @@ var listExamGroup = [
     ]
   },
 
+  //GROUP 4
+  {
+    id: "DBS_C01",
+    name: "[DBS-C01] AWS Certified Database - Specialty",
+    list: [
+      {
+        id: "DBS_C01_Part1",
+        name: "[DBS-C01] Part1",
+        data: DBS_C01_Part1.data,
+      },
+      {
+        id: "DBS_C01_Part2",
+        name: "[DBS-C01] Part2",
+        data: DBS_C01_Part2.data,
+      },
+      {
+        id: "DBS_C01_Part3",
+        name: "[DBS-C01] Part3",
+        data: DBS_C01_Part3.data,
+      },
+    ]
+  },
+
+  //GROUP 5
+  {
+    id: "DOP_C01",
+    name: "[DOP-C01] AWS Certified DevOps Engineer - Professional",
+    list: [
+      {
+        id: "DOP_C01_Part1",
+        name: "[DOP-C01] Part1",
+        data: DOP_C01_Part1.data,
+      },
+      {
+        id: "DOP_C01_Part2",
+        name: "[DOP-C01] Part2",
+        data: DOP_C01_Part2.data,
+      },
+      {
+        id: "DOP_C01_Part3",
+        name: "[DOP-C01] Part3",
+        data: DOP_C01_Part3.data,
+      },
+      {
+        id: "DOP_C01_Part4",
+        name: "[DOP-C01] Part4",
+        data: DOP_C01_Part4.data,
+      },
+      {
+        id: "DOP_C01_Part5",
+        name: "[DOP-C01] Part5",
+        data: DOP_C01_Part5.data,
+      },
+      {
+        id: "DOP_C01_Part6",
+        name: "[DOP-C01] Part6",
+        data: DOP_C01_Part6.data,
+      },
+    ]
+  },
+
+  //GROUP 6
+  {
+    id: "DVA_C01",
+    name: "[DVA-C01] AWS Certified Developer - Associate",
+    list: [
+      {
+        id: "DVA_C01_Part1",
+        name: "[DVA-C01] Part1",
+        data: DVA_C01_Part1.data,
+      },
+      {
+        id: "DVA_C01_Part2",
+        name: "[DVA-C01] Part2",
+        data: DVA_C01_Part2.data,
+      },
+      {
+        id: "DVA_C01_Part3",
+        name: "[DVA-C01] Part3",
+        data: DVA_C01_Part3.data,
+      },
+      {
+        id: "DVA_C01_Part4",
+        name: "[DVA-C01] Part4",
+        data: DVA_C01_Part4.data,
+      },
+      {
+        id: "DVA_C01_Part5",
+        name: "[DVA-C01] Part5",
+        data: DVA_C01_Part5.data,
+      },
+      {
+        id: "DVA_C01_Part6",
+        name: "[DVA-C01] Part6",
+        data: DVA_C01_Part6.data,
+      },
+    ]
+  },
 
 ]
