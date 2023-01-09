@@ -1,8 +1,19 @@
+param(
+     [Parameter()]
+     [string]$FolderName = $( Read-Host "Input folder name, please" )
+    #  ,
+ )
 
 # Config ######################################################
 # $folder="D:\projects-private\anki_quizlet\html_templates\tools"
+# $folder="./"
 $folder="./"
-$folderIn="$folder/input"
+if ($FolderName) {
+    $folder=$FolderName
+}
+Write-Output "Custom FolderName: $folder"
+
+$folderIn="$folder"
 $folderOut="$folder/output"
 $combineOutputFile="$folderOut/combine-all.txt"
 ###############################################################
@@ -34,18 +45,18 @@ Function CutReplaceTextInfile([string]$filename)
 #
 Function CutMultipleFileInFolder([string]$folderPath)
 {
-    echo "*** [Start] Cut Multile Files ***"
+   Write-Output "*** [Start] Cut Multile Files ***"
     
     $ToNatural= { [regex]::Replace($_, '\d+',{$args[0].Value.Padleft(20)})}
     Get-ChildItem $folderPath -Filter *.mhtml | Sort-Object  $ToNatural |
     Foreach-Object {
         $filename = $_.Name
         $currentDate = Get-Date -Format "yyyy/MM/dd HH:mm:ss"
-        echo "- [$currentDate] Filename: $filename"
+       Write-Output "- [$currentDate] Filename: $filename"
         CutReplaceTextInfile $filename
     }
 
-    echo "*** [Done] Cut Multile Files ***"
+   Write-Output "*** [Done] Cut Multile Files ***"
 }
 
 #
@@ -53,27 +64,27 @@ Function CutMultipleFileInFolder([string]$folderPath)
 #
 Function CombineAllContentFile([string]$folderPath, [string]$outputFilename)
 {
-    echo "*** [Start] Merge All Files ***"
+   Write-Output "*** [Start] Merge All Files ***"
     $currentDate = Get-Date -Format "yyyy/MM/dd HH:mm:ss"
-    echo "- [$currentDate] Output file: $folderPath\combine-all.txt"
+   Write-Output "- [$currentDate] Output file: $folderPath\combine-all.txt"
     
     $ToNatural= { [regex]::Replace($_, '\d+',{$args[0].Value.Padleft(20)})}
     Get-ChildItem $folderPath -include *.mhtml -rec | Sort-Object  $ToNatural | ForEach-Object {gc $_; ""} | out-file $outputFilename
 
-    echo "*** [Done] Merge All Files ***"
+   Write-Output "*** [Done] Merge All Files ***"
 }
 
 # MAIN #########################################################
 # Run single file
 # $filename="Exam AWS Certified Database - Specialty topic 1 question 1 discussion - ExamTopics.mhtml"
-# CutReplaceTextInfile $filename
+# # CutReplaceTextInfile $filename
 
 If(test-path -PathType container $folderIn)
 {
     # Create folder output
     If(!(test-path -PathType container $folderOut))
     {
-        echo "Create folder output"
+        Write-Output "Create folder output"
         New-Item -ItemType Directory -Path $folderOut
     }
 
@@ -83,6 +94,6 @@ If(test-path -PathType container $folderIn)
     # Merge all file to one
     CombineAllContentFile $folderOut $combineOutputFile
 } Else {
-    echo "[Error] Folder ($folderIn) not existed !!!!!"
-    sleep 5
+   Write-Output "[Error] Folder ($folderIn) not existed !!!!!"
+    Start-Sleep 5
 }

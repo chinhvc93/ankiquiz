@@ -31,6 +31,9 @@ Output
 |cut-text.ps1
 ```
 
+### Link Code ps1
+https://stackoverflow.com/questions/2157554/how-to-handle-command-line-arguments-in-powershell
+
 
 # convert-html-to-json.html
 ### Link Compare Word
