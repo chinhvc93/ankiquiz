@@ -1,27 +1,10 @@
 // CONFIG
 var listExamGroup = [
-  //GROUP 3
-  {
-    id: "SAA_C03",
-    name: "[SAA-C03] AWS Certified Solutions Architect",
-    list: [
-      {
-        id: "SAA_C03_Exam_001_100",
-        name: "[SAA_C03] ExamTopic 001_100",
-        data: SAA_C03_Exam_001_100.data,
-      },
-      {
-        id: "SAA_C03_Exam_101_200",
-        name: "[SAA_C03] ExamTopic 101_200",
-        data: SAA_C03_Exam_101_200.data,
-      }
-    ]
-  },
-  
+  // Associate ###############################################
   //GROUP 2
   {
     id: "SOA_C02",
-    name: "[SOA-C02] AWS Certified Sysops Administrator",
+    name: "[SOA-C02] Sysops Administrator - Associate",
     list: [
       {
         id: "SOA_C02_Exam_001_050",
@@ -41,10 +24,67 @@ var listExamGroup = [
     ]
   },
 
+  //GROUP 3
+  {
+    id: "SAA_C03",
+    name: "[SAA-C03] Solutions Architect - Associate",
+    list: [
+      {
+        id: "SAA_C03_Exam_001_100",
+        name: "[SAA_C03] ExamTopic 001_100",
+        data: SAA_C03_Exam_001_100.data,
+      },
+      {
+        id: "SAA_C03_Exam_101_200",
+        name: "[SAA_C03] ExamTopic 101_200",
+        data: SAA_C03_Exam_101_200.data,
+      }
+    ]
+  },
+
+  //GROUP 6
+  {
+    id: "DVA_C01",
+    name: "[DVA-C01] Developer - Associate",
+    list: [
+      {
+        id: "DVA_C01_Part1",
+        name: "[DVA-C01] Part1",
+        data: DVA_C01_Part1.data,
+      },
+      {
+        id: "DVA_C01_Part2",
+        name: "[DVA-C01] Part2",
+        data: DVA_C01_Part2.data,
+      },
+      {
+        id: "DVA_C01_Part3",
+        name: "[DVA-C01] Part3",
+        data: DVA_C01_Part3.data,
+      },
+      {
+        id: "DVA_C01_Part4",
+        name: "[DVA-C01] Part4",
+        data: DVA_C01_Part4.data,
+      },
+      {
+        id: "DVA_C01_Part5",
+        name: "[DVA-C01] Part5",
+        data: DVA_C01_Part5.data,
+      },
+      {
+        id: "DVA_C01_Part6",
+        name: "[DVA-C01] Part6",
+        data: DVA_C01_Part6.data,
+      },
+    ]
+  },
+
+  // Professional ###############################################
   //GROUP 1
   {
     id: "SAP_C01",
-    name: "[SAP-C01] AWS Certified Solutions Architect - Professional",
+    name: "[SAP-C01] Solutions Architect - Professional",
     list: [
       {
         id: "ExamTopic_001_100",
@@ -99,33 +139,10 @@ var listExamGroup = [
     ]
   },
 
-  //GROUP 4
-  {
-    id: "DBS_C01",
-    name: "[DBS-C01] AWS Certified Database - Specialty",
-    list: [
-      {
-        id: "DBS_C01_Part1",
-        name: "[DBS-C01] Part1",
-        data: DBS_C01_Part1.data,
-      },
-      {
-        id: "DBS_C01_Part2",
-        name: "[DBS-C01] Part2",
-        data: DBS_C01_Part2.data,
-      },
-      {
-        id: "DBS_C01_Part3",
-        name: "[DBS-C01] Part3",
-        data: DBS_C01_Part3.data,
-      },
-    ]
-  },
-
   //GROUP 5
   {
     id: "DOP_C01",
-    name: "[DOP-C01] AWS Certified DevOps Engineer - Professional",
+    name: "[DOP-C01] DevOps Engineer - Professional",
     list: [
       {
         id: "DOP_C01_Part1",
@@ -160,40 +177,26 @@ var listExamGroup = [
     ]
   },
 
-  //GROUP 6
+  // Specialty ###############################################
+  //GROUP 4
   {
-    id: "DVA_C01",
-    name: "[DVA-C01] AWS Certified Developer - Associate",
+    id: "DBS_C01",
+    name: "[DBS-C01] Database - Specialty",
     list: [
       {
-        id: "DVA_C01_Part1",
-        name: "[DVA-C01] Part1",
-        data: DVA_C01_Part1.data,
+        id: "DBS_C01_Part1",
+        name: "[DBS-C01] Part1",
+        data: DBS_C01_Part1.data,
       },
       {
-        id: "DVA_C01_Part2",
-        name: "[DVA-C01] Part2",
-        data: DVA_C01_Part2.data,
+        id: "DBS_C01_Part2",
+        name: "[DBS-C01] Part2",
+        data: DBS_C01_Part2.data,
       },
       {
-        id: "DVA_C01_Part3",
-        name: "[DVA-C01] Part3",
-        data: DVA_C01_Part3.data,
-      },
-      {
-        id: "DVA_C01_Part4",
-        name: "[DVA-C01] Part4",
-        data: DVA_C01_Part4.data,
-      },
-      {
-        id: "DVA_C01_Part5",
-        name: "[DVA-C01] Part5",
-        data: DVA_C01_Part5.data,
-      },
-      {
-        id: "DVA_C01_Part6",
-        name: "[DVA-C01] Part6",
-        data: DVA_C01_Part6.data,
+        id: "DBS_C01_Part3",
+        name: "[DBS-C01] Part3",
+        data: DBS_C01_Part3.data,
       },
     ]
   },
