@@ -13,7 +13,12 @@ Folder structure
 
 Run
 ```
+.\tools\cut-text.ps1 C:\Users\ChinhVC\Desktop\convert\SOA-C02\part2
+
+OR
+
 cut-text.ps1
+
 ```
 
 Output
