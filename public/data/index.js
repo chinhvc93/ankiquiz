@@ -7,6 +7,21 @@ var listExamGroup = [
     name: "[SOA-C02] Sysops Administrator - Associate",
     list: [
       {
+        id: "SOA_C02_Part1",
+        name: "[SOA-C02] Part1",
+        data: SOA_C02_Part1.data,
+      },
+      {
+        id: "SOA_C02_Part2",
+        name: "[SOA-C02] Part2",
+        data: SOA_C02_Part2.data,
+      },
+      {
+        id: "SOA_C02_Part3",
+        name: "[SOA-C02] Part3",
+        data: SOA_C02_Part3.data,
+      },
+      {
         id: "SOA_C02_Exam_001_050",
         name: "[SOA_C02] ExamTopic 001_050",
         data: SOA_C02_Exam_001_050.data,

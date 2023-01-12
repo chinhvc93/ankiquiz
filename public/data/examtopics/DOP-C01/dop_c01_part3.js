@@ -679,7 +679,7 @@ var DOP_C01_Part3 =
             "id": 311926,
             "date": "Fri 01 Oct 2021 04:51",
             "username": "rscloud",
-            "content": "I=E2=80=99ll go with BCF",
+            "content": "I'll go with BCF",
             "upvote_count": "2",
             "selected_answers": ""
           },
@@ -1730,7 +1730,7 @@ var DOP_C01_Part3 =
             "id": 649697,
             "date": "Sun 21 Aug 2022 11:32",
             "username": "hubekpeter",
-            "content": "This is a very vague question. But I=E2=80=99m assuming that the rbac policy is missing so the user is not able to execute the function itself remotely instead of the lambda have an access deny to other services, so the answer will be A in this case.",
+            "content": "This is a very vague question. But I'm assuming that the rbac policy is missing so the user is not able to execute the function itself remotely instead of the lambda have an access deny to other services, so the answer will be A in this case.",
             "upvote_count": "1",
             "selected_answers": "Selected Answer: B"
           },
@@ -2873,7 +2873,7 @@ var DOP_C01_Part3 =
             "id": 643068,
             "date": "Fri 05 Aug 2022 20:42",
             "username": "hubekpeter",
-            "content": "C is correct. You can deploy directly to service catalog as a last stage and insert anything you want in between source and deploy actions, like some sort of cf template linter, IAM validators etc.. Also the app spec files support only lambda, ec2, on-prem and ecs as deployment target. So it doesn=E2=80=99t make sense.",
+            "content": "C is correct. You can deploy directly to service catalog as a last stage and insert anything you want in between source and deploy actions, like some sort of cf template linter, IAM validators etc.. Also the app spec files support only lambda, ec2, on-prem and ecs as deployment target. So it doesn't make sense.",
             "upvote_count": "1",
             "selected_answers": "Selected Answer: C"
           },
@@ -3883,7 +3883,7 @@ var DOP_C01_Part3 =
             "id": 648828,
             "date": "Fri 19 Aug 2022 10:51",
             "username": "hubekpeterjexam211",
-            "content": "If there=E2=80=99s rto 4 hours, to save som money, doesn=E2=80=99t make sense to run single instance all the time. And I prefer automated backups, why on earth one will reimplement the feature with lambda, when it=E2=80=99s already available with no effort without any additional infrastructure costs.instead the built in automated backups is better but is not necessary use lambda to copy to another region that process is done automatically, is the best but the answer is not",
+            "content": "If there's rto 4 hours, to save som money, doesn't make sense to run single instance all the time. And I prefer automated backups, why on earth one will reimplement the feature with lambda, when it's already available with no effort without any additional infrastructure costs.instead the built in automated backups is better but is not necessary use lambda to copy to another region that process is done automatically, is the best but the answer is not",
             "upvote_count": "11",
             "selected_answers": "Selected Answer: DE"
           },
@@ -5132,7 +5132,7 @@ var DOP_C01_Part3 =
             "id": 316378,
             "date": "Mon 20 Sep 2021 05:16",
             "username": "WhyIronManMrCarter",
-            "content": "CE looks right.<br>For Lambda:<br>Throttles =E2=80=93 The number of invocation requests that are throttled. When all function instances are processing requests and no concurrency is available to scale up, Lambda rejects additional requests with TooManyRequestsException. Throttled requests and other invocation errors don't count as Invocations or Errors.<br><br>for SQS: NumberOfMessagesSent. This metric measures the number of messages enqueued in a 5-minute interval. It can be useful for determining the health of the systems sending data to SQS. Watch this metric to make sure your producer doesn=E2=80=99t suddenly start sending more messages, or stop sending messages completely.Has nothing to do with timeout. I mean, how long do you think a lambda function takes to update a record in a dynamodb table? You obviously need more lambda's executing at the same since we have one lambda function per update to the dynamodb table. One update is adding one row to the dynamodb table which takes very little time for lambda to process. Answers are A and D",
+            "content": "CE looks right.<br>For Lambda:<br>Throttles =E2=80=93 The number of invocation requests that are throttled. When all function instances are processing requests and no concurrency is available to scale up, Lambda rejects additional requests with TooManyRequestsException. Throttled requests and other invocation errors don't count as Invocations or Errors.<br><br>for SQS: NumberOfMessagesSent. This metric measures the number of messages enqueued in a 5-minute interval. It can be useful for determining the health of the systems sending data to SQS. Watch this metric to make sure your producer doesn't suddenly start sending more messages, or stop sending messages completely.Has nothing to do with timeout. I mean, how long do you think a lambda function takes to update a record in a dynamodb table? You obviously need more lambda's executing at the same since we have one lambda function per update to the dynamodb table. One update is adding one row to the dynamodb table which takes very little time for lambda to process. Answers are A and D",
             "upvote_count": "32",
             "selected_answers": ""
           },
@@ -6192,7 +6192,7 @@ var DOP_C01_Part3 =
             "id": 331385,
             "date": "Tue 05 Oct 2021 03:05",
             "username": "BKhanbobsmith2000hubekpeter",
-            "content": "Ans is E:<br>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.htmlRead it thoroughly:<br>\\\"This capability doesn't apply to resources whose physical instance is replaced during stack update operations. For example, if you edit a resource's properties such that CloudFormation replaces that resource during a stack update.\\\"<br><br>It's B, no-brainerI=E2=80=99ll choose E. . First changing instance class doesn=E2=80=99t case a data loss, it will only reboot the data. Second. This way it will preserve a snapshot which can be easily restored. Iam abac policy is hard to implement correctly, what if there=E2=80=99s a different team who should be able to do such an activity. You end up messing with iam roles which is not a trivial task to implement correctly in organization. From the docs: The default policy is Snapshot for AWS::RDS::DBCluster resources and for AWS::RDS::DBInstance resources that don't specify the DBClusterIdentifier property.",
+            "content": "Ans is E:<br>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.htmlRead it thoroughly:<br>\\\"This capability doesn't apply to resources whose physical instance is replaced during stack update operations. For example, if you edit a resource's properties such that CloudFormation replaces that resource during a stack update.\\\"<br><br>It's B, no-brainerI'll choose E. . First changing instance class doesn't case a data loss, it will only reboot the data. Second. This way it will preserve a snapshot which can be easily restored. Iam abac policy is hard to implement correctly, what if there's a different team who should be able to do such an activity. You end up messing with iam roles which is not a trivial task to implement correctly in organization. From the docs: The default policy is Snapshot for AWS::RDS::DBCluster resources and for AWS::RDS::DBInstance resources that don't specify the DBClusterIdentifier property.",
             "upvote_count": "1031",
             "selected_answers": ""
           },
@@ -6200,7 +6200,7 @@ var DOP_C01_Part3 =
             "id": 543776,
             "date": "Wed 09 Feb 2022 14:23",
             "username": "bobsmith2000hubekpeter",
-            "content": "Read it thoroughly:<br>\\\"This capability doesn't apply to resources whose physical instance is replaced during stack update operations. For example, if you edit a resource's properties such that CloudFormation replaces that resource during a stack update.\\\"<br><br>It's B, no-brainerI=E2=80=99ll choose E. . First changing instance class doesn=E2=80=99t case a data loss, it will only reboot the data. Second. This way it will preserve a snapshot which can be easily restored. Iam abac policy is hard to implement correctly, what if there=E2=80=99s a different team who should be able to do such an activity. You end up messing with iam roles which is not a trivial task to implement correctly in organization. From the docs: The default policy is Snapshot for AWS::RDS::DBCluster resources and for AWS::RDS::DBInstance resources that don't specify the DBClusterIdentifier property.",
+            "content": "Read it thoroughly:<br>\\\"This capability doesn't apply to resources whose physical instance is replaced during stack update operations. For example, if you edit a resource's properties such that CloudFormation replaces that resource during a stack update.\\\"<br><br>It's B, no-brainerI'll choose E. . First changing instance class doesn't case a data loss, it will only reboot the data. Second. This way it will preserve a snapshot which can be easily restored. Iam abac policy is hard to implement correctly, what if there's a different team who should be able to do such an activity. You end up messing with iam roles which is not a trivial task to implement correctly in organization. From the docs: The default policy is Snapshot for AWS::RDS::DBCluster resources and for AWS::RDS::DBInstance resources that don't specify the DBClusterIdentifier property.",
             "upvote_count": "31",
             "selected_answers": ""
           },
@@ -6208,7 +6208,7 @@ var DOP_C01_Part3 =
             "id": 650946,
             "date": "Tue 23 Aug 2022 20:16",
             "username": "hubekpeter",
-            "content": "I=E2=80=99ll choose E. . First changing instance class doesn=E2=80=99t case a data loss, it will only reboot the data. Second. This way it will preserve a snapshot which can be easily restored. Iam abac policy is hard to implement correctly, what if there=E2=80=99s a different team who should be able to do such an activity. You end up messing with iam roles which is not a trivial task to implement correctly in organization. From the docs: The default policy is Snapshot for AWS::RDS::DBCluster resources and for AWS::RDS::DBInstance resources that don't specify the DBClusterIdentifier property.",
+            "content": "I'll choose E. . First changing instance class doesn't case a data loss, it will only reboot the data. Second. This way it will preserve a snapshot which can be easily restored. Iam abac policy is hard to implement correctly, what if there's a different team who should be able to do such an activity. You end up messing with iam roles which is not a trivial task to implement correctly in organization. From the docs: The default policy is Snapshot for AWS::RDS::DBCluster resources and for AWS::RDS::DBInstance resources that don't specify the DBClusterIdentifier property.",
             "upvote_count": "1",
             "selected_answers": ""
           },

@@ -1381,7 +1381,7 @@ var DOP_C01_Part1 =
           "id": 224195,
           "date": "Sat 23 Oct 2021 00:17",
           "username": "jackdryanpeddyua",
-          "content": "I'll go with AI see what you=E2=80=99re doing there kid",
+          "content": "I'll go with AI see what you're doing there kid",
           "upvote_count": "41",
           "selected_answers": ""
         },
@@ -1389,7 +1389,7 @@ var DOP_C01_Part1 =
           "id": 377867,
           "date": "Sun 07 Nov 2021 07:42",
           "username": "peddyua",
-          "content": "I see what you=E2=80=99re doing there kid",
+          "content": "I see what you're doing there kid",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -4678,7 +4678,7 @@ var DOP_C01_Part1 =
           "id": 756131,
           "date": "Mon 26 Dec 2022 02:56",
           "username": "apcloud",
-          "content": "This one is hard to understand, but my bust understanding is: A and b are wrong because they use cloud trail, you would want event bridge or cloud watch events or something else. C is wrong because it=E2=80=99s using lambda to update cloud formation template when you really need to be adjusting the infra in real time not waiting on cloud formation. Knowing that D is the only possible choice that makes sense",
+          "content": "This one is hard to understand, but my bust understanding is: A and b are wrong because they use cloud trail, you would want event bridge or cloud watch events or something else. C is wrong because it's using lambda to update cloud formation template when you really need to be adjusting the infra in real time not waiting on cloud formation. Knowing that D is the only possible choice that makes sense",
           "upvote_count": "3",
           "selected_answers": ""
         },
@@ -5181,7 +5181,7 @@ var DOP_C01_Part1 =
           "id": 736854,
           "date": "Tue 06 Dec 2022 14:37",
           "username": "Milind",
-          "content": "Why Canary Deployment?<br>Canary deployment benefits include zero downtime, easy rollout and quick rollback =E2=80=93 plus the added safety from the gradual rollout process. It also has some drawbacks =E2=80=93 the expense of maintaining multiple server instances, the difficult clone-or-don=E2=80=99t-clone database decision.<br>Source: https://www.split.io/glossary/canary-deployment/",
+          "content": "Why Canary Deployment?<br>Canary deployment benefits include zero downtime, easy rollout and quick rollback =E2=80=93 plus the added safety from the gradual rollout process. It also has some drawbacks =E2=80=93 the expense of maintaining multiple server instances, the difficult clone-or-don't-clone database decision.<br>Source: https://www.split.io/glossary/canary-deployment/",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -7792,7 +7792,7 @@ var DOP_C01_Part1 =
           "id": 748330,
           "date": "Sat 17 Dec 2022 20:25",
           "username": "neta1o",
-          "content": "D is good, small caveat is that RDS can only be stopped for 7 days then it=E2=80=99ll automatically start.",
+          "content": "D is good, small caveat is that RDS can only be stopped for 7 days then it'll automatically start.",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: D"
         },
@@ -8219,7 +8219,7 @@ var DOP_C01_Part1 =
           "id": 752283,
           "date": "Wed 21 Dec 2022 13:35",
           "username": "ceros399apcloud",
-          "content": "Stack Sets will take care of the multi-region ordered deployment. and I don't see the need for nested stackThey aren=E2=80=99t looking for drift notifs, they want to notify the team about template changes",
+          "content": "Stack Sets will take care of the multi-region ordered deployment. and I don't see the need for nested stackThey aren't looking for drift notifs, they want to notify the team about template changes",
           "upvote_count": "21",
           "selected_answers": "Selected Answer: C"
         },
@@ -8227,7 +8227,7 @@ var DOP_C01_Part1 =
           "id": 757891,
           "date": "Mon 26 Dec 2022 23:27",
           "username": "apcloud",
-          "content": "They aren=E2=80=99t looking for drift notifs, they want to notify the team about template changes",
+          "content": "They aren't looking for drift notifs, they want to notify the team about template changes",
           "upvote_count": "1",
           "selected_answers": ""
         }
@@ -8745,7 +8745,7 @@ var DOP_C01_Part1 =
           "id": 330308,
           "date": "Mon 04 Oct 2021 05:24",
           "username": "devoppshammousjustfmm",
-          "content": "left with A,B as only sensible options.<br>sinceC doesnt solve problem<br>and D & E are invalid as no plain ASG (or EC2I) metrics on memory utilization (need Custom metric but no mention of that).I thought, like you, that a custom metric is needed for memory usage, but I came across this: \\\"By default, AWS gives you visibility into metrics like CPU load logs, network latency, request volume, etc., but not EC2 memory usage. For other metrics like EC2 memory usage, you=E2=80=99ll have to install and configure a CloudWatch agent on the instance...\\\". For more info, check the \\\"mem_xxxx\\\" metrics here: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.htmlCloudwatch agent have memory used metric.<br><br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html",
+          "content": "left with A,B as only sensible options.<br>sinceC doesnt solve problem<br>and D & E are invalid as no plain ASG (or EC2I) metrics on memory utilization (need Custom metric but no mention of that).I thought, like you, that a custom metric is needed for memory usage, but I came across this: \\\"By default, AWS gives you visibility into metrics like CPU load logs, network latency, request volume, etc., but not EC2 memory usage. For other metrics like EC2 memory usage, you'll have to install and configure a CloudWatch agent on the instance...\\\". For more info, check the \\\"mem_xxxx\\\" metrics here: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.htmlCloudwatch agent have memory used metric.<br><br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html",
           "upvote_count": "221",
           "selected_answers": ""
         },
@@ -8753,7 +8753,7 @@ var DOP_C01_Part1 =
           "id": 449903,
           "date": "Thu 21 Oct 2021 01:05",
           "username": "shammousjustfmm",
-          "content": "I thought, like you, that a custom metric is needed for memory usage, but I came across this: \\\"By default, AWS gives you visibility into metrics like CPU load logs, network latency, request volume, etc., but not EC2 memory usage. For other metrics like EC2 memory usage, you=E2=80=99ll have to install and configure a CloudWatch agent on the instance...\\\". For more info, check the \\\"mem_xxxx\\\" metrics here: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.htmlCloudwatch agent have memory used metric.<br><br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html",
+          "content": "I thought, like you, that a custom metric is needed for memory usage, but I came across this: \\\"By default, AWS gives you visibility into metrics like CPU load logs, network latency, request volume, etc., but not EC2 memory usage. For other metrics like EC2 memory usage, you'll have to install and configure a CloudWatch agent on the instance...\\\". For more info, check the \\\"mem_xxxx\\\" metrics here: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.htmlCloudwatch agent have memory used metric.<br><br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html",
           "upvote_count": "21",
           "selected_answers": ""
         },
@@ -9410,7 +9410,7 @@ var DOP_C01_Part1 =
           "id": 648352,
           "date": "Thu 18 Aug 2022 10:09",
           "username": "hubekpeter",
-          "content": "You can use sns topic as an event bridge target. There=E2=80=99s no need to put lambda in between. This solution is easier to implement, cheaper and more straight forward.",
+          "content": "You can use sns topic as an event bridge target. There's no need to put lambda in between. This solution is easier to implement, cheaper and more straight forward.",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: C"
         },
@@ -9418,7 +9418,7 @@ var DOP_C01_Part1 =
           "id": 632483,
           "date": "Sun 17 Jul 2022 09:00",
           "username": "adebisiayohubekpeter",
-          "content": "The answer is D<br>There is nothing like an AWS Management Console sign-in events event triggerActually there=E2=80=99s https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-aws-console-sign-in-events.html",
+          "content": "The answer is D<br>There is nothing like an AWS Management Console sign-in events event triggerActually there's https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-aws-console-sign-in-events.html",
           "upvote_count": "22",
           "selected_answers": "Selected Answer: D"
         },
@@ -9426,7 +9426,7 @@ var DOP_C01_Part1 =
           "id": 648354,
           "date": "Thu 18 Aug 2022 10:11",
           "username": "hubekpeter",
-          "content": "Actually there=E2=80=99s https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-aws-console-sign-in-events.html",
+          "content": "Actually there's https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-aws-console-sign-in-events.html",
           "upvote_count": "2",
           "selected_answers": ""
         },
@@ -11027,7 +11027,7 @@ var DOP_C01_Part1 =
           "id": 382285,
           "date": "Sat 30 Oct 2021 16:45",
           "username": "30thStelSenRightAnswerssg0206",
-          "content": "\\\"B\\\" seems to be the right answer. The answer could be a bit longer, because the Autorecovery involves CloudWatch and requires more work than just \\\"enabling\\\". But I think \\\"B\\\" is still the best answer.<br><br>https://medium.com/how-to-enable-autorecovery-in-ec2-instance-in-aws/how-to-enable-autorecovery-in-ec2-instance-e3fec149fad8<br><br>The main problem of \\\"C\\\" is that is doesn't include the traffic rerouting.i checked the link you provided. They didnt talk aboutAZ failure situation. Here is the official links: https://docs.amazonaws.cn/en_us/AWSEC2/latest/UserGuide/ec2-instance-recover.html<br>Here also they didn't mention about AZ failure situation. So unfortunatelyis wrongSince there is a licensing constraint, only Ans B seems right. Auto Recovery is the only option where the license will get transferred, since Auto Recovery has the following features.<br>=C2=B7 The running instance is automatically transferred to the new underlying hardware.<br>=C2=B7 There is no need of migration to a new EC2 instance.<br>=C2=B7 The instance-id does not get changed.<br>=C2=B7 The IP address, if it is an Elastic IP address remain same.<br>=C2=B7 The instance metadata and the private IP addresses also remain same.<br>However, the issue with Ans B is that it doesn=E2=80=99t address AZ failover scenario. Ans C addresses the AZ failover but not the license transfer.<br>I guess none of the answers are correct.if you spin another instance, tht is voilation of license so option B is not correct",
+          "content": "\\\"B\\\" seems to be the right answer. The answer could be a bit longer, because the Autorecovery involves CloudWatch and requires more work than just \\\"enabling\\\". But I think \\\"B\\\" is still the best answer.<br><br>https://medium.com/how-to-enable-autorecovery-in-ec2-instance-in-aws/how-to-enable-autorecovery-in-ec2-instance-e3fec149fad8<br><br>The main problem of \\\"C\\\" is that is doesn't include the traffic rerouting.i checked the link you provided. They didnt talk aboutAZ failure situation. Here is the official links: https://docs.amazonaws.cn/en_us/AWSEC2/latest/UserGuide/ec2-instance-recover.html<br>Here also they didn't mention about AZ failure situation. So unfortunatelyis wrongSince there is a licensing constraint, only Ans B seems right. Auto Recovery is the only option where the license will get transferred, since Auto Recovery has the following features.<br>=C2=B7 The running instance is automatically transferred to the new underlying hardware.<br>=C2=B7 There is no need of migration to a new EC2 instance.<br>=C2=B7 The instance-id does not get changed.<br>=C2=B7 The IP address, if it is an Elastic IP address remain same.<br>=C2=B7 The instance metadata and the private IP addresses also remain same.<br>However, the issue with Ans B is that it doesn't address AZ failover scenario. Ans C addresses the AZ failover but not the license transfer.<br>I guess none of the answers are correct.if you spin another instance, tht is voilation of license so option B is not correct",
           "upvote_count": "1111",
           "selected_answers": ""
         },
@@ -11035,7 +11035,7 @@ var DOP_C01_Part1 =
           "id": 427406,
           "date": "Sun 07 Nov 2021 15:39",
           "username": "StelSenRightAnswers",
-          "content": "i checked the link you provided. They didnt talk aboutAZ failure situation. Here is the official links: https://docs.amazonaws.cn/en_us/AWSEC2/latest/UserGuide/ec2-instance-recover.html<br>Here also they didn't mention about AZ failure situation. So unfortunatelyis wrongSince there is a licensing constraint, only Ans B seems right. Auto Recovery is the only option where the license will get transferred, since Auto Recovery has the following features.<br>=C2=B7 The running instance is automatically transferred to the new underlying hardware.<br>=C2=B7 There is no need of migration to a new EC2 instance.<br>=C2=B7 The instance-id does not get changed.<br>=C2=B7 The IP address, if it is an Elastic IP address remain same.<br>=C2=B7 The instance metadata and the private IP addresses also remain same.<br>However, the issue with Ans B is that it doesn=E2=80=99t address AZ failover scenario. Ans C addresses the AZ failover but not the license transfer.<br>I guess none of the answers are correct.",
+          "content": "i checked the link you provided. They didnt talk aboutAZ failure situation. Here is the official links: https://docs.amazonaws.cn/en_us/AWSEC2/latest/UserGuide/ec2-instance-recover.html<br>Here also they didn't mention about AZ failure situation. So unfortunatelyis wrongSince there is a licensing constraint, only Ans B seems right. Auto Recovery is the only option where the license will get transferred, since Auto Recovery has the following features.<br>=C2=B7 The running instance is automatically transferred to the new underlying hardware.<br>=C2=B7 There is no need of migration to a new EC2 instance.<br>=C2=B7 The instance-id does not get changed.<br>=C2=B7 The IP address, if it is an Elastic IP address remain same.<br>=C2=B7 The instance metadata and the private IP addresses also remain same.<br>However, the issue with Ans B is that it doesn't address AZ failover scenario. Ans C addresses the AZ failover but not the license transfer.<br>I guess none of the answers are correct.",
           "upvote_count": "11",
           "selected_answers": ""
         },
@@ -11043,7 +11043,7 @@ var DOP_C01_Part1 =
           "id": 522303,
           "date": "Wed 12 Jan 2022 17:33",
           "username": "RightAnswers",
-          "content": "Since there is a licensing constraint, only Ans B seems right. Auto Recovery is the only option where the license will get transferred, since Auto Recovery has the following features.<br>=C2=B7 The running instance is automatically transferred to the new underlying hardware.<br>=C2=B7 There is no need of migration to a new EC2 instance.<br>=C2=B7 The instance-id does not get changed.<br>=C2=B7 The IP address, if it is an Elastic IP address remain same.<br>=C2=B7 The instance metadata and the private IP addresses also remain same.<br>However, the issue with Ans B is that it doesn=E2=80=99t address AZ failover scenario. Ans C addresses the AZ failover but not the license transfer.<br>I guess none of the answers are correct.",
+          "content": "Since there is a licensing constraint, only Ans B seems right. Auto Recovery is the only option where the license will get transferred, since Auto Recovery has the following features.<br>=C2=B7 The running instance is automatically transferred to the new underlying hardware.<br>=C2=B7 There is no need of migration to a new EC2 instance.<br>=C2=B7 The instance-id does not get changed.<br>=C2=B7 The IP address, if it is an Elastic IP address remain same.<br>=C2=B7 The instance metadata and the private IP addresses also remain same.<br>However, the issue with Ans B is that it doesn't address AZ failover scenario. Ans C addresses the AZ failover but not the license transfer.<br>I guess none of the answers are correct.",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -11296,7 +11296,7 @@ var DOP_C01_Part1 =
           "id": 656443,
           "date": "Thu 01 Sep 2022 18:25",
           "username": "ohcnapcloud",
-          "content": "C - https://docs.aws.amazon.com/config/latest/developerguide/restricted-ssh.htmlThis wouldn=E2=80=99t work if they rule was changed to allow a specific range, it only works if it is chnanged to 0.0.0.0/0. If they change is to any other range that has some restriction, it will stay compliant. This means the answeris A",
+          "content": "C - https://docs.aws.amazon.com/config/latest/developerguide/restricted-ssh.htmlThis wouldn't work if they rule was changed to allow a specific range, it only works if it is chnanged to 0.0.0.0/0. If they change is to any other range that has some restriction, it will stay compliant. This means the answeris A",
           "upvote_count": "41",
           "selected_answers": "Selected Answer: C"
         },
@@ -11304,7 +11304,7 @@ var DOP_C01_Part1 =
           "id": 759216,
           "date": "Wed 28 Dec 2022 01:51",
           "username": "apcloud",
-          "content": "This wouldn=E2=80=99t work if they rule was changed to allow a specific range, it only works if it is chnanged to 0.0.0.0/0. If they change is to any other range that has some restriction, it will stay compliant. This means the answeris A",
+          "content": "This wouldn't work if they rule was changed to allow a specific range, it only works if it is chnanged to 0.0.0.0/0. If they change is to any other range that has some restriction, it will stay compliant. This means the answeris A",
           "upvote_count": "1",
           "selected_answers": ""
         }
@@ -11567,7 +11567,7 @@ var DOP_C01_Part1 =
           "id": 681224,
           "date": "Tue 27 Sep 2022 23:38",
           "username": "RightAnswers",
-          "content": "Amplify leverages Git branches to create new deployments every time a developer connects a new branch in their repository. After connecting your first branch, you can create a new feature branch deployments. Typically the main branch tracks release code and is your production branch. The develop branch is used as an integration branch to test new features. This enables beta testers to test unreleased features on the develop branch deployment, without affecting any of the production end users on the main branch deployment.<br>You can connect a custom domain to an app that you=E2=80=99ve deployed with Amplify Hosting.<br>https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html",
+          "content": "Amplify leverages Git branches to create new deployments every time a developer connects a new branch in their repository. After connecting your first branch, you can create a new feature branch deployments. Typically the main branch tracks release code and is your production branch. The develop branch is used as an integration branch to test new features. This enables beta testers to test unreleased features on the develop branch deployment, without affecting any of the production end users on the main branch deployment.<br>You can connect a custom domain to an app that you've deployed with Amplify Hosting.<br>https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html",
           "upvote_count": "4",
           "selected_answers": "Selected Answer: A"
         },

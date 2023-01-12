@@ -145,7 +145,7 @@ var DBS_C01_Part1 =
             "id": 344754,
             "date": "Wed 27 Oct 2021 20:32",
             "username": "db_interestZhongkaidb_interest",
-            "content": "A company has an application that uses an Amazon DynamoDB table to store user dat<br>a. Every morning, a single-threaded process calls the DynamoDB API Scan operation to scan the entire table and generate a critical start-of-day report for management. A successful marketing campaign recently doubled the number of items in the table, and now the process takes too long to run and the report is not generated in time. A database specialist needs to improve the performance of the process. The database specialist notes that, when the process is running, 15% of the table=E2=80=99s provisioned read capacity units (RCUs) are being used.<br><br>What should the database specialist do?A.  Enable auto scaling for the DynamoDB table.B.  Use four threads and parallel DynamoDB API Scan operations.C.  Double the table=E2=80=99s provisioned RCUs.D.  Set the Limit and Offset parameters before every call to the API.Looks like BYep, B looks right. Since autoscaling would increase the WCU/RCU which is not needed.",
+            "content": "A company has an application that uses an Amazon DynamoDB table to store user dat<br>a. Every morning, a single-threaded process calls the DynamoDB API Scan operation to scan the entire table and generate a critical start-of-day report for management. A successful marketing campaign recently doubled the number of items in the table, and now the process takes too long to run and the report is not generated in time. A database specialist needs to improve the performance of the process. The database specialist notes that, when the process is running, 15% of the table's provisioned read capacity units (RCUs) are being used.<br><br>What should the database specialist do?A.  Enable auto scaling for the DynamoDB table.B.  Use four threads and parallel DynamoDB API Scan operations.C.  Double the table's provisioned RCUs.D.  Set the Limit and Offset parameters before every call to the API.Looks like BYep, B looks right. Since autoscaling would increase the WCU/RCU which is not needed.",
             "upvote_count": "111",
             "selected_answers": ""
           },
@@ -169,7 +169,7 @@ var DBS_C01_Part1 =
             "id": 344719,
             "date": "Wed 27 Oct 2021 14:38",
             "username": "db_interestZhongkaich321",
-            "content": "A company is running an on-premises application comprised of a web tier, an application tier, and a<br>MySQL database tier. The database is used primarily during business hours with random activity peaks<br>throughout the day. A database specialist needs to improve the availability and reduce the cost of the<br>MySQL database tier as part of the company=E2=80=99s migration to AWS.<br>Which MySQL database option would meet these requirements?A.  Amazon RDS for MySQL with Multi-AZB.  Amazon Aurora Serverless MySQL clusterC.  Amazon Aurora MySQL clusterD.  Amazon RDS for MySQL with read replicarandom activity peaks -> Aurora Serverless -> BShould be B",
+            "content": "A company is running an on-premises application comprised of a web tier, an application tier, and a<br>MySQL database tier. The database is used primarily during business hours with random activity peaks<br>throughout the day. A database specialist needs to improve the availability and reduce the cost of the<br>MySQL database tier as part of the company's migration to AWS.<br>Which MySQL database option would meet these requirements?A.  Amazon RDS for MySQL with Multi-AZB.  Amazon Aurora Serverless MySQL clusterC.  Amazon Aurora MySQL clusterD.  Amazon RDS for MySQL with read replicarandom activity peaks -> Aurora Serverless -> BShould be B",
             "upvote_count": "111",
             "selected_answers": ""
           },
@@ -193,7 +193,7 @@ var DBS_C01_Part1 =
             "id": 344712,
             "date": "Thu 21 Oct 2021 22:44",
             "username": "agrawalachin",
-            "content": "A company is running an on-premises application comprised of a web tier, an application tier, and a<br>MySQL database tier. The database is used primarily during business hours with random activity peaks<br>throughout the day. A database specialist needs to improve the availability and reduce the cost of the<br>MySQL database tier as part of the company=E2=80=99s migration to AWS.<br>Which MySQL database option would meet these requirements?A.  Amazon RDS for MySQL with Multi-AZB.  Amazon Aurora Serverless MySQL clusterC.  Amazon Aurora MySQL clusterD.  Amazon RDS for MySQL with read replica",
+            "content": "A company is running an on-premises application comprised of a web tier, an application tier, and a<br>MySQL database tier. The database is used primarily during business hours with random activity peaks<br>throughout the day. A database specialist needs to improve the availability and reduce the cost of the<br>MySQL database tier as part of the company's migration to AWS.<br>Which MySQL database option would meet these requirements?A.  Amazon RDS for MySQL with Multi-AZB.  Amazon Aurora Serverless MySQL clusterC.  Amazon Aurora MySQL clusterD.  Amazon RDS for MySQL with read replica",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -802,7 +802,7 @@ var DBS_C01_Part1 =
             "id": 595372,
             "date": "Sun 01 May 2022 02:46",
             "username": "novice_expert",
-            "content": "B.  Instruct the Data Analysts to download the root certificate and use the SSL certificate on the connection string to connect.<br><br> To connect using SSL:<br>=E2=80=A2 Provide the SSLTrust certificate (can be downloaded from AWS)<br>=E2=80=A2 Provide SSL options when connecting to database<br>=E2=80=A2 Not using SSL on a DB that enforces SSL would result in error<br><br>B - Need root certificate and then need to specify --sql-cacert.pem --ssl-modeverify_identity for example mysql<br><br>When the require_secure_transport parameter is set to ON for a DB cluster, a database client can connect to it if it can establish an encrypted connection. Otherwise, an error message similar to the following is returned to the client:<br><br>MySQL Error 3159 (HY000): Connections using insecure transport are prohibited while --require_secure_transportON.",
+            "content": "B.  Instruct the Data Analysts to download the root certificate and use the SSL certificate on the connection string to connect.<br><br> To connect using SSL:<br>- Provide the SSLTrust certificate (can be downloaded from AWS)<br>- Provide SSL options when connecting to database<br>- Not using SSL on a DB that enforces SSL would result in error<br><br>B - Need root certificate and then need to specify --sql-cacert.pem --ssl-modeverify_identity for example mysql<br><br>When the require_secure_transport parameter is set to ON for a DB cluster, a database client can connect to it if it can establish an encrypted connection. Otherwise, an error message similar to the following is returned to the client:<br><br>MySQL Error 3159 (HY000): Connections using insecure transport are prohibited while --require_secure_transportON.",
             "upvote_count": "2",
             "selected_answers": "Selected Answer: B"
           },
@@ -858,7 +858,7 @@ var DBS_C01_Part1 =
             "id": 313339,
             "date": "Thu 04 Nov 2021 05:03",
             "username": "jnassp1",
-            "content": "B<br><br>=E2=80=A2 To connect using SSL:<br>=E2=80=A2 Provide the SSLTrust certificate (can be downloaded from AWS)<br>=E2=80=A2 Provide SSL options when connecting to database<br>=E2=80=A2 Not using SSL on a DB that enforces SSL would result in error",
+            "content": "B<br><br>- To connect using SSL:<br>- Provide the SSLTrust certificate (can be downloaded from AWS)<br>- Provide SSL options when connecting to database<br>- Not using SSL on a DB that enforces SSL would result in error",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -5375,7 +5375,7 @@ var DBS_C01_Part1 =
             "id": 699030,
             "date": "Wed 19 Oct 2022 14:34",
             "username": "sayed",
-            "content": "B because<br>=E2=80=A2 Can stop an RDS instance only if it does not have a replica<br>=E2=80=A2 Cannot stop an RDS replica",
+            "content": "B because<br>- Can stop an RDS instance only if it does not have a replica<br>- Cannot stop an RDS replica",
             "upvote_count": "1",
             "selected_answers": "Selected Answer: B"
           },
@@ -7267,7 +7267,7 @@ var DBS_C01_Part1 =
             "id": 241316,
             "date": "Tue 26 Oct 2021 07:37",
             "username": "waterh30waterh30",
-            "content": "ANS: B<br>Database snapshots are manual (user-initiated) backups of your complete DB instance that serve as full backups. They=E2=80=99re stored in Amazon S3, and are retained until you explicitly delete them. These snapshots can be copied and shared to different Regions and accounts.<br>and region replication is fast way. not sure how much costchange to C",
+            "content": "ANS: B<br>Database snapshots are manual (user-initiated) backups of your complete DB instance that serve as full backups. They're stored in Amazon S3, and are retained until you explicitly delete them. These snapshots can be copied and shared to different Regions and accounts.<br>and region replication is fast way. not sure how much costchange to C",
             "upvote_count": "11",
             "selected_answers": ""
           },
@@ -8318,7 +8318,7 @@ var DBS_C01_Part1 =
             "id": 200887,
             "date": "Sat 09 Oct 2021 00:35",
             "username": "vicks316JobinAkaJoekhchan123",
-            "content": "C sounds correct since as per link https://docs.aws.amazon.com/dms/latest/userguide/CHAP_BestPractices.html#CHAP_BestPractices.LOBS, \\\"AWS DMS migrates LOB data in two phases:<br>1. AWS DMS creates a new row in the target table and populates the row with all data except the associated LOB value.<br>2.AWS DMS updates the row in the target table with the LOB data.\\\"<br>This means that we would need two tasks, one per phase and use limited LOB mode for best performance.This doesn't mean we need two tasks.It just explains how LOBs are copied to target in any scenario.First all columns except LOBs then the LOB. I think it is C.  The explanation from vicks316 is irrelevant. From this link -><br>https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.LOBSupport.html<br>Using the Max LOB size (K) option with a value greater than 63KB impacts the performance of a full load configured to run in limited LOB mode. During a full load, DMS allocates memory by multiplying the Max LOB size (k) value by the Commit rate, and the product is multiplied by the number of LOB columns. When DMS can=E2=80=99t pre-allocate that memory, DMS starts consuming SWAP memory, and that impacts performance of a full load. So, if you experience performance issues when using limited LOB mode, consider decreasing the commit rate until you achieve an acceptable level of performance. You can also consider using inline LOB mode for supported endpoints once you understand your LOB distribution for the table.",
+            "content": "C sounds correct since as per link https://docs.aws.amazon.com/dms/latest/userguide/CHAP_BestPractices.html#CHAP_BestPractices.LOBS, \\\"AWS DMS migrates LOB data in two phases:<br>1. AWS DMS creates a new row in the target table and populates the row with all data except the associated LOB value.<br>2.AWS DMS updates the row in the target table with the LOB data.\\\"<br>This means that we would need two tasks, one per phase and use limited LOB mode for best performance.This doesn't mean we need two tasks.It just explains how LOBs are copied to target in any scenario.First all columns except LOBs then the LOB. I think it is C.  The explanation from vicks316 is irrelevant. From this link -><br>https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.LOBSupport.html<br>Using the Max LOB size (K) option with a value greater than 63KB impacts the performance of a full load configured to run in limited LOB mode. During a full load, DMS allocates memory by multiplying the Max LOB size (k) value by the Commit rate, and the product is multiplied by the number of LOB columns. When DMS can't pre-allocate that memory, DMS starts consuming SWAP memory, and that impacts performance of a full load. So, if you experience performance issues when using limited LOB mode, consider decreasing the commit rate until you achieve an acceptable level of performance. You can also consider using inline LOB mode for supported endpoints once you understand your LOB distribution for the table.",
             "upvote_count": "1422",
             "selected_answers": ""
           },
@@ -8334,7 +8334,7 @@ var DBS_C01_Part1 =
             "id": 604259,
             "date": "Fri 20 May 2022 08:41",
             "username": "khchan123",
-            "content": "I think it is C.  The explanation from vicks316 is irrelevant. From this link -><br>https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.LOBSupport.html<br>Using the Max LOB size (K) option with a value greater than 63KB impacts the performance of a full load configured to run in limited LOB mode. During a full load, DMS allocates memory by multiplying the Max LOB size (k) value by the Commit rate, and the product is multiplied by the number of LOB columns. When DMS can=E2=80=99t pre-allocate that memory, DMS starts consuming SWAP memory, and that impacts performance of a full load. So, if you experience performance issues when using limited LOB mode, consider decreasing the commit rate until you achieve an acceptable level of performance. You can also consider using inline LOB mode for supported endpoints once you understand your LOB distribution for the table.",
+            "content": "I think it is C.  The explanation from vicks316 is irrelevant. From this link -><br>https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.LOBSupport.html<br>Using the Max LOB size (K) option with a value greater than 63KB impacts the performance of a full load configured to run in limited LOB mode. During a full load, DMS allocates memory by multiplying the Max LOB size (k) value by the Commit rate, and the product is multiplied by the number of LOB columns. When DMS can't pre-allocate that memory, DMS starts consuming SWAP memory, and that impacts performance of a full load. So, if you experience performance issues when using limited LOB mode, consider decreasing the commit rate until you achieve an acceptable level of performance. You can also consider using inline LOB mode for supported endpoints once you understand your LOB distribution for the table.",
             "upvote_count": "2",
             "selected_answers": ""
           },
@@ -9419,7 +9419,7 @@ var DBS_C01_Part1 =
             "id": 629546,
             "date": "Sun 10 Jul 2022 13:59",
             "username": "Chirantan",
-            "content": "I think Answer is A<br>When auditing is enabled, Amazon DocumentDB exports your cluster=E2=80=99s auditing records (JSON documents) to Amazon CloudWatch Logs. You can use Amazon CloudWatch Logs to analyze, monitor, and archive your Amazon DocumentDB auditing events.",
+            "content": "I think Answer is A<br>When auditing is enabled, Amazon DocumentDB exports your cluster's auditing records (JSON documents) to Amazon CloudWatch Logs. You can use Amazon CloudWatch Logs to analyze, monitor, and archive your Amazon DocumentDB auditing events.",
             "upvote_count": "3",
             "selected_answers": ""
           },
@@ -9499,7 +9499,7 @@ var DBS_C01_Part1 =
             "id": 534658,
             "date": "Fri 28 Jan 2022 12:46",
             "username": "awsmonster",
-            "content": "Option A:https://docs.aws.amazon.com/documentdb/latest/developerguide/event-auditing.html<br>When auditing is enabled, Amazon DocumentDB records Data Definition Language (DDL), authentication, authorization, and user management events to Amazon CloudWatch Logs. When auditing is enabled, Amazon DocumentDB exports your cluster=E2=80=99s auditing records (JSON documents) to Amazon CloudWatch Logs. You can use Amazon CloudWatch Logs to analyze, monitor, and archive your Amazon DocumentDB auditing events.<br><br>DocumentDB Event does not support DDL:<br>https://docs.aws.amazon.com/documentdb/latest/developerguide/managing-events.html<br>\\\"EventCategories\\\": [<br>\\\"notification\\\",<br>\\\"failure\\\",<br>\\\"creation\\\",<br>\\\"maintenance\\\",<br>\\\"deletion\\\",<br>\\\"recovery\\\",<br>\\\"restoration\\\",<br>\\\"configuration change\\\",<br>\\\"read replica\\\",<br>\\\"backtrack\\\",<br>\\\"low storage\\\",<br>\\\"backup\\\",<br>\\\"availability\\\",<br>\\\"failover\\\"",
+            "content": "Option A:https://docs.aws.amazon.com/documentdb/latest/developerguide/event-auditing.html<br>When auditing is enabled, Amazon DocumentDB records Data Definition Language (DDL), authentication, authorization, and user management events to Amazon CloudWatch Logs. When auditing is enabled, Amazon DocumentDB exports your cluster's auditing records (JSON documents) to Amazon CloudWatch Logs. You can use Amazon CloudWatch Logs to analyze, monitor, and archive your Amazon DocumentDB auditing events.<br><br>DocumentDB Event does not support DDL:<br>https://docs.aws.amazon.com/documentdb/latest/developerguide/managing-events.html<br>\\\"EventCategories\\\": [<br>\\\"notification\\\",<br>\\\"failure\\\",<br>\\\"creation\\\",<br>\\\"maintenance\\\",<br>\\\"deletion\\\",<br>\\\"recovery\\\",<br>\\\"restoration\\\",<br>\\\"configuration change\\\",<br>\\\"read replica\\\",<br>\\\"backtrack\\\",<br>\\\"low storage\\\",<br>\\\"backup\\\",<br>\\\"availability\\\",<br>\\\"failover\\\"",
             "upvote_count": "5",
             "selected_answers": ""
           },
@@ -9624,7 +9624,7 @@ var DBS_C01_Part1 =
             "id": 153956,
             "date": "Mon 04 Oct 2021 21:48",
             "username": "firbhat",
-            "content": "ANS: D<br><br>=E2=80=A2 Converts DB/DW schema from source to target (including procedures / views / secondary indexes / FK and constraints)<br>=E2=80=A2 Mainly for heterogeneous DB migrations and DW migrations",
+            "content": "ANS: D<br><br>- Converts DB/DW schema from source to target (including procedures / views / secondary indexes / FK and constraints)<br>- Mainly for heterogeneous DB migrations and DW migrations",
             "upvote_count": "3",
             "selected_answers": ""
           },
@@ -9821,7 +9821,7 @@ var DBS_C01_Part1 =
             "id": 134964,
             "date": "Wed 22 Sep 2021 12:00",
             "username": "MickysinghAWSCert2020rlnd2000",
-            "content": "Ans B and its righthttps://docs.aws.amazon.com/amazondynamodb/latest/developerguide/RedshiftforDynamoDB. html<br>https://medium.com/@lewisdgavin/complex-dynamodb-data-into-redshift-made-easy-336c6329ea25<br><br>Ingesting DynamoDB data into Redshift<br>If you want to ingest DynamoDB data into Redshift you have a few options.<br>The Redshift Copy command<br>Build a Data Pipeline that copies the data using an EMR job to S3<br>Export the DynamoDB data to a file using the AWS CLI and load the flat file into Redshift.<br>You also have the option of DynamoDB streams or a Kinesis firehouse but I=E2=80=99ll save those for a future article.Why this ? are you thinking that RS is more cheaper than DynamoDB ? I don't think soYou are assuming that the company has a Redshift cluster, and that is incorrect, you have to deploy a new Redshift Cluster in prod, and that is not a cheap solution.",
+            "content": "Ans B and its righthttps://docs.aws.amazon.com/amazondynamodb/latest/developerguide/RedshiftforDynamoDB. html<br>https://medium.com/@lewisdgavin/complex-dynamodb-data-into-redshift-made-easy-336c6329ea25<br><br>Ingesting DynamoDB data into Redshift<br>If you want to ingest DynamoDB data into Redshift you have a few options.<br>The Redshift Copy command<br>Build a Data Pipeline that copies the data using an EMR job to S3<br>Export the DynamoDB data to a file using the AWS CLI and load the flat file into Redshift.<br>You also have the option of DynamoDB streams or a Kinesis firehouse but I'll save those for a future article.Why this ? are you thinking that RS is more cheaper than DynamoDB ? I don't think soYou are assuming that the company has a Redshift cluster, and that is incorrect, you have to deploy a new Redshift Cluster in prod, and that is not a cheap solution.",
             "upvote_count": "111",
             "selected_answers": ""
           },
@@ -9914,7 +9914,7 @@ var DBS_C01_Part1 =
             "id": 694649,
             "date": "Fri 14 Oct 2022 11:53",
             "username": "RBSK",
-            "content": "Most-Cost effective solution is the key here.REfer to https://aws.plainenglish.io/aurora-database-clones-what-they-are-and-when-to-use-them-b82be9d60309<br><br>Pricing<br>Now let=E2=80=99s talk about the pricing for creating and using Amazon Aurora database clones. We get billed per hour for the database instances provisioned as part of the clone database. The pricing is based on the DB instance class that we select for the clone. We are also charged for any addition storage that we use as we make edits to the clone database.<br>Option D is full copy of the DB and definitely will cost more than Option B. ",
+            "content": "Most-Cost effective solution is the key here.REfer to https://aws.plainenglish.io/aurora-database-clones-what-they-are-and-when-to-use-them-b82be9d60309<br><br>Pricing<br>Now let's talk about the pricing for creating and using Amazon Aurora database clones. We get billed per hour for the database instances provisioned as part of the clone database. The pricing is based on the DB instance class that we select for the clone. We are also charged for any addition storage that we use as we make edits to the clone database.<br>Option D is full copy of the DB and definitely will cost more than Option B. ",
             "upvote_count": "1",
             "selected_answers": "Selected Answer: B"
           },
@@ -11283,7 +11283,7 @@ var DBS_C01_Part1 =
             "id": 153964,
             "date": "Fri 01 Oct 2021 18:31",
             "username": "firbhat",
-            "content": "Ans B:<br> Two ways to test/simulate fault tolerance =E2=80=A2 Manual failover<br>=E2=80=A2 Fault injection queries",
+            "content": "Ans B:<br> Two ways to test/simulate fault tolerance - Manual failover<br>- Fault injection queries",
             "upvote_count": "3",
             "selected_answers": ""
           },
@@ -12019,7 +12019,7 @@ var DBS_C01_Part1 =
             "id": 146960,
             "date": "Fri 01 Oct 2021 05:32",
             "username": "BillyMadison",
-            "content": "Agree with C<br>\\\"By using the secure string support in CloudFormation with dynamic references you can better maintain your infrastructure as code. You=E2=80=99ll be able to avoid hard coding passwords into your templates and you can keep these runtime configuration parameters separated from your code. Moreover, when properly used, secure strings will help keep your development and production code as similar as possible, while continuing to make your infrastructure code suitable for continuous deployment pipelines.\\\"<br>https://aws.amazon.com/blogs/mt/using-aws-systems-manager-parameter-store-secure-string-parameters-in-aws-cloudformation-templates/<br><br>https://aws.amazon.com/blogs/security/how-to-use-aws-secrets-manager-rotate-credentials-amazon-rds-database-types-oracle/",
+            "content": "Agree with C<br>\\\"By using the secure string support in CloudFormation with dynamic references you can better maintain your infrastructure as code. You'll be able to avoid hard coding passwords into your templates and you can keep these runtime configuration parameters separated from your code. Moreover, when properly used, secure strings will help keep your development and production code as similar as possible, while continuing to make your infrastructure code suitable for continuous deployment pipelines.\\\"<br>https://aws.amazon.com/blogs/mt/using-aws-systems-manager-parameter-store-secure-string-parameters-in-aws-cloudformation-templates/<br><br>https://aws.amazon.com/blogs/security/how-to-use-aws-secrets-manager-rotate-credentials-amazon-rds-database-types-oracle/",
             "upvote_count": "9",
             "selected_answers": ""
           },
@@ -12043,7 +12043,7 @@ var DBS_C01_Part1 =
             "id": 595358,
             "date": "Sun 01 May 2022 01:58",
             "username": "novice_expert",
-            "content": "C.  Use the secretsmanager dynamic reference to retrieve the master password stored in AWS Secrets Manager and enable automatic rotation.<br><br>\\\"By using the secure string support in CloudFormation with dynamic references you can better maintain your infrastructure as code. You=E2=80=99ll be able to avoid hard coding passwords into your templates and you can keep these runtime configuration parameters separated from your code. Moreover, when properly used, secure strings will help keep your development and production code as similar as possible, while continuing to make your infrastructure code suitable for continuous deployment pipelines.\\\"",
+            "content": "C.  Use the secretsmanager dynamic reference to retrieve the master password stored in AWS Secrets Manager and enable automatic rotation.<br><br>\\\"By using the secure string support in CloudFormation with dynamic references you can better maintain your infrastructure as code. You'll be able to avoid hard coding passwords into your templates and you can keep these runtime configuration parameters separated from your code. Moreover, when properly used, secure strings will help keep your development and production code as similar as possible, while continuing to make your infrastructure code suitable for continuous deployment pipelines.\\\"",
             "upvote_count": "1",
             "selected_answers": "Selected Answer: C"
           },
@@ -12346,7 +12346,7 @@ var DBS_C01_Part1 =
             "id": 149677,
             "date": "Mon 27 Sep 2021 11:40",
             "username": "zanhsiehHuyChauPhan",
-            "content": "A. <br>B dropped due to snapshot is slower (full disk dump) than clone (copy-on-write)<br>C dropped due to no write on Aurora Replicas<br>D dropped due to there=E2=80=99s no option for cloning in the console.Cloning is not supported on Aurora Serverlessnor Cross-Region. https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Clone.htmlNo, it is cross-account, not cross-region. The question mentions same account<br>You can create an Aurora provisioned clone from a provisioned Aurora DB cluster. You can create an Aurora Serverless v1 clone from an Aurora Serverless v1 DB cluster. But you can also create Aurora Serverless v1 clones from Aurora provisioned DB clusters, and you can create provisioned clones from Aurora Serverless v1 DB clusters.<br>\\\"CROSS-ACCOUNT cloning currently doesn't support cloning Aurora Serverless v1 DB clusters\\\"",
+            "content": "A. <br>B dropped due to snapshot is slower (full disk dump) than clone (copy-on-write)<br>C dropped due to no write on Aurora Replicas<br>D dropped due to there's no option for cloning in the console.Cloning is not supported on Aurora Serverlessnor Cross-Region. https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Clone.htmlNo, it is cross-account, not cross-region. The question mentions same account<br>You can create an Aurora provisioned clone from a provisioned Aurora DB cluster. You can create an Aurora Serverless v1 clone from an Aurora Serverless v1 DB cluster. But you can also create Aurora Serverless v1 clones from Aurora provisioned DB clusters, and you can create provisioned clones from Aurora Serverless v1 DB clusters.<br>\\\"CROSS-ACCOUNT cloning currently doesn't support cloning Aurora Serverless v1 DB clusters\\\"",
             "upvote_count": "1331",
             "selected_answers": ""
           },
@@ -15957,7 +15957,7 @@ var DBS_C01_Part1 =
             "id": 414394,
             "date": "Sat 30 Oct 2021 15:42",
             "username": "gelsm",
-            "content": "Answer: B<br>https://aws.amazon.com/blogs/infrastructure-and-automation/securing-passwords-in-aws-quick-starts-using-aws-secrets-manager/<br>Saving a password in a clear text file is not a secure practice.<br><br>Today, I want to discuss how you can store secrets in Secrets Manager via AWS CloudFormation. Then I=E2=80=99ll show, using code examples, how to retrieve secrets.",
+            "content": "Answer: B<br>https://aws.amazon.com/blogs/infrastructure-and-automation/securing-passwords-in-aws-quick-starts-using-aws-secrets-manager/<br>Saving a password in a clear text file is not a secure practice.<br><br>Today, I want to discuss how you can store secrets in Secrets Manager via AWS CloudFormation. Then I'll show, using code examples, how to retrieve secrets.",
             "upvote_count": "3",
             "selected_answers": ""
           },

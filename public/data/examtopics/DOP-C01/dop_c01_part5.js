@@ -296,7 +296,7 @@ var DOP_C01_Part5 =
             "id": 390540,
             "date": "Sun 24 Oct 2021 03:42",
             "username": "KMoneyafantict",
-            "content": "I think its C because:<br>In an earlier post, we described Identity and Access Management (IAM) roles for Amazon EC2. If you run applications on EC2 that need access to AWS services, we strongly recommend using this feature. Roles use temporary security credentials that auto-expire and auto-renew, so you don=E2=80=99t have to worry about access key rotation =E2=80=93 AWS does it for you. However, if you are running applications somewhere other than on EC2, you should add access key rotation to your application management process. In this post, Cristian Ilac, software development manager on the IAM team, will walk you through the steps to rotate access keys for an IAM user.<br>https://aws.amazon.com/blogs/security/how-to-rotate-access-keys-for-iam-users/This url shows how to rotate access keys for an IAM user, not for IAM role, so I think it's D. ",
+            "content": "I think its C because:<br>In an earlier post, we described Identity and Access Management (IAM) roles for Amazon EC2. If you run applications on EC2 that need access to AWS services, we strongly recommend using this feature. Roles use temporary security credentials that auto-expire and auto-renew, so you don't have to worry about access key rotation =E2=80=93 AWS does it for you. However, if you are running applications somewhere other than on EC2, you should add access key rotation to your application management process. In this post, Cristian Ilac, software development manager on the IAM team, will walk you through the steps to rotate access keys for an IAM user.<br>https://aws.amazon.com/blogs/security/how-to-rotate-access-keys-for-iam-users/This url shows how to rotate access keys for an IAM user, not for IAM role, so I think it's D. ",
             "upvote_count": "34",
             "selected_answers": ""
           },
@@ -654,7 +654,7 @@ var DOP_C01_Part5 =
             "id": 641567,
             "date": "Wed 03 Aug 2022 06:15",
             "username": "hubekpeter",
-            "content": "A, you=E2=80=99re not interacting with this api<br>B, s3 doesn=E2=80=99t have nothing with ebs<br>C, doesn=E2=80=99t make sense<br>D",
+            "content": "A, you're not interacting with this api<br>B, s3 doesn't have nothing with ebs<br>C, doesn't make sense<br>D",
             "upvote_count": "1",
             "selected_answers": "Selected Answer: D"
           },
@@ -1270,7 +1270,7 @@ var DOP_C01_Part5 =
             "id": 539243,
             "date": "Thu 03 Feb 2022 00:12",
             "username": "bobsmith2000hubekpeter",
-            "content": "B for sure. You must put instances into a placement group to begin with. There's no mention of it in the question. So it's either B or C. <br><br>\\\"A cluster placement group is a logical grouping of instances within a single Availability Zone. A cluster placement group can span peered VPCs in the same Region. Instances in the same cluster placement group enjoy a higher per-flow throughput limit for TCP/IP traffic and are placed in the same high-bisection bandwidth segment of the network.\\\"<br><br>So the answer is B. <br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.htmlThey=E2=80=99re already using placement groups, read the question carefully. Therefore I vote for A. ",
+            "content": "B for sure. You must put instances into a placement group to begin with. There's no mention of it in the question. So it's either B or C. <br><br>\\\"A cluster placement group is a logical grouping of instances within a single Availability Zone. A cluster placement group can span peered VPCs in the same Region. Instances in the same cluster placement group enjoy a higher per-flow throughput limit for TCP/IP traffic and are placed in the same high-bisection bandwidth segment of the network.\\\"<br><br>So the answer is B. <br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.htmlThey're already using placement groups, read the question carefully. Therefore I vote for A. ",
             "upvote_count": "21",
             "selected_answers": ""
           },
@@ -1278,7 +1278,7 @@ var DOP_C01_Part5 =
             "id": 647299,
             "date": "Mon 15 Aug 2022 19:28",
             "username": "hubekpeter",
-            "content": "They=E2=80=99re already using placement groups, read the question carefully. Therefore I vote for A. ",
+            "content": "They're already using placement groups, read the question carefully. Therefore I vote for A. ",
             "upvote_count": "1",
             "selected_answers": ""
           }
@@ -3650,7 +3650,7 @@ var DOP_C01_Part5 =
             "id": 481910,
             "date": "Fri 19 Nov 2021 17:06",
             "username": "Ramu12",
-            "content": "Using ansible =E2=80=98=E2=80=93 =E2=80=93 exra-vars=E2=80=99 tag or =E2=80=98-e=E2=80=98 tag we can pass the variable to playbook.<br><br>ansible-playbook playbook.yml --extra-vars=E2=80=9Cx1 y2=E2=80=9D <br><br>OR<br><br>ansible-playbook playbook.yml -e=E2=80=9Cx1 y2=E2=80=9D<br><br>Refer: https://stackoverflow.com/questions/30662069/how-can-i-pass-variable-to-ansible-playbook-in-the-command-line",
+            "content": "Using ansible =E2=80=98=E2=80=93 =E2=80=93 exra-vars' tag or =E2=80=98-e=E2=80=98 tag we can pass the variable to playbook.<br><br>ansible-playbook playbook.yml --extra-vars=E2=80=9Cx1 y2=E2=80=9D <br><br>OR<br><br>ansible-playbook playbook.yml -e=E2=80=9Cx1 y2=E2=80=9D<br><br>Refer: https://stackoverflow.com/questions/30662069/how-can-i-pass-variable-to-ansible-playbook-in-the-command-line",
             "upvote_count": "1",
             "selected_answers": ""
           }
@@ -4783,7 +4783,7 @@ var DOP_C01_Part5 =
             "id": 517010,
             "date": "Tue 04 Jan 2022 22:39",
             "username": "RightAnswersguchao2000cloudstudent1234",
-            "content": "As described in the link: https://docs.docker.com/storage/storagedriver/, the DockerFile contain only one command which runs on the container layer. The container layer is a Read/Write layer. The CMD instruction specifies what command to run within the container, which only modifies the image=E2=80=99s metadata, which does not produce an image layer.<br>So, there is only one layer i.e. the container layer.There is only 1 layer, but it's a docker image layer, not a container layer:<br>FROM -> 1 image layer<br>CMD -> no image layer<br>No container -> no container layerExplanation:FROM scratch<br>CMD /app/hello.sh<br>The image contains all the layers from the base image (only one in this case, since we're building rom scratch), plus a new layer with the CMD instruction, and a read-write container layer.<br><br>Reference: https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#sharingpromotes-smaller-images<br><br>Answer is D.  3 layers.",
+            "content": "As described in the link: https://docs.docker.com/storage/storagedriver/, the DockerFile contain only one command which runs on the container layer. The container layer is a Read/Write layer. The CMD instruction specifies what command to run within the container, which only modifies the image's metadata, which does not produce an image layer.<br>So, there is only one layer i.e. the container layer.There is only 1 layer, but it's a docker image layer, not a container layer:<br>FROM -> 1 image layer<br>CMD -> no image layer<br>No container -> no container layerExplanation:FROM scratch<br>CMD /app/hello.sh<br>The image contains all the layers from the base image (only one in this case, since we're building rom scratch), plus a new layer with the CMD instruction, and a read-write container layer.<br><br>Reference: https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#sharingpromotes-smaller-images<br><br>Answer is D.  3 layers.",
             "upvote_count": "313",
             "selected_answers": "Selected Answer: C"
           },

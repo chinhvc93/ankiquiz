@@ -499,7 +499,7 @@ var DBS_C01_Part2 =
           "id": 447688,
           "date": "Mon 01 Nov 2021 09:48",
           "username": "faramawijove",
-          "content": "I=E2=80=99m going with B<br>=E2=80=A2\tA dropped because =E2=80=9Chaving the plant identifier as the partition key and the fault attribute as the sort key=E2=80=9D will not let us know which sensor generated the fault attribute.<br>=E2=80=A2\tC dropped for same reason like A, =E2=80=9CCreate a global secondary index (GSI) with the plant identifier as the partition key and the fault attribute as the sort key=E2=80=9D will not let us know which sensor generated the fault attribute.<br>=E2=80=A2\tD dropped local secondary index on fault attribute will depend on only plant identifier as primary key, so same issue like A and C, this will not let us know which sensor generated the fault attribute.<br>=E2=80=A2\tOnly Remaining answer is B, it generates partition key which is composed of two values (PlantID+SensorID) =E2=80=93 By the way this is not composite key -, and generate time as sort key. then Creating fault attribute as local secondary index which will depend on (PlantID+SensorID) as partition key will allow us to identify the faulty sensor- For option D the primary key is composed of PlantID (partition key) + SensorID (sort key)<br>- Why would you need measurement time as the sort key, you won't need to keep previous measurements, just keep the latest one for each PlantID + SensorID",
+          "content": "I'm going with B<br>-\tA dropped because =E2=80=9Chaving the plant identifier as the partition key and the fault attribute as the sort key=E2=80=9D will not let us know which sensor generated the fault attribute.<br>-\tC dropped for same reason like A, =E2=80=9CCreate a global secondary index (GSI) with the plant identifier as the partition key and the fault attribute as the sort key=E2=80=9D will not let us know which sensor generated the fault attribute.<br>-\tD dropped local secondary index on fault attribute will depend on only plant identifier as primary key, so same issue like A and C, this will not let us know which sensor generated the fault attribute.<br>-\tOnly Remaining answer is B, it generates partition key which is composed of two values (PlantID+SensorID) =E2=80=93 By the way this is not composite key -, and generate time as sort key. then Creating fault attribute as local secondary index which will depend on (PlantID+SensorID) as partition key will allow us to identify the faulty sensor- For option D the primary key is composed of PlantID (partition key) + SensorID (sort key)<br>- Why would you need measurement time as the sort key, you won't need to keep previous measurements, just keep the latest one for each PlantID + SensorID",
           "upvote_count": "31",
           "selected_answers": ""
         },
@@ -1780,7 +1780,7 @@ var DBS_C01_Part2 =
           "id": 725648,
           "date": "Thu 24 Nov 2022 09:04",
           "username": "Arun32",
-          "content": "C for me too..<br><br>DynamoDB auto scaling uses a scaling policy in Application Auto Scaling. To configure auto scaling in DynamoDB, you set the minimum and maximum levels of read and write capacity in addition to the target utilization percentage. Auto scaling uses Amazon CloudWatch to monitor a table=E2=80=99s read and write capacity metrics. To do so, it creates CloudWatch alarms that track consumed capacity.",
+          "content": "C for me too..<br><br>DynamoDB auto scaling uses a scaling policy in Application Auto Scaling. To configure auto scaling in DynamoDB, you set the minimum and maximum levels of read and write capacity in addition to the target utilization percentage. Auto scaling uses Amazon CloudWatch to monitor a table's read and write capacity metrics. To do so, it creates CloudWatch alarms that track consumed capacity.",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -1860,7 +1860,7 @@ var DBS_C01_Part2 =
           "id": 557469,
           "date": "Sun 27 Feb 2022 18:33",
           "username": "user0001",
-          "content": "C<br>Provisioned Mode<br>If you choose provisioned mode, you specify the number of reads and writes per second that you require for your application. You can use auto scaling to adjust your table=E2=80=99s provisioned capacity automatically in response to traffic changes. This helps you govern your DynamoDB use to stay at or below a defined request rate in order to obtain cost predictability.<br><br>Provisioned mode is a good option if any of the following are true:<br><br>You have predictable application traffic.<br><br>You run applications whose traffic is consistent or ramps gradually.<br><br>You can forecast capacity requirements to control costs.",
+          "content": "C<br>Provisioned Mode<br>If you choose provisioned mode, you specify the number of reads and writes per second that you require for your application. You can use auto scaling to adjust your table's provisioned capacity automatically in response to traffic changes. This helps you govern your DynamoDB use to stay at or below a defined request rate in order to obtain cost predictability.<br><br>Provisioned mode is a good option if any of the following are true:<br><br>You have predictable application traffic.<br><br>You run applications whose traffic is consistent or ramps gradually.<br><br>You can forecast capacity requirements to control costs.",
           "upvote_count": "3",
           "selected_answers": ""
         },
@@ -7160,7 +7160,7 @@ var DBS_C01_Part2 =
           "id": 555579,
           "date": "Thu 24 Feb 2022 22:29",
           "username": "tugboat",
-          "content": "https://aws.amazon.com/blogs/big-data/streaming-amazon-dynamodb-data-into-a-centralized-data-lake/<br>- Kinesis Data Firehose =E2=80=93 Kinesis Data Firehose helps to reliably load streaming data into data lakes, data stores, and analytics services. It can capture, transform, and deliver streaming data to Amazon S3 and other destinations. It=E2=80=99s a fully managed service that automatically scales to match the throughput of your data and requires no ongoing administration. It can also batch, compress, transform, and encrypt your data streams before loading, which minimizes the amount of storage used and increases security.",
+          "content": "https://aws.amazon.com/blogs/big-data/streaming-amazon-dynamodb-data-into-a-centralized-data-lake/<br>- Kinesis Data Firehose =E2=80=93 Kinesis Data Firehose helps to reliably load streaming data into data lakes, data stores, and analytics services. It can capture, transform, and deliver streaming data to Amazon S3 and other destinations. It's a fully managed service that automatically scales to match the throughput of your data and requires no ongoing administration. It can also batch, compress, transform, and encrypt your data streams before loading, which minimizes the amount of storage used and increases security.",
           "upvote_count": "7",
           "selected_answers": "Selected Answer: D"
         },
@@ -7293,7 +7293,7 @@ var DBS_C01_Part2 =
           "id": 701603,
           "date": "Sat 22 Oct 2022 17:16",
           "username": "Satprave",
-          "content": "B<br>Items that have expired, but haven=E2=80=99t yet been deleted by TTL, still appear in reads, queries, and scans. If you do not want expired items in the result set, you must filter them out. To do this, use a filter expression that returns only items where the Time to Live expiration value is greater than the current time in epoch format. For more information, see Filter expressions for scan.",
+          "content": "B<br>Items that have expired, but haven't yet been deleted by TTL, still appear in reads, queries, and scans. If you do not want expired items in the result set, you must filter them out. To do this, use a filter expression that returns only items where the Time to Live expiration value is greater than the current time in epoch format. For more information, see Filter expressions for scan.",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: B"
         },
@@ -10926,7 +10926,7 @@ var DBS_C01_Part2 =
           "id": 628578,
           "date": "Fri 08 Jul 2022 04:04",
           "username": "sachindb2luwdbadb2luwdba",
-          "content": "B is the correct answer<br><br>How to minimize downtime using read replicas<br>Typically in a self-managed or on-premises environment, a DBA minimizes downtime on an upgrade by using a rolling upgrade using read replicas. Amazon RDS doesn=E2=80=99t fully automate one-click rolling upgrades. However, you can still perform a rolling upgrade by creating a read replica, upgrading the replica, promoting the replica, and then routing traffic to the promoted replica.<br><br>One other caveat about upgrade downtime is how Multi-AZ fits into the picture. One common fallacy is that Multi-AZ configurations prevents downtime during an upgrade. We do recommend that you use Multi-AZ for high availability, because it can prevent extended downtime due to hardware failure or a network outage. However, in the case of a MySQL or MariaDB engine upgrade, Multi-AZ doesn=E2=80=99t eliminate downtime. The slow shutdown and the physical changes made on the active server by the mysql_upgrade program require this downtime.https://aws.amazon.com/blogs/database/best-practices-for-upgrading-amazon-rds-for-mysql-and-amazon-rds-for-mariadb/B is correct<br>https://aws.amazon.com/blogs/database/best-practices-for-upgrading-amazon-rds-for-mysql-and-amazon-rds-for-mariadb/",
+          "content": "B is the correct answer<br><br>How to minimize downtime using read replicas<br>Typically in a self-managed or on-premises environment, a DBA minimizes downtime on an upgrade by using a rolling upgrade using read replicas. Amazon RDS doesn't fully automate one-click rolling upgrades. However, you can still perform a rolling upgrade by creating a read replica, upgrading the replica, promoting the replica, and then routing traffic to the promoted replica.<br><br>One other caveat about upgrade downtime is how Multi-AZ fits into the picture. One common fallacy is that Multi-AZ configurations prevents downtime during an upgrade. We do recommend that you use Multi-AZ for high availability, because it can prevent extended downtime due to hardware failure or a network outage. However, in the case of a MySQL or MariaDB engine upgrade, Multi-AZ doesn't eliminate downtime. The slow shutdown and the physical changes made on the active server by the mysql_upgrade program require this downtime.https://aws.amazon.com/blogs/database/best-practices-for-upgrading-amazon-rds-for-mysql-and-amazon-rds-for-mariadb/B is correct<br>https://aws.amazon.com/blogs/database/best-practices-for-upgrading-amazon-rds-for-mysql-and-amazon-rds-for-mariadb/",
           "upvote_count": "311",
           "selected_answers": ""
         },
@@ -11131,7 +11131,7 @@ var DBS_C01_Part2 =
           "id": 660225,
           "date": "Mon 05 Sep 2022 15:49",
           "username": "Adi_MJeanGat",
-          "content": "Cross-Region disaster recovery of Amazon RDS for SQL Server - is possible https://aws.amazon.com/blogs/database/cross-region-disaster-recovery-of-amazon-rds-for-sql-server/. Why not D?From link, \\\"SQL Server MS Replication is one such feature that, as of this writing, isn=E2=80=99t yet available in Amazon RDS for SQL Server. However, you can to use AWS Database Migration Service (AWS DMS) to do continuous replication\\\"",
+          "content": "Cross-Region disaster recovery of Amazon RDS for SQL Server - is possible https://aws.amazon.com/blogs/database/cross-region-disaster-recovery-of-amazon-rds-for-sql-server/. Why not D?From link, \\\"SQL Server MS Replication is one such feature that, as of this writing, isn't yet available in Amazon RDS for SQL Server. However, you can to use AWS Database Migration Service (AWS DMS) to do continuous replication\\\"",
           "upvote_count": "12",
           "selected_answers": ""
         },
@@ -11139,7 +11139,7 @@ var DBS_C01_Part2 =
           "id": 677398,
           "date": "Fri 23 Sep 2022 21:18",
           "username": "JeanGat",
-          "content": "From link, \\\"SQL Server MS Replication is one such feature that, as of this writing, isn=E2=80=99t yet available in Amazon RDS for SQL Server. However, you can to use AWS Database Migration Service (AWS DMS) to do continuous replication\\\"",
+          "content": "From link, \\\"SQL Server MS Replication is one such feature that, as of this writing, isn't yet available in Amazon RDS for SQL Server. However, you can to use AWS Database Migration Service (AWS DMS) to do continuous replication\\\"",
           "upvote_count": "2",
           "selected_answers": ""
         },
@@ -12486,7 +12486,7 @@ var DBS_C01_Part2 =
           "id": 750859,
           "date": "Tue 20 Dec 2022 13:30",
           "username": "brucejxx",
-          "content": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/time-to-live-ttl-before-you-start.html<br>The TTL attribute=E2=80=99s value must be a top-level Number data type.<br>The TTL attribute=E2=80=99s value must be a timestamp in Unix epoch time format in seconds.<br>The TTL attribute value must be a datetimestamp with an expiration of no more than five years in the past.<br><br>Therefore only B is not a valid condition.",
+          "content": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/time-to-live-ttl-before-you-start.html<br>The TTL attribute's value must be a top-level Number data type.<br>The TTL attribute's value must be a timestamp in Unix epoch time format in seconds.<br>The TTL attribute value must be a datetimestamp with an expiration of no more than five years in the past.<br><br>Therefore only B is not a valid condition.",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: B"
         },

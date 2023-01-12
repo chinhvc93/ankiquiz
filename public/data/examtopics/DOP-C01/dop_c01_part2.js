@@ -2838,7 +2838,7 @@ var DOP_C01_Part2 =
             "id": 307209,
             "date": "Sun 31 Oct 2021 05:33",
             "username": "rscloud",
-            "content": "I=E2=80=99ll go with B<br>Standby state to troubleshoot",
+            "content": "I'll go with B<br>Standby state to troubleshoot",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -3226,7 +3226,7 @@ var DOP_C01_Part2 =
             "id": 135962,
             "date": "Sun 17 Oct 2021 03:06",
             "username": "dex007",
-            "content": "This is a tricky question but I think that C is correct:<br>https://aws.amazon.com/xray/faqs/<br>Q: What code changes do I need to make to my application to use X-Ray?<br>If you=E2=80=99re using Elastic Beanstalk, you will need to include the language-specific X-Ray libraries in your application code. For applications running on other AWS services, such as EC2 or ECS, you will need to install the X-Ray agent and instrument your application code.",
+            "content": "This is a tricky question but I think that C is correct:<br>https://aws.amazon.com/xray/faqs/<br>Q: What code changes do I need to make to my application to use X-Ray?<br>If you're using Elastic Beanstalk, you will need to include the language-specific X-Ray libraries in your application code. For applications running on other AWS services, such as EC2 or ECS, you will need to install the X-Ray agent and instrument your application code.",
             "upvote_count": "2",
             "selected_answers": ""
           },
@@ -5597,7 +5597,7 @@ var DOP_C01_Part2 =
             "id": 209915,
             "date": "Mon 18 Oct 2021 19:52",
             "username": "sayakan",
-            "content": "I=E2=80=99m sure with B.  but not sure A or C",
+            "content": "I'm sure with B.  but not sure A or C",
             "upvote_count": "2",
             "selected_answers": ""
           },
@@ -6755,7 +6755,7 @@ var DOP_C01_Part2 =
             "id": 650406,
             "date": "Mon 22 Aug 2022 21:11",
             "username": "hubekpeter",
-            "content": "Read carefully. All of a company's internal quality control apps have been containerized. - I=E2=80=99m leaning more towards the option b. Jenkins is more similar to code pipeline, it=E2=80=99s a continuous integration/delivery/deployment tool where code deploy is continuous deployment tool only. So d is wrong, with option b, you will remove the os patching, configuration, security etc. overhead.",
+            "content": "Read carefully. All of a company's internal quality control apps have been containerized. - I'm leaning more towards the option b. Jenkins is more similar to code pipeline, it's a continuous integration/delivery/deployment tool where code deploy is continuous deployment tool only. So d is wrong, with option b, you will remove the os patching, configuration, security etc. overhead.",
             "upvote_count": "2",
             "selected_answers": "Selected Answer: B"
           },
@@ -7058,7 +7058,7 @@ var DOP_C01_Part2 =
             "id": 646892,
             "date": "Sun 14 Aug 2022 21:15",
             "username": "hubekpeter",
-            "content": "https://aws.amazon.com/blogs/security/how-to-enable-secure-access-to-kibana-using-aws-single-sign-on/ The rest simply doesn=E2=80=99t make sense, basically you=E2=80=99re implementing another filtering layer which is unnecessary. Not to mention that something like iam auth on proxy doesn=E2=80=99t exist etc.",
+            "content": "https://aws.amazon.com/blogs/security/how-to-enable-secure-access-to-kibana-using-aws-single-sign-on/ The rest simply doesn't make sense, basically you're implementing another filtering layer which is unnecessary. Not to mention that something like iam auth on proxy doesn't exist etc.",
             "upvote_count": "2",
             "selected_answers": "Selected Answer: DE"
           },
@@ -7685,7 +7685,7 @@ var DOP_C01_Part2 =
             "id": 307553,
             "date": "Wed 27 Oct 2021 12:13",
             "username": "rscloud",
-            "content": "I=E2=80=99ll go with ACF<br>In the source account, create an AWS Identity and Access Management (IAM) customer managed policy that grants an IAM identity (user or role) proper permissions. IAM role should be in source account<br>https://aws.amazon.com/premiumsupport/knowledge-center/copy-s3-objects-account/?nc1h_ls",
+            "content": "I'll go with ACF<br>In the source account, create an AWS Identity and Access Management (IAM) customer managed policy that grants an IAM identity (user or role) proper permissions. IAM role should be in source account<br>https://aws.amazon.com/premiumsupport/knowledge-center/copy-s3-objects-account/?nc1h_ls",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -7847,7 +7847,7 @@ var DOP_C01_Part2 =
             "id": 209890,
             "date": "Wed 27 Oct 2021 21:32",
             "username": "ChauPhan",
-            "content": "E.  NO > AWS Global Accelerator is a networking service that sends your user=E2=80=99s traffic through Amazon Web Service=E2=80=99s global network infrastructure, improving your internet user performance by up to 60%. When the internet is congested<br>D > No replace<br>B > ALB can't configure to cache into ElasticCache<br><br>So A,C",
+            "content": "E.  NO > AWS Global Accelerator is a networking service that sends your user's traffic through Amazon Web Service's global network infrastructure, improving your internet user performance by up to 60%. When the internet is congested<br>D > No replace<br>B > ALB can't configure to cache into ElasticCache<br><br>So A,C",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -7855,7 +7855,7 @@ var DOP_C01_Part2 =
             "id": 207602,
             "date": "Wed 27 Oct 2021 02:02",
             "username": "DgixChauPhanChauPhan",
-            "content": "C+E are the only ones that make sense. A doesn't work since CloudFront doesn't cache dynamic content. B & D are essentially gibberish in that they describe nonexistent features.CloudFront can, please refer to<br>https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/header-caching.htmlE is not relevant<br>AWS Global Accelerator is a networking service that sends your user=E2=80=99s traffic through Amazon Web Service=E2=80=99s global network infrastructure, improving your internet user performance by up to 60%. When the internet is congested, Global Accelerator=E2=80=99s automatic routing optimizations will help keep your packet loss, jitter, and latency consistently low.",
+            "content": "C+E are the only ones that make sense. A doesn't work since CloudFront doesn't cache dynamic content. B & D are essentially gibberish in that they describe nonexistent features.CloudFront can, please refer to<br>https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/header-caching.htmlE is not relevant<br>AWS Global Accelerator is a networking service that sends your user's traffic through Amazon Web Service's global network infrastructure, improving your internet user performance by up to 60%. When the internet is congested, Global Accelerator's automatic routing optimizations will help keep your packet loss, jitter, and latency consistently low.",
             "upvote_count": "111",
             "selected_answers": ""
           },
@@ -7871,7 +7871,7 @@ var DOP_C01_Part2 =
             "id": 209892,
             "date": "Mon 01 Nov 2021 21:42",
             "username": "ChauPhan",
-            "content": "E is not relevant<br>AWS Global Accelerator is a networking service that sends your user=E2=80=99s traffic through Amazon Web Service=E2=80=99s global network infrastructure, improving your internet user performance by up to 60%. When the internet is congested, Global Accelerator=E2=80=99s automatic routing optimizations will help keep your packet loss, jitter, and latency consistently low.",
+            "content": "E is not relevant<br>AWS Global Accelerator is a networking service that sends your user's traffic through Amazon Web Service's global network infrastructure, improving your internet user performance by up to 60%. When the internet is congested, Global Accelerator's automatic routing optimizations will help keep your packet loss, jitter, and latency consistently low.",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -8696,7 +8696,7 @@ var DOP_C01_Part2 =
             "id": 443452,
             "date": "Wed 20 Oct 2021 12:18",
             "username": "jp99999",
-            "content": "Let=E2=80=99s not make it too complicated. A would be the best answer.",
+            "content": "Let's not make it too complicated. A would be the best answer.",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -9230,7 +9230,7 @@ var DOP_C01_Part2 =
             "id": 309922,
             "date": "Mon 20 Sep 2021 06:27",
             "username": "rscloud",
-            "content": "I=E2=80=99ll go with A",
+            "content": "I'll go with A",
             "upvote_count": "1",
             "selected_answers": ""
           }
@@ -9349,7 +9349,7 @@ var DOP_C01_Part2 =
             "id": 379118,
             "date": "Mon 25 Oct 2021 16:49",
             "username": "okida",
-            "content": "I=E2=80=99ll go to A, C, F",
+            "content": "I'll go to A, C, F",
             "upvote_count": "1",
             "selected_answers": ""
           },

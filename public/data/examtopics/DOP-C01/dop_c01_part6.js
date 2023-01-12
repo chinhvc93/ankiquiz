@@ -1384,7 +1384,7 @@ var DOP_C01_Part6 =
             "id": 516115,
             "date": "Mon 03 Jan 2022 23:51",
             "username": "RightAnswers",
-            "content": "A<br>From Route 53 FAQ (https://aws.amazon.com/route53/faqs/):<br>DNS Routing Policies: Q. Does Amazon Route 53 support Weighted Round Robin (WRR)?<br>Ans: Yes. Weighted Round Robin allows you to assign weights to resource record sets in order to specify the frequency with which different responses are served. You may want to use this capability to do A/B testing, sending a small portion of traffic to a server on which you=E2=80=99ve made a software change. For instance, suppose you have two record sets associated with one DNS name=E2=80=94one with weight 3 and one with weight 1. In this case, 75% of the time Route 53 will return the record set with weight 3 and 25% of the time Route 53 will return the record set with weight 1. Weights can be any number between 0 and 255.",
+            "content": "A<br>From Route 53 FAQ (https://aws.amazon.com/route53/faqs/):<br>DNS Routing Policies: Q. Does Amazon Route 53 support Weighted Round Robin (WRR)?<br>Ans: Yes. Weighted Round Robin allows you to assign weights to resource record sets in order to specify the frequency with which different responses are served. You may want to use this capability to do A/B testing, sending a small portion of traffic to a server on which you've made a software change. For instance, suppose you have two record sets associated with one DNS name=E2=80=94one with weight 3 and one with weight 1. In this case, 75% of the time Route 53 will return the record set with weight 3 and 25% of the time Route 53 will return the record set with weight 1. Weights can be any number between 0 and 255.",
             "upvote_count": "2",
             "selected_answers": ""
           }
@@ -1461,7 +1461,7 @@ var DOP_C01_Part6 =
             "id": 337864,
             "date": "Mon 04 Oct 2021 01:14",
             "username": "GCP_userGreatFunanabobsmith2000",
-            "content": "Feel like \\\"D\\\" is not the right answer.<br>https://aws.amazon.com/builders-library/implementing-health-checks/<br>=E2=80=A2 Critical processes crashing or breaking=E2=80=94Some services take requests using an on-server proxy (similar to NGINX) and perform their business logic in another server process. A liveness check might only test whether the proxy process is running. A local health check process might pass through from the proxy to the application to check that both are running and answering requests correctly. Interestingly, in the website example from the beginning of the article, the existing health check was deep enough to ensure that the rendering process was running and responding but not deep enough to ensure it was responding correctly.<br>Is it \\\"A\\\"?D reads as a correct answer, but its not. This is the question:<br><br>\\\"What may be wrong with the health check, since it continues to report the instances as healthy?\\\"<br><br>Knowing that, the question is asking us whats wrong with the health check. If the timing is not setup right, it could be bombing out even though the instance at one point reported healthy. I agree, seems like A is the best answer.The link is correct but you got it wrong.<br>Look here https://docs.aws.amazon.com/autoscaling/ec2/userguide/healthcheck.html#instance-health-status<br><br>Default health check here are the liveness check from you link.<br>Local health check (which checks processes on os)custom health check.<br><br>We obviously need to run app verifications from the os point of view.<br>So it's D. ",
+            "content": "Feel like \\\"D\\\" is not the right answer.<br>https://aws.amazon.com/builders-library/implementing-health-checks/<br>- Critical processes crashing or breaking=E2=80=94Some services take requests using an on-server proxy (similar to NGINX) and perform their business logic in another server process. A liveness check might only test whether the proxy process is running. A local health check process might pass through from the proxy to the application to check that both are running and answering requests correctly. Interestingly, in the website example from the beginning of the article, the existing health check was deep enough to ensure that the rendering process was running and responding but not deep enough to ensure it was responding correctly.<br>Is it \\\"A\\\"?D reads as a correct answer, but its not. This is the question:<br><br>\\\"What may be wrong with the health check, since it continues to report the instances as healthy?\\\"<br><br>Knowing that, the question is asking us whats wrong with the health check. If the timing is not setup right, it could be bombing out even though the instance at one point reported healthy. I agree, seems like A is the best answer.The link is correct but you got it wrong.<br>Look here https://docs.aws.amazon.com/autoscaling/ec2/userguide/healthcheck.html#instance-health-status<br><br>Default health check here are the liveness check from you link.<br>Local health check (which checks processes on os)custom health check.<br><br>We obviously need to run app verifications from the os point of view.<br>So it's D. ",
             "upvote_count": "321",
             "selected_answers": ""
           },
@@ -1583,7 +1583,7 @@ var DOP_C01_Part6 =
             "id": 376570,
             "date": "Mon 18 Oct 2021 22:34",
             "username": "peddyua",
-            "content": "It=E2=80=99s already on ASG so it=E2=80=99s either LC or LT, ANSWER C",
+            "content": "It's already on ASG so it's either LC or LT, ANSWER C",
             "upvote_count": "6",
             "selected_answers": ""
           },
@@ -2178,7 +2178,7 @@ var DOP_C01_Part6 =
             "id": 358005,
             "date": "Fri 24 Sep 2021 12:29",
             "username": "shammous",
-            "content": "C.  It=E2=80=99s the closest to the context of having dedicated and optimized resources.",
+            "content": "C.  It's the closest to the context of having dedicated and optimized resources.",
             "upvote_count": "7",
             "selected_answers": ""
           },

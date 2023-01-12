@@ -654,7 +654,7 @@ var DVA_C01_Part2 =
             "id": 684211,
             "date": "Sat 01 Oct 2022 14:54",
             "username": "habros",
-            "content": "A and E. <br>AMIs can only be used on specific region. Either both environments running on different regions, or permissions insufficient.<br>IAM access deny exception is common issue. Easiest way to allow or deny AWS resources to user. So when user does not have permission to run template on production environment, it=E2=80=99s obvious.<br>Security group is more for networking (open ports). If fail means written wrongly.",
+            "content": "A and E. <br>AMIs can only be used on specific region. Either both environments running on different regions, or permissions insufficient.<br>IAM access deny exception is common issue. Easiest way to allow or deny AWS resources to user. So when user does not have permission to run template on production environment, it's obvious.<br>Security group is more for networking (open ports). If fail means written wrongly.",
             "upvote_count": "3",
             "selected_answers": "Selected Answer: AE"
           },
@@ -1241,7 +1241,7 @@ var DVA_C01_Part2 =
             "id": 573698,
             "date": "Wed 23 Mar 2022 15:45",
             "username": "skb1996skb1996",
-            "content": "Should we not use ELB as an origin for Cloudfront?<br>Cache management can be done nicely, also Cloudfront can serve dynamic content, not sure why we are not considering it.<br><br>As for me B, E is the answer. D is correct, but the B, E can also handle this, as better pair upAlso found this in docs ,<br><br>\\\"Some advantages with utilizing sticky sessions are that it=E2=80=99s cost effective due to the fact you are storing sessions on the same web servers running your applications and that retrieval of those sessions is generally fast because it eliminates network latency. A drawback for using storing sessions on an individual node is that in the event of a failure, you are likely to lose the sessions that were resident on the failed node. In addition, in the event the number of your web servers change, for example a scale-up scenario, it=E2=80=99s possible that the traffic may be unequally spread across the web servers as active sessions may exist on particular servers. If not mitigated properly, this can hinder the scalability of your application\\\"",
+            "content": "Should we not use ELB as an origin for Cloudfront?<br>Cache management can be done nicely, also Cloudfront can serve dynamic content, not sure why we are not considering it.<br><br>As for me B, E is the answer. D is correct, but the B, E can also handle this, as better pair upAlso found this in docs ,<br><br>\\\"Some advantages with utilizing sticky sessions are that it's cost effective due to the fact you are storing sessions on the same web servers running your applications and that retrieval of those sessions is generally fast because it eliminates network latency. A drawback for using storing sessions on an individual node is that in the event of a failure, you are likely to lose the sessions that were resident on the failed node. In addition, in the event the number of your web servers change, for example a scale-up scenario, it's possible that the traffic may be unequally spread across the web servers as active sessions may exist on particular servers. If not mitigated properly, this can hinder the scalability of your application\\\"",
             "upvote_count": "11",
             "selected_answers": ""
           },
@@ -1249,7 +1249,7 @@ var DVA_C01_Part2 =
             "id": 573701,
             "date": "Wed 23 Mar 2022 15:47",
             "username": "skb1996",
-            "content": "Also found this in docs ,<br><br>\\\"Some advantages with utilizing sticky sessions are that it=E2=80=99s cost effective due to the fact you are storing sessions on the same web servers running your applications and that retrieval of those sessions is generally fast because it eliminates network latency. A drawback for using storing sessions on an individual node is that in the event of a failure, you are likely to lose the sessions that were resident on the failed node. In addition, in the event the number of your web servers change, for example a scale-up scenario, it=E2=80=99s possible that the traffic may be unequally spread across the web servers as active sessions may exist on particular servers. If not mitigated properly, this can hinder the scalability of your application\\\"",
+            "content": "Also found this in docs ,<br><br>\\\"Some advantages with utilizing sticky sessions are that it's cost effective due to the fact you are storing sessions on the same web servers running your applications and that retrieval of those sessions is generally fast because it eliminates network latency. A drawback for using storing sessions on an individual node is that in the event of a failure, you are likely to lose the sessions that were resident on the failed node. In addition, in the event the number of your web servers change, for example a scale-up scenario, it's possible that the traffic may be unequally spread across the web servers as active sessions may exist on particular servers. If not mitigated properly, this can hinder the scalability of your application\\\"",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -1842,7 +1842,7 @@ var DVA_C01_Part2 =
             "id": 692785,
             "date": "Wed 12 Oct 2022 08:52",
             "username": "jasmeet94",
-            "content": "Answer is A<br>AppSync is a managed service that uses GraphQL<br>=E2=80=A2 GraphQL makes it easy for applications to get exactly the data they need.<br>=E2=80=A2 This includes combining data from one or more sources =E2=80=A2 NoSQL data stores, Relational databases, HTTP APIs...<br>=E2=80=A2 Integrates with DynamoDB, Aurora, Elasticsearch & others =E2=80=A2 Custom sources with AWS Lambda<br>=E2=80=A2 Retrieve data in real-time with WebSocket or MQTT on WebSocket =E2=80=A2 For mobile apps: local data access & data synchronization<br>=E2=80=A2 It all starts with uploading one GraphQL schema",
+            "content": "Answer is A<br>AppSync is a managed service that uses GraphQL<br>- GraphQL makes it easy for applications to get exactly the data they need.<br>- This includes combining data from one or more sources - NoSQL data stores, Relational databases, HTTP APIs...<br>- Integrates with DynamoDB, Aurora, Elasticsearch & others - Custom sources with AWS Lambda<br>- Retrieve data in real-time with WebSocket or MQTT on WebSocket - For mobile apps: local data access & data synchronization<br>- It all starts with uploading one GraphQL schema",
             "upvote_count": "2",
             "selected_answers": ""
           },
@@ -4790,7 +4790,7 @@ var DVA_C01_Part2 =
             "id": 721661,
             "date": "Sat 19 Nov 2022 01:13",
             "username": "dark_cherrymondark_cherrymondark_cherrymon",
-            "content": "it's probably still C because even with A you need a presigned url<br><br>though i would mention that boto is ending support for python so this question may not be so relevant. though you probably can use the older versions of python<br><br>https://github.com/boto/boto3<br><br>\\\"On 2022-05-30, support for Python 3.6 was ended. This follows the Python Software Foundation end of support for the runtime which occurred on 2021-12-23. For more information, see this blog post.\\\"\\\"On 2022-05-30, support for Python 3.6 was ended. This follows the Python Software Foundation end of support for the runtime which occurred on 2021-12-23. For more information, see this blog post.\\\"<br><br>https://www.serverlessops.io/blog/aws-lambda-and-python-boto3-bundling#:~:textBecause%20the%20boto3%20module%20is,t%20bother%20bundling%20that%20either.my copy paste didn't work, here's the quote i was going for<br><br>\\\"Because the boto3 module is already available in the AWS Lambda Python runtimes, don=E2=80=99t bother including boto3 and its dependency botocore in your Lambda deployment zip file.\\\"",
+            "content": "it's probably still C because even with A you need a presigned url<br><br>though i would mention that boto is ending support for python so this question may not be so relevant. though you probably can use the older versions of python<br><br>https://github.com/boto/boto3<br><br>\\\"On 2022-05-30, support for Python 3.6 was ended. This follows the Python Software Foundation end of support for the runtime which occurred on 2021-12-23. For more information, see this blog post.\\\"\\\"On 2022-05-30, support for Python 3.6 was ended. This follows the Python Software Foundation end of support for the runtime which occurred on 2021-12-23. For more information, see this blog post.\\\"<br><br>https://www.serverlessops.io/blog/aws-lambda-and-python-boto3-bundling#:~:textBecause%20the%20boto3%20module%20is,t%20bother%20bundling%20that%20either.my copy paste didn't work, here's the quote i was going for<br><br>\\\"Because the boto3 module is already available in the AWS Lambda Python runtimes, don't bother including boto3 and its dependency botocore in your Lambda deployment zip file.\\\"",
             "upvote_count": "111",
             "selected_answers": "Selected Answer: C"
           },
@@ -4798,7 +4798,7 @@ var DVA_C01_Part2 =
             "id": 721665,
             "date": "Sat 19 Nov 2022 01:18",
             "username": "dark_cherrymondark_cherrymon",
-            "content": "\\\"On 2022-05-30, support for Python 3.6 was ended. This follows the Python Software Foundation end of support for the runtime which occurred on 2021-12-23. For more information, see this blog post.\\\"<br><br>https://www.serverlessops.io/blog/aws-lambda-and-python-boto3-bundling#:~:textBecause%20the%20boto3%20module%20is,t%20bother%20bundling%20that%20either.my copy paste didn't work, here's the quote i was going for<br><br>\\\"Because the boto3 module is already available in the AWS Lambda Python runtimes, don=E2=80=99t bother including boto3 and its dependency botocore in your Lambda deployment zip file.\\\"",
+            "content": "\\\"On 2022-05-30, support for Python 3.6 was ended. This follows the Python Software Foundation end of support for the runtime which occurred on 2021-12-23. For more information, see this blog post.\\\"<br><br>https://www.serverlessops.io/blog/aws-lambda-and-python-boto3-bundling#:~:textBecause%20the%20boto3%20module%20is,t%20bother%20bundling%20that%20either.my copy paste didn't work, here's the quote i was going for<br><br>\\\"Because the boto3 module is already available in the AWS Lambda Python runtimes, don't bother including boto3 and its dependency botocore in your Lambda deployment zip file.\\\"",
             "upvote_count": "11",
             "selected_answers": ""
           },
@@ -4806,7 +4806,7 @@ var DVA_C01_Part2 =
             "id": 721667,
             "date": "Sat 19 Nov 2022 01:19",
             "username": "dark_cherrymon",
-            "content": "my copy paste didn't work, here's the quote i was going for<br><br>\\\"Because the boto3 module is already available in the AWS Lambda Python runtimes, don=E2=80=99t bother including boto3 and its dependency botocore in your Lambda deployment zip file.\\\"",
+            "content": "my copy paste didn't work, here's the quote i was going for<br><br>\\\"Because the boto3 module is already available in the AWS Lambda Python runtimes, don't bother including boto3 and its dependency botocore in your Lambda deployment zip file.\\\"",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -5515,7 +5515,7 @@ var DVA_C01_Part2 =
                 "feedback": ""
               },
               {
-                "choice": "<p>C. Use a service-based link to grant the Lambda function the S3 ListBucket and GetObject permissions by explicitly adding the S3 bucket=E2=80=99s account number in the resource.<br></p>",
+                "choice": "<p>C. Use a service-based link to grant the Lambda function the S3 ListBucket and GetObject permissions by explicitly adding the S3 bucket's account number in the resource.<br></p>",
                 "correct": false,
                 "feedback": ""
               },
@@ -5642,7 +5642,7 @@ var DVA_C01_Part2 =
             "id": 725752,
             "date": "Thu 24 Nov 2022 11:51",
             "username": "CloudHandsOn",
-            "content": "l choose B. <br>I dont think it it=E2=80=99s A, because it mentions least impact for the application user, and providing an updated endpoint to your users in production will be a huge disruption. Creating a development stage, and using canary approach sounds more feasible, according to the doc.<br><br>Reference: https://docs.aws.amazon.com/apigateway/latest/developerguide/canary-release.html",
+            "content": "l choose B. <br>I dont think it it's A, because it mentions least impact for the application user, and providing an updated endpoint to your users in production will be a huge disruption. Creating a development stage, and using canary approach sounds more feasible, according to the doc.<br><br>Reference: https://docs.aws.amazon.com/apigateway/latest/developerguide/canary-release.html",
             "upvote_count": "2",
             "selected_answers": ""
           },
@@ -7942,7 +7942,7 @@ var DVA_C01_Part2 =
                 "feedback": ""
               },
               {
-                "choice": "<p>C. Each day, create a new table to hold session data; delete the previous day=E2=80=99s table.<br></p>",
+                "choice": "<p>C. Each day, create a new table to hold session data; delete the previous day's table.<br></p>",
                 "correct": false,
                 "feedback": ""
               },
@@ -8220,7 +8220,7 @@ var DVA_C01_Part2 =
             "id": 725846,
             "date": "Thu 24 Nov 2022 14:11",
             "username": "CloudHandsOn",
-            "content": "I believe it=E2=80=99s A,C<br>After the user pool is created in Cognito, an authorizer will need to be created in API Gateway for Cognito (not Lambda) specifying a user pool. Then, redeploying the API after the changes will allow the changes to take effect.<br><br>References:<br>1.) https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-integrate-with-cognito.html<br>2.) https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-deploy-api-with-console.html",
+            "content": "I believe it's A,C<br>After the user pool is created in Cognito, an authorizer will need to be created in API Gateway for Cognito (not Lambda) specifying a user pool. Then, redeploying the API after the changes will allow the changes to take effect.<br><br>References:<br>1.) https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-integrate-with-cognito.html<br>2.) https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-deploy-api-with-console.html",
             "upvote_count": "2",
             "selected_answers": ""
           },
@@ -8682,7 +8682,7 @@ var DVA_C01_Part2 =
                 "feedback": ""
               },
               {
-                "choice": "<p>D. Create a user=E2=80=99s table in DynamoDB.  Use the table to manage user accounts. Create a Lambda authorizer that validates user credentials against the users table. Integrate the Lambda authorizer with API Gateway to control access to the API. Use the Lambda function to store the photos in Amazon S3. Store the object's S3 key as part of the photo details in the DynamoDB table. Retrieve previously uploaded photos by querying DynamoDB for the S3 key.<br></p>",
+                "choice": "<p>D. Create a user's table in DynamoDB.  Use the table to manage user accounts. Create a Lambda authorizer that validates user credentials against the users table. Integrate the Lambda authorizer with API Gateway to control access to the API. Use the Lambda function to store the photos in Amazon S3. Store the object's S3 key as part of the photo details in the DynamoDB table. Retrieve previously uploaded photos by querying DynamoDB for the S3 key.<br></p>",
                 "correct": false,
                 "feedback": ""
               }

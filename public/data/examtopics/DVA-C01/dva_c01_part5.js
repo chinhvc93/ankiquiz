@@ -519,7 +519,7 @@ var DVA_C01_Part5 =
             "id": 512131,
             "date": "Wed 29 Dec 2021 13:18",
             "username": "reve666",
-            "content": "=E2=80=A2 You generate your own public / private key<br>=E2=80=A2 The private key is used by your applications (e.g. EC2) to sign URLs<br>=E2=80=A2 The public key (uploaded) is used by CloudFront to verify URLs",
+            "content": "- You generate your own public / private key<br>- The private key is used by your applications (e.g. EC2) to sign URLs<br>- The public key (uploaded) is used by CloudFront to verify URLs",
             "upvote_count": "9",
             "selected_answers": "Selected Answer: D"
           },
@@ -575,7 +575,7 @@ var DVA_C01_Part5 =
             "id": 522618,
             "date": "Thu 13 Jan 2022 05:00",
             "username": "vsmaske",
-            "content": "D<br><br>When you create signed URLs or signed cookies, you use the private key from the signer=E2=80=99s key pair to sign a portion of the URL or the cookie.",
+            "content": "D<br><br>When you create signed URLs or signed cookies, you use the private key from the signer's key pair to sign a portion of the URL or the cookie.",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -777,7 +777,7 @@ var DVA_C01_Part5 =
             "id": 513603,
             "date": "Thu 30 Dec 2021 19:34",
             "username": "claudiadlr",
-            "content": "I'll go with \\\"D\\\" - https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html<br>\\\"To use field-level encryption, when you configure your CloudFront distribution, specify the set of fields in POST requests that you want to be encrypted, and the public key to use to encrypt them. You can encrypt up to 10 data fields in a request. (You can=E2=80=99t encrypt all of the data in a request with field-level encryption; you must specify individual fields to encrypt.)\\\"",
+            "content": "I'll go with \\\"D\\\" - https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html<br>\\\"To use field-level encryption, when you configure your CloudFront distribution, specify the set of fields in POST requests that you want to be encrypted, and the public key to use to encrypt them. You can encrypt up to 10 data fields in a request. (You can't encrypt all of the data in a request with field-level encryption; you must specify individual fields to encrypt.)\\\"",
             "upvote_count": "6",
             "selected_answers": ""
           },
@@ -1864,7 +1864,7 @@ var DVA_C01_Part5 =
             "id": 511961,
             "date": "Wed 29 Dec 2021 09:30",
             "username": "reve666",
-            "content": "Use CloudWatch Events (Amazon EventBridge). Example:<br>=E2=80=A2 You can create events for failed pipelines<br>=E2=80=A2 You can create events for cancelled stages",
+            "content": "Use CloudWatch Events (Amazon EventBridge). Example:<br>- You can create events for failed pipelines<br>- You can create events for cancelled stages",
             "upvote_count": "3",
             "selected_answers": "Selected Answer: B"
           }
@@ -2968,7 +2968,7 @@ var DVA_C01_Part5 =
         "course_id": 1,
         "case_study_id": null,
         "lab_id": 0,
-        "question_text": "<p>A company uses AWS Organizations to manage multiple accounts. Account A has an application that runs on an Amazon EC2 instance. The application uses the<br>AWS CLI to run automated deployments in Account =D7=80=E2=80=99. An administrator set up cross-account access by using an EC2 IAM service role in Account A and an IAM role in Account =D7=80=E2=80=99.<br>The application uses the following command to assume the IAM role in Account =D7=80=E2=80=99 but is unable to deploy anything in Account =D7=80=E2=80=99. aws sts assume-role --role-arn `am:aws:iam::&lt;AccountB-ID&gt;:role/AccountB-Role` --role-session-name AccountB-Role-Session<br>Which step is needed next so that the application can successfully use the credentials that it obtains by using the role in Account B?<br></p>",
+        "question_text": "<p>A company uses AWS Organizations to manage multiple accounts. Account A has an application that runs on an Amazon EC2 instance. The application uses the<br>AWS CLI to run automated deployments in Account =D7=80'. An administrator set up cross-account access by using an EC2 IAM service role in Account A and an IAM role in Account =D7=80'.<br>The application uses the following command to assume the IAM role in Account =D7=80' but is unable to deploy anything in Account =D7=80'. aws sts assume-role --role-arn `am:aws:iam::&lt;AccountB-ID&gt;:role/AccountB-Role` --role-session-name AccountB-Role-Session<br>Which step is needed next so that the application can successfully use the credentials that it obtains by using the role in Account B?<br></p>",
         "mark": 1,
         "is_partially_correct": false,
         "question_type": "1",
@@ -2981,7 +2981,7 @@ var DVA_C01_Part5 =
             "question_id": "#432",
             "answers": [
               {
-                "choice": "<p>A. Configure the access key and secret access key of a valid IAM user from Account =D7=80=E2=80=99 in the environment variables.<br></p>",
+                "choice": "<p>A. Configure the access key and secret access key of a valid IAM user from Account =D7=80' in the environment variables.<br></p>",
                 "correct": false,
                 "feedback": ""
               },

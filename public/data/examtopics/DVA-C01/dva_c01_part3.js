@@ -329,7 +329,7 @@ var DVA_C01_Part3 =
         "course_id": 1,
         "case_study_id": null,
         "lab_id": 0,
-        "question_text": "<p>A company=E2=80=99s social media application stores image files in an Amazon S3 bucket. All the images are stored in S3 Standard storage. Users access images frequently during the first week after images are uploaded. Users rarely access images that were uploaded more than 1 week ago.<br><br>The company needs a solution to reduce the application=E2=80=99s storage cost. Users must be able to access all images in the same amount of time, regardless of when the images were uploaded.<br><br>Which solution will meet these requirements with the LEAST amount of effort?</p>",
+        "question_text": "<p>A company's social media application stores image files in an Amazon S3 bucket. All the images are stored in S3 Standard storage. Users access images frequently during the first week after images are uploaded. Users rarely access images that were uploaded more than 1 week ago.<br><br>The company needs a solution to reduce the application's storage cost. Users must be able to access all images in the same amount of time, regardless of when the images were uploaded.<br><br>Which solution will meet these requirements with the LEAST amount of effort?</p>",
         "mark": 1,
         "is_partially_correct": false,
         "question_type": "1",
@@ -520,7 +520,7 @@ var DVA_C01_Part3 =
         "course_id": 1,
         "case_study_id": null,
         "lab_id": 0,
-        "question_text": "<p>A company is using AWS CodePipeline pipelines to deploy development Amazon EC2 instances for multiple teams. All the pipelines are using the same AWS CloudFormation template to deploy the EC2 instances and create dedicated CloudFormation stacks for each team. Each pipeline passes a parameter that is named TeamName to the CloudFormation stack to tag resources with the appropriate team=E2=80=99s name.<br><br>The company discovers that each team's usage of EC2 instances is not consistent with the type of EC2 instances that the teams are deploying. The company needs to allow the teams to deploy different types of EC2 instances.<br><br>Which solution will meet this requirement with the LEAST change to the pipelines?</p>",
+        "question_text": "<p>A company is using AWS CodePipeline pipelines to deploy development Amazon EC2 instances for multiple teams. All the pipelines are using the same AWS CloudFormation template to deploy the EC2 instances and create dedicated CloudFormation stacks for each team. Each pipeline passes a parameter that is named TeamName to the CloudFormation stack to tag resources with the appropriate team's name.<br><br>The company discovers that each team's usage of EC2 instances is not consistent with the type of EC2 instances that the teams are deploying. The company needs to allow the teams to deploy different types of EC2 instances.<br><br>Which solution will meet this requirement with the LEAST change to the pipelines?</p>",
         "mark": 1,
         "is_partially_correct": false,
         "question_type": "1",
@@ -629,7 +629,7 @@ var DVA_C01_Part3 =
         "course_id": 1,
         "case_study_id": null,
         "lab_id": 0,
-        "question_text": "<p>A developer is creating an application for a company. The application needs to read the file doc txt that is placed in the root folder of an Amazon S3 bucket that is named DOC-EXAMPLE-BUCKET. The company=E2=80=99s security team requires the principle of least privilege to be applied to the application=E2=80=99s IAM policy.<br><br>Which IAM policy statement will meet these security requirements?</p>",
+        "question_text": "<p>A developer is creating an application for a company. The application needs to read the file doc txt that is placed in the root folder of an Amazon S3 bucket that is named DOC-EXAMPLE-BUCKET. The company's security team requires the principle of least privilege to be applied to the application's IAM policy.<br><br>Which IAM policy statement will meet these security requirements?</p>",
         "mark": 1,
         "is_partially_correct": false,
         "question_type": "1",
@@ -1599,7 +1599,7 @@ var DVA_C01_Part3 =
                 "feedback": ""
               },
               {
-                "choice": "<p>E. Store the application=E2=80=99s static content in Amazon S3.<br></p>",
+                "choice": "<p>E. Store the application's static content in Amazon S3.<br></p>",
                 "correct": true,
                 "feedback": ""
               }
@@ -3312,7 +3312,7 @@ var DVA_C01_Part3 =
         "course_id": 1,
         "case_study_id": null,
         "lab_id": 0,
-        "question_text": "<p>A developer is building a static, client-side rendered website that is powered by ReactJS. The code has no server-side generated components and does not need to run any programming languages on the server. However, the code serves static HTML, CSS, and JavaScript to the client on each request. The developer=E2=80=99s solution to host the website must maximize performance and cost-effectiveness.<br><br>Which combination of AWS services or resources should the developer use to meet these requirements?</p>",
+        "question_text": "<p>A developer is building a static, client-side rendered website that is powered by ReactJS. The code has no server-side generated components and does not need to run any programming languages on the server. However, the code serves static HTML, CSS, and JavaScript to the client on each request. The developer's solution to host the website must maximize performance and cost-effectiveness.<br><br>Which combination of AWS services or resources should the developer use to meet these requirements?</p>",
         "mark": 1,
         "is_partially_correct": false,
         "question_type": "1",
@@ -4822,7 +4822,7 @@ var DVA_C01_Part3 =
             "question_id": "#264",
             "answers": [
               {
-                "choice": "<p>A. Create an Amazon Kinesis Data Firehose delivery stream to receive API call logs from API Gateway. Configure Amazon CloudWatch Logs as the delivery stream=E2=80=99s destination.<br></p>",
+                "choice": "<p>A. Create an Amazon Kinesis Data Firehose delivery stream to receive API call logs from API Gateway. Configure Amazon CloudWatch Logs as the delivery stream's destination.<br></p>",
                 "correct": false,
                 "feedback": ""
               },
@@ -5060,7 +5060,7 @@ var DVA_C01_Part3 =
                 "feedback": ""
               },
               {
-                "choice": "<p>D. The developer=E2=80=99s IAM policy contains the AWSXRayReadOnlyAccess managed policy.<br></p>",
+                "choice": "<p>D. The developer's IAM policy contains the AWSXRayReadOnlyAccess managed policy.<br></p>",
                 "correct": false,
                 "feedback": ""
               },
@@ -5272,7 +5272,7 @@ var DVA_C01_Part3 =
                 "feedback": ""
               },
               {
-                "choice": "<p>C. Use a cron daemon on the application=E2=80=99s host to generate and relate the password.<br></p>",
+                "choice": "<p>C. Use a cron daemon on the application's host to generate and relate the password.<br></p>",
                 "correct": false,
                 "feedback": ""
               },
@@ -5436,7 +5436,7 @@ var DVA_C01_Part3 =
             "id": 734164,
             "date": "Sat 03 Dec 2022 03:21",
             "username": "ubuntu1234fe2fe2",
-            "content": "B. <br>Technically C seems correct, but if you search for QueryItem API for DynamoDB, you find nothing, only Query API, is found, so eventually going for B , by the process of elimination for C and D.  Please correct me if you find something on QueryItem API documentation?<br>https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/query.htmlit is not possible to search S3 objects by their metadata. So, option B is not correct.\\\"\\\"\\\" With Amazon S3=E2=80=99s native search capabilities, users are limited only to searching the name of the object. Most people however, want to search by many things in addition to the name of the object. Specifically, they would like to be able to search against metadata they store with the object. Currently, this is not possible without some kind of outside system or custom code. In addition to search, many cloud customers are interested in the ability to use multiple storage providers.\\\"\\\"\\\"<br><br>https://storageswiss.com/2017/07/18/search-an-amazon-s3-bucket-scality/",
+            "content": "B. <br>Technically C seems correct, but if you search for QueryItem API for DynamoDB, you find nothing, only Query API, is found, so eventually going for B , by the process of elimination for C and D.  Please correct me if you find something on QueryItem API documentation?<br>https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/query.htmlit is not possible to search S3 objects by their metadata. So, option B is not correct.\\\"\\\"\\\" With Amazon S3's native search capabilities, users are limited only to searching the name of the object. Most people however, want to search by many things in addition to the name of the object. Specifically, they would like to be able to search against metadata they store with the object. Currently, this is not possible without some kind of outside system or custom code. In addition to search, many cloud customers are interested in the ability to use multiple storage providers.\\\"\\\"\\\"<br><br>https://storageswiss.com/2017/07/18/search-an-amazon-s3-bucket-scality/",
             "upvote_count": "211",
             "selected_answers": ""
           },
@@ -5452,7 +5452,7 @@ var DVA_C01_Part3 =
             "id": 760401,
             "date": "Wed 28 Dec 2022 23:48",
             "username": "fe2",
-            "content": "\\\"\\\"\\\" With Amazon S3=E2=80=99s native search capabilities, users are limited only to searching the name of the object. Most people however, want to search by many things in addition to the name of the object. Specifically, they would like to be able to search against metadata they store with the object. Currently, this is not possible without some kind of outside system or custom code. In addition to search, many cloud customers are interested in the ability to use multiple storage providers.\\\"\\\"\\\"<br><br>https://storageswiss.com/2017/07/18/search-an-amazon-s3-bucket-scality/",
+            "content": "\\\"\\\"\\\" With Amazon S3's native search capabilities, users are limited only to searching the name of the object. Most people however, want to search by many things in addition to the name of the object. Specifically, they would like to be able to search against metadata they store with the object. Currently, this is not possible without some kind of outside system or custom code. In addition to search, many cloud customers are interested in the ability to use multiple storage providers.\\\"\\\"\\\"<br><br>https://storageswiss.com/2017/07/18/search-an-amazon-s3-bucket-scality/",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -5671,7 +5671,7 @@ var DVA_C01_Part3 =
         "course_id": 1,
         "case_study_id": null,
         "lab_id": 0,
-        "question_text": "<p>A company deploys a local news website on a fleet of Amazon EC2 instances behind an Application Load Balancer (ALB). The company wants to implement authentication for viewers through well-known social identity providers (IdPs). The company=E2=80=99s development team must use AWS native services in the solution.<br><br>Which combination of actions will meet these requirements? (Choose two.)</p>",
+        "question_text": "<p>A company deploys a local news website on a fleet of Amazon EC2 instances behind an Application Load Balancer (ALB). The company wants to implement authentication for viewers through well-known social identity providers (IdPs). The company's development team must use AWS native services in the solution.<br><br>Which combination of actions will meet these requirements? (Choose two.)</p>",
         "mark": 1,
         "is_partially_correct": true,
         "question_type": "1",
@@ -6495,7 +6495,7 @@ var DVA_C01_Part3 =
             "id": 745619,
             "date": "Thu 15 Dec 2022 02:58",
             "username": "BelloMio",
-            "content": "D https://aws.amazon.com/blogs/devops/extending-aws-codebuild-with-custom-build-environments/<br>The doc mentions \\\"To begin, we=E2=80=99ll clone codebuild-images from GitHub.\\\"",
+            "content": "D https://aws.amazon.com/blogs/devops/extending-aws-codebuild-with-custom-build-environments/<br>The doc mentions \\\"To begin, we'll clone codebuild-images from GitHub.\\\"",
             "upvote_count": "1",
             "selected_answers": "Selected Answer: D"
           },
@@ -7144,7 +7144,7 @@ var DVA_C01_Part3 =
         "course_id": 1,
         "case_study_id": null,
         "lab_id": 0,
-        "question_text": "<p>A company's developer is creating an application that uses Amazon API Gateway. The company wants to ensure that only users in the Sales department can use the application. The users authenticate to the application by using federated credentials from a third-party identity provider (ldP) through Amazon Cognito. The developer has set up an attribute mapping to map an attribute that is named Department and to pass the attribute to a custom AWS Lambda authorizer.<br><br>To test the access limitation, the developer sets their department to Engineering in the IdP and attempts to log in to the application. The developer is denied access. The developer then updates their department to Sales in the IdP and attempts to log in. Again, the developer is denied access. The developer checks the logs and discovers that access is being denied because the developer's access token has a department value of Engineering.<br><br>Which of the following is a possible reason that the developer=E2=80=99s department is still being reported as Engineering instead of Sales?</p>",
+        "question_text": "<p>A company's developer is creating an application that uses Amazon API Gateway. The company wants to ensure that only users in the Sales department can use the application. The users authenticate to the application by using federated credentials from a third-party identity provider (ldP) through Amazon Cognito. The developer has set up an attribute mapping to map an attribute that is named Department and to pass the attribute to a custom AWS Lambda authorizer.<br><br>To test the access limitation, the developer sets their department to Engineering in the IdP and attempts to log in to the application. The developer is denied access. The developer then updates their department to Sales in the IdP and attempts to log in. Again, the developer is denied access. The developer checks the logs and discovers that access is being denied because the developer's access token has a department value of Engineering.<br><br>Which of the following is a possible reason that the developer's department is still being reported as Engineering instead of Sales?</p>",
         "mark": 1,
         "is_partially_correct": false,
         "question_type": "1",
@@ -7295,7 +7295,7 @@ var DVA_C01_Part3 =
             "question_id": "#296",
             "answers": [
               {
-                "choice": "<p>A. Add a second cache behavior to the distribution with the same origin as the default cache behavior. Set the path pattern for the second cache behavior to the path of the login page, and make viewer access unrestricted. Keep the default cache behavior=E2=80=99s settings unchanged.<br></p>",
+                "choice": "<p>A. Add a second cache behavior to the distribution with the same origin as the default cache behavior. Set the path pattern for the second cache behavior to the path of the login page, and make viewer access unrestricted. Keep the default cache behavior's settings unchanged.<br></p>",
                 "correct": true,
                 "feedback": ""
               },
@@ -7310,7 +7310,7 @@ var DVA_C01_Part3 =
                 "feedback": ""
               },
               {
-                "choice": "<p>D. Add a bucket policy to the S3 bucket to allow read access. Set the resource on the policy to the Amazon Resource Name (ARN) of the login page object in the S3 bucket. Add a CloudFront function to the default cache behavior to redirect unauthorized requests to the login page=E2=80=99s S3 URI.<br></p>",
+                "choice": "<p>D. Add a bucket policy to the S3 bucket to allow read access. Set the resource on the policy to the Amazon Resource Name (ARN) of the login page object in the S3 bucket. Add a CloudFront function to the default cache behavior to redirect unauthorized requests to the login page's S3 URI.<br></p>",
                 "correct": false,
                 "feedback": ""
               }
@@ -7383,7 +7383,7 @@ var DVA_C01_Part3 =
         "course_id": 1,
         "case_study_id": null,
         "lab_id": 0,
-        "question_text": "<p>A company must encrypt sensitive data that the company will store in Amazon S3. A developer must retain total control over the company's AWS Key Management Service (AWS KMS) key and the company=E2=80=99s data keys. The company currently uses an on-premises hardware security module (HSM) solution. The company wants to move its key management onto AWS.<br><br>Which solution will meet these requirements?</p>",
+        "question_text": "<p>A company must encrypt sensitive data that the company will store in Amazon S3. A developer must retain total control over the company's AWS Key Management Service (AWS KMS) key and the company's data keys. The company currently uses an on-premises hardware security module (HSM) solution. The company wants to move its key management onto AWS.<br><br>Which solution will meet these requirements?</p>",
         "mark": 1,
         "is_partially_correct": false,
         "question_type": "1",
@@ -7424,7 +7424,7 @@ var DVA_C01_Part3 =
             "id": 765358,
             "date": "Wed 04 Jan 2023 08:57",
             "username": "by116549",
-            "content": "Question states \\\"retain total control over the company's AWS Key Management Service (AWS KMS) key and the company=E2=80=99s data keys\\\"<br><br>This rules out A and C. <br><br>Checking this resource \\\"generated by AWS KMS, generated within an AWS CloudHSM cluster or external key manager (through the custom key store), or import your own key material\\\" :https://aws.amazon.com/kms/faqs/<br><br>If total control is required then D seems the best fit",
+            "content": "Question states \\\"retain total control over the company's AWS Key Management Service (AWS KMS) key and the company's data keys\\\"<br><br>This rules out A and C. <br><br>Checking this resource \\\"generated by AWS KMS, generated within an AWS CloudHSM cluster or external key manager (through the custom key store), or import your own key material\\\" :https://aws.amazon.com/kms/faqs/<br><br>If total control is required then D seems the best fit",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -7468,7 +7468,7 @@ var DVA_C01_Part3 =
         "course_id": 1,
         "case_study_id": null,
         "lab_id": 0,
-        "question_text": "<p>A developer is deploying a company's application to Amazon EC2 instances. The application generates gigabytes of data files each day. The files are rarely accessed, but the files must be available to the application=E2=80=99s users within minutes of a request during the first year of storage. The company must retain the files for 7 years.<br><br>How can the developer implement the application to meet these requirements MOST cost-effectively?</p>",
+        "question_text": "<p>A developer is deploying a company's application to Amazon EC2 instances. The application generates gigabytes of data files each day. The files are rarely accessed, but the files must be available to the application's users within minutes of a request during the first year of storage. The company must retain the files for 7 years.<br><br>How can the developer implement the application to meet these requirements MOST cost-effectively?</p>",
         "mark": 1,
         "is_partially_correct": false,
         "question_type": "1",
@@ -7509,7 +7509,7 @@ var DVA_C01_Part3 =
             "id": 743970,
             "date": "Tue 13 Dec 2022 13:07",
             "username": "mrbig00",
-            "content": "The correct solution is option A.  Storing the files in an Amazon S3 bucket and using the S3 Glacier Instant Retrieval storage class will allow the application=E2=80=99s users to quickly access the files within minutes of a request. Creating an S3 Lifecycle policy to transition the files to the S3 Glacier Deep Archive storage class after 1 year will reduce storage costs and allow the company to retain the files for 7 years. This solution will meet the requirements and be the most cost-effective.",
+            "content": "The correct solution is option A.  Storing the files in an Amazon S3 bucket and using the S3 Glacier Instant Retrieval storage class will allow the application's users to quickly access the files within minutes of a request. Creating an S3 Lifecycle policy to transition the files to the S3 Glacier Deep Archive storage class after 1 year will reduce storage costs and allow the company to retain the files for 7 years. This solution will meet the requirements and be the most cost-effective.",
             "upvote_count": "1",
             "selected_answers": "Selected Answer: A"
           },
@@ -7545,7 +7545,7 @@ var DVA_C01_Part3 =
         "course_id": 1,
         "case_study_id": null,
         "lab_id": 0,
-        "question_text": "<p>An application receives authenticated user data in the form of a JSON Web Token (JWT) from an Amazon Cognito user pool. A developer is setting up an Amazon API Gateway API to handle requests from the application and is using the token to verify the user=E2=80=99s identity.<br><br>Which of the following must the developer validate before the user data can be trusted?</p>",
+        "question_text": "<p>An application receives authenticated user data in the form of a JSON Web Token (JWT) from an Amazon Cognito user pool. A developer is setting up an Amazon API Gateway API to handle requests from the application and is using the token to verify the user's identity.<br><br>Which of the following must the developer validate before the user data can be trusted?</p>",
         "mark": 1,
         "is_partially_correct": false,
         "question_type": "1",
@@ -7558,12 +7558,12 @@ var DVA_C01_Part3 =
             "question_id": "#299",
             "answers": [
               {
-                "choice": "<p>A. The token=E2=80=99s nonce<br></p>",
+                "choice": "<p>A. The token's nonce<br></p>",
                 "correct": false,
                 "feedback": ""
               },
               {
-                "choice": "<p>B. The key ID in the token=E2=80=99s header<br></p>",
+                "choice": "<p>B. The key ID in the token's header<br></p>",
                 "correct": false,
                 "feedback": ""
               },
@@ -7619,7 +7619,7 @@ var DVA_C01_Part3 =
             "question_id": "#300",
             "answers": [
               {
-                "choice": "<p>A. The app=E2=80=99s developer incorrectly defined the authenticated principal role access policy.<br></p>",
+                "choice": "<p>A. The app's developer incorrectly defined the authenticated principal role access policy.<br></p>",
                 "correct": false,
                 "feedback": ""
               },
@@ -7634,7 +7634,7 @@ var DVA_C01_Part3 =
                 "feedback": ""
               },
               {
-                "choice": "<p>D. The app=E2=80=99s developer incorrectly defined the authenticated principal role trust policy.<br></p>",
+                "choice": "<p>D. The app's developer incorrectly defined the authenticated principal role trust policy.<br></p>",
                 "correct": true,
                 "feedback": ""
               }

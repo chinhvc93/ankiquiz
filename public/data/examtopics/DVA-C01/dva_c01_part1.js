@@ -716,7 +716,7 @@ var DVA_C01_Part1 =
             "id": 714158,
             "date": "Wed 09 Nov 2022 00:44",
             "username": "cloud_collector",
-            "content": "To add an alternate domain name (CNAME) to a CloudFront distribution, you must attach to your distribution a trusted, valid SSL/TLS certificate that covers the alternate domain name. This ensures that only people with access to your domain=E2=80=99s certificate can associate with CloudFront a CNAME related to your domain.<br>https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/CNAMEs.html#alternate-domain-names-requirements",
+            "content": "To add an alternate domain name (CNAME) to a CloudFront distribution, you must attach to your distribution a trusted, valid SSL/TLS certificate that covers the alternate domain name. This ensures that only people with access to your domain's certificate can associate with CloudFront a CNAME related to your domain.<br>https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/CNAMEs.html#alternate-domain-names-requirements",
             "upvote_count": "1",
             "selected_answers": "Selected Answer: B"
           },
@@ -857,7 +857,7 @@ var DVA_C01_Part1 =
             "id": 712693,
             "date": "Mon 07 Nov 2022 00:02",
             "username": "cloud_collector",
-            "content": "ALB=E2=80=99s new authentication action provides authentication through social Identity Providers (IdP) like Google, Facebook, and Amazon through Amazon Cognito. It also natively integrates with any OpenID Connect protocol compliant IdP, providing secure authentication and a single sign-on experience across your applications.<br>https://aws.amazon.com/blogs/aws/built-in-authentication-in-alb/",
+            "content": "ALB's new authentication action provides authentication through social Identity Providers (IdP) like Google, Facebook, and Amazon through Amazon Cognito. It also natively integrates with any OpenID Connect protocol compliant IdP, providing secure authentication and a single sign-on experience across your applications.<br>https://aws.amazon.com/blogs/aws/built-in-authentication-in-alb/",
             "upvote_count": "1",
             "selected_answers": "Selected Answer: B"
           },
@@ -1407,7 +1407,7 @@ var DVA_C01_Part1 =
             "id": 662704,
             "date": "Wed 07 Sep 2022 18:36",
             "username": "Kajihandark_cherrymonCollinsWolf",
-            "content": "It is C<br>https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-sourcebundle.htmlbut where's the dockerYeah same thing I thought, According to ACloud Guru, TD and Whizlabs it=E2=80=99s C. ",
+            "content": "It is C<br>https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-sourcebundle.htmlbut where's the dockerYeah same thing I thought, According to ACloud Guru, TD and Whizlabs it's C. ",
             "upvote_count": "211",
             "selected_answers": ""
           },
@@ -1423,7 +1423,7 @@ var DVA_C01_Part1 =
             "id": 705953,
             "date": "Fri 28 Oct 2022 00:43",
             "username": "CollinsWolf",
-            "content": "Yeah same thing I thought, According to ACloud Guru, TD and Whizlabs it=E2=80=99s C. ",
+            "content": "Yeah same thing I thought, According to ACloud Guru, TD and Whizlabs it's C. ",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -1622,7 +1622,7 @@ var DVA_C01_Part1 =
             "id": 766019,
             "date": "Wed 04 Jan 2023 20:15",
             "username": "ShriniW",
-            "content": "Correct Answer is And B since below are the steps for decouple..<br>Create a snapshot of RDS DB (as a<br>safeguard)<br>2. Go to the RDS console and protect<br>the RDS database from deletion<br>3. Create a new Elastic Beanstalk<br>environment, without RDS, point your<br>application to existing RDS<br>4. perform a CNAME swap (blue/green)<br>or Route 53 update, confirm working<br>5. Terminate the old environment (RDS<br>won=E2=80=99t be deleted)<br>6. Delete CloudFormation stack (in<br>DELETE_FAILED state)",
+            "content": "Correct Answer is And B since below are the steps for decouple..<br>Create a snapshot of RDS DB (as a<br>safeguard)<br>2. Go to the RDS console and protect<br>the RDS database from deletion<br>3. Create a new Elastic Beanstalk<br>environment, without RDS, point your<br>application to existing RDS<br>4. perform a CNAME swap (blue/green)<br>or Route 53 update, confirm working<br>5. Terminate the old environment (RDS<br>won't be deleted)<br>6. Delete CloudFormation stack (in<br>DELETE_FAILED state)",
             "upvote_count": "2",
             "selected_answers": ""
           },
@@ -2021,7 +2021,7 @@ var DVA_C01_Part1 =
             "id": 682640,
             "date": "Thu 29 Sep 2022 13:59",
             "username": "habros",
-            "content": "End User side authentication - Cognito<br><br>SSO and IAM are for managing AWS resources. And, doesn=E2=80=99t make sense storing credentials in in-memory storages=E2=80=A6",
+            "content": "End User side authentication - Cognito<br><br>SSO and IAM are for managing AWS resources. And, doesn't make sense storing credentials in in-memory storages=E2=80=A6",
             "upvote_count": "1",
             "selected_answers": ""
           }
@@ -2154,7 +2154,7 @@ var DVA_C01_Part1 =
             "id": 672345,
             "date": "Sun 18 Sep 2022 14:29",
             "username": "Gene_PooleSuperPiskitfertbhtp",
-            "content": "B You want to \\\"use a high-cardinality value for your partition key.\\\" https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/Totally agree. I vote for B. <br><br>Partition key must be \\\"as random as possible\\\" (high cardinality value). The more \\\"random\\\" it is, the less propability that a partition becomes \\\"hot\\\" because all read actions goes to that partition.<br><br>So, if you have, lets say, 4 companies and 200 employees, then you have only 4 partitions for companies, but 200 for names.<br><br>\\\"DynamoDB uses the partition key=E2=80=99s value as an input to an internal hash function. The output from the hash function determines the partition in which the item is stored. Each item=E2=80=99s location is determined by the hash value of its partition key.\\\"Should be A, due to https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-sort-keys.html<br>\\\"In an Amazon DynamoDB table, the primary key that uniquely identifies each item in the table can be composed not only of a partition key, but also of a sort key.\\\"<br>It acts as kind of a composite key, so you will still have the cardinalityNot entirely true. Mind the 10GB condition. This will help: https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/",
+            "content": "B You want to \\\"use a high-cardinality value for your partition key.\\\" https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/Totally agree. I vote for B. <br><br>Partition key must be \\\"as random as possible\\\" (high cardinality value). The more \\\"random\\\" it is, the less propability that a partition becomes \\\"hot\\\" because all read actions goes to that partition.<br><br>So, if you have, lets say, 4 companies and 200 employees, then you have only 4 partitions for companies, but 200 for names.<br><br>\\\"DynamoDB uses the partition key's value as an input to an internal hash function. The output from the hash function determines the partition in which the item is stored. Each item's location is determined by the hash value of its partition key.\\\"Should be A, due to https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-sort-keys.html<br>\\\"In an Amazon DynamoDB table, the primary key that uniquely identifies each item in the table can be composed not only of a partition key, but also of a sort key.\\\"<br>It acts as kind of a composite key, so you will still have the cardinalityNot entirely true. Mind the 10GB condition. This will help: https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/",
             "upvote_count": "2231",
             "selected_answers": ""
           },
@@ -2162,7 +2162,7 @@ var DVA_C01_Part1 =
             "id": 682743,
             "date": "Thu 29 Sep 2022 15:47",
             "username": "SuperPiski",
-            "content": "Totally agree. I vote for B. <br><br>Partition key must be \\\"as random as possible\\\" (high cardinality value). The more \\\"random\\\" it is, the less propability that a partition becomes \\\"hot\\\" because all read actions goes to that partition.<br><br>So, if you have, lets say, 4 companies and 200 employees, then you have only 4 partitions for companies, but 200 for names.<br><br>\\\"DynamoDB uses the partition key=E2=80=99s value as an input to an internal hash function. The output from the hash function determines the partition in which the item is stored. Each item=E2=80=99s location is determined by the hash value of its partition key.\\\"",
+            "content": "Totally agree. I vote for B. <br><br>Partition key must be \\\"as random as possible\\\" (high cardinality value). The more \\\"random\\\" it is, the less propability that a partition becomes \\\"hot\\\" because all read actions goes to that partition.<br><br>So, if you have, lets say, 4 companies and 200 employees, then you have only 4 partitions for companies, but 200 for names.<br><br>\\\"DynamoDB uses the partition key's value as an input to an internal hash function. The output from the hash function determines the partition in which the item is stored. Each item's location is determined by the hash value of its partition key.\\\"",
             "upvote_count": "2",
             "selected_answers": ""
           },
@@ -2271,7 +2271,7 @@ var DVA_C01_Part1 =
             "id": 720106,
             "date": "Thu 17 Nov 2022 01:55",
             "username": "dark_cherrymon",
-            "content": "\\\" If you don=E2=80=99t set the visibility timeout correctly, your message may be re-processed\\\"<br><br>https://tomgregory.com/3-surprising-facts-about-aws-sqs-fifo-queues/",
+            "content": "\\\" If you don't set the visibility timeout correctly, your message may be re-processed\\\"<br><br>https://tomgregory.com/3-surprising-facts-about-aws-sqs-fifo-queues/",
             "upvote_count": "1",
             "selected_answers": "Selected Answer: D"
           },
@@ -2627,7 +2627,7 @@ var DVA_C01_Part1 =
             "id": 682685,
             "date": "Thu 29 Sep 2022 14:37",
             "username": "habros",
-            "content": "A&B. <br><br>Strongly consistent is only useful for race conditions - if not mission critical then eventual consitent will do<br>Although increasing Read Capacity units (RCUs) is fastest way to increase performance, but it=E2=80=99s more for large amount of resultset than for quicker retrieval.<br>Adaptive capacity? Unless you meant autoscaling. DynamoDB have provisioned RCU/WCU auto-scaling (same as previous issue on read capacity)",
+            "content": "A&B. <br><br>Strongly consistent is only useful for race conditions - if not mission critical then eventual consitent will do<br>Although increasing Read Capacity units (RCUs) is fastest way to increase performance, but it's more for large amount of resultset than for quicker retrieval.<br>Adaptive capacity? Unless you meant autoscaling. DynamoDB have provisioned RCU/WCU auto-scaling (same as previous issue on read capacity)",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -3132,7 +3132,7 @@ var DVA_C01_Part1 =
             "id": 691303,
             "date": "Mon 10 Oct 2022 17:26",
             "username": "SuperPiski",
-            "content": "According to Tutorial Dojo the correct answer is D:<br><br>The option that says: Get the awsRequestId from the context object and log it to the console is incorrect. This won=E2=80=99t be an effective logging solution as the logs with specific events would be difficult to find through the stream of CloudWatch Logs. Also, if the objective is to log to the console, getting the request ID from the context object will no longer be necessary since CloudWatch Logs already does this for you.<br><br>So...the correct one is to log to a file because it is already logger to the console, so there is no need to do that...",
+            "content": "According to Tutorial Dojo the correct answer is D:<br><br>The option that says: Get the awsRequestId from the context object and log it to the console is incorrect. This won't be an effective logging solution as the logs with specific events would be difficult to find through the stream of CloudWatch Logs. Also, if the objective is to log to the console, getting the request ID from the context object will no longer be necessary since CloudWatch Logs already does this for you.<br><br>So...the correct one is to log to a file because it is already logger to the console, so there is no need to do that...",
             "upvote_count": "5",
             "selected_answers": "Selected Answer: D"
           },
@@ -4733,7 +4733,7 @@ var DVA_C01_Part1 =
             "id": 641408,
             "date": "Tue 02 Aug 2022 20:19",
             "username": "Gomer",
-            "content": "\\\"Take advantage of execution environment reuse to improve the performance of a function.Initialize SDK clients and database connections outside of function handler, and cache static assets locally in the /tmp directory. Subsequent invocations processed by same instance of function can reuse these resources. This saves cost by reducing run time.To avoid potential data leaks across invocations, don=E2=80=99t use execution environment to store user data, events, or other information with security implications.\\\"<br>\\\"Objects declared outside of the function's handler method remain initialized, providing additional optimization when the function is invoked again. For example, if your Lambda function establishes a database connection, instead of reestablishing the connection, the original connection is used in subsequent invocations. We recommend adding logic in your code to check if a connection exists before creating a new one.\\\"",
+            "content": "\\\"Take advantage of execution environment reuse to improve the performance of a function.Initialize SDK clients and database connections outside of function handler, and cache static assets locally in the /tmp directory. Subsequent invocations processed by same instance of function can reuse these resources. This saves cost by reducing run time.To avoid potential data leaks across invocations, don't use execution environment to store user data, events, or other information with security implications.\\\"<br>\\\"Objects declared outside of the function's handler method remain initialized, providing additional optimization when the function is invoked again. For example, if your Lambda function establishes a database connection, instead of reestablishing the connection, the original connection is used in subsequent invocations. We recommend adding logic in your code to check if a connection exists before creating a new one.\\\"",
             "upvote_count": "1",
             "selected_answers": "Selected Answer: AC"
           },
@@ -7084,7 +7084,7 @@ var DVA_C01_Part1 =
             "id": 684020,
             "date": "Sat 01 Oct 2022 07:49",
             "username": "habros",
-            "content": "A.  Twist of words when author describes application architecture within the question. For this qn it=E2=80=99s should be in the perspective of client instead of software engineer.",
+            "content": "A.  Twist of words when author describes application architecture within the question. For this qn it's should be in the perspective of client instead of software engineer.",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -7382,7 +7382,7 @@ var DVA_C01_Part1 =
             "id": 689310,
             "date": "Sat 08 Oct 2022 14:49",
             "username": "habroshabros",
-            "content": "https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html<br><br>Added layer of security by ensuring stale keys are not reusedI=E2=80=99ll agree with B if it=E2=80=99s not =E2=80=9Cmost secure=E2=80=9D implementation",
+            "content": "https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html<br><br>Added layer of security by ensuring stale keys are not reusedI'll agree with B if it's not =E2=80=9Cmost secure=E2=80=9D implementation",
             "upvote_count": "11",
             "selected_answers": "Selected Answer: D"
           },
@@ -7390,7 +7390,7 @@ var DVA_C01_Part1 =
             "id": 689312,
             "date": "Sat 08 Oct 2022 14:50",
             "username": "habros",
-            "content": "I=E2=80=99ll agree with B if it=E2=80=99s not =E2=80=9Cmost secure=E2=80=9D implementation",
+            "content": "I'll agree with B if it's not =E2=80=9Cmost secure=E2=80=9D implementation",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -7823,7 +7823,7 @@ var DVA_C01_Part1 =
             "id": 656260,
             "date": "Thu 01 Sep 2022 14:57",
             "username": "SpamuelSpamuel",
-            "content": "B is correct. Refer to AWS Whitepaper: https://d1.awsstatic.com/whitepapers/AWS_Blue_Green_Deployments.pdfCanary =E2=80=93 Traffic is shifted in two increments.<br>=E2=80=A2 Linear =E2=80=93 Traffic is shifted in equal increments.<br>=E2=80=A2 All-at-once =E2=80=93 All traffic is shifted to the updated tasks",
+            "content": "B is correct. Refer to AWS Whitepaper: https://d1.awsstatic.com/whitepapers/AWS_Blue_Green_Deployments.pdfCanary =E2=80=93 Traffic is shifted in two increments.<br>- Linear =E2=80=93 Traffic is shifted in equal increments.<br>- All-at-once =E2=80=93 All traffic is shifted to the updated tasks",
             "upvote_count": "64",
             "selected_answers": ""
           },
@@ -7831,7 +7831,7 @@ var DVA_C01_Part1 =
             "id": 674172,
             "date": "Tue 20 Sep 2022 14:52",
             "username": "Spamuel",
-            "content": "Canary =E2=80=93 Traffic is shifted in two increments.<br>=E2=80=A2 Linear =E2=80=93 Traffic is shifted in equal increments.<br>=E2=80=A2 All-at-once =E2=80=93 All traffic is shifted to the updated tasks",
+            "content": "Canary =E2=80=93 Traffic is shifted in two increments.<br>- Linear =E2=80=93 Traffic is shifted in equal increments.<br>- All-at-once =E2=80=93 All traffic is shifted to the updated tasks",
             "upvote_count": "4",
             "selected_answers": ""
           },
@@ -8097,7 +8097,7 @@ var DVA_C01_Part1 =
             "id": 720874,
             "date": "Thu 17 Nov 2022 22:20",
             "username": "dark_cherrymondark_cherrymon",
-            "content": "A easyCanary =E2=80=93 Traffic is shifted in two increments.<br>=E2=80=A2 Linear =E2=80=93 Traffic is shifted in equal increments.<br>=E2=80=A2 All-at-once =E2=80=93 All traffic is shifted to the updated tasks",
+            "content": "A easyCanary =E2=80=93 Traffic is shifted in two increments.<br>- Linear =E2=80=93 Traffic is shifted in equal increments.<br>- All-at-once =E2=80=93 All traffic is shifted to the updated tasks",
             "upvote_count": "11",
             "selected_answers": ""
           },
@@ -8105,7 +8105,7 @@ var DVA_C01_Part1 =
             "id": 720875,
             "date": "Thu 17 Nov 2022 22:22",
             "username": "dark_cherrymon",
-            "content": "Canary =E2=80=93 Traffic is shifted in two increments.<br>=E2=80=A2 Linear =E2=80=93 Traffic is shifted in equal increments.<br>=E2=80=A2 All-at-once =E2=80=93 All traffic is shifted to the updated tasks",
+            "content": "Canary =E2=80=93 Traffic is shifted in two increments.<br>- Linear =E2=80=93 Traffic is shifted in equal increments.<br>- All-at-once =E2=80=93 All traffic is shifted to the updated tasks",
             "upvote_count": "1",
             "selected_answers": ""
           },
@@ -10281,7 +10281,7 @@ var DVA_C01_Part1 =
             "id": 245482,
             "date": "Sat 06 Nov 2021 03:46",
             "username": "RicardoD",
-            "content": "A is the answer<br><br>The output of a state can be a copy of its input, the result it produces (for example, output from a Task state=E2=80=99s Lambda function), or a combination of its input and result. Use ResultPath to control which combination of these is passed to the state output.",
+            "content": "A is the answer<br><br>The output of a state can be a copy of its input, the result it produces (for example, output from a Task state's Lambda function), or a combination of its input and result. Use ResultPath to control which combination of these is passed to the state output.",
             "upvote_count": "12",
             "selected_answers": ""
           },
