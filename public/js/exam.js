@@ -70,6 +70,7 @@ $("#attempts-que").on("click", "ul > li", function () {
     exam.getChoice(),
     exam.getMarkToReview()
   );
+  exam.saveToLocalCache("CURRENT_QUESTION");
   $(".explanation-block").html("");
 });
 
@@ -156,6 +157,7 @@ $(".btnNextQue").on("click", function () {
     exam.getChoice(),
     exam.getMarkToReview()
   );
+  exam.saveToLocalCache("CURRENT_QUESTION");
 });
 
 // PREVIOUS QUESTION
@@ -166,6 +168,7 @@ $(".btnPrevQue").on("click", function () {
     exam.getChoice(),
     exam.getMarkToReview()
   );
+  exam.saveToLocalCache("CURRENT_QUESTION");
 });
 
 // USERS CHOICE
@@ -296,8 +299,8 @@ function switchDesk(groupId, examId) {
   exam.loadFromLocalCache();
   exam.loadQueListNumber();
 
-  //Show first question
-  let firstQuestion = exam.listQuestions[0];
+  //Show first question or question is saved from local
+  let firstQuestion = exam.listQuestions[exam.current];
   firstQuestion.getQuestion(
     exam.getChoice(),
     exam.getMarkToReview()
@@ -426,7 +429,6 @@ $(".btnToogleDarkMode").on("click", function () {
 
 // Clear All Answer
 $(".btnClearAllAnswer").on("click", function () {
-  console.log("Clear All Answer");
   exam.clearLocalCache("ONLY_ANSWER");
   // Re-show list question number
   que.showQueListNumber(exam.count);

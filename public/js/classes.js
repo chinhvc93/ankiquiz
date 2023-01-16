@@ -278,7 +278,7 @@ class Exam {
     return this.current;
   }
 
-  getQuestion(queNo = 0) {
+  getQuestion(queNo = 0) {   
     return this.listQuestions[queNo];
   }
 
@@ -439,29 +439,41 @@ class Exam {
   }
 
   saveToLocalCache(type = "ALL") {
-    console.log("Save to LocalCache");
-    if (type == "ONLY_STAR") {
-      let tmp_exam = localStorage.getItem(this.cacheItemId);
-      if (!tmp_exam) {
-        tmp_exam = {
-          choices: [],
-          markedQuestion: this.markedQuestion,
-          comments: []
-        }
-      } else {
-        tmp_exam = JSON.parse(tmp_exam);
-        tmp_exam.markedQuestion = this.markedQuestion;
+    let exam;
+    let tmp_exam = localStorage.getItem(this.cacheItemId);
+    if(!tmp_exam) {
+      exam = {
+        currentQuestion: 0,
+        choices: [],
+        markedQuestion: [],
+        comments: []
       }
-      localStorage.setItem(this.cacheItemId, JSON.stringify(tmp_exam));
     } else {
-      let exam = JSON.stringify({
-        choices: this.choices,
-        markedQuestion: this.markedQuestion,
-        comments: this.comments
-      });
-
-      localStorage.setItem(this.cacheItemId, exam);
+      exam =  JSON.parse(tmp_exam);
     }
+
+    // SAVE OPTIONS
+    console.log(`Class Exam > saveToLocalCache > ${type}`);
+    switch (type) {
+      case "ONLY_STAR":
+        exam.markedQuestion = this.markedQuestion;
+        break;
+      case "CURRENT_QUESTION":
+          exam.currentQuestion = this.current;
+          break;
+      // ALL && default
+      case "ALL":
+      default:
+        exam = {
+          currentQuestion: this.current,
+          choices: this.choices,
+          markedQuestion: this.markedQuestion,
+          comments: this.comments
+        };
+    }
+
+    localStorage.setItem(this.cacheItemId, JSON.stringify(exam));
+
   }
 
   loadFromLocalCache() {
@@ -470,14 +482,16 @@ class Exam {
     
     exam = JSON.parse(exam);
 
+    this.current = exam.currentQuestion ?? 0;
     this.choices = exam.choices;
     this.markedQuestion = exam.markedQuestion;
     this.comments = exam.comments ?? [];
   }
 
   clearLocalCache(type="ALL") {
+    console.log(`Class Exam > clearLocalCache > ${type}`);
+    
     if(type == "ONLY_ANSWER") {
-      console.log(type);
       this.choices=[];
       this.saveToLocalCache();
     } else {
