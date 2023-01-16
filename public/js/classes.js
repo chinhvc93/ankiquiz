@@ -99,7 +99,7 @@ class Question {
 
   loadQueTextHtml() {
     $(".que-text").html(this.question_text);
-    $("#queDomain").text(`${this.question_id} ${this.topic_name}`);
+    $("#queDomain").html(`<span class="fw-bold text-primary">${this.question_id}</span> ${this.topic_name}`);
   }
 
   loadQueAnswerHtml(

@@ -450,6 +450,10 @@ body.white-mode {
         max-width: calc(100% - 100px);
     }
 
+    .ExamQuestionsBlock .left .block-head {
+        padding-top: 42px;
+    }
+
     .ExamQuestionsBlock .right {
         max-width: 100px;
         max-height: 768px;
@@ -480,6 +484,10 @@ body.white-mode {
         max-width: calc(100% - 200px);
     }
 
+    .ExamQuestionsBlock .left .block-head {
+        padding-top: 42px;
+    }
+
     .ExamQuestionsBlock .right {
         max-width: 200px;
         max-height: 475px;
@@ -501,13 +509,19 @@ body.white-mode {
         flex-direction: column-reverse;
     }
 
+    .ExamQuestionsBlock .left .block-head {
+        padding-top: 42px;
+    }
+
     .ExamQuestionsBlock .left {
         width: 100%;
+        padding: 0 20px 0 15px;
         max-width: unset;
     }
 
     .ExamQuestionsBlock .right {
         width: 100%;
+        padding: 0 15px;
         max-width: unset;
     } 
 
