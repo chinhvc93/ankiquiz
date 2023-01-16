@@ -171,6 +171,31 @@ $(".btnPrevQue").on("click", function () {
   exam.saveToLocalCache("CURRENT_QUESTION");
 });
 
+// SHORTKEYS
+$(document).keydown(function (e) {
+  switch(e.keyCode) {
+    case 37: //LEFT
+      $(".btnPrevQue")[0].click();
+      break;
+    case 39: //RIGHT
+      $(".btnNextQue")[0].click();
+      break;
+    // case 38: //DOWN
+    //   $(".btn-showAnswer")[0].click();
+    //   break;
+    // case 40: //UP
+    //   $(".btn-showAnswer")[0].click();
+    //   break;
+    case 32: //SPACE
+      e.preventDefault();
+      $(".btn-showAnswer")[0].click();
+      $(".btn-showDiscussion")[0].click();
+      break;
+    default:
+      break
+  }
+});
+
 // USERS CHOICE
 $("#ques-list").on("click", ".ip-radio", function () {
   let aws = "";
