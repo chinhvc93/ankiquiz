@@ -423,3 +423,12 @@ function loadDarkMode() {
 $(".btnToogleDarkMode").on("click", function () {
   toogleDarkMode();
 });
+
+// Clear All Answer
+$(".btnClearAllAnswer").on("click", function () {
+  console.log("Clear All Answer");
+  exam.clearLocalCache("ONLY_ANSWER");
+  // Re-show list question number
+  que.showQueListNumber(exam.count);
+  exam.loadQueListNumber();
+});

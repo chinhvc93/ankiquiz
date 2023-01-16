@@ -322,6 +322,9 @@ class Exam {
     } else {
       this.markedQuestion[elementIndex] = newElement;
     }
+
+    // Save to LocalCache
+    this.saveToLocalCache("ONLY_STAR");
   }
 
   getMarkToReview(queNo = this.current) {
@@ -435,15 +438,25 @@ class Exam {
     return this.choices;
   }
 
-  saveToLocalCache() {
-    // console.log("Save to LocalCache");
-    let exam = JSON.stringify({
-      choices: this.choices,
-      markedQuestion: this.markedQuestion,
-      comments: this.comments
-    });
+  saveToLocalCache(type = "ALL") {
+    console.log("Save to LocalCache");
+    if (type == "ONLY_STAR") {
+      let tmp_exam = localStorage.getItem(this.cacheItemId);
+      if (!tmp_exam) return;
 
-    localStorage.setItem(this.cacheItemId, exam);
+      tmp_exam = JSON.parse(tmp_exam);
+      tmp_exam.markedQuestion = this.markedQuestion;
+
+      localStorage.setItem(this.cacheItemId, JSON.stringify(tmp_exam));
+    } else {
+      let exam = JSON.stringify({
+        choices: this.choices,
+        markedQuestion: this.markedQuestion,
+        comments: this.comments
+      });
+
+      localStorage.setItem(this.cacheItemId, exam);
+    }
   }
 
   loadFromLocalCache() {
@@ -457,8 +470,14 @@ class Exam {
     this.comments = exam.comments ?? [];
   }
 
-  clearLocalCache() {
-    localStorage.removeItem(this.cacheItemId, exam);
+  clearLocalCache(type="ALL") {
+    if(type == "ONLY_ANSWER") {
+      console.log(type);
+      this.choices=[];
+      this.saveToLocalCache();
+    } else {
+      localStorage.removeItem(this.cacheItemId, exam);
+    }
   }
 
   loadQueListNumber() {
@@ -663,7 +682,9 @@ class Exam {
     } else {
       this.comments[elementIndex] = newElement;
     }
-
+    
+    this.saveToLocalCache();
+    
     return "Success"
   }
 
