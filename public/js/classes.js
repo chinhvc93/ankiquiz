@@ -442,11 +442,16 @@ class Exam {
     console.log("Save to LocalCache");
     if (type == "ONLY_STAR") {
       let tmp_exam = localStorage.getItem(this.cacheItemId);
-      if (!tmp_exam) return;
-
-      tmp_exam = JSON.parse(tmp_exam);
-      tmp_exam.markedQuestion = this.markedQuestion;
-
+      if (!tmp_exam) {
+        tmp_exam = {
+          choices: [],
+          markedQuestion: this.markedQuestion,
+          comments: []
+        }
+      } else {
+        tmp_exam = JSON.parse(tmp_exam);
+        tmp_exam.markedQuestion = this.markedQuestion;
+      }
       localStorage.setItem(this.cacheItemId, JSON.stringify(tmp_exam));
     } else {
       let exam = JSON.stringify({
@@ -486,7 +491,11 @@ class Exam {
       $(`#attempts-que li[data-queno="${choiceItem.queNo}"]`).addClass("choice");
     });
     self.markedQuestion.forEach(function (markedItem) {
-      $(`#attempts-que li[data-queno="${markedItem.queNo}"]`).addClass("review");
+      if(markedItem.isMarked) {
+        $(`#attempts-que li[data-queno="${markedItem.queNo}"]`).addClass("review");
+      } else {
+        $(`#attempts-que li[data-queno="${markedItem.queNo}"]`).removeClass("review");
+      }
     });
   }
 
