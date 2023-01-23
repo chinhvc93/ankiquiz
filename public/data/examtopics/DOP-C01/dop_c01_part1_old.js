@@ -8,7 +8,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company wants to migrate its content sharing web application hosted on Amazon EC2 to a serverless architecture. The company currently deploys changes to its application by creating a new Auto Scaling group of EC2 instances and a new Elastic Load Balancer, and then shifting the traffic away using an Amazon Route<br>53 weighted routing policy.<br>For its new serverless application, the company is planning to use Amazon API Gateway and AWS Lambda. The company will need to update its deployment processes to work with the new application. It will also need to retain the ability to test new features on a small number of users before rolling the features out to the entire user base.<br>Which deployment strategy will meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A company wants to migrate its content sharing web application hosted on Amazon EC2 to a serverless architecture. The company currently deploys changes to its application by creating a new Auto Scaling group of EC2 instances and a new Elastic Load Balancer, and then shifting the traffic away using an Amazon Route<br>53 weighted routing policy.<br>For its new serverless application, the company is planning to use Amazon API Gateway and AWS Lambda. The company will need to update its deployment processes to work with the new application. It will also need to retain the ability to test new features on a small number of users before rolling the features out to the entire user base.<br>Which deployment strategy will meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -43,7 +43,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 1 discussion",
       "discusstion": [
         {
           "id": 330985,
@@ -73,7 +73,7 @@ var DOP_C01_Part1 =
           "id": 661937,
           "date": "Wed 07 Sep 2022 05:42",
           "username": "kopper2019EnWuhuyrk102GoozianGooziankopper2019ZZIN",
-          "content": "New as of September 6th, 2022<br>NO.265 A company updated the AWS CloudFormation template tor a critical business application. The stack update process Tailed due to an error in me updated template, and CloudFormation automatically began the stack rollback process Later, a DevOps engineer found the application was still unavailable, and that the stack was in the UPDATE_ROLLBACK_FALED state Which combination of actions will allow the stack rollback to complete successful/? (Select 2)A.  Attach the AWSCloudFormationFulAccess IAM policy to the CloudFormation role B.  Automatically heal the stack resources using CloudFormation drift detection.C.  Issue a ContinueUpdateRolback command from the CloudFormation console or AWS CLID.  Manually the resources to match the expectations of the stack.E.  Update the existing CloudFormation stack using the original templateAns: CD<br>https://aws.amazon.com/tw/premiumsupport/knowledge-center/cloudformation-update-rollback-failed/Agree CD<br>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html#troubleshooting-errors-update-rollback-failedit came up in my examD AND Ewhat about the other ones new? thanksPassed with a new question?",
+          "content": "New as of September 6th, 2022<br>NO.265 A company updated the AWS CloudFormation template tor a critical business application. The stack update process Tailed due to an error in me updated template, and CloudFormation automatically began the stack rollback process Later, a DevOps engineer found the application was still unavailable, and that the stack was in the UPDATE_ROLLBACK_FALED state Which combination of actions will allow the stack rollback to complete successful/? (Select 2)A.  Attach the AWSCloudFormationFulAccess IAM policy to the CloudFormation roleB.  Automatically heal the stack resources using CloudFormation drift detection.C.  Issue a ContinueUpdateRolback command from the CloudFormation console or AWS CLID.  Manually the resources to match the expectations of the stack.E.  Update the existing CloudFormation stack using the original templateAns: CD<br>https://aws.amazon.com/tw/premiumsupport/knowledge-center/cloudformation-update-rollback-failed/Agree CD<br>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html#troubleshooting-errors-update-rollback-failedit came up in my examD AND Ewhat about the other ones new? thanksPassed with a new question?",
           "upvote_count": "2211211",
           "selected_answers": ""
         },
@@ -153,7 +153,7 @@ var DOP_C01_Part1 =
           "id": 661933,
           "date": "Wed 07 Sep 2022 05:40",
           "username": "kopper2019huynd6793huynd6793huyrk102",
-          "content": "New as of September 6th, 2022<br>A company needs to implement a robust CI/CD pipeline to automate the deployment of an application in AWS. The pipeline must support continuous integration, continuous delivery, and automatic rollback upon deployment failure. The entire CI/CD pipeline must be capable of being re- provisioned in alternate AWS accounts or Regions within minutes. A DevOps engineer has already created an AWS CodeCommit repository to store the source code.<br>Which combination of actions should be taken when building this pipeline to meet these requirements? (Select THREE. )A.  Configure an AWS CodePipehne pipeline with a build stage using AWS CodeBuild. B.  Copy the build artifact from CodeCommit to Amazon S3.C.  Create an Auto Scaling group of Amazon EC2 instances behind an Application Load Balancer (ALB) and set the ALB as the deployment target in AWS CodePipeline.D.  Create an AWS Elastic Beanstalk environment as the deployment target in AWS CodePipeline.E.  Implement an Amazon SQS queue to decouple the pipeline components. F.  Provision all resources using AWS CloudFormation.Ans: ADEsr, I think ADFThe pipeline must support continuous integration, continuous delivery, and automatic rollback upon deployment failure. <br>=> A<br>The entire CI/CD pipeline must be capable of being re- provisioned in alternate AWS accounts or Regions within minutes. <br>=> DF",
+          "content": "New as of September 6th, 2022<br>A company needs to implement a robust CI/CD pipeline to automate the deployment of an application in AWS. The pipeline must support continuous integration, continuous delivery, and automatic rollback upon deployment failure. The entire CI/CD pipeline must be capable of being re- provisioned in alternate AWS accounts or Regions within minutes. A DevOps engineer has already created an AWS CodeCommit repository to store the source code.<br>Which combination of actions should be taken when building this pipeline to meet these requirements? (Select THREE. )A.  Configure an AWS CodePipehne pipeline with a build stage using AWS CodeBuild.B.  Copy the build artifact from CodeCommit to Amazon S3.C.  Create an Auto Scaling group of Amazon EC2 instances behind an Application Load Balancer (ALB) and set the ALB as the deployment target in AWS CodePipeline.D.  Create an AWS Elastic Beanstalk environment as the deployment target in AWS CodePipeline.E.  Implement an Amazon SQS queue to decouple the pipeline components.F.  Provision all resources using AWS CloudFormation.Ans: ADEsr, I think ADFThe pipeline must support continuous integration, continuous delivery, and automatic rollback upon deployment failure.<br>> A<br>The entire CI/CD pipeline must be capable of being re- provisioned in alternate AWS accounts or Regions within minutes.<br>> DF",
           "upvote_count": "1131",
           "selected_answers": ""
         },
@@ -161,7 +161,7 @@ var DOP_C01_Part1 =
           "id": 703948,
           "date": "Tue 25 Oct 2022 16:31",
           "username": "huynd6793huynd6793huyrk102",
-          "content": "Ans: ADEsr, I think ADFThe pipeline must support continuous integration, continuous delivery, and automatic rollback upon deployment failure. <br>=> A<br>The entire CI/CD pipeline must be capable of being re- provisioned in alternate AWS accounts or Regions within minutes. <br>=> DF",
+          "content": "Ans: ADEsr, I think ADFThe pipeline must support continuous integration, continuous delivery, and automatic rollback upon deployment failure.<br>> A<br>The entire CI/CD pipeline must be capable of being re- provisioned in alternate AWS accounts or Regions within minutes.<br>> DF",
           "upvote_count": "131",
           "selected_answers": ""
         },
@@ -169,7 +169,7 @@ var DOP_C01_Part1 =
           "id": 703949,
           "date": "Tue 25 Oct 2022 16:32",
           "username": "huynd6793huyrk102",
-          "content": "sr, I think ADFThe pipeline must support continuous integration, continuous delivery, and automatic rollback upon deployment failure. <br>=> A<br>The entire CI/CD pipeline must be capable of being re- provisioned in alternate AWS accounts or Regions within minutes. <br>=> DF",
+          "content": "sr, I think ADFThe pipeline must support continuous integration, continuous delivery, and automatic rollback upon deployment failure.<br>> A<br>The entire CI/CD pipeline must be capable of being re- provisioned in alternate AWS accounts or Regions within minutes.<br>> DF",
           "upvote_count": "31",
           "selected_answers": ""
         },
@@ -177,7 +177,7 @@ var DOP_C01_Part1 =
           "id": 738585,
           "date": "Thu 08 Dec 2022 04:25",
           "username": "huyrk102",
-          "content": "The pipeline must support continuous integration, continuous delivery, and automatic rollback upon deployment failure. <br>=> A<br>The entire CI/CD pipeline must be capable of being re- provisioned in alternate AWS accounts or Regions within minutes. <br>=> DF",
+          "content": "The pipeline must support continuous integration, continuous delivery, and automatic rollback upon deployment failure.<br>> A<br>The entire CI/CD pipeline must be capable of being re- provisioned in alternate AWS accounts or Regions within minutes.<br>> DF",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -185,7 +185,7 @@ var DOP_C01_Part1 =
           "id": 661930,
           "date": "Wed 07 Sep 2022 05:38",
           "username": "kopper2019EnWuhuyrk102",
-          "content": "New as of September 6th, 2022<br>A company runs several applications across multiple AWS accounts in an organization in AWS Organizations.<br>Some of the resources are not tagged properly, and the company's finance team cannot determine which costs are associated with which applications. A DevOps engineer must remediate this issue and prevent this issue from happening in the future.<br>Which combination of actions should the DevOps engineer take to meet these requirements? (Select TWO.)<br>A.  Activate the user-defined cost allocation tags in each AWS account. B.  Create and attach an SCP that requires a specific tag.C.  Define each line of business (LOB) in AWS Budgets. Assign the required tag to each resource. D.  Scan all accounts with Tag Editor. Assign the required tag to each resource.E.  Use the budget report to find untagged resources. Assign the required tag to each resource.Ans: BDremediate this issue<br>=> D<br>prevent this issue from happening in the future.<br>=> B",
+          "content": "New as of September 6th, 2022<br>A company runs several applications across multiple AWS accounts in an organization in AWS Organizations.<br>Some of the resources are not tagged properly, and the company's finance team cannot determine which costs are associated with which applications. A DevOps engineer must remediate this issue and prevent this issue from happening in the future.<br>Which combination of actions should the DevOps engineer take to meet these requirements? (Select TWO.)<br>A.  Activate the user-defined cost allocation tags in each AWS account.B.  Create and attach an SCP that requires a specific tag.C.  Define each line of business (LOB) in AWS Budgets. Assign the required tag to each resource.D.  Scan all accounts with Tag Editor. Assign the required tag to each resource.E.  Use the budget report to find untagged resources. Assign the required tag to each resource.Ans: BDremediate this issue<br>> D<br>prevent this issue from happening in the future.<br>> B",
           "upvote_count": "121",
           "selected_answers": ""
         },
@@ -193,7 +193,7 @@ var DOP_C01_Part1 =
           "id": 690943,
           "date": "Mon 10 Oct 2022 11:38",
           "username": "EnWuhuyrk102",
-          "content": "Ans: BDremediate this issue<br>=> D<br>prevent this issue from happening in the future.<br>=> B",
+          "content": "Ans: BDremediate this issue<br>> D<br>prevent this issue from happening in the future.<br>> B",
           "upvote_count": "21",
           "selected_answers": ""
         },
@@ -201,7 +201,7 @@ var DOP_C01_Part1 =
           "id": 738586,
           "date": "Thu 08 Dec 2022 04:26",
           "username": "huyrk102",
-          "content": "remediate this issue<br>=> D<br>prevent this issue from happening in the future.<br>=> B",
+          "content": "remediate this issue<br>> D<br>prevent this issue from happening in the future.<br>> B",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -309,7 +309,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company's application is currently deployed to a single AWS Region. Recently, the company opened a new office on a different continent. The users in the new office are experiencing high latency. The company's application runs on Amazon EC2 instances behind an Application Load Balancer (ALB) and uses Amazon<br>DynamoDB as the database layer. The instances run in an EC2 Auto Scaling group across multiple Availability Zones. A DevOps Engineer is tasked with minimizing application response times and improving availability for users in both Regions.<br>Which combination of actions should be taken to address the latency issues? (Choose three.)<br><br><br></p>",
+      "question_text": "<p>A company's application is currently deployed to a single AWS Region. Recently, the company opened a new office on a different continent. The users in the new office are experiencing high latency. The company's application runs on Amazon EC2 instances behind an Application Load Balancer (ALB) and uses Amazon<br>DynamoDB as the database layer. The instances run in an EC2 Auto Scaling group across multiple Availability Zones. A DevOps Engineer is tasked with minimizing application response times and improving availability for users in both Regions.<br>Which combination of actions should be taken to address the latency issues? (Choose three.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -354,7 +354,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 2 discussion",
       "discusstion": [
         {
           "id": 155205,
@@ -392,7 +392,7 @@ var DOP_C01_Part1 =
           "id": 703791,
           "date": "Tue 25 Oct 2022 12:51",
           "username": "ryuhei",
-          "content": "Answer is ”C、D、F”",
+          "content": "Answer is =E2=80=9DC=E3=80=81D=E3=80=81F=E2=80=9D",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: CDF"
         },
@@ -472,7 +472,7 @@ var DOP_C01_Part1 =
           "id": 163388,
           "date": "Mon 04 Oct 2021 06:27",
           "username": "halfway",
-          "content": "CDF.  <br>No global ALB or ASG.",
+          "content": "CDF. <br>No global ALB or ASG.",
           "upvote_count": "3",
           "selected_answers": ""
         }
@@ -484,7 +484,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer used an AWS CloudFormation custom resource to set up AD Connector. The AWS Lambda function executed and created AD Connector, but<br>CloudFormation is not transitioning from CREATE_IN_PROGRESS to CREATE_COMPLETE. <br>Which action should the engineer take to resolve this issue?<br><br><br></p>",
+      "question_text": "<p>A DevOps engineer used an AWS CloudFormation custom resource to set up AD Connector. The AWS Lambda function executed and created AD Connector, but<br>CloudFormation is not transitioning from CREATE_IN_PROGRESS to CREATE_COMPLETE. <br>Which action should the engineer take to resolve this issue?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -519,7 +519,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 3 discussion",
       "discusstion": [
         {
           "id": 326708,
@@ -541,7 +541,7 @@ var DOP_C01_Part1 =
           "id": 659857,
           "date": "Mon 05 Sep 2022 09:29",
           "username": "Goozian",
-          "content": "these passedto the lambda as event and invoked : <br><br>{<br>\\\"RequestType\\\" : \\\"Create\\\",<br>\\\"ResponseURL\\\" : \\\"http://pre-signed-S3-url-for-response\\\",<br>\\\"StackId\\\" : \\\"arn:aws:cloudformation:us-west-2:123456789012:stack/stack-name/guid\\\",<br>\\\"RequestId\\\" : \\\"unique id for this create request\\\",<br>\\\"ResourceType\\\" : \\\"Custom::TestResource\\\",<br>\\\"LogicalResourceId\\\" : \\\"MyTestResource\\\",<br>\\\"ResourceProperties\\\" : {<br> \\\"Name\\\" : \\\"Value\\\",<br> \\\"List\\\" : [ \\\"1\\\", \\\"2\\\", \\\"3\\\" ]<br>}<br> }<br><br>and the response has to have: event['ResponseURL']",
+          "content": "these passedto the lambda as event and invoked :<br><br>{<br>\\\"RequestType\\\" : \\\"Create\\\",<br>\\\"ResponseURL\\\" : \\\"http://pre-signed-S3-url-for-response\\\",<br>\\\"StackId\\\" : \\\"arn:aws:cloudformation:us-west-2:123456789012:stack/stack-name/guid\\\",<br>\\\"RequestId\\\" : \\\"unique id for this create request\\\",<br>\\\"ResourceType\\\" : \\\"Custom::TestResource\\\",<br>\\\"LogicalResourceId\\\" : \\\"MyTestResource\\\",<br>\\\"ResourceProperties\\\" : {<br> \\\"Name\\\" : \\\"Value\\\",<br> \\\"List\\\" : [ \\\"1\\\", \\\"2\\\", \\\"3\\\" ]<br>}<br> }<br><br>and the response has to have: event['ResponseURL']",
           "upvote_count": "3",
           "selected_answers": "Selected Answer: B"
         },
@@ -601,7 +601,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company plans to stop using Amazon EC2 key pairs for SSH access, and instead plans to use AWS Systems Manager Session Manager. To further enhance security, access to Session Manager must take place over a private network only.<br>Which combinations of actions will accomplish this? (Choose two.)<br><br><br></p>",
+      "question_text": "<p>A company plans to stop using Amazon EC2 key pairs for SSH access, and instead plans to use AWS Systems Manager Session Manager. To further enhance security, access to Session Manager must take place over a private network only.<br>Which combinations of actions will accomplish this? (Choose two.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -641,7 +641,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 4 discussion",
       "discusstion": [
         {
           "id": 155150,
@@ -679,7 +679,7 @@ var DOP_C01_Part1 =
           "id": 262338,
           "date": "Wed 27 Oct 2021 23:53",
           "username": "Umer24rjaganrjagan",
-          "content": "Remaining Question # 58 (Topic 2)A.  Update the attached IAM policies to allow access to the appropriate KMS key from the CodeDeploy role where the application will be deployed. B.  Update the attached IAM policies to allow access to the appropriate KMS key from the EC2 instance roles where the application will be deployed. C.  Update the CMK key policy to allow access to the appropriate KMS key from the CodeDeploy role where the application will be deployed. D.  Update the CMK key policy to allow access to the appropriate KMS key from the EC2 instance roles where the application will be deployed.<br><br>Answer-AMissing question..I'll go with A",
+          "content": "Remaining Question # 58 (Topic 2)A.  Update the attached IAM policies to allow access to the appropriate KMS key from the CodeDeploy role where the application will be deployed.B.  Update the attached IAM policies to allow access to the appropriate KMS key from the EC2 instance roles where the application will be deployed.C.  Update the CMK key policy to allow access to the appropriate KMS key from the CodeDeploy role where the application will be deployed.D.  Update the CMK key policy to allow access to the appropriate KMS key from the EC2 instance roles where the application will be deployed.<br><br>Answer-AMissing question..I'll go with A",
           "upvote_count": "421",
           "selected_answers": ""
         },
@@ -703,7 +703,7 @@ var DOP_C01_Part1 =
           "id": 262307,
           "date": "Sun 24 Oct 2021 14:30",
           "username": "Umer24GVGREAT",
-          "content": "Question # 57 (Topic 2)<br>A company uses AWS KMS with CMKs and manual key rotation to meet regulatory compliance requirements. The security team wants to be notified when any keys have not been rotated after 90 days. Which solution will accomplish this? A.  Configure AWS KMS to publish to an Amazon SNS topic when keys are more than 90 days old.B.  Configure an Amazon CloudWatch Events event to launch an AWS Lambda function to call the AWS Trusted Advisor API and publish to an Amazon SNS topic.C.  Develop an AWS Config custom rule that publishes to an Amazon SNS topic when keys are more than 90 days old.D.  Configure AWS Security Hub lo publish to an Amazon SNS topic when keys are more than 90 days old.C is the answer",
+          "content": "Question # 57 (Topic 2)<br>A company uses AWS KMS with CMKs and manual key rotation to meet regulatory compliance requirements. The security team wants to be notified when any keys have not been rotated after 90 days. Which solution will accomplish this?A.  Configure AWS KMS to publish to an Amazon SNS topic when keys are more than 90 days old.B.  Configure an Amazon CloudWatch Events event to launch an AWS Lambda function to call the AWS Trusted Advisor API and publish to an Amazon SNS topic.C.  Develop an AWS Config custom rule that publishes to an Amazon SNS topic when keys are more than 90 days old.D.  Configure AWS Security Hub lo publish to an Amazon SNS topic when keys are more than 90 days old.C is the answer",
           "upvote_count": "34",
           "selected_answers": ""
         },
@@ -719,7 +719,7 @@ var DOP_C01_Part1 =
           "id": 258714,
           "date": "Tue 19 Oct 2021 01:20",
           "username": "Umer24solo18mackbellkyo",
-          "content": "Remaining Question # 56 (Topic 2)B.  Establish a permission boundary in the master account to restrict Regions and authorized services. Use AWS CloudFormation StackSet to provision roles with permissions for each job function, including an IAM trust policy for IAM identity provider authentication in each account.C.  Establish a service control policy in the master account to restrict Regions and authorized services. Use AWS Resource Access Manager to share master account roles with permissions for each job function, including AWS SSO for authentication in each account.D.  Establish a service control policy in the master account to restrict Regions and authorized services. Use CloudFormation StackSet to provision roles with permissions for each job function, including an IAM trust policy for IAM identity provider authentication in each account.Dis corrctWell I would go with service control policy so C or D should be correct.<br>C wants to use RAM to share roles between master and child accounts.<br>From this link: https://docs.aws.amazon.com/ram/latest/userguide/shareable.html <br>I would say this is not possible.<br>So I would go with D. <br>Any thoughts?I go with D too.",
+          "content": "Remaining Question # 56 (Topic 2)B.  Establish a permission boundary in the master account to restrict Regions and authorized services. Use AWS CloudFormation StackSet to provision roles with permissions for each job function, including an IAM trust policy for IAM identity provider authentication in each account.C.  Establish a service control policy in the master account to restrict Regions and authorized services. Use AWS Resource Access Manager to share master account roles with permissions for each job function, including AWS SSO for authentication in each account.D.  Establish a service control policy in the master account to restrict Regions and authorized services. Use CloudFormation StackSet to provision roles with permissions for each job function, including an IAM trust policy for IAM identity provider authentication in each account.Dis corrctWell I would go with service control policy so C or D should be correct.<br>C wants to use RAM to share roles between master and child accounts.<br>From this link: https://docs.aws.amazon.com/ram/latest/userguide/shareable.html<br>I would say this is not possible.<br>So I would go with D. <br>Any thoughts?I go with D too.",
           "upvote_count": "2462",
           "selected_answers": ""
         },
@@ -735,7 +735,7 @@ var DOP_C01_Part1 =
           "id": 260785,
           "date": "Tue 19 Oct 2021 07:57",
           "username": "mackbellkyo",
-          "content": "Well I would go with service control policy so C or D should be correct.<br>C wants to use RAM to share roles between master and child accounts.<br>From this link: https://docs.aws.amazon.com/ram/latest/userguide/shareable.html <br>I would say this is not possible.<br>So I would go with D. <br>Any thoughts?I go with D too.",
+          "content": "Well I would go with service control policy so C or D should be correct.<br>C wants to use RAM to share roles between master and child accounts.<br>From this link: https://docs.aws.amazon.com/ram/latest/userguide/shareable.html<br>I would say this is not possible.<br>So I would go with D. <br>Any thoughts?I go with D too.",
           "upvote_count": "62",
           "selected_answers": ""
         },
@@ -855,7 +855,7 @@ var DOP_C01_Part1 =
           "id": 210054,
           "date": "Fri 08 Oct 2021 07:47",
           "username": "ChauPhan",
-          "content": "B,C <br>https://aws.amazon.com/premiumsupport/knowledge-center/ec2-systems-manager-vpc-endpoints/",
+          "content": "B,C<br>https://aws.amazon.com/premiumsupport/knowledge-center/ec2-systems-manager-vpc-endpoints/",
           "upvote_count": "2",
           "selected_answers": ""
         },
@@ -899,7 +899,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company runs an application with an Amazon EC2 and on-premises configuration. A DevOps Engineer needs to standardize patching across both environments. Company policy dictates that patching only happens during non-business hours.<br>Which combination of actions will meet these requirements? (Choose three.)<br><br><br></p>",
+      "question_text": "<p>A company runs an application with an Amazon EC2 and on-premises configuration. A DevOps Engineer needs to standardize patching across both environments. Company policy dictates that patching only happens during non-business hours.<br>Which combination of actions will meet these requirements? (Choose three.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -944,7 +944,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 5 discussion",
       "discusstion": [
         {
           "id": 224515,
@@ -1026,7 +1026,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company has many applications. Different teams in the company developed the applications by using multiple languages and frameworks. The applications run on premises and on different servers with different operating systems. Each team has its own release protocol and process. The company wants to reduce the complexity of the release and maintenance of these applications.<br>The company is migrating its technology stacks, including these applications, to AWS. The company wants centralized control of source code, a consistent and automatic delivery pipeline, and as few maintenance tasks as possible on the underlying infrastructure.<br>What should a DevOps engineer do to meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A company has many applications. Different teams in the company developed the applications by using multiple languages and frameworks. The applications run on premises and on different servers with different operating systems. Each team has its own release protocol and process. The company wants to reduce the complexity of the release and maintenance of these applications.<br>The company is migrating its technology stacks, including these applications, to AWS. The company wants centralized control of source code, a consistent and automatic delivery pipeline, and as few maintenance tasks as possible on the underlying infrastructure.<br>What should a DevOps engineer do to meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -1061,14 +1061,14 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 6 discussion",
       "discusstion": [
         {
           "id": 764814,
           "date": "Tue 03 Jan 2023 16:30",
           "username": "ericzaj",
           "content": "There is a requirement for \\\"as few maintenance tasks as possible on the underlying infrastructure.\\\". Fargate is serverless. This is the best answer.",
-          "upvote_count": "2",
+          "upvote_count": "1",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -1215,7 +1215,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer is developing an application for a company. The application needs to persist files to Amazon S3. The application needs to upload files with different security classifications that the company defines. These classifications include confidential, private, and public. Files that have a confidential classification must not be viewable by anyone other than the user who uploaded them. The application uses the IAM role of the user to call the S3 API operations.<br>The DevOps engineer has modified the application to add a DataClassification tag with the value of confidential and an Owner tag with the uploading user's ID to each confidential object that is uploaded to Amazon S3.<br>Which set of additional steps must the DevOps engineer take to meet the company's requirements?<br><br><br></p>",
+      "question_text": "<p>A DevOps engineer is developing an application for a company. The application needs to persist files to Amazon S3. The application needs to upload files with different security classifications that the company defines. These classifications include confidential, private, and public. Files that have a confidential classification must not be viewable by anyone other than the user who uploaded them. The application uses the IAM role of the user to call the S3 API operations.<br>The DevOps engineer has modified the application to add a DataClassification tag with the value of confidential and an Owner tag with the uploading user's ID to each confidential object that is uploaded to Amazon S3.<br>Which set of additional steps must the DevOps engineer take to meet the company's requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -1250,7 +1250,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 7 discussion",
       "discusstion": [
         {
           "id": 757092,
@@ -1300,7 +1300,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company has developed an AWS Lambda function that handles orders received through an API. The company is using AWS CodeDeploy to deploy the Lambda function as the final stage of a CI/CD pipeline.<br>A DevOps Engineer has noticed there are intermittent failures of the ordering API for a few seconds after deployment. After some investigation, the DevOps<br>Engineer believes the failures are due to database changes not having fully propagated before the Lambda function begins executing.<br>How should the DevOps Engineer overcome this?<br><br><br></p>",
+      "question_text": "<p>A company has developed an AWS Lambda function that handles orders received through an API. The company is using AWS CodeDeploy to deploy the Lambda function as the final stage of a CI/CD pipeline.<br>A DevOps Engineer has noticed there are intermittent failures of the ordering API for a few seconds after deployment. After some investigation, the DevOps<br>Engineer believes the failures are due to database changes not having fully propagated before the Lambda function begins executing.<br>How should the DevOps Engineer overcome this?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -1335,7 +1335,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 8 discussion",
       "discusstion": [
         {
           "id": 72685,
@@ -1381,7 +1381,7 @@ var DOP_C01_Part1 =
           "id": 224195,
           "date": "Sat 23 Oct 2021 00:17",
           "username": "jackdryanpeddyua",
-          "content": "I'll go with AI see what you’re doing there kid",
+          "content": "I'll go with AI see what you're doing there kid",
           "upvote_count": "41",
           "selected_answers": ""
         },
@@ -1389,7 +1389,7 @@ var DOP_C01_Part1 =
           "id": 377867,
           "date": "Sun 07 Nov 2021 07:42",
           "username": "peddyua",
-          "content": "I see what you’re doing there kid",
+          "content": "I see what you're doing there kid",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -1425,7 +1425,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A software company wants to automate the build process for a project where the code is stored in GitHub. When the repository is updated, source code should be compiled, tested, and pushed to Amazon S3.<br>Which combination of steps would address these requirements? (Choose three.)<br><br><br></p>",
+      "question_text": "<p>A software company wants to automate the build process for a project where the code is stored in GitHub. When the repository is updated, source code should be compiled, tested, and pushed to Amazon S3.<br>Which combination of steps would address these requirements? (Choose three.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -1470,14 +1470,14 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 9 discussion",
       "discusstion": [
         {
           "id": 326740,
           "date": "Sun 31 Oct 2021 02:48",
           "username": "WhyIronMan",
-          "content": "I'll go with A, B, C<br><br>Reference: <br>https://docs.aws.amazon.com/codebuild/latest/userguide/github-webhook.html",
-          "upvote_count": "11",
+          "content": "I'll go with A, B, C<br><br>Reference:<br>https://docs.aws.amazon.com/codebuild/latest/userguide/github-webhook.html",
+          "upvote_count": "10",
           "selected_answers": ""
         },
         {
@@ -1552,7 +1552,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>An online retail company based in the United States plans to expand its operations to Europe and Asia in the next six months. Its product currently runs on<br>Amazon EC2 instances behind an Application Load Balancer. The instances run in an Amazon EC2 Auto Scaling group across multiple Availability Zones. All data is stored in an Amazon Aurora database instance.<br>When the product is deployed in multiple regions, the company wants a single product catalog across all regions, but for compliance purposes, its customer information and purchases must be kept in each region.<br>How should the company meet these requirements with the LEAST amount of application changes?<br><br><br></p>",
+      "question_text": "<p>An online retail company based in the United States plans to expand its operations to Europe and Asia in the next six months. Its product currently runs on<br>Amazon EC2 instances behind an Application Load Balancer. The instances run in an Amazon EC2 Auto Scaling group across multiple Availability Zones. All data is stored in an Amazon Aurora database instance.<br>When the product is deployed in multiple regions, the company wants a single product catalog across all regions, but for compliance purposes, its customer information and purchases must be kept in each region.<br>How should the company meet these requirements with the LEAST amount of application changes?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -1587,7 +1587,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 10 discussion",
       "discusstion": [
         {
           "id": 20679,
@@ -1665,7 +1665,7 @@ var DOP_C01_Part1 =
           "id": 226980,
           "date": "Tue 26 Oct 2021 21:59",
           "username": "Coffeinerd",
-          "content": "Key info:\\\"LEAST amount of application changes\\\", so not changing DB type or engine, no code refactoring! <br>Right: C<br>Wrong: <br>-A: require code changes, Redshift makes no sense here as it is for data warehousing<br>-B: require again code changes<br>-D: would imply code changes as well.",
+          "content": "Key info:\\\"LEAST amount of application changes\\\", so not changing DB type or engine, no code refactoring!<br>Right: C<br>Wrong:<br>-A: require code changes, Redshift makes no sense here as it is for data warehousing<br>-B: require again code changes<br>-D: would imply code changes as well.",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -1733,7 +1733,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company wants to ensure that their EC2 instances are secure. They want to be notified if any new vulnerabilities are discovered on their instances, and they also want an audit trail of all login activities on the instances.<br>Which solution will meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A company wants to ensure that their EC2 instances are secure. They want to be notified if any new vulnerabilities are discovered on their instances, and they also want an audit trail of all login activities on the instances.<br>Which solution will meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -1768,7 +1768,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 11 discussion",
       "discusstion": [
         {
           "id": 330224,
@@ -1776,22 +1776,6 @@ var DOP_C01_Part1 =
           "username": "devopp",
           "content": "Has to be D with Inspector & CW Logging there.",
           "upvote_count": "12",
-          "selected_answers": ""
-        },
-        {
-          "id": 770510,
-          "date": "Mon 09 Jan 2023 15:23",
-          "username": "PepsNickpenelop",
-          "content": "It actually is B even though you would think D.  Have a look at this article. https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-compliance.html<br>Compliance offers the following additional benefits and features:<br><br>View compliance history and change tracking for Patch Manager patching data and State Manager associations by using AWS Config.<br><br>Customize Compliance to create your own compliance types based on your IT or business requirements.<br><br>Remediate issues by using Run Command, another capability of AWS Systems Manager, State Manager, or Amazon EventBridge.<br><br>Port data to Amazon Athena and Amazon QuickSight to generate fleet-wide reports.Wrong.<br><br>Compliance != Security. SSM Compliance is used to ensure the software satisfies your company's standard, but it does not check for vulnerabilities in said patches.",
-          "upvote_count": "11",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
-          "id": 781514,
-          "date": "Thu 19 Jan 2023 20:16",
-          "username": "penelop",
-          "content": "Wrong.<br><br>Compliance != Security. SSM Compliance is used to ensure the software satisfies your company's standard, but it does not check for vulnerabilities in said patches.",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -1822,7 +1806,7 @@ var DOP_C01_Part1 =
           "id": 693913,
           "date": "Thu 13 Oct 2022 15:07",
           "username": "Vasudevay",
-          "content": "B seems right as It requires <br>Login trail as well >> Cloud Trail <br>System vulnerability >> can be detected by SSM via SSM agent installation",
+          "content": "B seems right as It requires<br>Login trail as well >> Cloud Trail<br>System vulnerability >> can be detected by SSM via SSM agent installation",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: B"
         },
@@ -1930,7 +1914,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps Engineer needs to back up sensitive Amazon S3 objects that are stored within an S3 bucket with a private bucket policy using the S3 cross-region replication functionality. The objects need to be copied to a target bucket in a different AWS Region and account.<br>Which actions should be performed to enable this replication? (Choose three.)<br><br><br></p>",
+      "question_text": "<p>A DevOps Engineer needs to back up sensitive Amazon S3 objects that are stored within an S3 bucket with a private bucket policy using the S3 cross-region replication functionality. The objects need to be copied to a target bucket in a different AWS Region and account.<br>Which actions should be performed to enable this replication? (Choose three.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -1975,7 +1959,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 12 discussion",
       "discusstion": [
         {
           "id": 348098,
@@ -1989,8 +1973,8 @@ var DOP_C01_Part1 =
           "id": 763064,
           "date": "Sun 01 Jan 2023 06:23",
           "username": "Bulti",
-          "content": "ADE is the correct answer. To enable cross account replication weneed to <br>1.create a replication rule in the source bucket<br>2. Create an IAM role in the source account to perform replication<br>3. Create a resource policy on the destination bucket that grant permission to the IAM role in the source account to replicate objects into the destination bucket.",
-          "upvote_count": "2",
+          "content": "ADE is the correct answer. To enable cross account replication weneed to<br>1.create a replication rule in the source bucket<br>2. Create an IAM role in the source account to perform replication<br>3. Create a resource policy on the destination bucket that grant permission to the IAM role in the source account to replicate objects into the destination bucket.",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -2006,7 +1990,7 @@ var DOP_C01_Part1 =
           "date": "Thu 01 Sep 2022 03:14",
           "username": "colinquek",
           "content": "BDE - B becos the source acct should assume the target acct's IAM role to copy things into it.",
-          "upvote_count": "3",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -2081,7 +2065,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company is using Amazon EC2 for various workloads. Company policy requires that instances be managed centrally to standardize configurations. These configurations include standard logging, metrics, security assessments, and weekly patching.<br>How can the company meet these requirements? (Choose three.)<br><br><br></p>",
+      "question_text": "<p>A company is using Amazon EC2 for various workloads. Company policy requires that instances be managed centrally to standardize configurations. These configurations include standard logging, metrics, security assessments, and weekly patching.<br>How can the company meet these requirements? (Choose three.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -2126,7 +2110,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 13 discussion",
       "discusstion": [
         {
           "id": 312900,
@@ -2135,14 +2119,6 @@ var DOP_C01_Part1 =
           "content": "Ans: BCF",
           "upvote_count": "22",
           "selected_answers": ""
-        },
-        {
-          "id": 783567,
-          "date": "Sat 21 Jan 2023 17:59",
-          "username": "sasivarenan",
-          "content": "BCF is the correct answer",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: BCF"
         },
         {
           "id": 763066,
@@ -2164,7 +2140,7 @@ var DOP_C01_Part1 =
           "id": 712875,
           "date": "Mon 07 Nov 2022 08:20",
           "username": "developer_404",
-          "content": "B - AWS System Manager to manage Centrally<br>C - Use AWS System Manager agent to install Amazon Inspector, not the vice versa. <br>F - Use Cloudwatch Event to schedule, agent is for collecting metrics.",
+          "content": "B - AWS System Manager to manage Centrally<br>C - Use AWS System Manager agent to install Amazon Inspector, not the vice versa.<br>F - Use Cloudwatch Event to schedule, agent is for collecting metrics.",
           "upvote_count": "3",
           "selected_answers": "Selected Answer: BCF"
         },
@@ -2188,7 +2164,7 @@ var DOP_C01_Part1 =
           "id": 673916,
           "date": "Tue 20 Sep 2022 10:02",
           "username": "Goozian",
-          "content": "BCF <br>the level of this Question is Associate Exam, not Proff!",
+          "content": "BCF<br>the level of this Question is Associate Exam, not Proff!",
           "upvote_count": "2",
           "selected_answers": ""
         },
@@ -2212,7 +2188,7 @@ var DOP_C01_Part1 =
           "id": 602710,
           "date": "Tue 17 May 2022 00:36",
           "username": "GCPWizard",
-          "content": "Ans: BCF. <br>E is not correct. You don't need CloudWatch Agent to schedule Amazon Inspector Assessment Runs. You need CloudWatch Events for that. <br>You can configure Amazon Inspector assessment templates as a target for CloudWatch Events. See the link below for allowed AWS services as targets for CloudWatch events.<br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html",
+          "content": "Ans: BCF. <br>E is not correct. You don't need CloudWatch Agent to schedule Amazon Inspector Assessment Runs. You need CloudWatch Events for that.<br>You can configure Amazon Inspector assessment templates as a target for CloudWatch Events. See the link below for allowed AWS services as targets for CloudWatch events.<br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html",
           "upvote_count": "2",
           "selected_answers": ""
         },
@@ -2271,6 +2247,14 @@ var DOP_C01_Part1 =
           "content": "B, C, F",
           "upvote_count": "1",
           "selected_answers": ""
+        },
+        {
+          "id": 384622,
+          "date": "Sun 24 Oct 2021 12:22",
+          "username": "lilpurplepanda",
+          "content": "B, C, F",
+          "upvote_count": "1",
+          "selected_answers": ""
         }
       ]
     },
@@ -2280,7 +2264,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A business has an application that consists of five independent AWS Lambda functions.<br>The DevOps Engineer has built a CI/CD pipeline using AWS CodePipeline and AWS CodeBuild that builds, tests, packages, and deploys each Lambda function in sequence. The pipeline uses an Amazon CloudWatch Events rule to ensure the pipeline execution starts as quickly as possible after a change is made to the application source code.<br>After working with the pipeline for a few months, the DevOps Engineer has noticed the pipeline takes too long to complete.<br>What should the DevOps Engineer implement to BEST improve the speed of the pipeline?<br><br><br></p>",
+      "question_text": "<p>A business has an application that consists of five independent AWS Lambda functions.<br>The DevOps Engineer has built a CI/CD pipeline using AWS CodePipeline and AWS CodeBuild that builds, tests, packages, and deploys each Lambda function in sequence. The pipeline uses an Amazon CloudWatch Events rule to ensure the pipeline execution starts as quickly as possible after a change is made to the application source code.<br>After working with the pipeline for a few months, the DevOps Engineer has noticed the pipeline takes too long to complete.<br>What should the DevOps Engineer implement to BEST improve the speed of the pipeline?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -2315,7 +2299,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 14 discussion",
       "discusstion": [
         {
           "id": 10572,
@@ -2469,7 +2453,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company is creating a software solution that executes a specific parallel-processing mechanism. The software can scale to tens of servers in some special scenarios. This solution uses a proprietary library that is license-based, requiring that each individual server have a single, dedicated license installed. The company has 200 licenses and is planning to run 200 server nodes concurrently at most.<br>The company has requested the following features:<br>✑ A mechanism to automate the use of the licenses at scale.<br>✑ Creation of a dashboard to use in the future to verify which licenses are available at any moment.<br>What is the MOST effective way to accomplish these requirements?<br><br><br></p>",
+      "question_text": "<p>A company is creating a software solution that executes a specific parallel-processing mechanism. The software can scale to tens of servers in some special scenarios. This solution uses a proprietary library that is license-based, requiring that each individual server have a single, dedicated license installed. The company has 200 licenses and is planning to run 200 server nodes concurrently at most.<br>The company has requested the following features:<br>-A mechanism to automate the use of the licenses at scale.<br>-Creation of a dashboard to use in the future to verify which licenses are available at any moment.<br>What is the MOST effective way to accomplish these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -2504,7 +2488,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 15 discussion",
       "discusstion": [
         {
           "id": 21104,
@@ -2520,14 +2504,6 @@ var DOP_C01_Part1 =
           "username": "Raj9",
           "content": "A - license list is dynamic (based on scaling) and mapping are good for values that are static in nature<br>B - looks good<br>C - sqs -unnecessary overhead<br>D - too many manual tasks",
           "upvote_count": "13",
-          "selected_answers": ""
-        },
-        {
-          "id": 769695,
-          "date": "Sun 08 Jan 2023 19:16",
-          "username": "Hackmajoris",
-          "content": "Why D is set as the correct answer?",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -2566,7 +2542,7 @@ var DOP_C01_Part1 =
           "id": 713444,
           "date": "Tue 08 Nov 2022 03:56",
           "username": "developer_404",
-          "content": "A - S3 contains static data and there is no information on the available licenses to create dashboard. <br>B- DynamoDb contains mapping on the availability of licenses and can create dashboard on the data. <br>C - Overhead to maintain S3 and SQS. Hard to create Dashboard out of SQS. <br>D - Manual update , no no",
+          "content": "A - S3 contains static data and there is no information on the available licenses to create dashboard.<br>B- DynamoDb contains mapping on the availability of licenses and can create dashboard on the data.<br>C - Overhead to maintain S3 and SQS. Hard to create Dashboard out of SQS.<br>D - Manual update , no no",
           "upvote_count": "3",
           "selected_answers": "Selected Answer: B"
         },
@@ -2641,6 +2617,14 @@ var DOP_C01_Part1 =
           "content": "Correct Answer: B",
           "upvote_count": "1",
           "selected_answers": ""
+        },
+        {
+          "id": 280743,
+          "date": "Wed 27 Oct 2021 05:38",
+          "username": "yyy",
+          "content": "I believe to C: because lifecycle hook can work with SQS directly https://docs.aws.amazon.com/autoscaling/ec2/userguide/configuring-lifecycle-hook-notifications.html",
+          "upvote_count": "1",
+          "selected_answers": ""
         }
       ]
     },
@@ -2650,7 +2634,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps Engineer administers an application that manages video files for a video production company. The application runs on Amazon EC2 instances behind an ELB Application Load Balancer. The instances run in an Auto Scaling group across multiple Availability Zones. Data is stored in an Amazon RDS PostgreSQL<br>Multi-AZ DB instance, and the video files are stored in an Amazon S3 bucket. On a typical day, 50 GB of new video are added to the S3 bucket. The Engineer must implement a multi-region disaster recovery plan with the least data loss and the lowest recovery times. The current application infrastructure is already described using AWS CloudFormation.<br>Which deployment option should the Engineer choose to meet the uptime and recovery objectives for the system?<br><br><br></p>",
+      "question_text": "<p>A DevOps Engineer administers an application that manages video files for a video production company. The application runs on Amazon EC2 instances behind an ELB Application Load Balancer. The instances run in an Auto Scaling group across multiple Availability Zones. Data is stored in an Amazon RDS PostgreSQL<br>Multi-AZ DB instance, and the video files are stored in an Amazon S3 bucket. On a typical day, 50 GB of new video are added to the S3 bucket. The Engineer must implement a multi-region disaster recovery plan with the least data loss and the lowest recovery times. The current application infrastructure is already described using AWS CloudFormation.<br>Which deployment option should the Engineer choose to meet the uptime and recovery objectives for the system?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -2685,7 +2669,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 16 discussion",
       "discusstion": [
         {
           "id": 3822,
@@ -2739,7 +2723,7 @@ var DOP_C01_Part1 =
           "id": 722934,
           "date": "Sun 20 Nov 2022 20:33",
           "username": "fvztpc",
-          "content": "answer is A , <br>I think, solution do not need new s3 bucket.",
+          "content": "answer is A ,<br>I think, solution do not need new s3 bucket.",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -2803,7 +2787,7 @@ var DOP_C01_Part1 =
           "id": 188386,
           "date": "Sat 30 Oct 2021 05:03",
           "username": "denmaddog",
-          "content": "A says: \\\"In the second region, enable cross-region replication between the original S3 bucket and a new S3 bucket.\\\" - the part \\\"In second region\\\" is tricky as S3 does not require region selection, but the second part says \\\"enable cross-region replication between the original S3 bucket and a new S3 bucket\\\" which does not explicitly says on which bucket to configure CRR. <br>So the correct answer is A. ",
+          "content": "A says: \\\"In the second region, enable cross-region replication between the original S3 bucket and a new S3 bucket.\\\" - the part \\\"In second region\\\" is tricky as S3 does not require region selection, but the second part says \\\"enable cross-region replication between the original S3 bucket and a new S3 bucket\\\" which does not explicitly says on which bucket to configure CRR.<br>So the correct answer is A. ",
           "upvote_count": "2",
           "selected_answers": ""
         },
@@ -2847,7 +2831,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company is using AWS CodePipeline to automate its release pipeline. AWS CodeDeploy is being used in the pipeline to deploy an application to Amazon ECS using the blue/green deployment model. The company wants to implement scripts to test the green version of the application before shifting traffic. These scripts will complete in 5 minutes or less. If errors are discovered during these tests, the application must be rolled back.<br>Which strategy will meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A company is using AWS CodePipeline to automate its release pipeline. AWS CodeDeploy is being used in the pipeline to deploy an application to Amazon ECS using the blue/green deployment model. The company wants to implement scripts to test the green version of the application before shifting traffic. These scripts will complete in 5 minutes or less. If errors are discovered during these tests, the application must be rolled back.<br>Which strategy will meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -2882,7 +2866,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 17 discussion",
       "discusstion": [
         {
           "id": 317301,
@@ -2920,7 +2904,7 @@ var DOP_C01_Part1 =
           "id": 681897,
           "date": "Wed 28 Sep 2022 18:02",
           "username": "ebratz",
-          "content": "https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html<br><br>AfterAllowTestTraffic – Use to run tasks after the test listener serves traffic to the replacement task set. The results of a hook function at this point can trigger a rollback.",
+          "content": "https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html<br><br>AfterAllowTestTraffic =E2=80=93 Use to run tasks after the test listener serves traffic to the replacement task set. The results of a hook function at this point can trigger a rollback.",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: C"
         },
@@ -2929,7 +2913,7 @@ var DOP_C01_Part1 =
           "date": "Mon 19 Sep 2022 05:20",
           "username": "colinquekapcloud",
           "content": "C<br>A, B - u need to deploy first else there is nth to test. And rem CodeBuild is exactly tt, do code building.<br>D - AfterAllowTraffic means the Green env is alr \\\"live\\\", if there is no \\\"AfterAllowTestTraffic\\\" option (C), then D is the correct one.<br><br>Since there AfterAllowTestTraffic, its better to chose tt.<br>https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html << take a look at the diagram in this.do you really need to abbreviate? it makes it way harder to read your explanation. please stop.",
-          "upvote_count": "34",
+          "upvote_count": "33",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -2937,14 +2921,14 @@ var DOP_C01_Part1 =
           "date": "Fri 02 Dec 2022 23:19",
           "username": "apcloud",
           "content": "do you really need to abbreviate? it makes it way harder to read your explanation. please stop.",
-          "upvote_count": "4",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
           "id": 665924,
           "date": "Sun 11 Sep 2022 09:48",
           "username": "MikeyJ",
-          "content": "AfterAllowTestTraffic – Use to run tasks after the test listener serves traffic to the replacement task set. The results of a hook function at this point can trigger a rollback.<br>https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html",
+          "content": "AfterAllowTestTraffic =E2=80=93 Use to run tasks after the test listener serves traffic to the replacement task set. The results of a hook function at this point can trigger a rollback.<br>https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: C"
         },
@@ -2996,7 +2980,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company requires an RPO of 2 hours and an RTO of 10 minutes for its data and application at all times. An application uses a MySQL database and Amazon<br>EC2 web servers. The development team needs a strategy for failover and disaster recovery.<br>Which combination of deployment strategies will meet these requirements? (Choose two.)<br><br><br></p>",
+      "question_text": "<p>A company requires an RPO of 2 hours and an RTO of 10 minutes for its data and application at all times. An application uses a MySQL database and Amazon<br>EC2 web servers. The development team needs a strategy for failover and disaster recovery.<br>Which combination of deployment strategies will meet these requirements? (Choose two.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -3036,7 +3020,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 18 discussion",
       "discusstion": [
         {
           "id": 326818,
@@ -3110,7 +3094,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>An Amazon EC2 instance is running in a Virtual Private Cloud (VPC) and needs to download an object from a restricted Amazon S3 bucket. When the DevOps engineer tries to download, the object an AccessDenied error is received.<br>What are the possible causes for this error? (Choose two.)<br><br><br></p>",
+      "question_text": "<p>An Amazon EC2 instance is running in a Virtual Private Cloud (VPC) and needs to download an object from a restricted Amazon S3 bucket. When the DevOps engineer tries to download, the object an AccessDenied error is received.<br>What are the possible causes for this error? (Choose two.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -3150,7 +3134,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 19 discussion",
       "discusstion": [
         {
           "id": 657135,
@@ -3192,7 +3176,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps team manages an API running on-premises that serves as a backend for an Amazon API Gateway endpoint. Customers have been complaining about high response latencies, which the development team has verified using the API Gateway latency metrics in Amazon CloudWatch. To identify the cause, the team needs to collect relevant data without introducing additional latency.<br>Which actions should be taken to accomplish this? (Choose two.)<br><br><br></p>",
+      "question_text": "<p>A DevOps team manages an API running on-premises that serves as a backend for an Amazon API Gateway endpoint. Customers have been complaining about high response latencies, which the development team has verified using the API Gateway latency metrics in Amazon CloudWatch. To identify the cause, the team needs to collect relevant data without introducing additional latency.<br>Which actions should be taken to accomplish this? (Choose two.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -3232,13 +3216,13 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 20 discussion",
       "discusstion": [
         {
           "id": 326000,
           "date": "Thu 28 Oct 2021 06:26",
           "username": "WhyIronManMBJamesRightAnswers",
-          "content": "I'll go with A and C<br><br>References: <br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-premise.html<br>https://docs.aws.amazon.com/xray/latest/devguide/xray-api-sendingdata.htmlAgreed. B is sub-optimal because sending every xray segment back to AWS API directly from the application will introduce more latency. Having a local x-ray daemon mitigates that, so C is better.Installing CloudWatch agents on on-prem servers will provider server metrics. How that will help calculate API latency? Ans A doesn't make sense. Ans E would rather help getting latency information.<br>Ans C, E",
+          "content": "I'll go with A and C<br><br>References:<br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-premise.html<br>https://docs.aws.amazon.com/xray/latest/devguide/xray-api-sendingdata.htmlAgreed. B is sub-optimal because sending every xray segment back to AWS API directly from the application will introduce more latency. Having a local x-ray daemon mitigates that, so C is better.Installing CloudWatch agents on on-prem servers will provider server metrics. How that will help calculate API latency? Ans A doesn't make sense. Ans E would rather help getting latency information.<br>Ans C, E",
           "upvote_count": "2233",
           "selected_answers": ""
         },
@@ -3264,14 +3248,6 @@ var DOP_C01_Part1 =
           "username": "Jordanro",
           "content": "I will go with A,C",
           "upvote_count": "8",
-          "selected_answers": ""
-        },
-        {
-          "id": 777195,
-          "date": "Mon 16 Jan 2023 01:11",
-          "username": "Bulti",
-          "content": "The question is about latency and not logging/monitoring. As a result, X-ray is the right answer and not Cloudwatch logs for transaction tracing across API Gateway and on-prem application hosting the API. So the correct answer is C,D.  I will go with C and D. ",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -3385,6 +3361,22 @@ var DOP_C01_Part1 =
           "content": "ans: A C",
           "upvote_count": "1",
           "selected_answers": ""
+        },
+        {
+          "id": 330221,
+          "date": "Fri 29 Oct 2021 01:17",
+          "username": "devoppGreatFunana",
+          "content": "Yep A,C<br>A since assuming this means installing UCWA onto OnPrem Server.<br>Not E (revealed Ans) since this would not meet req, likely increasing latency w additional processing.Nailed it. But for the sake of completion<br>\t- B: not how you send logs to x-ray.<br>\t- D: you don't send logs via api-gateway<br>\t- E: adds latency",
+          "upvote_count": "22",
+          "selected_answers": ""
+        },
+        {
+          "id": 504118,
+          "date": "Sat 18 Dec 2021 09:59",
+          "username": "GreatFunana",
+          "content": "Nailed it. But for the sake of completion<br>\t- B: not how you send logs to x-ray.<br>\t- D: you don't send logs via api-gateway<br>\t- E: adds latency",
+          "upvote_count": "2",
+          "selected_answers": ""
         }
       ]
     },
@@ -3394,7 +3386,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer wants to find a solution to migrate an application from on premises to AWS. The application is running on Linux and needs to run on specific versions of Apache Tomcat, HAProxy, and Varnish Cache to function properly. The application's operating system-level parameters require tuning. The solution must include a way to automate the deployment of new application versions. The infrastructure should be scalable and faulty servers should be replaced automatically.<br>Which solution should the DevOps engineer use?<br><br><br></p>",
+      "question_text": "<p>A DevOps engineer wants to find a solution to migrate an application from on premises to AWS. The application is running on Linux and needs to run on specific versions of Apache Tomcat, HAProxy, and Varnish Cache to function properly. The application's operating system-level parameters require tuning. The solution must include a way to automate the deployment of new application versions. The infrastructure should be scalable and faulty servers should be replaced automatically.<br>Which solution should the DevOps engineer use?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -3429,7 +3421,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 21 discussion",
       "discusstion": [
         {
           "id": 338620,
@@ -3451,7 +3443,7 @@ var DOP_C01_Part1 =
           "id": 326625,
           "date": "Sun 10 Oct 2021 16:02",
           "username": "WhyIronMan[Removed]shammousnotabot2",
-          "content": "I'll go with A) <br><br>Creating a Docker image of these very customized applications is always a good idea<br><br>Creating a docker image with all necessary apps, data e customizations attend the requirements<br><br>B, C and D doesn't mention the required customizations of app versions or OS changes. None of them mention an AMI creationHaving Apache Tomcat + Varnish + HAProxy on a single Docker image is a container-level suicide. Hence D is the best option here.I upvoted but then checked the other comments. MBJames: \\\"Fargate does not allow for OS-level access which means OS parameter tuning would not be an option.\\\" So option A is ruled out. With option D,EC2 instances are accessible and can be tuned.How do you address this case with Fargate?\\\"The applicationג€™s operating system-level parameters require tuning\\\"",
+          "content": "I'll go with A)<br><br>Creating a Docker image of these very customized applications is always a good idea<br><br>Creating a docker image with all necessary apps, data e customizations attend the requirements<br><br>B, C and D doesn't mention the required customizations of app versions or OS changes. None of them mention an AMI creationHaving Apache Tomcat + Varnish + HAProxy on a single Docker image is a container-level suicide. Hence D is the best option here.I upvoted but then checked the other comments. MBJames: \\\"Fargate does not allow for OS-level access which means OS parameter tuning would not be an option.\\\" So option A is ruled out. With option D,EC2 instances are accessible and can be tuned.How do you address this case with Fargate?\\\"The application\\\"=E2=84=A2s operating system-level parameters require tuning\\\"",
           "upvote_count": "111032",
           "selected_answers": ""
         },
@@ -3475,16 +3467,8 @@ var DOP_C01_Part1 =
           "id": 364179,
           "date": "Mon 01 Nov 2021 02:10",
           "username": "notabot2",
-          "content": "How do you address this case with Fargate?\\\"The applicationג€™s operating system-level parameters require tuning\\\"",
+          "content": "How do you address this case with Fargate?\\\"The application\\\"=E2=84=A2s operating system-level parameters require tuning\\\"",
           "upvote_count": "2",
-          "selected_answers": ""
-        },
-        {
-          "id": 777198,
-          "date": "Mon 16 Jan 2023 01:17",
-          "username": "Bulti",
-          "content": "Correct answer is D.  Key is automated scaling and ability to replace faulty instances with a new one. Only a combination of CodeDeploy and Autoscaling group for EC2 as the target will satisfy this requirement.",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -3499,7 +3483,7 @@ var DOP_C01_Part1 =
           "id": 714258,
           "date": "Wed 09 Nov 2022 04:44",
           "username": "developer_404",
-          "content": "A - Not good to contain all software in one container. <br>B -Not supporting all servers. <br>C - Same as above. <br>D - Can configure multiple servers including OS level tuning, ASG, Code Deploy. Fulfilling all key requirements.",
+          "content": "A - Not good to contain all software in one container.<br>B -Not supporting all servers.<br>C - Same as above.<br>D - Can configure multiple servers including OS level tuning, ASG, Code Deploy. Fulfilling all key requirements.",
           "upvote_count": "3",
           "selected_answers": "Selected Answer: D"
         },
@@ -3507,7 +3491,7 @@ var DOP_C01_Part1 =
           "id": 665931,
           "date": "Sun 11 Sep 2022 09:56",
           "username": "MikeyJ",
-          "content": "The application's operating system-level parameters require tuning.<br>>EC2<br>The solution must include a way to automate the deployment of new application versions. <br>>CodePipeline<br>The infrastructure should be scalable and faulty servers should be replaced automatically.<br>>ASG",
+          "content": "The application's operating system-level parameters require tuning.<br>>EC2<br>The solution must include a way to automate the deployment of new application versions.<br>>CodePipeline<br>The infrastructure should be scalable and faulty servers should be replaced automatically.<br>>ASG",
           "upvote_count": "7",
           "selected_answers": "Selected Answer: D"
         },
@@ -3614,6 +3598,14 @@ var DOP_C01_Part1 =
           "content": "D - OS requires tuningn menas that it requires OS rather than Docker. Docker in this case would be much harder to implement that typical EC2.",
           "upvote_count": "6",
           "selected_answers": ""
+        },
+        {
+          "id": 330247,
+          "date": "Wed 13 Oct 2021 02:07",
+          "username": "devopp",
+          "content": "A for Docker Image for this bespoke app package (AMI also an option but not listed).",
+          "upvote_count": "4",
+          "selected_answers": ""
         }
       ]
     },
@@ -3623,7 +3615,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company wants to use AWS CloudFormation for infrastructure deployment. The company has strict tagging and resource requirements and wants to limit the deployment to two Regions. Developers will need to deploy multiple versions of the same application.<br>Which solution ensures resources are deployed in accordance with company policy?<br><br><br></p>",
+      "question_text": "<p>A company wants to use AWS CloudFormation for infrastructure deployment. The company has strict tagging and resource requirements and wants to limit the deployment to two Regions. Developers will need to deploy multiple versions of the same application.<br>Which solution ensures resources are deployed in accordance with company policy?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -3658,7 +3650,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 22 discussion",
       "discusstion": [
         {
           "id": 374631,
@@ -3693,34 +3685,10 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
-          "id": 777426,
-          "date": "Mon 16 Jan 2023 08:54",
-          "username": "Boubou480",
-          "content": "D.  Create AWS Service Catalog products with approved CloudFormation templates.<br><br>AWS Service Catalog allows the company to create, manage, and distribute approved products in the form of CloudFormation templates. It allows the company to control the use of AWS resources by imposing constraints on the templates and products available, such as resource tagging, regions, and IAM permissions.<br><br>Using AWS Service Catalog, the company can define products with specific CloudFormation templates and constraints, and allow developers to deploy the appropriate version of the application, while ensuring that the deployment adheres to company policies and resource requirements. Additionally, AWS Service Catalog can be used to restrict the deployment to specific regions, and by creating products, it allows the company to keep track of the versions of the application that are deployed.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: D"
-        },
-        {
-          "id": 777208,
-          "date": "Mon 16 Jan 2023 01:24",
-          "username": "Bulti",
-          "content": "The answer is D.  The best way to impose template and StackSet constraints is through Service Catalog. https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_constraints_template-constraints.htmlns",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 770577,
-          "date": "Mon 09 Jan 2023 16:32",
-          "username": "PepsNick",
-          "content": "D because there is no such thing as “approved Cloudformation Templates”",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: D"
-        },
-        {
           "id": 758863,
           "date": "Tue 27 Dec 2022 18:44",
           "username": "ceros399",
-          "content": "Ans =D:<br>https://docs.aws.amazon.com/servicecatalog/latest/adminguide/constraints-stackset.html",
+          "content": "Ans D:<br>https://docs.aws.amazon.com/servicecatalog/latest/adminguide/constraints-stackset.html",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: D"
         },
@@ -3743,18 +3711,10 @@ var DOP_C01_Part1 =
         {
           "id": 741861,
           "date": "Sun 11 Dec 2022 16:52",
-          "username": "SatenderRatheefartosh",
-          "content": "AWS CloudFormation StackSets enable you to create, update, or delete stacks across multiple accounts and regions with a single CloudFormation template. By using StackSets, you can ensure that your resources are deployed in accordance with company policy, such as by using approved templates and limiting deployment to specific regions. Additionally, StackSets allow you to deploy multiple versions of the same application, enabling developers to easily update and maintain their infrastructure. AWS Trusted Advisor and drift detection operations do not provide the same level of control and flexibility as StackSets.StackSets do not prevent you from using unsupported tags and/or deploying the stack to regions other than 2 mentioned in the question. Also, multiple versions of the same application is provided by Service Catalog by default.",
-          "upvote_count": "11",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 780337,
-          "date": "Wed 18 Jan 2023 19:59",
-          "username": "fartosh",
-          "content": "StackSets do not prevent you from using unsupported tags and/or deploying the stack to regions other than 2 mentioned in the question. Also, multiple versions of the same application is provided by Service Catalog by default.",
+          "username": "SatenderRathee",
+          "content": "AWS CloudFormation StackSets enable you to create, update, or delete stacks across multiple accounts and regions with a single CloudFormation template. By using StackSets, you can ensure that your resources are deployed in accordance with company policy, such as by using approved templates and limiting deployment to specific regions. Additionally, StackSets allow you to deploy multiple versions of the same application, enabling developers to easily update and maintain their infrastructure. AWS Trusted Advisor and drift detection operations do not provide the same level of control and flexibility as StackSets.",
           "upvote_count": "1",
-          "selected_answers": ""
+          "selected_answers": "Selected Answer: C"
         },
         {
           "id": 725698,
@@ -3867,6 +3827,30 @@ var DOP_C01_Part1 =
           "content": "actually idk, i cant delete my comment either so idk",
           "upvote_count": "1",
           "selected_answers": ""
+        },
+        {
+          "id": 544084,
+          "date": "Wed 09 Feb 2022 21:30",
+          "username": "blueorca",
+          "content": "With CF, it can still be changed afterwards, while Service Catalog is a proper enforcement.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 517283,
+          "date": "Wed 05 Jan 2022 09:51",
+          "username": "SRTSRT",
+          "content": "D : https://docs.aws.amazon.com/servicecatalog/latest/adminguide/constraints-resourceupdate.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 440466,
+          "date": "Sun 07 Nov 2021 02:19",
+          "username": "donny_sanjay",
+          "content": "C for sure .Stackset for multiple account/regeion",
+          "upvote_count": "1",
+          "selected_answers": ""
         }
       ]
     },
@@ -3876,7 +3860,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps Engineer must track the health of a stateless RESTful service sitting behind a Classic Load Balancer. The deployment of new application revisions is through a CI/CD pipeline. If the service's latency increases beyond a defined threshold, deployment should be stopped until the service has recovered.<br>Which of the following methods allow for the QUICKEST detection time?<br><br><br></p>",
+      "question_text": "<p>A DevOps Engineer must track the health of a stateless RESTful service sitting behind a Classic Load Balancer. The deployment of new application revisions is through a CI/CD pipeline. If the service's latency increases beyond a defined threshold, deployment should be stopped until the service has recovered.<br>Which of the following methods allow for the QUICKEST detection time?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -3911,7 +3895,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 23 discussion",
       "discusstion": [
         {
           "id": 30650,
@@ -3941,16 +3925,8 @@ var DOP_C01_Part1 =
           "id": 95336,
           "date": "Fri 22 Oct 2021 14:51",
           "username": "Raj9",
-          "content": "A - correct<br>B - this might work but has additonal overhead of a lambda and will depende on how frequently lambda is run. Although minimal but <br>additonal cost of lambda. This won't give QUICKEST detection time.<br>C - MinimumHealthyHosts may not be directly correlated with latency. Latency might be more due to network or other issues even if 100% of hosts are healthy.<br>D - why do this when a ready made option is available https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-cloudwatch-metrics.html",
+          "content": "A - correct<br>B - this might work but has additonal overhead of a lambda and will depende on how frequently lambda is run. Although minimal but<br>additonal cost of lambda. This won't give QUICKEST detection time.<br>C - MinimumHealthyHosts may not be directly correlated with latency. Latency might be more due to network or other issues even if 100% of hosts are healthy.<br>D - why do this when a ready made option is available https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-cloudwatch-metrics.html",
           "upvote_count": "7",
-          "selected_answers": ""
-        },
-        {
-          "id": 777265,
-          "date": "Mon 16 Jan 2023 03:44",
-          "username": "Bulti",
-          "content": "The correct answer is A.  When setting up CodeDeploy as a Deployment Provider you can specify the alarm based on a CloudWatch Metric (custom or built-in) and stop the deployment if an alarm threshold is exceeded.",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -4064,6 +4040,14 @@ var DOP_C01_Part1 =
           "content": "A is correct",
           "upvote_count": "1",
           "selected_answers": ""
+        },
+        {
+          "id": 56806,
+          "date": "Thu 14 Oct 2021 03:02",
+          "username": "coolcerts",
+          "content": "A is correct -- we can stop the deployment with CW alarm and SNS<br>https://aws.amazon.com/about-aws/whats-new/2016/09/aws-codedeploy-introduces-deployment-monitoring-with-amazon-cloudwatch-alarms-and-automatic-deployment-rollback/",
+          "upvote_count": "3",
+          "selected_answers": ""
         }
       ]
     },
@@ -4073,7 +4057,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>An AWS CodePipeline pipeline has implemented a code release process. The pipeline is integrated with AWS CodeDeploy to deploy versions of an application to multiple Amazon EC2 instances for each CodePipeline stage.<br>During a recent deployment, the pipeline failed due to a CodeDeploy issue. The DevOps team wants to improve monitoring and notifications during deployment to decrease resolution times.<br>What should the DevOps Engineer do to create notifications when issues are discovered?<br><br><br></p>",
+      "question_text": "<p>An AWS CodePipeline pipeline has implemented a code release process. The pipeline is integrated with AWS CodeDeploy to deploy versions of an application to multiple Amazon EC2 instances for each CodePipeline stage.<br>During a recent deployment, the pipeline failed due to a CodeDeploy issue. The DevOps team wants to improve monitoring and notifications during deployment to decrease resolution times.<br>What should the DevOps Engineer do to create notifications when issues are discovered?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -4108,7 +4092,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 24 discussion",
       "discusstion": [
         {
           "id": 21925,
@@ -4132,14 +4116,6 @@ var DOP_C01_Part1 =
           "username": "jackdryan",
           "content": "I'll go with B",
           "upvote_count": "6",
-          "selected_answers": ""
-        },
-        {
-          "id": 777278,
-          "date": "Mon 16 Jan 2023 04:07",
-          "username": "Bulti",
-          "content": "Correct answer is B.  Using CloudWatch event, we can detect CodeDeploy State changes like Failures and then chose Lambda to determine the nature of the Deployment failure and have the root cause sent to SNS which can send an email to the subscribers.",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -4266,7 +4242,7 @@ var DOP_C01_Part1 =
           "id": 52828,
           "date": "Thu 30 Sep 2021 12:18",
           "username": "AlexTunAWStamR",
-          "content": "A is right <br>https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.htmlAWS Config if for checking configurations. i think the answer is B",
+          "content": "A is right<br>https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.htmlAWS Config if for checking configurations. i think the answer is B",
           "upvote_count": "12",
           "selected_answers": ""
         },
@@ -4285,6 +4261,14 @@ var DOP_C01_Part1 =
           "content": "I go with B",
           "upvote_count": "2",
           "selected_answers": ""
+        },
+        {
+          "id": 34190,
+          "date": "Fri 24 Sep 2021 01:21",
+          "username": "un",
+          "content": "B is the right option",
+          "upvote_count": "3",
+          "selected_answers": ""
         }
       ]
     },
@@ -4294,7 +4278,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A development team is using AWS CodeCommit to version control application code and AWS CodePipeline to orchestrate software deployments. The team has decided to use a remote master branch as the trigger for the pipeline to integrate code changes. A developer has pushed code changes to the CodeCommit repository, but noticed that the pipeline had no reaction, even after 10 minutes.<br>Which of the following actions should be taken to troubleshoot this issue?<br><br><br></p>",
+      "question_text": "<p>A development team is using AWS CodeCommit to version control application code and AWS CodePipeline to orchestrate software deployments. The team has decided to use a remote master branch as the trigger for the pipeline to integrate code changes. A developer has pushed code changes to the CodeCommit repository, but noticed that the pipeline had no reaction, even after 10 minutes.<br>Which of the following actions should be taken to troubleshoot this issue?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -4329,7 +4313,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 25 discussion",
       "discusstion": [
         {
           "id": 326025,
@@ -4348,14 +4332,6 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
-          "id": 777280,
-          "date": "Mon 16 Jan 2023 04:09",
-          "username": "Bulti",
-          "content": "Answer A is correct.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
           "id": 760305,
           "date": "Wed 28 Dec 2022 21:36",
           "username": "ceros399",
@@ -4367,7 +4343,7 @@ var DOP_C01_Part1 =
           "id": 745503,
           "date": "Wed 14 Dec 2022 23:29",
           "username": "luk3k0",
-          "content": "\\\"the pipeline had no reaction\\\" => pipeline is not run, so BCD rule out",
+          "content": "\\\"the pipeline had no reaction\\\" > pipeline is not run, so BCD rule out",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: A"
         },
@@ -4399,7 +4375,7 @@ var DOP_C01_Part1 =
           "id": 510791,
           "date": "Tue 28 Dec 2021 05:18",
           "username": "sg0206",
-          "content": "A is correct <br>B & C are wrong as developer is able to push the code that mean he has access.<br>D is can be another option but it has not reactionmeans even logs are not generated",
+          "content": "A is correct<br>B & C are wrong as developer is able to push the code that mean he has access.<br>D is can be another option but it has not reactionmeans even logs are not generated",
           "upvote_count": "2",
           "selected_answers": ""
         },
@@ -4459,7 +4435,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer is deploying a new version of a company's application in an AWS CodeDeploy deployment group associated with its Amazon EC2 instances.<br>After some time, the deployment fails. The engineer realizes that all the events associated with the specific deployment ID are in a Skipped status, and code was not deployed in the instances associated with the deployment group.<br>What are valid reasons for this failure? (Choose two.)<br><br><br></p>",
+      "question_text": "<p>A DevOps engineer is deploying a new version of a company's application in an AWS CodeDeploy deployment group associated with its Amazon EC2 instances.<br>After some time, the deployment fails. The engineer realizes that all the events associated with the specific deployment ID are in a Skipped status, and code was not deployed in the instances associated with the deployment group.<br>What are valid reasons for this failure? (Choose two.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -4499,7 +4475,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 26 discussion",
       "discusstion": [
         {
           "id": 326746,
@@ -4518,18 +4494,10 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
-          "id": 777293,
-          "date": "Mon 16 Jan 2023 04:49",
-          "username": "Bulti",
-          "content": "Answer is A and D. There is a slight chance that the answer is D and E as well. But I will go with A and D.  E is a possibility because all EC2 lifecycle events are supposed to be skipped when the Deployment ID is in the skipped state. And when the documentation mentions EC2 lifecycle events I am not sure if it means the CodeDeploy lifecycle hook events for EC2. If so then none of those lifecycle hook events can be executed if there is a missing appspec.yml file.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
           "id": 756120,
           "date": "Mon 26 Dec 2022 02:28",
           "username": "apcloud",
-          "content": "A,D.  <br>I spent a bunch of time reviewing this <br>https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting-deployments.html#troubleshooting-skipped-lifecycle-events",
+          "content": "A,D. <br>I spent a bunch of time reviewing this<br>https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting-deployments.html#troubleshooting-skipped-lifecycle-events",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -4633,7 +4601,7 @@ var DOP_C01_Part1 =
           "id": 316949,
           "date": "Sat 25 Sep 2021 05:25",
           "username": "1234567JWhyIronMan",
-          "content": "ans: CD <br>https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting-deployments.html#troubleshooting-skipped-lifecycle-eventsYou say CD bot your reference is for AD",
+          "content": "ans: CD<br>https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting-deployments.html#troubleshooting-skipped-lifecycle-eventsYou say CD bot your reference is for AD",
           "upvote_count": "12",
           "selected_answers": ""
         },
@@ -4653,7 +4621,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company has an application that is using a MySQL-compatible Amazon Aurora Multi-AZ DB cluster as the database. A cross-Region read replica has been created for disaster recovery purposes. A DevOps engineer wants to automate the promotion of the replica so it becomes the primary database instance in the event of a failure.<br>Which solution will accomplish this?<br><br><br></p>",
+      "question_text": "<p>A company has an application that is using a MySQL-compatible Amazon Aurora Multi-AZ DB cluster as the database. A cross-Region read replica has been created for disaster recovery purposes. A DevOps engineer wants to automate the promotion of the replica so it becomes the primary database instance in the event of a failure.<br>Which solution will accomplish this?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -4688,7 +4656,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 27 discussion",
       "discusstion": [
         {
           "id": 316938,
@@ -4707,18 +4675,10 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
-          "id": 777300,
-          "date": "Mon 16 Jan 2023 05:01",
-          "username": "Bulti",
-          "content": "D is the right answer. We need CloudWatch events to detect errors from the Aurora CloudWatch logs and then invoke a Lambda function to promote the Read Replica in another region. The Lambda can run in the primary region and update the Parameter store in the Primary region with the newly promoted cluster address.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
           "id": 756131,
           "date": "Mon 26 Dec 2022 02:56",
           "username": "apcloud",
-          "content": "This one is hard to understand, but my bust understanding is: A and b are wrong because they use cloud trail, you would want event bridge or cloud watch events or something else. C is wrong because it’s using lambda to update cloud formation template when you really need to be adjusting the infra in real time not waiting on cloud formation. Knowing that D is the only possible choice that makes sense",
+          "content": "This one is hard to understand, but my bust understanding is: A and b are wrong because they use cloud trail, you would want event bridge or cloud watch events or something else. C is wrong because it's using lambda to update cloud formation template when you really need to be adjusting the infra in real time not waiting on cloud formation. Knowing that D is the only possible choice that makes sense",
           "upvote_count": "3",
           "selected_answers": ""
         },
@@ -4726,7 +4686,7 @@ var DOP_C01_Part1 =
           "id": 755839,
           "date": "Sun 25 Dec 2022 17:59",
           "username": "Arkarterapcloud",
-          "content": "I think choice D not right <br>REF : https://aws.amazon.com/blogs/architecture/implementing-multi-region-disaster-recovery-using-event-driven-architecture/-> Parameter Store is hosted in multiple Availability Zones in an AWS Region ->I go with choice A from this link below.<br>https://aws.amazon.com/blogs/database/cross-region-disaster-recovery-using-amazon-aurora-global-database-for-amazon-aurora-postgresql/A talks about RDS, the question is about aurora",
+          "content": "I think choice D not right<br>REF : https://aws.amazon.com/blogs/architecture/implementing-multi-region-disaster-recovery-using-event-driven-architecture/-> Parameter Store is hosted in multiple Availability Zones in an AWS Region ->I go with choice A from this link below.<br>https://aws.amazon.com/blogs/database/cross-region-disaster-recovery-using-amazon-aurora-global-database-for-amazon-aurora-postgresql/A talks about RDS, the question is about aurora",
           "upvote_count": "12",
           "selected_answers": "Selected Answer: A"
         },
@@ -4757,18 +4717,10 @@ var DOP_C01_Part1 =
         {
           "id": 722072,
           "date": "Sat 19 Nov 2022 16:05",
-          "username": "alinatofartosh",
-          "content": "A: Route 53 is the only one which does not go down in case of region going down.<br>D is incorrect because Parameter Store goes down together with region.But answer A uses CloudTrail which cannot detect failures of the database. Thus, this cannot be correct.",
-          "upvote_count": "21",
+          "username": "alinato",
+          "content": "A: Route 53 is the only one which does not go down in case of region going down.<br>D is incorrect because Parameter Store goes down together with region.",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 780351,
-          "date": "Wed 18 Jan 2023 20:17",
-          "username": "fartosh",
-          "content": "But answer A uses CloudTrail which cannot detect failures of the database. Thus, this cannot be correct.",
-          "upvote_count": "1",
-          "selected_answers": ""
         },
         {
           "id": 665960,
@@ -4826,12 +4778,12 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>An application has microservices spread across different AWS accounts and is integrated with an on-premises legacy system for some of its functionality.<br>Because of the segmented architecture and missing logs, every time the application experiences issues, it is taking too long to gather the logs to identify the issues. A DevOps Engineer must fix the log aggregation process and provide a way to centrally analyze the logs.<br>Which is the MOST efficient and cost-effective solution?<br><br><br></p>",
+      "question_text": "<p>A healthcare provider has a hybrid architecture that includes 120 on-premises VMware servers running RedHat and 50 Amazon EC2 instances running Amazon<br>Linux. The company is in the middle of an all-in migration to AWS and wants to implement a solution for collecting information from the on-premises virtual machines and the EC2 instances for data analysis. The information includes:<br>- Operating system type and version<br>- Data for installed applications<br>- Network configuration information, such as MAC and IP addresses<br>- Amazon EC2 instance AMI ID and IAM profile<br>How can these requirements be met with the LEAST amount of administration?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: D</p>",
+      "general_feedback": "<p>Correct Answer: C</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -4839,180 +4791,204 @@ var DOP_C01_Part1 =
           "question_id": "#28",
           "answers": [
             {
-              "choice": "<p>A. Collect system logs and application logs by using the Amazon CloudWatch Logs agent. Use the Amazon S3 API to export on-premises logs, and store the logs in an S3 bucket in a central account. Build an Amazon EMR cluster to reduce the logs and derive the root cause.<br></p>",
+              "choice": "<p>A. Write a shell script to run as a cron job on EC2 instances to collect and push the data to Amazon S3. For on-premises resources, use VMware vSphere to collect the data and write it into a file gateway for storing the data in S3. Finally, use Amazon Athena on the S3 bucket for analytics.<br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>B. Collect system logs and application logs by using the Amazon CloudWatch Logs agent. Use the Amazon S3 API to import on-premises logs. Store all logs in S3 buckets in individual accounts. Use Amazon Macie to write a query to search for the required specific event-related data point.<br></p>",
+              "choice": "<p>B. Use a script on the on-premises virtual machines as well as the EC2 instances to gather and push the data into Amazon S3, and then use Amazon Athena for analytics.<br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>C. Collect system logs and application logs using the Amazon CloudWatch Logs agent. Install the CloudWatch Logs agent on the on-premises servers. Transfer all logs from AWS to the on-premises data center. Use an Amazon Elasticsearch Logstash Kibana stack to analyze logs on premises.<br></p>",
-              "correct": false,
-              "feedback": ""
-            },
-            {
-              "choice": "<p>D. Collect system logs and application logs by using the Amazon CloudWatch Logs agent. Install a CloudWatch Logs agent for on-premises resources. Store all logs in an S3 bucket in a central account. Set up an Amazon S3 trigger and an AWS Lambda function to analyze incoming logs and automatically identify anomalies. Use Amazon Athena to run ad hoc queries on the logs in the central account.<br></p>",
+              "choice": "<p>C. Install AWS Systems Manager agents on both the on-premises virtual machines and the EC2 instances. Enable inventory collection and configure resource data sync to an Amazon S3 bucket to analyze the data with Amazon Athena.<br></p>",
               "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Use AWS Application Discovery Service for deploying Agentless Discovery Connector in the VMware environment and Discovery Agents on the EC2 instances for collecting the data. Then use the AWS Migration Hub Dashboard for analytics.<br></p>",
+              "correct": false,
               "feedback": ""
             }
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 28 discussion",
       "discusstion": [
         {
-          "id": 21049,
-          "date": "Mon 20 Sep 2021 19:32",
-          "username": "marwan",
-          "content": "I believe D is the correct answer",
-          "upvote_count": "20",
+          "id": 65894,
+          "date": "Mon 27 Sep 2021 07:21",
+          "username": "eleGreatFunana",
+          "content": "C is correct: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-inventory.html<br>Inventory will includeData for installed applications andAmazon EC2 instance AMI ID and IAM profile. What is asked in the question.<br>While Application discovery AWS Application Discovery Service collects server hostnames, IP addresses, MAC addresses, and resource allocation and utilization details of key resources including CPU, network, memory, and disk.<br>I would have gone for D as its least invasive and there are company policies which don't let you install agents just like that ...but to collect data for installed applications can't be collected using Application Discovery ..so correct answer should be CC.  For simplicity, here is the data that can be discovered by the discovery agent:<br><br>https://docs.aws.amazon.com/application-discovery/latest/userguide/agent-data-collected.html<br><br>Note the LACK of IAM info.",
+          "upvote_count": "151",
           "selected_answers": ""
         },
         {
-          "id": 95303,
-          "date": "Wed 13 Oct 2021 11:11",
-          "username": "Raj9",
-          "content": "A - when cloud watch agent can push the logs automatically, there is no reason to use s3 api<br>B - when cloud watch agent can push the logs automatically, there is no reason to use s3 api. Also Macie is for PII<br>C - \\\"Transfer all logs from AWS to the on-premises data cente\\\" make it a bad choice. Also ELK is more expensive and will need EC2 provisioning<br>D - will work",
-          "upvote_count": "10",
-          "selected_answers": ""
-        },
-        {
-          "id": 777301,
-          "date": "Mon 16 Jan 2023 05:03",
-          "username": "Bulti",
-          "content": "D is the correct answer",
+          "id": 509910,
+          "date": "Mon 27 Dec 2021 00:54",
+          "username": "GreatFunana",
+          "content": "C.  For simplicity, here is the data that can be discovered by the discovery agent:<br><br>https://docs.aws.amazon.com/application-discovery/latest/userguide/agent-data-collected.html<br><br>Note the LACK of IAM info.",
           "upvote_count": "1",
           "selected_answers": ""
         },
         {
-          "id": 655725,
-          "date": "Thu 01 Sep 2022 05:15",
-          "username": "colinquek",
-          "content": "will work",
-          "upvote_count": "2",
+          "id": 23645,
+          "date": "Sun 19 Sep 2021 20:03",
+          "username": "BeastX",
+          "content": "C is correct",
+          "upvote_count": "5",
+          "selected_answers": ""
+        },
+        {
+          "id": 546659,
+          "date": "Sun 13 Feb 2022 20:18",
+          "username": "blueorca",
+          "content": "D is the right answer. C is not least adminitrative resources.",
+          "upvote_count": "1",
           "selected_answers": "Selected Answer: D"
         },
         {
-          "id": 412610,
-          "date": "Sun 07 Nov 2021 10:28",
-          "username": "xxxdolorxxx",
-          "content": "I believe it's D. ",
+          "id": 507901,
+          "date": "Thu 23 Dec 2021 14:16",
+          "username": "Balki",
+          "content": "D is correct. Although \\\"C\\\" solution is valid, this is definitely not the one that can be implemented with the least amount of effort. Although you can use the SSM Agent to fetch all of the required information about your servers, the task of installing it to each and every on-premises VMWare server is a herculean task which entails a lot of execution time. Moreover, the scenario mentioned that the company is doing an all-in migration of their on-premises resources to AWS which means that installing the SSM agent is not appropriate. A better solution would be to use Agentless Discovery Connector of the AWS Application Discovery Service to your on-premises VMware vCenter, which can easily fetch the required information from hundreds of VMware servers.",
           "upvote_count": "1",
           "selected_answers": ""
         },
         {
-          "id": 321846,
-          "date": "Sun 07 Nov 2021 05:44",
+          "id": 501231,
+          "date": "Tue 14 Dec 2021 09:50",
+          "username": "nqthien041292",
+          "content": "Vote C",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 447676,
+          "date": "Sun 07 Nov 2021 13:47",
+          "username": "oopsy",
+          "content": "Go C -1",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 323406,
+          "date": "Thu 04 Nov 2021 08:50",
+          "username": "nebojsaMasiejasJASnipes",
+          "content": "The answer is D<br>References:<br><br>https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html<br><br>https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-connector.html<br><br>https://docs.aws.amazon.com/application-discovery/latest/userguide/dashboard.htmlWrong. Not aligned with LEAST amount of administration. Systems Manager is by far the easiest implementationDid I miss something? install system manager agent on each of the 120 systems is not a joke",
+          "upvote_count": "422",
+          "selected_answers": ""
+        },
+        {
+          "id": 404092,
+          "date": "Sun 07 Nov 2021 02:09",
+          "username": "siejasJASnipes",
+          "content": "Wrong. Not aligned with LEAST amount of administration. Systems Manager is by far the easiest implementationDid I miss something? install system manager agent on each of the 120 systems is not a joke",
+          "upvote_count": "22",
+          "selected_answers": ""
+        },
+        {
+          "id": 474262,
+          "date": "Mon 08 Nov 2021 12:58",
+          "username": "JASnipes",
+          "content": "Did I miss something? install system manager agent on each of the 120 systems is not a joke",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 320413,
+          "date": "Thu 04 Nov 2021 04:47",
           "username": "WhyIronMan",
-          "content": "I'll go with D",
+          "content": "I'll go with C",
           "upvote_count": "3",
           "selected_answers": ""
         },
         {
-          "id": 234858,
-          "date": "Sat 06 Nov 2021 06:05",
-          "username": "dnevado",
-          "content": "D definitely. Agent on premise and collect logs in S3 centralized",
+          "id": 302645,
+          "date": "Thu 04 Nov 2021 01:31",
+          "username": "Jordanro",
+          "content": "I will go with C<br>https://aws.amazon.com/application-discovery/faqs/<br>Q: Can I run agents in my EC2 instances?<br>Yes. You can install the AWS Discovery Agents on your EC2 instances to perform discovery and report upon performance information, network connections, and running processes, just as for any other server.<br>Q: What kind of information is captured by AWS Application Discovery Service?<br>AWS Application Discovery Service is designed to capture a variety of data including static configuration such as server hostnames, IP addresses, MAC addresses, CPU allocation, network throughput, memory allocation, disk resource allocations, DNS servers. It also captures resource utilization metrics such as CPU usage and memory usage. In addition, the AWS Application Discovery Agent can help determine server workloads and network relationships by identifying network connections between systems.<br><br>But Discovery Agent doesn't collectEC2 instance AMI ID and IAM profile information.<br>https://docs.aws.amazon.com/application-discovery/latest/userguide/agent-data-collected.html",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 276146,
+          "date": "Wed 03 Nov 2021 07:12",
+          "username": "bnagaraja9099",
+          "content": "I will go with D too. Most AWS questions are approach related rather than gotchas. Discovery service has the least amount of administration and plays a big role in on-prem migration.",
           "upvote_count": "1",
           "selected_answers": ""
         },
         {
-          "id": 223223,
-          "date": "Tue 26 Oct 2021 18:29",
+          "id": 232048,
+          "date": "Tue 02 Nov 2021 01:00",
+          "username": "svjl",
+          "content": "C - https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-inventory.html",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 229850,
+          "date": "Mon 01 Nov 2021 19:56",
+          "username": "Coffeinerd",
+          "content": "Answer: C is the right one. https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-inventory-schema.html<br><br>Wrong:<br>A - Writing scripts is effort intensive, not DevOps or AWS related, a lot of manual tasks involved as well<br>B - again scripted options are not good<br>C - right one, even though effort intensive to install it is the ONLY alternative that cover all requirements, so only one that is right.<br>D - less effort but do not deliver application information. So not right.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 228179,
+          "date": "Mon 01 Nov 2021 16:50",
+          "username": "saddly",
+          "content": "The issue of D is Discovery Agent doesn't collect IAM inform.<br>C sounds the only option, though installation is a headache.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 223202,
+          "date": "Mon 01 Nov 2021 14:20",
           "username": "jackdryan",
-          "content": "I'll go with D",
-          "upvote_count": "4",
-          "selected_answers": ""
-        },
-        {
-          "id": 206116,
-          "date": "Mon 18 Oct 2021 06:13",
-          "username": "ChauPhan",
-          "content": "C looks fine if the logs transfer to AWS ElasticSearch not the on-premise data center. I'll go with D",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 182288,
-          "date": "Mon 18 Oct 2021 03:32",
-          "username": "df1228",
-          "content": "I choose D",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 153730,
-          "date": "Sat 16 Oct 2021 17:25",
-          "username": "Augustoosouza",
-          "content": "Another important factor is \\\"Install the CloudWatch Logs agent on the on-premises servers\\\"<br>without that we can't get logs from local servers. I choose D. ",
+          "content": "I'll go with C",
           "upvote_count": "2",
           "selected_answers": ""
         },
         {
-          "id": 77883,
-          "date": "Fri 08 Oct 2021 23:58",
-          "username": "hanouxlFireman",
-          "content": "Why not A ?EMR cluster would be too complicated and more cost. Exporting logs from on premise to AWS using the CLI would be also costly and inefficient. You want the Unified CW Logs Agent.",
-          "upvote_count": "11",
-          "selected_answers": ""
-        },
-        {
-          "id": 220497,
-          "date": "Tue 26 Oct 2021 10:22",
-          "username": "xlFireman",
-          "content": "EMR cluster would be too complicated and more cost. Exporting logs from on premise to AWS using the CLI would be also costly and inefficient. You want the Unified CW Logs Agent.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 62160,
-          "date": "Fri 08 Oct 2021 15:01",
-          "username": "yassu",
-          "content": "D is correct",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 58513,
-          "date": "Thu 07 Oct 2021 15:44",
-          "username": "AlexTunxlFireman",
-          "content": "C - logs aggregation <br>https://medium.com/@sid_sharma/aws-emr-log-aggregation-and-visualization-using-lambda-elasticsearch-and-kibana-5b734fd5f812Incorrect, we want the most cost efficient method. This method described in C would accrue a lot of charges to move all the log files to AWS (existing and future logs). D's description just inputs current and future log files to an S3 bucket. Additionally, setting up an ELK stack would incur much more cost than an S3 data events > lambda function and Athena on top of that.",
-          "upvote_count": "41",
-          "selected_answers": ""
-        },
-        {
-          "id": 220496,
-          "date": "Thu 21 Oct 2021 17:04",
-          "username": "xlFireman",
-          "content": "Incorrect, we want the most cost efficient method. This method described in C would accrue a lot of charges to move all the log files to AWS (existing and future logs). D's description just inputs current and future log files to an S3 bucket. Additionally, setting up an ELK stack would incur much more cost than an S3 data events > lambda function and Athena on top of that.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 55243,
-          "date": "Wed 06 Oct 2021 23:20",
-          "username": "xaocho",
-          "content": "It is D",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 36062,
-          "date": "Tue 05 Oct 2021 14:49",
-          "username": "dinhvu",
-          "content": "I choose D. <br>This one \\\"Transfer all logs from AWS to the on-premises data center\\\" makes C is not a good choice.",
+          "id": 222547,
+          "date": "Sun 31 Oct 2021 19:37",
+          "username": "NorthStar2010",
+          "content": "I'll go with D.  It's faster to install 50 agents to Amazon EC2 than 120 on VMware virtual machine.Imagine if you have thousands of VM on-prem, no additional work is needed since vCenter will provide the information automatically, so D is the right answer for me.",
           "upvote_count": "2",
           "selected_answers": ""
         },
         {
-          "id": 33913,
-          "date": "Sun 03 Oct 2021 00:51",
-          "username": "un",
-          "content": "D is the right answer",
-          "upvote_count": "3",
+          "id": 220281,
+          "date": "Fri 22 Oct 2021 23:41",
+          "username": "SamChanxlFiremanrobbyyy",
+          "content": "Seems \\\"C\\\" is the most popular answer, but seems it cannot collect \\\"Amazon EC2 instance AMI ID and IAM profile\\\", any idea on this?<br>https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-inventory.htmlAnswer is D.  C is not LEAST effort.\\\"C\\\" SSM Agent can collect \\\"Amazon EC2 instance AMI ID and IAM profile\\\", Check this<br>https://docs.aws.amazon.com/zh_tw/systems-manager/latest/userguide/sysman-inventory-schema.html",
+          "upvote_count": "111",
+          "selected_answers": ""
+        },
+        {
+          "id": 222342,
+          "date": "Sun 24 Oct 2021 11:42",
+          "username": "xlFireman",
+          "content": "Answer is D.  C is not LEAST effort.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 527194,
+          "date": "Wed 19 Jan 2022 04:17",
+          "username": "robbyyy",
+          "content": "\\\"C\\\" SSM Agent can collect \\\"Amazon EC2 instance AMI ID and IAM profile\\\", Check this<br>https://docs.aws.amazon.com/zh_tw/systems-manager/latest/userguide/sysman-inventory-schema.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 219884,
+          "date": "Fri 22 Oct 2021 05:07",
+          "username": "xlFireman",
+          "content": "Answer is D.  Option C is incorrect because although this solution is valid, this is definitely not the one that can be implemented with the least amount of effort. Although you can use the SSM Agent to fetch all of the required information about your servers, the task of installing it to each and every on-premises VMWare server is a herculean task which entails a lot of execution time. Moreover, the scenario mentioned that the company is doing an all-in migration of their on-premises resources to AWS which means that installing the SSM agent is not appropriate. A better solution would be to use Agentless Discovery Connector of the AWS Application Discovery Service to your on-premises VMware vCenter, which can easily fetch the required information from hundreds of VMware servers.",
+          "upvote_count": "2",
           "selected_answers": ""
         }
       ]
@@ -5023,7 +4999,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company's DevOps engineer is working in a multi-account environment. The company uses AWS Transit Gateway to route all outbound traffic through a network operations account. In the network operations account, all account traffic passes through a firewall appliance for inspection before the traffic goes to an internet gateway.<br>The firewall appliance sends logs to Amazon CloudWatch Logs and includes event severities of CRITICAL, HIGH, MEDIUM, LOW, and INFO. The security team wants to receive an alert if any CRITICAL events occur.<br>What should the DevOps engineer do to meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A company's DevOps engineer is working in a multi-account environment. The company uses AWS Transit Gateway to route all outbound traffic through a network operations account. In the network operations account, all account traffic passes through a firewall appliance for inspection before the traffic goes to an internet gateway.<br>The firewall appliance sends logs to Amazon CloudWatch Logs and includes event severities of CRITICAL, HIGH, MEDIUM, LOW, and INFO. The security team wants to receive an alert if any CRITICAL events occur.<br>What should the DevOps engineer do to meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -5058,24 +5034,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 29 discussion",
       "discusstion": [
-        {
-          "id": 777927,
-          "date": "Mon 16 Jan 2023 17:31",
-          "username": "Bulti",
-          "content": "The answer is B as firewall appliances are already sending logs to Cloudwatch logs.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 770697,
-          "date": "Mon 09 Jan 2023 18:37",
-          "username": "PepsNick",
-          "content": "Answer C is in fact correct. This blog has all the information required regarding GuardDuty<br>https://aws.amazon.com/blogs/security/automatically-block-suspicious-traffic-with-aws-network-firewall-and-amazon-guardduty/",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
-        },
         {
           "id": 760389,
           "date": "Wed 28 Dec 2022 23:30",
@@ -5140,7 +5100,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company recently migrated its legacy application from on-premises to AWS. The application is hosted on Amazon EC2 instances behind an Application Load<br>Balancer, which is behind Amazon API Gateway. The company wants to ensure users experience minimal disruptions during any deployment of a new version of the application. The company also wants to ensure it can quickly roll back updates if there is an issue.<br>Which solution will meet these requirements with MINIMAL changes to the application?<br><br><br></p>",
+      "question_text": "<p>A company recently migrated its legacy application from on-premises to AWS. The application is hosted on Amazon EC2 instances behind an Application Load<br>Balancer, which is behind Amazon API Gateway. The company wants to ensure users experience minimal disruptions during any deployment of a new version of the application. The company also wants to ensure it can quickly roll back updates if there is an issue.<br>Which solution will meet these requirements with MINIMAL changes to the application?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -5175,13 +5135,13 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 30 discussion",
       "discusstion": [
         {
           "id": 326773,
           "date": "Tue 12 Oct 2021 05:12",
           "username": "WhyIronMan",
-          "content": "I'll got with A<br><br>B) required a lot of changes and the DNS can take longer to propagate <br>C) API gateway cannot choose the target group, this is done by de ELB <br>D) ELB Target groups changes require some work, you can just pointo to a new loadbalancer",
+          "content": "I'll got with A<br><br>B) required a lot of changes and the DNS can take longer to propagate<br>C) API gateway cannot choose the target group, this is done by de ELB<br>D) ELB Target groups changes require some work, you can just pointo to a new loadbalancer",
           "upvote_count": "11",
           "selected_answers": ""
         },
@@ -5202,14 +5162,6 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
-          "id": 777943,
-          "date": "Mon 16 Jan 2023 17:40",
-          "username": "Bulti",
-          "content": "Correct Answer is A.  API Gateway supports canary deployment on a deployment stage before you direct all traffic to that stage. A parallel environment means we will create a new ALB and a target group that will target a new set of EC2 instances on which the newer version of the app will be deployed. So the canary setting associated to the new version of the API will connect with the new ALB instance which in turn will direct the traffic to the new EC2 instances on which the newer version of the application is deployed.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
           "id": 753731,
           "date": "Fri 23 Dec 2022 00:11",
           "username": "saeidp",
@@ -5221,7 +5173,7 @@ var DOP_C01_Part1 =
           "id": 739250,
           "date": "Thu 08 Dec 2022 16:55",
           "username": "ericzaj",
-          "content": "A.  Question isn't asking about impacting minimal users, it's asking for minimal disruption. D.  Simple and elegant with minimal changes to the application.",
+          "content": "A.  Question isn't asking about impacting minimal users, it's asking for minimal disruption.D.  Simple and elegant with minimal changes to the application.",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: D"
         },
@@ -5229,7 +5181,7 @@ var DOP_C01_Part1 =
           "id": 736854,
           "date": "Tue 06 Dec 2022 14:37",
           "username": "Milind",
-          "content": "Why Canary Deployment?<br>Canary deployment benefits include zero downtime, easy rollout and quick rollback – plus the added safety from the gradual rollout process. It also has some drawbacks – the expense of maintaining multiple server instances, the difficult clone-or-don’t-clone database decision.<br>Source: https://www.split.io/glossary/canary-deployment/",
+          "content": "Why Canary Deployment?<br>Canary deployment benefits include zero downtime, easy rollout and quick rollback =E2=80=93 plus the added safety from the gradual rollout process. It also has some drawbacks =E2=80=93 the expense of maintaining multiple server instances, the difficult clone-or-don't-clone database decision.<br>Source: https://www.split.io/glossary/canary-deployment/",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -5329,12 +5281,12 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company recently launched an application that is more popular than expected. The company wants to ensure the application can scale to meet increasing demands and provide reliability using multiple Availability Zones (AZs). The application runs on a fleet of Amazon EC2 instances behind an Application Load<br>Balancer (ALB). A DevOps engineer has created an Auto Scaling group across multiple AZs for the application. Instances launched in the newly added AZs are not receiving any traffic for the application.<br>What is likely causing this issue?<br><br><br></p>",
+      "question_text": "<p>A DevOps Engineer is asked to implement a strategy for deploying updates to a web application with zero downtime. The application infrastructure is defined in<br>AWS CloudFormation and is made up of an Amazon Route 53 record, an Application Load Balancer, Amazon EC2 instances in an EC2 Auto Scaling group, and<br>Amazon DynamoDB tables. To avoid downtime, there must be an active instance serving the application at all times.<br>Which strategies will ensure the deployment happens with zero downtime? (Choose two.)<br></p>",
       "mark": 1,
-      "is_partially_correct": false,
+      "is_partially_correct": true,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: D</p>",
+      "general_feedback": "<p>Correct Answer: AC</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -5342,92 +5294,153 @@ var DOP_C01_Part1 =
           "question_id": "#31",
           "answers": [
             {
-              "choice": "<p>A. Auto Scaling groups can create new instances in a single AZ only.<br></p>",
-              "correct": false,
-              "feedback": ""
-            },
-            {
-              "choice": "<p>B. The EC2 instances have not been manually associated to the ALB. <br></p>",
-              "correct": false,
-              "feedback": ""
-            },
-            {
-              "choice": "<p>C. The ALB should be replaced with a Network Load Balancer (NLB).<br></p>",
-              "correct": false,
-              "feedback": ""
-            },
-            {
-              "choice": "<p>D. The new AZ has not been added to the ALB. <br></p>",
+              "choice": "<p>A. In the CloudFormation template, modify the AWS::AutoScaling::AutoscalingGroup resource and add an UpdatePolicy attribute to define the required elements for a deployment with zero downtime.<br></p>",
               "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. In the CloudFormation template, modify the AWS:: AutoScaling::DeploymentUpdates resource and add an UpdatePolicy attribute to define the required elements for a deployment with zero downtime.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Add a new Application Load Balancer and Auto Scaling group to the CloudFormation template. Deploy new changes to the inactive Auto Scaling group. Use Route 53 to change the active Application Load Balancer.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Add a new Application Load Balancer and Auto Scaling group to the CloudFormation template. Modify the AWS::AutoScaling::AutoScalingGroup resource and add an UpdatePolicy attribute to perform rolling updates.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. In the CloudFormation template, modify the UpdatePolicy attribute for the CloudFormation stack and specify the Auto Scaling group that will be updated. Configure MinSuccessfulInstancesPercent and PauseTime to ensure the deployment happens with zero downtime.<br></p>",
+              "correct": false,
               "feedback": ""
             }
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 31 discussion",
       "discusstion": [
         {
-          "id": 307871,
-          "date": "Wed 06 Oct 2021 12:33",
-          "username": "RLai",
-          "content": "D - https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-add-availability-zone.html",
-          "upvote_count": "14",
+          "id": 320954,
+          "date": "Sun 10 Oct 2021 05:31",
+          "username": "WhyIronMan",
+          "content": "I'll go with A, C<br>Rolling updates + blue green deployments",
+          "upvote_count": "6",
           "selected_answers": ""
         },
         {
-          "id": 777950,
-          "date": "Mon 16 Jan 2023 17:46",
-          "username": "Bulti",
-          "content": "Answer is D.  AZ needs to be added to the ALB manually so that ALB nodes are created in that ALB. ",
+          "id": 319094,
+          "date": "Thu 07 Oct 2021 12:17",
+          "username": "Jordanro",
+          "content": "A,C<br>A is to do rolling updates, C is to do a blue-green deployment.",
+          "upvote_count": "5",
+          "selected_answers": ""
+        },
+        {
+          "id": 427523,
+          "date": "Wed 03 Nov 2021 09:54",
+          "username": "NNHAN",
+          "content": "CE are answers",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 362962,
+          "date": "Tue 02 Nov 2021 17:58",
+          "username": "feelgreat",
+          "content": "ans: A and E.  Combined both provides a complete solution",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 333740,
+          "date": "Thu 28 Oct 2021 21:50",
+          "username": "CeckGix",
+          "content": "Answers are A and D",
           "upvote_count": "1",
           "selected_answers": ""
         },
         {
-          "id": 750284,
-          "date": "Mon 19 Dec 2022 23:10",
-          "username": "benjl",
-          "content": "D - https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html",
+          "id": 333350,
+          "date": "Sat 23 Oct 2021 12:33",
+          "username": "devoppGreatFunana",
+          "content": "changing answer to A,C<br>D is nonsensical with explicit resource creation, and E is not right since ASG & UpdatePolicy specified the wrong way roundso only left with C as a bad choice.This guy \\\"DevOps\\\" like a pro.",
+          "upvote_count": "41",
+          "selected_answers": ""
+        },
+        {
+          "id": 510052,
+          "date": "Mon 27 Dec 2021 07:04",
+          "username": "GreatFunana",
+          "content": "This guy \\\"DevOps\\\" like a pro.",
           "upvote_count": "1",
           "selected_answers": ""
         },
         {
-          "id": 736083,
-          "date": "Mon 05 Dec 2022 17:08",
-          "username": "AlbertCfartosh",
-          "content": "C - https://aws.amazon.com/about-aws/whats-new/2022/11/application-load-balancers-turning-off-cross-zone-load-balancing-per-target-group/The link you pasted actually explains that you can TURN OFF cross-zone load balancing. Meaning that by default, ALB routes the traffic across AZs.",
-          "upvote_count": "11",
-          "selected_answers": "Selected Answer: C"
+          "id": 333345,
+          "date": "Sat 23 Oct 2021 09:36",
+          "username": "devoppGreatFunana",
+          "content": "Ans is A, D<br>D for ASG UpdatePolicy which has AutoScalingRollingUpdate, so u dont have to explicitly do it manually, which is what optionC does.Read the answer again: \\\"D.  Add a new Application Load Balancer and Auto Scaling group to the CloudFormation template. Modify the AWS::AutoScaling::AutoScalingGroup resource and add an UpdatePolicy attribute to perform rolling updates.\\\"<br><br>Adding a new Auto Scaling Group to the CloudFormation template does nothing. How do you tell it to direct traffic to it? What do you do with the old resources that are still live?<br><br>This answer is a gotcha. If worded correctly, it could have been correct, but its not.<br><br>Its AC. ",
+          "upvote_count": "21",
+          "selected_answers": ""
         },
         {
-          "id": 780366,
-          "date": "Wed 18 Jan 2023 20:31",
-          "username": "fartosh",
-          "content": "The link you pasted actually explains that you can TURN OFF cross-zone load balancing. Meaning that by default, ALB routes the traffic across AZs.",
+          "id": 510051,
+          "date": "Mon 27 Dec 2021 07:04",
+          "username": "GreatFunana",
+          "content": "Read the answer again: \\\"D.  Add a new Application Load Balancer and Auto Scaling group to the CloudFormation template. Modify the AWS::AutoScaling::AutoScalingGroup resource and add an UpdatePolicy attribute to perform rolling updates.\\\"<br><br>Adding a new Auto Scaling Group to the CloudFormation template does nothing. How do you tell it to direct traffic to it? What do you do with the old resources that are still live?<br><br>This answer is a gotcha. If worded correctly, it could have been correct, but its not.<br><br>Its AC. ",
           "upvote_count": "1",
           "selected_answers": ""
         },
         {
-          "id": 736077,
-          "date": "Mon 05 Dec 2022 17:01",
-          "username": "AlbertC",
-          "content": "C - There is a difference between ALB and NLB in AWS. ALB is a load balancer that routes traffic to multiple targets, such as EC2 instances, in a single Availability Zone. NLB is a load balancer that routes traffic to multiple targets, such as EC2 instances, across multiple Availability Zones.",
+          "id": 319664,
+          "date": "Thu 07 Oct 2021 17:04",
+          "username": "geniuscloudblueorca",
+          "content": "For those who said E is correct, please check the attributes here:<br>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-updatepolicy.html<br>To ensure zero downtime, we should modify \\\"MinInstancesInService\\\" instead of \\\"MinSuccessfulInstancesPercent\\\".<br>Sample CF Template for rolling update can be found here (search for \\\"UpdatePolicy\\\"):<br>https://github.com/awslabs/aws-cloudformation-templates/blob/master/aws/services/AutoScaling/AutoScalingRollingUpdates.yamlI checked the docs you linked, it is indeed \\\"MinSuccessfulInstancesPercent\\\" for both rolling and replacing update. But rolling is working with PauseTime whereas replacing is working with CreationPolicy",
+          "upvote_count": "51",
+          "selected_answers": ""
+        },
+        {
+          "id": 545712,
+          "date": "Sat 12 Feb 2022 09:25",
+          "username": "blueorca",
+          "content": "I checked the docs you linked, it is indeed \\\"MinSuccessfulInstancesPercent\\\" for both rolling and replacing update. But rolling is working with PauseTime whereas replacing is working with CreationPolicy",
           "upvote_count": "1",
           "selected_answers": ""
         },
         {
-          "id": 655733,
-          "date": "Thu 01 Sep 2022 05:21",
-          "username": "colinquek",
-          "content": "D - clear cut ans. Except tt why didnt the company's executives do their market research properly that could have avoided such a situation in the firts place :D",
-          "upvote_count": "3",
-          "selected_answers": "Selected Answer: D"
+          "id": 313743,
+          "date": "Wed 29 Sep 2021 22:40",
+          "username": "cvarg",
+          "content": "EC looks right for me",
+          "upvote_count": "2",
+          "selected_answers": ""
         },
         {
-          "id": 404014,
-          "date": "Sun 17 Oct 2021 02:19",
-          "username": "arpana_03",
-          "content": "D is the correct answer",
-          "upvote_count": "4",
+          "id": 313103,
+          "date": "Tue 28 Sep 2021 12:29",
+          "username": "devopsv2ToRtugo",
+          "content": "E is definitely the right answer. https://aws.amazon.com/premiumsupport/knowledge-center/auto-scaling-group-rolling-updates/<br><br>But we have to choose 2 options, I would go with C as second option (It is more like a manual Blue/Green deployment strategy)<br><br>Option A, D: AWS::AutoScaling::AutoScalingGroup itself does not have an UpdatePolicy attribute<br>Option B: AWS::AutoScaling::DeploymentPolicy, there is no resource like thisAccording to https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-updatepolicy.htmlUpdatePolicy attribute does exists for AWS::AutoScaling::AutoScalingGroup so A, D are not invalid for that reason.<br><br>In fact you can add an UpdatePolicy attribute to your stack to perform rolling updates as per https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html so A+C looks better for me, the link you provide does nos says anything about achieving zero downtime with option E while rolling deployment can provide zero downtime.",
+          "upvote_count": "22",
+          "selected_answers": ""
+        },
+        {
+          "id": 315721,
+          "date": "Sat 02 Oct 2021 18:25",
+          "username": "ToRtugo",
+          "content": "According to https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-updatepolicy.htmlUpdatePolicy attribute does exists for AWS::AutoScaling::AutoScalingGroup so A, D are not invalid for that reason.<br><br>In fact you can add an UpdatePolicy attribute to your stack to perform rolling updates as per https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html so A+C looks better for me, the link you provide does nos says anything about achieving zero downtime with option E while rolling deployment can provide zero downtime.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 309395,
+          "date": "Mon 20 Sep 2021 18:56",
+          "username": "Rajarshi",
+          "content": "ans is E",
+          "upvote_count": "1",
           "selected_answers": ""
         }
       ]
@@ -5438,7 +5451,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps Engineer manages a web application that runs on Amazon EC2 instances behind an Application Load Balancer (ALB). The instances run in an EC2<br>Auto Scaling group across multiple Availability Zones. The engineer needs to implement a deployment strategy that:<br>✑ Launches a second fleet of instances with the same capacity as the original fleet.<br>✑ Maintains the original fleet unchanged while the second fleet is launched.<br>✑ Transitions traffic to the second fleet when the second fleet is fully deployed.<br>✑ Terminates the original fleet automatically 1 hour after transition.<br>Which solution will satisfy these requirements?<br><br><br></p>",
+      "question_text": "<p>A DevOps Engineer manages a web application that runs on Amazon EC2 instances behind an Application Load Balancer (ALB). The instances run in an EC2<br>Auto Scaling group across multiple Availability Zones. The engineer needs to implement a deployment strategy that:<br>-Launches a second fleet of instances with the same capacity as the original fleet.<br>-Maintains the original fleet unchanged while the second fleet is launched.<br>-Transitions traffic to the second fleet when the second fleet is fully deployed.<br>-Terminates the original fleet automatically 1 hour after transition.<br>Which solution will satisfy these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -5473,7 +5486,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 32 discussion",
       "discusstion": [
         {
           "id": 224215,
@@ -5487,7 +5500,7 @@ var DOP_C01_Part1 =
           "id": 163377,
           "date": "Tue 12 Oct 2021 01:38",
           "username": "halfwayapcloudsyaldramskipbaylessfor3halfwaykj07",
-          "content": "C.  <br>https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BlueInstanceTerminationOption.htmlThis link shows the answer is indeed CThank you for the link - answer is CI'm wondering why the EB ones are false though, do you know?EB application version lifecycle policy is not for EC2 instance. More details can be found here: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-lifecycle.htmlThis link eliminates EB options and this one https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BlueInstanceTerminationOption.html validates option B. ",
+          "content": "C. <br>https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BlueInstanceTerminationOption.htmlThis link shows the answer is indeed CThank you for the link - answer is CI'm wondering why the EB ones are false though, do you know?EB application version lifecycle policy is not for EC2 instance. More details can be found here: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-lifecycle.htmlThis link eliminates EB options and this one https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BlueInstanceTerminationOption.html validates option B. ",
           "upvote_count": "712121",
           "selected_answers": ""
         },
@@ -5530,22 +5543,6 @@ var DOP_C01_Part1 =
           "content": "This link eliminates EB options and this one https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BlueInstanceTerminationOption.html validates option B. ",
           "upvote_count": "1",
           "selected_answers": ""
-        },
-        {
-          "id": 778109,
-          "date": "Mon 16 Jan 2023 19:41",
-          "username": "Bulti",
-          "content": "Ci s the right answer. Using Deployment configuration ofBlue-Green that enables copying of ASG abd creating a new fleet if EC2 instanced is the right solution. As part of the Deployment configuration you can set the duration in hours after which the old deployment environment will be terminated.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 770741,
-          "date": "Mon 09 Jan 2023 19:14",
-          "username": "PepsNick",
-          "content": "The answer is D.  There is a clear ask for an immutable deployment in the question. CodeDeploy in that answer C mentiones does not have an immutable deployment option.<br><br>Immutable deployments perform an immutable update to launch a full set of new instances running the new version of the application in a separate Auto Scaling group, alongside the instances running the old version. Immutable deployments can prevent issues caused by partially completed rolling deployments. If the new instances don't pass health checks, Elastic Beanstalk terminates them, leaving the original instances untouched.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: D"
         },
         {
           "id": 736089,
@@ -5619,12 +5616,12 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A healthcare services company is concerned about the growing costs of software licensing for an application for monitoring patient wellness. The company wants to create an audit process to ensure that the application is running exclusively on Amazon EC2 Dedicated Hosts. A DevOps Engineer must create a workflow to audit the application to ensure compliance.<br>What steps should the Engineer take to meet this requirement with the LEAST administrative overhead?<br><br><br></p>",
+      "question_text": "<p>An application is being deployed with two Amazon EC2 Auto Scaling groups, each configured with an Application Load Balancer. The application is deployed to one of the Auto Scaling groups and an Amazon Route 53 alias record is pointed to the Application Load Balancer of the last deployed Auto Scaling group.<br>Deployments alternate between the two Auto Scaling groups.<br>Home security devices are making requests into the application. The Development team notes that new requests are coming into the old stack days after the deployment. The issue is caused by devices that are not observing the Time to Live (TTL) setting on the Amazon Route 53 alias record.<br>What steps should the DevOps Engineer take to address the issue with requests coming to the old stacks, while creating minimal additional resources?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: C</p>",
+      "general_feedback": "<p>Correct Answer: B</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -5632,180 +5629,156 @@ var DOP_C01_Part1 =
           "question_id": "#33",
           "answers": [
             {
-              "choice": "<p>A. Use AWS Systems Manager Configuration Compliance. Use calls to the put-compliance-items API action to scan and build a database of noncompliant EC2 instances based on their host placement configuration. Use an Amazon DynamoDB table to store these instance IDs for fast access. Generate a report through Systems Manager by calling the list-compliance-summaries API action.<br></p>",
+              "choice": "<p>A. Create a fleet of Amazon EC2 instances running HAProxy behind an Application Load Balancer. The HAProxy instances will proxy the requests to one of the existing Auto Scaling groups. After a deployment the HAProxy instances are updated to send requests to the newly deployed Auto Scaling group.<br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>B. Use custom Java code running on an EC2 instance. Set up EC2 Auto Scaling for the instance depending on the number of instances to be checked. Send the list of noncompliant EC2 instance IDs to an Amazon SQS queue. Set up another worker instance to process instance IDs from the SQS queue and write them to Amazon DynamoDB.  Use an AWS Lambda function to terminate noncompliant instance IDs obtained from the queue, and send them to an Amazon SNS email topic for distribution.<br></p>",
-              "correct": false,
-              "feedback": ""
-            },
-            {
-              "choice": "<p>C. Use AWS Config. Identify all EC2 instances to be audited by enabling Config Recording on all Amazon EC2 resources for the region. Create a custom AWS Config rule that triggers an AWS Lambda function by using the ג€config-rule-change-triggeredג€ blueprint. Modify the Lambda evaluateCompliance() function to verify host placement to return a NON_COMPLIANT result if the instance is not running on an EC2 Dedicated Host. Use the AWS Config report to address noncompliant instances.<br></p>",
+              "choice": "<p>B. Reduce the application to one Application Load Balancer. Create two target groups named Blue and Green. Create a rule on the Application Load Balancer pointed to a single target group. Add logic to the deployment to update the Application Load Balancer rule to the target group of the newly deployed Auto Scaling group.<br></p>",
               "correct": true,
               "feedback": ""
             },
             {
-              "choice": "<p>D. Use AWS CloudTrail. Identify all EC2 instances to be audited by analyzing all calls to the EC2 RunCommand API action. Invoke an AWS Lambda function that analyzes the host placement of the instance. Store the EC2 instance ID of noncompliant resources in an Amazon RDS MySQL DB instance. Generate a report by querying the RDS instance and exporting the query results to a CSV text file.<br></p>",
+              "choice": "<p>C. Move the application to an AWS Elastic Beanstalk application with two environments. Perform new deployments on the non-live environment. After a deployment, perform an Elastic Beanstalk CNAME swap to make the newly deployed environment the live environment.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create an Amazon CloudFront distribution. Set the two existing Application Load Balancers as origins on the distribution. After a deployment, update the CloudFront distribution behavior to send requests to the newly deployed Auto Scaling group.<br></p>",
               "correct": false,
               "feedback": ""
             }
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 33 discussion",
       "discusstion": [
         {
-          "id": 12267,
-          "date": "Sun 26 Sep 2021 09:22",
-          "username": "YashBindlish",
-          "content": "Correct Answer is \\\"C\\\" A will only help in ompliance to scan your fleet of managed instances for patch compliance and configuration inconsistencies. but when it comes to software licensing compliance aws config rules nables you to assess compliance with your server-bound software licenses",
-          "upvote_count": "21",
+          "id": 23851,
+          "date": "Mon 20 Sep 2021 00:57",
+          "username": "BeastX",
+          "content": "B is correct<br>https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html#application-load-balancer-components",
+          "upvote_count": "19",
           "selected_answers": ""
         },
         {
-          "id": 30656,
-          "date": "Wed 06 Oct 2021 05:16",
-          "username": "amzngeniuspleasespammelater",
-          "content": "C：<br>https://aws.amazon.com/about-aws/whats-new/2015/11/use-aws-config-to-track-ec2-instances-on-dedicated-hosts-and-assess-license-compliance/This is for tracking what is running on dedicated hosts. It won't help with detecting when your software ISN'T running on your dedicated hosts. For that you need a custom rule. https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_develop-rules_getting-started.html<br><br>Also, the Lambda blueprint function is actually called \\\"evaluateChangeNotificationCompliance\\\". I'm guessing this has just changed over time so it's still the correct answer. https://console.aws.amazon.com/lambda/home?region=us-east-1#/create/function/configure/blueprint?blueprint=config-rule-change-triggered",
-          "upvote_count": "82",
+          "id": 404113,
+          "date": "Wed 27 Oct 2021 10:12",
+          "username": "siejassiejas",
+          "content": "It's B, had same problem and fixed it in real life :) 1 ALB and switching target groups with b/g switch.To elaborate: 1 LB will have a fixed IPs so R53 record will always point at the same IP's so will customers. TTL now makes no difference as DNS record will be stale",
+          "upvote_count": "22",
           "selected_answers": ""
         },
         {
-          "id": 72638,
-          "date": "Mon 18 Oct 2021 07:05",
-          "username": "pleasespammelater",
-          "content": "This is for tracking what is running on dedicated hosts. It won't help with detecting when your software ISN'T running on your dedicated hosts. For that you need a custom rule. https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_develop-rules_getting-started.html<br><br>Also, the Lambda blueprint function is actually called \\\"evaluateChangeNotificationCompliance\\\". I'm guessing this has just changed over time so it's still the correct answer. https://console.aws.amazon.com/lambda/home?region=us-east-1#/create/function/configure/blueprint?blueprint=config-rule-change-triggered",
+          "id": 404115,
+          "date": "Sat 06 Nov 2021 10:17",
+          "username": "siejas",
+          "content": "To elaborate: 1 LB will have a fixed IPs so R53 record will always point at the same IP's so will customers. TTL now makes no difference as DNS record will be stale",
           "upvote_count": "2",
           "selected_answers": ""
         },
         {
-          "id": 778116,
-          "date": "Mon 16 Jan 2023 19:44",
-          "username": "Bulti",
-          "content": "Correct answer is C. ",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 661108,
-          "date": "Tue 06 Sep 2022 12:49",
-          "username": "SamHan",
-          "content": "Ans: C",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 323450,
-          "date": "Tue 02 Nov 2021 02:52",
-          "username": "nebojsaMa",
-          "content": "The answer is C why:<br>References:<br><br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-aws-config.html<br><br>https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-compliance-about.html#sysman-compliance-custom<br><br>https://aws.amazon.com/blogs/aws/now-available-ec2-dedicated-hosts/",
+          "id": 374433,
+          "date": "Wed 27 Oct 2021 00:28",
+          "username": "Dantehilary",
+          "content": "B is the correct answer, C is not because swapping URL will still have the TTL challenge",
           "upvote_count": "2",
           "selected_answers": ""
         },
         {
-          "id": 321271,
-          "date": "Tue 02 Nov 2021 02:23",
+          "id": 320999,
+          "date": "Sun 24 Oct 2021 16:07",
           "username": "WhyIronMan",
-          "content": "I'll go with C",
+          "content": "I'll go with B,",
           "upvote_count": "2",
           "selected_answers": ""
         },
         {
-          "id": 318817,
-          "date": "Mon 01 Nov 2021 15:48",
-          "username": "aws_Tamilan",
-          "content": "Correct Answer: C<br><br>Reference:<br><br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-aws-config.html<br><br>https://aws.amazon.com/about-aws/whats-new/2015/11/use-aws-config-to-track-ec2-instances-on-dedicated-hosts-and-assess-license-compliance/",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 252558,
-          "date": "Thu 28 Oct 2021 16:27",
-          "username": "fogunfunminiyi",
-          "content": "C is the answer. Remember when compliance is mentioned, think config, config rule, etc. If the compliance has to do with EC2 instance or instance AMI inspection, think inspector",
-          "upvote_count": "5",
-          "selected_answers": ""
-        },
-        {
-          "id": 223216,
-          "date": "Mon 25 Oct 2021 08:19",
+          "id": 223207,
+          "date": "Fri 22 Oct 2021 02:24",
           "username": "jackdryan",
-          "content": "I'll go with C",
-          "upvote_count": "2",
-          "selected_answers": ""
-        },
-        {
-          "id": 205837,
-          "date": "Sat 23 Oct 2021 01:34",
-          "username": "ChauPhan",
-          "content": "I'll go with C<br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-aws-config.html",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 94948,
-          "date": "Fri 22 Oct 2021 16:10",
-          "username": "Raj9",
-          "content": "C - directly related to https://aws.amazon.com/blogs/aws/now-available-ec2-dedicated-hosts/",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 62153,
-          "date": "Sat 16 Oct 2021 16:26",
-          "username": "yassu",
-          "content": "C is correct",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 54999,
-          "date": "Wed 13 Oct 2021 08:10",
-          "username": "xaocho",
-          "content": "It is C",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 50583,
-          "date": "Tue 12 Oct 2021 22:29",
-          "username": "AdityaB",
-          "content": "C -- AWS Conﬁg records the conﬁguration details of Dedicated hosts and the instances that you launch on them",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 36040,
-          "date": "Sat 09 Oct 2021 23:42",
-          "username": "dinhvu",
-          "content": "answer is C<br>thanks amzngenus for the document",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 28366,
-          "date": "Sun 03 Oct 2021 06:58",
-          "username": "jiedee",
-          "content": "i will go with c",
+          "content": "I'll go with B",
           "upvote_count": "3",
           "selected_answers": ""
         },
         {
-          "id": 12871,
-          "date": "Tue 28 Sep 2021 20:17",
-          "username": "neil001pleasespammelater",
-          "content": "Answer is indeed C and mentioned in the aws dedicated hosts web page, check \\\"License Usage Reporting\\\" in the link below<br>https://aws.amazon.com/ec2/dedicated-hosts/The page must have been changed - License Usage Reporting is not there.",
-          "upvote_count": "61",
+          "id": 94853,
+          "date": "Sat 16 Oct 2021 09:03",
+          "username": "Raj9",
+          "content": "B looks good",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
-          "id": 72637,
-          "date": "Sun 17 Oct 2021 14:16",
-          "username": "pleasespammelater",
-          "content": "The page must have been changed - License Usage Reporting is not there.",
+          "id": 62146,
+          "date": "Sat 16 Oct 2021 03:26",
+          "username": "yassu",
+          "content": "B is correct",
           "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 54967,
+          "date": "Wed 13 Oct 2021 15:54",
+          "username": "xaocho",
+          "content": "It is B",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 50312,
+          "date": "Thu 30 Sep 2021 23:01",
+          "username": "AdityaB",
+          "content": "B is correct -- weighted target groups for application load balancers. It allows developers to control how to distribute traffic to multiple versions of their application-- https://aws.amazon.com/blogs/aws/new-application-load-balancer-simplifies-deployment-with-weighted-target-groups/",
+          "upvote_count": "3",
+          "selected_answers": ""
+        },
+        {
+          "id": 35789,
+          "date": "Wed 29 Sep 2021 01:14",
+          "username": "dinhvu",
+          "content": "answer is B",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 33891,
+          "date": "Mon 27 Sep 2021 00:07",
+          "username": "un",
+          "content": "B is correct",
+          "upvote_count": "3",
+          "selected_answers": ""
+        },
+        {
+          "id": 24858,
+          "date": "Tue 21 Sep 2021 01:31",
+          "username": "HazemYousryAnimiBeastXppshein",
+          "content": "Answer is CCan you explain how the answer is CC is not correct, swap CNAME is also changing the DNS, still have the TTL issue.`while creating minimal additional resources` so answer should not be C. ",
+          "upvote_count": "2162",
+          "selected_answers": ""
+        },
+        {
+          "id": 25603,
+          "date": "Tue 21 Sep 2021 20:44",
+          "username": "AnimiBeastX",
+          "content": "Can you explain how the answer is CC is not correct, swap CNAME is also changing the DNS, still have the TTL issue.",
+          "upvote_count": "16",
+          "selected_answers": ""
+        },
+        {
+          "id": 25976,
+          "date": "Wed 22 Sep 2021 06:32",
+          "username": "BeastX",
+          "content": "C is not correct, swap CNAME is also changing the DNS, still have the TTL issue.",
+          "upvote_count": "6",
+          "selected_answers": ""
+        },
+        {
+          "id": 105772,
+          "date": "Wed 20 Oct 2021 09:49",
+          "username": "ppshein",
+          "content": "`while creating minimal additional resources` so answer should not be C. ",
+          "upvote_count": "2",
           "selected_answers": ""
         }
       ]
@@ -5816,7 +5789,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company has 100 GB of log data in an Amazon S3 bucket stored in .csv format. SQL developers want to query this data and generate graphs to visualize it.<br>They also need an efficient, automated way to store metadata from the .csv file.<br>Which combination of steps should be taken to meet these requirements with the LEAST amount of effort? (Choose three.)<br><br><br></p>",
+      "question_text": "<p>A company has 100 GB of log data in an Amazon S3 bucket stored in .csv format. SQL developers want to query this data and generate graphs to visualize it.<br>They also need an efficient, automated way to store metadata from the .csv file.<br>Which combination of steps should be taken to meet these requirements with the LEAST amount of effort? (Choose three.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -5861,7 +5834,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 34 discussion",
       "discusstion": [
         {
           "id": 317976,
@@ -5885,14 +5858,6 @@ var DOP_C01_Part1 =
           "username": "WhyIronMan",
           "content": "I'll go with B, C, F<br><br>That's not use case for Glue",
           "upvote_count": "9",
-          "selected_answers": ""
-        },
-        {
-          "id": 778121,
-          "date": "Mon 16 Jan 2023 19:46",
-          "username": "Bulti",
-          "content": "B,C abd E are the right choices.",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -5947,7 +5912,7 @@ var DOP_C01_Part1 =
           "id": 720238,
           "date": "Thu 17 Nov 2022 06:37",
           "username": "jlb",
-          "content": "BCF <br>AWS Glue :https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-format-csv-home.html => Prerequisites: You will need the S3 paths (s3path) to the CSV files or folders that you want to read",
+          "content": "BCF<br>AWS Glue :https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-format-csv-home.html > Prerequisites: You will need the S3 paths (s3path) to the CSV files or folders that you want to read",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -6014,6 +5979,14 @@ var DOP_C01_Part1 =
           "content": "I thinks it's BCE after all: https://aws.amazon.com/blogs/big-data/harmonize-query-and-visualize-data-from-various-providers-using-aws-glue-amazon-athena-and-amazon-quicksight/",
           "upvote_count": "2",
           "selected_answers": ""
+        },
+        {
+          "id": 504498,
+          "date": "Sat 18 Dec 2021 23:43",
+          "username": "Balki",
+          "content": "B,C,E as S3 is already available. If we think from metadata store perspective it is glue catalog https://docs.aws.amazon.com/glue/latest/dg/components-overview.html",
+          "upvote_count": "3",
+          "selected_answers": ""
         }
       ]
     },
@@ -6023,7 +5996,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps Engineer has several legacy applications that all generate different log formats. The Engineer must standardize the formats before writing them to<br>Amazon S3 for querying and analysis.<br>How can this requirement be met at the LOWEST cost?<br><br><br></p>",
+      "question_text": "<p>A DevOps Engineer has several legacy applications that all generate different log formats. The Engineer must standardize the formats before writing them to<br>Amazon S3 for querying and analysis.<br>How can this requirement be met at the LOWEST cost?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -6058,16 +6031,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 35 discussion",
       "discusstion": [
-        {
-          "id": 778122,
-          "date": "Mon 16 Jan 2023 19:48",
-          "username": "Bulti",
-          "content": "Correct answer is D",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 741887,
           "date": "Sun 11 Dec 2022 17:28",
@@ -6156,7 +6121,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company needs to implement a robust CI/CD pipeline to automate the deployment of an application in AWS. The pipeline must support continuous integration, continuous delivery, and automatic rollback upon deployment failure. The entire CI/CD pipeline must be capable of being re-provisioned in alternate AWS accounts or Regions within minutes. A DevOps engineer has already created an AWS CodeCommit repository to store the source code.<br>Which combination of actions should be taken when building this pipeline to meet these requirements? (Choose three.)<br><br><br></p>",
+      "question_text": "<p>A company needs to implement a robust CI/CD pipeline to automate the deployment of an application in AWS. The pipeline must support continuous integration, continuous delivery, and automatic rollback upon deployment failure. The entire CI/CD pipeline must be capable of being re-provisioned in alternate AWS accounts or Regions within minutes. A DevOps engineer has already created an AWS CodeCommit repository to store the source code.<br>Which combination of actions should be taken when building this pipeline to meet these requirements? (Choose three.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -6201,29 +6166,13 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 36 discussion",
       "discusstion": [
-        {
-          "id": 669584,
-          "date": "Thu 15 Sep 2022 09:14",
-          "username": "MichaelExam",
-          "content": "A - For \\\"Integration\\\"<br>D - For \\\"automatic rollback upon deployment failure\\\".<br>F - For \\\"The entire CI/CD pipeline must be capable of being re-provisioned in alternate AWS accounts or Regions within minutes\\\"",
-          "upvote_count": "5",
-          "selected_answers": "Selected Answer: ADF"
-        },
-        {
-          "id": 778128,
-          "date": "Mon 16 Jan 2023 19:55",
-          "username": "Bulti",
-          "content": "A- To build artifact<br>D- To support automatic deployment rollback<br>E- To provision the Codepipeline in minutes in other accounts or regions.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 717616,
           "date": "Mon 14 Nov 2022 02:56",
           "username": "developer_404",
-          "content": "A - for CI<br>D - ASG and ALB are not in scope, hence I go with simple deployment. <br>F - For provisioning into other AWS Account and region.",
+          "content": "A - for CI<br>D - ASG and ALB are not in scope, hence I go with simple deployment.<br>F - For provisioning into other AWS Account and region.",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: ADF"
         },
@@ -6242,6 +6191,14 @@ var DOP_C01_Part1 =
           "content": "ADF. <br><br>A - YES. CodeBuild is needed for building the source code<br>B - Artifact is built under CodeBuild's container environment, not codecommit<br>C - LB ?<br>D - YES. EB can be used for rollback<br>E - Codepipeline itself can handle different stages<br>F - YES. CF is needed from re-provision the same stuff",
           "upvote_count": "2",
           "selected_answers": ""
+        },
+        {
+          "id": 669584,
+          "date": "Thu 15 Sep 2022 09:14",
+          "username": "MichaelExam",
+          "content": "A - For \\\"Integration\\\"<br>D - For \\\"automatic rollback upon deployment failure\\\".<br>F - For \\\"The entire CI/CD pipeline must be capable of being re-provisioned in alternate AWS accounts or Regions within minutes\\\"",
+          "upvote_count": "4",
+          "selected_answers": "Selected Answer: ADF"
         },
         {
           "id": 655714,
@@ -6275,7 +6232,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company is building a solution for storing files containing Personally Identifiable Information (PII) on AWS.<br>Requirements state:<br>✑ All data must be encrypted at rest and in transit.<br>✑ All data must be replicated in at least two locations that are at least 500 miles (805 kilometers) apart.<br>Which solution meets these requirements?<br><br><br></p>",
+      "question_text": "<p>A company is building a solution for storing files containing Personally Identifiable Information (PII) on AWS.<br>Requirements state:<br>-All data must be encrypted at rest and in transit.<br>-All data must be replicated in at least two locations that are at least 500 miles (805 kilometers) apart.<br>Which solution meets these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -6310,16 +6267,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 37 discussion",
       "discusstion": [
-        {
-          "id": 778137,
-          "date": "Mon 16 Jan 2023 20:09",
-          "username": "Bulti",
-          "content": "B us the right answer.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 760384,
           "date": "Wed 28 Dec 2022 23:18",
@@ -6376,7 +6325,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company is using an AWS CodeBuild project to build and package an application. The packages are copied to a shared Amazon S3 bucket before being deployed across multiple AWS accounts.<br>The buildspec.yml file contains the following:<br><img src=\"/assets/media/exam-media/04243/0002400001.png\" class=\"in-exam-image\"><br>The DevOps Engineer has noticed that anybody with an AWS account is able to download the artifacts.<br>What steps should the DevOps Engineer take to stop this?<br><br><br></p>",
+      "question_text": "<p>A company is using an AWS CodeBuild project to build and package an application. The packages are copied to a shared Amazon S3 bucket before being deployed across multiple AWS accounts.<br>The buildspec.yml file contains the following:<br><img src=\"https://www.examtopics.com/assets/media/exam-media/04243/0002400001.png\" class=\"in-exam-image\"><br>The DevOps Engineer has noticed that anybody with an AWS account is able to download the artifacts.<br>What steps should the DevOps Engineer take to stop this?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -6389,7 +6338,7 @@ var DOP_C01_Part1 =
           "question_id": "#38",
           "answers": [
             {
-              "choice": "<p>A. Modify the post_build to command to use ג€\"-acl public-read and configure a bucket policy that grants read access to the relevant AWS accounts only.<br></p>",
+              "choice": "<p>A. Modify the post_build to command to use \"\"-acl public-read and configure a bucket policy that grants read access to the relevant AWS accounts only.<br></p>",
               "correct": false,
               "feedback": ""
             },
@@ -6399,25 +6348,25 @@ var DOP_C01_Part1 =
               "feedback": ""
             },
             {
-              "choice": "<p>C. Create an S3 bucket policy that grants read access to the relevant AWS accounts and denies read access to the principal ג€*ג€<br></p>",
+              "choice": "<p>C. Create an S3 bucket policy that grants read access to the relevant AWS accounts and denies read access to the principal \"*\"<br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>D. Modify the post_build command to remove ג€\"-acl authenticated-read and configure a bucket policy that allows read access to the relevant AWS accounts only.<br></p>",
+              "choice": "<p>D. Modify the post_build command to remove \"\"-acl authenticated-read and configure a bucket policy that allows read access to the relevant AWS accounts only.<br></p>",
               "correct": true,
               "feedback": ""
             }
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 38 discussion",
       "discusstion": [
         {
           "id": 26243,
           "date": "Fri 24 Sep 2021 14:00",
           "username": "Timlipleasespammelater",
-          "content": "D is my choose<br>https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html\\\"S3 ACLs is a legacy access control mechanism that predates IAM\\\". That is, don't use them! <br>https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/",
+          "content": "D is my choose<br>https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html\\\"S3 ACLs is a legacy access control mechanism that predates IAM\\\". That is, don't use them!<br>https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/",
           "upvote_count": "182",
           "selected_answers": ""
         },
@@ -6425,7 +6374,7 @@ var DOP_C01_Part1 =
           "id": 79573,
           "date": "Thu 07 Oct 2021 01:47",
           "username": "pleasespammelater",
-          "content": "\\\"S3 ACLs is a legacy access control mechanism that predates IAM\\\". That is, don't use them! <br>https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/",
+          "content": "\\\"S3 ACLs is a legacy access control mechanism that predates IAM\\\". That is, don't use them!<br>https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/",
           "upvote_count": "2",
           "selected_answers": ""
         },
@@ -6434,23 +6383,7 @@ var DOP_C01_Part1 =
           "date": "Thu 30 Sep 2021 23:58",
           "username": "michelleY",
           "content": "i will go with D.  C is not correct, if you have deny *, allow AuthenticatedUsers still doesn't allow the access. authenticated-read vs public-read, one is for Owner gets FULL_CONTROL. The AuthenticatedUsers group gets READ access., the other one is Owner gets FULL_CONTROL. The AllUsers group (see Who Is a Grantee?) gets READ access.",
-          "upvote_count": "7",
-          "selected_answers": ""
-        },
-        {
-          "id": 778177,
-          "date": "Mon 16 Jan 2023 20:49",
-          "username": "Bulti",
-          "content": "Correct answer is D.  Best practice is to limit the use of ACL and grant access using bucket policy. So in this case it's about allowing access to the bucket to specific AWS accounts and not to every authenticated user or all AWS accounts which are options A and B.  I am not sure how Option C would work. It's talking about denying access to the principal. But I am not sure how access can be provided to the account but not to the Role or user in that account.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 771151,
-          "date": "Tue 10 Jan 2023 08:30",
-          "username": "PepsNick",
-          "content": "D is my choice. AWS does not recommend the usage of ACL's. Below is the explanation from https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html <br><br>A majority of modern use cases in Amazon S3 no longer require the use of ACLs, and we recommend that you disable ACLs except in unusual circumstances where you need to control access for each object individually. With Object Ownership, you can disable ACLs and rely on policies for access control. When you disable ACLs, you can easily maintain a bucket with objects uploaded by different AWS accounts. You, as the bucket owner, own all the objects in the bucket and can manage access to them using policies. For more information, see Controlling ownership of objects and disabling ACLs for your bucket.",
-          "upvote_count": "1",
+          "upvote_count": "6",
           "selected_answers": ""
         },
         {
@@ -6513,7 +6446,7 @@ var DOP_C01_Part1 =
           "id": 279949,
           "date": "Sat 30 Oct 2021 09:10",
           "username": "bnagaraja9099",
-          "content": "I go with A.  Most restrictive access. <br>public_read definition: Owner gets FULL_CONTROL. The AllUsers group (see Who Is a Grantee?) gets READ access.<br>https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl<br><br>A grantee can be an AWS account or one of the predefined Amazon S3 groups. You grant permission to an AWS account using the email address or the canonical user ID.  <br>https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#specifying-grantee",
+          "content": "I go with A.  Most restrictive access.<br>public_read definition: Owner gets FULL_CONTROL. The AllUsers group (see Who Is a Grantee?) gets READ access.<br>https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl<br><br>A grantee can be an AWS account or one of the predefined Amazon S3 groups. You grant permission to an AWS account using the email address or the canonical user ID. <br>https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#specifying-grantee",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -6564,6 +6497,22 @@ var DOP_C01_Part1 =
           "content": "Change to D, the Deny will overcome the Allow, so C is incorrect",
           "upvote_count": "1",
           "selected_answers": ""
+        },
+        {
+          "id": 139863,
+          "date": "Sun 24 Oct 2021 21:17",
+          "username": "orlando1409",
+          "content": "D is correct",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 122000,
+          "date": "Sun 24 Oct 2021 20:23",
+          "username": "tolik505",
+          "content": "D is correct. We don't need any acl params. By default an owner of the bucket has full access. Explicit allow for relevant accounts work in this case perfectly since there is no explicit deny.",
+          "upvote_count": "4",
+          "selected_answers": ""
         }
       ]
     },
@@ -6573,7 +6522,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer needs to grant several external contractors access to a legacy application that runs on an Amazon Linux Amazon EC2 instance. The application server is available only in a private subnet. The contractors are not authorized for VPN access.<br>What should the DevOps engineer do to grant the contactors access to the application server?<br><br><br></p>",
+      "question_text": "<p>A DevOps engineer needs to grant several external contractors access to a legacy application that runs on an Amazon Linux Amazon EC2 instance. The application server is available only in a private subnet. The contractors are not authorized for VPN access.<br>What should the DevOps engineer do to grant the contactors access to the application server?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -6608,16 +6557,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 39 discussion",
       "discusstion": [
-        {
-          "id": 778186,
-          "date": "Mon 16 Jan 2023 20:56",
-          "username": "Bulti",
-          "content": "D is the right answer. AWS credentials to use AWS CLI to start AWS session manager is the right answer.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 760394,
           "date": "Wed 28 Dec 2022 23:34",
@@ -6694,7 +6635,7 @@ var DOP_C01_Part1 =
           "id": 655475,
           "date": "Wed 31 Aug 2022 22:38",
           "username": "ohcnohcnohcnNickhiahiahia",
-          "content": "B seems correct. <br><br>https://aws.amazon.com/premiumsupport/knowledge-center/ec2-ssh-best-practices/<br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.htmlMy bad. D seems correct.Session Manager allows AWS Identity and Access Management (IAM) users to log in to your instances with encryption and logging capabilities. Systems Manager's traffic goes through the Systems Manager Endpoint, allowing easy and secure access to private instances without opening inbound ports.if set up only one user, how to trace the user behavior since the are more than one contractor?",
+          "content": "B seems correct.<br><br>https://aws.amazon.com/premiumsupport/knowledge-center/ec2-ssh-best-practices/<br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.htmlMy bad. D seems correct.Session Manager allows AWS Identity and Access Management (IAM) users to log in to your instances with encryption and logging capabilities. Systems Manager's traffic goes through the Systems Manager Endpoint, allowing easy and secure access to private instances without opening inbound ports.if set up only one user, how to trace the user behavior since the are more than one contractor?",
           "upvote_count": "1131",
           "selected_answers": ""
         },
@@ -6730,7 +6671,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company hosts its staging website using an Amazon EC2 instance backed with Amazon EBS storage. The company wants to recover quickly with minimal data losses in the event of network connectivity issues or power failures on the EC2 instance.<br>Which solution will meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A company hosts its staging website using an Amazon EC2 instance backed with Amazon EBS storage. The company wants to recover quickly with minimal data losses in the event of network connectivity issues or power failures on the EC2 instance.<br>Which solution will meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -6765,7 +6706,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 40 discussion",
       "discusstion": [
         {
           "id": 387533,
@@ -6774,22 +6715,6 @@ var DOP_C01_Part1 =
           "content": "Answer C",
           "upvote_count": "5",
           "selected_answers": ""
-        },
-        {
-          "id": 778327,
-          "date": "Mon 16 Jan 2023 22:56",
-          "username": "Bulti",
-          "content": "Anwer is C",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 771207,
-          "date": "Tue 10 Jan 2023 09:41",
-          "username": "PepsNick",
-          "content": "Answer C.  Here is all the information you need. <br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
         },
         {
           "id": 727247,
@@ -6895,7 +6820,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company has built a web service that runs on Amazon EC2 instances behind an Application Load Balancer (ALB). The company has deployed the application in us-east-1. Amazon Route 53 provides an external DNS that routes traffic from example.com to the application, created with appropriate health checks.<br>The company has deployed a second environment for the application in eu-west-1. The company wants traffic to be routed to whichever environment results in the best response time for each user. If there is an outage in one Region, traffic should be directed to the other environment.<br>Which configuration will achieve these requirements?A. <br>✑ A subdomain us.example.com with weighted routing: the US ALB with weight 2 and the EU ALB with weight 1.<br>✑ Another subdomain eu.example.com with weighted routing: the EU ALB with weight 2 and the US ALB with weight 1.<br>✑ Geolocation routing records for example.com: North America aliased to us.example.com and Europe aliased to eu.example.com.B. <br>✑ A subdomain us.example.com with latency-based routing: the US ALB as the first target and the EU ALB as the second target.<br>✑ Another subdomain eu.example.com with latency-based routing: the EU ALB as the first target and the US ALB as the second target.<br>✑ Failover routing records for example.com aliased to us.example.com as the first target and eu.example.com as the second target.C. <br>✑ A subdomain us.example.com with failover routing: the US ALB as primary and the EU ALB as secondary.<br>✑ Another subdomain eu.example.com with failover routing: the EU ALB as primary and the US ALB as secondary.<br>✑ Latency-based routing records for example.com that are aliased to us.example.com and eu.example.com.D. <br>✑ A subdomain us.example.com with multivalue answer routing: the US ALB first and the EU ALB second.<br>✑ Another subdomain eu.example.com with multivalue answer routing: the EU ALB first and the US ALB second.<br>✑ Failover routing records for example.com that are aliased to us.example.com and eu.example.com.<br><br><br></p>",
+      "question_text": "<p>A company has built a web service that runs on Amazon EC2 instances behind an Application Load Balancer (ALB). The company has deployed the application in us-east-1. Amazon Route 53 provides an external DNS that routes traffic from example.com to the application, created with appropriate health checks.<br>The company has deployed a second environment for the application in eu-west-1. The company wants traffic to be routed to whichever environment results in the best response time for each user. If there is an outage in one Region, traffic should be directed to the other environment.<br>Which configuration will achieve these requirements?A. <br>-A subdomain us.example.com with weighted routing: the US ALB with weight 2 and the EU ALB with weight 1.<br>-Another subdomain eu.example.com with weighted routing: the EU ALB with weight 2 and the US ALB with weight 1.<br>-Geolocation routing records for example.com: North America aliased to us.example.com and Europe aliased to eu.example.com.B. <br>-A subdomain us.example.com with latency-based routing: the US ALB as the first target and the EU ALB as the second target.<br>-Another subdomain eu.example.com with latency-based routing: the EU ALB as the first target and the US ALB as the second target.<br>-Failover routing records for example.com aliased to us.example.com as the first target and eu.example.com as the second target.C. <br>-A subdomain us.example.com with failover routing: the US ALB as primary and the EU ALB as secondary.<br>-Another subdomain eu.example.com with failover routing: the EU ALB as primary and the US ALB as secondary.<br>-Latency-based routing records for example.com that are aliased to us.example.com and eu.example.com.D. <br>-A subdomain us.example.com with multivalue answer routing: the US ALB first and the EU ALB second.<br>-Another subdomain eu.example.com with multivalue answer routing: the EU ALB first and the US ALB second.<br>-Failover routing records for example.com that are aliased to us.example.com and eu.example.com.<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -6909,7 +6834,7 @@ var DOP_C01_Part1 =
           "answers": []
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 41 discussion",
       "discusstion": [
         {
           "id": 330140,
@@ -6917,22 +6842,6 @@ var DOP_C01_Part1 =
           "username": "devopp",
           "content": "C is correct (reveal answer didnt show anything here)",
           "upvote_count": "7",
-          "selected_answers": ""
-        },
-        {
-          "id": 778330,
-          "date": "Mon 16 Jan 2023 23:02",
-          "username": "Bulti",
-          "content": "C is the right answer. B isn't right as it sets up failover routing on example.com to first route to us.example.com and then to eu.example.com which is not how failover should be configured. Latency should be configured at example.com to route request to us or eu region based on the best response time for each user and this is done in C. ",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 773673,
-          "date": "Thu 12 Jan 2023 16:53",
-          "username": "WinslowSe7en",
-          "content": "B is correct. remember \\\"best response time for user\\\" is required.<br>This configuration will achieve the company's requirements because it uses Route 53's latency-based routing feature to route traffic to the environment with the best response time for each user. It also uses Route 53's failover routing feature to automatically route traffic to the other environment in the event of an outage in one region.",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -6947,7 +6856,7 @@ var DOP_C01_Part1 =
           "id": 671819,
           "date": "Sat 17 Sep 2022 23:37",
           "username": "colinquek",
-          "content": "C <br>initially was thinking B, but i think it is more common to put failover at DNS level. https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring.html",
+          "content": "C<br>initially was thinking B, but i think it is more common to put failover at DNS level. https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring.html",
           "upvote_count": "2",
           "selected_answers": ""
         },
@@ -6963,7 +6872,7 @@ var DOP_C01_Part1 =
           "id": 617407,
           "date": "Thu 16 Jun 2022 23:27",
           "username": "SHAAHIBHUSHANAWS",
-          "content": "C <br>https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring.html",
+          "content": "C<br>https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring.html",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -7031,7 +6940,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company has multiple development teams sharing one AWS account. The development team's manager wants to be able to automatically stop Amazon EC2 instances and receive notifications if resources are idle and not tagged as production resources.<br>Which solution will meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A company has multiple development teams sharing one AWS account. The development team's manager wants to be able to automatically stop Amazon EC2 instances and receive notifications if resources are idle and not tagged as production resources.<br>Which solution will meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -7066,7 +6975,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 42 discussion",
       "discusstion": [
         {
           "id": 326044,
@@ -7085,14 +6994,6 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
-          "id": 778334,
-          "date": "Mon 16 Jan 2023 23:08",
-          "username": "Bulti",
-          "content": "C is the correct answer. Trusted Advisor is used to diagnose issues with your infrastructure including idle EC2 instances.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
           "id": 761512,
           "date": "Thu 29 Dec 2022 22:50",
           "username": "saeidp",
@@ -7105,31 +7006,23 @@ var DOP_C01_Part1 =
           "date": "Wed 14 Dec 2022 04:58",
           "username": "saggy4",
           "content": "A - No such cloudwatch event which identifies idle EC2 instances<br>B - No such AWS System Manager Event that lets you know the idle resources<br>C - Correct Answer. Trusted Advisor Checks lets you know idle EC2 instances<br>D - Amazon Inspector is for managing vulnerabilities",
-          "upvote_count": "4",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: C"
         },
         {
           "id": 311934,
           "date": "Sat 23 Oct 2021 21:04",
-          "username": "rscloudWhyIronManWinslowSe7en",
-          "content": "A - CW event for ec2 state and lambda to stop ec2This makes A wrong:<br>CloudWatch Events rule to filter for Amazon EC2 >>>INSTANCE STATUS CHECKS AND IDENTIFY IDLE<<<EC2 instances<br>????<br><br>There are two types of status checks: system status checks and instance status checks, AND NONE of them has the \\\"Idle\\\" status<br><br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-system-instance-status-check.html#types-of-instance-status-checksCloudWatch does not have a built-in event that specifically identifies the idle status of EC2 instances, agreed. However, you can create a custom event using CloudWatch Events and a Lambda function to identify idle instances by monitoring for specific conditions that indicate an idle status, such as low CPU/network usage",
-          "upvote_count": "241",
+          "username": "rscloudWhyIronMan",
+          "content": "A - CW event for ec2 state and lambda to stop ec2This makes A wrong:<br>CloudWatch Events rule to filter for Amazon EC2 >>>INSTANCE STATUS CHECKS AND IDENTIFY IDLE<<<EC2 instances<br>????<br><br>There are two types of status checks: system status checks and instance status checks, AND NONE of them has the \\\"Idle\\\" status<br><br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-system-instance-status-check.html#types-of-instance-status-checks",
+          "upvote_count": "14",
           "selected_answers": ""
         },
         {
           "id": 326039,
           "date": "Sun 24 Oct 2021 06:08",
-          "username": "WhyIronManWinslowSe7en",
-          "content": "This makes A wrong:<br>CloudWatch Events rule to filter for Amazon EC2 >>>INSTANCE STATUS CHECKS AND IDENTIFY IDLE<<<EC2 instances<br>????<br><br>There are two types of status checks: system status checks and instance status checks, AND NONE of them has the \\\"Idle\\\" status<br><br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-system-instance-status-check.html#types-of-instance-status-checksCloudWatch does not have a built-in event that specifically identifies the idle status of EC2 instances, agreed. However, you can create a custom event using CloudWatch Events and a Lambda function to identify idle instances by monitoring for specific conditions that indicate an idle status, such as low CPU/network usage",
-          "upvote_count": "41",
-          "selected_answers": ""
-        },
-        {
-          "id": 773685,
-          "date": "Thu 12 Jan 2023 17:04",
-          "username": "WinslowSe7en",
-          "content": "CloudWatch does not have a built-in event that specifically identifies the idle status of EC2 instances, agreed. However, you can create a custom event using CloudWatch Events and a Lambda function to identify idle instances by monitoring for specific conditions that indicate an idle status, such as low CPU/network usage",
-          "upvote_count": "1",
+          "username": "WhyIronMan",
+          "content": "This makes A wrong:<br>CloudWatch Events rule to filter for Amazon EC2 >>>INSTANCE STATUS CHECKS AND IDENTIFY IDLE<<<EC2 instances<br>????<br><br>There are two types of status checks: system status checks and instance status checks, AND NONE of them has the \\\"Idle\\\" status<br><br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-system-instance-status-check.html#types-of-instance-status-checks",
+          "upvote_count": "4",
           "selected_answers": ""
         }
       ]
@@ -7140,7 +7033,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>An n-tier application requires a table in an Amazon RDS MySQL DB instance to be dropped and repopulated at each deployment. This process can take several minutes and the web tier cannot come online until the process is complete. Currently, the web tier is configured in an Amazon EC2 Auto Scaling group, with instances being terminated and replaced at each deployment. The MySQL table is populated by running a SQL query through an AWS CodeBuild job.<br>What should be done to ensure that the web tier does not come online before the database is completely configured?<br><br><br></p>",
+      "question_text": "<p>An n-tier application requires a table in an Amazon RDS MySQL DB instance to be dropped and repopulated at each deployment. This process can take several minutes and the web tier cannot come online until the process is complete. Currently, the web tier is configured in an Amazon EC2 Auto Scaling group, with instances being terminated and replaced at each deployment. The MySQL table is populated by running a SQL query through an AWS CodeBuild job.<br>What should be done to ensure that the web tier does not come online before the database is completely configured?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -7175,22 +7068,14 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 43 discussion",
       "discusstion": [
         {
           "id": 163382,
           "date": "Thu 30 Sep 2021 22:24",
           "username": "halfway",
-          "content": "D.  <br>Lifecycle hook can trigger lambda to check DB status: https://docs.aws.amazon.com/autoscaling/ec2/userguide/configuring-lifecycle-hook-notifications.html",
+          "content": "D. <br>Lifecycle hook can trigger lambda to check DB status: https://docs.aws.amazon.com/autoscaling/ec2/userguide/configuring-lifecycle-hook-notifications.html",
           "upvote_count": "11",
-          "selected_answers": ""
-        },
-        {
-          "id": 778336,
-          "date": "Mon 16 Jan 2023 23:11",
-          "username": "Bulti",
-          "content": "D is the correct answer.",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -7245,7 +7130,7 @@ var DOP_C01_Part1 =
           "id": 158267,
           "date": "Sat 25 Sep 2021 07:20",
           "username": "SmartAKD",
-          "content": "Assuming we want to 'guarantee' that database is ready before web tier requires some verification likely through Lambda. <br><br>A & B is out. D is applicable but it doesn't quite guarantee. Also, lifecycle hook is not triggering any Lambda for verification. <br><br>C is correct. Assuming we are using CodePipeline, after CodeBuild, we invoke Stepfunctions that will periodically check table population through lambda.C does not ensure the portal isn't coming online. ASG Life cycle hooks are the only way to make it pause, monitor the state of DB and allow it to proceed later. All of this is made through Lambda.<br>So D is the right answer.",
+          "content": "Assuming we want to 'guarantee' that database is ready before web tier requires some verification likely through Lambda.<br><br>A & B is out. D is applicable but it doesn't quite guarantee. Also, lifecycle hook is not triggering any Lambda for verification.<br><br>C is correct. Assuming we are using CodePipeline, after CodeBuild, we invoke Stepfunctions that will periodically check table population through lambda.C does not ensure the portal isn't coming online. ASG Life cycle hooks are the only way to make it pause, monitor the state of DB and allow it to proceed later. All of this is made through Lambda.<br>So D is the right answer.",
           "upvote_count": "13",
           "selected_answers": ""
         },
@@ -7265,7 +7150,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A highly regulated company has a policy that DevOps Engineers should not log in to their Amazon EC2 instances except in emergencies. If a DevOps Engineer does log in, the Security team must be notified within 15 minutes of the occurrence.<br>Which solution will meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A highly regulated company has a policy that DevOps Engineers should not log in to their Amazon EC2 instances except in emergencies. If a DevOps Engineer does log in, the Security team must be notified within 15 minutes of the occurrence.<br>Which solution will meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -7300,13 +7185,13 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 44 discussion",
       "discusstion": [
         {
           "id": 155372,
           "date": "Sat 09 Oct 2021 11:33",
           "username": "jxp09saeidpMikeyJsvjlGreatFunanaGreatFunanabnagaraja9099",
-          "content": "https://aws.amazon.com/blogs/security/how-to-monitor-and-visualize-failed-ssh-access-attempts-to-amazon-ec2-linux-instances/ <br><br>BThanks for the linkA CloudWatch Logs agent runs on each EC2 instance. The agents are configured to send SSH logs from the EC2 instance to a log stream identified by an instance ID. <br>Log streams are aggregated into a log group. As a result, one log group contains all the logs you want to analyze from one or more instances.<br>You apply metric filters to a log group in order to search for specific keywords. When the metric filter finds specific keywords, the filter counts the occurrences of the keywords in a time-based sliding window. If the occurrence of a keyword exceeds the CloudWatch alarm threshold, an alarm is triggered.This is not about failed access.Bruh. Stop being that person who just read the URL string and not bothered to read or at least skim the article. The technique listed in here could easily be adapted for login attempts.Excuse me, the technique listed in here could easily be adapted for successful logins*Thanks ofr the link",
+          "content": "https://aws.amazon.com/blogs/security/how-to-monitor-and-visualize-failed-ssh-access-attempts-to-amazon-ec2-linux-instances/<br><br>BThanks for the linkA CloudWatch Logs agent runs on each EC2 instance. The agents are configured to send SSH logs from the EC2 instance to a log stream identified by an instance ID. <br>Log streams are aggregated into a log group. As a result, one log group contains all the logs you want to analyze from one or more instances.<br>You apply metric filters to a log group in order to search for specific keywords. When the metric filter finds specific keywords, the filter counts the occurrences of the keywords in a time-based sliding window. If the occurrence of a keyword exceeds the CloudWatch alarm threshold, an alarm is triggered.This is not about failed access.Bruh. Stop being that person who just read the URL string and not bothered to read or at least skim the article. The technique listed in here could easily be adapted for login attempts.Excuse me, the technique listed in here could easily be adapted for successful logins*Thanks ofr the link",
           "upvote_count": "13121321",
           "selected_answers": ""
         },
@@ -7359,14 +7244,6 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
-          "id": 778344,
-          "date": "Mon 16 Jan 2023 23:24",
-          "username": "Bulti",
-          "content": "Answer is B.  Within 15 min is the key. Cloudtrail logs cannot be analyzed within 15 min as it doesn't get to CloudWatch log within 15 min.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
           "id": 761534,
           "date": "Thu 29 Dec 2022 23:27",
           "username": "saeidp",
@@ -7387,7 +7264,7 @@ var DOP_C01_Part1 =
           "date": "Wed 14 Dec 2022 05:44",
           "username": "saggy4",
           "content": "A - Inspector is for managing vulnerabilities<br>B - Correct Answer, Cloudwatch agent can scan through the EC2 instances for SSH login logs<br>C - Logging into an AWS EC2 instances is not traced by CloudTrail (Only if we use SSM but nothing is mentioned about it in the question).<br>D - Too much work involved to do things",
-          "upvote_count": "2",
+          "upvote_count": "1",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -7466,7 +7343,7 @@ var DOP_C01_Part1 =
           "id": 233484,
           "date": "Thu 21 Oct 2021 17:36",
           "username": "svjlMBJamesGreatFunana",
-          "content": "A is correct: <br>Amazon Inspector automatically publishes metrics data on your assessments to Amazon CloudWatch. If you are a CloudWatch user, your Inspector assessment statistics will automatically be populated to CloudWatch. The Inspector metrics that are currently available are: number of assessment runs, agents targeted, and findings generated. For more details, see the Amazon Inspector documentation for details on the assessment metrics published to CloudWatch, then you have the messages.<br><br>B is totally wrong, you will create an alert if you filter the logs from CloudWatch insights not from ametric filter.<br>C, D wrong for this context.I think only B can work.<br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/EventTypes.html<br><br>Cloudwatch Events can trigger Amazon Inspector, but Amazon Inspector does not generate cloudwatch events. So the methodology described in A wouldn't work. Also, the only metrics posted by inspector to cloudwatch are those you have listed, and successful logins are not among them.Bruh. Have you ever made simple alerts with CloudWatch? You can simply filter patterns with regular CloudWatch metrics/events:<br><br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html",
+          "content": "A is correct:<br>Amazon Inspector automatically publishes metrics data on your assessments to Amazon CloudWatch. If you are a CloudWatch user, your Inspector assessment statistics will automatically be populated to CloudWatch. The Inspector metrics that are currently available are: number of assessment runs, agents targeted, and findings generated. For more details, see the Amazon Inspector documentation for details on the assessment metrics published to CloudWatch, then you have the messages.<br><br>B is totally wrong, you will create an alert if you filter the logs from CloudWatch insights not from ametric filter.<br>C, D wrong for this context.I think only B can work.<br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/EventTypes.html<br><br>Cloudwatch Events can trigger Amazon Inspector, but Amazon Inspector does not generate cloudwatch events. So the methodology described in A wouldn't work. Also, the only metrics posted by inspector to cloudwatch are those you have listed, and successful logins are not among them.Bruh. Have you ever made simple alerts with CloudWatch? You can simply filter patterns with regular CloudWatch metrics/events:<br><br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html",
           "upvote_count": "411",
           "selected_answers": ""
         },
@@ -7506,7 +7383,7 @@ var DOP_C01_Part1 =
           "id": 175908,
           "date": "Sun 10 Oct 2021 04:05",
           "username": "rejuvenatesvjl",
-          "content": "B<br>A CloudWatch Logs agent runs on each EC2 instance. The agents are configured to send SSH logs from the EC2 instance to a log stream identified by an instance ID. <br>Log streams are aggregated into a log group. As a result, one log group contains all the logs you want to analyze from one or more instances.<br>You apply metric filters to a log group in order to search for specific keywords. When the metric filter finds specific keywords, the filter counts the occurrences of the keywords in a time-based sliding window. If the occurrence of a keyword exceeds the CloudWatch alarm threshold, an alarm is triggered.<br>An IAM policy defines a role that gives the EC2 servers permission to create logs in a log group and send log events (new log entries) from EC2 to log groups. This role is then assumed by the application servers.<br>CloudWatch alarms notify users when a specified threshold has been crossed. For example, you can set an alarm to trigger when more than 2 failed SSH connections happen in a 5-minute period. <br>https://aws.amazon.com/blogs/security/how-to-monitor-and-visualize-failed-ssh-access-attempts-to-amazon-ec2-linux-instances/This is not about failed access, but when a log in occur",
+          "content": "B<br>A CloudWatch Logs agent runs on each EC2 instance. The agents are configured to send SSH logs from the EC2 instance to a log stream identified by an instance ID. <br>Log streams are aggregated into a log group. As a result, one log group contains all the logs you want to analyze from one or more instances.<br>You apply metric filters to a log group in order to search for specific keywords. When the metric filter finds specific keywords, the filter counts the occurrences of the keywords in a time-based sliding window. If the occurrence of a keyword exceeds the CloudWatch alarm threshold, an alarm is triggered.<br>An IAM policy defines a role that gives the EC2 servers permission to create logs in a log group and send log events (new log entries) from EC2 to log groups. This role is then assumed by the application servers.<br>CloudWatch alarms notify users when a specified threshold has been crossed. For example, you can set an alarm to trigger when more than 2 failed SSH connections happen in a 5-minute period.<br>https://aws.amazon.com/blogs/security/how-to-monitor-and-visualize-failed-ssh-access-attempts-to-amazon-ec2-linux-instances/This is not about failed access, but when a log in occur",
           "upvote_count": "41",
           "selected_answers": ""
         },
@@ -7526,7 +7403,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer has automated a web service deployment by using AWS CodePipeline with the following steps:<br>1. An AWS CodeBuild project compiles the deployment artifact and runs unit tests.<br>2. An AWS CodeDeploy deployment group deploys the web service to Amazon EC2 instances in the staging environment.<br>3. A CodeDeploy deployment group deploys the web service to EC2 instances in the production environment.<br>The quality assurance (QA) team requests permission to inspect the build artifact before the deployment to the production environment occurs. The QA team wants to run an internal penetration testing tool to conduct manual tests. The tool will be invoked by a REST API call.<br>Which combination of actions should the DevOps engineer take to fulfill this request? (Choose two.)<br><br><br></p>",
+      "question_text": "<p>A DevOps engineer has automated a web service deployment by using AWS CodePipeline with the following steps:<br>1. An AWS CodeBuild project compiles the deployment artifact and runs unit tests.<br>2. An AWS CodeDeploy deployment group deploys the web service to Amazon EC2 instances in the staging environment.<br>3. A CodeDeploy deployment group deploys the web service to EC2 instances in the production environment.<br>The quality assurance (QA) team requests permission to inspect the build artifact before the deployment to the production environment occurs. The QA team wants to run an internal penetration testing tool to conduct manual tests. The tool will be invoked by a REST API call.<br>Which combination of actions should the DevOps engineer take to fulfill this request? (Choose two.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -7566,7 +7443,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 45 discussion",
       "discusstion": [
         {
           "id": 655520,
@@ -7575,22 +7452,6 @@ var DOP_C01_Part1 =
           "content": "A and E - https://www.examtopics.com/discussions/amazon/view/49433-exam-aws-devops-engineer-professional-topic-1-question-190/",
           "upvote_count": "8",
           "selected_answers": ""
-        },
-        {
-          "id": 778346,
-          "date": "Mon 16 Jan 2023 23:26",
-          "username": "Bulti",
-          "content": "A & E are the right answers",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 771222,
-          "date": "Tue 10 Jan 2023 10:04",
-          "username": "PepsNick",
-          "content": "AE.  Here is information about adding a manual approval step which is required. https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals-action-add.html<br>You call a lambda function in parallel to the approval to trigger the API.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: AE"
         },
         {
           "id": 761539,
@@ -7632,7 +7493,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps Engineer manages a large commercial website that runs on Amazon EC2. The website uses Amazon Kinesis Data Streams to collect and process web logs. The DevOps Engineer manages the Kinesis consumer application, which also runs on Amazon EC2.<br>Sudden increases of data cause the Kinesis consumer application to fall behind, and the Kinesis data streams drop records before the records can be processed.<br>The DevOps Engineer must implement a solution to improve stream handling.<br>Which solution meets these requirements with the MOST operational efficiency?<br><br><br></p>",
+      "question_text": "<p>A DevOps Engineer manages a large commercial website that runs on Amazon EC2. The website uses Amazon Kinesis Data Streams to collect and process web logs. The DevOps Engineer manages the Kinesis consumer application, which also runs on Amazon EC2.<br>Sudden increases of data cause the Kinesis consumer application to fall behind, and the Kinesis data streams drop records before the records can be processed.<br>The DevOps Engineer must implement a solution to improve stream handling.<br>Which solution meets these requirements with the MOST operational efficiency?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -7667,32 +7528,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 46 discussion",
       "discusstion": [
-        {
-          "id": 778348,
-          "date": "Mon 16 Jan 2023 23:42",
-          "username": "Bulti",
-          "content": "Answer is B.  We need to scale the Kinesis consumer application horizontally based on the CloudWatch metric. Answer cannot be C because replacing the Kinesis Consumer app with Lambda does not make the solution operationally efficient. Lambda could also throttle as the data is streamed faster into Kinesis Data Stream. Answer is not D because just my increasing the shards will not result in efficient processing on the consumer side. We also need to increase the no of instances and therefore KCL workers to propose the data from additional shards.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 771225,
-          "date": "Tue 10 Jan 2023 10:07",
-          "username": "PepsNick",
-          "content": "B.  They are asking for operational efficiency. Converting the application to lambda may not be possible and is not efficient.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
-          "id": 770083,
-          "date": "Mon 09 Jan 2023 07:34",
-          "username": "ddev3737",
-          "content": "Why not D?D.  Increase the number of shards in the Kinesis Data Streams to increase the overall throughput so that the consumer application can process the data faster.<br><br>Increasing the number of shards in the Kinesis Data Streams is the most operationally efficient solution because it allows the consumer application to process the data faster by increasing the overall throughput of the data stream. This will allow the consumer application to keep up with sudden increases in data and prevent records from being dropped. It also does not require any changes to the consumer application itself, which can be more operationally efficient than modifying the application or converting it to a Lambda function. Additionally, increasing the number of shards does not require the use of additional resources such as EC2 instances or EMR clusters, which can be more expensive and complex to manage.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 762525,
           "date": "Sat 31 Dec 2022 08:20",
@@ -7738,7 +7575,7 @@ var DOP_C01_Part1 =
           "date": "Sat 19 Nov 2022 22:20",
           "username": "alinatokyozanuro",
           "content": "I would go with C.  Lambda is always more efficient and cheaper than EC2. https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.htmlAgree. As the question is asking for MOST operational efficiency, then answer is C. <br>If the question is asking for FASTEST method to improve, then answer is B",
-          "upvote_count": "35",
+          "upvote_count": "34",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -7746,7 +7583,7 @@ var DOP_C01_Part1 =
           "date": "Thu 01 Dec 2022 03:34",
           "username": "kyozanuro",
           "content": "Agree. As the question is asking for MOST operational efficiency, then answer is C. <br>If the question is asking for FASTEST method to improve, then answer is B",
-          "upvote_count": "5",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -7773,7 +7610,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company uses AWS Organizations to manage multiple accounts. Information security policies require that all unencrypted Amazon EBS volumes be marked as non-compliant. A DevOps engineer needs to automatically deploy the solution and ensure that this compliance check is always present.<br>With solution will accomplish this?<br><br><br></p>",
+      "question_text": "<p>A company uses AWS Organizations to manage multiple accounts. Information security policies require that all unencrypted Amazon EBS volumes be marked as non-compliant. A DevOps engineer needs to automatically deploy the solution and ensure that this compliance check is always present.<br>With solution will accomplish this?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -7808,7 +7645,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 47 discussion",
       "discusstion": [
         {
           "id": 356340,
@@ -7819,26 +7656,10 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
-          "id": 778351,
-          "date": "Mon 16 Jan 2023 23:47",
-          "username": "Bulti",
-          "content": "Answe is B.  When it comes to compliance checks go with AWS Config. Also note that AWS config is used at an organization level.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
           "id": 748327,
           "date": "Sat 17 Dec 2022 20:20",
-          "username": "neta1oWinslowSe7en",
-          "content": "If the question was to prevent the volumes from being created instead of marking non compliant would it have been C?intent should be to \\\"prevent\\\"<br>C seems a better option",
-          "upvote_count": "21",
-          "selected_answers": ""
-        },
-        {
-          "id": 773731,
-          "date": "Thu 12 Jan 2023 18:00",
-          "username": "WinslowSe7en",
-          "content": "intent should be to \\\"prevent\\\"<br>C seems a better option",
+          "username": "neta1o",
+          "content": "If the question was to prevent the volumes from being created instead of marking non compliant would it have been C?",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -7914,7 +7735,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company develops and maintains a web application using Amazon EC2 instances and an Amazon RDS for SQL Server DB instance in a single Availability<br>Zone. The resources need to run only when new deployments are being tested using AWS CodePipeline. Testing occurs one or more times a week and each test takes 2-3 hours to run. A DevOps engineer wants a solution that does not change the architecture components.<br>Which solution will meet these requirements in the MOST cost-effective manner?<br><br><br></p>",
+      "question_text": "<p>A company develops and maintains a web application using Amazon EC2 instances and an Amazon RDS for SQL Server DB instance in a single Availability<br>Zone. The resources need to run only when new deployments are being tested using AWS CodePipeline. Testing occurs one or more times a week and each test takes 2-3 hours to run. A DevOps engineer wants a solution that does not change the architecture components.<br>Which solution will meet these requirements in the MOST cost-effective manner?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -7949,14 +7770,14 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 48 discussion",
       "discusstion": [
         {
           "id": 317192,
           "date": "Tue 02 Nov 2021 23:21",
           "username": "1234567Jsyaldram",
           "content": "ans: D<br>https://aws.amazon.com/blogs/mt/systems-manager-automation-documents-manage-instances-cut-costs-off-hours/This link perfectly describes the solution.",
-          "upvote_count": "212",
+          "upvote_count": "202",
           "selected_answers": ""
         },
         {
@@ -7968,26 +7789,10 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
-          "id": 778354,
-          "date": "Mon 16 Jan 2023 23:52",
-          "username": "Bulti",
-          "content": "D is the correct answer. Its AWS best practice to use Cloudwatch event against CodePipeline Deployment actions to trigger AWS System Manager automation documents to start and stop resources such as EC2 and RDS.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 770092,
-          "date": "Mon 09 Jan 2023 07:53",
-          "username": "ddev3737",
-          "content": "Why not A?<br>Uses an AWS Lambda function to start and stop the EC2 instances before and after tests.<br>By converting the RDS database to an Amazon Aurora Serverless database, you can take advantage of the pay-per-use pricing model, <br>which charges only for the database capacity that is actually used. This can help to reduce costs compared to using a standard RDS instance.<br><br>D would require the use of AWS Systems Manager Automation, which incurs additional charges.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
           "id": 748330,
           "date": "Sat 17 Dec 2022 20:25",
           "username": "neta1o",
-          "content": "D is good, small caveat is that RDS can only be stopped for 7 days then it’ll automatically start.",
+          "content": "D is good, small caveat is that RDS can only be stopped for 7 days then it'll automatically start.",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: D"
         },
@@ -8059,7 +7864,7 @@ var DOP_C01_Part1 =
           "id": 331025,
           "date": "Wed 03 Nov 2021 15:47",
           "username": "devopp",
-          "content": "D <br>Revealed B is wrong since breaking requirement to not change architecture components.",
+          "content": "D<br>Revealed B is wrong since breaking requirement to not change architecture components.",
           "upvote_count": "4",
           "selected_answers": ""
         },
@@ -8079,7 +7884,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>The Development team has grown substantially in recent months and so has the number of projects that use separate code repositories. The current process involves configuring AWS CodePipeline manually. There have been service limit alerts regarding the number of Amazon S3 buckets that exist.<br>Which pipeline option will reduce S3 bucket sprawl alerts?<br><br><br></p>",
+      "question_text": "<p>The Development team has grown substantially in recent months and so has the number of projects that use separate code repositories. The current process involves configuring AWS CodePipeline manually. There have been service limit alerts regarding the number of Amazon S3 buckets that exist.<br>Which pipeline option will reduce S3 bucket sprawl alerts?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -8114,7 +7919,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 49 discussion",
       "discusstion": [
         {
           "id": 361337,
@@ -8130,14 +7935,6 @@ var DOP_C01_Part1 =
           "username": "WhyIronMan",
           "content": "I'll go with B",
           "upvote_count": "5",
-          "selected_answers": ""
-        },
-        {
-          "id": 778355,
-          "date": "Mon 16 Jan 2023 23:54",
-          "username": "Bulti",
-          "content": "B is the right answer",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -8164,7 +7961,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company runs several applications across multiple AWS accounts in an organization in AWS Organizations. Some of the resources are not tagged properly and the company's finance team cannot determine which costs are associated with which applications. A DevOps engineer must remediate this issue and prevent this issue from happening in the future.<br>Which combination of actions should the DevOps engineer take to meet these requirements? (Choose two.)<br><br><br></p>",
+      "question_text": "<p>A company runs several applications across multiple AWS accounts in an organization in AWS Organizations. Some of the resources are not tagged properly and the company's finance team cannot determine which costs are associated with which applications. A DevOps engineer must remediate this issue and prevent this issue from happening in the future.<br>Which combination of actions should the DevOps engineer take to meet these requirements? (Choose two.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -8204,32 +8001,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 50 discussion",
       "discusstion": [
-        {
-          "id": 659464,
-          "date": "Sun 04 Sep 2022 20:52",
-          "username": "ohcn",
-          "content": "Might be B and D - SCP to prevent resources to be created without mandatory tags and Tag Editor to scan resources are not tagged.<br><br>https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples_tagging.html<br><br>https://aws.amazon.com/about-aws/whats-new/2015/02/19/aws-console-tag-editor-now-supports-not-tagged-and-empty-value-resource-search/",
-          "upvote_count": "5",
-          "selected_answers": "Selected Answer: BD"
-        },
-        {
-          "id": 778358,
-          "date": "Mon 16 Jan 2023 23:58",
-          "username": "Bulti",
-          "content": "Answer is B and D. ",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 770089,
-          "date": "Mon 09 Jan 2023 07:46",
-          "username": "ddev3737",
-          "content": "Why not AB?",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 753395,
           "date": "Thu 22 Dec 2022 15:44",
@@ -8261,6 +8034,14 @@ var DOP_C01_Part1 =
           "content": "I agree with ohcn.",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: BD"
+        },
+        {
+          "id": 659464,
+          "date": "Sun 04 Sep 2022 20:52",
+          "username": "ohcn",
+          "content": "Might be B and D - SCP to prevent resources to be created without mandatory tags and Tag Editor to scan resources are not tagged.<br><br>https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples_tagging.html<br><br>https://aws.amazon.com/about-aws/whats-new/2015/02/19/aws-console-tag-editor-now-supports-not-tagged-and-empty-value-resource-search/",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: BD"
         }
       ]
     },
@@ -8270,12 +8051,12 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>An online company uses Amazon EC2 Auto Scaling extensively to provide an excellent customer experience while minimizing the number of running EC2 instances. The company's self-hosted Puppet environment in the application layer manages the configuration of the instances. The IT manager wants the lowest licensing costs and wants to ensure that whenever the EC2 Auto Scaling group scales down, removed EC2 instances are deregistered from the Puppet master as soon as possible.<br>How can the requirement be met?<br><br><br></p>",
+      "question_text": "<p>A company is implementing an Amazon ECS cluster to run its workload. The company architecture will run multiple ECS services on the cluster, with an<br>Application Load Balancer on the front end, using multiple target groups to route traffic. The Application Development team has been struggling to collect logs that must be collected and sent to an Amazon S3 bucket for near-real time analysis<br>What must the DevOps Engineer configure in the deployment to meet these requirements? (Choose three.)<br></p>",
       "mark": 1,
-      "is_partially_correct": false,
+      "is_partially_correct": true,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: A</p>",
+      "general_feedback": "<p>Correct Answer: ADF</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -8283,164 +8064,86 @@ var DOP_C01_Part1 =
           "question_id": "#51",
           "answers": [
             {
-              "choice": "<p>A. At instance launch time, use EC2 user data to deploy the AWS CodeDeploy agent. Use CodeDeploy to install the Puppet agent. When the Auto Scaling group scales out, run a script to register the newly deployed instances to the Puppet master. When the Auto Scaling group scales in, use the EC2 Auto Scaling EC2_INSTANCE_TERMINATING lifecycle hook to trigger de-registration from the Puppet master.<br></p>",
+              "choice": "<p>A. Install the Amazon CloudWatch Logs logging agent on the ECS instances. Change the logging driver in the ECS task definition to 'awslogs'.<br></p>",
               "correct": true,
               "feedback": ""
             },
             {
-              "choice": "<p>B. Bake the AWS CodeDeploy agent into the base AMI. When the Auto Scaling group scales out, use CodeDeploy to install the Puppet agent, and execute a script to register the newly deployed instances to the Puppet master. When the Auto Scaling group scales in, use the CodeDeploy ApplicationStop lifecycle hook to run a script to de-register the instance from the Puppet master.<br></p>",
+              "choice": "<p>B. Download the Amazon CloudWatch Logs container instance from AWS and configure it as a task. Update the application service definitions to include the logging task.<br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>C. At instance launch time, use EC2 user data to deploy the AWS CodeDeploy agent. When the Auto Scaling group scales out, use CodeDeploy to install the Puppet agent, and run a script to register the newly deployed instances to the Puppet master. When the Auto Scaling group scales in, use the EC2 user data instance stop script to run a script to de-register the instance from the Puppet master.<br></p>",
+              "choice": "<p>C. Use Amazon CloudWatch Events to schedule an AWS Lambda function that will run every 60 seconds running the create-export -task CloudWatch Logs command, then point the output to the logging S3 bucket.<br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>D. Bake the AWS Systems Manager agent into the base AMI. When the Auto Scaling group scales out, use the AWS Systems Manager to install the Puppet agent, and run a script to register the newly deployed instances to the Puppet master. When the Auto Scaling group scales in, use the Systems Manager instance stop lifecycle hook to run a script to de-register the instance from the Puppet master.<br></p>",
+              "choice": "<p>D. Enable access logging on the Application Load Balancer, then point it directly to the S3 logging bucket.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Enable access logging on the target groups that are used by the ECS services, then point it directly to the S3 logging bucket.<br></p>",
               "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. Create an Amazon Kinesis Data Firehose with a destination of the S3 logging bucket, then create an Amazon CloudWatch Logs subscription filter for Kinesis.<br></p>",
+              "correct": true,
               "feedback": ""
             }
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 51 discussion",
       "discusstion": [
         {
-          "id": 74875,
-          "date": "Thu 21 Oct 2021 19:50",
-          "username": "pleasespammelater",
-          "content": "This is a tough one. The key to understanding it is that CodeDeploy and ASG's can work together! There's a great blog post about this: https://aws.amazon.com/blogs/devops/under-the-hood-aws-codedeploy-and-auto-scaling-integration/<br><br>Here is my analysis:<br>A: This is the correct approach and matches the blog post writeup<br>B: The CodeDeploy ApplicationStop lifecycle hook relates to upgrading an instance in place. The EC2 lifecycle hook is needed here.<br>C: There is no such thing as a \\\"user data instance stop script\\\"<br>D: SSM does not have lifecycle hooks",
-          "upvote_count": "42",
-          "selected_answers": ""
-        },
-        {
-          "id": 30524,
-          "date": "Wed 29 Sep 2021 08:43",
-          "username": "amzngenius",
-          "content": "D：<br>https://aws.amazon.com/cn/blogs/mt/configure-amazon-ec2-instances-in-an-auto-scaling-group-using-state-manager/",
+          "id": 321889,
+          "date": "Sat 23 Oct 2021 19:59",
+          "username": "WhyIronMan",
+          "content": "I'll go with A, D, F",
           "upvote_count": "10",
           "selected_answers": ""
         },
         {
-          "id": 778372,
-          "date": "Tue 17 Jan 2023 00:32",
-          "username": "Bulti",
-          "content": "Answer is A.  D is incorrect as there is no such lifecycle hooks on System Manager.I am just not sure how we could install Puppet using CodeDeploy. Looks like to me it is similar to installing CloudWatch Agent with CodeDeploy using an S3 deployment.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 763357,
-          "date": "Sun 01 Jan 2023 23:33",
-          "username": "saeidp",
-          "content": "Yes, A is correct",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 753397,
-          "date": "Thu 22 Dec 2022 15:48",
-          "username": "luk3k0",
-          "content": "Agree A",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 717398,
-          "date": "Sun 13 Nov 2022 16:27",
-          "username": "flavins",
-          "content": "Why run codedeploy twice?",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: D"
-        },
-        {
-          "id": 674831,
-          "date": "Wed 21 Sep 2022 07:58",
-          "username": "Goozian",
-          "content": "it's ASG, and all management is being done through ASG; Other services have no idea about ASG operation ( Scale in/out, ..) by default. The only reasonable response will be A",
-          "upvote_count": "2",
-          "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 652968,
-          "date": "Sun 28 Aug 2022 16:03",
-          "username": "vagobago",
-          "content": "A seems to be the right solution. Highest voted D seems suspect - there is no such thing like \\\"Systems Manager instance stop lifecycle hook\\\"",
-          "upvote_count": "5",
-          "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 647309,
-          "date": "Mon 15 Aug 2022 19:44",
-          "username": "hubekpeter",
-          "content": "The most easy and straight forward solution. https://aws.amazon.com/blogs/infrastructure-and-automation/run-code-before-terminating-an-ec2-auto-scaling-instance/",
-          "upvote_count": "5",
-          "selected_answers": "Selected Answer: D"
-        },
-        {
-          "id": 325197,
-          "date": "Sat 06 Nov 2021 15:09",
-          "username": "WhyIronMan",
-          "content": "I'll go with A",
-          "upvote_count": "4",
-          "selected_answers": ""
-        },
-        {
-          "id": 322046,
-          "date": "Thu 04 Nov 2021 20:38",
+          "id": 321870,
+          "date": "Sat 23 Oct 2021 12:49",
           "username": "aws_Tamilan",
-          "content": "Correct Answer: A",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 240106,
-          "date": "Fri 29 Oct 2021 01:20",
-          "username": "firbhat",
-          "content": "A as per below link:<br>https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 235240,
-          "date": "Thu 28 Oct 2021 17:57",
-          "username": "svjl",
-          "content": "D: explained here<br>https://aws.amazon.com/blogs/infrastructure-and-automation/run-code-before-terminating-an-ec2-auto-scaling-instance/",
+          "content": "Correct Answer: ADF<br><br>A =E2=80=93 for instance monitoring<br>D =E2=80=93 Best way logging for ALB<br>F =E2=80=93 For near-real time analysis",
           "upvote_count": "3",
           "selected_answers": ""
         },
         {
-          "id": 223257,
-          "date": "Thu 28 Oct 2021 06:46",
-          "username": "jackdryan",
-          "content": "I'll go with A",
-          "upvote_count": "3",
-          "selected_answers": ""
-        },
-        {
-          "id": 206863,
-          "date": "Tue 26 Oct 2021 08:11",
-          "username": "ChauPhan",
-          "content": "Thanks everybody with A.  Seem there is no SSM Lifecycle Hook so D is incorrect",
+          "id": 313564,
+          "date": "Wed 20 Oct 2021 10:58",
+          "username": "rscloud",
+          "content": "ADFis correct",
           "upvote_count": "2",
           "selected_answers": ""
         },
         {
-          "id": 119569,
-          "date": "Mon 25 Oct 2021 07:52",
-          "username": "tolik505",
-          "content": "Agree with option A",
+          "id": 313180,
+          "date": "Wed 13 Oct 2021 19:35",
+          "username": "SKAWS",
+          "content": "I'd go with A D F",
           "upvote_count": "1",
           "selected_answers": ""
         },
         {
-          "id": 71960,
-          "date": "Wed 20 Oct 2021 23:21",
-          "username": "kawara",
-          "content": "Go with A.  D hook is incorrect",
-          "upvote_count": "3",
+          "id": 309490,
+          "date": "Thu 23 Sep 2021 08:07",
+          "username": "RajarshiDuyPhan",
+          "content": "ans is AEFThere is no access log on target group, access log on ELB only",
+          "upvote_count": "14",
+          "selected_answers": ""
+        },
+        {
+          "id": 312062,
+          "date": "Sat 09 Oct 2021 17:10",
+          "username": "DuyPhan",
+          "content": "There is no access log on target group, access log on ELB only",
+          "upvote_count": "4",
           "selected_answers": ""
         }
       ]
@@ -8451,7 +8154,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company uses a series of individual Amazon CloudFormation templates to deploy its multi-Region applications. These templates must be deployed in a specific order. The company is making more changes to the templates than previously expected and wants to deploy new templates more efficiently. Additionally, the data engineering team must be notified of all changes to the templates.<br>What should the company do to accomplish these goals?<br><br><br></p>",
+      "question_text": "<p>A company uses a series of individual Amazon CloudFormation templates to deploy its multi-Region applications. These templates must be deployed in a specific order. The company is making more changes to the templates than previously expected and wants to deploy new templates more efficiently. Additionally, the data engineering team must be notified of all changes to the templates.<br>What should the company do to accomplish these goals?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -8486,37 +8189,21 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 52 discussion",
       "discusstion": [
         {
           "id": 674843,
           "date": "Wed 21 Sep 2022 08:14",
-          "username": "Goozianceros399devops7",
-          "content": "D seems a better choice among others <br>\\\"in a specific order.\\\" => Nested Stack guaranteeNested Stack doesn't manage the order in which the templates are applied, for hat you use Stack SetsI wrote nested stack in CDK. It does deploy the child stacks in order.<br>D is the answer because the question is about the (SNS) notification of any changes",
-          "upvote_count": "511",
+          "username": "Goozianceros399",
+          "content": "D seems a better choice among others<br>\\\"in a specific order.\\\" > Nested Stack guaranteeNested Stack doesn't manage the order in which the templates are applied, for hat you use Stack Sets",
+          "upvote_count": "51",
           "selected_answers": "Selected Answer: D"
         },
         {
           "id": 752272,
           "date": "Wed 21 Dec 2022 13:24",
-          "username": "ceros399devops7",
-          "content": "Nested Stack doesn't manage the order in which the templates are applied, for hat you use Stack SetsI wrote nested stack in CDK. It does deploy the child stacks in order.<br>D is the answer because the question is about the (SNS) notification of any changes",
-          "upvote_count": "11",
-          "selected_answers": ""
-        },
-        {
-          "id": 771803,
-          "date": "Tue 10 Jan 2023 22:04",
-          "username": "devops7",
-          "content": "I wrote nested stack in CDK. It does deploy the child stacks in order.<br>D is the answer because the question is about the (SNS) notification of any changes",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 778376,
-          "date": "Tue 17 Jan 2023 00:35",
-          "username": "Bulti",
-          "content": "D is the right answer",
+          "username": "ceros399",
+          "content": "Nested Stack doesn't manage the order in which the templates are applied, for hat you use Stack Sets",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -8532,7 +8219,7 @@ var DOP_C01_Part1 =
           "id": 752283,
           "date": "Wed 21 Dec 2022 13:35",
           "username": "ceros399apcloud",
-          "content": "Stack Sets will take care of the multi-region ordered deployment. and I don't see the need for nested stackThey aren’t looking for drift notifs, they want to notify the team about template changes",
+          "content": "Stack Sets will take care of the multi-region ordered deployment. and I don't see the need for nested stackThey aren't looking for drift notifs, they want to notify the team about template changes",
           "upvote_count": "21",
           "selected_answers": "Selected Answer: C"
         },
@@ -8540,7 +8227,7 @@ var DOP_C01_Part1 =
           "id": 757891,
           "date": "Mon 26 Dec 2022 23:27",
           "username": "apcloud",
-          "content": "They aren’t looking for drift notifs, they want to notify the team about template changes",
+          "content": "They aren't looking for drift notifs, they want to notify the team about template changes",
           "upvote_count": "1",
           "selected_answers": ""
         }
@@ -8552,7 +8239,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company is running an application on Amazon EC2 instances in an Auto Scaling group. Recently, an issue occurred that prevented EC2 instances from launching successfully, and it took several hours for the Support team to discover the issue. The Support team wants to be notified by email whenever an EC2 instance does not start successfully.<br>Which action will accomplish this?<br><br><br></p>",
+      "question_text": "<p>A company is running an application on Amazon EC2 instances in an Auto Scaling group. Recently, an issue occurred that prevented EC2 instances from launching successfully, and it took several hours for the Support team to discover the issue. The Support team wants to be notified by email whenever an EC2 instance does not start successfully.<br>Which action will accomplish this?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -8587,14 +8274,14 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 53 discussion",
       "discusstion": [
         {
           "id": 158365,
           "date": "Mon 20 Sep 2021 05:35",
           "username": "SmartRollingPotato",
           "content": "B is correct<br>https://docs.aws.amazon.com/autoscaling/ec2/userguide/ASGettingNotifications.html#auto-scaling-sns-notificationsFor me also, B seems to be a suitable option. For D we need to manually create CW events, while we can use inbuilt ASG events feature",
-          "upvote_count": "172",
+          "upvote_count": "162",
           "selected_answers": ""
         },
         {
@@ -8611,14 +8298,6 @@ var DOP_C01_Part1 =
           "username": "jackdryan",
           "content": "I'll go with B",
           "upvote_count": "5",
-          "selected_answers": ""
-        },
-        {
-          "id": 778381,
-          "date": "Tue 17 Jan 2023 00:42",
-          "username": "Bulti",
-          "content": "B is the right answer. https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-sns-notifications.html#auto-scaling-sns-notifications",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -8685,7 +8364,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company uses AWS Storage Gateway in file gateway mode in front of an Amazon S3 bucket that is used by multiple resources. In the morning when business begins, users do not see the objects processed by a third party the previous evening. When a DevOps engineer looks directly at the S3 bucket, the data is there, but it is missing in Storage Gateway.<br>Which solution ensures that all the updated third-party files are available in the morning?<br><br><br></p>",
+      "question_text": "<p>A company uses AWS Storage Gateway in file gateway mode in front of an Amazon S3 bucket that is used by multiple resources. In the morning when business begins, users do not see the objects processed by a third party the previous evening. When a DevOps engineer looks directly at the S3 bucket, the data is there, but it is missing in Storage Gateway.<br>Which solution ensures that all the updated third-party files are available in the morning?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -8720,13 +8399,13 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 54 discussion",
       "discusstion": [
         {
           "id": 325562,
           "date": "Wed 06 Oct 2021 11:42",
           "username": "yyy",
-          "content": "Ans: A <br>https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_RefreshCache.html",
+          "content": "Ans: A<br>https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_RefreshCache.html",
           "upvote_count": "11",
           "selected_answers": ""
         },
@@ -8736,14 +8415,6 @@ var DOP_C01_Part1 =
           "username": "WhyIronMan",
           "content": "I'll go with A",
           "upvote_count": "6",
-          "selected_answers": ""
-        },
-        {
-          "id": 778383,
-          "date": "Tue 17 Jan 2023 00:43",
-          "username": "Bulti",
-          "content": "A is the right answer.",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -8762,7 +8433,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer sets up two Amazon S3 event notifications for an S3 bucket from the S3 console. Both event notifications will be invoked when an object PUT action occurs. One event notification will invoke an AWS Lambda function if the file suffix is .csv. Another event notification will invoke an Amazon Simple<br>Notification Service (Amazon SNS) topic if the file suffix is .xlsx<br>The DevOps engineer notices that files with the .csv suffix can invoke the Lambda function successfully. However, files with the .xlsx suffix cannot invoke the SNS topic.<br>Which reason explains why the SNS topic is not invoked when .xlsx files are added to the S3 bucket?<br><br><br></p>",
+      "question_text": "<p>A DevOps engineer sets up two Amazon S3 event notifications for an S3 bucket from the S3 console. Both event notifications will be invoked when an object PUT action occurs. One event notification will invoke an AWS Lambda function if the file suffix is .csv. Another event notification will invoke an Amazon Simple<br>Notification Service (Amazon SNS) topic if the file suffix is .xlsx<br>The DevOps engineer notices that files with the .csv suffix can invoke the Lambda function successfully. However, files with the .xlsx suffix cannot invoke the SNS topic.<br>Which reason explains why the SNS topic is not invoked when .xlsx files are added to the S3 bucket?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -8797,16 +8468,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 55 discussion",
       "discusstion": [
-        {
-          "id": 778384,
-          "date": "Tue 17 Jan 2023 00:44",
-          "username": "Bulti",
-          "content": "B is correct.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 763372,
           "date": "Sun 01 Jan 2023 23:51",
@@ -8835,7 +8498,7 @@ var DOP_C01_Part1 =
           "id": 696447,
           "date": "Sun 16 Oct 2022 20:56",
           "username": "mgm7",
-          "content": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/notification-how-to-filtering.html shows that you can have two non overlapping filters triggering two distinct actions, which shows A does not apply here.<br>If B is not taken care of, it certainly will not work, so I will go with B",
+          "content": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/notification-how-to-filtering.html shows that you can have two non overlapping filters triggering two distinct actions, which shows A does not apply here. <br>If B is not taken care of, it certainly will not work, so I will go with B",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: B"
         },
@@ -8859,7 +8522,7 @@ var DOP_C01_Part1 =
           "id": 677925,
           "date": "Sat 24 Sep 2022 17:11",
           "username": "RightAnswers",
-          "content": "S3 event notification supports SNS, SQS and Lambda. However, it is not possible to have multiple Events defined for the same 'triggers'. <br>https://stackoverflow.com/questions/55079923/programmatically-add-multiple-event-notifications-to-s3-bucket",
+          "content": "S3 event notification supports SNS, SQS and Lambda. However, it is not possible to have multiple Events defined for the same 'triggers'.<br>https://stackoverflow.com/questions/55079923/programmatically-add-multiple-event-notifications-to-s3-bucket",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: A"
         },
@@ -8876,7 +8539,7 @@ var DOP_C01_Part1 =
           "date": "Thu 01 Sep 2022 00:57",
           "username": "ohcn",
           "content": "B - https://docs.aws.amazon.com/AmazonS3/latest/userguide/grant-destinations-permissions-to-s3.html",
-          "upvote_count": "3",
+          "upvote_count": "2",
           "selected_answers": ""
         }
       ]
@@ -8887,7 +8550,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A rapidly growing company wants to scale for Developer demand for AWS development environments. Development environments are created manually in the<br>AWS Management Console. The Networking team uses AWS CloudFormation to manage the networking infrastructure, exporting stack output values for the<br>Amazon VPC and all subnets. The development environments have common standards, such as Application Load Balancers, Amazon EC2 Auto Scaling groups, security groups, and Amazon DynamoDB tables.<br>To keep up with the demand, the DevOps Engineer wants to automate the creation of development environments. Because the infrastructure required to support the application is expected to grow, there must be a way to easily update the deployed infrastructure. CloudFormation will be used to create a template for the development environments.<br>Which approach will meet these requirements and quickly provide consistent AWS environments for Developers?<br><br><br></p>",
+      "question_text": "<p>A company has a web application that uses AWS Elastic Beanstalk, Amazon S3, and Amazon DynamoDB to develop a web application. The web application has increased dramatically in popularity, resulting in unpredictable spikes in traffic. A DevOps Engineer has noted that 90% of the requests are duplicate read requests to the DynamoDB table and the images stored in an S3 bucket.<br>How can the Engineer improve the performance of the website?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -8900,203 +8563,67 @@ var DOP_C01_Part1 =
           "question_id": "#56",
           "answers": [
             {
-              "choice": "<p>A. Use Fn::ImportValue intrinsic functions in the Resources section of the template to retrieve Virtual Private Cloud (VPC) and subnet values. Use CloudFormation StackSets for the development environments, using the Count input parameter to indicate the number of environments needed. use the UpdateStackSet command to update existing development environments.<br></p>",
+              "choice": "<p>A. Use Amazon ElastiCache for Redis to cache repeated read requests to DynamoDB and AWS Elemental MediaStore to cache images stored in S3.<br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>B. Use nested stacks to define common infrastructure components. To access the exported values, use TemplateURL to reference the Networking team's template. To retrieve Virtual Private Cloud (VPC) and subnet values, use Fn::ImportValue intrinsic functions in the Parameters section of the master template. Use the CreateChangeSet and ExecuteChangeSet commands to update existing development environments.<br></p>",
+              "choice": "<p>B. Use Amazon ElastiCache for Memcached to cache repeated read requests to DynamoDB and Amazon EFS to cache images stored in S3.<br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>C. Use nested stacks to define common infrastructure components. Use Fn::ImportValue intrinsic functions with the resources of the nested stack to retrieve Virtual Private Cloud (VPC) and subnet values. Use the CreateChangeSet and ExecuteChangeSet commands to update existing development environments.<br></p>",
+              "choice": "<p>C. Use DynamoDB Accelerator to cache repeated read requests to DynamoDB and Amazon CloudFront to cache images stored in S3.<br></p>",
               "correct": true,
               "feedback": ""
             },
             {
-              "choice": "<p>D. Use Fn::ImportValue intrinsic functions in the Parameters section of the master template to retrieve Virtual Private Cloud (VPC) and subnet values. Define the development resources in the order they need to be created in the CloudFormation nested stacks. Use the CreateChangeSet and ExecuteChangeSet commands to update existing development environments.<br></p>",
+              "choice": "<p>D. Use DynamoDB Streams to cache repeated read requests to DynamoDB and API Gateway to cache images stored in S3.<br></p>",
               "correct": false,
               "feedback": ""
             }
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 56 discussion",
       "discusstion": [
         {
-          "id": 24702,
-          "date": "Tue 28 Sep 2021 02:59",
-          "username": "HazemYousryun",
-          "content": "Answer is C<br>B and D wrong because of the \\\"intrinsic functions in the Parameters section\\\"<br>A: what is the use of the count input parameters ? and UpdateChangeSet? you need create and executeC is correct.<br>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html",
-          "upvote_count": "245",
-          "selected_answers": ""
-        },
-        {
-          "id": 34197,
-          "date": "Thu 30 Sep 2021 23:34",
-          "username": "un",
-          "content": "C is correct.<br>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html",
-          "upvote_count": "5",
-          "selected_answers": ""
-        },
-        {
-          "id": 220691,
-          "date": "Fri 22 Oct 2021 22:28",
-          "username": "xlFireman",
-          "content": "A - Incorrect since StackSets are not needed here. No mention of multi-region/multi-account deployments (although correct usage of intrinsic functions and refs to resource values)<br>B - If you reference the template URL, you wouldn't need to use the intrinsic function Fn:import. You would reference the output of the template URL function i.e. TemplateName.Outputs.VariableName<br>C - Correct<br>D - You do not use Fn:import within the Parameters section. It is solely used within the Resources section to reference stack outputs within nested stacks or other previously deployed stacks.<br><br>Ergo, answer is C. ",
-          "upvote_count": "8",
-          "selected_answers": ""
-        },
-        {
-          "id": 778399,
-          "date": "Tue 17 Jan 2023 01:02",
-          "username": "Bulti",
-          "content": "The correct answer is A.  There has been a lot of confusion here because the question is not clear on whether each dev env is created in a different region/ account. However other answers are technically incorrect as per the AWS documentation. B and C are incorrect as fn:ImportValue doesn't work with nested stack and only works with cross-stack references. Answer D is incorrect as fn:ImportValue cannot be used in the Parameter section of a CF template. Therefore through method of elimination the correct answer is A. ",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 652962,
-          "date": "Sun 28 Aug 2022 15:46",
-          "username": "vagobago",
-          "content": "Answer C seems to be the most suitable one. Why A is marked to be the right one - no idea. \\\"CloudFormation StackSets\\\" within the answer - fits to multi-account scenarios - in the question is no word about multi-account",
-          "upvote_count": "3",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 379567,
-          "date": "Sun 07 Nov 2021 14:46",
-          "username": "Elie777",
-          "content": "For cross-stack references, use Fn::ImportValue to import a value from another template. For nested stacks, use Fn::Ref and Fn::GetAtt to reference the value in your current template.<br>So It can' be C",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 322133,
-          "date": "Wed 03 Nov 2021 14:31",
-          "username": "aws_Tamilan",
-          "content": "ANs: C",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 230256,
-          "date": "Mon 01 Nov 2021 20:36",
-          "username": "rlf",
-          "content": "A is right with stackset and all others are wrong.",
+          "id": 334753,
+          "date": "Thu 28 Oct 2021 00:56",
+          "username": "CeckGix",
+          "content": "C: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html<br>https://aws.amazon.com/blogs/aws/amazon-dynamodb-accelerator-dax-in-memory-caching-for-read-intensive-workloads/",
           "upvote_count": "3",
           "selected_answers": ""
         },
         {
-          "id": 223326,
-          "date": "Wed 27 Oct 2021 08:57",
-          "username": "jackdryan",
-          "content": "I'll go with C",
+          "id": 323448,
+          "date": "Mon 11 Oct 2021 13:15",
+          "username": "WhyIronMan",
+          "content": "I'll go with C,",
           "upvote_count": "4",
           "selected_answers": ""
         },
         {
-          "id": 207653,
-          "date": "Thu 21 Oct 2021 13:40",
-          "username": "ChauPhan",
-          "content": "C is the correct one. <br>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html<br>CF of network exports the VPC, subnet or needed information<br>CF of application imports the above information to its stack and UpdateChangeSet/ ExecuteChangeSet",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 176485,
-          "date": "Tue 19 Oct 2021 20:12",
-          "username": "nqobza",
-          "content": "The correct answer is C. ",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 96891,
-          "date": "Fri 08 Oct 2021 02:45",
-          "username": "PeppaPigdemon42ChauPhan",
-          "content": "A is the correct answer.<br>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html#stacksets-concepts-stackset<br>C is definitely wrong, and it's why:<br>Fn::ImportValue is used for cross-stacks reference. i.e. You create a VPC in stack B and exportthe VPC so another stacks can reference it using Fn::ImportValue.<br>To pass values from nested stack to parent stack, you should use Fn::GetAttr inthe parent stackOption C says: Use Fn::ImportValue intrinsic functions with the resources of the nested stack to retrieve Virtual Private Cloud (VPC) and subnet values.<br>I believe it means that in the resource blocks inside a nested stack you should use Fn::ImportValue function. Which is correct.A might be correct if doesn't have sentence \\\"using the Count input parameter to indicate the number of environments needed\\\", there is not needed. What we need is the VPC ID and subnet from Network CF. ",
-          "upvote_count": "121",
-          "selected_answers": ""
-        },
-        {
-          "id": 102650,
-          "date": "Mon 18 Oct 2021 22:38",
-          "username": "demon42",
-          "content": "Option C says: Use Fn::ImportValue intrinsic functions with the resources of the nested stack to retrieve Virtual Private Cloud (VPC) and subnet values.<br>I believe it means that in the resource blocks inside a nested stack you should use Fn::ImportValue function. Which is correct.",
+          "id": 321923,
+          "date": "Mon 04 Oct 2021 04:48",
+          "username": "aws_Tamilan",
+          "content": "Correct Answer: C<br><br>Reference:<br><br>https://aws.amazon.com/blogs/aws/amazon-dynamodb-accelerator-dax-in-memory-caching-for-read-intensive-workloads/<br><br>https://aws.amazon.com/dynamodb/dax/",
           "upvote_count": "2",
           "selected_answers": ""
         },
         {
-          "id": 207658,
-          "date": "Thu 21 Oct 2021 14:39",
-          "username": "ChauPhan",
-          "content": "A might be correct if doesn't have sentence \\\"using the Count input parameter to indicate the number of environments needed\\\", there is not needed. What we need is the VPC ID and subnet from Network CF. ",
+          "id": 317836,
+          "date": "Sat 25 Sep 2021 04:29",
+          "username": "devopsv2",
+          "content": "Option C, DynamoDB Accelarator is the caching mechanism for DynamoDB and CloudFront is the best caching static images (CDN)",
           "upvote_count": "1",
           "selected_answers": ""
         },
         {
-          "id": 72018,
-          "date": "Thu 07 Oct 2021 21:35",
-          "username": "kawara",
-          "content": "C is the right answer",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 62703,
-          "date": "Thu 07 Oct 2021 07:29",
-          "username": "Ebi",
-          "content": "C is the answer",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 62223,
-          "date": "Tue 05 Oct 2021 04:17",
-          "username": "yassu",
-          "content": "C is correct",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 58739,
-          "date": "Mon 04 Oct 2021 02:43",
-          "username": "toshko85",
-          "content": "voting for C",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 56753,
-          "date": "Sun 03 Oct 2021 18:59",
-          "username": "xaocho",
-          "content": "It is C",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 53064,
-          "date": "Fri 01 Oct 2021 21:28",
-          "username": "eleelehendry",
-          "content": "B, D wrong because of “Use nested stacks to define common infrastructure components.” – common infrastructure cannot be defined in a nested stack. Also, wrong for “use TemplateURL to reference the Networking team's template” – it’s stack name, not template URL. <br>C wrong because of “Use Fn:ImportValue intrinsic functions in the Parameters section of the master template to retrieve Virtual Private Cloud (VPC) and subnet values.” – master template is the one that defines the infrastructure. It should hace ExportValue. <br>Correct answer is AAgree, Answer is C.  In A the UpdateChangeSet doesnt exist, also the Count.ele，what are you saying? A or C?",
-          "upvote_count": "321",
-          "selected_answers": ""
-        },
-        {
-          "id": 53653,
-          "date": "Sat 02 Oct 2021 19:24",
-          "username": "elehendry",
-          "content": "Agree, Answer is C.  In A the UpdateChangeSet doesnt exist, also the Count.ele，what are you saying? A or C?",
-          "upvote_count": "21",
-          "selected_answers": ""
-        },
-        {
-          "id": 60884,
-          "date": "Tue 05 Oct 2021 03:27",
-          "username": "hendry",
-          "content": "ele，what are you saying? A or C?",
+          "id": 309498,
+          "date": "Wed 22 Sep 2021 02:08",
+          "username": "Rajarshi",
+          "content": "Ans is C",
           "upvote_count": "1",
           "selected_answers": ""
         }
@@ -9108,7 +8635,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer notices that all Amazon EC2 instances running behind an Application Load Balancer in an Auto Scaling group are failing to respond to user requests. The EC2 instances are also failing target group HTTP health checks.<br>Upon inspection, the engineer notices the application process was not running in any EC2 instances. There are a significant number of out of memory messages in the system logs. The engineer needs to improve the resilience of the application to cope with a potential application memory leak. Monitoring and notifications should be enabled to alert when there is an issue.<br>Which combination of actions will meet these requirements? (Choose two.)<br><br><br></p>",
+      "question_text": "<p>A DevOps engineer notices that all Amazon EC2 instances running behind an Application Load Balancer in an Auto Scaling group are failing to respond to user requests. The EC2 instances are also failing target group HTTP health checks.<br>Upon inspection, the engineer notices the application process was not running in any EC2 instances. There are a significant number of out of memory messages in the system logs. The engineer needs to improve the resilience of the application to cope with a potential application memory leak. Monitoring and notifications should be enabled to alert when there is an issue.<br>Which combination of actions will meet these requirements? (Choose two.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -9148,7 +8675,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 57 discussion",
       "discusstion": [
         {
           "id": 326681,
@@ -9165,22 +8692,6 @@ var DOP_C01_Part1 =
           "content": "I will go with A,E",
           "upvote_count": "9",
           "selected_answers": ""
-        },
-        {
-          "id": 778402,
-          "date": "Tue 17 Jan 2023 01:08",
-          "username": "Bulti",
-          "content": "A & E is the right answer.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 771314,
-          "date": "Tue 10 Jan 2023 12:01",
-          "username": "PepsNick",
-          "content": "AE: they are looking for a combination of actions. DE is not possible just from that because they are two similar actions",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: AE"
         },
         {
           "id": 688985,
@@ -9211,7 +8722,7 @@ var DOP_C01_Part1 =
           "date": "Thu 10 Feb 2022 20:47",
           "username": "blueorca",
           "content": "AE, E is obvious, A is because ASG by default monitor EC2 health check instead of LB, think that's the point of the question.",
-          "upvote_count": "4",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: AE"
         },
         {
@@ -9234,7 +8745,7 @@ var DOP_C01_Part1 =
           "id": 330308,
           "date": "Mon 04 Oct 2021 05:24",
           "username": "devoppshammousjustfmm",
-          "content": "left with A,B as only sensible options.<br>sinceC doesnt solve problem<br>and D & E are invalid as no plain ASG (or EC2I) metrics on memory utilization (need Custom metric but no mention of that).I thought, like you, that a custom metric is needed for memory usage, but I came across this: \\\"By default, AWS gives you visibility into metrics like CPU load logs, network latency, request volume, etc., but not EC2 memory usage. For other metrics like EC2 memory usage, you’ll have to install and configure a CloudWatch agent on the instance...\\\". For more info, check the \\\"mem_xxxx\\\" metrics here: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.htmlCloudwatch agent have memory used metric.<br><br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html",
+          "content": "left with A,B as only sensible options.<br>sinceC doesnt solve problem<br>and D & E are invalid as no plain ASG (or EC2I) metrics on memory utilization (need Custom metric but no mention of that).I thought, like you, that a custom metric is needed for memory usage, but I came across this: \\\"By default, AWS gives you visibility into metrics like CPU load logs, network latency, request volume, etc., but not EC2 memory usage. For other metrics like EC2 memory usage, you'll have to install and configure a CloudWatch agent on the instance...\\\". For more info, check the \\\"mem_xxxx\\\" metrics here: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.htmlCloudwatch agent have memory used metric.<br><br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html",
           "upvote_count": "221",
           "selected_answers": ""
         },
@@ -9242,7 +8753,7 @@ var DOP_C01_Part1 =
           "id": 449903,
           "date": "Thu 21 Oct 2021 01:05",
           "username": "shammousjustfmm",
-          "content": "I thought, like you, that a custom metric is needed for memory usage, but I came across this: \\\"By default, AWS gives you visibility into metrics like CPU load logs, network latency, request volume, etc., but not EC2 memory usage. For other metrics like EC2 memory usage, you’ll have to install and configure a CloudWatch agent on the instance...\\\". For more info, check the \\\"mem_xxxx\\\" metrics here: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.htmlCloudwatch agent have memory used metric.<br><br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html",
+          "content": "I thought, like you, that a custom metric is needed for memory usage, but I came across this: \\\"By default, AWS gives you visibility into metrics like CPU load logs, network latency, request volume, etc., but not EC2 memory usage. For other metrics like EC2 memory usage, you'll have to install and configure a CloudWatch agent on the instance...\\\". For more info, check the \\\"mem_xxxx\\\" metrics here: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.htmlCloudwatch agent have memory used metric.<br><br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html",
           "upvote_count": "21",
           "selected_answers": ""
         },
@@ -9262,7 +8773,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company wants to migrate a legacy application to AWS and develop a deployment pipeline that uses AWS services only. A DevOps engineer is migrating all of the application code from a Git repository to AWS CodeCommit while preserving the history of the repository. The DevOps engineer has set all the permissions within CodeCommit, installed the Git client and the AWS CLI on a local computer, and is ready to migrate the repository.<br>Which actions will follow?<br><br><br></p>",
+      "question_text": "<p>A company wants to migrate a legacy application to AWS and develop a deployment pipeline that uses AWS services only. A DevOps engineer is migrating all of the application code from a Git repository to AWS CodeCommit while preserving the history of the repository. The DevOps engineer has set all the permissions within CodeCommit, installed the Git client and the AWS CLI on a local computer, and is ready to migrate the repository.<br>Which actions will follow?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -9297,7 +8808,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 58 discussion",
       "discusstion": [
         {
           "id": 310004,
@@ -9324,18 +8835,10 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
-          "id": 778464,
-          "date": "Tue 17 Jan 2023 03:12",
-          "username": "Bulti",
-          "content": "Answer D use the --mirror option when cloning git repo",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
           "id": 702089,
           "date": "Sun 23 Oct 2022 12:48",
           "username": "ryuhei",
-          "content": "Answer is ”D” ！",
+          "content": "Answer is =E2=80=9DD=E2=80=9D =EF=BC=81",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: D"
         },
@@ -9387,7 +8890,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company is using AWS to deploy an application. The development team must automate the deployments. The team has created an AWS CodePipeline pipeline to deploy the application to Amazon EC2 instances using AWS CodeDeploy after it has been built using AWS CodeBuild.<br>The team wants to add automated testing to the pipeline to confirm that the application is healthy before deploying the code to the EC2 instances. The team also requires a manual approval action before the application is deployed, even if the tests are successful. The testing and approval must be accomplished at the lowest costs, using the simplest management solution.<br>Which solution will meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A company is using AWS to deploy an application. The development team must automate the deployments. The team has created an AWS CodePipeline pipeline to deploy the application to Amazon EC2 instances using AWS CodeDeploy after it has been built using AWS CodeBuild.<br>The team wants to add automated testing to the pipeline to confirm that the application is healthy before deploying the code to the EC2 instances. The team also requires a manual approval action before the application is deployed, even if the tests are successful. The testing and approval must be accomplished at the lowest costs, using the simplest management solution.<br>Which solution will meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -9422,7 +8925,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 59 discussion",
       "discusstion": [
         {
           "id": 323449,
@@ -9438,14 +8941,6 @@ var DOP_C01_Part1 =
           "username": "sb333",
           "content": "The answer is B. ",
           "upvote_count": "5",
-          "selected_answers": ""
-        },
-        {
-          "id": 778468,
-          "date": "Tue 17 Jan 2023 03:15",
-          "username": "Bulti",
-          "content": "Answer is B without a doubt.",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -9468,7 +8963,7 @@ var DOP_C01_Part1 =
           "id": 316383,
           "date": "Tue 28 Sep 2021 23:00",
           "username": "WhyIronManWhyIronMan",
-          "content": "Reference: https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-create-pipeline-add-test.htmlI'll go with B <br><br>because its the simplest way with lower costs",
+          "content": "Reference: https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-create-pipeline-add-test.htmlI'll go with B<br><br>because its the simplest way with lower costs",
           "upvote_count": "25",
           "selected_answers": ""
         },
@@ -9476,7 +8971,7 @@ var DOP_C01_Part1 =
           "id": 326941,
           "date": "Wed 27 Oct 2021 20:31",
           "username": "WhyIronMan",
-          "content": "I'll go with B <br><br>because its the simplest way with lower costs",
+          "content": "I'll go with B<br><br>because its the simplest way with lower costs",
           "upvote_count": "5",
           "selected_answers": ""
         }
@@ -9488,7 +8983,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer wants to deploy a serverless web application that is based on AWS Lambda. The deployment must meet the following requirements:<br>✑ Provide staging and production environments.<br>✑ Restrict developers from accessing the production environment.<br>✑ Avoid hardcoding passwords in the Lambda functions.<br>✑ Store source code in AWS CodeCommit.<br>✑ Use AWS CodePipeline to automate the deployment.<br>What is the MOST operationally efficient solution that meets these requirements?<br><br><br></p>",
+      "question_text": "<p>A DevOps engineer wants to deploy a serverless web application that is based on AWS Lambda. The deployment must meet the following requirements:<br>-Provide staging and production environments.<br>-Restrict developers from accessing the production environment.<br>-Avoid hardcoding passwords in the Lambda functions.<br>-Store source code in AWS CodeCommit.<br>-Use AWS CodePipeline to automate the deployment.<br>What is the MOST operationally efficient solution that meets these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -9523,16 +9018,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 60 discussion",
       "discusstion": [
-        {
-          "id": 778475,
-          "date": "Tue 17 Jan 2023 03:19",
-          "username": "Bulti",
-          "content": "B is the right answer and not D because we want to restrict developer access to the production environment and therefore having a separate account for production makes it more manageble.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 763610,
           "date": "Mon 02 Jan 2023 10:19",
@@ -9577,7 +9064,7 @@ var DOP_C01_Part1 =
           "id": 693857,
           "date": "Thu 13 Oct 2022 13:51",
           "username": "mgm7",
-          "content": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html <br>One can use tags and condition statements in policies to restrict access to specific resources.",
+          "content": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html<br>One can use tags and condition statements in policies to restrict access to specific resources.",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: D"
         },
@@ -9633,7 +9120,7 @@ var DOP_C01_Part1 =
           "id": 659518,
           "date": "Sun 04 Sep 2022 22:29",
           "username": "ohcn",
-          "content": "B - I suspect D is not the correct answer. Lambda uses ALIAS to segregate deployments. According to AWS documentation that is the deployment group definition for a Lambda deployment: \\\"A CodeDeploy deployment group on an AWS Lambda compute platform identifies a collection of one or more AppSpec files. Each AppSpec file can deploy one Lambda function version. A deployment group also defines a set of configuration options for future deployments, such as alarms and rollback configurations.\\\". https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-steps-lambda.html<br>It means AppSpec is going to be responsible to guide which environment Codedeploy will deploy the lambdafunction.<br>https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-resources.html",
+          "content": "B - I suspect D is not the correct answer. Lambda uses ALIAS to segregate deployments. According to AWS documentation that is the deployment group definition for a Lambda deployment: \\\"A CodeDeploy deployment group on an AWS Lambda compute platform identifies a collection of one or more AppSpec files. Each AppSpec file can deploy one Lambda function version. A deployment group also defines a set of configuration options for future deployments, such as alarms and rollback configurations.\\\". https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-steps-lambda.html<br>It means AppSpec is going to be responsible to guide which environment Codedeploy will deploy the lambdafunction. <br>https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-resources.html",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
@@ -9661,7 +9148,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company wants to use AWS development tools to replace its current bash deployment scripts. The company currently deploys a LAMP application to a group of<br>Amazon EC2 instances behind an Application Load Balancer (ALB). During the deployments, the company unit tests the committed application, stops and starts services, unregisters and re-registers instances with the load balancer, and updates file permissions. The company wants to maintain the same deployment functionality through the shift to using AWS services.<br>Which solution will meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A company wants to use AWS development tools to replace its current bash deployment scripts. The company currently deploys a LAMP application to a group of<br>Amazon EC2 instances behind an Application Load Balancer (ALB). During the deployments, the company unit tests the committed application, stops and starts services, unregisters and re-registers instances with the load balancer, and updates file permissions. The company wants to maintain the same deployment functionality through the shift to using AWS services.<br>Which solution will meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -9696,13 +9183,13 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 61 discussion",
       "discusstion": [
         {
           "id": 356257,
           "date": "Mon 27 Sep 2021 10:49",
           "username": "LBhappydazeRightAnswers",
-          "content": "D is the correct answer. CodeBuild to test the appliction.You can test with codedeploy: https://aws.amazon.com/blogs/devops/how-to-test-and-debug-aws-codedeploy-locally-before-you-ship-your-code/#:~:text=You%20can%20test%20application%20code,local%20server%20or%20EC2%20instance.You can test application **code packages** (NOT application) on any machine that has the CodeDeploy agent installed before you deploy it through the service. Likewise, to debug locally, you just need to install the CodeDeploy agent on any machine, including your local server or EC2 instance.<br>Where as CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy.<br>The correct answer is D",
+          "content": "D is the correct answer. CodeBuild to test the appliction.You can test with codedeploy: https://aws.amazon.com/blogs/devops/how-to-test-and-debug-aws-codedeploy-locally-before-you-ship-your-code/#:~:textYou%20can%20test%20application%20code,local%20server%20or%20EC2%20instance.You can test application **code packages** (NOT application) on any machine that has the CodeDeploy agent installed before you deploy it through the service. Likewise, to debug locally, you just need to install the CodeDeploy agent on any machine, including your local server or EC2 instance.<br>Where as CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy.<br>The correct answer is D",
           "upvote_count": "1111",
           "selected_answers": ""
         },
@@ -9710,7 +9197,7 @@ var DOP_C01_Part1 =
           "id": 373753,
           "date": "Sat 16 Oct 2021 00:45",
           "username": "happydazeRightAnswers",
-          "content": "You can test with codedeploy: https://aws.amazon.com/blogs/devops/how-to-test-and-debug-aws-codedeploy-locally-before-you-ship-your-code/#:~:text=You%20can%20test%20application%20code,local%20server%20or%20EC2%20instance.You can test application **code packages** (NOT application) on any machine that has the CodeDeploy agent installed before you deploy it through the service. Likewise, to debug locally, you just need to install the CodeDeploy agent on any machine, including your local server or EC2 instance.<br>Where as CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy.<br>The correct answer is D",
+          "content": "You can test with codedeploy: https://aws.amazon.com/blogs/devops/how-to-test-and-debug-aws-codedeploy-locally-before-you-ship-your-code/#:~:textYou%20can%20test%20application%20code,local%20server%20or%20EC2%20instance.You can test application **code packages** (NOT application) on any machine that has the CodeDeploy agent installed before you deploy it through the service. Likewise, to debug locally, you just need to install the CodeDeploy agent on any machine, including your local server or EC2 instance.<br>Where as CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy.<br>The correct answer is D",
           "upvote_count": "11",
           "selected_answers": ""
         },
@@ -9719,14 +9206,6 @@ var DOP_C01_Part1 =
           "date": "Sun 30 Jan 2022 22:57",
           "username": "RightAnswers",
           "content": "You can test application **code packages** (NOT application) on any machine that has the CodeDeploy agent installed before you deploy it through the service. Likewise, to debug locally, you just need to install the CodeDeploy agent on any machine, including your local server or EC2 instance.<br>Where as CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy.<br>The correct answer is D",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 778479,
-          "date": "Tue 17 Jan 2023 03:23",
-          "username": "Bulti",
-          "content": "D is correct.",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -9750,7 +9229,7 @@ var DOP_C01_Part1 =
           "id": 678692,
           "date": "Sun 25 Sep 2022 12:17",
           "username": "RightAnswers",
-          "content": "Though Codedeploy can be used for unit testing applications, it requires Codedeploy agents installed on the machine (https://aws.amazon.com/blogs/devops/how-to-test-and-debug-aws-codedeploy-locally-before-you-ship-your-code/#:~:text=You%20can%20test%20application%20code,local%20server%20or%20EC2%20instance). However, the correct approach is to use Codebuild for unit testing.<br>A: Incorrect: There is no deployment pipeline. Uses only Codebuild<br>B and C: Incorrect: Codebuild is used for testing - not Codedeploy<br>D: Correct. Has Codepipeline, Codebuild for unit testing and Codedeploy",
+          "content": "Though Codedeploy can be used for unit testing applications, it requires Codedeploy agents installed on the machine (https://aws.amazon.com/blogs/devops/how-to-test-and-debug-aws-codedeploy-locally-before-you-ship-your-code/#:~:textYou%20can%20test%20application%20code,local%20server%20or%20EC2%20instance). However, the correct approach is to use Codebuild for unit testing.<br>A: Incorrect: There is no deployment pipeline. Uses only Codebuild<br>B and C: Incorrect: Codebuild is used for testing - not Codedeploy<br>D: Correct. Has Codepipeline, Codebuild for unit testing and Codedeploy",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: D"
         },
@@ -9802,7 +9281,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company gives its employees limited rights to AWS. DevOps engineers have the ability to assume an administrator role. For tracking purposes, the security team wants to receive a near-real-time notification when the administrator role is assumed.<br>How should this be accomplished?<br><br><br></p>",
+      "question_text": "<p>A company gives its employees limited rights to AWS. DevOps engineers have the ability to assume an administrator role. For tracking purposes, the security team wants to receive a near-real-time notification when the administrator role is assumed.<br>How should this be accomplished?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -9837,14 +9316,14 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 62 discussion",
       "discusstion": [
         {
           "id": 389170,
           "date": "Thu 07 Oct 2021 14:33",
           "username": "D2StelSen",
           "content": "D should be right answer as it covers all methods of assuming admin role - not just management consoleThis is the most convincing answer. Thanks D2",
-          "upvote_count": "151",
+          "upvote_count": "141",
           "selected_answers": ""
         },
         {
@@ -9878,30 +9357,6 @@ var DOP_C01_Part1 =
           "content": "The questions says Near Real time and not real time",
           "upvote_count": "2",
           "selected_answers": ""
-        },
-        {
-          "id": 778488,
-          "date": "Tue 17 Jan 2023 03:44",
-          "username": "BultiBulti",
-          "content": "Answer is D. Based on the article below, assuming Role using STS ( IAM switchRole feature) is not considered as one of the AWS Console Sign-in events. Only direct sign-in using root and IAM user along with federated sign-in using AWS SSO are considered to be AWS Console Sign-in events. But once you sign in, any role switching performed to login as an administrator in the master account is not considered a sign-in event. Also as it's possible to Assume role using STS: AssumeRole or AssumeRoleWithSAML API and therefore such events will not be logged in as Console Sign-in events even if my above explanation of Console Sign-in events is not accurate. As a result the correct answer is D. https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-aws-console-sign-in-events.html",
-          "upvote_count": "21",
-          "selected_answers": ""
-        },
-        {
-          "id": 778491,
-          "date": "Tue 17 Jan 2023 03:44",
-          "username": "Bulti",
-          "content": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-aws-console-sign-in-events.html",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 770762,
-          "date": "Mon 09 Jan 2023 19:32",
-          "username": "nnope",
-          "content": "CloudTrail is near real time",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: D"
         },
         {
           "id": 754294,
@@ -9948,14 +9403,14 @@ var DOP_C01_Part1 =
           "date": "Sun 25 Sep 2022 12:32",
           "username": "RightAnswers",
           "content": "The requirement is to track whenever the DevOps engineer assumes Admin role (not the console sign-in events as mentioned in answer C).<br>CloudTrail logs attempts to sign into the AWS Management Console (https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-aws-console-sign-in-events.html). CloudTrail can be configured to send events to CloudWatch Logs, and CloudWatch sends an SNS notification.<br>The requirement is for a NEAR real time - unfortunately CloudTrail typically delivers logs within an average of about 15 minutes of an API call. This time is not guaranteed.",
-          "upvote_count": "3",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: D"
         },
         {
           "id": 648352,
           "date": "Thu 18 Aug 2022 10:09",
           "username": "hubekpeter",
-          "content": "You can use sns topic as an event bridge target. There’s no need to put lambda in between. This solution is easier to implement, cheaper and more straight forward.",
+          "content": "You can use sns topic as an event bridge target. There's no need to put lambda in between. This solution is easier to implement, cheaper and more straight forward.",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: C"
         },
@@ -9963,7 +9418,7 @@ var DOP_C01_Part1 =
           "id": 632483,
           "date": "Sun 17 Jul 2022 09:00",
           "username": "adebisiayohubekpeter",
-          "content": "The answer is D <br>There is nothing like an AWS Management Console sign-in events event triggerActually there’s https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-aws-console-sign-in-events.html",
+          "content": "The answer is D<br>There is nothing like an AWS Management Console sign-in events event triggerActually there's https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-aws-console-sign-in-events.html",
           "upvote_count": "22",
           "selected_answers": "Selected Answer: D"
         },
@@ -9971,7 +9426,7 @@ var DOP_C01_Part1 =
           "id": 648354,
           "date": "Thu 18 Aug 2022 10:11",
           "username": "hubekpeter",
-          "content": "Actually there’s https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-aws-console-sign-in-events.html",
+          "content": "Actually there's https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-aws-console-sign-in-events.html",
           "upvote_count": "2",
           "selected_answers": ""
         },
@@ -9987,7 +9442,7 @@ var DOP_C01_Part1 =
           "id": 617370,
           "date": "Thu 16 Jun 2022 21:06",
           "username": "monkalways",
-          "content": "D is the answer. <br><br>AWS Management Console sign-in events have nothing to do with assuming role.",
+          "content": "D is the answer.<br><br>AWS Management Console sign-in events have nothing to do with assuming role.",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: D"
         },
@@ -10003,7 +9458,7 @@ var DOP_C01_Part1 =
           "id": 464850,
           "date": "Mon 18 Oct 2021 12:47",
           "username": "Shenannigan",
-          "content": "Based on this https://aws.amazon.com/blogs/mt/monitor-and-notify-on-aws-account-root-user-activity/ <br>I believe D is the correct answer and yes I know not exactly the same scenario",
+          "content": "Based on this https://aws.amazon.com/blogs/mt/monitor-and-notify-on-aws-account-root-user-activity/<br>I believe D is the correct answer and yes I know not exactly the same scenario",
           "upvote_count": "3",
           "selected_answers": ""
         },
@@ -10031,7 +9486,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>An ecommerce company uses a large number of Amazon EBS backed Amazon EC2 instances. To decrease manual work across all the instances, a DevOps<br>Engineer is tasked with automating restart actions when EC2 instance retirement events are scheduled.<br>How can this be accomplished?<br><br><br></p>",
+      "question_text": "<p>An ecommerce company uses a large number of Amazon EBS backed Amazon EC2 instances. To decrease manual work across all the instances, a DevOps<br>Engineer is tasked with automating restart actions when EC2 instance retirement events are scheduled.<br>How can this be accomplished?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -10066,7 +9521,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 63 discussion",
       "discusstion": [
         {
           "id": 158831,
@@ -10074,14 +9529,6 @@ var DOP_C01_Part1 =
           "username": "Smart",
           "content": "D is correct (https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-retirement/)",
           "upvote_count": "9",
-          "selected_answers": ""
-        },
-        {
-          "id": 778492,
-          "date": "Tue 17 Jan 2023 03:48",
-          "username": "Bulti",
-          "content": "D is the right answer.",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -10124,7 +9571,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company that runs many workloads on AWS has an Amazon EBS spend that has increased over time. The DevOps team notices there are many unattached<br>EBS volumes. Although there are workloads where volumes are detached, volumes over 14 days old are stale and no longer needed. A DevOps engineer has been tasked with creating automation that deletes unattached EBS volumes that have been unattached for 14 days.<br>Which solution will accomplish this?<br><br><br></p>",
+      "question_text": "<p>A company that runs many workloads on AWS has an Amazon EBS spend that has increased over time. The DevOps team notices there are many unattached<br>EBS volumes. Although there are workloads where volumes are detached, volumes over 14 days old are stale and no longer needed. A DevOps engineer has been tasked with creating automation that deletes unattached EBS volumes that have been unattached for 14 days.<br>Which solution will accomplish this?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -10159,7 +9606,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 64 discussion",
       "discusstion": [
         {
           "id": 325973,
@@ -10202,22 +9649,6 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
-          "id": 778497,
-          "date": "Tue 17 Jan 2023 04:03",
-          "username": "Bulti",
-          "content": "Correct answer is C.  D is incorrect because Trusted Advisor detects only under provisioned and over provisioned EBS volume meaning utilization. If the EBS volume is already deattached and not utilized by any EC2 instance, then I don't think Trusted Advisor would detect that. I am not very sure about it but that's my guess. C seems logically correct. Some folks didn't select C because they thought Lambda will tag the unattached EBS volume each day ( again and again). But thats not true. Lambda will do so only once per EBS volume and therefore will be able to detect if a specifc volume was unused for 14 days and then delete it.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 771460,
-          "date": "Tue 10 Jan 2023 14:40",
-          "username": "PepsNick",
-          "content": "It should be C not B.  Data Lifecycle Manager is for EBS snapshots not the volume. https://aws.amazon.com/blogs/storage/automating-amazon-ebs-snapshot-and-ami-management-using-amazon-dlm/",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
           "id": 764073,
           "date": "Mon 02 Jan 2023 23:23",
           "username": "saeidp",
@@ -10245,7 +9676,7 @@ var DOP_C01_Part1 =
           "id": 713541,
           "date": "Tue 08 Nov 2022 07:45",
           "username": "srikanth923",
-          "content": "I will go with CA.  AWS ConfigChecks if EBS volumes are attached to EC2 instances. If the volume is 'available state', then you configure CloudWatch Event to invoke a Lambda function. Lambda function will take care of deletion. Note that Config does not only trigger unused EBS volumes for 14 days, but every unused EBS volume(irrespective of the number of days its been unused). Though it can be made work, its not the most efficient solutionB.  Data Lifecycle Manager only looks at EBS snapshot lifecycle. Not the EBS volumes itselfC.  Lambda function triggered periodically and tagging the new volumes and checking if already tagged volumes are >= 14 days old. If it finds any >= 14 days old, Lambda will delete them<br>4. Trusted advisor does not check for unused volumes, it checks for under utilised EBS volumes<br>So C is the best answer in this context.",
+          "content": "I will go with CA.  AWS ConfigChecks if EBS volumes are attached to EC2 instances. If the volume is 'available state', then you configure CloudWatch Event to invoke a Lambda function. Lambda function will take care of deletion. Note that Config does not only trigger unused EBS volumes for 14 days, but every unused EBS volume(irrespective of the number of days its been unused). Though it can be made work, its not the most efficient solutionB.  Data Lifecycle Manager only looks at EBS snapshot lifecycle. Not the EBS volumes itselfC.  Lambda function triggered periodically and tagging the new volumes and checking if already tagged volumes are > 14 days old. If it finds any > 14 days old, Lambda will delete them<br>4. Trusted advisor does not check for unused volumes, it checks for under utilised EBS volumes<br>So C is the best answer in this context.",
           "upvote_count": "2",
           "selected_answers": ""
         },
@@ -10325,9 +9756,25 @@ var DOP_C01_Part1 =
           "id": 636827,
           "date": "Mon 25 Jul 2022 18:38",
           "username": "nebojsaMa",
-          "content": "B is correct see the link https://aws.amazon.com/about-aws/whats-new/2018/07/introducing-amazon-data-lifecycle-manager-for-ebs-snapshots/?nc1=h_ls",
+          "content": "B is correct see the link https://aws.amazon.com/about-aws/whats-new/2018/07/introducing-amazon-data-lifecycle-manager-for-ebs-snapshots/?nc1h_ls",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 630155,
+          "date": "Mon 11 Jul 2022 19:48",
+          "username": "nebojsaMa",
+          "content": "B is correct https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 622415,
+          "date": "Sun 26 Jun 2022 10:35",
+          "username": "nqthien041292",
+          "content": "Vote C",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
         }
       ]
     },
@@ -10337,7 +9784,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company has multiple child accounts that are part of an organization in AWS Organizations. The security team needs to review every Amazon EC2 security group and their inbound and outbound rules. The security team wants to programmatically retrieve this information from the child accounts using an AWS Lambda function in the management account of the organization.<br>Which combination of access changes will meet these requirements? (Choose three.)<br><br><br></p>",
+      "question_text": "<p>A company has multiple child accounts that are part of an organization in AWS Organizations. The security team needs to review every Amazon EC2 security group and their inbound and outbound rules. The security team wants to programmatically retrieve this information from the child accounts using an AWS Lambda function in the management account of the organization.<br>Which combination of access changes will meet these requirements? (Choose three.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -10382,22 +9829,14 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 65 discussion",
       "discusstion": [
-        {
-          "id": 778500,
-          "date": "Tue 17 Jan 2023 04:11",
-          "username": "Bulti",
-          "content": "BCE are the correct answers.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 688108,
           "date": "Thu 06 Oct 2022 23:32",
           "username": "Goozian",
-          "content": "watch this AWS Video; well explained =>https://www.youtube.com/watch?v=20tr9gUY4i0",
-          "upvote_count": "2",
+          "content": "watch this AWS Video; well explained >https://www.youtube.com/watch?v20tr9gUY4i0",
+          "upvote_count": "1",
           "selected_answers": "Selected Answer: BCE"
         },
         {
@@ -10432,7 +9871,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>An application is deployed on Amazon EC2 instances running in an Auto Scaling group. During the bootstrapping process, the instances register their private IP addresses with a monitoring system. The monitoring system performs health checks frequently by sending ping requests to those IP addresses and sending alerts if an instance becomes non-responsive.<br>The existing deployment strategy replaces the current EC2 instances with new ones. A DevOps Engineer has noticed that the monitoring system is sending false alarms during a deployment, and is tasked with stopping these false alarms.<br>Which solution will meet these requirements without affecting the current deployment method?<br><br><br></p>",
+      "question_text": "<p>An application is deployed on Amazon EC2 instances running in an Auto Scaling group. During the bootstrapping process, the instances register their private IP addresses with a monitoring system. The monitoring system performs health checks frequently by sending ping requests to those IP addresses and sending alerts if an instance becomes non-responsive.<br>The existing deployment strategy replaces the current EC2 instances with new ones. A DevOps Engineer has noticed that the monitoring system is sending false alarms during a deployment, and is tasked with stopping these false alarms.<br>Which solution will meet these requirements without affecting the current deployment method?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -10467,7 +9906,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 66 discussion",
       "discusstion": [
         {
           "id": 224522,
@@ -10475,14 +9914,6 @@ var DOP_C01_Part1 =
           "username": "jackdryan",
           "content": "I'll go with C",
           "upvote_count": "8",
-          "selected_answers": ""
-        },
-        {
-          "id": 778503,
-          "date": "Tue 17 Jan 2023 04:17",
-          "username": "Bulti",
-          "content": "Correct answer is C.  ASG needs CloudWatch Events to trigger Lambda to do the needful.",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -10609,7 +10040,7 @@ var DOP_C01_Part1 =
           "id": 202070,
           "date": "Sat 02 Oct 2021 18:20",
           "username": "Steve_DobbsSteve_DobbsChauPhanChauPhan",
-          "content": "B.  <br>Even in their own reference there is no need for cloutdwatch event trigger. You just need lifecycle hook and AWS lamda function.<br>https://aws.amazon.com/blogs/compute/using-aws-lambda-with-auto-scaling-lifecycle-hooks/Changing to C.  <br>You need SNS topic to invoke lamdba from Lifecycle hooks. Without that you will need Cloudwatch Event.I see that LifeCycle hooks can invoke <br>1. Lambda by EventBridge <br>2. SNS<br>3. SQS.<br>I don't see CW Event involved hereSorry my mistake, we need CW Event, now they call it EventBridge",
+          "content": "B. <br>Even in their own reference there is no need for cloutdwatch event trigger. You just need lifecycle hook and AWS lamda function.<br>https://aws.amazon.com/blogs/compute/using-aws-lambda-with-auto-scaling-lifecycle-hooks/Changing to C. <br>You need SNS topic to invoke lamdba from Lifecycle hooks. Without that you will need Cloudwatch Event.I see that LifeCycle hooks can invoke<br>1. Lambda by EventBridge<br>2. SNS<br>3. SQS.<br>I don't see CW Event involved hereSorry my mistake, we need CW Event, now they call it EventBridge",
           "upvote_count": "1221",
           "selected_answers": ""
         },
@@ -10617,7 +10048,7 @@ var DOP_C01_Part1 =
           "id": 202074,
           "date": "Wed 06 Oct 2021 19:05",
           "username": "Steve_DobbsChauPhanChauPhan",
-          "content": "Changing to C.  <br>You need SNS topic to invoke lamdba from Lifecycle hooks. Without that you will need Cloudwatch Event.I see that LifeCycle hooks can invoke <br>1. Lambda by EventBridge <br>2. SNS<br>3. SQS.<br>I don't see CW Event involved hereSorry my mistake, we need CW Event, now they call it EventBridge",
+          "content": "Changing to C. <br>You need SNS topic to invoke lamdba from Lifecycle hooks. Without that you will need Cloudwatch Event.I see that LifeCycle hooks can invoke<br>1. Lambda by EventBridge<br>2. SNS<br>3. SQS.<br>I don't see CW Event involved hereSorry my mistake, we need CW Event, now they call it EventBridge",
           "upvote_count": "221",
           "selected_answers": ""
         },
@@ -10625,7 +10056,7 @@ var DOP_C01_Part1 =
           "id": 209981,
           "date": "Wed 13 Oct 2021 07:38",
           "username": "ChauPhanChauPhan",
-          "content": "I see that LifeCycle hooks can invoke <br>1. Lambda by EventBridge <br>2. SNS<br>3. SQS.<br>I don't see CW Event involved hereSorry my mistake, we need CW Event, now they call it EventBridge",
+          "content": "I see that LifeCycle hooks can invoke<br>1. Lambda by EventBridge<br>2. SNS<br>3. SQS.<br>I don't see CW Event involved hereSorry my mistake, we need CW Event, now they call it EventBridge",
           "upvote_count": "21",
           "selected_answers": ""
         },
@@ -10657,7 +10088,7 @@ var DOP_C01_Part1 =
           "id": 158375,
           "date": "Mon 20 Sep 2021 13:47",
           "username": "Smart",
-          "content": "C is relevant and correct. <br>SNS Notification would have been nice as well.",
+          "content": "C is relevant and correct.<br>SNS Notification would have been nice as well.",
           "upvote_count": "4",
           "selected_answers": ""
         }
@@ -10669,7 +10100,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>An e-commerce company is running a web application in an AWS Elastic Beanstalk environment. In recent months, the average load of the Amazon EC2 instances has been increased to handle more traffic.<br>The company would like to improve the scalability and resilience of the environment. The Development team has been asked to decouple long-running tasks from the environment if the tasks can be executed asynchronously. Examples of these tasks include confirmation emails when users are registered to the platform, and processing images or videos. Also, some of the periodic tasks that are currently running within the web server should be offloaded.<br>What is the MOST time-efficient and integrated way to achieve this?<br><br><br></p>",
+      "question_text": "<p>An e-commerce company is running a web application in an AWS Elastic Beanstalk environment. In recent months, the average load of the Amazon EC2 instances has been increased to handle more traffic.<br>The company would like to improve the scalability and resilience of the environment. The Development team has been asked to decouple long-running tasks from the environment if the tasks can be executed asynchronously. Examples of these tasks include confirmation emails when users are registered to the platform, and processing images or videos. Also, some of the periodic tasks that are currently running within the web server should be offloaded.<br>What is the MOST time-efficient and integrated way to achieve this?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -10704,7 +10135,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 67 discussion",
       "discusstion": [
         {
           "id": 28680,
@@ -10712,14 +10143,6 @@ var DOP_C01_Part1 =
           "username": "Sunil86rbk",
           "content": "B<br>https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features-managing-env-tiers.html",
           "upvote_count": "14",
-          "selected_answers": ""
-        },
-        {
-          "id": 783364,
-          "date": "Sat 21 Jan 2023 15:03",
-          "username": "Bulti",
-          "content": "Answer is B because it uses the built in capability of ElasticBeanStalk to create an integrated solution in a timely manner.",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -10810,7 +10233,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company has an on-premises that is written in Go. A DevOps engineer must move the application to AWS. The company's development team wants to enable blue/green deployments and perform A/B testing.<br>Which solution will meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A company has an on-premises that is written in Go. A DevOps engineer must move the application to AWS. The company's development team wants to enable blue/green deployments and perform A/B testing.<br>Which solution will meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -10845,16 +10268,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 68 discussion",
       "discusstion": [
-        {
-          "id": 783387,
-          "date": "Sat 21 Jan 2023 15:17",
-          "username": "Bulti",
-          "content": "Correct answer is D as ElasticBeamstalk support s Bluegreen deployment. Other options are inaccurately described or technically not viable.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 735263,
           "date": "Sun 04 Dec 2022 17:57",
@@ -10891,31 +10306,23 @@ var DOP_C01_Part1 =
           "id": 675719,
           "date": "Thu 22 Sep 2022 05:50",
           "username": "Goozian",
-          "content": "When an application is developed and deployed to an AWS Elastic Beanstalk environment, having two separate, but identical, environments—blue and green—increases availability and reduces risk.",
+          "content": "When an application is developed and deployed to an AWS Elastic Beanstalk environment, having two separate, but identical, environments=E2=80=94blue and green=E2=80=94increases availability and reduces risk.",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: D"
         },
         {
           "id": 672833,
           "date": "Mon 19 Sep 2022 02:57",
-          "username": "bigdoodGoozianWinslowSe7en",
-          "content": "The answer is C.  You can deploy via blue/green in CodeDeploy.what about A/B Test ? no mention about CodeBuild in CAWS CodeDeploy also allows you to perform canary deployments, which is a method of releasing new features to a small percentage of users before making them available to the entire user base. This is a variation of A/B testing, where a small percentage of the traffic is directed to the new version of the application, and the rest continues to see the old version.",
-          "upvote_count": "211",
+          "username": "bigdoodGoozian",
+          "content": "The answer is C.  You can deploy via blue/green in CodeDeploy.what about A/B Test ? no mention about CodeBuild in C",
+          "upvote_count": "11",
           "selected_answers": ""
         },
         {
           "id": 675717,
           "date": "Thu 22 Sep 2022 05:46",
-          "username": "GoozianWinslowSe7en",
-          "content": "what about A/B Test ? no mention about CodeBuild in CAWS CodeDeploy also allows you to perform canary deployments, which is a method of releasing new features to a small percentage of users before making them available to the entire user base. This is a variation of A/B testing, where a small percentage of the traffic is directed to the new version of the application, and the rest continues to see the old version.",
-          "upvote_count": "11",
-          "selected_answers": ""
-        },
-        {
-          "id": 774064,
-          "date": "Fri 13 Jan 2023 04:20",
-          "username": "WinslowSe7en",
-          "content": "AWS CodeDeploy also allows you to perform canary deployments, which is a method of releasing new features to a small percentage of users before making them available to the entire user base. This is a variation of A/B testing, where a small percentage of the traffic is directed to the new version of the application, and the rest continues to see the old version.",
+          "username": "Goozian",
+          "content": "what about A/B Test ? no mention about CodeBuild in C",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -10935,7 +10342,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>An application runs on Amazon EC2 instances behind an Application Load Balancer (ALB). A DevOps Engineer is using AWS CodeDeploy to release a new version. The deployment fails during the AllowTraffic lifecycle event, but a cause for the failure is not indicated in the deployment logs.<br>What would cause this?<br><br><br></p>",
+      "question_text": "<p>An application runs on Amazon EC2 instances behind an Application Load Balancer (ALB). A DevOps Engineer is using AWS CodeDeploy to release a new version. The deployment fails during the AllowTraffic lifecycle event, but a cause for the failure is not indicated in the deployment logs.<br>What would cause this?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -10970,7 +10377,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 69 discussion",
       "discusstion": [
         {
           "id": 209778,
@@ -10994,14 +10401,6 @@ var DOP_C01_Part1 =
           "username": "jackdryan",
           "content": "I'll go with C",
           "upvote_count": "9",
-          "selected_answers": ""
-        },
-        {
-          "id": 783398,
-          "date": "Sat 21 Jan 2023 15:23",
-          "username": "Bulti",
-          "content": "Correct answer is C",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -11040,7 +10439,7 @@ var DOP_C01_Part1 =
           "id": 155440,
           "date": "Mon 27 Sep 2021 13:43",
           "username": "jxp09skipbaylessfor3",
-          "content": "C <br>In some cases, a blue/green deployment fails during the AllowTraffic lifecycle event, but the deployment logs do not indicate the cause for the failure.<br><br>This failure is typically due to incorrectly configured health checks in Elastic Load Balancing for the Classic Load Balancer, Application Load Balancer, or Network Load Balancer used to manage traffic for the deployment group.<br><br>To resolve the issue, review and correct any errors in the health check configuration for the load balancer.<br><br>For Classic Load Balancers, see Configure Health Checks in the User Guide for Classic Load Balancers and ConfigureHealthCheck in the Elastic Load Balancing API Reference version 2012-06-01.<br><br>For Application Load Balancers, see Health Checks for Your Target Groups in the User Guide for Application Load Balancers.<br><br>For Network Load Balancers, see Health Checks for Your Target Groups in the Network Load Balancer User Guide.^That sounds right to me. Here's the link where all of that is said:<br>https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting-deployments.html",
+          "content": "C<br>In some cases, a blue/green deployment fails during the AllowTraffic lifecycle event, but the deployment logs do not indicate the cause for the failure.<br><br>This failure is typically due to incorrectly configured health checks in Elastic Load Balancing for the Classic Load Balancer, Application Load Balancer, or Network Load Balancer used to manage traffic for the deployment group.<br><br>To resolve the issue, review and correct any errors in the health check configuration for the load balancer.<br><br>For Classic Load Balancers, see Configure Health Checks in the User Guide for Classic Load Balancers and ConfigureHealthCheck in the Elastic Load Balancing API Reference version 2012-06-01.<br><br>For Application Load Balancers, see Health Checks for Your Target Groups in the User Guide for Application Load Balancers.<br><br>For Network Load Balancers, see Health Checks for Your Target Groups in the Network Load Balancer User Guide.^That sounds right to me. Here's the link where all of that is said:<br>https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting-deployments.html",
           "upvote_count": "52",
           "selected_answers": ""
         },
@@ -11068,7 +10467,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company has a single developer writing code for an automated deployment pipeline. The developer is storing source code in an Amazon S3 bucket for each project. The company wants to add more developers to the team but is concerned about code conflicts and lost work. The company also wants to build a test environment to deploy newer versions of code for testing and allow developers to automatically deploy to both environments when code is changed in the repository.<br>What is the MOST efficient way to meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A company has a single developer writing code for an automated deployment pipeline. The developer is storing source code in an Amazon S3 bucket for each project. The company wants to add more developers to the team but is concerned about code conflicts and lost work. The company also wants to build a test environment to deploy newer versions of code for testing and allow developers to automatically deploy to both environments when code is changed in the repository.<br>What is the MOST efficient way to meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -11103,7 +10502,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 70 discussion",
       "discusstion": [
         {
           "id": 37073,
@@ -11117,7 +10516,7 @@ var DOP_C01_Part1 =
           "id": 199827,
           "date": "Mon 11 Oct 2021 12:33",
           "username": "shankyup43WhyIronManis4_JohnnieWalker",
-          "content": "The answer should be C because of below line in the question: \\\"allow Developers to automatically deploy to both environments when code is changed in the repository\\\".<br>Option A does not talk about deployment.So, you want deploy do production without test? what warranties you that the code is functional and its not broken?<br><br>Genius strategyI accidentally liked your answer, but I don't. Nobody is saying that you should not test the code deployed to test environment before proceeding to deploy it to production. How will you know that it is the same code that is deployed in test and production if you deploy from different branches? I'm a developer so I should know :) You're not so genius yourself.I think it is (C) too because it has a pipeline for deployment and this is a requirement. <br>(A) doesnt mention deployment, there is no pipelines.<br>Regarding WhyIronMan comment, it doesnt mention it will deploy to production without test, in fact it will have 3 pipelines dev, test and prod, so the code will be tested on the test pipeline, and then deployed to prod as they are separate pipelines.",
+          "content": "The answer should be C because of below line in the question: \\\"allow Developers to automatically deploy to both environments when code is changed in the repository\\\".<br>Option A does not talk about deployment.So, you want deploy do production without test? what warranties you that the code is functional and its not broken?<br><br>Genius strategyI accidentally liked your answer, but I don't. Nobody is saying that you should not test the code deployed to test environment before proceeding to deploy it to production. How will you know that it is the same code that is deployed in test and production if you deploy from different branches? I'm a developer so I should know :) You're not so genius yourself.I think it is (C) too because it has a pipeline for deployment and this is a requirement.<br>(A) doesnt mention deployment, there is no pipelines.<br>Regarding WhyIronMan comment, it doesnt mention it will deploy to production without test, in fact it will have 3 pipelines dev, test and prod, so the code will be tested on the test pipeline, and then deployed to prod as they are separate pipelines.",
           "upvote_count": "6422",
           "selected_answers": ""
         },
@@ -11141,16 +10540,8 @@ var DOP_C01_Part1 =
           "id": 353851,
           "date": "Thu 04 Nov 2021 20:46",
           "username": "JohnnieWalker",
-          "content": "I think it is (C) too because it has a pipeline for deployment and this is a requirement. <br>(A) doesnt mention deployment, there is no pipelines.<br>Regarding WhyIronMan comment, it doesnt mention it will deploy to production without test, in fact it will have 3 pipelines dev, test and prod, so the code will be tested on the test pipeline, and then deployed to prod as they are separate pipelines.",
+          "content": "I think it is (C) too because it has a pipeline for deployment and this is a requirement.<br>(A) doesnt mention deployment, there is no pipelines.<br>Regarding WhyIronMan comment, it doesnt mention it will deploy to production without test, in fact it will have 3 pipelines dev, test and prod, so the code will be tested on the test pipeline, and then deployed to prod as they are separate pipelines.",
           "upvote_count": "2",
-          "selected_answers": ""
-        },
-        {
-          "id": 783512,
-          "date": "Sat 21 Jan 2023 17:07",
-          "username": "Bulti",
-          "content": "Correct answer is A.  There is nothing that suggests that the code needs to be deployed simultaneously in both environments. It just says automatically to both environments. That doesn'tmean the pull request from a feature branch needs to be created against both test and prod at the same time. What A will enable us to do is have the feature engineer submit a pull request into the test branch and have the admin user of the tear branch review and approve the pull request. This should automatically start the deployment into the test environment. Once the code is full tested by the QA resource in the test environment, they will initiate a pull request into the Prod environment. The prod environment admin user will review and approve the pull request at which point the code will be automatically deployment to the Prod environment. With C on the other hand submitting a pull request from the feature branch to the master branch will result in triggering the deployment via both pipelines at the same time which means the code will be deployed into production before testing it in the test environment successfully.",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -11173,7 +10564,7 @@ var DOP_C01_Part1 =
           "id": 721417,
           "date": "Fri 18 Nov 2022 17:37",
           "username": "USalo",
-          "content": "C. <br>It cannot be A because you make the same PR to both branches at the same time ONLY when you need a hotfix to prod and test env. In real world you develop in one branch and when you need a release you merge all the dev branch to prod branch (or create a new version from dev branch if you need to support multiple versions).But you NEVER EVER make PRs to both dev and prod branches during development.<br>If you both branches are always the same - why do you need 2 branches ? If your master and testing branches differ then at some point you will have conflicts. <br>Only C makes sense.",
+          "content": "C. <br>It cannot be A because you make the same PR to both branches at the same time ONLY when you need a hotfix to prod and test env. In real world you develop in one branch and when you need a release you merge all the dev branch to prod branch (or create a new version from dev branch if you need to support multiple versions).But you NEVER EVER make PRs to both dev and prod branches during development.<br>If you both branches are always the same - why do you need 2 branches ? If your master and testing branches differ then at some point you will have conflicts.<br>Only C makes sense.",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: C"
         },
@@ -11189,7 +10580,7 @@ var DOP_C01_Part1 =
           "id": 665749,
           "date": "Sun 11 Sep 2022 03:20",
           "username": "MichaelExam",
-          "content": "I choice A <br>The difference between A and C is that C uses master branch for the production and testing environment, A uses different branches for the production and testing environment. The better way is A.  <br>B,D S3 is not good choice for team working.",
+          "content": "I choice A<br>The difference between A and C is that C uses master branch for the production and testing environment, A uses different branches for the production and testing environment. The better way is A. <br>B,D S3 is not good choice for team working.",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: A"
         },
@@ -11213,7 +10604,7 @@ var DOP_C01_Part1 =
           "id": 324236,
           "date": "Wed 03 Nov 2021 03:52",
           "username": "WhyIronManis4_gofavad926",
-          "content": "I'll go with A. <br><br>for those choosing C:<br>So, do you want deploy do production without testing first? <br>what warranties you that the code is functional and its not broken?<br><br>Yeah, keep deploying untested code to production...its a genius strategyYou often deploy from the same branch so that you know that it is the same code running in all environments. How will you know this otherwise? That can be really unstable if you dont have a pipeline set up that makes sure that no one can push to the master branch anywhere else than from this \\\"test branch\\\". <br>But you ALWAYS test the code in the test / staging environment before proceeding to deploy it to production. This is how its often done (ofc exceptions exists) and it is a very good strategy. I bet y'all answering here have no experience working as developers, I have and I know this.Agree with C, talking about branch strategy (only master for 2 environments) and mention deployments. <br><br>A is not talking about deployment so you are not meeting the requirements... only mention branch strategy (in more detail and different from A)",
+          "content": "I'll go with A. <br><br>for those choosing C:<br>So, do you want deploy do production without testing first?<br>what warranties you that the code is functional and its not broken?<br><br>Yeah, keep deploying untested code to production...its a genius strategyYou often deploy from the same branch so that you know that it is the same code running in all environments. How will you know this otherwise? That can be really unstable if you dont have a pipeline set up that makes sure that no one can push to the master branch anywhere else than from this \\\"test branch\\\".<br>But you ALWAYS test the code in the test / staging environment before proceeding to deploy it to production. This is how its often done (ofc exceptions exists) and it is a very good strategy. I bet y'all answering here have no experience working as developers, I have and I know this.Agree with C, talking about branch strategy (only master for 2 environments) and mention deployments.<br><br>A is not talking about deployment so you are not meeting the requirements... only mention branch strategy (in more detail and different from A)",
           "upvote_count": "443",
           "selected_answers": ""
         },
@@ -11221,7 +10612,7 @@ var DOP_C01_Part1 =
           "id": 439179,
           "date": "Sun 07 Nov 2021 13:55",
           "username": "is4_gofavad926",
-          "content": "You often deploy from the same branch so that you know that it is the same code running in all environments. How will you know this otherwise? That can be really unstable if you dont have a pipeline set up that makes sure that no one can push to the master branch anywhere else than from this \\\"test branch\\\". <br>But you ALWAYS test the code in the test / staging environment before proceeding to deploy it to production. This is how its often done (ofc exceptions exists) and it is a very good strategy. I bet y'all answering here have no experience working as developers, I have and I know this.Agree with C, talking about branch strategy (only master for 2 environments) and mention deployments. <br><br>A is not talking about deployment so you are not meeting the requirements... only mention branch strategy (in more detail and different from A)",
+          "content": "You often deploy from the same branch so that you know that it is the same code running in all environments. How will you know this otherwise? That can be really unstable if you dont have a pipeline set up that makes sure that no one can push to the master branch anywhere else than from this \\\"test branch\\\".<br>But you ALWAYS test the code in the test / staging environment before proceeding to deploy it to production. This is how its often done (ofc exceptions exists) and it is a very good strategy. I bet y'all answering here have no experience working as developers, I have and I know this.Agree with C, talking about branch strategy (only master for 2 environments) and mention deployments.<br><br>A is not talking about deployment so you are not meeting the requirements... only mention branch strategy (in more detail and different from A)",
           "upvote_count": "43",
           "selected_answers": ""
         },
@@ -11229,7 +10620,7 @@ var DOP_C01_Part1 =
           "id": 509462,
           "date": "Sun 26 Dec 2021 08:11",
           "username": "gofavad926",
-          "content": "Agree with C, talking about branch strategy (only master for 2 environments) and mention deployments. <br><br>A is not talking about deployment so you are not meeting the requirements... only mention branch strategy (in more detail and different from A)",
+          "content": "Agree with C, talking about branch strategy (only master for 2 environments) and mention deployments.<br><br>A is not talking about deployment so you are not meeting the requirements... only mention branch strategy (in more detail and different from A)",
           "upvote_count": "3",
           "selected_answers": ""
         },
@@ -11296,6 +10687,14 @@ var DOP_C01_Part1 =
           "content": "You typically want to make sure that it is always the same code revision that is deployed to BOTH test and production environments. Therefore, you always deploy the MASTER branch to BOTH environments but in stages - first to test and after successfully tested that environment, you proceed to production. So there is nothing stupid about that answer.",
           "upvote_count": "3",
           "selected_answers": ""
+        },
+        {
+          "id": 206854,
+          "date": "Tue 12 Oct 2021 12:09",
+          "username": "ChauPhan",
+          "content": "It's A",
+          "upvote_count": "3",
+          "selected_answers": ""
         }
       ]
     },
@@ -11305,7 +10704,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A development team is building an ecommerce application and is using Amazon Simple Notification Service (Amazon SNS) to send order messages to multiple endpoints. One of the endpoints is an external HTTP endpoint that is not always available. The development team needs to receive a notification if an order message is not delivered to the HTTP endpoint.<br>What should a DevOps engineer do to meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A development team is building an ecommerce application and is using Amazon Simple Notification Service (Amazon SNS) to send order messages to multiple endpoints. One of the endpoints is an external HTTP endpoint that is not always available. The development team needs to receive a notification if an order message is not delivered to the HTTP endpoint.<br>What should a DevOps engineer do to meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -11340,16 +10739,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 71 discussion",
       "discusstion": [
-        {
-          "id": 783527,
-          "date": "Sat 21 Jan 2023 17:20",
-          "username": "Bulti",
-          "content": "B us the correct answer. You don't want to lose messages and therefore SQS queue and the retrieve configuration is at the subscription level and not at the topic level.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 758542,
           "date": "Tue 27 Dec 2022 14:23",
@@ -11378,7 +10769,7 @@ var DOP_C01_Part1 =
           "id": 672055,
           "date": "Sun 18 Sep 2022 09:06",
           "username": "hankun",
-          "content": "B is true. <br>C, D is Https endpoint not http",
+          "content": "B is true.<br>C, D is Https endpoint not http",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -11402,7 +10793,7 @@ var DOP_C01_Part1 =
           "id": 660482,
           "date": "Mon 05 Sep 2022 21:10",
           "username": "ohcnohcnnetwork_zeal",
-          "content": "C makes sense.In fact might be D because one of the HTTP endpoints is not always available. <br><br>\\\"You should customize your delivery policy according to your HTTP/S server's capacity. You can set the policy as a topic attribute or a subscription attribute. If all HTTP/S subscriptions in your topic target the same HTTP/S server, we recommend that you set the delivery policy as a topic attribute, so that it remains valid for all HTTP/S subscriptions in the topic. Otherwise, you must compose a delivery policy for each HTTP/S subscription in your topic, according the capacity of the HTTP/S server that the policy targets.\\\"\\\"<br><br>https://docs.aws.amazon.com/sns/latest/dg/sns-message-delivery-retries.htmlD is incorrect. the same link clearly mentions, When the delivery policy is exhausted, Amazon SNS stops retrying the delivery and discards the message—unless a dead-letter queue is attached to the subscription. So B is correct.",
+          "content": "C makes sense.In fact might be D because one of the HTTP endpoints is not always available.<br><br>\\\"You should customize your delivery policy according to your HTTP/S server's capacity. You can set the policy as a topic attribute or a subscription attribute. If all HTTP/S subscriptions in your topic target the same HTTP/S server, we recommend that you set the delivery policy as a topic attribute, so that it remains valid for all HTTP/S subscriptions in the topic. Otherwise, you must compose a delivery policy for each HTTP/S subscription in your topic, according the capacity of the HTTP/S server that the policy targets.\\\"\\\"<br><br>https://docs.aws.amazon.com/sns/latest/dg/sns-message-delivery-retries.htmlD is incorrect. the same link clearly mentions, When the delivery policy is exhausted, Amazon SNS stops retrying the delivery and discards the message=E2=80=94unless a dead-letter queue is attached to the subscription. So B is correct.",
           "upvote_count": "111",
           "selected_answers": ""
         },
@@ -11410,7 +10801,7 @@ var DOP_C01_Part1 =
           "id": 663650,
           "date": "Thu 08 Sep 2022 15:22",
           "username": "ohcnnetwork_zeal",
-          "content": "In fact might be D because one of the HTTP endpoints is not always available. <br><br>\\\"You should customize your delivery policy according to your HTTP/S server's capacity. You can set the policy as a topic attribute or a subscription attribute. If all HTTP/S subscriptions in your topic target the same HTTP/S server, we recommend that you set the delivery policy as a topic attribute, so that it remains valid for all HTTP/S subscriptions in the topic. Otherwise, you must compose a delivery policy for each HTTP/S subscription in your topic, according the capacity of the HTTP/S server that the policy targets.\\\"\\\"<br><br>https://docs.aws.amazon.com/sns/latest/dg/sns-message-delivery-retries.htmlD is incorrect. the same link clearly mentions, When the delivery policy is exhausted, Amazon SNS stops retrying the delivery and discards the message—unless a dead-letter queue is attached to the subscription. So B is correct.",
+          "content": "In fact might be D because one of the HTTP endpoints is not always available.<br><br>\\\"You should customize your delivery policy according to your HTTP/S server's capacity. You can set the policy as a topic attribute or a subscription attribute. If all HTTP/S subscriptions in your topic target the same HTTP/S server, we recommend that you set the delivery policy as a topic attribute, so that it remains valid for all HTTP/S subscriptions in the topic. Otherwise, you must compose a delivery policy for each HTTP/S subscription in your topic, according the capacity of the HTTP/S server that the policy targets.\\\"\\\"<br><br>https://docs.aws.amazon.com/sns/latest/dg/sns-message-delivery-retries.htmlD is incorrect. the same link clearly mentions, When the delivery policy is exhausted, Amazon SNS stops retrying the delivery and discards the message=E2=80=94unless a dead-letter queue is attached to the subscription. So B is correct.",
           "upvote_count": "11",
           "selected_answers": ""
         },
@@ -11418,7 +10809,7 @@ var DOP_C01_Part1 =
           "id": 672248,
           "date": "Sun 18 Sep 2022 12:56",
           "username": "network_zeal",
-          "content": "D is incorrect. the same link clearly mentions, When the delivery policy is exhausted, Amazon SNS stops retrying the delivery and discards the message—unless a dead-letter queue is attached to the subscription. So B is correct.",
+          "content": "D is incorrect. the same link clearly mentions, When the delivery policy is exhausted, Amazon SNS stops retrying the delivery and discards the message=E2=80=94unless a dead-letter queue is attached to the subscription. So B is correct.",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -11438,7 +10829,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company is deploying a container-based application using AWS CodeBuild. The Security team mandates that all containers are scanned for vulnerabilities prior to deployment using a password-protected endpoint. All sensitive information must be stored securely.<br>Which solution should be used to meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A company is deploying a container-based application using AWS CodeBuild. The Security team mandates that all containers are scanned for vulnerabilities prior to deployment using a password-protected endpoint. All sensitive information must be stored securely.<br>Which solution should be used to meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -11473,7 +10864,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 72 discussion",
       "discusstion": [
         {
           "id": 155219,
@@ -11481,14 +10872,6 @@ var DOP_C01_Part1 =
           "username": "Augustoosouza",
           "content": "Ans C<br>https://docs.aws.amazon.com/pt_br/codebuild/latest/userguide/build-spec-ref.html",
           "upvote_count": "10",
-          "selected_answers": ""
-        },
-        {
-          "id": 783528,
-          "date": "Sat 21 Jan 2023 17:22",
-          "username": "Bulti",
-          "content": "C is the right answer",
-          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -11543,7 +10926,7 @@ var DOP_C01_Part1 =
           "id": 163407,
           "date": "Fri 08 Oct 2021 07:57",
           "username": "halfway",
-          "content": "C.  <br>Store password in System manager parameter store.",
+          "content": "C. <br>Store password in System manager parameter store.",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -11563,12 +10946,12 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>An Engineering team manages a Node.js e-commerce application. The current environment consists of the following components:<br>✑ Amazon S3 buckets for storing content<br>✑ Amazon EC2 for the front-end web servers<br>✑ AWS Lambda for image processing<br>✑ Amazon DynamoDB for storing session-related data<br>The team expects a significant increase in traffic to the site. The application should handle the additional load without interruption. The team ran initial tests by adding new servers to the EC2 front-end to handle the larger load, but the instances took up to 20 minutes to become fully configured. The team wants to reduce this configuration time.<br>What changes will the Engineering team need to implement to make the solution the MOST resilient and highly available while meeting the expected increase in demand?<br><br><br></p>",
+      "question_text": "<p>A company is migrating an application to AWS that runs on a single Amazon EC2 instance. Because of licensing limitations, the application does not support horizontal scaling. The application will be using Amazon Aurora for its database.<br>How can the DevOps Engineer architect automated healing to automatically recover from EC2 and Aurora failures, in addition to recovering across Availability<br>Zones (AZs), in the MOST cost-effective manner?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: D</p>",
+      "general_feedback": "<p>Correct Answer: C</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -11576,188 +10959,228 @@ var DOP_C01_Part1 =
           "question_id": "#73",
           "answers": [
             {
-              "choice": "<p>A. Use AWS OpsWorks to automatically configure each new EC2 instance as it is launched. Configure the EC2 instances by using an Auto Scaling group behind an Application Load Balancer across multiple Availability Zones. Implement Amazon DynamoDB Auto Scaling. Use Amazon Route 53 to point the application DNS record to the Application Load Balancer.<br></p>",
+              "choice": "<p>A. Create an EC2 Auto Scaling group with a minimum and maximum instance count of 1, and have it span across AZs. Use a single-node Aurora instance.<br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>B. Deploy a fleet of EC2 instances, doubling the current capacity, and place them behind an Application Load Balancer. Increase the Amazon DynamoDB read and write capacity units. Add an alias record that contains the Application Load Balancer endpoint to the existing Amazon Route 53 DNS record that points to the application.<br></p>",
+              "choice": "<p>B. Create an EC2 instance and enable instance recovery. Create an Aurora database with a read replica in a second AZ, and promote it to a primary database instance if the primary database instance fails.<br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>C. Configure Amazon CloudFront and have its origin point to Amazon S3 to host the web application. Implement Amazon DynamoDB Auto Scaling. Use Amazon Route 53 to point the application DNS record to the CloudFront DNS name.<br></p>",
-              "correct": false,
-              "feedback": ""
-            },
-            {
-              "choice": "<p>D. Use AWS Elastic Beanstalk with a custom AMI including all web components. Deploy the platform by using an Auto Scaling group behind an Application Load Balancer across multiple Availability Zones. Implement Amazon DynamoDB Auto Scaling. Use Amazon Route 53 to point the application DNS record to the Elastic Beanstalk load balancer.<br></p>",
+              "choice": "<p>C. Create an Amazon CloudWatch Events rule to trigger an AWS Lambda function to start a new EC2 instance in an available AZ when the instance status reaches a failure state. Create an Aurora database with a read replica in a second AZ, and promote it to a primary database instance when the primary database instance fails.<br></p>",
               "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Assign an Elastic IP address on the instance. Create a second EC2 instance in a second AZ. Create an Amazon CloudWatch Events rule to trigger an AWS Lambda function to move the Elastic IP address to the second instance when the first instance fails. Use a single-node Aurora instance.<br></p>",
+              "correct": false,
               "feedback": ""
             }
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 73 discussion",
       "discusstion": [
         {
-          "id": 4805,
-          "date": "Fri 24 Sep 2021 08:54",
-          "username": "agomes",
-          "content": "In this case would choose D, because application is executed nodejs | I don't know how S3 would help in this case.",
-          "upvote_count": "14",
-          "selected_answers": ""
-        },
-        {
-          "id": 12412,
-          "date": "Sat 25 Sep 2021 10:06",
-          "username": "YashBindlisha112883",
-          "content": "Node.js is a key. Correct answer is DNode.js is key because we want to get those Node.js configs into AMI.",
-          "upvote_count": "71",
-          "selected_answers": ""
-        },
-        {
-          "id": 231415,
-          "date": "Sat 23 Oct 2021 23:26",
-          "username": "a112883",
-          "content": "Node.js is key because we want to get those Node.js configs into AMI.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 783532,
-          "date": "Sat 21 Jan 2023 17:27",
-          "username": "BultiBulti",
-          "content": "Pre-baked EC2 instances along with node.js points to Elastic BeanStalk.Answer is D",
-          "upvote_count": "11",
-          "selected_answers": ""
-        },
-        {
-          "id": 783533,
-          "date": "Sat 21 Jan 2023 17:28",
-          "username": "Bulti",
-          "content": "Answer is D",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 447427,
-          "date": "Thu 04 Nov 2021 04:54",
-          "username": "oopsy",
-          "content": "Go D -1",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 374347,
-          "date": "Tue 02 Nov 2021 21:48",
-          "username": "Dantehilarysiejas",
-          "content": "I think the answer is A, D is wrong because THERE IS NOTHING LIKE Elastic Beanstalk load balanceThey refer to a LB created by Beanstalk",
+          "id": 28411,
+          "date": "Wed 22 Sep 2021 21:35",
+          "username": "jiedee",
+          "content": "I go with C",
           "upvote_count": "12",
           "selected_answers": ""
         },
         {
-          "id": 403972,
-          "date": "Tue 02 Nov 2021 22:19",
-          "username": "siejas",
-          "content": "They refer to a LB created by Beanstalk",
-          "upvote_count": "2",
+          "id": 96691,
+          "date": "Tue 12 Oct 2021 04:58",
+          "username": "PeppaPig30thNickhiahiahia",
+          "content": "C is correct.<br>Let's break it down:<br>A- Single Aurora instance only supports auto recovery in the same AZ.Nope<br>B- EC2 auto recovery only supports recovery from system failure due to underlying hardware. Nope<br>C- Correct <br>D- Having two EC2 instances running at the same time is not cost-effective at all. NopeWho said the recovery from system failure is not sufficient? The question mentions only \\\"EC2 failures\\\". Application failures recovery was not required. \\\"C\\\" misses the traffic rerouting configuration (which could be tricky without an ASG). \\\"B\\\" is the right answer.what about across AZ recovery?",
+          "upvote_count": "931",
           "selected_answers": ""
         },
         {
-          "id": 322347,
-          "date": "Tue 02 Nov 2021 10:13",
-          "username": "poylan",
-          "content": "i'll go with D",
+          "id": 382286,
+          "date": "Tue 02 Nov 2021 17:29",
+          "username": "30thNickhiahiahia",
+          "content": "Who said the recovery from system failure is not sufficient? The question mentions only \\\"EC2 failures\\\". Application failures recovery was not required. \\\"C\\\" misses the traffic rerouting configuration (which could be tricky without an ASG). \\\"B\\\" is the right answer.what about across AZ recovery?",
+          "upvote_count": "31",
+          "selected_answers": ""
+        },
+        {
+          "id": 764743,
+          "date": "Tue 03 Jan 2023 15:29",
+          "username": "Nickhiahiahia",
+          "content": "what about across AZ recovery?",
           "upvote_count": "1",
           "selected_answers": ""
         },
         {
-          "id": 320264,
-          "date": "Tue 02 Nov 2021 06:22",
-          "username": "WhyIronMan",
-          "content": "I'll go with D)<br>Creating AMI is always a good practice when instances took up to 20 minutes to become fully configured...",
+          "id": 511605,
+          "date": "Tue 28 Dec 2021 22:57",
+          "username": "sg0206",
+          "content": "if you spin another instance, tht is voilation of license so option B is not correct.<br>C option will start only one instance at a time after failure.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 382285,
+          "date": "Sat 30 Oct 2021 16:45",
+          "username": "30thStelSenRightAnswerssg0206",
+          "content": "\\\"B\\\" seems to be the right answer. The answer could be a bit longer, because the Autorecovery involves CloudWatch and requires more work than just \\\"enabling\\\". But I think \\\"B\\\" is still the best answer.<br><br>https://medium.com/how-to-enable-autorecovery-in-ec2-instance-in-aws/how-to-enable-autorecovery-in-ec2-instance-e3fec149fad8<br><br>The main problem of \\\"C\\\" is that is doesn't include the traffic rerouting.i checked the link you provided. They didnt talk aboutAZ failure situation. Here is the official links: https://docs.amazonaws.cn/en_us/AWSEC2/latest/UserGuide/ec2-instance-recover.html<br>Here also they didn't mention about AZ failure situation. So unfortunatelyis wrongSince there is a licensing constraint, only Ans B seems right. Auto Recovery is the only option where the license will get transferred, since Auto Recovery has the following features.<br>=C2=B7 The running instance is automatically transferred to the new underlying hardware.<br>=C2=B7 There is no need of migration to a new EC2 instance.<br>=C2=B7 The instance-id does not get changed.<br>=C2=B7 The IP address, if it is an Elastic IP address remain same.<br>=C2=B7 The instance metadata and the private IP addresses also remain same.<br>However, the issue with Ans B is that it doesn't address AZ failover scenario. Ans C addresses the AZ failover but not the license transfer.<br>I guess none of the answers are correct.if you spin another instance, tht is voilation of license so option B is not correct",
+          "upvote_count": "1111",
+          "selected_answers": ""
+        },
+        {
+          "id": 427406,
+          "date": "Sun 07 Nov 2021 15:39",
+          "username": "StelSenRightAnswers",
+          "content": "i checked the link you provided. They didnt talk aboutAZ failure situation. Here is the official links: https://docs.amazonaws.cn/en_us/AWSEC2/latest/UserGuide/ec2-instance-recover.html<br>Here also they didn't mention about AZ failure situation. So unfortunatelyis wrongSince there is a licensing constraint, only Ans B seems right. Auto Recovery is the only option where the license will get transferred, since Auto Recovery has the following features.<br>=C2=B7 The running instance is automatically transferred to the new underlying hardware.<br>=C2=B7 There is no need of migration to a new EC2 instance.<br>=C2=B7 The instance-id does not get changed.<br>=C2=B7 The IP address, if it is an Elastic IP address remain same.<br>=C2=B7 The instance metadata and the private IP addresses also remain same.<br>However, the issue with Ans B is that it doesn't address AZ failover scenario. Ans C addresses the AZ failover but not the license transfer.<br>I guess none of the answers are correct.",
+          "upvote_count": "11",
+          "selected_answers": ""
+        },
+        {
+          "id": 522303,
+          "date": "Wed 12 Jan 2022 17:33",
+          "username": "RightAnswers",
+          "content": "Since there is a licensing constraint, only Ans B seems right. Auto Recovery is the only option where the license will get transferred, since Auto Recovery has the following features.<br>=C2=B7 The running instance is automatically transferred to the new underlying hardware.<br>=C2=B7 There is no need of migration to a new EC2 instance.<br>=C2=B7 The instance-id does not get changed.<br>=C2=B7 The IP address, if it is an Elastic IP address remain same.<br>=C2=B7 The instance metadata and the private IP addresses also remain same.<br>However, the issue with Ans B is that it doesn't address AZ failover scenario. Ans C addresses the AZ failover but not the license transfer.<br>I guess none of the answers are correct.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 511602,
+          "date": "Tue 28 Dec 2021 22:55",
+          "username": "sg0206",
+          "content": "if you spin another instance, tht is voilation of license so option B is not correct",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 324192,
+          "date": "Thu 28 Oct 2021 18:08",
+          "username": "WhyIronMan30th",
+          "content": "I'll go with C<br><br>A & D are wrong because mention to \\\"Use a single-node Aurora instance\\\" so in case of az-failure DB will be permanently down<br><br>B is wrong because, in case of AZ Failure, enable instance recoverywill NOT \\\"recovery\\\" the ec2 in a new AZ.Are you sure? I didn't find an availability zone stickiness regarding Auto-Recovery.",
+          "upvote_count": "31",
+          "selected_answers": ""
+        },
+        {
+          "id": 382290,
+          "date": "Thu 04 Nov 2021 16:46",
+          "username": "30th",
+          "content": "Are you sure? I didn't find an availability zone stickiness regarding Auto-Recovery.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 322029,
+          "date": "Wed 27 Oct 2021 23:01",
+          "username": "aws_Tamilan",
+          "content": "C.  Create an Amazon CloudWatch Events rule to trigger an AWS Lambda function to start a new EC2 instance in an available AZ when the instance status reaches a failure state. Create an Aurora database with a read replica in a second AZ and promote it to a primary database instance when the primary database instance fails.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 255007,
+          "date": "Wed 27 Oct 2021 22:45",
+          "username": "[Removed]30th",
+          "content": "If C is the answer it's incomplete and has a subtle error: The CloudWatch recovery option works only for system check failures, not for instance status check failures. https://aws.amazon.com/premiumsupport/knowledge-center/automatic-recovery-ec2-cloudwatch/.<br>Also it doesn't mention how to configure the license on the new instance. Usually answers with assumptions are not correct.<br>A fails on the DB layer The only possible answer is B. I think we are allowed to assume the license is only a contract without technical limitation. A bigger problem of \\\"C\\\" is the traffic rerouting. This issue is included in \\\"D\\\", but not mentioned in \\\"C\\\". I agree with you, \\\"B\\\" is the better answer.",
+          "upvote_count": "21",
+          "selected_answers": ""
+        },
+        {
+          "id": 382292,
+          "date": "Sat 06 Nov 2021 20:08",
+          "username": "30th",
+          "content": "I think we are allowed to assume the license is only a contract without technical limitation. A bigger problem of \\\"C\\\" is the traffic rerouting. This issue is included in \\\"D\\\", but not mentioned in \\\"C\\\". I agree with you, \\\"B\\\" is the better answer.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 223241,
+          "date": "Wed 27 Oct 2021 15:16",
+          "username": "jackdryan",
+          "content": "I'll go with C",
           "upvote_count": "4",
           "selected_answers": ""
         },
         {
-          "id": 318240,
-          "date": "Mon 01 Nov 2021 02:32",
-          "username": "glam",
-          "content": "D.  Use AWS Elastic Beanstalk with a custom AMI including all web components. Deploy the platform by using an Auto Scaling group behind an Application Load Balancer across multiple Availability Zones. Implement Amazon DynamoDB Auto Scaling. Use Amazon Route 53 to point the application DNS record to the Elastic Beanstalk load balancer.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 252334,
-          "date": "Sun 31 Oct 2021 19:26",
-          "username": "fogunfunminiyi",
-          "content": "D is the answer.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 252332,
-          "date": "Mon 25 Oct 2021 23:04",
-          "username": "fogunfunminiyi",
-          "content": "When your instance is taking time to boot, it means some configurations are going on probably through user data. May be like fetching some application artifacts from internet, andinstalling them. This is good but not the best way to configure your instance during booting with user data. The best way is to create a custom IMAGE with preconfigured applications. Then when you lunch the custom image, it automatically come with existing applications, thus reducing time to boot. For instance, AMI from AWS are preconfigured with cloud watch log agent. You don’t need to install it once you lunch AWS ima. But you have to manually when you lunched (usingsudo yum install after ssh into the lunched ec2 or through user data ) when the instance is booting.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 247595,
-          "date": "Mon 25 Oct 2021 15:49",
-          "username": "[Removed]",
-          "content": "Yup, fully baked EC2 is the only option here (D)<br>A would not speed things up, if anything, slow things down as chef would have to push that config in to the stock AMI",
+          "id": 218918,
+          "date": "Sat 23 Oct 2021 18:16",
+          "username": "cloudyland",
+          "content": "I go with C. A.  Aurora requires standby for multi AZ support.B.  Like it, but the auto-recovery feature doesn't support recovery across multi-AZ, and it re-mapsESB. D.  License limitation.",
           "upvote_count": "2",
           "selected_answers": ""
         },
         {
-          "id": 229688,
-          "date": "Sat 23 Oct 2021 11:56",
-          "username": "Coffeinerd",
-          "content": "Right answer: D - custom AMI is key here it will reduce the provisioning time dramatically - main issue - and also multi-az and ALB are mentioned for resiliency and high-availability. <br>Wrong:<br>A - OpsWorks could do it but \\\"automatically configure each new EC2 as it is launched\\\" would keep the slow start issue. <br>B - Could be right but does not mention multi-AZ as well is based on manual changes instead of auto scaling. <br>C - you need Ec2 due to Node.js server-side",
-          "upvote_count": "3",
+          "id": 207120,
+          "date": "Thu 21 Oct 2021 07:27",
+          "username": "DgixxlFireman",
+          "content": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.html<br><br>\\\"The Aurora cluster illustrates the separation of compute capacity and storage. For example, an Aurora configuration with only a single DB instance is still a cluster, because the underlying storage volume involves multiple storage nodes distributed across multiple Availability Zones (AZs).\\\"<br><br>In light of the above: A. A dictates a single Aurora node. Does not fit in the scope of the question asking for HA.  C is the answer here",
+          "upvote_count": "21",
           "selected_answers": ""
         },
         {
-          "id": 223190,
-          "date": "Fri 22 Oct 2021 22:18",
-          "username": "jackdryan",
-          "content": "I'll go with D",
-          "upvote_count": "3",
-          "selected_answers": ""
-        },
-        {
-          "id": 207891,
-          "date": "Thu 21 Oct 2021 03:47",
-          "username": "Dr_Wells",
-          "content": "Its Option D",
+          "id": 220580,
+          "date": "Tue 26 Oct 2021 19:45",
+          "username": "xlFireman",
+          "content": "A dictates a single Aurora node. Does not fit in the scope of the question asking for HA.  C is the answer here",
           "upvote_count": "1",
           "selected_answers": ""
         },
         {
-          "id": 205196,
-          "date": "Mon 18 Oct 2021 13:29",
+          "id": 206839,
+          "date": "Tue 19 Oct 2021 18:30",
           "username": "ChauPhan",
-          "content": "The answer should be D.  Only with custom AMI we can reduce the configuration time. Because custom AMI that means all application/configuration was installed/built in-bulk/in ready and put into an AMI image and we don't need to configure anything after that.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 177078,
-          "date": "Mon 18 Oct 2021 02:06",
-          "username": "FrankSparrow",
-          "content": "Certainly \\\"D\\\" - The custom AMI will reduce the config time of 20mins",
+          "content": "I'll go with C.  I am doubt about EC2 recovery features. There is not any mention in the question.",
           "upvote_count": "2",
           "selected_answers": ""
         },
         {
-          "id": 166297,
-          "date": "Sun 17 Oct 2021 12:38",
-          "username": "nqobza",
-          "content": "Has to be D",
+          "id": 201281,
+          "date": "Mon 18 Oct 2021 10:48",
+          "username": "Steve_Dobbs",
+          "content": "C. <br>B is not correct, instance recovery is not a feature that you can just enable. You have to integrate cloudwatch alarms.<br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 168407,
+          "date": "Mon 18 Oct 2021 04:12",
+          "username": "aaccee",
+          "content": "Should not A be the best answer.<br>From the Aurora FAQ (https://aws.amazon.com/rds/aurora/faqs):<br>Amazon Aurora automatically maintains 6 copies of your data across 3 Availability Zones and will automatically attempt to recover your database in a healthy AZ with no data loss.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 162125,
+          "date": "Mon 18 Oct 2021 03:43",
+          "username": "Bad_Mat",
+          "content": "The question said: \\\"automated healing\\\" If we need to promote read replica to PROD, can we do it automatically? I think the answer is A",
           "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 118749,
+          "date": "Sat 16 Oct 2021 22:58",
+          "username": "tolik505",
+          "content": "For me C",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 83059,
+          "date": "Fri 08 Oct 2021 17:29",
+          "username": "solotvun",
+          "content": "C is correct one here",
+          "upvote_count": "3",
+          "selected_answers": ""
+        },
+        {
+          "id": 62192,
+          "date": "Sat 02 Oct 2021 18:50",
+          "username": "yassu",
+          "content": "C is correct",
+          "upvote_count": "2",
           "selected_answers": ""
         }
       ]
@@ -11768,7 +11191,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company's application development team uses Linux-based Amazon EC2 instances as bastion hosts. Inbound SSH access to the bastion hosts is restricted to specific IP addresses, as defined in the associated security groups. The company's security team wants to receive a notification if the security group rules are modified to allow SSH access from any IP address.<br>What should a DevOps engineer do to meet this requirement?<br><br><br></p>",
+      "question_text": "<p>A company's application development team uses Linux-based Amazon EC2 instances as bastion hosts. Inbound SSH access to the bastion hosts is restricted to specific IP addresses, as defined in the associated security groups. The company's security team wants to receive a notification if the security group rules are modified to allow SSH access from any IP address.<br>What should a DevOps engineer do to meet this requirement?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -11803,24 +11226,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 74 discussion",
       "discusstion": [
-        {
-          "id": 783566,
-          "date": "Sat 21 Jan 2023 17:56",
-          "username": "Bulti",
-          "content": "Answer is C.  If you read the question properly it says change to any IP address which means 0.0.0.0/0 CIDR. So C is the best answer as the config rule will detect changes in the security group from restricted IP CIDR to any IP CIDR.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 766893,
-          "date": "Thu 05 Jan 2023 18:49",
-          "username": "ericzaj",
-          "content": "The wording in the answers are confusing. I'll go with C though. The requirement is \\\"The company's security team wants to receive a notification if the security group rules are modified to allow SSH access from any IP address.\\\" <br>AWS Config is the right service to look for changes to baseline configurations.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
-        },
         {
           "id": 763444,
           "date": "Mon 02 Jan 2023 02:36",
@@ -11841,7 +11248,7 @@ var DOP_C01_Part1 =
           "id": 757566,
           "date": "Mon 26 Dec 2022 15:56",
           "username": "Arkarter",
-          "content": "I go with Choice A <br><br>REF : https://aws.amazon.com/premiumsupport/knowledge-center/monitor-security-group-changes-ec2/",
+          "content": "I go with Choice A<br><br>REF : https://aws.amazon.com/premiumsupport/knowledge-center/monitor-security-group-changes-ec2/",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: A"
         },
@@ -11850,7 +11257,7 @@ var DOP_C01_Part1 =
           "date": "Thu 15 Dec 2022 04:51",
           "username": "saggy4saggy4",
           "content": "D - inspector is something not used for security group checks and guard duty opt<br>B - this option will send all the non complaint alerts in the security hub<br>C - It is the easiest way to do it. The questions say if the incoming rule is changed to all the rule supports it.<br>A - Seems also correct but C is easier to do + we do not know if Cloudtrail is enabled.C is correct answer.<br>A will send an alert on all the Security group changes even for the correct ones and the question mentioned to send an alert only if the security group is open to all",
-          "upvote_count": "41",
+          "upvote_count": "31",
           "selected_answers": ""
         },
         {
@@ -11889,7 +11296,7 @@ var DOP_C01_Part1 =
           "id": 656443,
           "date": "Thu 01 Sep 2022 18:25",
           "username": "ohcnapcloud",
-          "content": "C - https://docs.aws.amazon.com/config/latest/developerguide/restricted-ssh.htmlThis wouldn’t work if they rule was changed to allow a specific range, it only works if it is chnanged to 0.0.0.0/0. If they change is to any other range that has some restriction, it will stay compliant. This means the answeris A",
+          "content": "C - https://docs.aws.amazon.com/config/latest/developerguide/restricted-ssh.htmlThis wouldn't work if they rule was changed to allow a specific range, it only works if it is chnanged to 0.0.0.0/0. If they change is to any other range that has some restriction, it will stay compliant. This means the answeris A",
           "upvote_count": "41",
           "selected_answers": "Selected Answer: C"
         },
@@ -11897,7 +11304,7 @@ var DOP_C01_Part1 =
           "id": 759216,
           "date": "Wed 28 Dec 2022 01:51",
           "username": "apcloud",
-          "content": "This wouldn’t work if they rule was changed to allow a specific range, it only works if it is chnanged to 0.0.0.0/0. If they change is to any other range that has some restriction, it will stay compliant. This means the answeris A",
+          "content": "This wouldn't work if they rule was changed to allow a specific range, it only works if it is chnanged to 0.0.0.0/0. If they change is to any other range that has some restriction, it will stay compliant. This means the answeris A",
           "upvote_count": "1",
           "selected_answers": ""
         }
@@ -11909,7 +11316,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company is using AWS Organizations to create separate AWS accounts for each of its departments. The company needs to automate the following tasks:<br>✑ Update the Linux AMIs with new patches periodically and generate a golden image<br>✑ Install a new version of Chef agents in the golden image, if available<br>✑ Provide the newly generated AMIs to the department's accounts<br>Which solution meets these requirements with the LEAST management overhead?<br><br><br></p>",
+      "question_text": "<p>A company is using AWS Organizations to create separate AWS accounts for each of its departments. The company needs to automate the following tasks:<br>-Update the Linux AMIs with new patches periodically and generate a golden image<br>-Install a new version of Chef agents in the golden image, if available<br>-Provide the newly generated AMIs to the department's accounts<br>Which solution meets these requirements with the LEAST management overhead?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -11944,22 +11351,14 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 75 discussion",
       "discusstion": [
-        {
-          "id": 783874,
-          "date": "Sun 22 Jan 2023 03:01",
-          "username": "Bulti",
-          "content": "Correct answer us B.  RAM is used to share Image builder resources as well as images created by the ImageBuilder pipeline.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 759983,
           "date": "Wed 28 Dec 2022 16:05",
           "username": "ericzaj",
           "content": "B looks correct:<br>https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-shared-resources.html",
-          "upvote_count": "2",
+          "upvote_count": "1",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -11967,7 +11366,7 @@ var DOP_C01_Part1 =
           "date": "Thu 15 Dec 2022 04:55",
           "username": "saggy4",
           "content": "People struggling with B and D.  I would go for B.  Though D seems a very good option the answer does not mention anything about how to share the Parameter Store with other accounts.",
-          "upvote_count": "2",
+          "upvote_count": "1",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -12010,7 +11409,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company has an application that runs on 12 Amazon EC2 instances. The instances run in an Amazon EC2 Auto Scaling group across three Availability Zones.<br>On a typical day each EC2 instance has 30% CPU utilization during business hours and 10% CPU utilization after business hours. The CPU utilization increases suddenly in the first few minutes of business hours each day. Other increases in CPU utilization are gradual. A DevOps engineer needs to optimize costs while maintaining or improving the application's reliability.<br>Which solution meets these requirements?<br><br><br></p>",
+      "question_text": "<p>A company has an application that runs on 12 Amazon EC2 instances. The instances run in an Amazon EC2 Auto Scaling group across three Availability Zones.<br>On a typical day each EC2 instance has 30% CPU utilization during business hours and 10% CPU utilization after business hours. The CPU utilization increases suddenly in the first few minutes of business hours each day. Other increases in CPU utilization are gradual. A DevOps engineer needs to optimize costs while maintaining or improving the application's reliability.<br>Which solution meets these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -12045,14 +11444,14 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 76 discussion",
       "discusstion": [
         {
           "id": 676654,
           "date": "Fri 23 Sep 2022 02:26",
           "username": "GoozianScofield_12",
-          "content": "C & D are wrong. Application Auto Scaling isn't for EC2 : <br>https://docs.aws.amazon.com/autoscaling/application/userguide/what-is-application-auto-scaling.html<br><br>B can not be a good option, as it just starts and terminates EC2 instances regardless of the real CPU utilization. <br><br>A is the most appropriateApplication autoscaling can also be applied to EC2 instances, it only has a broader application, compared to EC2 Autoscaling. But the catch here is we want a solution that address both during working hrs and after working hrs (especially when there is low traffic). Option A only address during working hrs.",
-          "upvote_count": "81",
+          "content": "C & D are wrong. Application Auto Scaling isn't for EC2 :<br>https://docs.aws.amazon.com/autoscaling/application/userguide/what-is-application-auto-scaling.html<br><br>B can not be a good option, as it just starts and terminates EC2 instances regardless of the real CPU utilization.<br><br>A is the most appropriateApplication autoscaling can also be applied to EC2 instances, it only has a broader application, compared to EC2 Autoscaling. But the catch here is we want a solution that address both during working hrs and after working hrs (especially when there is low traffic). Option A only address during working hrs.",
+          "upvote_count": "61",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -12072,22 +11471,6 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
-          "id": 783886,
-          "date": "Sun 22 Jan 2023 03:19",
-          "username": "Bulti",
-          "content": "Answer is A.  Target tracking scaling policy us gong to be more coat effective than just scheduled scaling action. AWS application auto scaling group is used beyond EC2 soC and D are wrong.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 766126,
-          "date": "Wed 04 Jan 2023 23:40",
-          "username": "saeidp",
-          "content": "I'll go with A.  Application Autoscaling is not for EC2s",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
           "id": 745703,
           "date": "Thu 15 Dec 2022 05:57",
           "username": "saggy4",
@@ -12099,7 +11482,7 @@ var DOP_C01_Part1 =
           "id": 702936,
           "date": "Mon 24 Oct 2022 12:59",
           "username": "ryuhei",
-          "content": "Answer is ”C” !!",
+          "content": "Answer is =E2=80=9DC=E2=80=9D !!",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: C"
         },
@@ -12135,7 +11518,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A development team is building a full-stack serverless web application. The serverless application will consist of a backend REST API and a front end that is built with a single-page application (SPA) framework.<br>The team wants to use a Git-based workflow to develop and deploy the application. The team has created an AWS CodeCommit repository to store the application code. The team wants to use multiple development branches to test new features. In addition, the team wants to ensure that code changes on the development branches are deployed to the different development environments. Code changes to the main branches must be released automatically to production.<br>The development deployments must be available as a subdomain of the main application website, which is hosted in an Amazon Route 53 public hosted zone.<br>What should a DevOps engineer do to meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A development team is building a full-stack serverless web application. The serverless application will consist of a backend REST API and a front end that is built with a single-page application (SPA) framework.<br>The team wants to use a Git-based workflow to develop and deploy the application. The team has created an AWS CodeCommit repository to store the application code. The team wants to use multiple development branches to test new features. In addition, the team wants to ensure that code changes on the development branches are deployed to the different development environments. Code changes to the main branches must be released automatically to production.<br>The development deployments must be available as a subdomain of the main application website, which is hosted in an Amazon Route 53 public hosted zone.<br>What should a DevOps engineer do to meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -12170,21 +11553,13 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 77 discussion",
       "discusstion": [
-        {
-          "id": 783908,
-          "date": "Sun 22 Jan 2023 04:22",
-          "username": "Bulti",
-          "content": "Answer is A.  Amplify hosting enables all the features requested.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 733813,
           "date": "Fri 02 Dec 2022 15:21",
           "username": "nsvijay04b1",
-          "content": "https://www.youtube.com/watch?v=AmJps1bYgs0",
+          "content": "https://www.youtube.com/watch?vAmJps1bYgs0",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: A"
         },
@@ -12192,7 +11567,7 @@ var DOP_C01_Part1 =
           "id": 681224,
           "date": "Tue 27 Sep 2022 23:38",
           "username": "RightAnswers",
-          "content": "Amplify leverages Git branches to create new deployments every time a developer connects a new branch in their repository. After connecting your first branch, you can create a new feature branch deployments. Typically the main branch tracks release code and is your production branch. The develop branch is used as an integration branch to test new features. This enables beta testers to test unreleased features on the develop branch deployment, without affecting any of the production end users on the main branch deployment.<br>You can connect a custom domain to an app that you’ve deployed with Amplify Hosting.<br>https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html",
+          "content": "Amplify leverages Git branches to create new deployments every time a developer connects a new branch in their repository. After connecting your first branch, you can create a new feature branch deployments. Typically the main branch tracks release code and is your production branch. The develop branch is used as an integration branch to test new features. This enables beta testers to test unreleased features on the develop branch deployment, without affecting any of the production end users on the main branch deployment.<br>You can connect a custom domain to an app that you've deployed with Amplify Hosting.<br>https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html",
           "upvote_count": "4",
           "selected_answers": "Selected Answer: A"
         },
@@ -12200,7 +11575,7 @@ var DOP_C01_Part1 =
           "id": 676670,
           "date": "Fri 23 Sep 2022 02:56",
           "username": "Goozian",
-          "content": "A -> AWS Amplify <br><br>https://aws.amazon.com/blogs/mobile/complete-guide-to-full-stack-ci-cd-workflows-with-aws-amplify/",
+          "content": "A -> AWS Amplify<br><br>https://aws.amazon.com/blogs/mobile/complete-guide-to-full-stack-ci-cd-workflows-with-aws-amplify/",
           "upvote_count": "3",
           "selected_answers": "Selected Answer: A"
         },
@@ -12220,7 +11595,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company is using AWS CodePipeline to deploy an application. According to a new guideline, a member of the company's security team must sign off on any application changes before the changes are deployed into production. The approval must be recorded and retained.<br>Which combination of actions will meet these requirements? (Choose two.)<br><br><br></p>",
+      "question_text": "<p>A company is using AWS CodePipeline to deploy an application. According to a new guideline, a member of the company's security team must sign off on any application changes before the changes are deployed into production. The approval must be recorded and retained.<br>Which combination of actions will meet these requirements? (Choose two.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -12260,21 +11635,13 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 78 discussion",
       "discusstion": [
-        {
-          "id": 783909,
-          "date": "Sun 22 Jan 2023 04:35",
-          "username": "Bulti",
-          "content": "Answer is C abd E",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 676675,
           "date": "Fri 23 Sep 2022 03:01",
           "username": "Goozian",
-          "content": "C & E <br>https://stelligent.com/2019/06/11/aws-codepipeline-approval-gate-tracking/",
+          "content": "C & E<br>https://stelligent.com/2019/06/11/aws-codepipeline-approval-gate-tracking/",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: CE"
         },
@@ -12302,7 +11669,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company manages a web application that runs on Amazon EC2 instances behind an Application Load Balancer (ALB). The EC2 instances run in an Auto<br>Scaling group across multiple Availability Zones. The application uses an Amazon RDS for MySQL DB instance to store the data. The company has configured<br>Amazon Route 53 with an alias record that points to the ALB. <br>Anew company guideline requires a geographically isolated disaster recovery (DR) site with an RTO of 4 hours and an RPO of 15 minutes.<br>Which DR strategy will meet these requirements with the LEAST change to the application stack?<br><br><br></p>",
+      "question_text": "<p>A company manages a web application that runs on Amazon EC2 instances behind an Application Load Balancer (ALB). The EC2 instances run in an Auto<br>Scaling group across multiple Availability Zones. The application uses an Amazon RDS for MySQL DB instance to store the data. The company has configured<br>Amazon Route 53 with an alias record that points to the ALB. <br>Anew company guideline requires a geographically isolated disaster recovery (DR) site with an RTO of 4 hours and an RPO of 15 minutes.<br>Which DR strategy will meet these requirements with the LEAST change to the application stack?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -12337,16 +11704,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 79 discussion",
       "discusstion": [
-        {
-          "id": 783911,
-          "date": "Sun 22 Jan 2023 04:37",
-          "username": "Bulti",
-          "content": "D is the correct answer",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 667914,
           "date": "Tue 13 Sep 2022 13:07",
@@ -12379,7 +11738,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer wants to implement an automated response that will occur if AWS Trusted Advisor detects an IAM access key in a public source code repository. The automated response must delete the exposed access key and must notify the security team.<br>Which solution will meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A DevOps engineer wants to implement an automated response that will occur if AWS Trusted Advisor detects an IAM access key in a public source code repository. The automated response must delete the exposed access key and must notify the security team.<br>Which solution will meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -12414,24 +11773,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 80 discussion",
       "discusstion": [
-        {
-          "id": 783914,
-          "date": "Sun 22 Jan 2023 05:02",
-          "username": "Bulti",
-          "content": "D is correct. Cis not because AWS health does not work with Trusted Advisor and the question talks about detecting credentials using AWS trusted advisor.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 767104,
-          "date": "Thu 05 Jan 2023 23:32",
-          "username": "saeidp",
-          "content": "D for sure<br>https://github.com/aws/Trusted-Advisor-Tools/blob/master/ExposedAccessKeys/README. md",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 734589,
           "date": "Sat 03 Dec 2022 18:18",
@@ -12453,7 +11796,7 @@ var DOP_C01_Part1 =
           "date": "Wed 28 Sep 2022 06:45",
           "username": "quixo",
           "content": "I will go with C. <br>Public access key <--> AWS Health <--> Event Bridge <--> Lambda Func.<br><br>Refer: https://aws.amazon.com/blogs/compute/automate-your-it-operations-using-aws-step-functions-and-amazon-cloudwatch-events/",
-          "upvote_count": "4",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -12488,7 +11831,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer wants to implement an automated response that will occur if AWS Trusted Advisor detects an IAM access key in a public source code repository. The automated response must delete the exposed access key and must notify the security team.<br>Which solution will meet these requirements?<br><br><br></p>",
+      "question_text": "<p>A DevOps engineer wants to implement an automated response that will occur if AWS Trusted Advisor detects an IAM access key in a public source code repository. The automated response must delete the exposed access key and must notify the security team.<br>Which solution will meet these requirements?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -12523,16 +11866,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 81 discussion",
       "discusstion": [
-        {
-          "id": 784303,
-          "date": "Sun 22 Jan 2023 13:47",
-          "username": "Bulti",
-          "content": "D is the correct answer.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 757762,
           "date": "Mon 26 Dec 2022 19:43",
@@ -12605,7 +11940,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company hosts an application in North America. The application uses an Amazon Aurora PostgreSQL DB cluster. A team of analysts in Europe generates real- time reports by using the DB cluster. The analysts must have access to the most up-to-date data. A DevOps engineer discovers that the generation of reports is much slower for users in Europe than for users in North America.<br>What should the DevOps engineer do to resolve this issue?<br><br><br></p>",
+      "question_text": "<p>A company hosts an application in North America. The application uses an Amazon Aurora PostgreSQL DB cluster. A team of analysts in Europe generates real- time reports by using the DB cluster. The analysts must have access to the most up-to-date data. A DevOps engineer discovers that the generation of reports is much slower for users in Europe than for users in North America.<br>What should the DevOps engineer do to resolve this issue?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -12640,22 +11975,14 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 82 discussion",
       "discusstion": [
-        {
-          "id": 784305,
-          "date": "Sun 22 Jan 2023 13:52",
-          "username": "Bulti",
-          "content": "C is the right answer",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 741359,
           "date": "Sun 11 Dec 2022 02:53",
           "username": "jaxsbr",
           "content": "A & D is incorrect - utilizes DynamoDB which is key value storage, whereas PostgreSQL is relational.<br>B is incorrect - \\\"Aurora PostgreSQL DB clusters don't support Aurora Replicas in different AWS Regions,\\\" https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Replication.html<br>This leaves C as correct answer",
-          "upvote_count": "3",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -12663,7 +11990,7 @@ var DOP_C01_Part1 =
           "date": "Mon 26 Sep 2022 02:48",
           "username": "youonebe",
           "content": "B.  cross-Region Aurora Replicas seems good, but user still points to NA which is wrong.<br>That leaves C as the choice.",
-          "upvote_count": "2",
+          "upvote_count": "1",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -12698,7 +12025,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A consulting company was hired to assess security vulnerabilities within a client company's application and propose a plan to remediate all identified issues. The architecture is identified as follows: Amazon S3 storage for content, an Auto Scaling group of Amazon EC2 instances behind an Elastic Load Balancer with attached Amazon EBS storage, and an Amazon RDS MySQL database. There are also several AWS Lambda functions that communicate directly with the RDS database using connection string statements in the code.<br><br>The consultants identified the top security threat as follows: the application is not meeting its requirement to have encryption at rest.<br><br>What solution will address this issue with the LEAST operational overhead and will provide monitoring for potential future violations?<br><br></p>",
+      "question_text": "<p>A consulting company was hired to assess security vulnerabilities within a client company's application and propose a plan to remediate all identified issues. The architecture is identified as follows: Amazon S3 storage for content, an Auto Scaling group of Amazon EC2 instances behind an Elastic Load Balancer with attached Amazon EBS storage, and an Amazon RDS MySQL database. There are also several AWS Lambda functions that communicate directly with the RDS database using connection string statements in the code.<br><br>The consultants identified the top security threat as follows: the application is not meeting its requirement to have encryption at rest.<br><br>What solution will address this issue with the LEAST operational overhead and will provide monitoring for potential future violations?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -12733,16 +12060,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 83 discussion",
       "discusstion": [
-        {
-          "id": 784313,
-          "date": "Sun 22 Jan 2023 13:58",
-          "username": "Bulti",
-          "content": "Correct answer is D. ",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 743698,
           "date": "Tue 13 Dec 2022 08:16",
@@ -12767,7 +12086,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer is planning to deploy a Ruby-based application to production. The application needs to interact with an Amazon RDS for MySQL database and should have automatic scaling and high availability. The stored data in the database is critical and should persist regardless of the state of the application stack.<br><br>The DevOps engineer needs to set up an automated deployment strategy for the application with automatic rollbacks. The solution also must alert the application team when a deployment fails.<br><br>Which combination of steps will meet these requirements? (Choose three.)<br><br></p>",
+      "question_text": "<p>A DevOps engineer is planning to deploy a Ruby-based application to production. The application needs to interact with an Amazon RDS for MySQL database and should have automatic scaling and high availability. The stored data in the database is critical and should persist regardless of the state of the application stack.<br><br>The DevOps engineer needs to set up an automated deployment strategy for the application with automatic rollbacks. The solution also must alert the application team when a deployment fails.<br><br>Which combination of steps will meet these requirements? (Choose three.)</p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -12812,37 +12131,21 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 84 discussion",
       "discusstion": [
         {
           "id": 732237,
           "date": "Thu 01 Dec 2022 05:24",
           "username": "SmileyCloud",
           "content": "B and not A because the RDS data is critical. Move RDS out of Beanstalk.<br>D and not C, because D constantly monitors the Beanstalk health. See https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.eventbridge.html<br>E and not F because immutable creates another environment. If rolling deployment fails, you need to redeploy it again. They ask for automated healing. https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.rolling-version-deploy.html#environments-cfg-rollingdeployments-method",
-          "upvote_count": "10",
-          "selected_answers": "Selected Answer: BDE"
-        },
-        {
-          "id": 784331,
-          "date": "Sun 22 Jan 2023 14:18",
-          "username": "Bulti",
-          "content": "Correct answer is B,C and E.  B because RDS data is critical, C because that's the way to send notifications on failed deployment to your email address using Elastric BeanStalk which uses SNS to send notification to your email address abd E because of the ability to rollback to the previous version after a failed deployment",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 767155,
-          "date": "Fri 06 Jan 2023 01:21",
-          "username": "saeidp",
-          "content": "I vote for BDE",
-          "upvote_count": "1",
+          "upvote_count": "9",
           "selected_answers": "Selected Answer: BDE"
         },
         {
           "id": 759326,
           "date": "Wed 28 Dec 2022 04:39",
           "username": "saggy4",
-          "content": "A -- RDS is critical and should not be clubbed with AWS Beanstalk ENV.<br><br>B -- Correct as RDS should be created separately independent of the BeanStalk ENV.<br><br>C -- Correct -- You can send alerts for your ENV via adding email address in config https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.sns.html#configuration-notifications-namespace<br><br>D -- Health monitor will give alerts for all the environments and also not related to Deployments<br><br>E -- Correct and D -- Incorrect--> Rolling == No automatic Rollback, Immutable == Automatic Rollback.",
+          "content": "A -- RDS is critical and should not be clubbed with AWS Beanstalk ENV.<br><br>B -- Correct as RDS should be created separately independent of the BeanStalk ENV.<br><br>C -- Correct -- You can send alerts for your ENV via adding email address in config https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.sns.html#configuration-notifications-namespace<br><br>D -- Health monitor will give alerts for all the environments and also not related to Deployments<br><br>E -- Correct and D -- Incorrect--> RollingNo automatic Rollback, ImmutableAutomatic Rollback.",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: BCE"
         },
@@ -12851,7 +12154,7 @@ var DOP_C01_Part1 =
           "date": "Sat 03 Dec 2022 21:40",
           "username": "USalobenjlbenjl",
           "content": "B:and not A because the RDS data is critical. Move RDS out of Beanstalk.<br>C:not D, because AWS Health monitor health status of AWS services, not deployments.<br>E: This was tricky one. We should pay attention that we need automatic rollback, not rolling update.Failed rolling update required manual work to deploy new good version.Failed immutable update will rollback all unhealthy instances automatically, no manual work is needed<br>https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.rolling-version-deploy.html#environments-cfg-rollingdeployments-methodI mean notification email address, not the sns.Yes, BCE looks correct to me.<br>You can set sns notification in elastic beanstalk console.<br>https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.sns.html",
-          "upvote_count": "313",
+          "upvote_count": "312",
           "selected_answers": "Selected Answer: BCE"
         },
         {
@@ -12867,7 +12170,7 @@ var DOP_C01_Part1 =
           "date": "Mon 19 Dec 2022 03:25",
           "username": "benjl",
           "content": "Yes, BCE looks correct to me.<br>You can set sns notification in elastic beanstalk console.<br>https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.sns.html",
-          "upvote_count": "3",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -12894,7 +12197,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>An ecommerce company is looking for ways to deploy an application on AWS that satisfies the following requirements:<br><br>• Has a simple and automated application deployment process.<br>• Has minimal deployment costs while ensuring that at least half of the instances are available to receive end-user requests.<br>• If the application fails, an automated healing mechanism will replace the affected instances.<br><br>Which deployment strategy will meet these requirements?<br><br></p>",
+      "question_text": "<p>An ecommerce company is looking for ways to deploy an application on AWS that satisfies the following requirements:<br><br>- Has a simple and automated application deployment process.<br>- Has minimal deployment costs while ensuring that at least half of the instances are available to receive end-user requests.<br>- If the application fails, an automated healing mechanism will replace the affected instances.<br><br>Which deployment strategy will meet these requirements?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -12929,30 +12232,14 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 85 discussion",
       "discusstion": [
         {
           "id": 732241,
           "date": "Thu 01 Dec 2022 05:30",
           "username": "SmileyCloud",
           "content": "The keyword is \\\"Has a simple and automated application deployment process.\\\"<br>You can't find anything simpler than Beanstalk. Answer: A",
-          "upvote_count": "8",
-          "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 784347,
-          "date": "Sun 22 Jan 2023 14:47",
-          "username": "Bulti",
-          "content": "Correct answer is A. ",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 778876,
-          "date": "Tue 17 Jan 2023 13:05",
-          "username": "wzh5831",
-          "content": "Should be A, Beanstalk will help to replace failed instance:<br>\\\"If an instance in your environment fails an Amazon EC2 status check, Auto Scaling takes it down and replaces it.\\\"<br>https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environmentconfig-autoscaling-healthchecktype.html",
-          "upvote_count": "1",
+          "upvote_count": "7",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -13003,7 +12290,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company is implementing AWS CodePipeline to automate its testing process. The company wants to be notified when the execution state fails and used the following custom event pattern in Amazon CloudWatch:<br><br><img src=\"https://img.examtopics.com/aws-devops-engineer-professional/image1.png\"><br><br>Which type of events will match this event pattern?<br><br></p>",
+      "question_text": "<p>A company is implementing AWS CodePipeline to automate its testing process. The company wants to be notified when the execution state fails and used the following custom event pattern in Amazon CloudWatch:<br><br><img src=\"https://img.examtopics.com/aws-devops-engineer-professional/image1.png\"><br><br>Which type of events will match this event pattern?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -13038,16 +12325,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 86 discussion",
       "discusstion": [
-        {
-          "id": 784353,
-          "date": "Sun 22 Jan 2023 14:49",
-          "username": "Bulti",
-          "content": "B is correct.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: B"
-        },
         {
           "id": 743703,
           "date": "Tue 13 Dec 2022 08:25",
@@ -13060,7 +12339,7 @@ var DOP_C01_Part1 =
           "id": 732247,
           "date": "Thu 01 Dec 2022 05:40",
           "username": "SmileyCloud",
-          "content": "B.  An example for CodePipeline Action Execution State Change is here. <br>https://docs.aws.amazon.com/codepipeline/latest/userguide/detect-state-changes-cloudwatch-events.html",
+          "content": "B.  An example for CodePipeline Action Execution State Change is here.<br>https://docs.aws.amazon.com/codepipeline/latest/userguide/detect-state-changes-cloudwatch-events.html",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
@@ -13080,7 +12359,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company has developed a Node.js web application which provides REST services to store and retrieve time series data. The web application is built by the development team on company laptops, tested locally, and manually deployed to a single on-premises server, which accesses a local MySQL database. The company is starting a trial in two weeks, during which the application will undergo frequent updates based on customer feedback. The following requirements must be met:<br><br>• The team must be able to reliably build, test, and deploy new updates on a daily basis, without downtime or degraded performance.<br>• The application must be able to scale to meet an unpredictable number of concurrent users during the trial.<br><br>Which action will allow the team to quickly meet these objectives?<br><br></p>",
+      "question_text": "<p>A company has developed a Node.js web application which provides REST services to store and retrieve time series data. The web application is built by the development team on company laptops, tested locally, and manually deployed to a single on-premises server, which accesses a local MySQL database. The company is starting a trial in two weeks, during which the application will undergo frequent updates based on customer feedback. The following requirements must be met:<br><br>- The team must be able to reliably build, test, and deploy new updates on a daily basis, without downtime or degraded performance.<br>- The application must be able to scale to meet an unpredictable number of concurrent users during the trial.<br><br>Which action will allow the team to quickly meet these objectives?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -13115,24 +12394,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 87 discussion",
       "discusstion": [
-        {
-          "id": 784362,
-          "date": "Sun 22 Jan 2023 14:54",
-          "username": "Bulti",
-          "content": "C is the right answer",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 777355,
-          "date": "Mon 16 Jan 2023 07:11",
-          "username": "Oleg_gol",
-          "content": "https://www.examtopics.com/discussions/amazon/view/8474-exam-aws-devops-engineer-professional-topic-1-question-112/",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
-        },
         {
           "id": 732248,
           "date": "Thu 01 Dec 2022 05:43",
@@ -13189,7 +12452,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company is deploying a new application that uses Amazon EC2 instances. The company needs a solution to query application logs and AWS account API activity.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "question_text": "<p>A company is deploying a new application that uses Amazon EC2 instances. The company needs a solution to query application logs and AWS account API activity.<br><br>Which solution will meet these requirements?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -13224,22 +12487,14 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 88 discussion",
       "discusstion": [
         {
           "id": 732259,
           "date": "Thu 01 Dec 2022 05:54",
           "username": "SmileyCloud",
-          "content": "A - You can't use CloudWatch to query anything. You have to use CloudWatch Logs Insights, but even then - you can't use it to query S3. <br>B - Correct. Very simple to configure and use.<br>C - Why would you use this complex solution? RedShift is super expensive.<br>D - This is viable too, but you want your logs in CloudWatch not S3.",
+          "content": "A - You can't use CloudWatch to query anything. You have to use CloudWatch Logs Insights, but even then - you can't use it to query S3.<br>B - Correct. Very simple to configure and use.<br>C - Why would you use this complex solution? RedShift is super expensive.<br>D - This is viable too, but you want your logs in CloudWatch not S3.",
           "upvote_count": "5",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
-          "id": 784366,
-          "date": "Sun 22 Jan 2023 14:57",
-          "username": "Bulti",
-          "content": "B is the correct answer. CloudWatch log insights can't query S3.",
-          "upvote_count": "1",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -13254,7 +12509,7 @@ var DOP_C01_Part1 =
           "id": 735027,
           "date": "Sun 04 Dec 2022 12:07",
           "username": "xMaruapcloud",
-          "content": "Why not D?The features of cloud watch logs insights. Otherwise yes D also works, but B is “better”",
+          "content": "Why not D?The features of cloud watch logs insights. Otherwise yes D also works, but B is =E2=80=9Cbetter=E2=80=9D",
           "upvote_count": "21",
           "selected_answers": ""
         },
@@ -13262,7 +12517,7 @@ var DOP_C01_Part1 =
           "id": 759255,
           "date": "Wed 28 Dec 2022 02:43",
           "username": "apcloud",
-          "content": "The features of cloud watch logs insights. Otherwise yes D also works, but B is “better”",
+          "content": "The features of cloud watch logs insights. Otherwise yes D also works, but B is =E2=80=9Cbetter=E2=80=9D",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -13298,7 +12553,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer is tasked with creating a more stable deployment solution for a web application in AWS. Previous deployments have resulted in user-facing bugs, premature user traffic, and inconsistencies between web servers running behind an Application Load Balancer. The current strategy uses AWS CodeCommit to store the code for the application. When developers push to the main branch of the repository, CodeCommit triggers an AWS Lambda deploy function, which invokes an AWS Systems Manager run command to build and deploy the new code to all Amazon EC2 instances.<br><br>Which combination of actions should be taken to implement a more stable deployment solution? (Choose two.)<br><br></p>",
+      "question_text": "<p>A DevOps engineer is tasked with creating a more stable deployment solution for a web application in AWS. Previous deployments have resulted in user-facing bugs, premature user traffic, and inconsistencies between web servers running behind an Application Load Balancer. The current strategy uses AWS CodeCommit to store the code for the application. When developers push to the main branch of the repository, CodeCommit triggers an AWS Lambda deploy function, which invokes an AWS Systems Manager run command to build and deploy the new code to all Amazon EC2 instances.<br><br>Which combination of actions should be taken to implement a more stable deployment solution? (Choose two.)</p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -13338,16 +12593,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 89 discussion",
       "discusstion": [
-        {
-          "id": 784369,
-          "date": "Sun 22 Jan 2023 15:02",
-          "username": "Bulti",
-          "content": "Answer is BC",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: BC"
-        },
         {
           "id": 759865,
           "date": "Wed 28 Dec 2022 14:12",
@@ -13360,7 +12607,7 @@ var DOP_C01_Part1 =
           "id": 734288,
           "date": "Sat 03 Dec 2022 09:20",
           "username": "ET0125",
-          "content": "I will go with BD, <br>C for selecting the ALB for the deployment group is not supported",
+          "content": "I will go with BD,<br>C for selecting the ALB for the deployment group is not supported",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -13388,7 +12635,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company wants to set up a continuous delivery pipeline. The company stores application code in a private GitHub repository. The company needs to deploy the application components to Amazon Elastic Container Service (Amazon ECS), Amazon EC2, and AWS Lambda. The pipeline must support manual approval actions.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "question_text": "<p>A company wants to set up a continuous delivery pipeline. The company stores application code in a private GitHub repository. The company needs to deploy the application components to Amazon Elastic Container Service (Amazon ECS), Amazon EC2, and AWS Lambda. The pipeline must support manual approval actions.<br><br>Which solution will meet these requirements?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -13423,32 +12670,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 90 discussion",
       "discusstion": [
-        {
-          "id": 784370,
-          "date": "Sun 22 Jan 2023 15:04",
-          "username": "Bulti",
-          "content": "B meets all requirements",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
-          "id": 781756,
-          "date": "Fri 20 Jan 2023 02:25",
-          "username": "wzh5831",
-          "content": "https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-steps.html<br>B meets all requirements, CodeDeploy support EC2, ECS and Lambda",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
-          "id": 774690,
-          "date": "Fri 13 Jan 2023 17:57",
-          "username": "WinslowSe7en",
-          "content": "Option A would meet the requirements of deploying the application components to Amazon ECS, EC2, and Lambda. Option B, using CodePipeline with CodeDeploy as the deploy provider, would allow for manual approval actions to be added to the pipeline, but it would not support deploying to Amazon ECS or Lambda. Option C, using CodePipeline with Elastic Beanstalk as the deploy provider, would not support deploying to Amazon ECS or Lambda. And option D, using CodeDeploy with GitHub integration, would not support deploying to Amazon ECS or Lambda or adding manual approval actions.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 727466,
           "date": "Sat 26 Nov 2022 12:33",
@@ -13465,12 +12688,12 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer is deploying an AWS Service Catalog portfolio using AWS CodePipeline. The pipeline should create products and templates based on a manifest file in either JSON or YAML, and should enforce security requirements on all AWS Service Catalog products managed through the pipeline.<br><br>Which solution will meet the requirements in an automated fashion?<br><br></p>",
+      "question_text": "<p>A DevOps engineer is deploying an AWS Service Catalog portfolio using AWS CodePipeline. The pipeline should create products and templates based on a manifest file in either JSON or YAML, and should enforce security requirements on all AWS Service Catalog products managed through the pipeline.<br><br>Which solution will meet the requirements in an automated fashion?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: C</p>",
+      "general_feedback": "<p>Correct Answer: A</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -13479,7 +12702,7 @@ var DOP_C01_Part1 =
           "answers": [
             {
               "choice": "<p>A. Use the AWS Service Catalog deploy action in AWS CodeDeploy to push new versions of products into the AWS Service Catalog with verification steps in the CodeDeploy AppSpec.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -13489,7 +12712,7 @@ var DOP_C01_Part1 =
             },
             {
               "choice": "<p>C. Use an AWS Lambda action in CodePipeline to run a Lambda function to verify and push new versions of products into the AWS Service Catalog.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -13500,7 +12723,7 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 91 discussion",
       "discusstion": [
         {
           "id": 732271,
@@ -13517,46 +12740,6 @@ var DOP_C01_Part1 =
           "content": "This link explicitly states to skip the build stage, that is why code build is the incorrect answer",
           "upvote_count": "1",
           "selected_answers": ""
-        },
-        {
-          "id": 784818,
-          "date": "Mon 23 Jan 2023 01:27",
-          "username": "Bulti",
-          "content": "AWS service catalog is a deploy action in CodePipeline. It's not an action in CodeDeploy as A) suggests. Therefore the best answer is C.  Others options are incorrect as they are not technically viable.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 781761,
-          "date": "Fri 20 Jan 2023 02:31",
-          "username": "wzh5831",
-          "content": "Should be C, below example is using CodePipeline and not CodeDeploy.<br>https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-S3-servicecatalog.html",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 777664,
-          "date": "Mon 16 Jan 2023 14:06",
-          "username": "Oleg_gol",
-          "content": "https://www.examtopics.com/discussions/amazon/view/47927-exam-aws-devops-engineer-professional-topic-1-question-237/",
-          "upvote_count": "2",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 771034,
-          "date": "Tue 10 Jan 2023 04:37",
-          "username": "Blueocean",
-          "content": "Option A<br>https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file.html",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 769865,
-          "date": "Sun 08 Jan 2023 23:16",
-          "username": "saeidp",
-          "content": "I'll go with C.  Although there is no need for invoking a lambda function for deploying to Service Catalog but it is not possible to use CodeDeploy for deploying to Service Catalog",
-          "upvote_count": "2",
-          "selected_answers": "Selected Answer: C"
         }
       ]
     },
@@ -13566,7 +12749,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company has containerized all of its in-house quality control applications. The company is running Jenkins on Amazon EC2, which requires patching and upgrading. The compliance officer has requested a DevOps engineer begin encrypting build artifacts since they contain company intellectual property.<br><br>What should the DevOps engineer do to accomplish this in the MOST maintainable manner?<br><br></p>",
+      "question_text": "<p>A company has containerized all of its in-house quality control applications. The company is running Jenkins on Amazon EC2, which requires patching and upgrading. The compliance officer has requested a DevOps engineer begin encrypting build artifacts since they contain company intellectual property.<br><br>What should the DevOps engineer do to accomplish this in the MOST maintainable manner?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -13601,24 +12784,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 92 discussion",
       "discusstion": [
-        {
-          "id": 784820,
-          "date": "Mon 23 Jan 2023 01:30",
-          "username": "Bulti",
-          "content": "D is the correct answer.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: D"
-        },
-        {
-          "id": 774704,
-          "date": "Fri 13 Jan 2023 18:13",
-          "username": "WinslowSe7en",
-          "content": "B = \\\" MOST maintainable manner\\\"",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 735650,
           "date": "Mon 05 Dec 2022 05:13",
@@ -13651,7 +12818,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A production account has a requirement that any Amazon EC2 instance that has been logged into manually must be terminated within 24 hours. All applications in the production account are using Auto Scaling groups with Amazon CloudWatch Logs agent configured.<br><br>How can this process be automated?<br><br></p>",
+      "question_text": "<p>A production account has a requirement that any Amazon EC2 instance that has been logged into manually must be terminated within 24 hours. All applications in the production account are using Auto Scaling groups with Amazon CloudWatch Logs agent configured.<br><br>How can this process be automated?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -13686,16 +12853,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 93 discussion",
       "discusstion": [
-        {
-          "id": 784824,
-          "date": "Mon 23 Jan 2023 01:36",
-          "username": "Bulti",
-          "content": "D is the correct answer. A is an overkill, B is not automated and C idoesnt make any sense as it does not address how EC2 instances will be terminated.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 754063,
           "date": "Fri 23 Dec 2022 09:58",
@@ -13707,18 +12866,10 @@ var DOP_C01_Part1 =
         {
           "id": 732280,
           "date": "Thu 01 Dec 2022 06:25",
-          "username": "SmileyCloudWinslowSe7en",
-          "content": "A - You can't create a log subscription to AWS Step Function. Only OpenSearch, Kinesis, Kinesis Firehouse and Lambda.<br>B - is a manual process. It needs to be automated.<br>C - Too complex. Architecture doesn't make any sense.<br>D - Correct.Yes D seems to be a more direct approach but it is possible to create a log subscription to an AWS Step Functions application. CloudWatch Logs can be configured to send log data to a Step Functions state machine, which can then be used to process the log data and perform various actions based on the contents of the log data",
-          "upvote_count": "41",
+          "username": "SmileyCloud",
+          "content": "A - You can't create a log subscription to AWS Step Function. Only OpenSearch, Kinesis, Kinesis Firehouse and Lambda.<br>B - is a manual process. It needs to be automated.<br>C - Too complex. Architecture doesn't make any sense.<br>D - Correct.",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: D"
-        },
-        {
-          "id": 774712,
-          "date": "Fri 13 Jan 2023 18:20",
-          "username": "WinslowSe7en",
-          "content": "Yes D seems to be a more direct approach but it is possible to create a log subscription to an AWS Step Functions application. CloudWatch Logs can be configured to send log data to a Step Functions state machine, which can then be used to process the log data and perform various actions based on the contents of the log data",
-          "upvote_count": "1",
-          "selected_answers": ""
         },
         {
           "id": 727484,
@@ -13736,7 +12887,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company's application is running on Amazon EC2 instances in an Auto Scaling group. A DevOps engineer needs to ensure there are at least four application servers running at all times. Whenever an update has to be made to the application, the engineer creates a new AMI with the updated configuration and updates the AWS CloudFormation template with the new AMI ID.  After the stack update finishes, the engineer manually terminates the old instances one by one, verifying that the new instance is operational before proceeding. The engineer needs to automate this process.<br><br>Which action will allow for the LEAST number of manual steps moving forward?<br><br></p>",
+      "question_text": "<p>A company's application is running on Amazon EC2 instances in an Auto Scaling group. A DevOps engineer needs to ensure there are at least four application servers running at all times. Whenever an update has to be made to the application, the engineer creates a new AMI with the updated configuration and updates the AWS CloudFormation template with the new AMI ID.  After the stack update finishes, the engineer manually terminates the old instances one by one, verifying that the new instance is operational before proceeding. The engineer needs to automate this process.<br><br>Which action will allow for the LEAST number of manual steps moving forward?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -13771,16 +12922,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 94 discussion",
       "discusstion": [
-        {
-          "id": 784838,
-          "date": "Mon 23 Jan 2023 02:12",
-          "username": "Bulti",
-          "content": "A is correct because of the ability to specify MinInstanceInService attributes on the autoscalinggroup update policy.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: A"
-        },
         {
           "id": 754069,
           "date": "Fri 23 Dec 2022 10:05",
@@ -13805,7 +12948,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company using AWS CodeCommit for source control wants to automate its continuous integration and continuous delivery pipeline on AWS in its development environment. The company has three requirements:<br><br>1. There must be a legal and a security review of any code change to make sure sensitive information is not leaked through the source code.<br>2. Every change must go through unit testing.<br>3. Every change must go through a suite of functional testing to ensure functionality.<br><br>In addition, the company has the following requirements for automation:<br><br>1. Code changes should automatically trigger the CI/CD pipeline.<br>2. Any failure in the pipeline should notify devops-admin@xyz.com.<br>3. There must be an approval to stage the assets to Amazon S3 after tests have been performed.<br><br>What should a DevOps Engineer do to meet all of these requirements while following Cl/CD best practices?<br><br></p>",
+      "question_text": "<p>A company using AWS CodeCommit for source control wants to automate its continuous integration and continuous delivery pipeline on AWS in its development environment. The company has three requirements:<br><br>1. There must be a legal and a security review of any code change to make sure sensitive information is not leaked through the source code.<br>2. Every change must go through unit testing.<br>3. Every change must go through a suite of functional testing to ensure functionality.<br><br>In addition, the company has the following requirements for automation:<br><br>1. Code changes should automatically trigger the CI/CD pipeline.<br>2. Any failure in the pipeline should notify devops-admin@xyz.com.<br>3. There must be an approval to stage the assets to Amazon S3 after tests have been performed.<br><br>What should a DevOps Engineer do to meet all of these requirements while following Cl/CD best practices?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -13840,16 +12983,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 95 discussion",
       "discusstion": [
-        {
-          "id": 784841,
-          "date": "Mon 23 Jan 2023 02:24",
-          "username": "Bulti",
-          "content": "C is correct.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
-        },
         {
           "id": 754071,
           "date": "Fri 23 Dec 2022 10:08",
@@ -13870,7 +13005,7 @@ var DOP_C01_Part1 =
           "id": 733703,
           "date": "Fri 02 Dec 2022 13:05",
           "username": "nsvijay04b1",
-          "content": "Always Commit to the development branch not on mainlineand trigger AWS CodePipeline from the development branch. <br>Make an individual stage in CodePipeline for security review, unit tests, functional tests, and manual approval.<br>Amazon CloudWatch Events to detect changes in pipeline \\\"CodePipeline Stage Execution State Change\\\" andTarget a Amazon SNS topic.",
+          "content": "Always Commit to the development branch not on mainlineand trigger AWS CodePipeline from the development branch.<br>Make an individual stage in CodePipeline for security review, unit tests, functional tests, and manual approval.<br>Amazon CloudWatch Events to detect changes in pipeline \\\"CodePipeline Stage Execution State Change\\\" andTarget a Amazon SNS topic.",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: C"
         }
@@ -13882,7 +13017,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A security review has identified that an AWS CodeBuild project is downloading a database population script from an Amazon S3 bucket using an unauthenticated request. The security team does not allow unauthenticated requests to S3 buckets for this project.<br><br>How can this issue be corrected in the MOST secure manner?<br><br></p>",
+      "question_text": "<p>A security review has identified that an AWS CodeBuild project is downloading a database population script from an Amazon S3 bucket using an unauthenticated request. The security team does not allow unauthenticated requests to S3 buckets for this project.<br><br>How can this issue be corrected in the MOST secure manner?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -13917,24 +13052,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 96 discussion",
       "discusstion": [
-        {
-          "id": 784885,
-          "date": "Mon 23 Jan 2023 03:43",
-          "username": "Bulti",
-          "content": "C is correct. IAM role is a better practice than using IAM access key and secret access key.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 775050,
-          "date": "Sat 14 Jan 2023 03:55",
-          "username": "WinslowSe7en",
-          "content": "D is the correct answer.Option C is also a secure way to correct the issue.However, using an IAM access key and secret access key in addition to modifying the service role for the CodeBuild project is a more secure way to ensure that the CodeBuild project has the necessary permissions to access the S3 bucket.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
         {
           "id": 754074,
           "date": "Fri 23 Dec 2022 10:11",
@@ -13975,7 +13094,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company has multiple development groups working in a single shared AWS account. The senior manager of the groups wants to be alerted via a third-party API call when the creation of resources approaches the service limits for the account.<br><br>Which solution will accomplish this with the LEAST amount of development effort?<br><br></p>",
+      "question_text": "<p>A company has multiple development groups working in a single shared AWS account. The senior manager of the groups wants to be alerted via a third-party API call when the creation of resources approaches the service limits for the account.<br><br>Which solution will accomplish this with the LEAST amount of development effort?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -14010,32 +13129,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 97 discussion",
       "discusstion": [
-        {
-          "id": 784893,
-          "date": "Mon 23 Jan 2023 03:55",
-          "username": "Bulti",
-          "content": "B is the correct answer.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
-          "id": 782913,
-          "date": "Sat 21 Jan 2023 02:09",
-          "username": "wzh5831",
-          "content": "Ttusted Advisor allow you to check your account's service limits (quotas)<br>https://docs.aws.amazon.com/awssupport/latest/user/service-limits.html",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
-          "id": 770911,
-          "date": "Mon 09 Jan 2023 23:01",
-          "username": "saeidp",
-          "content": "B is the answer",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: B"
-        },
         {
           "id": 754120,
           "date": "Fri 23 Dec 2022 11:18",
@@ -14076,7 +13171,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A DevOps engineer is architecting a continuous development strategy for a company's software as a service (SaaS) web application running on AWS. For application and security reasons, users subscribing to this application are distributed across multiple Application Load Balancers (ALBs), each of which has a dedicated Auto Scaling group and fleet of Amazon EC2 instances. The application does not require a build stage, and when it is committed to AWS CodeCommit, the application must trigger a simultaneous deployment to all ALBs, Auto Scaling groups, and EC2 fleets.<br><br>Which architecture will meet these requirements with the LEAST amount of configuration?<br><br></p>",
+      "question_text": "<p>A DevOps engineer is architecting a continuous development strategy for a company's software as a service (SaaS) web application running on AWS. For application and security reasons, users subscribing to this application are distributed across multiple Application Load Balancers (ALBs), each of which has a dedicated Auto Scaling group and fleet of Amazon EC2 instances. The application does not require a build stage, and when it is committed to AWS CodeCommit, the application must trigger a simultaneous deployment to all ALBs, Auto Scaling groups, and EC2 fleets.<br><br>Which architecture will meet these requirements with the LEAST amount of configuration?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -14111,24 +13206,8 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 98 discussion",
       "discusstion": [
-        {
-          "id": 784896,
-          "date": "Mon 23 Jan 2023 03:59",
-          "username": "Bulti",
-          "content": "Answer is C with least amount of configuration",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 777738,
-          "date": "Mon 16 Jan 2023 15:01",
-          "username": "Oleg_gol",
-          "content": "For me - C",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
-        },
         {
           "id": 759289,
           "date": "Wed 28 Dec 2022 03:42",
@@ -14177,7 +13256,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company's primary AWS Region contains the following infrastructure:<br><br>• An Amazon S3 bucket that contains an object package that is used in instance user data to configure an application.<br>• Amazon EC2 instances in an Auto Scaling group behind an Application Load Balancer (ALB) with an instance profile that grants s3:Get* access on the S3 bucket.<br><br>The company has the following infrastructure in a backup Region:<br><br>• An S3 bucket with the same configuration as the S3 bucket in the primary AWS Region, but without any objects.<br>• EC2 instances in an Auto Scaling group behind an ALB that run with the same configuration as in the primary AWS Region.<br><br>To simulate a disaster recovery scenario, the company turns off all access to Amazon S3 and sets the Auto Scaling group's minimum, maximum, and desired instances to 0 in the primary Region. When the instances in the backup Region scale out, they do not pass Amazon Route 53 health checks.<br><br>Which combination of steps should the company take to resolve this issue? (Choose three.)<br><br></p>",
+      "question_text": "<p>A company's primary AWS Region contains the following infrastructure:<br><br>- An Amazon S3 bucket that contains an object package that is used in instance user data to configure an application.<br>- Amazon EC2 instances in an Auto Scaling group behind an Application Load Balancer (ALB) with an instance profile that grants s3:Get* access on the S3 bucket.<br><br>The company has the following infrastructure in a backup Region:<br><br>- An S3 bucket with the same configuration as the S3 bucket in the primary AWS Region, but without any objects.<br>- EC2 instances in an Auto Scaling group behind an ALB that run with the same configuration as in the primary AWS Region.<br><br>To simulate a disaster recovery scenario, the company turns off all access to Amazon S3 and sets the Auto Scaling group's minimum, maximum, and desired instances to 0 in the primary Region. When the instances in the backup Region scale out, they do not pass Amazon Route 53 health checks.<br><br>Which combination of steps should the company take to resolve this issue? (Choose three.)</p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -14222,22 +13301,14 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 99 discussion",
       "discusstion": [
         {
           "id": 741943,
           "date": "Sun 11 Dec 2022 18:45",
           "username": "jaxsbr",
           "content": "B - To ensure the secondary S3 contains the required files needed<br>D - Provide enough time to download the S3 file and run user data<br>F - Since it's a DR scenario and the primary S3 can't be read from we should read from secondary S3. Providing the instance profile read access to both allows it to be used seamlessly before and during the DR scenario",
-          "upvote_count": "7",
-          "selected_answers": "Selected Answer: BDF"
-        },
-        {
-          "id": 784903,
-          "date": "Mon 23 Jan 2023 04:06",
-          "username": "Bulti",
-          "content": "BDF for the reasons provided by jaxsbr",
-          "upvote_count": "1",
+          "upvote_count": "5",
           "selected_answers": "Selected Answer: BDF"
         },
         {
@@ -14245,7 +13316,7 @@ var DOP_C01_Part1 =
           "date": "Tue 13 Dec 2022 16:57",
           "username": "Chaiyaporn",
           "content": "BDF for me.",
-          "upvote_count": "3",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -14272,7 +13343,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company is developing a web application's infrastructure using AWS CloudFormation. The database engineering team maintains the database resources in a CloudFormation template, and the software development team maintains the web application resources in a separate CloudFormation template. As the scope of the application grows, the software development team needs to use resources maintained by the database engineering team. However, both teams have their own review and lifecycle management processes that they want to keep. Both teams also require resource-level change-set reviews. The software development team would like to deploy changes to this template using their CI/CD pipeline.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "question_text": "<p>A company is developing a web application's infrastructure using AWS CloudFormation. The database engineering team maintains the database resources in a CloudFormation template, and the software development team maintains the web application resources in a separate CloudFormation template. As the scope of the application grows, the software development team needs to use resources maintained by the database engineering team. However, both teams have their own review and lifecycle management processes that they want to keep. Both teams also require resource-level change-set reviews. The software development team would like to deploy changes to this template using their CI/CD pipeline.<br><br>Which solution will meet these requirements?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -14307,38 +13378,14 @@ var DOP_C01_Part1 =
           ]
         }
       ],
-      "topic_name": "",
+      "topic_name": "Exam AWS DevOps Engineer Professional topic 1 question 100 discussion",
       "discusstion": [
-        {
-          "id": 784911,
-          "date": "Mon 23 Jan 2023 04:08",
-          "username": "Bulti",
-          "content": "A is correct.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 777753,
-          "date": "Mon 16 Jan 2023 15:16",
-          "username": "Oleg_gol",
-          "content": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html#cross-stack",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 770939,
-          "date": "Tue 10 Jan 2023 01:14",
-          "username": "saeidp",
-          "content": "A is correct<br>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html<br><br>When you organize your AWS resources based on lifecycle and ownership, you might want to build a stack that uses resources that are in another stack. You can hardcode values or use input parameters to pass resource names and IDs. However, these methods can make templates difficult to reuse or can increase the overhead to get a stack running. Instead, use cross-stack references to export resources from a stack so that other stacks can use them. Stacks can use the exported resources by calling them using the Fn::ImportValue function.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: A"
-        },
         {
           "id": 747820,
           "date": "Sat 17 Dec 2022 07:41",
           "username": "benjl",
           "content": "I think answer is A. <br>nested stack is creating its own resources for software development team. The question ask for \\\"needs to use resources maintained by the database engineering team\\\". From this perspective, stack export and import is valid approach. In this case, development team get affected when there is a change in database team.<br>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html#cross-stack",
-          "upvote_count": "3",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -14346,7 +13393,7 @@ var DOP_C01_Part1 =
           "date": "Sun 11 Dec 2022 10:53",
           "username": "SatenderRathee",
           "content": "The correct answer is B.  Creating a CloudFormation nested stack allows the software development team to make cross-stack resource references and parameters available in both stacks, while still maintaining separate review and lifecycle management processes for each team. In this way, the software development team can use resources maintained by the database engineering team in their CloudFormation template, and can deploy changes to their template using their CI/CD pipeline.",
-          "upvote_count": "4",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -14361,8 +13408,8 @@ var DOP_C01_Part1 =
           "id": 733420,
           "date": "Fri 02 Dec 2022 04:36",
           "username": "quixo",
-          "content": "Instead, use cross-stack references to export resources from a stack so that other stacks can use them. Stacks can use the exported resources by calling them using the Fn::ImportValue function. <br>Refer:https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html <br>https://blog.shikisoft.com/cloudformation-nested-stacks-vs-cross-stack-references/ <br>https://www.bogotobogo.com/DevOps/AWS/aws-Cloudformation-CrossStck-Reference.php <br><br>A",
-          "upvote_count": "3",
+          "content": "Instead, use cross-stack references to export resources from a stack so that other stacks can use them. Stacks can use the exported resources by calling them using the Fn::ImportValue function.<br>Refer:https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html<br>https://blog.shikisoft.com/cloudformation-nested-stacks-vs-cross-stack-references/<br>https://www.bogotobogo.com/DevOps/AWS/aws-Cloudformation-CrossStck-Reference.php<br><br>A",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
