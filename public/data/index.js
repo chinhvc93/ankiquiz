@@ -215,16 +215,16 @@ var listExamGroup = [
       },
     ]
   },
-  //GROUP 6
-  {
-    id: "1Z0_083",
-    name: "[1Z0-083] Oracle Database Administration II",
-    list: [
-      {
-        id: "Data_1Z0_083_Part1",
-        name: "[1Z0-083] Part1",
-        data: Data_1Z0_083_Part1.data,
-      },
-    ]
-  },
+  // //GROUP 6 ==> DISABLED
+  // {
+  //   id: "1Z0_083",
+  //   name: "[1Z0-083] Oracle Database Administration II",
+  //   list: [
+  //     {
+  //       id: "Data_1Z0_083_Part1",
+  //       name: "[1Z0-083] Part1",
+  //       data: Data_1Z0_083_Part1.data,
+  //     },
+  //   ]
+  // },
 ]
