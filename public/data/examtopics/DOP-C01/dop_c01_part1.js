@@ -6376,7 +6376,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company is using an AWS CodeBuild project to build and package an application. The packages are copied to a shared Amazon S3 bucket before being deployed across multiple AWS accounts.<br>The buildspec.yml file contains the following:<br><img src=\"/assets/media/exam-media/04243/0002400001.png\" class=\"in-exam-image\"><br>The DevOps Engineer has noticed that anybody with an AWS account is able to download the artifacts.<br>What steps should the DevOps Engineer take to stop this?<br><br><br></p>",
+      "question_text": "<p>A company is using an AWS CodeBuild project to build and package an application. The packages are copied to a shared Amazon S3 bucket before being deployed across multiple AWS accounts.<br>The buildspec.yml file contains the following:<br><img src=\"https://www.examtopics.com/assets/media/exam-media/04243/0002400001.png\" class=\"in-exam-image\"><br>The DevOps Engineer has noticed that anybody with an AWS account is able to download the artifacts.<br>What steps should the DevOps Engineer take to stop this?<br><br><br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
