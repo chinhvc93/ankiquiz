@@ -1,6 +1,6 @@
 var DOP_C01_Part2 = 
 {
-  "msg": "Quiz Questions",
+  "msg": "The questions for AWS DevOps Engineer Professional were last updated at Feb. 1, 2023.",
   "data": [
     {
       "question_id": "#101",
@@ -123,6 +123,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 785994,
+          "date": "Tue 24 Jan 2023 01:04",
+          "username": "Bulti",
+          "content": "B is correct because A and C are technically incorrect and D is incomplete in terms of meeting the requirements.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 777784,
           "date": "Mon 16 Jan 2023 15:36",
           "username": "Oleg_gol",
@@ -226,6 +234,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 785999,
+          "date": "Tue 24 Jan 2023 01:13",
+          "username": "Bulti",
+          "content": "The main thing to understand here is either Secrets Manager or SSM parameter store should be used to encrypt sensitive information. Usually for passwords or cert keysuse Secrets Manager so that you can rotate the password or cert keyperiodicallyand for all other static sensitive data that doesn't need to change periodically use SSM parameter store.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BCF"
+        },
+        {
           "id": 759353,
           "date": "Wed 28 Dec 2022 05:32",
           "username": "saggy4",
@@ -319,6 +335,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 786030,
+          "date": "Tue 24 Jan 2023 02:21",
+          "username": "Bulti",
+          "content": "Answer is B",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 754189,
           "date": "Fri 23 Dec 2022 13:29",
           "username": "Imstack",
@@ -380,6 +404,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 786035,
+          "date": "Tue 24 Jan 2023 02:24",
+          "username": "Bulti",
+          "content": "B is the right answer",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 754191,
           "date": "Fri 23 Dec 2022 13:31",
           "username": "Imstack",
@@ -440,6 +472,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 786037,
+          "date": "Tue 24 Jan 2023 02:25",
+          "username": "Bulti",
+          "content": "Answer is B",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
         {
           "id": 754194,
           "date": "Fri 23 Dec 2022 13:32",
@@ -510,6 +550,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 786040,
+          "date": "Tue 24 Jan 2023 02:28",
+          "username": "Bulti",
+          "content": "D is correct",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 754195,
           "date": "Fri 23 Dec 2022 13:34",
           "username": "Imstack",
@@ -578,6 +626,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 786045,
+          "date": "Tue 24 Jan 2023 02:33",
+          "username": "Bulti",
+          "content": "D is correct",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
         {
           "id": 733592,
           "date": "Fri 02 Dec 2022 10:08",
@@ -649,6 +705,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 786047,
+          "date": "Tue 24 Jan 2023 02:36",
+          "username": "Bulti",
+          "content": "ACF is correct",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: ACF"
+        },
         {
           "id": 772919,
           "date": "Wed 11 Jan 2023 23:00",
@@ -783,6 +847,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 786050,
+          "date": "Tue 24 Jan 2023 02:38",
+          "username": "Bulti",
+          "content": "A is correct",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 754207,
           "date": "Fri 23 Dec 2022 13:50",
           "username": "Imstack",
@@ -857,6 +929,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 786051,
+          "date": "Tue 24 Jan 2023 02:48",
+          "username": "Bulti",
+          "content": "B and E is correct. B because of the useof CodeDeploy trigger- You can create a trigger that publishes an Amazon Simple Notification Service (Amazon SNS) topic for a AWS CodeDeploy deployment or instance event. Then, when that event occurs, all subscribers to the associated topic receive notifications through the endpoint specified in the topic, such as an SMS message or email message. Amazon SNS offers multiple methods for subscribing to topics. E over D because you need to execute a script before you allow traffic and moreover we cannot intercept and write any custom script in the AfterAllowTraffic event since its reserved for CodeDeploy.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BE"
+        },
+        {
           "id": 778020,
           "date": "Mon 16 Jan 2023 18:38",
           "username": "Oleg_gol",
@@ -885,7 +965,7 @@ var DOP_C01_Part2 =
           "date": "Fri 02 Dec 2022 11:19",
           "username": "nsvijay04b1",
           "content": "A - disaster <br>C - wrong - already reached AllowTraffic lifecycle event that means it is not taking time in ValidateService event, problem is in health check itself.<br>B/E - correct<br>Between D/E, why E? AllowTraffic - u cannot run scripts, it belongs to codedeploy<br><br>BeforeAllowTraffic – You can use this deployment lifecycle event to run tasks on instances before they are registered with a load balancer.<br><br>AllowTraffic – During this deployment lifecycle event, internet traffic is allowed to access instances after a deployment. This event is reserved for the CodeDeploy agent and cannot be used to run scripts.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: BE"
         },
         {
@@ -951,6 +1031,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 786053,
+          "date": "Tue 24 Jan 2023 02:52",
+          "username": "Bulti",
+          "content": "BDE are correct.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BDE"
+        },
         {
           "id": 754217,
           "date": "Fri 23 Dec 2022 14:00",
@@ -1037,6 +1125,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 786055,
+          "date": "Tue 24 Jan 2023 02:56",
+          "username": "Bulti",
+          "content": "B is correct",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 754220,
           "date": "Fri 23 Dec 2022 14:02",
           "username": "Imstack",
@@ -1110,6 +1206,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 786057,
+          "date": "Tue 24 Jan 2023 02:58",
+          "username": "Bulti",
+          "content": "BD is correct.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BD"
+        },
         {
           "id": 754222,
           "date": "Fri 23 Dec 2022 14:04",
@@ -1196,6 +1300,14 @@ var DOP_C01_Part2 =
           "selected_answers": "Selected Answer: A"
         },
         {
+          "id": 786098,
+          "date": "Tue 24 Jan 2023 03:55",
+          "username": "Bulti",
+          "content": "A seems right but not sure if CodeDeploy deploysSAM application. It can deploy Lambda direclty satisfying all the requirements. However it is still the best answer.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 754229,
           "date": "Fri 23 Dec 2022 14:08",
           "username": "Imstack",
@@ -1272,6 +1384,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 786104,
+          "date": "Tue 24 Jan 2023 03:59",
+          "username": "Bulti",
+          "content": "B is correct way to handle DB credentials inside an application.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
         {
           "id": 754232,
           "date": "Fri 23 Dec 2022 14:11",
@@ -1350,6 +1470,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 786118,
+          "date": "Tue 24 Jan 2023 04:06",
+          "username": "Bulti",
+          "content": "A is correct. OpsWork is the right DevOps tool. Not B because using CodeDeploy here to reconfigure the cluster when new nodes are added doesn't make sense. It's not a deployment function. It is an Infrastructure provisioning function.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 760448,
           "date": "Thu 29 Dec 2022 01:23",
           "username": "strike3test",
@@ -1410,6 +1538,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 786125,
+          "date": "Tue 24 Jan 2023 04:10",
+          "username": "Bulti",
+          "content": "D is correct.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
         {
           "id": 760449,
           "date": "Thu 29 Dec 2022 01:24",
@@ -1480,11 +1616,19 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 786141,
+          "date": "Tue 24 Jan 2023 04:30",
+          "username": "Bulti",
+          "content": "A is the right answer. You can generate a custom metric from a metric filter. You can generate only a standard metric from the CloudWatch metric filter. Custom metric can be generated only via CLI.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 781191,
           "date": "Thu 19 Jan 2023 14:58",
           "username": "Dimidrol",
           "content": "C is answer, you could test this solution from aws console. When you create metrics filter it will create new metric for you",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -1637,6 +1781,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 786148,
+          "date": "Tue 24 Jan 2023 04:52",
+          "username": "Bulti",
+          "content": "https://aws.amazon.com/blogs/networking-and-content-delivery/connecting-networks-with-overlapping-ip-ranges/Private link is the best option because Transit Gateway doesn't support overlapping CIDR ranges.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 773937,
           "date": "Thu 12 Jan 2023 23:39",
           "username": "saeidp",
@@ -1722,6 +1874,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 787096,
+          "date": "Wed 25 Jan 2023 01:00",
+          "username": "Bulti",
+          "content": "https://aws.amazon.com/blogs/devops/using-codedeploy-environment-variables/",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 759899,
           "date": "Wed 28 Dec 2022 14:50",
           "username": "saggy4",
@@ -1791,6 +1951,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 787097,
+          "date": "Wed 25 Jan 2023 01:03",
+          "username": "Bulti",
+          "content": "D is the right answer",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 754274,
           "date": "Fri 23 Dec 2022 15:01",
           "username": "Imstack",
@@ -1848,6 +2016,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 787102,
+          "date": "Wed 25 Jan 2023 01:14",
+          "username": "Bulti",
+          "content": "C and D is correct. The same CloudFormation template should run upon failover to provision the same resources as in the primary with the exception that the DB storage is restored from the AWS backup taken every hour using the DB Snapshot ID. ",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 759920,
           "date": "Wed 28 Dec 2022 15:16",
@@ -1917,6 +2093,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 787137,
+          "date": "Wed 25 Jan 2023 02:13",
+          "username": "Bulti",
+          "content": "D is correct because as mentioned in the question there isalready a CloudFormation template to provision the resourcesso why switch to EB.  But I have to admit that this question is tricky. The answer could be B as well.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
         {
           "id": 785043,
           "date": "Mon 23 Jan 2023 07:37",
@@ -1995,6 +2179,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 787138,
+          "date": "Wed 25 Jan 2023 02:15",
+          "username": "Bulti",
+          "content": "B is the right answer.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 759936,
           "date": "Wed 28 Dec 2022 15:27",
           "username": "saggy4",
@@ -2063,6 +2255,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 787142,
+          "date": "Wed 25 Jan 2023 02:19",
+          "username": "Bulti",
+          "content": "B is the right answer.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
         {
           "id": 754384,
           "date": "Fri 23 Dec 2022 18:23",
@@ -2133,6 +2333,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 787166,
+          "date": "Wed 25 Jan 2023 02:45",
+          "username": "Bulti",
+          "content": "D is the right answer. Need a MetaData with Cloudformation:init and a cfn-init command in userdata to retrieve the content (script) that needs to be executed on the EC2 instance. cfn-signal and wait can be used to have EC2 signal Cloudformation that the instance has been successfully configured.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 760062,
           "date": "Wed 28 Dec 2022 17:03",
           "username": "saggy4",
@@ -2193,6 +2401,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 787168,
+          "date": "Wed 25 Jan 2023 02:47",
+          "username": "Bulti",
+          "content": "C is the answer",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
         {
           "id": 765335,
           "date": "Wed 04 Jan 2023 08:17",
@@ -2279,11 +2495,19 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 787175,
+          "date": "Wed 25 Jan 2023 02:53",
+          "username": "Bulti",
+          "content": "B is correct. Config rule to check if EIP is associated with the EC2 instance and have have a IAM policy on the IAM group to ensure that no developer belonging to that IAM group is allowed to attach EIP.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 760066,
           "date": "Wed 28 Dec 2022 17:11",
           "username": "saggy4",
           "content": "A - This only checks and remidiates, does not restrict the developers to attach EIP<br>B - Correct<br>C - This is not optimal<br>D - EC2 IAM roles are not responsible for the EIP attachment the roles associated to developers are",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -2339,6 +2563,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 787182,
+          "date": "Wed 25 Jan 2023 02:56",
+          "username": "Bulti",
+          "content": "D is correct.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 760472,
           "date": "Thu 29 Dec 2022 01:59",
@@ -2401,6 +2633,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 787184,
+          "date": "Wed 25 Jan 2023 02:58",
+          "username": "Bulti",
+          "content": "C is correct.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 765334,
           "date": "Wed 04 Jan 2023 08:09",
           "username": "Ace987",
@@ -2462,6 +2702,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 787197,
+          "date": "Wed 25 Jan 2023 03:13",
+          "username": "Bulti",
+          "content": "D is correct. As an IAM user you need to have the IAM policy that allow you to pass the service role you are assigning to CloudFormation to execute the template to create/ update stack.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 760078,
           "date": "Wed 28 Dec 2022 17:24",
           "username": "saggy4",
@@ -2514,6 +2762,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 787199,
+          "date": "Wed 25 Jan 2023 03:17",
+          "username": "Bulti",
+          "content": "D is correct.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
         {
           "id": 778191,
           "date": "Mon 16 Jan 2023 21:05",
@@ -2575,6 +2831,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 787203,
+          "date": "Wed 25 Jan 2023 03:21",
+          "username": "Bulti",
+          "content": "C is correct.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 778340,
           "date": "Mon 16 Jan 2023 23:18",
@@ -2661,6 +2925,22 @@ var DOP_C01_Part2 =
           "selected_answers": ""
         },
         {
+          "id": 787954,
+          "date": "Wed 25 Jan 2023 18:32",
+          "username": "TravisHk",
+          "content": "C is the correct answer with this one",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 787206,
+          "date": "Wed 25 Jan 2023 03:24",
+          "username": "Bulti",
+          "content": "C is the right answer.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 760089,
           "date": "Wed 28 Dec 2022 17:33",
           "username": "saggy4",
@@ -2714,11 +2994,19 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 787224,
+          "date": "Wed 25 Jan 2023 03:53",
+          "username": "Bulti",
+          "content": "I think the answer is D.  I didn't see a way to update either LaunchConfiguration or ECS cluster section of the ECS template using EC2 with the new EC2 instance IDs. The only way is to automate that registration via a Lambda function.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 777622,
           "date": "Mon 16 Jan 2023 13:12",
           "username": "Oleg_gol",
           "content": "https://www.examtopics.com/discussions/amazon/view/28605-exam-aws-devops-engineer-professional-topic-1-question-173/",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -2791,6 +3079,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 788316,
+          "date": "Thu 26 Jan 2023 03:54",
+          "username": "Bulti",
+          "content": "Answer is C. ",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 760648,
           "date": "Thu 29 Dec 2022 07:21",
           "username": "saggy4",
@@ -2851,6 +3147,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 789279,
+          "date": "Fri 27 Jan 2023 03:42",
+          "username": "Bulti",
+          "content": "Answer is A.  The AWS_RunPatchBaseline command executes the default patch ( could be a custom patch that overrides the AWS default patch as the new default) for all OS and application layers.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
         {
           "id": 784355,
           "date": "Sun 22 Jan 2023 14:51",
@@ -2949,7 +3253,7 @@ var DOP_C01_Part2 =
           "date": "Wed 28 Dec 2022 00:43",
           "username": "SuriSagar",
           "content": "It's D.  https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-configuration-debugging.html",
-          "upvote_count": "6",
+          "upvote_count": "7",
           "selected_answers": ""
         },
         {
@@ -2959,6 +3263,30 @@ var DOP_C01_Part2 =
           "content": "It is D.  https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-configuration-debugging.html",
           "upvote_count": "5",
           "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 789282,
+          "date": "Fri 27 Jan 2023 03:49",
+          "username": "Bulti",
+          "content": "Answer is D.  Both X-Ray Deamon and X-Ray SDK is needed.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 788720,
+          "date": "Thu 26 Jan 2023 13:45",
+          "username": "ericzajericzaj",
+          "content": "Question asks for least amount of changes. In the Beanstalk console it is one click to turn on X-Ray Daemon.Looking over the docs shared here, instrumentation in the code is needed. D, is better.",
+          "upvote_count": "11",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 788723,
+          "date": "Thu 26 Jan 2023 13:49",
+          "username": "ericzaj",
+          "content": "Looking over the docs shared here, instrumentation in the code is needed. D, is better.",
+          "upvote_count": "1",
+          "selected_answers": ""
         }
       ]
     },
@@ -3005,6 +3333,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 789295,
+          "date": "Fri 27 Jan 2023 04:30",
+          "username": "Bulti",
+          "content": "Answer is C as we are supposed to use only approved Cloudformation templates and AWS Config is to be used for Drift detection. D is incorrect because EventBridge Notfication cannot detect drift, it is EventBridge rules that can look for certain events to detect drift.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 778290,
           "date": "Mon 16 Jan 2023 22:22",
@@ -3074,6 +3410,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 789298,
+          "date": "Fri 27 Jan 2023 04:36",
+          "username": "Bulti",
+          "content": "C is the right answer.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
         {
           "id": 777065,
           "date": "Sun 15 Jan 2023 21:59",
@@ -3168,6 +3512,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 789303,
+          "date": "Fri 27 Jan 2023 04:46",
+          "username": "Bulti",
+          "content": "Answer is A.  You don't need to accept a GuardDuty invitation if the member GuardDuty accounts are within the same AWS Org.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 779361,
           "date": "Tue 17 Jan 2023 23:04",
           "username": "saeidp",
@@ -3237,6 +3589,22 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 789311,
+          "date": "Fri 27 Jan 2023 05:02",
+          "username": "Bulti",
+          "content": "Answer is D. Given the constraints C is not the right choice. Only D will meet the needs.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 786698,
+          "date": "Tue 24 Jan 2023 17:31",
+          "username": "ericzaj",
+          "content": "With all these requirements in aggregate there is no \\\"right\\\" solution.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 777061,
           "date": "Sun 15 Jan 2023 21:50",
           "username": "Oleg_gol",
@@ -3249,7 +3617,7 @@ var DOP_C01_Part2 =
           "date": "Sun 15 Jan 2023 18:49",
           "username": "romidan",
           "content": "D seems correct",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -3257,7 +3625,7 @@ var DOP_C01_Part2 =
           "date": "Sun 15 Jan 2023 16:09",
           "username": "bartekb3d",
           "content": "immutableupdates",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -3265,7 +3633,7 @@ var DOP_C01_Part2 =
           "date": "Sat 14 Jan 2023 09:39",
           "username": "devops7",
           "content": "no rolling. So, eliminate A & B<br>no C (CNAME swap) because Elastic beanstalk DNS CNAME should remain the same<br>D: immutable beanstalk meets all requirements",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": ""
         }
       ]
@@ -3318,6 +3686,22 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 790177,
+          "date": "Sat 28 Jan 2023 03:08",
+          "username": "Bulti",
+          "content": "A&D, System Manager Automation to remediate and use of StackSets to apply the config rules across all accounts and regions.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 788200,
+          "date": "Thu 26 Jan 2023 00:19",
+          "username": "ericzaj",
+          "content": "Was reading through the Config FAQs today. Config is deployed centrally in a AWS Organization with a StackSet.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
         {
           "id": 779406,
           "date": "Wed 18 Jan 2023 01:00",
@@ -3401,6 +3785,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790179,
+          "date": "Sat 28 Jan 2023 03:10",
+          "username": "Bulti",
+          "content": "B and E are correct",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 779408,
           "date": "Wed 18 Jan 2023 01:04",
           "username": "saeidp",
@@ -3470,6 +3862,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790192,
+          "date": "Sat 28 Jan 2023 03:31",
+          "username": "Bulti",
+          "content": "C is correct. CodeDeployDefault.HalfAtAtime and BeforeAllowTraffic which is associated with the green instance where the cleanup is required just before the traffic is directed to these instances.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 777040,
           "date": "Sun 15 Jan 2023 21:28",
           "username": "Oleg_gol",
@@ -3538,6 +3938,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 790207,
+          "date": "Sat 28 Jan 2023 03:54",
+          "username": "Bulti",
+          "content": "Answer is A- B although is a detective mechansim, not sure why CloudWatch logs is used to look for Config events. Also periodic trigger type of 1 hour is not as good as an average delay of 15 minutes in receiving cloudTrail logs into CloudWatch. Also C and D are not detective mechansims.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 777036,
           "date": "Sun 15 Jan 2023 21:27",
@@ -3615,6 +4023,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 790221,
+          "date": "Sat 28 Jan 2023 04:12",
+          "username": "Bulti",
+          "content": "A is the right answer based on the blog below. A is correct and not D because remediation action on a config rule is possible only using System Manager Automation runbook. You can trigger Lambda only if you use CloudWatchEvents to detect Config Rule Compliance Change event.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 776952,
           "date": "Sun 15 Jan 2023 19:55",
@@ -3698,6 +4114,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790226,
+          "date": "Sat 28 Jan 2023 04:24",
+          "username": "Bulti",
+          "content": "B,D is correct. MD5 checksum and ETag to verify the checksum passed.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 774870,
           "date": "Fri 13 Jan 2023 22:25",
           "username": "Dimidrol",
@@ -3718,7 +4142,7 @@ var DOP_C01_Part2 =
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: C</p>",
+      "general_feedback": "<p>Correct Answer: A</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -3727,7 +4151,7 @@ var DOP_C01_Part2 =
           "answers": [
             {
               "choice": "<p>A. Create an additional policy to include a Deny rule for the GitPush and PutFile actions. Include a restriction for the specific repositories in the policy statement with a condition that references the main branch.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -3737,7 +4161,7 @@ var DOP_C01_Part2 =
             },
             {
               "choice": "<p>C. Modify the IAM policy. Include a Deny rule for the GitPush and PutFile actions for the specific repositories in the policy statement with a condition that references the main branch.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -3751,11 +4175,27 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790590,
+          "date": "Sat 28 Jan 2023 13:31",
+          "username": "kowalkowal",
+          "content": "https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-conditional-branch.html - Other developers can still pull from the branch, make their own branches, and create pull requests, but they cannot push or merge changes to that branch. You can configure this access by creating a conditional policy that uses a context key for one or more branches in IAM.<br>https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html - AWS managed policies cannot be edited",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 790231,
+          "date": "Sat 28 Jan 2023 04:31",
+          "username": "Bulti",
+          "content": "A is the right answer. We need to add a new policy that denies action to push to the repository 's main branch. C is incorrect because you cannot modify a managed IAM policy.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 780582,
           "date": "Thu 19 Jan 2023 01:25",
           "username": "saeidpDimidrol",
           "content": "A for me. Managed policy can not be modifiedYou are right. A is answer.",
-          "upvote_count": "11",
+          "upvote_count": "21",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -3779,7 +4219,7 @@ var DOP_C01_Part2 =
           "date": "Fri 13 Jan 2023 22:32",
           "username": "DimidrolUSaloDimidrol",
           "content": "C for meYou cannot modify MANAGED aws policy. You can only add additional one that forbids. So \\\"A\\\" is correct.https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-conditional-branch.html",
-          "upvote_count": "211",
+          "upvote_count": "221",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -3787,7 +4227,7 @@ var DOP_C01_Part2 =
           "date": "Sun 22 Jan 2023 22:33",
           "username": "USalo",
           "content": "You cannot modify MANAGED aws policy. You can only add additional one that forbids. So \\\"A\\\" is correct.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -3843,6 +4283,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 790641,
+          "date": "Sat 28 Jan 2023 15:01",
+          "username": "Bulti",
+          "content": "A is correct as this is the most efficient way to deliver customized NON_COMPLIANT evaluation results to the subscriber. B is another roundabout way of doing the same but the way it describes is not enough. It will require more complex filtering logic on not just NON_COMPLIANT text but also other attributes of the message since all config change events occurring across all resources are sent to the SNS Topic and filtering only the ones for a specific config rule involves much more than just searching for NON_COMPLIANT text. https://stackoverflow.com/questions/64146609/how-to-configure-aws-config-to-send-compliance-change-notification-to-sns-topic",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
         {
           "id": 783754,
           "date": "Sat 21 Jan 2023 22:49",
@@ -3921,6 +4369,22 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790664,
+          "date": "Sat 28 Jan 2023 15:35",
+          "username": "Bulti",
+          "content": "B is the right answer",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 787505,
+          "date": "Wed 25 Jan 2023 11:31",
+          "username": "DerekKey",
+          "content": "B: On the Configure multi-factor authentication page, under If a user does not yet have a registered MFA device choose one of the following choices:<br>Require them to register an MFA device at sign in",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 774891,
           "date": "Fri 13 Jan 2023 22:50",
           "username": "Dimidrol",
@@ -3974,6 +4438,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790684,
+          "date": "Sat 28 Jan 2023 15:59",
+          "username": "Bulti",
+          "content": "The answer is D.  It's more efficient to use SCP than stack policies to deny permissions to update or delete resources that are provisioned using CloudFormation StackSets. A is also possible but create more overhead and is not a best practice.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 783768,
           "date": "Sat 21 Jan 2023 22:55",
           "username": "Christina666",
@@ -3984,17 +4456,25 @@ var DOP_C01_Part2 =
         {
           "id": 781667,
           "date": "Thu 19 Jan 2023 23:38",
-          "username": "saeidpsaeidp",
-          "content": "C for meStacksets enables aws config in all accounts<br>Organizational Trail add trail to all acounts and can not be deleted by accounts<br>SCP prevents deleting aws config",
-          "upvote_count": "11",
+          "username": "saeidpsaeidpsaeidp",
+          "content": "C for meStacksets enables aws config in all accounts<br>Organizational Trail add trail to all acounts and can not be deleted by accounts<br>SCP prevents deleting aws configSCP doesn't apply to management account",
+          "upvote_count": "222",
           "selected_answers": "Selected Answer: C"
         },
         {
           "id": 783781,
           "date": "Sat 21 Jan 2023 23:19",
+          "username": "saeidpsaeidp",
+          "content": "Stacksets enables aws config in all accounts<br>Organizational Trail add trail to all acounts and can not be deleted by accounts<br>SCP prevents deleting aws configSCP doesn't apply to management account",
+          "upvote_count": "22",
+          "selected_answers": ""
+        },
+        {
+          "id": 788313,
+          "date": "Thu 26 Jan 2023 03:51",
           "username": "saeidp",
-          "content": "Stacksets enables aws config in all accounts<br>Organizational Trail add trail to all acounts and can not be deleted by accounts<br>SCP prevents deleting aws config",
-          "upvote_count": "1",
+          "content": "SCP doesn't apply to management account",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -4101,6 +4581,22 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790713,
+          "date": "Sat 28 Jan 2023 16:19",
+          "username": "BultiBulti",
+          "content": "B, C and F seems correct. Using the principalTag in the Permission Set inline policy a logged in user belonging to a specific AD group in the IDP can be permitted access to perform operations on certain resources if their group matches the group used in the PrincipleTag. Basically you are narrowing the scope of privileges assigned via Permission policies conditionally based on whether the logged in user belongs to a specific AD Group in IDP. The mapping of the AD group to the request attributes can be done using SSO attributes where we can pass other attributes like the SAML token as well.https://docs.aws.amazon.com/singlesignon/latest/userguide/abac.html",
+          "upvote_count": "11",
+          "selected_answers": ""
+        },
+        {
+          "id": 794793,
+          "date": "Wed 01 Feb 2023 02:27",
+          "username": "Bulti",
+          "content": "https://docs.aws.amazon.com/singlesignon/latest/userguide/abac.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 781702,
           "date": "Fri 20 Jan 2023 00:56",
           "username": "saeidp",
@@ -4129,7 +4625,7 @@ var DOP_C01_Part2 =
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: D</p>",
+      "general_feedback": "<p>Correct Answer: A</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -4138,7 +4634,7 @@ var DOP_C01_Part2 =
           "answers": [
             {
               "choice": "<p>A. Set the –parameter-overrides option in the sam deploy command when the CodeBuild stage is invoked.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -4153,7 +4649,7 @@ var DOP_C01_Part2 =
             },
             {
               "choice": "<p>D. In the deployment stage where the \"Execute a change set\" action mode resides, apply the JSON object in the ParameterOverrides property.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -4161,6 +4657,30 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 793417,
+          "date": "Mon 30 Jan 2023 23:38",
+          "username": "ozlaoliu",
+          "content": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stackinstances-override.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 790734,
+          "date": "Sat 28 Jan 2023 16:36",
+          "username": "Bulti",
+          "content": "The answer is C.  Cloudformation is used as a deployment provider and therefore Parameter override should happen in the Deploy action. Since this is a new CodePipeline, you will need to perform Parameter override in \\\"Create or replace change set\\\" and not in \\\"Execute Change Set\\\".",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 787607,
+          "date": "Wed 25 Jan 2023 13:33",
+          "username": "DerekKey",
+          "content": "A: --parameter-overrides<br>A string that contains AWS CloudFormation parameter overrides encoded as key-value pairs. Use the same format as the AWS Command Line Interface (AWS CLI). For example, ParameterKey=ParameterValue InstanceType=t1.micro.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
         {
           "id": 781719,
           "date": "Fri 20 Jan 2023 01:22",
@@ -4231,6 +4751,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790738,
+          "date": "Sat 28 Jan 2023 16:38",
+          "username": "Bulti",
+          "content": "B is the right answer.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 781872,
           "date": "Fri 20 Jan 2023 05:25",
           "username": "saeidp",
@@ -4299,6 +4827,22 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 790744,
+          "date": "Sat 28 Jan 2023 16:40",
+          "username": "Bulti",
+          "content": "D is the right answer.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 787635,
+          "date": "Wed 25 Jan 2023 13:51",
+          "username": "DerekKey",
+          "content": "D: Scale-out events during a deployment<br>If an Amazon EC2 Auto Scaling scale-out event occurs while a deployment is underway, the new instances will be updated with the application revision that was most recently deployed, not the application revision that is currently being deployed. If the deployment succeeds, the old instances and the newly scaled-out instances will be hosting different application revisions. To bring those instances up to date, CodeDeploy automatically starts a follow-on deployment (immediately after the first) to update any outdated instances. If you'd like to change this default behavior so that outdated EC2 instances are left at the older revision, see Automatic updates to outdated instances.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: D"
+        },
         {
           "id": 780749,
           "date": "Thu 19 Jan 2023 06:34",
@@ -4374,11 +4918,27 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790782,
+          "date": "Sat 28 Jan 2023 17:07",
+          "username": "Bulti",
+          "content": "A and D are correct.B is incorrect because we cannot create an IAM role within the script. Its too late, the code is already running on the EC2 instance by now and it requires the Instance role to grant necessary permission to EC2 to access the artifacts in S3 for deploying them on EC2 instances.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
+          "id": 788729,
+          "date": "Thu 26 Jan 2023 13:53",
+          "username": "wzh5831",
+          "content": "A and D for me",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
           "id": 781906,
           "date": "Fri 20 Jan 2023 06:35",
           "username": "saeidp",
           "content": "A and D for me",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: AD"
         }
       ]
@@ -4431,6 +4991,30 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 793447,
+          "date": "Tue 31 Jan 2023 00:28",
+          "username": "ozlaoliu",
+          "content": "Vote for AEF<br>https://aws.amazon.com/premiumsupport/knowledge-center/access-efs-across-accounts/",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 790833,
+          "date": "Sat 28 Jan 2023 17:57",
+          "username": "Bulti",
+          "content": "https://aws.amazon.com/blogs/storage/mount-amazon-efs-file-systems-cross-account-from-amazon-eks/",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 790831,
+          "date": "Sat 28 Jan 2023 17:57",
+          "username": "Bulti",
+          "content": "AEF are the right answers. <br>1. Need to update the file system policy on EFS to allow mounting the file system intoAccount B.  <br>## File System Policy<br>$ cat file-system-policy.json<br>{<br>\\\"Statement\\\": [<br>{<br>\\\"Effect\\\": \\\"Allow\\\",<br>\\\"Action\\\": [<br>\\\"elasticfilesystem:ClientMount\\\",<br>\\\"elasticfilesystem:ClientWrite\\\"<br>],<br>\\\"Principal\\\": {<br>\\\"AWS\\\": \\\"arn:aws:iam::<aws-account-id-A>:root\\\" # Replace with AWS account ID of EKS cluster<br>}<br>} <br>]<br>}<br>2. Need VPC peering between Account A and Account B as the pre-requisite<br>3. Need to assume cross-account IAM role to describe the mounts so that a specific mount can be chosen.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
         {
           "id": 781909,
           "date": "Fri 20 Jan 2023 06:47",
@@ -4527,6 +5111,22 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790844,
+          "date": "Sat 28 Jan 2023 18:08",
+          "username": "BultiBulti",
+          "content": "I think the answer is B, E, F.  <br>B and E are correct for sure. Now between C and E, I am not sure what C really means. Does it mean create IAM user for each operations team member and add them to the IAM Group? I dont' think so because the question reads \\\"all users are centrally managed in the operations account\\\". It indicates that AWS SSO is configured and Cognito User Pool is setup as the Identity Provider. Once the user logs in using AWS SSO and authenticates against the Cognito user pool, they can be mapped to the IAM group that has required permissions to assume an SysAsdmin role containing the AdmnistratorAccess permissions in the workload accounts.I meant between C and F*",
+          "upvote_count": "11",
+          "selected_answers": "Selected Answer: BEF"
+        },
+        {
+          "id": 790845,
+          "date": "Sat 28 Jan 2023 18:09",
+          "username": "Bulti",
+          "content": "I meant between C and F*",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 783780,
           "date": "Sat 21 Jan 2023 23:18",
           "username": "Christina666",
@@ -4620,6 +5220,38 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790856,
+          "date": "Sat 28 Jan 2023 18:26",
+          "username": "BultiBulti",
+          "content": "C is the right answer. B is incorrect because there for no Config rule StackSets that can detect Termination Protection.A could have been a potential choice considering we can create custom Config rules using Lambda even if AWS config rule is not available for CF termiation protection. However it states calling the PutOrganizationConfigRule API across the entire organization but we don't want Termination protection in the Non-Prod accounts. So I will still go with C. ",
+          "upvote_count": "11",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 792733,
+          "date": "Mon 30 Jan 2023 13:35",
+          "username": "Bulti",
+          "content": "A could have been a potential choice considering we can create custom Config rules using Lambda even if AWS config rule is not available for CF termiation protection. However it states calling the PutOrganizationConfigRule API across the entire organization but we don't want Termination protection in the Non-Prod accounts. So I will still go with C. ",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 788304,
+          "date": "Thu 26 Jan 2023 03:30",
+          "username": "Goksorisaeidp",
+          "content": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-protect-stacks.htmlaws config rule?",
+          "upvote_count": "11",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 789136,
+          "date": "Thu 26 Jan 2023 23:09",
+          "username": "saeidp",
+          "content": "aws config rule?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 781961,
           "date": "Fri 20 Jan 2023 08:26",
           "username": "saeidp",
@@ -4696,6 +5328,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 790863,
+          "date": "Sat 28 Jan 2023 18:32",
+          "username": "Bulti",
+          "content": "A is the right answer.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 783783,
           "date": "Sat 21 Jan 2023 23:23",
@@ -4774,6 +5414,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790874,
+          "date": "Sat 28 Jan 2023 18:42",
+          "username": "Bulti",
+          "content": "B is correct",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 783788,
           "date": "Sat 21 Jan 2023 23:28",
           "username": "saeidp",
@@ -4802,7 +5450,7 @@ var DOP_C01_Part2 =
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: A</p>",
+      "general_feedback": "<p>Correct Answer: B</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -4811,12 +5459,12 @@ var DOP_C01_Part2 =
           "answers": [
             {
               "choice": "<p>A. Create a target tracking auto scaling policy for the Redis cluster's ElastiCachePrimaryEngineCPUUtilization metric. Configure the auto scaling policy to increase and decrease shards to the Redis cluster. Update the recommendation applications to use the clusters configuration endpoint to access Redis.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>B. Create a target tracking auto scaling policy for the Redis cluster's ElastiCachePrimaryEngineCPUUtilization metric. Configure the auto scaling policy to increase and decrease shards to the Redis cluster. Update the recommendation applications to use the cluster's read replica endpoint to access Redis.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -4835,19 +5483,51 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
-          "id": 784074,
-          "date": "Sun 22 Jan 2023 09:21",
-          "username": "saeidp",
-          "content": "A for me<br>cluster mode is enabled.<br>https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Endpoints.html<br>answere B is good for cluster mode disabled",
+          "id": 791608,
+          "date": "Sun 29 Jan 2023 13:07",
+          "username": "ZekUSalo",
+          "content": "I think the answer is B from link: https://aws.amazon.com/ru/about-aws/whats-new/2019/06/amazon-elasticache-launches-reader-endpoint-for-redis/. \\\"You can now use a single reader endpoint to connect to your Redis read replicas\\\"In the same link:<br>\\\"Reader endpoints work with ElastiCache for Redis clusters with cluster-mode disabled.\\\" But it the question it was clearly mentioned that new Redis cluster was created with cluster mode ENABLED. <br>Also please read another URL:<br>https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Endpoints.html<br><br>Redis (cluster mode disabled) clusters, use the Primary Endpoint for all write operations. Use the Reader Endpoint to evenly split incoming connections to the endpoint between all read replicas. <br><br>Redis (cluster mode enabled) clusters, use the cluster's Configuration Endpoint for all operations that support cluster mode enabled commands. <br><br>The answer should be \\\"A\\\"",
+          "upvote_count": "11",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 792730,
+          "date": "Mon 30 Jan 2023 13:28",
+          "username": "USalo",
+          "content": "In the same link:<br>\\\"Reader endpoints work with ElastiCache for Redis clusters with cluster-mode disabled.\\\" But it the question it was clearly mentioned that new Redis cluster was created with cluster mode ENABLED. <br>Also please read another URL:<br>https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Endpoints.html<br><br>Redis (cluster mode disabled) clusters, use the Primary Endpoint for all write operations. Use the Reader Endpoint to evenly split incoming connections to the endpoint between all read replicas. <br><br>Redis (cluster mode enabled) clusters, use the cluster's Configuration Endpoint for all operations that support cluster mode enabled commands. <br><br>The answer should be \\\"A\\\"",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 790917,
+          "date": "Sat 28 Jan 2023 19:12",
+          "username": "Bulti",
+          "content": "A is the right answer. use Cluster configuration endpoint and when target tracking scaling policy is used with a predefined metric of ElastiCachePrimaryEngineCPUUtilization it scale out the shards and not the replicas.",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 784074,
+          "date": "Sun 22 Jan 2023 09:21",
+          "username": "saeidpsaeidp",
+          "content": "A for me<br>cluster mode is enabled.<br>https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Endpoints.html<br>answere B is good for cluster mode disabledBy the way cluster mode disabled only uses one shard",
+          "upvote_count": "11",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 792076,
+          "date": "Sun 29 Jan 2023 22:25",
+          "username": "saeidp",
+          "content": "By the way cluster mode disabled only uses one shard",
+          "upvote_count": "1",
+          "selected_answers": ""
         },
         {
           "id": 783789,
           "date": "Sat 21 Jan 2023 23:31",
           "username": "Christina666",
           "content": "read replicas endpoint for traffic",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -4863,7 +5543,7 @@ var DOP_C01_Part2 =
           "date": "Tue 17 Jan 2023 23:08",
           "username": "Dimidrol",
           "content": "I think between A and B.  Choose B because no need to write.https://aws.amazon.com/ru/about-aws/whats-new/2019/06/amazon-elasticache-launches-reader-endpoint-for-redis/",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         }
       ]
@@ -4912,6 +5592,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790940,
+          "date": "Sat 28 Jan 2023 19:38",
+          "username": "Bulti",
+          "content": "C is a better option than A because it's more operationality efficient. Option B is wrong because EventBrige Bus doesn't have a persistent store whereas KDS does. So there won't be a loss of data.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 784095,
           "date": "Sun 22 Jan 2023 09:57",
           "username": "saeidpsaeidp",
@@ -4940,7 +5628,7 @@ var DOP_C01_Part2 =
           "date": "Sun 15 Jan 2023 14:12",
           "username": "Oleg_gol",
           "content": "agree C<br>https://aws.amazon.com/ru/blogs/database/dynamodb-streams-use-cases-and-design-patterns/",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: C"
         }
       ]
@@ -5050,6 +5738,22 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790945,
+          "date": "Sat 28 Jan 2023 19:41",
+          "username": "Bulti",
+          "content": "D is correct. The keyword is \\\"to make the DMS replication instance resilient\\\". This should ring Multi-AZ.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 787399,
+          "date": "Wed 25 Jan 2023 09:26",
+          "username": "DerekKey",
+          "content": "C - doesn't make sense - you don't have to create new task you can restart exisrting task if you have storage<br>D - If you use AWS DMS for ongoing replication purposes, choosing a Multi-AZ instance can improve your availability should a storage issue occur. When using a single AZ or Multi-AZ replication instance during a FULL LOAD and a failover or host replacement occurs, the full load task is expected to fail. You can restart the task from the point of failure for the remaining tables that didn't complete, or are in an error state.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 784739,
           "date": "Sun 22 Jan 2023 23:26",
           "username": "saeidp",
@@ -5078,7 +5782,7 @@ var DOP_C01_Part2 =
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: A</p>",
+      "general_feedback": "<p>Correct Answer: C</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -5087,7 +5791,7 @@ var DOP_C01_Part2 =
           "answers": [
             {
               "choice": "<p>A. Switch to a rolling deployment strategy for future application updates.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -5097,7 +5801,7 @@ var DOP_C01_Part2 =
             },
             {
               "choice": "<p>C. Switch to an immutable deployment strategy for future application updates.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -5110,6 +5814,38 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 793619,
+          "date": "Tue 31 Jan 2023 05:08",
+          "username": "ozlaoliu",
+          "content": "Immutable deployment is the best option to meet the requirements of maintaining the performance and consistent versions and you don't need to create new environments for the immutable deployment.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 790949,
+          "date": "Sat 28 Jan 2023 19:45",
+          "username": "Bulti",
+          "content": "C is correct.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 787384,
+          "date": "Wed 25 Jan 2023 09:08",
+          "username": "DerekKey",
+          "content": "My choice<br>Immutable - will add additionall auto scaling for new instances still keeping old instances serving requests - roll back is simle, new auto scaling gets decomissioned<br>A & B - requires manual redeploy = app performance & downtime + will have a mix of old and new versions<br>D - requires new environment",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 785412,
+          "date": "Mon 23 Jan 2023 15:05",
+          "username": "ericzaj",
+          "content": "This is one of the most poorly worded question. Agreed, what is meant by environment in this. I would have to choose C here given the \\\"versions are consistently configured across all instances\\\" requirement.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: C"
+        },
         {
           "id": 784757,
           "date": "Sun 22 Jan 2023 23:54",
@@ -5209,6 +5945,14 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 790954,
+          "date": "Sat 28 Jan 2023 19:48",
+          "username": "Bulti",
+          "content": "B and D due to the need to select a combination of choices.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BD"
+        },
+        {
           "id": 784807,
           "date": "Mon 23 Jan 2023 00:59",
           "username": "saeidp",
@@ -5269,6 +6013,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 791056,
+          "date": "Sat 28 Jan 2023 21:21",
+          "username": "Bulti",
+          "content": "A is correct.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 783797,
           "date": "Sat 21 Jan 2023 23:45",
@@ -5339,6 +6091,22 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 791080,
+          "date": "Sat 28 Jan 2023 21:49",
+          "username": "Bulti",
+          "content": "D is correct. Need to use both autoscaling of provisioned concurrency and API Gteway caching as just having provisioned concurrency of 2 and DAX did not help during peak load.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 785928,
+          "date": "Mon 23 Jan 2023 23:41",
+          "username": "saeidp",
+          "content": "D for me",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 783802,
           "date": "Sat 21 Jan 2023 23:51",
           "username": "Christina666",
@@ -5408,6 +6176,30 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 791082,
+          "date": "Sat 28 Jan 2023 21:53",
+          "username": "Bulti",
+          "content": "A is correct.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 785935,
+          "date": "Mon 23 Jan 2023 23:56",
+          "username": "saeidp",
+          "content": "A for me",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 785791,
+          "date": "Mon 23 Jan 2023 21:06",
+          "username": "DerekKey",
+          "content": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-signal.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 776496,
           "date": "Sun 15 Jan 2023 12:56",
           "username": "Oleg_gol",
@@ -5460,6 +6252,22 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 791096,
+          "date": "Sat 28 Jan 2023 22:06",
+          "username": "Bulti",
+          "content": "Answer is C.  D is incorrect because AWS Config cannot configure resources but only can define rules that the resources should comply with. Therefore the answer is C.  Even if AmazonSSMManagedlnstanceCore is a managed policy and not an IAMrole I will go with C because this policy is to be attached to an IAM role for EC2 to access System Manager.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 786000,
+          "date": "Tue 24 Jan 2023 01:17",
+          "username": "saeidp",
+          "content": "C for me<br>D seems wrong: AWS Config to attach an SCP to the root organization is wrong you don't need aws config to apply SCP to root or ou's<br>SCP allow, doesn't provide the necessary permissions for EC2 to access SSM. SCP is designed to limit accounts to access resources otherwise by default root enables accessing for all accounts",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
         {
           "id": 785493,
           "date": "Mon 23 Jan 2023 15:52",
@@ -5538,11 +6346,19 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 791365,
+          "date": "Sun 29 Jan 2023 04:35",
+          "username": "Bulti",
+          "content": "Answer is C.  It has to be permission of the IAM Service Role of CodeBuild. It cannot be AWS/SSM Key because System Manager is supposed to decrypt secured string on behalf of the caller of System Manager to retrieve the value from the Parameter Store.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 778855,
           "date": "Tue 17 Jan 2023 12:47",
           "username": "Boubou480",
           "content": "CodePipeline uses CodeBuild to run the build stage, so the CodeBuild IAM service role is responsible for interacting with the services and resources specified in the build stage. If the role does not have the required IAM permissions to use Parameter Store, the pipeline will fail during the build stage when the CodeBuild service attempts to access the parameter values specified in the environment variables.<br>It's a good practice to check the IAM permissions for the roles that CodePipeline, CodeBuild and CodeDeploy uses and make sure they have the correct permissions to access the services and resources that are being used in the pipeline.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -5598,6 +6414,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 791372,
+          "date": "Sun 29 Jan 2023 04:49",
+          "username": "Bulti",
+          "content": "C is correct.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
         {
           "id": 774496,
           "date": "Fri 13 Jan 2023 13:58",
@@ -5660,11 +6484,27 @@ var DOP_C01_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 791708,
+          "date": "Sun 29 Jan 2023 15:21",
+          "username": "Bulti",
+          "content": "Although A will meet the requirements, C will as well. So why would I select A over C? Only because all required steps are carried as part of the CodePipeline workflow. With C, the Pipeline execution completes without knowing whether or not the Lambda function invoked via CloudWatch event rule is going to successfully complete or not.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 787025,
+          "date": "Tue 24 Jan 2023 23:17",
+          "username": "saeidp",
+          "content": "I go with A",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 778859,
           "date": "Tue 17 Jan 2023 12:52",
           "username": "Boubou480",
           "content": "This solution would allow the company to automate the process of updating the SDK and making it available to web clients.<br>By adding a CodePipeline action immediately after the deployment stage of the API, the Lambda function will be invoked automatically each time the API is updated.<br>The Lambda function should be able to download the new SDK from API Gateway, upload it to the S3 bucket and also create a CloudFront invalidation for the SDK path so that the latest version of the SDK is available for the web clients.<br>This is the most straight forward solution and it will meet the requirements.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: A"
         }
       ]
@@ -5712,6 +6552,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 791733,
+          "date": "Sun 29 Jan 2023 15:43",
+          "username": "Bulti",
+          "content": "B is correct.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 778879,
           "date": "Tue 17 Jan 2023 13:07",
@@ -5773,6 +6621,14 @@ var DOP_C01_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 791747,
+          "date": "Sun 29 Jan 2023 16:00",
+          "username": "Bulti",
+          "content": "D is correct.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
         {
           "id": 778882,
           "date": "Tue 17 Jan 2023 13:09",

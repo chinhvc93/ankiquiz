@@ -1,6 +1,6 @@
 var DOP_C01_Part1 = 
 {
-  "msg": "Quiz Questions",
+  "msg": "The questions for AWS DevOps Engineer Professional were last updated at Feb. 1, 2023.",
   "data": [
     {
       "question_id": "#1",
@@ -51,6 +51,14 @@ var DOP_C01_Part1 =
           "username": "devopp",
           "content": "B<br>noting SAM is built over CloudFormation.",
           "upvote_count": "10",
+          "selected_answers": ""
+        },
+        {
+          "id": 793291,
+          "date": "Mon 30 Jan 2023 21:24",
+          "username": "Hamza5",
+          "content": "B - Canary Deployment",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -1064,6 +1072,14 @@ var DOP_C01_Part1 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 793342,
+          "date": "Mon 30 Jan 2023 22:12",
+          "username": "Hamza5",
+          "content": "D will be the answer as we need Docker in this scenario.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 764814,
           "date": "Tue 03 Jan 2023 16:30",
           "username": "ericzaj",
@@ -1196,14 +1212,6 @@ var DOP_C01_Part1 =
           "date": "Wed 31 Aug 2022 04:39",
           "username": "Brain4",
           "content": "I will go with D managed Fargate and centralised",
-          "upvote_count": "2",
-          "selected_answers": ""
-        },
-        {
-          "id": 654463,
-          "date": "Wed 31 Aug 2022 00:16",
-          "username": "colinquek",
-          "content": "D.  Fulfills all criteria since there is no mention about cost savings.",
           "upvote_count": "2",
           "selected_answers": ""
         }
@@ -2342,6 +2350,14 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
+          "id": 794059,
+          "date": "Tue 31 Jan 2023 12:17",
+          "username": "Hamza5",
+          "content": "C will be the answer",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 763070,
           "date": "Sun 01 Jan 2023 06:31",
           "username": "Bulti",
@@ -2451,14 +2467,6 @@ var DOP_C01_Part1 =
           "username": "dinhvu",
           "content": "I choose C",
           "upvote_count": "2",
-          "selected_answers": ""
-        },
-        {
-          "id": 31322,
-          "date": "Fri 01 Oct 2021 02:54",
-          "username": "ppshein",
-          "content": "it should go with C. ",
-          "upvote_count": "3",
           "selected_answers": ""
         }
       ]
@@ -3295,7 +3303,7 @@ var DOP_C01_Part1 =
           "date": "Fri 18 Nov 2022 16:45",
           "username": "kyozanuro",
           "content": "A.  After you install the cloudwatch agent, then it will provide the metrics but cannot use them to get the latency information",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: CE"
         },
         {
@@ -3693,6 +3701,14 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
+          "id": 794347,
+          "date": "Tue 31 Jan 2023 16:35",
+          "username": "Hamza5",
+          "content": "I will go with D",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 777426,
           "date": "Mon 16 Jan 2023 08:54",
           "username": "Boubou480",
@@ -3819,54 +3835,6 @@ var DOP_C01_Part1 =
           "content": "Vote C",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 560493,
-          "date": "Fri 04 Mar 2022 03:47",
-          "username": "[Removed][Removed]apcloudapcloudapcloudapcloud",
-          "content": "deploying service catalog in multi-regions takes a lot of steps.it also utilizes cloudformation stackset to create for multi-regions.the best is to use service catalog factory.option D is not easy without sharing the portfolio in another region, so it is not easy to deploy .https://aws.amazon.com/blogs/mt/how-to-set-up-a-multi-region-multi-account-catalog-of-company-standard-aws-service-catalog-products/<br>https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_constraints_template-constraints.html<br>not really.actually this link says to use stack sets, idk, and i cant delete my commentsounds like youre really referring to answer D.  Its just a matter of setting the region constraints in the catalog.<br>https://aws.amazon.com/blogs/mt/how-to-set-up-a-multi-region-multi-account-catalog-of-company-standard-aws-service-catalog-products/<br>https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_constraints_template-constraints.htmlactually idk, i cant delete my comment either so idk",
-          "upvote_count": "111111",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 560495,
-          "date": "Fri 04 Mar 2022 03:51",
-          "username": "[Removed]apcloudapcloud",
-          "content": "option D is not easy without sharing the portfolio in another region, so it is not easy to deploy .https://aws.amazon.com/blogs/mt/how-to-set-up-a-multi-region-multi-account-catalog-of-company-standard-aws-service-catalog-products/<br>https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_constraints_template-constraints.html<br>not really.actually this link says to use stack sets, idk, and i cant delete my comment",
-          "upvote_count": "111",
-          "selected_answers": ""
-        },
-        {
-          "id": 734149,
-          "date": "Sat 03 Dec 2022 02:15",
-          "username": "apcloudapcloud",
-          "content": "https://aws.amazon.com/blogs/mt/how-to-set-up-a-multi-region-multi-account-catalog-of-company-standard-aws-service-catalog-products/<br>https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_constraints_template-constraints.html<br>not really.actually this link says to use stack sets, idk, and i cant delete my comment",
-          "upvote_count": "11",
-          "selected_answers": ""
-        },
-        {
-          "id": 734152,
-          "date": "Sat 03 Dec 2022 02:17",
-          "username": "apcloud",
-          "content": "actually this link says to use stack sets, idk, and i cant delete my comment",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 734148,
-          "date": "Sat 03 Dec 2022 02:14",
-          "username": "apcloudapcloud",
-          "content": "sounds like youre really referring to answer D.  Its just a matter of setting the region constraints in the catalog.<br>https://aws.amazon.com/blogs/mt/how-to-set-up-a-multi-region-multi-account-catalog-of-company-standard-aws-service-catalog-products/<br>https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_constraints_template-constraints.htmlactually idk, i cant delete my comment either so idk",
-          "upvote_count": "11",
-          "selected_answers": ""
-        },
-        {
-          "id": 734151,
-          "date": "Sat 03 Dec 2022 02:16",
-          "username": "apcloud",
-          "content": "actually idk, i cant delete my comment either so idk",
-          "upvote_count": "1",
-          "selected_answers": ""
         }
       ]
     },
@@ -4518,6 +4486,14 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
+          "id": 786372,
+          "date": "Tue 24 Jan 2023 10:43",
+          "username": "rrshah83",
+          "content": "ADE all seem possible causes. But if appspec is missing, the error will call that out. It won’t just skip events.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
           "id": 777293,
           "date": "Mon 16 Jan 2023 04:49",
           "username": "Bulti",
@@ -5061,6 +5037,14 @@ var DOP_C01_Part1 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 786211,
+          "date": "Tue 24 Jan 2023 07:34",
+          "username": "sasivarenan",
+          "content": "GaurdDuty is the right option to opt for suspicious traffic",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 777927,
           "date": "Mon 16 Jan 2023 17:31",
           "username": "Bulti",
@@ -5202,6 +5186,14 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
+          "id": 794414,
+          "date": "Tue 31 Jan 2023 17:52",
+          "username": "Hamza5",
+          "content": "I WILL GO WITH A - CANARY DEPLOYMENT",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 777943,
           "date": "Mon 16 Jan 2023 17:40",
           "username": "Bulti",
@@ -5312,14 +5304,6 @@ var DOP_C01_Part1 =
           "content": "https://docs.aws.amazon.com/apigateway/latest/developerguide/create-canary-deployment.html",
           "upvote_count": "2",
           "selected_answers": ""
-        },
-        {
-          "id": 319015,
-          "date": "Mon 20 Sep 2021 03:50",
-          "username": "Bmaster",
-          "content": "I will go with A",
-          "upvote_count": "2",
-          "selected_answers": ""
         }
       ]
     },
@@ -5372,6 +5356,14 @@ var DOP_C01_Part1 =
           "username": "RLai",
           "content": "D - https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-add-availability-zone.html",
           "upvote_count": "14",
+          "selected_answers": ""
+        },
+        {
+          "id": 794424,
+          "date": "Tue 31 Jan 2023 18:02",
+          "username": "Hamza5",
+          "content": "I will go with D",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -5528,6 +5520,14 @@ var DOP_C01_Part1 =
           "date": "Tue 26 Oct 2021 07:17",
           "username": "kj07",
           "content": "This link eliminates EB options and this one https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BlueInstanceTerminationOption.html validates option B. ",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 794448,
+          "date": "Tue 31 Jan 2023 18:29",
+          "username": "Hamza5",
+          "content": "I will go with C",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -6210,6 +6210,14 @@ var DOP_C01_Part1 =
           "content": "A - For \\\"Integration\\\"<br>D - For \\\"automatic rollback upon deployment failure\\\".<br>F - For \\\"The entire CI/CD pipeline must be capable of being re-provisioned in alternate AWS accounts or Regions within minutes\\\"",
           "upvote_count": "5",
           "selected_answers": "Selected Answer: ADF"
+        },
+        {
+          "id": 794493,
+          "date": "Tue 31 Jan 2023 19:14",
+          "username": "Hamza5",
+          "content": "I will go ADF, storing artifacts in s3 but why is it required in this scenario",
+          "upvote_count": "1",
+          "selected_answers": ""
         },
         {
           "id": 778128,
@@ -8951,8 +8959,24 @@ var DOP_C01_Part1 =
         {
           "id": 778399,
           "date": "Tue 17 Jan 2023 01:02",
-          "username": "Bulti",
-          "content": "The correct answer is A.  There has been a lot of confusion here because the question is not clear on whether each dev env is created in a different region/ account. However other answers are technically incorrect as per the AWS documentation. B and C are incorrect as fn:ImportValue doesn't work with nested stack and only works with cross-stack references. Answer D is incorrect as fn:ImportValue cannot be used in the Parameter section of a CF template. Therefore through method of elimination the correct answer is A. ",
+          "username": "Bultikopper2019kopper2019",
+          "content": "The correct answer is A.  There has been a lot of confusion here because the question is not clear on whether each dev env is created in a different region/ account. However other answers are technically incorrect as per the AWS documentation. B and C are incorrect as fn:ImportValue doesn't work with nested stack and only works with cross-stack references. Answer D is incorrect as fn:ImportValue cannot be used in the Parameter section of a CF template. Therefore through method of elimination the correct answer is A. Option C doesn’t mention importing the values between nested stacks. It mentions importing values in nested stack from VPC stack.So C seems bf right.",
+          "upvote_count": "211",
+          "selected_answers": ""
+        },
+        {
+          "id": 787351,
+          "date": "Wed 25 Jan 2023 08:25",
+          "username": "kopper2019kopper2019",
+          "content": "Option C doesn’t mention importing the values between nested stacks. It mentions importing values in nested stack from VPC stack.So C seems bf right.",
+          "upvote_count": "11",
+          "selected_answers": ""
+        },
+        {
+          "id": 787352,
+          "date": "Wed 25 Jan 2023 08:25",
+          "username": "kopper2019",
+          "content": "So C seems bf right.",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -9441,6 +9465,14 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
+          "id": 786972,
+          "date": "Tue 24 Jan 2023 22:10",
+          "username": "damians106",
+          "content": "Answer is B<br>https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-create-pipeline-add-test.html<br>https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 778468,
           "date": "Tue 17 Jan 2023 03:15",
           "username": "Bulti",
@@ -9880,6 +9912,14 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
+          "id": 786995,
+          "date": "Tue 24 Jan 2023 22:46",
+          "username": "damians106",
+          "content": "D is the asnwer.<br><br>Example:<br> \\\"detail\\\": {<br>\\\"eventVersion\\\": \\\"1.08\\\",<br>\\\"userIdentity\\\": {<br>\\\"type\\\": \\\"AssumedRole\\\",<br>\\\"principalId\\\": \\\"XYZZYOR:admin\\\",<br>\\\"arn\\\": \\\"arn:aws:sts::123456789012:role/admin\\\",<br>\\\"accountId\\\": \\\"123456789012\\\",<br>\\\"accessKeyId\\\": \\\"XYZZY\\\",<br>\\\"sessionContext\\\": {<br>\\\"sessionIssuer\\\": {<br>\\\"type\\\": \\\"Role\\\",<br>\\\"principalId\\\": \\\"XYZZYOR\\\",<br>\\\"arn\\\": \\\"arn:aws:iam::123456789012:role/Admin\\\",<br>\\\"accountId\\\": \\\"123456789012\\\",<br>\\\"userName\\\": \\\"Admin\\\"<br>},<br>\\\"webIdFederationData\\\": {},<br>\\\"attributes\\\": {<br>\\\"creationDate\\\": \\\"2022-02-17T09:41:02Z\\\",<br>\\\"mfaAuthenticated\\\": \\\"false\\\"<br>}<br>}<br>},",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 778488,
           "date": "Tue 17 Jan 2023 03:44",
           "username": "BultiBulti",
@@ -10006,22 +10046,6 @@ var DOP_C01_Part1 =
           "content": "Based on this https://aws.amazon.com/blogs/mt/monitor-and-notify-on-aws-account-root-user-activity/ <br>I believe D is the correct answer and yes I know not exactly the same scenario",
           "upvote_count": "3",
           "selected_answers": ""
-        },
-        {
-          "id": 382452,
-          "date": "Mon 04 Oct 2021 14:58",
-          "username": "Sagardonthinenifrancisco_guerra",
-          "content": "C is the right answer we can create a custom log filter on AWS Cloud trail events and send it SNS topic.<br>https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudwatch-alarms-for-cloudtrail.htmlYes but the answer do not say anything about use a cloudWatch alarm to call the sns topic so the answer is D",
-          "upvote_count": "41",
-          "selected_answers": ""
-        },
-        {
-          "id": 475840,
-          "date": "Thu 11 Nov 2021 00:12",
-          "username": "francisco_guerra",
-          "content": "Yes but the answer do not say anything about use a cloudWatch alarm to call the sns topic so the answer is D",
-          "upvote_count": "1",
-          "selected_answers": ""
         }
       ]
     },
@@ -10097,7 +10121,7 @@ var DOP_C01_Part1 =
           "date": "Wed 20 Oct 2021 06:57",
           "username": "gmandala",
           "content": "will go with D",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -10997,6 +11021,14 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
+          "id": 787585,
+          "date": "Wed 25 Jan 2023 13:11",
+          "username": "sasivarenan",
+          "content": "Health check should be the culprit.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 783398,
           "date": "Sat 21 Jan 2023 15:23",
           "username": "Bulti",
@@ -11017,7 +11049,7 @@ var DOP_C01_Part1 =
           "date": "Sun 14 Nov 2021 09:08",
           "username": "asjak",
           "content": "correct is C --- https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting-deployments.html",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -11146,6 +11178,14 @@ var DOP_C01_Part1 =
           "selected_answers": ""
         },
         {
+          "id": 787586,
+          "date": "Wed 25 Jan 2023 13:12",
+          "username": "sasivarenan",
+          "content": "A) Explains the branching strategy",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 783512,
           "date": "Sat 21 Jan 2023 17:07",
           "username": "Bulti",
@@ -11271,30 +11311,6 @@ var DOP_C01_Part1 =
           "username": "awsrook",
           "content": "A. https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.AuroraHighAvailability.html",
           "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 218956,
-          "date": "Tue 12 Oct 2021 19:42",
-          "username": "cloudylandWhyIronManis4_",
-          "content": "Prefer to C.  I don't see a problem using the master branch for both prod and test environments in an agile team. For A, don't think merging PR to 2 branches is not good practice.So, you want deploy do production without test? what warranties you that the code is functional and its not broken?<br><br>Genius strategyYou typically want to make sure that it is always the same code revision that is deployed to BOTH test and production environments. Therefore, you always deploy the MASTER branch to BOTH environments but in stages - first to test and after successfully tested that environment, you proceed to production. So there is nothing stupid about that answer.",
-          "upvote_count": "313",
-          "selected_answers": ""
-        },
-        {
-          "id": 324234,
-          "date": "Fri 29 Oct 2021 22:17",
-          "username": "WhyIronManis4_",
-          "content": "So, you want deploy do production without test? what warranties you that the code is functional and its not broken?<br><br>Genius strategyYou typically want to make sure that it is always the same code revision that is deployed to BOTH test and production environments. Therefore, you always deploy the MASTER branch to BOTH environments but in stages - first to test and after successfully tested that environment, you proceed to production. So there is nothing stupid about that answer.",
-          "upvote_count": "13",
-          "selected_answers": ""
-        },
-        {
-          "id": 439173,
-          "date": "Fri 05 Nov 2021 22:58",
-          "username": "is4_",
-          "content": "You typically want to make sure that it is always the same code revision that is deployed to BOTH test and production environments. Therefore, you always deploy the MASTER branch to BOTH environments but in stages - first to test and after successfully tested that environment, you proceed to production. So there is nothing stupid about that answer.",
-          "upvote_count": "3",
           "selected_answers": ""
         }
       ]
@@ -11773,7 +11789,7 @@ var DOP_C01_Part1 =
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: A</p>",
+      "general_feedback": "<p>Correct Answer: C</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -11782,7 +11798,7 @@ var DOP_C01_Part1 =
           "answers": [
             {
               "choice": "<p>A. Create an Amazon EventBridge (Amazon CloudWatch Events) rule with a source of aws.cloudtrail and the event name AuthorizeSecurityGroupIngress. Define an Amazon Simple Notification Service (Amazon SNS) topic as the target.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -11792,7 +11808,7 @@ var DOP_C01_Part1 =
             },
             {
               "choice": "<p>C. Create an AWS Config rule by using the restricted-ssh managed rule to check whether security groups disallow unrestricted incoming SSH traffic. Configure automatic remediation to publish a message to an Amazon Simple Notification Service (Amazon SNS) topic.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -11805,6 +11821,30 @@ var DOP_C01_Part1 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 794663,
+          "date": "Tue 31 Jan 2023 23:15",
+          "username": "saeidp",
+          "content": "I go with c. <br>Between A and C, I select C because A will send an alert on all the Security group changes",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 791660,
+          "date": "Sun 29 Jan 2023 14:23",
+          "username": "rrshah83",
+          "content": "https://aws.amazon.com/premiumsupport/knowledge-center/monitor-security-group-changes-ec2/",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 787592,
+          "date": "Wed 25 Jan 2023 13:21",
+          "username": "sasivarenan",
+          "content": "Restricted SSH rule seems good fit",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
         {
           "id": 783566,
           "date": "Sat 21 Jan 2023 17:56",
@@ -11850,7 +11890,7 @@ var DOP_C01_Part1 =
           "date": "Thu 15 Dec 2022 04:51",
           "username": "saggy4saggy4",
           "content": "D - inspector is something not used for security group checks and guard duty opt<br>B - this option will send all the non complaint alerts in the security hub<br>C - It is the easiest way to do it. The questions say if the incoming rule is changed to all the rule supports it.<br>A - Seems also correct but C is easier to do + we do not know if Cloudtrail is enabled.C is correct answer.<br>A will send an alert on all the Security group changes even for the correct ones and the question mentioned to send an alert only if the security group is open to all",
-          "upvote_count": "41",
+          "upvote_count": "42",
           "selected_answers": ""
         },
         {
@@ -11858,7 +11898,7 @@ var DOP_C01_Part1 =
           "date": "Thu 29 Dec 2022 04:49",
           "username": "saggy4",
           "content": "C is correct answer.<br>A will send an alert on all the Security group changes even for the correct ones and the question mentioned to send an alert only if the security group is open to all",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -12069,6 +12109,14 @@ var DOP_C01_Part1 =
           "username": "CloudMan01",
           "content": "Answer is A,<br> AWS Application Auto Scaling group isn't provisioned for EC2, so C&D are wrong.",
           "upvote_count": "6",
+          "selected_answers": ""
+        },
+        {
+          "id": 787091,
+          "date": "Wed 25 Jan 2023 00:49",
+          "username": "kopper2019",
+          "content": "EC2 is not one of the services that can use Application Auto scaling.<br>https://docs.aws.amazon.com/autoscaling/application/userguide/integrated-services-list.html<br><br>so A seems to be right",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -13235,6 +13283,14 @@ var DOP_C01_Part1 =
           "selected_answers": "Selected Answer: B"
         },
         {
+          "id": 789572,
+          "date": "Fri 27 Jan 2023 13:15",
+          "username": "janam",
+          "content": "B is correct",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 784366,
           "date": "Sun 22 Jan 2023 14:57",
           "username": "Bulti",
@@ -13517,6 +13573,14 @@ var DOP_C01_Part1 =
           "content": "This link explicitly states to skip the build stage, that is why code build is the incorrect answer",
           "upvote_count": "1",
           "selected_answers": ""
+        },
+        {
+          "id": 794338,
+          "date": "Tue 31 Jan 2023 16:24",
+          "username": "rrshah83",
+          "content": "https://aws.amazon.com/blogs/devops/aws-service-catalog-sync-code/",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
         },
         {
           "id": 784818,
@@ -14261,7 +14325,7 @@ var DOP_C01_Part1 =
           "date": "Fri 02 Dec 2022 14:24",
           "username": "nsvijay04b1",
           "content": "options need access to both s3 buckets ruled out on DR region you need access to that region bucket with CCR enabled from primary region bucket.<br><br>As we need 3rd option also to select, increasing timeout on R53 selected.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: BDE"
         }
       ]
@@ -14309,6 +14373,14 @@ var DOP_C01_Part1 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 794618,
+          "date": "Tue 31 Jan 2023 22:11",
+          "username": "rrshah83",
+          "content": "DB and web teams want to maintain the stack lifecycle separately ==> cross-stacks...",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
         {
           "id": 784911,
           "date": "Mon 23 Jan 2023 04:08",
