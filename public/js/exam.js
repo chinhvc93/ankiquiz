@@ -186,10 +186,14 @@ $(document).keydown(function (e) {
     // case 40: //UP
     //   $(".btn-showAnswer")[0].click();
     //   break;
-    case 32: //SPACE
+    case 13: //ENTER
       e.preventDefault();
       $(".btn-showAnswer")[0].click();
       $(".btn-showDiscussion")[0].click();
+      break;
+    case 32: //SPACE
+      e.preventDefault();
+      $("#starMarkToReview").click();
       break;
     default:
       break
