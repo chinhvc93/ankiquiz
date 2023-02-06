@@ -6903,7 +6903,7 @@ var DOP_C01_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A company has built a web service that runs on Amazon EC2 instances behind an Application Load Balancer (ALB). The company has deployed the application in us-east-1. Amazon Route 53 provides an external DNS that routes traffic from example.com to the application, created with appropriate health checks.<br>The company has deployed a second environment for the application in eu-west-1. The company wants traffic to be routed to whichever environment results in the best response time for each user. If there is an outage in one Region, traffic should be directed to the other environment.<br>Which configuration will achieve these requirements?A. <br>✑ A subdomain us.example.com with weighted routing: the US ALB with weight 2 and the EU ALB with weight 1.<br>✑ Another subdomain eu.example.com with weighted routing: the EU ALB with weight 2 and the US ALB with weight 1.<br>✑ Geolocation routing records for example.com: North America aliased to us.example.com and Europe aliased to eu.example.com.B. <br>✑ A subdomain us.example.com with latency-based routing: the US ALB as the first target and the EU ALB as the second target.<br>✑ Another subdomain eu.example.com with latency-based routing: the EU ALB as the first target and the US ALB as the second target.<br>✑ Failover routing records for example.com aliased to us.example.com as the first target and eu.example.com as the second target.C. <br>✑ A subdomain us.example.com with failover routing: the US ALB as primary and the EU ALB as secondary.<br>✑ Another subdomain eu.example.com with failover routing: the EU ALB as primary and the US ALB as secondary.<br>✑ Latency-based routing records for example.com that are aliased to us.example.com and eu.example.com.D. <br>✑ A subdomain us.example.com with multivalue answer routing: the US ALB first and the EU ALB second.<br>✑ Another subdomain eu.example.com with multivalue answer routing: the EU ALB first and the US ALB second.<br>✑ Failover routing records for example.com that are aliased to us.example.com and eu.example.com.<br><br><br></p>",
+      "question_text": "<p>A company has built a web service that runs on Amazon EC2 instances behind an Application Load Balancer (ALB). The company has deployed the application in us-east-1. Amazon Route 53 provides an external DNS that routes traffic from example.com to the application, created with appropriate health checks.<br>The company has deployed a second environment for the application in eu-west-1. The company wants traffic to be routed to whichever environment results in the best response time for each user. If there is an outage in one Region, traffic should be directed to the other environment.<br>Which configuration will achieve these requirements?</p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -6914,7 +6914,28 @@ var DOP_C01_Part1 =
         {
           "question_answer_id": 1,
           "question_id": "#41",
-          "answers": []
+          "answers": [
+            {
+              "choice": "<p>A. <br>✑ A subdomain us.example.com with weighted routing: the US ALB with weight 2 and the EU ALB with weight 1.<br>✑ Another subdomain eu.example.com with weighted routing: the EU ALB with weight 2 and the US ALB with weight 1.<br>✑ Geolocation routing records for example.com: North America aliased to us.example.com and Europe aliased to eu.example.com.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. <br>✑ A subdomain us.example.com with latency-based routing: the US ALB as the first target and the EU ALB as the second target.<br>✑ Another subdomain eu.example.com with latency-based routing: the EU ALB as the first target and the US ALB as the second target.<br>✑ Failover routing records for example.com aliased to us.example.com as the first target and eu.example.com as the second target.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. <br>✑ A subdomain us.example.com with failover routing: the US ALB as primary and the EU ALB as secondary.<br>✑ Another subdomain eu.example.com with failover routing: the EU ALB as primary and the US ALB as secondary.<br>✑ Latency-based routing records for example.com that are aliased to us.example.com and eu.example.com.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. <br>✑ A subdomain us.example.com with multivalue answer routing: the US ALB first and the EU ALB second.<br>✑ Another subdomain eu.example.com with multivalue answer routing: the EU ALB first and the US ALB second.<br>✑ Failover routing records for example.com that are aliased to us.example.com and eu.example.com.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
         }
       ],
       "topic_name": "",

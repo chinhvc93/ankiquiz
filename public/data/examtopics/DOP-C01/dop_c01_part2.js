@@ -6390,22 +6390,22 @@ var DOP_C01_Part2 =
           "question_id": "#175",
           "answers": [
             {
-              "choice": "<p>A. <br></p>",
+              "choice": "<p>A. <img src=\"https://img.examtopics.com/aws-devops-engineer-professional/image2.png\"><br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>B. <br></p>",
+              "choice": "<p>B. <img src=\"https://img.examtopics.com/aws-devops-engineer-professional/image3.png\"><br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>C. <br></p>",
+              "choice": "<p>C. <img src=\"https://img.examtopics.com/aws-devops-engineer-professional/image4.png\"><br></p>",
               "correct": true,
               "feedback": ""
             },
             {
-              "choice": "<p>D. <br></p>",
+              "choice": "<p>D. <img src=\"https://img.examtopics.com/aws-devops-engineer-professional/image5.png\"><br></p>",
               "correct": false,
               "feedback": ""
             }
