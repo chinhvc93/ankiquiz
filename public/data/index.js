@@ -154,6 +154,24 @@ var listExamGroup = [
     ]
   },
 
+  //GROUP 1
+  {
+    id: "SAP_C02",
+    name: "[SAP-C02] Solutions Architect - Professional",
+    list: [
+      {
+        id: "SAP_C02_Part1",
+        name: "[SAP-C02] Part1",
+        data: SAP_C02_Part1.data,
+      },
+      {
+        id: "SAP_C02_Part2",
+        name: "[SAP-C02] Part2",
+        data: SAP_C02_Part2.data,
+      },
+    ]
+  },
+
   //GROUP 5
   {
     id: "DOP_C01",
