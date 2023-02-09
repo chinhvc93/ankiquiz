@@ -12968,7 +12968,7 @@ var DOP_C01_Part1 =
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: A</p>",
+      "general_feedback": "<p>Correct Answer: C</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -12977,7 +12977,7 @@ var DOP_C01_Part1 =
           "answers": [
             {
               "choice": "<p>A. Create an AWS Elastic Beanstalk environment and configure it to use Auto Scaling and an Elastic Load Balancer. Use rolling deployments with a batch size of 50%.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -12987,7 +12987,7 @@ var DOP_C01_Part1 =
             },
             {
               "choice": "<p>C. Use AWS CodeDeploy with Auto Scaling and an Elastic Load Balancer. Use the CodeDeployDefault.HalfAtAtime deployment strategy. Enable an Elastic Load Balancing health check to report the status of the application, and set the Auto Scaling health check to ELB. <br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
