@@ -7666,7 +7666,7 @@ var DOP_C01_Part1 =
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: C</p>",
+      "general_feedback": "<p>Correct Answer: B</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -7680,12 +7680,12 @@ var DOP_C01_Part1 =
             },
             {
               "choice": "<p>B. Horizontally scale the Kinesis consumer application by adding more EC2 instances based on the Amazon CloudWatch GetRecords.IteratorAgeMilliseconds metric. Increase the retention period of the Kinesis Data Streams.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>C. Convert the Kinesis consumer application to run as an AWS Lambda function. Configure the Kinesis Data Streams as the event source for the Lambda function to process the data streams.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
