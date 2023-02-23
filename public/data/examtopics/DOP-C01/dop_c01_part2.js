@@ -6658,7 +6658,7 @@ var DOP_C01_Part2 =
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: D</p>",
+      "general_feedback": "<p>Correct Answer: C</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -6677,12 +6677,12 @@ var DOP_C01_Part2 =
             },
             {
               "choice": "<p>C. Configure a trusted IP list in GuardDuty. Set the source as the list of external IP ranges in the S3 bucket. Create an Amazon EventBridge rule that runs daily and invokes an AWS Lambda function. Configure the Lambda function to refresh the trusted IP list in GuardDuty to match the list of external IP ranges in the S3 bucket.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>D. Create an Amazon EventBridge rule that runs daily and invokes an AWS Lambda function. Configure the Lambda function to retrieve the most recent list of external IP ranges from the S3 bucket. For each IP range in the list, configure the Lambda function to create a GuardDuty finding filter on the localIp filter attribute.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -6834,7 +6834,7 @@ var DOP_C01_Part2 =
       "is_partially_correct": true,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: AC</p>",
+      "general_feedback": "<p>Correct Answer: AD</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -6853,12 +6853,12 @@ var DOP_C01_Part2 =
             },
             {
               "choice": "<p>C. Update the LaunchConfig resource type to AWS::EC2::LaunchTemplate.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>D. Increase the CreationPolicy ResourceSignal Timeout.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
