@@ -6646,6 +6646,417 @@ var DOP_C01_Part2 =
           "selected_answers": "Selected Answer: D"
         }
       ]
+    },
+    {
+      "question_id": "#179",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company has a VPC that consists of a public subnet and a private subnet. The company has an application that runs on Amazon EC2 instances that are in the private subnet. An Application Load Balancer is in the public subnet and distributes traffic to the EC2 instances.<br><br>The company has enabled Amazon GuardDuty for the account. The company’s DevOps team has a list of external IP ranges that is updated each day. The list is stored in an Amazon S3 bucket in the account. A DevOps engineer needs to configure GuardDuty to create a GuardDuty finding when traffic to the application originates from an IP range in the external IP range list.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#179",
+          "answers": [
+            {
+              "choice": "<p>A. Create an Amazon EventBridge rule that runs daily and invokes an AWS Lambda function. Configure the Lambda function to retrieve the most recent list of external IP ranges from the S3 bucket. For each IP range in the list, configure the Lambda function to create a GuardDuty finding filter on the publicIp filter attribute.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Configure a threat list in GuardDuty. Set the source as the list of external IP ranges in the S3 bucket. Create an Amazon EventBridge rule that runs daily and invokes an AWS Lambda function. Configure the Lambda function to refresh the threat list in GuardDuty to match the list of external IP ranges in the S3 bucket.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Configure a trusted IP list in GuardDuty. Set the source as the list of external IP ranges in the S3 bucket. Create an Amazon EventBridge rule that runs daily and invokes an AWS Lambda function. Configure the Lambda function to refresh the trusted IP list in GuardDuty to match the list of external IP ranges in the S3 bucket.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create an Amazon EventBridge rule that runs daily and invokes an AWS Lambda function. Configure the Lambda function to retrieve the most recent list of external IP ranges from the S3 bucket. For each IP range in the list, configure the Lambda function to create a GuardDuty finding filter on the localIp filter attribute.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": []
+    },
+    {
+      "question_id": "#180",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company is using an Amazon API Gateway API and an AWS Lambda function to host a microservice. The microservice accesses pricing data in an Amazon DynamoDB table for the company’s online store.<br><br>Interest in the online store has increased. As a result, latency issues and throttling on the DynamoDB table are occurring when a specific query runs. Some internal services access the DynamoDB table directly. No caching is enabled for the current solution.<br><br>A DevOps engineer notices that repeat requests to the API are taking the same amount of time as unique requests. The DevOps engineer must reduce the latency for the repeat requests to the API and must reduce the throttling on the DynamoDB table.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#180",
+          "answers": [
+            {
+              "choice": "<p>A. Enable caching for API Gateway stages. Use DynamoDB Accelerator (DAX) for the DynamoDB table.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Enable caching tor API Gateway stages. Use Amazon ElastiCache for Memcached caching for the DynamoDB table.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Use provisioned concurrency for the Lambda function. Use DynamoDB Accelerator (DAX) for the DynamoDB table.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Use provisioned concurrency for the Lambda function. Increase the RCUs for the DynamoDB table.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": []
+    },
+    {
+      "question_id": "#181",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A production account has a requirement that any Amazon EC2 instance that has been logged in to manually must be terminated within 24 hours. All applications in the production account are using Auto Scaling groups with the Amazon CloudWatch Logs agent configured.<br><br>How can this process be automated?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#181",
+          "answers": [
+            {
+              "choice": "<p>A. Create a CloudWatch Logs subscription to an AWS Step Functions application. Configure an AWS Lambda function to add a tag to the EC2 instance that produced the login event and mark the instance to be decommissioned. Create an Amazon EventBridge rule to invoke a second Lambda function once a day that will terminate all instances with this tag.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create an Amazon CloudWatch alarm that will be invoked by the login event. Send the notification to an Amazon Simple Notification Service (Amazon SNS) topic that the operations team is subscribed to, and have them terminate the EC2 instance within 24 hours.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an Amazon CloudWatch alarm that will be invoked by the login event. Configure the alarm to send to an Amazon Simple Queue Service (Amazon SQS) queue. Use a group of worker instances to process messages from the queue, which then schedules an Amazon EvantBridge rule to be invoked.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create a CloudWatch Logs subscription in an AWS Lambda function. Configure the function to add a tag to the EC2 instance that produced the login event and mark the instance to be decommissioned. Create an Amazon EventBridge rule to invoke a daily Lambda function that terminates all instances with this tag.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": []
+    },
+    {
+      "question_id": "#182",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company is migrating Docker repositories to Amazon Elastic Container Registry (Amazon ECR) in an existing AWS account. A DevOps engineer needs to automate the management of images that are uploaded to the repositories. The solution must limit the number of image versions. As a first step, the DevOps engineer creates a private repository in Amazon ECR for each repository that the company will migrate.<br><br>What should the DevOps engineer do next to meet the requirements in the MOST operationally efficient manner?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#182",
+          "answers": [
+            {
+              "choice": "<p>A. Create an AWS Lambda function to scan the images in each repository for the number of versions present. Configure the Lambda function to delete older versions of images if the number of images is greater than the desired number of images. Schedule the Lambda function to run automatically at regular intervals,<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create a repository policy that assesses the number of images and deletes older versions if the number of images is greater than the desired number of images. Apply the repository policy to each private repository.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an AWS Step Functions state machine Express Workflow to scan the images in each repository for the number of versions present. Configure the Express Workflow to delete older versions of images if the number of images is greater than the desired number of images. Configure the state machine to run every time an image is pushed to a repository.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Push an image into each private repository. In each private repository, create a lifecycle policy preview to delete older versions of images if the number of images is greater than the desired number of images. Test the lifecycle policy and validate the impact. Apply the lifecycle policy to manage the images.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": []
+    },
+    {
+      "question_id": "#183",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A DevOps engineer has created an AWS CloudFormation template. The template includes the following snippet:<br><br><img src=\"https://img.examtopics.com/aws-devops-engineer-professional/image6.png\"><br><br>When the template is launched, CloudFormation performs a rollback and reports the following error message: Received 0 SUCCESS signal(s) cut of 1.<br><br>Which combination of steps should the DevOps engineer take to resolve this error? (Choose two.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: AC</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#183",
+          "answers": [
+            {
+              "choice": "<p>A. Update the UserData attribute to use the cfn-signal helper script.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Update the AutoScalingGroup resource with a DependsOn LaunchConfig.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Update the LaunchConfig resource type to AWS::EC2::LaunchTemplate.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Increase the CreationPolicy ResourceSignal Timeout.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Remove the CreationPolicy attribute. Create new WaitHandle and WaitCondition resources.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": []
+    },
+    {
+      "question_id": "#184",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company hosts a multi-tenant application on Amazon EC2 instances behind an Application Load Balancer. The instances run Windows Server and are in an Auto Scaling group. The application uses a license file on the instances that can be updated on the instances without customer disruption. When a new customer purchases access to the application, the company's licensing team adds a new license key to a file in an Amazon S3 bucket. After the license file is updated, the operations team manually updates the EC2 instances.<br><br>A DevOps engineer needs to automate the EC2 instance file update process. The automated process must decrease the time for EC2 instances to get the updated license file and must notify the operations team about success or failure of the update process.<br><br>The DevOps engineer creates a resource group in AWS Resource Groups. The resource group uses a tag that the Auto Sealing group applies to the EC2 instances.<br><br>What should the DevOps engineer do next to meet the requirements MOST cost-effectively?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#184",
+          "answers": [
+            {
+              "choice": "<p>A. Create an S3 event notification to invoke an AWS Lambda function when the license file is updated in the S3 bucket. Configure the Lambda function to invoke AWS Systems Manager Run Command to run the AWS-RunRemoteScript document to download the updated license file. Specify the command from Lambda to run on the application's resource group with 50% concurrency. Configure Amazon Simple Email Service (Amazon SES) notifications for event notifications of SUCCESS and FAILED to send email notifications to the operations team.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create an S3 event notification to invoke an AWS Lambda function when the license file is updated in the S3 bucket. Configure the Lambda function to invoke AWS Systems Manager Run Command to run the AWS-RunPowerShellScript document to download the updated license file. Specify the command from Lambda to run on the application's resource group with 50% concurrency. Configure an Amazon Simple Notification Service (Amazon SNS) topic to send event notifications of SUCCESS and FAILED.  Subscribe the email addresses of the operations team members to the SNS topic.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an Amazon EventBridge scheduled rule that runs each hour to invoke an AWS Lambda function. Configure the Lambda function to invoke AWS Systems Manager Run Command to run the AWS-RunPowerShellScript document to download the updated license file. Specify the command from Lambda to run on the application's resource group with 50% concurrency. Configure an Amazon Simple Notification Service (Amazon SNS) topic to send event notifications of SUCCESS and FAILED.  Subscribe the email addresses of the operations team members to the SNS topic.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create an Amazon EventBridge scheduled rule that runs each hour to invoke an AWS Lambda function. Configure the Lambda function to invoke AWS Systems Manager Run Command to run the AWS-RunRemoteScript document to download the updated license file. Specify the command from Lambda to run on the application's resource group with 50% concurrency. Configure Amazon Simple Email Service (Amazon SES) notifications for event notifications of SUCCESS and FAILED to send email notifications to the operations team.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": []
+    },
+    {
+      "question_id": "#185",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company uses AWS Organizations to manage its AWS accounts. A DevOps engineer wants to deploy a new AWS Lambda function to all accounts in the organization by using AWS CloudFormation StackSets. The DevOps engineer uses a delegated administrator account to deploy the stack sets to the member accounts. The stack operation keeps failing, and the stack instance status is OUTDATED. <br><br>Which actions should the DevOps engineer take to remediate this error? (Choose two.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: BD</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#185",
+          "answers": [
+            {
+              "choice": "<p>A. Ensure that the AWS Region is the same for the stack sets and the target resources.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Ensure that the delegated administrator account has a trust relationship with the target account.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Ensure that the resources in the stacks do not have termination protection enabled by default.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Ensure that the CloudFormation template is creating unique global resources.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Deploy the stack sets from the management account and not from the delegated administrator account.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": []
+    },
+    {
+      "question_id": "#186",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A large company has acquired a small company. The large company has an organization in AWS Organizations. The large company needs to integrate the small company’s single AWS account into the organization with minimal impact to the applications that are deployed in the small company's account.<br><br>The large company has deployed AWS Control Tower in its organization and wants to enroll the small company’s account in AWS Control Tower. The large company’s AWS Control Tower configuration includes a security OU, a sandbox OU, and a new destination OU that is set up for the small company's migration. Each company is using AWS Config as part of its account management strategy.<br><br>Which combination of steps should a DevOps engineer take lo meet these requirements? (Choose two.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: CD</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#186",
+          "answers": [
+            {
+              "choice": "<p>A. Create a landing zone in the security OU of the large company's AWS Control Tower landing zone. Provide the account's email address, the account owners first and last name, and the name of the landing zone created in the security OU to complete the AWS Control Tower Account Factory enrollment request.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create and apply SCPs in the destination OU to restrict the types of resources that can be created in the small company’s account. Assess the impact of the applied SCPs on the small company's account. Delete existing SCPs in the small company’s account.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an AWS Config conformance pack that contains the policies that are currently applied to the large company's account. Use AWS Config to assess the impact that enrollment in AWS Control Tower will have on the small company's account. Delete the configuration recorder and delivery channels from the AWS Config settings of the small company's account.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Enroll the OU of the small company's account in the large company’s AWS Control Tower environment. Specify the destination OU in the large company's AWS Control Tower landing zone as the receiving OU in the request.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Create an AWSControlTowerExecution role in the small company's account. Provide the account's email address, the account owner's first and last name, and the destination OU to complete the AWS Control Tower Account Factory enrollment request.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": []
+    },
+    {
+      "question_id": "#187",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A software-as-a-service (SaaS) company is using AWS Elastic Beanstalk to deploy its primary .NET application. The Elastic Beanstalk environment is configured to use Amazon EC2 Auto Scaling and Elastic Load Balancing (ELB) for its underlying Amazon EC2 instances.<br><br>The company is experiencing incidents in which EC2 instances are marked unhealthy and are terminated by Auto Scaling groups after a failed ELB health check. The company's DevOps team must build a solution that will notify the operations team whenever an Auto Scaling group terminates EC2 instances for any existing client environments.<br><br>What should the DevOps team do to meet this requirement?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: C</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#187",
+          "answers": [
+            {
+              "choice": "<p>A. Create an Amazon Simple Notification Service (Amazon SNS) topic. Subscribe the email addresses of all operations team members to the SNS topic. Apply a notification configuration for the autoscaling:EC2_INSTANCE_LAUNCH notification type to all the existing Auto Scaling groups.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create an Amazon Simple Queue Service (Amazon SQS) queue. Add an AWS Lambda function trigger to the SQS queue. Apply a notification configuration for the autoscaling:EC2_INSTANCE_LAUNCH notification type to all the existing Auto Scaling groups.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an Amazon Simple Notification Service (Amazon SNS) topic. Subscribe the email addresses of all operations team members to the SNS topic. Apply a notification configuration for the autoscaling:EC2_INSTANCE_TERMINATE notification type to all the existing Auto Scaling groups.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create an Amazon Simple Queue Service (Amazon SQS) queue. Add an AWS Lambda function trigger to the SQS queue. Apply a notification configuration for the autoscaling:EC2_INSTANCE_TERMINATE notification type to all the existing Auto Scaling groups.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": []
     }
   ]
 }
