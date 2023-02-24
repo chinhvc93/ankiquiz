@@ -4954,7 +4954,7 @@ var DOP_C01_Part2 =
       "is_partially_correct": true,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: ADF</p>",
+      "general_feedback": "<p>Correct Answer: AEF</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -4977,13 +4977,18 @@ var DOP_C01_Part2 =
               "feedback": ""
             },
             {
-              "choice": "<p>D. Update the Lambda execution roles with permission to access the VPC and the EFS file system. E.  Create a VPC peering connection to connect Account A to Account B. <br></p>",
+              "choice": "<p>D. Update the Lambda execution roles with permission to access the VPC and the EFS file system.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E.  Create a VPC peering connection to connect Account A to Account B.<br></p>",
               "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>F. Configure the Lambda functions in Account B to assume an existing IAM role in Account A. <br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -6702,7 +6707,7 @@ var DOP_C01_Part2 =
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: B</p>",
+      "general_feedback": "<p>Correct Answer: A</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -6711,12 +6716,12 @@ var DOP_C01_Part2 =
           "answers": [
             {
               "choice": "<p>A. Enable caching for API Gateway stages. Use DynamoDB Accelerator (DAX) for the DynamoDB table.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>B. Enable caching tor API Gateway stages. Use Amazon ElastiCache for Memcached caching for the DynamoDB table.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
