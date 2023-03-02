@@ -6629,7 +6629,7 @@ var DOP_C01_Part2 =
         {
           "id": 791747,
           "date": "Sun 29 Jan 2023 16:00",
-          "username": "Bulti",
+          "username": "\t\t\t\tBulti\t\t\t",
           "content": "D is correct.",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: D"
@@ -6637,7 +6637,7 @@ var DOP_C01_Part2 =
         {
           "id": 778882,
           "date": "Tue 17 Jan 2023 13:09",
-          "username": "Boubou480",
+          "username": "\t\t\t\tBoubou480\t\t\t",
           "content": "This solution will meet the requirements because it uses EventBridge to match only high-severity GuardDuty findings, and it publishes a message to the SNS topic for near real-time notifications.",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: D"
@@ -6645,7 +6645,7 @@ var DOP_C01_Part2 =
         {
           "id": 774425,
           "date": "Fri 13 Jan 2023 13:10",
-          "username": "Oleg_gol",
+          "username": "\t\t\t\tOleg_gol\t\t\t",
           "content": "D<br>https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings_cloudwatch.html",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: D"
@@ -6663,7 +6663,7 @@ var DOP_C01_Part2 =
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: C</p>",
+      "general_feedback": "<p>Correct Answer: B</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -6677,12 +6677,12 @@ var DOP_C01_Part2 =
             },
             {
               "choice": "<p>B. Configure a threat list in GuardDuty. Set the source as the list of external IP ranges in the S3 bucket. Create an Amazon EventBridge rule that runs daily and invokes an AWS Lambda function. Configure the Lambda function to refresh the threat list in GuardDuty to match the list of external IP ranges in the S3 bucket.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>C. Configure a trusted IP list in GuardDuty. Set the source as the list of external IP ranges in the S3 bucket. Create an Amazon EventBridge rule that runs daily and invokes an AWS Lambda function. Configure the Lambda function to refresh the trusted IP list in GuardDuty to match the list of external IP ranges in the S3 bucket.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -6694,7 +6694,48 @@ var DOP_C01_Part2 =
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 821263,
+          "date": "Sat 25 Feb 2023 08:31",
+          "username": "\t\t\t\tMark1000\t\t\t\t\t\t\tSHoKMaSTeR\t\t\t",
+          "content": "It is definitely the B<br><br>https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_upload-lists.htmlAgree. From the link: \\\"For Location, specify the location of the list - this is the S3 bucket where you store your trusted IP list or threat list and the file that contains your list\\\"",
+          "upvote_count": "21",
+          "selected_answers": ""
+        },
+        {
+          "id": 822352,
+          "date": "Sun 26 Feb 2023 13:24",
+          "username": "\t\t\t\tSHoKMaSTeR\t\t\t",
+          "content": "Agree. From the link: \\\"For Location, specify the location of the list - this is the S3 bucket where you store your trusted IP list or threat list and the file that contains your list\\\"",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 820831,
+          "date": "Fri 24 Feb 2023 19:45",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "B is the right answer because configuring a threat list will automatically create a finding<br>not A because creates only filter not a finding<br>not C because we want to block the list not trust it<br>not D because creates only filter not finding",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 820461,
+          "date": "Fri 24 Feb 2023 13:30",
+          "username": "\t\t\t\tEurusTech\t\t\t",
+          "content": "C is the right answer https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_upload-lists.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 820316,
+          "date": "Fri 24 Feb 2023 10:56",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "Correct answere is A<br>https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_filter-findings.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
     },
     {
       "question_id": "#180",
@@ -6738,7 +6779,48 @@ var DOP_C01_Part2 =
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 822653,
+          "date": "Sun 26 Feb 2023 17:09",
+          "username": "\t\t\t\tkiiw\t\t\t",
+          "content": "DAX is recomended against memcached",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 820852,
+          "date": "Fri 24 Feb 2023 20:09",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "API GATEWAY CACHE/DAX combo good for caching/repeat requests and db throttling issue",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 820299,
+          "date": "Fri 24 Feb 2023 10:36",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "dynamodb DAX and api gateway caching",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 819274,
+          "date": "Thu 23 Feb 2023 15:13",
+          "username": "\t\t\t\tds50421\t\t\t",
+          "content": "Answer is A . Enable caching for API Gateway stages. Use DynamoDB Accelerator (DAX) for the DynamoDB table. Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for Amazon DynamoDB that delivers up to a 10 times performance improvement—from milliseconds to microseconds—even at millions of requests per second",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 819271,
+          "date": "Thu 23 Feb 2023 15:11",
+          "username": "\t\t\t\tds50421\t\t\t",
+          "content": "Answer is A . Enable caching for API Gateway stages. Use DynamoDB Accelerator (DAX) for the DynamoDB table. Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for Amazon DynamoDB that delivers up to a 10 times performance improvement—from milliseconds to microseconds—even at millions of requests per second",
+          "upvote_count": "2",
+          "selected_answers": ""
+        }
+      ]
     },
     {
       "question_id": "#181",
@@ -6782,7 +6864,24 @@ var DOP_C01_Part2 =
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 820861,
+          "date": "Fri 24 Feb 2023 20:20",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "voting D<br>A - also, does not say how the lambda knows the event to mark the ec2 instance <br>B -manual, not automated<br>C - too complex<br>D - will do the job",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 820300,
+          "date": "Fri 24 Feb 2023 10:38",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "I'll go with D<br>CloudWatch Logs subscription with step functions is not possible",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        }
+      ]
     },
     {
       "question_id": "#182",
@@ -6826,7 +6925,32 @@ var DOP_C01_Part2 =
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 820865,
+          "date": "Fri 24 Feb 2023 20:31",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "D<br>ECR lifecycle policies are meant for this",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 820505,
+          "date": "Fri 24 Feb 2023 14:28",
+          "username": "\t\t\t\tandy_sds\t\t\t",
+          "content": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 820303,
+          "date": "Fri 24 Feb 2023 10:39",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "D is the correct answere<br>https://docs.aws.amazon.com/AmazonECR/latest/userguide/lifecycle_policy_examples.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        }
+      ]
     },
     {
       "question_id": "#183",
@@ -6875,7 +6999,32 @@ var DOP_C01_Part2 =
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 820880,
+          "date": "Fri 24 Feb 2023 20:51",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "By increasing the Timeout, AWS CloudFormation will wait longer for the ResourceSignal, giving the resource more time to become available and signaling that it is ready. This can help prevent the stack creation from failing due to a premature timeout.<br>PT5M -> 5 minutes<br>also add, cfn-signal with exit code etc. in userdata<br>/opt/aws/bin/cfn-signal -e $? --stack <stack name> --resource <resource name>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
+          "id": 820515,
+          "date": "Fri 24 Feb 2023 14:42",
+          "username": "\t\t\t\tandy_sds\t\t\t",
+          "content": "https://aws.amazon.com/premiumsupport/knowledge-center/cloudformation-failed-signal/?nc1=h_ls",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
+          "id": 820308,
+          "date": "Fri 24 Feb 2023 10:44",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "https://aws.amazon.com/blogs/devops/use-a-creationpolicy-to-wait-for-on-instance-configurations/",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        }
+      ]
     },
     {
       "question_id": "#184",
@@ -6919,7 +7068,40 @@ var DOP_C01_Part2 =
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 822368,
+          "date": "Sun 26 Feb 2023 13:46",
+          "username": "\t\t\t\tSHoKMaSTeR\t\t\t",
+          "content": "RunPowerShellScript exists (I couldn't image it). In addition, SNS is better than SES, it does not mention that the notification has to be sent by e-mail.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 820899,
+          "date": "Fri 24 Feb 2023 21:06",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "not A,D - runremotescript is for linux<br>not C - too slow<br>B - quick",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 820320,
+          "date": "Fri 24 Feb 2023 11:02",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "B is good",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 819283,
+          "date": "Thu 23 Feb 2023 15:21",
+          "username": "\t\t\t\tds50421\t\t\t",
+          "content": "windows=powershell",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
     },
     {
       "question_id": "#185",
@@ -6968,7 +7150,56 @@ var DOP_C01_Part2 =
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 821315,
+          "date": "Sat 25 Feb 2023 09:40",
+          "username": "\t\t\t\tMark1000\t\t\t",
+          "content": "AB<br><br>The only resource to deploy is a lambda, it is not a global resource, D is discarded, C has no impact, E the account has to be the delegate.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 821115,
+          "date": "Sat 25 Feb 2023 03:19",
+          "username": "\t\t\t\tandy_sds\t\t\t",
+          "content": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-troubleshooting.html",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: BD"
+        },
+        {
+          "id": 820911,
+          "date": "Fri 24 Feb 2023 21:24",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "A - StackSets cannot create or update stack instances in regions that do not exist in the stack set.<br>B-the delegated administrator account must be authorized to perform actions in the target account.<br>NOT C - enabling termination protection on the resources in the stack should not affect the stack instance status.<br>NOT D - creating unique global resources should not affect the stack instance status; if you create a non-unique global resource, it would result in stack creation failure not instance status of outdated.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: AB"
+        },
+        {
+          "id": 820322,
+          "date": "Fri 24 Feb 2023 11:03",
+          "username": "\t\t\t\tsaeidp\t\t\t\t\t\t\tsaeidp\t\t\t\t\t\t\tsaeidp\t\t\t",
+          "content": "B and D are the best answeresGlobal resources like s3 bucket name must be insured that are given unique name regardless of region or accountA is wrong. You can have your stack sets defined in a different region but deploy stacks in other regions",
+          "upvote_count": "312",
+          "selected_answers": "Selected Answer: BD"
+        },
+        {
+          "id": 820324,
+          "date": "Fri 24 Feb 2023 11:04",
+          "username": "\t\t\t\tsaeidp\t\t\t\t\t\t\tsaeidp\t\t\t",
+          "content": "Global resources like s3 bucket name must be insured that are given unique name regardless of region or accountA is wrong. You can have your stack sets defined in a different region but deploy stacks in other regions",
+          "upvote_count": "12",
+          "selected_answers": ""
+        },
+        {
+          "id": 821989,
+          "date": "Sun 26 Feb 2023 02:49",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "A is wrong. You can have your stack sets defined in a different region but deploy stacks in other regions",
+          "upvote_count": "2",
+          "selected_answers": ""
+        }
+      ]
     },
     {
       "question_id": "#186",
@@ -6981,7 +7212,7 @@ var DOP_C01_Part2 =
       "is_partially_correct": true,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: CD</p>",
+      "general_feedback": "<p>Correct Answer: BE</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -6995,29 +7226,62 @@ var DOP_C01_Part2 =
             },
             {
               "choice": "<p>B. Create and apply SCPs in the destination OU to restrict the types of resources that can be created in the small company’s account. Assess the impact of the applied SCPs on the small company's account. Delete existing SCPs in the small company’s account.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>C. Create an AWS Config conformance pack that contains the policies that are currently applied to the large company's account. Use AWS Config to assess the impact that enrollment in AWS Control Tower will have on the small company's account. Delete the configuration recorder and delivery channels from the AWS Config settings of the small company's account.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>D. Enroll the OU of the small company's account in the large company’s AWS Control Tower environment. Specify the destination OU in the large company's AWS Control Tower landing zone as the receiving OU in the request.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>E. Create an AWSControlTowerExecution role in the small company's account. Provide the account's email address, the account owner's first and last name, and the destination OU to complete the AWS Control Tower Account Factory enrollment request.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 822826,
+          "date": "Sun 26 Feb 2023 19:32",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "Agree, BE<br>E -per saeidp aws link, \\\"you must add this role to each account before you enroll it.\\\"",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: BE"
+        },
+        {
+          "id": 822019,
+          "date": "Sun 26 Feb 2023 03:43",
+          "username": "\t\t\t\tsaeidp\t\t\t\t\t\t\tsaeidp\t\t\t",
+          "content": "Trusted access is necessary. AWSControlTowerExecution role conducts activities required to manage the small account.<br>Place the account into the OU and Apply all the SCPs that are applied in the current OUhttps://docs.aws.amazon.com/controltower/latest/userguide/enroll-account.html",
+          "upvote_count": "21",
+          "selected_answers": "Selected Answer: BE"
+        },
+        {
+          "id": 822031,
+          "date": "Sun 26 Feb 2023 04:00",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "https://docs.aws.amazon.com/controltower/latest/userguide/enroll-account.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 820931,
+          "date": "Fri 24 Feb 2023 21:44",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "A -company needs to enroll first<br>B -small fish needs to comply with big fish <br>C - not required for enrollment<br>D - there is no OU to enroll<br>E - This role is used for automated operations in AWS Control Tower, such as creating new accounts and setting up guardrails.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: AB"
+        }
+      ]
     },
     {
       "question_id": "#187",
@@ -7061,7 +7325,1626 @@ var DOP_C01_Part2 =
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 820938,
+          "date": "Fri 24 Feb 2023 21:58",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "not A - why launch, need terminate notice<br>not B -same as above<br>C -does the job<br>not D - convoluted",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 820326,
+          "date": "Fri 24 Feb 2023 11:06",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "C probably<br>EC2_INSTANCE_TERMINATE plus SNS",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
+    },
+    {
+      "question_id": "#188",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company is hosting a web application in an AWS Region. For disaster recovery purposes, a second region is being used as a standby. Disaster recovery requirements state that session data must be replicated between regions in near-real time and 1% of requests should route to the secondary region to continuously verify system functionality. Additionally, if there is a disruption in service in the main region, traffic should be automatically routed to the secondary region, and the secondary region must be able to scale up to handle all traffic.<br><br>How should a DevOps engineer meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#188",
+          "answers": [
+            {
+              "choice": "<p>A. In both regions, deploy the application on AWS Elastic Beanstalk and use Amazon DynamoDB global tables for session data. Use an Amazon Route 53 weighted routing policy with health checks to distribute the traffic across the regions.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. In both regions, launch the application in Auto Scaling groups and use DynamoDB for session data. Use a Route 53 failover routing policy with health checks to distribute the traffic across the regions.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. In both regions, deploy the application in AWS Lambda, exposed by Amazon API Gateway, and use Amazon RDS PostgreSQL with cross-region replication for session data. Deploy the web application with client-side logic to call the API Gateway directly.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. In both regions, launch the application in Auto Scaling groups and use DynamoDB global tables for session data. Enable an Amazon CloudFront weighted distribution across regions. Point the Amazon Route 53 DNS record at the CloudFront distribution.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 827030,
+          "date": "Thu 02 Mar 2023 16:09",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "revising my pick, A seems right<br>not B because it is either/or failover policy i.e. no 1 percent traffic<br>not C as this is a web app<br>not D, as this is just two regions and cloudfront may not be needed",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 826482,
+          "date": "Thu 02 Mar 2023 04:56",
+          "username": "\t\t\t\tSS2023\t\t\t",
+          "content": "only choice with route53 weighted routing policy that is needed to route 1% traffic.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 826398,
+          "date": "Thu 02 Mar 2023 03:28",
+          "username": "\t\t\t\tcatboy\t\t\t",
+          "content": "A is right",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826369,
+          "date": "Thu 02 Mar 2023 02:58",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "A is better than the others. Dynamodb global must be used",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 826071,
+          "date": "Wed 01 Mar 2023 17:33",
+          "username": "\t\t\t\tdangal97\t\t\t",
+          "content": "In both regions, launch the application in Auto Scaling groups and use DynamoDB for session data. Use a Route 53 failover routing policy with health checks to distribute the traffic across the regions.<br><br>This solution meets all the requirements mentioned in the question. The use of Auto Scaling groups and DynamoDB allows the application to scale up and down in response to changes in traffic, and DynamoDB's cross-region replication provides near-real-time replication of session data. The use of a Route 53 failover routing policy ensures that traffic is routed to the secondary region in case of a disruption in service in the main region. The 1% traffic routing requirement can be achieved by configuring Route 53's traffic flow policies to direct a portion of traffic to the secondary region.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 826001,
+          "date": "Wed 01 Mar 2023 16:09",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "Option D is the correct answer because it uses DynamoDB global tables for near-real-time replication of session data, CloudFront for a weighted distribution of traffic across regions, and Route 53 for DNS resolution with health checks to automatically route traffic to the secondary region in case of a disruption. This option also meets the requirement to continuously verify system functionality by routing 1% of requests to the secondary region.",
+          "upvote_count": "4",
+          "selected_answers": "Selected Answer: D"
+        }
+      ]
+    },
+    {
+      "question_id": "#189",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company is implementing an Amazon Elastic Container Service (Amazon ECS) cluster to run its workload. The company architecture will run multiple ECS services on the cluster. The architecture includes an Application Load Balancer on the front end and uses multiple target groups to route traffic.<br><br>A DevOps engineer must collect application and access logs. The DevOps engineer then needs to send the logs to an Amazon S3 bucket for near-real-time analysis.<br><br>Which combination of steps must the DevOps engineer take to meet these requirements? (Choose three.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: BDF</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#189",
+          "answers": [
+            {
+              "choice": "<p>A. Download the Amazon CloudWatch Logs container instance from AWS. Configure this instance as a task. Update the application service definitions to include the logging task<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Install the Amazon CloudWatch Logs agent on the ECS instances. Change the logging driver in the ECS task definition to awslogs.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Use Amazon EventBridge to schedule an AWS Lambda function that will run every 60 seconds and will run the Amazon CloudWatch Logs create-export-task command. Then point the output to the logging S3 bucket.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Activate access logging on the ALB.  Then point the ALB directly to the logging S3 bucket.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Activate access logging on the target groups that the ECS services use. Then send the logs directly to the logging S3 bucket.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. Create an Amazon Kinesis Data Firehose delivery stream that has a destination of the logging S3 bucket. Then create an Amazon CloudWatch Logs subscription filter for Kinesis Data Firehose.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826381,
+          "date": "Thu 02 Mar 2023 03:07",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "It seems B D F",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: BDF"
+        },
+        {
+          "id": 826072,
+          "date": "Wed 01 Mar 2023 17:35",
+          "username": "\t\t\t\tdangal97\t\t\t",
+          "content": "I will go with B,E and F",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BEF"
+        },
+        {
+          "id": 826010,
+          "date": "Wed 01 Mar 2023 16:18",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "BEF<br>A - not necessary when using cloudwatch logs agent<br>B - correct, logs will be captured<br>C - not efficient<br>D - does not capture ECS logs, only ALB<br>E - correct, captures access logs<br>F - correct, firehose to s3 is good.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BEF"
+        }
+      ]
+    },
+    {
+      "question_id": "#190",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company has developed a static website hosted on an Amazon S3 bucket. The website is deployed using AWS CloudFormation. The Cloud Formation template defines an S3 bucket and a custom resource that copies content into the bucket from a source location.<br><br>The company has decided that it needs to move the website to a new location, so the existing CloudFormation stack must be deleted and re-created. However, CloudFormation reports that the stack could not be deleted cleanly.<br><br>What is the MOST likely cause and how can the DevOps engineer mitigate this problem for this and future versions of the website?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#190",
+          "answers": [
+            {
+              "choice": "<p>A. Deletion has failed because the S3 bucket has an active website configuration. Modify the CloudFormation template to remove the WebsiteConfiguration property from the S3 bucket resource<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Deletion has failed because the S3 bucket is not empty. Modify the custom resource's AWS Lambda function code to recursively empty the bucket when RequestType is Delete.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Deletion has failed because the custom resource does not define a deletion policy. Add a DeletionPolicy property to the custom resource definition with a value of RemoveOnDeletion.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Deletion has failed because the S3 bucket is not empty. Modify the S3 bucket resource in the CloudFormation template to add a DeletionPolicy property with a value of Empty.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826405,
+          "date": "Thu 02 Mar 2023 03:32",
+          "username": "\t\t\t\tcatboy\t\t\t",
+          "content": "Agree with B",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826387,
+          "date": "Thu 02 Mar 2023 03:11",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "B is correct. Custom resource",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 826106,
+          "date": "Wed 01 Mar 2023 18:10",
+          "username": "\t\t\t\tMark1000\t\t\t",
+          "content": "B is the right answer",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826076,
+          "date": "Wed 01 Mar 2023 17:38",
+          "username": "\t\t\t\tdangal97\t\t\t",
+          "content": "I will go with B",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 826023,
+          "date": "Wed 01 Mar 2023 16:27",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "A - not necessary <br>B - not a recommended approach<br>C - not applicable<br>D - correct",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        }
+      ]
+    },
+    {
+      "question_id": "#191",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company is reviewing its IAM policies. One policy written by the DevOps engineer has been flagged as too permissive. The policy is used by an AWS Lambda function that issues a stop command to Amazon EC2 instances tagged with Environment: NonProduction over the weekend. The current policy is:<br><br><img src=\"https://img.examtopics.com/aws-devops-engineer-professional/image7.png\"><br><br>What changes should the engineer make to achieve a policy of least permission? (Choose three.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: DEF</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#191",
+          "answers": [
+            {
+              "choice": "<p>A. Add the following conditional expression:<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Change “Resource”: “*” to “Resource”: “arn:aws:ec2:*:*:instance/*”<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Add the following conditional expression:<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Add the following conditional expression:<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Change “Action”: “ec2:*” to “Action”: “ec2:StopInstances”<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. Add the following conditional expression:<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826507,
+          "date": "Thu 02 Mar 2023 05:58",
+          "username": "\t\t\t\tawsgeek\t\t\t",
+          "content": "DEF<br>https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_ec2-start-stop-tags.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826484,
+          "date": "Thu 02 Mar 2023 05:11",
+          "username": "\t\t\t\tSS2023\t\t\t",
+          "content": "DEF looks good to me.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: DEF"
+        },
+        {
+          "id": 826433,
+          "date": "Thu 02 Mar 2023 03:52",
+          "username": "\t\t\t\tcatboy\t\t\t",
+          "content": "I select DEF",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826392,
+          "date": "Thu 02 Mar 2023 03:20",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "I go with B E F",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BEF"
+        },
+        {
+          "id": 826213,
+          "date": "Wed 01 Mar 2023 20:28",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "ABC does not meet requirement",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: DEF"
+        },
+        {
+          "id": 825918,
+          "date": "Wed 01 Mar 2023 14:57",
+          "username": "\t\t\t\tds50421\t\t\t",
+          "content": "BDF is my answer",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BDF"
+        }
+      ]
+    },
+    {
+      "question_id": "#192",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company updated the AWS CloudFormation template for a critical business application. The stack update process failed due to an error in the updated template, and AWS CloudFormation automatically began the stack rollback process. Later, a DevOps engineer discovered that the application was still unavailable and that the stack was in the UPDATE_ROLLBACK_FAILED state.<br><br>Which combination of actions should the DevOps engineer perform so that the stack rollback can complete successfully? (Choose two.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: CD</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#192",
+          "answers": [
+            {
+              "choice": "<p>A. Attach the AWSCIoudFormationFullAccess IAM policy to the AWS CloudFormation role.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Automatically recover the stack resources by using AWS CloudFormation drift detection.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Issue a ContinueUpdateRollback command from the AWS CloudFormation console or the AWS CLI.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Manually adjust the resources to match the expectations of the stack.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Update the existing AWS CloudFormation stack by using the original template.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826435,
+          "date": "Thu 02 Mar 2023 03:56",
+          "username": "\t\t\t\tcatboy\t\t\t",
+          "content": "agree with CD",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826394,
+          "date": "Thu 02 Mar 2023 03:23",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "I go with C and D",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: CD"
+        },
+        {
+          "id": 826104,
+          "date": "Wed 01 Mar 2023 18:09",
+          "username": "\t\t\t\tMark1000\t\t\t",
+          "content": "CD<br><br>https://aws.amazon.com/es/premiumsupport/knowledge-center/cloudformation-update-rollback-failed/",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826030,
+          "date": "Wed 01 Mar 2023 16:32",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "A - not necessary<br>B - not a suitable approach<br>C - correct<br>D - correct<br>E - does not address the issue",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: CD"
+        }
+      ]
+    },
+    {
+      "question_id": "#193",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A DevOps engineer is creating an AWS CloudFormation template to deploy a web service. The web service will run on Amazon EC2 instances in a private subnet behind an Application Load Balancer (ALB). The DevOps engineer must ensure that the service can accept requests from clients that have IPv6 addresses.<br><br>What should the DevOps engineer do with the CloudFormation template so that IPv6 clients can access the web service?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: D</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#193",
+          "answers": [
+            {
+              "choice": "<p>A. Add an IPv6 CIDR block to the VPC and the private subnet for the EC2 instances. Create route table entries for the IPv6 network, use EC2 instance types that support IPv6, and assign IPv6 addresses to each EC2 instance.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Assign each EC2 instance an IPv6 Elastic IP address. Create a target group and add the EC2 instances as targets. Create a listener on port 443 of the ALB, and associate the target group with the ALB. <br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Replace the ALB with a Network Load Balancer (NLB). Add an IPv6 CIDR block to the VPC and subnets for the NLB, and assign the NLB an IPv6 Elastic IP address.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Add an IPv6 CIDR block to the VPC and subnets for the ALB.  Create a listener on port 443, and specify the dualstack IP address type on the ALB.  Create a target group and add the EC2 instances as targets. Associate the target group with the ALB. <br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826442,
+          "date": "Thu 02 Mar 2023 04:02",
+          "username": "\t\t\t\tcatboy\t\t\t",
+          "content": "D is right",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826401,
+          "date": "Thu 02 Mar 2023 03:29",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "D is correct",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 826235,
+          "date": "Wed 01 Mar 2023 21:02",
+          "username": "\t\t\t\tMark1000\t\t\t",
+          "content": "D<br><br>Dualstack IP",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826035,
+          "date": "Wed 01 Mar 2023 16:37",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "A - unnecessary<br>B - unnecessary as ALB is doing the routing<br>C - unnecessary<br>D - meets requirement",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 825925,
+          "date": "Wed 01 Mar 2023 15:01",
+          "username": "\t\t\t\tds50421\t\t\t",
+          "content": "D is my answer",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        }
+      ]
+    },
+    {
+      "question_id": "#194",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company has migrated its container-based applications to Amazon EKS and want to establish automated email notifications. The notifications sent to each email address are for specific activities related to EKS components. The solution will include Amazon SNS topics and an AWS Lambda function to evaluate incoming log events and publish messages to the correct SNS topic.<br><br>Which logging solution will support these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: A</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#194",
+          "answers": [
+            {
+              "choice": "<p>A. Enable Amazon CloudWatch Logs to log the EKS components. Create a CloudWatch subscription filter for each component with Lambda as the subscription feed destination.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Enable Amazon CloudWatch Logs to log the EKS components. Create CloudWatch Logs Insights queries linked to Amazon EventBridge events that invoke Lambda.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Enable Amazon S3 logging for the EKS components. Configure an Amazon CloudWatch subscription filter for each component with Lambda as the subscription feed destination.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Enable Amazon S3 logging for the EKS components. Configure S3 PUT Object event notifications with AWS Lambda as the destination.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826449,
+          "date": "Thu 02 Mar 2023 04:10",
+          "username": "\t\t\t\tcatboy\t\t\t",
+          "content": "A is right",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826037,
+          "date": "Wed 01 Mar 2023 16:43",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "A - meets requirement<br>B - inefficient<br>C - lambda subscription unnecessary in this case<br>D - may not meet the requirement",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
+    },
+    {
+      "question_id": "#195",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company has a web application that users access over the internet. The web application runs on Amazon EC2 instances behind an Application Load Balancer (ALB). The EC2 instances are in an Auto Scaling group. The ALB is associated with a security group that allows traffic from the internet. The web application has a local cache on each EC2 instance.<br><br>During a recent security incident requests overloaded the web application and caused an outage for the company's customers. In response to the incident, the company added Amazon CloudFront in front of the web application. All customers now access the web application through CloudFront.<br><br>A DevOps engineer must implement a solution that routes all requests through CloudFront. The solution also must give the company the ability to block requests based on the content of the requests, such as header or body information.<br><br>Which combination of steps should the DevOps engineer take to meet these requirements? (Choose two.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: AB</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#195",
+          "answers": [
+            {
+              "choice": "<p>A. Create an AWS WAF web ACL. Associate the web ACL with the CloudFront distribution. Create rules for each type of traffic that the company wants to block.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create new ALB listener rules on the existing listeners. Configure the new rules to allow or reject incoming traffic based on whether the host header matches the CloudFront fully qualified domain name (FQDN).<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an AWS PrivateLink endpoint service for the ALB Configure the endpoint service to allow requests from CloudFront. Update the web application origin in CloudFront to use the newly created endpoint service's DNS name.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create a CloudFront origin access identity (OAI) for the web application. Update the web application origin in CloudFront to use the OAI Update the ALB rules to check for the OAI and return an HTTP 403 error if the OAI header is not present.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Create an AWS Firewall Manager security policy. Attach the security policy to the CloudFront distribution. Use the security policy to attach AWS WAF rule groups for each type of traffic that the company wants to block.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 827057,
+          "date": "Thu 02 Mar 2023 16:46",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "agree, revising my pick to AB.  ALB can do the content based routing better here.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AB"
+        },
+        {
+          "id": 826407,
+          "date": "Thu 02 Mar 2023 03:35",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "A and B for me",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: AB"
+        },
+        {
+          "id": 826073,
+          "date": "Wed 01 Mar 2023 17:35",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "Both options A and E provide ways to block requests based on the content of the requests",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: AE"
+        }
+      ]
+    },
+    {
+      "question_id": "#196",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company needs to scan code changes for security issues before deployment and must prevent noncompliant code from being deployed. The company uses an AWS CodePipeline pipeline that starts when code changes occur. The code changes occur many times each day.<br><br>The company's security team supports a third-party application for code scans and has provided command-line integration steps to submit code scans. The code scan step requires a user name and password.<br><br>Which solution will meet these requirements in the MOST secure way?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#196",
+          "answers": [
+            {
+              "choice": "<p>A. Create a new AWS CodeBuild project. Configure the user name and password in an environment variable. Use the user name and password to run the command-line integration steps. Update the CodePipeline pipeline to include a new scan stage. In the new scan stage, include a test action that uses the newly created CodeBuild project.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create a new AWS CodeBuild project. Store the user name and password as a secret in AWS Secrets Manager Read the secret from Secrets Manager. Use the user name and password to run the command-line integration steps. Update the CodePipeline pipeline to include a new scan stage. In the new scan stage, include a test action that uses the newly created CodeBuild project.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create a new AWS CodeBuild project. Store the user name and password as a string in AWS Systems Manager Parameter Store. Read the string from Parameter Store. Use the user name and password to run the command-line integration steps. Update the CodePipeline pipeline to include a new scan stage. In the new scan stage, include a test action that uses the newly created CodeBuild project.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Upload the user name and password in an encrypted JSON file to an Amazon S3 bucket that has a specific policy to allow only administrators to read the file. Create a new AWS CodeBuild project. Use the user name and password from the file in Amazon S3 to run the command-line integration steps. Update the CodePipeline pipeline to include a new scan stage. In the new scan stage, include a test action that uses the newly created CodeBuild project.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826462,
+          "date": "Thu 02 Mar 2023 04:18",
+          "username": "\t\t\t\tcatboy\t\t\t",
+          "content": "agree with B",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 826411,
+          "date": "Thu 02 Mar 2023 03:39",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "B is correct \\\"Secret manager\\\"",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 826077,
+          "date": "Wed 01 Mar 2023 17:39",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "B is most secure way",
+          "upvote_count": "4",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
+    },
+    {
+      "question_id": "#197",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company uses AWS CloudFormation to manage an application that runs on Amazon EC2 Instances. The instances are in an Amazon EC2 Auto Scaling group. The company wants to treat its infrastructure as immutable.<br><br>A DevOps engineer must implement a solution to replace two EC2 instances at a time whenever operating system configuration updates are needed or when new Amazon Machine. Images (AMIs) are needed. A minimum of four EC2 instances must be running whenever an update is in progress.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: A</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#197",
+          "answers": [
+            {
+              "choice": "<p>A. Modify the CloudFormation template to include an UpdatePolicy attribute for the Auto Scaling group. Include the AutoScalingRollingUpdate policy with MinInstancesInService of 4 and MaxBatchSize of 2. Whenever a software update is needed, alter either or both of the ImageId and UserData of the AWS::EC2::LaunchTemplate and update the stack.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Set the Auto Scaling group’s minimum capacity to 4. Create an AWS CodeDeploy deployment group that has an in-place deployment type. Select Amazon EC2 Auto Scaling group for the environment configuration. Whenever a new revision is available, create a new CodeDeploy deployment that has a deployment configuration of CodeDeployDefault HalfAtATime.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Set the Auto Scaling group's minimum capacity to 4. Create an AWS CodeDeploy deployment group that has a blue/green deployment type. Select Amazon EC2 Auto Scaling group for the environment configuration. Whenever a new revision is available, create a new CodeDeploy deployment that has a deployment configuration of CodeDeployDefault HalfAtATime.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Modify the CloudFormation template to include a StackPolicy. Designate an AutoScalingReplacingUpdate policy to control the update. Specify MinInstancesInService of 4 and MaxBatchSize of 2. Whenever a software update is needed, alter either or both of the ImageId and UserData of the AWS::EC2::LaunchTemplate and update the stack.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826438,
+          "date": "Thu 02 Mar 2023 03:59",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "A is the best",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 826084,
+          "date": "Wed 01 Mar 2023 17:45",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "Option B is incorrect because it suggests using AWS CodeDeploy to perform an in-place deployment type, which is not appropriate for replacing EC2 instances in batches.<br><br>Option C is incorrect because it suggests using AWS CodeDeploy to perform a blue/green deployment type, which is not appropriate for replacing EC2 instances in batches.<br><br>Option D is incorrect because it suggests using a StackPolicy to control the update, which is not appropriate for this use case.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 826082,
+          "date": "Wed 01 Mar 2023 17:44",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "Option A is the correct solution. It involves modifying the CloudFormation template to include an UpdatePolicy attribute for the Auto Scaling group with the AutoScalingRollingUpdate policy. This policy allows for rolling updates that replace instances in batches of a specified size, which in this case is two instances at a time. The MinInstancesInService attribute ensures that a minimum of four instances are running whenever an update is in progress. To update the software, either the ImageId or UserData of the AWS::EC2::LaunchTemplate is altered and the stack is updated.",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
+    },
+    {
+      "question_id": "#198",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A video-sharing company stores its videos in Amazon S3. The company has observed a sudden increase in video access requests, but the company does not know which videos are most popular. The company needs to identify the general access pattern for the video files. This pattern includes the number of users who access a certain file on a given day, as well as the number of pull requests for certain files.<br><br>How can the company meet these requirements with the LEAST amount of effort?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#198",
+          "answers": [
+            {
+              "choice": "<p>A. Activate S3 server access logging. Import the access logs into an Amazon Aurora database. Use an Aurora SQL query to analyze the access patterns.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Activate S3 server access logging. Use Amazon Athena to create an external table with the log files. Use Athena to create a SQL query to analyze the access patterns.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Invoke an AWS Lambda function for every S3 object access event. Configure the Lambda function to write the file access information, such as user, S3 bucket, and file key, to an Amazon Aurora database. Use an Aurora SQL query to analyze the access patterns.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Record an Amazon CloudWatch Logs log message for every S3 object access event. Configure a CloudWatch Logs log stream to write the file access information such as user. S3 bucket, and file key, to an Amazon Kinesis Data Analytics for SQL application. Perform a sliding window analysis.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826440,
+          "date": "Thu 02 Mar 2023 04:01",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "B is correct",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 826089,
+          "date": "Wed 01 Mar 2023 17:50",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "Option A involves importing S3 server access logs into an Amazon Aurora database, which requires more effort than using Amazon Athena. Additionally, Aurora is a more complex and expensive option than Athena for this use case.<br><br>Option C involves invoking an AWS Lambda function for every S3 object access event and storing the file access information in an Amazon Aurora database. This option requires more setup and ongoing management than using Amazon Athena, which is a simpler and more cost-effective solution.<br><br>Option D involves recording a CloudWatch Logs log message for every S3 object access event and sending the log stream to an Amazon Kinesis Data Analytics for SQL application. This option requires additional setup and configuration, which makes it less straightforward and more time-consuming than using Amazon Athena. Additionally, using Kinesis Data Analytics for SQL may be overkill for this use case, as it is primarily designed for real-time streaming data analysis, which is not a requirement for the current scenario.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826088,
+          "date": "Wed 01 Mar 2023 17:48",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "Activating S3 server access logging and using Amazon Athena to create an external table with the log files is the easiest and most cost-effective way to analyze access patterns. This option requires minimal setup and allows for quick analysis of the access patterns with SQL queries. Additionally, Amazon Athena scales automatically to match the query load, so there is no need for additional infrastructure provisioning or management.",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
+    },
+    {
+      "question_id": "#199",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A DevOps engineer is working on a project that is hosted on Amazon Linux and has failed a security review. The DevOps manager has been asked to review the company buildspec.yaml file for an AWS CodeBuild project and provide recommendations. The buildspec.yaml file is configured as follows:<br><br><img src=\"https://img.examtopics.com/aws-devops-engineer-professional/image12.png\"><br><br>What changes should be recommended to comply with AWS security best practices? (Choose three.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: ABC</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#199",
+          "answers": [
+            {
+              "choice": "<p>A. Add a post-build command to remove the temporary files from the container before termination to ensure they cannot be seen by other CodeBuild users.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Update the CodeBuild project role with the necessary permissions and then remove the AWS credentials from the environment variable.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Store the DB_PASSWORD as a SecureString value in AWS Systems Manager Parameter Store and then remove the DB_PASSWORD from the environment variables.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Move the environment variables to the ‘db-deploy-bucket’ Amazon S3 bucket add a prebuild stage to download, then export the variables.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Use AWS Systems Manager run command versus scp and ssh commands directly to the instance.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. Scramble the environment variables using XOR followed by Base64, add a section to install, and then run XOR and Base64 to the build phase.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826219,
+          "date": "Wed 01 Mar 2023 20:38",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "Option A: Remove temporary files post-build.<br>Option B: Remove AWS credentials from environment.<br>Option C: Store DB_PASSWORD in Parameter Store.<br>Option D: Move environment variables to S3. ok, ABC options above will meet requirement.<br>Option E: Using SSM run command is good for securing instances not directly related to this process.<br>Option F: Scramble environment variables is adding complexity.",
+          "upvote_count": "5",
+          "selected_answers": "Selected Answer: ABC"
+        },
+        {
+          "id": 826445,
+          "date": "Thu 02 Mar 2023 04:05",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "A B C are the correct ones",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: ABC"
+        }
+      ]
+    },
+    {
+      "question_id": "#200",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A DevOps engineer at a company is supporting an AWS environment in which all users use AWS IAM identity Center (AWS Single Sign-On). The company wants to immediately disable credentials of any new IAM user and wants the security team to receive a notification.<br><br>Which combination of steps should the DevOps engineer take to meet these requirements? (Choose three.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: ACE</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#200",
+          "answers": [
+            {
+              "choice": "<p>A. Create an Amazon EventBridge rule that reacts to an IAM CreateUser API call in AWS CloudTrail.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create an Amazon EventBridge rule that reacts to an IAM GetLoginProfile API call in AWS CloudTrail.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an AWS Lambda function that is a target of the EventBridge rule. Configure the Lambda function to disable any access keys and delete the login profiles that are associated with the IAM user.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create an AWS Lambda function that is a target of the EventBridge rule. Configure the Lambda function to delete the login profiles that are associated with the IAM user.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Create an Amazon Simple Notification Service (Amazon SNS) topic that is a target of the EventBridge rule. Subscribe the security team’s group email address to the topic.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. Create an Amazon Simple Queue Service (Amazon SQS) queue that is a target of the Lambda function. Subscribe the security team's group email address to the queue.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826451,
+          "date": "Thu 02 Mar 2023 04:10",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "A C E are the correct ones",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: ACE"
+        },
+        {
+          "id": 826102,
+          "date": "Wed 01 Mar 2023 18:08",
+          "username": "\t\t\t\tdangal97\t\t\t",
+          "content": "I will go with A,C&E",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: ACE"
+        },
+        {
+          "id": 826092,
+          "date": "Wed 01 Mar 2023 17:53",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "ACE meets requirement",
+          "upvote_count": "4",
+          "selected_answers": "Selected Answer: ACE"
+        }
+      ]
+    },
+    {
+      "question_id": "#201",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>An ecommerce company is receiving reports that its order history page is experiencing delays in reflecting the processing status of orders. The order processing system consists of an AWS Lambda function that uses reserved concurrency. The Lambda function processes order messages from an Amazon Simple Queue Service (Amazon SQS) queue and inserts processed orders into an Amazon DynamoDB table. The DynamoDB table has auto scaling enabled for read and write capacity.<br><br>Which actions should a DevOps engineer take to resolve this delay? (Choose two.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: AD</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#201",
+          "answers": [
+            {
+              "choice": "<p>A. Check the ApproximateAgeOfOldestMessage metric for the SQS queue. Increase the Lambda function concurrency limit.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Check the ApproximateAgeOfOldestMessage metric for the SQS queue. Configure a redrive policy on the SQS queue.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Check the NumberOfMessagesSent metric for the SQS queue. Increase the SQS queue visibility timeout.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Check the WriteThrottleEvents metric for the DynamoDB table. Increase the maximum write capacity units (WCUs) for the table's scaling policy.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Check the Throttles metric for the Lambda function. Increase the Lambda function timeout.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826459,
+          "date": "Thu 02 Mar 2023 04:15",
+          "username": "\t\t\t\tsaeidp\t\t\t\t\t\t\tsaeidp\t\t\t",
+          "content": "A and D are the correct answers.maximum write capacity and read capacity are adjustable in dynabodb auto scaling",
+          "upvote_count": "11",
+          "selected_answers": ""
+        },
+        {
+          "id": 826461,
+          "date": "Thu 02 Mar 2023 04:17",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "maximum write capacity and read capacity are adjustable in dynabodb auto scaling",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826193,
+          "date": "Wed 01 Mar 2023 19:58",
+          "username": "\t\t\t\tds50421\t\t\t",
+          "content": "Ad is answer",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
+          "id": 826094,
+          "date": "Wed 01 Mar 2023 17:58",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "AD will help resolve the issue",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: AD"
+        }
+      ]
+    },
+    {
+      "question_id": "#202",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company has an application that runs on current-generation Amazon EC2 instances in a VPC.  The EC2 instances run Amazon Linux and are launched in an Amazon EC2 Auto Scaling group. The application retrieves data from an Amazon S3 bucket, processes the data, and uploads the processed data to a different S3 bucket.<br><br>Recently, the application's performance worsened. A manual investigation identified that outbound network bandwidth utilization was too high for the type of EC2 instance. The company updated the EC2 instances to a larger EC2 instance size.<br><br>The company's DevOps team needs to receive notification from an Amazon CloudWatch alarm if the application attempts to use more outbound network bandwidth than is available to the EC2 instances.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#202",
+          "answers": [
+            {
+              "choice": "<p>A. Configure EC2 detailed monitoring for the EC2 instances. Create an AWS Lambda function to create a CloudWatch alarm for the bw_out_allowance_exceeded CloudWatch metric for each EC2 instance Configure the alarm to notify the DevOps team.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Configure the unified CloudWatch agent on the EC2 instances to export the bw_out_allowance_exceeded metric to CloudWatch metrics. Create a CloudWatch composite alarm to monitor all bw_out_allowance_exceeded metrics. Configure the alarm to notify the DevOps team.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Configure VPC flow logging to Amazon CloudWatch Logs for the EC2 instances. Create a CloudWatch Logs metric filter to match events in which bandwidth allowance is exceeded. Create a CloudWatch composite alarm to monitor all bw_out_allowance_exceeded metrics. Configure the alarm to notify the DevOps team.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Configure the unified CloudWatch agent on the EC2 instances to export the bw_out_allowance_exceeded metric to CloudWatch metrics. Create an AWS Lambda function to create a CloudWatch alarm for the bw_out_allowance_exceeded CloudWatch metric for each EC2 instance. Configure the alarm to notify the DevOps team.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826467,
+          "date": "Thu 02 Mar 2023 04:24",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "Yes, B is the answer<br>https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-ec2-instance-level-network-performance-metrics-uncover-new-insights/",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 826150,
+          "date": "Wed 01 Mar 2023 19:14",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "voting for B",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
+    },
+    {
+      "question_id": "#203",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company uses Application Load Balancers (ALBs) as part of its application architecture. The company has ALBs in AWS accounts that are part of an organization in AWS Organizations. The company has configured AWS Config in all AWS accounts in the organization.<br><br>The company needs to apply an AWS WAF web ACL with a common set of rules to all ALBs, including any ALBs that are created in the future. Administrators of each AWS account must be able to define their own AWS WAF rules that are in addition to the common rules that the company’s security team provides for all the accounts.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: A</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#203",
+          "answers": [
+            {
+              "choice": "<p>A. Configure AWS Firewall Manager for the organization. In the Firewall Manager administrator account, create an AWS WAF policy. Turn on automatic remediation and define the web ACL. Configure the policy scope to apply to all ALBs in the organization.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Use AWS Resource Access Manager (AWS RAM) from the organization's management account to enable resource sharing in the organization. Create the web ACL. Configure a resource share of the web ACL for the organization. Associate the shared web ACL with all the ALBs in the organization.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Set up the ALB_WAF_ENABLED AWS Config managed rule with automatic remediation. Configure the rule to create the web ACL and to attach the web ACL to all ALBs in an AWS account. Create an AWS Config conformance pack that contains the rule. Deploy the conformance pack to all AWS accounts in the organization.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Configure AWS Firewall Manager for the organization. In the Firewall Manager administrator account, create an AWS WAF policy that defines the web ACL. Set up the ALB_WAF_ENABLED AWS Config managed rule with automatic remediation. Configure the rule to attach the web ACL to all ALBs in an AWS account. Deploy the rule to all AWS accounts in the organization.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826806,
+          "date": "Thu 02 Mar 2023 13:03",
+          "username": "\t\t\t\tSS2023\t\t\t",
+          "content": "I like A based on the link saeidp posted",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 826480,
+          "date": "Thu 02 Mar 2023 04:52",
+          "username": "\t\t\t\tsaeidp\t\t\t\t\t\t\tsaeidp\t\t\t",
+          "content": "A for me<br>AWS config is only used for detecting the new resources<br>https://aws.amazon.com/blogs/security/using-aws-firewall-manager-and-waf-to-protect-your-web-applications-with-master-rules-and-application-specific-rules/By the way WAF acl are not part of shareables from RAM<br>https://docs.aws.amazon.com/ram/latest/userguide/shareable.html",
+          "upvote_count": "22",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 826481,
+          "date": "Thu 02 Mar 2023 04:52",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "By the way WAF acl are not part of shareables from RAM<br>https://docs.aws.amazon.com/ram/latest/userguide/shareable.html",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 826157,
+          "date": "Wed 01 Mar 2023 19:22",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "Option A is incorrect because AWS Firewall Manager is not necessary to achieve the goal. Option B is the better solution because it uses AWS RAM to share the web ACL across all accounts. Option C is incorrect because it applies only to AWS Config and does not provide a solution for deploying the web ACL. Option D is incorrect because it also involves AWS Firewall Manager, which is not necessary to achieve the goal.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
+    },
+    {
+      "question_id": "#204",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company publishes application logs to an Amazon CloudWatch Logs log group in the us-east-1 Region. The company needs to export the logs from us-east-1 to the us-west-2 Region on a weekly basis. The logs must be encrypted in both Regions.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: C</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#204",
+          "answers": [
+            {
+              "choice": "<p>A. Create an Amazon S3 bucket in us-west-2. Configure server-side encryption with Amazon S3 managed encryption keys (SSE-S3) for the S3 bucket. Create and schedule an AWS Lambda function to run weekly to export the CloudWatch logs from the last week to the S3 bucket in us-west-2.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create an Amazon S3 bucket in us-west-2. Configure server-side encryption with AWS KMS keys (SSE-KMS) for the S3 bucket. Create and schedule an AWS Lambda function to run weekly to export the CloudWatch logs from the last week to the S3 bucket in us-west-2.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Create an Amazon S3 bucket in us-east-1. Create an S3 bucket in us-west-2. Configure server-side encryption with Amazon S3 managed encryption keys (SSE-S3) and turn on versioning for both S3 buckets. Create and schedule an AWS Lambda function to run weekly to export the CloudWatch logs from the last week to the S3 bucket in us-east-1. Configure a replication rule on the S3 bucket in us-east-1 to replicate the logs to the S3 bucket in us-west-2.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create an Amazon S3 bucket in us-east-1. Create an S3 bucket in us-west-2. Configure server-side encryption with AWS KMS keys (SSE-KMS) and turn on versioning for both S3 buckets. Create and schedule an AWS Lambda function to run weekly to export the CloudWatch logs from the last week to the S3 bucket in us-east-1. Configure a replication rule on the S3 bucket in us-east-1 to replicate the logs to the S3 bucket in us-west-2.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826846,
+          "date": "Thu 02 Mar 2023 13:16",
+          "username": "\t\t\t\tSS2023\t\t\t",
+          "content": "I think it is C or D based on the requirements of logs being encrypted in both regions.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 826483,
+          "date": "Thu 02 Mar 2023 05:04",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "I go with C<br>You must have the logs encrypted in both side",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826167,
+          "date": "Wed 01 Mar 2023 19:29",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "Option A also works but uses SSE-S3 instead of Option B AWS KMS keys which offers more better, granular control. Option C and D are not as efficient as they involve replicating logs from the S3 bucket in us-east-1 to the S3 bucket in us-west-2, which increases costs and complexity.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
+    },
+    {
+      "question_id": "#205",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company runs an application on Amazon EC2 instances. The company uses a series of AWS CloudFormation stacks to define the application resources. A developer performs updates by building and testing the application on a laptop and then uploading the build output and CloudFormation stack templates to Amazon S3. The developer’s peers review the changes before the developer performs the CloudFormation stack update and installs a new version of the application onto the EC2 instances.<br><br>The deployment process is prone to errors and is time-consuming when the developer updates each EC2 instance with the new application. The company wants to automate as much of the application deployment process as possible while retaining a final manual approval step before the modification of the application or resources.<br><br>The company already has moved the source code for the application and the CloudFormation templates to AWS CodeCommit. The company also has created an AWS CodeBuild project to build and test the application.<br><br>Which combination of steps will meet the company's requirements? (Choose two.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: AD</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#205",
+          "answers": [
+            {
+              "choice": "<p>A. Create an application group and a deployment group in AWS CodeDeploy. Install the CodeDeploy agent on the EC2 instances.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Create an application revision and a deployment group in AWS CodeDeploy. Create an environment in CodeDeploy. Register the EC2 instances to the CodeDeploy environment.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Use AWS CodePipeline to invoke the CodeBuild job, run the CloudFormation update, and pause for a manual approval step. After approval, start the AWS CodeDeploy deployment.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Use AWS CodePipeline to invoke the CodeBuild job, create CloudFormation change sets for each of the application stacks, and pause for a manual approval step. After approval, run the CloudFormation change sets and start the AWS CodeDeploy deployment.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Use AWS CodePipeline to invoke the CodeBuild job, create CloudFormation change sets for each of the application stacks, and pause for a manual approval step. After approval, start the AWS CodeDeploy deployment.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826490,
+          "date": "Thu 02 Mar 2023 05:22",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "Maybe A and D",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
+          "id": 826487,
+          "date": "Thu 02 Mar 2023 05:18",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "It is a strange question",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826178,
+          "date": "Wed 01 Mar 2023 19:44",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "A.  Incorrect - CodeDeploy is not needed and installing the agent on each EC2 instance is not an efficient approach.B.  Correct - Creates an application revision and a deployment group in AWS CodeDeploy, creates an environment in CodeDeploy, registers the EC2 instances to the CodeDeploy environment.C.  Incorrect - This approach does not use AWS CodeDeploy, which is necessary for the final manual approval step.D.  Correct - Creates a CloudFormation change set for each application stack, pauses for a manual approval step, and runs the CloudFormation change sets and starts the AWS CodeDeploy deployment.E.  Incorrect - Similar to D, but starts the AWS CodeDeploy deployment before running the CloudFormation change sets, which is not necessary.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BD"
+        }
+      ]
+    },
+    {
+      "question_id": "#206",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A DevOps engineer is implementing governance controls for a company that requires its infrastructure to be housed within the United States. The engineer must restrict which AWS Regions can be used, and ensure an alert is sent as soon as possible if any activity outside the governance policy takes place. The controls should be automatically enabled on any new Region outside the United States (US).<br><br>Which combination of actions will meet these requirements? (Choose two.)<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: AB</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#206",
+          "answers": [
+            {
+              "choice": "<p>A. Create an AWS Organizations SCP that denies access to all non-global services in non-US Regions. Attach the policy to the root of the organization.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Configure AWS CloudTrail to send logs to Amazon CloudWatch Logs and enable it for all Regions. Use a CloudWatch Logs metric filter to send an alert on any service activity in non-US Regions.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Use an AWS Lambda function that checks for AWS service activity and deploy it to all Regions. Write an Amazon EventBridge rule that runs the Lambda function every hour, sending an alert if activity is found in a non-US Region.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Use an AWS Lambda function to query Amazon Inspector to look for service activity in non-US Regions and send alerts if any activity is found.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Write an SCP using the aws:RequestedRegion condition key limiting access to US Regions. Apply the policy to all users, groups and roles.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826882,
+          "date": "Thu 02 Mar 2023 13:29",
+          "username": "\t\t\t\tSS2023\t\t\t",
+          "content": "I agree with AB",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AB"
+        },
+        {
+          "id": 826492,
+          "date": "Thu 02 Mar 2023 05:26",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "A and B for me",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AB"
+        },
+        {
+          "id": 826190,
+          "date": "Wed 01 Mar 2023 19:56",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "Option A: Restricts non-US regions.<br>Option B: Sends alerts for non-US activity.<br>Option C: Doesn't restrict region usage.<br>Option D: Doesn't restrict region usage.<br>Option E: Only restricts US regions.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: AB"
+        },
+        {
+          "id": 826172,
+          "date": "Wed 01 Mar 2023 19:35",
+          "username": "\t\t\t\tds50421\t\t\t",
+          "content": "Ab is answer",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: AB"
+        }
+      ]
+    },
+    {
+      "question_id": "#207",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company grants external users access to its AWS account by creating an IAM user for each external user. A DevOps engineer must implement a solution to revoke access from IAM users that have not accessed the account in 90 days.<br><br>Which solution will meet these requirements?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: A</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#207",
+          "answers": [
+            {
+              "choice": "<p>A. Turn on AWS Config in the AWS account. Deploy the lam-user-unused-credentials-check AWS Config managed rule Configure the rule to run periodically Configure AWS. Config automatic remediation to run the AWSConfigRemediation-RevokeUnusedlAMUserCredentials AWS Systems Manager Automation runbook.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Use AWS Identity and Access Management Access Analyzer to create an analyzer in the AWS account. Create an Amazon EventBridge rule to match IAM Access Analyzer events for IAM users that were last accessed more than 90 days ago. Configure the rule to run the AWSConfigRemediation-DetachlAMPolicy AWS Systems Manager Automation runbook to detach any policies that are attached to the IAM user.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Enable AWS Trusted Advisor in the AWS account. Use the AWS Developer Support plan to access the AWS Support API. Configure an Amazon EventBridge scheduled rule to use the Support API’s Trusted Advisor IAM Access Key Rotation check to discover IAM credentials that have not been accessed for more than 90 days. Configure another EventBridge rule to use the Trusted Advisor Check Item Refresh Status event type and to run the AWSConfigRemediation-RevokeUnusedlAMUserCredentials AWS Systems Manager Automation runbook.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Enable AWS Security Hub in the AWS account. Configure a Security Hub rule that determines when an IAM user was last accessed. Configure an Amazon EventBridge rule to match the Security Hub rule and to run the AWSConfigRemediation-RevokeUnusedlAMUserCredentials AWS Systems Manager Automation runbook.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826496,
+          "date": "Thu 02 Mar 2023 05:31",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "A seems correct<br>https://docs.aws.amazon.com/config/latest/developerguide/iam-user-unused-credentials-check.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826196,
+          "date": "Wed 01 Mar 2023 20:03",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "Option A:correct, Revokes unused IAM credentials.<br>Option B:does not revoke, Detaches policies for inactive IAM users.<br>Option C: does not revoke, Uses Trusted Advisor to discover inactive IAM credentials.<br>Option D: does not revoke, Determines last IAM access.",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 826175,
+          "date": "Wed 01 Mar 2023 19:38",
+          "username": "\t\t\t\tds50421\t\t\t",
+          "content": "B is answer",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
+    },
+    {
+      "question_id": "#208",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company has provided an externally hosted third-party vendor product with access to the company's AWS account. The vendor product performs various AWS actions in the AWS account and requires various IAM permissions. The company granted the access by creating an IAM user, associating IAM policies and inserting the IAM user credentials into the vendor product.<br><br>A security review reveals that the vendor’s access is overly permissive. The company wants to apply the principle of least privilege and wants to continue giving the vendor permissions to perform only the actions that the vendor has performed in the last 6 months.<br><br>Which solution will meet these requirements with the LEAST effort?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#208",
+          "answers": [
+            {
+              "choice": "<p>A. Use AWS Identity and Access Management Access Analyzer to generate a new IAM policy based on the IAM user’s AWS CloudTrail history. Replace the IAM user policy with the newly generated policy.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Use AWS Identity and Access Management Access Analyzer to generate a new IAM policy based on the IAM user’s AWS CloudTrail history. Attach the newly generated policy as a permissions boundary to the IAM user.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Use AWS Identity and Access Management Access Analyzer to discover the last accessed information for the IAM user and to create a new IAM policy that allows only the services and actions that the last accessed review identified. Replace the IAM user policy with the newly generated policy.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Use AWS Identity and Access Management Access Analyzer to discover the last accessed information for the IAM user and to create a new IAM policy that allows only the services and actions that the last accessed review identified. Attach the newly generated policy as a permissions boundary to the IAM user.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 826498,
+          "date": "Thu 02 Mar 2023 05:35",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "B makes more sense than others",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 826497,
+          "date": "Thu 02 Mar 2023 05:35",
+          "username": "\t\t\t\tsaeidp\t\t\t",
+          "content": "B makes more sense than others",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 826201,
+          "date": "Wed 01 Mar 2023 20:08",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "Option A: Policy based on CloudTrail history.<br>Option B: Policy boundary based on CloudTrail.<br>Option C: Policy based on last access.<br>Option D: Policy boundary based on last access.",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
     }
   ]
 }
