@@ -77,6 +77,8 @@ class Question {
 
 function commonReplace(text) {
     text = text.replaceAll('"', '\\"');
+    text = text.replaceAll("’", "'");
+    text = text.replaceAll('	', ' ');
     text = text.replaceAll('  ', '');
     text = text.replaceAll('\n\n\n', '');
     text = text.replaceAll('\n\n \n', '');
