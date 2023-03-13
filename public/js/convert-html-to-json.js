@@ -147,11 +147,19 @@ function convert(html) {
     
             let id = $("#tempHtmlComment .media.comment-container").data("comment-id");
             let date = $("#tempHtmlComment .comment-date").attr("title");
-            let username = $("#tempHtmlComment .comment-username").text();
-            let content = $("#tempHtmlComment .comment-content").text();
-            let upvote_count = $("#tempHtmlComment .upvote-count").text();
+            let username = $("#tempHtmlComment .comment-username").first().text();
+            let upvote_count = $("#tempHtmlComment .upvote-count").first().text();
             let selected_answers = $("#tempHtmlComment .comment-selected-answers").text();
-
+            let content = $("#tempHtmlComment .comment-content").first().text();
+            let sub_commnent = ""
+            $("#tempHtmlComment .comment-content").each((key, item) => {
+                if(key > 0) {
+                    sub_commnent += `<li>${item.innerHTML.toString()}</li>`;
+                }
+            });
+            if(sub_commnent != "") {
+                content += `\n <div>\tReplies:</div> <ul style='list-style-type: disclosure-closed;'>${sub_commnent}</ul>`
+            }
             username = username.replaceAll('  ', '').replaceAll('\n', '');
             content = commonReplace(content);
             
