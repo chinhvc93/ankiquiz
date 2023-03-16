@@ -248,6 +248,54 @@ var listExamGroup = [
       },
     ]
   },
+
+  //GROUP 7
+  {
+    id: "PMI_PMP",
+    name: "[PMI-PMP] Project Management Professional",
+    list: [
+      {
+        id: "PMI_PMP_Part1",
+        name: "[PMI-PMP] Part1",
+        data: PMI_PMP_Part1.data,
+      },
+      {
+        id: "PMI_PMP_Part2",
+        name: "[PMI-PMP] Part2",
+        data: PMI_PMP_Part2.data,
+      },
+      {
+        id: "PMI_PMP_Part3",
+        name: "[PMI-PMP] Part3",
+        data: PMI_PMP_Part3.data,
+      },
+      {
+        id: "PMI_PMP_Part4",
+        name: "[PMI-PMP] Part4",
+        data: PMI_PMP_Part4.data,
+      },
+      {
+        id: "PMI_PMP_Part5",
+        name: "[PMI-PMP] Part5",
+        data: PMI_PMP_Part5.data,
+      },
+      {
+        id: "PMI_PMP_Part6",
+        name: "[PMI-PMP] Part6",
+        data: PMI_PMP_Part6.data,
+      },
+      {
+        id: "PMI_PMP_Part7",
+        name: "[PMI-PMP] Part7",
+        data: PMI_PMP_Part7.data,
+      },
+      {
+        id: "PMI_PMP_Part8",
+        name: "[PMI-PMP] Part8",
+        data: PMI_PMP_Part8.data,
+      },
+    ]
+  },
   // //GROUP 6 ==> DISABLED
   // {
   //   id: "1Z0_083",
