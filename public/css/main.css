@@ -6,7 +6,7 @@
     --dark-bg-primary-color: #24262c;
 
     /* Custom */
-    --bs-body-color: #c1c1c1 !important;
+    --bs-body-color: #000000 !important;
 }
 
 body {
