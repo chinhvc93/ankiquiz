@@ -62,6 +62,89 @@ class Question {
     
   }
 
+  renderQuestionHtml_v2(
+    options={
+      index: -1,
+      showAnswer: false,
+      showComment: false,
+      isStar: false,
+      userChoice: "",
+      showAnswerBtn: true,
+      showCommentBtn: true,
+    }
+  ) {
+    let html = "";
+    let answerBtn = `
+      <button type="button" class="btnShowAnswerQuestion btn btn-warning btn-sm" data-index=${options.index} data-hideshow=${options.showAnswer ? "Hide" : "Show" }>${options.showAnswer ? "Hide Answer" : "Show Answer" }</button>
+    `;
+    
+    let discusstion_count = this.discusstion ? this.discusstion.length : 0;
+    let commentBtn = `
+      <button type="button" class="btnShowDisscussionQuestion btn btn-info btn-sm" data-index=${options.index} data-hideshow=${options.showComment ? "Hide" : "Show" }>${options.showComment ? `Hide Disscussion (${discusstion_count})` : `Show Disscussion (${discusstion_count})` }</button>
+    `;
+
+    let htmlStarIcon = `
+      <div data-queno="${this.queNo}" class="starMarkToReview ${options.isStar ? 'true' : 'false'}">
+          <i class="fa-solid fa-star"></i>
+      </div>
+    `;
+
+    html += `
+      <div>Question: ${this.queNo + 1} (${this.question_id})</div>
+      <div class="que-text">${this.question_text}</div>
+      ${htmlStarIcon}
+    `;
+
+    let html_discusstion = "";
+    if(options.showComment) {
+      let discusstion = this.discusstion;
+      if(discusstion) {
+        //Sort by voted count
+        discusstion.sort((a, b) => b.upvote_count - a.upvote_count);
+              
+        discusstion.forEach(function (comment, index) {
+          let selected_answers = comment.selected_answers;
+          let html_selected_answers = "";
+          if(selected_answers !== undefined && selected_answers != "") {
+            html_selected_answers = `<span class="comment-selected-answers">${comment.selected_answers}</span>`;
+          }
+          html_discusstion += `
+            <li id="comment-${comment.id}" class="comment-container" data-comment-id="${comment.id}">
+              <div class="pb-1">
+                <span class="fw-bold">#${index + 1}</span> 
+                ${html_selected_answers}
+                (<span class="comment-voted">${comment.upvote_count}</span> Voted)
+              </div>
+              <div class="comment-content">${comment.content}</div>
+              <div class="pt-1"><span class="comment-username">${comment.username}</span> (<span class="comment-date">${comment.date}</span>)</div>
+            </li>
+          `;
+        });
+        html_discusstion = `
+          <ul class="comment-list">
+            ${html_discusstion}
+          </ul>
+        `;
+      } else {
+        html_discusstion = "Have not comments!"
+      }
+      
+    }
+
+    html += `
+      ${this.loadQueAnswerHtml(options.showAnswer, options.userChoice)}
+      <div class="text-center">
+        ${options.showAnswerBtn ? answerBtn : ''}
+        ${options.showCommentBtn ? commentBtn : ''}
+      </div>
+      <div class="discussions-block">
+        ${html_discusstion}
+      </div>
+    `;
+
+    return html;
+  }
+
   getQuestion(choiceAnswer, isMarked = false) {
     // Load Question Data
     // this.loadData(queData, queNo);
@@ -593,6 +676,29 @@ class Exam {
     $(`${htmlSelection}`).html(htmlText);
   }
 
+  renderContent_v2(listQuestion, htmlSelection = "#starBlock") {
+    var htmlText = "";
+    listQuestion.forEach(function (question, index) {      
+      let questionText = question.renderQuestionHtml_v2({
+        index: index,
+        showAnswer: false,
+        showComment: false,
+        isStar: false,
+        userChoice: "",
+        showAnswerBtn: true,
+        showCommentBtn: true,
+      });
+
+      htmlText += `
+      <div class="QuestionBlockItem" id="QuestionBlockItem_${index}">
+        ${questionText}
+      </div>
+    `;
+    });
+
+    $(`${htmlSelection}`).html(htmlText);
+  }
+
   filterQuestion(options) {
     let self = this;
     let list = [];
@@ -635,6 +741,55 @@ class Exam {
     return list;
   }
 
+  filterQuestion_v2(options) {
+    let self = this;
+    let list = [];
+    let list2 = [];
+    let EXAM_TYPE = options.exam_type;
+    let FROM_QUESTION = options.from_question;
+    let TO_QUESTION = options.to_question;
+    let MAX_QUESTION = options.max_question;
+    let RAMDOM = options.random;
+    
+    let from = FROM_QUESTION < 1 ? parseInt(1) : parseInt(FROM_QUESTION);
+    let to = (self.count < TO_QUESTION) ? self.count : parseInt(TO_QUESTION);
+    // for (let i = from; i <= to; i++) {
+    //   list = [...list, {queNo: (i - 1), isMarked: false}];
+    // }
+
+    for (let i = from; i <= to; i++) {
+      // list = [...list, {queNo: (i - 1), isMarked: false}];
+      list2 = [...list2, self.listQuestions[i-1]]
+    }
+
+    // // Set STAR if have
+    // for (let i = 0; i < self.markedQuestion.length; i++) {
+    //   let elementIndex = list.findIndex((obj) => obj.queNo == self.markedQuestion[i].queNo);
+    //   if (elementIndex == -1) {
+    //   } else {
+    //     list[elementIndex].isMarked = self.markedQuestion[i].isMarked;
+    //   }
+    // }
+
+    // // STAR
+    // if(EXAM_TYPE == "STAR") {
+    //   list = list.filter(item => (item.isMarked == true));
+    // }
+
+    // MAX_QUESTION
+    if (MAX_QUESTION != "ALL") {
+      // list = list.splice(0, MAX_QUESTION);
+      list2 = list2.splice(0, MAX_QUESTION);
+    }
+
+    // RAMDOM
+    if(RAMDOM == "RANDOM") {
+      this.shuffleArray(list2);
+    }
+
+    return list2;
+  }
+
   shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -656,6 +811,24 @@ class Exam {
     this.childExam = listQuestion;
 
     return listQuestion;
+  }
+
+  createExam(
+    options = {
+      type: type,
+      from: from,
+      to: to,
+      random: random,
+      max: max,
+    }
+  ) {
+    return this.filterQuestion_v2({
+      exam_type: options.type,
+      from_question: options.from,
+      to_question: options.to,
+      random: options.random,
+      max_question: options.max,
+    });
   }
 
   export() {

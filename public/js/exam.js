@@ -337,6 +337,7 @@ function switchDesk(groupId, examId) {
 }
 
 // CREATE TEST
+let testQuestion = [];
 $(".btn-createTest").on("click", function () {
   $(".ExamQuestionsBlock").addClass("d-none");
   $(".examBlock").addClass("d-none");
@@ -351,9 +352,15 @@ $("#testBlock").on("click", ".btnCreateTest", function () {
   let to = $("#filterOptionToQuestion2").val();
   let random = $("#filterOptionRandom").val();
   
-  exam.childExamChoice = [];
-  let listQuestion = exam.getFilterQuestion(type, from, to, random, max);
-  exam.renderContent(listQuestion, "#testBlock .testContent", false);
+  testQuestion = exam.createExam({
+    "type": type,
+    "from": from,
+    "to": to,
+    "random": random,
+    "max": max,
+  });
+
+  exam.renderContent_v2(testQuestion, "#testBlock .testContent");
   $(".btnShowAnswer").removeClass("d-none");
 });
 
@@ -372,11 +379,54 @@ $("#testBlock").on("click", ".starMarkToReview", function () {
 });
 
 // SHOW ANSWER
+$("#testBlock").on("click", ".btnShowAnswerQuestion", function (event) {
+  let index = $(this).data("index");
+  let hideshow = $(this).data("hideshow") == "Hide" ? false : true;
+  let question = testQuestion[index];
+
+  let userChoice = "";
+  $(`#QuestionBlockItem_${index} .ip-radio:checked`).each((key, item) => {
+    userChoice += $(item).val() + " "
+  })
+
+  $(`#QuestionBlockItem_${index}`).html(question.renderQuestionHtml_v2({
+    index: index,
+    showAnswer: hideshow,
+    showComment: false,
+    isStar: false,
+    userChoice: userChoice,
+    showAnswerBtn: true,
+    showCommentBtn: true,
+  }));
+
+});
+
+// SHOW DISCUSSTION
+$("#testBlock").on("click", ".btnShowDisscussionQuestion", function () {
+  let index = $(this).data("index");
+  let hideshow = $(this).data("hideshow") == "Hide" ? false : true;
+  let question = testQuestion[index];
+
+  let userChoice = "";
+  $(`#QuestionBlockItem_${index} .ip-radio:checked`).each((key, item) => {
+    userChoice += $(item).val() + " "
+  })
+
+  $(`#QuestionBlockItem_${index}`).html(question.renderQuestionHtml_v2({
+    index: index,
+    showAnswer: true,
+    showComment: hideshow,
+    isStar: false,
+    userChoice: userChoice,
+    showAnswerBtn: true,
+    showCommentBtn: true,
+  }));
+
+});
+
+// SHOW ALL ANSWER
 $("#testBlock").on("click", ".btnShowAnswer", function () {
-  let userChoice = $("#test_form").serializeArray()
-  let listQuestion = exam.childExam;
-  exam.setUserChoice(userChoice);
-  exam.renderContent(listQuestion, "#testBlock .testContent", true);
+  $("#testBlock .btnShowAnswerQuestion").click();
 });
 
 //EXPORT
