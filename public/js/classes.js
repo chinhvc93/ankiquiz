@@ -395,16 +395,24 @@ class Exam {
     let elementIndex = this.markedQuestion.findIndex(
       (obj) => obj.queNo == queNo
     );
+
     let newElement = {
       queNo: queNo,
       isMarked: isMarked,
     };
 
-    if (elementIndex == -1) {
-      this.markedQuestion = [...this.markedQuestion, newElement];
+    if (elementIndex > -1) {
+      if(isMarked) {
+        this.markedQuestion[elementIndex] = newElement;
+      } else {
+        this.markedQuestion.splice(elementIndex, 1);
+      }
     } else {
-      this.markedQuestion[elementIndex] = newElement;
+      this.markedQuestion = [...this.markedQuestion, newElement];
     }
+
+    //Sort
+    this.markedQuestion.sort((a,b) => a.queNo - b.queNo)
 
     // Save to LocalCache
     this.saveToLocalCache("ONLY_STAR");
@@ -678,12 +686,15 @@ class Exam {
 
   renderContent_v2(listQuestion, htmlSelection = "#starBlock") {
     var htmlText = "";
+    //Get list star questions
+    let star_ques = this.markedQuestion.map(item => item.queNo);
+
     listQuestion.forEach(function (question, index) {      
       let questionText = question.renderQuestionHtml_v2({
         index: index,
         showAnswer: false,
         showComment: false,
-        isStar: false,
+        isStar: star_ques.includes(question.queNo),
         userChoice: "",
         showAnswerBtn: true,
         showCommentBtn: true,
@@ -753,32 +764,31 @@ class Exam {
     
     let from = FROM_QUESTION < 1 ? parseInt(1) : parseInt(FROM_QUESTION);
     let to = (self.count < TO_QUESTION) ? self.count : parseInt(TO_QUESTION);
-    // for (let i = from; i <= to; i++) {
-    //   list = [...list, {queNo: (i - 1), isMarked: false}];
-    // }
-
-    for (let i = from; i <= to; i++) {
-      // list = [...list, {queNo: (i - 1), isMarked: false}];
-      list2 = [...list2, self.listQuestions[i-1]]
+    let que = null;
+    // let star_ques = self.markedQuestion.map(item => item.queNo);
+    switch(EXAM_TYPE){
+      case "STAR":
+        self.markedQuestion.forEach(item => {
+          que = self.listQuestions[item.queNo];
+          // if(star_ques.includes(item.queNo)) {
+          //   que.options.userMarked = true;
+          // }
+          list2 = [...list2, que]
+        });
+        break;
+      default:
+        //Normal
+        for (let i = from; i <= to; i++) {
+          que = self.listQuestions[i-1];
+          // if(star_ques.includes(i-1)) {
+          //   que.options.userMarked = true;
+          // }
+          list2 = [...list2, que]
+        }
     }
-
-    // // Set STAR if have
-    // for (let i = 0; i < self.markedQuestion.length; i++) {
-    //   let elementIndex = list.findIndex((obj) => obj.queNo == self.markedQuestion[i].queNo);
-    //   if (elementIndex == -1) {
-    //   } else {
-    //     list[elementIndex].isMarked = self.markedQuestion[i].isMarked;
-    //   }
-    // }
-
-    // // STAR
-    // if(EXAM_TYPE == "STAR") {
-    //   list = list.filter(item => (item.isMarked == true));
-    // }
 
     // MAX_QUESTION
     if (MAX_QUESTION != "ALL") {
-      // list = list.splice(0, MAX_QUESTION);
       list2 = list2.splice(0, MAX_QUESTION);
     }
 
