@@ -49,7 +49,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Mon 30 Jan 2023 09:32",
           "username": "\t\t\t\tProfXsamson\t\t\t",
           "content": "Amazon Pinpoint is a flexible, scalable and fully managed push notification and SMS service for mobile apps.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -57,7 +57,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Thu 19 Jan 2023 15:36",
           "username": "\t\t\t\tFoucault\t\t\t",
           "content": "It's B, see following link https://docs.aws.amazon.com/pinpoint/latest/developerguide/event-streams.html",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -234,19 +234,11 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
-          "id": 751708,
-          "date": "Wed 21 Dec 2022 01:32",
-          "username": "\t\t\t\ttechhb\t\t\t",
-          "content": "SSE-S3 - is free and uses AWS owned CMKs (CMK = Customer Master Key). The encryption key is owned and managed by AWS, and is shared among many accounts. Its rotation is automatic with time that varies as shown in the table here. The time is not explicitly defined.<br><br>SSE-KMS - has two flavors:<br><br>AWS managed CMK. This is free CMK generated only for your account. You can only view it policies and audit usage, but not manage it. Rotation is automatic - once per 1095 days (3 years),<br>Customer managed CMK. This uses your own key that you create and can manage. Rotation is not enabled by default. But if you enable it, it will be automatically rotated every 1 year. This variant can also use an imported key material by you. If you create such key with an imported material, there is no automated rotation. Only manual rotation.<br>SSE-C - customer provided key. The encryption key is fully managed by you outside of AWS. AWS will not rotate it.",
-          "upvote_count": "13",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
           "id": 754472,
           "date": "Fri 23 Dec 2022 20:46",
           "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
           "content": "KEYWORD: LEAST operational overhead<br><br>To encrypt the data when it is stored in the S3 bucket and automatically rotate the encryption key every year with the least operational overhead, the company can use server-side encryption with Amazon S3-managed encryption keys (SSE-S3). SSE-S3 uses keys that are managed by Amazon S3, and the built-in key rotation behavior of SSE-S3 encryption keys automatically rotates the keys every year.<br><br>To meet the requirements of the company, the solutions architect can move the data to the S3 bucket and enable server-side encryption with SSE-S3. This solution requires no additional configuration or maintenance and has the least operational overhead.<br><br>Hence, the correct answer is;<br><br>Option A.  Move the data to the S3 bucket. Use server-side encryption with Amazon S3-managed encryption keys (SSE-S3). Use the built-in key rotation behavior of SSE-S3 encryption keys.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>The order of these events is being ignored here in my opinion. The encryption checkbox needs to be checked before data is moved into the S3 bucket or it will not be encrypted otherwise, you'll have to encrypt manually and reload into S3 bucket. If the box was checked before moving data into S3 then you are good to go !</li><li>https://docs.aws.amazon.com/AmazonS3/latest/userguide/default-bucket-encryption.html</li><li>Option B involves using a customer-managed AWS KMS key and enabling automatic key rotation, but this requires the company to manage the KMS key and monitor the key rotation process. <br><br>Option C involves using a customer-managed AWS KMS key, but this requires the company to manually rotate the key every year, which introduces additional operational overhead. <br><br>Option D involves encrypting the data with customer key material and creating a KMS key without key material, but this requires the company to manage the customer key material and import it into the KMS key, which introduces additional operational overhead.</li><li>But...<br><br>For A there is no reference to how often these keys are rotated, and to rotate to a new key, you need to upload it, which is operational overhead. So not only does it not necessarily meet the 'rotate keys every year' requirement, but every year it requires operational overhead.<br><br>More importantly, the question states move the objects first, and then configure encryption, but ...\\\"There is no change to the encryption of the objects that existed in the bucket before default encryption was enabled.\\\" from https://docs.aws.amazon.com/AmazonS3/latest/userguide/default-bucket-encryption.html<br><br>So A is clearly wrong.<br><br>For B, whilst you have to set up KMS once, you then don't have to anything else, which i would say is LEAST operational overhead.</li><li>God bless you, man! The most articulated answers, easy to understand. Good job!</li><li>But wrong :)</li><li>Reviewed it the second time. Some of them are wrong, indeed.</li></ul>",
-          "upvote_count": "12",
+          "upvote_count": "15",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -302,6 +294,54 @@ var SAA_C03_Exam_201_300 = {
           "date": "Mon 06 Feb 2023 19:38",
           "username": "\t\t\t\tocbn3wby\t\t\t",
           "content": "Reviewed it the second time. Some of them are wrong, indeed.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 751708,
+          "date": "Wed 21 Dec 2022 01:32",
+          "username": "\t\t\t\ttechhb\t\t\t",
+          "content": "SSE-S3 - is free and uses AWS owned CMKs (CMK = Customer Master Key). The encryption key is owned and managed by AWS, and is shared among many accounts. Its rotation is automatic with time that varies as shown in the table here. The time is not explicitly defined.<br><br>SSE-KMS - has two flavors:<br><br>AWS managed CMK. This is free CMK generated only for your account. You can only view it policies and audit usage, but not manage it. Rotation is automatic - once per 1095 days (3 years),<br>Customer managed CMK. This uses your own key that you create and can manage. Rotation is not enabled by default. But if you enable it, it will be automatically rotated every 1 year. This variant can also use an imported key material by you. If you create such key with an imported material, there is no automated rotation. Only manual rotation.<br>SSE-C - customer provided key. The encryption key is fully managed by you outside of AWS. AWS will not rotate it.",
+          "upvote_count": "13",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 850240,
+          "date": "Sat 25 Mar 2023 16:23",
+          "username": "\t\t\t\tSantosh43\t\t\t",
+          "content": "the question did ask about customer-managed keys so my answer is A. .",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 846120,
+          "date": "Tue 21 Mar 2023 16:47",
+          "username": "\t\t\t\tudo2020\t\t\t",
+          "content": "Answer is A. <br>Why? <br>Server-side encryption protects data at rest. Amazon S3 encrypts each object with a unique key. As an additional safeguard, it encrypts the key itself with a key that it rotates regularly. Amazon S3 server-side encryption uses one of the strongest block ciphers available to encrypt your data, 256-bit Advanced Encryption Standard (AES-256).",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 845430,
+          "date": "Tue 21 Mar 2023 02:33",
+          "username": "\t\t\t\tThiruKrish\t\t\t",
+          "content": "the encryption key must be automatically rotated every year --> SSE-S3 has default rotation which rotate regularly but for SSE-KMS it can be enabled to rotate every year",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 841998,
+          "date": "Fri 17 Mar 2023 14:19",
+          "username": "\t\t\t\tAravindG\t\t\t",
+          "content": "I would like to go for option A due to the least operational work.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 841997,
+          "date": "Fri 17 Mar 2023 14:18",
+          "username": "\t\t\t\tAravindG\t\t\t",
+          "content": "I would like to say the Answer suppose to be A due to the least operation overhead.",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -400,54 +440,6 @@ var SAA_C03_Exam_201_300 = {
           "content": "The correct answer is A.  Move the data to the S3 bucket. Use server-side encryption with Amazon S3 managed encryption keys (SSE-S3). Use the built-in key rotation behavior of SSE-S3 encryption keys.<br><br>By using SSE-S3, you can encrypt your data at rest in the S3 bucket without having to manage any encryption keys yourself. SSE-S3 automatically rotates the encryption keys for you, so you don't have to worry about manually rotating them every year. This option has the least operational overhead, as you don't have to manage any encryption keys or manually rotate them.<br><br>Option B is incorrect because you would still need to manually rotate the KMS key every year. Option C is incorrect for the same reason. Option D is incorrect because you would need to manage the customer key material yourself, which is more operational overhead than using SSE-S3.",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 757853,
-          "date": "Mon 26 Dec 2022 22:14",
-          "username": "\t\t\t\tPassNow1234\t\t\t",
-          "content": "I agree with A.  However aws is easy enough to do with both A or B.  This is one question I hope I don't get.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 749022,
-          "date": "Sun 18 Dec 2022 17:04",
-          "username": "\t\t\t\tnexus2020\t\t\t",
-          "content": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html<br><br>Customer managed keys<br>Automatic key rotation is disabled by default on customer managed keys but authorized users can enable and disable it. When you enable (or re-enable) automatic key rotation, AWS KMS automatically rotates the KMS key one year (approximately 365 days) after the enable date and every year thereafter.",
-          "upvote_count": "4",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
-          "id": 747753,
-          "date": "Sat 17 Dec 2022 05:25",
-          "username": "\t\t\t\tcareer360guru\t\t\t",
-          "content": "A is the right answer. <br>Option B is not a good choice because though Automatic rotation of the keys is possible incase of Customer Managed is is possible but it is not mentioned as requirement here. There is additional operation overhead for customer for Managing the Keys if customer Managed keys are used.",
-          "upvote_count": "2",
-          "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 746220,
-          "date": "Thu 15 Dec 2022 15:59",
-          "username": "\t\t\t\tk1kavi1\t\t\t",
-          "content": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
-          "upvote_count": "2",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
-          "id": 745544,
-          "date": "Thu 15 Dec 2022 01:08",
-          "username": "\t\t\t\tnexus2020\t\t\t",
-          "content": "when you use customer managed key, you can not automatically rotate. cusomer needs to upload the key first!<br><br>so A<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Yes you can from https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html<br>\\\"Automatic rotation is optional for customer managed KMS keys\\\"</li></ul>",
-          "upvote_count": "2",
-          "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 771137,
-          "date": "Tue 10 Jan 2023 08:02",
-          "username": "\t\t\t\tJayBee65\t\t\t",
-          "content": "Yes you can from https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html<br>\\\"Automatic rotation is optional for customer managed KMS keys\\\"",
-          "upvote_count": "1",
-          "selected_answers": ""
         }
       ]
     },
@@ -499,7 +491,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 23 Dec 2022 20:38",
           "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
           "content": "Option D.  Add an Auto Scaling group for the application that sends meeting invitations. Configure the Auto Scaling group to scale based on the depth of the SQS queue.<br><br>To resolve the issue of longer delivery times for meeting invitations, the solutions architect can recommend adding an Auto Scaling group for the application that sends meeting invitations and configuring the Auto Scaling group to scale based on the depth of the SQS queue. This will allow the application to scale up as the number of appointment requests increases, improving the performance and delivery times of the meeting invitations.",
-          "upvote_count": "4",
+          "upvote_count": "5",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -592,7 +584,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Mon 12 Dec 2022 07:44",
           "username": "\t\t\t\tanhike\t\t\t",
           "content": "Answer : C keyword \\\"manage-fine-grained\\\"<br>https://aws.amazon.com/blogs/big-data/manage-fine-grained-access-control-using-aws-lake-formation/",
-          "upvote_count": "8",
+          "upvote_count": "9",
           "selected_answers": ""
         },
         {
@@ -986,7 +978,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Tue 29 Nov 2022 20:41",
           "username": "\t\t\t\towenrooney11\t\t\t",
           "content": "I'm team C. <br>https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/monitor-ami-events.html#:~:text=For%20example%2C%20you%20can%20create%20an%20EventBridge%20rule%20that%20detects%20when%20the%20AMI%20creation%20process%20has%20completed%20and%20then%20invokes%20an%20Amazon%20SNS%20topic%20to%20send%20an%20email%20notification%20to%20you.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>That link contains the exact use case and explains how C can be used. <br>Option B requires you to send logs to S3 and use Athena, 2 additional services that are not required, so this does not meet the \\\"LEAST operational overhead?\\\" requirement, since these are extra services requiring management.</li></ul>",
-          "upvote_count": "8",
+          "upvote_count": "9",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -1014,6 +1006,14 @@ var SAA_C03_Exam_201_300 = {
           "selected_answers": ""
         },
         {
+          "id": 845146,
+          "date": "Mon 20 Mar 2023 19:26",
+          "username": "\t\t\t\ttest_devops_aws\t\t\t",
+          "content": "https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/monitor-ami-events.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 763590,
           "date": "Mon 02 Jan 2023 09:24",
           "username": "\t\t\t\tZerotn3\t\t\t",
@@ -1034,7 +1034,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 23 Dec 2022 19:44",
           "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
           "content": "The correct solution is Option C.  Creating an Amazon EventBridge (Amazon CloudWatch Events) rule for the CreateImage API call and configuring the target as an Amazon Simple Notification Service (Amazon SNS) topic to send an alert when a CreateImage API call is detected will meet the requirements with the least operational overhead.<br><br>Amazon EventBridge is a serverless event bus that makes it easy to connect applications together using data from your own applications, integrated Software as a Service (SaaS) applications, and AWS services. By creating an EventBridge rule for the CreateImage API call, the company can set up alerts whenever this operation is called within their account. The alert can be sent to an SNS topic, which can then be configured to send notifications to the company's email or other desired destination. <br><br>This solution does not require the company to create a Lambda function or query CloudTrail logs, which makes it the most cost-effective and efficient option.",
-          "upvote_count": "4",
+          "upvote_count": "5",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -1082,7 +1082,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 16 Dec 2022 09:41",
           "username": "\t\t\t\tromko\t\t\t",
           "content": "Please read documentation:<br>\\\" you can create an EventBridge rule that detects when the AMI creation process has completed and then invokes an Amazon SNS topic to send an email notification to you.\\\"<br><br>So it do send event when AMI is created, so C is correct.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitor-ami-events.html</li></ul>",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -1171,14 +1171,6 @@ var SAA_C03_Exam_201_300 = {
           "username": "\t\t\t\tjambajuice\t\t\t",
           "content": "https://docs.aws.amazon.com/AWSEC2/latest/APIReference/using-cloudtrail.html",
           "upvote_count": "2",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
-          "id": 729368,
-          "date": "Mon 28 Nov 2022 17:18",
-          "username": "\t\t\t\tleonnnn\t\t\t",
-          "content": "I choose B",
-          "upvote_count": "1",
           "selected_answers": "Selected Answer: B"
         }
       ]
@@ -1705,7 +1697,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 23 Dec 2022 19:07",
           "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
           "content": "The correct answer is A.  Use Amazon ElastiCache to manage and store session data.<br><br>In order to support distributed session data management in this scenario, it is necessary to use a distributed data store such as Amazon ElastiCache. This will allow the session data to be stored and accessed by multiple EC2 instances across multiple Availability Zones, which is necessary for a scalable and highly available architecture.<br><br>Option B, using session affinity (sticky sessions) of the ALB, would not be sufficient because this would only allow the session data to be stored on a single EC2 instance, which would not be able to scale across multiple Availability Zones.<br><br>Options C and D, using Session Manager and the GetSessionToken API operation in AWS STS, are not related to session data management and would not be appropriate solutions for this scenario.",
-          "upvote_count": "9",
+          "upvote_count": "10",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -1753,7 +1745,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Mon 12 Dec 2022 14:56",
           "username": "\t\t\t\tShasha1\t\t\t",
           "content": "A<br>Amazon ElastiCache to manage and store session data. This solution will allow the application to automatically scale across multiple Availability Zones without losing session data, as the session data will be stored in a cache that is accessible from any EC2 instance. Additionally, using Amazon ElastiCache will enable the company to easily manage and scale the cache as needed, without requiring any changes to the application code. Option C is not correct because,Session Manager from AWS Systems Manager will not provide the necessary support for distributed session data management. Session Manager is a tool for managing and tracking sessions on EC2 instances, but it does not provide a mechanism for storing and managing session data in a distributed environment.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -1838,7 +1830,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Mon 06 Mar 2023 14:31",
           "username": "\t\t\t\tTungPham\t\t\t",
           "content": "When the backlog per instance reaches the target value, a scale-out event will happen. Because the backlog per instance is already 150 messages (1500 messages / 10 instances), your group scales out, and it scales out by five instances to maintain proportion to the target value.<br>Backlog per instance: To calculate your backlog per instance, start with the ApproximateNumberOfMessages queue attribute to determine the length of the SQS queue (number of messages available for retrieval from the queue). Divide that number by the fleet's running capacity, which for an Auto Scaling group is the number of instances in the InService state, to get the backlog per instance.<br>https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -2007,6 +1999,14 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 839281,
+          "date": "Tue 14 Mar 2023 21:59",
+          "username": "\t\t\t\tDondozzy\t\t\t",
+          "content": "The answer is D",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 791535,
           "date": "Sun 29 Jan 2023 11:03",
           "username": "\t\t\t\tsh0811\t\t\t",
@@ -2104,8 +2104,24 @@ var SAA_C03_Exam_201_300 = {
           "date": "Mon 16 Jan 2023 14:25",
           "username": "\t\t\t\ttechhb\t\t\t",
           "content": "S3 Intelligent-Tiering monitors access patterns and moves objects that have not been accessed for 30 consecutive days to the Infrequent Access tier and after 90 days of no access to the Archive Instant Access tier.",
-          "upvote_count": "5",
+          "upvote_count": "7",
           "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 844442,
+          "date": "Mon 20 Mar 2023 03:33",
+          "username": "\t\t\t\tGrace83\t\t\t",
+          "content": "Definitely A",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 839330,
+          "date": "Tue 14 Mar 2023 22:52",
+          "username": "\t\t\t\tRusss99\t\t\t",
+          "content": "D is the correct answer for this use case",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
         },
         {
           "id": 802974,
@@ -2217,11 +2233,51 @@ var SAA_C03_Exam_201_300 = {
           "selected_answers": ""
         },
         {
+          "id": 851268,
+          "date": "Sun 26 Mar 2023 18:39",
+          "username": "\t\t\t\tMssP\t\t\t",
+          "content": "Look at this https://repost.aws/knowledge-center/waf-rule-prevent-sqli-xss",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 848016,
+          "date": "Thu 23 Mar 2023 10:31",
+          "username": "\t\t\t\tudo2020\t\t\t",
+          "content": "Using AWS WAF has several benefits:<br>.... <br>Presence of SQL code that is likely to be malicious (known as SQL injection).<br>Presence of a script that is likely to be malicious (known as cross-site scripting).",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 846738,
+          "date": "Wed 22 Mar 2023 07:40",
+          "username": "\t\t\t\tashu089\t\t\t",
+          "content": "A. ..AWS WAF is a managed service that allows companies to protect their web applications from web exploits that might affect their applications, including SQL injection and cross-site scripting. It provides an easy-to-use interface to configure, monitor, and manage web access control for applications running on AWS. AWS WAF works with Amazon CloudFront and Application Load Balancer, making it easy to deploy security policies for your web applications.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 844446,
+          "date": "Mon 20 Mar 2023 03:46",
+          "username": "\t\t\t\tGrace83\t\t\t",
+          "content": "AAAAAAA.  WAF - CF Application Load Balancer, API Gateway & AWS AppSync",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 839038,
+          "date": "Tue 14 Mar 2023 17:32",
+          "username": "\t\t\t\tCapJackSparrow\t\t\t",
+          "content": "reading up on AWS Shield Advanced, and I don't see anything regarding them help with managing or updating servers. Yes WAF integrates with SA for free but when all you need is WAF, and IF SA does not help with reducing your server management, why pay for SA. .. it is very expensive.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 832091,
           "date": "Tue 07 Mar 2023 17:12",
           "username": "\t\t\t\tNel8\t\t\t",
           "content": "Selected Answer: A<br>\\\"The company must implement proper traffic filtering to protect its Application Load Balancer (ALB) against common application-level attacks, such as cross-site scripting or SQL injection.\\\" --- WAF monitors the Application Load Balancer or CloudFront will either allow this content to be received or give an HTTP 403 status code. Also, WAF protects the Layer 7 (the Application Layer).<br><br>While AWS Shield Advanced, provides enhanced protections for applications running on Elastic Load Balancer, CloudFront, and Route 53 against DDoS attack. Also, Shield protects the Layer 3 and 4, these layers are not for Application Layer. And most of all, Shield Advance is expensive, it costs $3,000 USD per month.<br><br>So, the answer should be A -- AWS WAF. ",
-          "upvote_count": "1",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -2303,46 +2359,6 @@ var SAA_C03_Exam_201_300 = {
           "content": "AWS WAF offers the following protections to prevent SQLi and XSS attacks:<br><br>Built-in SQLi and XSS engines<br>AWS Managed Rules available for SQLi and XSS injection attacks<br>To configure these protections, be sure that you have set up AWS WAF and created a web ACL.<br><br>https://aws.amazon.com/premiumsupport/knowledge-center/waf-rule-prevent-sqli-xss/",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 790488,
-          "date": "Sat 28 Jan 2023 10:53",
-          "username": "\t\t\t\tskondey\t\t\t",
-          "content": "C - is the correct answer in this case base on the question: the company nee to reduce its share of responsibility in managing, so Shield is the best choice for this question. <br>Shield is a fully managed service.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 785566,
-          "date": "Mon 23 Jan 2023 16:46",
-          "username": "\t\t\t\tJayBee65\t\t\t",
-          "content": "\\\"With AWS WAF, **YOU**can create security rules that control bot traffic and block common attack patterns such as SQL injection or cross-site scripting (XSS).\\\" The \\\"company needs to reduce its share of the responsibility in managing\\\". So yes A will provide the protection, but it does not meet the requirement for the company needs to reduce its share of the responsibility in managing, so C. ",
-          "upvote_count": "4",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 784487,
-          "date": "Sun 22 Jan 2023 17:37",
-          "username": "\t\t\t\tTraining4aBetterLife\t\t\t",
-          "content": "Focus: The company has #minimal #infrastructure and #operational #staff. The company needs to REDUCE its SHARE of the RESPONSIBILITY in #managing, #updating, and #securing #servers for its AWS environment.<br><br>AWS Shield is a #MANAGED DDoS protection service that safeguards apps running on AWS.<br><br>AWS WAF (for common application-level attacks, such as cross-site scripting or SQL injection) is available AT NO EXTRA CHARGE for usage on resources protected by AWS Shield Advanced (protected resource = ALB).",
-          "upvote_count": "2",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 784399,
-          "date": "Sun 22 Jan 2023 15:40",
-          "username": "\t\t\t\tbrownest\t\t\t",
-          "content": "Shield advanced contains WAF. https://aws.amazon.com/shield/",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 779893,
-          "date": "Wed 18 Jan 2023 11:55",
-          "username": "\t\t\t\tRudraman\t\t\t",
-          "content": "cross site scripting and SQL injection so WAF on ALB is the answer so AAAAA. ",
-          "upvote_count": "3",
-          "selected_answers": ""
         }
       ]
     },
@@ -2394,7 +2410,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sat 14 Jan 2023 08:50",
           "username": "\t\t\t\tBabba\t\t\t",
           "content": "It looks like AWS Glue allows fully managed CSV to Parquet conversion jobs: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/three-aws-glue-etl-job-types-for-converting-data-to-apache-parquet.html",
-          "upvote_count": "7",
+          "upvote_count": "8",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -2563,6 +2579,14 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 839047,
+          "date": "Tue 14 Mar 2023 17:42",
+          "username": "\t\t\t\tCapJackSparrow\t\t\t",
+          "content": "Q: What is AWS Snowball Edge?<br><br>AWS Snowball Edge is an edge computing and data transfer device provided by the AWS Snowball service. It has on-board storage and compute power that provides select AWS services for use in edge locations. Snowball Edge comes in two options, Storage Optimized and Compute Optimized, to support local data processing and collection in disconnected environments such as ships, windmills, and remote factories. Learn more about its features here.<br><br>Q: What happened with the original 50 TB and 80 TB AWS Snowball devices?<br><br>The original Snowball devices were transitioned out of service and Snowball Edge Storage Optimized are now the primary devices used for data transfer.<br><br>Q: Can I still order the original Snowball 50 TB and 80 TB devices?<br><br>No. For data transfer needs now, please select the Snowball Edge Storage Optimized devices.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 827876,
           "date": "Fri 03 Mar 2023 11:35",
           "username": "\t\t\t\tvherman\t\t\t",
@@ -2583,7 +2607,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 17 Feb 2023 11:04",
           "username": "\t\t\t\tKZM\t\t\t",
           "content": "700TB of Data can not be transferred through a 500Mbps link within one month.<br><br>Total data that can be transferred in one month = bandwidth x time<br>= (500 Mbps / 8 bits per byte) x (30 days x 24 hours x 3600 seconds per hour)<br>= 648,000 GB or 648 TB<br>This is calculated theoretically with the maximum available situation. Due to a number of factors, the actual total transferred Data may be less than 645 TB. ",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -2716,7 +2740,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sat 14 Jan 2023 23:07",
           "username": "\t\t\t\tParsons\t\t\t",
           "content": "Step 1: S3 inventory to get object list<br>Step 2 (If needed): Use S3 Select to filter<br>Step 3: S3 object operations to encrypt the unencrypted objects.<br><br>On the going object use default encryption.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Useful ref link: https://aws.amazon.com/blogs/storage/encrypting-objects-with-amazon-s3-batch-operations/</li></ul>",
-          "upvote_count": "6",
+          "upvote_count": "7",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -2724,8 +2748,16 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sat 14 Jan 2023 23:14",
           "username": "\t\t\t\tParsons\t\t\t",
           "content": "Useful ref link: https://aws.amazon.com/blogs/storage/encrypting-objects-with-amazon-s3-batch-operations/",
-          "upvote_count": "5",
+          "upvote_count": "6",
           "selected_answers": ""
+        },
+        {
+          "id": 839054,
+          "date": "Tue 14 Mar 2023 17:56",
+          "username": "\t\t\t\tCapJackSparrow\t\t\t",
+          "content": "B. ..<br><br>https://catalog.us-east-1.prod.workshops.aws/workshops/05f16f1a-0bbf-45a7-a304-4fcd7fca3d1f/en-US/s3-track/module-2You're welcome",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
         },
         {
           "id": 808673,
@@ -2921,7 +2953,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sat 14 Jan 2023 23:24",
           "username": "\t\t\t\tParsons\t\t\t",
           "content": "A is correct.<br>- \\\"The solution does not need to handle the load when the primary infrastructure is healthy.\\\" => Should use Route 53 Active-Passive ==> Exclude B, C<br>- D is incorrect because \\\"Create an Aurora second primary instance in the second Region.\\\", we need to create an Aurora Replica enough.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Ref link: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-types.html</li></ul>",
-          "upvote_count": "7",
+          "upvote_count": "8",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -2931,6 +2963,14 @@ var SAA_C03_Exam_201_300 = {
           "content": "Ref link: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-types.html",
           "upvote_count": "3",
           "selected_answers": ""
+        },
+        {
+          "id": 797702,
+          "date": "Sat 04 Feb 2023 08:35",
+          "username": "\t\t\t\taakashkumar1999\t\t\t",
+          "content": "I am confused within A and D but I think D is the answer because this seems to be a cost related problem, a replica is kind of a standby and you can promote to be the main db anytime without any much downtime, but here it says it can withstand 30 mins of downtime so we can just keep a backup of the instance and then create a DB whenever required from the backup, hence less cost",
+          "upvote_count": "5",
+          "selected_answers": "Selected Answer: D"
         },
         {
           "id": 808167,
@@ -2945,7 +2985,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 08 Feb 2023 12:55",
           "username": "\t\t\t\tJiyuKim\t\t\t",
           "content": "The solution does not need to handle the load when the primary infrastructure is healthy. -> Amazon Route 53 active-passive failover -> A,D<br>The company can tolerate up to 30 minutes of downtime and potential data loss -> backup -> D<br>you don't have to use read replicas if you can tolerate downtime and data loss.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Consider Answer B. <br>It is suggesting a Pilot Light DR strategy.<br>https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html</li><li>I will Vote B and i initially thought it Pilot Light however after 2nd read, it seem it more like warm standby. Option D looks more like back up and Restore strategy and it will take more than 30 minutes to get it done.C is wrong, snapshot takes longer time to restore</li><li>The key sentence is <br>\\\"a disaster recovery solution and can tolerate up to 30 minutes of downtime and potential data loss\\\"<br>Take a look at the visualization in the URL provided. Pilot light = 30 minutes.</li></ul>",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -2969,16 +3009,8 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sat 04 Mar 2023 03:33",
           "username": "\t\t\t\tChrisG1454\t\t\t",
           "content": "The key sentence is <br>\\\"a disaster recovery solution and can tolerate up to 30 minutes of downtime and potential data loss\\\"<br>Take a look at the visualization in the URL provided. Pilot light = 30 minutes.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 797702,
-          "date": "Sat 04 Feb 2023 08:35",
-          "username": "\t\t\t\taakashkumar1999\t\t\t",
-          "content": "I am confused within A and D but I think D is the answer because this seems to be a cost related problem, a replica is kind of a standby and you can promote to be the main db anytime without any much downtime, but here it says it can withstand 30 mins of downtime so we can just keep a backup of the instance and then create a DB whenever required from the backup, hence less cost",
           "upvote_count": "2",
-          "selected_answers": "Selected Answer: D"
+          "selected_answers": ""
         },
         {
           "id": 777808,
@@ -3115,7 +3147,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Thu 23 Feb 2023 02:12",
           "username": "\t\t\t\tDeepak_k\t\t\t",
           "content": "Answer : AE - Incoming traffic on port 443 but sever can use any port to reply back.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -3357,6 +3389,22 @@ var SAA_C03_Exam_201_300 = {
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 852008,
+          "date": "Mon 27 Mar 2023 12:45",
+          "username": "\t\t\t\tosmk\t\t\t",
+          "content": "ddddddddddddddddddd",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 850187,
+          "date": "Sat 25 Mar 2023 15:14",
+          "username": "\t\t\t\tudo2020\t\t\t",
+          "content": "What about the keyword \\\"concurrently\\\"? Doesn't this mean EFS?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 777822,
           "date": "Mon 16 Jan 2023 16:01",
@@ -3635,7 +3683,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 01 Mar 2023 19:14",
           "username": "\t\t\t\tSteve_4542636\t\t\t",
           "content": "I went back and rewatched the lectures from Udemy on Weighted and Multi-Value. The lecturer said that Multi-value is *not* as substitute for ELB and he stated that DNS load balancing is a good use case for Weighted routing policies",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: BE"
         },
         {
@@ -3731,7 +3779,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 01 Mar 2023 01:50",
           "username": "\t\t\t\tSteve_4542636\t\t\t",
           "content": "Weighted routing isn't the same as simple routing.Weighted routing does have health checks",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         }
       ]
@@ -3780,11 +3828,27 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 852284,
+          "date": "Mon 27 Mar 2023 18:43",
+          "username": "\t\t\t\tgold4otas\t\t\t",
+          "content": "B: The answer is certainly option \\\"B\\\" because ingesting user activity data can easily be handled by Amazon Kinesis Data streams. The ingested data can then be sent into Redshift for Analytics. <br><br>Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. Amazon Redshift Serverless lets you access and analyze data without all of the configurations of a provisioned data warehouse. <br><br>https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 840009,
+          "date": "Wed 15 Mar 2023 16:23",
+          "username": "\t\t\t\tGalileoEC2\t\t\t",
+          "content": "the Key sentence here is:\\\"that facilitates on-demand analytics\\\",tthats the reason because we need to choose Kinesis Data streams over Data Firehose",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 783974,
           "date": "Sun 22 Jan 2023 07:26",
           "username": "\t\t\t\talexleely\t\t\t",
           "content": "B: Kinesis Data Firehose service automatically load the data into Amazon Redshift and is a petabyte-scale data warehouse service. It allows you to perform on-demand analytics with minimal operational overhead. Since the requirement didn't state what kind of analytics you need to run, we can assume that we do not need to set up additional services to provide further analytics. Thus, it has the least operational overhead.<br><br>Why not A:It is a viable solution, but storing the data in S3 would require you to set up additional services like Amazon Redshift or Amazon Athena to perform the analytics.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -3792,7 +3856,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Thu 19 Jan 2023 13:26",
           "username": "\t\t\t\tBerny\t\t\t",
           "content": "Data ingestion through Kinesis data streams will require manual intervention to provide more shards as data size grows. Kinesis firehose will ingest data with the least operational overhead.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -4112,6 +4176,14 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 841516,
+          "date": "Fri 17 Mar 2023 03:10",
+          "username": "\t\t\t\tRusss99\t\t\t",
+          "content": "C is in deed the correct answer for the use case",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 832982,
           "date": "Wed 08 Mar 2023 14:12",
           "username": "\t\t\t\tkaushald\t\t\t",
@@ -4156,7 +4228,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sat 14 Jan 2023 19:35",
           "username": "\t\t\t\tmhmt4438\t\t\t",
           "content": "C.  Modify the API to write incoming data to an Amazon Simple Queue Service (Amazon SQS) queue. Use an AWS Lambda function that Amazon SQS invokes to write data from the queue to the database.<br><br>To minimize the number of connections to the database and ensure that data is not lost during periods of heavy traffic, the company should modify the API to write incoming data to an Amazon SQS queue. The use of a queue will act as a buffer between the API and the database, reducing the number of connections to the database. And the use of an AWS Lambda function invoked by SQS will provide a more flexible way of handling the data and processing it. This way, the function will process the data from the queue and insert it into the database in a more controlled way.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Did you use ChatGPT?</li><li>same question as you :D</li></ul>",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -4391,6 +4463,30 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 786187,
+          "date": "Tue 24 Jan 2023 07:01",
+          "username": "\t\t\t\tJayBee65\t\t\t",
+          "content": "A is correct. B will work but is not the most secure method, since it will allow everything in VPC A to talk to everything in VPC B and vice versa, not at all secure. A on the other hand will only allow the application (since you select it's IP address) to talk to the application server in VPC A - you are allowing only the required connectivity. See the link for this exact use case: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurityGroups.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>\\\" allows all traffic from the public IP address\\\" Nice bro niceee This is absolutelythe most secure method at all. :)))</li><li>:)))))))))</li></ul>",
+          "upvote_count": "5",
+          "selected_answers": ""
+        },
+        {
+          "id": 791784,
+          "date": "Sun 29 Jan 2023 16:43",
+          "username": "\t\t\t\tmhmt4438\t\t\t",
+          "content": "\\\" allows all traffic from the public IP address\\\" Nice bro niceee This is absolutelythe most secure method at all. :)))<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>:)))))))))</li></ul>",
+          "upvote_count": "6",
+          "selected_answers": ""
+        },
+        {
+          "id": 846704,
+          "date": "Wed 22 Mar 2023 06:49",
+          "username": "\t\t\t\ttest_devops_aws\t\t\t",
+          "content": ":)))))))))",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 797866,
           "date": "Sat 04 Feb 2023 12:19",
           "username": "\t\t\t\tJohnnyBG\t\t\t",
@@ -4437,22 +4533,6 @@ var SAA_C03_Exam_201_300 = {
           "content": "Agreeing with JayBee65. See link for exact solution:<br><br>https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SettingUp.html#CHAP_SettingUp.SecurityGroup<br>https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SettingUp.html#CHAP_SettingUp.SecurityGroup",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 786187,
-          "date": "Tue 24 Jan 2023 07:01",
-          "username": "\t\t\t\tJayBee65\t\t\t",
-          "content": "A is correct. B will work but is not the most secure method, since it will allow everything in VPC A to talk to everything in VPC B and vice versa, not at all secure. A on the other hand will only allow the application (since you select it's IP address) to talk to the application server in VPC A - you are allowing only the required connectivity. See the link for this exact use case: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurityGroups.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>\\\" allows all traffic from the public IP address\\\" Nice bro niceee This is absolutelythe most secure method at all. :)))</li></ul>",
-          "upvote_count": "4",
-          "selected_answers": ""
-        },
-        {
-          "id": 791784,
-          "date": "Sun 29 Jan 2023 16:43",
-          "username": "\t\t\t\tmhmt4438\t\t\t",
-          "content": "\\\" allows all traffic from the public IP address\\\" Nice bro niceee This is absolutelythe most secure method at all. :)))",
-          "upvote_count": "5",
-          "selected_answers": ""
         },
         {
           "id": 775858,
@@ -4528,7 +4608,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 18 Jan 2023 14:40",
           "username": "\t\t\t\tVickysss\t\t\t",
           "content": "https://aws.amazon.com/blogs/security/how-to-monitor-and-visualize-failed-ssh-access-attempts-to-amazon-ec2-linux-instances/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-records-examples.html#flow-log-example-accepted-rejected <br><br>Adding this to support that VPC flow logs can be used to cvapture Accepted or Rejected SSH and RDP traffic.</li></ul>",
-          "upvote_count": "5",
+          "upvote_count": "7",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -4607,9 +4687,17 @@ var SAA_C03_Exam_201_300 = {
           "id": 775857,
           "date": "Sat 14 Jan 2023 20:15",
           "username": "\t\t\t\tmhmt4438\t\t\t",
-          "content": "Configure an Amazon EventBridge rule to listen for events of type EC2 Instance State-change Notification. Configure an Amazon Simple Notification Service (Amazon SNS) topic as a target. Subscribe the operations team to the topic. This approach allows you to set up a rule that listens for state change events on the EC2 instances, specifically for when RDP or SSH access is established, and trigger a notification via Amazon SNS to the operations team. This way they will be notified when RDP or SSH access to an environment has been established.",
+          "content": "Configure an Amazon EventBridge rule to listen for events of type EC2 Instance State-change Notification. Configure an Amazon Simple Notification Service (Amazon SNS) topic as a target. Subscribe the operations team to the topic. This approach allows you to set up a rule that listens for state change events on the EC2 instances, specifically for when RDP or SSH access is established, and trigger a notification via Amazon SNS to the operations team. This way they will be notified when RDP or SSH access to an environment has been established.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>um, isn't \\\"EC2 Instance State-change\\\" like running, terminated, or stopped?</li></ul>",
           "upvote_count": "3",
           "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 839103,
+          "date": "Tue 14 Mar 2023 18:58",
+          "username": "\t\t\t\tCapJackSparrow\t\t\t",
+          "content": "um, isn't \\\"EC2 Instance State-change\\\" like running, terminated, or stopped?",
+          "upvote_count": "1",
+          "selected_answers": ""
         }
       ]
     },
@@ -5053,11 +5141,19 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 844537,
+          "date": "Mon 20 Mar 2023 05:40",
+          "username": "\t\t\t\tGrace83\t\t\t",
+          "content": "D is correct",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
           "id": 790806,
           "date": "Sat 28 Jan 2023 17:34",
           "username": "\t\t\t\tPDR\t\t\t",
           "content": "B and D very similar with D being the 'best' solution but it is not the one that requires the least amount of development changes as the application would need to be changed to store images in S3 instead of DB",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -5073,7 +5169,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Mon 16 Jan 2023 14:35",
           "username": "\t\t\t\twmp7039\t\t\t",
           "content": "D is correct as application changes needs to me minimal",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -5097,7 +5193,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 13 Jan 2023 09:53",
           "username": "\t\t\t\tMorinator\t\t\t",
           "content": "https://www.examtopics.com/discussions/amazon/view/24840-exam-aws-certified-solutions-architect-associate-saa-c02/<br><br>Please ExamTopics, review your own answers",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: D"
         }
       ]
@@ -5150,7 +5246,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sun 29 Jan 2023 06:52",
           "username": "\t\t\t\tLuckyAro\t\t\t",
           "content": "AWS uses the existing infrastructure of a VPC to create a VPC peering connection; it is neither a gateway nor a VPN connection, and does not rely on a separate piece of physical hardware. There is no single point of failure for communication or a bandwidth bottleneck.<br><br>https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html",
-          "upvote_count": "4",
+          "upvote_count": "5",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -5275,7 +5371,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sun 22 Jan 2023 06:48",
           "username": "\t\t\t\talexleely\t\t\t",
           "content": "C: AWS Budgets allows you to set a budget for costs and usage for your accounts and you can set alerts when the budget threshold is exceeded in real-time which meets the requirement.<br><br>Why not B: B would be the most cost-effective if the requirements didn't ask for real-time notification. You would not incur additional costs for the daily or monthly reports and the notifications. But doesn't provide real-time alerts.",
-          "upvote_count": "2",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -5307,7 +5403,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sat 14 Jan 2023 19:10",
           "username": "\t\t\t\tAninina\t\t\t",
           "content": "AWS Budgets allows you to create budgets for your AWS accounts and set alerts when usage exceeds a certain threshold. By creating a budget for each account, specifying the period as monthly and the scope as EC2 instances, you can effectively track the EC2 usage for each account and be notified when a threshold is exceeded. This solution is the most cost-effective option as it does not require additional resources such as Amazon Athena or Amazon EventBridge.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -5461,7 +5557,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Thu 02 Mar 2023 11:54",
           "username": "\t\t\t\tAlessandraSAA\t\t\t",
           "content": "A. --> No since if you access via internet you are creating egress traffic.B.  -->It's a good choice to have both DWH and visualization in the same region to lower the egress transfer (i.e. data going egress/out of the region) but if you access over internet you might still haveegress transfer.C.  -> Valid but in this case you send out of AWS 50MB if you query the DWH instead of the visualization tool, D removes this need since puts the visualization tools in AWS with the DWH so reduces data returned out of AWS from 50MB to 500KBD.  --> Correct, see explanation on answer C<br>-------------------------------------------------------------------------------------------------------------------------------------------<br>Useful links:<br>AWS Direct Connect connection create a connection in an AWS Direct Connect location to establish a network connection from your premises to an AWS Region.<br>https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -5477,7 +5573,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sun 22 Jan 2023 06:21",
           "username": "\t\t\t\talexleely\t\t\t",
           "content": "D: Direct Connect connection at a location in the same Region will provide the lowest data transfer egress cost, improved performance, and lower complexity<br><br>Why it is not C is because the visualization tool is hosted on-premises, as it's not hosted in the same region as the data warehouse the data transfer between them would occur over the internet, thus, would incur in egress data transfer costs.",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -5578,7 +5674,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Mon 20 Feb 2023 10:59",
           "username": "\t\t\t\tRehan33\t\t\t",
           "content": "I go with option B because:<br>Multi-AZ is for high availiblity<br>Read replicas are for low-latency<br>in question they talk about available online",
-          "upvote_count": "1",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -5586,7 +5682,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Tue 24 Jan 2023 14:29",
           "username": "\t\t\t\tMahadeva\t\t\t",
           "content": "But the question is clearly asking for Multiple Regions. Multi-AZ is not across Regions.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>You are right, Multi-AZ is only within one Region. C would be the right answer.</li></ul>",
-          "upvote_count": "4",
+          "upvote_count": "7",
           "selected_answers": ""
         },
         {
@@ -5594,15 +5690,23 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 25 Jan 2023 03:40",
           "username": "\t\t\t\talexleely\t\t\t",
           "content": "You are right, Multi-AZ is only within one Region. C would be the right answer.",
-          "upvote_count": "4",
+          "upvote_count": "6",
           "selected_answers": ""
+        },
+        {
+          "id": 852366,
+          "date": "Mon 27 Mar 2023 20:09",
+          "username": "\t\t\t\tgold4otas\t\t\t",
+          "content": "B: Use Multi-AZ deployments for High Availability/Failover and Read Replicas for read scalability.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
         },
         {
           "id": 826112,
           "date": "Wed 01 Mar 2023 18:16",
           "username": "\t\t\t\tSteve_4542636\t\t\t",
           "content": "Multi az is not the same as multi regional",
-          "upvote_count": "1",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -5740,14 +5844,6 @@ var SAA_C03_Exam_201_300 = {
           "content": "should be C: multiple AWS regions",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 774311,
-          "date": "Fri 13 Jan 2023 10:57",
-          "username": "\t\t\t\tMorinator\t\t\t",
-          "content": "https://aws.amazon.com/blogs/aws/cross-region-read-replicas-for-amazon-rds-for-mysql/",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
         }
       ]
     },
@@ -5794,6 +5890,14 @@ var SAA_C03_Exam_201_300 = {
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 843788,
+          "date": "Sun 19 Mar 2023 14:50",
+          "username": "\t\t\t\tMLCL\t\t\t",
+          "content": "IP are returned RANDOMLY for multi-value Routing, is this what we want ?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 837669,
           "date": "Mon 13 Mar 2023 06:56",
@@ -5894,6 +5998,14 @@ var SAA_C03_Exam_201_300 = {
           "content": "A.  Deploy an AWS Storage Gateway file gateway as a virtual machine (VM) on premises at each clinic<br><br>AWS Storage Gateway is a service that connects an on-premises software appliance with cloud-based storage to provide seamless and secure integration between an organization's on-premises IT environment and AWS's storage infrastructure. By deploying a file gateway as a virtual machine on each clinic's premises, the medical research lab can provide low-latency access to the data stored in the S3 bucket while maintaining read-only permissions for each clinic. This solution allows the clinics to access the data files directly from their on-premises file-based applications without the need for data transfer or migration.",
           "upvote_count": "7",
           "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 844550,
+          "date": "Mon 20 Mar 2023 06:01",
+          "username": "\t\t\t\tGrace83\t\t\t",
+          "content": "Definitely A.  <br>Why are there so many wrong answers by Admins?",
+          "upvote_count": "2",
+          "selected_answers": ""
         },
         {
           "id": 826754,
@@ -6086,7 +6198,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Tue 24 Jan 2023 08:24",
           "username": "\t\t\t\tJayBee65\t\t\t",
           "content": "No, it will not reduce the number of instances being used, since a minimum of 2 will be used at all times.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -6298,7 +6410,15 @@ var SAA_C03_Exam_201_300 = {
           "id": 829785,
           "date": "Sun 05 Mar 2023 10:16",
           "username": "\t\t\t\tktulu2602\t\t\t",
-          "content": "I think either the question or the answers are not formulated correctly because of this document:<br>https://docs.aws.amazon.com/prescriptive-guidance/latest/load-balancer-stickiness/subnets-routing.html<br>A - Might be possible but it's quite impractical<br>B - Not needed as the setup described should work as is provided the SGs of the EC2 instances accept traffic from the ALB<br>C - Update the route tables for the EC2 instances' subnets to send 0.0.0.0/0 traffic through the internet gateway route - not needed as the EC2 instances would receive the traffic from the ALB ENIs. Add a rule to the EC2 instances' security groups to allow outbound traffic to 0.0.0.0/0 - the default behaviour of the SG is to allow outbound traffic only.<br>D -Create public subnets in each Availability Zone. Associate the public subnets with the ALB - if it's a internet facing ALB these should already be in place. Update the route tables for the public subnets with a route to the private subnets - no need as the local prefix entry in the route tables would take care of this point<br><br>I'm 110% sure the question or answers or both are wrong. Prove me wrong! :)",
+          "content": "I think either the question or the answers are not formulated correctly because of this document:<br>https://docs.aws.amazon.com/prescriptive-guidance/latest/load-balancer-stickiness/subnets-routing.html<br>A - Might be possible but it's quite impractical<br>B - Not needed as the setup described should work as is provided the SGs of the EC2 instances accept traffic from the ALB<br>C - Update the route tables for the EC2 instances' subnets to send 0.0.0.0/0 traffic through the internet gateway route - not needed as the EC2 instances would receive the traffic from the ALB ENIs. Add a rule to the EC2 instances' security groups to allow outbound traffic to 0.0.0.0/0 - the default behaviour of the SG is to allow outbound traffic only.<br>D -Create public subnets in each Availability Zone. Associate the public subnets with the ALB - if it's a internet facing ALB these should already be in place. Update the route tables for the public subnets with a route to the private subnets - no need as the local prefix entry in the route tables would take care of this point<br><br>I'm 110% sure the question or answers or both are wrong. Prove me wrong! :)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Completely agreed, I was looking for an option to allow HTTPS traffic on port 443 from the ALB to the EC2 instance's security group.<br><br>Either the question or the answers are wrong.</li></ul>",
+          "upvote_count": "3",
+          "selected_answers": ""
+        },
+        {
+          "id": 838778,
+          "date": "Tue 14 Mar 2023 12:25",
+          "username": "\t\t\t\tUnluckyDucky\t\t\t",
+          "content": "Completely agreed, I was looking for an option to allow HTTPS traffic on port 443 from the ALB to the EC2 instance's security group.<br><br>Either the question or the answers are wrong.",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -6371,7 +6491,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Thu 26 Jan 2023 09:18",
           "username": "\t\t\t\taws4myself\t\t\t",
           "content": "Simply we can update the private subnet route table to get internet with IGW id. Aslo we are allowing security group outbound to 0.0.0.0/0. <br><br>D is a bad answer. If you launch a public ALB, there should be min 2 AZs with internet access. There is nothing to update route tables for public and private subnets. By default, every route table has a default rule with VPC CIDR range.",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -6379,7 +6499,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 25 Jan 2023 06:48",
           "username": "\t\t\t\tChan1509\t\t\t",
           "content": "https://www.examtopics.com/discussions/amazon/view/80859-exam-aws-certified-solutions-architect-associate-saa-c02/",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -6485,7 +6605,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Mon 16 Jan 2023 07:38",
           "username": "\t\t\t\tKelvinEM\t\t\t",
           "content": "C,E<br>\\\"An active, long-running transaction can slow the process of creating the read replica. We recommend that you wait for long-running transactions to complete before creating a read replica. If you create multiple read replicas in parallel from the same source DB instance, Amazon RDS takes only one snapshot at the start of the first create action.<br><br>When creating a read replica, there are a few things to consider. First, you must enable automatic backups on the source DB instance by setting the backup retention period to a value other than 0. This requirement also applies to a read replica that is the source DB instance for another read replica\\\"<br>https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html",
-          "upvote_count": "14",
+          "upvote_count": "16",
           "selected_answers": ""
         },
         {
@@ -6493,7 +6613,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Tue 07 Mar 2023 18:10",
           "username": "\t\t\t\tfkie4\t\t\t",
           "content": "Who would know this stuff man...",
-          "upvote_count": "2",
+          "upvote_count": "7",
           "selected_answers": ""
         },
         {
@@ -6711,7 +6831,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Mon 30 Jan 2023 02:17",
           "username": "\t\t\t\tdevonwho\t\t\t",
           "content": "Amazon FSx has native support for Windows file system features and for the industry-standard Server Message Block (SMB) protocol to access file storage over a network.<br><br>https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -6820,7 +6940,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 20 Jan 2023 10:47",
           "username": "\t\t\t\tLuckyAro\t\t\t",
           "content": "D is the correct answer.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -6936,7 +7056,15 @@ var SAA_C03_Exam_201_300 = {
           "id": 833965,
           "date": "Thu 09 Mar 2023 13:49",
           "username": "\t\t\t\tAlessandraSAA\t\t\t",
-          "content": "why not C?",
+          "content": "why not C?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Because NAT Gateways are preferred over NAT Instances by AWS and in general.<br><br>I have yet to find a situation where a NAT Instance would be more applicable than NAT Gateway which is fully managed and is overall an easier solution to implement - both in AWS questions or the real world.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 838783,
+          "date": "Tue 14 Mar 2023 12:32",
+          "username": "\t\t\t\tUnluckyDucky\t\t\t",
+          "content": "Because NAT Gateways are preferred over NAT Instances by AWS and in general.<br><br>I have yet to find a situation where a NAT Instance would be more applicable than NAT Gateway which is fully managed and is overall an easier solution to implement - both in AWS questions or the real world.",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -7305,6 +7433,14 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 775931,
+          "date": "Sat 14 Jan 2023 22:08",
+          "username": "\t\t\t\tAninina\t\t\t",
+          "content": "D.  Store the order in the database. Send a message that includes the order number to an Amazon Simple Queue Service (Amazon SQS) FIFO queue. Set the payment service to retrieve the message and process the order. Delete the message from the queue.<br>This approach ensures that the order creation and payment processing steps are separate and atomic. By sending the order information to an SQS FIFO queue, the payment service can process the order one at a time and in the order they were received. If the payment service is unable to process an order, it can be retried later, preventing the creation of multiple orders. The deletion of the message from the queue after it is processed will prevent the same message from being processed multiple times.<br>It's worth noting that FIFO queues guarantee that messages are processed in the order they are received, and prevent duplicates.",
+          "upvote_count": "5",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 826953,
           "date": "Thu 02 Mar 2023 14:57",
           "username": "\t\t\t\tWael216\t\t\t",
@@ -7318,14 +7454,6 @@ var SAA_C03_Exam_201_300 = {
           "username": "\t\t\t\tmhmt4438\t\t\t",
           "content": "https://www.examtopics.com/discussions/amazon/view/95026-exam-aws-certified-solutions-architect-associate-saa-c03/",
           "upvote_count": "3",
-          "selected_answers": "Selected Answer: D"
-        },
-        {
-          "id": 775931,
-          "date": "Sat 14 Jan 2023 22:08",
-          "username": "\t\t\t\tAninina\t\t\t",
-          "content": "D.  Store the order in the database. Send a message that includes the order number to an Amazon Simple Queue Service (Amazon SQS) FIFO queue. Set the payment service to retrieve the message and process the order. Delete the message from the queue.<br>This approach ensures that the order creation and payment processing steps are separate and atomic. By sending the order information to an SQS FIFO queue, the payment service can process the order one at a time and in the order they were received. If the payment service is unable to process an order, it can be retried later, preventing the creation of multiple orders. The deletion of the message from the queue after it is processed will prevent the same message from being processed multiple times.<br>It's worth noting that FIFO queues guarantee that messages are processed in the order they are received, and prevent duplicates.",
-          "upvote_count": "4",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -7431,7 +7559,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Mon 16 Jan 2023 20:41",
           "username": "\t\t\t\tAninina\t\t\t",
           "content": "B and D for sure guys",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: BD"
         },
         {
@@ -7488,6 +7616,22 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 838793,
+          "date": "Tue 14 Mar 2023 12:43",
+          "username": "\t\t\t\tUnluckyDucky\t\t\t",
+          "content": "Both A and C are applicable - no doubt there.<br><br>C is more straightforward and to the point of the question imho.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Changing my answer to *A* as the dashboard will provide near-real updates.<br><br>Unless the lambda is configured to run every minute which is not common with schedules - it is not considered near real-time.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 838796,
+          "date": "Tue 14 Mar 2023 12:49",
+          "username": "\t\t\t\tUnluckyDucky\t\t\t",
+          "content": "Changing my answer to *A* as the dashboard will provide near-real updates.<br><br>Unless the lambda is configured to run every minute which is not common with schedules - it is not considered near real-time.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 808795,
           "date": "Tue 14 Feb 2023 21:13",
           "username": "\t\t\t\tbdp123\t\t\t",
@@ -7516,7 +7660,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Mon 30 Jan 2023 02:58",
           "username": "\t\t\t\tdevonwho\t\t\t",
           "content": "You can use metric streams to continually stream CloudWatch metrics to a destination of your choice, with near-real-time delivery and low latency. One of the use cases is Data Lake: create a metric stream and direct it to an Amazon Kinesis Data Firehose delivery stream that delivers your CloudWatch metrics to a data lake such as Amazon S3.<br><br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Metric-Streams.html",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -7778,11 +7922,19 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 852438,
+          "date": "Mon 27 Mar 2023 22:01",
+          "username": "\t\t\t\tgold4otas\t\t\t",
+          "content": "A.  Create a backup vault in AWS Backup to retain RDS backups. Create a new backup plan with a daily schedule and an expiration period of 2 years after creation. Assign the RDS DB instances to the backup plan.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 779397,
           "date": "Wed 18 Jan 2023 00:41",
           "username": "\t\t\t\ttechhb\t\t\t",
           "content": "A is right choice",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -7806,7 +7958,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 13 Jan 2023 13:11",
           "username": "\t\t\t\tbamishr\t\t\t",
           "content": "Create a backup vault in AWS Backup to retain RDS backups. Create a new backup plan with a daily schedule and an expiration period of 2 years after creation. Assign the RDS DB instances to the backup plan.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: A"
         }
       ]
@@ -7863,6 +8015,14 @@ var SAA_C03_Exam_201_300 = {
           "selected_answers": "Selected Answer: D"
         },
         {
+          "id": 844603,
+          "date": "Mon 20 Mar 2023 08:04",
+          "username": "\t\t\t\tAbhineet9148232\t\t\t",
+          "content": "https://aws.amazon.com/blogs/storage/using-amazon-fsx-for-windows-file-server-with-an-on-premises-active-directory/",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 837710,
           "date": "Mon 13 Mar 2023 08:15",
           "username": "\t\t\t\tsomsundar\t\t\t",
@@ -7907,7 +8067,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 27 Jan 2023 13:41",
           "username": "\t\t\t\tKAUS2\t\t\t",
           "content": "A is correct <br>Use AD Connector if you only need to allow your on-premises users to log in to AWS applications and services with their Active Directory credentials. You can also use AD Connector to join Amazon EC2 instances to your existing Active Directory domain.<br>Pls refer - https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html#adconnector",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -7983,6 +8143,22 @@ var SAA_C03_Exam_201_300 = {
           "content": "A, C is correct.<br><br>NLB lister rule only supports Protocol & Port (Not host/based routing like ALB) => D, E is incorrect.<br>NLB just works layer 4 (TCP/UDP) instead of Layer 7 (HTTP) => B is incorrect.<br><br>After eliminating, AC should be the answer.",
           "upvote_count": "5",
           "selected_answers": "Selected Answer: AC"
+        },
+        {
+          "id": 847354,
+          "date": "Wed 22 Mar 2023 18:57",
+          "username": "\t\t\t\tGalileoEC2\t\t\t",
+          "content": "Using a Directory Connector to connect the on-premises Active Directory to AWS is one way to enable access to AWS resources, including Amazon FSx for Windows File Server. However, joining the Amazon FSx for Windows File Server file system to the on-premises Active Directory is a separate step that allows you to control access to the file shares using the same Active Directory groups that are used on-premises.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I guess this belongs to the question before #260</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 848102,
+          "date": "Thu 23 Mar 2023 12:12",
+          "username": "\t\t\t\tLoXeras\t\t\t",
+          "content": "I guess this belongs to the question before #260",
+          "upvote_count": "1",
+          "selected_answers": ""
         },
         {
           "id": 806219,
@@ -8074,7 +8250,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sun 15 Jan 2023 17:47",
           "username": "\t\t\t\tmhmt4438\t\t\t",
           "content": "A.  Create a peering connection between the VPCs. Add a route table entry for the peering connection in both VPCs. Configure an inbound rule for the ElastiCache cluster's security group to allow inbound connection from the application's security group.<br><br>Creating a peering connection between the VPCs allows the application's EC2 instances to communicate with the ElastiCache cluster directly and efficiently. This is the most cost-effective solution as it does not involve creating additional resources such as a Transit VPC, and it does not incur additional costs for traffic passing through the Transit VPC.  Additionally, it is also more secure as it allows you to configure a more restrictive security group rule to allow inbound connection from only the application's security group.",
-          "upvote_count": "8",
+          "upvote_count": "9",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -8135,6 +8311,38 @@ var SAA_C03_Exam_201_300 = {
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 848110,
+          "date": "Thu 23 Mar 2023 12:17",
+          "username": "\t\t\t\tLoXeras\t\t\t",
+          "content": "AWS Farget is server less solution to use on ECS: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
+          "id": 845631,
+          "date": "Tue 21 Mar 2023 08:58",
+          "username": "\t\t\t\tlambda15\t\t\t",
+          "content": "why is c is incorrect ?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Because in the question says, \\\"minimizes the amount of ongoing effort for maintenance and scaling\\\", and EC2 instances you need effort to maintain the infrastructure unlike fargate that is serverless.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 847322,
+          "date": "Wed 22 Mar 2023 18:07",
+          "username": "\t\t\t\tJulio98\t\t\t",
+          "content": "Because in the question says, \\\"minimizes the amount of ongoing effort for maintenance and scaling\\\", and EC2 instances you need effort to maintain the infrastructure unlike fargate that is serverless.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 838437,
+          "date": "Tue 14 Mar 2023 01:19",
+          "username": "\t\t\t\tWherecanIstart\t\t\t",
+          "content": "Amazon Fargate is a service that is fully manageable by Amazon; it offers provisioning, configuration and scaling feature. It is \\\"serverless\\\"..",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
         {
           "id": 830651,
           "date": "Mon 06 Mar 2023 09:38",
@@ -8257,7 +8465,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 18 Jan 2023 01:17",
           "username": "\t\t\t\ttechhb\t\t\t",
           "content": "Its D,found the root cause<br>Option B is not the best option to overcome these timeout errors because it is not designed to handle traffic directed by Amazon Route 53. Option B creates a failover routing policy record for each EC2 instance, which is designed to route traffic to a backup EC2 instance if one of the EC2 instances becomes unhealthy. This is not ideal for routing traffic from Route 53 as it does not allow for the redirection of traffic away from unhealthy instances. Option D would be the best choice as it allows for the creation of an Application Load Balancer which can detect unhealthy instances and redirect traffic away from them.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -8342,7 +8550,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sat 14 Jan 2023 23:13",
           "username": "\t\t\t\tAninina\t\t\t",
           "content": "C.  Configure a public Application Load Balancer (ALB) with multiple redundant Amazon EC2 instances in private subnets. Configure Amazon CloudFront to deliver HTTPS content using the public ALB as the origin.<br><br>This solution meets the requirements for a highly available application with web, application, and database tiers, as well as providing edge-based content delivery. Additionally, it maximizes security by having the ALB in a private subnet, which limits direct access to the web servers, while still being able to serve traffic over the Internet via the public ALB.  This will ensure that the web servers are not exposed to the public Internet, which reduces the attack surface and provides a secure way to access the application.",
-          "upvote_count": "5",
+          "upvote_count": "7",
           "selected_answers": ""
         },
         {
@@ -8366,7 +8574,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 13 Jan 2023 11:55",
           "username": "\t\t\t\tMorinator\t\t\t",
           "content": "Instances in private, ALB in public, point cloudfront to the public ALB",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: C"
         }
       ]
@@ -8511,9 +8719,17 @@ var SAA_C03_Exam_201_300 = {
           "id": 776851,
           "date": "Sun 15 Jan 2023 18:14",
           "username": "\t\t\t\tmhmt4438\t\t\t",
-          "content": "D.  Create an Amazon Kinesis Data Firehose delivery stream to store the data in Amazon S3. Create an Amazon Kinesis Data Analytics application to analyze the data.<br><br>This solution will meet the requirements with the least operational overhead as it uses Amazon Kinesis Data Firehose, which is a fully managed service that can automatically handle the data collection, data transformation, encryption, and data storage in near-real time. Kinesis Data Firehose can automatically store the data in Amazon S3 in Apache Parquet format for further processing. Additionally, it allows you to create an Amazon Kinesis Data Analytics application to analyze the data in near real-time, with no need to manage any infrastructure or invoke any Lambda function. This way you can process a large amount of data with the least operational overhead.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Nicely explained. Thanks.</li><li>Apache Parquet format processing was not mentioned in the answer options. Strange.</li></ul>",
-          "upvote_count": "16",
+          "content": "D.  Create an Amazon Kinesis Data Firehose delivery stream to store the data in Amazon S3. Create an Amazon Kinesis Data Analytics application to analyze the data.<br><br>This solution will meet the requirements with the least operational overhead as it uses Amazon Kinesis Data Firehose, which is a fully managed service that can automatically handle the data collection, data transformation, encryption, and data storage in near-real time. Kinesis Data Firehose can automatically store the data in Amazon S3 in Apache Parquet format for further processing. Additionally, it allows you to create an Amazon Kinesis Data Analytics application to analyze the data in near real-time, with no need to manage any infrastructure or invoke any Lambda function. This way you can process a large amount of data with the least operational overhead.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Thanks for the explanation!</li><li>Nicely explained. Thanks.</li><li>Apache Parquet format processing was not mentioned in the answer options. Strange.</li></ul>",
+          "upvote_count": "19",
           "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 838443,
+          "date": "Tue 14 Mar 2023 01:31",
+          "username": "\t\t\t\tWherecanIstart\t\t\t",
+          "content": "Thanks for the explanation!",
+          "upvote_count": "1",
+          "selected_answers": ""
         },
         {
           "id": 784134,
@@ -8560,7 +8776,7 @@ var SAA_C03_Exam_201_300 = {
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: A</p>",
+      "general_feedback": "<p>Correct Answer: B</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -8569,12 +8785,12 @@ var SAA_C03_Exam_201_300 = {
           "answers": [
             {
               "choice": "<p>A. Use Amazon ElastiCache in front of the database.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>B. Use RDS Proxy between the application and the database.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -8593,11 +8809,51 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 849319,
+          "date": "Fri 24 Mar 2023 14:33",
+          "username": "\t\t\t\tNagarjunaaa\t\t\t",
+          "content": "RDS proxy",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 847930,
+          "date": "Thu 23 Mar 2023 08:29",
+          "username": "\t\t\t\tneverdie\t\t\t",
+          "content": "By using RDS Proxy, the application can offload the task of managing database connections and pooling from the application to the proxy. This can help reduce connection overhead, improve connection reuse, and help to reduce the overall number of connections to the database, which can lead to better performance.<br><br>Additionally, RDS Proxy has built-in read and write connection pooling, which can help to reduce latency and improve throughput for read-heavy workloads like the gaming company's web application.<br><br>Overall, using RDS Proxy is a good option for improving the user experience and database performance without making significant changes to the application's architecture.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 844654,
+          "date": "Mon 20 Mar 2023 09:36",
+          "username": "\t\t\t\tGrace83\t\t\t",
+          "content": "anyone know if A or B is the correct answer?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 843988,
+          "date": "Sun 19 Mar 2023 17:50",
+          "username": "\t\t\t\tMLCL\t\t\t",
+          "content": "B is the correct answer, A would require significant changes to the application code",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 841231,
+          "date": "Thu 16 Mar 2023 18:32",
+          "username": "\t\t\t\tabitwrong\t\t\t",
+          "content": "Amazon RDS Proxy can be enabled for most applications with no code changes.(https://aws.amazon.com/rds/proxy/)<br>You can also use Amazon RDS Proxy with read-only endpoints to help you achieve read scalability of your read-heavy workloads. (https://aws.amazon.com/blogs/database/use-amazon-rds-proxy-with-read-only-endpoints/)<br><br>Elasticache can improve read performance but it relies on heavy code changes, so A is incorrect.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 827120,
           "date": "Thu 02 Mar 2023 17:46",
           "username": "\t\t\t\tSteve_4542636\t\t\t",
           "content": "Rds proxy is for too many connections, not for performance",
-          "upvote_count": "1",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -8621,7 +8877,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Mon 27 Feb 2023 15:51",
           "username": "\t\t\t\tJa13\t\t\t",
           "content": "I think it should be A, it says \\\"minimize code changes\\\" no \\\"reduce code change to zero\\\", so some changes are allowed. Also indicate that the problem is the performance reading operations, elasticache solved reads.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -8629,7 +8885,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Tue 21 Feb 2023 18:28",
           "username": "\t\t\t\tBhrino\t\t\t",
           "content": "Every other answer choice can simnifically change the architecture or can someone explain?<br>A.  Elasticache changes codeC.  can take time and effort to implementD.  Going from an SQL to no sql can be challenging and take time. Probably not the best idea when its being done for no reason",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -8703,30 +8959,6 @@ var SAA_C03_Exam_201_300 = {
           "content": "A: https://www.examtopics.com/discussions/amazon/view/86219-exam-aws-certified-solutions-architect-associate-saa-c02/",
           "upvote_count": "2",
           "selected_answers": ""
-        },
-        {
-          "id": 775989,
-          "date": "Sat 14 Jan 2023 23:45",
-          "username": "\t\t\t\tAninina\t\t\t",
-          "content": "A is correct",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 774436,
-          "date": "Fri 13 Jan 2023 13:15",
-          "username": "\t\t\t\tbamishr\t\t\t",
-          "content": "A.  Use Amazon ElastiCache in front of the database",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 774354,
-          "date": "Fri 13 Jan 2023 12:00",
-          "username": "\t\t\t\tMorinator\t\t\t",
-          "content": "https://aws.amazon.com/caching/",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: A"
         }
       ]
     },
@@ -8948,7 +9180,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sat 11 Feb 2023 09:25",
           "username": "\t\t\t\tawscerts023\t\t\t",
           "content": "Reached here ! Did anyone schedule the real exam now ? How was it ?",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -8956,7 +9188,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 10 Feb 2023 14:23",
           "username": "\t\t\t\tpal40sg\t\t\t",
           "content": "Thanks to everyone who contributed with answers :)",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -8964,7 +9196,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Thu 09 Feb 2023 02:15",
           "username": "\t\t\t\tManOnTheMoon\t\t\t",
           "content": "GOOD LUCK EVERYONE :) YOU CAN DO THIS",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -8972,7 +9204,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 01 Feb 2023 15:00",
           "username": "\t\t\t\tProfXsamson\t\t\t",
           "content": "C.  I'm here at the end, leaving this here for posterity sake 02/01/2023.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -9089,7 +9321,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sat 18 Feb 2023 18:19",
           "username": "\t\t\t\tYechi\t\t\t",
           "content": "Configuring caching based on the language of the viewer<br>If you want CloudFront to cache different versions of your objects based on the language specified in the request, configure CloudFront to forward the Accept-Language header to your origin.<br>https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/header-caching.html",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: B"
         }
       ]
@@ -9138,19 +9370,19 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
-          "id": 813812,
-          "date": "Sun 19 Feb 2023 08:15",
-          "username": "\t\t\t\tYechi\t\t\t",
-          "content": "Note: The difference between pilot light and warm standby can sometimes be difficult to understand. Both include an environment in your DR Region with copies of your primary Region assets. The distinction is that pilot light cannot process requests without additional action taken first, whereas warm standby can handle traffic (at reduced capacity levels) immediately. The pilot light approach requires you to “turn on” servers, possibly deploy additional (non-core) infrastructure, and scale up, whereas warm standby only requires you to scale up (everything is already deployed and running). Use your RTO and RPO needs to help you choose between these approaches.<br><br>https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html",
-          "upvote_count": "7",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
           "id": 813347,
           "date": "Sat 18 Feb 2023 18:46",
           "username": "\t\t\t\tnickolaj\t\t\t",
           "content": "Option A is incorrect because while Amazon Aurora global database is a good solution for disaster recovery, pilot light deployment provides only a minimalistic setup and would require manual intervention to make the DR Region fully operational, which increases the recovery time.<br><br>Option B is a better choice than Option A as it provides a warm standby deployment, which is an automated and more scalable setup than pilot light deployment. In this setup, the database is replicated to the DR Region, and the standby instance can be brought up quickly in case of a disaster.<br><br>Option C is incorrect because Multi-AZ DB instances provide high availability, not disaster recovery.<br><br>Option D is a good choice for high availability, but it does not meet the requirement for DR in a different region with the least possible latency.",
-          "upvote_count": "7",
+          "upvote_count": "10",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 813812,
+          "date": "Sun 19 Feb 2023 08:15",
+          "username": "\t\t\t\tYechi\t\t\t",
+          "content": "Note: The difference between pilot light and warm standby can sometimes be difficult to understand. Both include an environment in your DR Region with copies of your primary Region assets. The distinction is that pilot light cannot process requests without additional action taken first, whereas warm standby can handle traffic (at reduced capacity levels) immediately. The pilot light approach requires you to “turn on” servers, possibly deploy additional (non-core) infrastructure, and scale up, whereas warm standby only requires you to scale up (everything is already deployed and running). Use your RTO and RPO needs to help you choose between these approaches.<br><br>https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html",
+          "upvote_count": "10",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -9166,7 +9398,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 22 Feb 2023 11:56",
           "username": "\t\t\t\tleoattf\t\t\t",
           "content": "No, my friend. The question asks for deployment in another Region. Hence, it cannot be C or D.  <br>The answer is B because is Global (different regions) and Ward Standby has faster RTO than Pilot Light.",
-          "upvote_count": "5",
+          "upvote_count": "6",
           "selected_answers": ""
         }
       ]
@@ -9300,6 +9532,22 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 845358,
+          "date": "Tue 21 Mar 2023 00:42",
+          "username": "\t\t\t\tdcp\t\t\t",
+          "content": "I will go with A based on this \\\"The instances run in an Amazon EC2 Auto Scaling group across multiple Availability Zones. The Auto Scaling group scales up to 20 instances during work hours, but scales down to 2 instances overnight.\\\"<br>Setting the instances to 20 before the office hours start should address the issue.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 841416,
+          "date": "Fri 17 Mar 2023 00:29",
+          "username": "\t\t\t\tasoli\t\t\t",
+          "content": "At first, I thought the answer is A.  But it is C. <br><br>It seems that there is no information in the question about CPU or Memory usage. <br>So, we might think the answer is A.  why? because what we need is to have the required (desired) number of instances. It already has scheduled scaling that works well in this scenario. Scale down after working hours and scale up in working hours. So, it just needs to adjust the desired number to start from 20 instances.<br><br>But here is the point it shows A is WRONG!!!<br>If it started with desired 20 instances, it will keep it for the whole day. What if the load is reduced? We do not need to keep the 20 instances always. That 20 is the MAXIMUM number we need, no the DESIRE number. So it is against COST that is the main objective of this question.<br><br>So, the answer is C",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 828852,
           "date": "Sat 04 Mar 2023 12:28",
           "username": "\t\t\t\tFourOfAKind\t\t\t",
@@ -9425,16 +9673,32 @@ var SAA_C03_Exam_201_300 = {
           "id": 826495,
           "date": "Thu 02 Mar 2023 05:28",
           "username": "\t\t\t\tNel8\t\t\t",
-          "content": "My answer is B & D. .. B.  Migrate the database to Amazon Aurora to use Auto Scaling Storage. --- Aurora storage is also self-healing. Data blocks and disks are continuously scanned for errors and repaired automatically.D.  Configurate the Auto Scaling group to sue the average CPU as the scaling metric. -- Good choice.<br><br>I believe either A & C or B & D options will work.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>In this question, you have Oracle DB, and Amazon Aurora is for MySQL/PostgreSQL. A and D are the correct choices.</li></ul>",
-          "upvote_count": "1",
+          "content": "My answer is B & D. .. B.  Migrate the database to Amazon Aurora to use Auto Scaling Storage. --- Aurora storage is also self-healing. Data blocks and disks are continuously scanned for errors and repaired automatically.D.  Configurate the Auto Scaling group to sue the average CPU as the scaling metric. -- Good choice.<br><br>I believe either A & C or B & D options will work.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>In this question, you have Oracle DB, and Amazon Aurora is for MySQL/PostgreSQL. A and D are the correct choices.</li><li>You can migrate Oracle PL/SQL to Aurora:<br>https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migration-playbook/chap-oracle-aurora-mysql.sql.html</li><li>I still think A is the answer, because RDS for Oracle auto scaling once enabled it will automatically adjust the storage capacity.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: BD"
         },
         {
           "id": 828856,
           "date": "Sat 04 Mar 2023 12:35",
           "username": "\t\t\t\tFourOfAKind\t\t\t",
-          "content": "In this question, you have Oracle DB, and Amazon Aurora is for MySQL/PostgreSQL. A and D are the correct choices.",
-          "upvote_count": "3",
+          "content": "In this question, you have Oracle DB, and Amazon Aurora is for MySQL/PostgreSQL. A and D are the correct choices.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>You can migrate Oracle PL/SQL to Aurora:<br>https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migration-playbook/chap-oracle-aurora-mysql.sql.html</li><li>I still think A is the answer, because RDS for Oracle auto scaling once enabled it will automatically adjust the storage capacity.</li></ul>",
+          "upvote_count": "5",
+          "selected_answers": ""
+        },
+        {
+          "id": 845339,
+          "date": "Tue 21 Mar 2023 00:17",
+          "username": "\t\t\t\tdcp\t\t\t",
+          "content": "You can migrate Oracle PL/SQL to Aurora:<br>https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migration-playbook/chap-oracle-aurora-mysql.sql.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I still think A is the answer, because RDS for Oracle auto scaling once enabled it will automatically adjust the storage capacity.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 845345,
+          "date": "Tue 21 Mar 2023 00:26",
+          "username": "\t\t\t\tdcp\t\t\t",
+          "content": "I still think A is the answer, because RDS for Oracle auto scaling once enabled it will automatically adjust the storage capacity.",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -9442,7 +9706,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 22 Feb 2023 03:04",
           "username": "\t\t\t\tJa13\t\t\t",
           "content": "a and d",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: AD"
         },
         {
@@ -9551,15 +9815,39 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 17 Feb 2023 20:23",
           "username": "\t\t\t\tbdp123\t\t\t",
           "content": "Storage gateway is not used for storing content - only to transfer to the Cloud",
-          "upvote_count": "5",
+          "upvote_count": "6",
           "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 849398,
+          "date": "Fri 24 Mar 2023 15:39",
+          "username": "\t\t\t\tGalileoEC2\t\t\t",
+          "content": "Option A, which uses AWS Storage Gateway for files to store and process the video content, would be the most cost-effective solution.<br><br>With this approach, you would use an AWS Storage Gateway file gateway to access the video content stored in Amazon S3. The file gateway presents a file interface to the EC2 instances, allowing them to access the video content as if it were stored on a local file system. The video processing tasks can be performed on the EC2 instances, and the processed files can be stored back in S3.<br><br>This approach is cost-effective because it leverages the lower cost of Amazon S3 for storage while still allowing for easy access to the video content from the EC2 instances using a file interface. Additionally, Storage Gateway provides caching capabilities that can further improve performance by reducing the need to access S3 directly.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 846412,
+          "date": "Tue 21 Mar 2023 23:24",
+          "username": "\t\t\t\tscs50\t\t\t",
+          "content": "Selected Answer: A <br>Amazon S3 File gateway is using S3 behind the scene. <br>https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 839249,
+          "date": "Tue 14 Mar 2023 21:29",
+          "username": "\t\t\t\tCapJackSparrow\t\t\t",
+          "content": "Amazon S3 File Gateway<br><br>Amazon S3 File Gateway presents a file interface that enables you to store files as objects in Amazon S3 using the industry-standard NFS and SMB file protocols, and access those files via NFS and SMB from your data center or Amazon EC2, or access those files as objects directly in Amazon S3. POSIX-style metadata, including ownership, permissions, and timestamps are durably stored in Amazon S3 in the user-metadata of the object associated with the file. Once objects are transferred to S3, they can be managed as native S3 objects and bucket policies such as lifecycle management and Cross-Region Replication (CRR), and can be applied directly to objects stored in your bucket. Amazon S3 File Gateway also publishes audit logs for SMB file share user operations to Amazon CloudWatch.<br><br>Customers can use Amazon S3 File Gateway to back up on-premises file data as objects in Amazon S3 (including Microsoft SQL Server and Oracle databases and logs), and for hybrid cloud workflows using data generated by on-premises applications for processing by AWS services such as machine learning or big data analytics.",
+          "upvote_count": "1",
+          "selected_answers": ""
         },
         {
           "id": 831564,
           "date": "Tue 07 Mar 2023 05:58",
           "username": "\t\t\t\tBrak\t\t\t",
           "content": "It can't be D, since there are multiple servers accessing the video files which rules out EBS. File Gateway provides a shared filesystem to replace EFS, but uses S3 for storage to reduce costs.",
-          "upvote_count": "1",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -9598,7 +9886,15 @@ var SAA_C03_Exam_201_300 = {
           "id": 815422,
           "date": "Mon 20 Feb 2023 16:08",
           "username": "\t\t\t\tNolaHOla\t\t\t",
-          "content": "Can someone please explain or provide information why not C? If we go with option D it states that we store the Content in S3 which is indeed cheaper, but then we move them to EBS for processing, how are multiple Linux instances, gonna process the same videos from EBS when they can't read them simultaneously. <br>Where for Option C, we indeed keep the EFS, then we process from there and move them to EBS for reading? seems more logical to me",
+          "content": "Can someone please explain or provide information why not C? If we go with option D it states that we store the Content in S3 which is indeed cheaper, but then we move them to EBS for processing, how are multiple Linux instances, gonna process the same videos from EBS when they can't read them simultaneously. <br>Where for Option C, we indeed keep the EFS, then we process from there and move them to EBS for reading? seems more logical to me<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>EFS has a lower cost than EBS in general. So, moving from EFS to EBS will not reduce cost</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 841431,
+          "date": "Fri 17 Mar 2023 00:54",
+          "username": "\t\t\t\tasoli\t\t\t",
+          "content": "EFS has a lower cost than EBS in general. So, moving from EFS to EBS will not reduce cost",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -9746,6 +10042,22 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 846622,
+          "date": "Wed 22 Mar 2023 04:03",
+          "username": "\t\t\t\tmmustafa4455\t\t\t",
+          "content": "The correct Answer is A<br><br>https://aws.amazon.com/blogs/database/set-up-scheduled-backups-for-amazon-dynamodb-using-aws-backup/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Its B.  <br>https://aws.amazon.com/blogs/database/set-up-scheduled-backups-for-amazon-dynamodb-using-aws-backup/</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 846625,
+          "date": "Wed 22 Mar 2023 04:04",
+          "username": "\t\t\t\tmmustafa4455\t\t\t",
+          "content": "Its B.  <br>https://aws.amazon.com/blogs/database/set-up-scheduled-backups-for-amazon-dynamodb-using-aws-backup/",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 816625,
           "date": "Tue 21 Feb 2023 14:42",
           "username": "\t\t\t\tWael216\t\t\t",
@@ -9836,6 +10148,22 @@ var SAA_C03_Exam_201_300 = {
           "username": "\t\t\t\trrharris\t\t\t",
           "content": "Answer is B - Quicksite creating data visualizations<br><br>https://docs.aws.amazon.com/quicksight/latest/user/welcome.html",
           "upvote_count": "5",
+          "selected_answers": ""
+        },
+        {
+          "id": 849440,
+          "date": "Fri 24 Mar 2023 16:42",
+          "username": "\t\t\t\tGalileoEC2\t\t\t",
+          "content": "Why the Hell A?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 842993,
+          "date": "Sat 18 Mar 2023 18:17",
+          "username": "\t\t\t\tGalileoEC2\t\t\t",
+          "content": "Why A! as far as I know Glue is not used for visualization",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -9960,7 +10288,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 17 Feb 2023 04:28",
           "username": "\t\t\t\trrharris\t\t\t",
           "content": "Correct Answer is A",
-          "upvote_count": "5",
+          "upvote_count": "6",
           "selected_answers": ""
         },
         {
@@ -9976,7 +10304,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 22 Feb 2023 00:56",
           "username": "\t\t\t\tKZM\t\t\t",
           "content": "A:<br>By using Multi-AZ deployment, the company can achieve an RPO of less than 1 second because the standby instance is always in sync with the primary instance, ensuring that data changes are continuously replicated.",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -10065,11 +10393,19 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 843008,
+          "date": "Sat 18 Mar 2023 18:30",
+          "username": "\t\t\t\tGalileoEC2\t\t\t",
+          "content": "Why C! another cazy answer ,If i am concern about security why I would want to expose my EC2 to the public internet,not make sense at all, am I <br>correct with this? I also go with B",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
           "id": 816093,
           "date": "Tue 21 Feb 2023 02:48",
           "username": "\t\t\t\tLuckyAro\t\t\t",
           "content": "B is the correct answer.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -10154,7 +10490,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Tue 21 Feb 2023 02:59",
           "username": "\t\t\t\tLuckyAro\t\t\t",
           "content": "Amazon FSx for NetApp ONTAP provides shared storage between Linux and Windows file systems.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -10226,6 +10562,22 @@ var SAA_C03_Exam_201_300 = {
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 846345,
+          "date": "Tue 21 Mar 2023 21:55",
+          "username": "\t\t\t\tDagsH\t\t\t",
+          "content": "Cost Explorer looks at the usage pattern or history",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 838494,
+          "date": "Tue 14 Mar 2023 03:21",
+          "username": "\t\t\t\tWherecanIstart\t\t\t",
+          "content": "Cost Explorer",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
         {
           "id": 813106,
           "date": "Sat 18 Feb 2023 15:39",
@@ -10308,7 +10660,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Thu 23 Feb 2023 17:08",
           "username": "\t\t\t\tbdp123\t\t\t",
           "content": "After looking at cost of Workmail compared to SES - probably 'B' is better",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -10486,7 +10838,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 22 Feb 2023 04:37",
           "username": "\t\t\t\tKZM\t\t\t",
           "content": "It is B:<br>A: Incorrect> FSx file Gateway designed for low latency and efficient access to in-cloud FSx for Windows File Server file shares from your on-premises facility. <br><br>B: Correct> This solution will allow the company to host all three tiers on Amazon EC2 instances while using Amazon FSx for Windows File Server to provide Windows-based file sharing between the tiers. This will allow the company to use specific features of SQL Server, such as native backups and Data Quality Services, while sharing files for processing between the tiers.<br><br>C: Incorrect> Currently, Amazon EFS supports the NFSv4.1 protocol and does not natively support the SMB protocol, and can't be used in Windows instances yet.<br><br>D: Incorrect> Amazon EBS is a block-level storage solution that is typically used to store data at the operating system level, rather than for file sharing between servers.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -10502,7 +10854,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 22 Feb 2023 04:21",
           "username": "\t\t\t\tKZM\t\t\t",
           "content": "Currently, Amazon EFS supports the NFSv4.1 protocol and does not natively support the SMB protocol, and can't be used in Windows instances yet.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -10595,7 +10947,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 17 Feb 2023 16:38",
           "username": "\t\t\t\tBhawesh\t\t\t",
           "content": "Since no code change is permitted, below choice makes sense for the unix server's file sharing:C.  Create an Amazon Elastic File System (Amazon EFS) file system. Mount the EFS file system on all web servers.",
-          "upvote_count": "9",
+          "upvote_count": "10",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -10753,6 +11105,22 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 848989,
+          "date": "Fri 24 Mar 2023 06:27",
+          "username": "\t\t\t\tWherecanIstart\t\t\t",
+          "content": "Without commitment....Spot instances",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 838345,
+          "date": "Mon 13 Mar 2023 22:46",
+          "username": "\t\t\t\tcegama543\t\t\t",
+          "content": "If the company wants to optimize cost savings without making a long-term commitment, then using only On-Demand Instances may not be the most cost-effective option. Spot Instances can be significantly cheaper than On-Demand Instances, but they come with the risk of being interrupted if the Spot price increases above your bid price. If the company is willing to accept this risk, a mix of On-Demand Instances and Spot Instances may be the best option to optimize cost savings while maintaining the desired level of scalability.<br><br>However, if the company wants the most predictable pricing and does not want to risk instance interruption, then using only On-Demand Instances is a good choice. It ultimately depends on the company's priorities and risk tolerance.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 827398,
           "date": "Thu 02 Mar 2023 21:25",
           "username": "\t\t\t\tSteve_4542636\t\t\t",
@@ -10867,10 +11235,34 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 818276,
+          "date": "Wed 22 Feb 2023 20:14",
+          "username": "\t\t\t\tleoattf\t\t\t",
+          "content": "I thought that option A was totally wrong, because the question mentions \\\"HTTP client does not support cookies\\\". However it is right, along with option B.  Check the link bellow, first paragraph. <br>https://aws.amazon.com/blogs/media/secure-content-using-cloudfront-functions/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Thanks for this!What a tricky question.If the client doesn't support cookies, THEN they use the signed S3 Urls.</li></ul>",
+          "upvote_count": "8",
+          "selected_answers": "Selected Answer: AB"
+        },
+        {
+          "id": 827406,
+          "date": "Thu 02 Mar 2023 21:30",
+          "username": "\t\t\t\tSteve_4542636\t\t\t",
+          "content": "Thanks for this!What a tricky question.If the client doesn't support cookies, THEN they use the signed S3 Urls.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
           "id": 829961,
           "date": "Sun 05 Mar 2023 15:12",
           "username": "\t\t\t\tjohnmcclane78\t\t\t",
           "content": "B.  Signed URLs - This method allows the media company to control who can access the video content by creating a time-limited URL with a cryptographic signature. This URL can be distributed to the users who are unable to change the hardcoded URLs they are using for access, and they can access the content without needing to support cookies.<br>D.  JSON Web Token (JWT) - This method allows the media company to control who can access the video content by creating a secure token that contains user authentication and authorization information. This token can be distributed to the users who are using a custom HTTP client that does not support cookies. The users can include this token in their requests to access the content without needing to support cookies.<br><br>Therefore, options B and D are the correct answers.<br><br>Option A (Signed cookies) would not work for users who are using a custom HTTP client that does not support cookies. Option C (AWS AppSync) is not relevant to the requirement of securing video content. Option E (AWS Secrets Manager) is a service used for storing and retrieving secrets, which is not relevant to the requirement of securing video content.",
+          "upvote_count": "7",
+          "selected_answers": ""
+        },
+        {
+          "id": 839288,
+          "date": "Tue 14 Mar 2023 22:04",
+          "username": "\t\t\t\tCapJackSparrow\t\t\t",
+          "content": "Some of the company's users are using a custom HTTP client that does not support cookies.<br>**Singned URLS<br><br> Some of the company's users are unable to change the hardcoded URLs that they are using for access.**Signed cookies",
           "upvote_count": "3",
           "selected_answers": ""
         },
@@ -10879,7 +11271,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Thu 02 Mar 2023 13:06",
           "username": "\t\t\t\tTungPham\t\t\t",
           "content": "https://aws.amazon.com/vi/blogs/media/awse-protecting-your-media-assets-with-token-authentication/<br>JSON Web Token (JWT) need using with Lambda@Edge",
-          "upvote_count": "1",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: AB"
         },
         {
@@ -10889,22 +11281,6 @@ var SAA_C03_Exam_201_300 = {
           "content": "b d seems good",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: BD"
-        },
-        {
-          "id": 818276,
-          "date": "Wed 22 Feb 2023 20:14",
-          "username": "\t\t\t\tleoattf\t\t\t",
-          "content": "I thought that option A was totally wrong, because the question mentions \\\"HTTP client does not support cookies\\\". However it is right, along with option B.  Check the link bellow, first paragraph. <br>https://aws.amazon.com/blogs/media/secure-content-using-cloudfront-functions/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Thanks for this!What a tricky question.If the client doesn't support cookies, THEN they use the signed S3 Urls.</li></ul>",
-          "upvote_count": "3",
-          "selected_answers": "Selected Answer: AB"
-        },
-        {
-          "id": 827406,
-          "date": "Thu 02 Mar 2023 21:30",
-          "username": "\t\t\t\tSteve_4542636\t\t\t",
-          "content": "Thanks for this!What a tricky question.If the client doesn't support cookies, THEN they use the signed S3 Urls.",
-          "upvote_count": "1",
-          "selected_answers": ""
         },
         {
           "id": 818121,
@@ -11166,7 +11542,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Thu 02 Mar 2023 21:57",
           "username": "\t\t\t\tSteve_4542636\t\t\t",
           "content": "The question states, \\\"wants to maintain local access to all the data\\\"This is storage gateway.Cached gateway stores only the frequently accessed data locally which is not what the problem statement asks for.",
-          "upvote_count": "2",
+          "upvote_count": "5",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -11324,18 +11700,18 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
-          "id": 827430,
-          "date": "Thu 02 Mar 2023 22:02",
-          "username": "\t\t\t\tSteve_4542636\t\t\t",
-          "content": "Actually this is what Macie is best used for.",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
           "id": 817832,
           "date": "Wed 22 Feb 2023 13:52",
           "username": "\t\t\t\tfruto123\t\t\t",
           "content": "B is the right answer and the proof is in this link.<br><br>https://aws.amazon.com/blogs/aws/introducing-amazon-s3-object-lambda-use-your-code-to-process-data-as-it-is-being-retrieved-from-s3/",
+          "upvote_count": "6",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 827430,
+          "date": "Thu 02 Mar 2023 22:02",
+          "username": "\t\t\t\tSteve_4542636\t\t\t",
+          "content": "Actually this is what Macie is best used for.",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
@@ -11344,7 +11720,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 22 Feb 2023 12:38",
           "username": "\t\t\t\tpagom\t\t\t",
           "content": "https://aws.amazon.com/ko/blogs/korea/introducing-amazon-s3-object-lambda-use-your-code-to-process-data-as-it-is-being-retrieved-from-s3/",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -11425,6 +11801,22 @@ var SAA_C03_Exam_201_300 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 814242,
+          "date": "Sun 19 Feb 2023 17:09",
+          "username": "\t\t\t\tBrainOBrain\t\t\t",
+          "content": "10.0.1.0/32 and 192.168.1.0/32 are too small for VPC, and /32 network is only 1 host <br>192.168.0.0/24 is overlapping with existing VPC",
+          "upvote_count": "6",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 846316,
+          "date": "Tue 21 Mar 2023 21:27",
+          "username": "\t\t\t\tr04dB10ck\t\t\t",
+          "content": "only one valid with no overlap",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 827438,
           "date": "Thu 02 Mar 2023 22:06",
           "username": "\t\t\t\tSteve_4542636\t\t\t",
@@ -11449,14 +11841,6 @@ var SAA_C03_Exam_201_300 = {
           "selected_answers": "Selected Answer: D"
         },
         {
-          "id": 814242,
-          "date": "Sun 19 Feb 2023 17:09",
-          "username": "\t\t\t\tBrainOBrain\t\t\t",
-          "content": "10.0.1.0/32 and 192.168.1.0/32 are too small for VPC, and /32 network is only 1 host <br>192.168.0.0/24 is overlapping with existing VPC",
-          "upvote_count": "4",
-          "selected_answers": "Selected Answer: D"
-        },
-        {
           "id": 814186,
           "date": "Sun 19 Feb 2023 15:49",
           "username": "\t\t\t\tobatunde\t\t\t",
@@ -11469,7 +11853,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 17 Feb 2023 15:20",
           "username": "\t\t\t\tbdp123\t\t\t",
           "content": "The allowed block size is between a /28 netmask and /16 netmask.<br>The CIDR block must not overlap with any existing CIDR block that's associated with the VPC. <br>https://docs.aws.amazon.com/vpc/latest/userguide/configure-your-vpc.html",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: D"
         }
       ]
@@ -11522,7 +11906,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Fri 17 Feb 2023 15:30",
           "username": "\t\t\t\tbdp123\t\t\t",
           "content": "Just create an auto scaling policy",
-          "upvote_count": "6",
+          "upvote_count": "7",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -11609,6 +11993,14 @@ var SAA_C03_Exam_201_300 = {
           "content": "A subnet must reside within a single Availability Zone.<br>https://aws.amazon.com/vpc/faqs/#:~:text=Can%20a%20subnet%20span%20Availability,within%20a%20single%20Availability%20Zone.",
           "upvote_count": "6",
           "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 843212,
+          "date": "Sat 18 Mar 2023 23:31",
+          "username": "\t\t\t\tGalileoEC2\t\t\t",
+          "content": "This discards B and D: Subnet basics. Each subnet must reside entirely within one Availability Zone and cannot span zones. By launching AWS resources in separate Availability Zones, you can protect your applications from the failure of a single Availability Zone",
+          "upvote_count": "1",
+          "selected_answers": ""
         },
         {
           "id": 827447,
@@ -11720,6 +12112,14 @@ var SAA_C03_Exam_201_300 = {
           "selected_answers": "Selected Answer: B"
         },
         {
+          "id": 812121,
+          "date": "Fri 17 Feb 2023 17:27",
+          "username": "\t\t\t\tBhawesh\t\t\t",
+          "content": "Keyword here is a minimum throughput of 6 GBps. Only the FSx for Lustre with SSD option gives the sub-milli response and throughput of 6 GBps or more.B.  Create an Amazon S3 bucket to store the raw data. Create an Amazon FSx for Lustre file system that uses persistent SSD storage. Select the option to import data from and export data to Amazon S3. Mount the file system on the EC2 instances.<br><br>Refrences:<br>https://aws.amazon.com/fsx/when-to-choose-fsx/",
+          "upvote_count": "5",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 827448,
           "date": "Thu 02 Mar 2023 22:15",
           "username": "\t\t\t\tSteve_4542636\t\t\t",
@@ -11749,14 +12149,6 @@ var SAA_C03_Exam_201_300 = {
           "username": "\t\t\t\teverfly\t\t\t",
           "content": "Amazon FSx for Lustre provides fully managed shared storage with the scalability and performance of the popular Lustre file system. It can deliver sub-millisecond latencies and hundreds of gigabytes per second of throughput.",
           "upvote_count": "3",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
-          "id": 812121,
-          "date": "Fri 17 Feb 2023 17:27",
-          "username": "\t\t\t\tBhawesh\t\t\t",
-          "content": "Keyword here is a minimum throughput of 6 GBps. Only the FSx for Lustre with SSD option gives the sub-milli response and throughput of 6 GBps or more.B.  Create an Amazon S3 bucket to store the raw data. Create an Amazon FSx for Lustre file system that uses persistent SSD storage. Select the option to import data from and export data to Amazon S3. Mount the file system on the EC2 instances.<br><br>Refrences:<br>https://aws.amazon.com/fsx/when-to-choose-fsx/",
-          "upvote_count": "4",
           "selected_answers": "Selected Answer: B"
         }
       ]
@@ -11809,7 +12201,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Sun 19 Feb 2023 15:38",
           "username": "\t\t\t\tNolaHOla\t\t\t",
           "content": "Option B based on the fact that the DB storage will continue to grow, so on-demand will be a more suitable solution<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Since the application's database storage is continuously growing over time, it may be difficult to estimate the appropriate size of the Aurora cluster in advance, which is required when reserving Aurora.<br><br>In this case, it may be more cost-effective to use Amazon RDS On-Demand Instances for the data storage layer. With RDS On-Demand Instances, you pay only for the capacity you use and you can easily scale up or down the storage as needed.</li><li>The Answer is C. <br>https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraMySQL.html</li></ul>",
-          "upvote_count": "5",
+          "upvote_count": "6",
           "selected_answers": ""
         },
         {
@@ -11817,7 +12209,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Mon 20 Feb 2023 16:40",
           "username": "\t\t\t\tNolaHOla\t\t\t",
           "content": "Since the application's database storage is continuously growing over time, it may be difficult to estimate the appropriate size of the Aurora cluster in advance, which is required when reserving Aurora.<br><br>In this case, it may be more cost-effective to use Amazon RDS On-Demand Instances for the data storage layer. With RDS On-Demand Instances, you pay only for the capacity you use and you can easily scale up or down the storage as needed.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>The Answer is C. <br>https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraMySQL.html</li></ul>",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -11873,7 +12265,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Thu 23 Feb 2023 04:38",
           "username": "\t\t\t\tSamuel03\t\t\t",
           "content": "I also think it is B.  Otherewise there is no point in mentionig about growing storage requirements.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -11897,7 +12289,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Wed 22 Feb 2023 01:53",
           "username": "\t\t\t\tManOnTheMoon\t\t\t",
           "content": "Why not B?",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -11905,7 +12297,7 @@ var SAA_C03_Exam_201_300 = {
           "date": "Tue 21 Feb 2023 19:43",
           "username": "\t\t\t\tLuckyAro\t\t\t",
           "content": "Amazon EC2 Reserved Instances allow for significant cost savings compared to On-Demand instances for long-running, steady-state workloads like this one. Reserved Instances provide a capacity reservation, so the instances are guaranteed to be available for the duration of the reservation period.<br><br>Amazon Aurora is a highly scalable, cloud-native relational database service that is designed to be compatible with MySQL and PostgreSQL. It can automatically scale up to meet growing storage requirements, so it can accommodate the application's database storage needs over time. By using Reserved Instances for Aurora, the cost savings will be significant over the long term.",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: C"
         },
         {
