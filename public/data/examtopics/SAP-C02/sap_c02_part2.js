@@ -46,6 +46,46 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 779100,
+          "date": "Tue 17 Jan 2023 18:05",
+          "username": "\t\t\t\tmasetromain\t\t\t",
+          "content": "The correct answer is D.  Create an IAM role in the sales account and grant access to the S3 bucket. From the marketing account, assume the IAM role in the sales account to access the S3 bucket. Update the QuickSight role to create a trust relationship with the new IAM role in the sales account.<br><br>This solution meets the requirements by allowing the marketing team to access the data in the S3 bucket in the sales account through assuming an IAM role, which eliminates the need to copy the data or share the KMS key, and also eliminates the need to modify the S3 bucket policy or create a KMS grant. This solution allows to use the same access to the bucket without duplicating data and re-encrypting it.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A.  Create a new S3 bucket in the marketing account. Create an S3 replication rule in the sales account to copy the objects to the new S3 bucket in the marketing account. Update the QuickSight permissions in the marketing account to grant access to the new S3 bucket is not correct because it would create unnecessary data duplication and increased storage costs.<br>B.  Create an SCP to grant access to the S3 bucket to the marketing account. Use AWS Resource Access Manager (AWS RAM) to share the KMS key from the sales account with the marketing account. Update the QuickSight permissions in the marketing account to grant access to the S3 bucket is not correct because it does not provide a secure way to share the KMS key between accounts and also it would create unnecessary data duplication and increased storage costs.</li><li>C.  Update the S3 bucket policy in the marketing account to grant access to the QuickSight role. Create a KMS grant for the encryption key that is used in the S3 bucket. Grant decrypt access to the QuickSight role. Update the QuickSight permissions in the marketing account to grant access to the S3 bucket is not correct because the Sales team's S3 bucket is in a different account, so the Marketing team cannot update the policy on the Sales team's S3 bucket.</li></ul>",
+          "upvote_count": "5",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 779101,
+          "date": "Tue 17 Jan 2023 18:05",
+          "username": "\t\t\t\tmasetromain\t\t\t",
+          "content": "A.  Create a new S3 bucket in the marketing account. Create an S3 replication rule in the sales account to copy the objects to the new S3 bucket in the marketing account. Update the QuickSight permissions in the marketing account to grant access to the new S3 bucket is not correct because it would create unnecessary data duplication and increased storage costs.<br>B.  Create an SCP to grant access to the S3 bucket to the marketing account. Use AWS Resource Access Manager (AWS RAM) to share the KMS key from the sales account with the marketing account. Update the QuickSight permissions in the marketing account to grant access to the S3 bucket is not correct because it does not provide a secure way to share the KMS key between accounts and also it would create unnecessary data duplication and increased storage costs.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C.  Update the S3 bucket policy in the marketing account to grant access to the QuickSight role. Create a KMS grant for the encryption key that is used in the S3 bucket. Grant decrypt access to the QuickSight role. Update the QuickSight permissions in the marketing account to grant access to the S3 bucket is not correct because the Sales team's S3 bucket is in a different account, so the Marketing team cannot update the policy on the Sales team's S3 bucket.</li></ul>",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 779102,
+          "date": "Tue 17 Jan 2023 18:06",
+          "username": "\t\t\t\tmasetromain\t\t\t",
+          "content": "C.  Update the S3 bucket policy in the marketing account to grant access to the QuickSight role. Create a KMS grant for the encryption key that is used in the S3 bucket. Grant decrypt access to the QuickSight role. Update the QuickSight permissions in the marketing account to grant access to the S3 bucket is not correct because the Sales team's S3 bucket is in a different account, so the Marketing team cannot update the policy on the Sales team's S3 bucket.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 851282,
+          "date": "Sun 26 Mar 2023 18:54",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Since the S3 bucket belongs to the sales account, the marketing team cannot directly update the policy on the sales team's S3 bucket. In that case, option D would be the better option.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 843318,
+          "date": "Sun 19 Mar 2023 01:57",
+          "username": "\t\t\t\tzejou1\t\t\t",
+          "content": "LEAST operational overhead, you could do D and it would work, but honestly it is three steps w/ C. ",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 830635,
           "date": "Mon 06 Mar 2023 09:31",
           "username": "\t\t\t\tsambb\t\t\t",
@@ -90,32 +130,8 @@ var SAP_C02_Part2 =
           "date": "Mon 30 Jan 2023 23:47",
           "username": "\t\t\t\tzozza2023\t\t\t",
           "content": "Initially i thought C and D are correct answers BUT seems C is uncorrrect as The marketing team doesn't have access to data that the sales team stores in the S3 bucket",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: D"
-        },
-        {
-          "id": 779100,
-          "date": "Tue 17 Jan 2023 18:05",
-          "username": "\t\t\t\tmasetromain\t\t\t",
-          "content": "The correct answer is D.  Create an IAM role in the sales account and grant access to the S3 bucket. From the marketing account, assume the IAM role in the sales account to access the S3 bucket. Update the QuickSight role to create a trust relationship with the new IAM role in the sales account.<br><br>This solution meets the requirements by allowing the marketing team to access the data in the S3 bucket in the sales account through assuming an IAM role, which eliminates the need to copy the data or share the KMS key, and also eliminates the need to modify the S3 bucket policy or create a KMS grant. This solution allows to use the same access to the bucket without duplicating data and re-encrypting it.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A.  Create a new S3 bucket in the marketing account. Create an S3 replication rule in the sales account to copy the objects to the new S3 bucket in the marketing account. Update the QuickSight permissions in the marketing account to grant access to the new S3 bucket is not correct because it would create unnecessary data duplication and increased storage costs.<br>B.  Create an SCP to grant access to the S3 bucket to the marketing account. Use AWS Resource Access Manager (AWS RAM) to share the KMS key from the sales account with the marketing account. Update the QuickSight permissions in the marketing account to grant access to the S3 bucket is not correct because it does not provide a secure way to share the KMS key between accounts and also it would create unnecessary data duplication and increased storage costs.</li><li>C.  Update the S3 bucket policy in the marketing account to grant access to the QuickSight role. Create a KMS grant for the encryption key that is used in the S3 bucket. Grant decrypt access to the QuickSight role. Update the QuickSight permissions in the marketing account to grant access to the S3 bucket is not correct because the Sales team's S3 bucket is in a different account, so the Marketing team cannot update the policy on the Sales team's S3 bucket.</li></ul>",
-          "upvote_count": "4",
-          "selected_answers": "Selected Answer: D"
-        },
-        {
-          "id": 779101,
-          "date": "Tue 17 Jan 2023 18:05",
-          "username": "\t\t\t\tmasetromain\t\t\t",
-          "content": "A.  Create a new S3 bucket in the marketing account. Create an S3 replication rule in the sales account to copy the objects to the new S3 bucket in the marketing account. Update the QuickSight permissions in the marketing account to grant access to the new S3 bucket is not correct because it would create unnecessary data duplication and increased storage costs.<br>B.  Create an SCP to grant access to the S3 bucket to the marketing account. Use AWS Resource Access Manager (AWS RAM) to share the KMS key from the sales account with the marketing account. Update the QuickSight permissions in the marketing account to grant access to the S3 bucket is not correct because it does not provide a secure way to share the KMS key between accounts and also it would create unnecessary data duplication and increased storage costs.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C.  Update the S3 bucket policy in the marketing account to grant access to the QuickSight role. Create a KMS grant for the encryption key that is used in the S3 bucket. Grant decrypt access to the QuickSight role. Update the QuickSight permissions in the marketing account to grant access to the S3 bucket is not correct because the Sales team's S3 bucket is in a different account, so the Marketing team cannot update the policy on the Sales team's S3 bucket.</li></ul>",
           "upvote_count": "2",
-          "selected_answers": ""
-        },
-        {
-          "id": 779102,
-          "date": "Tue 17 Jan 2023 18:06",
-          "username": "\t\t\t\tmasetromain\t\t\t",
-          "content": "C.  Update the S3 bucket policy in the marketing account to grant access to the QuickSight role. Create a KMS grant for the encryption key that is used in the S3 bucket. Grant decrypt access to the QuickSight role. Update the QuickSight permissions in the marketing account to grant access to the S3 bucket is not correct because the Sales team's S3 bucket is in a different account, so the Marketing team cannot update the policy on the Sales team's S3 bucket.",
-          "upvote_count": "2",
-          "selected_answers": ""
+          "selected_answers": "Selected Answer: D"
         },
         {
           "id": 777165,
@@ -129,9 +145,17 @@ var SAP_C02_Part2 =
           "id": 776576,
           "date": "Sun 15 Jan 2023 14:20",
           "username": "\t\t\t\tmasetromain\t\t\t",
-          "content": "The correct answer is option C for ME.  (D is also correct but the choice is difficult)<br><br>In this option, the solution architect updates the S3 bucket policy in the marketing account to grant access to the QuickSight role. This allows the QuickSight service to read the data stored in the S3 bucket. Additionally, the solution architect creates a KMS grant for the encryption key that is used in the S3 bucket, granting the QuickSight role the ability to decrypt the data. This will allow the marketing team to access and visualize the data stored in the S3 bucket, while keeping it secure with the use of encryption.<br><br>Option A would require the creation of a new S3 bucket in the marketing account and a replication rule to copy the data. This would increase the operational overhead and could also cause data consistency issues.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C is only allow marketing bucket. But data is stored on sales bucket</li><li>Option B would require the creation of a service control policy (SCP) in the marketing account, and the use of AWS RAM to share the KMS key, but this option would not grant the QuickSight role the ability to decrypt the data.<br><br>Option D would require creating an IAM role in the sales account and granting access to the S3 bucket. From the marketing account, assuming the IAM role in the sales account to access the S3 bucket. This would also increase operational overhead and complexity.</li><li>Option C:<br><br>- Update the S3 bucket policy in the sales account to grant access to the QuickSight role in the marketing account.<br><br>- Create a KMS grant for the encryption key that is used in the S3 bucket. Grant decrypt access to the QuickSight role in the marketing account.<br><br>- Update the QuickSight permissions in the marketing account to grant access to the S3 bucket.<br><br>This option allows the marketing team to access the data in the S3 bucket in the sales account, while ensuring that the data remains encrypted at rest and during transfer. The KMS grant allows the marketing team to access the decryption key without having to have access to the key itself.</li><li>Option D:<br><br>- Create an IAM role in the sales account and grant access to the S3 bucket.<br>- From the marketing account, assume the IAM role in the sales account to access the S3 bucket.<br>- Update the QuickSight role, to create a trust relationship with the new IAM role in the sales account.<br><br>This option is similar to option C but instead of using KMS grant, it uses IAM role to access the S3 bucket in the sales account. This option also allows the marketing team to access the data in the S3 bucket in the sales account, while ensuring that the data remains encrypted at rest and during transfer.</li></ul>",
+          "content": "The correct answer is option C for ME.  (D is also correct but the choice is difficult)<br><br>In this option, the solution architect updates the S3 bucket policy in the marketing account to grant access to the QuickSight role. This allows the QuickSight service to read the data stored in the S3 bucket. Additionally, the solution architect creates a KMS grant for the encryption key that is used in the S3 bucket, granting the QuickSight role the ability to decrypt the data. This will allow the marketing team to access and visualize the data stored in the S3 bucket, while keeping it secure with the use of encryption.<br><br>Option A would require the creation of a new S3 bucket in the marketing account and a replication rule to copy the data. This would increase the operational overhead and could also cause data consistency issues.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>same as zhangyu wrote, C is not correct..wrong account specified..bucket is in the Sales one</li><li>C is only allow marketing bucket. But data is stored on sales bucket</li><li>Option B would require the creation of a service control policy (SCP) in the marketing account, and the use of AWS RAM to share the KMS key, but this option would not grant the QuickSight role the ability to decrypt the data.<br><br>Option D would require creating an IAM role in the sales account and granting access to the S3 bucket. From the marketing account, assuming the IAM role in the sales account to access the S3 bucket. This would also increase operational overhead and complexity.</li><li>Option C:<br><br>- Update the S3 bucket policy in the sales account to grant access to the QuickSight role in the marketing account.<br><br>- Create a KMS grant for the encryption key that is used in the S3 bucket. Grant decrypt access to the QuickSight role in the marketing account.<br><br>- Update the QuickSight permissions in the marketing account to grant access to the S3 bucket.<br><br>This option allows the marketing team to access the data in the S3 bucket in the sales account, while ensuring that the data remains encrypted at rest and during transfer. The KMS grant allows the marketing team to access the decryption key without having to have access to the key itself.</li><li>Option D:<br><br>- Create an IAM role in the sales account and grant access to the S3 bucket.<br>- From the marketing account, assume the IAM role in the sales account to access the S3 bucket.<br>- Update the QuickSight role, to create a trust relationship with the new IAM role in the sales account.<br><br>This option is similar to option C but instead of using KMS grant, it uses IAM role to access the S3 bucket in the sales account. This option also allows the marketing team to access the data in the S3 bucket in the sales account, while ensuring that the data remains encrypted at rest and during transfer.</li></ul>",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 843448,
+          "date": "Sun 19 Mar 2023 05:59",
+          "username": "\t\t\t\tignorica\t\t\t",
+          "content": "same as zhangyu wrote, C is not correct..wrong account specified..bucket is in the Sales one",
+          "upvote_count": "1",
+          "selected_answers": ""
         },
         {
           "id": 777954,
@@ -154,7 +178,7 @@ var SAP_C02_Part2 =
           "date": "Sun 15 Jan 2023 14:21",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "Option C:<br><br>- Update the S3 bucket policy in the sales account to grant access to the QuickSight role in the marketing account.<br><br>- Create a KMS grant for the encryption key that is used in the S3 bucket. Grant decrypt access to the QuickSight role in the marketing account.<br><br>- Update the QuickSight permissions in the marketing account to grant access to the S3 bucket.<br><br>This option allows the marketing team to access the data in the S3 bucket in the sales account, while ensuring that the data remains encrypted at rest and during transfer. The KMS grant allows the marketing team to access the decryption key without having to have access to the key itself.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Option D:<br><br>- Create an IAM role in the sales account and grant access to the S3 bucket.<br>- From the marketing account, assume the IAM role in the sales account to access the S3 bucket.<br>- Update the QuickSight role, to create a trust relationship with the new IAM role in the sales account.<br><br>This option is similar to option C but instead of using KMS grant, it uses IAM role to access the S3 bucket in the sales account. This option also allows the marketing team to access the data in the S3 bucket in the sales account, while ensuring that the data remains encrypted at rest and during transfer.</li></ul>",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -210,6 +234,14 @@ var SAP_C02_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 851285,
+          "date": "Sun 26 Mar 2023 18:56",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Use the AWS Schema Conversion Tool",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
         {
           "id": 830535,
           "date": "Mon 06 Mar 2023 04:59",
@@ -321,6 +353,22 @@ var SAP_C02_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 851686,
+          "date": "Mon 27 Mar 2023 06:35",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "ACE is the best choice",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: ACE"
+        },
+        {
+          "id": 843330,
+          "date": "Sun 19 Mar 2023 02:22",
+          "username": "\t\t\t\tzejou1\t\t\t",
+          "content": "Step 1: Create a role in the Production Account; create the role in the Production account and specify the Development account as a trusted entity. You also limit the role permissions to only read and write access to the productionapp bucket. Anyone granted permission to use the role can read and write to the productionapp bucket.<br>Step 2: Grant access to the role Sign in as an administrator in the Development account and allow the AssumeRole action on the UpdateApp role in the Production account.<br><br>So, recap, production account you create the policy for S3, and you set development account as a trusted entity. Then on the development account you allow the sts:assumeRole action on the role in production account. <br>https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: ACE"
+        },
         {
           "id": 830542,
           "date": "Mon 06 Mar 2023 05:19",
@@ -447,6 +495,22 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851687,
+          "date": "Mon 27 Mar 2023 06:36",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Modify the existing environment's capacity configuration to use a load-balanced environment type.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 843332,
+          "date": "Sun 19 Mar 2023 02:27",
+          "username": "\t\t\t\tzejou1\t\t\t",
+          "content": "You can change your environment type to a single-instance or load-balanced, scalable environment by editing your environment's configuration. In some cases, you might want to change your environment type from one type to another. For example, let's say that you developed and tested an application in a single-instance environment to save costs. When your application is ready for production, you can change the environment type to a load-balanced, scalable environment so that it can scale to meet the demands of your customers.<br>https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features-managing-env-types.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 830550,
           "date": "Mon 06 Mar 2023 05:36",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
@@ -491,7 +555,7 @@ var SAP_C02_Part2 =
           "date": "Tue 24 Jan 2023 08:54",
           "username": "\t\t\t\tUntamables\t\t\t",
           "content": "I think AWS wants you to know is the below.<br>https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features-managing-env-types.html",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -523,7 +587,7 @@ var SAP_C02_Part2 =
           "date": "Mon 13 Mar 2023 02:40",
           "username": "\t\t\t\thobokabobo\t\t\t",
           "content": "\\\"you can't change the existing environment.\\\": since when?<br>2 years ago it was possible and I firmly believe AWS didn't change that without updating the documentation https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/GettingStarted.EditConfig.html",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -547,7 +611,7 @@ var SAP_C02_Part2 =
           "date": "Sun 15 Jan 2023 14:37",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "The correct answer is C.  This solution will meet the requirements with the least operational overhead because it modifies the existing environment's capacity configuration to use a load-balanced environment type and selects all availability zones. This will allow the application to scale out automatically if the average CPU utilization is over 85% for 5 minutes. This will help alleviate the performance issues without the need to create a new environment or rebuild the existing one.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Option A, creating a new Elastic Beanstalk application, would require more operational overhead as it would involve creating a new environment and configuring it with a load-balanced environment type and selecting all availability zones.<br><br>Option B, creating a second Elastic Beanstalk environment and applying a traffic-splitting deployment policy, would also require more operational overhead as it would involve creating a new environment and configuring it to handle some of the incoming traffic.<br><br>Option D, selecting the Rebuild environment action with the load balancing option, would also require more operational overhead as it would involve rebuilding the existing environment and configuring it with a load-balanced environment type.</li><li>To modify the existing environment's capacity in Elastic Beanstalk, you can use the Elastic Beanstalk management console or the AWS Elastic Beanstalk API.<br><br>To do this using the management console:<br><br>1 - Open the Elastic Beanstalk management console.<br>2 - Select the application and environment that you want to modify.<br>3 - In the navigation pane, choose Configuration.<br>4 - In the Capacity configuration section, you can modify the number of instances in your environment and configure automatic scaling settings.<br><br>To do this using the AWS Elastic Beanstalk API, you can use the UpdateEnvironment API action. The UpdateEnvironment action allows you to change the number of instances in your environment, as well as other settings like the environment name and description.</li></ul>",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -612,6 +676,14 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851688,
+          "date": "Mon 27 Mar 2023 06:38",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Performing a one-time migration",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 793433,
           "date": "Tue 31 Jan 2023 00:00",
           "username": "\t\t\t\tzozza2023\t\t\t",
@@ -624,7 +696,7 @@ var SAP_C02_Part2 =
           "date": "Sun 15 Jan 2023 14:42",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "B.  Performing a one-time migration of the database cluster to Amazon RDS, and creating several additional read replicas to handle the load during end of month.<br><br>This is the optimal solution as migrating the database to Amazon RDS will provide the ability to easily scale read replicas for handling increased read traffic during the end of the month. Additionally, RDS will manage the underlying infrastructure and provide automatic backups, software patching, and monitoring, which will reduce the operational overhead for the company. <br><br>Option A may help but it will not be sufficient to handle the heavy load, option C and D are not efficient solutions to han",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: B"
         }
       ]
@@ -673,11 +745,59 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 776623,
+          "date": "Sun 15 Jan 2023 14:46",
+          "username": "\t\t\t\tmasetromain\t\t\t",
+          "content": "The correct answer would be A, as migrating the application to Amazon Elastic Container Service (Amazon ECS) on AWS Fargate by using AWS App2Container and storing container images in Amazon Elastic Container Registry (Amazon ECR) would minimize the code changes and administrative overhead required to maintain the servers. This option would allow the company to use the Application Load Balancer (ALB) to interact with the application and the ECS task execution role permission to access the ECR image repository.<br><br>Option B would require the application code to be migrated to a container that runs in AWS Lambda, which would require more code changes. <br><br>Option C would require migrating the application to Amazon Elastic Kubernetes Service (Amazon EKS) which would require more administrative overhead. <br><br>Option D would require configuring Lambda to use an Application Load Balancer (ALB), which is not a native feature of Lambda.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>B does not say anything about Lambda. Where have you red that?</li><li>You are right, I mixed A with B</li><li>This solution allows for the existing application code to be packaged into a container, which can then be deployed to ECS on Fargate. The use of AWS App2Container will help automate the containerization process, minimizing the need for code changes. Additionally, by using ECR to store container images, the application can continue to use the same images and dependencies that it currently relies on. The use of an Application Load Balancer (ALB) to interact with the application further simplifies the migration process by allowing the use of the existing application's endpoint.</li></ul>",
+          "upvote_count": "5",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 797752,
+          "date": "Sat 04 Feb 2023 09:52",
+          "username": "\t\t\t\tMusk\t\t\t",
+          "content": "B does not say anything about Lambda. Where have you red that?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>You are right, I mixed A with B</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 797756,
+          "date": "Sat 04 Feb 2023 09:53",
+          "username": "\t\t\t\tMusk\t\t\t",
+          "content": "You are right, I mixed A with B",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 776625,
+          "date": "Sun 15 Jan 2023 14:48",
+          "username": "\t\t\t\tmasetromain\t\t\t",
+          "content": "This solution allows for the existing application code to be packaged into a container, which can then be deployed to ECS on Fargate. The use of AWS App2Container will help automate the containerization process, minimizing the need for code changes. Additionally, by using ECR to store container images, the application can continue to use the same images and dependencies that it currently relies on. The use of an Application Load Balancer (ALB) to interact with the application further simplifies the migration process by allowing the use of the existing application's endpoint.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 851695,
+          "date": "Mon 27 Mar 2023 06:40",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Migrate the application to Amazon Elastic Container Service (Amazon ECS) on AWS Fargate by using AWS App2Container.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 843345,
+          "date": "Sun 19 Mar 2023 02:55",
+          "username": "\t\t\t\tzejou1\t\t\t",
+          "content": "AWS App2Container (A2C) is a command line tool to help you lift and shift applications that run in your on-premises data centers or on virtual machines, so that they run in containers that are managed by Amazon ECS, Amazon EKS, or AWS App Runner.<br><br>Moving legacy applications to containers is often the starting point toward application modernization. There are many benefits to containerization:<br>• Reduces operational overhead and infrastructure costs<br>• Increases development and deployment agility<br>• Standardizes build and deployment processes across an organization<br>https://docs.aws.amazon.com/app2container/latest/UserGuide/what-is-a2c.html<br>AWS Fargate is a serverless, pay-as-you-go compute engine that lets you focus on building applications without managing servers. AWS Fargate is compatible with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).<br>https://aws.amazon.com/fargate/",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 833759,
           "date": "Thu 09 Mar 2023 10:18",
           "username": "\t\t\t\tkiran15789\t\t\t",
           "content": "least code chansges",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -743,38 +863,6 @@ var SAP_C02_Part2 =
           "content": "Also its an app not rest, thats more a job for a loadbalancer.",
           "upvote_count": "1",
           "selected_answers": ""
-        },
-        {
-          "id": 776623,
-          "date": "Sun 15 Jan 2023 14:46",
-          "username": "\t\t\t\tmasetromain\t\t\t",
-          "content": "The correct answer would be A, as migrating the application to Amazon Elastic Container Service (Amazon ECS) on AWS Fargate by using AWS App2Container and storing container images in Amazon Elastic Container Registry (Amazon ECR) would minimize the code changes and administrative overhead required to maintain the servers. This option would allow the company to use the Application Load Balancer (ALB) to interact with the application and the ECS task execution role permission to access the ECR image repository.<br><br>Option B would require the application code to be migrated to a container that runs in AWS Lambda, which would require more code changes. <br><br>Option C would require migrating the application to Amazon Elastic Kubernetes Service (Amazon EKS) which would require more administrative overhead. <br><br>Option D would require configuring Lambda to use an Application Load Balancer (ALB), which is not a native feature of Lambda.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>B does not say anything about Lambda. Where have you red that?</li><li>You are right, I mixed A with B</li><li>This solution allows for the existing application code to be packaged into a container, which can then be deployed to ECS on Fargate. The use of AWS App2Container will help automate the containerization process, minimizing the need for code changes. Additionally, by using ECR to store container images, the application can continue to use the same images and dependencies that it currently relies on. The use of an Application Load Balancer (ALB) to interact with the application further simplifies the migration process by allowing the use of the existing application's endpoint.</li></ul>",
-          "upvote_count": "4",
-          "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 797752,
-          "date": "Sat 04 Feb 2023 09:52",
-          "username": "\t\t\t\tMusk\t\t\t",
-          "content": "B does not say anything about Lambda. Where have you red that?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>You are right, I mixed A with B</li></ul>",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 797756,
-          "date": "Sat 04 Feb 2023 09:53",
-          "username": "\t\t\t\tMusk\t\t\t",
-          "content": "You are right, I mixed A with B",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 776625,
-          "date": "Sun 15 Jan 2023 14:48",
-          "username": "\t\t\t\tmasetromain\t\t\t",
-          "content": "This solution allows for the existing application code to be packaged into a container, which can then be deployed to ECS on Fargate. The use of AWS App2Container will help automate the containerization process, minimizing the need for code changes. Additionally, by using ECR to store container images, the application can continue to use the same images and dependencies that it currently relies on. The use of an Application Load Balancer (ALB) to interact with the application further simplifies the migration process by allowing the use of the existing application's endpoint.",
-          "upvote_count": "2",
-          "selected_answers": ""
         }
       ]
     },
@@ -825,17 +913,41 @@ var SAP_C02_Part2 =
           "id": 779113,
           "date": "Tue 17 Jan 2023 18:13",
           "username": "\t\t\t\tmasetromain\t\t\t",
-          "content": "The correct answer is D.  Deploy the Lambda function and an API Gateway endpoint to the us-west-2 Region. Configure Amazon Route 53 to use a failover routing policy to route traffic for the two API Gateway endpoints. This solution meets the requirement of having a failover to another region by having a copy of the Lambda function and API Gateway endpoint in a different region, and using Route 53's failover routing policy to route traffic between the two regions.<br><br>Option A is not correct because it only creates an additional API Gateway endpoint in us-west-2 and relies on Route 53's failover routing policy to direct traffic to the correct endpoint. But it does not deploy the Lambda function to the new region and this makes the failover incomplete.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Option B is not correct because it uses a SQS queue as a buffer between the API Gateway and the Lambda function, but this does not provide failover to another region. In addition, it would also increase the latency of the system as the SQS will act as an additional layer.<br><br>Option C is not correct because it deploys the Lambda function to the us-west-2 Region and creates an API Gateway endpoint in the same region. But it uses AWS Global Accelerator and an Application Load Balancer to manage traffic across the two API Gateway endpoints. However, this is not a failover solution as both regions will be active and serving traffic at the same time.</li></ul>",
-          "upvote_count": "6",
+          "content": "The correct answer is D.  Deploy the Lambda function and an API Gateway endpoint to the us-west-2 Region. Configure Amazon Route 53 to use a failover routing policy to route traffic for the two API Gateway endpoints. This solution meets the requirement of having a failover to another region by having a copy of the Lambda function and API Gateway endpoint in a different region, and using Route 53's failover routing policy to route traffic between the two regions.<br><br>Option A is not correct because it only creates an additional API Gateway endpoint in us-west-2 and relies on Route 53's failover routing policy to direct traffic to the correct endpoint. But it does not deploy the Lambda function to the new region and this makes the failover incomplete.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>You always use ChatGPT to paste answers. Most of the time ChatGPT gives wrong answers do you know this?</li><li>Option B is not correct because it uses a SQS queue as a buffer between the API Gateway and the Lambda function, but this does not provide failover to another region. In addition, it would also increase the latency of the system as the SQS will act as an additional layer.<br><br>Option C is not correct because it deploys the Lambda function to the us-west-2 Region and creates an API Gateway endpoint in the same region. But it uses AWS Global Accelerator and an Application Load Balancer to manage traffic across the two API Gateway endpoints. However, this is not a failover solution as both regions will be active and serving traffic at the same time.</li></ul>",
+          "upvote_count": "8",
           "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 840773,
+          "date": "Thu 16 Mar 2023 16:17",
+          "username": "\t\t\t\ttestingaws123\t\t\t",
+          "content": "You always use ChatGPT to paste answers. Most of the time ChatGPT gives wrong answers do you know this?",
+          "upvote_count": "1",
+          "selected_answers": ""
         },
         {
           "id": 779115,
           "date": "Tue 17 Jan 2023 18:13",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "Option B is not correct because it uses a SQS queue as a buffer between the API Gateway and the Lambda function, but this does not provide failover to another region. In addition, it would also increase the latency of the system as the SQS will act as an additional layer.<br><br>Option C is not correct because it deploys the Lambda function to the us-west-2 Region and creates an API Gateway endpoint in the same region. But it uses AWS Global Accelerator and an Application Load Balancer to manage traffic across the two API Gateway endpoints. However, this is not a failover solution as both regions will be active and serving traffic at the same time.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
+        },
+        {
+          "id": 851698,
+          "date": "Mon 27 Mar 2023 06:41",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Deploy the Lambda function and an API Gateway endpoint to the us-west-2 Region",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 843354,
+          "date": "Sun 19 Mar 2023 03:13",
+          "username": "\t\t\t\tzejou1\t\t\t",
+          "content": "Currently, the default API endpoint type in API Gateway is the edge-optimized API endpoint, which enables clients to access an API through an Amazon CloudFront distribution. This typically improves connection time for geographically diverse clients. By default, a custom domain name is globally unique and the edge-optimized API endpoint would invoke a Lambda function in a single region in the case of Lambda integration. You can't use this type of endpoint with a Route 53 active-active setup and fail-over.<br><br>The new regional API endpoint in API Gateway moves the API endpoint into the region and the custom domain name is unique per region. This makes it possible to run a full copy of an API in each region and then use Route 53 to use an active-active setup and failover.<br>https://aws.amazon.com/blogs/compute/building-a-multi-region-serverless-application-with-amazon-api-gateway-and-aws-lambda/",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
         },
         {
           "id": 830560,
@@ -915,6 +1027,14 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851703,
+          "date": "Mon 27 Mar 2023 06:43",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "C is the way to go",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 833758,
           "date": "Thu 09 Mar 2023 10:18",
           "username": "\t\t\t\tkiran15789\t\t\t",
@@ -927,7 +1047,7 @@ var SAP_C02_Part2 =
           "date": "Mon 06 Mar 2023 14:40",
           "username": "\t\t\t\tsambb\t\t\t",
           "content": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-turn-off.html",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -1024,20 +1144,44 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851706,
+          "date": "Mon 27 Mar 2023 06:45",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Suspend the Auto Scaling group's Terminate process.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 843365,
+          "date": "Sun 19 Mar 2023 03:32",
+          "username": "\t\t\t\tzejou1\t\t\t",
+          "content": "Amazon EC2 Auto Scaling stops marking instances unhealthy as a result of EC2 and Elastic Load Balancing health checks. Your custom health checks continue to function properly. After you suspend HealthCheck, if you need to, you can manually set the health state of instances in your group and have ReplaceUnhealthy replace them.<br>Suspending the Terminate process doesn't prevent the successful termination of instances using the force delete option with the delete-auto-scaling-group command.<br>https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-suspend-resume-processes.html <br>https://docs.aws.amazon.com/systems-manager/latest/userguide/incident-manager.html<br>We want the health checks to continue failing, just stop terminating to identify root cause",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 831060,
           "date": "Mon 06 Mar 2023 18:24",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "Disabling health check wont let SA know which instance is un healthy. So A is certainly wrong. D is correct.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: D"
         },
         {
           "id": 827334,
           "date": "Thu 02 Mar 2023 20:36",
           "username": "\t\t\t\ttestingaws123\t\t\t",
-          "content": "Answer is A<br>If you do not want instances to be replaced, we recommend that you suspend the ReplaceUnhealthy and HealthCheck process for individual Auto Scaling groups. For more information, see Suspend and resume a process for an Auto Scaling group. <br>https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-health-checks.html",
+          "content": "Answer is A<br>If you do not want instances to be replaced, we recommend that you suspend the ReplaceUnhealthy and HealthCheck process for individual Auto Scaling groups. For more information, see Suspend and resume a process for an Auto Scaling group. <br>https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-health-checks.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>That does not solve, it removes the healthcheck process, but also removes the ones that are being marked as unhealthy. The issue now is that one it is tagged as unhealthy they are being terminated. So, any that are already marked get terminated and you just removed the health checks to find remaining. you can't troubleshoot what you don't know.</li></ul>",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 843369,
+          "date": "Sun 19 Mar 2023 03:34",
+          "username": "\t\t\t\tzejou1\t\t\t",
+          "content": "That does not solve, it removes the healthcheck process, but also removes the ones that are being marked as unhealthy. The issue now is that one it is tagged as unhealthy they are being terminated. So, any that are already marked get terminated and you just removed the health checks to find remaining. you can't troubleshoot what you don't know.",
+          "upvote_count": "1",
+          "selected_answers": ""
         },
         {
           "id": 793437,
@@ -1109,6 +1253,30 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 776719,
+          "date": "Sun 15 Jan 2023 16:16",
+          "username": "\t\t\t\tmasetromain\t\t\t",
+          "content": "The correct answer is A. <br><br>In this solution, AWS Firewall Manager is used to manage AWS WAF rules across accounts in the organization. An AWS Systems Manager Parameter Store parameter is used to store account numbers and OUs to manage. This parameter can be updated as needed to add or remove accounts or OUs. An Amazon EventBridge rule is used to identify any changes to the parameter and to invoke an AWS Lambda function to update the security policy in the Firewall Manager administrative account. This solution allows for easy management of AWS WAF rules across multiple accounts with minimal operational overhead.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Option B does not meet the requirement of being able to add or remove accounts or OUs from managed AWS WAF rule sets as needed.<br><br>Option C is not the best approach as it requires manual configuration of the cross-account IAM roles and assume-role calls in the Lambda function, increasing the operational overhead.<br><br>Option D does not meet the requirement of providing a centralized management console to manage the WAF rules across multiple accounts.</li></ul>",
+          "upvote_count": "6",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 776720,
+          "date": "Sun 15 Jan 2023 16:16",
+          "username": "\t\t\t\tmasetromain\t\t\t",
+          "content": "Option B does not meet the requirement of being able to add or remove accounts or OUs from managed AWS WAF rule sets as needed.<br><br>Option C is not the best approach as it requires manual configuration of the cross-account IAM roles and assume-role calls in the Lambda function, increasing the operational overhead.<br><br>Option D does not meet the requirement of providing a centralized management console to manage the WAF rules across multiple accounts.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 851707,
+          "date": "Mon 27 Mar 2023 06:46",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Use AWS Firewall Manager to manage AWS WAF rules",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 831219,
           "date": "Mon 06 Mar 2023 21:04",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
@@ -1131,22 +1299,6 @@ var SAP_C02_Part2 =
           "content": "https://aws.amazon.com/solutions/implementations/automations-for-aws-firewall-manager/",
           "upvote_count": "2",
           "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 776719,
-          "date": "Sun 15 Jan 2023 16:16",
-          "username": "\t\t\t\tmasetromain\t\t\t",
-          "content": "The correct answer is A. <br><br>In this solution, AWS Firewall Manager is used to manage AWS WAF rules across accounts in the organization. An AWS Systems Manager Parameter Store parameter is used to store account numbers and OUs to manage. This parameter can be updated as needed to add or remove accounts or OUs. An Amazon EventBridge rule is used to identify any changes to the parameter and to invoke an AWS Lambda function to update the security policy in the Firewall Manager administrative account. This solution allows for easy management of AWS WAF rules across multiple accounts with minimal operational overhead.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Option B does not meet the requirement of being able to add or remove accounts or OUs from managed AWS WAF rule sets as needed.<br><br>Option C is not the best approach as it requires manual configuration of the cross-account IAM roles and assume-role calls in the Lambda function, increasing the operational overhead.<br><br>Option D does not meet the requirement of providing a centralized management console to manage the WAF rules across multiple accounts.</li></ul>",
-          "upvote_count": "4",
-          "selected_answers": "Selected Answer: A"
-        },
-        {
-          "id": 776720,
-          "date": "Sun 15 Jan 2023 16:16",
-          "username": "\t\t\t\tmasetromain\t\t\t",
-          "content": "Option B does not meet the requirement of being able to add or remove accounts or OUs from managed AWS WAF rule sets as needed.<br><br>Option C is not the best approach as it requires manual configuration of the cross-account IAM roles and assume-role calls in the Lambda function, increasing the operational overhead.<br><br>Option D does not meet the requirement of providing a centralized management console to manage the WAF rules across multiple accounts.",
-          "upvote_count": "1",
-          "selected_answers": ""
         }
       ]
     },
@@ -1194,6 +1346,14 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851709,
+          "date": "Mon 27 Mar 2023 06:48",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "A for sure due to VPC endpoints.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 833782,
           "date": "Thu 09 Mar 2023 10:39",
           "username": "\t\t\t\tkiran15789\t\t\t",
@@ -1206,7 +1366,7 @@ var SAP_C02_Part2 =
           "date": "Mon 06 Mar 2023 21:14",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "Key is - Data must not travel on the internet. Only S3 VPC Endpoints have this feature.<br><br>A VPC endpoint allows you to connect privately to S3 from within your Amazon Virtual Private Cloud (VPC) without the need for an internet gateway, NAT device, or VPN connection. Instead, the endpoint provides a direct and secure connection between your VPC and S3 over the Amazon network backbone.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -1351,6 +1511,14 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851712,
+          "date": "Mon 27 Mar 2023 06:49",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "IAM policy..",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 793443,
           "date": "Tue 31 Jan 2023 00:20",
           "username": "\t\t\t\tzozza2023\t\t\t",
@@ -1363,7 +1531,7 @@ var SAP_C02_Part2 =
           "date": "Sun 15 Jan 2023 16:21",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "The correct answer is C. <br><br>In this solution, a new IAM policy is created that specifies the allowed instance types. This policy is then attached to an IAM group that contains the IAM accounts for the developers. This will ensure that the developers can only launch instances of the specified types, thus limiting the costs associated with the creation and termination of large instances.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A.  Creating a desired-instance-type managed rule in AWS Config is not a sufficient solution, as it only identifies when an instance is launched with an unauthorized type, it does not prevent it.<br>B.  Creating a launch template that specifies the instance types that are allowed is not a sufficient solution, because it limits the instances types that can be launched in the EC2 console, but it does not prevent the launch of instances through the AWS SDK, AWS CLI, or other AWS services.<br>D.  Using EC2 Image Builder to create an image pipeline for the developers and assist them in the creation of a golden image is not a direct solution to the problem of limiting the instance types that only the developers can launch. It can be useful for creating standardize images for the developers, but it does not provide the necessary control mechanism to limit the instance types.</li></ul>",
-          "upvote_count": "2",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -1371,7 +1539,7 @@ var SAP_C02_Part2 =
           "date": "Sun 15 Jan 2023 16:21",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "A.  Creating a desired-instance-type managed rule in AWS Config is not a sufficient solution, as it only identifies when an instance is launched with an unauthorized type, it does not prevent it.<br>B.  Creating a launch template that specifies the instance types that are allowed is not a sufficient solution, because it limits the instances types that can be launched in the EC2 console, but it does not prevent the launch of instances through the AWS SDK, AWS CLI, or other AWS services.<br>D.  Using EC2 Image Builder to create an image pipeline for the developers and assist them in the creation of a golden image is not a direct solution to the problem of limiting the instance types that only the developers can launch. It can be useful for creating standardize images for the developers, but it does not provide the necessary control mechanism to limit the instance types.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         }
       ]
@@ -1430,11 +1598,27 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851715,
+          "date": "Mon 27 Mar 2023 06:51",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "ABE is the better choice",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: ABE"
+        },
+        {
+          "id": 842117,
+          "date": "Fri 17 Mar 2023 17:14",
+          "username": "\t\t\t\tDamijo\t\t\t",
+          "content": "what's the value of A and E together- it's either or ? the outcome is the same - thoughts?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 831430,
           "date": "Tue 07 Mar 2023 01:33",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "If config rule is added (A) it can be seen in AWS Config aggregator (E) Using SCP in as aws organization is used here in question. So, A,B,E<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>If there are no organizations used, D can be used to prevent EC2 run instances too,<br>C is for vulnerabilities checking..F for all security issues consolidated..</li></ul>",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: ABE"
         },
         {
@@ -1576,11 +1760,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851718,
+          "date": "Mon 27 Mar 2023 06:53",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "AD is my vote",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
           "id": 831526,
           "date": "Tue 07 Mar 2023 04:26",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "Amazon Kinesis Data Firehose (A) allows you to buffer events in two ways: through buffering size or buffering time. With buffering size, you can configure the maximum size of the buffer in MB or the maximum number of records in the buffer. Once the buffer is full, it will automatically deliver the data to the destination<br><br>Amazon ES (D) has its ability to receive events from various sources in real-time. Amazon ES can ingest data from a variety of sources, such as Amazon Kinesis Data Firehose, Amazon CloudWatch Logs, and Amazon S3, making it a powerful tool for organizations looking to analyze and visualize real-time streaming data. (Kibana dashboards)",
-          "upvote_count": "1",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: AD"
         },
         {
@@ -1669,11 +1861,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851721,
+          "date": "Mon 27 Mar 2023 06:54",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "D is the best choice.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 831540,
           "date": "Tue 07 Mar 2023 04:58",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "VPC endpoints to mitigate NAT gateway huge data transfer costs especially in Kinesis usecase where large data is passed thru<br><br>With a VPC endpoint policy, you can define rules to control access to the VPC endpoint. You can specify the source IP address or IP address range that is allowed to access the endpoint, as well as the type of traffic that is allowed, such as HTTP, HTTPS, or custom TCP ports. You can also specify the resources that can be accessed through the VPC endpoint, such as an Amazon S3 bucket or an Amazon DynamoDB table.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -1778,11 +1978,27 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851722,
+          "date": "Mon 27 Mar 2023 06:57",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "D is the answer",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 843478,
+          "date": "Sun 19 Mar 2023 07:24",
+          "username": "\t\t\t\tzejou1\t\t\t",
+          "content": "This model is constructed of the following:<br>• Multi AWS Regions<br>• Dual Direct Connect connections to independent DX locations<br>• Single on-premises data center with dual connections to AWS<br>• AWS DXGW with AWS Transit Gateway<br>• High scale of VPCs per Region<br><br>https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/aws-dx-dxgw-with-aws-transit-gateway-multi-regions-and-aws-public-peering.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 831563,
           "date": "Tue 07 Mar 2023 05:52",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "https://docs.aws.amazon.com/images/whitepapers/latest/hybrid-connectivity/images/dx-dxgw-transit-gateway-multi-region-public-vif.png<br>B is wrong as it says, two DX Gateways contradictory<br>C is wrong as it says to configure DXG to route traffic. infact Transit gateway peering need to be done between two transit gateways of each reigon.<br>A is wrong because Private VIF is not apt in mentioned config of the question. Public VIF is correct (Transit public VIF)<br>If you are using a single DX Gateway<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Whichever option has this text is correct - \\\"Peer the transit gateways with each other to support cross-Region routing\\\"</li></ul>",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -1945,11 +2161,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851724,
+          "date": "Mon 27 Mar 2023 06:59",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "ADE is right",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: ADE"
+        },
+        {
           "id": 832258,
           "date": "Tue 07 Mar 2023 21:10",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "Event Bus (EventBridge) system to receive event notification (Option A). Step function can get triggered with workflow of doing steps like removing access and sending email etc..(Option D, E)<br><br>EventBridge enables you to create event rules that match events from different sources, such as AWS services, SaaS applications, custom applications, and other AWS accounts. Once an event rule is triggered, EventBridge can route the event to one or more targets, such as AWS Lambda functions, Amazon SNS topics, Amazon SQS queues, or custom HTTP endpoints.<br><br>AWS Step Functions supports several AWS services, such as AWS Lambda, Amazon Simple Notification Service (SNS), and Amazon Simple Queue Service (SQS). You can use these services to trigger actions and pass data between steps in your state machine.<br><br>Pinpoint is chat system which question did not ask, F is wrong. Not C as<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>this explanation makes sense to me.</li></ul>",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: ADE"
         },
         {
@@ -2064,11 +2288,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851726,
+          "date": "Mon 27 Mar 2023 07:01",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "ACD are the best choice",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: ACD"
+        },
+        {
           "id": 808946,
           "date": "Wed 15 Feb 2023 00:39",
           "username": "\t\t\t\tspd\t\t\t",
           "content": "By Elimination Rule",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: ACD"
         },
         {
@@ -2084,7 +2316,7 @@ var SAP_C02_Part2 =
           "date": "Sun 15 Jan 2023 17:04",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "The correct answer would be options A, C and D, because they address the requirements outlined in the question.<br>A.  Deploying a landing zone environment using AWS Control Tower and enrolling accounts in an organization in AWS Organizations allows for a centralized management of access to all accounts and applications.<br>C.  Creating transit gateways and transit gateway VPC attachments in each account and configuring appropriate route tables allows for private network traffic, and ensures that the production account and shared network account have connectivity to all accounts, while the development and staging accounts have access only to each other.<br>D.  Setting up and enabling AWS IAM Identity Center (AWS Single Sign-On) and creating appropriate permission sets with required MFA for existing accounts allows for multi-factor authentication at login and specific roles to be assigned to user groups.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>The other options are not correct because:<br>B.  Enabling AWS Security Hub in all accounts to manage cross-account access and collecting findings through AWS CloudTrail to force MFA login is not enough to meet the requirement of creating separate accounts for development, staging, production, and shared network. It can be used in addition to the other steps, but not as a standalone solution.<br>E.  Enabling AWS Control Tower in all accounts to manage routing between accounts and collecting findings through AWS CloudTrail to force MFA login is not enough to meet the requirement of creating separate accounts for development, staging, production, and shared network. It can be used in addition to the other steps, but not as a standalone solution.</li><li>F.  Creating IAM users and groups and configuring MFA for all users and setting up Amazon Cognito user pools and Identity pools to manage access to accounts and between accounts does not address the requirement of creating separate accounts for development, staging, production, and shared network. Additionally, it does not address the requirement of keeping the traffic on a private network.</li></ul>",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: ACD"
         },
         {
@@ -2149,11 +2381,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851728,
+          "date": "Mon 27 Mar 2023 07:04",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "B is the easy choice",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 798946,
           "date": "Sun 05 Feb 2023 16:39",
           "username": "\t\t\t\tMusk\t\t\t",
           "content": "this is easy. I wish I'll have several of this in the exam.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -2218,11 +2458,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851729,
+          "date": "Mon 27 Mar 2023 07:05",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Company reached its limit",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 831658,
           "date": "Tue 07 Mar 2023 09:20",
           "username": "\t\t\t\tsambb\t\t\t",
           "content": "API Gateway has a limit of 10k requests per second, per account, per region <br>https://docs.aws.amazon.com/apigateway/latest/developerguide/limits.html",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -2307,6 +2555,62 @@ var SAP_C02_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 851734,
+          "date": "Mon 27 Mar 2023 07:17",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "AD for me. DE would be more relevant if there were multiple VPCs or hybrid architectures involved.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
+          "id": 851137,
+          "date": "Sun 26 Mar 2023 16:22",
+          "username": "\t\t\t\tArnaud92\t\t\t",
+          "content": "I don't know why you chose the D. <br>GWLB is using GENEVE, nowhere it says that the sec tool is compatible with this protocol.<br>And most of all, the tool as no cloud solutions (we can suppose that it does not support GENEVE).<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>It's a tricky question, but my reflexion is :<br>We need to build an HA solution. They told us that web application will be in ASG but not in multi AZ, so I assume that we need to put an ELB if front of the web app to be HA, so I choose B. <br>Then, where to put the sec tool ? In EC2, regarding the answer we have. So I choose A. <br><br>So : AB</li><li>https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/gateway-load-balancers.html</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 851150,
+          "date": "Sun 26 Mar 2023 16:31",
+          "username": "\t\t\t\tArnaud92\t\t\t",
+          "content": "It's a tricky question, but my reflexion is :<br>We need to build an HA solution. They told us that web application will be in ASG but not in multi AZ, so I assume that we need to put an ELB if front of the web app to be HA, so I choose B. <br>Then, where to put the sec tool ? In EC2, regarding the answer we have. So I choose A. <br><br>So : AB",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 851139,
+          "date": "Sun 26 Mar 2023 16:22",
+          "username": "\t\t\t\tArnaud92\t\t\t",
+          "content": "https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/gateway-load-balancers.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 842474,
+          "date": "Sat 18 Mar 2023 06:05",
+          "username": "\t\t\t\ttaer\t\t\t",
+          "content": "A.  Deploy the security tool on EC2 instances in a new Auto Scaling group in the existing VPCD.  Provision a Gateway Load Balancer for each Availability Zone to redirect the traffic to the security tool",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
+          "id": 839374,
+          "date": "Tue 14 Mar 2023 23:41",
+          "username": "\t\t\t\tDimidrol\t\t\t",
+          "content": "D E for me. https://catalog.workshops.aws/networking/en-US/gwlb you could find this solution<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Change to A D , because we need to deploy this solution first. But from architecture perspective will be better to deploy this security solution in the separate vpc and peer this vpc with required vpcs through transit gateway. And I have question could we run any on prem solution on ec2 instances?</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: DE"
+        },
+        {
+          "id": 840063,
+          "date": "Wed 15 Mar 2023 17:23",
+          "username": "\t\t\t\tDimidrol\t\t\t",
+          "content": "Change to A D , because we need to deploy this solution first. But from architecture perspective will be better to deploy this security solution in the separate vpc and peer this vpc with required vpcs through transit gateway. And I have question could we run any on prem solution on ec2 instances?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 837426,
           "date": "Sun 12 Mar 2023 22:43",
@@ -2449,11 +2753,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851735,
+          "date": "Mon 27 Mar 2023 07:19",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Connect the IoT sensors to AWS IoT Core.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 832490,
           "date": "Wed 08 Mar 2023 04:09",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "IOT Core communication supports protocols MQTT, HTTPS, MQTT over WSS, and LoRaWAN (but not FTP/SFTP ) so C should be wrong.<br><br>Rules Engine: AWS IoT Core provides a rules engine that allows users to define and execute business logic on the data generated by their IoT devices. This enables users to automate actions such as sending notifications, triggering alarms, or updating device settings based on real-time data.<br><br>Integration with other AWS Services: AWS IoT Core integrates with other AWS services such as AWS Lambda, AWS Kinesis, and AWS S3, allowing users to easily process and store their IoT data, as well as build complex IoT applications using a range of AWS services.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -2560,11 +2872,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851737,
+          "date": "Mon 27 Mar 2023 07:21",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "BDF is the right combo",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BDF"
+        },
+        {
           "id": 832508,
           "date": "Wed 08 Mar 2023 04:56",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "VPC Peering does not work as there are hundreds of VPCs, transit gateway is easy to configure and practical.<br>https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways-intro.html",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: BDF"
         },
         {
@@ -2650,6 +2970,14 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851743,
+          "date": "Mon 27 Mar 2023 07:24",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "AD easy",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
           "id": 792157,
           "date": "Mon 30 Jan 2023 00:26",
           "username": "\t\t\t\tzozza2023\t\t\t",
@@ -2662,7 +2990,7 @@ var SAP_C02_Part2 =
           "date": "Mon 16 Jan 2023 15:51",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "A and D are the correct answer.<br>A: By ensuring all AWS accounts are part of an organization in AWS Organizations, it allows for centralized management and control of the accounts. This can help enforce the new purchasing process by giving a dedicated team the ability to manage and enforce policies across all accounts.<br>D: By creating an SCP (Service Control Policy) that denies access to the ec2:PurchaseReservedInstancesOffering and ec2:ModifyReservedInstances actions, it enforces the new centralized purchasing process. Attaching the SCP to each OU (organizational unit) within the organization ensures that all business units are adhering to the new process.<br><br>B and C are not the correct answer, because AWS Config and IAM policies are used for monitoring and managing access to resources in an account, respectively. They don't enforce the new process for purchasing reserved instances.<br>E is not the correct answer as this is not related to the new process for purchasing reserved instances.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: AD"
         },
         {
@@ -2729,11 +3057,27 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851744,
+          "date": "Mon 27 Mar 2023 07:25",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "CDE is the best choice",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: CDE"
+        },
+        {
+          "id": 845441,
+          "date": "Tue 21 Mar 2023 02:59",
+          "username": "\t\t\t\tDWsk\t\t\t",
+          "content": "CDE.  I would have said F, but the question asks for a combination of steps, so its looking for the Aurora replica and not the MySQL RDS replica",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: CDE"
+        },
+        {
           "id": 833428,
           "date": "Wed 08 Mar 2023 23:57",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "C for sure as connection pooling helps quick re connect. There is no preference for A or B cache solution based on the question. So, A,B are eliminated. so three correct options should be in others. If you choose Aurora only, three answers will be met :-) C,D,E",
-          "upvote_count": "1",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: CDE"
         },
         {
@@ -2854,6 +3198,14 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851748,
+          "date": "Mon 27 Mar 2023 07:27",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "With the external ID. ",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 833437,
           "date": "Thu 09 Mar 2023 00:15",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
@@ -2946,6 +3298,22 @@ var SAP_C02_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 851749,
+          "date": "Mon 27 Mar 2023 07:30",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "D is easier",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 842477,
+          "date": "Sat 18 Mar 2023 06:15",
+          "username": "\t\t\t\ttaer\t\t\t",
+          "content": "I vote for D",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
         {
           "id": 834417,
           "date": "Thu 09 Mar 2023 22:32",
@@ -3093,6 +3461,14 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851753,
+          "date": "Mon 27 Mar 2023 07:34",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "AE is the best choice",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AE"
+        },
+        {
           "id": 833570,
           "date": "Thu 09 Mar 2023 04:35",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
@@ -3178,11 +3554,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851758,
+          "date": "Mon 27 Mar 2023 07:39",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "B - Identity and Access Management Access Analyzer",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 832543,
           "date": "Wed 08 Mar 2023 06:02",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "Access Analyzer uses automated reasoning to analyze resource policies and detect issues such as overly permissive access or violations of organizational security policies. It works by examining the policies attached to AWS resources, such as S3 buckets, IAM roles, and KMS keys, and identifying any potential security risks or policy violations.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>fyi<br>ML tool - CodeGuru has two main components: CodeGuru Reviewer and CodeGuru Profiler.<br><br>CodeGuru Reviewer is a code review service that uses machine learning to identify code quality issues and security vulnerabilities in your application's source code. It analyzes the code and provides recommendations for improvements based on best practices, industry standards, and AWS experience.<br><br>CodeGuru Profiler is a profiling tool that uses machine learning to identify performance issues in your application code at runtime. It continuously analyzes the performance characteristics of your application code and provides recommendations for optimization.</li></ul>",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -3263,11 +3647,27 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851761,
+          "date": "Mon 27 Mar 2023 07:42",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "C - cost optimizer<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>*Compute</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 851762,
+          "date": "Mon 27 Mar 2023 07:43",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "*Compute",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 832551,
           "date": "Wed 08 Mar 2023 06:15",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "AWS Compute Optimize helps analyze the usage patterns of AWS resources, such as EC2 instances and Auto Scaling groups, and makes recommendations on how to optimize them for performance and cost using machine learning algorithms.It then generates recommendations that can be used to adjust instance types, purchase options, and other parameters.It provides two types of recommendations:<br>Recommended instance types - recommends instance types that are more cost-effective and better suited to the workload requirements.<br>Recommended purchase options - recommends purchasing options, such as Reserved Instances or Savings Plans, that can help customers save money on their compute resources.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>fyi Pricing looks cheap too - https://aws.amazon.com/compute-optimizer/pricing/</li><li>A is wrong. <br>OpsCenter, a capability of AWS Systems Manager, provides a central location where operations engineers and IT professionals can manage operational work items (OpsItems) related to AWS resources. An OpsItem is any operational issue or interruption that needs investigation and remediation. Using OpsCenter, you can view contextual investigation data about each OpsItem, including related OpsItems and related resources. You can also run Systems Manager Automation runbooks to resolve OpsItems.</li></ul>",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -3372,6 +3772,22 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851765,
+          "date": "Mon 27 Mar 2023 07:45",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "B is the best choice",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 846112,
+          "date": "Tue 21 Mar 2023 16:19",
+          "username": "\t\t\t\tDWsk\t\t\t",
+          "content": "Has to be B because C is not possible.<br>I get that you can't share access to the default KMS key, but how does it work to share access through a cross account role? How does the role in the DBA account decrypt the secrets that are encrypted by the default key if the role doesn't have permissions to that key?",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 834301,
           "date": "Thu 09 Mar 2023 20:11",
           "username": "\t\t\t\tkiran15789\t\t\t",
@@ -3384,7 +3800,7 @@ var SAP_C02_Part2 =
           "date": "Wed 08 Mar 2023 08:55",
           "username": "\t\t\t\tsambb\t\t\t",
           "content": "Cross account assumerole is needed. You can't directly grant access to the secret from the DBA account to the application account because the key policy for the default KMS key is not modifiable.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -3554,38 +3970,6 @@ var SAP_C02_Part2 =
           "content": "I swith for D<br> option D, using an SCP to allow access to the secrets from the DBA account, is a more appropriate solution for the requirements given in the problem. Using an SCP allows for more granular control over cross-account access, and ensures that the DBA-Admin role in the DBA account is only able to perform the actions that are explicitly allowed by the SCP, rather than being granted all permissions to access the secrets. Additionally, using an SCP is more secure than using IAM roles and policies because SCP uses a deny-all by default approach while IAM policies use an allow-all by default approach.",
           "upvote_count": "4",
           "selected_answers": "Selected Answer: D"
-        },
-        {
-          "id": 780739,
-          "date": "Thu 19 Jan 2023 06:13",
-          "username": "\t\t\t\tjhonivy\t\t\t",
-          "content": "D, for all dbas. B & C to create IAM role are not so perfect.<br>If a user or role has an IAM permission policy that grants access to an action that is either not allowed or explicitly denied by the applicable SCPs, the user or role can't perform that action.",
-          "upvote_count": "2",
-          "selected_answers": ""
-        },
-        {
-          "id": 778007,
-          "date": "Mon 16 Jan 2023 18:30",
-          "username": "\t\t\t\tmasetromain\t\t\t",
-          "content": "The correct answer is B. <br>In this solution, the application account creates an IAM role, DBA-Secret, with the required permissions to access the secrets stored in the Secrets Manager. In the DBA account, the DBA-Admin role is created and granted the required permissions to assume the DBA-Secret role in the application account. This allows the DBA-Admin role to access the secrets stored in the application account, eliminating the need for manual sharing.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Option A is incorrect because while using AWS Resource Access Manager (AWS RAM) to share the secrets would provide the DBA account access to the secrets, it does not eliminate the need for manual sharing of the secrets as the DBA team would still need to manually access the shared secrets in the DBA account.<br><br>Option C is incorrect because it does not provide a way for the DBA team to access the secrets stored in the application account and instead focuses on the permissions of the default AWS managed key.<br><br>Option D is incorrect because it uses an SCP to allow access to the secrets which is not necessary as the IAM role DBA-Admin with the required permissions to assume the DBA-Secret role in the application account is sufficient to access the secrets.</li><li>In option C, it is clearly stated that required permissions for secrets AND keys are granted. Why did you state that there is no way to access to the secrets for DBA team?</li></ul>",
-          "upvote_count": "1",
-          "selected_answers": "Selected Answer: B"
-        },
-        {
-          "id": 778009,
-          "date": "Mon 16 Jan 2023 18:30",
-          "username": "\t\t\t\tmasetromain\t\t\t",
-          "content": "Option A is incorrect because while using AWS Resource Access Manager (AWS RAM) to share the secrets would provide the DBA account access to the secrets, it does not eliminate the need for manual sharing of the secrets as the DBA team would still need to manually access the shared secrets in the DBA account.<br><br>Option C is incorrect because it does not provide a way for the DBA team to access the secrets stored in the application account and instead focuses on the permissions of the default AWS managed key.<br><br>Option D is incorrect because it uses an SCP to allow access to the secrets which is not necessary as the IAM role DBA-Admin with the required permissions to assume the DBA-Secret role in the application account is sufficient to access the secrets.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>In option C, it is clearly stated that required permissions for secrets AND keys are granted. Why did you state that there is no way to access to the secrets for DBA team?</li></ul>",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 804672,
-          "date": "Fri 10 Feb 2023 20:23",
-          "username": "\t\t\t\tIlk\t\t\t",
-          "content": "In option C, it is clearly stated that required permissions for secrets AND keys are granted. Why did you state that there is no way to access to the secrets for DBA team?",
-          "upvote_count": "2",
-          "selected_answers": ""
         }
       ]
     },
@@ -3638,11 +4022,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851767,
+          "date": "Mon 27 Mar 2023 07:47",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "SCP's are the most efficient here",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: CE"
+        },
+        {
           "id": 795438,
           "date": "Wed 01 Feb 2023 20:14",
           "username": "\t\t\t\ttatdatpham\t\t\t",
           "content": "With AWS Org, consider SCP first.<br>In this scenario, Only C,D,E are mention about SCP, but D apply for all, not only the DataOps OU",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: CE"
         },
         {
@@ -3719,6 +4111,14 @@ var SAP_C02_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 851769,
+          "date": "Mon 27 Mar 2023 07:50",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "AC - SQS",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AC"
+        },
         {
           "id": 831721,
           "date": "Tue 07 Mar 2023 10:54",
@@ -3813,6 +4213,14 @@ var SAP_C02_Part2 =
           "selected_answers": ""
         },
         {
+          "id": 851772,
+          "date": "Mon 27 Mar 2023 07:51",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "C - Fargate is the best choice here",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 778029,
           "date": "Mon 16 Jan 2023 18:42",
           "username": "\t\t\t\tmasetromain\t\t\t",
@@ -3873,6 +4281,14 @@ var SAP_C02_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 851773,
+          "date": "Mon 27 Mar 2023 07:53",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Create another S3 bucket in a new Region, and configure S3 Cross-Region Replication between the buckets",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
         {
           "id": 792203,
           "date": "Mon 30 Jan 2023 01:28",
@@ -3951,11 +4367,27 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851777,
+          "date": "Mon 27 Mar 2023 07:59",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "C - there is no on-demand capacity mode.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 846633,
+          "date": "Wed 22 Mar 2023 04:22",
+          "username": "\t\t\t\tzejou1\t\t\t",
+          "content": "Amazon DocumentDB best practice to choose an instance type with enough RAM to fit your working set (i.e., data and indexes) in memory. Having properly sized instances will help optimize for overall performance and potentially minimize I/O cost.<br> https://docs.aws.amazon.com/documentdb/latest/developerguide/best_practices.html<br><br>Also, you would already need to have it as on-demand; first thing is to size it appropriately",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 834317,
           "date": "Thu 09 Mar 2023 20:27",
           "username": "\t\t\t\tkiran15789\t\t\t",
           "content": "No on-demand capacity mode for DocumentDB",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -4142,6 +4574,22 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851788,
+          "date": "Mon 27 Mar 2023 08:19",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "ACF is the best choice",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: ACF"
+        },
+        {
+          "id": 842490,
+          "date": "Sat 18 Mar 2023 06:36",
+          "username": "\t\t\t\ttaer\t\t\t",
+          "content": "A.  Create a bucket policy that includes read permissions for the S3 bucket. Set the principal of the bucket policy to the account ID of the Strategy account.C.  Update the custom KMS key policy in the Creative account to grant decrypt permissions to the strategy_reviewer IAM role.F.  Update the strategy_reviewer IAM role to grant read permissions for the S3 bucket and to grant decrypt permissions for the custom KMS key.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: ACF"
+        },
+        {
           "id": 833649,
           "date": "Thu 09 Mar 2023 07:30",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
@@ -4170,7 +4618,7 @@ var SAP_C02_Part2 =
           "date": "Fri 27 Jan 2023 06:46",
           "username": "\t\t\t\tUntamables\t\t\t",
           "content": "https://repost.aws/knowledge-center/cross-account-access-denied-error-s3",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: ACF"
         },
         {
@@ -4243,6 +4691,54 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 854351,
+          "date": "Wed 29 Mar 2023 13:59",
+          "username": "\t\t\t\tEshu2009\t\t\t",
+          "content": "Cannot be D.  S3 events cannot trigger Batch jobs. Only Eventbridge can trigger but thats not an option in D.  Both Storage FileGW and Datasync dont support SAN. File GS supports NAS vis NFS/SMB.  DataSync NAS vis NFS/SMB. <br>Data Pipeline can be an option.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 854216,
+          "date": "Wed 29 Mar 2023 11:28",
+          "username": "\t\t\t\tAsagumo\t\t\t",
+          "content": "正解はCです。<br>SANについての記載がありますが、それはあくまで現状の説明であって、次期の仕組みの話ではないです。<br>また、S3イベントで起動できるものにAWS Batchはありません。",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 848695,
+          "date": "Thu 23 Mar 2023 22:45",
+          "username": "\t\t\t\tArnaud92\t\t\t",
+          "content": "For me, none of these answer are correct.<br>C: DataSync is not working with SAN<br>D: Storage gateway have multiple gateway type. Answer is talking about \\\"file gateway\\\" which is not compatible with SAN. The gateway compatible would be \\\"Volume gateway\\\".<br>B: Data Pipeline, i'm not sure it's working with SAN.<br>A: snow is not a solution for regular and automatic process ..",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 847103,
+          "date": "Wed 22 Mar 2023 14:33",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "D because of the SAN. Its more efficient to use Storage Gateway.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 842492,
+          "date": "Sat 18 Mar 2023 06:37",
+          "username": "\t\t\t\ttaer\t\t\t",
+          "content": "C is correct",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 842403,
+          "date": "Sat 18 Mar 2023 02:21",
+          "username": "\t\t\t\tDamijo\t\t\t",
+          "content": "https://aws.amazon.com/blogs/storage/how-to-move-and-store-your-genomics-sequencing-data-with-aws-datasync/",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 836932,
           "date": "Sun 12 Mar 2023 12:14",
           "username": "\t\t\t\tkrishccie\t\t\t",
@@ -4263,7 +4759,7 @@ var SAP_C02_Part2 =
           "date": "Thu 09 Mar 2023 18:52",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "Guys its Tricky one between C and D and answer is D! (Modernization question)<br>Look at this two below blogs : <br>https://aws.amazon.com/blogs/storage/using-aws-storage-gateway-to-modernize-next-generation-sequencing-workflows/<br><br>Thanks to tinyflame who made me do my research on this :-)<br>Yes, SAN -> Storage Gateway Only<br>NAS -> Data Sync or Storage Gateway<br>https://aws.amazon.com/blogs/storage/from-on-premises-to-aws-hybrid-cloud-architecture-for-network-file-shares/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>On Premise NAS and file servers toS3.--&gt; Use DataSync solution<br>On Premise SMB or NFS file share to S3 --&gt; Use Storage/File Gateway solution</li></ul>",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -4279,7 +4775,7 @@ var SAP_C02_Part2 =
           "date": "Sun 26 Feb 2023 12:44",
           "username": "\t\t\t\tkiran15789\t\t\t",
           "content": "Option D uses an AWS Storage Gateway file gateway, which is not a good fit for the high-speed Direct Connect connection, and it introduces additional complexity with an extra gateway layer.",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -4368,11 +4864,27 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 847112,
+          "date": "Wed 22 Mar 2023 14:40",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "EFS and Windows is not straight forward. C is the best solution.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 846655,
+          "date": "Wed 22 Mar 2023 05:03",
+          "username": "\t\t\t\tzejou1\t\t\t",
+          "content": "Amazon FSx is built on Windows Server... Access Control Lists (ACLs)... To control user access, Amazon FSx integrates with your on-premises Microsoft Active Directory as well as with AWS Microsoft Managed AD. <br>https://aws.amazon.com/fsx/windows/features/?nc=sn&loc=2<br><br>All others don't work - forget about the \\\"least management\\\" statement - it says \\\"implement Windows ACLS to control...\\\" all others are thrown out.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 834504,
           "date": "Fri 10 Mar 2023 00:07",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "EFS is Linux/Mac based, So, A,D are out.<br>Lustre stands for Linux cluster, So B is out. Left is C which is correct (Amazon FSx for Windows )",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -4533,6 +5045,14 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851791,
+          "date": "Mon 27 Mar 2023 08:24",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Template - easy one.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 834622,
           "date": "Fri 10 Mar 2023 05:02",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
@@ -4553,7 +5073,7 @@ var SAP_C02_Part2 =
           "date": "Mon 16 Jan 2023 19:02",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "The correct answer is D. <br><br>In this solution, the company can use Amazon SES to send email messages, which will minimize operational overhead as SES is a fully managed service that handles sending and receiving email messages. The company can store the email template on Amazon SES with parameters for the customer data and use an AWS Lambda function to call the SendTemplatedEmail API operation, passing in the customer data to replace the parameters and the email destination. This solution eliminates the need to set up and manage an SMTP server on EC2 instances, which can be costly and time-consuming.<br><br>Option A and B are not correct because it requires to set up an SMTP server on EC2 instances, which is not necessary and will increase operational overhead.<br>Option C is not correct because it stores the email template in Amazon SES with parameters for the customer data which is not possible.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -4610,6 +5130,22 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851794,
+          "date": "Mon 27 Mar 2023 08:27",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Scale-in protection<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>he visibility timeout might still need to be adjusted, but the scale-in protection is the primary solution to prevent instances from being terminated during processing, which would cause the messages to end up in the dead-letter queue.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 851798,
+          "date": "Mon 27 Mar 2023 08:30",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "he visibility timeout might still need to be adjusted, but the scale-in protection is the primary solution to prevent instances from being terminated during processing, which would cause the messages to end up in the dead-letter queue.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 822796,
           "date": "Sun 26 Feb 2023 19:15",
           "username": "\t\t\t\tkiran15789\t\t\t",
@@ -4646,7 +5182,7 @@ var SAP_C02_Part2 =
           "date": "Fri 17 Feb 2023 16:52",
           "username": "\t\t\t\tc73bf38\t\t\t",
           "content": "B is the correct option.<br><br>The issue seems to be that the videos are taking longer than the visibility timeout to process, so they are being sent to the dead-letter queue even though they are still being processed. By updating the visibility timeout for the SQS queue to 3 hours, the videos will have more time to process before being sent to the dead-letter queue, which should solve the problem.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Interesting point, I understood the problem in a different way. I think the problem is that while an Ec2 Instance is still working on the video, there was a scale-in event and that instance was selected for termination. I will use personally lifecycle hooks, option C defeats the purpose of AutoScaling in some way like you said is a workaround.</li></ul>",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -4670,7 +5206,7 @@ var SAP_C02_Part2 =
           "date": "Mon 16 Jan 2023 19:04",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "The correct answer is C.  The company can solve the problem by configuring scale-in protection for the instances during processing. This will ensure that the instances are not terminated while they are processing videos. This will prevent the messages from moving to the dead-letter queue and ensure that videos are processed properly.<br><br>Option A is incorrect because turning on termination protection for the EC2 instances will not solve the problem as it will impact the ability of the Auto Scaling group to scale instances in and out based on the number of videos in the queue.<br><br>Option B is incorrect because the company has specified a visibility timeout of 1 hour, which is enough time for the instances to process a video and there is no need to update the timeout to 3 hours.<br><br>Option D is incorrect because the company has set the maxReceiveCount to 1 and changing it to 0 will not solve the problem. maxReceiveCount allowed range is 1 to 1000.",
-          "upvote_count": "2",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -4678,7 +5214,7 @@ var SAP_C02_Part2 =
           "date": "Mon 16 Jan 2023 15:45",
           "username": "\t\t\t\tzhangyu20000\t\t\t",
           "content": "C is correct<br>A: termination protection of EC2 will impact ASG<br>B: only take 30 minutes, no need for 3 hour<br>C: ASG is based on queue depth, ASG will scale in when queue length is 0. But maxreceivecount is set to 1.<br>D: maxreceivecount allowed range is 1 to 1000",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": ""
         }
       ]
@@ -4731,7 +5267,15 @@ var SAP_C02_Part2 =
           "date": "Mon 30 Jan 2023 02:19",
           "username": "\t\t\t\tzozza2023\t\t\t",
           "content": "should be C as on the question has said 'no need for public IP\\\" ==> private in API gateway = VPC endpoint",
-          "upvote_count": "4",
+          "upvote_count": "5",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 851799,
+          "date": "Mon 27 Mar 2023 08:31",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "C.  Update the API endpoint from Regional to private in API Gateway.",
+          "upvote_count": "1",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -4801,11 +5345,35 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 853902,
+          "date": "Wed 29 Mar 2023 04:03",
+          "username": "\t\t\t\tEshu2009\t\t\t",
+          "content": "BE- global accelerators improve performance by providing edge location for onboarding traffic.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Q: Can I use AWS Global Accelerator for object storage with Amazon S3?<br><br>A: You can use Amazon S3 Multi-Region Access Points to get the benefits of Global Accelerator for object storage. S3 Multi-Region Access Points use Global Accelerator transparently to provide a single global endpoint to access a data set that spans multiple S3 buckets in different AWS Regions. This allows you to build multi-region applications with the same simple architecture used in a single region, and then to run those applications anywhere in the world. Application requests made to an S3 Multi-Region Access Point's global endpoint automatically route over the AWS global network to the S3 bucket with the lowest network latency. This allows applications to automatically avoid congested network segments on the public internet, improving application performance and reliability.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 853906,
+          "date": "Wed 29 Mar 2023 04:13",
+          "username": "\t\t\t\tEshu2009\t\t\t",
+          "content": "Q: Can I use AWS Global Accelerator for object storage with Amazon S3?<br><br>A: You can use Amazon S3 Multi-Region Access Points to get the benefits of Global Accelerator for object storage. S3 Multi-Region Access Points use Global Accelerator transparently to provide a single global endpoint to access a data set that spans multiple S3 buckets in different AWS Regions. This allows you to build multi-region applications with the same simple architecture used in a single region, and then to run those applications anywhere in the world. Application requests made to an S3 Multi-Region Access Point's global endpoint automatically route over the AWS global network to the S3 bucket with the lowest network latency. This allows applications to automatically avoid congested network segments on the public internet, improving application performance and reliability.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 851805,
+          "date": "Mon 27 Mar 2023 08:37",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Ill go with BD",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BD"
+        },
+        {
           "id": 832753,
           "date": "Wed 08 Mar 2023 10:19",
           "username": "\t\t\t\tsambb\t\t\t",
           "content": "A: Global Accelerator can't have an s3 bucket as endpoint<br>C: People are complaining about time to retreive maps. Transfert acceleration is used to accelerate PUT requests to an s3 bucket located in a distant region.<br>E: An accelerator as cloudfront origin does not make much sense, because cloudfront is already using the AWS network. Global Accelerator is usually for Layer 4 networking and/or static anycast IPs",
-          "upvote_count": "1",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: BD"
         },
         {
@@ -4894,6 +5462,14 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851808,
+          "date": "Mon 27 Mar 2023 08:39",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "B is correct",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 834651,
           "date": "Fri 10 Mar 2023 05:53",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
@@ -4922,7 +5498,7 @@ var SAP_C02_Part2 =
           "date": "Mon 16 Jan 2023 19:07",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "B is correct. It can prevent the issue from happening again by monitoring the file system with the FreeStorageCapacity metric in Amazon CloudWatch and using Amazon EventBridge to invoke an AWS Lambda function to increase the capacity as required. This ensures that the file system always has enough free space to store user profiles and avoids reaching maximum capacity.<br>A: Removing old user profiles may not be sufficient to create enough space and does not prevent the problem from happening again.<br>C: AWS Step Functions cannot be used to increase capacity, it is a service for creating and running workflows that stitch together multiple AWS services.<br>D: Creating an additional FSx for Windows File Server file system and updating user profile redirection for a portion of the users may not be sufficient to prevent the problem from happening again and does not address the current capacity issue.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -4979,6 +5555,14 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851809,
+          "date": "Mon 27 Mar 2023 08:40",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "C is the most efficient",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 792253,
           "date": "Mon 30 Jan 2023 02:30",
           "username": "\t\t\t\tzozza2023\t\t\t",
@@ -4991,7 +5575,7 @@ var SAP_C02_Part2 =
           "date": "Mon 16 Jan 2023 19:10",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "C is correct. Using AWS Transfer Family to create an FTP server that places the files in Amazon S3 and using S3 event notifications through Amazon Simple Notification Service (Amazon SNS) to invoke an AWS Lambda function will ensure that the archive always receives the files and that the central system is always updated. This solution maximizes scalability and eliminates the need for manual intervention, such as rebooting the EC2 instance. <br><br>Option A and B still use EC2 instance, which is the source of the problem. Option D requires modification to the handheld devices which is not possible.",
-          "upvote_count": "2",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -5048,6 +5632,14 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851811,
+          "date": "Mon 27 Mar 2023 08:41",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Replica",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 835677,
           "date": "Sat 11 Mar 2023 06:15",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
@@ -5068,7 +5660,7 @@ var SAP_C02_Part2 =
           "date": "Mon 16 Jan 2023 19:11",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "A is correct. Provision an Aurora Replica in a different Region will meet the requirement of the application being able to recover to a separate AWS Region in the event of an application failure, and no data can be lost, with the least amount of operational overhead.<br>B.  AWS DataSync can replicate data, but it is not a fully managed service and requires more configuration and management.<br>C.  AWS DMS is a fully managed service for migrating data between databases, but it may require additional configuration and management to continuously replicate data in real-time.<br>D.  Amazon DLM can be used for scheduling snapshots, but it does not provide real-time replication and may not meet the requirement of no data loss in case of a failure.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -5125,11 +5717,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 847127,
+          "date": "Wed 22 Mar 2023 14:56",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "C makes the most sense.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 835712,
           "date": "Sat 11 Mar 2023 08:00",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "Extract Data from S3 + mask + Send to another S3 + Transform/Process + Load into S3<br>All these are ETL, ELT tasks which should ring Glue<br><br>EMR is more focused on big data processing frameworks such as Hadoop and Spark, <br>while Glue is more focused on ETL, More over 5000 records every 15 minutes is not soo big data..So I choose C",
-          "upvote_count": "2",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -5218,11 +5818,27 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 847129,
+          "date": "Wed 22 Mar 2023 14:59",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "B has less operational overhead.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 843708,
+          "date": "Sun 19 Mar 2023 12:49",
+          "username": "\t\t\t\ttaer\t\t\t",
+          "content": "B, tricky",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 835727,
           "date": "Sat 11 Mar 2023 08:54",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "Tricky one. This is not an on premise migration use case which prompts for answer C.  Its a current situation of on premise application which the company wants to continue its state in the requirement of using AWS as DR solution.<br>https://docs.aws.amazon.com/images/drs/latest/userguide/images/drs-failback-arc.png<br>https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Moreover, B has least operational over head of just initiating DR solution with replicating agents. C has operational overhead with DMS , SCT ,CDC,migration etc</li></ul>",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -5407,6 +6023,14 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851818,
+          "date": "Mon 27 Mar 2023 08:46",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "In the company's AWS account, create an IAM role that trusts the auditors' AWS account.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 795565,
           "date": "Wed 01 Feb 2023 23:47",
           "username": "\t\t\t\ttatdatpham\t\t\t",
@@ -5496,7 +6120,15 @@ var SAP_C02_Part2 =
           "date": "Sat 28 Jan 2023 06:06",
           "username": "\t\t\t\tUntamables\t\t\t",
           "content": "3 nodes are required for a DAX cluster to be fault-tolerant.<br>https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.concepts.cluster.html",
-          "upvote_count": "5",
+          "upvote_count": "6",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 851820,
+          "date": "Mon 27 Mar 2023 08:47",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "B is the answer",
+          "upvote_count": "1",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -5638,11 +6270,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851841,
+          "date": "Mon 27 Mar 2023 09:11",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "BE makes the most sense here",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BE"
+        },
+        {
           "id": 836583,
           "date": "Sat 11 Mar 2023 23:32",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "Burstable because peak performance is needed at lunch time and its cost effective based on this - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances.html<br>S3 static website hosting is cost effective",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: BE"
         },
         {
@@ -5682,7 +6322,7 @@ var SAP_C02_Part2 =
           "date": "Mon 16 Jan 2023 21:00",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "B.  Move the application frontend to a static website that is hosted on Amazon S3.D.  Change all the backend EC2 instances to Spot Instances.<br><br>Step 1: Moving the application frontend to a static website that is hosted on Amazon S3 will reduce the cost and increase the scalability of the application. S3 is a highly scalable object storage service that can handle large amounts of data and traffic at a lower cost than running EC2 instances.<br><br>Step 2: Changing the backend EC2 instances to Spot Instances can help reduce cost without negatively affecting the application availability. Spot Instances allow customers to bid on unused Amazon EC2 capacity, which can result in significant cost savings. You can also use AWS Auto Scaling to automatically increase or decrease the number of Spot Instances based on the application's traffic.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Option A, C: Changing to compute optimized instances or using Elastic Beanstalk will not help reducing the cost, it will only change the instances type and not helping the cost optimization.<br>Option E: Deploying the backend Python application to general purpose burstable EC2 instances will not help reducing the cost, as it still using On-Demand instances.<br><br>It is important to note that using spot instances comes with the risk of instances being terminated when the spot price goes up. To mitigate this risk, you could use the EC2 Auto Scaling group with a combination of on-demand and spot instances. This way, if a spot instance is terminated, the Auto Scaling group can automatically replace it with an on-demand instance to ensure the application is always available.</li></ul>",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: BD"
         },
         {
@@ -5755,6 +6395,22 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 852616,
+          "date": "Tue 28 Mar 2023 02:31",
+          "username": "\t\t\t\tAmac1979\t\t\t",
+          "content": "capacity reservations do not offer discounts. D is correct",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 851845,
+          "date": "Mon 27 Mar 2023 09:14",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Purchase Compute Savings Plans for the predicted medium load of the EKS cluster.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 836653,
           "date": "Sun 12 Mar 2023 02:14",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
@@ -5815,7 +6471,7 @@ var SAP_C02_Part2 =
           "date": "Sat 28 Jan 2023 07:05",
           "username": "\t\t\t\tUntamables\t\t\t",
           "content": "Option A, C and D are wrong. They all mention using spot instances and EKS based on EC2. A spot instance is not appropriate for a production server and the company is developing new application designed for AWS Fargate, which means we must plan the future cost improvement including AWS Fargate.<br>https://aws.amazon.com/savingsplans/compute-pricing/",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -5938,6 +6594,30 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 778197,
+          "date": "Mon 16 Jan 2023 21:12",
+          "username": "\t\t\t\tmasetromain\t\t\t",
+          "content": "A.  Upload static informational content to the S3 bucket.C.  Set the S3 bucket as a second origin in the original CloudFront distribution. Configure the distribution and the S3 bucket to use an origin access identity (OAI).D.  During the weekly maintenance, edit the default cache behavior to use the S3 origin. Revert the change when the maintenance is complete.<br><br>Step 1: The solutions architect should upload static informational content to the S3 bucket, this content will be shown to the users when the application is down for maintenance.<br><br>Step 2: The solutions architect should set the S3 bucket as a second origin in the original CloudFront distribution. To keep the S3 bucket secure, the solutions architect should configure the distribution and the S3 bucket to use an origin access identity (OAI). This will ensure that only CloudFront has access to the S3 bucket.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Step 3: During the weekly maintenance, the solutions architect should edit the default cache behavior of the CloudFront distribution to use the S3 origin. This will redirect all incoming traffic to the S3 bucket and show the static informational content to the users. Once the maintenance is complete, the solutions architect should revert the change back to the original Elastic Beanstalk origin.<br><br>Option B: Creating a new CloudFront distribution and setting the S3 bucket as the origin is unnecessary and could cause confusion for the users.<br>Option E: During the weekly maintenance, creating a cache behavior for the S3 origin on the new distribution is unnecessary, it is more complex and prone to human error.<br>Option F: Configuring Elastic Beanstalk to serve traffic from the S3 bucket is not necessary because CloudFront is already being used as the web request server.</li></ul>",
+          "upvote_count": "5",
+          "selected_answers": "Selected Answer: ACD"
+        },
+        {
+          "id": 778198,
+          "date": "Mon 16 Jan 2023 21:12",
+          "username": "\t\t\t\tmasetromain\t\t\t",
+          "content": "Step 3: During the weekly maintenance, the solutions architect should edit the default cache behavior of the CloudFront distribution to use the S3 origin. This will redirect all incoming traffic to the S3 bucket and show the static informational content to the users. Once the maintenance is complete, the solutions architect should revert the change back to the original Elastic Beanstalk origin.<br><br>Option B: Creating a new CloudFront distribution and setting the S3 bucket as the origin is unnecessary and could cause confusion for the users.<br>Option E: During the weekly maintenance, creating a cache behavior for the S3 origin on the new distribution is unnecessary, it is more complex and prone to human error.<br>Option F: Configuring Elastic Beanstalk to serve traffic from the S3 bucket is not necessary because CloudFront is already being used as the web request server.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 851852,
+          "date": "Mon 27 Mar 2023 09:20",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "ACD is the best fit",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: ACD"
+        },
+        {
           "id": 801306,
           "date": "Tue 07 Feb 2023 20:00",
           "username": "\t\t\t\tMusk\t\t\t",
@@ -5952,22 +6632,6 @@ var SAP_C02_Part2 =
           "content": "ACD is correct",
           "upvote_count": "3",
           "selected_answers": "Selected Answer: ACD"
-        },
-        {
-          "id": 778197,
-          "date": "Mon 16 Jan 2023 21:12",
-          "username": "\t\t\t\tmasetromain\t\t\t",
-          "content": "A.  Upload static informational content to the S3 bucket.C.  Set the S3 bucket as a second origin in the original CloudFront distribution. Configure the distribution and the S3 bucket to use an origin access identity (OAI).D.  During the weekly maintenance, edit the default cache behavior to use the S3 origin. Revert the change when the maintenance is complete.<br><br>Step 1: The solutions architect should upload static informational content to the S3 bucket, this content will be shown to the users when the application is down for maintenance.<br><br>Step 2: The solutions architect should set the S3 bucket as a second origin in the original CloudFront distribution. To keep the S3 bucket secure, the solutions architect should configure the distribution and the S3 bucket to use an origin access identity (OAI). This will ensure that only CloudFront has access to the S3 bucket.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Step 3: During the weekly maintenance, the solutions architect should edit the default cache behavior of the CloudFront distribution to use the S3 origin. This will redirect all incoming traffic to the S3 bucket and show the static informational content to the users. Once the maintenance is complete, the solutions architect should revert the change back to the original Elastic Beanstalk origin.<br><br>Option B: Creating a new CloudFront distribution and setting the S3 bucket as the origin is unnecessary and could cause confusion for the users.<br>Option E: During the weekly maintenance, creating a cache behavior for the S3 origin on the new distribution is unnecessary, it is more complex and prone to human error.<br>Option F: Configuring Elastic Beanstalk to serve traffic from the S3 bucket is not necessary because CloudFront is already being used as the web request server.</li></ul>",
-          "upvote_count": "4",
-          "selected_answers": "Selected Answer: ACD"
-        },
-        {
-          "id": 778198,
-          "date": "Mon 16 Jan 2023 21:12",
-          "username": "\t\t\t\tmasetromain\t\t\t",
-          "content": "Step 3: During the weekly maintenance, the solutions architect should edit the default cache behavior of the CloudFront distribution to use the S3 origin. This will redirect all incoming traffic to the S3 bucket and show the static informational content to the users. Once the maintenance is complete, the solutions architect should revert the change back to the original Elastic Beanstalk origin.<br><br>Option B: Creating a new CloudFront distribution and setting the S3 bucket as the origin is unnecessary and could cause confusion for the users.<br>Option E: During the weekly maintenance, creating a cache behavior for the S3 origin on the new distribution is unnecessary, it is more complex and prone to human error.<br>Option F: Configuring Elastic Beanstalk to serve traffic from the S3 bucket is not necessary because CloudFront is already being used as the web request server.",
-          "upvote_count": "1",
-          "selected_answers": ""
         },
         {
           "id": 777883,
@@ -6030,6 +6694,14 @@ var SAP_C02_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 851855,
+          "date": "Mon 27 Mar 2023 09:22",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Create a Lambda function alias.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
         {
           "id": 795578,
           "date": "Thu 02 Feb 2023 00:20",
@@ -6108,11 +6780,27 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851859,
+          "date": "Mon 27 Mar 2023 09:23",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Create an AWS Global Accelerator accelerator with multiple endpoint groups that target endpoints in appropriate AWS Regions.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 838501,
+          "date": "Tue 14 Mar 2023 03:29",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "No, an apex domain cannot use CNAME records in AWS. This is because of the way DNS resolution works. A CNAME record specifies an alias for a domain name, which points to the canonical name of another domain. However, the DNS standard does not allow CNAME records for apex domains, as they should only have A or AAAA records.<br><br>When you try to create a CNAME record for an apex domain in AWS Route 53, you will receive an error message indicating that the record set type is not valid for the apex domain. To work around this limitation, you can use an alias record instead.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 778204,
           "date": "Mon 16 Jan 2023 21:19",
           "username": "\t\t\t\tmasetromain\t\t\t",
           "content": "C.  Create an AWS Global Accelerator accelerator with multiple endpoint groups that target endpoints in appropriate AWS Regions. Use the accelerator's static IP address to create a record in public DNS for the apex domain.<br><br>This solution meets the requirements with the least effort because it uses AWS Global Accelerator, which automatically routes traffic to the optimal endpoint based on health and geography, eliminating the need for manual configuration or additional routing policies. It also eliminates the need to create a CNAME record for the apex domain to point to the ALB or NLB's IP address, which can be less efficient and less reliable.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A.  Migrate public DNS to Amazon Route 53. Create CNAME records for the apex domain to point to the ALB.  Use a geolocation routing policy to route traffic based on user location.<br>While this solution uses Route 53 and geolocation routing, it requires manual configuration and maintenance of the routing policy and could introduce additional latency as traffic is routed through the ALB first.<br>B.  Place a Network Load Balancer (NLB) in front of the ALB.  Migrate public DNS to Amazon Route 53. Create a CNAME record for the apex domain to point to the NLB's static IP address. Use a geolocation routing policy to route traffic based on user location.<br>This solution is similar to the first one, but it uses a Network Load Balancer (NLB) instead of an Application Load Balancer (ALB). It has the same downsides as the first solution.</li><li>D.  Create an Amazon API Gateway API that is backed by AWS Lambda in one of the AWS Regions. Configure a Lambda function to route traffic to application deployments by using the round robin method. Create CNAME records for the apex domain to point to the API's URL.<br><br>This solution uses Amazon API Gateway and AWS Lambda to route traffic, but the round-robin method is not the best way to ensure optimal performance and availability for a multi-region deployment. Additionally, routing traffic through a Lambda function can introduce additional latency.<br><br>AWS Global Accelerator is a more efficient solution that automatically routes traffic to the optimal endpoint based on health and geography, eliminating the need for manual configuration or additional routing policies.</li></ul>",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -6189,7 +6877,7 @@ var SAP_C02_Part2 =
           "date": "Thu 16 Feb 2023 22:05",
           "username": "\t\t\t\tlunt\t\t\t",
           "content": "Don't understand why so many people are choosing B.  Read up. A container image cannot be used with Lambda layers. That means A B C are out instantly. Its literally one of the first things they mention about Lamba layers. Answer is D and ABC simply impossible to configure.<br><br>https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://aws.amazon.com/blogs/compute/working-with-lambda-layers-and-extensions-in-container-images/</li><li>B suggests deploying the shared libraries and custom classes to a Docker image, uploading it to Amazon Elastic Container Registry (Amazon ECR), creating a Lambda layer that uses the Docker image as the source, and deploying the API's Lambda functions as Zip packages. Configuring the packages to use the Lambda layer simplifies deployment, and the Docker image allows for code reuse. This option takes advantage of the built-in features provided by AWS API Gateway and Lambda, making it the optimal solution.</li><li>The requirement is code reuse: <br>https://aws.amazon.com/blogs/compute/working-with-lambda-layers-and-extensions-in-container-images/<br>Lambda functions packaged as container images do not support adding Lambda layers to the function configuration. However, there are a number of solutions to use the functionality of Lambda layers with container images. You take on the responsible for packaging your preferred runtimes and dependencies as a part of the container image during the build process.</li></ul>",
-          "upvote_count": "6",
+          "upvote_count": "7",
           "selected_answers": "Selected Answer: D"
         },
         {
@@ -6215,6 +6903,38 @@ var SAP_C02_Part2 =
           "content": "The requirement is code reuse: <br>https://aws.amazon.com/blogs/compute/working-with-lambda-layers-and-extensions-in-container-images/<br>Lambda functions packaged as container images do not support adding Lambda layers to the function configuration. However, there are a number of solutions to use the functionality of Lambda layers with container images. You take on the responsible for packaging your preferred runtimes and dependencies as a part of the container image during the build process.",
           "upvote_count": "1",
           "selected_answers": ""
+        },
+        {
+          "id": 857174,
+          "date": "Fri 31 Mar 2023 16:19",
+          "username": "\t\t\t\tAsagumo\t\t\t",
+          "content": "This page is in Japanese.<br>https://michimani.net/post/aws-create-lambda-layers-with-docker/",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 854501,
+          "date": "Wed 29 Mar 2023 16:07",
+          "username": "\t\t\t\tfabu\t\t\t",
+          "content": "B is correct.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 851866,
+          "date": "Mon 27 Mar 2023 09:31",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "D seems a better choice. Docker images can be used to package and deploy Lambda functions directly, but not for Lambda layers.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 842716,
+          "date": "Sat 18 Mar 2023 12:40",
+          "username": "\t\t\t\ttaer\t\t\t",
+          "content": "B.  Deploy the shared libraries and custom classes to a Docker image. Upload the image to Amazon Elastic Container Registry (Amazon ECR). Create a Lambda layer that uses the Docker image as the source. Deploy the API's Lambda functions as Zip packages. Configure the packages to use the Lambda layer.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
         },
         {
           "id": 837339,
@@ -6269,7 +6989,7 @@ var SAP_C02_Part2 =
           "date": "Thu 02 Feb 2023 00:37",
           "username": "\t\t\t\ttatdatpham\t\t\t",
           "content": "\\\"use several shared libraries and custom classes\\\" => Use Lambda layer to optimize code reuse.<br>=> A & B are matched but A is saving Image into S3, not good. Should use ECR.<br>So the answer is B",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -6366,11 +7086,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851881,
+          "date": "Mon 27 Mar 2023 09:40",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "The ML model is run locally, so it can still provide feedback when the internet is down.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 837347,
           "date": "Sun 12 Mar 2023 20:45",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "Offline operation: AWS IoT Greengrass supports offline operation by enabling devices to continue processing data even when they are disconnected from the internet.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -6499,6 +7227,14 @@ var SAP_C02_Part2 =
           "selected_answers": ""
         },
         {
+          "id": 851884,
+          "date": "Mon 27 Mar 2023 09:44",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "B is the best fit",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 837392,
           "date": "Sun 12 Mar 2023 22:11",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
@@ -6616,11 +7352,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851886,
+          "date": "Mon 27 Mar 2023 09:45",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Deploy AWS Shield Advanced in addition to AWS WAF. ",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 837431,
           "date": "Sun 12 Mar 2023 22:46",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
           "content": "AWS Shield Advanced is focused on protecting against DDoS attacks, while AWS WAF is focused on protecting against web exploits. However, both services can be used together to provide comprehensive protection for your applications.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -6644,7 +7388,7 @@ var SAP_C02_Part2 =
           "date": "Wed 08 Feb 2023 22:49",
           "username": "\t\t\t\tMusk\t\t\t",
           "content": "Reading more about option B, I pick B",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -6713,6 +7457,22 @@ var SAP_C02_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 842516,
+          "date": "Sat 18 Mar 2023 07:25",
+          "username": "\t\t\t\ttaer\t\t\t",
+          "content": "A.  Add another Region to the Aurora MySQL DB clusterD.  Convert the existing DynamoDB table to a global table by adding another Region to its configuration",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
+          "id": 841193,
+          "date": "Thu 16 Mar 2023 17:49",
+          "username": "\t\t\t\ttestingaws123\t\t\t",
+          "content": "Badly written question: <br>\\\"The RTO and RPO must be no more than a few minutes each.\\\"<br>What is few minutes mean? May be it is 2-3 min for me, may be it is 9-10 min for you.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 837564,
           "date": "Mon 13 Mar 2023 03:41",
@@ -6791,10 +7551,18 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 797799,
+          "date": "Sat 04 Feb 2023 11:02",
+          "username": "\t\t\t\tjojom19980\t\t\t",
+          "content": "it uses path-based routing to forward requests based on the URL path",
+          "upvote_count": "5",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 837590,
           "date": "Mon 13 Mar 2023 04:26",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
-          "content": "https://aws.amazon.com/elasticloadbalancing/gateway-load-balancer/<br>Gateway Load Balancer helps you easily deploy, scale, and manage your third-party virtual appliances. It gives you one gateway for distributing traffic across multiple virtual appliances while scaling them up or down, based on demand. This decreases potential points of failure in your network and increases availability.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://youtu.be/-j2smz_VCH4?t=1270<br>ALB (L7)- HTTP, HTTPS<br>NLB (L4)- TCP, UDP, TLS traffic<br>GWLB(L3)- IP traffic and 3rd party Appliances</li><li>AWS Gateway Load Balancer (GWLB) can terminate TLS traffic. GWLB supports SSL/TLS offloading, which means that it can terminate SSL/TLS connections from clients and then forward the decrypted traffic to backend servers over HTTP or HTTPS.</li></ul>",
+          "content": "https://aws.amazon.com/elasticloadbalancing/gateway-load-balancer/<br>Gateway Load Balancer helps you easily deploy, scale, and manage your third-party virtual appliances. It gives you one gateway for distributing traffic across multiple virtual appliances while scaling them up or down, based on demand. This decreases potential points of failure in your network and increases availability.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://youtu.be/-j2smz_VCH4?t=1270<br>ALB (L7)- HTTP, HTTPS<br>NLB (L4)- TCP, UDP, TLS traffic<br>GWLB(L3)- IP traffic and 3rd party Appliances</li><li>AWS Gateway Load Balancer (GWLB) can terminate TLS traffic. GWLB supports SSL/TLS offloading, which means that it can terminate SSL/TLS connections from clients and then forward the decrypted traffic to backend servers over HTTP or HTTPS.</li><li>I think main question is can it support static IP address which is needed by the firmware to waitlist it?</li></ul>",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: D"
         },
@@ -6802,7 +7570,7 @@ var SAP_C02_Part2 =
           "id": 837603,
           "date": "Mon 13 Mar 2023 04:43",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
-          "content": "https://youtu.be/-j2smz_VCH4?t=1270<br>ALB (L7)- HTTP, HTTPS<br>NLB (L4)- TCP, UDP, TLS traffic<br>GWLB(L3)- IP traffic and 3rd party Appliances<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>AWS Gateway Load Balancer (GWLB) can terminate TLS traffic. GWLB supports SSL/TLS offloading, which means that it can terminate SSL/TLS connections from clients and then forward the decrypted traffic to backend servers over HTTP or HTTPS.</li></ul>",
+          "content": "https://youtu.be/-j2smz_VCH4?t=1270<br>ALB (L7)- HTTP, HTTPS<br>NLB (L4)- TCP, UDP, TLS traffic<br>GWLB(L3)- IP traffic and 3rd party Appliances<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>AWS Gateway Load Balancer (GWLB) can terminate TLS traffic. GWLB supports SSL/TLS offloading, which means that it can terminate SSL/TLS connections from clients and then forward the decrypted traffic to backend servers over HTTP or HTTPS.</li><li>I think main question is can it support static IP address which is needed by the firmware to waitlist it?</li></ul>",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -6810,7 +7578,15 @@ var SAP_C02_Part2 =
           "id": 837621,
           "date": "Mon 13 Mar 2023 05:06",
           "username": "\t\t\t\tGod_Is_Love\t\t\t",
-          "content": "AWS Gateway Load Balancer (GWLB) can terminate TLS traffic. GWLB supports SSL/TLS offloading, which means that it can terminate SSL/TLS connections from clients and then forward the decrypted traffic to backend servers over HTTP or HTTPS.",
+          "content": "AWS Gateway Load Balancer (GWLB) can terminate TLS traffic. GWLB supports SSL/TLS offloading, which means that it can terminate SSL/TLS connections from clients and then forward the decrypted traffic to backend servers over HTTP or HTTPS.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I think main question is can it support static IP address which is needed by the firmware to waitlist it?</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 854199,
+          "date": "Wed 29 Mar 2023 11:06",
+          "username": "\t\t\t\tMickey321\t\t\t",
+          "content": "I think main question is can it support static IP address which is needed by the firmware to waitlist it?",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -6861,14 +7637,6 @@ var SAP_C02_Part2 =
           "content": "miss type.<br>correct answer is B. <br>There is no need to delete ALB. ",
           "upvote_count": "1",
           "selected_answers": ""
-        },
-        {
-          "id": 797799,
-          "date": "Sat 04 Feb 2023 11:02",
-          "username": "\t\t\t\tjojom19980\t\t\t",
-          "content": "it uses path-based routing to forward requests based on the URL path",
-          "upvote_count": "4",
-          "selected_answers": "Selected Answer: B"
         },
         {
           "id": 796310,
@@ -6932,11 +7700,19 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851905,
+          "date": "Mon 27 Mar 2023 10:05",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "C.  Add a security group rule to the ALB to allow traffic from the AWS managed prefix list for CloudFront only.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 798038,
           "date": "Sat 04 Feb 2023 15:34",
           "username": "\t\t\t\tmasssa\t\t\t",
           "content": "https://docs.amazonaws.cn/en_us/AmazonCloudFront/latest/DeveloperGuide/LocationsOfEdgeServers.html<br>AWS managed prefix list is more recommended.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -7001,11 +7777,27 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851916,
+          "date": "Mon 27 Mar 2023 10:16",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Create an AUTH token. Store the token in AWS Secrets Manager.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 838581,
+          "date": "Tue 14 Mar 2023 06:29",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "Redis CLI has AUTH command as a feature to SET/ROTATE strategies<br>https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/auth.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 832841,
           "date": "Wed 08 Mar 2023 11:51",
           "username": "\t\t\t\tZek\t\t\t",
           "content": "B seems right. <br>To enable authentication on an existing Redis server, call the ModifyReplicationGroup API operation. Call ModifyReplicationGroup with the --auth-token parameter as the new token and the --auth-token-update-strategy with the value ROTATE. <br><br>After the modification is complete, the cluster supports the AUTH token specified in the auth-token parameter in addition to supporting connecting without authentication. Enabling authentication is only supported on Redis servers with encryption in transit (TLS) enabled.<br><br>https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/auth.html",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -7086,6 +7878,22 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851919,
+          "date": "Mon 27 Mar 2023 10:17",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "B.  Create a new launch template version that uses attribute-based instance type selection.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 838587,
+          "date": "Tue 14 Mar 2023 06:44",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-asg-instance-type-requirements.html#use-attribute-based-instance-type-selection-prerequisites",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 822918,
           "date": "Sun 26 Feb 2023 21:12",
           "username": "\t\t\t\tkiran15789\t\t\t",
@@ -7114,7 +7922,7 @@ var SAP_C02_Part2 =
           "date": "Thu 02 Feb 2023 20:24",
           "username": "\t\t\t\tbititan\t\t\t",
           "content": "launch config is replaced by launch template hence is not advisible, option A rulled out. C is wrong because launch template cannot be updated. D is also wrong for the same reason",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: B"
         }
       ]
@@ -7167,8 +7975,56 @@ var SAP_C02_Part2 =
           "date": "Thu 02 Feb 2023 19:43",
           "username": "\t\t\t\tschalke04\t\t\t",
           "content": "C: <br>Amazon FSx for Lustre is a fully managed service that provides cost-effective, high-performance, scalable storage for compute workloads. Powered by Lustre, the world's most popular high-performance file system, FSx for Lustre offers shared storage with sub-ms latencies, up to terabytes per second of throughput, and millions of IOPS. FSx for Lustre file systems can also be linked to Amazon Simple Storage Service (S3) buckets, allowing you to access and process data concurrently from both a high-performance file system and from the S3 API.",
-          "upvote_count": "6",
+          "upvote_count": "7",
           "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 851924,
+          "date": "Mon 27 Mar 2023 10:25",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "I think b is a better choice its far easier to implement.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 848553,
+          "date": "Thu 23 Mar 2023 19:33",
+          "username": "\t\t\t\tArnaud92\t\t\t",
+          "content": "I think it's B. <br>C can be a good solution but at the end of the answer, there is a mention to mount with NFS. Lustre is not using NFS. So I'll go for B<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I agree with this.<br>FSx is going to be mounted as ”Lusture\\\"<br>https://docs.aws.amazon.com/fsx/latest/LustreGuide/mount-fs-auto-mount-onreboot.html</li></ul>",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 850192,
+          "date": "Sat 25 Mar 2023 15:22",
+          "username": "\t\t\t\tmarcoforexam\t\t\t",
+          "content": "I agree with this.<br>FSx is going to be mounted as ”Lusture\\\"<br>https://docs.aws.amazon.com/fsx/latest/LustreGuide/mount-fs-auto-mount-onreboot.html",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 839517,
+          "date": "Wed 15 Mar 2023 03:55",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "I choose C between B and C after reading the feature of seamless linking the S3 file system with Lustre - https://aws.amazon.com/fsx/lustre/",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 839497,
+          "date": "Wed 15 Mar 2023 03:30",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "Option C (Configure Amazon FSx for Lustre with an import and export policy) may be overkill for the given workload and may require additional management overhead, resulting in additional effort and cost.On the other hand, Option B (Set up an Amazon S3 File Gateway and configure a file share that is linked to the document store) provides a straightforward solution that requires minimal changes to the processing server. By using the S3 File Gateway, the processing server can continue to generate and modify files on the local file system, and changes can be automatically synced to S3 via the gateway. Customers can then access the files directly from S3 within 30 minutes.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Above may be wrong-<br>Option C could be the solution that will meet the requirements with the least amount of effort. By linking the new file system to an S3 bucket, the company can store, retrieve, and modify documents with fast local access. The Lustre client can be installed on an Amazon EC2 instance, which will provide the processing server with the fast local access it requires. This solution requires minimal changes to the processing server and will enable the files to be available to the public for download within 30 minutes.<br><br>Option B may not be a good solution because it involves setting up an S3 File Gateway and configuring a file share, which would require additional infrastructure and configuration. This solution also involves using NFS, which may not provide the level of performance required for the processing server.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 839506,
+          "date": "Wed 15 Mar 2023 03:42",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "Above may be wrong-<br>Option C could be the solution that will meet the requirements with the least amount of effort. By linking the new file system to an S3 bucket, the company can store, retrieve, and modify documents with fast local access. The Lustre client can be installed on an Amazon EC2 instance, which will provide the processing server with the fast local access it requires. This solution requires minimal changes to the processing server and will enable the files to be available to the public for download within 30 minutes.<br><br>Option B may not be a good solution because it involves setting up an S3 File Gateway and configuring a file share, which would require additional infrastructure and configuration. This solution also involves using NFS, which may not provide the level of performance required for the processing server.",
+          "upvote_count": "1",
+          "selected_answers": ""
         },
         {
           "id": 834453,
@@ -7248,6 +8104,54 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 804114,
+          "date": "Fri 10 Feb 2023 09:19",
+          "username": "\t\t\t\tUntamables\t\t\t",
+          "content": "The trigger is that the central user service deletes a user in the DynamoDB table. The DynamoDB Streams meets the requirement.<br>https://aws.amazon.com/blogs/database/how-to-perform-ordered-data-replication-between-applications-by-using-amazon-dynamodb-streams/<br>Option B is wrong. There is no feature named DynamoDB event notifications.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Correct, the point they want to make is central user service is system of record. You should not be deleting from other services until you delete from DynamoDB. </li></ul>",
+          "upvote_count": "8",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 853331,
+          "date": "Tue 28 Mar 2023 16:10",
+          "username": "\t\t\t\tAmac1979\t\t\t",
+          "content": "Correct, the point they want to make is central user service is system of record. You should not be deleting from other services until you delete from DynamoDB. ",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 809388,
+          "date": "Wed 15 Feb 2023 11:53",
+          "username": "\t\t\t\tCloudFloater\t\t\t",
+          "content": "C seems correct; SQS is one queue to one microservice, could not find anything on dynamodb event notifications.",
+          "upvote_count": "5",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 851930,
+          "date": "Mon 27 Mar 2023 10:34",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "I think A is the best fit here due to the phrasing of the question around who is deleting users.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 842531,
+          "date": "Sat 18 Mar 2023 07:55",
+          "username": "\t\t\t\ttaer\t\t\t",
+          "content": "C.  Configure the central user service to post an event on a custom Amazon EventBridge event bus when the company deletes a user. Create an EventBridge rule for each microservice to match the user deletion event pattern and invoke logic in the microservice to delete the user from the DynamoDB table.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 839557,
+          "date": "Wed 15 Mar 2023 06:14",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "C,D are wrong. Flaw is \\\"Company deletes user? \\\" Nope, Its central service does deletion.<br>B is wrong because, there is no such thing as DynamoDB events feature, Only Streams can enable CRUD operations and eventually could trigger lambda, Refer here : https://stackoverflow.com/questions/53857304/how-to-get-notified-when-a-aws-dynamo-db-entry-are-updated<br>https://dynobase.dev/dynamodb-triggers/",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 834458,
           "date": "Thu 09 Mar 2023 22:48",
           "username": "\t\t\t\tkiran15789\t\t\t",
@@ -7280,14 +8184,6 @@ var SAP_C02_Part2 =
           "selected_answers": "Selected Answer: A"
         },
         {
-          "id": 809388,
-          "date": "Wed 15 Feb 2023 11:53",
-          "username": "\t\t\t\tCloudFloater\t\t\t",
-          "content": "C seems correct; SQS is one queue to one microservice, could not find anything on dynamodb event notifications.",
-          "upvote_count": "4",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
           "id": 808336,
           "date": "Tue 14 Feb 2023 13:00",
           "username": "\t\t\t\tspd\t\t\t",
@@ -7312,19 +8208,19 @@ var SAP_C02_Part2 =
           "selected_answers": ""
         },
         {
-          "id": 804114,
-          "date": "Fri 10 Feb 2023 09:19",
-          "username": "\t\t\t\tUntamables\t\t\t",
-          "content": "The trigger is that the central user service deletes a user in the DynamoDB table. The DynamoDB Streams meets the requirement.<br>https://aws.amazon.com/blogs/database/how-to-perform-ordered-data-replication-between-applications-by-using-amazon-dynamodb-streams/<br>Option B is wrong. There is no feature named DynamoDB event notifications.",
-          "upvote_count": "4",
-          "selected_answers": "Selected Answer: A"
-        },
-        {
           "id": 799122,
           "date": "Sun 05 Feb 2023 20:45",
           "username": "\t\t\t\tharleydog\t\t\t",
-          "content": "We can't use a queue, the message will only get processed once. I don't think we can generate event notifications on DynamoDB table updates.",
-          "upvote_count": "3",
+          "content": "We can't use a queue, the message will only get processed once. I don't think we can generate event notifications on DynamoDB table updates.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>So the only option is C</li></ul>",
+          "upvote_count": "4",
+          "selected_answers": ""
+        },
+        {
+          "id": 841838,
+          "date": "Fri 17 Mar 2023 10:17",
+          "username": "\t\t\t\taqiao\t\t\t",
+          "content": "So the only option is C",
+          "upvote_count": "1",
           "selected_answers": ""
         }
       ]
@@ -7373,6 +8269,30 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 851934,
+          "date": "Mon 27 Mar 2023 10:38",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "C.  Create an AWS Global Accelerator standard accelerator.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 839583,
+          "date": "Wed 15 Mar 2023 07:08",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "An Application Load Balancer cannot be assigned an Elastic IP address (static IP address).<br>https://stackoverflow.com/questions/55236806/how-to-assign-elastic-ip-to-application-load-balancer-in-aws<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>This feature allows you to migrate your applications to AWS without requiring your partners and customers to change their IP address whitelists. (which could be used in WAF)<br>BYOIP - Bring your own IP https://aws.amazon.com/blogs/networking-and-content-delivery/using-bring-your-own-ip-addresses-byoip-with-global-accelerator/</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 839584,
+          "date": "Wed 15 Mar 2023 07:14",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "This feature allows you to migrate your applications to AWS without requiring your partners and customers to change their IP address whitelists. (which could be used in WAF)<br>BYOIP - Bring your own IP https://aws.amazon.com/blogs/networking-and-content-delivery/using-bring-your-own-ip-addresses-byoip-with-global-accelerator/",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 822932,
           "date": "Sun 26 Feb 2023 21:24",
           "username": "\t\t\t\tkiran15789\t\t\t",
@@ -7385,7 +8305,7 @@ var SAP_C02_Part2 =
           "date": "Fri 10 Feb 2023 11:42",
           "username": "\t\t\t\tUntamables\t\t\t",
           "content": "https://docs.aws.amazon.com/global-accelerator/latest/dg/about-accelerators.alb-accelerator.html<br>Option A is wrong. AWS WAF does not support associating with NLB. <br>https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html<br>Option B is wrong. An ALB does not support an Elastic IP address.<br>https://aws.amazon.com/elasticloadbalancing/features/",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -7516,6 +8436,22 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 852043,
+          "date": "Mon 27 Mar 2023 13:17",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "CDF seems the best choice",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: CDF"
+        },
+        {
+          "id": 840512,
+          "date": "Thu 16 Mar 2023 03:26",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "When you enable controls on an organizational unit (OU) that is registered with AWS Control Tower, preventive controls apply to all member accounts under the OU, enrolled and unenrolled. Detective controls apply to enrolled accounts only.<br>https://docs.aws.amazon.com/controltower/latest/userguide/controls.html",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: CDF"
+        },
+        {
           "id": 816924,
           "date": "Tue 21 Feb 2023 18:26",
           "username": "\t\t\t\tdummy1777\t\t\t",
@@ -7576,7 +8512,7 @@ var SAP_C02_Part2 =
           "date": "Fri 10 Feb 2023 12:11",
           "username": "\t\t\t\tUntamables\t\t\t",
           "content": "https://docs.aws.amazon.com/controltower/latest/userguide/controls.html<br>https://docs.aws.amazon.com/controltower/latest/userguide/strongly-recommended-controls.html#ebs-enable-encryption<br>AWS is now transitioning the previous term 'guardrail' new term 'control'.",
-          "upvote_count": "2",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: CDF"
         },
         {
@@ -7632,6 +8568,14 @@ var SAP_C02_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 840539,
+          "date": "Thu 16 Mar 2023 04:56",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "DRS includes EC2 instances as well not just data related as offered by DLM or Backup<br><br>Q: What operating systems and applications are supported by AWS DRS?<br>A: You can use AWS DRS to recover all of your applications and databases that run on supported Windows and Linux operating system versions. This includes critical databases such as Oracle, MySQL, and SQL Server, and enterprise applications such as SAP.<br><br>AWS Elastic Disaster Recovery (DRS) vs AWS DLM vs AWS Backup <br><br>You should use DLM when you want to automate the creation, retention, and deletion of EBS snapshots. You should use AWS Backup to manage and monitor backups across the AWS services you use, including EBS volumes, from a single place.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: A"
+        },
         {
           "id": 806080,
           "date": "Sun 12 Feb 2023 08:50",
@@ -7706,6 +8650,22 @@ var SAP_C02_Part2 =
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 852047,
+          "date": "Mon 27 Mar 2023 13:23",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "CD is right",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: CD"
+        },
+        {
+          "id": 840541,
+          "date": "Thu 16 Mar 2023 05:02",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "Not B because, Trusted Advisor is available for Enterprise support only which is not cheap and the SA needs to cost optimize here. CPU, memory, and network relate to Compute so D for sure. C will enable to know how much actual memory/CPU is needed for instances and SA can provision based on cw logs",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: CD"
+        },
         {
           "id": 821885,
           "date": "Sat 25 Feb 2023 23:57",
@@ -7816,6 +8776,22 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 852048,
+          "date": "Mon 27 Mar 2023 13:25",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "C for sure",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 840547,
+          "date": "Thu 16 Mar 2023 05:26",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-event-driven-backups-from-codecommit-to-amazon-s3-using-codebuild-and-cloudwatch-events.html",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 822940,
           "date": "Sun 26 Feb 2023 21:38",
           "username": "\t\t\t\tkiran15789\t\t\t",
@@ -7868,7 +8844,7 @@ var SAP_C02_Part2 =
           "date": "Tue 14 Feb 2023 13:19",
           "username": "\t\t\t\tspd\t\t\t",
           "content": "https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-code-in-multiple-aws-regions-using-aws-codepipeline-aws-codecommit-and-aws-codebuild.html<br><br>https://medium.com/geekculture/replicate-aws-codecommit-repositories-between-regions-using-codebuild-and-codepipeline-39f6b8fcefd2",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: C"
         }
       ]
@@ -7917,11 +8893,27 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 852049,
+          "date": "Mon 27 Mar 2023 13:26",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Private link",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 840568,
+          "date": "Thu 16 Mar 2023 06:24",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "Networking & Content Delivery blog -<br>https://aws.amazon.com/blogs/networking-and-content-delivery/connecting-networks-with-overlapping-ip-ranges/",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 809765,
           "date": "Wed 15 Feb 2023 17:54",
           "username": "\t\t\t\tc73bf38\t\t\t",
           "content": "With AWS PrivateLink, the marketing team can create an endpoint service to share their internal application with other accounts securely using private IP addresses. They can grant permission to specific AWS accounts to connect to the service and create interface VPC endpoints in the other accounts to access the application by using private IP addresses. This option does not require any changes to the network of the other business units, and it does not require peering or NATing. This solution is both scalable and secure.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -7978,11 +8970,35 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 852051,
+          "date": "Mon 27 Mar 2023 13:28",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "B eventbirdge and access analyser",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 841530,
+          "date": "Fri 17 Mar 2023 03:36",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-analyzer.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Click on the \\\"Create rule\\\" button.<br><br>Enter a name for the rule and a brief description, if desired.<br><br>Under \\\"Define pattern\\\", select \\\"Event pattern\\\".<br><br>Select \\\"Custom pattern\\\".<br><br>In the \\\"Event pattern\\\" field, enter the following code:<br><br>{<br>\\\"source\\\": [\\\"aws.securityhub\\\"],<br>\\\"detail-type\\\": [\\\"Access Analyzer Finding\\\"],<br>\\\"detail\\\": {<br>\\\"findings\\\": [<br>{<br>\\\"isPublic\\\": [<br>true<br>]<br>}<br>]<br>}<br>}<br><br>This code will match all Access Analyzer Finding events where the \\\"isPublic\\\" field is set to \\\"true\\\".</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 841533,
+          "date": "Fri 17 Mar 2023 03:39",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "Click on the \\\"Create rule\\\" button.<br><br>Enter a name for the rule and a brief description, if desired.<br><br>Under \\\"Define pattern\\\", select \\\"Event pattern\\\".<br><br>Select \\\"Custom pattern\\\".<br><br>In the \\\"Event pattern\\\" field, enter the following code:<br><br>{<br>\\\"source\\\": [\\\"aws.securityhub\\\"],<br>\\\"detail-type\\\": [\\\"Access Analyzer Finding\\\"],<br>\\\"detail\\\": {<br>\\\"findings\\\": [<br>{<br>\\\"isPublic\\\": [<br>true<br>]<br>}<br>]<br>}<br>}<br><br>This code will match all Access Analyzer Finding events where the \\\"isPublic\\\" field is set to \\\"true\\\".",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 814731,
           "date": "Mon 20 Feb 2023 03:07",
           "username": "\t\t\t\tc73bf38\t\t\t",
           "content": "B is the correct solution because it uses AWS Identity and Access Management Access Analyzer to continuously monitor access control configurations and detect whether any S3 buckets have been configured to be publicly accessible. When a publicly accessible bucket is detected, an Amazon EventBridge rule is triggered, and the SNS topic is notified with the finding.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -8067,7 +9083,15 @@ var SAP_C02_Part2 =
           "date": "Tue 14 Feb 2023 13:47",
           "username": "\t\t\t\tspd\t\t\t",
           "content": "First need to evaluate",
-          "upvote_count": "6",
+          "upvote_count": "7",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 852052,
+          "date": "Mon 27 Mar 2023 13:32",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Use migration evaluator",
+          "upvote_count": "1",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -8075,7 +9099,7 @@ var SAP_C02_Part2 =
           "date": "Wed 15 Feb 2023 17:49",
           "username": "\t\t\t\tc73bf38\t\t\t",
           "content": "C.  Use Migration Evaluator to generate a list of servers. Build a report for a business case. Use AWS Migration Hub to view the portfolio. Use AWS Application Discovery Service to gain an understanding of application dependencies.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: C"
         }
       ]
@@ -8156,6 +9180,30 @@ var SAP_C02_Part2 =
           "selected_answers": ""
         },
         {
+          "id": 852106,
+          "date": "Mon 27 Mar 2023 14:46",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "A for sure",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 851281,
+          "date": "Sun 26 Mar 2023 18:52",
+          "username": "\t\t\t\tramyaram\t\t\t",
+          "content": "Keyword here is multiple small files and shared between multiple clusters",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 841555,
+          "date": "Fri 17 Mar 2023 04:47",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "In the past, EBS can be attached only to one ec2 instance but not anymore but there are limitations like - it works only on io1/io2 instance types and many others as described here. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes-multi.html<br>EFS has shareable storage <br><br>In terms of performance, Amazon EFS is optimized for workloads that require high levels of aggregate throughput and IOPS, whereas EBS is optimized for low-latency, random access I/O operations. Amazon EFS is designed to scale throughput and capacity automatically as your storage needs grow, while EBS volumes can be resized on demand.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 833838,
           "date": "Thu 09 Mar 2023 11:23",
           "username": "\t\t\t\tZek\t\t\t",
@@ -8233,6 +9281,22 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 852107,
+          "date": "Mon 27 Mar 2023 14:47",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "Use Amazon Connect to replace the old call center hardware. Use Amazon Pinpoint to send text message surveys to customers.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 841559,
+          "date": "Fri 17 Mar 2023 04:57",
+          "username": "\t\t\t\tGod_Is_Love\t\t\t",
+          "content": "Amazon Connect is a cloud-based contact center service that allows you to set up a virtual call center for your business. It provides an easy-to-use interface for managing customer interactions through voice and chat. Amazon Connect integrates with other AWS services, such as Amazon S3 and Amazon Kinesis, to help you collect, store, and analyze customer data for insights into customer behavior and trends.<br><br>On the other hand, Amazon Pinpoint is a marketing automation and analytics service that allows you to engage with your customers across different channels, such as email, SMS, push notifications, and voice. It helps you create personalized campaigns based on user behavior and enables you to track user engagement and retention.<br><br>While both services allow you to communicate with your customers, they serve different purposes. Amazon Connect is focused on customer support and service, while Amazon Pinpoint is focused on marketing and engagement.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 809757,
           "date": "Wed 15 Feb 2023 17:48",
           "username": "\t\t\t\tc73bf38\t\t\t",
@@ -8294,11 +9358,27 @@ var SAP_C02_Part2 =
       "topic_name": "",
       "discusstion": [
         {
+          "id": 852518,
+          "date": "Tue 28 Mar 2023 00:09",
+          "username": "\t\t\t\tEshu2009\t\t\t",
+          "content": "why not C?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 852109,
+          "date": "Mon 27 Mar 2023 14:49",
+          "username": "\t\t\t\tmfsec\t\t\t",
+          "content": "D.  Provision a new Amazon Connect instance with all existing users and contact flows in a second Region.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 814510,
           "date": "Sun 19 Feb 2023 21:32",
           "username": "\t\t\t\tspd\t\t\t",
           "content": "D looks most appropriate",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: D"
         },
         {
