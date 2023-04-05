@@ -1,3540 +1,3344 @@
 // Practice Test 1(SAP-C02)
 var SAP_C02_Whiz_PracticeTest1 = {
-    "msg": "Quiz Questions",
-    "data": [
-      {
-        "question_id": 98348,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>Your company uses AWS Direct Connect to connect its on-premises network with an AWS VPC. DNS records of the AWS resources in the VPC are managed by a Route 53 private hosted zone. Now you want to forward DNS queries of the on-premise network to the Route 53 Resolver so that records in the Route 53 private hosted zone can be resolved in the on-premises network. Which of the following actions is appropriate for the above requirement to take place?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answer: B</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because the Route 53 Resolver service does not provide a domain name or IP address for DNS resolvers on the on-premises network to be configured.</li>\r\n\t<li><strong>Option​ B is​ CORRECT</strong> because the Route 53 Resolver inbound endpoint should be used when forwarding DNS queries to the Route 53 Resolver. You can then configure the on-premises resolver to forward queries to the inbound endpoint. Take the following diagram as an example:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sas1.png\" style=\"height:415px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because Route 53 Resolver outbound endpoint is used when forwarding DNS queries from the AWS VPC to the on-premises networks. In this scenario, the inbound endpoint should be used.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because, without an inbound endpoint, Route 53 Resolver cannot automatically forward incoming DNS queries from on-premises networks. Other than that, there is no such method to include all the Route 53 domain names in the Route 53 Resolver.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html\" target=\"_blank\">https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124076,
-            "question_id": 98348,
-            "answers": [
-              {
-                "question_id": "98348",
-                "choice": "<p>Configure resolvers on the on-premises network to forward DNS queries to the domain name or the IP address of the Route 53 Resolver.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98348",
-                "choice": "<p>Create a Route 53 Resolver inbound endpoint in the VPC and configure resolvers on the on-premises network to forward DNS queries to the inbound endpoint.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98348",
-                "choice": "<p>Create a Route 53 Resolver outbound endpoint in the VPC and create one or more rules to specify the domain names of the DNS queries that you want resolvers on the on-premises network to forward to Route 53.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98348",
-                "choice": "<p>Include all the Route 53 domain names in the Route 53 Resolver so that the Resolver can automatically resolve domain names and answer DNS queries from the on-premises network.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98349,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You are working in a large company as an AWS Solutions Architect. Your company uses VPN connections to connect an AWS VPC with the on-premises networks. There is a DNS resolver in the on-premises network to manage several domain names. Now, you also want to resolve these domain names for the AWS resources in the VPC (i.e., EC2 instances). Which of the following options should be used to achieve this requirement? (Select TWO)</p>",
-        "mark": 1,
-        "is_partially_correct": true,
-        "question_type": "2",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answers: C and E</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because the question does not mention the usage of AWS Route 53 private hosted zone, and users cannot add the on-premises DNS resolver as an NS record either.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because, in AWS Route 53 Resolver, users cannot create any A records for domain names. Instead, endpoints and rules should be configured in order to forward DNS queries to other networks.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong> because an outbound endpoint is required to forward DNS queries from AWS VPC to the on-premises network.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because the route table is not the correct place to specify how to forward DNS queries. Route 53 Resolver should be used to resolve DNS queries between VPCs and other networks.</li>\r\n\t<li><strong>Option​ ​E ​is​ CORRECT</strong> because defining rules works with outbound endpoints to determine how to forward DNS queries for certain domain names to the on-premises DNS resolver.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html\" target=\"_blank\">https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-outbound-queries-managing.html\" target=\"_blank\">https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-outbound-queries-managing.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-rules-managing.html\" target=\"_blank\">https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-rules-managing.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124077,
-            "question_id": 98349,
-            "answers": [
-              {
-                "question_id": "98349",
-                "choice": "<p>Add the on-premises DNS resolver as an NS record in a privately hosted zone of AWS Route 53.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98349",
-                "choice": "<p>For each domain name, create an A record in the AWS Route 53 Resolver with the on-premises DNS resolver IP as its value.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98349",
-                "choice": "<p>Create an outbound endpoint in the AWS Route 53 Resolver for the AWS VP.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98349",
-                "choice": "<p>In the default route table of AWS VPC, create a route to forward all DNS queries to the on-premises DNS resolver&rsquo;s domain name.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98349",
-                "choice": "<p>In AWS Route 53 Resolver, define rules to specify which DNS queries are forwarded to the DNS resolver on the on-premises network.</p>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98350,
-        "topic_id": 2686,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You are working in a financial company as an AWS solutions architect. The company plans to migrate its various databases from on-premises data centers to the AWS platform. The on-premises databases are configured differently to serve a large number of applications and services. In which of the following scenarios, would you suggest using Amazon EC2 instead of Amazon RDS to run the database?</p>",
-        "mark": 1,
-        "is_partially_correct": true,
-        "question_type": "2",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answers: A and C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is CORRECT</strong> because, with Amazon RDS, users cannot fully control the database. Instead, Amazon RDS manages the database so that users only need to focus on the business and applications. In this scenario, as full control of the database is required, Amazon EC2 should be suggested.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because the database hosted in EC2 cannot automatically patch or upgrade. In this scenario, Amazon RDS service should be suggested.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong> because Amazon RDS for Oracle does not support all Oracle versions. For the legacy versions that RDS does not support, EC2 should be considered.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because Amazon RDS provides various metrics in Amazon CloudWatch, and users do not need to configure them on their own. Amazon RDS service should be suggested in this scenario.</li>\r\n\t<li><strong>Option​ ​E ​is​ ​incorrect</strong> because Amazon RDS is a highly available service and provides synchronous Multi-AZ replication. Users can easily enable the feature through Amazon RDS. In this scenario, Amazon RDS should be suggested.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-best-practices/choosing-between-amazon-rds-amazon-ec2-or-vmware-cloud-on-aws-for-your-oracle-database.html\" target=\"_blank\">https://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-best-practices/choosing-between-amazon-rds-amazon-ec2-or-vmware-cloud-on-aws-for-your-oracle-database.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Oracle.html\" target=\"_blank\">https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Oracle.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124078,
-            "question_id": 98350,
-            "answers": [
-              {
-                "question_id": "98350",
-                "choice": "<p>Full control of a database is required including provisioning SYSTEM user access.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98350",
-                "choice": "<p>The database can be automatically patched to remediate security vulnerabilities in time and upgraded to a new database version.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98350",
-                "choice": "<p>For a legacy application, an old Oracle database version is required (i.e. Oracle Database 11g).</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98350",
-                "choice": "<p>The database needs to provide out-of-box metrics including disk usage, read/write IOPs, and network throughput.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98350",
-                "choice": "<p>The Oracle database (version 19c) should be highly available and can be easily synchronously replicated in multiple availability zones.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Accelerate Workload Migration and Modernization"
-      },
-      {
-        "question_id": 98351,
-        "topic_id": 2686,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You are an AWS consultant working in a large organization. The organization owns hundreds of servers in a local data center and has a plan to migrate them to the AWS platform. The workloads include SQL Server, Java web applications, custom software, etc. They also use different types of operating systems, such as Windows, CentOS, Debian, and Ubuntu servers. You need to design an automated lift-and-shift solution that can simplify and expedite the migration. Which of the following options is the most appropriate?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer:​ C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because AWS Application Migration Service is recommended as the primary migration service for lift-and-shift migrations. Besides, AWS Server Migration Service does not dump servers to files in S3.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because Application Discovery Service is used to plan the migration to AWS by collecting on-premises data. The service itself does not lift and shift the applications to AWS. Besides, AWS DataSync is used for transferring the storage data between on-premises and AWS. AWS DataSync cannot work with Application Discovery Service to migrate applications into on-premises servers.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong> because AWS Application Migration Service is the correct service to be used as a highly automated lift-and-shift migration solution. With the service, users can manage the source servers, automatically replicate entire servers, perform tests, and execute cutover when ready.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because AWS Transfer Family is a service for migrating SFTP, AS2, FTPS, and FTP-based workflows to AWS. It does not replicate software applications or servers to AWS.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/application-migration-service/when-to-choose-aws-mgn/\" target=\"_blank\">https://aws.amazon.com/application-migration-service/when-to-choose-aws-mgn/</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/server-migration-service/latest/userguide/server-migration.html\" target=\"_blank\">https://docs.aws.amazon.com/server-migration-service/latest/userguide/server-migration.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124079,
-            "question_id": 98351,
-            "answers": [
-              {
-                "question_id": "98351",
-                "choice": "<p>Use the AWS Server Migration Service to dump the servers to files in Amazon S3 and then launch new EC2 instances or Lambda functions with the files.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98351",
-                "choice": "<p>Use the AWS Application Discovery Service to lift and shift the applications to AWS by installing migration agents and use AWS DataSync to automate the incremental snapshot-based replications.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98351",
-                "choice": "<p>Add the source servers to AWS Application Migration Service by installing the AWS Replication Agent and then use the Application Migration Service to automatically convert and launch the servers on AWS.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98351",
-                "choice": "<p>Use the AWS Transfer Family service to configure migration agents and replication staging servers that automate the migration of the on-premises servers to AWS EC2 instances.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Accelerate Workload Migration and Modernization"
-      },
-      {
-        "question_id": 98352,
-        "topic_id": 2686,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You are working as an AWS Solutions Architect. The company has several new projects in the AWS Cloud and the development team needs your opinion on which AWS database service should be used. Which of the following scenarios would you suggest Aurora serverless as the database service? (Select TWO)</p>",
-        "mark": 1,
-        "is_partially_correct": true,
-        "question_type": "2",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answers: A and E</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is CORRECT</strong> because Aurora Serverless is an on-demand, autoscaling configuration for Amazon Aurora. With Aurora Serverless, users only need to identify the capacity range, and Aurora will automate the processes of monitoring the workload and adjusting the capacity:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sas5.png\" style=\"height:387px; width:750px\" /></p>\r\n\r\n<p>Aurora Serverless meets the requirements of the scenario.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because, in this scenario, low latency and in-memory capabilities are required for the data store. Amazon ElastiCache should be suggested.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because a NoSQL database should be considered to store key-value pairs. Amazon DynamoDB is a fully managed, serverless, key-value NoSQL database and should be used here.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because the database in the option has a stable and predicted workload. Aurora is more suitable instead of Aurora Serverless. Other than that, with Aurora Serverless, users cannot choose the Memory Optimised DB instance class.</li>\r\n\t<li><strong>Option​ ​E ​is​ CORRECT</strong> because Amazon Aurora supports MySQL and PostgreSQL databases. With Aurora Serverless, you only pay for the database resources that you consume. Aurora Serverless is appropriate for this scenario.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/products/databases/\" target=\"_blank\">https://aws.amazon.com/products/databases/</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html\" target=\"_blank\">https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124080,
-            "question_id": 98352,
-            "answers": [
-              {
-                "question_id": "98352",
-                "choice": "<p>A Relational Database for a Java application. The peaks of the database activities are hard to predict. You want to automatically scale up and down the database without the need to manage the database capacity manually.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98352",
-                "choice": "<p>A high-performance in-memory data store for gaming leaderboards with microsecond latencies and caching capabilities.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98352",
-                "choice": "<p>A fast, flexible, and high-performance database to store key-value pairs for an eCommerce system.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98352",
-                "choice": "<p>A MySQL compatible database that stores application usage data with stable and predicted workload. The DB instance class should be memory optimized.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98352",
-                "choice": "<p>A MySQL database for a proof-of-concept project that is idle most of the time and you want to pay on a per-second basis for the database capacity.</p>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Accelerate Workload Migration and Modernization"
-      },
-      {
-        "question_id": 98353,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>Your team has two AWS accounts (dev: 111111111111 and prod: 222222222222). You are configuring CI/CD pipelines in both AWS accounts for a new application. In an S3 bucket of the dev account, there are software packages encrypted by an AWS KMS customer-managed key (owned by the dev account). In order to transfer these files from the dev account to the production account in the pipelines, you need to set up a proper IAM role in the production account to use the KMS key in the dev account. Which of the following configurations is required to achieve this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answer: D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because the actions in the key policy should not be &ldquo;kms:*&rdquo; for this question, as it over-provisions the permissions. The correct way is only to allow the permissions that are needed (i.e., kms:Encrypt, kms:Decrypt).</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because you cannot add the KMS key ARN as the trusted entity in the IAM role of the prod account. The trusted entity should be the AWS dev account &quot;arn:aws:iam::111111111111:root&quot; so that IAM entities in the AWS dev account can assume it.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because you cannot add a key policy in the IAM role. The key policy is for the KMS key. Other than that, &ldquo;kms:*&rdquo; is inappropriate as it allows more actions than needed.</li>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT</strong> because to use the dev KMS key from the prod account, the key policy needs to be configured to allow the prod account to use the key as a key user. The key policy in the option is appropriate as it gives suitable permissions to the production account.</li>\r\n</ul>\r\n\r\n<pre>\r\n{\r\n&nbsp;&nbsp;&nbsp; &quot;Sid&quot;: &quot;Allow an external account to use this KMS key&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Principal&quot;: {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;AWS&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:iam::222222222222:root&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]\r\n&nbsp;&nbsp;&nbsp; },\r\n&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Encrypt&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Decrypt&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:ReEncrypt*&quot;,\r\n&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&quot;kms:GenerateDataKey*&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:DescribeKey&quot;\r\n&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;*&quot;\r\n}</pre>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html\" target=\"_blank\">https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124081,
-            "question_id": 98353,
-            "answers": [
-              {
-                "question_id": "98353",
-                "choice": "<p>In the AWS KMS key of the dev account, set up a key policy to allow the actions of &ldquo;kms:*&rdquo; for the prod account ARN &ldquo;arn:aws:iam::222222222222:root&rdquo;</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98353",
-                "choice": "<p>In the IAM role of the prod account, add the KMS key ARN as a trusted entity so that the KMS key can assume the prod role and allow the prod role to use the key</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98353",
-                "choice": "<p>In the IAM role of the prod account, add a key policy to allow &ldquo;kms:*&rdquo; with the KMS key ARN of the dev account as the &ldquo;Principal&rdquo;</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98353",
-                "choice": "<p>In the AWS KMS key of the dev account, set up a key policy to allow the prod account to use the key as a key user as follows:</p>\r\n\r\n<pre>\r\n{\r\n    &quot;Sid&quot;: &quot;Allow th external account to use this KMS key&quot;,\r\n    &quot;Effect&quot;: &quot;Allow&quot;,\r\n    &quot;Principal&quot;: {\r\n        &quot;AWS&quot;: [\r\n            &quot;arn:aws:iam::222222222222:root&quot;\r\n        ]\r\n    },\r\n    &quot;Action&quot;: [\r\n        &quot;kms:Encrypt&quot;,\r\n        &quot;kms:Decrypt&quot;,\r\n        &quot;kms:ReEncrypt*&quot;,\r\n        &quot;kms:GenerateDataKey*&quot;,\r\n        &quot;kms:DescribeKey&quot;\r\n    ],\r\n    &quot;Resource&quot;: &quot;*&quot;\r\n}\r\n</pre>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98354,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>Your team is developing a microservice with Amazon API Gateway and Lambda function. During testing, it has been found that end users hit invalid endpoints such as &ldquo;<em>https://xxxxxxxxxx.execute-api.ap-southeast-1.amazonaws.com/test/invalid</em>&rdquo;. When that happens, users receive an HTTP response with the status code 403 and a message { &quot;message&quot;: &quot;Missing Authentication Token&quot; }. You want to modify the status code of the HTTP response from &#39;403 Forbidden&#39; to be &#39;404 Not Found&#39;. What is the most suitable way to achieve this?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answer: B</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because users cannot choose the &lsquo;403 Forbidden&rsquo; response in the Gateway Responses pane. Instead, users can select a Gateway Response type (i.e., Missing Authentication Token) and then customize its status code and headers.</li>\r\n\t<li><strong>Option​ B is​ CORRECT</strong> because this is the correct way to modify the status code of a Gateway Response. Take the following screenshot as an example:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sas7.png\" style=\"height:161px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Options​ ​C and D are​ ​incorrect</strong> because users do not need to configure a method for invalid endpoints. When API Gateway fails to process a request, it returns to the client an error response without forwarding the request to the backend. The correct way is to customize the response in the Gateway Responses pane.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-gatewayResponse-definition.html\" target=\"_blank\">https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-gatewayResponse-definition.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124082,
-            "question_id": 98354,
-            "answers": [
-              {
-                "question_id": "98354",
-                "choice": "<p>In the AWS console, go to API Gateway and select the API. In the Gateway Responses pane of the API, choose the &lsquo;403 Forbidden&rsquo; response and modify it to be &lsquo;404 Not Found&rsquo;. Clear the browser cache and retest it.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98354",
-                "choice": "<p>In the AWS console, go to API Gateway and select the API. In the Gateway Responses pane of the API, choose &lsquo;Missing Authentication Token&rsquo; and modify the status code from the default (403) to 404. Deploy the API to a new or existing stage.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98354",
-                "choice": "<p>In the AWS console, go to API Gateway and select the API. In the Resources pane of the API, create a method for the invalid endpoint. In &lsquo;Method Response&rsquo;, customize the HTTP response to be &#39;404 Not Found&#39;. Redeploy the API to a new stage.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98354",
-                "choice": "<p>In the AWS console, go to API Gateway and select the API. In the Resources pane of the API, create a method for all the invalid endpoints. In &lsquo;Integration Response&rsquo;, modify the &#39;Method response status&#39; to be &#39;404 Not Found&#39;.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98355,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You are working with the platform team of a financial company. In order to better govern and standardize the AWS resources used in the company, your team is using AWS Service Catalog to maintain approved AWS resources used by different teams. You have configured a Service Catalog Product that includes a Linux EC2 instance. The CloudFormation template of the Service Catalog Product allows the user to select from 5 instance types. However, you want to limit the development team in their AWS accounts to only use the instance type t2.micro when they launch the Product in the Service Catalog Portfolio. How do you achieve this requirement most suitably?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answer:&nbsp;A</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is CORRECT</strong> because adding a Template Constraint for the Product in the Portfolio is the correct way to apply this limitation. This Template Constraint can prevent the development team from selecting other instance types. The following is an example of the Template Constraint:</li>\r\n</ul>\r\n\r\n<pre>\r\n{\r\n&nbsp; &quot;Rules&quot;: {\r\n&nbsp;&nbsp;&nbsp; &quot;Rule1&quot;: {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Assertions&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Assert&quot; : {&quot;Fn::Contains&quot;: [[&quot;t2.micro&quot;], {&quot;Ref&quot;: &quot;InstanceType&quot;}]},\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;AssertDescription&quot;: &quot;Instance type should be t2.micro&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]\r\n&nbsp;&nbsp;&nbsp; }\r\n&nbsp; }\r\n}</pre>\r\n\r\n<p>With the above Template Constraint, when users launch a new product, the instance type can only be &ldquo;t2.micro&rdquo;.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because this is not how service action in Service Catalog works. Service actions in Service Catalog use AWS Systems Manager documents to define the actions on the EC2 instances. You cannot use the service actions to restrict the CloudFormation parameters such as instance types.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because there is no need to create a new Product in Service Catalog with a new CloudFormation template. The actual need here in the question is to add another layer of control over Products launched by the development team. Adding a Template Constraint is the most suitable solution.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because there is no need to modify the CloudFormation template. The same template can be used by multiple teams. Template Constraint is the most suitable and easiest way to apply this limitation.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstarted-constraint.html\" target=\"_blank\">https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstarted-constraint.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124083,
-            "question_id": 98355,
-            "answers": [
-              {
-                "question_id": "98355",
-                "choice": "<p>Select the Service Catalog portfolio. Add a Template Constraint for the Product to limit the &ldquo;InstanceType&rdquo; to t2.micro.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98355",
-                "choice": "<p>In Service Catalog, create a new service action, choose the &ldquo;AWS-InstanceType&rdquo; SSM document, and set the &ldquo;InstanceType&rdquo; parameter to t2.micro.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98355",
-                "choice": "<p>In Service Catalog, create a new Product, upload a new CloudFormation template, and set the &ldquo;InstanceType&rdquo; to t2.micro. Include the new Product in the Portfolio for the development team.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98355",
-                "choice": "<p>There is no way to apply this limitation in the Service Catalog Product. You have to modify the CloudFormation template of the Service Catalog Product to only allow the instance type to t2.micro.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98356,
-        "topic_id": 2686,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>Your company runs on-premises virtual machines in the VMware vCenter and plans to migrate them to AWS via the AWS Application Migration Service. To prepare for the migration, you want to use the Application Discovery Service Agentless Collector to collect information about the on-premises environment. Which of the following are the prerequisites of using the Agentless Collector so that the VMware VMs can be discovered? (Select TWO)</p>",
-        "mark": 1,
-        "is_partially_correct": true,
-        "question_type": "2",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answers: B and C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because this option is for the installation of the Application Discovery Agent instead of the prerequisites of using Agentless Collector.</li>\r\n\t<li><strong>Option​ B is​ CORRECT</strong> because updating the on-premises firewalls to allow outbound access to the AWS domains is required, so that the Agentless Collector can establish the HTTPS connections to the AWS domains properly.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong> because the Agentless Collector needs the IAM user credentials to authenticate with AWS to forward data to the Application Discovery Service.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because an IAM role is not required, and you cannot attach an IAM role to the Agentless Collector. Other than that, &ldquo;AWSApplicationDiscoveryAgentAccess&rdquo; is incorrect as it is for the Discovery Agent, not for Agentless Collector.</li>\r\n\t<li><strong>Option​ ​E ​is​ ​incorrect</strong> because you cannot configure a security group for the Application Discovery Service. This option is not possible.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-collector-transition.html\" target=\"_blank\">https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-collector-transition.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/application-discovery/latest/userguide/agentless-collector-gs.html\" target=\"_blank\">https://docs.aws.amazon.com/application-discovery/latest/userguide/agentless-collector-gs.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124084,
-            "question_id": 98356,
-            "answers": [
-              {
-                "question_id": "98356",
-                "choice": "<p>Login to the VMs and download the agent installation script (i.e. curl -o ./aws-discovery-agent.tar.gz https://s3-us-west-2.amazonaws.com/aws-discovery-agent.us-west-2/linux/latest/aws-discovery-agent.tar.gz).</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98356",
-                "choice": "<p>Update the on-premises firewall settings to allow outbound access to the AWS domains that Agentless Collector requires (i.e. arsenal-discovery.us-west-2.amazonaws.com).</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98356",
-                "choice": "<p>Create an IAM user with the predefined IAM policy &ldquo;AWSApplicationDiscoveryAgentlessCollectorAccess&rdquo; for the Agentless Collector to authenticate with AWS when forwarding the data.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98356",
-                "choice": "<p>Create an IAM role with the predefined IAM policy &ldquo;AWSApplicationDiscoveryAgentAccess&rdquo; and attach the role to the Agentless Collector.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98356",
-                "choice": "<p>Make sure the security group of the Application Discovery Service allows the IP range of the on-premises network on port 443.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Accelerate Workload Migration and Modernization"
-      },
-      {
-        "question_id": 98357,
-        "topic_id": 2686,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You are an AWS consultant working for a government firm. Its IT infrastructure has been set up in both the on-premises and AWS environments. There is a MySQL database deployed in AWS RDS for an important application. Your manager asks you to replicate the RDS MySQL database to an on-premises instance so that the instance can be used as a standby just in case the whole AWS environment has an outage. How could you achieve this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answer:​ C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option ​A is ​incorrect</strong> because in AWS RDS, a read replica is also an AWS RDS instance, and users cannot directly add an on-premises instance as a replica through the RDS console.</li>\r\n\t<li><strong>Option B is ​incorrect</strong> because this option only dumps the database in the on-premises instance. It does not include the steps to add the on-premises instance as a replication target for the RDS instance.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong> because this option firstly creates a read replica and uses the read replica to dump the database and record the binary log information. Then with the MySQL binary log information (i.e., master_log_file and master_log_pos), users can configure the replication from the RDS instance to the on-premises server. The following is an example command in the on-premises server to establish the replication:</li>\r\n</ul>\r\n\r\n<p>mysql&gt; change master to master_host=&#39;rds-endpoint&#39;,master_user=&#39;xxxxxxxx&#39;, master_password=&#39;xxxxxxxx&#39;, master_log_file=&#39;mysql-bin.000001&#39;, master_log_pos= xxx;</p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because AWS Database Migration Service (DMS) is more appropriate for migrating databases between on-premises and AWS. For example, AWS DMS can perform a one-time migration of an on-premises MySQL database to AWS RDS MySQL. However, it is not a suitable service to configure an on-premises standby instance.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/premiumsupport/knowledge-center/replicate-amazon-rds-mysql-on-premises/\" target=\"_blank\">https://aws.amazon.com/premiumsupport/knowledge-center/replicate-amazon-rds-mysql-on-premises/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124085,
-            "question_id": 98357,
-            "answers": [
-              {
-                "question_id": "98357",
-                "choice": "<p>In the RDS console, create a read replica whose target is the on-premises instance. Configure the security group of the RDS MySQL database to allow the outbound traffic to the on-premises instance.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98357",
-                "choice": "<p>Connect to the RDS database via a Linux server and use the &ldquo;mysqldump&rdquo; utility to dump the RDS database as a SQL file (i.e. mysqldump -h rds_instance_endpoint.rds.amazonaws.com -u user -ppassword --triggers --routines &gt; dbdump.sql). Import the SQL file in the on-premises instance. In the AWS RDS console, add the on-premises instance as a replica.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98357",
-                "choice": "<p>In the AWS RDS console, select the database, and create a read replica. Connect to the replica and record the binary log information through the mysql &ldquo;show slave status&rdquo; command. Switch the replication target from the read replica to the on-premises server through the mysql &ldquo;change master&rdquo; command with the binary log information that was recorded previously.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98357",
-                "choice": "<p>Create a replication server in the AWS Database Migration Service. Add the RDS MySQL database as the source and the on-premises instance as the target. Create a migration task to begin the replication.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Accelerate Workload Migration and Modernization"
-      },
-      {
-        "question_id": 98165,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>An international travel-booking service company that sees 100 million unique users monthly for their web app, has built and deployed its applications in Amazon EC2 behind Elastic Load Balancer (ELB). To manage the surge in traffic, EC2 instances are configured with Auto Scaling Groups.<br />\r\nTo improve the user experience and resolve latency, downtime related issues for global customers, the company is looking for a cross-region traffic management solution to route user traffic to the optimal endpoint based on performance, user&rsquo;s location, and instant reaction to the changes in application health.</p>\r\n\r\n<p>You have been hired as a Solution Architect to implement this solution. Which is the best option in your opinion?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because Amazon CloudFront is a Content Delivery Network that caches the content to the edge locations nearest to users. CloudFront improves performance for both cacheable content (such as images and videos) and dynamic content (such as API acceleration and dynamic site delivery). As in the problem statement, finding an optimal pathway to the nearest regional endpoint is not done with Amazon CloudFront.</li>\r\n\t<li><strong>Option B is CORRECT</strong> because AWS Global Accelerator uses Edge Locations to find an optimal pathway to the nearest regional endpoint and does the multi-region failover very effectively and helps the company improve the availability and performance of the applications that you offer to your global users. It provides static IP addresses that provide a fixed entry point to your applications and eliminate the complexity of managing specific IP addresses for different AWS Regions and Availability Zones. AWS Global Accelerator always routes user traffic to the optimal endpoint based on performance, reacting instantly to changes in application health, your user&rsquo;s location, and policies that you configure.</li>\r\n\t<li><strong>Option C is incorrect</strong> because AWS Network LoadBalancer can help improve performance within a region across multi AZs. But here, the requirement is to cross-region failover.</li>\r\n\t<li><strong>Option D is incorrect.</strong> There are no complaints from the company about the applications. In fact, at present, it handles 100 million users a month. The requirement is to improve the performance and solve latency. This should be checked and done at the network level first.&nbsp;</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/global-accelerator/\" target=\"_blank\">https://aws.amazon.com/global-accelerator/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124101,
-            "question_id": 98165,
-            "answers": [
-              {
-                "question_id": "98165",
-                "choice": "<p>Place Amazon CloudFront in front of the ELB to enable edge location cache for low latency and better user experience.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98165",
-                "choice": "<p>Use AWS Global Accelerator in front of ELB to improve the availability, performance, and user experience.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98165",
-                "choice": "<p>Use AWS NetworkLoadBalancer to handle a high volume of traffic and achieve low latency. This will also improve user experience.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98165",
-                "choice": "<p>Modify the application from its existing platform to AWS Serverless (API Gateway, Lambda, DynamoDB, etc.) to handle the dynamic load, solve latency issues and improve user experience.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98166,
-        "topic_id": 2686,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>An international media company uses an on-premises data center, which comprises over 300 servers to store and process its large amount of data for its clients spread across 100 countries. To achieve Disaster Recovery (DR), the company relies on a second nearby data center and replicates its full stack of physical tapes. The DR process is manual, requires a significant number of resources, and staff has to travel to the secondary data center to retrieve the correct tapes if a DR event occurs.</p>\r\n\r\n<p>The company wants to improve and automate its business unit&rsquo;s DR to replicate and recover its workloads to achieve faster recovery and minimize data loss during a service interruption.</p>\r\n\r\n<p>The company hired you as a Solution Architect to guide them in this journey. What would you recommend here?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is CORRECT</strong> because AWS Elastic Disaster Recovery would help build a robust cloud disaster recovery solution that would work seamlessly on AWS. Using this strategy, the company can continuously replicate its data in a low-cost staging area on AWS, which reduces its compute and storage footprint to a minimum and reduces the need to provide duplicate resources.</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/c02-2.png\" style=\"height:305px; width:750px\" /></p>\r\n\r\n<p>Image source:<a href=\"https://aws.amazon.com/disaster-recovery/?nc=sn&amp;loc=0\" target=\"_blank\">https://aws.amazon.com/disaster-recovery/?nc=sn&amp;loc=0</a></p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect</strong> because AWS Server Migration Service (SMS) is mainly used for the lift-shift migration model. The requirement here is to have a DR scenario in the Cloud.</li>\r\n\t<li><strong>Option C is incorrect</strong> because AWS DataSync is an online data transfer service that simplifies, automates, and accelerates the process of copying large amounts of data to and from AWS storage services over the Internet or AWS Direct Connect. AWS DataSync is ideal for online data transfers, not a solution for DR.</li>\r\n\t<li><strong>Option D is incorrect</strong> because AWS Storage Gateway seamlessly connects on-premises applications to cloud storage, caching data locally for low-latency access. It&rsquo;s a data backup and restoration service. AWS Storage Gateway is a hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage, not suitable as a DR service.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/disaster-recovery/?nc=sn&amp;loc=0\" target=\"_blank\">https://aws.amazon.com/disaster-recovery/?nc=sn&amp;loc=0</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124102,
-            "question_id": 98166,
-            "answers": [
-              {
-                "question_id": "98166",
-                "choice": "<p>Set up AWS Elastic Disaster Recovery on your source servers to initiate secure data replication. Your data is replicated to a staging area subnet in your AWS account, in the AWS Region you select.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98166",
-                "choice": "<p>Use AWS Server Migration Service and replicate your on-premises services to AWS. Run your on-premises AWS services in Active/Passive mode so that during DR, AWS can be up and running to avoid any interruption.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98166",
-                "choice": "<p>Configure AWS DataSync to automate and accelerate moving data between on-premises and AWS storage services. This will back up your data to AWS Cloud and enable a smooth and quick DR.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98166",
-                "choice": "<p>Replicate your on-premise data using AWS Storage Gateway and achieve hybrid cloud storage services that provide on-premises access to virtually unlimited cloud storage.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Accelerate Workload Migration and Modernization"
-      },
-      {
-        "question_id": 98167,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A scientific research organization is looking for a data backup solution for their on-premises data. Their hybrid cloud storage solution should include</p>\r\n\r\n<ul>\r\n\t<li>Seamless connection between on-premises environments and AWS</li>\r\n\t<li>Quick and easy to deploy</li>\r\n\t<li>Moving backups to the cloud, using on-premises file shares backed by durable and cost-effective cloud storage</li>\r\n\t<li>Providing low-latency access to data in AWS for on-premises applications</li>\r\n\t<li>End-to-end data protection</li>\r\n</ul>\r\n\r\n<p>Which of these will be a cost-conscious architecture that satisfies all of the above?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because Direct Connect is not fast and easy to deploy. Plus, data transfer is not encrypted, so the last condition of End-to-End data protection does not satisfy.</li>\r\n\t<li><strong>Option B is CORRECT</strong> because AWS Storage Gateway satisfies all the above conditions - To support these use cases, the service provides four different types of gateways &ndash; Tape Gateway, Amazon S3 File Gateway, Amazon FSx File Gateway, and Volume Gateway &ndash; that seamlessly connect on-premises applications to cloud storage, caching data locally for low-latency access. AWS Storage gateway is easy to integrate with Amazon S3 for durable and cost-effective backup storage.</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/c02-3.png\" style=\"height:449px; width:750px\" /></p>\r\n\r\n<p>Image source: <a href=\"https://aws.amazon.com/storagegateway/\" target=\"_blank\">https://aws.amazon.com/storagegateway/</a></p>\r\n\r\n<ul>\r\n\t<li><strong>Option C is incorrect</strong> because AWS DataSync is an online data transfer service that simplifies, automates, and accelerates the process of copying large amounts of data to and from AWS storage services over the Internet or AWS Direct Connect. It is mainly designed for migrating On-premises data from Network Attached Storage (NAS) system or Network File System (NFS) to Amazon S3 or Amazon EFS. AWS DataSync is ideal for online data transfers.</li>\r\n</ul>\r\n\r\n<p>Hopefully, this will make it clearer from a usage point of view - You can use DataSync to migrate active data to AWS, transfer data to the cloud for analysis and processing, archive data to free up on-premises storage capacity, or replicate data to AWS for business continuity.</p>\r\n\r\n<p>AWS Storage Gateway is a hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option D is incorrect</strong> because AWS Snowball is mainly used for Data Import/Export to/from AWS. This does not form hybrid cloud storage as per the above requirement.&nbsp;</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/storagegateway/features/?nc=sn&amp;loc=2&amp;dn=1\" target=\"_blank\">https://aws.amazon.com/storagegateway/features/?nc=sn&amp;loc=2&amp;dn=1</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124103,
-            "question_id": 98167,
-            "answers": [
-              {
-                "question_id": "98167",
-                "choice": "<p>Establish Direct Connect connection between on-premises and AWS and achieve a dedicated line for secure and fast data transfer from on-premises to AWS. All your on-premises applications can access the data in AWS using the same Direct Connect connection.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98167",
-                "choice": "<p>Use AWS Storage Gateway to achieve hybrid cloud storage services that provide on-premises access to virtually unlimited cloud storage.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98167",
-                "choice": "<p>Use AWS DataSync to achieve online data transfer service that simplifies, automates, and accelerates data migration between storage systems and services.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98167",
-                "choice": "<p>Implement AWS Snowball in your local data center and copy all the data to it. Then have Amazon replicate the data to AWS Cloud.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98168,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>As a Solution Architect of a startup company, to reduce costs and improve performance, you want to identify workload patterns based on the usage and cost for diverse workloads in AWS compute resources like Amazon EC2 instance types, Amazon Elastic Block Store (EBS) volumes, Auto Scaling Group, AWS Lambda functions, etc. and avoid overprovisioning and underprovisioning of those resources. You are expecting some kind of dashboard view in AWS that shows the savings and performance improvement opportunities at the account level, the estimated monthly savings and the possible savings for over-provisioned resources, and the bottleneck risk with the current configuration for under-provisioned resources. Which of the below services in AWS can serve your purpose?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is CORRECT</strong> because AWS Compute Optimizer identifies optimal AWS Compute resources for your workloads. Using AWS Compute Optimizer, you can realize resource efficiency metrics alongside its recommendations to help you assess how efficiently you are using AWS resources. These efficiency metrics are available for Amazon EC2, AWS Lambda, and Amazon EBS at the resource and AWS account levels.</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/c02-4.1.png\" style=\"height:186px; width:750px\" /></p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/c02-4.2.png\" style=\"height:249px; width:750px\" /></p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/c02-4.3.png\" style=\"height:248px; width:750px\" /></p>\r\n\r\n<p>Image source: <a href=\"https://aws.amazon.com/blogs/aws/new-for-aws-compute-optimizer-resource-efficiency-metrics-to-estimate-savings-opportunities-and-performance-risks/\" target=\"_blank\">https://aws.amazon.com/blogs/aws/new-for-aws-compute-optimizer-resource-efficiency-metrics-to-estimate-savings-opportunities-and-performance-risks/</a></p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect</strong> because AWS Service Catalog allows organizations to create and manage catalogs of IT services (applications, resources, and metadata) that are approved for use on AWS by a centrally managed&nbsp;IT service team, or governance or compliance team. This helps you achieve consistent governance and meet your compliance requirements while enabling users to deploy only the approved IT services they need quickly. It does not fit the above requirement.</li>\r\n\t<li><strong>Option C is incorrect</strong> because AWS Budgets can help you track and take action on AWS cost and usage which means you can define your budget in terms of cost (how much you want to spend on a service) or usage (how much you want to use a service) and track them not to exceed the threshold. But it doesn&rsquo;t give you any recommendations or suggestions on overprovisioning or underprovisioning of AWS resource/service.&nbsp;</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/c02-4.4.png\" style=\"height:221px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option D is incorrect</strong> because you do not need to create the Dashboards. It is already available in the AWS Compute Optimizer service.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/aws/new-for-aws-compute-optimizer-resource-efficiency-metrics-to-estimate-savings-opportunities-and-performance-risks/\" target=\"_blank\">https://aws.amazon.com/blogs/aws/new-for-aws-compute-optimizer-resource-efficiency-metrics-to-estimate-savings-opportunities-and-performance-risks/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124104,
-            "question_id": 98168,
-            "answers": [
-              {
-                "question_id": "98168",
-                "choice": "<p>Use AWS Compute Optimizer to avoid overprovisioning or underprovisioning the above-mentioned AWS resources based on the utilization and evaluate estimated savings and performance improvement opportunities at the account level.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98168",
-                "choice": "<p>Configure AWS Service Catalog with the AWS resources that you want to track based on their utilization and use the recommendation to optimize.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98168",
-                "choice": "<p>Use AWS Budgets to track AWS cost and usage, receive recommendations on resources based on the utilization and follow the recommendations to optimize your services and resources.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98168",
-                "choice": "<p>There is no Dashboard available to capture these metrics. You need to create one in CloudWatch Dashboards manually. Based on the CloudWatch metrics, you optimize your services and resources.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98169,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A Big Data company stores all its raw data in Amazon S3. Over a few days in every quarter of the calendar year, the petabyte-scale of data needs to be processed to the analytical platform. This processed data gets analyzed during Company&rsquo;s Quarterly Business Review (QBR) meeting and again in the annual review meeting by the year-end. As part of this solution, they plan to run their S3 data through 10 nodes of the Amazon EMR cluster hosted on c5.xlarge EC2 instances and finally load the data to Amazon Redshift. You are a Solution Architect at the company, and the CTO tasked you to optimize the cost of the overall solution. Which of these will be your pick?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because S3 Standard IA charges per GB retrieval. So, retrieving petabytes of data will cost more than the S3 Standard. S3 Standard-IA is ideal for long-term storage, backups, and as a data store for disaster recovery files. Plus, EC2 On Demand for EMR will cost way more than Spot instances. So even though the &lsquo;Reserved instance for Redshift&rsquo; option is correct, the option for raw data in S3 and EC2 for EMR is wrong in terms of cost optimization. Hence this option is incorrect.</li>\r\n\t<li><strong>Option B is incorrect</strong> because S3 Intelligent Tier is advantageous only if your access patterns are incredibly seldom. You can save more than&nbsp; 90% on storage costs by leveraging the Deep Archive Access Tier. If all of your files are being regularly accessed, you will ultimately not yield any savings through S3 Intelligent Tiering. Plus, EC2 On Demand for EMR will cost way more than Spot instances. So even though the &lsquo;Reserved instance for Redshift&rsquo; option is correct, the option for raw data in S3 and EC2 for EMR is wrong in terms of cost optimization. Hence this option is incorrect.</li>\r\n\t<li><strong>Option C is CORRECT</strong> because S3 Standard, Spot Instance for EMR, and Reserved Instance for Redshift are the best cost-optimized solutions here. S3 is suited for getting access frequently to store data and retrieve it for a few days quarterly. EC2 Spot instance type is best suited for the EMR cluster, as there the Company will have more than a 90% discount compared to On-Demand. And Redshift needs to be available throughout the year for all QBR and Annual Results, so the Reserved type of instance is best here.&nbsp;</li>\r\n\t<li><strong>Option D is incorrect</strong> because S3 Standard IA charges per GB retrieval, so retrieving petabytes of data will cost more than the S3 Standard. Also, EC2 Reserved for EMR is over-commitment and cost as well, as these are needed only for a few days each quarter. Spot instances are best suitable here. So even though the &lsquo;Reserved instance for Redshift&rsquo; option is correct, the option for raw data in S3 and EC2 for EMR is wrong in terms of cost optimization. Hence this option is incorrect.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/emr/pricing/\" target=\"_blank\">https://aws.amazon.com/emr/pricing/</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/ec2/spot/instance-advisor/\" target=\"_blank\">https://aws.amazon.com/ec2/spot/instance-advisor/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124105,
-            "question_id": 98169,
-            "answers": [
-              {
-                "question_id": "98169",
-                "choice": "<p>Store the raw data in S3 Standard Infrequent Access, host the EMR cluster on EC2 On-Demand Instances and Reserved instance for Redshift.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98169",
-                "choice": "<p>Use S3 Intelligent Tier to store the raw data, host the EMR cluster on EC2 On-Demand Instances and Reserved instances for Redshift.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98169",
-                "choice": "<p>Store the raw data in S3 Standard, host the EMR cluster on EC2 Spot Instances and Reserved instances for Redshift.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98169",
-                "choice": "<p>Store the raw data in&nbsp; S3 Standard Infrequent Access, host the EMR cluster on EC2 Reserved Instances for EMR and Reserved instances for Redshift.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98170,
-        "topic_id": 2686,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A financial company is embarking on a journey to migrate its on-premises applications, database, and servers to AWS. They are looking for a single place to discover their existing servers, plan migrations, and track the status of each application migration.</p>\r\n\r\n<p>You are hired as a migration expert. The company expects you to come up with recommendations to analyze their applications and help them determine the optimal strategy and tools to migrate and modernize at scale.</p>\r\n\r\n<p>Which AWS service will help you serve the company&rsquo;s needs?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because AWS Application Discovery Agent is a software that you can install to the server hosting the application you want to migrate to the cloud. These agents capture system configuration, system performance, running processes, and details of the network connections between systems. Here the customer requirement is different; they need a strategic platform to help them plan, form strategies and track the overall migration.</li>\r\n\t<li><strong>Option B is incorrect</strong> because AWS Server Migration Service (SMS) is mainly used for the lift-shift migration model. Again, it doesn&rsquo;t suit the customer requirement above.</li>\r\n\t<li><strong>Option C is incorrect</strong> because AWS Service Catalog lets you manage the deployment of IT services, applications, resources, and metadata centrally to achieve consistent governance of your infrastructure as code (IaC) templates. With AWS Service Catalog, you can meet your compliance requirements while ensuring your customers can quickly deploy the approved IT services they need. This is not the requirement here.</li>\r\n\t<li><strong>Option D is CORRECT</strong> because AWS Migration Hub helps to\r\n\t<ul>\r\n\t\t<li>Discover or import your on-premises server details</li>\r\n\t\t<li>Build a migration plan</li>\r\n\t\t<li>Build migration and modernization Strategy and recommendations</li>\r\n\t\t<li>Simple and intuitive migration dashboard for tracking</li>\r\n\t</ul>\r\n\t</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/c02-6.png\" style=\"height:618px; width:750px\" /></p>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/migration-hub/features/?nc=sn&amp;loc=2#Discover_or_import_your_on-premises_server_details\" target=\"_blank\">https://aws.amazon.com/migration-hub/features/?nc=sn&amp;loc=2#Discover_or_import_your_on-premises_server_details</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124106,
-            "question_id": 98170,
-            "answers": [
-              {
-                "question_id": "98170",
-                "choice": "<p>Install AWS Application Discovery Agent on the on-premises servers and capture details of the application and their configurations, performance, etc.&nbsp;Use these data to plan your migration.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98170",
-                "choice": "<p>Use AWS Server Migration Service to perform all the migration-related analysis and then use the same to migrate on-premises applications, databases and servers to AWS.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98170",
-                "choice": "<p>Configure AWS Service Catalog for on-premises servers, applications and database and collect all the data required to form a migration strategy</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98170",
-                "choice": "<p>Use AWS Migration Hub to discover or import your on-premises server details, build a migration plan, strategy, follow recommendations, and track migration on the simple and intuitive dashboard</p>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Accelerate Workload Migration and Modernization"
-      },
-      {
-        "question_id": 98171,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You are a Solution Architect in an airline company. They want your advice as they embark on their on-premises to AWS Cloud migration journey. You are guiding the customer to perform their pre-migration assessment. At the moment, you are in the application portfolio assessment phase. Due to lack of time, you must ensure that the team does not pick up something that is irrelevant to the assessment.</p>\r\n\r\n<p>Which of the below activities are Not part of the Application Portfolio Assessment phase for AWS Cloud migration? (Select Two)</p>",
-        "mark": 1,
-        "is_partially_correct": true,
-        "question_type": "2",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answers: D and E</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Options D and E are CORRECT</strong> because they are not part of the portfolio assessment phase. The Cutover runbook is part of Migrate and Modernize phase, and Landing zone creation comes at the Mobilize stage of AWS migration.</li>\r\n</ul>\r\n\r\n<p>All other activities in A, B, C, and F are the activities in the Application Portfolio Assessment phase of AWS Cloud migration:</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/c02-7.png\" style=\"height:422px; width:750px\" /></p>\r\n\r\n<p>Source for both images:<strong> </strong><a href=\"https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-application-portfolio-assessment-migration/introduction.html\" target=\"_blank\">https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-application-portfolio-assessment-migration/introduction.html</a></p>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-application-portfolio-assessment-migration/introduction.html\" target=\"_blank\">https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-application-portfolio-assessment-migration/introduction.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124107,
-            "question_id": 98171,
-            "answers": [
-              {
-                "question_id": "98171",
-                "choice": "<p>Portfolio discovery and initial planning</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98171",
-                "choice": "<p>Prioritized applications assessment</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98171",
-                "choice": "<p>Portfolio analysis and migration planning</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98171",
-                "choice": "<p>Establish cutover runbooks</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98171",
-                "choice": "<p>Creating Landing Zone</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98171",
-                "choice": "<p>Continuous assessment and improvement</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98172,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You are a Solution Architect in a Government research company. Recently in an audit by the Cloud Security Office team, most of your resources spread across multiple accounts become non-compliant. The CTO of the company has instructed you to come up with a framework to build and deploy compliance packages for all your AWS resources across multiple accounts and regions, which includes rules and remediation actions that are authored by the Cloud Security Officer. Also, the framework should have a reporting aspect and reduce the time for a resource left in a non-compliant state.</p>\r\n\r\n<p>Which of the following will help you achieve this?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because using Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Cloud without learning about the infrastructure that runs those applications. Elastic Beanstalk reduces management complexity without restricting choice or control. You simply upload your application, and Elastic Beanstalk automatically handles the details of capacity provisioning, load balancing, scaling, and application health monitoring. It does not check if a resource is compliant or not.</li>\r\n\t<li><strong>Option B is incorrect</strong> because AWS Run Command allows you to automate common administrative tasks and perform one-time configuration changes at scale. Administrators mainly use this service to install or bootstrap applications, build a deployment pipeline, capture log files when an instance is removed from an Auto Scaling group, join instances to a Windows domain, install software updates and more. It won&rsquo;t help in defining the compliance rules as per the given requirement above.</li>\r\n\t<li><strong>Option C is incorrect</strong> because AWS Systems Manager Compliance scans your fleet of managed nodes, Amazon EC2, and on-premises servers or virtual machines and patches compliance and configuration inconsistencies. You can collect and aggregate data from multiple AWS accounts and Regions, and then drill down into specific resources that aren&rsquo;t compliant. This is not suitable for the above requirement, where compliance is to be maintained across all resources, not alone in the fleet of EC2.</li>\r\n\t<li><strong>Option D is CORRECT</strong> because AWS Config - Conformance Pack is a collection of AWS Config rules and remediation actions that can be easily deployed as a single entity in an account and a Region or across an organization in AWS Organizations. Conformance packs are created by authoring a YAML template that contains the list of AWS Config managed or custom rules and remediation actions. You can deploy the template by using the AWS Config console or the AWS CLI. Take a look at <a href=\"https://docs.aws.amazon.com/config/latest/developerguide/conformancepack-sample-templates.html\" target=\"_blank\">sample conformance pack templates</a> or create a conformance pack YAML file from scratch based on <a href=\"https://docs.aws.amazon.com/config/latest/developerguide/custom-conformance-pack.html\" target=\"_blank\">Custom Conformance Pack</a>.</li>\r\n</ul>\r\n\r\n<p><strong>Reference: </strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/config/faq/\" target=\"_blank\">https://aws.amazon.com/config/faq/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124108,
-            "question_id": 98172,
-            "answers": [
-              {
-                "question_id": "98172",
-                "choice": "<p>Include all the compliance rules from Cloud Security Officers to AWS Elastic Beanstalk while provisioning your resources.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98172",
-                "choice": "<p>Automate all your compliance checks and patching using AWS Systems Manager Run Command.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98172",
-                "choice": "<p>Suggest the Cloud Security Officers to write their rules in AWS Systems Manager Compliance service.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98172",
-                "choice": "<p>Define all the rules and remediation actions in AWS Config. Then use&nbsp; AWS Config Conformance Packs to&nbsp; deploy the AWS Config rules and remediation action as a single entity.</p>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98173,
-        "topic_id": 2686,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>While prioritizing applications for migration to AWS, the focus is on establishing initial criteria to define workloads that are good candidates for pilot applications. Which one of these would define the highest priority application to migrate?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option D</strong> gets the highest score on the priority scale. In the stage of prioritizing applications, the focus is on establishing initial criteria to prioritize low-risk and low-complexity workloads. These workloads are good candidates for pilot applications. Using low-risk, low-complexity workloads in initial migrations reduces the risk and gives teams the opportunity to gain experience. Always pick an application that is ready to move to the cloud and comes under Rehost or Lift and Shift type of migration strategy, even though the business critical is minimum.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/prescriptive-guidance/latest/application-portfolio-assessment-guide/prioritization-and-migration-strategy.html\" target=\"_blank\">https://docs.aws.amazon.com/prescriptive-guidance/latest/application-portfolio-assessment-guide/prioritization-and-migration-strategy.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124109,
-            "question_id": 98173,
-            "answers": [
-              {
-                "question_id": "98173",
-                "choice": "<p>Business Criticality = High, Number of compute instance = 11 or more, Migration Strategy = Refractor/Re-architect</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98173",
-                "choice": "<p>Business Criticality = High, Number of compute instance = 4-10, Migration Strategy = Relocate</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98173",
-                "choice": "<p>Business Criticality = Medium, Number of compute instance = 1-3, Migration Strategy = Replatform</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98173",
-                "choice": "<p>Business Criticality = Low, Number of compute instance = 1-3, Migration Strategy = Rehost</p>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Accelerate Workload Migration and Modernization"
-      },
-      {
-        "question_id": 98174,
-        "topic_id": 2686,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A financial company is embarking on a journey to migrate its on-premises legacy applications to AWS. The company&rsquo;s purpose of migration is to boost agility and improve business continuity; hence, they are talking about the decomposition of the monoliths to microservices. You are hired as a solution architect to help the company guide in the process of migration. After a few meetings with the business and tech team, you plan to use AWS serverless services to build the microservices.</p>\r\n\r\n<p>Which migration strategy best suits this case?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because you use Relocate for your applications that already reside on VMware, containers, etc., and migrate those into the cloud for ease of management and cost savings of scale.</li>\r\n\t<li><strong>Option B is incorrect</strong> because Replatform is known as: <strong>&ldquo;Lift, tinker and shift&rdquo;</strong> or <strong>&ldquo;Lift and reshape&rdquo;. </strong>With a few modifications, many applications can be easily fit to leverage Cloud native services. For example, you can reduce the management overhead of your database by using Amazon Relational Database (RDS) Service; or you can save on licensing costs by using open-source software such as Linux or Apache Tomcat. This can lead to functional benefits and/or cost savings.</li>\r\n\t<li><strong>Option C is CORRECT</strong> because Refactor is&nbsp;also known as Re-architect or &ldquo;Decouple and Rewrite for Cloud&rdquo;. This option entails the biggest investment - but yields the best returns. It is often driven by a strong business need for new features, performance, or the ability to scale.</li>\r\n</ul>\r\n\r\n<p>Refactoring/Rearchitecting, a tired old legacy application to take advantage of being Cloud-native is one of the best reasons to migrate to the Cloud.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option D is incorrect</strong> because Rehost is&nbsp;also known as: <strong>&ldquo;Lift and shift&rdquo; </strong>In this case, the application is shifted from a dedicated IT environment into a shared one either manually or through automation. It also makes future refactoring easier as the application, its data, and access are already Cloud-based.</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/c02-10.png\" style=\"height:378px; width:750px\" /></p>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/enterprise-strategy/new-possibilities-seven-strategies-to-accelerate-your-application-migration-to-aws/\" target=\"_blank\">https://aws.amazon.com/blogs/enterprise-strategy/new-possibilities-seven-strategies-to-accelerate-your-application-migration-to-aws/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124110,
-            "question_id": 98174,
-            "answers": [
-              {
-                "question_id": "98174",
-                "choice": "<p>Relocate</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98174",
-                "choice": "<p>Replatform</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98174",
-                "choice": "<p>Refactor</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98174",
-                "choice": "<p>Rehost</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Accelerate Workload Migration and Modernization"
-      },
-      {
-        "question_id": 98498,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A popular video hosting company hosts a variety of videos or media files with a duration of 15 minutes to 3 hours in centralized on-premise storage. The company wants to add a comprehensive set of features to create engaging viewing experiences, including graphic overlays, content protection, multi-language audio, closed captioning support, and professional broadcast formats, and convert all these media files into the formats that users can play back on mobile devices, tablets, web browsers, and connected televisions.</p>\r\n\r\n<p>The company wants AWS as its cloud provider and plans to store the converted files in a cost-effective storage service and set up a secure, low latency, cache-based distribution system for selected users (users who have paid a fee).</p>\r\n\r\n<p>If you were a solution architect in that company, what would be your choice for this requirement? (Select THREE)</p>",
-        "mark": 1,
-        "is_partially_correct": true,
-        "question_type": "2",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answers: B, D and E</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because Kinesis Video Streams can ingest data from edge devices, smartphones, security cameras, and other data sources such as RADARs, LIDARs, drones, satellites, and depth-sensors and provides SDKs that make it easy for devices to securely stream media to AWS for playback, storage, analytics, machine learning, and other processing. This is a video stream service and does not fit the given use case.</li>\r\n\t<li><strong>Option B is CORRECT</strong> because AWS Elemental Media Convert can convert large, high-quality digital media files into a file format that users can playback on mobile devices, tablets, web browsers, and connected televisions. This also adds a comprehensive set of features to create engaging viewing experiences, including graphic overlays, content protection, multi-language audio, closed captioning support, and professional broadcast formats, as mentioned in the requirement.</li>\r\n\t<li><strong>Option C is incorrect</strong> because this does not fit into the cost-effective storage and cache-based distribution solution. Both Amazon FSx for Lustre and high-end EC2 instances would cost quite a lot.</li>\r\n\t<li><strong>Option D is CORRECT</strong> because Amazon S3 is the storage where the AWS Elemental Media Convert saves the converted files.</li>\r\n\t<li><strong>Option E is CORRECT</strong> because Amazon CloudFront Signed URL suits the best to serve the private content securely. This also helps to achieve a cache-based low latency content distribution system for paid users only.</li>\r\n\t<li><strong>Option F is incorrect</strong> because AWS Global Accelerator routes user traffic to the optimal endpoint based on performance, reacting instantly to changes in application health, your user&rsquo;s location, and policies that you configure. This does not achieve the requirement of subscribed or paid user distribution.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/mediaconvert/\" target=\"_blank\">https://aws.amazon.com/mediaconvert/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124086,
-            "question_id": 98498,
-            "answers": [
-              {
-                "question_id": "98498",
-                "choice": "<p>Use Amazon Kinesis Video Streams to convert media files stored in Amazon S3 into media files in the formats required by consumer playback devices.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98498",
-                "choice": "<p>Use AWS Elemental MediaConvert to add those comprehensive features and convert media files stored in Amazon S3 into media files in the formats required by consumer playback devices.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98498",
-                "choice": "<p>Use Amazon FSx for Lustre as storage to store converted media files and mount them onto high-end EC2 instances for further processing to end-user.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98498",
-                "choice": "<p>Use Amazon S3 as storage to store converted media files.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98498",
-                "choice": "<p>Use Amazon CloudFront Signed URL to achieve cache-based low latency content distribution system to the paid users only.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98498",
-                "choice": "<p>Use AWS Global Accelerator to achieve a secure low latency content distribution system for paid users only.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98499,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>An educational tech company seeks to embed best practices in its development and operational processes as it migrates to the cloud. Recently the company saw a massive spike in its monthly AWS spending. On further analysis, they found that some developers had accidentally launched a few Amazon EC2 &amp; RDS instances in unexpected Regions.</p>\r\n\r\n<p>You have been hired to establish best practices ensuring the least privileges for developers and control access to on-premises as well as AWS Cloud resources using Active Directory.</p>\r\n\r\n<p>You got the responsibility to implement a cost-control mechanism by restricting the level of access that developers have to the AWS Management Console without impacting their productivity. The company would like to allow developers to launch EC2 and RDS instances only in the eu-west-1 region to control their AWS bills.</p>\r\n\r\n<p>How can you help the company achieve the new security mandate while minimizing the operational burden on the DevOps team?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because this increases the operational burden on the DevOps team as you set up an IAM user for each developer. This solution does not utilize the advantage of the existing Active Directory that supports SAML-based authentication.</li>\r\n\t<li><strong>Option B is CORRECT</strong> because you can use a role to configure your SAML 2.0-compliant identity provider (IdP) and AWS to permit your federated users to access the AWS Management Console. The role grants the user permission to carry out tasks in the console.</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/ap-2.png\" style=\"height:433px; width:750px\" /></p>\r\n\r\n<p>For the above scenario, the company wants to control access to on-premises as well as AWS Cloud resources using Active Directory, so it should use SAML 2.0 federated users to access the AWS Management Console.</p>\r\n\r\n<p>You also create an IAM role with a trust policy that sets the SAML provider as the principal, which establishes a trust relationship between your organization and AWS. In this case, the role will have a PowerUserAccess managed policy attached. As the PowerUserAccess managed policy will allow the developers to create RDS instances in any Region, you also need to attach a custom policy that denies access to RDS in any AWS Region except eu-west-1. Also, note that here the PowerUserAccess provides just the right access privileges required for the given use case &ndash; so the least privilege access rule is not violated.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option C is incorrect</strong> because this will imply higher restrictions. As the custom policy denies the developers access to any AWS services except AWS Service Catalog, it would limit access to all other services in any Region. The ask is only for EC2 and RDS instances not to be made available in other regions except the given one. Hence this option is incorrect.</li>\r\n\t<li><strong>Option D is incorrect</strong> because this option is a distractor as AWS Config is not purposed to serve this kind of use-case. You use AWS Config to continually assess, audit, and evaluate the configurations and relationships of your AWS resources. You code all your compliance requirements as AWS Config rules and write some remediation actions, automating the assessment of your resource configurations across your organization. There is no compliance-related issue mentioned in the above use-case.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/connectonpremad.html\" target=\"_blank\">https://docs.aws.amazon.com/singlesignon/latest/userguide/connectonpremad.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124087,
-            "question_id": 98499,
-            "answers": [
-              {
-                "question_id": "98499",
-                "choice": "<p>Create an IAM user for each developer and add them to the developer IAM group that has PowerUserAccess managed policy attached to it. Attach a custom policy that allows developers to launch EC2 and RDS instances only in eu-west-1 region.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98499",
-                "choice": "<p>Set up SAML-based authentication tied to an IAM role that has the PowerUserAccess managed policy attached to it. Attach a custom policy that denies access to EC2 and RDS in any AWS Region except eu-west-1.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98499",
-                "choice": "<p>Set up SAML-based authentication tied to an IAM role that has a PowerUserAccess managed policy and a custom policy that denies all the developers access to any AWS services except AWS Config. Within AWS Config, create a product containing only EC2 and RDS service in eu-west-1 region.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98499",
-                "choice": "<p>Set up SAML-based authentication tied to an IAM role that has a PowerUserAccess managed policy and a custom policy that denies all the developers access to any AWS services except AWS Service Catalog. Within AWS Service Catalog, create a product containing only EC2 and RDS service in eu-west-1 region.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98500,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A company has two AWS accounts: one account for Production to manage live applications and one Development account for developers and testers to use as a sandbox that freely applies changes and test applications. In each account, you store application information in Amazon S3 buckets.</p>\r\n\r\n<p>There are two IAM user groups in the Development account: Developers and Testers. Users in both user groups have permission to work in the Development account and access resources. Now the requirement is that a Developer must update the live applications in the Production account often. In the Production account, the developers need to store these applications in an Amazon S3 bucket called productionapp.</p>\r\n\r\n<p>The company needs a security strategy that meets the following requirements:</p>\r\n\r\n<ul>\r\n\t<li>Developers can use the AWS Management Console to access the productionapp bucket in the Production account.</li>\r\n\t<li>They can also access the bucket by using API calls.</li>\r\n\t<li>Testers attempting to access the productionapp bucket should fail.</li>\r\n</ul>\r\n\r\n<p>In addition to this security requirement, the solution should also reduce Management and Operational overhead.</p>\r\n\r\n<p>Which strategy will meet these requirements?</p>\r\n\r\n<ul>\r\n</ul>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is CORRECT</strong> because at the end of these steps:\r\n\r\n\t<ul>\r\n\t\t<li>&nbsp;There is productionapp bucket in the Production account.</li>\r\n\t\t<li>Users in the Development account (the trusted account) are allowed to assume a specific role in the Production account.</li>\r\n\t\t<li>A role in the Production account (the trusting account) is allowed to access a specific Amazon S3 bucket.</li>\r\n\t</ul>\r\n\t</li>\r\n</ul>\r\n\r\n<p>Developers in Development account can switch to that UpdateProductionApp role from the AWS Management Console, the AWS CLI, and the AWS API and access the productionapp bucket.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/ap-3.1.png\" style=\"height:318px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect</strong> because you use sts:ExternalId to grant access to a third party and require an ExternalId in a Condition element in your permissions policy. This ExternalID in IAM is mainly used to prevent the confused deputy problem &ndash; (<em>&rdquo;a security issue where an entity that doesn&#39;t have permission to perform an action can coerce a more-privileged entity to perform the action&rdquo;</em>) and help you protect your account if you provide <strong>third parties</strong> (known as <em>cross-account</em>) or other AWS services (known as <em>cross-service</em>) access to resources in your account. Find details here <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/ap-3.2.png\" style=\"height:243px; width:750px\" /></p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/ap-3.3.png\" style=\"height:188px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option C is incorrect</strong> because (even though it is possible) this causes more Operational and Management overhead to maintain a separate set of user groups and users in the Production account. This is not an effective solution.</li>\r\n\t<li><strong>Option D is incorrect</strong> because the S3 bucket policy has no part to play here. As long as options i &amp; ii are satisfied, developers in Development account can access the bucket by just switching roles. In this case, you are already assuming the IAM role that allows access to the S3 bucket. Hence you do not need to add a separate bucket policy. S3 bucket policy is a resource-based policy, that applies when you want other accounts or users to access the bucket without assuming or switching the role, and let the bucket owner have complete control of the bucket and objects in it.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html\" target=\"_blank\">https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html</a></li>\r\n\t<li>Image source: <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124088,
-            "question_id": 98500,
-            "answers": [
-              {
-                "question_id": "98500",
-                "choice": "<p>&nbsp;&nbsp;&nbsp; i) Create an IAM role UpdateProductionApp<em> </em>in the Production account. Define the Development account as a trusted entity and specify a permissions policy that allows trusted users to update the productionapp bucket.</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; ii) In the Development account, modify the IAM user group policy for Developers by enabling sts:AssumeRole to grant access to the IAM role UpdateProductionApp, explicitly deny Tester&rsquo;s access to the IAM role UpdateProductionApp.</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; iii) Test access by switching to the Production account and roles UpdateProductionApp</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98500",
-                "choice": "<p>&nbsp;&nbsp; i) Create an IAM role UpdateProductionApp<em> </em>in the Production account. Define the Development account as a trusted entity and specify a permissions policy that allows trusted users to update the productionapp bucket.</p>\r\n\r\n<p>&nbsp;&nbsp; ii) In the Development account, modify the IAM user group policy for Developers by enabling sts:AssumeRole with a condition of sts:ExternalId to grant access to the IAM role UpdateProductionApp, explicitly deny Tester&rsquo;s access to the UpdateProductionApp role.</p>\r\n\r\n<p>&nbsp; iii) Test access by switching to the Production account and roles UpdateProductionApp</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98500",
-                "choice": "<p>&nbsp; i) &nbsp;Create an IAM role UpdateProductionApp<em> </em>in the Production account and specify a permissions policy that allows trusted users to update the productionapp bucket.</p>\r\n\r\n<p>&nbsp;ii) Set up an IAM user group as Development in Production account and attach the IAM role UpdateProductionApp<em> </em>to the group.</p>\r\n\r\n<p>&nbsp;iii) Create an IAM user for each developer. Assign these users to the Development group</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98500",
-                "choice": "<p>&nbsp; &nbsp;i) Create an IAM role UpdateProductionApp<em> </em>in the Production account. Define the Development account as a trusted entity and specify a permissions policy that allows trusted users to update the productionapp bucket.</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp; ii) In the Development account, modify the IAM user group policy for Developers by enabling sts:AssumeRole to grant access to the UpdateProductionApp role, and explicitly deny Testers access to the UpdateProductionApp role.</p>\r\n\r\n<p>&nbsp;&nbsp; iii) Use the S3 bucket policy in productionapp bucket to grant the s3:PutObject and s3:PutObjectAcl permissions to Development account.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98501,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A fitness tracking device company captures all its user data in Amazon DynamoDB. The company is forming a new backup strategy. It wants all accounts in the organization to back up all Amazon DynamoDB tables with a default backup frequency of once per week.</p>\r\n\r\n<p>In addition, the company wants a separate backup policy attached directly to the production account of the organization with a backup frequency of once per day.</p>\r\n\r\n<p>Which solution will meet these requirements?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because AWS Batch helps you to run batch computing workloads on the AWS Cloud - it is not a backup solution.</li>\r\n\t<li><strong>Option B is incorrect</strong> because you do not need to create a separate Lambda function to back up DynamoDB. DynamoDB already has got an inbuilt backup feature on each table.</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/ap-4.png\" style=\"height:353px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option C is CORRECT</strong> because you use both AWS Backup and AWS Organizations together to enable the backup policy type in your organization and then create default backup policies with a frequency of once per week and attach them to the organization&#39;s root, OUs, or accounts. For the production account, define the backup policy with backup frequency as daily and attach the policy directly to the production account.</li>\r\n\t<li><strong>Option D is incorrect</strong> because DynamoDB on-demand backups cannot be copied to a different account or Region. To create backup copies across AWS accounts and for other advanced features, you should use AWS Backup.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li>Image source: <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup.Tutorial.html\" target=\"_blank\">https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup.Tutorial.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BackupRestore.html\" target=\"_blank\">https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BackupRestore.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-backup.html\" target=\"_blank\">https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-backup.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124089,
-            "question_id": 98501,
-            "answers": [
-              {
-                "question_id": "98501",
-                "choice": "<p>Define the backup policy in the Job Definition of AWS Batch. Use AWS Batch Jobs to run weekly and daily based on your account type.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98501",
-                "choice": "<p>Create AWS Lambda function to backup Amazon DynamoDB. Use Amazon Event Bridge (CloudWatch Events) to schedule Lambda triggers once a week for all accounts and once a day for the production account.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98501",
-                "choice": "<p>Use AWS Backup to define the different backup policies needed for Production and other accounts based on the daily and weekly frequency respectively. Use AWS Organizations to enable default backup policies (with a frequency of once per week) and attach them to the organization&#39;s root, OUs, or accounts. For the production account, directly attach the backup policy with backup frequency as daily.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98501",
-                "choice": "<p>Use the DynamoDB on-demand backup capability to create full backups of your tables, based on the frequency of your backup for each account.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98502,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A company has two AWS accounts: one account for Production to manage live applications and one Development account for developers and testers to use the account as a sandbox to apply changes and test applications freely. In each account, you store application information in Amazon S3 buckets.</p>\r\n\r\n<p>In the Development account, there are two IAM user groups: Developers and Testers. Users in both user groups have permission to work in the Development account and access resources there. From time to time, a Developer must update the live applications in the Production account in an Amazon S3 bucket called productionapp.</p>\r\n\r\n<p>You need to set up IAM permission such that developers in Development account can access the productionapp S3 bucket in the Production account. Also, ensure that similar attempts by a Tester to access the productionapp bucket should fail.</p>\r\n\r\n<p>Which of the below AWS JSON policy elements in IAM permission will help achieve this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is CORRECT</strong> because all the steps and JSON policy in permissions are correct.</li>\r\n\t<li><strong>Option B is incorrect</strong> because you do not need a bucket name to define in IAM permission in this case.</li>\r\n\t<li><strong>Option C is incorrect</strong> because you do not need a bucket name to define in IAM permission in this case.</li>\r\n\t<li><strong>Option D is incorrect</strong> because the syntax of the resource in the JSON policy is incorrect.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html#tutorial_cross-account-with-roles-3\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html#tutorial_cross-account-with-roles-3</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124090,
-            "question_id": 98502,
-            "answers": [
-              {
-                "question_id": "98502",
-                "choice": "<pre>\r\ni) In Development account, modify the IAM user group policy for Developers as per below:\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: {\r\n&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Action&quot;: &quot;sts:AssumeRole&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;arn:aws:iam::PRODUCTION-ACCOUNT-ID:role/UpdateProductionApp&quot;\r\n&nbsp; }\r\n}\r\nii) In Development account, modify the IAM user group policy for Testers as per below:\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: {\r\n&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Deny&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Action&quot;: &quot;sts:AssumeRole&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;arn:aws:iam::PRODUCTION-ACCOUNT-ID:role/UpdateProductionApp&quot;\r\n&nbsp; }\r\n}\r\n</pre>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98502",
-                "choice": "<pre>\r\ni) In Development account, modify the IAM user group policy for Developers as per below:\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: {\r\n&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Action&quot;: &quot;sts:AssumeRole&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;arn:aws:s3:::productionapp/*&quot;\r\n&nbsp; }\r\n}\r\nii) In Development account, modify the IAM user group policy for Testers as per below:\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: {\r\n&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Deny&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Action&quot;: &quot;sts:AssumeRole&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;arn:aws:s3:::productionapp/*&quot;\r\n&nbsp; }\r\n}\r\n</pre>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98502",
-                "choice": "<pre>\r\ni) In Development account, modify the IAM user group policy for Developers as per below:\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: {\r\n&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Action&quot;: &quot;sts:AssumeRole&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;arn:aws:s3:::productionapp&quot;\r\n&nbsp; }\r\n}\r\nii) In Development account, modify the IAM user group policy for Testers as per below:\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: {\r\n&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Deny&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Action&quot;: &quot;sts:AssumeRole&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;arn:aws:s3:::productionapp&quot;\r\n&nbsp; }\r\n}\r\n</pre>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98502",
-                "choice": "<pre>\r\ni) In Development account, modify the IAM user group policy for Developers as per below:\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: {\r\n&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Action&quot;: &quot;sts:AssumeRole&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;arn:aws:iam::PRODUCTION-ACCOUNT-ID:role/UpdateProductionApp/*&quot;\r\n&nbsp; }\r\n}\r\nii) In Development account, modify the IAM user group policy for Testers as per below:\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: {\r\n&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Deny&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Action&quot;: &quot;sts:AssumeRole&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;arn:aws:iam::PRODUCTION-ACCOUNT-ID:role/UpdateProductionApp/*&quot;\r\n&nbsp; }\r\n}\r\n</pre>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98503,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>What do you infer from the below resource-based policy?</p>\r\n\r\n<pre>\r\n{\r\n&nbsp;&nbsp;&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Statement&quot;: [{\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Deny&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;NotPrincipal&quot;: {&quot;AWS&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:iam::222233334444:user/Bob&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:iam::222233334444:root&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]},\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: &quot;s3:*&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:s3:::myexamplebucket&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:s3:::myexamplebucket/*&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]\r\n&nbsp;&nbsp;&nbsp; }]\r\n}\r\n</pre>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option C is CORRECT.</strong> In the given example, all principals except the user named Bob in AWS account 222233334444 are explicitly denied access to a resource. Note that as the&nbsp;best practice, the NotPrincipal element contains the ARN of both the user Bob and the AWS account that Bob belongs to (arn:aws:iam::222233334444:root). If the NotPrincipal element contained only Bob&#39;s ARN, the effect of the policy might be to explicitly deny access to the AWS account that contains the user Bob. Sometimes, a user cannot have more permissions than their parent account.&nbsp;So if Bob&#39;s account is explicitly denied access, then Bob might be unable to access the resource.</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/ap-6.png\" style=\"height:138px; width:698px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Options A, B &amp; D are incorrect</strong> because of the same reason. <em>&ldquo;When you use NotPrincipal in the same policy statement as &quot;Effect&quot;: &quot;Deny&quot;, the actions specified in the policy statement are explicitly denied to all principals except for the ones specified.&rdquo;</em>&nbsp; &ndash; <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notprincipal.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notprincipal.html</a></li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notprincipal.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notprincipal.html</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/premiumsupport/knowledge-center/s3-folder-user-access/\" target=\"_blank\">https://aws.amazon.com/premiumsupport/knowledge-center/s3-folder-user-access/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124091,
-            "question_id": 98503,
-            "answers": [
-              {
-                "question_id": "98503",
-                "choice": "<p>User Bob and all other users under root will be denied access to Amazon S3 bucket myexamplebucket in account 222233334444</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98503",
-                "choice": "<p>User Bob and all other users under root account 222233334444 will be allowed access to Amazon S3 bucket myexamplebucket</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98503",
-                "choice": "<p>Both user Bob and root user will only be able to access to Amazon S3 bucket myexamplebucket. All other users in account 222233334444 are denied S3 access</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98503",
-                "choice": "<p>This policy explicitly denies user Bob and the root user of account 222233334444. Hence all other users are allowed to access the S3 bucket myexamplebucket</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98504,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You&rsquo;re architecting APIs using Amazon API Gateway for one of the major eCommerce websites. The eCommerce company expects huge traffic. As a precautionary measure to prevent the APIs and the account from being overwhelmed by too many requests, the company has asked you to keep the below two points in mind:</p>\r\n\r\n<ul>\r\n\t<li>To protect the performance and availability of the underlying service while ensuring access for all AWS customers.</li>\r\n\t<li>To protect the customer from malicious code or misconfigurations that can result in unexpected charges.</li>\r\n</ul>\r\n\r\n<p>What do you do in your API architecture to meet the above demand?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because AWS WAF cannot control API usage plans as per the requirement above. It protects AWS services from external threats based on the Web ACL rules, but cannot be used to improve or optimize the performance of APIs in Amazon API Gateway.</li>\r\n\t<li><strong>Option B is incorrect</strong> because the surge in traffic while accessing APIs will always overwhelm your underlying services, irrespective of the fact that your services are serverless or not. When request submissions exceed the steady-state request rate and burst limits, API Gateway begins to throttle requests. Clients may receive &ldquo;429 Too Many Requests&rdquo; error responses at this point. Upon catching such exceptions, the client can resubmit the failed requests in a way that is rate limiting &ndash; and the best way to achieve this is by configuring throttling and quotas for the APIs.</li>\r\n\t<li><strong>Option C is incorrect</strong> because Lambda@Edge &ndash; an extension of AWS Lambda, is a compute service that helps you execute functions that customize the content CloudFront delivers. Again, this option does not have any control over the API Gateway performance improvement and optimization.</li>\r\n\t<li><strong>Option D is CORRECT</strong> because one can configure throttling and quotas for the APIs to help protect them from being overwhelmed by too many requests.</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/ap-7.png\" style=\"height:128px; width:717px\" /></p>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li>Image source: <a href=\"https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html\" target=\"_blank\">https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/mt/managing-monitoring-api-throttling-in-workloads/\" target=\"_blank\">https://aws.amazon.com/blogs/mt/managing-monitoring-api-throttling-in-workloads/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124092,
-            "question_id": 98504,
-            "answers": [
-              {
-                "question_id": "98504",
-                "choice": "<p>Associate an AWS WAF regional Web ACL with an API Gateway API stage. Apply rate-based rule in the AWS WAF Web ACL.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98504",
-                "choice": "<p>Propose a serverless architecture using microservices written on AWS Lambda and database as DynamoDB. Integrate Lambda with Application Auto Scaling Group to allow provisioned concurrency based on utilization.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98504",
-                "choice": "<p>Associate a CloudFront distribution with a Lambda@Edge function and integrate API Gateway as the origin.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98504",
-                "choice": "<p>Set the target limits for individual API stages or methods to improve overall performance across all APIs in your account. Alternatively, enable usage plans to set throttles on client request submissions based on specified request rates and quotas. Also, Enable API caching to enhance responsiveness.</p>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98505,
-        "topic_id": 2686,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A company wants to free its teams from time-consuming database tasks like server provisioning, patching, backups, etc., and hence decided to migrate their on-premises MariaDB database to AWS. The company wants its AWS database to have built-in security, continuous backups, serverless compute, multiple read replicas, automated multi-Region replication, less expensive compared to other commercial-grade databases, and integrations with other AWS services.&nbsp;</p>\r\n\r\n<p>The company is asking for your advice and help as a solution architect to migrate databases to AWS quickly and securely. They have conditions that the source database remains fully operational during the migration and downtime should be minimized to applications that rely on the database.</p>\r\n\r\n<p>Which combination of architectural changes should you make to meet the above requirements?</p>\r\n\r\n<ul>\r\n</ul>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is CORRECT</strong> because Amazon Aurora Mysql satisfies all the above requirements about the target database. AWS DMS fits the requirement of quick and easy hassle-free migration service.</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/ap-8.1.png\" style=\"height:70px; width:750px\" /></p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/ap-8.2.png\" style=\"height:369px; width:750px\" /></p>\r\n\r\n<p>DMS - AWS Database Migration Service (AWS DMS) helps you migrate databases to AWS quickly and securely. The source database remains fully operational during the migration, minimizing downtime to applications that rely on the database.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect</strong> because, as per the definition of <a href=\"https://en.wikipedia.org/wiki/MariaDB\" target=\"_blank\">MariaDB</a>, &ldquo;MariaDB is a community-developed, commercially supported fork of the MySQL relational database management system, intended to remain free and open-source software under the GNU General Public License.&rdquo; The company wants to migrate &ldquo;quickly and securely&rdquo;. Here the migration process from MySQL MariaDB to NoSQL DynamoDB is not going to be fast and easy. Plus, there is no requirement that can justify the usage of NoSQL DynamoDB in AWS.</li>\r\n\t<li><strong>Options C &amp; D both are incorrect</strong> because Amazon Aurora Serverless (MySQL and PostgreSQL type) is going to be an over-power solution. All the requirements can be well satisfied by using AWS Aurora. There is no demand for auto-scaling or dynamic load balancing capability etc. from the company. Hence this is not the best and most optimized solution.&nbsp;</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/rds/aurora/\" target=\"_blank\">https://aws.amazon.com/rds/aurora/</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/database/migrate-self-managed-mariadb-to-amazon-aurora-mysql/\" target=\"_blank\">https://aws.amazon.com/blogs/database/migrate-self-managed-mariadb-to-amazon-aurora-mysql/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124093,
-            "question_id": 98505,
-            "answers": [
-              {
-                "question_id": "98505",
-                "choice": "<ul>\r\n\t<li>Provision Amazon Aurora Mysql as the target DB instance in AWS.</li>\r\n\t<li>Provision Database Migration Service (DMS) replication instance and create DMS endpoints.</li>\r\n\t<li>Create DMS task, migrate data from the source database as on-premises MariaDB, and perform validation.</li>\r\n</ul>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98505",
-                "choice": "<ul>\r\n\t<li>Provision DynamoDB as target DB instance in AWS.</li>\r\n\t<li>Provision Database Migration Service (DMS) replication instance and create DMS endpoints.</li>\r\n\t<li>Create DMS task, migrate data from the source database as on-premises MariaDB, and perform validation.</li>\r\n</ul>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98505",
-                "choice": "<ul>\r\n\t<li>Provision Amazon Aurora Serverless MySQL as target DB instance in AWS.</li>\r\n\t<li>Provision Database Migration Service (DMS) replication instance and create DMS endpoints.</li>\r\n\t<li>Create DMS task, migrate data from source database as on-premises MariaDB and perform validation.</li>\r\n</ul>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98505",
-                "choice": "<ul>\r\n\t<li>Provision Amazon Aurora Serverless PostgreSQL as target DB instance in AWS.</li>\r\n\t<li>Provision Database Migration Service (DMS) replication instance and create DMS endpoints.</li>\r\n\t<li>Create DMS task, migrate data from the source database as on-premises MariaDB and perform validation.</li>\r\n</ul>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Accelerate Workload Migration and Modernization"
-      },
-      {
-        "question_id": 98506,
-        "topic_id": 2686,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>With the increase in popularity of a free streaming video service company, the challenge also increases. For example</p>\r\n\r\n<ul>\r\n\t<li>The company finds it very expensive and cost-prohibitive to store and maintain on-premises data centers for their robust petabytes (PB) of media library.</li>\r\n\t<li>It lacks the flexibility of storing media files automatically based on hot (viral videos - frequent access), warm (often or infrequent access), and cool (rare or archive access) tiers.</li>\r\n\t<li>It needs high availability to distribute and give consumers easy access to the robust media library.</li>\r\n</ul>\r\n\r\n<p>You are a solution architect in the company and have been tasked to resolve all these problems in 90 days by moving the data securely to AWS. The company has also asked you to ensure that the service and performance of the existing model should not get affected by this operation.</p>\r\n\r\n<p>Which solution will resolve these problems?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because Kinesis Video Streams can ingest data from edge devices, smartphones, security cameras, and other data sources such as RADARs, LIDARs, drones, satellites, dash cams, and depth-sensors and provides SDKs that make it easy for devices to securely stream media to AWS for playback, storage, analytics, machine learning, and other processing. This will not satisfy the demand of the company. Plus, this solution runs online and requires high network bandwidth, which will slow down the performance of the existing AS-IS model while serving content from the on-premises data center to their customers.&nbsp;&nbsp;</li>\r\n\t<li><strong>Option B is incorrect</strong> because AWS Storage Gateway is used for on-premises data backup to AWS and a hybrid model where both on-premises and cloud services can access the backed-up data. This will increase the cost of storage as the on-premises are getting extended to additional cloud storage.</li>\r\n\t<li><strong>Option C is CORRECT</strong> because Amazon Snowball Edge Storage Optimized devices can move petabytes of data. This Snowball Edge device runs in disconnected, austere edge environments without utilizing your network bandwidth, so your existing model still functions as it is. Also, multiple Amazon Snowball Edge Storage Optimized devices can be used concurrently to fasten the process of data movement. Amazon S3 Intelligent-Tiering best fits to automatically store data into cost-effective storage classes based on hot (viral videos - frequent access), warm (often or infrequent access), and cool (rare or archive access) tiers.</li>\r\n\t<li><strong>Option D is incorrect</strong> because AWS DataSync is an online data transfer service that simplifies, automates, and accelerates the process of copying large amounts of data to and from AWS storage services over the Internet or AWS Direct Connect. Setting up AWS Direct Connect is a complex and lengthy process. Sometimes it takes more than 90 days. Hence it is less likely to have the petabytes of media files moved to AWS within 90 days.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/snow/\" target=\"_blank\">https://aws.amazon.com/snow/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124094,
-            "question_id": 98506,
-            "answers": [
-              {
-                "question_id": "98506",
-                "choice": "<p>To move large files quickly and securely, use Amazon Kinesis Video Streams and upload media files from the on-premises data center to Amazon S3. Leverage Amazon S3 Intelligent Tiering to achieve better flexibility based on hot, warm, and cool tiers and implement Amazon CloudFront for high availability.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98506",
-                "choice": "<p>For a quick and secure solution, replicate your on-premise data using AWS Storage Gateway and achieve hybrid cloud storage services that provide on-premises access to virtually unlimited cloud storage for better flexibility and availability. Leverage Amazon S3 Intelligent Tiering to achieve better flexibility based on hot, warm, and cool tiers of media files.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98506",
-                "choice": "<p>Use multiple Amazon Snowball Edge Storage Optimized devices concurrently to move large files quickly and securely to Amazon S3. Leverage Amazon S3 Intelligent Tiering to optimize storing data into storage classes automatically based on hot, warm, and cool tiers.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98506",
-                "choice": "<p>Set up AWS Direct Connect and configure AWS DataSync to automate and accelerate moving data securely from on-premises to AWS storage services. Leverage Amazon S3 Intelligent Tiering to optimize storing data into storage classes automatically based on hot, warm, and cool tiers.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Accelerate Workload Migration and Modernization"
-      },
-      {
-        "question_id": 98507,
-        "topic_id": 2686,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A research team in a biopharmaceutical company that seeks to deliver truly innovative and life-changing treatments for patients with cancer and other severe conditions often collaborates with third-party universities and research institutions, with whom they share important research data &amp; files. The company has embraced Amazon S3 as cloud native storage to maintain one source of data. A new collaboration project cropped up on short notice which requires petabyte-scale storage or SFTP infrastructure that could handle huge volumes of file transfer. The company needs to exchange data in a controlled and secure way that doesn&rsquo;t allow such third parties to access their critical data and files.</p>\r\n\r\n<p>Which solution will help the company build an SFTP infrastructure quickly and securely?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because AWS Snowball is used to move databases, backups, archives, analytics datasets and media content to the cloud - especially when network conditions are limited. Ordering AWS Snowball is a complex, costly and lengthy process. So this option is negative. Plus, the requirement of &ldquo;....SFTP infrastructure that could handle huge volumes of the file transfer.&rdquo;-- does not meet.</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/ap-10.png\" style=\"height:206px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect</strong> because AWS Storage Gateway is a set of hybrid cloud storage services that provide on-premises access to virtually unlimited cloud storage where both on-premises and cloud services can access the backed-up data. It is not suitable for the above use-case.</li>\r\n\t<li><strong>Option C is CORRECT</strong> because AWS Transfer for SFTP from AWS Transfer Family easily manages file transfers and modernizes the transfer workflows within hours by using existing authentication systems. Attach the SFTP endpoint to your bucket, provision users, and start sharing the files.</li>\r\n\t<li><strong>Option D is incorrect</strong> because AWS DataSync is an online data transfer service that simplifies, automates, and accelerates the process of copying large amounts of data to and from AWS storage services over the Internet or AWS Direct Connect. Setting up AWS Direct Connect is a complex and lengthy process. Sometimes it takes more than 90 days. Hence it is less likely to have the petabytes of media files moved to AWS within 90 days. Plus, AWS DataSync can not replicate SFTP infrastructure.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li>Image Source: <a href=\"https://aws.amazon.com/snowball/\" target=\"_blank\">https://aws.amazon.com/snowball/</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/aws-transfer-family/?nc=sn&amp;loc=0\" target=\"_blank\">https://aws.amazon.com/aws-transfer-family/?nc=sn&amp;loc=0</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124095,
-            "question_id": 98507,
-            "answers": [
-              {
-                "question_id": "98507",
-                "choice": "<p>Use AWS Snowball to Migrate petabyte-scale data and transfer file from company to it&rsquo;s partner.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98507",
-                "choice": "<p>For a quick and secure solution, use AWS Storage Gateway and achieve a reliable exchange of data with partners.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98507",
-                "choice": "<p>Use AWS Transfer for SFTP from AWS Transfer Family for an easy and reliable solution for exchanging data with partners.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98507",
-                "choice": "<p>Set up AWS Direct Connect between the company and the partner and configure AWS DataSync to automate and accelerate moving data securely.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Accelerate Workload Migration and Modernization"
-      },
-      {
-        "question_id": 98573,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You join&nbsp;a company recently and need to manage an AWS Organization with several Organizational Units (OUs). A &ldquo;FullAWSAcess&rdquo; SCP has been attached to the organization&rsquo;s Root that allows all services and actions. Other policies are attached in OUs to prevent users from using some AWS services or performing certain actions (i.e.deleting DynamoDB tables). Your manager asks you to identify the allowed AWS services that have not been accessed for 6 months in the Development OU. How do you achieve this in the easiest way?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because searching for services through CloudTrail event history needs lots of manual effort. Other than that, CloudTrail&rsquo;s event history only shows 90 days of management events.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because AWS IAM Access Analyzer cannot quickly identify AWS services that are not accessed. AWS IAM Access Analyzer can find resources such as S3 buckets shared with external entities and generate findings for users to review.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong> because the &ldquo;Service access report&rdquo; of the Organization OU can quickly show the last accessed information so that users can refine their policies to disallow unused services or actions. The following is an example of the &ldquo;Service access report&rdquo;:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-1.png\" style=\"height:345px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because users can only view the applied policies in the Organization OU panel, but there is no information on the last accessed services.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-view-data-orgs.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-view-data-orgs.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124096,
-            "question_id": 98573,
-            "answers": [
-              {
-                "question_id": "98573",
-                "choice": "<p>In the AWS console, go to CloudTrail &gt; Event history, and search for the services accessed within 6 months. Compare the services with the allowed services in the SCP. Identify the allowed services that are not accessed.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98573",
-                "choice": "<p>In the AWS console, go to IAM &gt; Access analyzer, and create a new analyzer in the AWS Organization. Monitor the &ldquo;Active findings&rdquo; in the analyzer and identify the AWS services that are not accessed for 6 months.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98573",
-                "choice": "<p>In the AWS console, go to IAM &gt; Access reports &gt; Organization activity, select the Development OU, and check the last accessed information in the &ldquo;Service access report&rdquo; table.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98573",
-                "choice": "<p>In the AWS console, go to AWS Organizations &gt; Development OU &gt; Policies, select the applied SCPs, and review whether there are any services that are not accessed for 6 months.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98574,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You are managing an AWS Organization which includes multiple Organizational Units (OUs). The default &ldquo;FullAWSAccess&rdquo; SCP in the Root has been removed so that all actions for all services are implicitly denied. There are custom policies attached to the Root and OUs to allow the services that you want to permit explicitly. Now you want to identify the allowed services that have not been accessed for a long time and remove these services from the allowed list. How do you achieve this requirement in the most suitable way?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because it is inappropriate to detach the policies from the OU in this question. The services will be impacted as all the services and actions are implicitly denied by default.</li>\r\n\t<li><strong>Option​ B is​ CORRECT</strong> because the Organization activity in IAM access reports provides the last accessed information. Users can quickly identify the services that are not used but allowed by the SCP.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because Access Advisor in IAM policies does not provide an overall view of the whole AWS Organization. You have to consolidate the Access Advisor findings of each IAM entity. The correct way is to use the Organization activity in IAM access reports.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because AWS CLI &ldquo;aws iam get-service-last-accessed-details&rdquo; can only generate a report that includes details about when an IAM entity (i.e., user, user group, role, or policy) was last used to access AWS resources. You cannot identify the services required by the whole AWS Organization through this CLI command.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-view-data-orgs.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-view-data-orgs.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124097,
-            "question_id": 98574,
-            "answers": [
-              {
-                "question_id": "98574",
-                "choice": "<p>Detach the policies from an OU, monitor the failed APIs in CloudTrail, and identify the services required by the OU. Modify the policies to only allow the required services and reattach the policies in the OU.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98574",
-                "choice": "<p>View the last accessed information in &ldquo;AWS IAM &gt; Access reports &gt; Organization activity&rdquo;. If there are services that are not accessed for a long time, remove them from the Organization Service Control Policies (SCPs).</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98574",
-                "choice": "<p>In &ldquo;AWS IAM &gt; Policies &gt; Access Advisor&rdquo;, check the &ldquo;Last Accessed&rdquo; column for the services that are not accessed. Remove them from the Organization SCP allow list.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98574",
-                "choice": "<p>Use AWS CLI &ldquo;aws iam get-service-last-accessed-details&rdquo; to retrieve service last accessed information for the IAM entities owned by the Organization. For the services that are not needed, remove them from the SCP allow list.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98575,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You are an AWS engineer in a company. You plan to use the attribute-based access control (ABAC) strategy to control access to the KMS customer-managed keys based on the tags associated with them. All the customer-managed keys have been configured with a &ldquo;Project&rdquo; tag to determine which project the keys belong to. Several KMS keys have the &quot;Project&quot;=&quot;Beta&quot; tag. You want to set up an IAM policy that allows the &ldquo;kms:Encrypt&rdquo; and &ldquo;kms:Decrypt&rdquo; operations only on these KMS keys. Which of the following IAM policies is correct?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answer​: D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because &quot;kms:ResourceAliases&quot; is the condition key for KMS alias instead of KMS tag. AWS KMS attribute-based access control (ABAC) strategy supports both tags and aliases. In this question, the tag condition key &ldquo;aws:ResourceTag&rdquo; should be used.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because the policy has a &quot;Deny&quot; statement that overrides the &ldquo;Allow&rdquo; statement for the KMS tag. With this policy, the IAM principal cannot operate on the KMS keys with the &quot;Project&quot;=&quot;Beta&quot; tag.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because the policy denies the usage of KMS keys if they do not have the &quot;Project&quot;=&quot;Beta&quot; alias. It does not provide any &lsquo;allow&rsquo; permissions, so KMS keys with the tag are not allowed.</li>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT</strong> because the policy contains the proper condition for the &quot;Project&quot;=&quot;Beta&quot; tag. It allows the usage of the KMS keys on the condition that the keys have the &quot;Project&quot;=&quot;Beta&quot; tag.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/kms/latest/developerguide/abac.html\" target=\"_blank\">https://docs.aws.amazon.com/kms/latest/developerguide/abac.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/kms/latest/developerguide/tag-authorization.html\" target=\"_blank\">https://docs.aws.amazon.com/kms/latest/developerguide/tag-authorization.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124098,
-            "question_id": 98575,
-            "answers": [
-              {
-                "question_id": "98575",
-                "choice": "<pre>\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: [\r\n&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Sid&quot;: &quot;IAMPolicyWithResourceTag&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Encrypt&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Decrypt&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;arn:aws:kms:ap-southeast-1:xxxxxxxxxxxx:key/*&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Condition&quot;: {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;StringEquals&quot;: {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:ResourceAliases&quot;: &quot;Project/Beta&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp; }\r\n&nbsp; ]\r\n}\r\n</pre>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98575",
-                "choice": "<pre>\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: [\r\n&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Sid&quot;: &quot;IAMPolicyWithResourceTagDeny&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Deny&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Encrypt&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Decrypt&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;arn:aws:kms:ap-southeast-1:xxxxxxxxxxxx:key/*&quot;\r\n&nbsp;&nbsp;&nbsp; },\r\n&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Sid&quot;: &quot;IAMPolicyWithResourceTagAllow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Encrypt&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Decrypt&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;arn:aws:kms:ap-southeast-1:xxxxxxxxxxxx:key/*&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Condition&quot;: {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;StringEquals&quot;: {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;aws:ResourceTag/Project&quot;: &quot;Beta&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp; }\r\n&nbsp; ]\r\n}\r\n</pre>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98575",
-                "choice": "<pre>\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: [\r\n&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Sid&quot;: &quot;IAMPolicyWithResourceTag&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Deny&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Encrypt&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Decrypt&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;arn:aws:kms:ap-southeast-1:xxxxxxxxxxxx:key/*&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Condition&quot;: {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;StringNotEquals&quot;: {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:ResourceAliases&quot;: &quot;Project/Beta&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp; }\r\n&nbsp; ]\r\n}\r\n</pre>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98575",
-                "choice": "<pre>\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: [\r\n&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&quot;Sid&quot;: &quot;IAMPolicyWithResourceTag&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Encrypt&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Decrypt&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;arn:aws:kms:ap-southeast-1:xxxxxxxxxxxx:key/*&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Condition&quot;: {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;StringEquals&quot;: {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&quot;aws:ResourceTag/Project&quot;: &quot;Beta&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp; }\r\n&nbsp; ]\r\n}\r\n</pre>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98576,
-        "topic_id": 2686,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>Your company owns a self-managed directory in Microsoft Active Directory (AD) to manage the company employee identities. Now you want to use AWS IAM Identity Center (successor to AWS Single Sign-On) to manage the SSO access to AWS accounts and cloud applications in the AWS access portal. You also want to redirect the directory requests to the self-managed AD without the need to cache information in AWS. What is the correct way to configure it?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answer: A</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is CORRECT</strong> because AD Connector is a directory gateway and can redirect the directory requests. The self-managed AD can be connected to the IAM Identity Center through this method.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because the question asks for redirecting the directory requests without the need to cache information. This option uses an AWS Managed Microsoft AD and does not meet this requirement.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because the trust relationships between AWS Managed Microsoft AD and the self-managed AD should be two-way instead of one-way.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because in &ldquo;AWS Identity Center &gt; Settings &gt; Identity source &gt; Change identity source&rdquo;, users cannot directly add a self-managed directory. Instead, users can add an AWS Managed Microsoft AD to IAM Identity Center through the IAM Identity Center console.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/connectonpremad.html\" target=\"_blank\">https://docs.aws.amazon.com/singlesignon/latest/userguide/connectonpremad.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/connectawsad.html\" target=\"_blank\">https://docs.aws.amazon.com/singlesignon/latest/userguide/connectawsad.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124099,
-            "question_id": 98576,
-            "answers": [
-              {
-                "question_id": "98576",
-                "choice": "<p>Configure an Active Directory (AD) Connector in the AWS Directory Service as a directory gateway to forward directory requests. Connect IAM Identity Center to the self-managed Active Directory by using the AD Connector.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98576",
-                "choice": "<p>Create an AWS Managed Microsoft AD and establish two-way trust relationships between the self-managed directory and AWS Microsoft AD in the AWS IAM Identity Center.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98576",
-                "choice": "<p>In the AWS IAM Identity Center, configure a one-way trust relationship between AWS Microsoft AD and the self-managed directory to redirect the directory requests.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98576",
-                "choice": "<p>In &ldquo;AWS Identity Center &gt; Settings &gt; Identity source &gt; Change identity source&rdquo;, select the self-managed directory and connect it to the IAM Identity Center.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Accelerate Workload Migration and Modernization"
-      },
-      {
-        "question_id": 98577,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>As a cloud engineer, you are managing an AWS Organization that covers several Organizational Units (OUs). To provide better governance in the AWS environment, you need to create AWS resources in the whole AWS Organization or certain Organization Units. For example, you would like to set up AWS Config rules across the whole company. Another requirement is that the resources should be in multiple regions that you have selected. You plan to create the resources through AWS CloudFormation. Which of the following methods is the most suitable?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>​Correct Answer: B</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because, with self-managed permissions in CloudFormation StackSet, users have to select the specific AWS accounts in specific Regions manually. CloudFormation StackSets can also be configured through service-managed permissions. With this model, StackSets can be automatically deployed to all accounts in the Organization or OUs. Option B is better than option A.</li>\r\n\t<li><strong>Option​ B is​ CORRECT</strong> because, with service-managed permissions in CloudFormation StackSet, you can deploy the stacks to all accounts managed by AWS Organizations in specific Regions.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because you still cannot easily launch or manage the CloudFormation stacks across all accounts in the AWS Organization, although the accounts and regions were added in CloudFormation parameters.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because you cannot share the resource groups in the AWS Organization, although resource groups can be used to organize the AWS resources based on CloudFormation stacks. Therefore, this option cannot meet the requirement.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-getting-started-create.html\" target=\"_blank\">https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-getting-started-create.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124100,
-            "question_id": 98577,
-            "answers": [
-              {
-                "question_id": "98577",
-                "choice": "<p>Create CloudFormation StackSets with self-managed permissions. On the &ldquo;Set deployment options&rdquo; page, configure the accounts and Regions into which you want to deploy the stack set.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98577",
-                "choice": "<p>Create CloudFormation StackSets with service-managed permissions. Set the deployment options to &ldquo;Deploy to organization&rdquo; or &ldquo;Deploy to organizational units&rdquo;. Choose the Regions in which you want to deploy the stack instances.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98577",
-                "choice": "<p>In the CloudFormation templates, add the AWS accounts and Regions as CloudFormation parameters. Launch the CloudFormation stacks through the AWS Organization administrator account.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98577",
-                "choice": "<p>In the AWS Organization administrator account, create resource groups based on CloudFormation stacks. Share the resource groups in the whole organization or OUs.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98578,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>As the company grows, the company&rsquo;s AWS Organization is becoming complicated with a large number of Organizational Units (OUs) and AWS accounts. Due to several restructures to the company, new AWS accounts are being created, and existing AWS accounts are being suspended. As an AWS administrator, you need to maintain all AWS accounts in the AWS Organization. Your manager asks you to provide information that includes the details of individual AWS accounts, such as Account IDs, Email addresses, and statuses. Which is the most suitable way to achieve the requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answer: A</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is CORRECT</strong> because &ldquo;Export account list&rdquo; in the AWS Organization console is the most suitable method to download the account information quickly. The CSV file provides the required details for each account.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because it is not suitable to use the organization&rsquo;s root account for this task due to security reasons. The root account allows full access to all AWS services. In this scenario, it is more suitable to use a non-root IAM user.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because the &ldquo;Credentials report&rdquo; in the IAM console only provides the IAM credential details of an AWS account. It does not include all the account details of the organization.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because the &ldquo;Organization activity&rdquo; view only provides the organization hierarchy, and it does not contain the account details of the organization.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_export.html\" target=\"_blank\">https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_export.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124111,
-            "question_id": 98578,
-            "answers": [
-              {
-                "question_id": "98578",
-                "choice": "<p>Sign in to the AWS Organizations console as an IAM user, choose &ldquo;Actions&rdquo; and click &ldquo;Export account list&rdquo; to download the organization account information as a CSV file.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98578",
-                "choice": "<p>Sign in to the AWS Organizations console as the root user, choose &ldquo;Actions&rdquo; and click &ldquo;Export account list&rdquo; to export the organization account information as a txt file.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98578",
-                "choice": "<p>Sign in to the AWS IAM console as the organization root user, choose &ldquo;Credentials report&rdquo;, and download the credentials reports as a CSV file.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98578",
-                "choice": "<p>Sign in to the AWS IAM console as the organization root user, choose &ldquo;Organization activity&rdquo;, and view all the AWS account information.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98579,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>Your team is developing a mobile app and plans to use the Amazon Cognito identity pool to return temporary credentials to the application to access AWS resources. The &ldquo;enhanced authflow&rdquo; for Cognito has been chosen to simplify the network calls to get credentials. The app first authenticates with a third-party identity provider (i.e., Facebook), presents an ID token in a GetID request to the Amazon Cognito identity pool, and exchanges the token for an identity ID. For the further authentication flow, which&nbsp;option&nbsp;is correct?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because the enhanced authflow simplifies credential retrieval by performing GetOpenIdToken and AssumeRoleWithWebIdentity in the background. The app does not need to send GetOpenIdToken or AssumeRoleWithWebIdentity messages.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because GetOpenIdTokenForDeveloperIdentity is used when a developer-authenticated identity provider has been used. In this scenario, a third-party identity provider is used.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because the app does not send AssumeRoleWithWebIdentity in the enhanced authflow. Other than that, in the basic authflow, AssumeRoleWithWebIdentity should be sent to AWS STS instead of Amazon Cognito.</li>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT</strong> because the GetCredentialsForIdentity message is used to fetch the AWS API credentials based on the following flows:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/hvhf.png\" style=\"height:472px; width:750px\" /></p>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html\" target=\"_blank\">https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124112,
-            "question_id": 98579,
-            "answers": [
-              {
-                "question_id": "98579",
-                "choice": "<p>The identity ID is used in a GetOpenIdToken request to the Amazon Cognito identity pool. A new OAuth 2.0 token is returned and used in an AssumeRoleWithWebIdentity request to retrieve AWS API credentials.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98579",
-                "choice": "<p>The identity ID is used in a GetOpenIdTokenForDeveloperIdentity request to the Amazon Cognito identity pool. A new OAuth 2.0 token is returned and used in an AssumeRoleWithWebIdentity request to retrieve AWS API credentials.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98579",
-                "choice": "<p>The identity ID is used in a GetCredentialsForIdentity request to the Amazon Cognito identity pool. If the identity ID is validated successfully, a new OAuth 2.0 token is returned. The app uses the new token in an AssumeRoleWithWebIdentity request to Cognito to retrieve AWS API credentials.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98579",
-                "choice": "<p>The identity ID is used in a GetCredentialsForIdentity request to the Amazon Cognito identity pool. If the identity ID is validated successfully, AWS API credentials will be returned.</p>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98580,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>Your team is developing a new application. A REST API is being set up in Amazon API Gateway with a Lambda function as the backend. To simplify the maintenance and configurations of the REST API, you plan to use proxy integration for the Lambda function so that you can change the Lambda function at any time without the need to redeploy the REST API in API Gateway. The entire HTTP request for all types of methods should be sent to the Lambda function as-is. About the Lambda proxy integration, which of the following configurations is correct?</p>\r\n\r\n<p>&nbsp;</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answer: A</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is CORRECT</strong> because the ANY method allows the users to use a single API method setup for all of the supported HTTP methods. The following is an example of enabling the Lambda proxy integration:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-8.png\" style=\"height:267px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because the catch-all ANY method should be used that represents any HTTP method. There is no need to configure each HTTP method under the Lambda proxy integration configuration.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because this option does not enable the &ldquo;Use Lambda Proxy integration&rdquo; option, and the REST API is set up with the Lambda non-proxy integration.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because the &ldquo;Use Lambda Proxy integration&rdquo; option is not enabled. Other than that, &ldquo;Passthrough&rdquo; in Content Handling only determines how the request body is handled. It is not the correct place to configure Lambda proxy integration.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html\" target=\"_blank\">https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html\" target=\"_blank\">https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/apigateway/latest/developerguide/getting-started-lambda-non-proxy-integration.html\" target=\"_blank\">https://docs.aws.amazon.com/apigateway/latest/developerguide/getting-started-lambda-non-proxy-integration.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124113,
-            "question_id": 98580,
-            "answers": [
-              {
-                "question_id": "98580",
-                "choice": "<p>In the REST API, set up an &ldquo;ANY&rdquo; method, choose &ldquo;Use Lambda Proxy integration&rdquo;, and select the backend Lambda in the &ldquo;Lambda Function&rdquo; field.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98580",
-                "choice": "<p>In the REST API, set up an HTTP method for each HTTP type including DELETE, GET, HEAD, OPTIONS, PATCH, POST, and PUT, click &ldquo;Use Lambda Proxy integration&rdquo;, and add the backend Lambda in the &ldquo;Lambda Function&rdquo; field.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98580",
-                "choice": "<p>In the REST API, set up an &ldquo;ANY&rdquo; method, choose Method Request in the Method Execution pane, and add any required HTTP headers in the HTTP Request Headers section.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98580",
-                "choice": "<p>In the REST API, set up an HTTP method for each HTTP type including DELETE, GET, HEAD, OPTIONS, PATCH, POST, and PUT, choose the Integration Request of the HTTP method, and configure the Content Handling to be &ldquo;Passthrough&rdquo;.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98581,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You are an AWS Solutions Architect. Your team owns a website deployed in an Amazon Linux EC2 instance. Due to business needs, there is a new requirement to use the same instance to host another website by using multiple SSL certificates on a single server and associating each certificate with an elastic network interface (ENI). The new elastic network interface should be in a different subnet from the existing ENI. How would you configure it in the EC2 instance?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because the AWS CLI run-instances command with the --secondary-private-ip-addresses option is used to assign a secondary private IP. It is not used to attach a secondary ENI.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because there is no need to stop and start the instance when attaching an ENI. Other than that, the &ldquo;Secondary IP&rdquo; option is used for assigning a secondary IP instead of a secondary ENI.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong> because users can attach an ENI in &ldquo;AWS EC2 console &gt; Actions &gt; Networking &gt; Attach network interface&rdquo;. The following screenshot is an example:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-9.png\" style=\"height:429px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because users can configure a secondary ENI in another subnet for an EC2 instance. Users must attach a network interface to an instance in the same Availability Zone.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html\" target=\"_blank\">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/MultipleIP.html\" target=\"_blank\">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/MultipleIP.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124114,
-            "question_id": 98581,
-            "answers": [
-              {
-                "question_id": "98581",
-                "choice": "<p>Create a new elastic network interface in a different subnet. Attach the network interface using the AWS CLI run-instances command with the --secondary-private-ip-addresses option.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98581",
-                "choice": "<p>Create a new elastic network interface. Stop the instance. Attach the network interface in &ldquo;AWS EC2 console &gt; Network Settings &gt; Advanced network configuration &gt; Secondary IP &gt; Manually assign&rdquo;. Start the instance.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98581",
-                "choice": "<p>Create a new elastic network interface in a different subnet. Attach the network interface in &ldquo;AWS EC2 console &gt; Actions &gt; Networking &gt; Attach network interface&rdquo;.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98581",
-                "choice": "<p>There is no way to configure a secondary ENI under another subnet in an EC2 instance. All elastic network interfaces attached to a single EC2 instance must be in the same subnet.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98582,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You are a cloud engineer and manage an AWS Organization in a startup company. The AWS Organization has several Organizational Units (OUs); one is called &ldquo;Platform_OU&rdquo;. Platform_OU has several AWS accounts owned by the platform team. Due to recent company restructures, there will be a new site reliability engineering (SRE) team and an SRE_OU has been created by you. Some existing AWS accounts in Platform_OU should be placed in the new SRE_OU. How would you achieve this requirement in the most suitable way?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answer: B</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because it is unnecessary to remove the AWS accounts from the organization or re-invite these AWS accounts. Instead, these AWS accounts can be moved from one OU to another.</li>\r\n\t<li><strong>Option​ B is​ CORRECT</strong> because users can choose the AWS accounts and move them to another OU in the AWS Organization console. This is the most suitable approach. The following is an example of moving an AWS account from Platform_OU to SRE_OU:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-10.png\" style=\"height:500px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because there is no need to recreate new AWS accounts for SRE_OU. The existing AWS accounts can be directly moved between OUs.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because it is not required to move AWS accounts to the root of the organization. Hence, this option is not suitable.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html#move_account_to_ou\" target=\"_blank\">https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html#move_account_to_ou</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124115,
-            "question_id": 98582,
-            "answers": [
-              {
-                "question_id": "98582",
-                "choice": "<p>In the AWS Organization console, select the AWS accounts in the Platform_OU. On the Actions menu, choose &ldquo;Remove from organization&rdquo; to remove these accounts from the AWS Organization. Reinvite these AWS accounts and add them to the SRE_OU.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98582",
-                "choice": "<p>In the AWS Organization console, select the AWS accounts in the Platform_OU. On the Actions menu, choose Move. Select the SRE_OU and choose &ldquo;Move AWS account&rdquo;.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98582",
-                "choice": "<p>In the AWS Organization console, select the AWS accounts in the Platform_OU. On the Actions menu, choose &ldquo;Remove from organization&rdquo;. Create new SRE AWS accounts and place them in the SRE_OU.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98582",
-                "choice": "<p>In the AWS Organization console, select Platform_OU and move the AWS accounts from Platform_OU to the root. Select the SRE_OU and add the AWS accounts from root to SRE_OU.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98583,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>Your team is developing a new web application. As the application is container-based, you plan to host the application in AWS ECS Fargate for its simplicity. A simple and scalable Elastic File System (EFS) volume is also required because the application relies on files for state persistence. You have already created an Amazon ECS Cluster and an EFS file system. To successfully mount the Amazon EFS file system on ECS Fargate, which of the following conditions must be met? (Select TWO)</p>",
-        "mark": 1,
-        "is_partially_correct": true,
-        "question_type": "2",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answers: A and E</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is CORRECT</strong> because the EFS file system uses port 2049 for inbound communication. So, the EFS file system&rsquo;s security group should allow the inbound traffic from ECS Fargate.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because the security group of the ECS Fargate task should allow outbound traffic instead of inbound traffic on port 2049.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because the security group of the EFS file system does not need to perform the outbound communications to the ECS service. So, this option is not required.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because the EFS file system, Amazon ECS cluster, and Fargate tasks should be placed in multiple availability zones to gain high availability&nbsp;for the conditions to be met to mount EFS on ECS Fargate successfully. This option is wrong.</li>\r\n\t<li><strong>Option​ ​E is CORRECT</strong> because, according to the Amazon EFS file system, Amazon ECS cluster, and Fargate tasks must all be in the same VPC.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/premiumsupport/knowledge-center/ecs-fargate-mount-efs-containers-tasks/\" target=\"_blank\">https://aws.amazon.com/premiumsupport/knowledge-center/ecs-fargate-mount-efs-containers-tasks/</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial-efs-volumes.html\" target=\"_blank\">https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial-efs-volumes.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124116,
-            "question_id": 98583,
-            "answers": [
-              {
-                "question_id": "98583",
-                "choice": "<p>The security group of the EFS file system should allow the inbound connections on port 2049 from the ECS Fargate task or service.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98583",
-                "choice": "<p>The security group of the ECS Fargate task should allow the inbound connections on port 2049 from the EFS file system&rsquo;s security group.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98583",
-                "choice": "<p>The security group of the EFS file system should allow the outbound connections on port 80/443 to the ECS Fargate service.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98583",
-                "choice": "<p>The EFS file system, Amazon ECS cluster, and Fargate tasks must be in the same availability zone.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98583",
-                "choice": "<p>The EFS file system, Amazon ECS cluster, and Fargate tasks must be in the same VPC.</p>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98584,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You have created an API Gateway API to expose the &quot;GET /user?user={name}&quot; method to invoke a Lambda function. The method has a query string called &quot;user&quot;. The Lambda function will respond with a message of &quot;Hello, {name}!&quot;. You have deployed the Lambda function as follows:</p>\r\n\r\n<pre>\r\nexports.handler = function(event, context, callback) {\r\n&nbsp;&nbsp;&nbsp; var res ={\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;statusCode&quot;: 200,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;headers&quot;: {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Content-Type&quot;: &quot;*/*&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp; };\r\n&nbsp;&nbsp;&nbsp; if (event.user==null) {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; callback(new Error(&#39;Missing the required greeter parameter.&#39;));\r\n&nbsp;&nbsp;&nbsp; } else {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; res.body = &quot;Hello, &quot; + event.user +&quot;!&quot;;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; callback(null, res);\r\n&nbsp;&nbsp;&nbsp; }\r\n};</pre>\r\n\r\n<p>How would you set up the Lambda integration with the API method properly?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>​Correct Answer​: D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because &ldquo;aws apigateway put-integration-response&rdquo; is used to configure how to pass the result returned from the backend to the client. It is not used to configure how the incoming request data is mapped to the integration request. The AWS CLI &ldquo;aws apigateway put-integration&rdquo; should be used.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because AWS CLI &ldquo;aws apigateway put-method&rdquo; is used to add a method in an API Gateway resource. It is not used to configure Lambda custom integration.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because, in Lambda proxy integration, API Gateway passes the raw request to the integrated Lambda function as it is. You can not configure the property mapping for a proxy integration.</li>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT</strong> because AWS CLI &ldquo;aws apigateway put-integration&rdquo; is the correct command to configure the Lambda custom integration and map the user query string parameter to the user property of the JSON payload.</li>\r\n</ul>\r\n\r\n<p>The following is an example of using the command:</p>\r\n\r\n<pre>\r\naws apigateway put-integration \\\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --region us-west-1 \\\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --rest-api-id xxxxxxxxxx \\\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --resource-id xxxxxx \\\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --http-method GET \\\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --type AWS \\\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --integration-http-method POST \\\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --uri api-integration-endpoint \\\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --request-templates file://integration-template.json \\\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --credentials arn:aws:iam::xxxxxxxxxxxx:role/apigProxyRole</pre>\r\n\r\n<p>The request-templates parameter value file://integration-template.json is a file that contains the required key-value map as a JSON object: {&quot;application/json&quot;:&quot;{\\&quot;user\\&quot;:\\&quot;$input.params(&#39;user&#39;)\\&quot;}&quot;}</p>\r\n\r\n<p>In the above example, the mapping template translates the user query string parameter to the user property of the JSON payload.</p>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-custom-integrations.html\" target=\"_blank\">https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-custom-integrations.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html\" target=\"_blank\">https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html</a>&nbsp;</li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124117,
-            "question_id": 98584,
-            "answers": [
-              {
-                "question_id": "98584",
-                "choice": "<p>Use AWS CLI &ldquo;aws apigateway put-integration-response&rdquo; to set up the Lambda proxy integration. Configure the mapping of the user query string parameter to the user property of the JSON payload for the Lambda function.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98584",
-                "choice": "<p>Use AWS CLI &ldquo;aws apigateway put-method&rdquo; to set up the Lambda custom integration. Configure the mapping of the user query string parameter to the event property for the Lambda function.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98584",
-                "choice": "<p>Use AWS CLI &ldquo;aws apigateway put-integration&rdquo; to set up the Lambda proxy integration. Use a template file to configure the mapping of the user query string parameter to the event property for the Lambda function.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98584",
-                "choice": "<p>Use AWS CLI &ldquo;aws apigateway put-integration&rdquo; to set up the Lambda custom integration. Configure the mapping of the user query string parameter to the user property of the JSON payload for the Lambda function.</p>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98585,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You are working as an AWS solutions architect in a company. Your company deploys AWS resources mainly in the us-east-1 region, where multiple VPCs and subnets are created. At the same time, the company wants to build and run applications on-premises using the same programming interfaces as in AWS. Subnets should also be created on the local network so that local AWS compute instances can communicate with other instances in the AWS region within the same VPC. How would you design the solution to meet these requirements?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because AWS Local Zone is an extension of an AWS Region in geographic proximity to the users. It is still within the AWS infrastructure and not designed for on-premises resources.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because AWS Local Zone still uses AWS infrastructure and is not used to deploy AWS resources in the on-premises network.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong> because AWS Outpost is used to establish the AWS resources on-premises. AWS VPCs can be extended to Outpost and instances in Outpost subnets can communicate with instances in the AWS Region.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because, in this scenario, both Direct Connect and VPN connections can be used to connect Outpost to the AWS us-east-1 region. However, this question requires the same VPC to be used in both Outpost and the AWS region. There is no need to configure new VPC and VPC peer connections.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/vpc/latest/userguide/Extend_VPCs.html\" target=\"_blank\">https://docs.aws.amazon.com/vpc/latest/userguide/Extend_VPCs.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/outposts/latest/userguide/what-is-outposts.html\" target=\"_blank\">https://docs.aws.amazon.com/outposts/latest/userguide/what-is-outposts.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124118,
-            "question_id": 98585,
-            "answers": [
-              {
-                "question_id": "98585",
-                "choice": "<p>Set up AWS Local Zone to run the applications on-premises. Connect Local Zone to the AWS us-east-1 region with Direct Connect. Create subnets on the Local Zone and launch on-premises AWS resources in the subnets.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98585",
-                "choice": "<p>Set up AWS Local Zone to run the applications on-premises. Connect Local Zone to the AWS us-east-1 region with VPN connections. Create a new VPC with subnets on the Local Zone and establish the VPC peer connections between the Local Zone VPC and AWS VPC.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98585",
-                "choice": "<p>Set up AWS Outposts to run the applications on-premises. Connect Outpost to the AWS us-east-1 region with Direct Connect. Create subnets on the Outpost and launch on-premises AWS resources in the subnets.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98585",
-                "choice": "<p>Set up AWS Outposts to run the applications on-premises. Connect Outpost to the AWS us-east-1 region with VPN connections. Create a new VPC with subnets on Outpost and establish the VPC peer connections between the Outpost VPC and AWS VPC.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98586,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>You are an AWS consultant working in a bank. The development team is working on a web application that reads some system parameters in the run time. These parameters have been stored in AWS Systems Manager Parameter Store (us-east-1) as SecureString encrypted by a KMS customer-managed key. All the parameters stored in the production AWS account have the prefix &quot;prod&quot;. Now you need to create an IAM policy so that the web application can read the production parameters properly. Which of the following IAM policies is the most appropriate?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>​Correct Answer: A</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is CORRECT</strong> because the policy allows the &ldquo;ssm:GetParameters&rdquo; operation for the production parameters and the &ldquo;kms:Decrypt&rdquo; operation for the KMS key. It does not allow other unnecessary policies; hence it meets the least-privilege principle.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because to read the SecureString parameters encrypted by KMS, only the &ldquo;kms:Decrypt&rdquo; action is required. There is no need to allow &ldquo;kms:Encrypt&rdquo; or &ldquo;kms:GenerateDataKey&rdquo;.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because the question only asks for the IAM policy to read the production parameters. So the actions &ldquo;ssm:PutParameter&rdquo;, &ldquo;ssm:DeleteParameter&rdquo; and &ldquo;ssm:DeleteParameters&rdquo; are not required.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong> because there is an explicit deny for &ldquo;ssm:GetParameter&rdquo;. With the IAM policy, the &ldquo;ssm:GetParameter&rdquo; action for all parameters is not allowed.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-paramstore-access.html\" target=\"_blank\">https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-paramstore-access.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124119,
-            "question_id": 98586,
-            "answers": [
-              {
-                "question_id": "98586",
-                "choice": "<pre>\r\n{\r\n&nbsp;&nbsp;&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Statement&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ssm:GetParameters&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:ssm:us-east-1:xxxxxxxxxxxx:parameter/prod-*&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Decrypt&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:kms:us-east-1:xxxxxxxxxxxx:key/key-EXAMPLE-ID&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp; ]\r\n}\r\n</pre>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98586",
-                "choice": "<pre>\r\n{\r\n&nbsp;&nbsp;&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Statement&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ssm:GetParameter&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:ssm:us-east-1:xxxxxxxxxxxx:parameter/prod-*&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Decrypt&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;kms:Encrypt&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;kms:GenerateDataKey&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:kms:us-east-1:xxxxxxxxxxxx:key/key-EXAMPLE-ID&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp; ]\r\n}\r\n</pre>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98586",
-                "choice": "<pre>\r\n{\r\n&nbsp;&nbsp;&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Statement&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ssm:GetParameter&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ssm:PutParameter&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ssm:DeleteParameter&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ssm:DeleteParameters&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;arn:aws:ssm:us-east-1:xxxxxxxxxxxx:parameter/prod-*&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Decrypt&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:kms:us-east-1:xxxxxxxxxxxx:key/key-EXAMPLE-ID&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp; ]\r\n}\r\n</pre>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98586",
-                "choice": "<pre>\r\n{\r\n&nbsp;&nbsp;&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Statement&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ssm:GetParameter*&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:ssm:us-east-1:xxxxxxxxxxxx:parameter/prod-*&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Deny&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ssm:GetParameter&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ssm:PutParameter&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ssm:DeleteParameter&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ssm:DeleteParameters&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ssm:DescribeParameters&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;*&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;kms:Decrypt&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:kms:us-east-1:xxxxxxxxxxxx:key/key-EXAMPLE-ID&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp; ]\r\n}\r\n</pre>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98587,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>Your company deploys applications in AWS and application logs are stored in several AWS services, including S3, CloudWatch, and Kinesis Data Firehose. Your team needs to build a new search and analytics engine to perform analytics on these logs for real-time application monitoring. After the data is indexed in the search and analytics engine, users can use SQL tools (i.e., SQL CLI and SQL Workbench) to query and search for valuable data. The search engine should also be an AWS-managed service. How would you design the solution?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p>​<strong>Correct Answer​: D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because Amazon Redshift is a fully managed, petabyte-scale data warehouse service instead of a managed search engine. Redshift is suitable for use cases such as machine learning, business analytics, etc. Besides, Redshift does not load data from CloudWatch or Kinesis Data Firehose. For the supported data type, please check</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because Amazon Athena is not a search and analytics engine. This question also mentions that the data is stored in services such as CloudWatch and Kinesis Data Firehose. Athena cannot query data in these services.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because the question doesn&rsquo;t ask for a big data processing framework. Amazon EMR is based on Apache Hadoop and Apache Spark and is a big data framework.</li>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT</strong> because Amazon OpenSearch is a suitable AWS-managed service as a search solution. SQL is also supported in Amazon OpenSearch for users to query the data.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sql-support.html\" target=\"_blank\">https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sql-support.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/athena/latest/ug/when-should-i-use-ate.html\" target=\"_blank\">https://docs.aws.amazon.com/athena/latest/ug/when-should-i-use-ate.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/redshift/latest/dg/t_Loading_tables_with_the_COPY_command.html\" target=\"_blank\">https://docs.aws.amazon.com/redshift/latest/dg/t_Loading_tables_with_the_COPY_command.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124120,
-            "question_id": 98587,
-            "answers": [
-              {
-                "question_id": "98587",
-                "choice": "<p>Configure a cluster in Amazon Redshift, load the data from S3, CloudWatch, and Kinesis Data Firehose<strong> </strong>to the Amazon Redshift cluster, and search for the data in the Redshift data lake with standard SQL commands.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98587",
-                "choice": "<p>Load the data into Amazon Athena which is an interactive query engine. Use standard SQL to query data in Athena and use Amazon QuickSight for data visualization.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98587",
-                "choice": "<p>Configure an Amazon EMR cluster and load the data into the cluster for indexing. Use SQL to query the data in the EMR cluster for analytics purposes.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98587",
-                "choice": "<p>Configure a domain in the Amazon OpenSearch Service, load the data into the OpenSearch Service domain, and use SQL to query the data.</p>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98700,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>An IT Firm is using AWS Organizations to manage multiple accounts. During an annual security audit, it was found that many users have excess permissions which are not required. The Security head has assigned you to work on the least-privilege access for all users in the AWS Organizations. While removing these permissions, permission to resources that users have accessed in the last 180 days should not be removed.</p>\r\n\r\n<p>Which report can be viewed to get resources accessed by users before fine-tuning permissions in the AWS Organizations?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<p>Last Accessed Information can be used to fine-tune permissions set to all users and accounts within an AWS Organization. It helps to check if users are granted additional permission which is never used by the user or not required in case the user has moved to another domain. Using Last Access Information, additional unused permissions can be removed and thus can adhere to the best practice of least privilege.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect</strong> as AWS Config can be used to assess and record configuration changes done by users on AWS resources. It does not help in providing a list of resources that the user has accessed. An organization aggregator will collect AWS Config configurations and compliance data from all the accounts within an AWS Organization.</li>\r\n\t<li><strong>Option C is incorrect</strong> as AWS Trusted Advisor can be used to evaluate AWS resources and recommend best practices concerning cost optimization, performance, security, fault tolerance, and service quotas. It&rsquo;s not suitable to get a list of resources accessed by users in the AWS cloud.</li>\r\n\t<li><strong>Option D is incorrect</strong> as AWS Control Tower can help to ensure security and cross-account permissions for all accounts in an AWS Organizations are correctly applied, and there is no drift in the permissions. It is not suitable to get a list of resources accessed by users in AWS Organizations.</li>\r\n</ul>\r\n\r\n<p>For more information on the last accessed information with AWS Organizations, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-example-scenarios.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-example-scenarios.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-view-data-orgs.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-view-data-orgs.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124121,
-            "question_id": 98700,
-            "answers": [
-              {
-                "question_id": "98700",
-                "choice": "<p>Use AWS Organizations management account credentials to log in to the AWS IAM console and fetch the last accessed information to get a list of resources accessed by the users.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98700",
-                "choice": "<p>Use the Organization aggregator with AWS Config to get a list of resources accessed by users in the AWS Organizations.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98700",
-                "choice": "<p>Use the Organizational view for the AWS Trusted advisor to get a list of resource access from all users in the AWS Organizations.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98700",
-                "choice": "<p>Use AWS Control Tower along with AWS Organizations to get a list of resource access from all users in the AWS Organizations.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98701,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>An IT firm has hybrid connectivity between on-premises location and AWS using AWS Direct Connect links. On-Premises users need to download project files stored in an Amazon S3 bucket. For providing access, IT firms do not want to create IAM users but are looking to use existing credentials created in SAML compatible Identity provider (IdP) deployed at on-premises locations.&nbsp;</p>\n\n<p>Which sequence of events takes place while users access the Amazon S3 bucket?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: B</strong></p>\n\n<p>For providing access to AWS resources, Identity providers can be used instead of creating IAM users. A trust relationship needs to be created between the AWS account and the (Identity provider) IdP. IAM supports IdPs that are compatible with OpenID Connect (OIDC) or SAML 2.0 (Security Assertion Markup Language 2.0).</p>\n\n<p>If a company has an existing IdP, the same can be used by users to get access to AWS resources instead of using new credentials created with IAM. For accessing the Amazon S3 bucket from an on-premises location following sequence of steps needs to be followed,</p>\n\n<ol>\n\t<li>On-Premises users get authenticated with Local Identity providers. This IdP needs to support SAML2 which is compatible with AWS.</li>\n\t<li>IdP sends a SAML assertion to the users.</li>\n\t<li>Users forward this SAML assertion to AWS STS which returns temporary credentials to users for accessing the Amazon S3 bucket.</li>\n\t<li>Using this credential, users can access the Amazon S3 bucket and download project files stored in the Amazon S3 bucket.</li>\n</ol>\n\n<p>The following diagram shows the sequence of events that takes place,</p>\n\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-2.png\" style=\"height:301px; width:750px\" /></p>\n\n<ul>\n\t<li><strong>Option A is incorrect</strong> as LDAP (Lightweight Directory Access Protocol) - based Identity providers do not directly send requests to STS.&nbsp;</li>\n\t<li><strong>Option C is incorrect</strong> as the client needs to send SAML assertion to STS using Assume Role with SAML API and not with Assume Role With Web Identity API.</li>\n\t<li><strong>Option D is incorrect</strong> as LDAP-based Identity providers do not directly send requests to STS. Also, Assume Role with SAML API should be used by the client while sending SAML assertion to STS.</li>\n</ul>\n\n<p>For more information on using SAML identity providers for providing access to users, refer to the following URL,</p>\n\n<ul>\n\t<li><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html</a></li>\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124122,
-            "question_id": 98701,
-            "answers": [
-              {
-                "question_id": "98701",
-                "choice": "<p>1. Users make a request to IdP and get authenticated<br />\n2. IdP sends a SAML assertion to STS using AssumeRolewithSAML API on behalf of the users<br />\n3. STS returns temporary security credentials to IdP<br />\n4. IdP forwards this security credential to users allowing access to the Amazon S3 bucket<br />\n&nbsp;</p>",
-                "feedback": "",
-                "correct": "0"
-              },
-              {
-                "question_id": "98701",
-                "choice": "<p>1. Users make a request to IdP and get authenticated<br />\n2. IdP sends a SAML assertion to users<br />\n3. Users forward this SAML assertion to STS using AssumeRolewithSAML API<br />\n4. STS returns a temporary security credential that allows users to access the Amazon S3 bucket<br />\n&nbsp;</p>",
-                "feedback": "",
-                "correct": "1"
-              },
-              {
-                "question_id": "98701",
-                "choice": "<p>1. Users make a request to IdP and get authenticated<br />\n2. IdP sends a SAML assertion to users<br />\n3. Users forward this SAML assertion to STS using AssumeRoleWithWebIdentity API<br />\n4. STS returns temporary security credentials that allow users to access the Amazon S3 bucket<br />\n&nbsp;</p>",
-                "feedback": "",
-                "correct": "0"
-              },
-              {
-                "question_id": "98701",
-                "choice": "<p>1. Users make a request to IdP and get authenticated<br />\n2. IdP sends a SAML assertion to STS using AssumeRoleWithWebIdentity API on behalf of the users<br />\n3. STS returns temporary security credentials to IdP<br />\n4. IdP forwards this security credential to users allowing access to the Amazon S3 bucket<br />\n&nbsp;</p>",
-                "feedback": "",
-                "correct": "0"
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98702,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A company has applied Service Control Policies (SCP) to an AWS Organization to deny any instance launch other than t2. micro instance type. This AWS Organization comprises a single OU with two accounts: Production and Development. Development accounts need to launch a c5. xlarge instance type for a month&rsquo;s time to perform testing of a new application. Post testing phase, the Development account should only launch the t2. micro instance type. The production account should launch only the t2. micro instance type at all times.</p>\n\n<p>Which combination of changes can be done in SCP to meet this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: B</strong></p>\n\n<p>Service Control policies are a type of AWS Organizations policy to manage permissions within the Organizations. They are applied at the root of the organizations, at the OU (Organization Unit), or at the account level.</p>\n\n<p>SCP applied at the root of the organization affects permission for all OUs and accounts within the AWS Organizations, while SCP applied at the OU level affects permission to all accounts within that OU.</p>\n\n<p>If permission is denied at the level of OU or account, even explicit &ldquo;allow&rdquo; permissions at the OU or account level will not grant the permission. In the above case, an SCP at the root level denies permission to launch instances other than the t2. micro instance type. This permission will be inherited by the OU and both accounts: Production and Development in the OU. To provide permission to only the Development account to launch c5. large instance type following can be performed,</p>\n\n<ol>\n\t<li>Move Development Account to a new OU. Apply a new SCP to this OU to allow the launch of the c5. xlarge instance type.</li>\n\t<li>Remove SCP, which denies launch of instance type other than t2. micro instance type from the root level and apply it to the OU which has a Production account.</li>\n</ol>\n\n<ul>\n\t<li><strong>Option A is incorrect</strong> as SCP at the root level denies the launch of the c5. xlarge instance type;&nbsp;attaching an SCP at OU level to allow the launch of the c5. xlarge instance type won&rsquo;t grant permission.&nbsp;</li>\n\t<li><strong>Option C is incorrect</strong> as allowing the launch of the c5. xlarge instance type in SCP at the root level will allow both the Production and Development accounts.</li>\n\t<li><strong>Option D is incorrect</strong> as SCP at the root level denies the launch of the c5. xlarge instance type;&nbsp;attaching an SCP at the account level to allow the launch of the c5. xlarge instance type won&rsquo;t grant permission.</li>\n</ul>\n\n<p>For more information on attaching SCPs in AWS Organizations, refer to the following URLs,</p>\n\n<ul>\n\t<li><a href=\"https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html\" target=\"_blank\">https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html</a></li>\n\t<li><a href=\"https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_attach.html\" target=\"_blank\">https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_attach.html</a></li>\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124123,
-            "question_id": 98702,
-            "answers": [
-              {
-                "question_id": "98702",
-                "choice": "<p>Create a new OU named Development. Move the Development account to this OU. Create a new SCP allowing access to launch the c5. xlarge instance type. Make no changes to the existing SCP attached to the root.</p>",
-                "feedback": "",
-                "correct": "0"
-              },
-              {
-                "question_id": "98702",
-                "choice": "<p>Create a new OU named Development. Move the Development account to this OU. Create a new SCP allowing to launch c5. xlarge instance type and attach it to the new OU. Detach existing SCP from the root and attach it to the OU which has a Production account.</p>",
-                "feedback": "",
-                "correct": "1"
-              },
-              {
-                "question_id": "98702",
-                "choice": "<p>Detach existing SCP from the root of the Organization. Attach a new SCP which will allow the launch of the c5. xlarge instance type. Post testing phase, revert these SCP.</p>",
-                "feedback": "",
-                "correct": "0"
-              },
-              {
-                "question_id": "98702",
-                "choice": "<p>Attach a new SCP to the Development account which will allow the launch of the c5. xlarge instance type. Make no changes is the existing SCP attached to the root of the Organizations.</p>",
-                "feedback": "",
-                "correct": "0"
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98703,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>Developers in a large telecommunication company are working on a new mobile application for which low latency is a primary requirement. The application deployed with an IPv4 address will be accessed by 5G users of the telecommunication company. Applications will need secure connectivity to the internet to download security patches on a regular basis. Application data needs to be replicated securely to Amazon S3 buckets.</p>\r\n\r\n<p>What solution can a Solution Architect propose for this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<p>Wavelength Zone allows to deploy AWS compute and storage resources at the edge of the telecommunication carrier network. This enables ultra-low latency from the application to the 5G devices and end users. The Wavelength zone has secure high bandwidth connectivity to the AWS. This will allow application data to be securely replicated to the Amazon S3 bucket.</p>\r\n\r\n<p>Carrier gateway provides connectivity between Wavelength Zone and telecommunication carrier as well as devices on the telecommunication carrier network. Carrier gateway allows inbound traffic from the telecommunication carrier network to the Wavelength zone as well as outbound traffic to the telecommunication carrier network and the internet.</p>\r\n\r\n<p>In the above case, the Telecommunication team is looking for low latency for new applications from 5G end users. This can be achieved by deploying applications on Amazon EC2 instances launched in the Wavelength Zone. For Internet access, a carrier gateway can be used. For this, a default route pointing to the Carrier gateway needs to be added to the Wavelength Zone subnet route table.</p>\r\n\r\n<p>Diagram showing instance deployed in Wavelength zone with carrier gateway.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-4.png\" style=\"height:274px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as the Local Zone is an extension of the AWS regions. It&#39;s best suited for deploying resources in multiple locations closer to users. Local Zones are not suitable for deploying applications at the edge of telecommunication carrier 5G network.&nbsp;</li>\r\n\t<li><strong>Option B is incorrect</strong> as for internet access in the Wavelength zone, the Carrier gateway is required and not the NAT gateway.</li>\r\n\t<li><strong>Option C is incorrect</strong> as AWS Outpost allows the deployment of AWS services at the customer premises. For getting low latency from telecommunications 5G networks, applications should be deployed on Amazon EC2 instances launched in the Wavelength zone and not in AWS Outpost.</li>\r\n</ul>\r\n\r\n<p>For more information on AWS Wavelength, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/wavelength/latest/developerguide/carrier-gateways.html\" target=\"_blank\">https://docs.aws.amazon.com/wavelength/latest/developerguide/carrier-gateways.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/wavelength/latest/developerguide/how-wavelengths-work.html\" target=\"_blank\">https://docs.aws.amazon.com/wavelength/latest/developerguide/how-wavelengths-work.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124124,
-            "question_id": 98703,
-            "answers": [
-              {
-                "question_id": "98703",
-                "choice": "<p>Deploy an application on an Amazon EC2 instance launched in AWS Local Zone. For internet access, create a default route in an Egress-only internet gateway attached to the Amazon VPC in the nearest region.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98703",
-                "choice": "<p>Deploy an application on an Amazon EC2 instance launched in AWS Wavelength Zone. For internet access, create a default route in the NAT gateway created in the Amazon VPC.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98703",
-                "choice": "<p>Deploy an application on an Amazon EC2 instance launched in AWS Outpost. For internet access, create a default route in the NAT gateway attached to the Amazon VPC created in the nearest region.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98703",
-                "choice": "<p>Deploy an application on an Amazon EC2 instance launched in AWS Wavelength Zone. For internet access, create a default route in the Carrier gateway attached to the Wavelength zone.</p>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98704,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A start-up firm has deployed thousands of sensors across the globe to capture environmental changes. These sensors send a continuous data log of size less than 4Kb that needs to be analyzed in real-time, and a summary of the environmental data needs to be stored for future requirements. The firm is looking for a cost-effective managed solution to implement this setup in AWS Cloud. The solution should be highly scalable to handle any future growth.</p>\r\n\r\n<p>What solution can be designed to meet this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<p>Amazon Kinesis Data Analytics for Apache Flink is a fully managed service for performing analysis on streaming data. Amazon Kinesis Data Streams is a fully managed scalable service for capturing, processing, and storing data streams. In the above case, streaming data from thousands of sensors can be captured using Amazon Kinesis Data Streams in real-time. Amazon Kinesis Data Analytics can perform an analysis of this streaming data and save the results in an Amazon S3 bucket for future storage. Using Amazon Kinesis Data Analytics for capturing data and Amazon Kinesis Data Analytics for Apache Flink for analysis data provides a cost-effective, scalable solution.&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect</strong> as there is a requirement for real-time data processing.&nbsp;Amazon Data Pipeline is not suitable. Amazon Data Pipeline is suitable for data transfer between AWS services or from on-premises at regular intervals.</li>\r\n\t<li><strong>Option C is incorrect</strong> as there is a requirement for real-time data processing.&nbsp;Amazon Data Pipeline is not suitable. Amazon Data Pipeline is suitable for data transfer between AWS services or from on-premises at regular intervals. Also, storing data from thousands of sensors in Amazon S3 will incur additional charges.</li>\r\n\t<li><strong>Option D is incorrect</strong> as this will require separate software with Amazon EC2 instance to perform analysis of streaming data. This will incur additional costs.</li>\r\n</ul>\r\n\r\n<p>For more information on Amazon Kinesis Data Analytics, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/kinesisanalytics/latest/java/how-it-works.html\" target=\"_blank\">https://docs.aws.amazon.com/kinesisanalytics/latest/java/how-it-works.html</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/kinesis/data-analytics/faqs/?nc=sn&amp;loc=6\" target=\"_blank\">https://aws.amazon.com/kinesis/data-analytics/faqs/?nc=sn&amp;loc=6</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124125,
-            "question_id": 98704,
-            "answers": [
-              {
-                "question_id": "98704",
-                "choice": "<p>Capture the streaming data using Amazon Kinesis Data Streams. Use Kinesis Data Analytics for Apache Flink for the analysis of streaming data and store processed data in Amazon S3.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98704",
-                "choice": "<p>Capture the streaming data using Amazon Data Pipeline. Use Kinesis Data Analytics for Apache Flink for analysis of streaming data and store processed data in Amazon S3.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98704",
-                "choice": "<p>Capture the streaming data using Amazon Data Pipeline. Store the data in Amazon S3 and analyze the data using Amazon Athena. Store the analyzed data in different Amazon S3 buckets.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98704",
-                "choice": "<p>Capture the streaming data using Amazon Kinesis Data Streams and send it to the Amazon EC2 instance. Use KCL libraries on the Amazon EC2 instance to analyze the data.&nbsp;Store the analyzed data in the Amazon S3 bucket.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98705,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A manufacturing company has deployed AWS Managed Microsoft AD for managing a large user base in the AWS cloud. The Security team is looking to capture AD controller events logs, such as failed login attempts or changes made to user groups. The captured logs should be analyzed in real-time, and a dashboard should be created depicting trends and insights of each event.</p>\r\n\r\n<p>How can a solution be designed for this requirement most efficiently?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<p>Amazon OpenSearch Service is a managed service for search and analytical engine use cases supporting OpenSearch and legacy AWS Elasticsearch. It can also be used to create visualizations based on the analyzed data and create a dashboard with data. For the above case, event logs of the Amazon Managed Microsoft AD can be captured using Amazon CloudWatch logs. AWS Lambda can be used to push these logs in real time to Amazon OpenSearch. In Amazon OpenSearch, logs will be analyzed, and a dashboard will be created based on log data.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as this will require additional services to be deployed, such as Amazon Kinesis Data Streams, Amazon Kinesis Data Analytics, Amazon Kinesis Firehose, and Amazon Quick Sight to set up the dashboard. This will incur additional costs and admin work.</li>\r\n\t<li><strong>Option C is incorrect</strong> as with Amazon Kinesis Firehose, data would be sent to Amazon OpenSearch service in near-real time and not in real-time. In real-time, data is sent to Amazon OpenSearch instantaneously while in near-real time, there will be some delay in sending data to Amazon OpenSearch.</li>\r\n\t<li><strong>Option D is incorrect</strong> as with Amazon Kinesis Firehose, data would be sent to Amazon Kinesis Data Analytics in near-real time and not in real-time.</li>\r\n</ul>\r\n\r\n<p>For more information on the analysis of events logs using Amazon OpenSearch service, refer to the following URL,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/modernizing-with-aws/analyze-active-directory-event-logs-using-amazon-opensearch/\" target=\"_blank\">https://aws.amazon.com/blogs/modernizing-with-aws/analyze-active-directory-event-logs-using-amazon-opensearch/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124126,
-            "question_id": 98705,
-            "answers": [
-              {
-                "question_id": "98705",
-                "choice": "<p>Stream event logs from AD controllers to Amazon Kinesis Data Analytics using Amazon CloudWatch Logs and Amazon Kinesis Data Streams. Store the events analyzed in Amazon Kinesis Data Analytics in an Amazon S3 bucket using Amazon Kinesis Firehose. Use Amazon Quick Sight to create a dashboard for trends based on the data stored in Amazon S3.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98705",
-                "choice": "<p>Stream event logs from AD controllers to Amazon OpenSearch Service using Amazon CloudWatch Logs and AWS Lambda. Analyze events in Amazon OpenSearch Service and create a visualization in the Amazon OpenSearch dashboard.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98705",
-                "choice": "<p>Stream event logs from AD controllers to Amazon OpenSearch Service using Amazon CloudWatch Logs and Amazon Kinesis Firehose. Analyze events in Amazon OpenSearch Service and create a visualization in the Amazon OpenSearch dashboard.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98705",
-                "choice": "<p>Stream event logs from AD controllers to Amazon Kinesis Data Analytics using Amazon CloudWatch Logs and Amazon Kinesis Firehose. Analyze the events in Amazon Kinesis Data Analytics and store the results in Amazon Redshift using Amazon Kinesis Firehose. Use Amazon QuickSight to create a dashboard for trends based on the data stored in Amazon Redshift.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98706,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>An IT firm is working on a new application in AWS Cloud. The application needs to capture video files from thousands of smart home devices installed at various locations. Real-time analysis should be performed on the files received from the devices without any changes to the video files, and alerts should be sent to the home users app if any picture matches the video files. All the video files need to be discarded post-analysis. The team is looking for a high-performance scalable solution that can be set up with the least effort.</p>\r\n\r\n<p>What solution can be proposed for this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<p>Amazon Rekognition is a fully managed scalable service for the analysis of images and video files. Amazon Kinesis Video Streams is a secure service to capture streaming videos from various sources and sends them to AWS.</p>\r\n\r\n<p>In the above cases, video files from thousands of smart home devices can be securely captured with Amazon Kinesis Video Streams. Once files are in the Amazon Kinesis Video Streams, it can notify Amazon Recognition to perform real-time analysis on the video files. Once processing is done as per customer requirements to match the picture or object of interest in the files, it can send a notification to the end user. With both Amazon Kinesis Video Streams and Amazon Rekognition, there is no need to build or manage any infrastructure, and it can scale up or down based on the demands. With the support of real-time analysis, there is no need to store these video files in any storage service.&nbsp;</p>\r\n\r\n<p>Typical Deployment of video streaming application using Amazon Kinesis Video Streams and Amazon recognition.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-7.png\" style=\"height:319px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as Amazon Rekognition can directly consume data from Amazon Kinesis Video Streams. There is no need to store data in Amazon DynamoDB.</li>\r\n\t<li><strong>Option B is incorrect</strong> as Since there is no need to transform the data or store the data for future requirements, streaming video files to Amazon Kinesis Video streams is a better option than Amazon Kinesis Firehose.</li>\r\n\t<li><strong>Option D is incorrect</strong> as this will require additional efforts to set up Amazon Kinesis Data Analytics, AWS EventBridge, and Amazon SNS.</li>\r\n</ul>\r\n\r\n<p>For more information on Amazon Rekognition and Amazon Kinesis Video Streams, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/rekognition/connected-home/\" target=\"_blank\">https://aws.amazon.com/rekognition/connected-home/</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/rekognition/media-analysis/?nc=sn&amp;loc=2&amp;dn=1\" target=\"_blank\">https://aws.amazon.com/rekognition/media-analysis/?nc=sn&amp;loc=2&amp;dn=1</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/kinesis/video-streams/features/?nc=sn&amp;loc=2\" target=\"_blank\">https://aws.amazon.com/kinesis/video-streams/features/?nc=sn&amp;loc=2</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124127,
-            "question_id": 98706,
-            "answers": [
-              {
-                "question_id": "98706",
-                "choice": "<p>Capture the video files using Amazon Kinesis Video Streams. Store the data in Amazon DynamoDB. Use Amazon Rekognition to perform analysis on the video files and send an alert to the smart home app.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98706",
-                "choice": "<p>Capture the video files using Amazon Kinesis Firehose. Store the data in an Amazon S3 bucket. Use Amazon Rekognition to perform analysis on the video files and send an alert to the smart home app.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98706",
-                "choice": "<p>Capture the video files using Amazon Kinesis Video Streams. Use Amazon Rekognition to perform analysis on the video files and send an alert to the smart home app.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98706",
-                "choice": "<p>Capture the video files using Amazon Kinesis Data Streams. Use Amazon Kinesis Data Analytics to perform analysis on the video files. Use AWS Event Bridge to notify Amazon SNS which will send an alert to the smart home app.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98707,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>An engineering firm is looking for storing and analyzing the industrial telemetry from thousands of pieces of equipments spread across multiple factories. They have a container-based application with a third-party database at an on-premises location which they want to migrate to AWS Cloud. They are looking for a serverless option for this application without provisioning any infrastructure. There is no requirement to support any open-source API.&nbsp; The firm is looking for a scalable and serverless database to store millions of data points collected from all the equipment in the AWS cloud. These data should be analyzed on a daily basis and provide insight into equipment health.</p>\r\n\r\n<p>How can a solution be designed for this requirement?&nbsp; &nbsp;&nbsp;</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<p>Amazon ECS is a fully managed orchestration service that can be used to deploy, manage and scale containerized applications. Amazon Timestream is a fully managed scalable time series database which can store and analyze trillions of time series data points. With the Fargate launch type, there is no need to provision Amazon EC2 instances for the containers. Based on CPU requirements, AWS runs containers. For scalable serverless time-series databases, Amazon Timestream is an ideal option. It can process trillions of queries quickly without any performance impact. Amazon Kinesis Data Streams and Amazon Kinesis Data Analytics can be used to stream data to the Amazon Timestream. For performing virtualization of the processed data, Amazon QuickSight is a suitable option.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as the firm is not looking for containerized applications to support open-source API. Amazon EKS is not an ideal option.</li>\r\n\t<li><strong>Option B is incorrect</strong> as for deploying applications, the firm is not looking to provision any infrastructure. Amazon ECS with EC2 launch type is not an ideal option. Amazon Timestream is a better option than using Amazon Aurora serverless for storing and analyzing trillions of data points from thousands of equipment.&nbsp;Amazon Aurora Serverless is not a time-series database.</li>\r\n\t<li><strong>Option C is incorrect</strong> as the firm is not looking for containerized applications to support open-source API. Amazon EKS is not an ideal option. Amazon Timestream is a better option&nbsp;than using Amazon Aurora serverless for storing and analyzing trillions of data points from thousands of equipment. Amazon Aurora Serverless is not a time-series database.</li>\r\n</ul>\r\n\r\n<p>For more information on Amazon ECS and Amazon Timestream, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/timestream/latest/developerguide/what-is-timestream.html\" target=\"_blank\">https://docs.aws.amazon.com/timestream/latest/developerguide/what-is-timestream.html</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/ecs/\" target=\"_blank\">https://aws.amazon.com/ecs/</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/containers/amazon-ecs-vs-amazon-eks-making-sense-of-aws-container-services/\" target=\"_blank\">https://aws.amazon.com/blogs/containers/amazon-ecs-vs-amazon-eks-making-sense-of-aws-container-services/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124128,
-            "question_id": 98707,
-            "answers": [
-              {
-                "question_id": "98707",
-                "choice": "<p>Deploy containerized applications using Amazon EKS. Stream data in Amazon Timestream using Amazon Kinesis Data Streams and Amazon Kinesis Data Analytics. Analyze data in Amazon Timestream and virtualize using Amazon QuickSight.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98707",
-                "choice": "<p>Deploy containerized application using Amazon ECS with EC2 launch type. Stream data in Amazon S3 using Amazon Kinesis Data Streams and Amazon Kinesis Data Analytics. Analyze data using Amazon Aurora Serverless and virtualize using Amazon QuickSight.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98707",
-                "choice": "<p>Deploy containerized applications using Amazon EKS. Stream data in Amazon S3 using Amazon Kinesis Data Streams and Amazon Kinesis Data Analytics. Analyze data using Amazon Aurora Serverless and virtualize using Amazon QuickSight.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98707",
-                "choice": "<p>Deploy containerized application using Amazon ECS with Fargate launch type. Stream data in Amazon Timestream using Amazon Kinesis Data Streams. Analyze data in Amazon Timestream and virtualize using Amazon QuickSight.</p>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98708,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>An online retail company is working on an order-processing application using Amazon API Gateway and AWS Lambda. AWS Step functions will be used to coordinate between various components within the application. Some tasks for this application are long-running non-idempotent tasks such as payment processing, while some tasks are high-volume idempotent tasks like sending payment notifications to the customers. The company is looking to create workflows with AWS Step Functions for this requirement in a scalable, cost-effective way.</p>\r\n\r\n<p>How can the workflows be designed for this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<p>AWS Step Functions supports three types of workflows,</p>\r\n\r\n<p>1) Standard Workflows: These are suitable for long-running tasks with exactly-once workflow execution. Pricing for this workflow is based on the number of state transitions. These are suited for non-idempotent workflows such as payment processing or starting an Amazon EMR cluster.</p>\r\n\r\n<p>2) Synchronous Express Workflows: These are suitable for tasks to be completed within 5 minutes. This supports at-most-once workflow execution. Pricing is based on the number of executions run, the duration of each execution, and the memory consumed by each execution. These workflows wait till the execution is completed and then returns the result. These are suitable for parallel tasks, handling errors, or orchestrating microservices.</p>\r\n\r\n<p>3) Asynchronous Express Workflows: These are suitable for tasks to be completed within 5 minutes. This supports at-least-once workflow execution. Pricing is based on the number of executions run, the duration of each execution, and the memory consumed by each execution. These workflows do not wait till the execution is completed. These are suitable for workflows for which immediate response is not required, such as messaging or sending notifications.</p>\r\n\r\n<p>Standard Workflows can be used in the above case for long-running non-idempotent tasks such as payment processing. While for short-duration idempotent tasks such as sending payment notifications, Asynchronous express workflows can be used.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect</strong> as Standard Workflows are suitable for long-running non-idempotent workflows. At the same time, Asynchronous workflows are suitable for short-duration idempotent workflows.</li>\r\n\t<li><strong>Option C is incorrect</strong> as using Standard workflows for the short duration idempotent tasks will incur additional costs. For non-idempotent workflows, Standard workflows are suitable rather than Synchronous express workflows.</li>\r\n\t<li><strong>Option D is incorrect</strong> as Standard Workflows are suitable for long-running non-idempotent workflows, not Asynchronous express workflows.</li>\r\n</ul>\r\n\r\n<p>For more information on workflows with AWS Step Functions, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/step-functions/latest/dg/concepts-express-synchronous.html\" target=\"_blank\">https://docs.aws.amazon.com/step-functions/latest/dg/concepts-express-synchronous.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/step-functions/latest/dg/express-at-least-once-execution.html\" target=\"_blank\">https://docs.aws.amazon.com/step-functions/latest/dg/express-at-least-once-execution.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124129,
-            "question_id": 98708,
-            "answers": [
-              {
-                "question_id": "98708",
-                "choice": "<p>For non-idempotent tasks, use Standard workflows; for idempotent tasks, use Asynchronous Express workflows.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98708",
-                "choice": "<p>For non-idempotent tasks, use Asynchronous Express workflows; for idempotent tasks, use Standard workflows.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98708",
-                "choice": "<p>For non-idempotent tasks, use Synchronous Express workflows; for idempotent tasks, use Standard workflows.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98708",
-                "choice": "<p>For non-idempotent tasks, use Asynchronous Express workflows; for idempotent tasks, use Synchronous workflows.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98709,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A financial company has a large number of Amazon S3 buckets created. Some of these S3 buckets are used by internal company workers, while others are used by external clients to store financial data. For annual audit purposes, the Audit Team is looking for a list of Amazon S3 buckets that are shared with external clients and have any sensitive data stored in those buckets.</p>\r\n\r\n<p>Which actions can be initiated to get this data in the most efficient way?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<p>AWS IAM Access Analyzer can be used to determine AWS resources shared with external entities. Amazon Macie can be used to evaluate data stored in the Amazon S3 bucket to discover any sensitive data. These findings can be saved for further remediations.</p>\r\n\r\n<p>In the above case, to determine Amazon S3 buckets shared with external entities, AWS IAM Access Analyzer can be used to discover any sensitive data stored in these buckets; Amazon Macie is the appropriate service.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as AWS IAM Access advisor can be used to determine permissions granted to IAM users and when the user accessed AWS resources. It cannot be used to determine Amazon S3 buckets that are shared with external entities. Amazon Detective can be used to analyze and investigate potential security issues. It does not detect sensitive data stored in an Amazon S3 bucket.</li>\r\n\t<li><strong>Option C is incorrect</strong> as AWS IAM Access advisor can be used to determine permissions granted to IAM users and when the user accessed AWS resources. It cannot be used to determine Amazon S3 buckets that are shared with external entities. Amazon GuardDuty is an intelligent threat detection service that can continuously monitor AWS accounts and workloads. It does not detect sensitive data stored in an Amazon S3 bucket.</li>\r\n\t<li><strong>Option D is incorrect</strong> as Amazon Inspector can be used with an Amazon EC2 instance for discovering software vulnerabilities. It does not detect sensitive data stored in an Amazon S3 bucket.</li>\r\n</ul>\r\n\r\n<p>For more information on the IAM Access analyzer with Amazon Macie, refer to the following URL,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/security/correlate-iam-access-analyzer-findings-with-amazon-macie/\" target=\"_blank\">https://aws.amazon.com/blogs/security/correlate-iam-access-analyzer-findings-with-amazon-macie/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124130,
-            "question_id": 98709,
-            "answers": [
-              {
-                "question_id": "98709",
-                "choice": "<p>Use AWS IAM Access Advisor to determine Amazon S3 buckets shared with external entities. Use Amazon Detective to detect any sensitive data stored in these buckets.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98709",
-                "choice": "<p>Use AWS IAM Access Analyzer to determine Amazon S3 buckets shared with external entities. Use Amazon Macie to detect any sensitive data stored in these buckets.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98709",
-                "choice": "<p>Use AWS IAM Access Advisor to determine Amazon S3 buckets shared with external entities. Use Amazon GuardDuty to detect any sensitive data stored in these buckets.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98709",
-                "choice": "<p>Use AWS IAM Access Analyzer to determine Amazon S3 buckets shared with external entities. Use Amazon Inspector to detect any sensitive data stored in these buckets.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98710,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>An IT multinational company has created AWS Organizations for managing multiple accounts. AWS Security Hub is integrated with AWS Organizations. Recently this company has merged with another IT company that also hosts resources in AWS Cloud. The merged entity will have separate AWS Organizations, but the Security Head wants to consolidate accounts from both these AWS Organizations under a single Security Hub administrator account.</p>\r\n\r\n<p>What actions can be initiated with the least manual effort?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<p>AWS Security Hub can be integrated with AWS Organizations. AWS Organizations management account designates which member can be a Security Hub administrator account.</p>\r\n\r\n<p>This designated account has the permission to view security findings for all the member accounts in the Organizations. There are two scenarios while adding member accounts part of AWS Organizations in Security Hub,</p>\r\n\r\n<ol>\r\n\t<li>Member accounts that are part of the same AWS Organizations can be added to AWS Security Hub with a manual or automatic process.</li>\r\n\t<li>For adding member accounts that are part of different AWS Organizations, a manual process needs to be initiated to invite those member accounts. These invitations must be sent from the Security Hub administrator account.</li>\r\n</ol>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as Invite should be sent from the Security Hub administrator account, not from the AWS Organizations management account.</li>\r\n\t<li><strong>Option B is incorrect</strong> as Invite should be sent from the Security Hub administrator account, not from the AWS Organizations management account.</li>\r\n\t<li><strong>Option D is incorrect</strong> as Automatic enablement is useful for new members joining the existing AWS Organizations. In the above case, where member accounts are part of different AWS Organizations automatic enablement won&rsquo;t work.</li>\r\n</ul>\r\n\r\n<p>For more information on managing members by invitation for AWS Security Hub, refer to the following URL,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/securityhub/latest/userguide/account-management-manual.html\" target=\"_blank\">https://docs.aws.amazon.com/securityhub/latest/userguide/account-management-manual.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124131,
-            "question_id": 98710,
-            "answers": [
-              {
-                "question_id": "98710",
-                "choice": "<p>Send an invite from the management account of the AWS Organizations which has member accounts to be consolidated with AWS Security Hub.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98710",
-                "choice": "<p>Send an invite from the management account of the AWS Organizations in which Security Hub is integrated.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98710",
-                "choice": "<p>Send an invite from a Security Hub administrator account to the member accounts belonging to different AWS Organizations.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98710",
-                "choice": "<p>Make all members&#39; accounts to be part of both AWS Organizations. Turn on automatic enablement on the Security Hub to consolidate all member accounts in both AWS Organizations to be under a single Security Hub administrator account.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98711,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A message-broking application using WebSocket protocol is deployed at on-premises.</p>\r\n\r\n<p>The company plans to migrate this application to AWS Cloud infrastructure without making any changes in the application code. The primary purpose for application migration to AWS Cloud is to reduce operational overhead and minimize cost. The proposed setup should be scalable and should integrate with the Amazon S3 bucket which will be used for storing messages. Which solution will meet these requirements?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<p>Amazon MQ provides a fully managed service for message-broker applications. It supports protocols such as JMS, NMS, AMQP 1.0 and 0.9.1, STOMP, MQTT, and WebSocket. It&#39;s best suited for deploying message brokers on the AWS cloud with reduced operational overhead and minimizing cost.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect.</strong>&nbsp;Amazon SQS can provide a reliable and high-performance message broker. Since the company is not looking for any changes in the application code, this is not the correct solution.</li>\r\n\t<li><strong>Option B is incorrect.</strong>&nbsp;Amazon SQS can provide a reliable and high-performance message broker. Since the company is not looking for any changes in the application code, this is not the correct solution.</li>\r\n\t<li><strong>Option C is incorrect</strong> because it&#39;s required to reduce operational overhead and minimize cost. Deploying applications on Amazon EC2 instance with RabbitMQ is not the best option. Using Amazon EC2 instances with RabbitMQ will provide more control but will increase operational overhead.</li>\r\n</ul>\r\n\r\n<p>For more information on Amazon MQ, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/amazon-mq/features/\" target=\"_blank\">https://aws.amazon.com/amazon-mq/features/</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/amazon-mq/faqs/\" target=\"_blank\">https://aws.amazon.com/amazon-mq/faqs/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124132,
-            "question_id": 98711,
-            "answers": [
-              {
-                "question_id": "98711",
-                "choice": "<p>Deploy the application in AWS Cloud using Amazon SQS FIFO queues along with Amazon EC2 instance.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98711",
-                "choice": "<p>Deploy the application in AWS Cloud using Amazon SQS Standard queues along with Amazon EC2 instance.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98711",
-                "choice": "<p>Deploy the application in AWS Cloud using RabbitMQ on Amazon EC2 instance.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98711",
-                "choice": "<p>Deploy the application in the AWS cloud using Amazon MQ along with Amazon EC2 instance.</p>",
-                "feedback": "",
-                "correct": 1
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98712,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>An engineering firm is looking to analyze data stored in on-premises locations. The application from&nbsp;which data needs to be analyzed supports only the SFTP protocol to copy the data files. A large amount of data is expected to be analyzed every first week of the month. Data copy and analysis should support this varying size of data without any manual intervention and in a cost-effective manner. Hybrid connectivity using AWS Direct Connect 10 Gig links is already implemented.</p>\n\n<p>What solution can be designed to facilitate this data transfer?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: A</strong></p>\n\n<p>AWS Transfer Family is a fully managed service for transferring data files over SFTP, FTPS, FTP, and AS2 protocol to and from AWS Storage service. It supports dynamic workloads enabling users to avoid any manual changes when there is a spike in data transfer. Once application data is transferred from on-premises to the Amazon S3 bucket using the AWS Transfer family, Amazon Athena can perform analysis of the data directly from the Amazon S3 bucket. Amazon Athena is a scalable, fully managed service that can analyze petabyte-scale data.</p>\n\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-13.png\" style=\"height:281px; width:750px\" /></p>\n\n<ul>\n\t<li><strong>Option B is incorrect</strong> as AWS DataSync is not suitable for moving data with SFTP protocol.</li>\n\t<li><strong>Option C is incorrect</strong> as AWS Storage Gateway does not support SFTP protocol for data transfer. Using third-party tools with Amazon EC2 instance will incur additional costs.</li>\n\t<li><strong>Option D is incorrect</strong> as AWS DataSync is not suitable for moving data with SFTP protocol. Also, storing data in Amazon EFS will incur huge costs.</li>\n</ul>\n\n<p>For more information on using the AWS Transfer family, refer to the following URL,</p>\n\n<ul>\n\t<li><a href=\"https://aws.amazon.com/aws-transfer-family/features/?nc=sn&amp;loc=2&amp;dn=1\" target=\"_blank\">https://aws.amazon.com/aws-transfer-family/features/?nc=sn&amp;loc=2&amp;dn=1</a></li>\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124133,
-            "question_id": 98712,
-            "answers": [
-              {
-                "question_id": "98712",
-                "choice": "<p>Use AWS Transfer family to store files from an on-premises location to Amazon S3. Use Amazon Athena to perform analysis on the data stored in the Amazon S3 bucket.</p>",
-                "feedback": "",
-                "correct": "1"
-              },
-              {
-                "question_id": "98712",
-                "choice": "<p>Use AWS Data Sync to store files from an on-premises location to Amazon S3. Use Amazon Athena to perform analysis on the data stored in the Amazon S3 bucket.</p>",
-                "feedback": "",
-                "correct": "0"
-              },
-              {
-                "question_id": "98712",
-                "choice": "<p>Use AWS Storage Gateway to transfer data from on-premises to Amazon EBS. Use third-party tools deployed on Amazon EC2 instances to analyze data stored in Amazon EBS.</p>",
-                "feedback": "",
-                "correct": "0"
-              },
-              {
-                "question_id": "98712",
-                "choice": "<p>Use AWS Data Sync to store files from an on-premises location to Amazon EFS. Use Amazon Athena to perform analysis on the data stored in the Amazon EFS bucket.</p>",
-                "feedback": "",
-                "correct": "0"
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98713,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A new web application is designed by a developer team using Amazon API Gateway and AWS Lambda. REST APIs will be used for this purpose which will synchronously invoke the AWS Lambda function. The developer team is expecting a huge response to this application and looking for a secure solution for authenticating a large number of clients.&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n\r\n<p>Which solution can be designed for this requirement in the most effective way?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<p>Amazon Cognito user pool can be used to control who can access REST APIs in the API Gateway. With this method,</p>\r\n\r\n<ol>\r\n\t<li>Clients sign up with a user pool.</li>\r\n\t<li>Once clients sign in with a user pool, they obtain an identity token.</li>\r\n\t<li>Clients pass this token with API Gateway to get access to the REST APIs created in the API Gateway.</li>\r\n</ol>\r\n\r\n<p>This method is best suited when there is a need to provide access to a large number of global users.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-14.png\" style=\"height:283px; width:404px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as request parameter-based Lambda authorizers are supported only for WebSocket API and not REST APIs.</li>\r\n\t<li><strong>Option C is incorrect</strong> because there would be a large number of clients accessing these APIs, and using resource policies will not be an efficient way to control access.</li>\r\n\t<li><strong>Option D is incorrect</strong> as IAM-based policies are best suited for controlling access to API from within the AWS Infrastructure. These are not suited to control access for external clients.</li>\r\n</ul>\r\n\r\n<p>For more information on authentication methods with API Gateway, refer to the following URL,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-integrate-with-cognito.html\" target=\"_blank\">https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-integrate-with-cognito.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124134,
-            "question_id": 98713,
-            "answers": [
-              {
-                "question_id": "98713",
-                "choice": "<p>Create a request parameter-based Lambda authorizer. Configure API Gateway to call Lambda authorizer to authenticate clients making a request using REST API.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98713",
-                "choice": "<p>Create users in Amazon Cognito user pools. Create an API Gateway authorizer with this user pool and enable the authorizer on the REST API.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98713",
-                "choice": "<p>Create resource policies matching specific users. Attach this resource policy to Amazon API Gateway which will control access to the APIs.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98713",
-                "choice": "<p>Create an IAM user policy to invoke API. Attach this policy to Amazon API Gateway which will control access to the APIs.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98714,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": 0,
-        "lab_id": 0,
-        "question_text": "<p>A Java-based web application is migrated from On-premises to AWS. Amazon Elastic Beanstalk is used to deploy applications using ALB, Amazon EC2 instances in multiple AZ, and Amazon DynamoDB in provisioned capacity mode. Auto-scaling groups are created with general-purpose Amazon EC2 instances. Post-migration, customers observe a delayed response from web applications during busy hours. Further checks observed that the application performs a non-critical zip archive process causing load on the Amazon EC2 instance.</p>\r\n\r\n<p>How can a solution be redesigned in a cost-effective way to get a better response from the web application?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<p>A worker environment can be deployed with Amazon Elastic Beanstalk for long-running application tasks. Long-running jobs can be sent to the Amazon SQS queue and are further processed by Amazon EC2 instances in the worker environment tier.</p>\r\n\r\n<p>In the above case, an application deployed on an Amazon EC2 instance is getting overwhelmed due to an additional non-critical process of generating zip archives. To remediate this issue in a cost-effective way, the zip process can be decoupled to a separate tier, which in turn can increase the performance of the application during busy hours.</p>\r\n\r\n<p>Diagram showing typical deployment using a web server and worker environment tiers with Amazon Elastic Beanstalk.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-15.png\" style=\"height:471px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect</strong> as the ZIP archive is generally a compute-intensive process. Deploying a memory-intensive Amazon EC2 instance won&rsquo;t be any value addition. Also, using memory-intensive Amazon EC2 instances will be costly. The application can be implemented by decoupling the zip process and decreasing the load on the Amazon EC2 instance.</li>\r\n\t<li><strong>Option C is incorrect</strong> as Amazon EC2 instances with Elastic Fabric Adaptor are more suitable for applications requiring high-level inter-node communications. In the above case, application response is getting affected due to additional non-critical processes running on the Amazon EC2 instance.&nbsp;</li>\r\n\t<li><strong>Option D is incorrect</strong> as since the issue is with overloading of the application due to processing of non-critical tasks of the zip archive, changing capacity mode at the database layer won&rsquo;t help and in turn will be costly.</li>\r\n</ul>\r\n\r\n<p>For more information on Amazon Elastic Beanstalk environments, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features-managing-env-tiers.html\" target=\"_blank\">https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features-managing-env-tiers.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.html\" target=\"_blank\">https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124135,
-            "question_id": 98714,
-            "answers": [
-              {
-                "question_id": "98714",
-                "choice": "<p>Redeploy the application using Elastic Beanstalk worker environments with Amazon SQS and Amazon EC2 instance for the zip archive process. For the front-end, use the web server environment of ALB, Amazon EC2 instance, and Amazon DynamoDB.</p>",
-                "feedback": "",
-                "correct": 1
-              },
-              {
-                "question_id": "98714",
-                "choice": "<p>Redeploy Auto Scaling groups with memory-intensive Amazon EC2 instance instead of general-purpose Amazon EC2 instance.</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98714",
-                "choice": "<p>Redeploy application on Amazon EC2 instance with Elastic fabric Adaptor (EFA).</p>",
-                "feedback": "",
-                "correct": 0
-              },
-              {
-                "question_id": "98714",
-                "choice": "<p>Redeploy the database layer with on-demand capacity mode instead of the provisioned capacity mode of the Amazon DynamoDB.</p>",
-                "feedback": "",
-                "correct": 0
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98861,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>A start-up firm is developing a new three-tier application which collects sensor data from thousands of IoT devices. These small-sized data should be written to the database in a fast efficient way. Data should be stored for a long term for performing analytical queries quickly. Application and web layer solution is already designed. The firm is looking for a database that can provide optimum reads and writes to handle high workloads.</p>\r\n\r\n<p>What solution can be designed for this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<p>Amazon Timestream is a serverless time series scalable database which can be used to store and analyze events. It is less costly than using relational databases for the same purpose. Amazon Timestream has two tiers of storage: a memory store and a magnetic store. Data in both the storage tiers are replicated across multiple Availability zones in a region. Based on retention policies, data can be moved from the memory store to the magnetic store. Memory storage is suitable for high throughput writes and fast point-in-time queries. Magnetic storage is suitable for low throughput writes and fast analytical queries along with long-term data storage.</p>\r\n\r\n<p>Following diagram shows storage with Amazon Timestream,</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-2-1.png\" style=\"height:646px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect </strong>as using Amazon RDS for the time series data will be more costly as compared to the Amazon Timestream.</li>\r\n\t<li><strong>Option C is incorrect </strong>as using Amazon RDS for the time series data will be more costly as compared to the Amazon Timestream.</li>\r\n\t<li><strong>Option D is incorrect </strong>as with Amazon Timestream, for high throughput data writes, a memory store must be used while for fast analytical queries, using a magnetic store is the best option.</li>\r\n</ul>\r\n\r\n<p>For more information on storage with Amazon Timestream, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/timestream/latest/developerguide/storage.html\" target=\"_blank\">https://docs.aws.amazon.com/timestream/latest/developerguide/storage.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/timestream/latest/developerguide/architecture.html\" target=\"_blank\">https://docs.aws.amazon.com/timestream/latest/developerguide/architecture.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124153,
-            "question_id": 98861,
-            "answers": [
-              {
-                "choice": "<p>For fast analytic queries, use magnetic store while for high throughput data writes use memory store with Amazon Timestream</p>",
-                "correct": 1,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>For fast analytic queries, use Provisioned IOPS SSD while for high throughput data writes use General Purpose SSD with Amazon RDS</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>For fast analytic queries, use General Purpose SSD while for high throughput data writes use Provisioned IOPS SSD with Amazon RDS</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>For fast analytic queries, use memory store while for high throughput data writes use magnetic store with Amazon Timestream</p>",
-                "correct": 0,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98862,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>A company has deployed a legacy web application on an instance store-backed Amazon EC2 Linux instance. After the successful deployment in the us-west-1 region, the company is looking to replicate this deployment in other regions for quick deployment. The operations team is looking for a process to create an AMI from the existing Amazon EC2 instance in a cost-effective and efficient way.</p>\r\n\r\n<p>Which steps can a solution architect initiate to meet this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<p>AMI can be created for instance store-backed Linux instance with the following steps,</p>\r\n\r\n<ol>\r\n\t<li>Upload credentials to the instance: This step ensures that AMI is accessed only by the user and the Amazon EC2 instance.</li>\r\n\t<li>Prepare the bundle using the command <em>ec2-bundle-vol</em>: This step creates compressed encrypted files in a /tmp directory. If some files need to be excluded from the bundle, then those files can be excluded with command &ldquo;-e option&rdquo;.</li>\r\n\t<li>Upload bundle to Amazon S3 bucket using the command <em>ec2-upload-bundle</em>:&nbsp; This command uploads the bundle to the Amazon S3 bucket.</li>\r\n\t<li>Register AMI using the <em>register-image</em> command: This step can be used to register an AMI in a specific region.</li>\r\n</ol>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as for creating a bundle with Amazon EC2 instance, the correct command is <em>ec2-bundle-vol </em>and<em> not ec2-bundle-vol. register-volume</em> is an incorrect command to register an AMI.</li>\r\n\t<li><strong>Option C is incorrect</strong> as the Bundle should be uploaded in the Amazon S3 bucket and not in Amazon EBS volumes as it would be more costly. <em>register-instance</em> is an incorrect command to register an AMI.</li>\r\n\t<li><strong>Option D is incorrect</strong> as for creating a bundle with Amazon EC2 instance, the correct command is <em>ec2-bundle-vol </em>and<em> not ec2-bundle-vol. </em>Bundles should be uploaded in the Amazon S3 bucket and not in Amazon EBS volumes as it would be more costly. <em>imagebuilder</em> is an incorrect command to register an AMI.</li>\r\n</ul>\r\n\r\n<p>For more information on creating an AMI from instance stored backed Linux instance, refer to the following URL,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-instance-store-ami.html#amazon_linux_instructions\" target=\"_blank\">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-instance-store-ami.html#amazon_linux_instructions</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124156,
-            "question_id": 98862,
-            "answers": [
-              {
-                "choice": "<p>1. Upload credentials to the instance</p>\r\n\r\n<p>2. Prepare the bundle using the command <em>ec2-bundle-image</em></p>\r\n\r\n<p>3. Upload bundle to Amazon S3 bucket using the command <em>ec2-upload-bundle</em></p>\r\n\r\n<p>4. Register AMI using the <em>register-volume</em> command</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>1. Upload credentials to the instance</p>\r\n\r\n<p>2. Prepare the bundle using the command <em>ec2-bundle-vol</em></p>\r\n\r\n<p>3. Upload bundle to Amazon S3 bucket using the command <em>ec2-upload-bundle</em></p>\r\n\r\n<p>4. Register AMI using the <em>register-image</em> command</p>",
-                "correct": 1,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>1. Upload credentials to the instance</p>\r\n\r\n<p>2. Prepare the bundle using the command <em>ec2-bundle-vol</em></p>\r\n\r\n<p>3. Upload bundle to Amazon EBS volume using the command <em>ec2-upload-bundle</em></p>\r\n\r\n<p>4. Register AMI using the <em>register-instance</em> command</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>1. Upload credentials to the instance</p>\r\n\r\n<p>2. Prepare the bundle using the command <em>ec2-bundle-image</em></p>\r\n\r\n<p>3. Upload bundle to Amazon EBS volume using the command <em>ec2-upload-bundle</em></p>\r\n\r\n<p>4. Register AMI using the <em>imagebuilder</em> command</p>",
-                "correct": 0,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98863,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>A company has deployed a web application in AWS cloud with Amazon EC2 instance and Amazon RDS. Recently there was an outage reported due to Amazon RDS DB instances running out of storage. The operation team restored the DB instance, but the team&rsquo;s head wants you to work on a solution to proactively monitor the DB instance storage and send a notification when storage space is low. Also, since the workload is unpredictable, the management team wants to have RDS instance storage adapt to additional storage requirements without any manual intervention.</p>\r\n\r\n<p>What solution can be implemented for these requirements? (Select TWO)</p>",
-        "mark": 1,
-        "is_partially_correct": true,
-        "question_type": "2",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answers: B and E</strong></p>\r\n\r\n<p>Amazon RDS DB instance&rsquo;s available storage space can be monitored by using the FreeStorageSpace metric in Amazon CloudWatch. To automatically scale up the storage space of the Amazon RDS DB instance, storage autoscaling can be enabled on a DB instance. This feature is suitable for unpredictable workloads which need to have storage space on DB instances to be adjusted as per the demands. Once storage auto-scaling is enabled, Amazon RDS starts modification of the storage space when any of the following conditions are met,</p>\r\n\r\n<ol>\r\n\t<li>Available free storage space is less than 10% of the allocated space.</li>\r\n\t<li>Low-storage conditions last for at least five minutes.</li>\r\n\t<li>At least six hours have passed since the last storage modifications or storage optimization on the DB instance is completed.</li>\r\n</ol>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as using an Amazon EBS instance will not help to resolve storage full issues automatically.</li>\r\n\t<li><strong>Option C is incorrect</strong> as using Provisioned IOPS SSD storage will help to get better performance but will not resolve &lsquo;storage full&rsquo; issues automatically.</li>\r\n\t<li><strong>Option D is incorrect</strong> as the metric to be used with Amazon CloudWatch is FreeStorageSpace and not FreeLocalStorage. FreeLocalStorage is used to determine local storage available for Aurora MySQL and Aurora PostgreSQL.</li>\r\n</ul>\r\n\r\n<p>For more information on troubleshooting Amazon RDS storage-full issues., refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/premiumsupport/knowledge-center/rds-out-of-storage/\" target=\"_blank\">https://aws.amazon.com/premiumsupport/knowledge-center/rds-out-of-storage/</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/premiumsupport/knowledge-center/storage-full-rds-cloudwatch-alarm/\" target=\"_blank\">https://aws.amazon.com/premiumsupport/knowledge-center/storage-full-rds-cloudwatch-alarm/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124157,
-            "question_id": 98863,
-            "answers": [
-              {
-                "choice": "<p>Deploy Amazon RDS on Amazon EBS optimized instance</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Monitor available DB instance storage space by using the FreeStorageSpace metric in Amazon CloudWatch and create a notification if threshold values are exceeded</p>",
-                "correct": 1,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Enable Provisioned IOPS SSD storage type with Amazon RDS DB instance</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Monitor available DB instance storage space by using the FreeLocalStorage metric in Amazon CloudWatch and create a notification if threshold values are exceeded</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Enable Storage autoscaling on an Amazon RDS DB instance</p>",
-                "correct": 1,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98864,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>A media firm is using Amazon S3 buckets to store all their media archives. Recently they have enabled encryptions with SSE-KMS on new S3 buckets containing millions of objects created by all users in the account. The finance team is observing a huge surge in cost since the encryption is enabled for the Amazon S3 bucket and they have engaged you to work on a solution to save cost and with the least admin overhead.</p>\r\n\r\n<p>What solution can be designed in a most cost-effective way?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<p>When a large number of objects stored in an Amazon S3 bucket are encrypted using SSE-KMS, Amazon S3 uses an individual KMS data key for each object. This leads to large volumes of requests to AWS KMS from the Amazon S3 bucket which results in higher costs.<br />\r\nTo reduce this cost, Amazon S3 bucket keys can be used along with SSE-KMS. When Amazon S3 bucket keys are configured with the bucket, AWS generates short-lived bucket keys from AWS KMS which are stored locally in the bucket.</p>\r\n\r\n<p>For all the objects in the bucket, instead of requesting a data key from AWS KMS, Amazon S3 will use a bucket key. This reduces the traffic between Amazon S3 and AWS KMS and in turn decreases costs significantly.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-2-4.png\" style=\"height:477px; width:669px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as this will import the key material used for KMS keys from external entities. This will not help to save costs.</li>\r\n\t<li><strong>Option B is incorrect</strong> as with keys stored in the application, encryption and decryption is managed by the clients. This will require additional admin work from the client end.</li>\r\n\t<li><strong>Option C is incorrect</strong> as configuring server-side encryption with customer-provided keys will require clients to manage encryption of the keys which will be used for encrypting/decrypting of data before it is send to Amazon S3. This will require additional admin work from the client end.</li>\r\n</ul>\r\n\r\n<p>For more information on using Amazon S3 bucket keys, refer to the following URL,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-key.html\" target=\"_blank\">https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-key.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124158,
-            "question_id": 98864,
-            "answers": [
-              {
-                "choice": "<p>Configure key material origin values as External for the KMS keys</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Configure client-side encryption using keys stored within the application</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Configure server-side encryption with customer-provided keys (SSE-C)</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Configure S3 bucket keys for SSE-KMS</p>",
-                "correct": 1,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98865,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>A financial company has deployed a new critical application using Amazon RDS for SQL server as a database in the us-east-1 region. The company is planning to deploy additional databases in a separate region to mitigate against any data loss due to outages in a region. The primary objective of this deployment is to provide the lowest RTO and RPO. The company is looking for cost-effective options that would replicate existing databases to different regions enabling them to restore DB instances quickly and efficiently.&nbsp;</p>\r\n\r\n<p>What architecture can be suggested to meet this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<p>Amazon RDS for SQL server supports managed disaster recovery (DR) using Amazon RDS cross-Region automated backups. This feature enables automated backups of RDS snapshots and Transaction logs in a different region. This helps to restore a new DB instance in different regions, quickly reducing RPO (Recovery Point Objective) and RTO (Recovery Time objective) to minutes.</p>\r\n\r\n<p>For critical databases, restoration can be done to a specific point in time within the backup retention period. DB instances can be restored only in case of disaster in the primary region and there is no need to have a DB instance running all the time in a different region. This option helps to reduce management overhead.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-2-5.png\" style=\"height:345px; width:675px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect</strong> as for using AWS Backup for automated backups of the snapshot, configuration changes will be required to be done in AWS Backup. This will lead to ad-hoc admin work.</li>\r\n\t<li><strong>Option C is incorrect</strong> as this would result in additional cost for storing snapshots in Amazon S3 bucket as well as additional changes for configuring cross-region replication.</li>\r\n\t<li><strong>Option D is incorrect</strong> as appropriate Lambda functions need to be created for backup of snapshots across regions which will lead to ad-hoc admin work.</li>\r\n</ul>\r\n\r\n<p>For more information on managing disaster recovery with Amazon RDS, refer to the following URL,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/database/managed-disaster-recovery-with-amazon-rds-for-sql-server-using-cross-region-automated-backups/\" target=\"_blank\">https://aws.amazon.com/blogs/database/managed-disaster-recovery-with-amazon-rds-for-sql-server-using-cross-region-automated-backups/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124159,
-            "question_id": 98865,
-            "answers": [
-              {
-                "choice": "<p>Enable cross-region automated backup replication on the DB instance. Restore DB instances in different regions using this snapshot</p>",
-                "correct": 1,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Create automated backups of snapshots in different regions using AWS Backup. Restore DB instances in different regions using this snapshot</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Export DB Snapshot data to Amazon S3. Use Cross-region replication With Amazon S3 to copy this snapshot to different regions. Restore DB instances in different regions using this snapshot</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Use AWS Lambda function to create and copy a database snapshot to different regions. Restore DB instances in different regions using this snapshot</p>",
-                "correct": 0,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98866,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>A technological company is planning to deploy thousands of sensors in a city which will capture pollution-related data. The data from these sensors should be captured and stored effectively in the Amazon DynamoDB table for further analysis. The payload data from these sensors should be formatted and stored in a single database table.</p>\r\n\r\n<p>How can a solution be implemented for this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<p>AWS IoT rules allow devices to interact with the AWS services. Rules are analyzed and actions are performed based on MQTT topic streams. Multiple tasks such as below can be performed by AWS IoT rules,</p>\r\n\r\n<ul>\r\n\t<li>Augment or filter data received from a device.</li>\r\n\t<li>Write data received from a device to an Amazon DynamoDB database.</li>\r\n\t<li>Save a file to Amazon S3.</li>\r\n\t<li>Send a push notification to all users using Amazon SNS.</li>\r\n\t<li>Publish data to an Amazon SQS queue.</li>\r\n</ul>\r\n\r\n<p>In the above case, the company wants to collect data from multiple sensors and store them in a single table of DynamoDB. This can be achieved by creating AWS IoT rules which will format the data from multiple sensors and store them in a single table.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because using IoT rules, message brokers can directly store data in the Amazon DynamoDB table. There is no need to invoke AWS Lambda functions to store data in the Amazon DynamoDB table.</li>\r\n\t<li><strong>Option C is incorrect</strong> as AWS IoT FleetWise can be used to collect and transfer vehicle data in near real-time to the AWS Cloud. In the above case, there is no requirement for near real-time data collection from vehicles, but data is to be collected from stationary sensors and stored in the Amazon DynamoDB table.</li>\r\n\t<li><strong>Option D is incorrect</strong> because using IoT rules, message brokers can directly store data in the Amazon DynamoDB table. There is no need to store data in Amazon SQS and then invoke AWS Lambda functions to copy data in the Amazon DynamoDB table.</li>\r\n</ul>\r\n\r\n<p>For more information on creating AWS IoT rules for storing data in the Amazon DynamoDB table, refer to the following URL,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html\" target=\"_blank\">https://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/dynamodb/iot/\" target=\"_blank\">https://aws.amazon.com/dynamodb/iot/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124160,
-            "question_id": 98866,
-            "answers": [
-              {
-                "choice": "<p>Enable AWS IoT Analytics on the sensor data. Use a message broker with MQTT protocol to invoke AWS Lambda functions to store the formatted data in the Amazon DynamoDB table</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Create AWS IoT rules which will capture and send formatted data to the Amazon DynamoDB table</p>",
-                "correct": 1,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Enable AWS IoT FleetWise on the sensor data and store formatted data in the Amazon DynamoDB table</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Create a message broker which will use the MQTT protocol to store sensor data in the Amazon SQS. Use AWS Lambda to read messages from Amazon SQS and copy the formatted data in the Amazon DynamoDB table</p>",
-                "correct": 0,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98867,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>A city traffic department is working on a new application which will capture continuous videos from major locations in a city and store it for future analysis. The captured videos should be compatible with an existing third-party player to view the video. Some users will also use mobile phone browsers to replay these videos.You as a AWS architect is assigned to design a solution to capture videos which should be viewed in third-party players or directly from mobile phone browsers.</p>\r\n\r\n<p>What solution can be designed to meet this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<p>Kinesis Video Streams is a fully managed video streaming service suitable for streaming many-to-one live videos. It helps to capture streaming videos for further analysis or storage or play with third-party players. It supports the following two APIs</p>\r\n\r\n<ol>\r\n\t<li>GetDASHStreamingSessionURL: This API retrieves a MPEG Dynamic Adaptive Streaming over HTTP (DASH) URL for the stream which can be opened in the URL of the media player.</li>\r\n\t<li>GetHLSStreamingSessionURL: This API retrieves an HTTP Live Streaming (HLS) URL for the stream. This URL can be played in a media player or mobile phone browser.</li>\r\n</ol>\r\n\r\n<p>In the above case, to support streaming videos from thousands of devices and playing these videos in both the URL of the media player and mobile phone browser, GetHLSStreamingSessionURL API can be used.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as AWS Elemental MediaLive is a video processing service that can help to create high-quality streams which can be broadcast to TV or internet-connected devices. It is suitable to stream a live video to many users but not suitable for streaming multiple video streams into a single output as with Amazon Kinesis Video Streams.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>\r\n\t<li><strong>Option B is incorrect</strong> as using GetDASHStreamingSessionURL API with Kinesis Video Streams, videos can be played in URL in the media player but not in the mobile phone browser.</li>\r\n\t<li><strong>Option D is incorrect</strong> as Amazon Elastic Transcoder is a media transcoding service in the cloud that can help to transcode media files from the source format into the format supported by the destination devices. It is not a suitable service to stream live videos.</li>\r\n</ul>\r\n\r\n<p>For more information on streaming live videos with Amazon Kinesis Video Streams, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_reader_GetHLSStreamingSessionURL.html\" target=\"_blank\">https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_reader_GetHLSStreamingSessionURL.html</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/kinesis/video-streams/faqs/?nc=sn&amp;loc=5\" target=\"_blank\">https://aws.amazon.com/kinesis/video-streams/faqs/?nc=sn&amp;loc=5</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/iot/choose-the-right-aws-video-service-for-your-use-case/\" target=\"_blank\">https://aws.amazon.com/blogs/iot/choose-the-right-aws-video-service-for-your-use-case/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124161,
-            "question_id": 98867,
-            "answers": [
-              {
-                "choice": "<p>Use AWS Elemental MediaLive to get the streaming live video URL. Use the URL in a third-party player and mobile phone browser to stream the live video</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Create a streaming session using GetDASHStreamingSessionURL API with Kinesis Video Streams. Use the URL returned by this session in a third-party player and mobile phone browser to stream the live video</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Create a streaming session using GetHLSStreamingSessionURL API with Kinesis Video Streams. Use the URL returned by this session in a third-party player and mobile phone browser to stream the live video</p>",
-                "correct": 1,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Use Amazon Elastic Transcoder to get the streaming live video URL. Use the URL in a third-party player and mobile phone browser to stream the live video</p>",
-                "correct": 0,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98868,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>A web application is deployed using Amazon EC2 instance and Network Load Balancer (NLB). To support financial transactions, end-to-end encryption is configured with TLS certificates deployed on Amazon EC2 instances. The Quality Assurance team is observing degradation in application performance. On further analysis, it is found that CPU Utilization of the Amazon EC2 instance is hitting more than 80% constantly. The IT head is looking for a solution that can provide a better application performance even when demand for this application surges.</p>\r\n\r\n<p>How can applications be redesigned for better performance with minimal changes in the existing setup?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<p>Network Load Balancer supports TLS (Transport Layer Security) traffic and sets up a connection with the target instance over TCP or TLS. Performing a compute intensive workload of encrypting and decrypting the traffic on Amazon EC2 instances, may lead to high CPU utilization and performance degradation.&nbsp; By configuring a TLS listener on NLB, encryption and decryption is handled by the NLB which can provide low latency and can handle high throughput traffic.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as using AWS CloudHSM will be costly and will not be efficient as customers who are using AWS CloudHSM will require to manage TLS certificates on AWS CloudHSM.</li>\r\n\t<li><strong>Option B is incorrect</strong> as this will require radical changes in application setup, with the additional configuration of Amazon CloudFront and AWS ACM.</li>\r\n\t<li><strong>Option C is incorrect</strong> as TLS renegotiations are not supported on NLB. This will not minimize load on the Amazon EC2 instance.</li>\r\n</ul>\r\n\r\n<p>For more information on TCP listeners on NLB, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/elasticloadbalancing/latest/network/create-tls-listener.html\" target=\"_blank\">https://docs.aws.amazon.com/elasticloadbalancing/latest/network/create-tls-listener.html</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/aws/new-tls-termination-for-network-load-balancers/\" target=\"_blank\">https://aws.amazon.com/blogs/aws/new-tls-termination-for-network-load-balancers/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124162,
-            "question_id": 98868,
-            "answers": [
-              {
-                "choice": "<p>Configure TLS offloading with TLS certificates deployed on AWS CloudHSM instead of Amazon EC2 instance</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Configure Amazon CloudFront infront of NLB. Amazon CloudFront will use TLS certificates stored in AWS Certificate Manager</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Configure TLS renegotiations between NLB and Amazon EC2 instance</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Configure TLS listener on Network Load Balancer using port 443</p>",
-                "correct": 1,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98869,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>The developer team has developed a new application with Amazon S3, Amazon Event Bridge and third-party API destinations. The application users store thousands of images in an Amazon S3 bucket. Amazon EventBridge routes Amazon S3 events to the external API endpoints. Due to high volumes, a considerable delay is observed in forwarding these events to the external API endpoints. The Operations Head is looking for storing the events which are not delivered so that separate processing of these events can be performed.</p>\r\n\r\n<p>Which of the following combination of actions can be suggested to avoid delay and ensure all events are stored durably?</p>",
-        "mark": 1,
-        "is_partially_correct": true,
-        "question_type": "2",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answers: A and&nbsp;E</strong></p>\r\n\r\n<p>Invocation is the event matching the rules and in turn forwarded to the target. After an invocation quota is reached in a region, Amazon EventBridge throttles the events and is sent to the target with a delay. The Invocation quota has a soft limit of 18,750 requests per second in the US west region. This soft limit varies in different regions and the latest count can be checked from AWS documentation.</p>\r\n\r\n<p>In the above case, due to high volumes, the invocation quota might result in a delay in forwarding events to the external API endpoint. To avoid reaching the quota limit, an invocation rate limit can be set for the destination. This will limit the surge in traffic and any traffic exceeding the limit will be queued in the EventBridge and forwarded later within the rate limit.</p>\r\n\r\n<p>To store any undelivered events, a dead letter queue needs to be created on the event bus and store the messages in Amazon SQS for further processing.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-2-9.png\" style=\"height:432px; width:720px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect</strong> as connections are used with API destinations to define authorization parameters that are used to connect to the HTTP endpoint. Setting this limit will not impact the delay as the connections are not the cause of the delay.</li>\r\n\t<li><strong>Option C is incorrect </strong>as events need to be stored in the Amazon SQS and not in the Amazon SNS.</li>\r\n\t<li><strong>Option D is incorrect</strong> as API Destination limits are the number of external API endpoints to which Amazon EventBridge forwards the events. Setting this limit will not impact the delay as the external API endpoints are not the cause of the delay.</li>\r\n</ul>\r\n\r\n<p>For more information on Amazon EventBridge quotas, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-quota.html#eb-invocations-limits\" target=\"_blank\">https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-quota.html#eb-invocations-limits</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/compute/using-api-destinations-with-amazon-eventbridge/\" target=\"_blank\">https://aws.amazon.com/blogs/compute/using-api-destinations-with-amazon-eventbridge/</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124163,
-            "question_id": 98869,
-            "answers": [
-              {
-                "choice": "<p>Set up an invocation time limit for the API destination</p>",
-                "correct": 1,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Set up a connection limit for the API destination</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Set up a dead letter queue on the event bus and store the events in Amazon SNS for further processing</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Set up an API destination limit for the destination</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Set up a dead letter queue on the event bus and store the events in Amazon SQS for further processing</p>",
-                "correct": 1,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98870,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>An engineering firm is using a web application deployed with AWS Elastic Beanstalk. For this application they have configured user pools with custom domains for Amazon Cognito. To comply with audit findings,the Operations Team is working on deleting all existing ACM certificates and updating them with new ones. While deleting some of the ACM certificates, they are getting an error as &quot;The certificate is in use (associated with other AWS resources) and cannot be deleted. Disassociate the certificate from each resource in the list and try again.&quot; They are seeking your consultation to resolve this ACM certification error.</p>\r\n\r\n<p>What suggestion can be provided for the requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer:&nbsp;B</strong></p>\r\n\r\n<p>To delete an ACM certificate, first all the associations of the certificate with AWS resources should be removed. When a custom domain is added to the Amazon Cognito user pool, a CloudFront distribution is created with which the ACM certificate is associated. This CloudFront distribution is owned by Amazon Cognito and not by the individual account. To remove this certificate associated with CloudFront distribution following two actions can be initiated,</p>\r\n\r\n<ol>\r\n\t<li>Delete the custom domain name for Amazon Cognito:&nbsp; This will delete the CloudFront distribution created by Amazon Cognito along with associated ACM certificates.</li>\r\n\t<li>Remove the association of the ACM certificate with the CloudFront distribution: By updating the ACM certificate associated with the custom domain of Amazon Cognito, the original ACM certificate can be deleted.</li>\r\n</ol>\r\n\r\n<ul>\r\n\t<li><strong>Options A, C&nbsp;and D are incorrect </strong>as with custom domains for Amazon Cognito, a CloudFront distribution is created to which the ACM certificate is associated, so the association should be removed from CloudFront, not with the Application Load balancer.</li>\r\n</ul>\r\n\r\n<p>For more information on the deletion of AWS ACM certificates, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/premiumsupport/knowledge-center/acm-certificate-resources/\" target=\"_blank\">https://aws.amazon.com/premiumsupport/knowledge-center/acm-certificate-resources/</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-add-custom-domain.html\" target=\"_blank\">https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-add-custom-domain.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124164,
-            "question_id": 98870,
-            "answers": [
-              {
-                "choice": "<p>Remove the association of the existing ACM certificate with the Application Load balancer by updating the ACM certificate associated with the custom domain of Amazon Cognito</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Remove the association of the existing ACM certificate with the CloudFront distribution by updating the ACM certificate associated with the custom domain of Amazon Cognito</p>",
-                "correct": 1,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Remove the association of the existing ACM certificate with the API Gateway by updating the ACM certificate associated with the custom domain of Amazon Cognito</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Remove the association of the existing ACM certificate with the AWS Elastic Beanstalk by updating the ACM certificate associated with the custom domain of Amazon Cognito</p>",
-                "correct": 0,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98871,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>A trading consortium has created a private blockchain network using Amazon Managed Blockchain with Hyperledger Fabric framework. There are multiple AWS accounts as members of this network. VPC Private endpoints are created to enable all members access the resources. They have tied up with a new distributor which needs to be part of this network. Distributors should seamlessly join this network and access the Hyperledger Fabric resources.</p>\r\n\r\n<p>What combination of steps should a solution architect initiate to meet these requirements?&nbsp; (Select TWO)</p>",
-        "mark": 1,
-        "is_partially_correct": true,
-        "question_type": "2",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answers: C and E</strong></p>\r\n\r\n<p>Amazon Managed Blockchain is a fully managed service that helps to easily join public networks or create and manage scalable private networks.&nbsp; It supports open-source frameworks such as Hyperledger Fabric and Ethereum.</p>\r\n\r\n<p>With Amazon Managed Blockchain network, each AWS account that is a member of the network has an equal ownership stake in all the resources. Voting rules for each member account are specified during network creation. For inviting a new member to be part of the blockchain network, a proposal has to be created. All existing member accounts vote on this proposal and based upon approval, an invitation is sent to a new account to join the network. Amazon Managed Blockchain creates an endpoint to communicate with the Hyperledger Fabric resources. To access these endpoints, the VPC Privatelink endpoint needs to be created in the account. For multiple members in the AWS account, a single VPC PrivateLink endpoint has to be created.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-2-11.png\" style=\"height:246px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as for Amazon Managed Blockchain network, governance is distributed among all the members who have joined the network. For inviting new accounts to join the network, all the current members and not just the administrator would approve based upon the voting rules of the network.</li>\r\n\t<li><strong>Option B is incorrect</strong> as it is not required to create a VPC PrivateLink endpoint from all the current members to any account. VPC PrivateLink endpoint needs to be created from the account which needs to access the network.</li>\r\n\t<li><strong>Option D is incorrect</strong> as even if there are multiple members in the AWS account, a single VPN PrivateLink endpoint is required to be created.</li>\r\n</ul>\r\n\r\n<p>For more information on Amazon Managed Blockchain, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/managed-blockchain/\" target=\"_blank\">https://aws.amazon.com/managed-blockchain/</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/managed-blockchain/faqs/?nc=sn&amp;loc=6\" target=\"_blank\">https://aws.amazon.com/managed-blockchain/faqs/?nc=sn&amp;loc=6</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124165,
-            "question_id": 98871,
-            "answers": [
-              {
-                "choice": "<p>Create a proposal for inviting other AWS accounts to the blockchain network. Once a proposal is approved by an administrator in the network, other AWS accounts will receive the invite</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Create a new VPC PrivateLink endpoint from all the current member VPC to new account VPC to enable access to Hyperledger Fabric resources</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Create a single VPC PrivateLink endpoint for all members in the AWS account from which Hyperledger Fabric resources will be accessed</p>",
-                "correct": 1,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Create multiple VPC PrivateLink endpoints for each member in the AWS account from which Hyperledger Fabric resources will be accessed</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Create a proposal for inviting other AWS accounts to the blockchain network. Once a proposal is approved by current members of the network, other AWS accounts will receive the invite</p>",
-                "correct": 1,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      },
-      {
-        "question_id": 98872,
-        "topic_id": 367,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>The company has application servers running on Windows operating systems at on-premises locations for which it is looking for a low-cost disaster recovery tool in the AWS cloud. The company is expecting RPO in seconds while RTO should be in minutes. To control Recovery instances in an AWS Cloud, standard Amazon EC2 launch templates must be used.</p>\r\n\r\n<p>What solution can be designed for this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<p>AWS Elastic Disaster Recovery (AWS DRS)&nbsp; is a cost-effective scalable tool for application recovery in AWS. AWS DRS initiates data replication to AWS resources using affordable storage and minimal compute resources.&nbsp; During disruptions, applications can be recovered by launching recovery instances in the AWS cloud and using a point-in-time server state. This helps to achieve RPO in seconds while RTO in minutes. For launching recovery instances, AWS DRS also supports using standard EC2 launch templates.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-2-12.png\" style=\"height:262px; width:645px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as the AWS Transfer family is suitable for transfer of files using FTP/SFTP protocol. It is not a suitable tool for disaster recovery.</li>\r\n\t<li><strong>Option B is incorrect</strong> as with AWS Backup, lower RPO and RTO targets cannot be met.</li>\r\n\t<li><strong>Option C is incorrect</strong> as CloudEndure Disaster Recovery does not support using standard Amazon EC2 instance launch templates to control Recovery instances.</li>\r\n</ul>\r\n\r\n<p>For more information on AWS DRS, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/disaster-recovery/faqs/?nc=sn&amp;loc=4\" target=\"_blank\">https://aws.amazon.com/disaster-recovery/faqs/?nc=sn&amp;loc=4</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124166,
-            "question_id": 98872,
-            "answers": [
-              {
-                "choice": "<p>Use AWS Transfer family to automate data copy from on-premises applications servers to AWS. During a disaster, launch an EC2 instance in AWS Cloud using this application data</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Use AWS Backup to automate data copy from on-premises applications servers to AWS. During a disaster, launch an EC2 instance in AWS Cloud using this application data</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Setup CloudEndure Disaster Recovery on application servers deployed at the on-premise location</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Set up AWS Elastic Disaster Recovery (AWS DRS) on application servers deployed at the on-premise location</p>",
-                "correct": 1,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Continuous Improvement for Existing Solutions"
-      },
-      {
-        "question_id": 98873,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>A telecommunications service provider is building a new application in an AWS Wavelength zone. This application is deployed on an Amazon EC2 instance launched in two Wavelength Zones 1 and 2 belonging to a single VPC A. Amazon EC2 instance can communicate with parent VPC and Internet. For synchronization traffic between the applications in two Wavelength zones, connectivity needs to be established between the Amazon EC2 instance. Connectivity should be established with fine-grain control allowing only specific Amazon EC2 instances to communicate from both Wavelength zones.</p>\r\n\r\n<p>What solution can be proposed for this additional connectivity?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<p>Amazon EC2 instances launched in two different Wavelength Zones associated with a single VPC cannot communicate with each other. To enable this communication, 2 different VPCs need to be created. Each Wavelength zone is associated with each VPC. Transit Gateway can be used to enable communication between these VPCs.</p>\r\n\r\n<p>In the above case, Wavelength Zone 1 is associated with VPC A while Wavelength Zone 2 is associated with VPC B. To enable communication between instances in Wavelength Zone 1 and Wavelength Zone 2, Transit Gateway should be used to establish routing between VPC A and VPC B.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/sap-2-13.png\" style=\"height:393px; width:529px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect</strong> as the Instance associated with subnets part of two different Wavelength Zones in a single VPC cannot communicate with each other.</li>\r\n\t<li><strong>Option C is incorrect</strong> as with VPC peering all subnets will be allowed to communicate with each without any control, which is not required as per the requirement.</li>\r\n\t<li><strong>Option D is incorrect</strong> as a single subnet cannot be spanned across two Wavelength zones.</li>\r\n</ul>\r\n\r\n<p>For more information on extending Amazon VPC, refer to the following URL,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/vpc/latest/userguide/Extend_VPCs.html\" target=\"_blank\">https://docs.aws.amazon.com/vpc/latest/userguide/Extend_VPCs.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124167,
-            "question_id": 98873,
-            "answers": [
-              {
-                "choice": "<p>Create a new VPC B. Associate subnet in existing VPC A &nbsp;with Wavelength zone 1. Create a subnet in VPC B and associate it with Wavelength zone 2. Use Transit Gateway to enable communication between instances launched in Wavelength Zone 1 and Wavelength Zone 2</p>",
-                "correct": 1,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Create two new subnets in existing VPC A and associate them with Wavelength zone 1 and Wavelength zone 2. Configure routing in the carrier gateway in each Wavelength zone to allow communication between the instances</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Create a new VPC B. Associate subnet in existing VPC A with Wavelength zone 1. Create a subnet in VPC B and associate it with Wavelength zone 2. Use VPC Peering to enable communication between instances launched in Wavelength Zone 1 and Wavelength Zone 2</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Create a single new subnet in VPC A and associate it with Wavelength zone 1 and Wavelength zone 2. Configure routing in the carrier gateway in each Wavelength zone to allow communication between the instances via the parent region VPC</p>",
-                "correct": 0,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98874,
-        "topic_id": 2687,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>An engineering firm has a large number of Amazon S3 buckets launched in their AWS account. Internal and external users need to have different permission to store data in these Amazon S3 buckets. Access should be granted based on AWS security best practices of least privileges. The permissions should be efficiently granted considering the large volume of buckets and users in this account. A sample policy needs to be created for the bucket name my_test_bucket.</p>\r\n\r\n<p>Which of the following policies is most suitable for the requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<p>When there is a need for controlling permissions on a large number of Amazon S3 buckets, IAM policies are better suited than using Amazon S3 bucket policy.</p>\r\n\r\n<p>Applying and managing resource policies on a large number of S3 buckets will lead to additional admin work.</p>\r\n\r\n<p>With IAM policies, different policies can be created based on permissions to be granted to users. Users can be added to a group to avoid IAM policies being created for each user separately.</p>\r\n\r\n<p>All the S3 bucket policies will have the &ldquo;Principal &#39;&#39; JSON element which identifies the principals that the bucket policy will access. In the IAM policy &ldquo;Principal &#39;&#39; JSON element is missing as it is the entity to which the IAM policy is applied.</p>\r\n\r\n<p>In the above case, the IAM policy can be created to allow all S3 actions to be performed on a specific bucket name as my_test_bucket. Based on the permission required, different IAM policies can be created and applied to individual users or a group of users to grant access to different S3 buckets.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> as this IAM policy will allow all actions to be done on all the S3 buckets created in the Amazon S3.</li>\r\n\t<li><strong>Option C is incorrect</strong> as this S3 bucket policy will allow user ABC full access to the bucket name my_test_bucket. Since there will be thousands of S3 buckets, maintaining a bucket policy for each user on every bucket will incur additional admin overhead.</li>\r\n\t<li><strong>Option D is incorrect</strong> as since the Principal element is mentioned this is an S3 Bucket policy that will allow all users in the account 123456789000 to perform all actions on all the buckets created in Amazon S3. This will be against the requirements of having different permission for internal and external users.</li>\r\n</ul>\r\n\r\n<p>For more information on AWS IAM policies, refer to the following URLs,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/\" target=\"_blank\">https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124168,
-            "question_id": 98874,
-            "answers": [
-              {
-                "choice": "<pre class=\"brush:jscript;\">\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: [\r\n&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: &quot;s3:*&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: [&quot;arn:aws:s3:::*&quot;]\r\n&nbsp;&nbsp;&nbsp; }\r\n&nbsp; ]\r\n}\r\n</pre>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<pre class=\"brush:jscript;\">\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;:[{\r\n&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Action&quot;: &quot;s3:*&quot;,\r\n&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: [&quot;arn:aws:s3:::my_test_bucket/*&quot;]\r\n&nbsp;&nbsp;&nbsp; }\r\n&nbsp; ]\r\n}\r\n</pre>",
-                "correct": 1,
-                "feedback": ""
-              },
-              {
-                "choice": "<pre class=\"brush:java;\">\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: [\r\n&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Principal&quot;: {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;AWS&quot;: [&quot;arn:aws:iam::123456789000:user/ABC&quot;]\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: &quot;s3:*&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: [&quot;arn:aws:s3::: my_test_bucket/*&quot;]\r\n&nbsp;&nbsp;&nbsp; }\r\n&nbsp; ]\r\n}\r\n</pre>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<pre class=\"brush:jscript;\">\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: [\r\n&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Principal&quot;: {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;AWS&quot;: [&quot;arn:aws:iam::123456789000:user/*&quot;]\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: &quot;s3:*&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: [&quot;arn:aws:s3:::*&quot;]\r\n&nbsp;&nbsp;&nbsp; }\r\n&nbsp; ]\r\n}\r\n</pre>",
-                "correct": 0,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design Solutions for Organizational Complexity"
-      },
-      {
-        "question_id": 98875,
-        "topic_id": 364,
-        "course_id": null,
-        "case_study_id": null,
-        "lab_id": 0,
-        "question_text": "<p>A service provider firm is planning to deploy AWS IoT solutions across multiple countries in the Europe region. They will be deploying IoT devices in farms to gather environmental data. Some of the farm locations are remote locations where there are connectivity challenges. The firm is looking to perform local compute functionalities on remote devices and upload processed data securely in an encrypted format to the IoT core. The proposed solution should be scalable to thousands of devices and survive connectivity issues for data synchronization.</p>\r\n\r\n<p>How can a solution be designed for this requirement?</p>",
-        "mark": 1,
-        "is_partially_correct": false,
-        "question_type": "1",
-        "difficulty_level": "0",
-        "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<p>AWS IoT Greengrass is a software service that can help to run local compute, messaging, data caching, sync, and ML inference capabilities for connected devices. This allows data on the devices to synchronize AWS IoT Core. AWS IoT Greengrass allows the synchronization of data even when there are disruptions in connectivity. AWS IoT Greengrass will act as a gateway to upload data to the IoT Core.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect</strong> as AWS IoT Device Management is suitable for cloud-based device management and remote management of IoT devices. It is not a suitable option for running local compute on remote IoT devices.</li>\r\n\t<li><strong>Option C is incorrect</strong> as AWS IoT Device Defender is best suited for monitoring IoT device configurations so that they do not deviate from security best practices. It is not a suitable option for running local compute on remote IoT devices.</li>\r\n\t<li><strong>Option D is incorrect</strong> as AWS IoT SiteWise is suitable for collecting, storing, organizing, and visualizing streaming data from thousands of sensors across multiple industrial facilities. It is not a suitable option for running local compute on remote IoT devices.</li>\r\n</ul>\r\n\r\n<p>For more information on security options with AWS IoT Greengrass, refer to the following URL,</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws/aws-iot-greengrass-software-for-edge-computing.html\" target=\"_blank\">https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws/aws-iot-greengrass-software-for-edge-computing.html</a></li>\r\n</ul>",
-        "is_active": true,
-        "answer_list": [
-          {
-            "question_answer_id": 124169,
-            "question_id": 98875,
-            "answers": [
-              {
-                "choice": "<p>Use AWS IoT Greengrass with connected devices located globally</p>",
-                "correct": 1,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Use AWS IoT Device Management with connected devices located globally</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Use AWS IoT Device Defender with connected devices located globally</p>",
-                "correct": 0,
-                "feedback": ""
-              },
-              {
-                "choice": "<p>Use AWS IoT SiteWise with connected devices located globally</p>",
-                "correct": 0,
-                "feedback": ""
-              }
-            ]
-          }
-        ],
-        "topic_name": "Design for New Solutions"
-      }
-    ]
-  }
+  "msg": "Quiz Questions",
+  "data": [
+    {
+      "question_id": 98175,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You help a team to create various AMIs and Docker images through EC2 Image Builder pipelines. Other teams want to use the same EC2 Image Builder resources, including components, recipes and images in their image pipelines. You need to find a proper approach to share resources with other organizational units inside the AWS Organization or other specific AWS accounts. Which of the following methods is suitable?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer​:​ D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect </strong>because you need to configure resource shares instead of shared pipelines in AWS RAM.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect </strong>because you cannot directly share components, recipes or images through EC2 Image Builder. Instead, RAM should be used.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect </strong>because image pipelines cannot be used to share EC2 Image Builder resources such as components or recipes.</li>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT</strong> because RAM is appropriate for users to share EC2 Image Builder resources. Take the following snapshot as an example:<br />\r\n\t<img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/cs2.png\" style=\"height:325px; width:750px\" /></li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-shared-resources.html#manage-shared-resources-share\" target=\"_blank\">https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-shared-resources.html#manage-shared-resources-share</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122863,
+          "question_id": 98175,
+          "answers": [
+            {
+              "choice": "<p>In AWS Resource Access Manager (RAM), create shared pipelines by selecting the shared components, images, or recipes in EC2 Image Builder and select the target organizational units or AWS accounts</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>In the EC2 Image Builder, select the shared resources such as components, recipes or images and distribute the resources to other organizational units or AWS accounts</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>In the EC2 Image Builder image pipelines, share the resources to other organizational units or AWS accounts after the pipelines are finished successfully</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>In AWS Resource Access Manager (RAM), add the shared components, images, or recipes in resource shares and configure the principals which are allowed to access the shared resources</p>",
+              "correct": 1,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98176,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your company uses a hybrid environment to host its infrastructure and services. Applications are mainly deployed in AWS. As a part of the company strategy, certain Amazon EC2 instances need to be exported through the VM Import/Export tool as OVA files and deployed in the on-premises VMware vSphere environment. How would you use the VM Import/Export tool in the right way?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer:​ C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because Server Migration Connector is a component of AWS Server Migration Service, and it is not used by the VM Import/Export tool.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect </strong>because the VM Import/Export tool cannot be used to deploy the AWS discovery tools. Discovery Tools are used by AWS Migration Hub to plan the migration from data centers to AWS.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong> because VM Import/Export uses the AWS CLI command &ldquo;aws ec2 create-instance-export-task&rdquo; to export an EC2 instance. i.e. &ldquo;aws ec2 create-instance-export-task --instance-id my-instance-id --target-environment vmware --export-to-s3-task file://C:\\file.json&rdquo;. This CLI command creates an OVA file in an S3 bucket. The OVA file will be used to launch VMs in VMware vSphere.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect </strong>because &ldquo;aws ec2 export-image&rdquo; is used to export a VM directly from an Amazon Machine Image (AMI). Please refer to the below.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html\" target=\"_blank\">https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport_image.html\" target=\"_blank\">https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport_image.html</a>&nbsp;</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122864,
+          "question_id": 98176,
+          "answers": [
+            {
+              "choice": "<p>Use the VM Import/Export tool to install the Server Migration Connector, generate ova files and migrate the EC2 instances to VMware vSphere</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use the VM Import/Export tool to deploy the AWS discovery tools in EC2 instances and trigger migration jobs to VMware vSphere</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use the &ldquo;aws ec2 create-instance-export-task&rdquo; command to export EC2 instances and store the exported ova files in an S3 bucket</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use the &ldquo;aws ec2 export-image&rdquo; command to export EC2 instances and download the exported ova files in a local disk</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98177,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your team is developing a new Lambda function for a microservice component. You need to package and deploy the Lambda function as a container image. The container image should be built based on the python:buster image with other dependencies and libraries installed. In order to use the container image properly for the Lambda function, which of the following actions is required?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer​: D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because there is no need to assume the IAM role in the Dockerfile. Users should configure the IAM role when creating the Lambda function.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect </strong>because Lambda automatically forwards logs to CloudWatch Logs. Users do not need to install the CloudWatch agent in Dockerfile.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect </strong>because after the Docker image has been built, users should push the image to ECR. There is no ECR agent that needs to be installed in the Docker image.</li>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT </strong>because the container image for Lambda must implement the Lambda Runtime API that is added by the open-source runtime interface client.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/aws/new-for-aws-lambda-container-image-support/\" target=\"_blank\">https://aws.amazon.com/blogs/aws/new-for-aws-lambda-container-image-support/</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/lambda/latest/dg/images-create.html\" target=\"_blank\">https://docs.aws.amazon.com/lambda/latest/dg/images-create.html</a>&nbsp;</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122865,
+          "question_id": 98177,
+          "answers": [
+            {
+              "choice": "<p>In the Dockerfile, assume the IAM role through the &ldquo;aws sts assume-role&rdquo; CLI for the Lambda function during runtime</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Install the CloudWatch Log agent in the container image for the Lambda function to forward its logs to a CloudWatch Log group</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Install the Amazon Elastic Container Registry (Amazon ECR) agent for the Lambda function to interact with ECR to fetch the Docker image</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Install the runtime interface client in the container image to make it compatible with Lambda</p>",
+              "correct": 1,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98178,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your team uses Elastic Beanstalk to manage a legacy JAVA application for a financial system. The Elastic Beanstalk environment is based on Amazon Linux. Now you need to update the operating system to Amazon Linux 2 in order to take advantage of the latest Elastic Beanstalk functionality. During the update, there should be minimal service impact to the application. Which of the following options describes the correct order to perform the operating system update?</p>\r\n\r\n<p>1. Turn the new environment into the production environment by swapping its CNAME with the existing environment&#39;s CNAME.</p>\r\n\r\n<p>2.&nbsp;In the Elastic Beanstalk console, select the environment and update the platform to Amazon Linux 2.</p>\r\n\r\n<p>3.&nbsp;Create a new environment in Elastic Beanstalk and deploy the application code to it.</p>\r\n\r\n<p>4.&nbsp;Find and fix any application compatibility issues in the Amazon Linux 2 environment.</p>\r\n\r\n<p>5.&nbsp;Terminate the old Elastic Beanstalk environment.</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect </strong>because terminating the old environment is not the correct procedure to update the operating system. So, step 5 should not be in the first position.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect</strong> because step 2 is the unwanted step that does not describe any updates.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong> because this sequence describes the blue/green update strategy by creating a new environment, testing it and then swapping the DNS for the production environment.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect </strong>because issues cannot be followed before creating and deploying the code. The sequence does not describe any of the update strategies.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-platform-update-managed.html\" target=\"_blank\">https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-platform-update-managed.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.platform.upgrade.html\" target=\"_blank\">https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.platform.upgrade.html</a>&nbsp;</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122866,
+          "question_id": 98178,
+          "answers": [
+            {
+              "choice": "<p>5 &gt; 2 &gt; 1 &gt; 4</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>2 &gt; 3 &gt; 1 &gt; 5</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>3 &gt; 4 &gt; 1 &gt; 5</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>4 &gt; 2 &gt; 3 &gt; 1</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98179,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You are working in a company as an AWS engineer. Your company uses a lot of Elastic Beanstalk applications on different platforms. Most of the Elastic Beanstalk environments do not enable platform updates. So, your team has to update the platforms during scheduled maintenance windows manually. You would like to enable managed platform updates through the Elastic Beanstalk console. Which of the following options do you need to configure for the managed platform updates? (Select TWO.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "2",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer​s: A and&nbsp;C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is CORRECT</strong> because, for the managed platform updates in Elastic Beanstalk, you can choose the update level to be &ldquo;Minor versions and patches&rdquo; or &ldquo;Patch only&rdquo;.</li>\r\n\t<li><strong>Option​ B is​ ​incorrect </strong>because Managed platform updates don&#39;t support updates across platform branches such as operating system, runtime, or Elastic Beanstalk components.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong> because you can select the weekly update time period for Elastic Beanstalk to perform the updates shown below:<img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/8.jpg\" style=\"height:516px; width:750px\" /></li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect </strong>because users cannot configure the Instance reboot option.</li>\r\n\t<li><strong>Option​ ​E ​is​ ​incorrect</strong> because the patch baseline from Systems Manager cannot be configured for the Elastic Beanstalk managed platform updates.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-platform-update-managed.html\" target=\"_blank\">https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-platform-update-managed.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122867,
+          "question_id": 98179,
+          "answers": [
+            {
+              "choice": "<p>The update level</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The operating system</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The weekly update period</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Instance reboot</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Patch baseline from Systems Manager</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98246,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your company deploys an internal application in an Elastic Beanstalk environment which is created in a private VPC and has no access to the internet. The application is used for monitoring and logging, and other VPC applications need to send requests to the internal application. For security purposes, the traffic to the Elastic Beanstalk service should stay inside the Amazon network without exposure to the internet. How would you achieve this requirement?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer:​ B</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because NAT Gateway is used to provide internet connectivity to private subnets. So, there is&nbsp;no need for NAT Gateway for the above-mentioned requirement.</li>\r\n\t<li><strong>Option​ B is​ CORRECT</strong> because the traffic to Elastic Beanstalk needs to be private without being exposed to the internet. This requirement can be achieved by the VPC endpoint service powered by AWS PrivateLink. With PrivateLink, users do not need to configure other connectivity services such as VPN connection or AWS Direct Connect. Check the following snapshot for how to create the VPC endpoint:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/csa-prop-ST-compute-9.JPG\" style=\"height:225px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because disabling the DNS name is not a feasible option in an Elastic Beanstalk environment.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect </strong>because, in order to send other applications&rsquo; traffic to the Elastic Beanstalk service, something must be used, i.e., the VPC endpoint.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/vpc.html\" target=\"_blank\">https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/vpc.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/vpc-vpce.html\" target=\"_blank\">https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/vpc-vpce.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122943,
+          "question_id": 98246,
+          "answers": [
+            {
+              "choice": "<p>Create a NAT Gateway in the public subnet. Modify the route table to connect other applications and the Elastic Beanstalk service through the NAT Gateway</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Configure an interface VPC endpoint for the Elastic Beanstalk service. Requests are sent to Elastic Beanstalk through AWS PrivateLink</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Disable DNS name in the Elastic Beanstalk environment to disallow the connections through the public endpoint of Elastic Beanstalk</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Nothing needs to be done as Elastic Beanstalk provides the private DNS &ldquo;com.amazonaws.region.elasticbeanstalk&rdquo; by default</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98247,
+      "topic_id": 2687,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You are an AWS Solutions Architect in a financial company. The company recently started working on migrating legacy applications to AWS. You planned to use a new AWS Organization to manage all AWS accounts so that you can easily configure accounts, assign organizational units, configure security policies, etc. Which methods are valid for you to add accounts to the Organization? (Select TWO)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "2",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer​s: A and&nbsp;D</strong></p>\r\n\r\n<p>There are two methods to add accounts to the AWS Organization either by creating new accounts within an Organization or by creating invitations. Please refer to</p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A ​is​ CORRECT</strong>&nbsp;because the user can create a new account that is part of the Organization.</li>\r\n\t<li><strong>Option​ ​B ​is​ ​incorrect&nbsp;</strong>because other accounts can not create requests to join the Organization. There is no CLI request-join-to-organization as well.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect&nbsp;</strong>because, in the AWS console, users cannot create requests to join an Organization. However, they can accept invitations.</li>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT&nbsp;</strong>because this can be done through the AWS console, CLI, or API.</li>\r\n\t<li><strong>Option​ ​E ​is​ ​incorrect</strong>&nbsp;because the cross-account IAM role is not required in this scenario. Also, there is no API call to add to an organization for other accounts.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_invites.html\" target=\"_blank\">https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_invites.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_create.html\" target=\"_blank\">https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_create.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122944,
+          "question_id": 98247,
+          "answers": [
+            {
+              "choice": "<p>In the AWS Organization console, create accounts within your organization</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use AWS CLI request-join-to-organization for other AWS accounts to join the Organization. After the Organization owner accepts the requests, the accounts will join successfully</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>For other accounts, use management accounts to log in to the AWS Organization console, create requests to the Organization owner to join the organization</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>In the management account of the Organization, create invitations to other accounts and wait for them to accept the invitations</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>For other accounts, create a cross-account IAM role that allows the operation of add-account-to-organization for the resource of the AWS Organization ARN. Use an IAM user to assume the IAM role and send an API call to add the account to the Organization</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design Solutions for Organizational Complexity"
+    },
+    {
+      "question_id": 98248,
+      "topic_id": 2687,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You have signed in to an AWS Organization&#39;s management account using an admin IAM user. You need to move accounts to this Organization from one OU (Organizational Unit) to another or back to the root from an OU. However, the operation was disallowed due to a lack of permissions. So you started looking at the IAM policies attached to this user. Which permissions do you need to move accounts among OUs? (Select TWO)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "2",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answers: B and&nbsp;C</strong></p>\r\n\r\n<p>Users can move accounts between the Root and OUs in AWS Organization according to</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html\" target=\"_blank\">https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html</a>.</li>\r\n</ul>\r\n\r\n<p>However, permissions are needed to do that.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A ​is​ ​incorrect </strong>because organizations:DescribeAccount is used to retrieve Organization details about the account, which is not required.</li>\r\n\t<li><strong>Option​ ​B ​is​ CORRECT&nbsp;</strong>because organizations:DescribeOrganization is required if the move operation is done from the console.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong>&nbsp;because organizations:MoveAccount permits users to move accounts in an Organization.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect&nbsp;</strong>because attaching SCP is not needed in this scenario.</li>\r\n\t<li><strong>Option​ E ​is​ ​incorrect</strong>:&nbsp;because this is one of the permission used to create an OU within a root in your organization.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122945,
+          "question_id": 98248,
+          "answers": [
+            {
+              "choice": "<p>organizations:DescribeAccount</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>organizations:DescribeOrganization</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>organizations:MoveAccount</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>organizations:AttachPolicy</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>organizations:CreateOrganizationalUnit</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design Solutions for Organizational Complexity"
+    },
+    {
+      "question_id": 98249,
+      "topic_id": 2687,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>In an AWS Organization, the Root is attached to a default SCP that allows all actions on all resources. And other OUs or AWS accounts are attached with SCPs that contain Deny lists. For example, an SCP that denies cloudtrail:StopLogging is attached to an OU. However, you think that the Deny lists can be improved to contain more services such as those that are not used. How would you find out the AWS services&nbsp;that are allowed by the SCP but are never used?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer​:&nbsp;D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A ​is​ ​incorrect</strong>&nbsp;because the AWS Organization console does not contain the last access data.</li>\r\n\t<li><strong>Option​ ​B ​is​ ​incorrect</strong>&nbsp;because&nbsp;the IAM credential report provides IAM user information. There is no access data for AWS Organization.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect&nbsp;</strong>because AWS Config does not show resource information related to the Organization. The user cannot identify which services are not used in AWS Config.</li>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT</strong>&nbsp;because the service report in Organization Activity can be used to identify the AWS services&nbsp;to be included in the Deny lists.</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/10/11/ckeditor_7.png\" style=\"height:298px; width:750px\" /><br />\r\n<br />\r\n<strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp.html\" target=\"_blank\">https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-view-data-orgs.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-view-data-orgs.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122946,
+          "question_id": 98249,
+          "answers": [
+            {
+              "choice": "<p>In the AWS Organization console, identify allowed services that are never used by AWS accounts</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>In the IAM credential report of AWS accounts, examine those services that are not required to be allowed by SCPs</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>In the AWS Config console, list the AWS services that are not used by IAM users</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>In the IAM console, click the&nbsp;Organization activity&nbsp;and check the last accessed data to identify services that are never used</p>",
+              "correct": 1,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design Solutions for Organizational Complexity"
+    },
+    {
+      "question_id": 98250,
+      "topic_id": 2687,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your AWS Organization has below hierarchy.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/10/11/ckeditor_8.0.png\" /></p>\r\n\r\n<p>And the OUs are attached with below SCPs:</p>\r\n\r\n<p>Root: FullAWSAccess.</p>\r\n\r\n<p>Admin_OU: Deny S3 upload action if without encryption.</p>\r\n\r\n<p>DEV1_OU: Deny all S3 actions.</p>\r\n\r\n<p>DEV2_OU: Allow all S3 actions.</p>\r\n\r\n<p>An AWS Account is attached under DEV2_OU, and it has an IAM user Bob who is given full permissions to S3 resources. What will happen when the user Bob is trying to upload objects to an S3 bucket without encryption?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer​:​ A</strong></p>\r\n\r\n<p>About how SCPs work, please refer to the documentation in</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_about-scps.html\" target=\"_blank\">https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_about-scps.html</a>.</li>\r\n</ul>\r\n\r\n<p>One rule is that any action that has an explicit Deny always takes priority.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A ​is​ CORRECT&nbsp;</strong>because DEV2_OU inherits the SCP in Admin_OU which contains a Deny policy. The policy overrides any Allow that other SCPs might grant.</li>\r\n\t<li><strong>Option​ ​B ​is​ ​incorrect</strong>: because other SCPs that the OU has inherited should also be considered.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong>&nbsp;because the SCP in DEV1_OU does not need to be considered as it is not a parent node for user Bob.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong>:&nbsp;because the Allow policy does not override a Deny policy if it exists.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122947,
+          "question_id": 98250,
+          "answers": [
+            {
+              "choice": "<p>The action will be denied as the SCP in Admin_OU denies the operation</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The action will be allowed as the SCP in the root has full AWS access, and Bob is attached with full S3 permissions</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The action will be denied as SCP in DEV1_OU has an S3 Deny policy, which takes priority</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The action will be allowed as DEV2_OU is attached with an S3 Allow SCP policy, which takes priority</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design Solutions for Organizational Complexity"
+    },
+    {
+      "question_id": 98251,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You were hired as an AWS Architect in a company to help migrate legacy applications from on-premises to AWS. The team is trying to use AWS Migration Hub to visualize the migrating process. The first step is using discovery tools to get valuable server data such as performance summary and performance time series. The team has good SQL experience, so they hope that AWS Athena can be used to analyze the imported data. Given that the legacy applications are installed in Linux CentOS 7 or above physical servers, which discovery tool is the best for you to use?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer​:​ B</strong></p>\r\n\r\n<p>AWS Migration Hub is a central place where the migration process can be visualized including the discovery phase. There are several discovery tools that are provided. For the details, please refer to</p>\r\n\r\n<p><a href=\"https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html\" target=\"_blank\">https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html</a>.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A ​is​ ​incorrect</strong>:​ Because AWS Discovery Connector is a VMware appliance used for VMware virtual machines. It cannot be used for CentOS. Besides, the data from Discovery Connector cannot be explored by AWS Athena.</li>\r\n\t<li><strong>Option​ ​B ​is​ CORRECT</strong>:​ Because AWS Discovery Agent has supported CentOS Linux servers. And user can enable data exploration in Amazon Athena from the console:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/10/23/ckeditor_1.png\" style=\"height:141px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong>:​ Because Discovery Agent has supported a wide range of Linux and Windows servers. Check <a href=\"https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-agent.html\" target=\"_blank\">https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-agent.html</a>.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong>:​ Because this is not how Discovery Agent works. Discovery Agent can transfer data securely to Application Discovery Service instead of S3.</li>\r\n</ul>\r\n\r\n<p>Please refer to page 22 on the below link</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/application-discovery/latest/userguide/appdiscovery-ug.pdf#what-is-appdiscovery\" target=\"_blank\">https://docs.aws.amazon.com/application-discovery/latest/userguide/appdiscovery-ug.pdf#what-is-appdiscovery</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122948,
+          "question_id": 98251,
+          "answers": [
+            {
+              "choice": "<p>Configure AWS Agentless Discovery Connector on the Linux CentOS servers which automatically registers with the Application Discovery Service endpoint. The collected data is sent to the Application Discovery Service every 15 minutes</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Install AWS Discovery Agent on the servers which transmit data to AWS Application Discovery Service. Then in Migration Hub, enable the Data Exploration in Amazon Athena</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>As Linux CentOS does not support AWS discovery tools, use Import Template to upload the server data to an S3 bucket manually. Then import the data in S3 to AWS Migration Hub and optionally analyze the data by AWS Athena</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Install AWS Discovery Agent on the physical servers and configure the agent to send data to an S3 bucket. Create related tables in AWS Athena to analyze the server data</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98252,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your company owns a large number of on-premises virtual machines managed in VMware vCenter. To plan the migration from local servers to AWS, you have installed AWS Discovery Connector in the VMware vCenter Server that helps collect information about the virtual machines. The Discovery Connector has already registered with the Application Discovery Service successfully. Which data can be discovered by the Discovery Connector? (Select TWO.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "2",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answers​:​ A and&nbsp;D</strong></p>\r\n\r\n<p>There are two ways of performing discovery and collecting data offered by Application Discovery Service which are Agentless discovery and Agent-based discovery. The reference can be found in&nbsp;</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html\" target=\"_blank\">https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html</a>.</li>\r\n\t<li><strong>Option​ ​A ​is​ CORRECT</strong>:​ Discovery Connector belongs to agentless discovery. It can collect static configuration and utilization data including CPU, RAM, and Disk I/O.</li>\r\n\t<li><strong>Option​ ​B ​is​ ​incorrect</strong>:​&nbsp; Only the &#39;type&#39; of the hypervisor can be discovered and NOT the &#39;name&#39; of the hypervisor.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong>:​ Because Discovery Connector does not discover the time and date of the system.</li>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT</strong>:​ Refer to the explanation in Option A.</li>\r\n\t<li><strong>Option​ ​E ​is​ ​incorrect</strong>:​ Because only AWS Application Discovery Agent can provide the running process data to the Application Discovery Service.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122949,
+          "question_id": 98252,
+          "answers": [
+            {
+              "choice": "<p>Average number of read and write I/O operations per second</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Name of the hypervisor used</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Date and time on the virtual machine</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Average free RAM expressed in MB</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The running process data on the local server</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98253,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You lead a project to migrate the local Oracle database to AWS RDS. You plan to use AWS Database Migration Service for the project as users can easily configure it to replicate data continuously. As the Oracle database is used for financial services, data security is very important. You already created a replication instance in AWS DMS. How does the replication instance encrypt the stored data to keep it secure?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer​:​ D</strong></p>\r\n\r\n<ul>\r\n</ul>\r\n\r\n<p>on how to encrypt the storage used by a replication instance.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A ​is​ ​incorrect</strong>:​ Because the replication instance is encrypted by KMS and cannot be disabled.</li>\r\n\t<li><strong>Option​ ​B ​is​ ​incorrect</strong>:​ Because the master key is aws/dms by default, and user can modify the key with a CMK according to the below screenshot:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/10/23/ckeditor_8.png\" style=\"height:381px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong>:​ Because the replication instance uses AWS KMS to encrypt the stored data.</li>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT</strong>:​ Refer to the explanation in Option B. When the replication instance is created, the encryption settings can be found in the section of &ldquo;Advanced security and network configuration&rdquo;.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Security.EncryptionKey.html\" target=\"_blank\">https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Security.EncryptionKey.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122950,
+          "question_id": 98253,
+          "answers": [
+            {
+              "choice": "<p>By default, the volume in the instance is not encrypted. Users can choose to encrypt the EBS volume by KMS</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The replication instance is encrypted by KMS, and the master key used is aws/ebs. Users cannot disable the encryption or modify the master key for the encryption</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The replication instance does not encrypt the stored data. Instead, the data in transit is encrypted for the connections between replication instances and endpoints</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>KMS encrypts data in the replication instance. The master key is aws/dms by default or a customer managed key (CMK)</p>",
+              "correct": 1,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98254,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company needs to migrate its data from a local server to AWS S3. The total amount of data is about 35TB. The data needs some advanced machine learning analysis before being migrated to AWS. The migration project should finish as fast as possible, and it is unacceptable to finish it in months. The data at rest should also be encrypted during the migration. What is the best way to achieve this requirement?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer​: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A ​is​ ​incorrect</strong>:​ Because AWS Transfer for SFTP is based on the network connection. It is unsuitable for migrating a huge amount of data. It also cannot provide processing ability before migration.</li>\r\n\t<li><strong>Option​ ​B ​is​ ​incorrect</strong>:​ Because when the data is less than 10PB, Snowmobile is NOT recommended.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong>:​ Snowball Edge is suitable for data migration and edge computing devices. For the scenarios that need processing abilities, either a single Snowball Edge Compute Optimized device(s) should be used.&nbsp;This Snowball Edge device option has the most compute functionality, with 52 vCPUs, 208 GiB of memory, and 42 TB (39.5 usable)</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong>:​ Snowball Edge devices have two options - Compute Optimized and Storage Optimized. For this scenario, Compute Optimized device should be chosen.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/snowmobile/faqs/\" target=\"_blank\">https://aws.amazon.com/snowmobile/faqs/</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/whitepapers/latest/aws-overview/migration-services.html#aws-snowball-edge\" target=\"_blank\">https://docs.aws.amazon.com/whitepapers/latest/aws-overview/migration-services.html#aws-snowball-edge</a>.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122951,
+          "question_id": 98254,
+          "answers": [
+            {
+              "choice": "<p>Configure AWS Transfer for SFTP service to transfer files directly into Amazon S3 using the Secure File Transfer Protocol (SFTP)</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use AWS Snowmobile to transfer an extremely large amount of data as it is secure, fast, and cost-effective. KMS encrypts all data transferred in Snowmobile</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use one Snowball Edge Compute Optimized product. Perform machine learning analysis at remote location and transfer the data. After the equipment is shipped back, AWS can store the data in S3</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Configure Snowball Edge Storage Optimized service. Perform machine learning and processing at edge location before copying the data. AWS can store the data in S3 after the device is returned to AWS</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98255,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": 0,
+      "lab_id": 0,
+      "question_text": "<p>As an AWS Solutions Architect, you need to configure an identity service in AWS based on SAML. Since you already have a SAML identity provider outside of AWS, you plan to use the same IdP to manage user identities. To create the SAML identity provider in IAM, the below steps may be required.</p>\r\n\r\n<p>1.&nbsp;Configure the SAML IdP with relying party trust.</p>\r\n\r\n<p>2.&nbsp;Use AWS CLI assume-role-with-web-identity to return a set of temporary security credentials for authentication.</p>\r\n\r\n<p>3.&nbsp;Get the SAML metadata document from the IdP.</p>\r\n\r\n<p>4.&nbsp;Create a SAML IAM identity provider from AWS console or CLI.</p>\r\n\r\n<p>5.&nbsp;In IdP, configure SAML Assertions for the authentication response.</p>\r\n\r\n<p>Which one describes the correct sequences?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer​:​ D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A ​is​ ​incorrect</strong>:​ Because assume-role-with-web-identity is not used for SAML identity provider. Step 2 should not be included.</li>\r\n\t<li><strong>Option​ ​B ​is​ ​incorrect</strong>:​ Same reason as Option A.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong>:​ Before creating the identity provider, you need to get the metadata document from IdP:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/11/08/ckeditor_123.png\" style=\"height:227px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT</strong>:​ After creating the identity provider in step 4, you need to configure the IdP side as steps 1 and 5 which add relying party trust between the IdP and AWS.</li>\r\n</ul>\r\n\r\n<p>Please check <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_saml.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_saml.html</a> on how to create IAM SAML identity providers.</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122958,
+          "question_id": 98255,
+          "answers": [
+            {
+              "question_id": "98255",
+              "choice": "<p>4 -&gt; 1 -&gt; 5 -&gt; 2</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98255",
+              "choice": "<p>3 -&gt; 1 -&gt; 4 -&gt; 2</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98255",
+              "choice": "<p>1 -&gt; 4 -&gt; 3 -&gt; 5</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98255",
+              "choice": "<p>3 -&gt; 4 -&gt; 1 -&gt; 5</p>",
+              "feedback": "",
+              "correct": 1
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98256,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your team is developing an Android app. You need to use an Amazon Cognito Identity Pool to create unique identities for the app users and federate them with the identity provider from Google. You also want to allow unauthenticated guest access for the application. Guests can get temporary tokens for limited access. How would you implement the guest access using Amazon Cognito?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer:​ A</strong></p>\r\n\r\n<p>About how to use Identity Pool for federated identities in AWS Cognito, please refer to&nbsp;<a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html\" target=\"_blank\">https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html</a>. The authentication flow can be found in <a href=\"https://docs.aws.amazon.com/en_pv/cognito/latest/developerguide/authentication-flow.html\" target=\"_blank\">https://docs.aws.amazon.com/en_pv/cognito/latest/developerguide/authentication-flow.html</a></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A ​is​ CORRECT</strong>:​ Because the unauthenticated access feature can be enabled in Cognito Identity Pool as below:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/11/08/ckeditor_234.png\" style=\"height:245px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​B ​is​ ​incorrect</strong>:​ Because the feature of unauthenticated identities is managed in Cognito Identity Pool instead of User Pool.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect:​</strong> Because the GetCredentialsForIdentity API does not have a request type of Guest.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong>:​ Because the GetOpenIdToken API does not provide the temporary tokens. Users can request a new temporary identity ID via the GetId API.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122953,
+          "question_id": 98256,
+          "answers": [
+            {
+              "choice": "<p>Enable the unauthenticated access in Cognito Identity Pool. Guest users can request an identity ID via the GetId API</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Activate the unauthenticated access feature in Cognito User Pool. Link the User Pool in Cognito Identity Pool</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Users can get guest credentials via the GetCredentialsForIdentity API with a request type as Guest</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Guest users can request temporary tokens by using the GetOpenIdToken API</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98257,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You use AWS Cognito User Pool to configure a user directory for an application. You want to separate different users as readers, contributors, and editors of the app. For example, the readers can only read contents from AWS S3 buckets. Contributors can put contents into Amazon S3 buckets, and editors have the permissions to publish contents through an API in Amazon API Gateway. Which method is the best to achieve this requirement in AWS Cognito?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer: C</strong></p>\r\n\r\n<p>In Amazon Cognito User Pool, you can configure users in groups to manage the permissions better. Each group can be linked with an IAM role ARN. The reference can be found in <a href=\"https://docs.aws.amazon.com/en_pv/cognito/latest/developerguide/cognito-user-pools-user-groups.html\" target=\"_blank\">https://docs.aws.amazon.com/en_pv/cognito/latest/developerguide/cognito-user-pools-user-groups.html</a>.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A ​is​ ​incorrect</strong>:​ Because users should be added into groups in the Cognito User Pool instead of IAM.</li>\r\n\t<li><strong>Option​ ​B ​is​ ​incorrect</strong>:​ Because users in Cognito User Pool cannot be configured directly with an IAM role.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong>:​ Check the below example:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/11/08/ckeditor_345.png\" style=\"height:418px; width:750px\" /></p>\r\n\r\n<p>Group1 is linked with an IAM role, and User1 is added into the group.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong>:​ Similar to Option B, it is inappropriate to attach an IAM policy to each user directly.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122954,
+          "question_id": 98257,
+          "answers": [
+            {
+              "choice": "<p>In IAM, add different groups and assign suitable IAM policies. In Amazon Cognito User Pool, assign users to the IAM groups</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Configure different IAM roles in IAM for readers, contributors and editors. In Amazon Cognito User Pool, configure each user with an IAM role</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>In Amazon Cognito User Pool, create groups and assign IAM roles to them. Add users to the groups to assign the required permissions</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Directly attach an IAM policy to each user in Amazon Cognito User Pool. Make sure each user has an appropriate IAM policy according to the user role</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98258,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You implement a REST API using a Lambda Function. The API is exposed through the AWS API gateway. The Lambda Function calls a third-party service to retrieve the data. But this third-party service may not respond in time. You already increased the timeout of the Lambda Function to be 15 minutes. However, sometimes users still get an HTTP 504 error after about 30 seconds. Which of the following options is the most possible reason?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer:​ C</strong></p>\r\n\r\n<p>Please check <a href=\"https://docs.aws.amazon.com/apigateway/latest/developerguide/limits.html\" target=\"_blank\">https://docs.aws.amazon.com/apigateway/latest/developerguide/limits.html</a> for the Amazon API Gateway limits. The integration timeout is 50 milliseconds - 29 seconds for all integration types. And the limit cannot be increased.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A ​is​ ​incorrect</strong>:​ Because HTTP 504 is Gateway Timeout instead of Internal Server Error.</li>\r\n\t<li><strong>Option​ ​B ​is​ ​incorrect:​</strong> When the third-party service does not respond in time, the API Gateway reaches its limit after 29 seconds. It is not the third-party service that returns the HTTP 504 error code in this scenario.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT:</strong>​ Because the API call&nbsp;through API Gateway cannot exceed 29 seconds due to the limits. This is the most possible reason to cause the issue.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect:​</strong> Because the limit of Lambda Function can be 15 minutes according to <a href=\"https://aws.amazon.com/about-aws/whats-new/2018/10/aws-lambda-supports-functions-that-can-run-up-to-15-minutes/\" target=\"_blank\">https://aws.amazon.com/about-aws/whats-new/2018/10/aws-lambda-supports-functions-that-can-run-up-to-15-minutes/</a>. The limit of API Gateway has caused the issue.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122955,
+          "question_id": 98258,
+          "answers": [
+            {
+              "choice": "<p>The error code indicates that there is an Internal Server Error. Check the CloudWatch Logs of the Lambda Function</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The third-party service has returned an HTTP 504 error after 30 seconds to the Lambda Function. Then the Lambda Function forwards the error to the API Gateway</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The maximum of integration timeout for AWS API Gateway is 29 seconds. Although the timer for Lambda Function does not expire yet, the API Gateway already hits its limitation</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>When Lambda Function integrates with API Gateway, the effective Lambda Function execution time limit is 30 seconds although the limit is set to 15 minutes</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98259,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You are developing a mobile application. As it is a proof of concept, you want to deliver the project as soon as possible and you prefer using a serverless pattern. The whole application contains the presentation tier, the logical tier and the database tier. The component in the presentation tier is the mobile application running on a user device. For the logical tier and database tier, which services should you use as the serverless mobile backend?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer:​ D</strong></p>\r\n\r\n<p>As the serverless pattern is required, we should choose the serverless services that AWS fully manages.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A ​is​ ​incorrect</strong>:​ Because Amazon RDS MySQL is not a pure serverless service. Users still need to configure the database instance type, storage and provisioned IOPS. Details can be found in&nbsp;<a href=\"https://d1.awsstatic.com/whitepapers/AWS_Serverless_Multi-Tier_Architectures.pdf\" target=\"_blank\">https://d1.awsstatic.com/whitepapers/AWS_Serverless_Multi-Tier_Architectures.pdf</a>.</li>\r\n\t<li><strong>Option​ ​B ​is​ ​incorrect</strong>:​ Because AWS ECS with EC2 instance is not a serverless service,&nbsp;ECS with Fargate can be a serverless service. In this scenario, Amazon API Gateway with AWS Lambda is the most appropriate for the logic tier.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong>:​ Because AWS Auto Scaling Group and Amazon DocumentDB are not serverless services.</li>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT</strong>:​ Because all the mentioned services are serverless. Users do not need to create or maintain servers for the whole architecture.</li>\r\n</ul>\r\n\r\n<p>Check&nbsp;<a href=\"https://d1.awsstatic.com/whitepapers/AWS_Serverless_Multi-Tier_Architectures.pdf\" target=\"_blank\">https://d1.awsstatic.com/whitepapers/AWS_Serverless_Multi-Tier_Architectures.pdf</a> on how to create AWS serverless multi-tier architectures via Amazon API Gateway and AWS Lambda.</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122956,
+          "question_id": 98259,
+          "answers": [
+            {
+              "choice": "<p>The logical tier contains Amazon API Gateway and AWS Lambda. The API Gateway endpoints are secured via Amazon Certificate Manager. Amazon RDS MySQL is used for the data tier</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The logic tier contains Amazon API Gateway and AWS ECS with EC2 instances. The API Gateway endpoints are secured via third-party identity providers. The data tier includes the resource of Amazon DynamoDB</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The logic tier contains Amazon CloudFront and AWS Auto Scaling Group. Amazon Cognito identity pools provide identity services. Amazon DocumentDB is used for the data tier</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The logic tier contains Amazon API Gateway and AWS Lambda. The API Gateway endpoints are secured via Amazon Cognito user pools. Amazon DynamoDB is used for the data tier</p>",
+              "correct": 1,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98260,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You create a Lambda Function to process clients&rsquo; queries from a web application. The workload is time sensitive so that you want the Lambda function to finish processing and respond as quickly as possible. You prefer allocating more resources such as memories or CPUs to the Lambda Function. However, you are unsure how many resources are being used at the moment. Which action can help you to get the current memory usage and allocate more resources if needed?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer​:​ B</strong></p>\r\n\r\n<p>Check <a href=\"https://docs.aws.amazon.com/lambda/latest/dg/resource-model.html\" target=\"_blank\">https://docs.aws.amazon.com/lambda/latest/dg/resource-model.html</a> on how to configure Lambda Functions. Users can allocate memories for a Lambda Function as below:</p>\r\n\r\n<p><strong><img src=\"https://lh3.googleusercontent.com/BiM-4QuemUffPIimEgQs46vVZQzrIY2qndouG5d7e9B9s2MdzA3jLntdmEVEEkco8gZO9fpxCv28j05KLufNvCVpa3N4lEVvPnrQ-lPNfEVcsC0-uHzUgYLPHwDhzYtykm-2ChIj\" style=\"height:394px; width:750px\" /></strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A ​is​ ​incorrect:​ </strong>We cannot use the default CloudWatch metrics to get the allocated and used memory.</li>\r\n\t<li><strong>Option​ ​B ​is​ CORRECT:​ </strong>We can get the max memory used from the CloudWatch logs.</li>\r\n</ul>\r\n\r\n<p><strong><img src=\"https://lh6.googleusercontent.com/dzUQ-MuoDkubyE8EoJHrYK9bjgDM8cYPKdK9rax6DyQJQ2U6pli3FS-2_gBDUTrmRCfJhfOFeo2pjJr6nvTi41i1_3fU7IR5Gq40d2DKdSSsi5H-m2ggymCU-TZSvooWc2kcE8Sy\" style=\"height:43px; width:750px\" /></strong></p>\r\n\r\n<p>If the max memory used is close to the memory allocated, it is better to allocate more memories to speed up the processing.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect:​</strong> Because the reserved concurrency does not influence how many memories or CPUs the Lambda Function has to process a request.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong>:​ Although Lambda Function is serverless, users are still responsible for monitoring the running status and allocating more resources if needed.&nbsp;</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122957,
+          "question_id": 98260,
+          "answers": [
+            {
+              "choice": "<p>Check the default CloudWatch metrics to get the allocated and used memories. Pre-allocate more resources to the Lambda Function if required</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Check CloudWatch Logs to get the max memory used and allocate more memory if needed</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>&nbsp;Check CloudWatch metrics to get the max number of invocations. Increase the reserved concurrency to speed up the processing time</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Memories and CPUs in Lambda Function are managed by AWS and can auto-scale if required. You are not supposed to allocate more resources by yourself</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98488,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A software development team just finished phase 1 of a web service that provides NBA news to subscribers. The web service has used a dedicated VPC which has only IPv4 CIDR (10.0.0.0/16) with two public subnets and two private subnets. A NAT gateway is put into each public subnet for outbound internet traffic. The EC2 instances are put into private subnets with a route that connects all Internet-bound IPv4 traffic to the relevant NAT gateway. The product is getting more and more popular and needs IPv6 to support some new features. Which below options are required for the new support for IPv6? Select 3.</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "2",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answers:&nbsp;B, C and&nbsp;F</strong></p>\r\n\r\n<p>Refer to <a href=\"https://docs.aws.amazon.com/vpc/latest/userguide/vpc-migrate-ipv6.html\" target=\"_blank\">https://docs.aws.amazon.com/vpc/latest/userguide/vpc-migrate-ipv6.html</a> for the details on how to migrate to IPv6 traffic. Please also note that this question asks for the necessary options. The below steps are required.</p>\r\n\r\n<ul>\r\n\t<li>Step 1: Associate an IPv6 CIDR Block with Your VPC and Subnets</li>\r\n\t<li>Step 2: Update Your Route Tables</li>\r\n\t<li>Step 3: Update Your Security Group Rules</li>\r\n\t<li>Step 4: Change Your Instance Type</li>\r\n\t<li>Step 5: Assign IPv6 Addresses to Your Instances</li>\r\n\t<li>Option A is incorrect: Because you do not need to delete and recreate VPC to support IPv6.</li>\r\n\t<li>Option B is CORRECT: Because that is a required step to add IPv6 CIDR in both VPC and subnets.</li>\r\n\t<li>Option C is CORRECT: Because the routing table needs to be modified to route the IPv6 traffic properly.</li>\r\n\t<li>Option D is incorrect: Because the NAT gateway is IPv4 only. For IPv6, an egress-only internet gateway should be used. Refer to<a href=\"https://docs.aws.amazon.com/vpc/latest/userguide/egress-only-internet-gateway.html\" target=\"_blank\"> https://docs.aws.amazon.com/vpc/latest/userguide/egress-only-internet-gateway.html</a>.</li>\r\n\t<li>Option E is incorrect: Same reason as option D. Also, you cannot add IPv6 IP range to the NAT gateway.</li>\r\n\t<li>Option F is CORRECT: Because EC2 instances need IPv6 addresses to route IPv6 traffic. This can be done in &ldquo;Actions, Networking, Manage IP Addresses&rdquo; and choose &ldquo;Assign new IP&rdquo; Under &ldquo;IPv6 Addresses&rdquo;.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123264,
+          "question_id": 98488,
+          "answers": [
+            {
+              "choice": "<p>Delete existing VPC and recreate a new VPC with both IPv4 and IPv6 CIDR. Create new public and private subnets with both IPv4 and IPv6 address ranges</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Associate an Amazon-provided IPv6 CIDR block with existing VPC and subnets. In the VPC and subnets console, choose &ldquo;Add IPv6 CIDR&rdquo;</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>For public subnets, create a route that routes all IPv6 traffic from the subnet to the internet gateway. For private subnets, create a route that routes all Internet-bound IPv6 traffic to an egress-only internet gateway</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Update the route tables to route the IPv6 traffic. For public subnets, create a route that routes all IPv6 traffic from the subnet to the internet gateway. For private subnets, create a route that routes all Internet-bound IPv6 traffic to NAT gateway</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Assign IPv6 addresses to NAT gateway which will be used to route the internet-bound IPv6 traffic from EC2 instances</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Assign IPv6 addresses to EC2 instances from the IPv6 address range that is allocated to the subnet</p>",
+              "correct": 1,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98489,
+      "topic_id": 2687,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>An administrator in your company has created a VPC with an IPv4 CIDR block 10.0.0.0/24. Now they want to add additional address space outside of the current VPC CIDR. Because&nbsp;there is a requirement to host more resources in that VPC. Which of the below requirement can be used to accomplish this?</p>\r\n<quillbot-extension-portal></quillbot-extension-portal>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<p>An existing CIDR for a VPC is not modifiable. However, you can add additional CIDR blocks, i.e., up to four secondary IPv4 CIDR blocks to an already existing VPC.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect </strong>because you can change the CIDR of VPC by adding up to 4 secondary IPv4 IP CIDRs to your VPC.</li>\r\n\t<li><strong>Option B is CORRECT</strong> because you can expand your existing VPC by adding up to four secondary IPv4 IP ranges (CIDRs) to your VPC.</li>\r\n\t<li><strong>Option C is incorrect </strong>because deleting the subnets is unnecessary.</li>\r\n\t<li><strong>Option D is incorrect</strong> because this configuration would peer the VPC. It will not alter the existing VPC&rsquo;s CIDR.</li>\r\n</ul>\r\n\r\n<p>For more information on VPC and its FAQs, please refer to the following links-</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/vpc/faqs/\" target=\"_blank\">https://aws.amazon.com/vpc/faqs/</a></li>\r\n</ul>\r\n<quillbot-extension-portal></quillbot-extension-portal>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123265,
+          "question_id": 98489,
+          "answers": [
+            {
+              "choice": "<p>You cannot change a VPC&#39;s size. Currently, to change the size of a VPC, you must terminate your existing VPC and create a new one</p>\r\n<quillbot-extension-portal></quillbot-extension-portal>",
+              "correct": 0,
+              "feedback": "<p>&nbsp;</p>\r\n<quillbot-extension-portal></quillbot-extension-portal>"
+            },
+            {
+              "choice": "<p>Expand your existing VPC by adding secondary IPv4 IP ranges (CIDRs) to your VPC</p>\r\n<quillbot-extension-portal></quillbot-extension-portal>",
+              "correct": 1,
+              "feedback": "<p>&nbsp;</p>\r\n<quillbot-extension-portal></quillbot-extension-portal>"
+            },
+            {
+              "choice": "<p>Delete all the subnets in the VPC and expand the VPC</p>\r\n<quillbot-extension-portal></quillbot-extension-portal>",
+              "correct": 0,
+              "feedback": "<p>&nbsp;</p>\r\n<quillbot-extension-portal></quillbot-extension-portal>"
+            },
+            {
+              "choice": "<p>Create a new VPC with a greater range and then connect the older VPC to the newer one</p>\r\n<quillbot-extension-portal></quillbot-extension-portal>",
+              "correct": 0,
+              "feedback": "<p>&nbsp;</p>\r\n<quillbot-extension-portal></quillbot-extension-portal>"
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design Solutions for Organizational Complexity"
+    },
+    {
+      "question_id": 98490,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your application provides data transformation services. Files containing data to be transformed are first uploaded to Amazon S3 and then transformed by a fleet of spot EC2 instances. Files submitted by your premium customers must be transformed with the highest priority. How should you implement such a system?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer:&nbsp;C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because using DynamoDB tables will be a very expensive solution compared to using the SQS queue(s).</li>\r\n\t<li><strong>Option B is incorrect </strong>because the transformation instances are spot instances that may not be up and running all the time; there are chances that they will be terminated.</li>\r\n\t<li><strong>Option C is CORRECT</strong> because (a) it decouples the components of a distributed application, so the application is not impacted due to using spot instances, (b) it is a much cheaper option compared to using DynamoDB tables, and more importantly, (b) it maintains a separate queue for the high priority messages which can be processed before the default priority queue.</li>\r\n\t<li><strong>Option D is incorrect </strong>because the transformation instances cannot poll high-priority messages first.&nbsp;They just poll and can determine priority only after receiving the messages.</li>\r\n</ul>\r\n\r\n<p><strong>More information about implementing the priority queue via SQS:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://awsmedia.s3.amazonaws.com/pdf/queues.pdf\" target=\"_blank\">http://awsmedia.s3.amazonaws.com/pdf/queues.pdf</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123266,
+          "question_id": 98490,
+          "answers": [
+            {
+              "choice": "<p>Use a DynamoDB table with an attribute defining the priority level. Transformation instances will scan the table for tasks, sorting the results by priority level</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use Route 53 latency based-routing to send high priority tasks to the closest transformation instances</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use two SQS queues, one for high priority messages, the other for default priority. Transformation instances first poll the high priority queue; if there is no message, they poll the default priority queue</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use a single SQS queue. Each message contains the priority level. Transformation instances poll high-priority messages first</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98491,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A big company has a service to process gigantic clickstream data sets which are often the result of holiday shopping traffic on a retail website, or sudden dramatic growth on the data network of a media or social networking site. It is becoming more and more complex to analyze these clickstream datasets for its on-premise infrastructure. As the sample data set keeps growing, fewer applications are available to provide a timely response. The service is using a Hadoop cluster with Cascading. How can they migrate the applications to AWS in the best way?&nbsp;</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer:&nbsp;D</strong></p>\r\n\r\n<p>The application needs to process data timely; therefore Kinesis stream should be considered first. After a click event happens, a message should be put into the Kinesis stream in real-time. Moreover, Cascading is a proven, highly extensible application development framework for building massively parallelized data applications on EMR. By using EMR, the application does not need to change a lot for the migration. Refer to <a href=\"https://aws.amazon.com/blogs/big-data/integrating-amazon-kinesis-amazon-s3-and-amazon-redshift-with-cascading-on-amazon-emr/\" target=\"_blank\">https://aws.amazon.com/blogs/big-data/integrating-amazon-kinesis-amazon-s3-and-amazon-redshift-with-cascading-on-amazon-emr/</a>.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect:</strong> Because the RDS database&#39;s output is improper as RDS does not scale well when the traffic is high. Redshift is much more appropriate.</li>\r\n\t<li><strong>Option B is incorrect: </strong>AWS Lambda can potentially work for Hadoop. However, EMR provides native support for Hadoop. Also, RDS is incorrect.</li>\r\n\t<li><strong>Option C is incorrect: </strong>Because EC2 is not suitable for Hadoop processing if compared with EMR. This question asks for the best option. So EMR should be chosen.</li>\r\n\t<li><strong>Option D is CORRECT: </strong>Because the EMR cluster with Cascading can process the data from Kinesis stream in real-time, and Redshift is also a proper place to store the output data.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123267,
+          "question_id": 98491,
+          "answers": [
+            {
+              "choice": "<p>Put the source data to S3 and migrate the processing service to an AWS EMR Hadoop cluster with Cascading. Enable EMR to read and query data from S3 buckets directly. Write the output to the RDS database</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Put the source data to a Kinesis stream and migrate the processing service to AWS lambda to utilize its scaling feature. Enable lambda to read and query data from the Kinesis stream directly. Write the output to the RDS database</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Put the source data to an S3 bucket and migrate the processing service to AWS EC2 with auto-scaling. Ensure that the auto-scaling configuration has a proper maximum and&nbsp;minimum number of instances. Monitor the performance in the Cloudwatch dashboard. Write the output to the DynamoDB table for downstream to process</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Put the source data to a Kinesis stream and migrate the processing service to an AWS EMR cluster with Cascading. Enable EMR to read and query data from Kinesis streams directly. Write the output to Redshift</p>",
+              "correct": 1,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98492,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A middle-sized company is planning to migrate its on-premises servers to AWS. At the moment, they have used various licenses, including windows operating system server, SQL Server, IBM Db2, SAP ERP, etc. After migration, the existing licenses should continue to work in EC2. The IT administrators prefer to use a centralized place to control and manage the licenses to prevent potential non-compliant license usages. For example, SQL Server Standard&#39;s license only allows 50 vCPUs, which means a rule is needed to limit the number of SQL Servers in EC2. Which option is correct for the IT administrators to use?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct&nbsp;Answer:&nbsp;B</strong></p>\r\n\r\n<p>AWS License Manager is a central place to manage licenses in AWS EC2 and on-premises instances. It contains 3 parts to use:</p>\r\n\r\n<ul>\r\n\t<li>Define licensing rules.</li>\r\n\t<li>Enforce licensing rules.</li>\r\n\t<li>Track usage.</li>\r\n</ul>\r\n\r\n<p>AWS License Manager currently integrates with Amazon EC2, allowing you to track licenses for default (shared-tenancy) EC2 instances, Dedicated Instances, Dedicated Hosts, Spot Instances, and Spot Fleet, and Auto Scaling groups. Refer to <a href=\"https://docs.aws.amazon.com/license-manager/latest/userguide/license-manager.html\" target=\"_blank\">https://docs.aws.amazon.com/license-manager/latest/userguide/license-manager.html</a>.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option&nbsp;A is&nbsp;incorrect.&nbsp;</strong>Because AWS License Manager manages the BYOL licenses. Although AWS System Manager can work together with AWS License Manager to manage licenses for on-premises servers and non-AWS public clouds, it is not the central place to provide license management.</li>\r\n\t<li><strong>Option&nbsp;B is&nbsp;CORRECT:&nbsp;</strong>Because AWS License Manager can define licensing rules, track license usage, and enforce controls on license use to reduce the risk of license overages.</li>\r\n\t<li><strong>Option&nbsp;C is&nbsp;incorrect:&nbsp;</strong>Because the AWS License manager should be considered first for licensing management.</li>\r\n\t<li><strong>Option&nbsp;D is&nbsp;incorrect:&nbsp;</strong>Because AWS License Manager can manage non-Microsoft licenses.</li>\r\n</ul>\r\n\r\n<p>According to <a href=\"https://docs.aws.amazon.com/license-manager/latest/userguide/license-manager.html\" target=\"_blank\">https://docs.aws.amazon.com/license-manager/latest/userguide/license-manager.html</a>, license Manager tracks various software products from Microsoft, IBM, SAP, Oracle, and other vendors.</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123268,
+          "question_id": 98492,
+          "answers": [
+            {
+              "choice": "<p>Create license rules in AWS System Manager for all BYOL licenses. Use the rules to make sure that there are no non-compliant activities. Link the rules when EC2 AMI is created. System Manager console has provided license usage status</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Define license rules in AWS License Manager for the required licenses. Enforce the license rules in EC2 and track usage in the AWS License Manager console</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use a license management blueprint to create a dedicated Lambda to control license usage. Lambda outputs the usage status to Cloudwatch Metrics which can be used by the administrators to track the status</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Define and enforce license rules in AWS License Manager for the Microsoft relevant licenses such as windows, SQL Server as only Microsoft licenses are supported. For the other licenses such as IBM Db2, track the license usage in AWS System Manager</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98493,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A mobile App developer just made an App in both IOS and Android with a feature to count step numbers. He has used AWS Cognito to authorize users to provide access to the AWS DynamoDB table. The App uses the DynamoDB table to store user subscriber data and many steps. Now the developer also needs Cognito to integrate with Google to provide federated authentication for the mobile application users so that the user does not need to remember extra login access. &nbsp;What should the developer do to authenticate and authorize the users with suitable permissions for the IOS and Android App? (Select TWO)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "2",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answers:&nbsp;A and C</strong></p>\r\n\r\n<p>One common use case for Amazon Cognito is to access AWS Services with an Identity Pool. For the Identity pool itself, it can include:</p>\r\n\r\n<ul>\r\n\t<li>Users in an Amazon Cognito identity&nbsp;pool.</li>\r\n\t<li>Users who authenticate with external identity providers such as Facebook, Google, or a SAML-based identity provider.</li>\r\n\t<li>Users authenticated via your own existing authentication process.</li>\r\n\t<li><strong>Option A is CORRECT&nbsp;</strong>because Identity pool can be used to set up the federated identities through third-party identity providers such as Google.</li>\r\n\t<li><strong>Option B is&nbsp;incorrect:</strong>&nbsp;Because Google federated identities work for both Android and IOS. Refer to&nbsp;<a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/google.html\" target=\"_blank\">https://docs.aws.amazon.com/cognito/latest/developerguide/google.html</a> on the details.</li>\r\n\t<li><strong>Option C is CORRECT </strong>because the User Pool is where the federated identity would be set-up and the Identity Pool is where permissions would be granted.&nbsp;Please also check <a href=\"https://aws.amazon.com/premiumsupport/knowledge-center/cognito-user-pools-identity-pools/\" target=\"_blank\">https://aws.amazon.com/premiumsupport/knowledge-center/cognito-user-pools-identity-pools/</a> for the differences between User pools and Identify pools. User pools are for authentication (identify verification), while Identity pools are for authorization (access control).</li>\r\n\t<li><strong>Option D is incorrect:&nbsp;</strong>Same reason as Option B.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123269,
+          "question_id": 98493,
+          "answers": [
+            {
+              "choice": "<p>Amazon Cognito Identity pools (federated identities) support user authorization through federated identity providers&mdash;including Amazon, Facebook, Google, and SAML identity providers. The developer just needs to set up the federated identities for Google access</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Only Android works for federated identities if Google access is required for AWS Cognito. This can be done by configuring Cognito identity pools with a Google Client ID</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Amazon Cognito User pools support user authentication through federated identity providers&mdash;including Amazon, Facebook, Google, and SAML identity providers. The developer just needs to set up the federated identities for Google access in the Cognito User Pool</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Only IOS (Objective-C and Swift) works for federated identities if Google access is required for AWS Cognito. This can be done by configuration Cognito identity pools with a Google Client ID. Google federated access does not work for the android app</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98495,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You are working in a big organization as an AWS Solutions Architect. At the moment, the company is managing AWS AMIs in different ways without a common pattern. Different teams follow their own processes to create AMIs based on various pipelines. You plan to standardize the creation and management of AMIs through EC2 Image Builder. Which of the following benefits can you achieve with EC2 Image Builder? (Select TWO)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "2",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer​s:​ B and&nbsp;D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect</strong> because the operating system versions can be customized. Users can choose a particular OS version based on their needs.</li>\r\n\t<li><strong>Option​ B is​ CORRECT</strong> because users can customize components to build their desired output AMIs. Take the following as an example:<img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/cs1.png\" /></li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect</strong> because AMIs cannot be automatically deployed on EC2 instances. The image pipeline provides an automation framework for building secure AMIs and container images on AWS.</li>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT </strong>because EC2 Image Builder supports this. The generated AMIs can be distributed through an AMI pipeline.</li>\r\n\t<li><strong>Option​ ​E ​is​ ​incorrect </strong>because EC2 Image Builder utilizes image recipes, and Packer templates cannot be used by EC2 Image Builder.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html\" target=\"_blank\">https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/imagebuilder/latest/userguide/how-image-builder-works.html\" target=\"_blank\">https://docs.aws.amazon.com/imagebuilder/latest/userguide/how-image-builder-works.html</a>&nbsp;</li>\r\n\t<li><a href=\"https://www.packer.io/docs/templates\" target=\"_blank\">https://www.packer.io/docs/templates</a>&nbsp;</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123271,
+          "question_id": 98495,
+          "answers": [
+            {
+              "choice": "<p>EC2 Image Builder pipelines always use the latest operating system in which the latest security patches are installed</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>In an EC2 Image Builder pipeline, users can choose to install Amazon managed components such as the CloudWatch agent and the CodeDeploy agent</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>With an EC2 Image Builder pipeline, users can automatically deploy the AMIs in EC2 instances or Auto Scaling groups in different AWS Regions</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>In an EC2 Image Builder pipeline, the generated AMIs can be automatically distributed to multiple AWS Regions or shared with other AWS accounts</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>EC2 Image Builder pipelines are based on Packer so that Packer templates can be reused</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98494,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You have developed a web application to collect monthly expense reports. To the nature of the application and looking at the usage statistics, it is mostly used around the last week of the month and the first week of the month. To increase the application performance, you added a caching layer in front of the application servers.&nbsp;So the reports are cached and served immediately. You started off with Elasticache Redis with a &quot;cache.t2.small&quot; node type. The application has been running fine. When looking at the performance activity in CloudWatch, 60% of the requests are served by the cache, and the cache cannot cope with additional content requirements. You want to improve the application with minimal changes and&nbsp;resources. Please select a valid option.</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is CORRECT</strong> because we can modify the cache node type from &quot;cache.t2.small&quot; to &quot;cache.t2.medium&quot; in the console. We must increase the size of the Redis instance for the server to serve more requests from the cache.</li>\r\n\t<li><strong>Option B is INCORRECT</strong> because creating a new Elasticache instance with a &quot;cache.t2.micro&quot; node type is not needed here.</li>\r\n\t<li><strong>Option C is INCORRECT</strong> because migrating to Beanstalk will simply not save the cost. Also, Beanstalk has an RDS layer but no caching layer.</li>\r\n\t<li><strong>Option D is INCORRECT </strong>because S3 and CloudFront will incur additional costs for such a minimal use case.</li>\r\n</ul>\r\n\r\n<p>There are two things here:<br />\r\nElastic Cache Instance -&gt; this supports the underlying Elasticache engine. This is similar to our ec2 instance like &quot;t2.micro&quot;, &quot;t2.small&quot; etc. This instance type can be modified either through the AWS console or through the CLI.<br />\r\nRedis -&gt; This is the engine that runs the elasticache cluster. This engine can only be &quot;upgraded&quot; and cannot be &quot;downgraded&quot;.<br />\r\nPlease refer to page 99&nbsp;of the below link-</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/redis-ug.pdf\" target=\"_blank\">https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/redis-ug.pdf</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123270,
+          "question_id": 98494,
+          "answers": [
+            {
+              "choice": "<p>Modify the ElastiCache instance from t2 small to t2 medium, as t2 medium&nbsp;is more suitable for the given requirement</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create a new ElastiCache instance with t2 micro, and terminate the t2 small instance</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Migrate the application to Elastic Beanstalk to use auto-scaling and set the desired and min capacity to 1, use the RDS and Cache layer of Beanstalk to save the cost</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Run the web application from S3 and serve with CloudFront</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98496,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>An IoT company has a new product which is a camera device. The device has installed several sensors and can record video as required. The device has AWS Kinesis Video Streams SDK in the software and can transmit recorded video in real-time to AWS Kinesis. Then the end-users can use a desktop or web client to view, download, or share the video stream. The client app should be simple and use a third-party player such as Google Shaka Player to display the video stream from Kinesis. How should the client app be designed?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<p>The most straightforward way to view or live playback the video in Kinesis Video Streams is by using HLS. HTTP Live Streaming (HLS) is an industry-standard HTTP-based media streaming communications protocol.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect: </strong>Because although GetMedia API may work, it is not as simple as HLS. You may have to create a player that uses GetMedia and build it yourself. However, in this case, a third-party player is needed.</li>\r\n\t<li><strong>Option B is CORRECT: </strong>Because GetHLSStreamingSessionURL API is required for third-party players to play the HLS streams.</li>\r\n\t<li><strong>Option C is incorrect:</strong> Because HTTP Live Streaming (HLS) should be used to playback the Kinesis Video Streams.</li>\r\n\t<li><strong>Option D is incorrect: </strong>Same reason as Option C.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-hls.html#how-hls-ex1-session\" target=\"_blank\">https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-hls.html#how-hls-ex1-session</a>.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123272,
+          "question_id": 98496,
+          "answers": [
+            {
+              "choice": "<p>The client can use HTTP Live Streaming (HLS) for live playback. Use GetMedia API to process and play Kinesis video streams</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The client can use HLS for live playback. Use GetHLSStreamingSessionURL API to retrieve the HLS streaming session URL, then provide the URL to the video player</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The client can use Adobe HTTP Dynamic Streaming (HDS) for live playback. Use GetHDSStreamingSessionURL API to retrieve the HDS streaming session URL, then provide the URL to the video player</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The client can use Microsoft Smooth Streaming (MSS) for live playback. Use GetMSSStreaming API to retrieve the MSS streaming to the video player</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98497,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": 0,
+      "lab_id": 0,
+      "question_text": "<p>You are hired as an AWS solutions architect in a startup company. You notice some issues with the backup strategy of EC2 instances, and there is no snapshot lifecycle management. Users just create snapshots manually without a routine policy to control. You want to suggest using a proper EBS Snapshot Lifecycle policy. How would you persuade your team lead to approve this suggestion?&nbsp; (Select TWO)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "2",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answers: A and&nbsp;B</strong></p>\r\n\r\n<p>EBS Snapshot Lifecycle policy, as a backup strategy, can bring lots of benefits for EC2 users. About the details, please refer to <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html\" target=\"_blank\">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html</a>.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is CORRECT:</strong> Because EC2 EBS volumes can have a routine backup which helps on the quality audit.</li>\r\n\t<li><strong>Option B is CORRECT: </strong>Because this is the major benefit of the life cycle policy, preserving important data and EBS volumes can be easily restored via the snapshots.</li>\r\n\t<li><strong>Option C is incorrect: </strong>The snapshot lifecycle policy can reduce storage costs by deleting outdated backups. However, the snapshots themselves still have costs.</li>\r\n\t<li><strong>Option D is incorrect: </strong>Because you can create up to 100 lifecycle policies per Region.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123274,
+          "question_id": 98497,
+          "answers": [
+            {
+              "question_id": "98497",
+              "choice": "<p>A snapshot lifecycle policy helps to retain backups as required by auditors or internal compliance</p>",
+              "feedback": "",
+              "correct": 1
+            },
+            {
+              "question_id": "98497",
+              "choice": "<p>An EBS Snapshot Lifecycle helps to protect valuable data by enforcing a regular backup schedule</p>",
+              "feedback": "",
+              "correct": 1
+            },
+            {
+              "question_id": "98497",
+              "choice": "<p>A proper snapshot lifecycle policy is able to reduce storage costs as the snapshots taken by the schedule policy are free</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98497",
+              "choice": "<p>You can create an unlimited number of lifecycle policies</p>",
+              "feedback": "",
+              "correct": 0
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98261,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You are building a large-scale confidential documentation web server on AWS, and all of the documentation for it will be stored on S3. One of the requirements is that it cannot be publicly accessible from S3 directly. You will need to use CloudFront to accomplish this. Which of the methods listed below would satisfy the requirements as outlined? Choose an answer from the options below.</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<p>There are two main points (1) the files should not be accessed directly via S3 as they are confidential, and (2) the files should be accessible via CloudFront.</p>\r\n\r\n<p>If you want to use CloudFront signed URLs or signed cookies to provide access to objects in your Amazon S3 bucket, you probably also want to prevent users from accessing your Amazon S3 objects using Amazon S3 URLs. If users access your objects directly in Amazon S3, they bypass the controls provided by CloudFront signed URLs or signed cookies, for example, control over the date and time that a user can no longer access your content and control over which IP addresses can be used to access the content. In addition, if users access objects both through CloudFront and directly by using Amazon S3 URLs, CloudFront access logs are less useful because they&#39;re incomplete. See the image below:</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/01/22/questions_soifjb.png\" style=\"height:422px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because it does not give CloudFront exclusive access to the S3 bucket.</li>\r\n\t<li><strong>Option B is CORRECT</strong> because it gives CloudFront exclusive access to the S3 bucket and prevents other users from accessing the public content of S3 directly via S3 URL.</li>\r\n\t<li><strong>Option C is incorrect </strong>because you do not need to create any individual policies for each bucket.</li>\r\n\t<li><strong>Option D is incorrect</strong> because (a) creating a bucket policy is unnecessary and (b) it does not prevent other users from accessing the public content of S3 directly via S3 URL.</li>\r\n</ul>\r\n\r\n<p>For more information on Origin Access Identity, please see the below link:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html\" target=\"_blank\">http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122959,
+          "question_id": 98261,
+          "answers": [
+            {
+              "choice": "<p>Create an Identity and Access Management (IAM) user for CloudFront and grant access to the objects in your S3 bucket to that IAM User</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an Origin Access Identity (OAI) for CloudFront and grant access to the objects in your S3 bucket to that OAI only</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create individual policies for each bucket that stores documents and in that policy grant access to only CloudFront</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an S3 bucket policy that lists the CloudFront distribution ID as the Principal and the target bucket as the Amazon Resource Name (ARN)</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98262,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A&nbsp;company runs its critical portal on its On-prem datacenter on&nbsp;docker containers with a PostgreSQL database of size 40 TB.&nbsp;They are looking to migrate their existing portal to AWS to enhance user&#39;s experience&nbsp;with less burden on Infrastructure management.&nbsp;Which of the following methods should they use? (Select TWO).</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "2",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answers: B and D&nbsp;</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is Incorrect</strong> because deploying container on ECS using EC2 will require management task.</li>\r\n\t<li><strong>Option B is Correct</strong> because Fargate removes the management task of container on ECS. Also, moving 40TB of data one-time using snowball will be the right strategy here as this is the one-time movement of large data.</li>\r\n\t<li><strong>Option C is Incorrect</strong> because deploying a container on EC2 will require lots of management task and also moving 40TB using 1GBPS will not right strategy here as this is a one-time data movement.</li>\r\n\t<li><strong>Option D is Correct</strong> because RDS Aurora PostgreSQL provides better performance.</li>\r\n\t<li><strong>Option E is Incorrect</strong> because running PostgreSQL in EC2 will require lots of management task like installation, Patching etc</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/rds/aurora/postgresql-features/\" target=\"_blank\">https://aws.amazon.com/rds/aurora/postgresql-features/</a></li>\r\n\t<li><a href=\"https://www.youtube.com/watch?v=4xqOoRPrnAw\" target=\"_blank\">https://www.youtube.com/watch?v=4xqOoRPrnAw</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/compute/migrating-your-amazon-ecs-containers-to-aws-fargate/\" target=\"_blank\">https://aws.amazon.com/blogs/compute/migrating-your-amazon-ecs-containers-to-aws-</a><a href=\"https://aws.amazon.com/blogs/compute/migrating-your-amazon-ecs-containers-to-aws- fargate/\" target=\"_blank\"> fargate/</a></li>\r\n\t<li><a href=\"https://d1.awsstatic.com/events/reinvent/2019/Managing_large-scale_offline_data_migrations_Best_practices_STG337.pdf\" target=\"_blank\">https://d1.awsstatic.com/events/reinvent/2019/Managing_large-</a><a href=\"https://d1.awsstatic.com/events/reinvent/2019/Managing_large-cale_offline_data_migrations_Best_practices_STG337.pdf\" target=\"_blank\">cale_offline_data_migrations_Best_practices_STG337.pdf</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122960,
+          "question_id": 98262,
+          "answers": [
+            {
+              "choice": "<p>They should choose EC2 to deploy the containers on ECS and move the 40TB data using snowball on AWS</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>They should choose Fargate to deploy the containers on ECS and move the 40TB data using&nbsp;snowball on AWS</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>They should choose EC2 to deploy the containers on ECS and move the 40 TB data using 1Gbps Direct Connection Connection</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>They should use the RDS Aurora PostgreSQL Database in AWS</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>They should run the PostgreSQL on top of EC2 Nitro Based system for better Database Performance</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98263,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A legacy application with a license is attached to a single MAC address. An EC2 instance can receive a new MAC address while launching new instances. How can you ensure that your EC2 instances can maintain a single MAC address for licensing? Choose the correct option.</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<p>Tip: Whenever a question has a scenario where you need to use a fixed MAC address for EC2 instances, always think about using Elastic Network Interface (ENI).</p>\r\n\r\n<p>If a static MAC address is assigned to an ENI, it remains unchanged. As long as the EC2 has that ENI, its MAC address will not change.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is CORRECT</strong> because, as mentioned above, as ENI with static MAC address can be assigned to the EC2 instance. If the instance becomes unavailable or needs to be replaced, the ENI can be detached and re-attached to another EC2 while maintaining the same MAC address.</li>\r\n\t<li><strong>Option B is incorrect </strong>because subnets have CIDR, not static MAC addresses.</li>\r\n\t<li><strong>Option C is incorrect</strong> because if the EC2 instance fails or becomes unavailable, its MAC address cannot be reused with another EC2 instance.</li>\r\n\t<li><strong>Option D is incorrect </strong>because you can avail of ENI in order to have a static MAC address for the EC2 instances.</li>\r\n</ul>\r\n\r\n<p><strong>More information on ENI on AWS Documentation:</strong></p>\r\n\r\n<p><strong>Create a Low Budget High Availability Solution</strong></p>\r\n\r\n<p>If one of your instances serving a particular function fails, its network interface can be attached to a replacement or hot standby instance pre-configured for the same role in order to recover the service rapidly. For example, you can use a network interface as your primary or secondary network interface to a critical service such as a database instance or a NAT instance. If the instance fails, you (or more likely, the code running on your behalf) can attach the network interface to a hot standby instance. Because the interface maintains its private IP addresses, Elastic IP addresses, and MAC address, network traffic begins flowing to the standby instance as soon as you attach the network interface to the replacement instance. Users experience a brief loss of connectivity between the time the instance fails and when the network interface is attached to the standby instance, but no changes to the VPC route table or your DNS server are required.</p>\r\n\r\n<p>Best Practices for Configuring Network Interfaces</p>\r\n\r\n<p>For more information on elastic network interfaces, please visit the below URL-</p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html\" target=\"_blank\">http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122961,
+          "question_id": 98263,
+          "answers": [
+            {
+              "choice": "<p>Create an ENI and assign it to the EC2 instance. The ENI will have a static MAC address and can be detached and reattached to a new instance if the current instance becomes unavailable</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Private subnets have static MAC addresses. Launch the EC2 instance in a private subnet and, if required, use a NAT to serve data over the internet</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Configure a manual MAC address for each EC2 instance and report that to the licensing company</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>AWS cannot have a fixed MAC address; the best solution is to create a dedicated VPN/VGW gateway to serve data from the legacy application</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98264,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>The Dynamic Host Configuration Protocol (DHCP) provides a standard for passing configuration information to hosts on a TCP/IP network. You can have multiple sets of DHCP options, but you can associate only one set of DHCP options with a VPC at a time. You have just created your first set of DHCP options and associated it with your VPC but now realize that you have made an error in setting them up and you need to change the options. Which of the following options do you need to take to achieve this?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Options A, B and D are incorrect</strong> because you cannot modify the DHCP options - neither via the console nor via CLI.</li>\r\n\t<li><strong>Option C is CORRECT</strong> because once you create a set of DHCP options, you cannot modify them. You must create a new set of DHCP options and associate it with your VPC.</li>\r\n</ul>\r\n\r\n<p><strong>AWS Document says:</strong></p>\r\n\r\n<p><strong>Changing DHCP Options</strong></p>\r\n\r\n<p>After you create a set of DHCP options, you can&#39;t modify them. If you want your VPC to use a different set of DHCP options, you must create a new set and associate them with your VPC. You can also set up your VPC to use no DHCP options at all.</p>\r\n\r\n<p>You can have multiple sets of DHCP options, but you can associate only one set of DHCP options with a VPC at a time. If you delete a VPC, the DHCP options set associated with the VPC are also deleted.</p>\r\n\r\n<p>After you associate a new set of DHCP options with a VPC, any existing instances and all new instances that you launch in the VPC use these options. You don&#39;t need to restart or relaunch the instances. They automatically pick up the changes within a few hours, depending on how frequently the instance renews its DHCP lease. If you want, you can explicitly renew the lease using the operating system on the instance.</p>\r\n\r\n<p>For more information on the DHCP Options set, please see the below link:-</p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_DHCP_Options.html\" target=\"_blank\">http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_DHCP_Options.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122964,
+          "question_id": 98264,
+          "answers": [
+            {
+              "choice": "<p>You need to stop all the instances in the VPC. You can then change the options, and they will take effect when you start the instances</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>You can modify the options from the console or the CLI</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>You must create a new set of DHCP options and associate them with your VPC</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>You can modify the options from the CLI only, not from the console</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98265,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": 0,
+      "lab_id": 0,
+      "question_text": "<p>You are a software engineer and are creating a new web service in AWS. The service is about daily schedules that end users can configure and fetch. It contains an AngularJs front end that deals with data in a DynamoDB table called &quot;UserScheduleData&quot; with read and write permissions. You plan to use API Gateway and Lambda to handle the backend service. During development, you also need to do integration tests frequently using curl for the API endpoints. You have created a role &ldquo;ScheduleRoleLambda&rdquo; for Lambda itself. What below options should you perform to ensure that Lambda contains the necessary permissions in the service role? (Select TWO)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "2",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answers:&nbsp;B and&nbsp;E</strong></p>\r\n\r\n<p>Firstly, the CloudWatch Logs permission&nbsp;for Lambda is required at a minimum. Refer to the below Lambda settings:</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/02/21/ckeditor_aws_q3.jpg\" style=\"height:220px; width:750px\" /></p>\r\n\r\n<p>Every lambda needs this permission to create a log group, log stream, and put log events.</p>\r\n\r\n<p>Besides, access to DynamoDB is required for the Lambda. &quot;dynamodb:GetItem&quot; and &quot;dynamodb:PutItem&quot; are necessary.</p>\r\n\r\n<p>Lastly, it needs to add permission&nbsp;to the permissions policy associated with the Lambda function. Run the add-permission AWS Lambda command to grant the Amazon API Gateway service principal (apigateway.amazonaws.com) permissions to invoke the Lambda function.</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/lambda/latest/dg/with-on-demand-https-example.html\" target=\"_blank\">https://docs.aws.amazon.com/lambda/latest/dg/with-on-demand-https-example.html</a>&nbsp;</li>\r\n\t<li><strong>Option A is incorrect,</strong>&nbsp;although AWS X-Ray can trace AWS Lambda functions, it is not mandatory.</li>\r\n\t<li><strong>Option B is CORRECT</strong> because the Lambda&nbsp;function needs access to Amazon CloudWatch Logs for log streaming.&nbsp;</li>\r\n\t<li><strong>Option C&nbsp;is incorrect,</strong>&nbsp;SNS may help with error handling; however, it is optional and only needed depending on specific requirements.</li>\r\n\t<li><strong>Option D&nbsp;is incorrect </strong>because, for the permissions of DynamoDB, the resource should be arn name of the DynamoDB table in accordance with the principle of least privilege. &quot;dynamodb:FetchItem&quot; is incorrect as well.</li>\r\n</ul>\r\n\r\n<p>Below is an example:</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/02/21/ckeditor_aws_q3.1.jpg\" style=\"height:382px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option E&nbsp;is CORRECT</strong>&nbsp;because it correctly describes the permissions for DynamoDB.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/lambda/latest/dg/lambda-permissions.html\" target=\"_blank\">https://docs.aws.amazon.com/lambda/latest/dg/lambda-permissions.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/lambda/latest/dg/with-on-demand-https-example.html\" target=\"_blank\">https://docs.aws.amazon.com/lambda/latest/dg/with-on-demand-https-example.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123018,
+          "question_id": 98265,
+          "answers": [
+            {
+              "question_id": "98265",
+              "choice": "<p>AWSXrayWriteOnlyAccess policy is needed for &ldquo;ScheduleRoleLambda&rdquo; so that a segment record with details about the function invocation and execution can be saved for tracking and debug purpose</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98265",
+              "choice": "<p>&ldquo;ScheduleRoleLambda&rdquo; should have a policy for CloudWatch Logs including CreateLogGroup, CreateLogStream and PutLogEvents</p>",
+              "feedback": "",
+              "correct": 1
+            },
+            {
+              "question_id": "98265",
+              "choice": "<p>&ldquo;sns:publish&rdquo; allow inline policy should be added into &ldquo;ScheduleRoleLambda&rdquo; for error handlings. For example, when exception appears, the message can be put into a dead letter queue via SNS publish</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98265",
+              "choice": "<p>&ldquo;ScheduleRoleLambda&rdquo; should contain an inline policy to allow DynamoDb access. The resource should be &ldquo;*&rdquo; and the action should contain &quot;dynamodb:FetchItem&quot;, &quot;dynamodb:PutItem&quot; and &quot;dynamodb:Query&quot;</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98265",
+              "choice": "<p>An IAM policy to allow DynamoDb access is needed for &ldquo;ScheduleRoleLambda&rdquo;. The resource should be the arn of &ldquo;UserScheduleData&rdquo; and the actions should contain &quot;dynamodb:GetItem&quot; and &quot;dynamodb:PutItem&quot;</p>",
+              "feedback": "",
+              "correct": 1
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98266,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You&#39;re building a mobile application game. The application needs permissions for each user to communicate and store data in DynamoDB tables. What is the best method for granting each mobile device that installs your application to access DynamoDB tables for storage when required? Choose the correct answer from the options below.</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect </strong>because IAM Roles are preferred over IAM Users because IAM Users have to access the AWS resources using access and secret keys, which is a security concern.</li>\r\n\t<li><strong>Option B is not</strong> a feasible configuration.</li>\r\n\t<li><strong>Option C is CORRECT</strong> because it (a) creates an IAM Role with the needed permissions to connect to DynamoDB, (b) it authenticates the users with Web Identity Federation, and (c) the application accesses the DynamoDB with temporary credentials that are given by STS.</li>\r\n\t<li><strong>Option D is incorrect </strong>because creating the Active Directory (AD) server and using AD for authenticating are unnecessary and costly.</li>\r\n</ul>\r\n\r\n<p>See the note&nbsp;below for more information on AssumeRoleWithWebIdentity API.</p>\r\n\r\n<p>When you write such an app, you&#39;ll make requests to AWS services that must be signed with an AWS access key. However, we strongly recommend that you do not embed or distribute long-term&nbsp;AWS credentials with apps that users download to a&nbsp;device, even in an encrypted store. Instead, build your app to request temporary AWS security credentials dynamically when needed using web identity federation. The supplied temporary credentials map to an AWS role that has only the permissions needed to perform the tasks required by the mobile app</p>\r\n\r\n<p>For more information on web identity federation, please refer to the below link:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc.html\" target=\"_blank\">http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122966,
+          "question_id": 98266,
+          "answers": [
+            {
+              "choice": "<p>During the install and game configuration process, each user creates an IAM credential and assigns the IAM user to a group with proper permissions to communicate with DynamoDB</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an IAM group that only gives access to your application and the DynamoDB tables. Then, when writing to DynamoDB, simply include the unique device ID to associate the data with that specific user</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an IAM role with the proper permission policy to communicate with the DynamoDB table. Use web identity federation, which assumes the IAM role using AssumeRoleWithWebIdentity, when the user signs in, granting temporary security credentials using STS</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an Active Directory server and an AD user for each mobile application user. When the user signs in to the AD sign-on, allow the AD server to federate using SAML 2.0 to IAM and assign a role to the AD user which is assumed with AssumeRoleWithSAML</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98267,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": 0,
+      "lab_id": 0,
+      "question_text": "<p>You are an AWS Solutions Architect. A company owns a large number of batch processing workloads in a local data center and plans to migrate these jobs to AWS Batch. The company has decided to use AWS Batch with Fargate. Which of the following situations are best suited to using AWS Batch with Fargate?</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "2",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answers: B and D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A is ​incorrect.</strong> Because, for this option, the EC2 instance is more suitable as users can choose the instance configurations.</li>\r\n\t<li><strong>Option​ B is​ CORRECT.&nbsp;</strong>Because with Fargate, jobs can start faster at the initial scale-out of work as users do not need to wait for EC2 instances to launch.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect.&nbsp;</strong>Because the EC2 instance is more suitable as users need to customize the AMI and instance type. Users cannot do this with Fargate.</li>\r\n\t<li><strong>Option​ ​D ​is​ CORRECT.&nbsp;</strong>Because Fargate manages the servers and clusters of EC2 instances for AWS Batch jobs. Users do not need to worry about the details of compute resources.</li>\r\n\t<li><strong>Option​ E ​is​ ​incorrect.</strong> Because with Fargate, users cannot select instance types or the minimum number of vCPUs.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/batch/latest/userguide/fargate.html\" target=\"_blank\">https://docs.aws.amazon.com/batch/latest/userguide/fargate.html</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/batch/faqs/\" target=\"_blank\">https://aws.amazon.com/batch/faqs/</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123975,
+          "question_id": 98267,
+          "answers": [
+            {
+              "question_id": "98267",
+              "choice": "<p>When a batch job needs access to particular instance configurations, including processors and GPUs</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98267",
+              "choice": "<p>When a batch job needs to be started fast at the initial scale-out of work</p>",
+              "feedback": "",
+              "correct": 1
+            },
+            {
+              "question_id": "98267",
+              "choice": "<p>When a batch job needs to use a compute environment based on a custom AMI and the instance type must be A1</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98267",
+              "choice": "<p>When users do not want to provision or scale clusters of virtual machines to run containers for AWS Batch jobs</p>",
+              "feedback": "",
+              "correct": 1
+            },
+            {
+              "question_id": "98267",
+              "choice": "<p>When a batch job needs the instance type to be C5 with multiple vCPUs</p>",
+              "feedback": "",
+              "correct": 0
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98268,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You currently have 9 EC2 instances running in a Cluster Placement Group. All these nine instances were initially launched at the same time and seemed to be performing as expected. You decide that you need to add two new instances to the group.&nbsp;However, when you attempt to do this, you receive a &#39;capacity error.&#39; Which of the following actions will most likely fix this problem? Choose the correct answer from the options below.</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because to benefit from the enhanced networking, all the instances should be in the same Placement Group. Launching the new ones in a new Placement Group will not work in this case.</li>\r\n\t<li><strong>Option B is CORRECT</strong> because the most likely reason for the &quot;Capacity Error&quot; is that the underlying hardware may not have the capacity to launch any additional instances on it. If the instances are stopped and restarted, AWS may move the instances to a hardware that has the capacity for all the requested instances.</li>\r\n\t<li><strong>Option C is incorrect </strong>because there is no such limit on the number of instances in a Placement Group (however, you can not exceed your EC2 instance limit allocated to your account per region).</li>\r\n\t<li><strong>Option D is incorrect </strong>because the capacity error is not related to the instance size and ensures that the instances are of the same size will not resolve the capacity error.</li>\r\n</ul>\r\n\r\n<p><strong>More information on Cluster Placement Group</strong></p>\r\n\r\n<p>&nbsp;If you receive a capacity error when launching an instance in a placement group that already has running instances, stop and start all of the instances in the placement group, and try the launch again. Restarting the instances may migrate them to hardware that has the capacity for all the requested instances.</p>\r\n\r\n<p><strong>Cluster Placement Groups</strong></p>\r\n\r\n<p>A cluster placement group is a logical grouping of instances within a single Availability Zone. A placement group can span peered VPCs in the same region.</p>\r\n\r\n<p>Cluster placement groups are recommended for applications that benefit from low network latency, high network throughput, or both. The majority of the network traffic is between the instances in the group. To provide the lowest latency and the highest packet-per-second network performance for your placement group, choose an instance type supporting enhanced networking. For more information, see Enhanced Networking.</p>\r\n\r\n<p>We recommend that you launch the number of instances you need in the placement group in a single launch request and use the same instance type for all instances in the placement group. If you try to add more instances to the placement group later or try to launch more than one instance type in the placement group, you increase your chances of getting an insufficient capacity error.</p>\r\n\r\n<p>If you stop an instance in a placement group and then start it again, it still runs in the placement group. However, the start fails if there isn&#39;t enough capacity for the instance.</p>\r\n\r\n<p>If you receive a capacity error when launching an instance in a placement group that already has running instances, stop and start all of the instances in the placement group and try the launch again. Restarting the instances may migrate them to hardware that has capacity for all the requested instances.</p>\r\n\r\n<p><br />\r\nFor more information on this, please refer to the below URL</p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html\" target=\"_blank\">http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html</a></li>\r\n</ul>\r\n\r\n<p><strong>Note:</strong>&nbsp;</p>\r\n\r\n<p>In this scenario, we are discussing the insufficient capacity error happening within a placement group.<br />\r\nAs per AWS docs,</p>\r\n\r\n<p>&quot;If you receive a capacity error when launching an instance in a placement group that already has running instances, stop and start all of the instances in the placement group, and try the launch again. Restarting the instances may migrate them to hardware that has capacity for all the requested instances.&quot;</p>\r\n\r\n<p>In our scenario, we already have 9 EC2 instances running on a placement group. When we tried to add 2 more to the group, we have encountered this error. So if we stop and restart all the instances, it will help resolve this issue as the restarting instances will migrate to a new hardware that will have the capacity for all the instances.<br />\r\n<br />\r\nFor more information, please refer to:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html\" target=\"_blank\">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122969,
+          "question_id": 98268,
+          "answers": [
+            {
+              "choice": "<p>Create another placement group and launch new instances in that group. Make sure that both the placement groups are in the same subnet</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Stop and restart all the instances in the Placement Group and then try the launch again</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Request a capacity increase from AWS as you are initially limited to 10 instances per Placement Group</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Make sure all the instances are the same size and then try the launch again</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98269,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>An auditor needs access to logs that record all the API events on AWS.&nbsp;The company has multiple AWS accounts, where the auditor needs access to all the logs for all the accounts. What is the best way to configure access for the auditor to view event logs from all accounts?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<p>You can have CloudTrail deliver log files from multiple AWS accounts into a single Amazon S3 bucket. For example, you have four AWS accounts with account IDs 111111111111, 222222222222, 333333333333, and 444444444444, and you want to configure CloudTrail to deliver log files from all four of these accounts to a bucket belonging to account 111111111111. To accomplish this, complete the following steps in order:</p>\r\n\r\n<ol>\r\n\t<li>\r\n\t<p>Turn on CloudTrail in the account where the destination bucket will belong (111111111111 in this example). Do not turn on CloudTrail in any other accounts yet.</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Update the bucket policy on your destination bucket to grant cross-account permissions to CloudTrail.</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Turn on CloudTrail in the other accounts you want (222222222222, 333333333333, and 444444444444 in this example). Configure CloudTrail in these accounts to use the same bucket belonging to the account that you specified in step 1 (111111111111 in this example).</p>\r\n\t</li>\r\n</ol>\r\n\r\n<p>The AWS CloudTrail service provides an option to deliver the log files for all the regions in a single S3 bucket. This feature is very useful when you need to access the logs related to all the resources in multiple regions for all the AWS accounts via a single S3 bucket. Please see the images below.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because delivering the logs in multiple buckets is an unnecessary overhead. Instead, you can have CloudTrail deliver the logs to a single S3 bucket.</li>\r\n\t<li><strong>Option B is incorrect</strong> because consolidated billing will not help the auditor to get the records of all the API events in AWS.&nbsp;</li>\r\n\t<li><strong>Option C is incorrect</strong> because there is no consolidated logging feature in AWS CloudTrail.</li>\r\n\t<li><strong>Option D is CORRECT</strong> because it delivers the logs pertaining to different AWS accounts to a single S3 bucket in the primary account and grants the auditor access to it.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html\" target=\"_blank\">https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122970,
+          "question_id": 98269,
+          "answers": [
+            {
+              "choice": "<p>Configure the CloudTrail service in each AWS account, and make the logs delivered to an S3 bucket on each account, while granting the auditor permissions to the bucket via roles in the secondary accounts and a single primary IAM account that can assume a read-only role in the secondary AWS accounts</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Configure the CloudTrail service in the primary AWS account and configure consolidated billing for all the secondary accounts. Then grant the auditor access to the S3 bucket that receives the CloudTrail log files</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Configure the CloudTrail service in each AWS account and enable consolidated logging inside of CloudTrail</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Configure the CloudTrail service in each AWS account and have the logs delivered to a single S3 bucket in&nbsp;a separate account. Provide the auditor to access only to this&nbsp;bucket</p>",
+              "correct": 1,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98270,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You are an AWS solutions architect and in charge of a migration project from local servers to AWS. AWS Server Migration Service has been configured to replicate a large number of VMware virtual machines to EC2 AMI. SMS already helps generating CloudFormation templates during the migration of applications. You also manually created several CloudFormation templates to create AWS resources including EC2. You wish to use a service to manage the resources created by CloudFormation templates centrally. And users can choose certain products and deploy them quickly. The service should also integrate with IAM to provide access control. Which method is the best for you to take?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer​:&nbsp;C</strong></p>\r\n\r\n<p>AWS Service Catalog can help manage CloudFormation templates in portfolio and products. It also works with IAM to provide access control to the managed resources. Details can be found in</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/servicecatalog/latest/adminguide/what-is_concepts.html\" target=\"_blank\">https://docs.aws.amazon.com/servicecatalog/latest/adminguide/what-is_concepts.html</a>.</li>\r\n\t<li><strong>Option​ ​A ​is​ ​incorrect</strong>:​ Because AWS Config cannot be used to manage resources by tags.</li>\r\n\t<li><strong>Option​ ​B ​is​ ​incorrect</strong>:​ Because Resource Access Manager is used to share resources with other IAM accounts. It is unsuitable for this scenario.</li>\r\n\t<li><strong>Option​ ​C ​is​ CORRECT</strong>:​ Because in Service Catalog, you can add a product and link it with a CloudFormation template. Using this method, all CloudFormation templates can be managed as products in a portfolio.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect</strong>:​ Because AWS Resource Groups cannot group the CloudFormation templates. Users cannot create CloudFormation stacks based on the groups either.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122973,
+          "question_id": 98270,
+          "answers": [
+            {
+              "choice": "<p>Manage resources in AWS Config via tags. Create resources and provide access control based on tags</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Configure and manage all CloudFormation templates in AWS Resource Access Manager. Assign different permissions to IAM users or roles</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create portfolio and products in AWS Service Catalog. Use IAM permissions to grant users access to the portfolio</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create groups of CloudFormation templates in AWS Resource Groups. Assign related IAM permissions based on the group ARN</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98271,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Singapore-based College is closed due to covid 19. College wants to continue Online classes. They are also looking for a solution to offer college-based applications/software/Labs to students easily. What device-agnostic solution for all college students will you suggest?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because using Amazon WorkSpace is not the right solution in this case.</li>\r\n\t<li><strong>Option B is Correct</strong> because Amazon AppStream offers a desktop-based application through streaming. Price is based on a monthly fee per streaming user and stream resource required for provisioning.</li>\r\n\t<li><strong>Option C is incorrect</strong> because &nbsp;Amazon WorkSpace is not the right solution in this case.</li>\r\n\t<li><strong>Option D is incorrect</strong> because the hourly fee&nbsp;per streaming user is the wrong statement here.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/appstream2/pricing/?nc=sn&amp;loc=4\" target=\"_blank\">https://aws.amazon.com/appstream2/pricing/?nc=sn&amp;loc=4</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/publicsector/fife-school-districts-use-amazon-appstream-2-0-to-provide-equitable-access/\" target=\"_blank\">https://aws.amazon.com/blogs/publicsector/fife-school-districts-use-amazon-appstream-2-0-</a><a href=\"https://aws.amazon.com/blogs/publicsector/fife-school-districts-use-amazon-appstream-2-0-to-provide-equitable-access/\">to-provide-equitable-access/</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122974,
+          "question_id": 98271,
+          "answers": [
+            {
+              "choice": "<p>You can suggest using Amazon AppStream 2.0 in VPC. Amazon&nbsp; AppStream 2.0 price is based on a monthly fee per streaming user and stream resource required for provisioning. Students can access the application through the Amazon WorkSpace</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>You can suggest using Amazon AppStream 2.0 in VPC. Amazon AppStream 2.0 price is based on a monthly fee per streaming user and stream resource required for provisioning. Students can access the application through the browser in their personal system</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>You can suggest to use Amazon WorkSpace and run them in always ON mode</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>You can suggest using Amazon AppStream 2.0. Amazon AppStream 2.0 price is based on an hourly fee per streaming user and stream resource required for provisioning. Students can access the application through the browser in their personal system</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98272,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your security officer has told you that you need to tighten up the logging of all events that occur on your AWS account. He wants to be able to access all events that occur on the account across all regions quickly and in the simplest possible manner. He also wants to make sure that he is the only person who can access these events in the most secure way possible. Which of the following would be the best solution to assure his requirements are met? Choose the correct answer from the options below.</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<p>The main points to consider in this scenario is: (1)&nbsp; the security officer needs to access all events that occur on the account <strong>across all the regions</strong>, and (2) only that security officer should have the access.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is CORRECT </strong>because it configures only one S3 bucket for all the CloudTrail log events on the account across all the regions. It also restricts access to the security officer only via the bucket policy. See the images below:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/01/22/questions_yw6lzg.png\" style=\"height:187px; width:750px\" /></p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/01/22/questions_vkaauy.png\" style=\"height:214px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect </strong>because it uses Amazon Glacier vaults, an archival solution and is not used to store the CloudTrail logs.</li>\r\n\t<li><strong>Option C is incorrect </strong>because sending the API calls to CloudWatch is unnecessary. Also, notifying the security officer via email is not a good nor a secure architecture.</li>\r\n\t<li><strong>Option D is incorrect</strong> because CloudTrail provides an option where are all the logs get delivered to a single S3 bucket. Putting all the logs in separate buckets is an overhead .</li>\r\n</ul>\r\n\r\n<p><strong>More information on AWS CloudTrail</strong></p>\r\n\r\n<p>AWS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. With CloudTrail, you can log, continuously monitor, and retain events related to API calls across your AWS infrastructure. CloudTrail provides a history of AWS API calls for your account, including API calls made through the AWS Management Console, AWS SDKs, command-line tools, and other AWS services. This history simplifies security analysis, resource change tracking, and troubleshooting.</p>\r\n\r\n<p>You can design CloudTrail to send all logs to a central S3 bucket.</p>\r\n\r\n<p>For more information on CloudTrail, please visit the below URL:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/cloudtrail/\" target=\"_blank\">https://aws.amazon.com/cloudtrail/</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122975,
+          "question_id": 98272,
+          "answers": [
+            {
+              "choice": "<p>Use CloudTrail to log all events to one S3 bucket. Make this S3 bucket only accessible by your security officer with a bucket policy that restricts access to his user only and adds MFA to the policy for a further security level</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use CloudTrail to log all events to an Amazon Glacier Vault. Make sure the vault access policy only grants access to the security officer&#39;s IP address</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use CloudTrail to send all API calls to CloudWatch and send an email to the security officer every time an API call is made. Make sure the emails are encrypted</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use CloudTrail to log all events to a separate S3 bucket in each region as CloudTrail cannot write to a bucket in a different region. Use MFA and bucket policies on all the different buckets</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98273,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You are launching your first ElastiCache cache cluster and start using Memcached. Which of your following requirement is NOT supported by Memcached?&nbsp;Choose the correct answer from the options below.</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer:&nbsp;B</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option B is CORRECT</strong> because it is Redis, not Memcached, which supports advanced/complexdata types such as strings, hashes, lists, sets, sorted sets, and bitmaps.</li>\r\n\t<li><strong>Options A, C and D are all incorrect</strong> because these are the main features of Memcached.</li>\r\n</ul>\r\n\r\n<p>For the exam, it is very important to remember the differences between Memcached and Redis. Both are excellent solutions, but used for different scenarios. Please see the notes given below by the AWS documentation:&nbsp;</p>\r\n\r\n<p><strong>Choose Memcached if the following apply to your situation:</strong></p>\r\n\r\n<ul>\r\n\t<li>You need the simplest model possible.</li>\r\n\t<li>You need to run large nodes with multiple cores or threads.</li>\r\n\t<li>You need the ability to scale out/in, adding and removing nodes as demand on your system increases and decreases.</li>\r\n\t<li>You need to cache objects, such as a database.</li>\r\n</ul>\r\n\r\n<p><strong>Choose Redis 2.8.x or Redis 3.2.4 (non-clustered mode) if the following apply to your situation:</strong></p>\r\n\r\n<ul>\r\n\t<li>You need complex data types, such as strings, hashes, lists, sets, sorted sets, and bitmaps.</li>\r\n\t<li>You need to sort or rank in-memory data-sets.</li>\r\n\t<li>You need persistence of your key store.</li>\r\n\t<li>You need to replicate your data from the primary to one or more read replicas for read-intensive applications.</li>\r\n\t<li>You need automatic failover if your primary node fails.</li>\r\n\t<li>You need publish and subscribe (pub/sub) capabilities&mdash;to inform clients about events on the server.</li>\r\n\t<li>You need backup and restore capabilities.</li>\r\n\t<li>You need to support multiple databases.</li>\r\n</ul>\r\n\r\n<p>For more information on the various caching engines, please visit the below URL:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/SelectEngine.Uses.html\" target=\"_blank\">http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/SelectEngine.Uses.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122976,
+          "question_id": 98273,
+          "answers": [
+            {
+              "choice": "<p>Your&nbsp;ability to scale your cache horizontally as you grow</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>You can use more advanced data types, such as lists, hashes, and sets</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Your need for as&nbsp;simple a caching model as possible</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Object caching is your primary goal to offload your database</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98274,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>In your organization, your DevOps team is in charge of provisioning resources in an AWS account. Tim was a team member and created a Customer Managed Key in KMS several months ago. The default key policy is removed, and the key policy is as below.</p>\r\n\r\n<pre class=\"brush:java;\">\r\n{\r\n&nbsp;&nbsp;&quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp;&nbsp;&quot;Id&quot;: &quot;key-consolepolicy-1&quot;,\r\n&nbsp;&nbsp;&quot;Statement&quot;: [\r\n&nbsp;&nbsp;&nbsp;&nbsp;{\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Sid&quot;: &quot;Enable IAM User Permissions&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Principal&quot;: {&quot;AWS&quot;: &quot;arn:aws:iam::111122223333:user/Tim&quot;},\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Action&quot;: &quot;kms:*&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Resource&quot;: &quot;*&quot;\r\n&nbsp;&nbsp;&nbsp;&nbsp;}\r\n&nbsp;&nbsp;]\r\n}</pre>\r\n\r\n<p>As Tim leaves the company, his accounts are deleted including the above IAM user. As a result, the CMK becomes unmanageable for other users to view or use. How should you deal with this problem?&nbsp;</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct​ ​Answer​: A</strong></p>\r\n\r\n<p>About the default and recommended key policies in KMS, check the AWS documentation in <a href=\"https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html#key-policy-default\" target=\"_blank\">https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html#key-policy-default</a>. The default key policy is as below:</p>\r\n\r\n<pre class=\"brush:java;\">\r\n{\r\n&nbsp; &quot;Sid&quot;: &quot;Enable IAM User Permissions&quot;,\r\n&nbsp; &quot;Effect&quot;: &quot;Allow&quot;,\r\n&nbsp; &quot;Principal&quot;: {&quot;AWS&quot;: &quot;arn:aws:iam::111122223333:root&quot;},\r\n&nbsp; &quot;Action&quot;: &quot;kms:*&quot;,\r\n&nbsp; &quot;Resource&quot;: &quot;*&quot;\r\n}</pre>\r\n\r\n<p>This allows the permissions of the key to be managed by IAM policies.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option​ ​A ​is​ CORRECT:​ </strong>Because even the root user cannot manage it. You have to contact AWS Support to restore it.</li>\r\n\t<li><strong>Option​ ​B ​is​ ​incorrect:​ </strong>Because the root user cannot manage the key policy either as the user is not allowed to do that.</li>\r\n\t<li><strong>Option​ ​C ​is​ ​incorrect:​ </strong>Because the key policy cannot be modified by any IAM user anymore.</li>\r\n\t<li><strong>Option​ ​D ​is​ ​incorrect:​ </strong>Because the key policy still denies the action even if the IAM user has an IAM policy to allow it.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122978,
+          "question_id": 98274,
+          "answers": [
+            {
+              "choice": "<p>&nbsp;Contact AWS Support to regain access to the CMK</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Log in as the root user of the AWS account and add another user as the key administrator</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use the IAM admin user to edit the key policy to allow all actions for the principal of arn:aws:iam::111122223333:root. Add other IAM users as key administrators or users if required</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an IAM policy that allows the action of kms:PutKeyPolicy and attach the policy to an IAM user. Login into AWS console with the user and modify the key policy to the default one</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98275,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your company asked you to create a mobile application. The application is built to work with DynamoDB as the backend and Javascript as the front end. During the application&#39;s usage, you notice that sometimes during the daytime, the write requests are throttled because of low provisioned write capacity. How can you effectively resolve this problem of DynamoDB in the easiest way?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is correct </strong>because users can enable Auto Scaling in DynamoDB.&nbsp;</li>\r\n\t<li><strong>Option B is incorrect</strong> because just increasing the write capacity of the DynamoDB table would not satisfy the requirement &quot;effectively manage DynamoDB&quot;. The problem only happens during the daytime. So there is a waste of provisioned resources when there are few requests at the night.</li>\r\n\t<li><strong>Option C is incorrect.</strong> Because you have to create a new&nbsp;SQS queue and modify&nbsp;the related logic for DynamoDB. This option is not the easiest one.</li>\r\n\t<li><strong>Option D is incorrect </strong>because launching a DynamoDB table in a Multi-AZ configuration with a global index would only increase data availability and would not solve the write contention issue.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html\" target=\"_blank\">https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122982,
+          "question_id": 98275,
+          "answers": [
+            {
+              "choice": "<p>Enable DynamoDB Auto Scaling to meet the requirements</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Increase write capacity of DynamoDB to meet the peak loads</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use the SQS service to read messages in the queue and write these to DynamoDB</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Launch DynamoDB in Multi-AZ configuration with a global index to balance writes</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98276,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A manufacturing company whose head office is in Sydney, have plants in 16 locations across the world. Employees based in these 16 locations have to send their daily development data to AWS for storage and further analysis. Data size is expected to be in GBs. What is the best way to send the data to AWS?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is Incorrect</strong> because direct connect is ideal for clients who want&nbsp;to establish private connectivity between their on-prem network and AWS for some location. This is not the right solution for moving files from multiple locations.</li>\r\n\t<li><strong>Option B is Incorrect</strong> because snowball is ideal for clients moving a large bunch of data at once.</li>\r\n\t<li><strong>Option C is Correct</strong> because S3 Transfer acceleration gives the ability to write into the single S3 Bucket from various locations. It uses edge locations to move the data.</li>\r\n\t<li><strong>Option D is Incorrect</strong> because Transfer acceleration doesn&rsquo;t work with the Amazon Glacier storage class.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://www.youtube.com/watch?v=J2CVnmUWSi4\" target=\"_blank\">https://www.youtube.com/watch?v=J2CVnmUWSi4</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/about-aws/whats-new/2016/04/transfer-files-into-amazon-s3-up-to-300-percent-faster/\" target=\"_blank\">https://aws.amazon.com/about-aws/whats-new/2016/04/transfer-files-into-amazon-s3-up-to-</a><a href=\"http://aws.amazon.com/about-aws/whats-new/2016/04/transfer-files-into-amazon-s3-up-to- 300-percent-faster/\" target=\"_blank\"> 300-percent-faster/</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/s3/transfer-acceleration/\" target=\"_blank\">https://aws.amazon.com/s3/transfer-acceleration/</a></li>\r\n\t<li><a href=\"https://www.youtube.com/watch?v=HnUqH3hdz4I\" target=\"_blank\">https://www.youtube.com/watch?v=HnUqH3hdz4I</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122983,
+          "question_id": 98276,
+          "answers": [
+            {
+              "choice": "<p>They can send through AWS Direct Connect and store the data in Amazon S3</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>They can store the data in Amazon S3 and send it through Snowball</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>They can send through S3 Transfer acceleration and store the data in Amazon S3</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>They can store in Amazon Glacier and send through S3 Transfer acceleration</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98277,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You have just developed a new mobile application that handles analytics workloads on large-scale datasets stored on Amazon Redshift. Consequently, the application needs to access Amazon Redshift tables. Your company is asking to expand&nbsp;the scope of the application. Which of the following methods would be the best, both practically and security-wise, to access the tables?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<p>Tip: When a service, user, or application needs to access an AWS resource, always prefer creating an IAM Role over creating an IAM User.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because embedding keys in the application to access AWS resources is not a good architectural practice as it creates security concerns.</li>\r\n\t<li><strong>Option B is incorrect</strong> because the Redshift cluster uses the HSM certificate to connect to the client&#39;s HSM to store and retrieve the keys used to encrypt the cluster databases.</li>\r\n\t<li><strong>Option C is incorrect </strong>because the read-only policy is insufficient and embedding keys in the application to access AWS resources is not a good architectural practice as it creates security concerns.</li>\r\n\t<li><strong>Option D is CORRECT </strong>because (a) the IAM role allows the least privileged access to the AWS resource, (b) the web identity federation ensures the identity of the user, and (c) the user is given temporary credentials to access the AWS resource.</li>\r\n</ul>\r\n\r\n<p>For more information on IAM policies, please refer to the below link-</p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html\" target=\"_blank\">http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html</a></li>\r\n\t<li><a href=\"http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc.html\" target=\"_blank\">http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122984,
+          "question_id": 98277,
+          "answers": [
+            {
+              "choice": "<p>Create an IAM user and generate encryption keys for that user. Create a policy for Redshift read-only access. Embed the keys in the application</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an HSM client certificate in Redshift and authenticate using this certificate</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create a Redshift read-only access policy in IAM and embed those credentials in the application</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use roles that allow a web identity federated user to assume a role that allows access to the Redshift table by providing temporary credentials</p>",
+              "correct": 1,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98278,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You have a legacy application running that uses an m4.large instance size and cannot scale with Auto Scaling, but only has peak performance 5% of the time. This is a huge waste of resources and money. So your Senior Technical Manager has set you the task of trying to reduce costs while still keeping the legacy application, having lesser memory requirements, running in the long-term as it should. Which of the following will best accomplish the task your manager has assigned you? Choose the correct answer from the options below.</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<p>The AWS documentation clearly indicates using T2 EC2 instance types for those instances that often don&rsquo;t use CPU.</p>\r\n\r\n<p><strong>&nbsp;T2</strong></p>\r\n\r\n<p>T2 instances are Burstable Performance Instances that provide a baseline level of CPU performance with the ability to burst above the baseline.</p>\r\n\r\n<p>T2 Unlimited instances can sustain high CPU performance for as long as a workload needs it. For most general-purpose workloads, T2 Unlimited instances will provide ample performance without any additional charges. If the instance needs to run at higher CPU utilization for a prolonged period, it can also do so at a flat additional charge of 5 cents per vCPU-hour.</p>\r\n\r\n<p>CPU Credits govern the baseline performance and ability to burst. T2 instances receive CPU Credits continuously at a set rate depending on the instance size, accumulating CPU Credits when they are idle, and consuming CPU credits when active. T2 instances are a good choice for various general-purpose workloads, including microservices, low-latency interactive applications, small and medium databases, virtual desktops, development, build and stage environments, code repositories, and product prototypes. For more information, see Burstable Performance Instances.</p>\r\n\r\n<p>For more information on EC2 instance types, please see the below link:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/ec2/instance-types/\" target=\"_blank\">https://aws.amazon.com/ec2/instance-types/</a></li>\r\n\t<li><strong>Option B is INCORRECT</strong> because using a &quot;C4&quot; instance would incur more costs and as per the requirements of the question, we need to reduce the costs. Please refer to the below link for instances pricing.</li>\r\n\t<li><a href=\"https://aws.amazon.com/ec2/pricing/on-demand/\" target=\"_blank\">https://aws.amazon.com/ec2/pricing/on-demand/</a></li>\r\n\t<li><strong>Option C is INCORRECT </strong>because although &quot;t2.nano&quot; instance pricing is less, it has only 0.5 GiB of allocated memory, making the legacy application run too slow.</li>\r\n\t<li><strong>Option D is INCORRECT </strong>because there are chances that the spot instances would not be available when there is a need. Therefore, there are chances for the legacy application to break down for want of more instances when needed.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122986,
+          "question_id": 98278,
+          "answers": [
+            {
+              "choice": "<p>Use a &quot;t2.medium - 3 yr RI&quot; burstable performance instance</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use a C4.large instance with enhanced networking</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use two t2.nano instances that have single Root I/O Virtualization</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use t2.nano instance and add spot instances when they are required</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98279,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": 0,
+      "lab_id": 0,
+      "question_text": "<p>Your company is running a microservice-based application. They are using DynamoDB to store the data and AWS API Gateway for managing the Rest APIs. They are also using Lambda non-proxy integration. The development team recently made a change&nbsp;to one Rest API method. After that, the API stopped working. You have been asked to troubleshoot the issue. Which is the correct statement?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because we can make changes in the Rest APIs in AWS API Gateway.</li>\r\n\t<li><strong>Option B is Correct</strong> because updates to the method require Redeployment of the API.</li>\r\n\t<li><strong>Option C is Incorrect</strong> because an update to the stage doesn&rsquo;t require the Redeployment of the API.</li>\r\n\t<li><strong>Option D is incorrect</strong> because it&rsquo;s not mentioned in the question that they are using the caching.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/apigateway/latest/developerguide/updating-api.html\" target=\"_blank\">https://docs.aws.amazon.com/apigateway/latest/developerguide/updating-api.html</a></li>\r\n\t<li><a href=\"https://www.youtube.com/watch?v=9ElpSPXk-g8\" target=\"_blank\">https://www.youtube.com/watch?v=9ElpSPXk-g8</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122992,
+          "question_id": 98279,
+          "answers": [
+            {
+              "question_id": "98279",
+              "choice": "<p>You can&rsquo;t change the Rest APIs in AWS API Gateway</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98279",
+              "choice": "<p>As the development team has recently made&nbsp;a change in the method of the Rest API. They should Redeploy the API</p>",
+              "feedback": "",
+              "correct": 1
+            },
+            {
+              "question_id": "98279",
+              "choice": "<p>As the development team has recently made a change in the stage of the Rest API. They should Redeploy the API</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98279",
+              "choice": "<p>You should change the Cache time-to-live (TTL) value and update the Lambda Code</p>",
+              "feedback": "",
+              "correct": 0
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98897,
+      "topic_id": 2687,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A popular real estate firm has recently moved to a hybrid cloud infrastructure that extends its data centers into AWS. They decide to allow on-premises users, who are already signed in using their corporate accounts, to manage AWS resources without the creation of separate IAM users for each of them. This is to avoid having two separate login accounts. As an AWS Solutions Architect of the firm, which of the following do you deem the most optimal way of authorizing users in this hybrid architecture?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option C is correct</strong> as - The idea is to provide temporary access to AWS resources to the existing users, but without creating new IAM users for them to avoid having to maintain two login accounts. This will require a setup where there is SSO for your users so they only need to sign in once in their on-premises network and can also access the AWS cloud at the same time. You can use a role to configure your SAML 2.0-compliant identity provider (IdP) and AWS to permit your federated users to access the AWS Management Console. The role grants the user permission to carry out tasks in the console.</li>\r\n\t<li><strong>Option A is incorrect</strong> - The use of AssumeRoleWithWebIdentity is wrong as it is only for Web Identity Federations (Facebook, Twitter, and other social logins). The purpose here is to provide access to the AWS console to users through their corporate identity provider.</li>\r\n\t<li><strong>Option B is incorrect</strong> for the same reason as listed for Option A - AssumeRoleWithWebIdentity is wrong as it is only for Web Identity Federations (Facebook, Twitter, and other social logins)</li>\r\n\t<li><strong>Option D is incorrect</strong> as GetSessionToken returns a set of temporary credentials for an AWS account or IAM user, which is again not needed here.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_enable-console-custom-url.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_enable-console-custom-url.html</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/identity/federation/\" target=\"_blank\">https://aws.amazon.com/identity/federation/</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/security/how-to-establish-federated-access-to-your-aws-resources-by-using-active-directory-user-attributes/\" target=\"_blank\">https://aws.amazon.com/blogs/security/how-to-establish-federated-access-to-your-aws-resources-by-using-active-directory-user-attributes/</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 124255,
+          "question_id": 98897,
+          "answers": [
+            {
+              "choice": "<p>Authenticate using your on-premises SAML 2.0 &ndash; compliant IDP using STS and AssumeRoleWithWebIdentity to retrieve temporary security credentials, which enables your users to log in to the AWS console using a browser</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Extract AWS security credentials with Web Identity Federation using STS and AssumeRoleWithWebIdentity to enable users to log in to AWS</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Authenticate using your on-premises SAML 2.0 &ndash; compliant IDP, retrieve temporary credentials using STS, and provide federated access to the AWS console via AWS SSO endpoint on a browser</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Extract AWS security credentials with Web Identity Federation using STS and call the GetSessionToken&nbsp;API operation to provide temporary login to the users</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design Solutions for Organizational Complexity"
+    },
+    {
+      "question_id": 98281,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your company is planning to move an existing portal to AWS. Currently, it&rsquo;s running in on-premises. It is a 5-year-old portal developed on Java and MySQL 5.6. Your company is looking to dockerize the application and deploy it in a highly available environment in AWS. You also need a serverless compute engine for containers so that you do not need to provision and manage servers. Which of the following methods is the most suitable?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong>&nbsp;because the Client is looking to dockerize the App in a serverless environment. Amazon ECS with EC2 Launch Type is not the best case here.</li>\r\n\t<li><strong>Option B is incorrect</strong> because the Client is looking for dockerizing&nbsp;the App in a serverless environment. Amazon EC2 is not the best case here.</li>\r\n\t<li><strong>Option C is incorrect</strong> because ECS with EC2 Launch Type is not a serverless environment.</li>\r\n\t<li><strong>Option D is CORRECT</strong> because ECS with AWS Fargate Launch Type provides a highly available and serverless environment. This option meets the requirements of the question.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-dg.pdf\" target=\"_blank\">https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-dg.pdf</a></li>\r\n\t<li><a href=\"https://www.youtube.com/watch?v=4xqOoRPrnAw\" target=\"_blank\">https://www.youtube.com/watch?v=4xqOoRPrnAw</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/compute/migrating-your-amazon-ecs-containers-to-aws-fargate/\" target=\"_blank\">https://aws.amazon.com/blogs/compute/migrating-your-amazon-ecs-containers-to-aws-</a><a href=\"https://aws.amazon.com/blogs/compute/migrating-your-amazon-ecs-containers-to-aws- fargate/\" target=\"_blank\"> fargate/</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122993,
+          "question_id": 98281,
+          "answers": [
+            {
+              "choice": "<p>Deploy the Application on Amazon ECS with EC2 Launch Type and leverage Amazon RDS MySQL for the database</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Deploy the Application on Amazon EC2 and leverage the Amazon Aurora MySQL for the database</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Containerize the Java based application, store Container image in Docker Hub and deploy it in ECS with EC2 Launch Type. Leverage Amazon Aurora MySQL for the database</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Containerize the Java based application, store Container image in ECR and deploy it in ECS with AWS Fargate Launch Type. Leverage Amazon Aurora MySQL for the database</p>",
+              "correct": 1,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98282,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You have acquired a new contract from a client to move all of their&nbsp;existing infrastructures&nbsp;onto AWS. You notice that they are running some of their&nbsp;applications using multicast, and they need to keep it running as such when it is migrated to AWS. You discover that multicast is not available on AWS, as you cannot manage multiple subnets on a single interface on AWS, and a subnet can only belong to one availability zone. Which of the following would enable you to deploy legacy applications on AWS that require multicast?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because, although creating an Elastic Network Interfaces to communicate between the various subnets is a correct step, it would not be enough in this scenario unless a virtual overlay is set up on top.</li>\r\n\t<li><strong>Option B is CORRECT</strong> because TGW allows enabling multicast and select subnets to include in the multicast domain when associating VPC attachments.</li>\r\n\t<li><strong>Option C is incorrect </strong>because it would disrupt multicast, involve additional&nbsp;time and cost, and not add any value.</li>\r\n\t<li><strong>Option D is incorrect</strong> because VPC peering and multicast are not the same.</li>\r\n</ul>\r\n\r\n<p>For more information on Multicast in an Amazon VPC, please visit the URL below</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/vpc/latest/tgw/how-multicast-works.html\" target=\"_blank\">vpc-tgw-how-multicast-works</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122994,
+          "question_id": 98282,
+          "answers": [
+            {
+              "choice": "<p>Provide Elastic Network Interfaces to communicate between the subnets</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Rely on a Transit Gateway, enable multicast, and create a multicast domain associated with the relevant subnets</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create all the subnets in a single VPC&nbsp;</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create all the subnets on a different VPC and use VPC peering between them</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98898,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You are an AWS admin in an IT firm. Recently your firm ran into some complications due to different sets of security rules set for each application. The firm decides to use AWS Firewall Manager to make it easier to bring new applications and resources into compliance by enforcing a common set of security rules. The firm now counts on you to enable the AWS Firewall Manager for them. What are the mandatory prerequisites you should be aware of to use AWS Firewall Manager? (Select THREE)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "2",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answers: A, B&nbsp;and D</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Options A, B&nbsp;and D are correct</strong> as they are mandatory pre-requisites&nbsp;to use AWS Firewall Manager. There are three mandatory pre-requisites and one optional pre-requisite to use AWS Firewall Manager.</li>\r\n\t<li>AWS Organizations&nbsp;- Your accounts must be part of&nbsp;AWS Organizations&nbsp;and have enabled all features.</li>\r\n\t<li>Set the AWS Firewall Manager Administrator Account&nbsp;- Firewall Manager must be associated with the management account of your AWS organization or associated with a member account that has the appropriate permissions. The account that you associate with Firewall Manager is called the Firewall Manager administrator account.</li>\r\n\t<li>Enable&nbsp;AWS Config&nbsp;on accounts&nbsp;- Enable AWS Config for each member account in your organization.</li>\r\n\t<li>Enable AWS Resource Access Manager (Optional)&nbsp;- To enable Firewall Manager to centrally configure AWS Network Firewalls or associate Amazon Route 53 Resolver DNS Firewall rules across accounts and VPCs, you must first enable sharing of resources using&nbsp;AWS Resource Access Manager.</li>\r\n\t<li><strong>Option C is incorrect</strong> as the creation of policy type takes place once the prerequisites stated above are completed.</li>\r\n\t<li><strong>Option E is incorrect</strong> as the question asks only for &ldquo;Mandatory prerequisites&rdquo;. This is an optional prerequisite.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/firewall-manager/\" target=\"_blank\">https://aws.amazon.com/firewall-manager/</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/firewall-manager/faqs/\" target=\"_blank\">https://aws.amazon.com/firewall-manager/faqs/</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 124256,
+          "question_id": 98898,
+          "answers": [
+            {
+              "choice": "<p>Your accounts must be part of&nbsp;AWS Organizations&nbsp;and must have enabled all features</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The Firewall Manager must be associated with the management account of your AWS organization or associated with a member account that has the appropriate permissions</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Have a policy type ready for AWS WAF, and AWS Network Firewall, and specify the set of rules or protections you need in place</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Enable AWS Config for each member accounts in your organization</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Enable AWS Resource Access Manager to centrally configure AWS Network Firewalls or associate Amazon Route 53 Resolver DNS Firewall rules across accounts and VPCs</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98284,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A third-party auditor is being brought in to review security processes and configurations for all of a company&#39;s AWS accounts. Currently, the company does not use any on-premises identity provider. Instead, they rely on IAM accounts in each of their AWS accounts.&nbsp;Now the auditor needs read-only access to all AWS resources for each AWS account. The auditor has an IAM user in his AWS account. Given the requirements, what is the most secure and easiest method for architecting access for the security auditor? Choose the correct answer from the options below.</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer:&nbsp;C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect </strong>because creating an IAM User for each AWS account is an overhead and less preferred way than creating IAM Role.</li>\r\n\t<li><strong>Option B is incorrect</strong> because the scenario says that the company does not have any on-premises identity provider. This method is not straightforward.</li>\r\n\t<li><strong>Option C is CORRECT</strong> because it creates an IAM Role with all the necessary permission policies that&nbsp;allow the auditor to assume it while accessing the resources.</li>\r\n\t<li><strong>Option D is incorrect</strong> because using the IAM Role with the required permissions is the preferred and more secure way of accessing the AWS resources than using the Amazon credentials. Also, this option does not use the Security Token Service that gives temporary credentials to log in. Hence this is a less secure way of accessing the AWS resources.</li>\r\n</ul>\r\n\r\n<p>For more information on IAM roles, please refer to the below URL-</p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html\" target=\"_blank\">http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122996,
+          "question_id": 98284,
+          "answers": [
+            {
+              "choice": "<p>Create an IAM user for each AWS account with read-only permission policies for the auditor, and disable each account when the audit is complete</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Configure an on-premise AD server and enable SAML identity&nbsp;federation for single sign-on to each AWS account</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an IAM role with read-only permissions to all AWS services in each AWS account. Allow&nbsp;the auditor IAM user to assume the ARN role for each AWS account</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create a custom identity broker application that allows the auditor to use existing Amazon credentials to log into the AWS environments</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98285,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>The Japan-based fintech company is running applications in AWS. Those are mission-critical applications, and they want to analyze the application logs using Amazon Redshift. The applications forward the logs to a Kinesis Data Firehose. What do you suggest to send the records from Kinesis Data Firehose to Redshift?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is Correct</strong> because a Kinesis Data Firehose delivers your data to an S3 bucket first and then issues an Amazon Redshift&nbsp;<strong>COPY</strong>&nbsp;command to load the data into your Amazon Redshift cluster. Specify an S3 bucket that you own where the streaming data should be delivered. Create a new S3 bucket, or choose an existing bucket that you own.</li>\r\n\t<li><strong>Option B is incorrect</strong>&nbsp;because LOAD is not a valid command to move the data to Amazon Redshift.</li>\r\n\t<li><strong>Option C is incorrect</strong> because SQS cannot be used to send the data from Kinesis Firehose to Amazon Redshift.</li>\r\n\t<li><strong>Option D is incorrect</strong> because Lambda cannot be used to send the data from Kinesis Firehose to Amazon Redshift.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/firehose/latest/dev/create-destination.html#create-destination-redshift\" target=\"_blank\">https://docs.aws.amazon.com/firehose/latest/dev/create-destination.html#create-destination-redshift</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122997,
+          "question_id": 98285,
+          "answers": [
+            {
+              "choice": "<p>Configure Kinesis Data Firehose to deliver your data to the S3 bucket first and then issue an Amazon Redshift COPY command to load the data into your Amazon Redshift cluster</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use Amazon S3 to store raw data and send the data to Amazon Redshift using Load Command</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Directly send the data to Amazon Redshift using an SQS queue</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Directly send the data to Amazon Redshift using a custom Lambda fuction</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98286,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your supervisor tells you of&nbsp;a client who needs a two-tier web application that is&nbsp;publicly accessible and configured on AWS. The most important requirement is that MySQL must be used as the database, and it must be configured at the client&#39;s location in the most secure fashion. Which of the following solutions would be the best to ensure&nbsp;that the client&rsquo;s requirements are met?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<p>In this scenario, the main architectural consideration is that the database should remain on the client&#39;s data center.&nbsp;Since the database should not be hosted on the cloud, you cannot put the database in the public&nbsp;subnet in AWS.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is correct</strong>&nbsp;because it puts the application servers in the public subnet ( because it should be publicly accessible ) and keeps the database server at the client&#39;s data center. This is also a valid two-tiered architecture.</li>\r\n\t<li><strong>Option B is INCORRECT</strong> because VPC peering cannot establish the connection between on-premises and AWS VPC.</li>\r\n\t<li><strong>Option C is INCORRECT </strong>because the database cannot be on the public subnet. It is rather located at the client&#39;s data center as per the question.</li>\r\n\t<li><strong>Option D is INCORRECT</strong> because the database cannot be on the public subnet due to the posed security risk (against the question&#39;s requirements).</li>\r\n</ul>\r\n\r\n<p>The best option is to create a VPN connection for securing traffic, as shown below.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/01/22/questions_j0vgh8.png\" style=\"height:382px; width:750px\" /></p>\r\n\r\n<p>For more information on VPN connections, please visit the below URL-</p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_VPN.html\" target=\"_blank\">http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_VPN.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122998,
+          "question_id": 98286,
+          "answers": [
+            {
+              "choice": "<p>Build the application server on a public subnet and the database at the client&rsquo;s data center. Connect them with a VPN connection that uses IPsec</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Build the application server on the private subnet and the database at the client&#39;s data center. Connect them with a VPC peering connection</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Build the application server on a private subnet and the database on the public subnet with a NAT instance between them</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Build the application server on the private subnet and the database on the public subnet with a secure SSH connection to the public subnet from the client&#39;s data center</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98287,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your company has an e-commerce platform that is expanding all over the globe. You have EC2 instances deployed in multiple regions. You want to monitor the performance of all of these EC2 instances. How will you set up CloudWatch to monitor EC2 instances in multiple regions?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<p>You can monitor AWS resources in multiple regions using a single CloudWatch dashboard. For example, you can create a dashboard that shows CPU utilization for an EC2 instance located in the&nbsp;us-west-2&nbsp;region with your billing metrics, which are located in the&nbsp;us-east-1&nbsp;region.</p>\r\n\r\n<p>Please see the following snapshot which shows how a global CloudWatch Dashboard looks.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/01/22/questions_vf2fhs.png\" style=\"height:216px; width:750px\" /></p>\r\n\r\n<p>For more information on the Cloudwatch dashboard, please refer to the below URLs:</p>\r\n\r\n<ul>\r\n\t<li>Nov 8 2019 new anouncement:&nbsp;&nbsp;<a href=\"https://aws.amazon.com/about-aws/whats-new/2019/11/amazon-cloudwatch-launches-cross-account-cross-region-dashboards/\" target=\"_blank\">https://aws.amazon.com/about-aws/whats-new/2019/11/amazon-cloudwatch-launches-cross-account-cross-region-dashboards/</a></li>\r\n\t<li>Cross-region cross-account console:&nbsp; <a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cross-Account-Cross-Region.html\" target=\"_blank\">https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cross-Account-Cross-Region.html</a></li>\r\n\t<li>Cross-Account Cross-Region Dashboards with Amazon CloudWatch:&nbsp; &nbsp;<a href=\"https://aws.amazon.com/blogs/aws/cross-account-cross-region-dashboards-with-amazon-cloudwatch/\" target=\"_blank\">https://aws.amazon.com/blogs/aws/cross-account-cross-region-dashboards-with-amazon-cloudwatch/</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 122999,
+          "question_id": 98287,
+          "answers": [
+            {
+              "choice": "<p>Create separate dashboards in every region</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Register instances running on different regions to CloudWatch</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Have one single dashboard that reports the metrics from CloudWatch pertaining to different regions</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>This is not possible</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98288,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company has a Redshift cluster for petabyte-scale data warehousing. The data within the cluster is easily reproducible from additional data stored on Amazon S3. The company wants to reduce the overall cost of running this Redshift cluster. Which scenario would meet best for the needs of the running cluster? Choose the correct answer from the options below.</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer:&nbsp;B</strong></p>\r\n\r\n<p>Snapshots are point-in-time backups of a cluster. There are two types of snapshots:&nbsp;<em>automated</em>&nbsp;and&nbsp;<em>manual</em>. Amazon Redshift stores these snapshots internally in Amazon S3 using an encrypted Secure Sockets Layer (SSL) connection. If you need to restore from a snapshot, Amazon Redshift creates a new cluster and imports data from the snapshot that you specify.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect </strong>because AWS Redshift does not have the concept of read replica.</li>\r\n\t<li><strong>Option B is CORRECT</strong> because&nbsp; &quot;There is no additional charge for backup storage up to 100% of your provisioned storage for an active data warehouse cluster&quot;. Therefore, if we reduce&nbsp;to a 1-day retention period for the backup, we can save costs too.&nbsp;</li>\r\n\t<li><strong>Option C is incorrect </strong>because implementing daily backup is going to be more expensive than option B.</li>\r\n\t<li><strong>Option D is incorrect </strong>because we cannot get disabled manual snapshots. In this scenario, we need to reconfigure the automated snapshots.</li>\r\n</ul>\r\n\r\n<p>For more information on Redshift snapshots, please visit the below URLs:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/redshift/pricing/\" target=\"_blank\">https://aws.amazon.com/redshift/pricing/</a></li>\r\n\t<li><a href=\"http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html\" target=\"_blank\">http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123000,
+          "question_id": 98288,
+          "answers": [
+            {
+              "choice": "<p>Disable automated backups. Create a read-replica in another region for disaster recovery</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Enable automated snapshots but set the retention period to a lower number to reduce storage costs</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Implement daily backups but do not enable multi-region copy to save data transfer costs</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Disable manual snapshots on the cluster</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98289,
+      "topic_id": 2687,
+      "course_id": null,
+      "case_study_id": 0,
+      "lab_id": 0,
+      "question_text": "<p>You&#39;re working as a consultant for a company that has a three-tier application. This architecture&#39;s application layer sends over 120Gbps of data&nbsp;during peak hours to and from Amazon S3. Currently, you&#39;re running two NAT gateways in two subnets to transfer the data from your private application layer to Amazon S3. You will also need to ensure that the instances receive software patches from a third-party repository. What architectural changes should be made, if any?&nbsp;</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<p>VPC Endpoints for Amazon S3 are easy to configure, highly reliable, and provide a secure connection to S3 that does not require a gateway or NAT instances. The&nbsp;EC2 instances running in private subnets of a VPC can now have controlled access to S3 buckets, objects, and API functions in the same region as the VPC. You can use an S3 bucket policy to indicate which VPCs and VPC Endpoints have access to your S3 buckets.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect </strong>because adding a third NAT Gateway for communicating with an S3 bucket is a costly solution compared to creating an S3 endpoint.</li>\r\n\t<li><strong>Option B is CORRECT</strong> because (a) you can securely connect with S3 via the S3 endpoint, and (b) even though you can connect to the S3 endpoint without requiring a NAT gateway, you still need to keep it because the instances in the VPC needs to receive the software patches from the third-party repository.&nbsp;</li>\r\n\t<li><strong>Option C is incorrect </strong>because you need to connect to the Amazon S3 via the VPC endpoint as the current NAT gateways may not be sufficient to handle the peak load.</li>\r\n\t<li><strong>Option D is incorrect </strong>because if you remove the NAT Gateway, the instances in the VPC will not be able to receive the software patches from the third-party repository.</li>\r\n</ul>\r\n\r\n<p>For more information on VPC endpoints, please refer to the below URL-</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/aws/new-vpc-endpoint-for-amazon-s3/\" target=\"_blank\">https://aws.amazon.com/blogs/aws/new-vpc-endpoint-for-amazon-s3/</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html\">https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123290,
+          "question_id": 98289,
+          "answers": [
+            {
+              "question_id": "98289",
+              "choice": "<p>NAT gateways support bandwidth scaling&nbsp;of up to 100 Gbps and two of them are running.&nbsp;Add a third NAT Gateway to a separate subnet to allow for any increase in demand</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98289",
+              "choice": "<p>Create a VPC S3 endpoint which allows for higher bandwidth, throughput as well as tighter security and keep the NAT gateways to receive the software patches from the third party repository</p>",
+              "feedback": "",
+              "correct": 1
+            },
+            {
+              "question_id": "98289",
+              "choice": "<p>NAT gateways support bandwidth scaling&nbsp;of up to 100 Gbps and&nbsp;two are running.&nbsp;No changes are required to improve this architecture</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98289",
+              "choice": "<p>Remove the NAT gateways and create a VPC S3 endpoint which allows for higher bandwidth throughput as well as tighter security</p>",
+              "feedback": "",
+              "correct": 0
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design Solutions for Organizational Complexity"
+    },
+    {
+      "question_id": 98290,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You are designing a photo-sharing mobile app. The application will store all pictures in a single Amazon S3 bucket. Users will upload pictures from their mobile devices directly to Amazon S3 and will be able to view and download their own pictures directly from Amazon S3. You want to configure security to handle the potential users in the most secure manner possible.</p>\r\n\r\n<p>What should be done by your server-side application when a new user registers on the photo-sharing mobile application?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<p>This scenario requires the mobile application to have access to the S3 bucket. There are potentially millions of users and proper security measures should be taken. It is suggested to set up a web identity federation through AWS Cognito.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/01/22/questions_t35pmz.png\" style=\"height:422px; width:750px\" /></p>\r\n\r\n<p>You can let users sign in using a well-known third-party identity provider such as logging in with Amazon, Facebook, Google, or any OpenID Connect (OIDC) 2.0 compatible provider. You can exchange the credentials from that provider for temporary permissions to use resources in your AWS account. This is known as the&nbsp;<em>web identity federation</em>&nbsp;approach to temporary access. When you use web identity federation for your mobile or web application, you don&#39;t need to create custom sign-in codes or manage your own user identities. Using a web identity federation helps you keep your AWS account secure because you don&#39;t have to distribute long-term security credentials, such as IAM user access keys, with your application.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect </strong>because you should always grant short-term or temporary credentials for the mobile application. This option asks to create long-term credentials.</li>\r\n\t<li><strong>Option B is CORRECT</strong> because it configures the web identity federation through AWS Cognito by generating&nbsp;temporary security credentials using STS &quot;AssumeRole&quot; function.</li>\r\n\t<li><strong>Option C&nbsp;is incorrect</strong> because, it asks to create an IAM User, not the IAM Role - which is not a good solution. You should create an IAM Role to access the AWS Resource via the &quot;AssumeRole&quot; function.</li>\r\n\t<li><strong>Option D&nbsp;is incorrect </strong>because, it asks to create an IAM User, not the IAM Role - which is not a good solution. You should create an IAM Role to access the AWS Resource via the &quot;AssumeRole&quot; function.</li>\r\n</ul>\r\n\r\n<p>For more information on AWS temporary credentials, please refer to the below links-</p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html\" target=\"_blank\">http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html\" target=\"_blank\">https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc_cognito.html\" target=\"_blank\">https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc_cognito.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123002,
+          "question_id": 98290,
+          "answers": [
+            {
+              "choice": "<p>Create a set of long-term credentials using the AWS Security Token Service with appropriate permissions. Store these credentials in the mobile app and use them to access Amazon S3</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Set up web identity federation through Amazon Cognito for the mobile app. Use Cognito API operations to get a Cognito token and request temporary security credentials from AWS STS. Use the temporary credentials to access Amazon S3</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an IAM user. Assign appropriate permissions to the IAM user Generate an access key and secret key for the IAM user, store them in the mobile app, and use these credentials to access Amazon S3</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an IAM user. Update the bucket policy with appropriate permissions for the IAM user. Generate an Access Key and Secret Key for the IAM user, store them in the mobile app and use these credentials to access Amazon S3</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98291,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You have an application running on an EC2 Instance which will allow users to download files from a private S3 bucket using a pre-signed URL. Before generating the URL, the application should verify the existence of the file in S3. How should the application use AWS credentials to access the S3 bucket securely?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer:&nbsp;C</strong></p>\r\n\r\n<p>An IAM&nbsp;<em>role</em>&nbsp;is similar to a user. In that, it is an AWS identity with permission policies that determine what the identity can perform in AWS. However, instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it. If a user is assigned a role, access keys are created dynamically and provided to the user.</p>\r\n\r\n<p>You can use roles to delegate access to users, applications, or services that don&#39;t normally have access to your AWS resources.</p>\r\n\r\n<p>Whenever the question presents you with a scenario where an application, user, or service wants to access another service, always prefer creating IAM Role over IAM User. The reason being that when an IAM User is created for the application, it has to use the security credentials such as access key and secret key to use the AWS resource/service. This has security concerns. Whereas, when an IAM Role is created, it has all the necessary policies attached to it. So, the use of the access key and the secret key is not needed. This is the preferred approach.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because you should use the IAM Role.&nbsp;See the explanation given above.</li>\r\n\t<li><strong>Option B is incorrect </strong>because instead of IAM User, you should use the IAM Role. See the explanation given above.</li>\r\n\t<li><strong>Option C is CORRECT </strong>because (a) it creates the IAM Role with appropriate permissions, and (b) the application accesses the AWS Resource using that role.</li>\r\n\t<li><strong>Option D is incorrect</strong> because instead of IAM User, you should use the IAM Role. See the explanation given above.</li>\r\n</ul>\r\n\r\n<p>For more information on IAM roles, please visit the below URL-</p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html\" target=\"_blank\">http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123003,
+          "question_id": 98291,
+          "answers": [
+            {
+              "choice": "<p>Use the AWS account access Keys. The application retrieves the credentials from the source code of the application</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an IAM user for the application with permissions that allow list access to the S3 bucket, launch the instance as the IAM user, and retrieve the IAM user&rsquo;s credentials from the EC2 instance user data</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an IAM role for EC2 that allows permission to list objects in the S3 bucket. Launch the instance with that&nbsp;role and assume&nbsp;the role&rsquo;s credentials from the EC2 Instance metadata</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an IAM user for the application with permissions that allow list access to the S3 bucket. The application retrieves the IAM user credentials from a temporary directory with permissions that allow read access only to the application user</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98292,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A benefits enrollment company hosts a 3-tier web application running in a VPC on AWS which includes a NAT (Network Address Translation) instance in the public Web tier. There is enough provisioned capacity for the expected workload for the new fiscal year benefit enrollment period plus some extra overhead. Enrollment proceeds nicely for two days, but&nbsp;the web tier becomes unresponsive upon investigation using CloudWatch and other monitoring tools. It is discovered that there is a huge and unanticipated amount of inbound traffic coming from a set of 15 specific IP addresses over port 80 from a country where the benefits company has no customers. The web tier instances are so overloaded that benefit enrollment administrators cannot even SSH into them. Which activity would be useful in defending against this attack?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: D</strong></p>\r\n\r\n<p>In this scenario, the attack comes from a set of certain IP addresses over a specific port from a specific country. You are supposed to defend against this attack.&nbsp;</p>\r\n\r\n<p>In such questions, always think about two options: Security groups and Network Access Control List (NACL). Security Groups operate at the individual instance level, whereas NACL operates at the subnet level. You should always fortify the NACL first, as it is encounter first during the communication with the instances in the VPC.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because IP addresses cannot be blocked using the route table or IGW.</li>\r\n\t<li><strong>Option B is incorrect </strong>because changing the NAT instance&#39;s EIP cannot block the incoming traffic from a particular IP address.</li>\r\n\t<li><strong>Option C is incorrect </strong>because (a) you cannot deny port access using security groups, and (b) by default all requests are denied; you open access for a particular IP address or range. You cannot deny access to particular IP addresses using security groups.</li>\r\n\t<li><strong>Option D is CORRECT</strong> because (a) you can add deny rules in NACL and block access to certain IP addresses. See an example below.</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/01/22/questions_gak95i.png\" style=\"height:321px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html\" target=\"_blank\">https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123004,
+          "question_id": 98292,
+          "answers": [
+            {
+              "choice": "<p>Create a custom route table associated with the web tier and block the attacking IP addresses from the IGW (Internet Gateway)</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Change the EIP (Elastic IP Address) of the NAT instance in the web tier subnet and update the Main Route Table with the new EIP</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create 15 Security Group rules to block the attacking IP addresses over port 80</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an inbound NACL (Network Access Control List) associated with the web tier subnet with deny rules to block the attacking IP addresses</p>",
+              "correct": 1,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98293,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your fortune 500 company has undertaken a TCO analysis evaluating the use of Amazon S3 versus acquiring more hardware. The outcome was that all employees would be granted access to use Amazon S3 for storage of their personal documents. Which of the following will you need to consider so that you can set up a solution that incorporates a single sign-on from your corporate AD or LDAP directory?</p>\r\n\r\n<p>Choose 3 options from the below.</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "2",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answers: A, B and D</strong></p>\r\n\r\n<p>In questions like this where an application or user needs to be given access using Single Sign On (SSO), the following steps are very important.</p>\r\n\r\n<p>(i) setting up an identity provider for federated access</p>\r\n\r\n<p>(ii) authenticating users using corporate data store or&nbsp;active directory-user-attributes.</p>\r\n\r\n<p>(iii) getting temporary access tokens/credentials using AWS STS</p>\r\n\r\n<p>(iv) creating the IAM Role that has access to the needed AWS Resources</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is CORRECT </strong>because as mentioned above, setting up an identity provider for federated access is needed.</li>\r\n\t<li><strong>Option B is CORRECT </strong>because as mentioned above, getting temporary access tokens/credentials using AWS STS is needed.</li>\r\n\t<li><strong>Option C is incorrect</strong> because tagging each folder in a bucket does not help in this scenario.</li>\r\n\t<li><strong>Option D is CORRECT</strong> because as mentioned above, creating the IAM Role that has access to the needed AWS Resources is needed.</li>\r\n\t<li><strong>Option E is incorrect </strong>because you should be creating IAM Roles rather than IAM Users.&nbsp;</li>\r\n</ul>\r\n\r\n<p>The diagram below showcases how authentication is carried out when having an identity broker. This is an example of a SAML connection, but the same concept holds true for getting access to an AWS resource.</p>\r\n\r\n<p>&nbsp;<img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/01/22/questions_cl3rab.png\" style=\"height:373px; width:750px\" /></p>\r\n\r\n<p>For more information on federated access, please visit the below link-</p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_common-scenarios_federated-users.html\" target=\"_blank\">http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_common-scenarios_federated-users.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123005,
+          "question_id": 98293,
+          "answers": [
+            {
+              "choice": "<p>Setting up a federation proxy or identity provider</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Using AWS Security Token Service to generate temporary tokens</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Tagging each folder in the bucket</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Configuring IAM roles that have suitable permissions to the related S3 resources</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Setting up a matching IAM user for every user in your corporate directory that needs access to a folder in the bucket</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98294,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You are implementing a URL whitelisting system for a company that wants to restrict outbound HTTPS connections to specific domains from their EC2-hosted applications. You deploy a single t2.micro EC2 instance running proxy software and configure it to accept traffic from all subnets and EC2 instances in the VPC. You configure the proxy to only pass through traffic to domains that you define in its whitelist configuration.</p>\r\n\r\n<p>You have a nightly maintenance window or 10 minutes where all instances fetch new software updates. Each update is different and has about 200MB in size. There are 500 instances In the VPC that routinely fetch updates. There is no issue for most of the days. However, you notice that some machines fail to download certain software updates within the maintenance window for a few days. The download URLs used for these updates are correctly listed in the proxy&rsquo;s whitelist configuration, and you can access them manually using a web browser on the instances. What might be happening?</p>\r\n\r\n<p>Choose an answer&nbsp;from the options below.</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: A&nbsp;</strong></p>\r\n\r\n<p>This scenario contains the following main points: (1) there is a single EC2 instance running proxy software that either acts as or connects to a NAT instance. The NAT instances are not AWS managed; they are user-managed; so, it may become the bottleneck, (2) there is a whitelist maintained so that limited outside access is given to the instances inside VPC, (3) the URLs in the whitelist are correctly maintained. Hence, whitelist is not an issue, (4) only some machines are having download problems with some updates. i.e. some updates are successful on some machines.</p>\r\n\r\n<p>This indicates that there is no setup issue, but most likely, it is the proxy instance that is a bottleneck and under-performing or inconsistently performing. As the proxy instance is not part of an auto-scaling group, its size must be definitely the issue.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is CORRECT </strong>because due to the limited size of the proxy instance, its network throughput might not be sufficient to provide service to all the VPC instances (as only some of the instances are not able to download the updates).</li>\r\n\t<li><strong>Option B is incorrect </strong>because limited storage on the proxy instance should not cause other instances of any problems in downloading the updates.</li>\r\n\t<li><strong>Option C is incorrect</strong> because proxy instances are supposed to be in a public subnet, but the allocation of EIPs should not cause any issues for other instances in the VPC.</li>\r\n\t<li><strong>Option D&nbsp;is incorrect </strong>because none of the instances would get the updates if this were the case. However, some of the instances could get the updates.&nbsp;So&nbsp;this cannot be the case.&nbsp;</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123006,
+          "question_id": 98294,
+          "answers": [
+            {
+              "choice": "<p>You are running the proxy on an undersized EC2 instance type. So network throughput is not sufficient for all instances to download their updates in time</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>You have not allocated enough storage to the EC2 instance running the proxy. So the network buffer is filling up causing some requests to fail</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>You are running the proxy in a private subnet but&nbsp;have not allocated enough EIP&rsquo;s to support the needed network throughput through the Internet Gateway (IGW)</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>The route table for the subnets containing the affected EC2 instances is not configured to direct network traffic for the software update locations to the proxy</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98899,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A financial company was recently a victim of suspicious activity and plans to use Amazon Detective to make it easy to analyze, investigate, and quickly identify the root cause of potential security issues or suspicious activities. The company would want to manage multiple accounts with Amazon Detective due to its huge amount of data. As an AWS Architect for the company, what would you suggest from the following options as the best available solution?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<ul>\r\n\t<li><strong>Option C is correct</strong> as Amazon Detective is a multi-account service that aggregates data from monitored member accounts under a single&nbsp;administrative account within the same region. You can configure multi-account monitoring deployments in the same way that you configure&nbsp;administrative and member accounts in Amazon GuardDuty and AWS Security Hub.</li>\r\n\t<li><strong>Options A and B are incorrect</strong> as it says Amazon Detective is a single-account service.</li>\r\n\t<li><strong>Option D is incorrect</strong> as it says the data is aggregated under a single&nbsp;administrative account globally. It is within that region and not global.</li>\r\n</ul>\r\n\r\n<p><strong>References: </strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/detective/faqs/\" target=\"_blank\">https://aws.amazon.com/detective/faqs/</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/detective/latest/adminguide/detective-prerequisites.html\" target=\"_blank\">https://docs.aws.amazon.com/detective/latest/adminguide/detective-prerequisites.html</a></li>\r\n\t<li><a href=\"https://aws.amazon.com/detective/\" target=\"_blank\">https://aws.amazon.com/detective/</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 124257,
+          "question_id": 98899,
+          "answers": [
+            {
+              "choice": "<p>Amazon Detective is a single-account service that aggregates data from monitored member accounts under a single&nbsp;administrative account globally. Hence, not possible to manage multiple accounts with Amazon Detective</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Amazon Detective is a single-account service that aggregates data from monitored member accounts under a single&nbsp;administrative account within the same region. Hence, not possible to manage multiple accounts with Amazon Detective</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Amazon Detective is a multi-account service that aggregates data from monitored member accounts under a single&nbsp;administrative account within the same region. Hence, it&rsquo;s possible to manage multiple accounts with Amazon Detective</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Amazon Detective is a multi-account service that aggregates data from monitored member accounts under a single&nbsp;administrative account globally. Hence, it&rsquo;s possible to manage multiple accounts with Amazon Detective</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98296,
+      "topic_id": 2687,
+      "course_id": null,
+      "case_study_id": 0,
+      "lab_id": 0,
+      "question_text": "<p>A large real-estate brokerage is exploring the option of adding a cost-effective location-based alert to their existing mobile application. The application backend infrastructure currently runs on AWS. Users who opt for&nbsp;this service will receive alerts on their mobile devices regarding real-estate offers in proximity to their location. For the alerts to be relevant, delivery time needs to be in the low minute count. The existing mobile app has 5 million users across the US. Which one of the following architectural suggestions would you make to the customer?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<p>The scenario has the following architectural considerations: (1) the users should get notifications about the real estate in the area near to their location, (2) only subscribed users should get the notification, (3) the notification delivery should be fast, (4) the architecture should be scalable, and (5) it should be cost-effective.</p>\r\n\r\n<p>When the question has considerations for scalability, always think about DynamoDB as it is the most recommended database solution to handle the huge amount of data/records. For automated notifications, always think about SNS.&nbsp;</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect </strong>because sending notifications via mobile earners/device providers as alerts is neither feasible nor cost-effective.&nbsp;</li>\r\n\t<li><strong>Option B is incorrect</strong> because receiving location via Direct Connect and carrier connection is not cost-effective.&nbsp;It also does not deal with subscriptions. Sending notifications via mobile carriers as the alert is not cost-effective as well.</li>\r\n\t<li><strong>Option C is CORRECT </strong>because (a) SQS is a highly scalable, cost-effective solution for carrying out utility tasks such as holding the location of millions of users, (b) it uses highly scalable DynamoDB, and (c) it uses the cost-effective AWS SNS Mobile Push service to send push notification messages directly to apps on mobile devices.</li>\r\n\t<li><strong>Option D is incorrect</strong> because the AWS SNS Mobile Push service is used to send push notification messages to the mobile devices, not to get the mobile devices&#39; location.</li>\r\n</ul>\r\n\r\n<p>For more information on AWS SNS Mobile Push, please see the diagram and link given below:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html\" target=\"_blank\">https://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html</a></li>\r\n</ul>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<p>Option C says that the mobile application will send the device location to the processing EC2 instances using SQS. Then the instances would look at the DynamoDB database for offers relevant to the location. Then finally, SNS&nbsp;Mobile Push, which is part of SNS, will be used to send offers to the mobile application. So it leverages both SQS as well as SNS functionality for different parts of the architecture. This is the correct solution to this problem.</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123288,
+          "question_id": 98296,
+          "answers": [
+            {
+              "question_id": "98296",
+              "choice": "<p>The mobile application will submit its location details to a web service endpoint using ELB and EC2 instances. DynamoDB will be used to store and retrieve the relevant offers from EC2 instances, which would then communicate with mobile carriers or device providers to push alerts back to the mobile application</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98296",
+              "choice": "<p>Use AWS DirectConnect or VPN to establish connectivity with the mobile carrier.&nbsp;EC2 instances will receive the mobile application&#39;s location details through the mobile carrier. RDS will be used to store and retrieve the relevant offers. EC2 instances will communicate with the mobile carrier&nbsp;to push alerts back to the mobile application</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98296",
+              "choice": "<p>SQS ( buffer storage ) would be used to capture the device location details sent from the Mobile application. EC2 instances will process the messages from the SQS queue and retrieve the relevant offers from DynamoDB. SNS Mobile Push will be used to send offers to the mobile application</p>",
+              "feedback": "",
+              "correct": 1
+            },
+            {
+              "question_id": "98296",
+              "choice": "<p>The mobile application will send the device location&#39;s details using the SNS&nbsp;Mobile Push. EC2 instances will retrieve the relevant offers from DynamoDB. EC2 instances will communicate with the mobile carrier or the device provider&nbsp;to push alerts back to the mobile application</p>",
+              "feedback": "",
+              "correct": 0
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design Solutions for Organizational Complexity"
+    },
+    {
+      "question_id": 98297,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A newspaper organization has an on-premises application that allows the public to search its back catalog and retrieve individual newspaper pages via a website written in Java. It also has a commercial search application nearing its end of life. They scanned the old newspapers into JPEGs which are of a total size of 17TB and used Optical Character Recognition (OCR) to populate a commercial search product. The organization wants to migrate its archive to AWS and produce a cost-efficient, highly available, and durable architecture. Which of the below options is the most appropriate?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<p>This question presents the following scenarios: (1) type of storage that can store a large amount of data (17TB), (2)&nbsp;the architecture should be cost-effective, highly available, and durable.</p>\r\n\r\n<p>Tip: Whenever a storage service stores a large amount of data with low cost, high availability, and high durability, always think about using S3.&nbsp;</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect </strong>because even though it uses S3, it uses the commercial search software at the end of its life.</li>\r\n\t<li><strong>Option B is incorrect</strong> because striped EBS is not as durable of a solution as S3 and certainly not as cost-effective as S3. Also, it has maintenance overhead.</li>\r\n\t<li><strong>Option C is CORRECT</strong> because (a) it uses S3 to store the cost-effective images, (b) for more efficiency, it uses OpenSearch for query processing, and (c) with an Auto Scaling group&nbsp;in multi-AZs, it achieves high availability.</li>\r\n\t<li><strong>Option D is incorrect </strong>because it does not have high availability with a single AZ RDS instance.</li>\r\n\t<li><strong>Option E is incorrect</strong> because (a) this configuration is not scalable, and (b) it does not mention any origin for the CloudFront distribution.</li>\r\n</ul>\r\n\r\n<p>For more information on Amazon OpenSearch, please visit the below link-</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/opensearch-service/\" target=\"_blank\">https://aws.amazon.com/opensearch-service/</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123009,
+          "question_id": 98297,
+          "answers": [
+            {
+              "choice": "<p>Use S3 to store and serve the scanned files. Install the commercial search application on EC2 Instances and configure it with Auto-Scaling and an Elastic Load Balancer</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Model the environment using CloudFormation. Use an EC2 instance running Apache webserver and an open-source search application, stripe multiple standard EBS volumes together to store the JPEGs and search index</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use S3 to store and serve the scanned files. Use Amazon&nbsp;OpenSearch for query processing, and use an Auto Scaling group&nbsp;to host the website across multiple availability zones</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use a single-AZ RDS MySQL instance to store the search index for the JPEG images and use an EC2 instance to serve the website and translate user queries into SQL</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use a CloudFront download distribution to serve the JPEGs to the end users. Install the current commercial search product, along with a Java Container for the website on EC2 instances and use Route53 with DNS round-robin</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98298,
+      "topic_id": 367,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your customer is willing to consolidate their log streams, access logs, application logs, security logs, etc. in one single system. Once consolidated, the customer wants to analyze these logs in real time based on heuristics. From time to time, the customer needs to validate heuristics, which requires going back to data samples extracted from the last 12 hours. What is the best approach to meet your customer&rsquo;s requirements?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: B</strong></p>\r\n\r\n<p>Whenever the scenario - just like this one - wants to do real-time processing of a stream of data, always think about Amazon Kinesis. According to the AWS documentation;</p>\r\n\r\n<p>The default retention period of 24 hours covers scenarios where intermittent lags in processing require catch-up with the real-time data.<br />\r\nA seven-day retention lets you reprocess data for up to seven days to resolve potential downstream data losses.<br />\r\nLong-term data retention greater than seven days and up to 365 days lets you reprocess old data.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because SQS is not used for real-time processing of the stream of data.</li>\r\n\t<li><strong>Option B is CORRECT</strong> because Amazon Kinesis Data Streams is best suited for applying the real-time processing of the stream of data. Also, the records of the stream are available for 24 hours in Kinesis.</li>\r\n\t<li><strong>Option C is incorrect</strong> because CloudTrail is not used to process real-time data processing, and EMR is used for batch processing.</li>\r\n\t<li><strong>Option D is incorrect</strong> because setting autoscaling of EC2 instances is not cost-effective, and EMR is used for batch processing.</li>\r\n</ul>\r\n\r\n<p>For more information on Kinesis, please visit the below URL-</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/kinesis/data-streams/faqs/\" target=\"_blank\">https://aws.amazon.com/kinesis/data-streams/faqs/</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123010,
+          "question_id": 98298,
+          "answers": [
+            {
+              "choice": "<p>Send all the log events to Amazon SQS. Setup an Auto Scaling group of EC2 servers to consume the logs and apply the heuristics</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Send all the log events to Amazon Kinesis Data Streams. Develop a client process to apply heuristics to the logs</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Configure Amazon Cloud Trail to receive custom logs and&nbsp;use EMR to apply heuristics to the logs</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Setup Auto Scaling group of EC2 Syslog servers and&nbsp;store the logs S3 use EMR to apply heuristics on the logs</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Continuous Improvement for Existing Solutions"
+    },
+    {
+      "question_id": 98299,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A team is developing a feature that needs to recognize Celebrities. By using the App, clients can upload photos and search celebrities among the photos by clicking a button. Or they can upload a bunch of photos and search the times that a given celebrity has appeared. The team wants to run the App&nbsp;in AWS at a lower cost. Which option is the most efficient one to implement while still ensuring availability and stability?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<p>As the question asks for a lower cost while still ensuring availability and stability. Lambda should be considered first. Lambda can autoscale without manual operations. More importantly, it is very efficient to develop a web app without considering a lot about OS, patching, etc.</p>\r\n\r\n<p>Amazon Rekognition can recognize thousands of celebrities in a wide range of categories, such as entertainment and media, sports, business, and politics. With Amazon Rekognition, you can recognize celebrities in images and stored videos. You can also get additional information for recognized celebrities.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect:</strong> Because EC2 does not cost-efficient and brings in extra cost if the load is not stable. Lambda should be considered instead.</li>\r\n\t<li><strong>Option B is incorrect:</strong> Because Rekognition API &ldquo;RecognizeCelebrities&rdquo; should be used in this case. For each celebrity recognized, &ldquo;RecognizeCelebrities&rdquo; returns a Celebrity object. The Celebrity object contains the celebrity name, ID, URL links to additional information, match confidence, and a ComparedFace object that you can use to locate the celebrity&#39;s face on the image. &ldquo;SearchFaces&rdquo; is incorrect as it is not used to search Celebrities.</li>\r\n\t<li><strong>Option C is CORRECT: </strong>Because Lambda together with Rekognition can meet the need for low cost, availability, and stability. Refer to <a href=\"https://docs.aws.amazon.com/rekognition/latest/dg/celebrities.html\" target=\"_blank\">https://docs.aws.amazon.com/rekognition/latest/dg/celebrities.html</a> for this feature.</li>\r\n\t<li><strong>Option D is incorrect: </strong>Because firstly, it has used EC2. Even if Autoscaling and ELB are used, it is not as efficient as Lambda. Secondly, API &ldquo;SearchFaces&rdquo; should not be used for the function of Celebrities Recognition.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123011,
+          "question_id": 98299,
+          "answers": [
+            {
+              "choice": "<p>Create the frontend and backend in a T2 medium EC2 instance to use its burstable capability. Call Rekognition API &ldquo;RecognizeCelebrities&rdquo; to fetch the information in a JSON format. Process the JSON result in the backend service and return the result to the frontend UI</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Develop the App&nbsp;in a serverless lambda to use Rekognition API &ldquo;SearchFaces&rdquo; to search a Celebrity. The input image can be base64-encoded bytes or an S3 object. After the API has been returned, present the result to clients</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use the AWS Rekognition service. Implement the App&nbsp;in a lambda to call Rekognition API &ldquo;RecognizeCelebrities&rdquo; to fetch the information required in a JSON format. Process the information in Lambda and return the result to end-users. Use S3 for clients to upload photos</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Implement the App&nbsp;in an M4 large EC2 instance&nbsp;with Autoscaling and Elastic Load Balancer. Build the application via a Cloudformation template. Use the App&nbsp;to call Rekognition API &ldquo;SearchFaces&rdquo; to get the information. Process the JSON result in the backend service and return the result to the frontend with a Cloudfront CDN</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98300,
+      "topic_id": 364,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A team has just received a task to build an application that needs to recognize faces in streaming videos. They will get the source videos from a third party that uses a container format (MKV).</p>\r\n\r\n<p>The APP should be able to quickly address faces through the video in real-time and save the output in a suitable manner for downstream to process. As recommended by the AWS Solutions Architect colleague, they would like to develop the service using AWS Rekognition. Which below options are needed to accomplish the task? (Select THREE)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "2",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct&nbsp;Answers: B, C&nbsp;and&nbsp;F</strong></p>\r\n\r\n<p>Facial recognition in live videos&nbsp;is different from that in photos. Kinesis is required to meet the needs of the real-time process. Amazon Rekognition Video uses Amazon Kinesis Video Streams to receive and process a video stream. The analysis results are output from Amazon Rekognition Video to a Kinesis data stream and then read by your client application. Amazon Rekognition Video provides a stream processor (<a href=\"https://docs.aws.amazon.com/rekognition/latest/dg/API_CreateStreamProcessor.html\" target=\"_blank\">CreateStreamProcessor</a>) that you can use to start and manage the analysis of streaming video.</p>\r\n\r\n<p>In summary, the below 3 items are needed for Amazon Rekognition Video with streaming video.</p>\r\n\r\n<ul>\r\n\t<li>A Kinesis video stream for sending streaming video to Amazon Rekognition Video. For more information, see the&nbsp;<a href=\"https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/what-is-kinesis-video.html\" target=\"_blank\">Kinesis Video stream</a>.</li>\r\n\t<li>An Amazon Rekognition Video stream processor to manage the analysis of the streaming video. For more information, see <a href=\"https://docs.aws.amazon.com/rekognition/latest/dg/streaming-video-starting-analysis.html\" target=\"_blank\">Starting Streaming Video Analysis</a>.</li>\r\n\t<li>A Kinesis data stream consumer to read the analysis results that Amazon Rekognition Video sends to the Kinesis data stream. For more information, see <a href=\"https://docs.aws.amazon.com/streams/latest/dev/amazon-kinesis-consumers.html\" target=\"_blank\">Consumers for Amazon Kinesis Streams</a>.</li>\r\n\t<li><strong>Option&nbsp;A is&nbsp;incorrect </strong>because the source videos should be put into the Kinesis video stream instead of S3. Afterward, the Rekognition processor will pick up records in the Kinesis stream to process.</li>\r\n\t<li><strong>Option&nbsp;B is&nbsp;CORRECT</strong> because it is the step to convert source data into the Kinesis video stream.</li>\r\n\t<li><strong>Option&nbsp;C is&nbsp;CORRECT</strong>.&nbsp;A stream processor can be created by calling <a href=\"https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor.html\" target=\"_blank\">CreateStreamProcessor</a>. The request parameters include the Amazon Resource Names (ARNs) for the Kinesis video stream, the Kinesis data stream, and the identifier for the collection that&#39;s used to recognize faces in the streaming video. It also includes the name that you specify for the stream processor.</li>\r\n</ul>\r\n\r\n<p>Below is an example:</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/03/20/ckeditor_9.png\" style=\"height:315px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option&nbsp;D is&nbsp;incorrect</strong> because, for video processing, Rekognition API &ldquo;DetectFaces&rdquo; should not be used. &ldquo;DetectFaces&rdquo; is used to detect faces within an image that is provided as input. Instead, stream processor-relevant APIs should be used.</li>\r\n\t<li><strong>Option&nbsp;E is&nbsp;incorrect</strong> because the output from Rekognition should be stored in the Kinesis data stream. When the Rekognition stream processor is created, the Rekognition output (Kinesis Data Stream) is defined.</li>\r\n</ul>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Output&quot;: {<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;KinesisDataStream&quot;: {<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Arn&quot;: &quot;arn:aws:kinesis:us-east-1:nnnnnnnnnnnn:stream/outputData&quot;<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>\r\n\r\n<ul>\r\n\t<li><strong>Option&nbsp;F is&nbsp;CORRECT</strong> because it describes correctly how to consume the Kinesis data stream. You can use the Amazon Kinesis Data Streams Client Library to consume analysis results that are sent to the Amazon Kinesis Data Streams output stream.</li>\r\n</ul>\r\n\r\n<p><strong>Reference:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://docs.aws.amazon.com/rekognition/latest/dg/streaming-video-kinesis-output.html\" target=\"_blank\">https://docs.aws.amazon.com/rekognition/latest/dg/streaming-video-kinesis-output.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123012,
+          "question_id": 98300,
+          "answers": [
+            {
+              "choice": "<p>S3 buckets to store the source MKV videos for AWS Rekognition to process. S3 should be used in this case as it has provided an unlimited, highly available, and durable storing space. Make sure that the third party has the write access to S3 buckets</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>A Kinesis video stream for sending streaming video to Amazon Rekognition Video. This can be done by using Kinesis &ldquo;PutMedia&rdquo; API in Java SDK. The PutMedia operation writes video data fragments into a Kinesis video stream that Amazon Rekognition Video consumes</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>An Amazon Rekognition Video stream processor to manage the analysis of the streaming video. It can be used to start, stop, and manage stream processors according to needs</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use EC2 or Lambda to call Rekognition API &ldquo;DetectFaces&rdquo; with the source videos saved in the S3 bucket. For each face detected, the operation returns face details. These details include a bounding box of the face, a confidence value, and a fixed set of attributes such as facial landmarks, etc.</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>After the app&nbsp;has utilized Rekognition API to fetch the recognized faces from live videos, use S3 or RDS database to store the output from Rekognition. Another Lambda can be used to post-process the result and present it to UI</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>A Kinesis data stream consumer to read the analysis results that Amazon Rekognition Video sends to the Kinesis data stream.&nbsp;The consumer can be autoscaled by running it on multiple EC2 instances under an Auto Scaling group</p>",
+              "correct": 1,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design for New Solutions"
+    },
+    {
+      "question_id": 98301,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Your company has recently extended its on-premises data center into a VPC on AWS to add burst computing capacity as needed. The data center has already used an identity provider (IDP).&nbsp;Members of your Network Operations Center need to be able to go to the AWS Management Console and administer Amazon EC2 instances as necessary. You don&rsquo;t want to create new IAM users for each member and make those users sign in again to the AWS Management Console. Which option below will meet the needs of your NOC members?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<p>This scenario has two requirements: (a) temporary access to AWS resources be given to certain users or applications (NOC members in this case), and (b) you are not supposed to create new IAM users for the NOC members to log into AWS console.&nbsp;</p>\r\n\r\n<p>This scenario is handled by a concept named &quot;Federated Access&quot;. Read this for more information on federated access:&nbsp;<a href=\"https://aws.amazon.com/identity/federation/\" target=\"_blank\">https://aws.amazon.com/identity/federation/</a> .</p>\r\n\r\n<p>Read this article for more information on how to establish federated access to the AWS resources.</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/security/how-to-establish-federated-access-to-your-aws-resources-by-using-active-directory-user-attributes/\" target=\"_blank\">https://aws.amazon.com/blogs/security/how-to-establish-federated-access-to-your-aws-resources-by-using-active-directory-user-attributes/</a></li>\r\n\t<li><strong>Option A is incorrect </strong>because OAuth 2.0 is not applicable in this scenario as we are not using Web Identity Federation. It is used with public identity providers such as Facebook, Google, etc.</li>\r\n\t<li><strong>Option B is incorrect</strong> because the key point here is that you need to give access to AWS Management Console to only the members of your Network Operations Center using on-premises SSO to avoid signing in again. The users should not be using Facebook or Google IDs to login.</li>\r\n\t<li><strong>Option C is CORRECT </strong>because (a) it gives federated access to the NOC members to AWS resources by using SAML 2.0 identity provider, and (b) it uses on-premises single sign on (SSO) endpoint to authenticate users and gives them access tokens before providing the federated access.</li>\r\n\t<li><strong>Option D is incorrect </strong>because, even though it uses SAML 2.0 identity provider, we need to grant SSO access to the AWS management console and retrieving temporary security credentials is irrelevant here.</li>\r\n</ul>\r\n\r\n<p>See this diagram that explains the Federated Access using SAML 2.0.&nbsp;</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/01/22/questions_ncagbh.png\" style=\"height:433px; width:750px\" /></p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123013,
+          "question_id": 98301,
+          "answers": [
+            {
+              "choice": "<p>Use OAuth 2.0 to retrieve temporary AWS security credentials to enable your members to sign in to the AWS Management Console</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use Web Identity Federation to retrieve AWS temporary security credentials to enable your members to sign in to the AWS Management Console</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use your on-premises SAML 2.0-compliant identity provider (IDP) to grant the members federated access to the AWS Management Console via the AWS single sign-on (SSO) endpoint</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use your on-premises SAML 2.0-compliant identity provider (IDP) to retrieve temporary security credentials to enable members to sign in to the AWS Management Console</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98302,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A company runs a batch analysis with transactional reporting every hour on its main transactional DB running on an RDS MySQL instance to populate its central Data Warehouse running on Redshift. During the execution of the batch, their transactional applications are very slow. When the batch completes, they need to update the top management dashboard with the new data. The dashboard is produced by another system running on-premises that is currently started when a manually-sent email notifies that an update is required. The on-premises system cannot be modified because it is managed by another team.</p>\r\n\r\n<p>How would you optimize this scenario to solve performance issues and automate the process as much as possible?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<p>There are two architectural considerations here. (1) you need to improve read performance by reducing the load on the RDS MySQL instance, and (2) automate the process of notifying to the on-premise system.</p>\r\n\r\n<p>When the scenario asks you to improve a DB instance&#39;s read performance, always look for options such as ElastiCache or Read Replicas. And when the question asks you to automate the notification process, always think of using SNS.&nbsp;</p>\r\n\r\n<ul>\r\n\t<li><strong>Options A and B are incorrect </strong>because replacing RDS with Redshift may need many changes on the applications and are not required in this scenario.</li>\r\n\t<li><strong>Option C is CORRECT</strong> because (a) it uses Read Replicas which improves the read performance, and (b) it uses SNS which automates the process of notifying the on-premise system to update the dashboard.</li>\r\n\t<li><strong>Option D is incorrect </strong>because SQS is not a service to be used for sending the notification.</li>\r\n</ul>\r\n\r\n<p>For more information on Read Replica&rsquo;s, please visit the below link-</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/rds/details/read-replicas/\" target=\"_blank\">https://aws.amazon.com/rds/details/read-replicas/</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123014,
+          "question_id": 98302,
+          "answers": [
+            {
+              "choice": "<p>Replace RDS with Redshift for the batch analysis and SNS to notify the on-premises system to update the dashboard</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Replace RDS with Redshift for the batch analysis and SQS to send a message to the on-premises system to update the dashboard</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an RDS Read Replica for the batch analysis and SNS to notify the on-premises system to update the dashboard</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Create an RDS Read Replica for the batch analysis and SQS to send a message to the on-premises system to update the dashboard</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98303,
+      "topic_id": 2687,
+      "course_id": null,
+      "case_study_id": 0,
+      "lab_id": 0,
+      "question_text": "<p>You are looking to migrate your Development and Test environments to AWS. You have decided to use separate AWS accounts to host each environment. You plan to link each account bill to a Management&nbsp;AWS account using Consolidated Billing. To make sure that you keep within the budget, you would like to implement a way for administrators in the Management&nbsp;account to have access to stop, delete and/or terminate resources in both the Dev and Test accounts. Identify which of the options will allow you to achieve this goal.</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer:&nbsp;C</strong></p>\r\n\r\n<p>The scenario here is asking you to give permissions to administrators in the Management account such that they can have access to stop, delete, and terminate the resources in two accounts: Dev and Test.</p>\r\n\r\n<p>Tip: Remember that you always create roles in the account whose resources are to be accessed. In this example, that would be Dev and Test. Then you create the users in the account who will be accessing the resources and give them that particular role. In this example, the Management account should create the users.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because the Management account IAM user needs to assume roles from the Dev and Test accounts. The roles should have suitable permissions so that the Management account IAM user can access resources.</li>\r\n\t<li><strong>Option B is incorrect </strong>because the cross-account role should be created in Dev and Test accounts, not in the Management account.</li>\r\n\t<li><strong>Option C is CORRECT </strong>because (a) the cross-account role is created in Dev and Test accounts, and the users are created in the Management account given that role.</li>\r\n\t<li><strong>Option D is incorrect </strong>because consolidated billing does not give access to resources in this fashion.</li>\r\n</ul>\r\n\r\n<p>For more information on cross-account access, please visit the below URL:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html\" target=\"_blank\">http://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123287,
+          "question_id": 98303,
+          "answers": [
+            {
+              "question_id": "98303",
+              "choice": "<p>Create IAM users in the Management account with full Admin permissions. Create cross-account roles in the Dev and Test accounts that grant Management&nbsp;account access to the resources in the account by inheriting permissions from the&nbsp;Management&nbsp;account</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98303",
+              "choice": "<p>Create IAM users and a cross-account role in the Management account that grants full Admin permissions to the Dev and Test accounts</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98303",
+              "choice": "<p>Create IAM users in the Management account with the &quot;AssumeRole&quot; permissions. Create cross-account roles in the Dev and Test accounts that have full Admin permissions and grant Management account access</p>",
+              "feedback": "",
+              "correct": 1
+            },
+            {
+              "question_id": "98303",
+              "choice": "<p>Link the accounts using Consolidated Billing. This will give IAM users in the Management account access to the resources in Dev and Test accounts</p>",
+              "feedback": "",
+              "correct": 0
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design Solutions for Organizational Complexity"
+    },
+    {
+      "question_id": 98304,
+      "topic_id": 2686,
+      "course_id": null,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A data analysis engineer had&nbsp;an old on-premise database for his meteorology analysis for years. This database is growing too big and becoming less responsive. He prefers to migrate it to AWS DynamoDB, and he already has the mapping rules in place. However, he has been told that the database type is unsupported by AWS Database Migration Service. He can export the data to CSV format files from the old database. How can the data analysis engineer migrate the data to AWS DynamoDB successfully?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: C</strong></p>\r\n\r\n<p>In most cases, when someone is migrating to a new database, he has access to the source database and can use the database directly as a source. Sometimes, however, he might not have access to the source directly. In other cases, the source is really old or possibly unsupported. In these cases, if he can export the data in CSV format, he can still migrate or platform, the data. In this question, DMS does not support this database type. However, the CSV files can be used after being uploaded to S3. AWS Database Migration Services (AWS DMS) added support for using Amazon S3 as a source for database migration.</p>\r\n\r\n<p>If S3 is the source endpoint, an external table definition is required. An external table definition is a JSON document that describes how AWS DMS should interpret the data from Amazon S3. The maximum size of this document is 2 MB. If a source endpoint is created using the AWS DMS Management Console, a JSON file can be entered directly into the table mapping box such as:</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/02/21/ckeditor_awsq12.jpg\" style=\"height:352px; width:750px\" /></p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is incorrect</strong> because the mapping rule should be put in the source endpoint configuration rather than the task settings if S3 is the source for DMS.</li>\r\n\t<li><strong>Option B is incorrect</strong> because AWS Database Migration Service is suitable. Moreover, Data Pipeline does not deal with table mappings. Data Pipeline is suitable for data backup instead of database migration.</li>\r\n\t<li><strong>Option C is CORRECT</strong>.&nbsp;It correctly describes how to use S3 as the source endpoint and defines the mapping rules. Below is a piece of JSON mapping rule:</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://s3.amazonaws.com/media.whizlabs.com/learn/2019/02/21/ckeditor_awsq12.1.jpg\" style=\"height:570px; width:750px\" /></p>\r\n\r\n<p>A reference is in<a href=\"https://aws.amazon.com/blogs/database/migrate-delimited-files-from-amazon-s3-to-an-amazon-dynamodb-nosql-table-using-aws-database-migration-service-and-aws-cloudformation/\" target=\"_blank\"> https://aws.amazon.com/blogs/database/migrate-delimited-files-from-amazon-s3-to-an-amazon-dynamodb-nosql-table-using-aws-database-migration-service-and-aws-cloudformation/</a>.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option D is incorrect </strong>because DynamoDB cannot resolve the table mapping by uploading CSV files exported from databases. Data Migration Service can deal with this scenario properly.</li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123016,
+          "question_id": 98304,
+          "answers": [
+            {
+              "choice": "<p>Firstly, upload the CSV files to S3. Create an S3 source endpoint and DynamoDB target endpoint in AWS DMS. Create a migration task by referring to the source and target endpoints. Add the mapping rule in the task using a JSON format</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>AWS Database Migration Service is inappropriate for this task. Upload the CSV files to S3 and then use an AWS Data Pipeline to import the data from S3 to DynamoDB by an S3-to-DynamoDB template</p>",
+              "correct": 0,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Upload the exported CSV files to S3 at first. Then create S3 source endpoint and DynamoDB target endpoint in AWS DMS console. When the S3 source endpoint is configured, add the table mapping rule with a JSON table structure.&nbsp;Create a Replication Task to move the data from the source endpoint to the target endpoint</p>",
+              "correct": 1,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>AWS Database Migration Service is not needed for this scenario. The AWS DynamoDB supports the import of CSV Excel files directly by console and CLI. Create the DynamoDB table firstly with a proper schema and then import the CSV database data</p>",
+              "correct": 0,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Accelerate Workload Migration and Modernization"
+    },
+    {
+      "question_id": 98305,
+      "topic_id": 2687,
+      "course_id": null,
+      "case_study_id": 0,
+      "lab_id": 0,
+      "question_text": "<p>A large company starts to use AWS organizations with the consolidated billing feature&nbsp;to manage its separate departments. The AWS operation team has just created 3 OUs (organization units) with 2 AWS accounts each. To be compliant with company-wide security policy, CloudTrail is required for all AWS accounts which is already been set up. However, after some time, there are cases that users in certain OU have turned off the CloudTrail of their accounts. What is the best way for the AWS operation team to prevent this from happening again?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p><strong>Correct Answer: A</strong></p>\r\n\r\n<p>&nbsp;AWS Organizations has provided two feature sets.</p>\r\n\r\n<ul>\r\n\t<li>Consolidated billing &ndash; This feature set provides shared billing functionality but does not include the more advanced features of AWS Organizations.</li>\r\n\t<li>All features &ndash; The complete feature set that is available to AWS Organizations. It includes all the functionality of consolidated billing and advanced features that give you more control over your organization&#39;s accounts. For example, when all features are enabled, the master account of the organization has full control over what member accounts can do. The master account can apply SCPs to restrict the services and actions that users (including the root user) and roles in an account can access. It can prevent member accounts from leaving the organization.</li>\r\n</ul>\r\n\r\n<p>In this case, we should use &ldquo;All features&rdquo;. One thing to note is that the feature sets can be upgraded in flight. It does not need to delete/recreate the AWS Organizations.</p>\r\n\r\n<ul>\r\n\t<li><strong>Option A is CORRECT </strong>because SCP is suitable for limiting actions that AWS accounts in an Organization can do. Below is an example of a deny policy:</li>\r\n</ul>\r\n\r\n<pre>\r\n{\r\n&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,\r\n&nbsp; &quot;Statement&quot;: [\r\n&nbsp;&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;: &quot;Deny&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;: &quot;cloudtrail:StopLogging&quot;,\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: &quot;*&quot;\r\n&nbsp;&nbsp;&nbsp; }\r\n&nbsp; ]\r\n}</pre>\r\n\r\n<ul>\r\n\t<li><strong>Option B is incorrect</strong> because it does not need to delete/recreate the AWS Organizations to upgrade feature sets.</li>\r\n\t<li><strong>Option C is incorrect </strong>because although it can potentially work, it has lots of repeatable work and is not straightforward if compared with Option A.</li>\r\n\t<li><strong>Option D is incorrect</strong> because it does not mention the upgrade of feature sets. Secondly, the allow policy is incorrect as this case only requires limiting CloudTrail deletion. Allow policy implicitly prevents everything except for several allows items.</li>\r\n</ul>\r\n\r\n<p><strong>References:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://aws.amazon.com/blogs/industries/best-practices-for-aws-organizations-service-control-policies-in-a-multi-account-environment/\" target=\"_blank\">https://aws.amazon.com/blogs/industries/best-practices-for-aws-organizations-service-control-policies-in-a-multi-account-environment/</a></li>\r\n\t<li><a href=\"https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org_support-all-features.html\" target=\"_blank\">https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org_support-all-features.html</a></li>\r\n</ul>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 123286,
+          "question_id": 98305,
+          "answers": [
+            {
+              "question_id": "98305",
+              "choice": "<p>Update the AWS Organizations feature sets to &ldquo;All features&rdquo; and then create a Service Control Policies (SCP) to Prevent Users from Disabling AWS CloudTrail. This can be achieved by a deny policy with cloudtrail:StopLogging denied</p>",
+              "feedback": "",
+              "correct": 1
+            },
+            {
+              "question_id": "98305",
+              "choice": "<p>This can be achieved by Service Control Policies (SCP) in the &ldquo;All features&rdquo; set. The team needs to delete and recreate the AWS Organizations with &ldquo;All features&rdquo; enabled and then use a proper control policy to limit the operation of cloudtrail:StopLogging</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98305",
+              "choice": "<p>In each AWS account in this organization, create an IAM policy to deny cloudtrail:StopLogging for all users including administrators</p>",
+              "feedback": "",
+              "correct": 0
+            },
+            {
+              "question_id": "98305",
+              "choice": "<p>Use Service Control Policies (SCP) to prevent users from disabling AWS CloudTrail. This can be done by a allow policy that denies cloudtrail:StopLogging</p>",
+              "feedback": "",
+              "correct": 0
+            }
+          ]
+        }
+      ],
+      "topic_name": "Design Solutions for Organizational Complexity"
+    }
+  ]
+}
