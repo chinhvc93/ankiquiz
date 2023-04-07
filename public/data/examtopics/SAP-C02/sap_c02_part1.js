@@ -803,10 +803,10 @@ var SAP_C02_Part1 =
       "lab_id": 0,
       "question_text": "<p>A retail company needs to provide a series of data files to another company, which is its business partner. These files are saved in an Amazon S3 bucket under Account A, which belongs to the retail company. The business partner company wants one of its IAM users, User_DataProcessor, to access the files from its own AWS account (Account B).<br>Which combination of steps must the companies take so that User_DataProcessor can access the S3 bucket successfully? (Choose two.)<br><br></p>",
       "mark": 1,
-      "is_partially_correct": false,
+      "is_partially_correct": true,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: C</p>",
+      "general_feedback": "<p>Correct Answer: C,D</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -819,22 +819,22 @@ var SAP_C02_Part1 =
               "feedback": ""
             },
             {
-              "choice": "<p>B. In Account A, set the S3 bucket policy to the following:<br></p>",
+              "choice": "<p>B. In Account A, set the S3 bucket policy to the following:<br><img src=\"https://img.examtopics.com/aws-certified-solutions-architect-professional-sap-c02/image1.png\"><br><br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>C. In Account A, set the S3 bucket policy to the following:<br></p>",
+              "choice": "<p>C. In Account A, set the S3 bucket policy to the following:<br><img src=\"https://img.examtopics.com/aws-certified-solutions-architect-professional-sap-c02/image2.png\"><br><br></p>",
               "correct": true,
               "feedback": ""
             },
             {
-              "choice": "<p>D. In Account B, set the permissions of User_DataProcessor to the following:<br></p>",
-              "correct": false,
+              "choice": "<p>D. In Account B, set the permissions of User_DataProcessor to the following:<br><img src=\"https://img.examtopics.com/aws-certified-solutions-architect-professional-sap-c02/image1.png\"><br><br></p>",
+              "correct": true,
               "feedback": ""
             },
             {
-              "choice": "<p>E. In Account B, set the permissions of User_DataProcessor to the following:<br></p>",
+              "choice": "<p>E. In Account B, set the permissions of User_DataProcessor to the following:<br><img src=\"https://img.examtopics.com/aws-certified-solutions-architect-professional-sap-c02/image4.png\"><br><br></p>",
               "correct": false,
               "feedback": ""
             }
