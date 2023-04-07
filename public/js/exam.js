@@ -351,6 +351,7 @@ $("#testBlock").on("click", ".btnCreateTest", function () {
   let from = $("#filterOptionFromQuestion2").val();
   let to = $("#filterOptionToQuestion2").val();
   let random = $("#filterOptionRandom").val();
+  let show_question_title = $("#show_question_title").val() == "1";
   
   testQuestion = exam.createExam({
     "type": type,
@@ -358,6 +359,9 @@ $("#testBlock").on("click", ".btnCreateTest", function () {
     "to": to,
     "random": random,
     "max": max,
+    "question_options": {
+      "show_title": show_question_title,
+    }
   });
 
   exam.renderContent_v2(testQuestion, "#testBlock .testContent");

@@ -9,9 +9,7 @@ class Question {
     this.topic_name = "";
     this.is_partially_correct = false;
     this.options = {
-      isShowAnswer: false,
-      userChoice: "",
-      userMarked: true,
+      show_title: true,
     };
     this.discusstion = "";
   }
@@ -26,9 +24,7 @@ class Question {
     this.topic_name = queData.topic_name;
     this.is_partially_correct = queData.is_partially_correct;
     this.options = {
-      isShowAnswer: false,
-      userChoice: "",
-      userMarked: true,
+      show_title: true,
     };
     this.discusstion = queData.discusstion;
   }
@@ -90,7 +86,7 @@ class Question {
     `;
 
     html += `
-      <div>Question: ${this.queNo + 1} (${this.question_id})</div>
+      <div class="que-title">Question:  ${options.index + 1} (${this.options.show_title ? this.question_id : '#____'})</div>
       <div class="que-text">${this.question_text}</div>
       ${htmlStarIcon}
     `;
@@ -754,13 +750,13 @@ class Exam {
 
   filterQuestion_v2(options) {
     let self = this;
-    let list = [];
     let list2 = [];
     let EXAM_TYPE = options.exam_type;
     let FROM_QUESTION = options.from_question;
     let TO_QUESTION = options.to_question;
     let MAX_QUESTION = options.max_question;
     let RAMDOM = options.random;
+    let QUESTION_OPTIONS = options.question_options;
     
     let from = FROM_QUESTION < 1 ? parseInt(1) : parseInt(FROM_QUESTION);
     let to = (self.count < TO_QUESTION) ? self.count : parseInt(TO_QUESTION);
@@ -770,6 +766,7 @@ class Exam {
       case "STAR":
         self.markedQuestion.forEach(item => {
           que = self.listQuestions[item.queNo];
+          que.options = QUESTION_OPTIONS;
           // if(star_ques.includes(item.queNo)) {
           //   que.options.userMarked = true;
           // }
@@ -780,6 +777,7 @@ class Exam {
         //Normal
         for (let i = from; i <= to; i++) {
           que = self.listQuestions[i-1];
+          que.options = QUESTION_OPTIONS;
           // if(star_ques.includes(i-1)) {
           //   que.options.userMarked = true;
           // }
@@ -830,6 +828,9 @@ class Exam {
       to: to,
       random: random,
       max: max,
+      question_options: {
+        show_title: true
+      }
     }
   ) {
     return this.filterQuestion_v2({
@@ -838,6 +839,8 @@ class Exam {
       to_question: options.to,
       random: options.random,
       max_question: options.max,
+      max_question: options.max,
+      question_options: options.question_options
     });
   }
 
