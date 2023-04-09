@@ -185,6 +185,11 @@ var listExamGroup = [
         data: SAP_C02_Part2.data,
       },
       {
+        id: "SAP_C02_All",
+        name: "[SAP-C02] All Parts",
+        data: SAP_C02_All.data,
+      },
+      {
         id: "SAP_C02_Whiz_PracticeTest1",
         name: "[SAP-C02] Whizlabs PracticeTest 1",
         data: SAP_C02_Whiz_PracticeTest1.data,
