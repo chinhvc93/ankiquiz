@@ -173,6 +173,10 @@ $(".btnPrevQue").on("click", function () {
 
 // SHORTKEYS
 $(document).keydown(function (e) {
+  console.log(e)
+  console.log(e.target.nodeName.toLowerCase())
+  if (["textarea", "input"].includes(e.target.nodeName.toLowerCase())) return;
+  
   switch(e.keyCode) {
     case 37: //LEFT
       $(".btnPrevQue")[0].click();

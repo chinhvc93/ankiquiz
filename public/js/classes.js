@@ -785,14 +785,14 @@ class Exam {
         }
     }
 
-    // MAX_QUESTION
-    if (MAX_QUESTION != "ALL") {
-      list2 = list2.splice(0, MAX_QUESTION);
-    }
-
     // RAMDOM
     if(RAMDOM == "RANDOM") {
       this.shuffleArray(list2);
+    }
+
+    // MAX_QUESTION
+    if (MAX_QUESTION != "ALL") {
+      list2 = list2.splice(0, MAX_QUESTION);
     }
 
     return list2;
@@ -838,7 +838,6 @@ class Exam {
       from_question: options.from,
       to_question: options.to,
       random: options.random,
-      max_question: options.max,
       max_question: options.max,
       question_options: options.question_options
     });
