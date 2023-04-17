@@ -173,9 +173,7 @@ $(".btnPrevQue").on("click", function () {
 
 // SHORTKEYS
 $(document).keydown(function (e) {
-  console.log(e)
-  console.log(e.target.nodeName.toLowerCase())
-  if (["textarea", "input"].includes(e.target.nodeName.toLowerCase())) return;
+  if (["textarea"].includes(e.target.nodeName.toLowerCase())) return;
   
   switch(e.keyCode) {
     case 37: //LEFT
@@ -198,6 +196,10 @@ $(document).keydown(function (e) {
     case 32: //SPACE
       e.preventDefault();
       $("#starMarkToReview").click();
+      break;
+    case 82: //R = Review
+      e.preventDefault();
+      $("#testBlock .btnQuickReview").click();
       break;
     default:
       break
@@ -430,6 +432,21 @@ $("#testBlock").on("click", ".btnShowDisscussionQuestion", function () {
     showCommentBtn: true,
   }));
 
+});
+
+// QUICK REVIEW
+$("#testBlock").on("click", ".btnQuickReview", function () {
+  if($("#quickReviewModal").hasClass("show")) {
+    $('#quickReviewModal').modal('hide');
+  } else {
+    $('#quickReviewModal').modal('show');
+    let score = exam.calculateScore(testQuestion);
+    exam.renderTestQuickView(score, "#quickReviewContent");
+  }
+});
+
+$("#quickReviewModal").on("click", ".btn-secondary", function () {
+  $('#quickReviewModal').modal('hide');
 });
 
 // SHOW ALL ANSWER

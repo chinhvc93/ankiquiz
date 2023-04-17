@@ -443,6 +443,60 @@ body.white-mode {
     background-color: #e6e2eb;
 }
 
+#testBlock .btnQuickReview {
+    position: fixed;
+    top: 45%;
+    right: 26px;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: rgb(255 193 7 / 33%);
+    color: #ffffff;
+}
+
+#testBlock .modal-content {
+    background-color: #ffffff;
+    color: #000;
+}
+
+#testBlock .badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+
+#testBlock .badge-pill {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
+
+#testBlock .badge-primary {
+    background-color: #00be7e;
+    color: #ffffff;
+}
+
+#testBlock .badge-danger {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+#testBlock .badge-warning {
+    background-color: #ffc107;
+    color: #000;
+}
+
+#testBlock .badge-info {
+    background-color: #0dcaf0;
+    color: #ffffff;
+}
+
 
 /* CSS FOR IPAD DEVICES */
 @media only screen and (min-device-width: 500px)  and (max-device-width: 900px)  and (orientation: portrait)  {

@@ -500,6 +500,57 @@ class Exam {
     $("#resultBlock").html(resultBlock);
   }
 
+  calculateScore(listQuestion) {
+    let self = this;
+    let correctCount = 0;
+    let inCorrectCount = 0;
+    let notSelected = 0;
+    listQuestion.forEach(function(question, index) {
+      let userChoice = [];
+      $(`#QuestionBlockItem_${index} .ip-radio:checked`).each((key, item) => {
+        userChoice = [...userChoice, $(item).val()];
+      });
+
+      // console.log(index, userChoice.sort().toString(), self.getAnswer(question.answer_list).sort().toString());
+      if (userChoice.sort().toString() != "") {
+        if(userChoice.sort().toString() == self.getAnswer(question.answer_list).sort().toString()) {
+          correctCount += 1;
+        } else {
+          inCorrectCount +=1;
+        }
+      } else {
+         notSelected += 1;
+      }
+    });
+
+    return {
+      "correctCount": correctCount, 
+      "inCorrectCount": inCorrectCount, 
+      "notSelected": notSelected, 
+      "total": listQuestion.length
+    }
+  }
+
+  renderTestQuickView(scoreInfo, targetId = "#quickReviewContent") {
+    let html = "";
+    html += `
+     <div class="text-center">
+      <span class="badge badge-pill badge-primary">${scoreInfo.correctCount}</span>
+      <span class="badge badge-pill badge-danger">${scoreInfo.inCorrectCount}</span>
+      <span class="badge badge-pill badge-warning">${scoreInfo.notSelected}</span>
+      / <span class="badge badge-pill badge-info">${scoreInfo.total}</span>
+     </div>
+     <div class="text-center">
+      <div>Correct (Correct/Answered): <span class="badge badge-pill badge-primary">${scoreInfo.correctCount} (${Math.round((scoreInfo.correctCount / (scoreInfo.total - scoreInfo.notSelected)) * 1000) / 10}%)</span></div>
+      <div>InCorrect (InCorrect/Answered): <span class="badge badge-pill badge-danger">${scoreInfo.inCorrectCount} (${Math.round((scoreInfo.inCorrectCount / (scoreInfo.total - scoreInfo.notSelected)) * 1000) / 10}%)</span></div>
+      <div>NotAnswer (NotAnswer/Total): <span class="badge badge-pill badge-warning">${scoreInfo.notSelected} (${Math.round((scoreInfo.notSelected / scoreInfo.total) * 1000) / 10}%)</span></div>
+      <div>Total: <span class="badge badge-pill badge-info"> ${scoreInfo.total} (100%)</span></div>
+     </div>
+    `
+    // let percentPoint = Math.round((total_point / self.count) * 1000) / 10;
+    $(targetId).html(html);
+  }
+
   getAnswer(queAnswers) {
     let SYMBOL_ANSWERS = ["A", "B", "C", "D", "E", "F", "G", "H"];
     var correctAnswer = [];
