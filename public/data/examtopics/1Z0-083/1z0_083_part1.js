@@ -58,17 +58,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 95539,
           "date": "Mon 25 May 2020 19:06",
-          "username": "janwamaDhanushbh",
-          "content": "correct: BCEi agreeagreed with BCE",
-          "upvote_count": "1452",
+          "username": "janw",
+          "content": "correct: BCE<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>i agree</li><li>agreed with BCE</li></ul>",
+          "upvote_count": "14",
           "selected_answers": ""
         },
         {
           "id": 165734,
           "date": "Tue 25 Aug 2020 08:25",
-          "username": "amaDhanushbh",
-          "content": "i agreeagreed with BCE",
-          "upvote_count": "52",
+          "username": "ama",
+          "content": "i agree<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>agreed with BCE</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
@@ -228,17 +228,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 95040,
           "date": "Sun 24 May 2020 19:45",
-          "username": "janwcerebro2000xjanwamaAlejandrrro",
-          "content": "DE correct<br>Cincorrect, rman does not use database buffer cacheAE, io on tape is syncA) is used for copy/write tuning<br><br>https://docs.oracle.com/html/E10642_06/rcmtunin.htm#i1006396<br> tape is sync, but read is on disks, so async IO can be used for reading blocksI agree, D is correct ><br><br>In RMAN operation, asynchronous Disk I/O is always better than synchronous I/O as a server process can begin an I/O and then perform other work while waiting for the I/O to complete.<br>On operating systems that do not support native asynchronous I/O, the database can simulate it with special I/O slave processes (DBWR_IO_SLAVES)Agree that rman doesn't use db buffer cache:<br><br>RMAN Backup Performance (Doc ID 360443.1)<br>\\\"RMAN uses its own buffer cache separate from the database buffer cache\\\"",
-          "upvote_count": "141112",
+          "username": "janw",
+          "content": "DE correct<br>Cincorrect, rman does not use database buffer cache<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>AE, io on tape is sync</li><li>A) is used for copy/write tuning<br><br>https://docs.oracle.com/html/E10642_06/rcmtunin.htm#i1006396<br> tape is sync, but read is on disks, so async IO can be used for reading blocks</li><li>I agree, D is correct &gt;<br><br>In RMAN operation, asynchronous Disk I/O is always better than synchronous I/O as a server process can begin an I/O and then perform other work while waiting for the I/O to complete.<br>On operating systems that do not support native asynchronous I/O, the database can simulate it with special I/O slave processes (DBWR_IO_SLAVES)</li><li>Agree that rman doesn't use db buffer cache:<br><br>RMAN Backup Performance (Doc ID 360443.1)<br>\\\"RMAN uses its own buffer cache separate from the database buffer cache\\\"</li></ul>",
+          "upvote_count": "14",
           "selected_answers": ""
         },
         {
           "id": 152500,
           "date": "Fri 07 Aug 2020 13:09",
-          "username": "cerebro2000xjanw",
-          "content": "AE, io on tape is syncA) is used for copy/write tuning<br><br>https://docs.oracle.com/html/E10642_06/rcmtunin.htm#i1006396<br> tape is sync, but read is on disks, so async IO can be used for reading blocks",
-          "upvote_count": "11",
+          "username": "cerebro2000x",
+          "content": "AE, io on tape is sync<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A) is used for copy/write tuning<br><br>https://docs.oracle.com/html/E10642_06/rcmtunin.htm#i1006396<br> tape is sync, but read is on disks, so async IO can be used for reading blocks</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -316,17 +316,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 167431,
           "date": "Thu 27 Aug 2020 11:39",
-          "username": "yurijkamayurijk",
-          "content": "AE. <br>D async is for writes, not reads.No, you are totally wrong=E2=80=A6<br><br>Synchronous and Asynchronous Disk I/O<br>When a channel reads from or writes to disk, the I/O is either synchronous I/O or asynchronous I/O. When the disk I/O is synchronous, a server process can perform only one task at a time. When the disk I/O is asynchronous, a server process can begin an I/O operation and then perform other work while waiting for the I/O to complete. RMAN can also begin multiple I/O operations before waiting for the first to complete.<br><br>Take a look at https://docs.oracle.com/database/121/BRADV/rcmtunin.htm#BRADV90067<br><br>and Focus on the Read-PhaseYep, you're right. async can help at READ phase, andA.  SBT buffer can't help on READ phase. So finally right answer are: DE",
-          "upvote_count": "133",
+          "username": "yurijk",
+          "content": "AE. <br>D async is for writes, not reads.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>No, you are totally wrong=E2=80=A6<br><br>Synchronous and Asynchronous Disk I/O<br>When a channel reads from or writes to disk, the I/O is either synchronous I/O or asynchronous I/O. When the disk I/O is synchronous, a server process can perform only one task at a time. When the disk I/O is asynchronous, a server process can begin an I/O operation and then perform other work while waiting for the I/O to complete. RMAN can also begin multiple I/O operations before waiting for the first to complete.<br><br>Take a look at https://docs.oracle.com/database/121/BRADV/rcmtunin.htm#BRADV90067<br><br>and Focus on the Read-Phase</li><li>Yep, you're right. async can help at READ phase, andA.  SBT buffer can't help on READ phase. So finally right answer are: DE</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 168154,
           "date": "Fri 28 Aug 2020 08:14",
-          "username": "amayurijk",
-          "content": "No, you are totally wrong=E2=80=A6<br><br>Synchronous and Asynchronous Disk I/O<br>When a channel reads from or writes to disk, the I/O is either synchronous I/O or asynchronous I/O. When the disk I/O is synchronous, a server process can perform only one task at a time. When the disk I/O is asynchronous, a server process can begin an I/O operation and then perform other work while waiting for the I/O to complete. RMAN can also begin multiple I/O operations before waiting for the first to complete.<br><br>Take a look at https://docs.oracle.com/database/121/BRADV/rcmtunin.htm#BRADV90067<br><br>and Focus on the Read-PhaseYep, you're right. async can help at READ phase, andA.  SBT buffer can't help on READ phase. So finally right answer are: DE",
-          "upvote_count": "33",
+          "username": "ama",
+          "content": "No, you are totally wrong=E2=80=A6<br><br>Synchronous and Asynchronous Disk I/O<br>When a channel reads from or writes to disk, the I/O is either synchronous I/O or asynchronous I/O. When the disk I/O is synchronous, a server process can perform only one task at a time. When the disk I/O is asynchronous, a server process can begin an I/O operation and then perform other work while waiting for the I/O to complete. RMAN can also begin multiple I/O operations before waiting for the first to complete.<br><br>Take a look at https://docs.oracle.com/database/121/BRADV/rcmtunin.htm#BRADV90067<br><br>and Focus on the Read-Phase<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Yep, you're right. async can help at READ phase, andA.  SBT buffer can't help on READ phase. So finally right answer are: DE</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -356,9 +356,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 95031,
           "date": "Sun 24 May 2020 19:32",
-          "username": "janwxRodge",
-          "content": "CEcorrectDo you mean to say (based on your analysis), that DE is correct?<br>D.  Enable asynchronous disk I/O.E.  Increase the level of RMAN multiplexing.",
-          "upvote_count": "21",
+          "username": "janw",
+          "content": "CEcorrect<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Do you mean to say (based on your analysis), that DE is correct?<br>D.  Enable asynchronous disk I/O.E.  Increase the level of RMAN multiplexing.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -427,9 +427,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 95028,
           "date": "Sun 24 May 2020 19:21",
-          "username": "janwpedro0986Alejandrrro",
-          "content": "B.  to exclude all tablespaces except SYSTEM, SYSAUX, and TEMP when plugging in a PDBD.  to specify the list of user tablespaces to include when moving a non-CDB to a PDBIt's correct BD?To confirm D tried plugging in a PDB in my test system with USER_TABLESPACES clause and an excluded tablespace is indeed offline.<br><br>CREATE PLUGGABLE DATABASE XEPDB2 USING '/opt/oracle/oradata/XE/XEPDB2/XEPDB2.xml'<br>USER_TABLESPACESNONE NOCOPY TEMPFILE REUSE;<br><br>SQL> select TABLESPACE_NAME,status from dba_tablespaces;<br><br>TABLESPACE_NAMESTATUS<br>------------------------------ ---------<br>SYSTEM ONLINE<br>SYSAUX ONLINE<br>UNDOTBS1 ONLINE<br>TEMP ONLINE<br>CUSTOM OFFLINE",
-          "upvote_count": "1611",
+          "username": "janw",
+          "content": "B.  to exclude all tablespaces except SYSTEM, SYSAUX, and TEMP when plugging in a PDBD.  to specify the list of user tablespaces to include when moving a non-CDB to a PDB<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>It's correct BD?</li><li>To confirm D tried plugging in a PDB in my test system with USER_TABLESPACES clause and an excluded tablespace is indeed offline.<br><br>CREATE PLUGGABLE DATABASE XEPDB2 USING '/opt/oracle/oradata/XE/XEPDB2/XEPDB2.xml'<br>USER_TABLESPACESNONE NOCOPY TEMPFILE REUSE;<br><br>SQL&gt; select TABLESPACE_NAME,status from dba_tablespaces;<br><br>TABLESPACE_NAMESTATUS<br>------------------------------ ---------<br>SYSTEM ONLINE<br>SYSAUX ONLINE<br>UNDOTBS1 ONLINE<br>TEMP ONLINE<br>CUSTOM OFFLINE</li></ul>",
+          "upvote_count": "16",
           "selected_answers": ""
         },
         {
@@ -451,9 +451,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 273652,
           "date": "Fri 22 Jan 2021 12:12",
-          "username": "amaasefa",
-          "content": "i double checked B again.<br>B.  to exclude all tablespaces except SYSTEM, SYSAUX, and TEMP when plugging in a PDB ?<br>____________________________________________________________________________________<br><br>Its definitely FALSE<br><br>Because to exclude some tablespaces we can use for example USER_TABLESPACESALL EXCEPT('tbs1','tbs4','tbs5');<br><br>in this case all tablespaces will be included except tbs1, tbs4 and tbs5<br><br>Howver This clause does not apply to the SYSTEM, SYSAUX, or TEMP tablespaces. so you should not include these tablespaces in a tablespace list for this clause.<br><br>If i want to translate Answer B into an example, it should look like that:<br><br>USER_TABLESPACESALL EXCEPT('system','sysaux','emp');<br><br>Apparently something like that is not allowed, therefor Answer B is wrongCorrect answers are D, Fdid you take the exam?",
-          "upvote_count": "61",
+          "username": "ama",
+          "content": "i double checked B again.<br>B.  to exclude all tablespaces except SYSTEM, SYSAUX, and TEMP when plugging in a PDB ?<br>____________________________________________________________________________________<br><br>Its definitely FALSE<br><br>Because to exclude some tablespaces we can use for example USER_TABLESPACESALL EXCEPT('tbs1','tbs4','tbs5');<br><br>in this case all tablespaces will be included except tbs1, tbs4 and tbs5<br><br>Howver This clause does not apply to the SYSTEM, SYSAUX, or TEMP tablespaces. so you should not include these tablespaces in a tablespace list for this clause.<br><br>If i want to translate Answer B into an example, it should look like that:<br><br>USER_TABLESPACESALL EXCEPT('system','sysaux','emp');<br><br>Apparently something like that is not allowed, therefor Answer B is wrongCorrect answers are D, F<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>did you take the exam?</li></ul>",
+          "upvote_count": "6",
           "selected_answers": ""
         },
         {
@@ -483,9 +483,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 602880,
           "date": "Tue 17 May 2022 12:26",
-          "username": "Franky_Tjackymak",
-          "content": "This one is tricky, and I found 3 correct answers. The USER_TABLESPACE clause is available for use in 3 scenarios.A.  When creating a PDB from SEED. B.  When cloning an existing PDB. C.  When creating a PDB from XML File<br>USER_TABLESPACE has 4 choices:<br>(This clause lets you specify the tablespaces to be made available in the new PDB.  The SYSTEM, SYSAUX, and TEMP tablespaces are available in all PDBs and cannot be specified in this clause.)<br>1. Specify tablespace to make the tablespace available in the new PDB.  You can specify more than one tablespace in a comma-separated list.<br>2. Specify ALL to make all tablespaces available in the new PDB.  This is the default.<br>3. Specify ALL EXCEPT to make all tablespaces available in the new PDB, except the specified tablespaces.<br>4. Specify NONE to make only the SYSTEM, SYSAUX, and TEMP tablespaces available in the new PDB. <br>A.  is wrong. Default tablespaces are defined with the DEFAULT_TABLESPACE clause.<br>B is correct. See point 4 for USER_TABLESPACE. <br>C is wrong. See description before point 1.<br>D is correct. See point 1.<br>E is wrong. See description before point 1.<br>F is correct. See point 1.Will B be incorrect? Cause it's 'when plugging in a PDB', Not cloning or creating.",
-          "upvote_count": "31",
+          "username": "Franky_T",
+          "content": "This one is tricky, and I found 3 correct answers. The USER_TABLESPACE clause is available for use in 3 scenarios.A.  When creating a PDB from SEED. B.  When cloning an existing PDB. C.  When creating a PDB from XML File<br>USER_TABLESPACE has 4 choices:<br>(This clause lets you specify the tablespaces to be made available in the new PDB.  The SYSTEM, SYSAUX, and TEMP tablespaces are available in all PDBs and cannot be specified in this clause.)<br>1. Specify tablespace to make the tablespace available in the new PDB.  You can specify more than one tablespace in a comma-separated list.<br>2. Specify ALL to make all tablespaces available in the new PDB.  This is the default.<br>3. Specify ALL EXCEPT to make all tablespaces available in the new PDB, except the specified tablespaces.<br>4. Specify NONE to make only the SYSTEM, SYSAUX, and TEMP tablespaces available in the new PDB. <br>A.  is wrong. Default tablespaces are defined with the DEFAULT_TABLESPACE clause.<br>B is correct. See point 4 for USER_TABLESPACE. <br>C is wrong. See description before point 1.<br>D is correct. See point 1.<br>E is wrong. See description before point 1.<br>F is correct. See point 1.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Will B be incorrect? Cause it's 'when plugging in a PDB', Not cloning or creating.</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -531,9 +531,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 531342,
           "date": "Mon 24 Jan 2022 14:58",
-          "username": "yarsalanegore0496",
-          "content": "D, F are correctF- wrong<br>>>How Can I Edit the PDB$SEED to Include Default Users Tablespace (Doc ID 2034967.1)<br><br>You cannot edit PDB$SEED to include users tablespace. In fact \\\"You cannot add or modify objects in PDB$SEED. \\\" as it is stated in the Database Concepts - About the Multitenant Architecture.<br><br>You can however use the DEFAULT TABLESPACE USERS DATAFILE ... clause in the CREATE PLUGGABLE DATABASE from PDB$SEED command to have the USERS tablespace with your desired specification created:e.g.<br>CREATE PLUGGABLE DATABASE <PDB NAME><br>ADMIN USER <USER NAME> IDENTIFIED BY <PASSWORD><br>ROLES(dba)<br>DEFAULT TABLESPACE USERS DATAFILE '<DIRECTORY>/mypdb/users.dbf' SIZE 250M AUTOEXTEND ON<br>FILE_NAME_CONVERT('<DIRECTORY>/pdbseed/','<DIRECTORY>/<PDB NAME>/')<br>STORAGE (MAXSIZE 2G)<br>PATH_PREFIX'<DIRECTORY>/<PDB NAME>/';<br><br>The above command will create 3 tablespaces: SYSTEM,SYSAUX,USERS.<br><br>See more information in at the Database SQL Language Reference at the CREATE PLUGGABLE DATABASE command.<br><br>F- wrong",
-          "upvote_count": "11",
+          "username": "yarsalan",
+          "content": "D, F are correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>F- wrong<br>&gt;&gt;How Can I Edit the PDB$SEED to Include Default Users Tablespace (Doc ID 2034967.1)<br><br>You cannot edit PDB$SEED to include users tablespace. In fact \\\"You cannot add or modify objects in PDB$SEED. \\\" as it is stated in the Database Concepts - About the Multitenant Architecture.<br><br>You can however use the DEFAULT TABLESPACE USERS DATAFILE ... clause in the CREATE PLUGGABLE DATABASE from PDB$SEED command to have the USERS tablespace with your desired specification created:e.g.<br>CREATE PLUGGABLE DATABASE &lt;PDB NAME&gt;<br>ADMIN USER &lt;USER NAME&gt; IDENTIFIED BY &lt;PASSWORD&gt;<br>ROLES(dba)<br>DEFAULT TABLESPACE USERS DATAFILE '&lt;DIRECTORY&gt;/mypdb/users.dbf' SIZE 250M AUTOEXTEND ON<br>FILE_NAME_CONVERT('&lt;DIRECTORY&gt;/pdbseed/','&lt;DIRECTORY&gt;/&lt;PDB NAME&gt;/')<br>STORAGE (MAXSIZE 2G)<br>PATH_PREFIX'&lt;DIRECTORY&gt;/&lt;PDB NAME&gt;/';<br><br>The above command will create 3 tablespaces: SYSTEM,SYSAUX,USERS.<br><br>See more information in at the Database SQL Language Reference at the CREATE PLUGGABLE DATABASE command.<br><br>F- wrong</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -579,9 +579,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 359527,
           "date": "Mon 17 May 2021 14:34",
-          "username": "ObserverPLnobody347",
-          "content": "I've just tested in practice - D is correct no doubtly, F is also correct because I opened SEED in READ WRITE FORCE and I created non-Oracle-maintained tablespace, then I used USER_TABLESPACES to choose one of them to be present in new PDB planted from SEED. Can you show syntax how you did it. Because I think you are wrong. For example<br>create pluggable database pdb2 admin user pdb2_admin identified by password<br>create_file_dest'/u01/app/oracle/oradata/ORCL/pdb2';<br>In this case new PDB2 pluggable database will be created and it will have 4 tablespace SYSTEM,SYSAUX, TEMP, UNDOTBS1",
-          "upvote_count": "21",
+          "username": "ObserverPL",
+          "content": "I've just tested in practice - D is correct no doubtly, F is also correct because I opened SEED in READ WRITE FORCE and I created non-Oracle-maintained tablespace, then I used USER_TABLESPACES to choose one of them to be present in new PDB planted from SEED. <br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Can you show syntax how you did it. Because I think you are wrong. For example<br>create pluggable database pdb2 admin user pdb2_admin identified by password<br>create_file_dest'/u01/app/oracle/oradata/ORCL/pdb2';<br>In this case new PDB2 pluggable database will be created and it will have 4 tablespace SYSTEM,SYSAUX, TEMP, UNDOTBS1</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -666,25 +666,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 95022,
           "date": "Sun 24 May 2020 19:08",
-          "username": "janwpedro0986veginhaFelix_brama",
-          "content": "A<br>B<br>F<br><br>C incorrect, recycle bin not used for flashback versionJanw, did you passed in test 083? I fault today. Do you study for here?what was your score? i was also studying from this, but i have noticed so many wrong answersare you following the tool answer or comment answers ? I'm starting to study now for this exam.i agree!!!",
-          "upvote_count": "222213",
+          "username": "janw",
+          "content": "A<br>B<br>F<br><br>C incorrect, recycle bin not used for flashback version<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Janw, did you passed in test 083? I fault today. Do you study for here?</li><li>what was your score? i was also studying from this, but i have noticed so many wrong answers</li><li>are you following the tool answer or comment answers ? I'm starting to study now for this exam.</li><li>i agree!!!</li></ul>",
+          "upvote_count": "22",
           "selected_answers": ""
         },
         {
           "id": 96755,
           "date": "Wed 27 May 2020 13:54",
-          "username": "pedro0986veginhaFelix_br",
-          "content": "Janw, did you passed in test 083? I fault today. Do you study for here?what was your score? i was also studying from this, but i have noticed so many wrong answersare you following the tool answer or comment answers ? I'm starting to study now for this exam.",
-          "upvote_count": "221",
+          "username": "pedro0986",
+          "content": "Janw, did you passed in test 083? I fault today. Do you study for here?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>what was your score? i was also studying from this, but i have noticed so many wrong answers</li><li>are you following the tool answer or comment answers ? I'm starting to study now for this exam.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 107080,
           "date": "Wed 10 Jun 2020 20:35",
-          "username": "veginhaFelix_br",
-          "content": "what was your score? i was also studying from this, but i have noticed so many wrong answersare you following the tool answer or comment answers ? I'm starting to study now for this exam.",
-          "upvote_count": "21",
+          "username": "veginha",
+          "content": "what was your score? i was also studying from this, but i have noticed so many wrong answers<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>are you following the tool answer or comment answers ? I'm starting to study now for this exam.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -826,9 +826,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 165852,
           "date": "Tue 25 Aug 2020 10:55",
-          "username": "amaama",
-          "content": "I guess correct asnwers are A, B, D<br><br>C is wrongsorry!!! A,B, F",
-          "upvote_count": "15",
+          "username": "ama",
+          "content": "I guess correct asnwers are A, B, D<br><br>C is wrong<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>sorry!!! A,B, F</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -945,9 +945,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 324405,
           "date": "Tue 30 Mar 2021 19:08",
-          "username": "dasigristasduta",
-          "content": "I agree that B, C, D are correct, but what is wrong with A?I think that one will be run during the Grid installation prereq check.",
-          "upvote_count": "21",
+          "username": "dasigrist",
+          "content": "I agree that B, C, D are correct, but what is wrong with A?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I think that one will be run during the Grid installation prereq check.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -1096,17 +1096,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 202118,
           "date": "Sun 18 Oct 2020 16:22",
-          "username": "SMagnynwwxRodge",
-          "content": "Answer is D,F. <br>E is incorrect.<br><br>A common object is defined in either the CDB root or an application root, and can be referenced using metadata links or object links. A local object is every object that is not a common object.<br><br>Database-supplied common objects are defined in CDB$ROOT and cannot be changed. Oracle Database does not support creation of common objects in CDB$ROOT.What about common user c##? It can only be created in cdb$root only. Doesn't it?@nww - A user is not an object.",
-          "upvote_count": "411",
+          "username": "SMagny",
+          "content": "Answer is D,F. <br>E is incorrect.<br><br>A common object is defined in either the CDB root or an application root, and can be referenced using metadata links or object links. A local object is every object that is not a common object.<br><br>Database-supplied common objects are defined in CDB$ROOT and cannot be changed. Oracle Database does not support creation of common objects in CDB$ROOT.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>What about common user c##? It can only be created in cdb$root only. Doesn't it?</li><li>@nww - A user is not an object.</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
           "id": 209780,
           "date": "Sat 31 Oct 2020 08:53",
-          "username": "nwwxRodge",
-          "content": "What about common user c##? It can only be created in cdb$root only. Doesn't it?@nww - A user is not an object.",
-          "upvote_count": "11",
+          "username": "nww",
+          "content": "What about common user c##? It can only be created in cdb$root only. Doesn't it?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>@nww - A user is not an object.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -1120,17 +1120,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 163104,
           "date": "Fri 21 Aug 2020 19:47",
-          "username": "janwjanwama",
-          "content": "as there is a lot of discussion, tested in lab.<br><br>correct answer: D, Ff:<br>Database-supplied common objects are defined in CDB$ROOT and cannot be changed. Oracle Database does not support creation of common objects in CDB$ROOT.<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/cncpt/overview-of-the-multitenant-architecture.html#GUID-8B4B4F8B-1C2B-42C3-BE77-E9AA25CA397AOkay, i agree that F is correct, but what About the selection between D and E?<br><br>As per D, A DATA-LINKED common object is an object that exists either in the CDB root or an application root.See thishttps://docs.oracle.com/en/database/oracle/oracle-database/12.2/cncpt/overview-of-the-multitenant-architecture.html#GUID-5C339A60-2163-4ECE-B7A9-4D67D3D894FB",
-          "upvote_count": "432",
+          "username": "janw",
+          "content": "as there is a lot of discussion, tested in lab.<br><br>correct answer: D, F<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>f:<br>Database-supplied common objects are defined in CDB$ROOT and cannot be changed. Oracle Database does not support creation of common objects in CDB$ROOT.<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/cncpt/overview-of-the-multitenant-architecture.html#GUID-8B4B4F8B-1C2B-42C3-BE77-E9AA25CA397A</li><li>Okay, i agree that F is correct, but what About the selection between D and E?<br><br>As per D, A DATA-LINKED common object is an object that exists either in the CDB root or an application root.See thishttps://docs.oracle.com/en/database/oracle/oracle-database/12.2/cncpt/overview-of-the-multitenant-architecture.html#GUID-5C339A60-2163-4ECE-B7A9-4D67D3D894FB</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
           "id": 163107,
           "date": "Fri 21 Aug 2020 19:49",
-          "username": "janwama",
-          "content": "f:<br>Database-supplied common objects are defined in CDB$ROOT and cannot be changed. Oracle Database does not support creation of common objects in CDB$ROOT.<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/cncpt/overview-of-the-multitenant-architecture.html#GUID-8B4B4F8B-1C2B-42C3-BE77-E9AA25CA397AOkay, i agree that F is correct, but what About the selection between D and E?<br><br>As per D, A DATA-LINKED common object is an object that exists either in the CDB root or an application root.See thishttps://docs.oracle.com/en/database/oracle/oracle-database/12.2/cncpt/overview-of-the-multitenant-architecture.html#GUID-5C339A60-2163-4ECE-B7A9-4D67D3D894FB",
-          "upvote_count": "32",
+          "username": "janw",
+          "content": "f:<br>Database-supplied common objects are defined in CDB$ROOT and cannot be changed. Oracle Database does not support creation of common objects in CDB$ROOT.<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/cncpt/overview-of-the-multitenant-architecture.html#GUID-8B4B4F8B-1C2B-42C3-BE77-E9AA25CA397A<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Okay, i agree that F is correct, but what About the selection between D and E?<br><br>As per D, A DATA-LINKED common object is an object that exists either in the CDB root or an application root.See thishttps://docs.oracle.com/en/database/oracle/oracle-database/12.2/cncpt/overview-of-the-multitenant-architecture.html#GUID-5C339A60-2163-4ECE-B7A9-4D67D3D894FB</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -1160,9 +1160,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 128892,
           "date": "Tue 07 Jul 2020 14:01",
-          "username": "IOracletaotsumiau",
-          "content": "A - is false- they cannot be created in cdbroot<br>\\\"Oracle Database does not support creation of common objects in CDB$ROOT. \\\"<br>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/overview-of-the-multitenant-architecture.html#GUID-8B4B4F8B-1C2B-42C3-BE77-E9AA25CA397A<br><br>B - not correct, they can only be metadata linked nd data linked<br><br>C - they do not exist only in \\\"application container\\\"<br><br>D - is correct there are common objects ( CDB$ROOT) and application common objects (application root)<br>E - is false, the extended data linkd common objects are only located in application root<br><br>F - is correct . They can be created in application containersF is not correct, because not ONLY in application containers.It can create in application root and cdb$root.",
-          "upvote_count": "32",
+          "username": "IOracle",
+          "content": "A - is false- they cannot be created in cdbroot<br>\\\"Oracle Database does not support creation of common objects in CDB$ROOT. \\\"<br>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/overview-of-the-multitenant-architecture.html#GUID-8B4B4F8B-1C2B-42C3-BE77-E9AA25CA397A<br><br>B - not correct, they can only be metadata linked nd data linked<br><br>C - they do not exist only in \\\"application container\\\"<br><br>D - is correct there are common objects ( CDB$ROOT) and application common objects (application root)<br>E - is false, the extended data linkd common objects are only located in application root<br><br>F - is correct . They can be created in application containers<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>F is not correct, because not ONLY in application containers.It can create in application root and cdb$root.</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -1452,9 +1452,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 95984,
           "date": "Tue 26 May 2020 13:38",
-          "username": "janwAbdou1968",
-          "content": "correct: BDD is false : only resolved alerts are cleared automatiquely",
-          "upvote_count": "32",
+          "username": "janw",
+          "content": "correct: BD<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D is false : only resolved alerts are cleared automatiquely</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -1587,9 +1587,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 115031,
           "date": "Sat 20 Jun 2020 23:26",
-          "username": "logicalogica",
-          "content": "Correct: ABDI agree with janw ABE",
-          "upvote_count": "11",
+          "username": "logica",
+          "content": "Correct: ABD<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I agree with janw ABE</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -1711,17 +1711,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 574746,
           "date": "Fri 25 Mar 2022 02:00",
-          "username": "casfdsafcasfdsafSteve26NL",
-          "content": "ADC correctABG is rightB yes sure you run opatchauto with root user have you ever worked with Oracle before?",
-          "upvote_count": "221",
+          "username": "casfdsaf",
+          "content": "ADC correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>ABG is right</li><li>B yes sure you run opatchauto with root user have you ever worked with Oracle before?</li></ul>",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: ABG"
         },
         {
           "id": 574747,
           "date": "Fri 25 Mar 2022 02:01",
-          "username": "casfdsafSteve26NL",
-          "content": "ABG is rightB yes sure you run opatchauto with root user have you ever worked with Oracle before?",
-          "upvote_count": "21",
+          "username": "casfdsaf",
+          "content": "ABG is right<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>B yes sure you run opatchauto with root user have you ever worked with Oracle before?</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -1783,9 +1783,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 103668,
           "date": "Sat 06 Jun 2020 10:40",
-          "username": "Jatindraamorimleandro",
-          "content": "A. It performs a shutdown and then a restart of all processes in both Oracle Grid Infrastructure and Oracle Database home during the patching process. > correctB.  It must be invoked by a user with root user privileges. > it must be invoked by root..C.  Patches are applied via opatchauto. This is Correct but E is more accurateD.  Users must always input patch plans to opatchauto.E.  It requires the Oracle Grid Infrastructure and Oracle Database instances to be shut down before being invoked. incorrectF.  It applies patches in nonrolling mode by default.<br>G. It is used to apply interim patches to Oracle Grid Infrastructure and Oracle Database home combinations. Correct<br>Correct: A, B, C, G (seems four correct options)C is incorrect, the patches are applied via opatch. Opatchauto is just a tool: \\\" A patch orchestration tool that generates patching instructions<br>specific to your target configuration and then uses OPatch to perform the patching<br>operations without user intervention. Specifically, OPatchAuto can:<br>1. Perform pre-patch checks.<br>2. Apply the patch<br>3. Start and stop the running servers.<br>4. Perform post-patch checks.<br>5. Roll back patches when patch deinstallation is required.\\\"",
-          "upvote_count": "14",
+          "username": "Jatindra",
+          "content": "A. It performs a shutdown and then a restart of all processes in both Oracle Grid Infrastructure and Oracle Database home during the patching process. > correctB.  It must be invoked by a user with root user privileges. > it must be invoked by root..C.  Patches are applied via opatchauto. This is Correct but E is more accurateD.  Users must always input patch plans to opatchauto.E.  It requires the Oracle Grid Infrastructure and Oracle Database instances to be shut down before being invoked. incorrectF.  It applies patches in nonrolling mode by default.<br>G. It is used to apply interim patches to Oracle Grid Infrastructure and Oracle Database home combinations. Correct<br>Correct: A, B, C, G (seems four correct options)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C is incorrect, the patches are applied via opatch. Opatchauto is just a tool: \\\" A patch orchestration tool that generates patching instructions<br>specific to your target configuration and then uses OPatch to perform the patching<br>operations without user intervention. Specifically, OPatchAuto can:<br>1. Perform pre-patch checks.<br>2. Apply the patch<br>3. Start and stop the running servers.<br>4. Perform post-patch checks.<br>5. Roll back patches when patch deinstallation is required.\\\"</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -1926,17 +1926,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 103098,
           "date": "Fri 05 Jun 2020 13:26",
-          "username": "git17veginhamihanik",
-          "content": "A is correct then what is the another option is correct JANW?i think B is the other one,Unicode is intended to include every character that will ever be required.Voted for AB<br>https://docs.oracle.com/database/121/NLSPG/ch2charset.htm#NLSPG175",
-          "upvote_count": "131",
+          "username": "git17",
+          "content": "A is correct then what is the another option is correct JANW?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>i think B is the other one,Unicode is intended to include every character that will ever be required.</li><li>Voted for AB<br>https://docs.oracle.com/database/121/NLSPG/ch2charset.htm#NLSPG175</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 107204,
           "date": "Wed 10 Jun 2020 23:20",
-          "username": "veginhamihanik",
-          "content": "i think B is the other one,Unicode is intended to include every character that will ever be required.Voted for AB<br>https://docs.oracle.com/database/121/NLSPG/ch2charset.htm#NLSPG175",
-          "upvote_count": "31",
+          "username": "veginha",
+          "content": "i think B is the other one,Unicode is intended to include every character that will ever be required.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Voted for AB<br>https://docs.oracle.com/database/121/NLSPG/ch2charset.htm#NLSPG175</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -2029,9 +2029,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 400610,
           "date": "Wed 07 Jul 2021 09:38",
-          "username": "xRodgeDatajimm",
-          "content": "The session/service views show what is happening NOW. You can append _HISTORY onto these (eg, V_SESSION_WAIT_HISTORY) to see what happened in the past, to sessions that have disconnected (on disconnect, Oracle will, basically, copy that session's v$ data into the corresponding v$_HISTORY views. Therefore, any answer that refers to anything in the past, here, must be wrong.<br>Another note is that all sessions are ALWAYS waiting for something. An \\\"active\\\" wait would be waiting for I/O to return. An \\\"idle\\\" wait would be waiting for the user to ask the DB to do something. They're both considered to be \\\"waits\\\", so the DB is always waiting.<br><br>A: FALSE - It shows these details for existing sessions, not past sessions.<br>B: TRUE - The definition is exactly what the view does<br>C: TRUE - As mentioned, all sessions are always waiting. So, this is true<br>D: FALSE - There is no such thing as a \\\"non-waiting session\\\", so this must be false.<br>E: FALSE - This references older sessions, so you would need to access the _HISTORY view for this data.<br>F: TRUE - This is exactly what these views do.<br><br>Therefore, BCF are correctC is false, since it \\\"displays the time spent in various wait event operations on a per-session basis\\\", therefore it shows no matter if the session is in wait or not<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/V-SESSION_WAIT_CLASS.html#GUID-B890F027-CE8A-452B-96B2-213985B21484<br><br>D is true: \\\"If the session is currently waiting, then the resource or event for which the session is waiting. If the session is not in a wait, then the resource or event for which the session most recently waited.\\\"<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/V-SESSION_WAIT.html#GUID-4EDAB293-F3FC-40FE-BC75-4FEE6A4D7705",
-          "upvote_count": "83",
+          "username": "xRodge",
+          "content": "The session/service views show what is happening NOW. You can append _HISTORY onto these (eg, V_SESSION_WAIT_HISTORY) to see what happened in the past, to sessions that have disconnected (on disconnect, Oracle will, basically, copy that session's v$ data into the corresponding v$_HISTORY views. Therefore, any answer that refers to anything in the past, here, must be wrong.<br>Another note is that all sessions are ALWAYS waiting for something. An \\\"active\\\" wait would be waiting for I/O to return. An \\\"idle\\\" wait would be waiting for the user to ask the DB to do something. They're both considered to be \\\"waits\\\", so the DB is always waiting.<br><br>A: FALSE - It shows these details for existing sessions, not past sessions.<br>B: TRUE - The definition is exactly what the view does<br>C: TRUE - As mentioned, all sessions are always waiting. So, this is true<br>D: FALSE - There is no such thing as a \\\"non-waiting session\\\", so this must be false.<br>E: FALSE - This references older sessions, so you would need to access the _HISTORY view for this data.<br>F: TRUE - This is exactly what these views do.<br><br>Therefore, BCF are correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C is false, since it \\\"displays the time spent in various wait event operations on a per-session basis\\\", therefore it shows no matter if the session is in wait or not<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/V-SESSION_WAIT_CLASS.html#GUID-B890F027-CE8A-452B-96B2-213985B21484<br><br>D is true: \\\"If the session is currently waiting, then the resource or event for which the session is waiting. If the session is not in a wait, then the resource or event for which the session most recently waited.\\\"<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/V-SESSION_WAIT.html#GUID-4EDAB293-F3FC-40FE-BC75-4FEE6A4D7705</li></ul>",
+          "upvote_count": "8",
           "selected_answers": ""
         },
         {
@@ -2085,9 +2085,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 153709,
           "date": "Sun 09 Aug 2020 15:46",
-          "username": "janwAlejandrrro",
-          "content": "E and A incorrect?as it speaks about past sessions, i presume AWR is necessary (e.g. hist tables)Yes, I came to the same conclusion about A and E being incorrect.<br>C also looks incorrect to me as v$session_wait_class will also show the waits happened for non waiting sessions, for example 'Idle'.<br>So I got B,D,F as correct answers for now.<br>What do you think?",
-          "upvote_count": "17",
+          "username": "janw",
+          "content": "E and A incorrect?as it speaks about past sessions, i presume AWR is necessary (e.g. hist tables)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Yes, I came to the same conclusion about A and E being incorrect.<br>C also looks incorrect to me as v$session_wait_class will also show the waits happened for non waiting sessions, for example 'Idle'.<br>So I got B,D,F as correct answers for now.<br>What do you think?</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -2183,25 +2183,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 201160,
           "date": "Fri 16 Oct 2020 19:19",
-          "username": "asefaegore0496egore0496asduta",
-          "content": "easy way <br>we must convert either on destination or source so A is incorrect (no option 3 and 6)<br>we must copy data pump set from source to destination so B is incorrect (no step 5)<br>no need to convert on destination if we aleady did conversion on source so D is incorrect (both step 3 and 6) are included<br>we must make tablespace read only son E is incorrect<br>so answer must be CWhy not B<br>According https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/transporting-data.html#GUID-E4C56852-73A5-44A2-BB10-938831DA6E4C<br>C<br>but<br>what about network mode of data pump<br>or nfs/cifs export?15.2.4 Transporting a Database Over the Network<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/transporting-data.html#GUID-032C9715-B2F8-4ACD-8A1C-C1A899DEA3C1thats not in the choices isnt it?",
-          "upvote_count": "12221",
+          "username": "asefa",
+          "content": "easy way <br>we must convert either on destination or source so A is incorrect (no option 3 and 6)<br>we must copy data pump set from source to destination so B is incorrect (no step 5)<br>no need to convert on destination if we aleady did conversion on source so D is incorrect (both step 3 and 6) are included<br>we must make tablespace read only son E is incorrect<br>so answer must be C<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Why not B<br>According https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/transporting-data.html#GUID-E4C56852-73A5-44A2-BB10-938831DA6E4C<br>C<br>but<br>what about network mode of data pump<br>or nfs/cifs export?</li><li>15.2.4 Transporting a Database Over the Network<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/transporting-data.html#GUID-032C9715-B2F8-4ACD-8A1C-C1A899DEA3C1</li><li>thats not in the choices isnt it?</li></ul>",
+          "upvote_count": "12",
           "selected_answers": ""
         },
         {
           "id": 530728,
           "date": "Sun 23 Jan 2022 18:59",
-          "username": "egore0496egore0496asduta",
-          "content": "Why not B<br>According https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/transporting-data.html#GUID-E4C56852-73A5-44A2-BB10-938831DA6E4C<br>C<br>but<br>what about network mode of data pump<br>or nfs/cifs export?15.2.4 Transporting a Database Over the Network<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/transporting-data.html#GUID-032C9715-B2F8-4ACD-8A1C-C1A899DEA3C1thats not in the choices isnt it?",
-          "upvote_count": "221",
+          "username": "egore0496",
+          "content": "Why not B<br>According https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/transporting-data.html#GUID-E4C56852-73A5-44A2-BB10-938831DA6E4C<br>C<br>but<br>what about network mode of data pump<br>or nfs/cifs export?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>15.2.4 Transporting a Database Over the Network<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/transporting-data.html#GUID-032C9715-B2F8-4ACD-8A1C-C1A899DEA3C1</li><li>thats not in the choices isnt it?</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 530729,
           "date": "Sun 23 Jan 2022 19:08",
-          "username": "egore0496asduta",
-          "content": "15.2.4 Transporting a Database Over the Network<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/transporting-data.html#GUID-032C9715-B2F8-4ACD-8A1C-C1A899DEA3C1thats not in the choices isnt it?",
-          "upvote_count": "21",
+          "username": "egore0496",
+          "content": "15.2.4 Transporting a Database Over the Network<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/transporting-data.html#GUID-032C9715-B2F8-4ACD-8A1C-C1A899DEA3C1<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>thats not in the choices isnt it?</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -2215,9 +2215,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 153725,
           "date": "Sun 09 Aug 2020 16:11",
-          "username": "janwAlejandrrro",
-          "content": "agree with c<br>must contain 1, 5, 8<br>must contain 3 and 6 (not both)Agree with C too<br>MOSDoc ID 371556.1 describes the action plan almost the same as in C.  Files are converted on the source system",
-          "upvote_count": "92",
+          "username": "janw",
+          "content": "agree with c<br>must contain 1, 5, 8<br>must contain 3 and 6 (not both)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree with C too<br>MOSDoc ID 371556.1 describes the action plan almost the same as in C.  Files are converted on the source system</li></ul>",
+          "upvote_count": "9",
           "selected_answers": ""
         },
         {
@@ -2231,9 +2231,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 684235,
           "date": "Sat 01 Oct 2022 15:32",
-          "username": "Marcello86CTabdelouahab",
-          "content": "I would say that correct Answer is: E<br><br>With Data Pump Conventional Export and Import we no need to make any convesrion because it support different endian format. In conventional mode is not requeired neither to set db in read only.Hi,<br><br>the conversion is a must between different endianess<br>see https://docs.oracle.com/en/database/oracle/oracle-database/19/spmdu/task-4-transport-the-tablespace-set.html#GUID-41D10DCA-7733-4E4C-A41A-B94F63A82F7C",
-          "upvote_count": "11",
+          "username": "Marcello86CT",
+          "content": "I would say that correct Answer is: E<br><br>With Data Pump Conventional Export and Import we no need to make any convesrion because it support different endian format. In conventional mode is not requeired neither to set db in read only.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Hi,<br><br>the conversion is a must between different endianess<br>see https://docs.oracle.com/en/database/oracle/oracle-database/19/spmdu/task-4-transport-the-tablespace-set.html#GUID-41D10DCA-7733-4E4C-A41A-B94F63A82F7C</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -2255,9 +2255,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 530717,
           "date": "Sun 23 Jan 2022 18:45",
-          "username": "egore0496asdutaegore0496",
-          "content": "B<br>5 is not must<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/sutil/oracle-data-pump-export-utility.html#GUID-72973E3D-FC0A-47E8-A62A-6DF8AD83138D<br><br>Network Considerations for Oracle Data Pump Export5 is a must since above choices doesn't list other type of moving the dump file, including one you mentioned.15.2.4 Transporting a Database Over the Network<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/transporting-data.html#GUID-032C9715-B2F8-4ACD-8A1C-C1A899DEA3C1",
-          "upvote_count": "211",
+          "username": "egore0496",
+          "content": "B<br>5 is not must<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/sutil/oracle-data-pump-export-utility.html#GUID-72973E3D-FC0A-47E8-A62A-6DF8AD83138D<br><br>Network Considerations for Oracle Data Pump Export<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>5 is a must since above choices doesn't list other type of moving the dump file, including one you mentioned.</li><li>15.2.4 Transporting a Database Over the Network<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/transporting-data.html#GUID-032C9715-B2F8-4ACD-8A1C-C1A899DEA3C1</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -2335,9 +2335,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 174598,
           "date": "Sun 06 Sep 2020 15:48",
-          "username": "erialasduta",
-          "content": "option C is correct, but, the question says: \\\"Which is the MINIMUM number of actions required\\\", so we can transport a tbs in open-write mode, with extra steps to perform at the end, however, the questions says \\\"minimum\\\" the correct answer is \\\"E\\\"->steps 2,4,5,6,7thats the thing. its \\\"minimum required\\\". so since the 'extra step' wasn't a choice, C is the answer.",
-          "upvote_count": "21",
+          "username": "erial",
+          "content": "option C is correct, but, the question says: \\\"Which is the MINIMUM number of actions required\\\", so we can transport a tbs in open-write mode, with extra steps to perform at the end, however, the questions says \\\"minimum\\\" the correct answer is \\\"E\\\"->steps 2,4,5,6,7<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>thats the thing. its \\\"minimum required\\\". so since the 'extra step' wasn't a choice, C is the answer.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -2438,9 +2438,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 111874,
           "date": "Tue 16 Jun 2020 22:08",
-          "username": "ald85Alejandrrro",
-          "content": "I think B DIt's confirmed by the below quotes<br><br>https://docs.oracle.com/database/121/CWLIN/usrgrps.htm#CWLIN483<br><br>The -g option specifies the primary group, which must be the Oracle Inventory group. For example: oinstall.<br><br>You can designate a unique group for the SYSASM system privilege, separate from database administrator groups, or you can designate one group as the OSASM and OSDBA group, so that members of that group are granted the SYSASM and SYSDBA privilege to grant system privileges to administer both the Oracle ASM instances and Oracle Database instances.<br><br>If you are creating this user to own both Oracle Grid Infrastructure and an Oracle Database installation, then this user must have the OSDBA for ASM group as a secondary group.<br><br>In Oracle documentation, a user created to own the Oracle Grid Infrastructure binaries is called the grid user. This user owns both the Oracle Clusterware and Oracle Automatic Storage Management binaries.",
-          "upvote_count": "131",
+          "username": "ald85",
+          "content": "I think B D<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>It's confirmed by the below quotes<br><br>https://docs.oracle.com/database/121/CWLIN/usrgrps.htm#CWLIN483<br><br>The -g option specifies the primary group, which must be the Oracle Inventory group. For example: oinstall.<br><br>You can designate a unique group for the SYSASM system privilege, separate from database administrator groups, or you can designate one group as the OSASM and OSDBA group, so that members of that group are granted the SYSASM and SYSDBA privilege to grant system privileges to administer both the Oracle ASM instances and Oracle Database instances.<br><br>If you are creating this user to own both Oracle Grid Infrastructure and an Oracle Database installation, then this user must have the OSDBA for ASM group as a secondary group.<br><br>In Oracle documentation, a user created to own the Oracle Grid Infrastructure binaries is called the grid user. This user owns both the Oracle Clusterware and Oracle Automatic Storage Management binaries.</li></ul>",
+          "upvote_count": "13",
           "selected_answers": ""
         },
         {
@@ -2655,25 +2655,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 96328,
           "date": "Tue 26 May 2020 20:12",
-          "username": "janwAbdou1968Abdou1968navingupta52",
-          "content": "D: incorrect (duplicate standby keeps dbid)Wrong, in general, when using Rman duplicate, a new dbid is createdso i thinh that ABCD seemalso to be a a good answerIt says \\\"always\\\" in option D.  It retains DBID if full backup is restored. If subset is restored new DBID gets generated. So D is incorrect.",
-          "upvote_count": "1111",
+          "username": "janw",
+          "content": "D: incorrect (duplicate standby keeps dbid)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Wrong, in general, when using Rman duplicate, a new dbid is created</li><li>so i thinh that ABCD seemalso to be a a good answer</li><li>It says \\\"always\\\" in option D.  It retains DBID if full backup is restored. If subset is restored new DBID gets generated. So D is incorrect.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 185982,
           "date": "Thu 24 Sep 2020 10:05",
-          "username": "Abdou1968Abdou1968navingupta52",
-          "content": "Wrong, in general, when using Rman duplicate, a new dbid is createdso i thinh that ABCD seemalso to be a a good answerIt says \\\"always\\\" in option D.  It retains DBID if full backup is restored. If subset is restored new DBID gets generated. So D is incorrect.",
-          "upvote_count": "111",
+          "username": "Abdou1968",
+          "content": "Wrong, in general, when using Rman duplicate, a new dbid is created<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>so i thinh that ABCD seemalso to be a a good answer</li><li>It says \\\"always\\\" in option D.  It retains DBID if full backup is restored. If subset is restored new DBID gets generated. So D is incorrect.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 185989,
           "date": "Thu 24 Sep 2020 10:15",
-          "username": "Abdou1968navingupta52",
-          "content": "so i thinh that ABCD seemalso to be a a good answerIt says \\\"always\\\" in option D.  It retains DBID if full backup is restored. If subset is restored new DBID gets generated. So D is incorrect.",
-          "upvote_count": "11",
+          "username": "Abdou1968",
+          "content": "so i thinh that ABCD seemalso to be a a good answer<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>It says \\\"always\\\" in option D.  It retains DBID if full backup is restored. If subset is restored new DBID gets generated. So D is incorrect.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -2692,7 +2692,7 @@ var Data_1Z0_083_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A container database called CDB1 is OMF-enabled.<br>PDB_FILE_NAME_CONVERT is not configured in CDB1.<br>PDB1 was unplugged from CDB1 earlier in the week.<br>Examine this command, which will be executed in CDB1:<br><br>CREATE PLUGGABLE DATABASE pdb1 -<br>USING `=CB=9C/u01/app/oracle/oradata/pdb1.xml'<br>SOURCE_FILE_NAME_CONVERT <br>(`=CB=9C/u01/app/oracle/oradata/', `=CB=9C/u02/app/oracle/oradata/');<br>Which two are true? (Choose two.)<br></p>",
+      "question_text": "<p>A container database called CDB1 is OMF-enabled.<br>PDB_FILE_NAME_CONVERT is not configured in CDB1.<br>PDB1 was unplugged from CDB1 earlier in the week.<br>Examine this command, which will be executed in CDB1:<br><br>CREATE PLUGGABLE DATABASE pdb1 -<br>USING `˜/u01/app/oracle/oradata/pdb1.xml'<br>SOURCE_FILE_NAME_CONVERT <br>(`˜/u01/app/oracle/oradata/', `˜/u02/app/oracle/oradata/');<br>Which two are true? (Choose two.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -2777,9 +2777,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 587020,
           "date": "Sun 17 Apr 2022 03:37",
-          "username": "freemun05Yema",
-          "content": "WOW, not a single correct answer here )))))))))))))do you have the correct answer?",
-          "upvote_count": "11",
+          "username": "freemun05",
+          "content": "WOW, not a single correct answer here )))))))))))))<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>do you have the correct answer?</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -2809,25 +2809,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 374151,
           "date": "Fri 04 Jun 2021 09:25",
-          "username": "AldridAldridAldridnavingupta52navingupta52",
-          "content": "AD is Correct.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/plugging-in-a-pdb.html#GUID-F23F5352-F456-48EE-AED7-71E3DEBAAED0A.  PDB1 data files already exist in the correct location.<br>Correct:You use SOURCE_FILE_NAME_CONVERTto specify new correct location.B.  DBMS_PDB. CHECK_PLUG_COMPATIBILITY must be run in CDB1 before executing the command.<br>WRONG: PDB1 was unplugged from CDB1 earlier. No NEED<br>C.  PDB_FILE_NAME_CONVERT must be set before executing the command.<br>WRONG: OMF is ENABLED. . Bust be if disabled<br>D.  /u01/app/oracle/oradata/pdb1.xml does not contain the current locations of data files for PDB1.<br><br>CORRECT: We use SOURCE_FILE_NAME_CONVERT for correct path<br>E.  PDB1 must be dropped from CDB1.<br>WRONG.PDB1 already was unpluggedSwitch to DE. .<br><br>A: WRONG.. \\\"Correct Location \\\" is note accurate... We are using CONVERT to specify new correct...<br><br>E: CorrectThe PDB must be dropped from the CDB before it can be plugged back into the same CDB. <br><br>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/removing-a-pdb.html#GUID-3D9AA767-F03C-46EB-AF8E-6808AF1C9D9FIt will be AE. <br>PDB1 files exist even when you unplug it and it doesn't get dropped so it remained in MOUNT state post unplugging.<br><br>See below:<br><br>SQL> show pdbs<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 CRYPTO_PDB READ WRITE NO<br> 4 PDB2 READ WRITE NO<br> 5 APPCON1READ WRITE NO<br><br>SQL> alter pluggable database pdb2 close;<br><br>SQL> ALTER PLUGGABLE DATABASE PDB2 UNPLUG INTO 'H:\\oracle\\Oracle19c\\PDB2_info.xml'<br>2;<br><br>Pluggable database altered.<br><br>SQL> show pdbs<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 CRYPTO_PDB READ WRITE NO<br> 4 PDB2 MOUNTED<br> 5 APPCON1READ WRITE NO<br><br>Option A & E are correct.It will be AE. <br>PDB1 files exist even when you unplug it and it doesn't get dropped so it remained in MOUNT state post unplugging.<br><br>See below:<br><br>SQL> show pdbs<br><br>CON_ID CON_NAME OPEN MODE RESTRICTED<br>---------- ------------------------------ ---------- ----------<br>2 PDB$SEED READ ONLY NO<br>3 CRYPTO_PDB READ WRITE NO<br>4 PDB2 READ WRITE NO<br>5 APPCON1 READ WRITE NO<br><br>SQL> alter pluggable database pdb2 close;<br><br>SQL> ALTER PLUGGABLE DATABASE PDB2 UNPLUG INTO 'H:\\oracle\\Oracle19c\\PDB2_info.xml'<br>2 ;<br><br>Pluggable database altered.<br><br>SQL> show pdbs<br><br>CON_ID CON_NAME OPEN MODE RESTRICTED<br>---------- ------------------------------ ---------- ----------<br>2 PDB$SEED READ ONLY NO<br>3 CRYPTO_PDB READ WRITE NO<br>4 PDB2 MOUNTED<br>5 APPCON1 READ WRITE NO<br><br>Option A & E are correct.",
-          "upvote_count": "11221",
+          "username": "Aldrid",
+          "content": "AD is Correct.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/plugging-in-a-pdb.html#GUID-F23F5352-F456-48EE-AED7-71E3DEBAAED0<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A.  PDB1 data files already exist in the correct location.<br>Correct:You use SOURCE_FILE_NAME_CONVERTto specify new correct location.B.  DBMS_PDB. CHECK_PLUG_COMPATIBILITY must be run in CDB1 before executing the command.<br>WRONG: PDB1 was unplugged from CDB1 earlier. No NEED<br>C.  PDB_FILE_NAME_CONVERT must be set before executing the command.<br>WRONG: OMF is ENABLED. . Bust be if disabled<br>D.  /u01/app/oracle/oradata/pdb1.xml does not contain the current locations of data files for PDB1.<br><br>CORRECT: We use SOURCE_FILE_NAME_CONVERT for correct path<br>E.  PDB1 must be dropped from CDB1.<br>WRONG.PDB1 already was unplugged</li><li>Switch to DE. .<br><br>A: WRONG.. \\\"Correct Location \\\" is note accurate... We are using CONVERT to specify new correct...<br><br>E: CorrectThe PDB must be dropped from the CDB before it can be plugged back into the same CDB. <br><br>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/removing-a-pdb.html#GUID-3D9AA767-F03C-46EB-AF8E-6808AF1C9D9F</li><li>It will be AE. <br>PDB1 files exist even when you unplug it and it doesn't get dropped so it remained in MOUNT state post unplugging.<br><br>See below:<br><br>SQL&gt; show pdbs<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 CRYPTO_PDB READ WRITE NO<br> 4 PDB2 READ WRITE NO<br> 5 APPCON1READ WRITE NO<br><br>SQL&gt; alter pluggable database pdb2 close;<br><br>SQL&gt; ALTER PLUGGABLE DATABASE PDB2 UNPLUG INTO 'H:\\oracle\\Oracle19c\\PDB2_info.xml'<br>2;<br><br>Pluggable database altered.<br><br>SQL&gt; show pdbs<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 CRYPTO_PDB READ WRITE NO<br> 4 PDB2 MOUNTED<br> 5 APPCON1READ WRITE NO<br><br>Option A &amp; E are correct.</li><li>It will be AE. <br>PDB1 files exist even when you unplug it and it doesn't get dropped so it remained in MOUNT state post unplugging.<br><br>See below:<br><br>SQL&gt; show pdbs<br><br>CON_ID CON_NAME OPEN MODE RESTRICTED<br>---------- ------------------------------ ---------- ----------<br>2 PDB$SEED READ ONLY NO<br>3 CRYPTO_PDB READ WRITE NO<br>4 PDB2 READ WRITE NO<br>5 APPCON1 READ WRITE NO<br><br>SQL&gt; alter pluggable database pdb2 close;<br><br>SQL&gt; ALTER PLUGGABLE DATABASE PDB2 UNPLUG INTO 'H:\\oracle\\Oracle19c\\PDB2_info.xml'<br>2 ;<br><br>Pluggable database altered.<br><br>SQL&gt; show pdbs<br><br>CON_ID CON_NAME OPEN MODE RESTRICTED<br>---------- ------------------------------ ---------- ----------<br>2 PDB$SEED READ ONLY NO<br>3 CRYPTO_PDB READ WRITE NO<br>4 PDB2 MOUNTED<br>5 APPCON1 READ WRITE NO<br><br>Option A &amp; E are correct.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 374157,
           "date": "Fri 04 Jun 2021 09:33",
-          "username": "AldridAldridnavingupta52navingupta52",
-          "content": "A.  PDB1 data files already exist in the correct location.<br>Correct:You use SOURCE_FILE_NAME_CONVERTto specify new correct location.B.  DBMS_PDB. CHECK_PLUG_COMPATIBILITY must be run in CDB1 before executing the command.<br>WRONG: PDB1 was unplugged from CDB1 earlier. No NEED<br>C.  PDB_FILE_NAME_CONVERT must be set before executing the command.<br>WRONG: OMF is ENABLED. . Bust be if disabled<br>D.  /u01/app/oracle/oradata/pdb1.xml does not contain the current locations of data files for PDB1.<br><br>CORRECT: We use SOURCE_FILE_NAME_CONVERT for correct path<br>E.  PDB1 must be dropped from CDB1.<br>WRONG.PDB1 already was unpluggedSwitch to DE. .<br><br>A: WRONG.. \\\"Correct Location \\\" is note accurate... We are using CONVERT to specify new correct...<br><br>E: CorrectThe PDB must be dropped from the CDB before it can be plugged back into the same CDB. <br><br>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/removing-a-pdb.html#GUID-3D9AA767-F03C-46EB-AF8E-6808AF1C9D9FIt will be AE. <br>PDB1 files exist even when you unplug it and it doesn't get dropped so it remained in MOUNT state post unplugging.<br><br>See below:<br><br>SQL> show pdbs<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 CRYPTO_PDB READ WRITE NO<br> 4 PDB2 READ WRITE NO<br> 5 APPCON1READ WRITE NO<br><br>SQL> alter pluggable database pdb2 close;<br><br>SQL> ALTER PLUGGABLE DATABASE PDB2 UNPLUG INTO 'H:\\oracle\\Oracle19c\\PDB2_info.xml'<br>2;<br><br>Pluggable database altered.<br><br>SQL> show pdbs<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 CRYPTO_PDB READ WRITE NO<br> 4 PDB2 MOUNTED<br> 5 APPCON1READ WRITE NO<br><br>Option A & E are correct.It will be AE. <br>PDB1 files exist even when you unplug it and it doesn't get dropped so it remained in MOUNT state post unplugging.<br><br>See below:<br><br>SQL> show pdbs<br><br>CON_ID CON_NAME OPEN MODE RESTRICTED<br>---------- ------------------------------ ---------- ----------<br>2 PDB$SEED READ ONLY NO<br>3 CRYPTO_PDB READ WRITE NO<br>4 PDB2 READ WRITE NO<br>5 APPCON1 READ WRITE NO<br><br>SQL> alter pluggable database pdb2 close;<br><br>SQL> ALTER PLUGGABLE DATABASE PDB2 UNPLUG INTO 'H:\\oracle\\Oracle19c\\PDB2_info.xml'<br>2 ;<br><br>Pluggable database altered.<br><br>SQL> show pdbs<br><br>CON_ID CON_NAME OPEN MODE RESTRICTED<br>---------- ------------------------------ ---------- ----------<br>2 PDB$SEED READ ONLY NO<br>3 CRYPTO_PDB READ WRITE NO<br>4 PDB2 MOUNTED<br>5 APPCON1 READ WRITE NO<br><br>Option A & E are correct.",
-          "upvote_count": "1221",
+          "username": "Aldrid",
+          "content": "A.  PDB1 data files already exist in the correct location.<br>Correct:You use SOURCE_FILE_NAME_CONVERTto specify new correct location.B.  DBMS_PDB. CHECK_PLUG_COMPATIBILITY must be run in CDB1 before executing the command.<br>WRONG: PDB1 was unplugged from CDB1 earlier. No NEED<br>C.  PDB_FILE_NAME_CONVERT must be set before executing the command.<br>WRONG: OMF is ENABLED. . Bust be if disabled<br>D.  /u01/app/oracle/oradata/pdb1.xml does not contain the current locations of data files for PDB1.<br><br>CORRECT: We use SOURCE_FILE_NAME_CONVERT for correct path<br>E.  PDB1 must be dropped from CDB1.<br>WRONG.PDB1 already was unplugged<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Switch to DE. .<br><br>A: WRONG.. \\\"Correct Location \\\" is note accurate... We are using CONVERT to specify new correct...<br><br>E: CorrectThe PDB must be dropped from the CDB before it can be plugged back into the same CDB. <br><br>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/removing-a-pdb.html#GUID-3D9AA767-F03C-46EB-AF8E-6808AF1C9D9F</li><li>It will be AE. <br>PDB1 files exist even when you unplug it and it doesn't get dropped so it remained in MOUNT state post unplugging.<br><br>See below:<br><br>SQL&gt; show pdbs<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 CRYPTO_PDB READ WRITE NO<br> 4 PDB2 READ WRITE NO<br> 5 APPCON1READ WRITE NO<br><br>SQL&gt; alter pluggable database pdb2 close;<br><br>SQL&gt; ALTER PLUGGABLE DATABASE PDB2 UNPLUG INTO 'H:\\oracle\\Oracle19c\\PDB2_info.xml'<br>2;<br><br>Pluggable database altered.<br><br>SQL&gt; show pdbs<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 CRYPTO_PDB READ WRITE NO<br> 4 PDB2 MOUNTED<br> 5 APPCON1READ WRITE NO<br><br>Option A &amp; E are correct.</li><li>It will be AE. <br>PDB1 files exist even when you unplug it and it doesn't get dropped so it remained in MOUNT state post unplugging.<br><br>See below:<br><br>SQL&gt; show pdbs<br><br>CON_ID CON_NAME OPEN MODE RESTRICTED<br>---------- ------------------------------ ---------- ----------<br>2 PDB$SEED READ ONLY NO<br>3 CRYPTO_PDB READ WRITE NO<br>4 PDB2 READ WRITE NO<br>5 APPCON1 READ WRITE NO<br><br>SQL&gt; alter pluggable database pdb2 close;<br><br>SQL&gt; ALTER PLUGGABLE DATABASE PDB2 UNPLUG INTO 'H:\\oracle\\Oracle19c\\PDB2_info.xml'<br>2 ;<br><br>Pluggable database altered.<br><br>SQL&gt; show pdbs<br><br>CON_ID CON_NAME OPEN MODE RESTRICTED<br>---------- ------------------------------ ---------- ----------<br>2 PDB$SEED READ ONLY NO<br>3 CRYPTO_PDB READ WRITE NO<br>4 PDB2 MOUNTED<br>5 APPCON1 READ WRITE NO<br><br>Option A &amp; E are correct.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 374167,
           "date": "Fri 04 Jun 2021 09:45",
-          "username": "Aldridnavingupta52",
-          "content": "Switch to DE. .<br><br>A: WRONG.. \\\"Correct Location \\\" is note accurate... We are using CONVERT to specify new correct...<br><br>E: CorrectThe PDB must be dropped from the CDB before it can be plugged back into the same CDB. <br><br>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/removing-a-pdb.html#GUID-3D9AA767-F03C-46EB-AF8E-6808AF1C9D9FIt will be AE. <br>PDB1 files exist even when you unplug it and it doesn't get dropped so it remained in MOUNT state post unplugging.<br><br>See below:<br><br>SQL> show pdbs<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 CRYPTO_PDB READ WRITE NO<br> 4 PDB2 READ WRITE NO<br> 5 APPCON1READ WRITE NO<br><br>SQL> alter pluggable database pdb2 close;<br><br>SQL> ALTER PLUGGABLE DATABASE PDB2 UNPLUG INTO 'H:\\oracle\\Oracle19c\\PDB2_info.xml'<br>2;<br><br>Pluggable database altered.<br><br>SQL> show pdbs<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 CRYPTO_PDB READ WRITE NO<br> 4 PDB2 MOUNTED<br> 5 APPCON1READ WRITE NO<br><br>Option A & E are correct.",
-          "upvote_count": "22",
+          "username": "Aldrid",
+          "content": "Switch to DE. .<br><br>A: WRONG.. \\\"Correct Location \\\" is note accurate... We are using CONVERT to specify new correct...<br><br>E: CorrectThe PDB must be dropped from the CDB before it can be plugged back into the same CDB. <br><br>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/removing-a-pdb.html#GUID-3D9AA767-F03C-46EB-AF8E-6808AF1C9D9F<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>It will be AE. <br>PDB1 files exist even when you unplug it and it doesn't get dropped so it remained in MOUNT state post unplugging.<br><br>See below:<br><br>SQL&gt; show pdbs<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 CRYPTO_PDB READ WRITE NO<br> 4 PDB2 READ WRITE NO<br> 5 APPCON1READ WRITE NO<br><br>SQL&gt; alter pluggable database pdb2 close;<br><br>SQL&gt; ALTER PLUGGABLE DATABASE PDB2 UNPLUG INTO 'H:\\oracle\\Oracle19c\\PDB2_info.xml'<br>2;<br><br>Pluggable database altered.<br><br>SQL&gt; show pdbs<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 CRYPTO_PDB READ WRITE NO<br> 4 PDB2 MOUNTED<br> 5 APPCON1READ WRITE NO<br><br>Option A &amp; E are correct.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -2857,17 +2857,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 356807,
           "date": "Fri 14 May 2021 03:58",
-          "username": "RinDRinDShalom",
-          "content": "DE correctdatafile path: /u01/app/oracle/oradata/ is inxml file. But now datafile path need to be /u02/app/oracle/oradata/This SOURCE_FILE_NAME_CONVERT clause uses the files in the /disk2/oracle/pdb7 directory instead of the /disk1/oracle/pdb7 directory. In this case, the XML file describing a PDB specifies the /disk1/oracle/pdb7 directory, but the PDB should use the files in the /disk2/oracle/pdb7 directory.<br><br>SOURCE_FILE_NAME_CONVERT('/disk1/oracle/pdb7/', '/disk2/oracle/pdb7/')",
-          "upvote_count": "421",
+          "username": "RinD",
+          "content": "DE correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>datafile path: /u01/app/oracle/oradata/ is inxml file. But now datafile path need to be /u02/app/oracle/oradata/</li><li>This SOURCE_FILE_NAME_CONVERT clause uses the files in the /disk2/oracle/pdb7 directory instead of the /disk1/oracle/pdb7 directory. In this case, the XML file describing a PDB specifies the /disk1/oracle/pdb7 directory, but the PDB should use the files in the /disk2/oracle/pdb7 directory.<br><br>SOURCE_FILE_NAME_CONVERT('/disk1/oracle/pdb7/', '/disk2/oracle/pdb7/')</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
           "id": 356809,
           "date": "Fri 14 May 2021 04:00",
-          "username": "RinDShalom",
-          "content": "datafile path: /u01/app/oracle/oradata/ is inxml file. But now datafile path need to be /u02/app/oracle/oradata/This SOURCE_FILE_NAME_CONVERT clause uses the files in the /disk2/oracle/pdb7 directory instead of the /disk1/oracle/pdb7 directory. In this case, the XML file describing a PDB specifies the /disk1/oracle/pdb7 directory, but the PDB should use the files in the /disk2/oracle/pdb7 directory.<br><br>SOURCE_FILE_NAME_CONVERT('/disk1/oracle/pdb7/', '/disk2/oracle/pdb7/')",
-          "upvote_count": "21",
+          "username": "RinD",
+          "content": "datafile path: /u01/app/oracle/oradata/ is inxml file. But now datafile path need to be /u02/app/oracle/oradata/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>This SOURCE_FILE_NAME_CONVERT clause uses the files in the /disk2/oracle/pdb7 directory instead of the /disk1/oracle/pdb7 directory. In this case, the XML file describing a PDB specifies the /disk1/oracle/pdb7 directory, but the PDB should use the files in the /disk2/oracle/pdb7 directory.<br><br>SOURCE_FILE_NAME_CONVERT('/disk1/oracle/pdb7/', '/disk2/oracle/pdb7/')</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -2894,7 +2894,7 @@ var Data_1Z0_083_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>A container database called CDB1 is OMF-enabled.<br>PDB_FILE_NAME_CONVERT is not configured in CDB1.<br>PDB1 was unplugged from CDB1 earlier in the week.<br>Examine this command, which will be executed in CDB1:<br><br>CREATE PLUGGABLE DATABASE pdb1 -<br>USING \"=CB=9C/u01/app/oracle/oradata/pdb1.xml'<br>SOURCE_FILE_NAME_CONVERT <br>(\"=CB=9C/u01/app/oracle/oradata/', \"=CB=9C/u02/app/oracle/oradata/');<br>Which two are true? (Choose two.)<br></p>",
+      "question_text": "<p>A container database called CDB1 is OMF-enabled.<br>PDB_FILE_NAME_CONVERT is not configured in CDB1.<br>PDB1 was unplugged from CDB1 earlier in the week.<br>Examine this command, which will be executed in CDB1:<br><br>CREATE PLUGGABLE DATABASE pdb1 -<br>USING \"˜/u01/app/oracle/oradata/pdb1.xml'<br>SOURCE_FILE_NAME_CONVERT <br>(\"˜/u01/app/oracle/oradata/', \"˜/u02/app/oracle/oradata/');<br>Which two are true? (Choose two.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
@@ -2955,24 +2955,24 @@ var Data_1Z0_083_Part1 =
         {
           "id": 220232,
           "date": "Mon 16 Nov 2020 10:55",
-          "username": "SchmeiliSchmeiliRinD",
-          "content": "AE should be correct<br><br>SOURCE_FILE_NAME_CONVERT isn't needed to create the same PDB again in the same CDB. ..https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/plugging-in-a-pdb.html#GUID-1691A7A2-372E-4E51-8A4F-15DAC6AB0FC3<br><br>sorry, A seems wrong when looking into the online-Doc...the SOURCE_FILE_NAME_CONVERT parameter will adjust the used locations for plugin in the pdb<br><br>correct should be C and ED, E correct.<br>D is correct because SOURCE_FILE_NAME_CONVERT is used: \\\"=CB=9C/u01/app/oracle/oradata/', \\\"=CB=9C/u02/app/oracle/oradata/'. So in the xml file, the location is: =CB=9C/u01/app/oracle/oradata/, but the current location is: /u02/app/oracle/oradata/",
-          "upvote_count": "221",
+          "username": "Schmeili",
+          "content": "AE should be correct<br><br>SOURCE_FILE_NAME_CONVERT isn't needed to create the same PDB again in the same CDB. ..<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/plugging-in-a-pdb.html#GUID-1691A7A2-372E-4E51-8A4F-15DAC6AB0FC3<br><br>sorry, A seems wrong when looking into the online-Doc...the SOURCE_FILE_NAME_CONVERT parameter will adjust the used locations for plugin in the pdb<br><br>correct should be C and E</li><li>D, E correct.<br>D is correct because SOURCE_FILE_NAME_CONVERT is used: \\\"˜/u01/app/oracle/oradata/', \\\"˜/u02/app/oracle/oradata/'. So in the xml file, the location is: ˜/u01/app/oracle/oradata/, but the current location is: /u02/app/oracle/oradata/</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 222537,
           "date": "Thu 19 Nov 2020 08:36",
-          "username": "SchmeiliRinD",
-          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/plugging-in-a-pdb.html#GUID-1691A7A2-372E-4E51-8A4F-15DAC6AB0FC3<br><br>sorry, A seems wrong when looking into the online-Doc...the SOURCE_FILE_NAME_CONVERT parameter will adjust the used locations for plugin in the pdb<br><br>correct should be C and ED, E correct.<br>D is correct because SOURCE_FILE_NAME_CONVERT is used: \\\"=CB=9C/u01/app/oracle/oradata/', \\\"=CB=9C/u02/app/oracle/oradata/'. So in the xml file, the location is: =CB=9C/u01/app/oracle/oradata/, but the current location is: /u02/app/oracle/oradata/",
-          "upvote_count": "21",
+          "username": "Schmeili",
+          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/plugging-in-a-pdb.html#GUID-1691A7A2-372E-4E51-8A4F-15DAC6AB0FC3<br><br>sorry, A seems wrong when looking into the online-Doc...the SOURCE_FILE_NAME_CONVERT parameter will adjust the used locations for plugin in the pdb<br><br>correct should be C and E<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D, E correct.<br>D is correct because SOURCE_FILE_NAME_CONVERT is used: \\\"˜/u01/app/oracle/oradata/', \\\"˜/u02/app/oracle/oradata/'. So in the xml file, the location is: ˜/u01/app/oracle/oradata/, but the current location is: /u02/app/oracle/oradata/</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 264398,
           "date": "Mon 11 Jan 2021 03:03",
           "username": "RinD",
-          "content": "D, E correct.<br>D is correct because SOURCE_FILE_NAME_CONVERT is used: \\\"=CB=9C/u01/app/oracle/oradata/', \\\"=CB=9C/u02/app/oracle/oradata/'. So in the xml file, the location is: =CB=9C/u01/app/oracle/oradata/, but the current location is: /u02/app/oracle/oradata/",
+          "content": "D, E correct.<br>D is correct because SOURCE_FILE_NAME_CONVERT is used: \\\"˜/u01/app/oracle/oradata/', \\\"˜/u02/app/oracle/oradata/'. So in the xml file, the location is: ˜/u01/app/oracle/oradata/, but the current location is: /u02/app/oracle/oradata/",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -2995,9 +2995,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 152785,
           "date": "Sat 08 Aug 2020 02:47",
-          "username": "cerebro2000xcerebro2000x",
-          "content": "BE<br>these steps are pre-req before plugging to check if the you can plug it,since the name of the pdb is the same you need to drop it first before you can plug it againBUT since this is same cdb so you can bypass this one so it should be AE",
-          "upvote_count": "12",
+          "username": "cerebro2000x",
+          "content": "BE<br>these steps are pre-req before plugging to check if the you can plug it,since the name of the pdb is the same you need to drop it first before you can plug it again<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>BUT since this is same cdb so you can bypass this one so it should be AE</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -3074,9 +3074,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 129714,
           "date": "Wed 08 Jul 2020 14:02",
-          "username": "IOracleHeat418",
-          "content": "A, B , C as per https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/plugging-in-a-pdb.html#GUID-1691A7A2-372E-4E51-8A4F-15DAC6AB0FC3Yes, I think this is the correct answer.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-transporting-data-across-platforms.html#GUID-65AADCB6-CC9A-4229-9AB8-805C37E4471F<br>ABC<br>E is wrong:<br>You can also use RMAN to transport an entire database to a different platform so long as the two platforms have the same endian format.",
-          "upvote_count": "163",
+          "username": "IOracle",
+          "content": "A, B , C as per https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/plugging-in-a-pdb.html#GUID-1691A7A2-372E-4E51-8A4F-15DAC6AB0FC3<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Yes, I think this is the correct answer.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-transporting-data-across-platforms.html#GUID-65AADCB6-CC9A-4229-9AB8-805C37E4471F<br>ABC<br>E is wrong:<br>You can also use RMAN to transport an entire database to a different platform so long as the two platforms have the same endian format.</li></ul>",
+          "upvote_count": "16",
           "selected_answers": ""
         },
         {
@@ -3178,9 +3178,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 324396,
           "date": "Tue 30 Mar 2021 18:47",
-          "username": "dasigristPortlandFighters",
-          "content": "As we all can see here: https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-transporting-data-across-platforms.html#GUID-EF05DB57-34E6-41AA-A44A-A0A91738DDB9, \\\"<br>\\\"One prerequisite is that both the source and destination platforms must share the same endian format.\\\"<br>So E IS WRONG.<br>Right Answers are: A,B,CThe explanation is correct. Upvoted.",
-          "upvote_count": "21",
+          "username": "dasigrist",
+          "content": "As we all can see here: https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-transporting-data-across-platforms.html#GUID-EF05DB57-34E6-41AA-A44A-A0A91738DDB9, \\\"<br>\\\"One prerequisite is that both the source and destination platforms must share the same endian format.\\\"<br>So E IS WRONG.<br>Right Answers are: A,B,C<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>The explanation is correct. Upvoted.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -3210,9 +3210,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 186012,
           "date": "Thu 24 Sep 2020 11:04",
-          "username": "Abdou1968navingupta52",
-          "content": "BCD<br>E is absolutly WrongD is incorrect. Convert operation will not change DBID explicitly. You will have to use DBNEWID utility to change if you wish to. SO ABC are correct.",
-          "upvote_count": "21",
+          "username": "Abdou1968",
+          "content": "BCD<br>E is absolutly Wrong<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D is incorrect. Convert operation will not change DBID explicitly. You will have to use DBNEWID utility to change if you wish to. SO ABC are correct.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -3324,9 +3324,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 374202,
           "date": "Fri 04 Jun 2021 10:36",
-          "username": "AldridAldrid",
-          "content": "DE<br>Use the rhpctl move database command to move one or more database homes to a working copy of the same database release level.<br><br>rhpctlis Rapid Home Provisioning Control..<br>So D is CorrectMoves one or more databases from a source working copy or any Oracle Database home to a patched working copy.",
-          "upvote_count": "31",
+          "username": "Aldrid",
+          "content": "DE<br>Use the rhpctl move database command to move one or more database homes to a working copy of the same database release level.<br><br>rhpctlis Rapid Home Provisioning Control..<br>So D is Correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Moves one or more databases from a source working copy or any Oracle Database home to a patched working copy.</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -3427,9 +3427,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 266927,
           "date": "Thu 14 Jan 2021 11:46",
-          "username": "amadasigrist",
-          "content": "A is correct<br><br>B is wrong, because PDBs must be reopened to recognize the central UNDO<br><br>C is wrong because as the database is RAC and enabled with LOCAL UNDO, you need to assign specific Undo tablespace to each PDB on node-1 & node-2 by executing below commands.<br>On node-1:<br>alter system set undo_tablespaceUNDOTBS1 containercurrent sid'DBCDB1' scopespfile; >>>> sidFirst Instance<br>On Node-2<br>alter system set undo_tablespaceUNDOTBS2 containercurrent sid'DBCDB2' scopespfile; >>>> sidSecond Instance<br><br>D is wrong becuase as long as LOCAL UNDO used you cant create UNDO in PDB<br><br>E is wrong<br><br>F is correctC is also wrong for a single instance too because after you change from true to false, the existing PDB's undo tablespace will still be there. They are not deleted automatically. They are not going to be used, but they are still there.",
-          "upvote_count": "173",
+          "username": "ama",
+          "content": "A is correct<br><br>B is wrong, because PDBs must be reopened to recognize the central UNDO<br><br>C is wrong because as the database is RAC and enabled with LOCAL UNDO, you need to assign specific Undo tablespace to each PDB on node-1 & node-2 by executing below commands.<br>On node-1:<br>alter system set undo_tablespaceUNDOTBS1 containercurrent sid'DBCDB1' scopespfile; >>>> sidFirst Instance<br>On Node-2<br>alter system set undo_tablespaceUNDOTBS2 containercurrent sid'DBCDB2' scopespfile; >>>> sidSecond Instance<br><br>D is wrong becuase as long as LOCAL UNDO used you cant create UNDO in PDB<br><br>E is wrong<br><br>F is correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C is also wrong for a single instance too because after you change from true to false, the existing PDB's undo tablespace will still be there. They are not deleted automatically. They are not going to be used, but they are still there.</li></ul>",
+          "upvote_count": "17",
           "selected_answers": ""
         },
         {
@@ -3491,9 +3491,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 363949,
           "date": "Sat 22 May 2021 23:10",
-          "username": "ABAJABAJ",
-          "content": "BF are correctShared Undo Mode<br><br>Shared undo mode means that there is one active undo tablespace for a single-instance CDB.  For an Oracle RAC CDB, there is one active undo tablespace for each instance.<br><br>When a CDB is in shared undo mode, the following applies:<br><br>Only a common user who has the appropriate privileges and whose current container is the CDB root can create an undo tablespace.<br><br>When the current container is not the CDB root, an attempt to create an undo tablespace fails and returns an error.<br><br>Undo tablespaces are visible in static data dictionary views and dynamic performance (V$) views when the current container is the CDB root. Undo tablespaces are visible only in dynamic performance views when the current container is a PDB, an application root, or an application PDB. AF are correct.",
-          "upvote_count": "12",
+          "username": "ABAJ",
+          "content": "BF are correctShared Undo Mode<br><br>Shared undo mode means that there is one active undo tablespace for a single-instance CDB.  For an Oracle RAC CDB, there is one active undo tablespace for each instance.<br><br>When a CDB is in shared undo mode, the following applies:<br><br>Only a common user who has the appropriate privileges and whose current container is the CDB root can create an undo tablespace.<br><br>When the current container is not the CDB root, an attempt to create an undo tablespace fails and returns an error.<br><br>Undo tablespaces are visible in static data dictionary views and dynamic performance (V$) views when the current container is the CDB root. Undo tablespaces are visible only in dynamic performance views when the current container is a PDB, an application root, or an application PDB. <br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>AF are correct.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -3531,9 +3531,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 163124,
           "date": "Fri 21 Aug 2020 20:31",
-          "username": "janwjanw",
-          "content": "a is true, for sure<br><br>When a CDB is in shared undo mode, the following applies:<br><br>Only a common user who has the appropriate privileges and whose current container is the CDB root can create an undo tablespace.<br><br>When the current container is not the CDB root, an attempt to create an undo tablespace fails and returns an error.<br><br>Undo tablespaces are visible in static data dictionary views and dynamic performance (V$) views when the current container is the CDB root. Undo tablespaces are visible only in dynamic performance views when the current container is a PDB, an application root, or an application PDB. <br><br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/admin/administering-a-cdb-with-sql-plus.html#GUID-8F8B2FF8-7FA7-40CD-8AA5-ACABCD3964D8in tested in lab.<br>A: correct see documentation above<br>F: v$containers (local_undo) is still '1' true after the CDB restart.AFTER the alter pluggable database ... open, the v$containers is changed to '0'.it's confusing with B, but ok...",
-          "upvote_count": "13",
+          "username": "janw",
+          "content": "a is true, for sure<br><br>When a CDB is in shared undo mode, the following applies:<br><br>Only a common user who has the appropriate privileges and whose current container is the CDB root can create an undo tablespace.<br><br>When the current container is not the CDB root, an attempt to create an undo tablespace fails and returns an error.<br><br>Undo tablespaces are visible in static data dictionary views and dynamic performance (V$) views when the current container is the CDB root. Undo tablespaces are visible only in dynamic performance views when the current container is a PDB, an application root, or an application PDB. <br><br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/admin/administering-a-cdb-with-sql-plus.html#GUID-8F8B2FF8-7FA7-40CD-8AA5-ACABCD3964D8<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>in tested in lab.<br>A: correct see documentation above<br>F: v$containers (local_undo) is still '1' true after the CDB restart.AFTER the alter pluggable database ... open, the v$containers is changed to '0'.it's confusing with B, but ok...</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -3563,17 +3563,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 117549,
           "date": "Tue 23 Jun 2020 16:35",
-          "username": "dacoben415lywenwjanwjanw",
-          "content": "i think AB<br>C is not true, tried on 19c, with shared undo you can create additional undo tbs in CDB$ROOT as common user<br>A, true, however create undo tbs will work on PDB but no undo will be created (bug?)<br>F, not sure, for the new undo mode to take effect whole CDB is restartedF is indeed very strange, as you say: a CDB bounce is required to change the LOCAL_UNDO_ENABLED, so PDBs are restarted by definition.When you change the undo mode of a CDB, the new undo mode applies to an individual container the first time the container is opened after the change.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/admin/administering-a-cdb-with-sql-plus.html#GUID-1AAB032F-D13A-4E06-A062-59E0487C2FC5",
-          "upvote_count": "212",
+          "username": "dacoben415lywenw",
+          "content": "i think AB<br>C is not true, tried on 19c, with shared undo you can create additional undo tbs in CDB$ROOT as common user<br>A, true, however create undo tbs will work on PDB but no undo will be created (bug?)<br>F, not sure, for the new undo mode to take effect whole CDB is restarted<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>F is indeed very strange, as you say: a CDB bounce is required to change the LOCAL_UNDO_ENABLED, so PDBs are restarted by definition.</li><li>When you change the undo mode of a CDB, the new undo mode applies to an individual container the first time the container is opened after the change.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/admin/administering-a-cdb-with-sql-plus.html#GUID-1AAB032F-D13A-4E06-A062-59E0487C2FC5</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 163122,
           "date": "Fri 21 Aug 2020 20:29",
-          "username": "janwjanw",
-          "content": "F is indeed very strange, as you say: a CDB bounce is required to change the LOCAL_UNDO_ENABLED, so PDBs are restarted by definition.When you change the undo mode of a CDB, the new undo mode applies to an individual container the first time the container is opened after the change.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/admin/administering-a-cdb-with-sql-plus.html#GUID-1AAB032F-D13A-4E06-A062-59E0487C2FC5",
-          "upvote_count": "12",
+          "username": "janw",
+          "content": "F is indeed very strange, as you say: a CDB bounce is required to change the LOCAL_UNDO_ENABLED, so PDBs are restarted by definition.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>When you change the undo mode of a CDB, the new undo mode applies to an individual container the first time the container is opened after the change.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/admin/administering-a-cdb-with-sql-plus.html#GUID-1AAB032F-D13A-4E06-A062-59E0487C2FC5</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -3587,9 +3587,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 104487,
           "date": "Sun 07 Jun 2020 13:48",
-          "username": "Jatindraarpz",
-          "content": "Correct Answer B,CAgree. B & C",
-          "upvote_count": "21",
+          "username": "Jatindra",
+          "content": "Correct Answer B,C<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree. B &amp; C</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -3685,9 +3685,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 174689,
           "date": "Sun 06 Sep 2020 18:23",
-          "username": "avanandmihanik",
-          "content": "I will go with B D. <br><br>SPA offers fine grained analysis for each SQL. See the doc below<br>https://www.oracle.com/technetwork/database/manageability/spa-ow08-131564.pdf*But not as a group<br>B:<br>SQL Performance Analyzer measures the impact of system changes both on the overall execution time of the SQL workload and on the response time of every individual SQL statement in the workload. By default, SQL Performance Analyzer uses elapsed time as a metric for comparison.<br><br>I vote for BC",
-          "upvote_count": "24",
+          "username": "avanand",
+          "content": "I will go with B D. <br><br>SPA offers fine grained analysis for each SQL. See the doc below<br>https://www.oracle.com/technetwork/database/manageability/spa-ow08-131564.pdf<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>*But not as a group<br>B:<br>SQL Performance Analyzer measures the impact of system changes both on the overall execution time of the SQL workload and on the response time of every individual SQL statement in the workload. By default, SQL Performance Analyzer uses elapsed time as a metric for comparison.<br><br>I vote for BC</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -3881,9 +3881,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 361770,
           "date": "Thu 20 May 2021 03:33",
-          "username": "ABAJfiko666",
-          "content": "BC are correct. Tested in LAB. How can you test that?",
-          "upvote_count": "62",
+          "username": "ABAJ",
+          "content": "BC are correct. Tested in LAB. <br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>How can you test that?</li></ul>",
+          "upvote_count": "6",
           "selected_answers": ""
         },
         {
@@ -3985,9 +3985,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 103674,
           "date": "Sat 06 Jun 2020 10:57",
-          "username": "Jatindraveginha",
-          "content": "Correct Answer: B,E (not 100% sure)<br>Below link may clear this confusion :<br>https://mikedietrichde.com/2016/10/21/gather-fixed-objects-stats-in-pdbs-as-well/#:~:textYes%2C%20you'll%20have%20to,independently%20from%20the%20CDB%24ROOT.&textOracle%20Database%20automatically%20gathers%20fixed,Automatic%20Optimizer%20Statistics%20Collection%E2%80%9C).<br><br>Conclusion<br>Yes, you'll have to gather fixed objects stats in PDBs independently from the CDB$ROOT.<br>But generally in Oracle Database 12c the Automatic Statistics Gathering job will take care on Fixed Objects Stats as well (see here). In a Multitenant environment you just may have to take care to unfold your default maintenance windows as otherwise this will happen in all PDBs at the same time generating plenty of noise on your system.<br><br>Oracle Database automatically gathers fixed object statistics as part of automated statistics gathering if they have not been previously collected (see =E2=80=9CControlling Automatic Optimizer Statistics Collection=E2=80=9C).B and C seems to be correct",
-          "upvote_count": "27",
+          "username": "Jatindra",
+          "content": "Correct Answer: B,E (not 100% sure)<br>Below link may clear this confusion :<br>https://mikedietrichde.com/2016/10/21/gather-fixed-objects-stats-in-pdbs-as-well/#:~:textYes%2C%20you'll%20have%20to,independently%20from%20the%20CDB%24ROOT.&textOracle%20Database%20automatically%20gathers%20fixed,Automatic%20Optimizer%20Statistics%20Collection%E2%80%9C).<br><br>Conclusion<br>Yes, you'll have to gather fixed objects stats in PDBs independently from the CDB$ROOT.<br>But generally in Oracle Database 12c the Automatic Statistics Gathering job will take care on Fixed Objects Stats as well (see here). In a Multitenant environment you just may have to take care to unfold your default maintenance windows as otherwise this will happen in all PDBs at the same time generating plenty of noise on your system.<br><br>Oracle Database automatically gathers fixed object statistics as part of automated statistics gathering if they have not been previously collected (see =E2=80=9CControlling Automatic Optimizer Statistics Collection=E2=80=9C).<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>B and C seems to be correct</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -4064,9 +4064,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 229115,
           "date": "Fri 27 Nov 2020 16:32",
-          "username": "SMagnyAlejandrrro",
-          "content": "A and B for me.<br>A) PDB not specified in the Plan will be assigne to the DEFAULT_PDB_DIRECTIVE.  This directive set PARALLEL_SERVER_LIMIT to zero. (No parallel server).<br>B) PARALLEL_SERVER_LIMIT is not set for PDB3 Resource plan directive. The default value of 100% is used in this case.Agree with you<br>A.  Correct as then a PDB will get assigned the default directive with parallel_server_limit set to 0B.  Correct as parallel_server_limit is not specified for PDB3 and it defaults to 100<br><br>Quote:<br><br>https://docs.oracle.com/database/121/ADMIN/dbrm.htm#ADMIN14008<br><br>\\\"If PARALLEL_SERVER_LIMIT is not specified, then it defaults to 100%.\\\"<br>C.  Incorrect. A PDB can use more resources:<br><br>Quote from<br><br>https://docs.oracle.com/database/121/ADMIN/cdb_dbrm.htm#ADMIN13777<br><br>\\\"However, any PDB can use more than the guaranteed amount of a resource if there is no resource contention.\\\"<br>D.  Incorrect. Shares is a minimum guaranteed value. But a PDB can use more as explained above in C. E.  Incorrect. Nothing confirms that there are only 3 PDBs attached. There may be others using the default pdb directive. Then the share for PDB2 is not 20%F.  Incorrect. parallel_server_limit is an upper limit.",
-          "upvote_count": "214",
+          "username": "SMagny",
+          "content": "A and B for me.<br>A) PDB not specified in the Plan will be assigne to the DEFAULT_PDB_DIRECTIVE.  This directive set PARALLEL_SERVER_LIMIT to zero. (No parallel server).<br>B) PARALLEL_SERVER_LIMIT is not set for PDB3 Resource plan directive. The default value of 100% is used in this case.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree with you<br>A.  Correct as then a PDB will get assigned the default directive with parallel_server_limit set to 0B.  Correct as parallel_server_limit is not specified for PDB3 and it defaults to 100<br><br>Quote:<br><br>https://docs.oracle.com/database/121/ADMIN/dbrm.htm#ADMIN14008<br><br>\\\"If PARALLEL_SERVER_LIMIT is not specified, then it defaults to 100%.\\\"<br>C.  Incorrect. A PDB can use more resources:<br><br>Quote from<br><br>https://docs.oracle.com/database/121/ADMIN/cdb_dbrm.htm#ADMIN13777<br><br>\\\"However, any PDB can use more than the guaranteed amount of a resource if there is no resource contention.\\\"<br>D.  Incorrect. Shares is a minimum guaranteed value. But a PDB can use more as explained above in C. E.  Incorrect. Nothing confirms that there are only 3 PDBs attached. There may be others using the default pdb directive. Then the share for PDB2 is not 20%F.  Incorrect. parallel_server_limit is an upper limit.</li></ul>",
+          "upvote_count": "21",
           "selected_answers": ""
         },
         {
@@ -4088,9 +4088,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 596955,
           "date": "Wed 04 May 2022 18:47",
-          "username": "flaviogcmeloflaviogcmelo",
-          "content": "When you do not explicitly define directives for a PDB, the PDB uses the default directive for PDBs. In this case the default directive sets the value 0 for parallel_server_limit. In this case I understand that PDB3 cannot use resources in parallel. So option A seems correct to me.The correct options ar A and F in my opinion.",
-          "upvote_count": "11",
+          "username": "flaviogcmelo",
+          "content": "When you do not explicitly define directives for a PDB, the PDB uses the default directive for PDBs. In this case the default directive sets the value 0 for parallel_server_limit. In this case I understand that PDB3 cannot use resources in parallel. So option A seems correct to me.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>The correct options ar A and F in my opinion.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": "Selected Answer: AE"
         },
         {
@@ -4104,9 +4104,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 593395,
           "date": "Wed 27 Apr 2022 23:24",
-          "username": "mtnetmakerasduta",
-          "content": "A- Incorrect : If PARALLEL_SERVER_LIMIT is not specified, then it defaults to 100%<br> REF:https://docs.oracle.com/database/121/ADMIN/dbrm.htm#ADMIN14007<br> https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/using-oracle-resource-manager-for-pdbs-with-sql-plus.html#GUID-3E84009E-5CD6-46B8-84D3-BE775D58D9AA<br> When you do not explicitly define directives for a PDB, the PDB uses the default directive for PDBs.<br>B - Correct : If PARALLEL_SERVER_LIMIT is not specified, then it defaults to 100%<br>C - Incorrect: PDB1 is NOT always limited to 40% of the available system resources regardless of demand.<br>D - Incorrect : When you do not explicitly define directives for a PDB, the PDB uses the default directive for PDBs., default is 100%<br>E: Incorrect : available system resourcesutilization_limit and parallel_server_limit<br>F: Correct : parallel_server_limit 25A is correct since itll default to DEFAULT_PDB_DIRECTIVE that was set to 0.",
-          "upvote_count": "21",
+          "username": "mtnetmaker",
+          "content": "A- Incorrect : If PARALLEL_SERVER_LIMIT is not specified, then it defaults to 100%<br> REF:https://docs.oracle.com/database/121/ADMIN/dbrm.htm#ADMIN14007<br> https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/using-oracle-resource-manager-for-pdbs-with-sql-plus.html#GUID-3E84009E-5CD6-46B8-84D3-BE775D58D9AA<br> When you do not explicitly define directives for a PDB, the PDB uses the default directive for PDBs.<br>B - Correct : If PARALLEL_SERVER_LIMIT is not specified, then it defaults to 100%<br>C - Incorrect: PDB1 is NOT always limited to 40% of the available system resources regardless of demand.<br>D - Incorrect : When you do not explicitly define directives for a PDB, the PDB uses the default directive for PDBs., default is 100%<br>E: Incorrect : available system resourcesutilization_limit and parallel_server_limit<br>F: Correct : parallel_server_limit 25<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A is correct since itll default to DEFAULT_PDB_DIRECTIVE that was set to 0.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -4200,9 +4200,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 115050,
           "date": "Sun 21 Jun 2020 00:05",
-          "username": "logicaveginha",
-          "content": "answer: A and FI'm not sure about it. Yes pdb2 can get 25% of the parallel execution process, but that is the upper limit, not the lower, so i think that it's not correct to said that \\\"at least 25%\\\"<br>I was thinking in A, and E since the question don't mention any limit for system resources (utilization_limit)",
-          "upvote_count": "22",
+          "username": "logica",
+          "content": "answer: A and F<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I'm not sure about it. Yes pdb2 can get 25% of the parallel execution process, but that is the upper limit, not the lower, so i think that it's not correct to said that \\\"at least 25%\\\"<br>I was thinking in A, and E since the question don't mention any limit for system resources (utilization_limit)</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -4271,17 +4271,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 103676,
           "date": "Sat 06 Jun 2020 10:58",
-          "username": "JatindraAmaoraKishor123",
-          "content": "Correct Answer :A,FF ????<br>I think you are wrong, look at this parameter ROOT_ACCESS_PASSWORD. <br>This parameter enables you to input root's password in response fileI think you are referring to this document , this is not related to oracle s/w installation<br>https://docs.oracle.com/cd/E89154_01/STAIS/silentmode002.htm#STAIS1938<br><br>Correct Answer : AF<br><br>You can not mention root password in response file<br><br>** With or without response file(put all arguments in the command line $ORACLE_HOME/runInstaller -silent ....) you have to input root password when prompted<br>** using OUI - You can mention either enter root password or sudo file in installation page<br>You continue to have the option to run the root configuration scripts manually.",
-          "upvote_count": "1022",
+          "username": "Jatindra",
+          "content": "Correct Answer :A,F<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>F ????<br>I think you are wrong, look at this parameter ROOT_ACCESS_PASSWORD. <br>This parameter enables you to input root's password in response file</li><li>I think you are referring to this document , this is not related to oracle s/w installation<br>https://docs.oracle.com/cd/E89154_01/STAIS/silentmode002.htm#STAIS1938<br><br>Correct Answer : AF<br><br>You can not mention root password in response file<br><br>** With or without response file(put all arguments in the command line $ORACLE_HOME/runInstaller -silent ....) you have to input root password when prompted<br>** using OUI - You can mention either enter root password or sudo file in installation page<br>You continue to have the option to run the root configuration scripts manually.</li></ul>",
+          "upvote_count": "10",
           "selected_answers": ""
         },
         {
           "id": 384092,
           "date": "Thu 17 Jun 2021 12:08",
-          "username": "AmaoraKishor123",
-          "content": "F ????<br>I think you are wrong, look at this parameter ROOT_ACCESS_PASSWORD. <br>This parameter enables you to input root's password in response fileI think you are referring to this document , this is not related to oracle s/w installation<br>https://docs.oracle.com/cd/E89154_01/STAIS/silentmode002.htm#STAIS1938<br><br>Correct Answer : AF<br><br>You can not mention root password in response file<br><br>** With or without response file(put all arguments in the command line $ORACLE_HOME/runInstaller -silent ....) you have to input root password when prompted<br>** using OUI - You can mention either enter root password or sudo file in installation page<br>You continue to have the option to run the root configuration scripts manually.",
-          "upvote_count": "22",
+          "username": "Amaora",
+          "content": "F ????<br>I think you are wrong, look at this parameter ROOT_ACCESS_PASSWORD. <br>This parameter enables you to input root's password in response file<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I think you are referring to this document , this is not related to oracle s/w installation<br>https://docs.oracle.com/cd/E89154_01/STAIS/silentmode002.htm#STAIS1938<br><br>Correct Answer : AF<br><br>You can not mention root password in response file<br><br>** With or without response file(put all arguments in the command line $ORACLE_HOME/runInstaller -silent ....) you have to input root password when prompted<br>** using OUI - You can mention either enter root password or sudo file in installation page<br>You continue to have the option to run the root configuration scripts manually.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -4295,9 +4295,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 387229,
           "date": "Mon 21 Jun 2021 17:07",
-          "username": "Ligariusniabs",
-          "content": "Sorry guys...Correct : A-CI also think A and C",
-          "upvote_count": "72",
+          "username": "Ligarius",
+          "content": "Sorry guys...Correct : A-C<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I also think A and C</li></ul>",
+          "upvote_count": "7",
           "selected_answers": ""
         },
         {
@@ -4335,9 +4335,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 459378,
           "date": "Fri 08 Oct 2021 20:28",
-          "username": "nobody347vska",
-          "content": "C is right<br>When you modify a response file template and save a file for use, the<br>response file may contain plain text passwords. Ownership of the response<br>file should be given to the Oracle software installation owner only, and<br>permissions on the response file should be changed to 600. Oracle strongly<br>recommends that database administrators or other administrators delete or<br>secure response files when they are not in use.there are plaintext password for SYS, SYSTEM but not root or sudo passwords. At least in v.19, just try by yourself runInstaller. It shows all possible variables. So AF",
-          "upvote_count": "11",
+          "username": "nobody347",
+          "content": "C is right<br>When you modify a response file template and save a file for use, the<br>response file may contain plain text passwords. Ownership of the response<br>file should be given to the Oracle software installation owner only, and<br>permissions on the response file should be changed to 600. Oracle strongly<br>recommends that database administrators or other administrators delete or<br>secure response files when they are not in use.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>there are plaintext password for SYS, SYSTEM but not root or sudo passwords. At least in v.19, just try by yourself runInstaller. It shows all possible variables. So AF</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -4401,9 +4401,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 103677,
           "date": "Sat 06 Jun 2020 10:59",
-          "username": "JatindraAlejandrrro",
-          "content": "B is correctAgree with you:<br><br>https://blogs.oracle.com/oraclemagazine/using-database-advisors<br><br>The shared pool advisor provides information about the estimated parse time in the shared pool for different pool sizes, the buffer cache advisor provides information about physical reads and time for the cache size, and the PGA advisor provides information about cache hit percentage against PGA target memory size.",
-          "upvote_count": "172",
+          "username": "Jatindra",
+          "content": "B is correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree with you:<br><br>https://blogs.oracle.com/oraclemagazine/using-database-advisors<br><br>The shared pool advisor provides information about the estimated parse time in the shared pool for different pool sizes, the buffer cache advisor provides information about physical reads and time for the cache size, and the PGA advisor provides information about cache hit percentage against PGA target memory size.</li></ul>",
+          "upvote_count": "17",
           "selected_answers": ""
         },
         {
@@ -4749,17 +4749,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 272704,
           "date": "Thu 21 Jan 2021 10:35",
-          "username": "amaamaAlejandrrroAlejandrrro",
-          "content": "CDB must be restarted if PDB system datafile is lost, For non-SYSTEM datafiles, you can offline, restore, recover, and online them..all while CDB is online.<br><br>The question relates to the System tablespace that means CDB can not be ONLINE so ---->> B is wrong AND D is correct<br><br>A, D are corrects!sorry answers should beD and E<br>since CDB can not be opened so PDB02 should be also closed in order to perform the recoveryAgree with you.<br><br>I tried to restore and recover a PDB SYSTEM datafile while CDB was opened and got the following error:<br><br>ORA-19573: cannot obtain exclusive enqueue for datafile 24And as long CDB is in a mount state, all other PDB, though not affected by media failure, can't be opened.<br><br>SQL> ALTER PLUGGABLE DATABASE ALL OPEN READ WRITE;<br>ALTER PLUGGABLE DATABASE ALL OPEN READ WRITE<br>*<br>ERROR at line 1:<br>ORA-01109: database not open",
-          "upvote_count": "1521",
+          "username": "ama",
+          "content": "CDB must be restarted if PDB system datafile is lost, For non-SYSTEM datafiles, you can offline, restore, recover, and online them..all while CDB is online.<br><br>The question relates to the System tablespace that means CDB can not be ONLINE so ---->> B is wrong AND D is correct<br><br>A, D are corrects!<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>sorry answers should beD and E<br>since CDB can not be opened so PDB02 should be also closed in order to perform the recovery</li><li>Agree with you.<br><br>I tried to restore and recover a PDB SYSTEM datafile while CDB was opened and got the following error:<br><br>ORA-19573: cannot obtain exclusive enqueue for datafile 24</li><li>And as long CDB is in a mount state, all other PDB, though not affected by media failure, can't be opened.<br><br>SQL&gt; ALTER PLUGGABLE DATABASE ALL OPEN READ WRITE;<br>ALTER PLUGGABLE DATABASE ALL OPEN READ WRITE<br>*<br>ERROR at line 1:<br>ORA-01109: database not open</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 272708,
           "date": "Thu 21 Jan 2021 10:41",
-          "username": "amaAlejandrrroAlejandrrro",
-          "content": "sorry answers should beD and E<br>since CDB can not be opened so PDB02 should be also closed in order to perform the recoveryAgree with you.<br><br>I tried to restore and recover a PDB SYSTEM datafile while CDB was opened and got the following error:<br><br>ORA-19573: cannot obtain exclusive enqueue for datafile 24And as long CDB is in a mount state, all other PDB, though not affected by media failure, can't be opened.<br><br>SQL> ALTER PLUGGABLE DATABASE ALL OPEN READ WRITE;<br>ALTER PLUGGABLE DATABASE ALL OPEN READ WRITE<br>*<br>ERROR at line 1:<br>ORA-01109: database not open",
-          "upvote_count": "521",
+          "username": "ama",
+          "content": "sorry answers should beD and E<br>since CDB can not be opened so PDB02 should be also closed in order to perform the recovery<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree with you.<br><br>I tried to restore and recover a PDB SYSTEM datafile while CDB was opened and got the following error:<br><br>ORA-19573: cannot obtain exclusive enqueue for datafile 24</li><li>And as long CDB is in a mount state, all other PDB, though not affected by media failure, can't be opened.<br><br>SQL&gt; ALTER PLUGGABLE DATABASE ALL OPEN READ WRITE;<br>ALTER PLUGGABLE DATABASE ALL OPEN READ WRITE<br>*<br>ERROR at line 1:<br>ORA-01109: database not open</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
@@ -4940,9 +4940,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 103682,
           "date": "Sat 06 Jun 2020 11:03",
-          "username": "Jatindraveginha",
-          "content": "F option is not there in actual exam.D seems to be right,which is the other one that is right?",
-          "upvote_count": "11",
+          "username": "Jatindra",
+          "content": "F option is not there in actual exam.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D seems to be right,which is the other one that is right?</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -5048,9 +5048,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 428326,
           "date": "Fri 20 Aug 2021 20:11",
-          "username": "kameniPortlandFighterswqui",
-          "content": "I would say correct is A,C,E<br>E is correct -->RMAN performs resynchronizations automatically as needed when you execute certain commands, including BACKUP. You can also manually perform a full resynchronization using the RESYNC CATALOG command.<br>F is incorrect --> V$RMAN_CONFIGURATION lists information about RMAN persistent configuration settings.Agree F should be incorrect. As stated in Oracle 19c database reference, V$RMAN_CONFIGURATION lists information about RMAN persistent configuration settings.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/V-RMAN_CONFIGURATION.html#GUID-13D7B8D1-C7B7-43EC-B176-90CCB9A4D647As you said, RMAN performs resync config in some comands, not always",
-          "upvote_count": "211",
+          "username": "kameni",
+          "content": "I would say correct is A,C,E<br>E is correct -->RMAN performs resynchronizations automatically as needed when you execute certain commands, including BACKUP. You can also manually perform a full resynchronization using the RESYNC CATALOG command.<br>F is incorrect --> V$RMAN_CONFIGURATION lists information about RMAN persistent configuration settings.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree F should be incorrect. As stated in Oracle 19c database reference, V$RMAN_CONFIGURATION lists information about RMAN persistent configuration settings.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/V-RMAN_CONFIGURATION.html#GUID-13D7B8D1-C7B7-43EC-B176-90CCB9A4D647</li><li>As you said, RMAN performs resync config in some comands, not always</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -5072,9 +5072,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 410834,
           "date": "Wed 21 Jul 2021 13:21",
-          "username": "Kishor123brolemxRodgeKishor123",
-          "content": "AFG<br>C: RMAN backup in FRA never get deleted AUTOMATICALLY. they have to either delete manually or using script based on retention policy.Whereas Flashback logs get automatically deleted based on availability of free space or if FRA parameter db_flashback_retention_target value reduced(19c feature).C is correct :If you use a fast recovery area as your only disk-based backup destination, then you never have to delete obsolete backups from disk. The fast recovery area keeps files as specified by the retention policy, and deletes them only when space is needed.G cannot be correct - as Oracle will provide a default value, when a DB is created. The DBA does not \\\"need\\\" to specify either of these values.<br><br>I think that C is not written perfectly, but it does imply that the use of the \\\"DELETE OBSOLETE\\\" statement will automatically remove every non-needed backup file that lies outside of the retention policy period.<br><br>So, I believe that ACF is correct.Got it. Thanks ! Agree with ACF",
-          "upvote_count": "1311",
+          "username": "Kishor123",
+          "content": "AFG<br>C: RMAN backup in FRA never get deleted AUTOMATICALLY. they have to either delete manually or using script based on retention policy.Whereas Flashback logs get automatically deleted based on availability of free space or if FRA parameter db_flashback_retention_target value reduced(19c feature).<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C is correct :If you use a fast recovery area as your only disk-based backup destination, then you never have to delete obsolete backups from disk. The fast recovery area keeps files as specified by the retention policy, and deletes them only when space is needed.</li><li>G cannot be correct - as Oracle will provide a default value, when a DB is created. The DBA does not \\\"need\\\" to specify either of these values.<br><br>I think that C is not written perfectly, but it does imply that the use of the \\\"DELETE OBSOLETE\\\" statement will automatically remove every non-needed backup file that lies outside of the retention policy period.<br><br>So, I believe that ACF is correct.</li><li>Got it. Thanks ! Agree with ACF</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -5088,9 +5088,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 413883,
           "date": "Sun 25 Jul 2021 14:08",
-          "username": "xRodgeKishor123",
-          "content": "G cannot be correct - as Oracle will provide a default value, when a DB is created. The DBA does not \\\"need\\\" to specify either of these values.<br><br>I think that C is not written perfectly, but it does imply that the use of the \\\"DELETE OBSOLETE\\\" statement will automatically remove every non-needed backup file that lies outside of the retention policy period.<br><br>So, I believe that ACF is correct.Got it. Thanks ! Agree with ACF",
-          "upvote_count": "11",
+          "username": "xRodge",
+          "content": "G cannot be correct - as Oracle will provide a default value, when a DB is created. The DBA does not \\\"need\\\" to specify either of these values.<br><br>I think that C is not written perfectly, but it does imply that the use of the \\\"DELETE OBSOLETE\\\" statement will automatically remove every non-needed backup file that lies outside of the retention policy period.<br><br>So, I believe that ACF is correct.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Got it. Thanks ! Agree with ACF</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -5112,9 +5112,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 114072,
           "date": "Fri 19 Jun 2020 17:29",
-          "username": "ald85veginha",
-          "content": "I think CFGACFWhy does the dba need to specify the retention policy? it's not necessary,you can use the default values also.",
-          "upvote_count": "27",
+          "username": "ald85",
+          "content": "I think CFG<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>ACFWhy does the dba need to specify the retention policy? it's not necessary,you can use the default values also.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -5191,9 +5191,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 396162,
           "date": "Thu 01 Jul 2021 18:11",
-          "username": "DhanushbhHeat418",
-          "content": "agree with CEFI would go with CEF",
-          "upvote_count": "42",
+          "username": "Dhanushbh",
+          "content": "agree with CEF<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I would go with CEF</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -5255,17 +5255,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 104544,
           "date": "Sun 07 Jun 2020 15:15",
-          "username": "JatindraObserverPLnavingupta52",
-          "content": "Correct Answer: ACF<br>https://mikedietrichde.com/2017/08/22/oracle-optimizer-statistics-advisor-in-oracle-database-12-2-0-1/<br>https://www.oracle.com/technetwork/database/bi-datawarehousing/twp-bp-for-stats-gather-19c-5324205.pdfMate, you provided link to Mike's post and there is clearly<br>The advisor task (=E2=80=98Statistics Advisor=E2=80=98) runs automatically in the maintenance window.<br>so A is not correct, come on...He always posts wrong answers and links with confidence.",
-          "upvote_count": "322",
+          "username": "Jatindra",
+          "content": "Correct Answer: ACF<br>https://mikedietrichde.com/2017/08/22/oracle-optimizer-statistics-advisor-in-oracle-database-12-2-0-1/<br>https://www.oracle.com/technetwork/database/bi-datawarehousing/twp-bp-for-stats-gather-19c-5324205.pdf<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Mate, you provided link to Mike's post and there is clearly<br>The advisor task (=E2=80=98Statistics Advisor=E2=80=98) runs automatically in the maintenance window.<br>so A is not correct, come on...</li><li>He always posts wrong answers and links with confidence.</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
           "id": 359848,
           "date": "Mon 17 May 2021 23:46",
-          "username": "ObserverPLnavingupta52",
-          "content": "Mate, you provided link to Mike's post and there is clearly<br>The advisor task (=E2=80=98Statistics Advisor=E2=80=98) runs automatically in the maintenance window.<br>so A is not correct, come on...He always posts wrong answers and links with confidence.",
-          "upvote_count": "22",
+          "username": "ObserverPL",
+          "content": "Mate, you provided link to Mike's post and there is clearly<br>The advisor task (=E2=80=98Statistics Advisor=E2=80=98) runs automatically in the maintenance window.<br>so A is not correct, come on...<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>He always posts wrong answers and links with confidence.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -5329,9 +5329,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 99920,
           "date": "Mon 01 Jun 2020 12:52",
-          "username": "monad2006proact",
-          "content": "I think: ACA is wrong as USER_TABLESPACE doesn't specify a default tablespace, but specifies which tablespaces are available in the new PDB. ",
-          "upvote_count": "181",
+          "username": "monad2006",
+          "content": "I think: AC<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A is wrong as USER_TABLESPACE doesn't specify a default tablespace, but specifies which tablespaces are available in the new PDB. </li></ul>",
+          "upvote_count": "18",
           "selected_answers": ""
         },
         {
@@ -5345,9 +5345,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 340656,
           "date": "Thu 22 Apr 2021 00:00",
-          "username": "SimoneFSimoneFHeat418",
-          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sbydb/using-RMAN-in-oracle-data-guard-configurations.html#GUID-66665A86-0B71-41FE-BED0-B9992A405C35<br><br>\\\"To back up all recovery-related files to tape, use the RMAN BACKUP RECOVERY FILES<br>[...]<br>This ensures that all current incremental, image copy, and archived log backups on disk are backed up to tape.\\\"<br><br>and<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/configuring-rman-client-basic.html#GUID-ABA3E439-57C2-4AE7-BCEF-39A6663E7AA2<br><br>\\\"RMAN uses backup optimization when the following conditions are true:<br>[...]<br>You run [...] BACKUP RECOVERY FILES [...]\\\"<br><br>Lead me to believe ACSorry for the triple post, it didn't give me immediate results so I thought publication failed.<br><br>Anyway, in the first case, it's said that ALL of those files on disk are backed up to tape, so also outside the recovery area (as opposed to \\\"BACKUP RECOVERY AREA\\\").<br><br>The second sentence states that backup optimization is turned on with BACKUP RECOVERY FILES: this implies that \\\"the BACKUP command skips backing up files<br>when the identical file has been backed up to the specified device type.\\\"<br><br>Since E is wrong cause you need to specify \\\"TO LOCATION\\\" in order to back up to disk in this case:<br><br>A and C should be right.I vote for AC as well.",
-          "upvote_count": "722",
+          "username": "SimoneF",
+          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sbydb/using-RMAN-in-oracle-data-guard-configurations.html#GUID-66665A86-0B71-41FE-BED0-B9992A405C35<br><br>\\\"To back up all recovery-related files to tape, use the RMAN BACKUP RECOVERY FILES<br>[...]<br>This ensures that all current incremental, image copy, and archived log backups on disk are backed up to tape.\\\"<br><br>and<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/configuring-rman-client-basic.html#GUID-ABA3E439-57C2-4AE7-BCEF-39A6663E7AA2<br><br>\\\"RMAN uses backup optimization when the following conditions are true:<br>[...]<br>You run [...] BACKUP RECOVERY FILES [...]\\\"<br><br>Lead me to believe AC<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Sorry for the triple post, it didn't give me immediate results so I thought publication failed.<br><br>Anyway, in the first case, it's said that ALL of those files on disk are backed up to tape, so also outside the recovery area (as opposed to \\\"BACKUP RECOVERY AREA\\\").<br><br>The second sentence states that backup optimization is turned on with BACKUP RECOVERY FILES: this implies that \\\"the BACKUP command skips backing up files<br>when the identical file has been backed up to the specified device type.\\\"<br><br>Since E is wrong cause you need to specify \\\"TO LOCATION\\\" in order to back up to disk in this case:<br><br>A and C should be right.</li><li>I vote for AC as well.</li></ul>",
+          "upvote_count": "7",
           "selected_answers": ""
         },
         {
@@ -5409,9 +5409,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 416388,
           "date": "Wed 28 Jul 2021 20:32",
-          "username": "vixt0rinoHeat418",
-          "content": "From:<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/BACKUP.html#GUID-73642FF2-43C5-48B2-9969-99001C52EB5<br>\\\"Backs up ALL recovery files on disk, whether they are stored in the fast recovery area or other locations on disk. The backups can go to SBT or disk.\\\"<br><br>then, ABC is wrong, DE is correct.Search in the page for RECOVERY FILES.<br><br>I think you will change your mind to AC. ",
-          "upvote_count": "21",
+          "username": "vixt0rino",
+          "content": "From:<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/BACKUP.html#GUID-73642FF2-43C5-48B2-9969-99001C52EB5<br>\\\"Backs up ALL recovery files on disk, whether they are stored in the fast recovery area or other locations on disk. The backups can go to SBT or disk.\\\"<br><br>then, ABC is wrong, DE is correct.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Search in the page for RECOVERY FILES.<br><br>I think you will change your mind to AC. </li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -5433,9 +5433,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 340654,
           "date": "Wed 21 Apr 2021 23:58",
-          "username": "SimoneFjorche",
-          "content": "\\\"12.4.1.2 Commands for Weekly Tape Backups Using Disk as Cache<br><br>To back up all recovery-related files to tape, use the RMAN BACKUP RECOVERY FILES command once a week.<br><br>This ensures that all current incremental, image copy, and archived log backups on disk are backed up to tape.\\\"<br><br>From https://docs.oracle.com/en/database/oracle/oracle-database/19/sbydb/using-RMAN-in-oracle-data-guard-configurations.html#GUID-66665A86-0B71-41FE-BED0-B9992A405C35<br><br>and<br><br>\\\"RMAN uses backup optimization when the following conditions are true:<br>[...]<br>You run [...] BACKUP RECOVERY FILES [...]\\\"<br>From<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/configuring-rman-client-basic.html#GUID-ABA3E439-57C2-4AE7-BCEF-39A6663E7AA2<br><br>Lead me to believe ACA,C<br>By default, backup optimization is enabled for this command even if the CONFIGURE BACKUP OPTIMIZATION setting is OFF.  You can disable backup optimization for BACKUP RECOVERY AREA by specifying FORCE. ",
-          "upvote_count": "21",
+          "username": "SimoneF",
+          "content": "\\\"12.4.1.2 Commands for Weekly Tape Backups Using Disk as Cache<br><br>To back up all recovery-related files to tape, use the RMAN BACKUP RECOVERY FILES command once a week.<br><br>This ensures that all current incremental, image copy, and archived log backups on disk are backed up to tape.\\\"<br><br>From https://docs.oracle.com/en/database/oracle/oracle-database/19/sbydb/using-RMAN-in-oracle-data-guard-configurations.html#GUID-66665A86-0B71-41FE-BED0-B9992A405C35<br><br>and<br><br>\\\"RMAN uses backup optimization when the following conditions are true:<br>[...]<br>You run [...] BACKUP RECOVERY FILES [...]\\\"<br>From<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/configuring-rman-client-basic.html#GUID-ABA3E439-57C2-4AE7-BCEF-39A6663E7AA2<br><br>Lead me to believe AC<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A,C<br>By default, backup optimization is enabled for this command even if the CONFIGURE BACKUP OPTIMIZATION setting is OFF.  You can disable backup optimization for BACKUP RECOVERY AREA by specifying FORCE. </li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -5481,9 +5481,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 201347,
           "date": "Sat 17 Oct 2020 07:05",
-          "username": "bugzbinnynobody347",
-          "content": "DE<br>By adding the subclause destination to the backup recovery files command, you can specify a disk channel as the location for the backing up of the recovery area files:<br>RMAN> backup recovery files to destination '/u01/app/oracle/backup';Question doesn't have subclause, in this case E is wrong.",
-          "upvote_count": "21",
+          "username": "bugzbinny",
+          "content": "DE<br>By adding the subclause destination to the backup recovery files command, you can specify a disk channel as the location for the backing up of the recovery area files:<br>RMAN> backup recovery files to destination '/u01/app/oracle/backup';<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Question doesn't have subclause, in this case E is wrong.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -5624,17 +5624,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 325671,
           "date": "Thu 01 Apr 2021 11:28",
-          "username": "AsmodeusRinDSimoneF",
-          "content": "I guess that correct answers are A and C.  C because of documentation:<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/tdppt/oracle-database-performance-method.html#GUID-6203E485-FA06-4EE3-9003-4449FBDE214B:<br><br>\\\"Before looking at database or operating system statistics, it is crucial to get feedback from the system users and the people in charge of the application. This feedback makes it easier to set performance goals. Improved performance can be measured in terms of business goals rather than system statistics.<br><br>The Oracle performance method can be applied until performance goals are met or deemed impractical.\\\"I think B instead of C because it mention \\\"feedback from the system users and the people\\\". It's about the people, for example user A may feel that 8mins query is ok instead of current 15 mins query, user B however, may feel 10mins query is acceptable.Yeah but it also said \\\"the people in charge of the application\\\". I believe that \\\"agreed service levels\\\" is more appropriate, since it sounds similar to a performance \\\"goal\\\".<br><br>It's quite tricky anyway.",
-          "upvote_count": "322",
+          "username": "Asmodeus",
+          "content": "I guess that correct answers are A and C.  C because of documentation:<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/tdppt/oracle-database-performance-method.html#GUID-6203E485-FA06-4EE3-9003-4449FBDE214B:<br><br>\\\"Before looking at database or operating system statistics, it is crucial to get feedback from the system users and the people in charge of the application. This feedback makes it easier to set performance goals. Improved performance can be measured in terms of business goals rather than system statistics.<br><br>The Oracle performance method can be applied until performance goals are met or deemed impractical.\\\"<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I think B instead of C because it mention \\\"feedback from the system users and the people\\\". It's about the people, for example user A may feel that 8mins query is ok instead of current 15 mins query, user B however, may feel 10mins query is acceptable.</li><li>Yeah but it also said \\\"the people in charge of the application\\\". I believe that \\\"agreed service levels\\\" is more appropriate, since it sounds similar to a performance \\\"goal\\\".<br><br>It's quite tricky anyway.</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
           "id": 330014,
           "date": "Wed 07 Apr 2021 04:33",
-          "username": "RinDSimoneF",
-          "content": "I think B instead of C because it mention \\\"feedback from the system users and the people\\\". It's about the people, for example user A may feel that 8mins query is ok instead of current 15 mins query, user B however, may feel 10mins query is acceptable.Yeah but it also said \\\"the people in charge of the application\\\". I believe that \\\"agreed service levels\\\" is more appropriate, since it sounds similar to a performance \\\"goal\\\".<br><br>It's quite tricky anyway.",
-          "upvote_count": "22",
+          "username": "RinD",
+          "content": "I think B instead of C because it mention \\\"feedback from the system users and the people\\\". It's about the people, for example user A may feel that 8mins query is ok instead of current 15 mins query, user B however, may feel 10mins query is acceptable.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Yeah but it also said \\\"the people in charge of the application\\\". I believe that \\\"agreed service levels\\\" is more appropriate, since it sounds similar to a performance \\\"goal\\\".<br><br>It's quite tricky anyway.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -5648,9 +5648,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 196994,
           "date": "Fri 09 Oct 2020 23:25",
-          "username": "danitoMastino69",
-          "content": "are you sure E? SQL tunned before file system? I am not sure but a file system is not easy to do changes when everything is workingI think wrong queries may destroy best configured file system. I would read this question in this way and answer AE",
-          "upvote_count": "21",
+          "username": "danito",
+          "content": "are you sure E? SQL tunned before file system? I am not sure but a file system is not easy to do changes when everything is working<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I think wrong queries may destroy best configured file system. I would read this question in this way and answer AE</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -5756,9 +5756,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 369126,
           "date": "Sat 29 May 2021 05:00",
-          "username": "wiprooraclePortlandFighters",
-          "content": "B,C,E<br><br>E , as per https://docs.oracle.com/en/database/oracle/oracle-database/18/bradv/tuning-rman-performance.html#GUID-5D8AAB8F-8A63-4B82-9BFB-16D22CE439FDYo mate, your link indicated that E is incorrect instead. The sentence of E is \\\"Data files with a high value in V$BACKUP_SYNC_IO.DISCRETE_BYTES_PER_SECOND are a potential performance bottleneck when synchronous I/O is used\\\". So, a high value means a high throughput with large number of bytes being transferred per second. Besides, the doc ask you to compare the transfer rate with the specified value with the device specification. Say the device support up to 1GB per second but the DISCRETE_BYTES_PER_SECOND is much lower then this value, then there is an issue.",
-          "upvote_count": "22",
+          "username": "wiprooracle",
+          "content": "B,C,E<br><br>E , as per https://docs.oracle.com/en/database/oracle/oracle-database/18/bradv/tuning-rman-performance.html#GUID-5D8AAB8F-8A63-4B82-9BFB-16D22CE439FD<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Yo mate, your link indicated that E is incorrect instead. The sentence of E is \\\"Data files with a high value in V$BACKUP_SYNC_IO.DISCRETE_BYTES_PER_SECOND are a potential performance bottleneck when synchronous I/O is used\\\". So, a high value means a high throughput with large number of bytes being transferred per second. Besides, the doc ask you to compare the transfer rate with the specified value with the device specification. Say the device support up to 1GB per second but the DISCRETE_BYTES_PER_SECOND is much lower then this value, then there is an issue.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -5852,9 +5852,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 147948,
           "date": "Fri 31 Jul 2020 12:06",
-          "username": "CyborgQSimoneF",
-          "content": "BCF is correct:<br>DBWR_IO_SLAVES is relevant only on systems with only one database writer process (DBW0). The DBW0 process and its server processes always write to disk. By default, the value is 0 and I/O server processes are not used.<br><br>If you set DBWR_IO_SLAVES to a nonzero value, the number of I/O server processes used by the ARCH and LGWR processes is set to 4. However, the number of I/O server processes used by Recovery Manager is set to 4 only if asynchronous I/O is disabled (either your platform does not support asynchronous I/O or disk_asynch_io is set to false).<br><br>Typically, I/O server processes are used to simulate asynchronous I/O on platforms that do not support asynchronous I/O or that implement it inefficiently. However, you can use I/O server processes even when asynchronous I/O is being used. In that case the I/O server processes will use asynchronous I/O.<br><br>I/O server processes are also useful in database environments with very large I/O throughput, even if asynchronous I/O is enabled.Based on what you reported, F is wrong:<br>\\\"the number of I/O server processes used by Recovery Manager is set to 4 only if asynchronous I/O is disabled\\\"<br><br>It's true that afterwards it states that multiple I/O servers can be used even with asynch_io is enabled but it sounds more of an indication on the DB performance: since we're talking about a backup, I'm inclined to think that the impossibility to use more slaves for recovery manager makes the parameter influent on the backup only when asynch I/O is disabled.<br><br>Plus, obviously, F wouldn't make B false and I think D is quite certainly right, so I wouldn't find a way to restrict the right answers to three...",
-          "upvote_count": "11",
+          "username": "CyborgQ",
+          "content": "BCF is correct:<br>DBWR_IO_SLAVES is relevant only on systems with only one database writer process (DBW0). The DBW0 process and its server processes always write to disk. By default, the value is 0 and I/O server processes are not used.<br><br>If you set DBWR_IO_SLAVES to a nonzero value, the number of I/O server processes used by the ARCH and LGWR processes is set to 4. However, the number of I/O server processes used by Recovery Manager is set to 4 only if asynchronous I/O is disabled (either your platform does not support asynchronous I/O or disk_asynch_io is set to false).<br><br>Typically, I/O server processes are used to simulate asynchronous I/O on platforms that do not support asynchronous I/O or that implement it inefficiently. However, you can use I/O server processes even when asynchronous I/O is being used. In that case the I/O server processes will use asynchronous I/O.<br><br>I/O server processes are also useful in database environments with very large I/O throughput, even if asynchronous I/O is enabled.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Based on what you reported, F is wrong:<br>\\\"the number of I/O server processes used by Recovery Manager is set to 4 only if asynchronous I/O is disabled\\\"<br><br>It's true that afterwards it states that multiple I/O servers can be used even with asynch_io is enabled but it sounds more of an indication on the DB performance: since we're talking about a backup, I'm inclined to think that the impossibility to use more slaves for recovery manager makes the parameter influent on the backup only when asynch I/O is disabled.<br><br>Plus, obviously, F wouldn't make B false and I think D is quite certainly right, so I wouldn't find a way to restrict the right answers to three...</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -5992,25 +5992,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 108270,
           "date": "Fri 12 Jun 2020 04:44",
-          "username": "taotsumiauveginhataotsumiauveginha",
-          "content": "GF are correcthow do you get this answers? i got different result in a test environmentI setup the same environment setting in my VM.And follow the question's step to test. <br>When I insert USER1.EMP at PDB1 without commit.Then connect to PDB2, and open another new session to select the data that I didn't commit.It shows the data. <br>Then, I inserted data into PDB2 without commit.And select the PDB2's insert data from new session, that didn't show out the data from my query. <br>That is all I did on my testing VM. <br>How about you?strange, i did exactly the same, and got different results:<br>No commit in user1.emp after changing the session container, and got this error while doing the insert in pdb2:<br>ERROR at line 1:<br>ORA-65023: active transaction exists in container PDB1.<br>Did you use sqlplus as client? do you think that the client configuration could be the reason to get different results?",
-          "upvote_count": "1111",
+          "username": "taotsumiau",
+          "content": "GF are correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>how do you get this answers? i got different result in a test environment</li><li>I setup the same environment setting in my VM.And follow the question's step to test. <br>When I insert USER1.EMP at PDB1 without commit.Then connect to PDB2, and open another new session to select the data that I didn't commit.It shows the data. <br>Then, I inserted data into PDB2 without commit.And select the PDB2's insert data from new session, that didn't show out the data from my query. <br>That is all I did on my testing VM. <br>How about you?</li><li>strange, i did exactly the same, and got different results:<br>No commit in user1.emp after changing the session container, and got this error while doing the insert in pdb2:<br>ERROR at line 1:<br>ORA-65023: active transaction exists in container PDB1.<br>Did you use sqlplus as client? do you think that the client configuration could be the reason to get different results?</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 108861,
           "date": "Fri 12 Jun 2020 19:25",
-          "username": "veginhataotsumiauveginha",
-          "content": "how do you get this answers? i got different result in a test environmentI setup the same environment setting in my VM.And follow the question's step to test. <br>When I insert USER1.EMP at PDB1 without commit.Then connect to PDB2, and open another new session to select the data that I didn't commit.It shows the data. <br>Then, I inserted data into PDB2 without commit.And select the PDB2's insert data from new session, that didn't show out the data from my query. <br>That is all I did on my testing VM. <br>How about you?strange, i did exactly the same, and got different results:<br>No commit in user1.emp after changing the session container, and got this error while doing the insert in pdb2:<br>ERROR at line 1:<br>ORA-65023: active transaction exists in container PDB1.<br>Did you use sqlplus as client? do you think that the client configuration could be the reason to get different results?",
-          "upvote_count": "111",
+          "username": "veginha",
+          "content": "how do you get this answers? i got different result in a test environment<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I setup the same environment setting in my VM.And follow the question's step to test. <br>When I insert USER1.EMP at PDB1 without commit.Then connect to PDB2, and open another new session to select the data that I didn't commit.It shows the data. <br>Then, I inserted data into PDB2 without commit.And select the PDB2's insert data from new session, that didn't show out the data from my query. <br>That is all I did on my testing VM. <br>How about you?</li><li>strange, i did exactly the same, and got different results:<br>No commit in user1.emp after changing the session container, and got this error while doing the insert in pdb2:<br>ERROR at line 1:<br>ORA-65023: active transaction exists in container PDB1.<br>Did you use sqlplus as client? do you think that the client configuration could be the reason to get different results?</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 110811,
           "date": "Mon 15 Jun 2020 14:46",
-          "username": "taotsumiauveginha",
-          "content": "I setup the same environment setting in my VM.And follow the question's step to test. <br>When I insert USER1.EMP at PDB1 without commit.Then connect to PDB2, and open another new session to select the data that I didn't commit.It shows the data. <br>Then, I inserted data into PDB2 without commit.And select the PDB2's insert data from new session, that didn't show out the data from my query. <br>That is all I did on my testing VM. <br>How about you?strange, i did exactly the same, and got different results:<br>No commit in user1.emp after changing the session container, and got this error while doing the insert in pdb2:<br>ERROR at line 1:<br>ORA-65023: active transaction exists in container PDB1.<br>Did you use sqlplus as client? do you think that the client configuration could be the reason to get different results?",
-          "upvote_count": "11",
+          "username": "taotsumiau",
+          "content": "I setup the same environment setting in my VM.And follow the question's step to test. <br>When I insert USER1.EMP at PDB1 without commit.Then connect to PDB2, and open another new session to select the data that I didn't commit.It shows the data. <br>Then, I inserted data into PDB2 without commit.And select the PDB2's insert data from new session, that didn't show out the data from my query. <br>That is all I did on my testing VM. <br>How about you?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>strange, i did exactly the same, and got different results:<br>No commit in user1.emp after changing the session container, and got this error while doing the insert in pdb2:<br>ERROR at line 1:<br>ORA-65023: active transaction exists in container PDB1.<br>Did you use sqlplus as client? do you think that the client configuration could be the reason to get different results?</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -6098,9 +6098,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 155658,
           "date": "Tue 11 Aug 2020 18:09",
-          "username": "janwAlejandrrro",
-          "content": "e correct!<br><br>For multitenant architecture (CDB and PDB) upgrades, open up all the PDBs that you want the tool to analyze before you run the tool.Agree with you.<br><br>Also tested in my database:<br><br>[oracle@apex tmp]$ $ORA-CLE_HOME/jdk/bin/java -jar preupgrade.jar TERMINAL TEXT<br>INFORMATION - Container: XEPDB2 is in: MOUNTED status and will not be processed unless opened.",
-          "upvote_count": "91",
+          "username": "janw",
+          "content": "e correct!<br><br>For multitenant architecture (CDB and PDB) upgrades, open up all the PDBs that you want the tool to analyze before you run the tool.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree with you.<br><br>Also tested in my database:<br><br>[oracle@apex tmp]$ $ORA-CLE_HOME/jdk/bin/java -jar preupgrade.jar TERMINAL TEXT<br>INFORMATION - Container: XEPDB2 is in: MOUNTED status and will not be processed unless opened.</li></ul>",
+          "upvote_count": "9",
           "selected_answers": ""
         },
         {
@@ -6304,17 +6304,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 408711,
           "date": "Sun 18 Jul 2021 06:47",
-          "username": "DhanushbhxRodgeDBA4All",
-          "content": "To create an application container, the current container must be the CDB root and you must specify the AS APPLICATION CONTAINER clause in the CREATE PLUGGABLE DATABASE statement. You must create the application container using Oracle Managed Files.so F is wrong<br><br>Note: An application container cannot be unplugged or dropped if any application PDBs belong to it.so E is correct@Dhanushbh : I believe that you may have read the question incorrectly. The question is asking about what is true about an \\\"application SEED pluggable database\\\".<br>Answer E is not saying that you drop the application container, merely that you drop the SEED pluggable database.<br>This is perfectly allowable, oracle-base displays this exact thing happening here: https://oracle-base.com/articles/12c/multitenant-application-containers-12cr2<br><br>We can drop an existing application seed like any other PDB.  This has no impact on application container PDBs created using it.<br><br>CONN / AS SYSDBA<br>ALTER SESSION SET containerappcon1;<br><br>ALTER PLUGGABLE DATABASE appcon1$SEED CLOSE;<br>DROP PLUGGABLE DATABASE appcon1$SEED INCLUDING DATAFILES;E is, definitely, incorrect.Dropping an Application Seed: https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/creating-removing-application-containers-seeds-with-sql-plus.html#GUID-93AAE6F0-7969-4D05-B10B-F2514CB39417",
-          "upvote_count": "121",
+          "username": "Dhanushbh",
+          "content": "To create an application container, the current container must be the CDB root and you must specify the AS APPLICATION CONTAINER clause in the CREATE PLUGGABLE DATABASE statement. You must create the application container using Oracle Managed Files.so F is wrong<br><br>Note: An application container cannot be unplugged or dropped if any application PDBs belong to it.so E is correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>@Dhanushbh : I believe that you may have read the question incorrectly. The question is asking about what is true about an \\\"application SEED pluggable database\\\".<br>Answer E is not saying that you drop the application container, merely that you drop the SEED pluggable database.<br>This is perfectly allowable, oracle-base displays this exact thing happening here: https://oracle-base.com/articles/12c/multitenant-application-containers-12cr2<br><br>We can drop an existing application seed like any other PDB.  This has no impact on application container PDBs created using it.<br><br>CONN / AS SYSDBA<br>ALTER SESSION SET containerappcon1;<br><br>ALTER PLUGGABLE DATABASE appcon1$SEED CLOSE;<br>DROP PLUGGABLE DATABASE appcon1$SEED INCLUDING DATAFILES;E is, definitely, incorrect.</li><li>Dropping an Application Seed: https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/creating-removing-application-containers-seeds-with-sql-plus.html#GUID-93AAE6F0-7969-4D05-B10B-F2514CB39417</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 413904,
           "date": "Sun 25 Jul 2021 14:37",
-          "username": "xRodgeDBA4All",
-          "content": "@Dhanushbh : I believe that you may have read the question incorrectly. The question is asking about what is true about an \\\"application SEED pluggable database\\\".<br>Answer E is not saying that you drop the application container, merely that you drop the SEED pluggable database.<br>This is perfectly allowable, oracle-base displays this exact thing happening here: https://oracle-base.com/articles/12c/multitenant-application-containers-12cr2<br><br>We can drop an existing application seed like any other PDB.  This has no impact on application container PDBs created using it.<br><br>CONN / AS SYSDBA<br>ALTER SESSION SET containerappcon1;<br><br>ALTER PLUGGABLE DATABASE appcon1$SEED CLOSE;<br>DROP PLUGGABLE DATABASE appcon1$SEED INCLUDING DATAFILES;E is, definitely, incorrect.Dropping an Application Seed: https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/creating-removing-application-containers-seeds-with-sql-plus.html#GUID-93AAE6F0-7969-4D05-B10B-F2514CB39417",
-          "upvote_count": "21",
+          "username": "xRodge",
+          "content": "@Dhanushbh : I believe that you may have read the question incorrectly. The question is asking about what is true about an \\\"application SEED pluggable database\\\".<br>Answer E is not saying that you drop the application container, merely that you drop the SEED pluggable database.<br>This is perfectly allowable, oracle-base displays this exact thing happening here: https://oracle-base.com/articles/12c/multitenant-application-containers-12cr2<br><br>We can drop an existing application seed like any other PDB.  This has no impact on application container PDBs created using it.<br><br>CONN / AS SYSDBA<br>ALTER SESSION SET containerappcon1;<br><br>ALTER PLUGGABLE DATABASE appcon1$SEED CLOSE;<br>DROP PLUGGABLE DATABASE appcon1$SEED INCLUDING DATAFILES;E is, definitely, incorrect.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Dropping an Application Seed: https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/creating-removing-application-containers-seeds-with-sql-plus.html#GUID-93AAE6F0-7969-4D05-B10B-F2514CB39417</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -6328,9 +6328,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 127963,
           "date": "Mon 06 Jul 2020 18:10",
-          "username": "marcinb32taotsumiau",
-          "content": "CFG ??Agree CFG<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/creating-removing-application-containers-seeds-with-sql-plus.html#GUID-065649AC-18ED-4858-ACC5-36F011362A83",
-          "upvote_count": "44",
+          "username": "marcinb32",
+          "content": "CFG ??<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree CFG<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/creating-removing-application-containers-seeds-with-sql-plus.html#GUID-065649AC-18ED-4858-ACC5-36F011362A83</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -6513,9 +6513,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 112932,
           "date": "Thu 18 Jun 2020 07:12",
-          "username": "ald85ama",
-          "content": "ABE<br>F incorrect because AWR snapshots are deleted automatically.AWR Snapshot's default interval is 1 hour and retention is 8 days. It means All AWR statistics are collected every 1 hour and they are kept 8 days by default.<br><br>That means E is correct and F is wrong=E2=80=A6 so final correct answers are A; B; E",
-          "upvote_count": "205",
+          "username": "ald85",
+          "content": "ABE<br>F incorrect because AWR snapshots are deleted automatically.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>AWR Snapshot's default interval is 1 hour and retention is 8 days. It means All AWR statistics are collected every 1 hour and they are kept 8 days by default.<br><br>That means E is correct and F is wrong=E2=80=A6 so final correct answers are A; B; E</li></ul>",
+          "upvote_count": "20",
           "selected_answers": ""
         },
         {
@@ -6569,9 +6569,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 219614,
           "date": "Sun 15 Nov 2020 11:29",
-          "username": "undoundoundoundo",
-          "content": "Is F the correct answer?<br>Or is X correct?B. ..=E3=80=87=E3=80=81C. ..=C3=97=E3=80=81D. ..=C3=97=E3=80=81E. ..=E3=80=87=E2=86=91<br>I made a mistake.<br>Is F the correct answer?<br>Or is A correct?B. ..=E3=80=87=E3=80=81C. ..=C3=97=E3=80=81D. ..=C3=97=E3=80=81E. ..=E3=80=87",
-          "upvote_count": "11",
+          "username": "undoundo",
+          "content": "Is F the correct answer?<br>Or is X correct?B. ..=E3=80=87=E3=80=81C. ..=C3=97=E3=80=81D. ..=C3=97=E3=80=81E. ..=E3=80=87<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>=E2=86=91<br>I made a mistake.<br>Is F the correct answer?<br>Or is A correct?B. ..=E3=80=87=E3=80=81C. ..=C3=97=E3=80=81D. ..=C3=97=E3=80=81E. ..=E3=80=87</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -6767,9 +6767,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 116318,
           "date": "Mon 22 Jun 2020 12:49",
-          "username": "julicaAlejandrrro",
-          "content": "Correct are B and E:<br><br>[oracle@rac1 admin]$ rman target / log '/tmp/log.txt'<br>RMAN> list backup summary;<br>RMAN> exit<br>[oracle@rac1 admin]$ cat /tmp/log.txt<br><br>Recovery Manager: Release 19.0.0.0.0 - Production on Mon Jun 22 15:48:39 2020<br>Version 19.6.0.0.0<br><br>Copyright (c) 1982, 2019, Oracle and/or its affiliates.All rights reserved.<br><br>connected to target database: TST193 (DBID1785824688)<br><br>RMAN><br>using target database control file instead of recovery catalog<br><br>List of Backups<br><br>Key TY LV S Device Type Completion Time #Pieces #Copies Compressed Tag<br>------- -- -- - ----------- --------------- ------- ------- ---------- ---<br>1 BFA DISK15-JUN-20 1 1 NO TAG20200615T165352<br>2 BFA DISK15-JUN-20 1 1 NO TAG20200615T174406<br>3 BFA DISK22-JUN-20 1 1 NO TAG20200622T095655<br>4 BFA DISK22-JUN-20 1 1 NO TAG20200622T095942<br>5 BFA DISK22-JUN-20 1 1 NO TAG20200622T154703<br><br>RMAN><br><br>Recovery Manager complete.Agree with B,E<br><br>Here's the an additional reference<br><br>https://docs.oracle.com/database/121/BRADV/rcmtroub.htm#BRADV89875<br><br>The sbtio.log contains information written by the media management software, not Oracle Database. Thus, you must consult your media vendor documentation to interpret the error codes and messages. If no information is written to the sbtio.log, then contact your media manager support to ask whether they are writing error messages in some other location, or whether there are steps you must take to have the media manager errors appear in sbtio.log.<br><br>Read the messages from the bottom up, because this is the order in which RMAN issues the messages. The last one or two errors displayed in the stack are often the most informative.",
-          "upvote_count": "214",
+          "username": "julica",
+          "content": "Correct are B and E:<br><br>[oracle@rac1 admin]$ rman target / log '/tmp/log.txt'<br>RMAN> list backup summary;<br>RMAN> exit<br>[oracle@rac1 admin]$ cat /tmp/log.txt<br><br>Recovery Manager: Release 19.0.0.0.0 - Production on Mon Jun 22 15:48:39 2020<br>Version 19.6.0.0.0<br><br>Copyright (c) 1982, 2019, Oracle and/or its affiliates.All rights reserved.<br><br>connected to target database: TST193 (DBID1785824688)<br><br>RMAN><br>using target database control file instead of recovery catalog<br><br>List of Backups<br><br>Key TY LV S Device Type Completion Time #Pieces #Copies Compressed Tag<br>------- -- -- - ----------- --------------- ------- ------- ---------- ---<br>1 BFA DISK15-JUN-20 1 1 NO TAG20200615T165352<br>2 BFA DISK15-JUN-20 1 1 NO TAG20200615T174406<br>3 BFA DISK22-JUN-20 1 1 NO TAG20200622T095655<br>4 BFA DISK22-JUN-20 1 1 NO TAG20200622T095942<br>5 BFA DISK22-JUN-20 1 1 NO TAG20200622T154703<br><br>RMAN><br><br>Recovery Manager complete.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree with B,E<br><br>Here's the an additional reference<br><br>https://docs.oracle.com/database/121/BRADV/rcmtroub.htm#BRADV89875<br><br>The sbtio.log contains information written by the media management software, not Oracle Database. Thus, you must consult your media vendor documentation to interpret the error codes and messages. If no information is written to the sbtio.log, then contact your media manager support to ask whether they are writing error messages in some other location, or whether there are steps you must take to have the media manager errors appear in sbtio.log.<br><br>Read the messages from the bottom up, because this is the order in which RMAN issues the messages. The last one or two errors displayed in the stack are often the most informative.</li></ul>",
+          "upvote_count": "21",
           "selected_answers": ""
         },
         {
@@ -6839,9 +6839,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 114093,
           "date": "Fri 19 Jun 2020 17:47",
-          "username": "ald85logicaald85",
-          "content": "I think BD.  B sure that is correct, the other i doubt between D or F, any suggestion?D is incorrect, Rman's LOG parameter cause the output to be written to a log onlyFinally BE.  https://logic.edchen.org/3-ways-to-set-rman-log-location/",
-          "upvote_count": "138",
+          "username": "ald85",
+          "content": "I think BD.  B sure that is correct, the other i doubt between D or F, any suggestion?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D is incorrect, Rman's LOG parameter cause the output to be written to a log only</li><li>Finally BE.  https://logic.edchen.org/3-ways-to-set-rman-log-location/</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -6942,9 +6942,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 168180,
           "date": "Fri 28 Aug 2020 08:55",
-          "username": "apagniniSimoneF",
-          "content": "Automatic Memory Management (AMM)is enabled with \\\"MEMORY_TARGET\\\" or/and \\\"MEMORY_MAX_TARGET\\\" init parameters.<br>Dynamic components of Automatic Memory Management (AMM) are:<br><br>SELECTcomponent, current_size, min_size, max_size<br>FROMv$memory_dynamic_components<br>WHERE current_size ! 0;<br><br>COMPONENTCURRENT_SIZE MIN_SIZE MAX_SIZE<br>------------------------------ ------------ ---------- ----------<br>shared pool 197132288192937984197132288<br>large pool419430441943044194304<br>java pool41943040 41943040 41943040<br>SGA Target318767104285212672318767104<br>DEFAULT buffer cache 71303168 41943040 75497472<br>PGA Target104857600104857600138412032<br><br>6 rows selected.<br><br>SQL><br>then I think the correct answer is ABECareful, E states \\\"Automatic SHARED Memory Management\\\", so it's ASMM, not AMM. ASMM can only manage the distribution of memory inside the SGA, not between it and PGA. ",
-          "upvote_count": "12",
+          "username": "apagnini",
+          "content": "Automatic Memory Management (AMM)is enabled with \\\"MEMORY_TARGET\\\" or/and \\\"MEMORY_MAX_TARGET\\\" init parameters.<br>Dynamic components of Automatic Memory Management (AMM) are:<br><br>SELECTcomponent, current_size, min_size, max_size<br>FROMv$memory_dynamic_components<br>WHERE current_size ! 0;<br><br>COMPONENTCURRENT_SIZE MIN_SIZE MAX_SIZE<br>------------------------------ ------------ ---------- ----------<br>shared pool 197132288192937984197132288<br>large pool419430441943044194304<br>java pool41943040 41943040 41943040<br>SGA Target318767104285212672318767104<br>DEFAULT buffer cache 71303168 41943040 75497472<br>PGA Target104857600104857600138412032<br><br>6 rows selected.<br><br>SQL><br>then I think the correct answer is ABE<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Careful, E states \\\"Automatic SHARED Memory Management\\\", so it's ASMM, not AMM. ASMM can only manage the distribution of memory inside the SGA, not between it and PGA. </li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -6958,17 +6958,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 152847,
           "date": "Sat 08 Aug 2020 06:45",
-          "username": "cerebro2000xcerebro2000xcerebro2000x",
-          "content": "abf for mec is a wrong answer bec values are recorded to spfile so after a restart no need to relearn their valuesd is a wrong answer bec of the word MUST, servers using huge pages or pagefiles cant use amm so these servers are only into asmm",
-          "upvote_count": "221",
+          "username": "cerebro2000x",
+          "content": "abf for me<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>c is a wrong answer bec values are recorded to spfile so after a restart no need to relearn their values</li><li>d is a wrong answer bec of the word MUST, servers using huge pages or pagefiles cant use amm so these servers are only into asmm</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 155946,
           "date": "Wed 12 Aug 2020 02:05",
-          "username": "cerebro2000xcerebro2000x",
-          "content": "c is a wrong answer bec values are recorded to spfile so after a restart no need to relearn their valuesd is a wrong answer bec of the word MUST, servers using huge pages or pagefiles cant use amm so these servers are only into asmm",
-          "upvote_count": "21",
+          "username": "cerebro2000x",
+          "content": "c is a wrong answer bec values are recorded to spfile so after a restart no need to relearn their values<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>d is a wrong answer bec of the word MUST, servers using huge pages or pagefiles cant use amm so these servers are only into asmm</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -7048,17 +7048,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 107990,
           "date": "Thu 11 Jun 2020 20:15",
-          "username": "veginhataotsumiauveginha",
-          "content": "i think D and E are correct.<br>If you lose any archive from after the backup, you can't do a complete recovery, so A and C are discarted, also you can't mount the database if you don't have a valid control file. (not B)what if the questions is incomplete recovery, what do you think the answer?<br> I think C,D are correct, what's your idea?well if the question was \\\"incomplete recovery\\\" then i thinkthat you only need the control file and the backup, so it could be possible to do the incomplete recovery in A,C,D, and also E, fortunately they ask for the complete recovery scenario, so i'm going with D, E:)",
-          "upvote_count": "813",
+          "username": "veginha",
+          "content": "i think D and E are correct.<br>If you lose any archive from after the backup, you can't do a complete recovery, so A and C are discarted, also you can't mount the database if you don't have a valid control file. (not B)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>what if the questions is incomplete recovery, what do you think the answer?<br> I think C,D are correct, what's your idea?</li><li>well if the question was \\\"incomplete recovery\\\" then i thinkthat you only need the control file and the backup, so it could be possible to do the incomplete recovery in A,C,D, and also E, fortunately they ask for the complete recovery scenario, so i'm going with D, E:)</li></ul>",
+          "upvote_count": "8",
           "selected_answers": ""
         },
         {
           "id": 110822,
           "date": "Mon 15 Jun 2020 15:04",
-          "username": "taotsumiauveginha",
-          "content": "what if the questions is incomplete recovery, what do you think the answer?<br> I think C,D are correct, what's your idea?well if the question was \\\"incomplete recovery\\\" then i thinkthat you only need the control file and the backup, so it could be possible to do the incomplete recovery in A,C,D, and also E, fortunately they ask for the complete recovery scenario, so i'm going with D, E:)",
-          "upvote_count": "13",
+          "username": "taotsumiau",
+          "content": "what if the questions is incomplete recovery, what do you think the answer?<br> I think C,D are correct, what's your idea?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>well if the question was \\\"incomplete recovery\\\" then i thinkthat you only need the control file and the backup, so it could be possible to do the incomplete recovery in A,C,D, and also E, fortunately they ask for the complete recovery scenario, so i'm going with D, E:)</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -7088,9 +7088,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 425267,
           "date": "Sun 15 Aug 2021 13:53",
-          "username": "abaisyetG_C",
-          "content": "B and D<br><br>thegeekstuff.com/2014/11/oracle-rman-restore/<br>This is a complete recovery even though the database is opened with resetlogs option:<br><br>RMAN> STARTUP NOMOUNT;<br>RMAN> RESTORE CONTROLFILE FROM \\\"/backup/rman/ctl_c-12345-20141003-03\\\";<br>RMAN> RESTORE DATABASE;<br>RMAN> RECOVER DATABASE;<br>RMAN> ALTER DATABASE OPEN RESETLOGS;if only non default parameter CONFIGURE CONTROLFILE AUTOBACKUP ON or you have taken your backup using following command<br>RUN {<br>BACKUP DATABASE;<br>BACKUP SPFILE;<br>}<br># or if your database does not use a server parameter file:<br>RUN {<br>BACKUP DATABASE;<br>BACKUP CURRENT CONTROLFILE;<br>}<br>but we do not know that ...",
-          "upvote_count": "21",
+          "username": "abaisyet",
+          "content": "B and D<br><br>thegeekstuff.com/2014/11/oracle-rman-restore/<br>This is a complete recovery even though the database is opened with resetlogs option:<br><br>RMAN> STARTUP NOMOUNT;<br>RMAN> RESTORE CONTROLFILE FROM \\\"/backup/rman/ctl_c-12345-20141003-03\\\";<br>RMAN> RESTORE DATABASE;<br>RMAN> RECOVER DATABASE;<br>RMAN> ALTER DATABASE OPEN RESETLOGS;<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>if only non default parameter CONFIGURE CONTROLFILE AUTOBACKUP ON or you have taken your backup using following command<br>RUN {<br>BACKUP DATABASE;<br>BACKUP SPFILE;<br>}<br># or if your database does not use a server parameter file:<br>RUN {<br>BACKUP DATABASE;<br>BACKUP CURRENT CONTROLFILE;<br>}<br>but we do not know that ...</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -7104,9 +7104,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 119751,
           "date": "Thu 25 Jun 2020 21:20",
-          "username": "dacoben415lywenwnww",
-          "content": "DE, also B is correct.<br>Full backup includes controlfile even without CF copy so it can be restored from there...B is correct if CONFIGURE CONTROLFILE AUTOBACKUP is set to ON.",
-          "upvote_count": "15",
+          "username": "dacoben415lywenw",
+          "content": "DE, also B is correct.<br>Full backup includes controlfile even without CF copy so it can be restored from there...<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>B is correct if CONFIGURE CONTROLFILE AUTOBACKUP is set to ON.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -7175,9 +7175,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 108001,
           "date": "Thu 11 Jun 2020 20:37",
-          "username": "veginhataotsumiau",
-          "content": "Response: B,D,F<br>Archivelog mode and mount state are needed (B, and D)<br>After the restore you need to open with reset logs (F)<br>E is discarted because sequence number also is valid<br>https://docs.oracle.com/cd/B19306_01/backup.102/b14192/flashptr006.htm#:~:textDatabase%20point%2Din%2Dtime%20recovery%20(DBPITR)%20restores%20the,forward%20to%20the%20target%20time.Agree, BDF",
-          "upvote_count": "246",
+          "username": "veginha",
+          "content": "Response: B,D,F<br>Archivelog mode and mount state are needed (B, and D)<br>After the restore you need to open with reset logs (F)<br>E is discarted because sequence number also is valid<br>https://docs.oracle.com/cd/B19306_01/backup.102/b14192/flashptr006.htm#:~:textDatabase%20point%2Din%2Dtime%20recovery%20(DBPITR)%20restores%20the,forward%20to%20the%20target%20time.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree, BDF</li></ul>",
+          "upvote_count": "24",
           "selected_answers": ""
         },
         {
@@ -7215,9 +7215,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 131001,
           "date": "Thu 09 Jul 2020 23:36",
-          "username": "sammtlcecertifiedtamagogo",
-          "content": "BDEF all 4 points are necessary to perform point in time recovery.<br>Tricky one :)B.  DB should be in mount modeD.  Must be archive log mode.E.  we need to specify SCN or Time to perform incomplete recoveryF.  need to be open in resetlogs.E is wrong, You can recover to an SCN, time, log sequence number, or restore point.E is not necessary. you can recover until cancel",
-          "upvote_count": "141",
+          "username": "samm",
+          "content": "BDEF all 4 points are necessary to perform point in time recovery.<br>Tricky one :)B.  DB should be in mount modeD.  Must be archive log mode.E.  we need to specify SCN or Time to perform incomplete recoveryF.  need to be open in resetlogs.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>E is wrong, You can recover to an SCN, time, log sequence number, or restore point.</li><li>E is not necessary. you can recover until cancel</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -7294,25 +7294,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 114095,
           "date": "Fri 19 Jun 2020 17:48",
-          "username": "ald85markwu01rodriguesJCfreemun05",
-          "content": "I think ABDAgree with ABDSemantic changes????? I think is ABF, because can build SQL profilesdepends on who SQL Prof. is runing, it's only true for auto mode , in manual it is only recomendation.",
-          "upvote_count": "13321",
+          "username": "ald85",
+          "content": "I think ABD<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree with ABD</li><li>Semantic changes????? I think is ABF, because can build SQL profiles</li><li>depends on who SQL Prof. is runing, it's only true for auto mode , in manual it is only recomendation.</li></ul>",
+          "upvote_count": "13",
           "selected_answers": ""
         },
         {
           "id": 133428,
           "date": "Mon 13 Jul 2020 03:39",
-          "username": "markwu01rodriguesJCfreemun05",
-          "content": "Agree with ABDSemantic changes????? I think is ABF, because can build SQL profilesdepends on who SQL Prof. is runing, it's only true for auto mode , in manual it is only recomendation.",
-          "upvote_count": "321",
+          "username": "markwu01",
+          "content": "Agree with ABD<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Semantic changes????? I think is ABF, because can build SQL profiles</li><li>depends on who SQL Prof. is runing, it's only true for auto mode , in manual it is only recomendation.</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
           "id": 467549,
           "date": "Mon 25 Oct 2021 18:13",
-          "username": "rodriguesJCfreemun05",
-          "content": "Semantic changes????? I think is ABF, because can build SQL profilesdepends on who SQL Prof. is runing, it's only true for auto mode , in manual it is only recomendation.",
-          "upvote_count": "21",
+          "username": "rodriguesJC",
+          "content": "Semantic changes????? I think is ABF, because can build SQL profiles<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>depends on who SQL Prof. is runing, it's only true for auto mode , in manual it is only recomendation.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -7366,9 +7366,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 364294,
           "date": "Sun 23 May 2021 10:28",
-          "username": "ManojxPortlandFighters",
-          "content": "ABD<br>https://docs.oracle.com/en/database/oracle/oracle-database/18/tgsql/sql-tuning-advisor.html#GUID-73AB38C1-A7F6-401E-9010-B4476E173673Agree, it is ABD. ",
-          "upvote_count": "62",
+          "username": "Manojx",
+          "content": "ABD<br>https://docs.oracle.com/en/database/oracle/oracle-database/18/tgsql/sql-tuning-advisor.html#GUID-73AB38C1-A7F6-401E-9010-B4476E173673<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree, it is ABD. </li></ul>",
+          "upvote_count": "6",
           "selected_answers": ""
         },
         {
@@ -7390,9 +7390,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 156585,
           "date": "Wed 12 Aug 2020 17:48",
-          "username": "janwjanw",
-          "content": "abf it is!i change to ABD!it will not create a profile for EACH poorly, e.g. one time queries.<br>further: =C2=B5=C2=B5The Automatic Tuning Optimizer identifies common problems with structure of SQL statements than can lead to poor performance. These could be syntactic, semantic, or design problems with the statement.",
-          "upvote_count": "18",
+          "username": "janw",
+          "content": "abf it is!<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>i change to ABD!it will not create a profile for EACH poorly, e.g. one time queries.<br>further: =C2=B5=C2=B5The Automatic Tuning Optimizer identifies common problems with structure of SQL statements than can lead to poor performance. These could be syntactic, semantic, or design problems with the statement.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -7512,9 +7512,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 423413,
           "date": "Wed 11 Aug 2021 18:19",
-          "username": "marpayermarpayer",
-          "content": "A & C<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-duplicating-databases.html#GUID-8AEC7767-8572-435C-9320-8B589CA4F224A. \tTwo or more PDBs can be duplicated with the same RMAN DUPLICATE command.B. \tAll tablespaces belonging to a PDB must be duplicated when duplicating the PDB.  WRONGC. \tThe auxiliary instance is automatically created with ENABLE_PLUGGABLE_DATABASETRUE. D. \tA user with SYSDBA or SYSBKUP must use RMAN logged in to a PDB in order to duplicate it. WRONG you must to connect to the CDB$ROOT not to the CDBE. \tCDB$ROOT and PDB$SEED are automatically duplicated if a PDB is duplicated. WRONG - if you duplicate into an existing PDBsorry C is wrong you must start the auxiliary instance",
-          "upvote_count": "21",
+          "username": "marpayer",
+          "content": "A & C<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-duplicating-databases.html#GUID-8AEC7767-8572-435C-9320-8B589CA4F224A.  Two or more PDBs can be duplicated with the same RMAN DUPLICATE command.B.  All tablespaces belonging to a PDB must be duplicated when duplicating the PDB.  WRONGC.  The auxiliary instance is automatically created with ENABLE_PLUGGABLE_DATABASETRUE. D.  A user with SYSDBA or SYSBKUP must use RMAN logged in to a PDB in order to duplicate it. WRONG you must to connect to the CDB$ROOT not to the CDBE.  CDB$ROOT and PDB$SEED are automatically duplicated if a PDB is duplicated. WRONG - if you duplicate into an existing PDB<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>sorry C is wrong you must start the auxiliary instance</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -7528,9 +7528,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 369967,
           "date": "Sun 30 May 2021 10:20",
-          "username": "marpayerxRodge",
-          "content": "I think is E wrong, if you duplicate the database to an existing CDB, CDB$ROOT and PDB$SEED are not duplicated.<br>And I think D is correct, you need SYSDBA or SYSBACKUP privileges to backup with RMAN<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-duplicating-databases.html#GUID-F31F9FCE-B610-49EB-B9DB-44B9AA4E838FFrom your own link, this is a quote that proves that E must be correct:<br><br>\\\"When you duplicate one or more PDBs, RMAN also duplicates the root (CDB$ROOT) and the CDB seed (PDB$SEED). The resulting duplicate database is a fully functional CDB that contains the root, the CDB seed, and the duplicated PDBs.\\\"",
-          "upvote_count": "22",
+          "username": "marpayer",
+          "content": "I think is E wrong, if you duplicate the database to an existing CDB, CDB$ROOT and PDB$SEED are not duplicated.<br>And I think D is correct, you need SYSDBA or SYSBACKUP privileges to backup with RMAN<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-duplicating-databases.html#GUID-F31F9FCE-B610-49EB-B9DB-44B9AA4E838F<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>From your own link, this is a quote that proves that E must be correct:<br><br>\\\"When you duplicate one or more PDBs, RMAN also duplicates the root (CDB$ROOT) and the CDB seed (PDB$SEED). The resulting duplicate database is a fully functional CDB that contains the root, the CDB seed, and the duplicated PDBs.\\\"</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -7607,17 +7607,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 349194,
           "date": "Tue 04 May 2021 08:41",
-          "username": "AldridAmaora_gio_",
-          "content": "Correct B D F<br><br>The architecture within a data center consists of an Oracle Grid Infrastructure (12.2 or later) deployment running the Rapid Home Provisioning centralized Service(also referred to as the RHP Server, but in fact merely a service of the Grid Infrastructure)<br><br>Rapid Home Provisioning and Maintenance enables you to install clusters, and provision, patch, scale, and upgrade Oracle Grid Infrastructure, Oracle Restart, and Oracle Database homes. The supported versions are 11.2, 12.1, 12.2, and 18c. You can also provision applications and middleware using Rapid Home Provisioning.about d :<br><br>Rapid Home Provisioning does not provision, patch, or upgrade Oracle Restart<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/cwadd/rapid-home-provisioning.htmlIt can in 19c<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/cwadd/rapid-home-provisioning.html#GUID-492BAB58-26A7-4968-98BC-2993DDCCA856",
-          "upvote_count": "1312",
+          "username": "Aldrid",
+          "content": "Correct B D F<br><br>The architecture within a data center consists of an Oracle Grid Infrastructure (12.2 or later) deployment running the Rapid Home Provisioning centralized Service(also referred to as the RHP Server, but in fact merely a service of the Grid Infrastructure)<br><br>Rapid Home Provisioning and Maintenance enables you to install clusters, and provision, patch, scale, and upgrade Oracle Grid Infrastructure, Oracle Restart, and Oracle Database homes. The supported versions are 11.2, 12.1, 12.2, and 18c. You can also provision applications and middleware using Rapid Home Provisioning.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>about d :<br><br>Rapid Home Provisioning does not provision, patch, or upgrade Oracle Restart<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/cwadd/rapid-home-provisioning.html</li><li>It can in 19c<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/cwadd/rapid-home-provisioning.html#GUID-492BAB58-26A7-4968-98BC-2993DDCCA856</li></ul>",
+          "upvote_count": "13",
           "selected_answers": ""
         },
         {
           "id": 390178,
           "date": "Fri 25 Jun 2021 08:27",
-          "username": "Amaora_gio_",
-          "content": "about d :<br><br>Rapid Home Provisioning does not provision, patch, or upgrade Oracle Restart<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/cwadd/rapid-home-provisioning.htmlIt can in 19c<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/cwadd/rapid-home-provisioning.html#GUID-492BAB58-26A7-4968-98BC-2993DDCCA856",
-          "upvote_count": "12",
+          "username": "Amaora",
+          "content": "about d :<br><br>Rapid Home Provisioning does not provision, patch, or upgrade Oracle Restart<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/cwadd/rapid-home-provisioning.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>It can in 19c<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/cwadd/rapid-home-provisioning.html#GUID-492BAB58-26A7-4968-98BC-2993DDCCA856</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -7726,9 +7726,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 316989,
           "date": "Mon 22 Mar 2021 10:03",
-          "username": "RinDRinD",
-          "content": "A and D<br><br>For the common user:<br>The username must be unique across all containers. So D is correct because APP_USER1 is different from APP1_USER1 in APP1_ROOT<br><br>B,E are wrong because you can only create local user in specific PDB. <br><br>A is true because APP1_USER1 is unique in PDB1<br><br>F is false because common user will not have the same privileges and role unless you grant it with option CONTAINERALL;C is wrong because you can only grant privileges in application container and sync to allpdbs belong to it",
-          "upvote_count": "54",
+          "username": "RinD",
+          "content": "A and D<br><br>For the common user:<br>The username must be unique across all containers. So D is correct because APP_USER1 is different from APP1_USER1 in APP1_ROOT<br><br>B,E are wrong because you can only create local user in specific PDB. <br><br>A is true because APP1_USER1 is unique in PDB1<br><br>F is false because common user will not have the same privileges and role unless you grant it with option CONTAINERALL;<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C is wrong because you can only grant privileges in application container and sync to allpdbs belong to it</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
@@ -7750,9 +7750,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 467585,
           "date": "Mon 25 Oct 2021 18:58",
-          "username": "rodriguesJCfreemun05",
-          "content": "Answer: AC<br>D and F: C##_ not C##<br>B and E: common users in CDBSQL> create user C##_APP_USER1 identified by q12345;<br><br>User created.",
-          "upvote_count": "21",
+          "username": "rodriguesJC",
+          "content": "Answer: AC<br>D and F: C##_ not C##<br>B and E: common users in CDB<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>SQL&gt; create user C##_APP_USER1 identified by q12345;<br><br>User created.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -7774,9 +7774,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 335822,
           "date": "Wed 14 Apr 2021 22:57",
-          "username": "dasigristSimoneF",
-          "content": "Is F wrong because the user created was C##USER1 and not C##_USER1?Also, you can grant, for example, a privilege to a common user on the CDB$ROOT without specifying CONTAINERALL, meaning that privilege won't be replicated on the PDBS",
-          "upvote_count": "11",
+          "username": "dasigrist",
+          "content": "Is F wrong because the user created was C##USER1 and not C##_USER1?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Also, you can grant, for example, a privilege to a common user on the CDB$ROOT without specifying CONTAINERALL, meaning that privilege won't be replicated on the PDBS</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -7798,17 +7798,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 156595,
           "date": "Wed 12 Aug 2020 18:14",
-          "username": "janwjanwAlejandrrro",
-          "content": "very strange question for me, do they mean 'has been created' instead of can...<br>B,E for sure incorrect due to c## prefixchecked: A, C, D all ok.but only 2 are requested....<br>i would say C incorrect as that user exists after the app installation, which is not done in the example scriptI also wasn't sure about D and agree with you that it may be incorrect due to the fact that a PDB wasn't synced after the app installation. So the user wasn't synced to a pdb.",
-          "upvote_count": "151",
+          "username": "janw",
+          "content": "very strange question for me, do they mean 'has been created' instead of can...<br>B,E for sure incorrect due to c## prefix<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>checked: A, C, D all ok.but only 2 are requested....<br>i would say C incorrect as that user exists after the app installation, which is not done in the example script</li><li>I also wasn't sure about D and agree with you that it may be incorrect due to the fact that a PDB wasn't synced after the app installation. So the user wasn't synced to a pdb.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 162368,
           "date": "Thu 20 Aug 2020 18:51",
-          "username": "janwAlejandrrro",
-          "content": "checked: A, C, D all ok.but only 2 are requested....<br>i would say C incorrect as that user exists after the app installation, which is not done in the example scriptI also wasn't sure about D and agree with you that it may be incorrect due to the fact that a PDB wasn't synced after the app installation. So the user wasn't synced to a pdb.",
-          "upvote_count": "51",
+          "username": "janw",
+          "content": "checked: A, C, D all ok.but only 2 are requested....<br>i would say C incorrect as that user exists after the app installation, which is not done in the example script<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I also wasn't sure about D and agree with you that it may be incorrect due to the fact that a PDB wasn't synced after the app installation. So the user wasn't synced to a pdb.</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
@@ -7912,9 +7912,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 177315,
           "date": "Thu 10 Sep 2020 22:37",
-          "username": "erialMastino69",
-          "content": "a,b and c are options to enforce data integrity not to speed up queries, i think the correct answers are d and e. if we have a good physical data model in an good storage array configuration we can think of good performance....and all constraints have a cost in terms of performance (index update and delete, checks included, etc.) to be managed by the instance itself.",
-          "upvote_count": "122",
+          "username": "erial",
+          "content": "a,b and c are options to enforce data integrity not to speed up queries, i think the correct answers are d and e. if we have a good physical data model in an good storage array configuration we can think of good performance.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>...and all constraints have a cost in terms of performance (index update and delete, checks included, etc.) to be managed by the instance itself.</li></ul>",
+          "upvote_count": "12",
           "selected_answers": ""
         },
         {
@@ -7928,9 +7928,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 159377,
           "date": "Sun 16 Aug 2020 19:35",
-          "username": "pgtipspgtips",
-          "content": "A.  defining primary keys for all tables to speed up all queriesB.  using check constraints to speed up updatesC.  defining foreign keys for all tables to speed up joinsD.  the physical data modelE.  the configuration of storage arrays<br>>> I believe D & E. <br><br>D -is to do with design the tablespace, partitions etc..<br>E -is to do with storage layout, that RAID levels e.g. 5 to keep data with high read IO. 1+0 for better write.A, if you think about warehouse table, not all tables are going to have primary key column ( to save the storage).",
-          "upvote_count": "81",
+          "username": "pgtips",
+          "content": "A.  defining primary keys for all tables to speed up all queriesB.  using check constraints to speed up updatesC.  defining foreign keys for all tables to speed up joinsD.  the physical data modelE.  the configuration of storage arrays<br>>> I believe D & E. <br><br>D -is to do with design the tablespace, partitions etc..<br>E -is to do with storage layout, that RAID levels e.g. 5 to keep data with high read IO. 1+0 for better write.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A, if you think about warehouse table, not all tables are going to have primary key column ( to save the storage).</li></ul>",
+          "upvote_count": "8",
           "selected_answers": ""
         },
         {
@@ -8032,9 +8032,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 115873,
           "date": "Sun 21 Jun 2020 23:29",
-          "username": "klever35julica",
-          "content": "for sure C D is<br>correctWhat does it mean more exactly \\\"the physical data model\\\"? DB Block?<br>Better sounds the answer with \\\"the configuration of storage arrays \\\" than \\\"the physical data model \\\" :)",
-          "upvote_count": "11",
+          "username": "klever35",
+          "content": "for sure C D is<br>correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>What does it mean more exactly \\\"the physical data model\\\"? DB Block?<br>Better sounds the answer with \\\"the configuration of storage arrays \\\" than \\\"the physical data model \\\" :)</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -8159,17 +8159,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 311555,
           "date": "Mon 15 Mar 2021 16:29",
-          "username": "JatindradasigristSimoneF",
-          "content": "Yes correct answer is BCD ...Hi, D has the same problem as F.  It put the tablespace read-only \\\"IF\\\" you check the option. it's no automatic.F has another problem though: DBUA doesn't directly increase the size of tablespaces, but rather it can enable autoextend or set maxsize to a higher value on their datafiles. In extreme cases:<br>\\\"If there is not enough disk space to grow, then DBUA prompts you to create space by adding more data files. DBUA does not automatically add new data files, because DBUA cannot determine where to create the files.\\\"<br><br>So in no case it directly resize tablespaces, hence I guess that D can be true and F false.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/upgrd/upgrading-oracle-database-upgrade-assistant-dbua.html#GUID-8BDDF859-1638-45AC-824D-78FC8154847C",
-          "upvote_count": "212",
+          "username": "Jatindra",
+          "content": "Yes correct answer is BCD ...<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Hi, D has the same problem as F.  It put the tablespace read-only \\\"IF\\\" you check the option. it's no automatic.</li><li>F has another problem though: DBUA doesn't directly increase the size of tablespaces, but rather it can enable autoextend or set maxsize to a higher value on their datafiles. In extreme cases:<br>\\\"If there is not enough disk space to grow, then DBUA prompts you to create space by adding more data files. DBUA does not automatically add new data files, because DBUA cannot determine where to create the files.\\\"<br><br>So in no case it directly resize tablespaces, hence I guess that D can be true and F false.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/upgrd/upgrading-oracle-database-upgrade-assistant-dbua.html#GUID-8BDDF859-1638-45AC-824D-78FC8154847C</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 335829,
           "date": "Wed 14 Apr 2021 23:13",
-          "username": "dasigristSimoneF",
-          "content": "Hi, D has the same problem as F.  It put the tablespace read-only \\\"IF\\\" you check the option. it's no automatic.F has another problem though: DBUA doesn't directly increase the size of tablespaces, but rather it can enable autoextend or set maxsize to a higher value on their datafiles. In extreme cases:<br>\\\"If there is not enough disk space to grow, then DBUA prompts you to create space by adding more data files. DBUA does not automatically add new data files, because DBUA cannot determine where to create the files.\\\"<br><br>So in no case it directly resize tablespaces, hence I guess that D can be true and F false.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/upgrd/upgrading-oracle-database-upgrade-assistant-dbua.html#GUID-8BDDF859-1638-45AC-824D-78FC8154847C",
-          "upvote_count": "12",
+          "username": "dasigrist",
+          "content": "Hi, D has the same problem as F.  It put the tablespace read-only \\\"IF\\\" you check the option. it's no automatic.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>F has another problem though: DBUA doesn't directly increase the size of tablespaces, but rather it can enable autoextend or set maxsize to a higher value on their datafiles. In extreme cases:<br>\\\"If there is not enough disk space to grow, then DBUA prompts you to create space by adding more data files. DBUA does not automatically add new data files, because DBUA cannot determine where to create the files.\\\"<br><br>So in no case it directly resize tablespaces, hence I guess that D can be true and F false.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/upgrd/upgrading-oracle-database-upgrade-assistant-dbua.html#GUID-8BDDF859-1638-45AC-824D-78FC8154847C</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -8191,17 +8191,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 151744,
           "date": "Thu 06 Aug 2020 08:40",
-          "username": "julicasmartvanfreemun05",
-          "content": "BCF correct:<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/upgrd/upgrading-oracle-database-upgrade-assistant-dbua.html#GUID-307DACD9-ECEE-4079-B767-B22620B99900<br><br>B and C are correct> The Prerequisite Checks window opens. DBUA analyzes the databases, performing pre-upgrade checks and displaying warnings as necessary. The following is a list of examples of DBUA checks and actions DBUA performs on the database:<br>Empty database recycle bin.<br>F - correct:<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/upgrd/upgrading-oracle-database-upgrade-assistant-dbua.html#GUID-8BDDF859-1638-45AC-824D-78FC8154847C<br><br>A is optional.F is incorrect according to your link: If the tablespaces are auto-extensible and the MAXSIZE initialization parameter needs adjustment, then DBUA PROMPTS you to for this adjustment, and adjusts the MAXSIZE parameter. (so is not doing it by itself, is prompting you)During the prerequisite phase, DBUA runs the Pre-Upgrade Information Tool script, and uses the following logic to modify or create new required tablespaces:<br><br>If the data files are auto-extensible and have enough disk space to grow, then DBUA continues with the upgrade.<br><br>If the data files are not auto-extensible, then DBUA prompts you and makes the files auto-extensible.<br><br>If the tablespaces are auto-extensible and the MAXSIZE initialization parameter needs adjustment, then DBUA prompts you to for this adjustment, and adjusts the MAXSIZE parameter.",
-          "upvote_count": "411",
+          "username": "julica",
+          "content": "BCF correct:<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/upgrd/upgrading-oracle-database-upgrade-assistant-dbua.html#GUID-307DACD9-ECEE-4079-B767-B22620B99900<br><br>B and C are correct> The Prerequisite Checks window opens. DBUA analyzes the databases, performing pre-upgrade checks and displaying warnings as necessary. The following is a list of examples of DBUA checks and actions DBUA performs on the database:<br>Empty database recycle bin.<br>F - correct:<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/upgrd/upgrading-oracle-database-upgrade-assistant-dbua.html#GUID-8BDDF859-1638-45AC-824D-78FC8154847C<br><br>A is optional.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>F is incorrect according to your link: If the tablespaces are auto-extensible and the MAXSIZE initialization parameter needs adjustment, then DBUA PROMPTS you to for this adjustment, and adjusts the MAXSIZE parameter. (so is not doing it by itself, is prompting you)</li><li>During the prerequisite phase, DBUA runs the Pre-Upgrade Information Tool script, and uses the following logic to modify or create new required tablespaces:<br><br>If the data files are auto-extensible and have enough disk space to grow, then DBUA continues with the upgrade.<br><br>If the data files are not auto-extensible, then DBUA prompts you and makes the files auto-extensible.<br><br>If the tablespaces are auto-extensible and the MAXSIZE initialization parameter needs adjustment, then DBUA prompts you to for this adjustment, and adjusts the MAXSIZE parameter.</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
           "id": 469161,
           "date": "Thu 28 Oct 2021 11:46",
-          "username": "smartvanfreemun05",
-          "content": "F is incorrect according to your link: If the tablespaces are auto-extensible and the MAXSIZE initialization parameter needs adjustment, then DBUA PROMPTS you to for this adjustment, and adjusts the MAXSIZE parameter. (so is not doing it by itself, is prompting you)During the prerequisite phase, DBUA runs the Pre-Upgrade Information Tool script, and uses the following logic to modify or create new required tablespaces:<br><br>If the data files are auto-extensible and have enough disk space to grow, then DBUA continues with the upgrade.<br><br>If the data files are not auto-extensible, then DBUA prompts you and makes the files auto-extensible.<br><br>If the tablespaces are auto-extensible and the MAXSIZE initialization parameter needs adjustment, then DBUA prompts you to for this adjustment, and adjusts the MAXSIZE parameter.",
-          "upvote_count": "11",
+          "username": "smartvan",
+          "content": "F is incorrect according to your link: If the tablespaces are auto-extensible and the MAXSIZE initialization parameter needs adjustment, then DBUA PROMPTS you to for this adjustment, and adjusts the MAXSIZE parameter. (so is not doing it by itself, is prompting you)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>During the prerequisite phase, DBUA runs the Pre-Upgrade Information Tool script, and uses the following logic to modify or create new required tablespaces:<br><br>If the data files are auto-extensible and have enough disk space to grow, then DBUA continues with the upgrade.<br><br>If the data files are not auto-extensible, then DBUA prompts you and makes the files auto-extensible.<br><br>If the tablespaces are auto-extensible and the MAXSIZE initialization parameter needs adjustment, then DBUA prompts you to for this adjustment, and adjusts the MAXSIZE parameter.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -8215,9 +8215,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 149686,
           "date": "Mon 03 Aug 2020 12:50",
-          "username": "CyborgQjanw",
-          "content": "A,D are optionals and correct<br>B,C correct<br>E wrong<br>F correct if there is enough disk space with auto-extensible on, but not in automatic<br>So i think the correct answer in this question is:<br>BCFagree with this argumentation",
-          "upvote_count": "42",
+          "username": "CyborgQ",
+          "content": "A,D are optionals and correct<br>B,C correct<br>E wrong<br>F correct if there is enough disk space with auto-extensible on, but not in automatic<br>So i think the correct answer in this question is:<br>BCF<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>agree with this argumentation</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -8247,17 +8247,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 121702,
           "date": "Sun 28 Jun 2020 09:22",
-          "username": "GraceYuioioioio",
-          "content": "ABC<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/upgrd/upgrading-oracle-database-upgrade-assistant-dbua.html#GUID-307DACD9-ECEE-4079-B767-B22620B99900<br>The Prerequisite Checks window opens. DBUA analyzes the databases, performing pre-upgrade checks and displaying warnings as necessary. The following is a list of examples of DBUA checks and actions DBUA performs on the database:<br><br>Empty database recycle bin.<br>Identify invalid objects.<br>Identify deprecated and desupported initialization parameters.<br>Identify time zone data file version.it identifies invalid objects but doesn't compile them! A is incorrect.it identifies invalid objects but doesn't compile them automatically! A is incorrect.<br><br>Recompile Invalid Objects During Post Upgrade<br><br>This option recompiles all invalid PL/SQL modules after the upgrade is complete. If you do not have DBUA recompile invalid objects in its post-upgrade phase, then you must manually recompile invalid objects after the database is upgraded.",
-          "upvote_count": "711",
+          "username": "GraceYu",
+          "content": "ABC<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/upgrd/upgrading-oracle-database-upgrade-assistant-dbua.html#GUID-307DACD9-ECEE-4079-B767-B22620B99900<br>The Prerequisite Checks window opens. DBUA analyzes the databases, performing pre-upgrade checks and displaying warnings as necessary. The following is a list of examples of DBUA checks and actions DBUA performs on the database:<br><br>Empty database recycle bin.<br>Identify invalid objects.<br>Identify deprecated and desupported initialization parameters.<br>Identify time zone data file version.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>it identifies invalid objects but doesn't compile them! A is incorrect.</li><li>it identifies invalid objects but doesn't compile them automatically! A is incorrect.<br><br>Recompile Invalid Objects During Post Upgrade<br><br>This option recompiles all invalid PL/SQL modules after the upgrade is complete. If you do not have DBUA recompile invalid objects in its post-upgrade phase, then you must manually recompile invalid objects after the database is upgraded.</li></ul>",
+          "upvote_count": "7",
           "selected_answers": ""
         },
         {
           "id": 456698,
           "date": "Sun 03 Oct 2021 19:31",
-          "username": "ioioioio",
-          "content": "it identifies invalid objects but doesn't compile them! A is incorrect.it identifies invalid objects but doesn't compile them automatically! A is incorrect.<br><br>Recompile Invalid Objects During Post Upgrade<br><br>This option recompiles all invalid PL/SQL modules after the upgrade is complete. If you do not have DBUA recompile invalid objects in its post-upgrade phase, then you must manually recompile invalid objects after the database is upgraded.",
-          "upvote_count": "11",
+          "username": "ioio",
+          "content": "it identifies invalid objects but doesn't compile them! A is incorrect.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>it identifies invalid objects but doesn't compile them automatically! A is incorrect.<br><br>Recompile Invalid Objects During Post Upgrade<br><br>This option recompiles all invalid PL/SQL modules after the upgrade is complete. If you do not have DBUA recompile invalid objects in its post-upgrade phase, then you must manually recompile invalid objects after the database is upgraded.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -8393,9 +8393,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 115335,
           "date": "Sun 21 Jun 2020 09:27",
-          "username": "ald85ald85",
-          "content": "I think BErectify... AE",
-          "upvote_count": "17",
+          "username": "ald85",
+          "content": "I think BE<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>rectify... AE</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -8499,9 +8499,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 115129,
           "date": "Sun 21 Jun 2020 02:21",
-          "username": "logicaald85",
-          "content": "for sure C is incorrect and E is correctYou are right, SYSASM is in Grid installation not in Database Software. AE are correct.",
-          "upvote_count": "15",
+          "username": "logica",
+          "content": "for sure C is incorrect and E is correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>You are right, SYSASM is in Grid installation not in Database Software. AE are correct.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -8515,25 +8515,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 112279,
           "date": "Wed 17 Jun 2020 10:38",
-          "username": "ald85veginhaald85proact",
-          "content": "I think A,DI was thinking in A, Cc is incorrect -> oracle can own database and grid in an single-user installation, and this output oracle has dba and oinstall group.C is correct as it saids, \\\".... but not Grid....\\\"",
-          "upvote_count": "1132",
+          "username": "ald85",
+          "content": "I think A,D<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I was thinking in A, C</li><li>c is incorrect -&gt; oracle can own database and grid in an single-user installation, and this output oracle has dba and oinstall group.</li><li>C is correct as it saids, \\\".... but not Grid....\\\"</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 112614,
           "date": "Wed 17 Jun 2020 18:48",
-          "username": "veginhaald85proact",
-          "content": "I was thinking in A, Cc is incorrect -> oracle can own database and grid in an single-user installation, and this output oracle has dba and oinstall group.C is correct as it saids, \\\".... but not Grid....\\\"",
-          "upvote_count": "132",
+          "username": "veginha",
+          "content": "I was thinking in A, C<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>c is incorrect -&gt; oracle can own database and grid in an single-user installation, and this output oracle has dba and oinstall group.</li><li>C is correct as it saids, \\\".... but not Grid....\\\"</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 113021,
           "date": "Thu 18 Jun 2020 10:27",
-          "username": "ald85proact",
-          "content": "c is incorrect -> oracle can own database and grid in an single-user installation, and this output oracle has dba and oinstall group.C is correct as it saids, \\\".... but not Grid....\\\"",
-          "upvote_count": "32",
+          "username": "ald85",
+          "content": "c is incorrect -> oracle can own database and grid in an single-user installation, and this output oracle has dba and oinstall group.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C is correct as it saids, \\\".... but not Grid....\\\"</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -8552,7 +8552,7 @@ var Data_1Z0_083_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>Examine this configuration:<br><img src=\"https://www.examtopics.com/assets/media/exam-media/03747/0003200001.png\" class=\"in-exam-image\"><br>While CDB1 is open, `=CB=9C/u02/app/oracle/fast_recover_area/cdb1/CDB1/controlfile02.ctl' is accidentally deleted.<br>To recover from this critical failure, you execute these commands:<br><img src=\"https://www.examtopics.com/assets/media/exam-media/03747/0003300001.png\" class=\"in-exam-image\"><br>What will be the outcome?<br></p>",
+      "question_text": "<p>Examine this configuration:<br><img src=\"https://www.examtopics.com/assets/media/exam-media/03747/0003200001.png\" class=\"in-exam-image\"><br>While CDB1 is open, `˜/u02/app/oracle/fast_recover_area/cdb1/CDB1/controlfile02.ctl' is accidentally deleted.<br>To recover from this critical failure, you execute these commands:<br><img src=\"https://www.examtopics.com/assets/media/exam-media/03747/0003300001.png\" class=\"in-exam-image\"><br>What will be the outcome?<br></p>",
       "mark": 1,
       "is_partially_correct": false,
       "question_type": "1",
@@ -8703,9 +8703,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 403469,
           "date": "Sat 10 Jul 2021 19:57",
-          "username": "niabsfreemun05",
-          "content": "I will choose C<br>Because likely you will create a dedicated database for the catalog unless you already have a separated one, which is not mentioned herequestion is specific - \\\"minimum actions\\\"<br>D is correct",
-          "upvote_count": "21",
+          "username": "niabs",
+          "content": "I will choose C<br>Because likely you will create a dedicated database for the catalog unless you already have a separated one, which is not mentioned here<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>question is specific - \\\"minimum actions\\\"<br>D is correct</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -8743,9 +8743,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 172725,
           "date": "Thu 03 Sep 2020 16:30",
-          "username": "pgtipsSimoneF",
-          "content": "I believe, E,as the Option 1:Create a new Database is one of the Choice I go for E. If it was not there then probably D makes more sense.1 is disputable but I assume they imply you do have a DB, and you should create another one. In that case, it's not necessary to simply give the command, even though you wouldn't create a catalog on a database which is not dedicated.<br>Besides, 3 - Enabling archivelog mode on the catalog database - is not necessary to create a catalog.",
-          "upvote_count": "21",
+          "username": "pgtips",
+          "content": "I believe, E,as the Option 1:Create a new Database is one of the Choice I go for E. If it was not there then probably D makes more sense.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>1 is disputable but I assume they imply you do have a DB, and you should create another one. In that case, it's not necessary to simply give the command, even though you wouldn't create a catalog on a database which is not dedicated.<br>Besides, 3 - Enabling archivelog mode on the catalog database - is not necessary to create a catalog.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -8859,25 +8859,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 150224,
           "date": "Tue 04 Aug 2020 08:22",
-          "username": "CyborgQjulicajanwjanw",
-          "content": "Correct is ABFirst of all they are talking about 19c+ versions. In 19c docs they say:<br>A PDB snapshot is a point-in-time copy of a PDB.  The source PDB can be open read-only or read/write while the snapshot is created. You can create snapshots manually using the SNAPSHOT clause of CREATE PLUGGABLE DATABASE (or ALTER PLUGGABLE DATABASE), or automatically using the EVERY interval clause. If the storage system supports sparse clones, then the preceding command creates a sparse copy. Otherwise, the command creates a full copy.<br>So, A and B are false from my point of view.indeed A, B are false as you argumented well<br><br>in my opion, correct answer C, G<br><br>G:<br>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/cloning-a-pdb.html#GUID-F26C8A55-2465-475A-905A-83BD2E68AE6E<br>and then create a SNAPSHOT COPY PDB from the standalone PDB. <br><br>C:<br>Storage requirements depend on the setting of the CLONEDB initialization parameter:<br><br>CLONEDBFALSE<br><br>The underlying file system for the source PDB files must support storage snapshots. Such file systems include Oracle Automatic Storage Management Cluster File System (Oracle ACFS) and Direct NFS Client storage. Oracle Exadata supports snapshot copy functionality on ASM configured with sparse ASM grid disks.<br><br>CLONEDBTRUE<br><br>The underlying file system for the source PDB files can be any local file system, network file system (NFS), or clustered file system that has Direct NFS enabled and supports sparse files. Most UNIX systems meet these requirements, including Oracle ACFS and ZFS. However, when CLONEDBTRUE, the source PDB must remain in open read-only mode when clones exist.D, E false as a pdb snapshot is not dependent of the underlying storage snapshot technology",
-          "upvote_count": "1251",
+          "username": "CyborgQ",
+          "content": "Correct is AB<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>First of all they are talking about 19c+ versions. In 19c docs they say:<br>A PDB snapshot is a point-in-time copy of a PDB.  The source PDB can be open read-only or read/write while the snapshot is created. You can create snapshots manually using the SNAPSHOT clause of CREATE PLUGGABLE DATABASE (or ALTER PLUGGABLE DATABASE), or automatically using the EVERY interval clause. If the storage system supports sparse clones, then the preceding command creates a sparse copy. Otherwise, the command creates a full copy.<br>So, A and B are false from my point of view.</li><li>indeed A, B are false as you argumented well<br><br>in my opion, correct answer C, G<br><br>G:<br>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/cloning-a-pdb.html#GUID-F26C8A55-2465-475A-905A-83BD2E68AE6E<br>and then create a SNAPSHOT COPY PDB from the standalone PDB. <br><br>C:<br>Storage requirements depend on the setting of the CLONEDB initialization parameter:<br><br>CLONEDBFALSE<br><br>The underlying file system for the source PDB files must support storage snapshots. Such file systems include Oracle Automatic Storage Management Cluster File System (Oracle ACFS) and Direct NFS Client storage. Oracle Exadata supports snapshot copy functionality on ASM configured with sparse ASM grid disks.<br><br>CLONEDBTRUE<br><br>The underlying file system for the source PDB files can be any local file system, network file system (NFS), or clustered file system that has Direct NFS enabled and supports sparse files. Most UNIX systems meet these requirements, including Oracle ACFS and ZFS. However, when CLONEDBTRUE, the source PDB must remain in open read-only mode when clones exist.</li><li>D, E false as a pdb snapshot is not dependent of the underlying storage snapshot technology</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 151769,
           "date": "Thu 06 Aug 2020 09:31",
-          "username": "julicajanwjanw",
-          "content": "First of all they are talking about 19c+ versions. In 19c docs they say:<br>A PDB snapshot is a point-in-time copy of a PDB.  The source PDB can be open read-only or read/write while the snapshot is created. You can create snapshots manually using the SNAPSHOT clause of CREATE PLUGGABLE DATABASE (or ALTER PLUGGABLE DATABASE), or automatically using the EVERY interval clause. If the storage system supports sparse clones, then the preceding command creates a sparse copy. Otherwise, the command creates a full copy.<br>So, A and B are false from my point of view.indeed A, B are false as you argumented well<br><br>in my opion, correct answer C, G<br><br>G:<br>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/cloning-a-pdb.html#GUID-F26C8A55-2465-475A-905A-83BD2E68AE6E<br>and then create a SNAPSHOT COPY PDB from the standalone PDB. <br><br>C:<br>Storage requirements depend on the setting of the CLONEDB initialization parameter:<br><br>CLONEDBFALSE<br><br>The underlying file system for the source PDB files must support storage snapshots. Such file systems include Oracle Automatic Storage Management Cluster File System (Oracle ACFS) and Direct NFS Client storage. Oracle Exadata supports snapshot copy functionality on ASM configured with sparse ASM grid disks.<br><br>CLONEDBTRUE<br><br>The underlying file system for the source PDB files can be any local file system, network file system (NFS), or clustered file system that has Direct NFS enabled and supports sparse files. Most UNIX systems meet these requirements, including Oracle ACFS and ZFS. However, when CLONEDBTRUE, the source PDB must remain in open read-only mode when clones exist.D, E false as a pdb snapshot is not dependent of the underlying storage snapshot technology",
-          "upvote_count": "251",
+          "username": "julica",
+          "content": "First of all they are talking about 19c+ versions. In 19c docs they say:<br>A PDB snapshot is a point-in-time copy of a PDB.  The source PDB can be open read-only or read/write while the snapshot is created. You can create snapshots manually using the SNAPSHOT clause of CREATE PLUGGABLE DATABASE (or ALTER PLUGGABLE DATABASE), or automatically using the EVERY interval clause. If the storage system supports sparse clones, then the preceding command creates a sparse copy. Otherwise, the command creates a full copy.<br>So, A and B are false from my point of view.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>indeed A, B are false as you argumented well<br><br>in my opion, correct answer C, G<br><br>G:<br>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/cloning-a-pdb.html#GUID-F26C8A55-2465-475A-905A-83BD2E68AE6E<br>and then create a SNAPSHOT COPY PDB from the standalone PDB. <br><br>C:<br>Storage requirements depend on the setting of the CLONEDB initialization parameter:<br><br>CLONEDBFALSE<br><br>The underlying file system for the source PDB files must support storage snapshots. Such file systems include Oracle Automatic Storage Management Cluster File System (Oracle ACFS) and Direct NFS Client storage. Oracle Exadata supports snapshot copy functionality on ASM configured with sparse ASM grid disks.<br><br>CLONEDBTRUE<br><br>The underlying file system for the source PDB files can be any local file system, network file system (NFS), or clustered file system that has Direct NFS enabled and supports sparse files. Most UNIX systems meet these requirements, including Oracle ACFS and ZFS. However, when CLONEDBTRUE, the source PDB must remain in open read-only mode when clones exist.</li><li>D, E false as a pdb snapshot is not dependent of the underlying storage snapshot technology</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 163409,
           "date": "Sat 22 Aug 2020 09:28",
-          "username": "janwjanw",
-          "content": "indeed A, B are false as you argumented well<br><br>in my opion, correct answer C, G<br><br>G:<br>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/cloning-a-pdb.html#GUID-F26C8A55-2465-475A-905A-83BD2E68AE6E<br>and then create a SNAPSHOT COPY PDB from the standalone PDB. <br><br>C:<br>Storage requirements depend on the setting of the CLONEDB initialization parameter:<br><br>CLONEDBFALSE<br><br>The underlying file system for the source PDB files must support storage snapshots. Such file systems include Oracle Automatic Storage Management Cluster File System (Oracle ACFS) and Direct NFS Client storage. Oracle Exadata supports snapshot copy functionality on ASM configured with sparse ASM grid disks.<br><br>CLONEDBTRUE<br><br>The underlying file system for the source PDB files can be any local file system, network file system (NFS), or clustered file system that has Direct NFS enabled and supports sparse files. Most UNIX systems meet these requirements, including Oracle ACFS and ZFS. However, when CLONEDBTRUE, the source PDB must remain in open read-only mode when clones exist.D, E false as a pdb snapshot is not dependent of the underlying storage snapshot technology",
-          "upvote_count": "51",
+          "username": "janw",
+          "content": "indeed A, B are false as you argumented well<br><br>in my opion, correct answer C, G<br><br>G:<br>https://docs.oracle.com/en/database/oracle/oracle-database/18/multi/cloning-a-pdb.html#GUID-F26C8A55-2465-475A-905A-83BD2E68AE6E<br>and then create a SNAPSHOT COPY PDB from the standalone PDB. <br><br>C:<br>Storage requirements depend on the setting of the CLONEDB initialization parameter:<br><br>CLONEDBFALSE<br><br>The underlying file system for the source PDB files must support storage snapshots. Such file systems include Oracle Automatic Storage Management Cluster File System (Oracle ACFS) and Direct NFS Client storage. Oracle Exadata supports snapshot copy functionality on ASM configured with sparse ASM grid disks.<br><br>CLONEDBTRUE<br><br>The underlying file system for the source PDB files can be any local file system, network file system (NFS), or clustered file system that has Direct NFS enabled and supports sparse files. Most UNIX systems meet these requirements, including Oracle ACFS and ZFS. However, when CLONEDBTRUE, the source PDB must remain in open read-only mode when clones exist.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D, E false as a pdb snapshot is not dependent of the underlying storage snapshot technology</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
@@ -8997,9 +8997,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 325747,
           "date": "Thu 01 Apr 2021 13:36",
-          "username": "AsmodeusEric_FSimoneF",
-          "content": "Very tricky question.<br>A: true.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admqs/installing-oracle-database-creating-database.html#GUID-E59E0AE9-AF91-4DD2-B311-C92E3EFE9948<br>General Purpose or Transaction processing<br>Many concurrent users perform numerous transactions that require rapid access to data. Availability, speed, concurrency, and recoverability are key issues.<br>B: false. Some templates store database files.<br>C: false. I can create template from existing database too.<br>D: true<br>From link provided above:<br>Data warehouse<br>Users perform numerous, complex queries that process large volumes of data. Response time, accuracy, and availability are key issues.<br>E: true<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admqs/installing-oracle-database-creating-database.html#GUID-2B8A3B5E-D319-4377-8B22-8BB67DCC9885<br>Templates are used in DBCA to create new databases and duplicate existing databases.<br><br>So we have A and D on the same level (both are talking about existing templates) and E that point on DBCA usage at all, not the templates.<br><br>Sometimes I think that A&D is correct answer...Option D: when transaction response time is the key criterion. but in doc, it describe as Response time, nor transaction response timeD is false, complex queries are not the same as transaction processing:<br><br>\\\"A data warehouse is a database designed to enable business intelligence activities: it exists to help users understand and enhance their organization's performance. It is designed for query and analysis rather than for transaction processing\\\"<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/dwhsg/introduction-data-warehouse-concepts.html#GUID-452FBA23-6976-4590-AA41-1369647AD14D",
-          "upvote_count": "223",
+          "username": "Asmodeus",
+          "content": "Very tricky question.<br>A: true.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admqs/installing-oracle-database-creating-database.html#GUID-E59E0AE9-AF91-4DD2-B311-C92E3EFE9948<br>General Purpose or Transaction processing<br>Many concurrent users perform numerous transactions that require rapid access to data. Availability, speed, concurrency, and recoverability are key issues.<br>B: false. Some templates store database files.<br>C: false. I can create template from existing database too.<br>D: true<br>From link provided above:<br>Data warehouse<br>Users perform numerous, complex queries that process large volumes of data. Response time, accuracy, and availability are key issues.<br>E: true<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admqs/installing-oracle-database-creating-database.html#GUID-2B8A3B5E-D319-4377-8B22-8BB67DCC9885<br>Templates are used in DBCA to create new databases and duplicate existing databases.<br><br>So we have A and D on the same level (both are talking about existing templates) and E that point on DBCA usage at all, not the templates.<br><br>Sometimes I think that A&D is correct answer...<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Option D: when transaction response time is the key criterion. but in doc, it describe as Response time, nor transaction response time</li><li>D is false, complex queries are not the same as transaction processing:<br><br>\\\"A data warehouse is a database designed to enable business intelligence activities: it exists to help users understand and enhance their organization's performance. It is designed for query and analysis rather than for transaction processing\\\"<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/dwhsg/introduction-data-warehouse-concepts.html#GUID-452FBA23-6976-4590-AA41-1369647AD14D</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -9156,9 +9156,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 120660,
           "date": "Fri 26 Jun 2020 17:30",
-          "username": "veginhaveginha",
-          "content": "C and E<br>-Use a container map to partition the data in metadata-linked objects. Container maps partition data in application PDBs based on a commonly-used column.<br>-The map object is the partitioned table. The names of the partitions in the map table match the names of the application PDBs in the application container. The metadata-linked object is not physically partitioned at the table level, but it can be queried using the partitioning strategy used by the container map.<br>-In addition, you can enable the CONTAINERS_DEFAULT attribute for a table or view in an application root. When this attribute is enabled, the CONTAINERS clause is used for queries and DML statements on the database object by default, and the CONTAINERS clause does not need to be specified in the SQL statements. To enable the CONTAINERS_DEFAULT attribute for a table or view in an application root, run the an ALTER TABLE or ALTER VIEW statement with the ENABLE CONTAINERS_DEFAULT clause.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/administering-application-containers-with-sql-plus.html#GUID-AAF93A02-7C70-4024-8758-E351C213543Ei mean C and F",
-          "upvote_count": "22",
+          "username": "veginha",
+          "content": "C and E<br>-Use a container map to partition the data in metadata-linked objects. Container maps partition data in application PDBs based on a commonly-used column.<br>-The map object is the partitioned table. The names of the partitions in the map table match the names of the application PDBs in the application container. The metadata-linked object is not physically partitioned at the table level, but it can be queried using the partitioning strategy used by the container map.<br>-In addition, you can enable the CONTAINERS_DEFAULT attribute for a table or view in an application root. When this attribute is enabled, the CONTAINERS clause is used for queries and DML statements on the database object by default, and the CONTAINERS clause does not need to be specified in the SQL statements. To enable the CONTAINERS_DEFAULT attribute for a table or view in an application root, run the an ALTER TABLE or ALTER VIEW statement with the ENABLE CONTAINERS_DEFAULT clause.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/administering-application-containers-with-sql-plus.html#GUID-AAF93A02-7C70-4024-8758-E351C213543E<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>i mean C and F</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -9246,9 +9246,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 152880,
           "date": "Sat 08 Aug 2020 08:05",
-          "username": "cerebro2000xcerebro2000x",
-          "content": "BE for me<br><br>you need to clone the app root first and the pdb [separately]CREATE PLUGGABLE DATABASE hr_root_dev<br>AS APPLICATION CONTAINER<br>FROM hr_root@link_hr_root;CREATE PLUGGABLE DATABASE operations_dev<br>FROM operations@link_operations",
-          "upvote_count": "21",
+          "username": "cerebro2000x",
+          "content": "BE for me<br><br>you need to clone the app root first and the pdb [separately]CREATE PLUGGABLE DATABASE hr_root_dev<br>AS APPLICATION CONTAINER<br>FROM hr_root@link_hr_root;<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>CREATE PLUGGABLE DATABASE operations_dev<br>FROM operations@link_operations</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -9262,9 +9262,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 150278,
           "date": "Tue 04 Aug 2020 10:12",
-          "username": "CyborgQSimoneF",
-          "content": "B,D are correct<br>E incorrect: the clone can be done in read/write mode and the copy is in read/write modeI didn't find any support to this claim. On the contrary, everything leads to think that, even in open mode, your cloned PDB will be mounted after the creation:<br><br>\\\"After you create the PDB, it is in mounted mode, and its status is NEW. \\\"<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/21/multi/cloning-a-pdb.html#GUID-D4900E43-DF38-4629-9A1F-D1C11EC8EC8F",
-          "upvote_count": "14",
+          "username": "CyborgQ",
+          "content": "B,D are correct<br>E incorrect: the clone can be done in read/write mode and the copy is in read/write mode<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I didn't find any support to this claim. On the contrary, everything leads to think that, even in open mode, your cloned PDB will be mounted after the creation:<br><br>\\\"After you create the PDB, it is in mounted mode, and its status is NEW. \\\"<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/21/multi/cloning-a-pdb.html#GUID-D4900E43-DF38-4629-9A1F-D1C11EC8EC8F</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -9354,17 +9354,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 117126,
           "date": "Tue 23 Jun 2020 08:33",
-          "username": "julicaMastino69AlejandrrrohkshadoMastino69SimoneF",
-          "content": "A,B,G are not right because the question is telling us 'without RMAN'. To put it in mount/open or so, are necessary only in case of using RMAN. Otherwise, using OS Utils, DB must be closed or maximum in NOMOUNT state.Also F should be wrong because, you cannot add backup set to rman catalog but only backup pieces and image copiesAgree<br><br>F is incorrect as according to the following note only archivelog, backuppiece, controlfilecopy or datafilecopy can be cataloged<br><br>https://docs.oracle.com/cd/B19306_01/backup.102/b14194/rcmsynta011.htmGenerally, I agree with you.<br>However, back to the Oracle 9 when RMAN is not available. We can backup the DB (with archive log enabled) which is opened in read/write mode using OS copy command. (I am sure about that because my company used this for Oracle 9 online backup). what you need to do is something like following:<br>1. Execute \\\"ALTER TABLESPACE tb_name BEGIN BACKUP;\\\" for each tablespace before the backup start.<br>2. Copy files<br>3. Execute \\\"ALTER TABLESPACE tb_name END BACKUP;\\\" for each tablespace after the backup end.<br>https://docs.oracle.com/cd/B10501_01/server.920/a96572/osbackups.htmAgree but it is not mentioned in G. It should have said: ...the database OPEN, and a command ALTER DATABASE. .. BEGIN BACKUP executed. Then you can copy the files with OS utils.But answere G states that it is REQUIRED to have the database Open, while what you said proves you simply CAN do that with the db open. Nothing prevents backing up the database via OS copy when it's shutdown.",
-          "upvote_count": "1121213",
+          "username": "julica",
+          "content": "A,B,G are not right because the question is telling us 'without RMAN'. To put it in mount/open or so, are necessary only in case of using RMAN. Otherwise, using OS Utils, DB must be closed or maximum in NOMOUNT state.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Also F should be wrong because, you cannot add backup set to rman catalog but only backup pieces and image copies</li><li>Agree<br><br>F is incorrect as according to the following note only archivelog, backuppiece, controlfilecopy or datafilecopy can be cataloged<br><br>https://docs.oracle.com/cd/B19306_01/backup.102/b14194/rcmsynta011.htm</li><li>Generally, I agree with you.<br>However, back to the Oracle 9 when RMAN is not available. We can backup the DB (with archive log enabled) which is opened in read/write mode using OS copy command. (I am sure about that because my company used this for Oracle 9 online backup). what you need to do is something like following:<br>1. Execute \\\"ALTER TABLESPACE tb_name BEGIN BACKUP;\\\" for each tablespace before the backup start.<br>2. Copy files<br>3. Execute \\\"ALTER TABLESPACE tb_name END BACKUP;\\\" for each tablespace after the backup end.<br>https://docs.oracle.com/cd/B10501_01/server.920/a96572/osbackups.htm</li><li>Agree but it is not mentioned in G. It should have said: ...the database OPEN, and a command ALTER DATABASE. .. BEGIN BACKUP executed. Then you can copy the files with OS utils.</li><li>But answere G states that it is REQUIRED to have the database Open, while what you said proves you simply CAN do that with the db open. Nothing prevents backing up the database via OS copy when it's shutdown.</li></ul>",
+          "upvote_count": "11",
           "selected_answers": ""
         },
         {
           "id": 268036,
           "date": "Fri 15 Jan 2021 16:52",
-          "username": "Mastino69Alejandrrro",
-          "content": "Also F should be wrong because, you cannot add backup set to rman catalog but only backup pieces and image copiesAgree<br><br>F is incorrect as according to the following note only archivelog, backuppiece, controlfilecopy or datafilecopy can be cataloged<br><br>https://docs.oracle.com/cd/B19306_01/backup.102/b14194/rcmsynta011.htm",
-          "upvote_count": "21",
+          "username": "Mastino69",
+          "content": "Also F should be wrong because, you cannot add backup set to rman catalog but only backup pieces and image copies<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree<br><br>F is incorrect as according to the following note only archivelog, backuppiece, controlfilecopy or datafilecopy can be cataloged<br><br>https://docs.oracle.com/cd/B19306_01/backup.102/b14194/rcmsynta011.htm</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -9378,9 +9378,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 209390,
           "date": "Fri 30 Oct 2020 16:31",
-          "username": "hkshadoMastino69SimoneF",
-          "content": "Generally, I agree with you.<br>However, back to the Oracle 9 when RMAN is not available. We can backup the DB (with archive log enabled) which is opened in read/write mode using OS copy command. (I am sure about that because my company used this for Oracle 9 online backup). what you need to do is something like following:<br>1. Execute \\\"ALTER TABLESPACE tb_name BEGIN BACKUP;\\\" for each tablespace before the backup start.<br>2. Copy files<br>3. Execute \\\"ALTER TABLESPACE tb_name END BACKUP;\\\" for each tablespace after the backup end.<br>https://docs.oracle.com/cd/B10501_01/server.920/a96572/osbackups.htmAgree but it is not mentioned in G. It should have said: ...the database OPEN, and a command ALTER DATABASE. .. BEGIN BACKUP executed. Then you can copy the files with OS utils.But answere G states that it is REQUIRED to have the database Open, while what you said proves you simply CAN do that with the db open. Nothing prevents backing up the database via OS copy when it's shutdown.",
-          "upvote_count": "213",
+          "username": "hkshado",
+          "content": "Generally, I agree with you.<br>However, back to the Oracle 9 when RMAN is not available. We can backup the DB (with archive log enabled) which is opened in read/write mode using OS copy command. (I am sure about that because my company used this for Oracle 9 online backup). what you need to do is something like following:<br>1. Execute \\\"ALTER TABLESPACE tb_name BEGIN BACKUP;\\\" for each tablespace before the backup start.<br>2. Copy files<br>3. Execute \\\"ALTER TABLESPACE tb_name END BACKUP;\\\" for each tablespace after the backup end.<br>https://docs.oracle.com/cd/B10501_01/server.920/a96572/osbackups.htm<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree but it is not mentioned in G. It should have said: ...the database OPEN, and a command ALTER DATABASE. .. BEGIN BACKUP executed. Then you can copy the files with OS utils.</li><li>But answere G states that it is REQUIRED to have the database Open, while what you said proves you simply CAN do that with the db open. Nothing prevents backing up the database via OS copy when it's shutdown.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -9426,9 +9426,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 220915,
           "date": "Tue 17 Nov 2020 09:40",
-          "username": "Schmeilibrolem",
-          "content": "E:Backing up a database in NOARCHIVELOG mode using O/S utilities requires that the database instance be shut down. -->OS-Backup is possible when the DB is in nomount/mount state, too ...so i think E is not correct<br><br>i go with CDF. ..<br>why f: you can recatalog any backup to rman catalog....E is correct per<https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/user-managed-database-backups.html#GUID-65C5E03A-E906-47EB-92AF-6DC273DBD0A8><br> If you run the database in NOARCHIVELOG mode, however, then the backup must be consistent; that is, you must shut down the database cleanly before the backup.",
-          "upvote_count": "51",
+          "username": "Schmeili",
+          "content": "E:Backing up a database in NOARCHIVELOG mode using O/S utilities requires that the database instance be shut down. -->OS-Backup is possible when the DB is in nomount/mount state, too ...so i think E is not correct<br><br>i go with CDF. ..<br>why f: you can recatalog any backup to rman catalog....<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>E is correct per&lt;https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/user-managed-database-backups.html#GUID-65C5E03A-E906-47EB-92AF-6DC273DBD0A8&gt;<br> If you run the database in NOARCHIVELOG mode, however, then the backup must be consistent; that is, you must shut down the database cleanly before the backup.</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
@@ -9458,9 +9458,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 115155,
           "date": "Sun 21 Jun 2020 03:48",
-          "username": "logicaald85",
-          "content": "I think A B D are correct, in mount state the datafiles are closed, so you can take offline backupsARCHIVELOG mode must be OPEN -> B is incorrect and G correct.",
-          "upvote_count": "11",
+          "username": "logica",
+          "content": "I think A B D are correct, in mount state the datafiles are closed, so you can take offline backups<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>ARCHIVELOG mode must be OPEN -&gt; B is incorrect and G correct.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -9474,9 +9474,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 109168,
           "date": "Sat 13 Jun 2020 06:30",
-          "username": "veginhaald85",
-          "content": "CDE ?<br>C doesn't specified if the backup files where copied with the database closed.<br>i think A and B are incorrect, the database must be closed in order to do a backup with o/s utilitiesADG<br>A is correct, and E incorrect -> with NOARCHIVELOG must be in MOUNT statehttps://orahow.com/backup-oracle-database-in-noarchivelog-mode/ however with ARCHIVELOG must be OPEN, so that G is correct and B and is incorrect and D is correct too https://docs.oracle.com/html/E10643_07/rcmsynta008.htm, I think C is incorrect.",
-          "upvote_count": "41",
+          "username": "veginha",
+          "content": "CDE ?<br>C doesn't specified if the backup files where copied with the database closed.<br>i think A and B are incorrect, the database must be closed in order to do a backup with o/s utilities<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>ADG<br>A is correct, and E incorrect -&gt; with NOARCHIVELOG must be in MOUNT statehttps://orahow.com/backup-oracle-database-in-noarchivelog-mode/ however with ARCHIVELOG must be OPEN, so that G is correct and B and is incorrect and D is correct too https://docs.oracle.com/html/E10643_07/rcmsynta008.htm, I think C is incorrect.</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -9707,9 +9707,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 446228,
           "date": "Fri 17 Sep 2021 02:02",
-          "username": "asdutaG_CrodriguesJCJorgeZG",
-          "content": "between E or F, i agree with F<br>\\\"The same user that owned the earlier release Oracle Grid Infrastructure software must perform the Oracle Grid Infrastructure 19c upgrade.\\\"<br><br>source : https://docs.oracle.com/en/database/oracle/oracle-database/19/cwlin/restrictions-for-oracle-grid-infrastructure-upgrades.html#GUID-76797070-C2C6-4817-902C-037A67A6EF94F?? To be honest the upgrade process is doing by root user. I mean the physical process of upgrade not a prepare of home before upgradeE is not TRUE, because we can do a rolling upgradeWhat About Single Instances Databases??",
-          "upvote_count": "1111",
+          "username": "asduta",
+          "content": "between E or F, i agree with F<br>\\\"The same user that owned the earlier release Oracle Grid Infrastructure software must perform the Oracle Grid Infrastructure 19c upgrade.\\\"<br><br>source : https://docs.oracle.com/en/database/oracle/oracle-database/19/cwlin/restrictions-for-oracle-grid-infrastructure-upgrades.html#GUID-76797070-C2C6-4817-902C-037A67A6EF94<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>F?? To be honest the upgrade process is doing by root user. I mean the physical process of upgrade not a prepare of home before upgrade</li><li>E is not TRUE, because we can do a rolling upgrade</li><li>What About Single Instances Databases??</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -9723,9 +9723,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 468486,
           "date": "Wed 27 Oct 2021 12:01",
-          "username": "rodriguesJCJorgeZG",
-          "content": "E is not TRUE, because we can do a rolling upgradeWhat About Single Instances Databases??",
-          "upvote_count": "11",
+          "username": "rodriguesJC",
+          "content": "E is not TRUE, because we can do a rolling upgrade<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>What About Single Instances Databases??</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -9755,9 +9755,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 342780,
           "date": "Sun 25 Apr 2021 20:28",
-          "username": "SimoneFSimoneF",
-          "content": "I think it's BCF, cause the services are shutdown by the rootupgrade.sh: <br><br>\\\"The script shuts down the earlier release installation, replaces it with the new Oracle Clusterware release, and starts the new Oracle Clusterware installation.\\\"<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/cwlin/running-oui-to-upgrade-grid-infrastructure-from-an-earlier-release.html#GUID-3BE36DF3-EB62-4CD1-B53A-850A3E2129E3While at the same time, F seems to be true since the upgrade can only be done by the same user who owned the previous installation:<br><br>\\\"The same user that owned the earlier release Oracle Grid Infrastructure software must perform the Oracle Grid Infrastructure 19c upgrade.\\\"<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/cwlin/restrictions-for-oracle-grid-infrastructure-upgrades.html#GUID-76797070-C2C6-4817-902C-037A67A6EF94In a doc page for 12c, it's stated even more directly:<br>\\\"Oracle recommends that you leave Oracle RAC instances running when upgrading Oracle Clusterware. When you start the root script on each node, the database instances on that node are shut down and then the rootupgrade.sh script starts the instances again.\\\"<br><br>https://docs.oracle.com/database/121/CWLIN/procstop.htm#CWLIN519",
-          "upvote_count": "63",
+          "username": "SimoneF",
+          "content": "I think it's BCF, cause the services are shutdown by the rootupgrade.sh: <br><br>\\\"The script shuts down the earlier release installation, replaces it with the new Oracle Clusterware release, and starts the new Oracle Clusterware installation.\\\"<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/cwlin/running-oui-to-upgrade-grid-infrastructure-from-an-earlier-release.html#GUID-3BE36DF3-EB62-4CD1-B53A-850A3E2129E3While at the same time, F seems to be true since the upgrade can only be done by the same user who owned the previous installation:<br><br>\\\"The same user that owned the earlier release Oracle Grid Infrastructure software must perform the Oracle Grid Infrastructure 19c upgrade.\\\"<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/cwlin/restrictions-for-oracle-grid-infrastructure-upgrades.html#GUID-76797070-C2C6-4817-902C-037A67A6EF94<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>In a doc page for 12c, it's stated even more directly:<br>\\\"Oracle recommends that you leave Oracle RAC instances running when upgrading Oracle Clusterware. When you start the root script on each node, the database instances on that node are shut down and then the rootupgrade.sh script starts the instances again.\\\"<br><br>https://docs.oracle.com/database/121/CWLIN/procstop.htm#CWLIN519</li></ul>",
+          "upvote_count": "6",
           "selected_answers": ""
         },
         {
@@ -9845,9 +9845,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 115469,
           "date": "Sun 21 Jun 2020 12:33",
-          "username": "you1234veginha",
-          "content": "C & D is correct.<br>C &<br>D is correct because if you lose all control the required incomplete recovery. if incomplete recovery then db must be open in resetlog option.<br><br>E: undo tablespace. >> (Incorrect)<br>http://oracle-help.com/backup-and-recovery/recovery-recover-loss-system-critical-undo-tablespace-original-location/<br><br>D: (correct see the details)<br>http://oracle-help.com/backup-and-recovery/recovery-restore-loss-current-control-files-default-location/You are right about the undo, and also the resetlog after restore the control file, but even in that case, you can do a complete recovery while you have all the redo and archives (check link)<br>..., I don't know which other option could be correct, so I suppose that \\\"D\\\" its the more accuracy.<br><br>https://web.stanford.edu/dept/itss/docs/oracle/10gR2/backup.102/b14191/rcmrecov003.htm",
-          "upvote_count": "221",
+          "username": "you1234",
+          "content": "C & D is correct.<br>C &<br>D is correct because if you lose all control the required incomplete recovery. if incomplete recovery then db must be open in resetlog option.<br><br>E: undo tablespace. >> (Incorrect)<br>http://oracle-help.com/backup-and-recovery/recovery-recover-loss-system-critical-undo-tablespace-original-location/<br><br>D: (correct see the details)<br>http://oracle-help.com/backup-and-recovery/recovery-restore-loss-current-control-files-default-location/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>You are right about the undo, and also the resetlog after restore the control file, but even in that case, you can do a complete recovery while you have all the redo and archives (check link)<br>..., I don't know which other option could be correct, so I suppose that \\\"D\\\" its the more accuracy.<br><br>https://web.stanford.edu/dept/itss/docs/oracle/10gR2/backup.102/b14191/rcmrecov003.htm</li></ul>",
+          "upvote_count": "22",
           "selected_answers": ""
         },
         {
@@ -9877,9 +9877,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 691936,
           "date": "Tue 11 Oct 2022 11:03",
-          "username": "G_CErikJanssen",
-          "content": "Teoretically find the right answers is simple but ... what if we really lost all copies of control files? Does we recover the database? In my opinion: it is not easy way but possible and it is not incomplete recovery but recreate controlfile from somewhere. But if we lost active UNDO TABLESPACE during active big transaction then we need do incomplete recovery ... I think<br>A.  FALSEB.  FALSEC.  TRUED.  FALSEE.  TRUEContents of the undo tablespace spans the transaction's DML until commit. So even if the UNDO tablespace gets lost, there is no incomplete recovery because the transaction was never committed in the first place. That was my argument for choosing answers C and D. ",
-          "upvote_count": "11",
+          "username": "G_C",
+          "content": "Teoretically find the right answers is simple but ... what if we really lost all copies of control files? Does we recover the database? In my opinion: it is not easy way but possible and it is not incomplete recovery but recreate controlfile from somewhere. But if we lost active UNDO TABLESPACE during active big transaction then we need do incomplete recovery ... I think<br>A.  FALSEB.  FALSEC.  TRUED.  FALSEE.  TRUE<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Contents of the undo tablespace spans the transaction's DML until commit. So even if the UNDO tablespace gets lost, there is no incomplete recovery because the transaction was never committed in the first place. That was my argument for choosing answers C and D. </li></ul>",
+          "upvote_count": "1",
           "selected_answers": "Selected Answer: CE"
         },
         {
@@ -10004,17 +10004,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 112574,
           "date": "Wed 17 Jun 2020 17:40",
-          "username": "ald85veginhaald85",
-          "content": "BC Instance recovey occurs when ALTER DATABASE OPEN not before.well i'm not so sure about it:<br>You are right about the instance recovery begins after \\\"alter database open\\\" is executed but that doesn't mean that the database is already open when the recovery starts.<br>The instance recovery is executed in 2 steps, rollforward and rollback and the database is open just after the rollforward is completed.<br>So i think that is not accuracy to tell that the instance recovery is performed after the database is open.<br>What do you thik?<br><br>Here is a good diagram to understand it.<br>https://www.orskl.com/how-oracle-database-does-instance-recovery-after-failures/Thanks you are correct ;)",
-          "upvote_count": "882",
+          "username": "ald85",
+          "content": "BC Instance recovey occurs when ALTER DATABASE OPEN not before.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>well i'm not so sure about it:<br>You are right about the instance recovery begins after \\\"alter database open\\\" is executed but that doesn't mean that the database is already open when the recovery starts.<br>The instance recovery is executed in 2 steps, rollforward and rollback and the database is open just after the rollforward is completed.<br>So i think that is not accuracy to tell that the instance recovery is performed after the database is open.<br>What do you thik?<br><br>Here is a good diagram to understand it.<br>https://www.orskl.com/how-oracle-database-does-instance-recovery-after-failures/</li><li>Thanks you are correct ;)</li></ul>",
+          "upvote_count": "8",
           "selected_answers": ""
         },
         {
           "id": 113149,
           "date": "Thu 18 Jun 2020 14:12",
-          "username": "veginhaald85",
-          "content": "well i'm not so sure about it:<br>You are right about the instance recovery begins after \\\"alter database open\\\" is executed but that doesn't mean that the database is already open when the recovery starts.<br>The instance recovery is executed in 2 steps, rollforward and rollback and the database is open just after the rollforward is completed.<br>So i think that is not accuracy to tell that the instance recovery is performed after the database is open.<br>What do you thik?<br><br>Here is a good diagram to understand it.<br>https://www.orskl.com/how-oracle-database-does-instance-recovery-after-failures/Thanks you are correct ;)",
-          "upvote_count": "82",
+          "username": "veginha",
+          "content": "well i'm not so sure about it:<br>You are right about the instance recovery begins after \\\"alter database open\\\" is executed but that doesn't mean that the database is already open when the recovery starts.<br>The instance recovery is executed in 2 steps, rollforward and rollback and the database is open just after the rollforward is completed.<br>So i think that is not accuracy to tell that the instance recovery is performed after the database is open.<br>What do you thik?<br><br>Here is a good diagram to understand it.<br>https://www.orskl.com/how-oracle-database-does-instance-recovery-after-failures/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Thanks you are correct ;)</li></ul>",
+          "upvote_count": "8",
           "selected_answers": ""
         },
         {
@@ -10036,9 +10036,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 684760,
           "date": "Sun 02 Oct 2022 13:04",
-          "username": "Marcello86CTAsaif0786",
-          "content": "For me F is totally wrong. As others said the Instance recovery is performed in 2 steps , the first one is the rolling forward that needs Online Redo Logs to execute. Online Redo Logs are available just after database id open because in Mount state just control files are opened. So for me Correct answers are B & Cif you are saying redo is applied after DB open, you got your basics very wrong.",
-          "upvote_count": "12",
+          "username": "Marcello86CT",
+          "content": "For me F is totally wrong. As others said the Instance recovery is performed in 2 steps , the first one is the rolling forward that needs Online Redo Logs to execute. Online Redo Logs are available just after database id open because in Mount state just control files are opened. So for me Correct answers are B & C<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>if you are saying redo is applied after DB open, you got your basics very wrong.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -10182,25 +10182,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 163426,
           "date": "Sat 22 Aug 2020 09:58",
-          "username": "janwjanwjanwjanw",
-          "content": "D is incorrect, proved by experience. <br>E is incorrect:<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/tgsql/optimizer-statistics-advisor.html#GUID-6D8831EA-B478-4641-B84B-C341BB4D0799<br>When feasible, recommendations have corresponding actions.B is correct<br>https://docs.oracle.com/database/121/TGSQL/tgsql_optcncpt.htm#TGSQL218<br>The cost of an index scan depends on the levels in the B-tree, the number of index leaf blocks to be scanned, and the number of rows to be fetched using the rowid in the index keys. The cost of fetching rows using rowids depends on the index clustering factor.A is incorrect, the number of blocks is considered instead of the number of rows.<br>The cost of the scan depends on the number of blocks to be scanned and the multiblock read count value.C correct<br>The output of the advisor is a report of findings and recommendations, which helps you follow best practices for gathering statistics.",
-          "upvote_count": "3944",
+          "username": "janw",
+          "content": "D is incorrect, proved by experience. <br>E is incorrect:<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/tgsql/optimizer-statistics-advisor.html#GUID-6D8831EA-B478-4641-B84B-C341BB4D0799<br>When feasible, recommendations have corresponding actions.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>B is correct<br>https://docs.oracle.com/database/121/TGSQL/tgsql_optcncpt.htm#TGSQL218<br>The cost of an index scan depends on the levels in the B-tree, the number of index leaf blocks to be scanned, and the number of rows to be fetched using the rowid in the index keys. The cost of fetching rows using rowids depends on the index clustering factor.</li><li>A is incorrect, the number of blocks is considered instead of the number of rows.<br>The cost of the scan depends on the number of blocks to be scanned and the multiblock read count value.</li><li>C correct<br>The output of the advisor is a report of findings and recommendations, which helps you follow best practices for gathering statistics.</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
           "id": 163429,
           "date": "Sat 22 Aug 2020 09:59",
-          "username": "janwjanwjanw",
-          "content": "B is correct<br>https://docs.oracle.com/database/121/TGSQL/tgsql_optcncpt.htm#TGSQL218<br>The cost of an index scan depends on the levels in the B-tree, the number of index leaf blocks to be scanned, and the number of rows to be fetched using the rowid in the index keys. The cost of fetching rows using rowids depends on the index clustering factor.A is incorrect, the number of blocks is considered instead of the number of rows.<br>The cost of the scan depends on the number of blocks to be scanned and the multiblock read count value.C correct<br>The output of the advisor is a report of findings and recommendations, which helps you follow best practices for gathering statistics.",
-          "upvote_count": "944",
+          "username": "janw",
+          "content": "B is correct<br>https://docs.oracle.com/database/121/TGSQL/tgsql_optcncpt.htm#TGSQL218<br>The cost of an index scan depends on the levels in the B-tree, the number of index leaf blocks to be scanned, and the number of rows to be fetched using the rowid in the index keys. The cost of fetching rows using rowids depends on the index clustering factor.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A is incorrect, the number of blocks is considered instead of the number of rows.<br>The cost of the scan depends on the number of blocks to be scanned and the multiblock read count value.</li><li>C correct<br>The output of the advisor is a report of findings and recommendations, which helps you follow best practices for gathering statistics.</li></ul>",
+          "upvote_count": "9",
           "selected_answers": ""
         },
         {
           "id": 163431,
           "date": "Sat 22 Aug 2020 10:00",
-          "username": "janwjanw",
-          "content": "A is incorrect, the number of blocks is considered instead of the number of rows.<br>The cost of the scan depends on the number of blocks to be scanned and the multiblock read count value.C correct<br>The output of the advisor is a report of findings and recommendations, which helps you follow best practices for gathering statistics.",
-          "upvote_count": "44",
+          "username": "janw",
+          "content": "A is incorrect, the number of blocks is considered instead of the number of rows.<br>The cost of the scan depends on the number of blocks to be scanned and the multiblock read count value.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C correct<br>The output of the advisor is a report of findings and recommendations, which helps you follow best practices for gathering statistics.</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -10222,9 +10222,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 121443,
           "date": "Sat 27 Jun 2020 22:12",
-          "username": "dacoben415lywenwveginha",
-          "content": "AC<br>obviously DBMS_STATS not always produce good statistics, especially with default options/prefs.<br>A is not quite accurate, since cost does depend on selectivity for predicates/filters, which in turn depends on row numoption A is not in the exam. There is another response, something about the space of the table ;)",
-          "upvote_count": "13",
+          "username": "dacoben415lywenw",
+          "content": "AC<br>obviously DBMS_STATS not always produce good statistics, especially with default options/prefs.<br>A is not quite accurate, since cost does depend on selectivity for predicates/filters, which in turn depends on row num<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>option A is not in the exam. There is another response, something about the space of the table ;)</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -10333,9 +10333,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 158034,
           "date": "Fri 14 Aug 2020 13:02",
-          "username": "janwjackymak",
-          "content": "bef<br>https://oracle-base.com/articles/12c/multitenant-rman-backup-recovery-cdb-and-pdb-12cr1#tablespace-and-datafile-backupsThis one is better:<br>https://oracle-base.com/articles/12c/multitenant-rman-backup-recovery-cdb-and-pdb-12cr1#pdb-recovery",
-          "upvote_count": "41",
+          "username": "janw",
+          "content": "bef<br>https://oracle-base.com/articles/12c/multitenant-rman-backup-recovery-cdb-and-pdb-12cr1#tablespace-and-datafile-backups<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>This one is better:<br>https://oracle-base.com/articles/12c/multitenant-rman-backup-recovery-cdb-and-pdb-12cr1#pdb-recovery</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -10357,9 +10357,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 151880,
           "date": "Thu 06 Aug 2020 12:28",
-          "username": "julicajulica",
-          "content": "BEF- is the winner-- connect with RMAN directly to PDB:<br>[oracle@rac1 admin]$ rman target sys/oracle_4YOU@PDB1931<br>...<br>Version 19.6.0.0.0<br>...<br><br>RMAN> restore datafile 21;<br><br>Starting restore at 06-AUG-20<br>using target database control file instead of recovery catalog<br>allocated channel: ORA_DISK_1<br>channel ORA_DISK_1: SID259 instancetst1932 device typeDISK<br><br>channel ORA_DISK_1: starting datafile backup set restore<br>channel ORA_DISK_1: specifying datafile(s) to restore from backup set<br>channel ORA_DISK_1: restoring datafile 00021 to /u01/app/oracle/test_pdb1.dbf<br>channel ORA_DISK_1: reading from backup piece +FRA/TST193/A82132332AEF5FE9E0538044AB0AB63C/BACKUPSET/2020_08_06/nnndf0_tag20200806t154747_0.335.1047743269<br>channel ORA_DISK_1: piece handle+FRA/TST193/A82132332AEF5FE9E0538044AB0AB63C/BACKUPSET/2020_08_06/nnndf0_tag20200806t154747_0.335.1047743269 tagTAG20200806T154747<br>channel ORA_DISK_1: restored backup piece 1<br>channel ORA_DISK_1: restore complete, elapsed time: 00:00:01<br>Finished restore at 06-AUG-20<br>....",
-          "upvote_count": "43",
+          "username": "julica",
+          "content": "BEF- is the winner<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>-- connect with RMAN directly to PDB:<br>[oracle@rac1 admin]$ rman target sys/oracle_4YOU@PDB1931<br>...<br>Version 19.6.0.0.0<br>...<br><br>RMAN&gt; restore datafile 21;<br><br>Starting restore at 06-AUG-20<br>using target database control file instead of recovery catalog<br>allocated channel: ORA_DISK_1<br>channel ORA_DISK_1: SID259 instancetst1932 device typeDISK<br><br>channel ORA_DISK_1: starting datafile backup set restore<br>channel ORA_DISK_1: specifying datafile(s) to restore from backup set<br>channel ORA_DISK_1: restoring datafile 00021 to /u01/app/oracle/test_pdb1.dbf<br>channel ORA_DISK_1: reading from backup piece +FRA/TST193/A82132332AEF5FE9E0538044AB0AB63C/BACKUPSET/2020_08_06/nnndf0_tag20200806t154747_0.335.1047743269<br>channel ORA_DISK_1: piece handle+FRA/TST193/A82132332AEF5FE9E0538044AB0AB63C/BACKUPSET/2020_08_06/nnndf0_tag20200806t154747_0.335.1047743269 tagTAG20200806T154747<br>channel ORA_DISK_1: restored backup piece 1<br>channel ORA_DISK_1: restore complete, elapsed time: 00:00:01<br>Finished restore at 06-AUG-20<br>....</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -10373,9 +10373,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 107576,
           "date": "Thu 11 Jun 2020 11:21",
-          "username": "taotsumiauflaviogcmelo",
-          "content": "I had tested this one on my lab.The answer should be BCF. .<br>Any comment?Watch for the \\\"only\\\" it makes the diference. In my opinion the right answers are B, E and F. ",
-          "upvote_count": "11",
+          "username": "taotsumiau",
+          "content": "I had tested this one on my lab.The answer should be BCF. .<br>Any comment?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Watch for the \\\"only\\\" it makes the diference. In my opinion the right answers are B, E and F. </li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -10516,17 +10516,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 158038,
           "date": "Fri 14 Aug 2020 13:13",
-          "username": "janwjanwjanw",
-          "content": "During the following import situations, Data Pump automatically creates the tablespaces into which the data will be imported:<br><br>The import is being done in FULL or TRANSPORT_TABLESPACES mode<br><br>The import is being done in table mode with TRANSPORTABLEALWAYS<br><br>In all other cases, the tablespaces for the selected objects must already exist on the import database. You could also use the Import REMAP_TABLESPACE parameter to map the tablespace name to an existing tablespace on the import database.A only correct in case of full import, answer only talks about full exportB seems correct<br>D is correct as it says 'attempts'. It can generate an error, so it's an attempt...",
-          "upvote_count": "226",
+          "username": "janw",
+          "content": "During the following import situations, Data Pump automatically creates the tablespaces into which the data will be imported:<br><br>The import is being done in FULL or TRANSPORT_TABLESPACES mode<br><br>The import is being done in table mode with TRANSPORTABLEALWAYS<br><br>In all other cases, the tablespaces for the selected objects must already exist on the import database. You could also use the Import REMAP_TABLESPACE parameter to map the tablespace name to an existing tablespace on the import database.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A only correct in case of full import, answer only talks about full export</li><li>B seems correct<br>D is correct as it says 'attempts'. It can generate an error, so it's an attempt...</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 158042,
           "date": "Fri 14 Aug 2020 13:16",
-          "username": "janwjanw",
-          "content": "A only correct in case of full import, answer only talks about full exportB seems correct<br>D is correct as it says 'attempts'. It can generate an error, so it's an attempt...",
-          "upvote_count": "26",
+          "username": "janw",
+          "content": "A only correct in case of full import, answer only talks about full export<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>B seems correct<br>D is correct as it says 'attempts'. It can generate an error, so it's an attempt...</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -10548,9 +10548,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 114703,
           "date": "Sat 20 Jun 2020 12:45",
-          "username": "you1234ald85proact",
-          "content": "ald85,<br><br>looks like question is from non-CDB to pdb? i doubt on D answer ?The question says\\\"a non-CDB and a PDB\\\" not sense is specified. it can be non-CBD to PDB or PDB to non-CBD.  Which are the cases B and D. it saids between non-CDB and PDB. ... so D is perfectly correct.",
-          "upvote_count": "111",
+          "username": "you1234",
+          "content": "ald85,<br><br>looks like question is from non-CDB to pdb? i doubt on D answer ?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>The question says\\\"a non-CDB and a PDB\\\" not sense is specified. it can be non-CBD to PDB or PDB to non-CBD.  Which are the cases B and D. </li><li>it saids between non-CDB and PDB. ... so D is perfectly correct.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -10635,17 +10635,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 121773,
           "date": "Sun 28 Jun 2020 11:42",
-          "username": "dacoben415lywenwCyborgQfrst1804",
-          "content": "looks like table migration methods are asked here, not upgrade methods, should be BCFwhy B ? The same role is for sqlplus<br>For me correct is CEF as tell us veginhaThat sqlplus isn't among the answers doesn't mean that b is incorrect ....",
-          "upvote_count": "1621",
+          "username": "dacoben415lywenw",
+          "content": "looks like table migration methods are asked here, not upgrade methods, should be BCF<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>why B ? The same role is for sqlplus<br>For me correct is CEF as tell us veginha</li><li>That sqlplus isn't among the answers doesn't mean that b is incorrect ....</li></ul>",
+          "upvote_count": "16",
           "selected_answers": ""
         },
         {
           "id": 151798,
           "date": "Thu 06 Aug 2020 10:35",
-          "username": "CyborgQfrst1804",
-          "content": "why B ? The same role is for sqlplus<br>For me correct is CEF as tell us veginhaThat sqlplus isn't among the answers doesn't mean that b is incorrect ....",
-          "upvote_count": "21",
+          "username": "CyborgQ",
+          "content": "why B ? The same role is for sqlplus<br>For me correct is CEF as tell us veginha<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>That sqlplus isn't among the answers doesn't mean that b is incorrect ....</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -10659,9 +10659,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 109818,
           "date": "Sun 14 Jun 2020 02:52",
-          "username": "veginhaOracleist",
-          "content": "C,E and F are correct<br>Oracle provides features and products to automate the upgrade process and ensure the most efficient use of time. Oracle Database supports the following methods for upgrading a database to the new release:<br>Database Upgrade Assistant (DBUA)<br>Manual upgrade using SQL scripts and utilities<br>Oracle Data Pump<br>CREATE TABLE AS SQL statement<br><br>https://docs.oracle.com/database/121/UPGRD/intro.htm#UPGRD60026Upgrade is not Migrate!!!",
-          "upvote_count": "81",
+          "username": "veginha",
+          "content": "C,E and F are correct<br>Oracle provides features and products to automate the upgrade process and ensure the most efficient use of time. Oracle Database supports the following methods for upgrading a database to the new release:<br>Database Upgrade Assistant (DBUA)<br>Manual upgrade using SQL scripts and utilities<br>Oracle Data Pump<br>CREATE TABLE AS SQL statement<br><br>https://docs.oracle.com/database/121/UPGRD/intro.htm#UPGRD60026<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Upgrade is not Migrate!!!</li></ul>",
+          "upvote_count": "8",
           "selected_answers": ""
         },
         {
@@ -10736,12 +10736,12 @@ var Data_1Z0_083_Part1 =
       "course_id": 1,
       "case_study_id": null,
       "lab_id": 0,
-      "question_text": "<p>Which two are true about Oracle instance recovery? (Choose three.)<br></p>",
+      "question_text": "<p>Which two are true about Oracle instance recovery? (Choose two.)<br></p>",
       "mark": 1,
       "is_partially_correct": true,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: BDF</p>",
+      "general_feedback": "<p>Correct Answer: EF</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -10755,7 +10755,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. Recovery begins from the last checkpoint position that was calculated by the Database Writer before instance failure.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -10764,13 +10764,13 @@ var Data_1Z0_083_Part1 =
               "feedback": ""
             },
             {
-              "choice": "<p>D. Recovery reads redo until the end of the redo thread. SMON rolls back any dead transactions, and then the datanase is opened.<br></p>",
-              "correct": true,
+              "choice": "<p>D. Recovery reads redo until the end of the redo thread. SMON rolls back any dead transactions, and then the database is opened.<br></p>",
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>E. Recovery begins from the last checkpoint position that was recorded in the control file by the checkpoint process (CKPT).<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -10784,147 +10784,99 @@ var Data_1Z0_083_Part1 =
       "topic_name": "Exam 1z0-083 topic 1 question 68 discussion",
       "discusstion": [
         {
-          "id": 158061,
-          "date": "Fri 14 Aug 2020 13:42",
-          "username": "janwtz2020",
-          "content": "only 2 answers instead of 3!<br><br>EF. <br><br>database does a roll forward (redo), opens the database and than the rollback (undo), so F instead of D!In real exam you can select only two answers.<br>so EF. ",
-          "upvote_count": "53",
+          "id": 369511,
+          "date": "Sat 29 May 2021 15:30",
+          "username": "Marco_M",
+          "content": "I think E - F are correct.<br>E: Instance recovery is the process of applying records in the online redo log to data files to reconstruct changes made after the most recent checkpoint. Instance recovery occurs automatically when an administrator attempts to open a database that was previously shut down inconsistently.<br>..<br>The checkpoint process (CKPT) is responsible for writing checkpoints to the data file headers and control file.<br><br>F: Oracle Database can roll back multiple transactions simultaneously as needed. All transactions that were active at the time of failure are marked as terminated. Instead of waiting for the SMON process to roll back terminated transactions, new transactions can roll back individual blocks themselves to obtain the required data.<br><br>https://docs.oracle.com/cd/E25178_01/server.1111/e25789/startup.htm<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agre with E<br>The checkpoint process (CKPT) updates the control file and data file headers with checkpoint information and signals DBWn to write blocks to disk. Checkpoint information includes the checkpoint position, SCN, location in online redo log to begin recovery, and so on.</li><li>Should be E and F are correct.<br>D is wrong, SMON rollback transaction after DB is open which make F correct.<br><br>After the database has been opened, those uncommitted transactions<br>are rolled back.</li></ul>",
+          "upvote_count": "12",
           "selected_answers": ""
         },
         {
-          "id": 251607,
-          "date": "Thu 24 Dec 2020 15:21",
-          "username": "tz2020",
-          "content": "In real exam you can select only two answers.<br>so EF. ",
+          "id": 429948,
+          "date": "Mon 23 Aug 2021 14:27",
+          "username": "jorche",
+          "content": "Agre with E<br>The checkpoint process (CKPT) updates the control file and data file headers with checkpoint information and signals DBWn to write blocks to disk. Checkpoint information includes the checkpoint position, SCN, location in online redo log to begin recovery, and so on.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 434906,
+          "date": "Mon 30 Aug 2021 00:59",
+          "username": "arpz",
+          "content": "Should be E and F are correct.<br>D is wrong, SMON rollback transaction after DB is open which make F correct.<br><br>After the database has been opened, those uncommitted transactions<br>are rolled back.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 357086,
+          "date": "Fri 14 May 2021 12:17",
+          "username": "Aldrid",
+          "content": "E, F<br>\\\"The database can be opened as soon as cache recovery completes\\\"<br>Cache Recovery- >DBOPen-> Transaction Recovery<br>Cache RecoveryRoll Forward Redo<br>Transaction Recoveryrollback segments to undo the uncommitted changes",
+          "upvote_count": "8",
+          "selected_answers": ""
+        },
+        {
+          "id": 675996,
+          "date": "Thu 22 Sep 2022 12:51",
+          "username": "G_C",
+          "content": "E.  During instance recovery, the database must apply the changes that occur between the checkpoint position and the end of the redo thread.Of course CKPT is responsible forupdating control files with checkpoint information and also two other activities<br>F.  No commentshttps://docs.oracle.com/database/121/CNCPT/startup.htm#CNCPT1290 (see the last paragraph after figure 13-6)",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: EF"
+        },
+        {
+          "id": 441760,
+          "date": "Thu 09 Sep 2021 06:45",
+          "username": "xsxxxxx",
+          "content": "in exam,BF<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>did you pass the exam?</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 449401,
+          "date": "Wed 22 Sep 2021 11:31",
+          "username": "chefdba",
+          "content": "did you pass the exam?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 421161,
+          "date": "Sat 07 Aug 2021 13:02",
+          "username": "Neil107",
+          "content": "D and E. <br>F is incorrect. SMON does a cleanup upon instance startup, not after.<br>DBWR is a 'very lazy' background process, but LGWR is more 'awake' and the CKPT process ensures regular checkpoints between LGWR . In short, CKPT overlooks LGWR, which in turn overlooks DBWR. Remember, the control file has the record of the most current checkpoint info, including the SCN.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I think D is incorrect<br>Rolling backward phase starts after the database has been opened. F is correct.<br>https://docs.oracle.com/cd/B19306_01/backup.102/b14192/intro004.htm#i1022212</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 427839,
+          "date": "Fri 20 Aug 2021 05:11",
+          "username": "Kishor123",
+          "content": "I think D is incorrect<br>Rolling backward phase starts after the database has been opened. F is correct.<br>https://docs.oracle.com/cd/B19306_01/backup.102/b14192/intro004.htm#i1022212",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 403987,
+          "date": "Sun 11 Jul 2021 15:02",
+          "username": "niabs",
+          "content": "I will choose D and E. <br>D because for me the database is opened only after the rollback of any dead transaction finished.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 362228,
+          "date": "Thu 20 May 2021 15:29",
+          "username": "ObserverPL",
+          "content": "... to make you sure I'm right about C - I've just performed the same test again and it succeed, I also found in alert log:<br>2021-05-20T17:26:37.896591+02:00<br>Started redo scan<br>2021-05-20T17:26:38.374728+02:00<br>Completed redo scan",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 362200,
+          "date": "Thu 20 May 2021 15:21",
+          "username": "ObserverPL",
+          "content": "Couple of years ago I performed following test - backup control file to trace, shutdown abort (so recovery wil be required), drop all controlfiles, create fresh controlfile using SQL command from trace file, mount, open. It succeed. So you do not need in fact controlfile to perform recovery - it's enough for Oracle to read headers of datafiles and redo logs.<br>So... C and F. ",
           "upvote_count": "3",
-          "selected_answers": ""
-        },
-        {
-          "id": 676655,
-          "date": "Fri 23 Sep 2022 02:26",
-          "username": "Asaif0786",
-          "content": "You will have to \\\"Choose three\\\" here. Question has typo.<br>There are 3 correct answers. C must be correct, otherwise incomplete recovery!Total Correct 3: C E F",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 676649,
-          "date": "Fri 23 Sep 2022 02:22",
-          "username": "Asaif0786Asaif0786",
-          "content": "You will have to \\\"Choose three\\\" here. Question has typo.<br>There are 3 correct answers. C must be correct, otherwise incomplete recovery!Total correct 3.they are C E F",
-          "upvote_count": "11",
-          "selected_answers": ""
-        },
-        {
-          "id": 676653,
-          "date": "Fri 23 Sep 2022 02:25",
-          "username": "Asaif0786",
-          "content": "Total correct 3.they are C E F",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 199668,
-          "date": "Wed 14 Oct 2020 11:31",
-          "username": "proact",
-          "content": "corrects are B,E,F",
-          "upvote_count": "2",
-          "selected_answers": ""
-        },
-        {
-          "id": 192368,
-          "date": "Sat 03 Oct 2020 16:49",
-          "username": "asefa",
-          "content": "E, F roll back occurs before database open.",
-          "upvote_count": "2",
-          "selected_answers": ""
-        },
-        {
-          "id": 191136,
-          "date": "Thu 01 Oct 2020 20:52",
-          "username": "erial",
-          "content": "I think ce, because smon does not roll back \\\"dead\\\" transactions it rolls back \\\"uncommited\\\" transactions!! tricky question!",
-          "upvote_count": "2",
-          "selected_answers": ""
-        },
-        {
-          "id": 178411,
-          "date": "Sat 12 Sep 2020 22:15",
-          "username": "erial",
-          "content": "according the question (two) it begins with option E, then option F<br>if were three options it could be, option begins with E, then reads online redo (option C) and finally option F in this order.",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 175502,
-          "date": "Tue 08 Sep 2020 03:04",
-          "username": "Chansi",
-          "content": "the question says \\\"which two are true \\\" and then it asks to choose three ?",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 173882,
-          "date": "Sat 05 Sep 2020 12:54",
-          "username": "pgtips",
-          "content": "I think it is CEF",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 151817,
-          "date": "Thu 06 Aug 2020 10:50",
-          "username": "CyborgQ",
-          "content": "AEF<br>D-> incorrect: for open DB first execute rollforward then the DB is OPEN and after opened, the SMON rollback uncommitted or dead transactions",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 127724,
-          "date": "Mon 06 Jul 2020 13:16",
-          "username": "mik8440p",
-          "content": "C,D,E<br>C -look https://cutt.ly/6oHrBEH",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 117363,
-          "date": "Tue 23 Jun 2020 13:03",
-          "username": "julica",
-          "content": "also wrong question: Which two ... (Choose three)... :) two or three?",
-          "upvote_count": "3",
-          "selected_answers": ""
-        },
-        {
-          "id": 117212,
-          "date": "Tue 23 Jun 2020 10:04",
-          "username": "julica",
-          "content": "F is wrong. first SMON and after that open DB. <br><br>DE",
-          "upvote_count": "4",
-          "selected_answers": ""
-        },
-        {
-          "id": 116016,
-          "date": "Mon 22 Jun 2020 06:18",
-          "username": "veginha",
-          "content": "..AEF? (D is incorrect, the database is opened before the rollback occurs)",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 115171,
-          "date": "Sun 21 Jun 2020 04:28",
-          "username": "logica",
-          "content": "for me D E F are correct",
-          "upvote_count": "1",
-          "selected_answers": ""
-        },
-        {
-          "id": 114033,
-          "date": "Fri 19 Jun 2020 16:41",
-          "username": "ald85",
-          "content": "I think DE, any suggest?",
-          "upvote_count": "2",
           "selected_answers": ""
         }
       ]
@@ -10985,9 +10937,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 369511,
           "date": "Sat 29 May 2021 15:30",
-          "username": "Marco_Mjorchearpz",
-          "content": "I think E - F are correct.<br>E: Instance recovery is the process of applying records in the online redo log to data files to reconstruct changes made after the most recent checkpoint. Instance recovery occurs automatically when an administrator attempts to open a database that was previously shut down inconsistently.<br>..<br>The checkpoint process (CKPT) is responsible for writing checkpoints to the data file headers and control file.<br><br>F: Oracle Database can roll back multiple transactions simultaneously as needed. All transactions that were active at the time of failure are marked as terminated. Instead of waiting for the SMON process to roll back terminated transactions, new transactions can roll back individual blocks themselves to obtain the required data.<br><br>https://docs.oracle.com/cd/E25178_01/server.1111/e25789/startup.htmAgre with E<br>The checkpoint process (CKPT) updates the control file and data file headers with checkpoint information and signals DBWn to write blocks to disk. Checkpoint information includes the checkpoint position, SCN, location in online redo log to begin recovery, and so on.Should be E and F are correct.<br>D is wrong, SMON rollback transaction after DB is open which make F correct.<br><br>After the database has been opened, those uncommitted transactions<br>are rolled back.",
-          "upvote_count": "1221",
+          "username": "Marco_M",
+          "content": "I think E - F are correct.<br>E: Instance recovery is the process of applying records in the online redo log to data files to reconstruct changes made after the most recent checkpoint. Instance recovery occurs automatically when an administrator attempts to open a database that was previously shut down inconsistently.<br>..<br>The checkpoint process (CKPT) is responsible for writing checkpoints to the data file headers and control file.<br><br>F: Oracle Database can roll back multiple transactions simultaneously as needed. All transactions that were active at the time of failure are marked as terminated. Instead of waiting for the SMON process to roll back terminated transactions, new transactions can roll back individual blocks themselves to obtain the required data.<br><br>https://docs.oracle.com/cd/E25178_01/server.1111/e25789/startup.htm<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agre with E<br>The checkpoint process (CKPT) updates the control file and data file headers with checkpoint information and signals DBWn to write blocks to disk. Checkpoint information includes the checkpoint position, SCN, location in online redo log to begin recovery, and so on.</li><li>Should be E and F are correct.<br>D is wrong, SMON rollback transaction after DB is open which make F correct.<br><br>After the database has been opened, those uncommitted transactions<br>are rolled back.</li></ul>",
+          "upvote_count": "12",
           "selected_answers": ""
         },
         {
@@ -11025,9 +10977,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 441760,
           "date": "Thu 09 Sep 2021 06:45",
-          "username": "xsxxxxxchefdba",
-          "content": "in exam,BFdid you pass the exam?",
-          "upvote_count": "11",
+          "username": "xsxxxxx",
+          "content": "in exam,BF<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>did you pass the exam?</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -11041,9 +10993,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 421161,
           "date": "Sat 07 Aug 2021 13:02",
-          "username": "Neil107Kishor123",
-          "content": "D and E. <br>F is incorrect. SMON does a cleanup upon instance startup, not after.<br>DBWR is a 'very lazy' background process, but LGWR is more 'awake' and the CKPT process ensures regular checkpoints between LGWR . In short, CKPT overlooks LGWR, which in turn overlooks DBWR. Remember, the control file has the record of the most current checkpoint info, including the SCN.I think D is incorrect<br>Rolling backward phase starts after the database has been opened. F is correct.<br>https://docs.oracle.com/cd/B19306_01/backup.102/b14192/intro004.htm#i1022212",
-          "upvote_count": "12",
+          "username": "Neil107",
+          "content": "D and E. <br>F is incorrect. SMON does a cleanup upon instance startup, not after.<br>DBWR is a 'very lazy' background process, but LGWR is more 'awake' and the CKPT process ensures regular checkpoints between LGWR . In short, CKPT overlooks LGWR, which in turn overlooks DBWR. Remember, the control file has the record of the most current checkpoint info, including the SCN.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I think D is incorrect<br>Rolling backward phase starts after the database has been opened. F is correct.<br>https://docs.oracle.com/cd/B19306_01/backup.102/b14192/intro004.htm#i1022212</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -11276,17 +11228,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 676028,
           "date": "Thu 22 Sep 2022 13:22",
-          "username": "G_CG_CG_C",
-          "content": "A) https://docs.oracle.com/database/121/RCMRF/rcmsynta020.htm#RCMRF126<br>E) DUPLICATE ACTIVE DATABASE USING BACKUPSET new feature from 12R1<br>F) https://docs.oracle.com/cd/E25178_01/backup.1111/e10642/rcmdupad.htm<br>H) DUPLICATE (...) BACKUP LOCATIONI change my mind answer F is incorrect because of that phrase \\\"no connection exists to the recovery catalog\\\", so answer D is correct because it can be i.e. after perform duplicate using consistent database backup.<br>Generally: ADEHRead twice before ... sorry guys D is of course INCORRECT",
-          "upvote_count": "111",
+          "username": "G_C",
+          "content": "A) https://docs.oracle.com/database/121/RCMRF/rcmsynta020.htm#RCMRF126<br>E) DUPLICATE ACTIVE DATABASE USING BACKUPSET new feature from 12R1<br>F) https://docs.oracle.com/cd/E25178_01/backup.1111/e10642/rcmdupad.htm<br>H) DUPLICATE (...) BACKUP LOCATION<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I change my mind answer F is incorrect because of that phrase \\\"no connection exists to the recovery catalog\\\", so answer D is correct because it can be i.e. after perform duplicate using consistent database backup.<br>Generally: ADEH</li><li>Read twice before ... sorry guys D is of course INCORRECT</li></ul>",
+          "upvote_count": "1",
           "selected_answers": "Selected Answer: AEFH"
         },
         {
           "id": 682425,
           "date": "Thu 29 Sep 2022 09:06",
-          "username": "G_CG_C",
-          "content": "I change my mind answer F is incorrect because of that phrase \\\"no connection exists to the recovery catalog\\\", so answer D is correct because it can be i.e. after perform duplicate using consistent database backup.<br>Generally: ADEHRead twice before ... sorry guys D is of course INCORRECT",
-          "upvote_count": "11",
+          "username": "G_C",
+          "content": "I change my mind answer F is incorrect because of that phrase \\\"no connection exists to the recovery catalog\\\", so answer D is correct because it can be i.e. after perform duplicate using consistent database backup.<br>Generally: ADEH<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Read twice before ... sorry guys D is of course INCORRECT</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -11300,9 +11252,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 581668,
           "date": "Wed 06 Apr 2022 09:20",
-          "username": "FeaRoXFeaRoXFeaRoX",
-          "content": "Specifies the names of the tablespaces with undo segments. This option is only required when a subset of tablespaces are being duplicated with the SKIP TABLESPACE and TABLESPACE clauses. You must provide the list of tablespaces with undo segments in the following cases:<br><br>No connection to the target database or the recovery catalog<br><br>No connection to a recovery catalog, a connection to the target but the target database is not open.<br><br>DUPLICATE reference for 19c.<br><br>So F seems true.<br><br>About E:<br>>E Is incorrect<br>This method is not supported for backups that are stored on tape devices<br>Backup and Recovery User's Guide Page 662<br>True, but the it's about \\\" Backup-Based Duplication Without a Target Database and Recovery Catalog<br>Connection\\\" so i think you can still do it without Target DB connection when you have Recovery Catalog connection - not sure. E could also be true, but F is right there in the documentation.to catalog and target*although \\\"This option is only required when a subset of tablespaces are being duplicated with the SKIP TABLESPACE and TABLESPACE clauses\\\". So maybe the point is that when you duplicate subset of tbs AND you don't have connection to catalog, then you have to specify the clause. It would make F false in favour of E.  Tough call.",
-          "upvote_count": "111",
+          "username": "FeaRoX",
+          "content": "Specifies the names of the tablespaces with undo segments. This option is only required when a subset of tablespaces are being duplicated with the SKIP TABLESPACE and TABLESPACE clauses. You must provide the list of tablespaces with undo segments in the following cases:<br><br>No connection to the target database or the recovery catalog<br><br>No connection to a recovery catalog, a connection to the target but the target database is not open.<br><br>DUPLICATE reference for 19c.<br><br>So F seems true.<br><br>About E:<br>>E Is incorrect<br>This method is not supported for backups that are stored on tape devices<br>Backup and Recovery User's Guide Page 662<br>True, but the it's about \\\" Backup-Based Duplication Without a Target Database and Recovery Catalog<br>Connection\\\" so i think you can still do it without Target DB connection when you have Recovery Catalog connection - not sure. E could also be true, but F is right there in the documentation.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>to catalog and target*</li><li>although \\\"This option is only required when a subset of tablespaces are being duplicated with the SKIP TABLESPACE and TABLESPACE clauses\\\". So maybe the point is that when you duplicate subset of tbs AND you don't have connection to catalog, then you have to specify the clause. It would make F false in favour of E.  Tough call.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -11332,9 +11284,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 362246,
           "date": "Thu 20 May 2021 15:44",
-          "username": "ObserverPLAldrid",
-          "content": "A, D, E, H are correct. F is NOT correct because of simple example I've just tested:<br>rman auxiliary /<br><br>run<br>{<br>allocate auxiliary channel ch1 type disk;<br>DUPLICATE DATABASE PROD to TEST<br>BACKUP LOCATION 'D:\\Oracle\\BACKUPS'<br>NOFILENAMECHECK;<br>}E Is incorrect<br>This method is not supported for backups that are stored on tape devices<br>Backup and Recovery User's GuidePage 662",
-          "upvote_count": "22",
+          "username": "ObserverPL",
+          "content": "A, D, E, H are correct. F is NOT correct because of simple example I've just tested:<br>rman auxiliary /<br><br>run<br>{<br>allocate auxiliary channel ch1 type disk;<br>DUPLICATE DATABASE PROD to TEST<br>BACKUP LOCATION 'D:\\Oracle\\BACKUPS'<br>NOFILENAMECHECK;<br>}<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>E Is incorrect<br>This method is not supported for backups that are stored on tape devices<br>Backup and Recovery User's GuidePage 662</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -11348,9 +11300,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 349271,
           "date": "Tue 04 May 2021 10:47",
-          "username": "AldridAldrid",
-          "content": "A D F H is correct<br>A.  D. <br><br>Because: For backup-based duplication of databases without a connection to the target database, RMAN cannot determine whether the source database was in NOARCHIVELOG mode.<br>Therefore, you must use the NOREDO option when the source database was in NOARCHIVELOG mode when the backups were taken.<br>You can also use the NOREDO option when you do not want to apply archived redo log files to a consistent backup.<br>F. <br><br>Because: You must provide the list of tablespaces with undo segments in the following cases:<br>No connection to the target database or the recovery catalog<br>No connection to a recovery catalog, a connection to the target but the target database is not open.<br><br>H.<br><br>Beacuse: You perform duplication by connecting to the<br>auxiliary instance and using backups or copies of the source database that are stored<br>in a disk location on the destination host. RMAN obtains metadata about where the<br>backups and copies reside from the BACKUP LOCATION clause of the DUPLICATE<br>command.E Is incorrect<br>This method is not supported for backups that are stored on tape devices<br>Backup and Recovery User's GuidePage 662",
-          "upvote_count": "34",
+          "username": "Aldrid",
+          "content": "A D F H is correct<br>A.  D. <br><br>Because: For backup-based duplication of databases without a connection to the target database, RMAN cannot determine whether the source database was in NOARCHIVELOG mode.<br>Therefore, you must use the NOREDO option when the source database was in NOARCHIVELOG mode when the backups were taken.<br>You can also use the NOREDO option when you do not want to apply archived redo log files to a consistent backup.<br>F. <br><br>Because: You must provide the list of tablespaces with undo segments in the following cases:<br>No connection to the target database or the recovery catalog<br>No connection to a recovery catalog, a connection to the target but the target database is not open.<br><br>H.<br><br>Beacuse: You perform duplication by connecting to the<br>auxiliary instance and using backups or copies of the source database that are stored<br>in a disk location on the destination host. RMAN obtains metadata about where the<br>backups and copies reside from the BACKUP LOCATION clause of the DUPLICATE<br>command.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>E Is incorrect<br>This method is not supported for backups that are stored on tape devices<br>Backup and Recovery User's GuidePage 662</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -11372,17 +11324,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 291055,
           "date": "Mon 15 Feb 2021 15:35",
-          "username": "asefaasefaG_C",
-          "content": "A,D, F GStudent Guide<br>NOREDO<br>signals RMAN that the applications of redo logs should be suppressed during recovery must be used with targetless duplicate when target db is noarchivelog mode at backup time can also be used to explictly state that no archived redo log files should be applied<br>UNDO Tablespace<br>must be specified when target database is not open and there is no recovery catalog connection so that RMAN does not check tablespace for SYS owned objects<br><br>sorry i meant A,E,F,H<br>and both SBT and disk based backup can be used by auxiliary instance.I agree with that - AEFH.",
-          "upvote_count": "141",
+          "username": "asefa",
+          "content": "A,D, F G<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Student Guide<br>NOREDO<br>signals RMAN that the applications of redo logs should be suppressed during recovery must be used with targetless duplicate when target db is noarchivelog mode at backup time can also be used to explictly state that no archived redo log files should be applied<br>UNDO Tablespace<br>must be specified when target database is not open and there is no recovery catalog connection so that RMAN does not check tablespace for SYS owned objects<br><br>sorry i meant A,E,F,H<br>and both SBT and disk based backup can be used by auxiliary instance.</li><li>I agree with that - AEFH.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 291067,
           "date": "Mon 15 Feb 2021 15:51",
-          "username": "asefaG_C",
-          "content": "Student Guide<br>NOREDO<br>signals RMAN that the applications of redo logs should be suppressed during recovery must be used with targetless duplicate when target db is noarchivelog mode at backup time can also be used to explictly state that no archived redo log files should be applied<br>UNDO Tablespace<br>must be specified when target database is not open and there is no recovery catalog connection so that RMAN does not check tablespace for SYS owned objects<br><br>sorry i meant A,E,F,H<br>and both SBT and disk based backup can be used by auxiliary instance.I agree with that - AEFH.",
-          "upvote_count": "41",
+          "username": "asefa",
+          "content": "Student Guide<br>NOREDO<br>signals RMAN that the applications of redo logs should be suppressed during recovery must be used with targetless duplicate when target db is noarchivelog mode at backup time can also be used to explictly state that no archived redo log files should be applied<br>UNDO Tablespace<br>must be specified when target database is not open and there is no recovery catalog connection so that RMAN does not check tablespace for SYS owned objects<br><br>sorry i meant A,E,F,H<br>and both SBT and disk based backup can be used by auxiliary instance.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I agree with that - AEFH.</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -11412,25 +11364,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 158068,
           "date": "Fri 14 Aug 2020 14:06",
-          "username": "janwjanwjanwjanw",
-          "content": "B is incorrect<br>\\\"always\\\" required when no connection to target.this is NOT required in case of recovery catalog.F is incorrect.the undo tablespace is \\\"always\\\" > not the case, only if you want to duplicate a subset of tablespacesAE correct:<br><br>Applies no archived redo log files when recovering a consistent backup in any of the following scenarios:<br><br>You do not want to apply archived redo log files to the consistent backup even though the archived redo log files are available.<br><br>The source database was running in NOARCHIVELOG mode at backup time and DUPLICATE is not connected to the target database.<br><br>The source database is currently running in ARCHIVELOG mode but the backup was taken when the database was in NOARCHIVELOG mode.ADEH for me!",
-          "upvote_count": "1125",
+          "username": "janw",
+          "content": "B is incorrect<br>\\\"always\\\" required when no connection to target.this is NOT required in case of recovery catalog.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>F is incorrect.the undo tablespace is \\\"always\\\" &gt; not the case, only if you want to duplicate a subset of tablespaces</li><li>AE correct:<br><br>Applies no archived redo log files when recovering a consistent backup in any of the following scenarios:<br><br>You do not want to apply archived redo log files to the consistent backup even though the archived redo log files are available.<br><br>The source database was running in NOARCHIVELOG mode at backup time and DUPLICATE is not connected to the target database.<br><br>The source database is currently running in ARCHIVELOG mode but the backup was taken when the database was in NOARCHIVELOG mode.</li><li>ADEH for me!</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 158073,
           "date": "Fri 14 Aug 2020 14:09",
-          "username": "janwjanwjanw",
-          "content": "F is incorrect.the undo tablespace is \\\"always\\\" > not the case, only if you want to duplicate a subset of tablespacesAE correct:<br><br>Applies no archived redo log files when recovering a consistent backup in any of the following scenarios:<br><br>You do not want to apply archived redo log files to the consistent backup even though the archived redo log files are available.<br><br>The source database was running in NOARCHIVELOG mode at backup time and DUPLICATE is not connected to the target database.<br><br>The source database is currently running in ARCHIVELOG mode but the backup was taken when the database was in NOARCHIVELOG mode.ADEH for me!",
-          "upvote_count": "125",
+          "username": "janw",
+          "content": "F is incorrect.the undo tablespace is \\\"always\\\" > not the case, only if you want to duplicate a subset of tablespaces<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>AE correct:<br><br>Applies no archived redo log files when recovering a consistent backup in any of the following scenarios:<br><br>You do not want to apply archived redo log files to the consistent backup even though the archived redo log files are available.<br><br>The source database was running in NOARCHIVELOG mode at backup time and DUPLICATE is not connected to the target database.<br><br>The source database is currently running in ARCHIVELOG mode but the backup was taken when the database was in NOARCHIVELOG mode.</li><li>ADEH for me!</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 158076,
           "date": "Fri 14 Aug 2020 14:11",
-          "username": "janwjanw",
-          "content": "AE correct:<br><br>Applies no archived redo log files when recovering a consistent backup in any of the following scenarios:<br><br>You do not want to apply archived redo log files to the consistent backup even though the archived redo log files are available.<br><br>The source database was running in NOARCHIVELOG mode at backup time and DUPLICATE is not connected to the target database.<br><br>The source database is currently running in ARCHIVELOG mode but the backup was taken when the database was in NOARCHIVELOG mode.ADEH for me!",
-          "upvote_count": "25",
+          "username": "janw",
+          "content": "AE correct:<br><br>Applies no archived redo log files when recovering a consistent backup in any of the following scenarios:<br><br>You do not want to apply archived redo log files to the consistent backup even though the archived redo log files are available.<br><br>The source database was running in NOARCHIVELOG mode at backup time and DUPLICATE is not connected to the target database.<br><br>The source database is currently running in ARCHIVELOG mode but the backup was taken when the database was in NOARCHIVELOG mode.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>ADEH for me!</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -11444,9 +11396,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 131374,
           "date": "Fri 10 Jul 2020 13:31",
-          "username": "GraceYutaotsumiau",
-          "content": "ABFH<br><br>H.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/DUPLICATE. html#GUID-E13D8A02-80F9-49A2-9C31-92DD3A795CE4<br>If you are using backup-based duplication, and if the source database and auxiliary instances reside on different hosts, then you must decide how to make the backups of the source database available to the auxiliary instance. For more information on how to do this with BACKUP LOCATION, review the options described in \\\"Oracle Database Backup and Recovery User's Guide\\\" .Yes, ABFH....",
-          "upvote_count": "21",
+          "username": "GraceYu",
+          "content": "ABFH<br><br>H.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/DUPLICATE. html#GUID-E13D8A02-80F9-49A2-9C31-92DD3A795CE4<br>If you are using backup-based duplication, and if the source database and auxiliary instances reside on different hosts, then you must decide how to make the backups of the source database available to the auxiliary instance. For more information on how to do this with BACKUP LOCATION, review the options described in \\\"Oracle Database Backup and Recovery User's Guide\\\" .<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Yes, ABFH....</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -11536,9 +11488,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 319895,
           "date": "Thu 25 Mar 2021 08:53",
-          "username": "RinDNiciMilo",
-          "content": "Agree with BDGisn't D and F talking about the same thing?<br>D.  Application-common Oracle Label Security (OLS) policies cannot be created in an application root outside an install/patch BEGIN-END block.F.  Application-common Oracle Label Security (OLS) policies can be created in an application root inside an install/patch BEGIN-END block.",
-          "upvote_count": "52",
+          "username": "RinD",
+          "content": "Agree with BDG<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>isn't D and F talking about the same thing?<br>D.  Application-common Oracle Label Security (OLS) policies cannot be created in an application root outside an install/patch BEGIN-END block.F.  Application-common Oracle Label Security (OLS) policies can be created in an application root inside an install/patch BEGIN-END block.</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
@@ -11568,9 +11520,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 416518,
           "date": "Thu 29 Jul 2021 01:16",
-          "username": "AlfredNgleozanon94",
-          "content": "I think ABGI took the exam yesterday, i confirm that B and G are correct. A seems correct, but the question in exam was choose 2 answers only (and A was not there).",
-          "upvote_count": "21",
+          "username": "AlfredNg",
+          "content": "I think ABG<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I took the exam yesterday, i confirm that B and G are correct. A seems correct, but the question in exam was choose 2 answers only (and A was not there).</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -11584,9 +11536,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 349371,
           "date": "Tue 04 May 2021 13:51",
-          "username": "AldridogdruRogazan",
-          "content": "ABC Correct<br><br>A - When you install an application in the application root, all the common Virtual Private Database policies that protect the common objects will be applied to and immediately enforced for all PDBs in the application container.<br>B - In a multitenant environment, you can apply TSDP policies to the current PDB or current application PDB only.<br>C - By DBMS_TSDP_PROTECT.ADD_POLICY<br><br>D/F Incorrect - You cannot create Oracle Label Security policies in the CDB root or the application root.<br>E- Incorrect - When you create a fine-grained audit policy in the CDB root, the policy cannot be applied to all PDBs.<br>G- Incorrect - you can create unified audit policies for individual PDBs and in the root.A - will correct if 'on common objects' instead of 'on objects'!!I think C is False: \\\"When you create scripts for application install, upgrade, patch, or uninstall operations, you can include SQL statements within the ALTER PLUGGABLE DATABASE app_name BEGIN INSTALL and ALTER PLUGGABLE DATABASE app_name END INSTALL blocks to perform various operations. If you include TSDP statements within these blocks, then the TSDP statements will fail. You can, however, include TSDP statements outside these blocks in the script\\\" (https://docs.oracle.com/en/database/oracle/oracle-database/19/dbseg/using-transparent-sensitive-data-protection.html#GUID-0AC97E6B-9B00-4D20-8F26-8B23896DDD3C)",
-          "upvote_count": "314",
+          "username": "Aldrid",
+          "content": "ABC Correct<br><br>A - When you install an application in the application root, all the common Virtual Private Database policies that protect the common objects will be applied to and immediately enforced for all PDBs in the application container.<br>B - In a multitenant environment, you can apply TSDP policies to the current PDB or current application PDB only.<br>C - By DBMS_TSDP_PROTECT.ADD_POLICY<br><br>D/F Incorrect - You cannot create Oracle Label Security policies in the CDB root or the application root.<br>E- Incorrect - When you create a fine-grained audit policy in the CDB root, the policy cannot be applied to all PDBs.<br>G- Incorrect - you can create unified audit policies for individual PDBs and in the root.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A - will correct if 'on common objects' instead of 'on objects'!!</li><li>I think C is False: \\\"When you create scripts for application install, upgrade, patch, or uninstall operations, you can include SQL statements within the ALTER PLUGGABLE DATABASE app_name BEGIN INSTALL and ALTER PLUGGABLE DATABASE app_name END INSTALL blocks to perform various operations. If you include TSDP statements within these blocks, then the TSDP statements will fail. You can, however, include TSDP statements outside these blocks in the script\\\" (https://docs.oracle.com/en/database/oracle/oracle-database/19/dbseg/using-transparent-sensitive-data-protection.html#GUID-0AC97E6B-9B00-4D20-8F26-8B23896DDD3C)</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -11616,9 +11568,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 107579,
           "date": "Thu 11 Jun 2020 11:27",
-          "username": "taotsumiauald85",
-          "content": "Does this answer correct?I would thinking about ADG...<br>Any comment?I think BDG -> A is incorrect because(VPD) policies on objects in an application root not are automatically synchronized<br>B -> correct because TSPD operations are container-specific",
-          "upvote_count": "15",
+          "username": "taotsumiau",
+          "content": "Does this answer correct?I would thinking about ADG...<br>Any comment?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I think BDG -&gt; A is incorrect because(VPD) policies on objects in an application root not are automatically synchronized<br>B -&gt; correct because TSPD operations are container-specific</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -11722,9 +11674,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 173897,
           "date": "Sat 05 Sep 2020 13:22",
-          "username": "pgtipspgtips",
-          "content": "It is ABCSorry, I meant ABD. ",
-          "upvote_count": "16",
+          "username": "pgtips",
+          "content": "It is ABC<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Sorry, I meant ABD. </li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -11738,17 +11690,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 128153,
           "date": "Mon 06 Jul 2020 20:51",
-          "username": "marcinb32ald85janw",
-          "content": "I think ACDC is incorrect -> By default, the Automatic Workload Repository (AWR) generates snapshots of performance data once every hour, and retains the statistics in the workload repository for 8 days.https://docs.oracle.com/en/database/oracle/oracle-database/19/tdppt/automatic-database-performance-monitoring.html#GUID-8FFE01C9-57C9-4A5B-A410-108E99319DA0<br><br>The question is good corrected. -> ABDagree with abd",
-          "upvote_count": "166",
+          "username": "marcinb32",
+          "content": "I think ACD<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C is incorrect -&gt; By default, the Automatic Workload Repository (AWR) generates snapshots of performance data once every hour, and retains the statistics in the workload repository for 8 days.https://docs.oracle.com/en/database/oracle/oracle-database/19/tdppt/automatic-database-performance-monitoring.html#GUID-8FFE01C9-57C9-4A5B-A410-108E99319DA0<br><br>The question is good corrected. -&gt; ABD</li><li>agree with abd</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 129514,
           "date": "Wed 08 Jul 2020 08:50",
-          "username": "ald85janw",
-          "content": "C is incorrect -> By default, the Automatic Workload Repository (AWR) generates snapshots of performance data once every hour, and retains the statistics in the workload repository for 8 days.https://docs.oracle.com/en/database/oracle/oracle-database/19/tdppt/automatic-database-performance-monitoring.html#GUID-8FFE01C9-57C9-4A5B-A410-108E99319DA0<br><br>The question is good corrected. -> ABDagree with abd",
-          "upvote_count": "66",
+          "username": "ald85",
+          "content": "C is incorrect -> By default, the Automatic Workload Repository (AWR) generates snapshots of performance data once every hour, and retains the statistics in the workload repository for 8 days.https://docs.oracle.com/en/database/oracle/oracle-database/19/tdppt/automatic-database-performance-monitoring.html#GUID-8FFE01C9-57C9-4A5B-A410-108E99319DA0<br><br>The question is good corrected. -> ABD<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>agree with abd</li></ul>",
+          "upvote_count": "6",
           "selected_answers": ""
         },
         {
@@ -11820,9 +11772,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 112586,
           "date": "Wed 17 Jun 2020 17:54",
-          "username": "ald85vixt0rino",
-          "content": "BE -> In both cases to repair (Primary or Physical Databases) you must enable RTQ on the Physical Database.Physical Standby Database",
-          "upvote_count": "221",
+          "username": "ald85",
+          "content": "BE -> In both cases to repair (Primary or Physical Databases) you must enable RTQ on the Physical Database.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Physical Standby Database</li></ul>",
+          "upvote_count": "22",
           "selected_answers": ""
         },
         {
@@ -11836,9 +11788,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 120268,
           "date": "Fri 26 Jun 2020 09:01",
-          "username": "julicajulica",
-          "content": "B,E. ...<br>Not D: Block media recovery is a technique for restoring and recovering corrupt data blocks while data files are online.If only a few blocks are corrupt, then block media recovery may be preferable to data file media recovery. For automatic block media recovery to work, a physical standby database must be in real-time query mode, which requires an Oracle Active Data Guard licenseYou can use an Oracle Active Data Guard standby database for automatic repair of data corruptions detected by the primary database. Additionally if the corruption is discovered on an Active Data Guard physical standby database the corruption will be automatically repaired with a good block from the Primary.",
-          "upvote_count": "102",
+          "username": "julica",
+          "content": "B,E. ...<br>Not D: Block media recovery is a technique for restoring and recovering corrupt data blocks while data files are online.If only a few blocks are corrupt, then block media recovery may be preferable to data file media recovery. For automatic block media recovery to work, a physical standby database must be in real-time query mode, which requires an Oracle Active Data Guard license<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>You can use an Oracle Active Data Guard standby database for automatic repair of data corruptions detected by the primary database. Additionally if the corruption is discovered on an Active Data Guard physical standby database the corruption will be automatically repaired with a good block from the Primary.</li></ul>",
+          "upvote_count": "10",
           "selected_answers": ""
         },
         {
@@ -11884,9 +11836,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 199645,
           "date": "Wed 14 Oct 2020 10:57",
-          "username": "proactxRodge",
-          "content": "B is absolutly wrongYou are, absolutely, incorrect:<br><br>Block media recovery is a technique for restoring and recovering corrupt data blocks while data files are online. If only a few blocks are corrupt, then block media recovery may be preferable to data file media recovery. For automatic block media recovery to work, a physical standby database must be in real-time query mode, which requires an Oracle Active Data Guard license.<br><br>https://www.oracle.com/technetwork/database/availability/maa-datacorruption-bestpractices-396464.pdf",
-          "upvote_count": "21",
+          "username": "proact",
+          "content": "B is absolutly wrong<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>You are, absolutely, incorrect:<br><br>Block media recovery is a technique for restoring and recovering corrupt data blocks while data files are online. If only a few blocks are corrupt, then block media recovery may be preferable to data file media recovery. For automatic block media recovery to work, a physical standby database must be in real-time query mode, which requires an Oracle Active Data Guard license.<br><br>https://www.oracle.com/technetwork/database/availability/maa-datacorruption-bestpractices-396464.pdf</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -12101,9 +12053,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 116657,
           "date": "Mon 22 Jun 2020 19:31",
-          "username": "you1234marcinb32",
-          "content": "C & D<br><br>c : (below description)<br>https://docs.oracle.com/database/121/BRADV/rcmconfa.htm#BRADV89457If you forget or lose the password that you used to encrypt a dual-mode encrypted backup and you also lose your Oracle keystore, then you are unable to restore the backup.c is incorrect<br>Dual mode encryption - This mode requires either the keystore or a password.<br>https://docs.oracle.com/en/database/oracle/oracle-database/18/bradv/configuring-rman-client-advanced.html#GUID-6ED708C7-1092-45FC-80C6-236F062D0DAC",
-          "upvote_count": "12",
+          "username": "you1234",
+          "content": "C & D<br><br>c : (below description)<br>https://docs.oracle.com/database/121/BRADV/rcmconfa.htm#BRADV89457If you forget or lose the password that you used to encrypt a dual-mode encrypted backup and you also lose your Oracle keystore, then you are unable to restore the backup.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>c is incorrect<br>Dual mode encryption - This mode requires either the keystore or a password.<br>https://docs.oracle.com/en/database/oracle/oracle-database/18/bradv/configuring-rman-client-advanced.html#GUID-6ED708C7-1092-45FC-80C6-236F062D0DAC</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -12193,25 +12145,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 112523,
           "date": "Wed 17 Jun 2020 17:02",
-          "username": "monad2006AlejandrrroAlejandrrroAlejandrrroald85",
-          "content": "i think .. DEF -- you can install grid and the the oracle software, otherwise you can also install oracle software before the gird and then register database with oracle restart.Agree<br><br>A is not correct:<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-installation-fixup-scripts.html#GUID-B427B3F7-BFE3-4ACF-89FD-A79A5774C7AA<br>The Fixup script does the following tasks:<br>-\tSets kernel parameters, if necessary, to values required for successful installa-tion, including:<br>-\tShared memory parameters.<br>-\tOpen file descriptor and UDP send/receive parameters.<br>-\tCreates and sets permissions on the Or-acle Inventory (central inventory) direc-tory.<br>-\tCreates or reconfigures primary and secondary group memberships for the installation owner, if necessary, for the Oracle Inventory directory and the op-erating system privileges groups.<br>-\tSets shell limits, if necessary, to required values.B is not correct. Preinstall RPM can but not must be used for that task.<br><br>C is not correct. You can choose a character set but not languages<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-character-set-selection-during-installation.html#GUID-70B091B3-C67A-4AFD-9F60-75046171592DD, F are correct<br><br>There are two separate entries in the following guide<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/installing-oracle-grid-infrastructure-for-a-standalone-server-with-a-new-database-installation.html#GUID-0B1CEE8C-C893-46AA-8A6A-7B5FAAEC72B3<br><br>Installing Oracle Grid Infrastructure for a Standalone Server with a New Database Instal-lation<br>Installing Oracle Grid Infrastructure for a Standalone Server for an Existing Database<br><br>G is incorrect.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/running-oracle-universal-installer-to-install-oracle-database.html#GUID-DD4800E9-C651-4B08-A6AC-E5ECCC6512B9<br><br>Provide information to automate root scripts, or run scripts as root when prompted by the setup wizard.Correct, C is incorrect, in 19c you can't select languages at installation.",
-          "upvote_count": "152231",
+          "username": "monad2006",
+          "content": "i think .. DEF -- you can install grid and the the oracle software, otherwise you can also install oracle software before the gird and then register database with oracle restart.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree<br><br>A is not correct:<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-installation-fixup-scripts.html#GUID-B427B3F7-BFE3-4ACF-89FD-A79A5774C7AA<br>The Fixup script does the following tasks:<br>- Sets kernel parameters, if necessary, to values required for successful installa-tion, including:<br>- Shared memory parameters.<br>- Open file descriptor and UDP send/receive parameters.<br>- Creates and sets permissions on the Or-acle Inventory (central inventory) direc-tory.<br>- Creates or reconfigures primary and secondary group memberships for the installation owner, if necessary, for the Oracle Inventory directory and the op-erating system privileges groups.<br>- Sets shell limits, if necessary, to required values.</li><li>B is not correct. Preinstall RPM can but not must be used for that task.<br><br>C is not correct. You can choose a character set but not languages<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-character-set-selection-during-installation.html#GUID-70B091B3-C67A-4AFD-9F60-75046171592D</li><li>D, F are correct<br><br>There are two separate entries in the following guide<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/installing-oracle-grid-infrastructure-for-a-standalone-server-with-a-new-database-installation.html#GUID-0B1CEE8C-C893-46AA-8A6A-7B5FAAEC72B3<br><br>Installing Oracle Grid Infrastructure for a Standalone Server with a New Database Instal-lation<br>Installing Oracle Grid Infrastructure for a Standalone Server for an Existing Database<br><br>G is incorrect.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/running-oracle-universal-installer-to-install-oracle-database.html#GUID-DD4800E9-C651-4B08-A6AC-E5ECCC6512B9<br><br>Provide information to automate root scripts, or run scripts as root when prompted by the setup wizard.</li><li>Correct, C is incorrect, in 19c you can't select languages at installation.</li></ul>",
+          "upvote_count": "15",
           "selected_answers": ""
         },
         {
           "id": 293179,
           "date": "Thu 18 Feb 2021 08:39",
-          "username": "AlejandrrroAlejandrrroAlejandrrro",
-          "content": "Agree<br><br>A is not correct:<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-installation-fixup-scripts.html#GUID-B427B3F7-BFE3-4ACF-89FD-A79A5774C7AA<br>The Fixup script does the following tasks:<br>-\tSets kernel parameters, if necessary, to values required for successful installa-tion, including:<br>-\tShared memory parameters.<br>-\tOpen file descriptor and UDP send/receive parameters.<br>-\tCreates and sets permissions on the Or-acle Inventory (central inventory) direc-tory.<br>-\tCreates or reconfigures primary and secondary group memberships for the installation owner, if necessary, for the Oracle Inventory directory and the op-erating system privileges groups.<br>-\tSets shell limits, if necessary, to required values.B is not correct. Preinstall RPM can but not must be used for that task.<br><br>C is not correct. You can choose a character set but not languages<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-character-set-selection-during-installation.html#GUID-70B091B3-C67A-4AFD-9F60-75046171592DD, F are correct<br><br>There are two separate entries in the following guide<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/installing-oracle-grid-infrastructure-for-a-standalone-server-with-a-new-database-installation.html#GUID-0B1CEE8C-C893-46AA-8A6A-7B5FAAEC72B3<br><br>Installing Oracle Grid Infrastructure for a Standalone Server with a New Database Instal-lation<br>Installing Oracle Grid Infrastructure for a Standalone Server for an Existing Database<br><br>G is incorrect.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/running-oracle-universal-installer-to-install-oracle-database.html#GUID-DD4800E9-C651-4B08-A6AC-E5ECCC6512B9<br><br>Provide information to automate root scripts, or run scripts as root when prompted by the setup wizard.",
-          "upvote_count": "223",
+          "username": "Alejandrrro",
+          "content": "Agree<br><br>A is not correct:<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-installation-fixup-scripts.html#GUID-B427B3F7-BFE3-4ACF-89FD-A79A5774C7AA<br>The Fixup script does the following tasks:<br>- Sets kernel parameters, if necessary, to values required for successful installa-tion, including:<br>- Shared memory parameters.<br>- Open file descriptor and UDP send/receive parameters.<br>- Creates and sets permissions on the Or-acle Inventory (central inventory) direc-tory.<br>- Creates or reconfigures primary and secondary group memberships for the installation owner, if necessary, for the Oracle Inventory directory and the op-erating system privileges groups.<br>- Sets shell limits, if necessary, to required values.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>B is not correct. Preinstall RPM can but not must be used for that task.<br><br>C is not correct. You can choose a character set but not languages<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-character-set-selection-during-installation.html#GUID-70B091B3-C67A-4AFD-9F60-75046171592D</li><li>D, F are correct<br><br>There are two separate entries in the following guide<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/installing-oracle-grid-infrastructure-for-a-standalone-server-with-a-new-database-installation.html#GUID-0B1CEE8C-C893-46AA-8A6A-7B5FAAEC72B3<br><br>Installing Oracle Grid Infrastructure for a Standalone Server with a New Database Instal-lation<br>Installing Oracle Grid Infrastructure for a Standalone Server for an Existing Database<br><br>G is incorrect.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/running-oracle-universal-installer-to-install-oracle-database.html#GUID-DD4800E9-C651-4B08-A6AC-E5ECCC6512B9<br><br>Provide information to automate root scripts, or run scripts as root when prompted by the setup wizard.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 293180,
           "date": "Thu 18 Feb 2021 08:40",
-          "username": "AlejandrrroAlejandrrro",
-          "content": "B is not correct. Preinstall RPM can but not must be used for that task.<br><br>C is not correct. You can choose a character set but not languages<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-character-set-selection-during-installation.html#GUID-70B091B3-C67A-4AFD-9F60-75046171592DD, F are correct<br><br>There are two separate entries in the following guide<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/installing-oracle-grid-infrastructure-for-a-standalone-server-with-a-new-database-installation.html#GUID-0B1CEE8C-C893-46AA-8A6A-7B5FAAEC72B3<br><br>Installing Oracle Grid Infrastructure for a Standalone Server with a New Database Instal-lation<br>Installing Oracle Grid Infrastructure for a Standalone Server for an Existing Database<br><br>G is incorrect.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/running-oracle-universal-installer-to-install-oracle-database.html#GUID-DD4800E9-C651-4B08-A6AC-E5ECCC6512B9<br><br>Provide information to automate root scripts, or run scripts as root when prompted by the setup wizard.",
-          "upvote_count": "23",
+          "username": "Alejandrrro",
+          "content": "B is not correct. Preinstall RPM can but not must be used for that task.<br><br>C is not correct. You can choose a character set but not languages<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-character-set-selection-during-installation.html#GUID-70B091B3-C67A-4AFD-9F60-75046171592D<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D, F are correct<br><br>There are two separate entries in the following guide<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/installing-oracle-grid-infrastructure-for-a-standalone-server-with-a-new-database-installation.html#GUID-0B1CEE8C-C893-46AA-8A6A-7B5FAAEC72B3<br><br>Installing Oracle Grid Infrastructure for a Standalone Server with a New Database Instal-lation<br>Installing Oracle Grid Infrastructure for a Standalone Server for an Existing Database<br><br>G is incorrect.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/running-oracle-universal-installer-to-install-oracle-database.html#GUID-DD4800E9-C651-4B08-A6AC-E5ECCC6512B9<br><br>Provide information to automate root scripts, or run scripts as root when prompted by the setup wizard.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -12233,17 +12185,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 158492,
           "date": "Sat 15 Aug 2020 08:35",
-          "username": "janwjanwjanwjanwkhalilshahin01Mastino69",
-          "content": "DEF, but in practice you should never do D. ..D is impossible.in case of restart, you can later register your databases. <br>so must be A, E, F<br><br>in my test case to install grid, fixup was able to install an rpm!My remark is incorrect, D speaks about standalone...as an example: https://www.fatihacar.com/blog/oracle-19c-r3-real-application-clusters-rac-installation-steps-on-oracle-linux-7-7/<br><br>the cvuq.... is missing, but A is very weird: it cannot install any rpm.A is incorrect:<br>2.6 Installation Fixup Scripts<br>During installation, for certain prerequisite verification failures, click Fix & Check Again to generate a fixup script (runfixup.sh). You can run this script as the root user to complete the required preinstallation steps.<br><br>The fixup script:<br><br>Checks for and sets kernel parameters to values required for successful installation, including:<br><br>Shared memory parameters<br><br>Open file descriptor and UDP send/receive parameters<br><br>Oracle recommends that you do not modify the contents of the generated fixup script.It seems rpm cannot be installed by that script: https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-installation-fixup-scripts.html#GUID-B427B3F7-BFE3-4ACF-89FD-A79A5774C7AA",
-          "upvote_count": "511211",
+          "username": "janw",
+          "content": "DEF, but in practice you should never do D. ..<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D is impossible.in case of restart, you can later register your databases. <br>so must be A, E, F<br><br>in my test case to install grid, fixup was able to install an rpm!</li><li>My remark is incorrect, D speaks about standalone...</li><li>as an example: https://www.fatihacar.com/blog/oracle-19c-r3-real-application-clusters-rac-installation-steps-on-oracle-linux-7-7/<br><br>the cvuq.... is missing, but A is very weird: it cannot install any rpm.</li><li>A is incorrect:<br>2.6 Installation Fixup Scripts<br>During installation, for certain prerequisite verification failures, click Fix &amp; Check Again to generate a fixup script (runfixup.sh). You can run this script as the root user to complete the required preinstallation steps.<br><br>The fixup script:<br><br>Checks for and sets kernel parameters to values required for successful installation, including:<br><br>Shared memory parameters<br><br>Open file descriptor and UDP send/receive parameters<br><br>Oracle recommends that you do not modify the contents of the generated fixup script.</li><li>It seems rpm cannot be installed by that script: https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-installation-fixup-scripts.html#GUID-B427B3F7-BFE3-4ACF-89FD-A79A5774C7AA</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
           "id": 162398,
           "date": "Thu 20 Aug 2020 19:44",
-          "username": "janwjanwjanwkhalilshahin01Mastino69",
-          "content": "D is impossible.in case of restart, you can later register your databases. <br>so must be A, E, F<br><br>in my test case to install grid, fixup was able to install an rpm!My remark is incorrect, D speaks about standalone...as an example: https://www.fatihacar.com/blog/oracle-19c-r3-real-application-clusters-rac-installation-steps-on-oracle-linux-7-7/<br><br>the cvuq.... is missing, but A is very weird: it cannot install any rpm.A is incorrect:<br>2.6 Installation Fixup Scripts<br>During installation, for certain prerequisite verification failures, click Fix & Check Again to generate a fixup script (runfixup.sh). You can run this script as the root user to complete the required preinstallation steps.<br><br>The fixup script:<br><br>Checks for and sets kernel parameters to values required for successful installation, including:<br><br>Shared memory parameters<br><br>Open file descriptor and UDP send/receive parameters<br><br>Oracle recommends that you do not modify the contents of the generated fixup script.It seems rpm cannot be installed by that script: https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-installation-fixup-scripts.html#GUID-B427B3F7-BFE3-4ACF-89FD-A79A5774C7AA",
-          "upvote_count": "11211",
+          "username": "janw",
+          "content": "D is impossible.in case of restart, you can later register your databases. <br>so must be A, E, F<br><br>in my test case to install grid, fixup was able to install an rpm!<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>My remark is incorrect, D speaks about standalone...</li><li>as an example: https://www.fatihacar.com/blog/oracle-19c-r3-real-application-clusters-rac-installation-steps-on-oracle-linux-7-7/<br><br>the cvuq.... is missing, but A is very weird: it cannot install any rpm.</li><li>A is incorrect:<br>2.6 Installation Fixup Scripts<br>During installation, for certain prerequisite verification failures, click Fix &amp; Check Again to generate a fixup script (runfixup.sh). You can run this script as the root user to complete the required preinstallation steps.<br><br>The fixup script:<br><br>Checks for and sets kernel parameters to values required for successful installation, including:<br><br>Shared memory parameters<br><br>Open file descriptor and UDP send/receive parameters<br><br>Oracle recommends that you do not modify the contents of the generated fixup script.</li><li>It seems rpm cannot be installed by that script: https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-installation-fixup-scripts.html#GUID-B427B3F7-BFE3-4ACF-89FD-A79A5774C7AA</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -12257,9 +12209,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 162403,
           "date": "Thu 20 Aug 2020 19:49",
-          "username": "janwkhalilshahin01",
-          "content": "as an example: https://www.fatihacar.com/blog/oracle-19c-r3-real-application-clusters-rac-installation-steps-on-oracle-linux-7-7/<br><br>the cvuq.... is missing, but A is very weird: it cannot install any rpm.A is incorrect:<br>2.6 Installation Fixup Scripts<br>During installation, for certain prerequisite verification failures, click Fix & Check Again to generate a fixup script (runfixup.sh). You can run this script as the root user to complete the required preinstallation steps.<br><br>The fixup script:<br><br>Checks for and sets kernel parameters to values required for successful installation, including:<br><br>Shared memory parameters<br><br>Open file descriptor and UDP send/receive parameters<br><br>Oracle recommends that you do not modify the contents of the generated fixup script.",
-          "upvote_count": "21",
+          "username": "janw",
+          "content": "as an example: https://www.fatihacar.com/blog/oracle-19c-r3-real-application-clusters-rac-installation-steps-on-oracle-linux-7-7/<br><br>the cvuq.... is missing, but A is very weird: it cannot install any rpm.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A is incorrect:<br>2.6 Installation Fixup Scripts<br>During installation, for certain prerequisite verification failures, click Fix &amp; Check Again to generate a fixup script (runfixup.sh). You can run this script as the root user to complete the required preinstallation steps.<br><br>The fixup script:<br><br>Checks for and sets kernel parameters to values required for successful installation, including:<br><br>Shared memory parameters<br><br>Open file descriptor and UDP send/receive parameters<br><br>Oracle recommends that you do not modify the contents of the generated fixup script.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -12321,9 +12273,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 107582,
           "date": "Thu 11 Jun 2020 11:32",
-          "username": "taotsumiauald85",
-          "content": "My answer is CEG.. any comments?G is not correct, you can run scripts by passing credentials or directly in the OS by a root user, I think corrects are CEF",
-          "upvote_count": "14",
+          "username": "taotsumiau",
+          "content": "My answer is CEG.. any comments?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>G is not correct, you can run scripts by passing credentials or directly in the OS by a root user, I think corrects are CEF</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -12400,9 +12352,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 420160,
           "date": "Thu 05 Aug 2021 11:10",
-          "username": "marpayerarpz",
-          "content": "For me ADF<br>According with the student guide new Features 19c it is only possibel to connect to a pluggable database as a target if RMAN VPC is usedA is wrong. No need RMAN Catalog or RMAN Virtual Private Catalog. RMAN can connect directly to PDB without issue.<br><br>$ rman target SYS@FISMIGD01<br>Recovery Manager: Release 19.0.0.0.0 - Production on Mon Aug 30 10:22:15 2021<br>Version 19.6.0.0.0<br>target database Password:<br>connected to target database: FISMIGD1:FISMIGD01 (DBID2787864249)<br><br>$ sqlplus \\\"/as sysdba\\\"<br>SQL*Plus: Release 19.0.0.0.0 - Production on Mon Aug 30 10:22:48 2021<br>Version 19.6.0.0.0<br><br>SQL> show pdbs;<br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 FISMIGD01READ WRITE NO",
-          "upvote_count": "12",
+          "username": "marpayer",
+          "content": "For me ADF<br>According with the student guide new Features 19c it is only possibel to connect to a pluggable database as a target if RMAN VPC is used<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A is wrong. No need RMAN Catalog or RMAN Virtual Private Catalog. RMAN can connect directly to PDB without issue.<br><br>$ rman target SYS@FISMIGD01<br>Recovery Manager: Release 19.0.0.0.0 - Production on Mon Aug 30 10:22:15 2021<br>Version 19.6.0.0.0<br>target database Password:<br>connected to target database: FISMIGD1:FISMIGD01 (DBID2787864249)<br><br>$ sqlplus \\\"/as sysdba\\\"<br>SQL*Plus: Release 19.0.0.0.0 - Production on Mon Aug 30 10:22:48 2021<br>Version 19.6.0.0.0<br><br>SQL&gt; show pdbs;<br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 FISMIGD01READ WRITE NO</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -12440,9 +12392,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 112177,
           "date": "Wed 17 Jun 2020 07:17",
-          "username": "veginhaald85",
-          "content": "B is new feature of 19c so i think this is correct, even its says \\\"always possible\\\"that sounds tricky<br><br>Connections to a recovery catalog are supported when the target database is a pluggable database (PDB)<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/newft/new-features.html#GUID-E2F2E0EE-D58B-4F9C-A7F8-301D9AEA34D8<br><br>And i don't know which others, i'm thinking in two of this (D, E, F)<br>Anyone could help?I think DEF too",
-          "upvote_count": "32",
+          "username": "veginha",
+          "content": "B is new feature of 19c so i think this is correct, even its says \\\"always possible\\\"that sounds tricky<br><br>Connections to a recovery catalog are supported when the target database is a pluggable database (PDB)<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/newft/new-features.html#GUID-E2F2E0EE-D58B-4F9C-A7F8-301D9AEA34D8<br><br>And i don't know which others, i'm thinking in two of this (D, E, F)<br>Anyone could help?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I think DEF too</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -12511,9 +12463,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 112959,
           "date": "Thu 18 Jun 2020 08:00",
-          "username": "veginhamarcinb32",
-          "content": "BDF<br>You can grant administrative privileges, such as SYSOPER and SYSBACKUP, to schema-only (passwordless) accounts. (B correct)<br>-Privilege analysis is now available as part of Oracle Database Enterprise Edition. (D correct)<br>-The unified auditing top-level statements feature enables you to audit top-level user (direct user) activities in the database without collecting indirect user activity audit data. (F correct)<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/newft/new-features.htmlBDF is correct",
-          "upvote_count": "194",
+          "username": "veginha",
+          "content": "BDF<br>You can grant administrative privileges, such as SYSOPER and SYSBACKUP, to schema-only (passwordless) accounts. (B correct)<br>-Privilege analysis is now available as part of Oracle Database Enterprise Edition. (D correct)<br>-The unified auditing top-level statements feature enables you to audit top-level user (direct user) activities in the database without collecting indirect user activity audit data. (F correct)<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/newft/new-features.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>BDF is correct</li></ul>",
+          "upvote_count": "19",
           "selected_answers": ""
         },
         {
@@ -12598,17 +12550,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 112953,
           "date": "Thu 18 Jun 2020 07:50",
-          "username": "veginhajanwjanw",
-          "content": "B,D,E are correct<br>The restore point is a label for the SCN to which this archival backup can be restored and recovered , andis captured just after the data file backups complete. (F is wrong)<br>Normal restore points are retained in the database for at least the number of days specified for the CONTROL_FILE_RECORD_KEEP_TIME initialization parameter (A incorrect)<br>-The control file autobackup that RMAN automatically makes when you use the backup .. keep command has a copy of the restore point (and also the spfile D and E are correct)<br>KEEP - Specifies the backup as an archival backup, which is a self-contained backup that is exempt from the configured retention policy.<br>UNTIL TIME - Specifies the time until which the backup or copy must be kept (B correct)<br><br>https://docs.oracle.com/cd/E18283_01/server.112/e17118/statements_6011.htm<br>http://devel.hotpilot.cz/ora11gR2u2-full/backup.112/e10643/rcmsubcl011.htm<br>An example:<br>http://www.online-database.eu/recovery-manager-rman/143-rman-backupsets-with-restore-pointi agree with BDE, tested D&E in lab.<br>but what is wrong with A?It supports an optional RESTORE POINT clause that creates a normal restore point, which is a label for an SCN to which the backup must be recovered to be made consistent. The SCN is captured just after the data file backups complete. RMAN resynchronizes restore points with the recovery catalog and maintains the restore points as long as the backup exists. \\\"Listing Restore Points\\\" explains how to display restore points.<br><br>ok it's a small difference, archival backupdatafile & archivelog.restore point is jus tafter the datafile backup ready.will be followed by archivelog, cf, spfile",
-          "upvote_count": "1453",
+          "username": "veginha",
+          "content": "B,D,E are correct<br>The restore point is a label for the SCN to which this archival backup can be restored and recovered , andis captured just after the data file backups complete. (F is wrong)<br>Normal restore points are retained in the database for at least the number of days specified for the CONTROL_FILE_RECORD_KEEP_TIME initialization parameter (A incorrect)<br>-The control file autobackup that RMAN automatically makes when you use the backup .. keep command has a copy of the restore point (and also the spfile D and E are correct)<br>KEEP - Specifies the backup as an archival backup, which is a self-contained backup that is exempt from the configured retention policy.<br>UNTIL TIME - Specifies the time until which the backup or copy must be kept (B correct)<br><br>https://docs.oracle.com/cd/E18283_01/server.112/e17118/statements_6011.htm<br>http://devel.hotpilot.cz/ora11gR2u2-full/backup.112/e10643/rcmsubcl011.htm<br>An example:<br>http://www.online-database.eu/recovery-manager-rman/143-rman-backupsets-with-restore-point<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>i agree with BDE, tested D&amp;E in lab.<br>but what is wrong with A?</li><li>It supports an optional RESTORE POINT clause that creates a normal restore point, which is a label for an SCN to which the backup must be recovered to be made consistent. The SCN is captured just after the data file backups complete. RMAN resynchronizes restore points with the recovery catalog and maintains the restore points as long as the backup exists. \\\"Listing Restore Points\\\" explains how to display restore points.<br><br>ok it's a small difference, archival backupdatafile &amp; archivelog.restore point is jus tafter the datafile backup ready.will be followed by archivelog, cf, spfile</li></ul>",
+          "upvote_count": "14",
           "selected_answers": ""
         },
         {
           "id": 163818,
           "date": "Sat 22 Aug 2020 20:30",
-          "username": "janwjanw",
-          "content": "i agree with BDE, tested D&E in lab.<br>but what is wrong with A?It supports an optional RESTORE POINT clause that creates a normal restore point, which is a label for an SCN to which the backup must be recovered to be made consistent. The SCN is captured just after the data file backups complete. RMAN resynchronizes restore points with the recovery catalog and maintains the restore points as long as the backup exists. \\\"Listing Restore Points\\\" explains how to display restore points.<br><br>ok it's a small difference, archival backupdatafile & archivelog.restore point is jus tafter the datafile backup ready.will be followed by archivelog, cf, spfile",
-          "upvote_count": "53",
+          "username": "janw",
+          "content": "i agree with BDE, tested D&E in lab.<br>but what is wrong with A?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>It supports an optional RESTORE POINT clause that creates a normal restore point, which is a label for an SCN to which the backup must be recovered to be made consistent. The SCN is captured just after the data file backups complete. RMAN resynchronizes restore points with the recovery catalog and maintains the restore points as long as the backup exists. \\\"Listing Restore Points\\\" explains how to display restore points.<br><br>ok it's a small difference, archival backupdatafile &amp; archivelog.restore point is jus tafter the datafile backup ready.will be followed by archivelog, cf, spfile</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
@@ -12806,9 +12758,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 324655,
           "date": "Wed 31 Mar 2021 04:51",
-          "username": "RinDsaserdiAldridegore0496",
-          "content": "ACDH<br><br>A backup set contains one or more binary files in an RMAN-specific format. Each of these files is known as a backup piece. So E is Wrong.Backup sets are produced by the RMAN BACKUP command. A backup set usually consists of only one backup piece. RMAN divides the contents of a backup set among multiple backup pieces only if you limit the backup piece size using the MAXPIECESIZE option of the ALLOCATE CHANNEL or CONFIGURE CHANNEL command.<br><br>https://docs.oracle.com/cd/E18283_01/backup.112/e10642/glossary.htm#i432144ACDH<br><br>A backup set contains one or more binary files in an RMAN-specific format. Each of these files is known as a backup piece. A backup set can contain multiple datafiles. For example, you can back up 10 datafiles into a single backup set consisting of a single backup piece.A -wrong<br>must not can",
-          "upvote_count": "13122",
+          "username": "RinD",
+          "content": "ACDH<br><br>A backup set contains one or more binary files in an RMAN-specific format. Each of these files is known as a backup piece. So E is Wrong.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Backup sets are produced by the RMAN BACKUP command. A backup set usually consists of only one backup piece. RMAN divides the contents of a backup set among multiple backup pieces only if you limit the backup piece size using the MAXPIECESIZE option of the ALLOCATE CHANNEL or CONFIGURE CHANNEL command.<br><br>https://docs.oracle.com/cd/E18283_01/backup.112/e10642/glossary.htm#i432144</li><li>ACDH<br><br>A backup set contains one or more binary files in an RMAN-specific format. Each of these files is known as a backup piece. A backup set can contain multiple datafiles. For example, you can back up 10 datafiles into a single backup set consisting of a single backup piece.</li><li>A -wrong<br>must not can</li></ul>",
+          "upvote_count": "13",
           "selected_answers": ""
         },
         {
@@ -12878,9 +12830,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 420276,
           "date": "Thu 05 Aug 2021 14:34",
-          "username": "vixt0rinovixt0rino",
-          "content": "ACDE , A.  \\\"can\\\" \\\"only one\\\" sounds enough restrictive to meC.  multisection backupD.  D and H are similar questions, but H is more accurate answerE.  \\\"A backup set contains one or more binary files in an RMAN-specific<br> format.Each of these files is known as a backup piece.\\\"<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-backup-concepts.html#GUID-1C871377-D8A7-4414-B0F0-884403666E8CCorrectionD.  D and H are similar questions, but D is more accurate answer",
-          "upvote_count": "11",
+          "username": "vixt0rino",
+          "content": "ACDE , A.  \\\"can\\\" \\\"only one\\\" sounds enough restrictive to meC.  multisection backupD.  D and H are similar questions, but H is more accurate answerE.  \\\"A backup set contains one or more binary files in an RMAN-specific<br> format.Each of these files is known as a backup piece.\\\"<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-backup-concepts.html#GUID-1C871377-D8A7-4414-B0F0-884403666E8C<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>CorrectionD.  D and H are similar questions, but D is more accurate answer</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -12894,9 +12846,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 363863,
           "date": "Sat 22 May 2021 20:13",
-          "username": "RogazanRogazan",
-          "content": "\\\"Backup set contains ONE or more binary files... known as backup piece\\\", then, a Backup set CAN contain only ONE backup piece (E True).<br>Blocks from multiple data files can be contained in one backup set, but not in the SAME backup piece (D False).<br>Then, ACEH (i think...)Sorry, my previous answer is wrong. ACDH is my definitive bet",
-          "upvote_count": "21",
+          "username": "Rogazan",
+          "content": "\\\"Backup set contains ONE or more binary files... known as backup piece\\\", then, a Backup set CAN contain only ONE backup piece (E True).<br>Blocks from multiple data files can be contained in one backup set, but not in the SAME backup piece (D False).<br>Then, ACEH (i think...)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Sorry, my previous answer is wrong. ACDH is my definitive bet</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -12934,25 +12886,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 159059,
           "date": "Sun 16 Aug 2020 09:41",
-          "username": "janwjanwjanwjanw",
-          "content": "H is correct:<br><br>https://docs.oracle.com/cd/B28359_01/backup.111/b28270/rcmcncpt.htm#BRADV89480<br><br> A backup set contains the data from one or more datafilesD is correct:<br><br>https://docs.oracle.com/cd/B28359_01/backup.111/b28270/rcmcncpt.htm#BRADV89480A backup set can contain multiple datafiles.E is correct<br><br>In this case, RMAN creates one backup piece as output. The backup set contains only this backup piece.E is not correct, sorry<br><br>https://docs.oracle.com/cd/B28359_01/backup.111/b28270/glossary.htm#i432114<br><br>backup piece<br><br>The physical file format used to store an RMAN backup set. Each logical backup set contains one or more physical backup pieces.<br><br>i would love the option to remove stupid remarks from me in this discussion pane",
-          "upvote_count": "2212",
+          "username": "janw",
+          "content": "H is correct:<br><br>https://docs.oracle.com/cd/B28359_01/backup.111/b28270/rcmcncpt.htm#BRADV89480<br><br> A backup set contains the data from one or more datafiles<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D is correct:<br><br>https://docs.oracle.com/cd/B28359_01/backup.111/b28270/rcmcncpt.htm#BRADV89480A backup set can contain multiple datafiles.</li><li>E is correct<br><br>In this case, RMAN creates one backup piece as output. The backup set contains only this backup piece.</li><li>E is not correct, sorry<br><br>https://docs.oracle.com/cd/B28359_01/backup.111/b28270/glossary.htm#i432114<br><br>backup piece<br><br>The physical file format used to store an RMAN backup set. Each logical backup set contains one or more physical backup pieces.<br><br>i would love the option to remove stupid remarks from me in this discussion pane</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 159064,
           "date": "Sun 16 Aug 2020 09:43",
-          "username": "janwjanwjanw",
-          "content": "D is correct:<br><br>https://docs.oracle.com/cd/B28359_01/backup.111/b28270/rcmcncpt.htm#BRADV89480A backup set can contain multiple datafiles.E is correct<br><br>In this case, RMAN creates one backup piece as output. The backup set contains only this backup piece.E is not correct, sorry<br><br>https://docs.oracle.com/cd/B28359_01/backup.111/b28270/glossary.htm#i432114<br><br>backup piece<br><br>The physical file format used to store an RMAN backup set. Each logical backup set contains one or more physical backup pieces.<br><br>i would love the option to remove stupid remarks from me in this discussion pane",
-          "upvote_count": "212",
+          "username": "janw",
+          "content": "D is correct:<br><br>https://docs.oracle.com/cd/B28359_01/backup.111/b28270/rcmcncpt.htm#BRADV89480A backup set can contain multiple datafiles.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>E is correct<br><br>In this case, RMAN creates one backup piece as output. The backup set contains only this backup piece.</li><li>E is not correct, sorry<br><br>https://docs.oracle.com/cd/B28359_01/backup.111/b28270/glossary.htm#i432114<br><br>backup piece<br><br>The physical file format used to store an RMAN backup set. Each logical backup set contains one or more physical backup pieces.<br><br>i would love the option to remove stupid remarks from me in this discussion pane</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 159065,
           "date": "Sun 16 Aug 2020 09:44",
-          "username": "janwjanw",
-          "content": "E is correct<br><br>In this case, RMAN creates one backup piece as output. The backup set contains only this backup piece.E is not correct, sorry<br><br>https://docs.oracle.com/cd/B28359_01/backup.111/b28270/glossary.htm#i432114<br><br>backup piece<br><br>The physical file format used to store an RMAN backup set. Each logical backup set contains one or more physical backup pieces.<br><br>i would love the option to remove stupid remarks from me in this discussion pane",
-          "upvote_count": "12",
+          "username": "janw",
+          "content": "E is correct<br><br>In this case, RMAN creates one backup piece as output. The backup set contains only this backup piece.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>E is not correct, sorry<br><br>https://docs.oracle.com/cd/B28359_01/backup.111/b28270/glossary.htm#i432114<br><br>backup piece<br><br>The physical file format used to store an RMAN backup set. Each logical backup set contains one or more physical backup pieces.<br><br>i would love the option to remove stupid remarks from me in this discussion pane</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -12974,9 +12926,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 117273,
           "date": "Tue 23 Jun 2020 11:29",
-          "username": "julicajulica",
-          "content": "If you specify the SECTION SIZE parameter on the BACKUP command, then RMAN produces a multisection backup. This is a backup of a single large file, produced by multiple channels in parallel, each of which produces one backup piece. Each backup piece contains one file section of the file being backed up. (not C).<br>ADEHsorry: A, C, E, H -<br>C is true:<br>C: RMAN> backup section size 100M datafile 1;<br><br>List of Backup Pieces for backup set 32 Copy #1<br>BP KeyPc# StatusPiece Name<br>------- --- ----------- ----------<br>861 AVAILABLE +FRA/TST193/BACKUPSET/2020_08_06/nnndf0_tag20200806t171052_0.300.1047748253<br>...<br>949 AVAILABLE +FRA/TST193/BACKUPSET/2020_08_06/nnndf0_tag20200806t171052_0.280.1047748329<br>9510AVAILABLE +FRA/TST193/BACKUPSET/2020_08_06/nnndf0_tag20200806t171052_0.334.1047748337",
-          "upvote_count": "22",
+          "username": "julica",
+          "content": "If you specify the SECTION SIZE parameter on the BACKUP command, then RMAN produces a multisection backup. This is a backup of a single large file, produced by multiple channels in parallel, each of which produces one backup piece. Each backup piece contains one file section of the file being backed up. (not C).<br>ADEH<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>sorry: A, C, E, H -<br>C is true:<br>C: RMAN&gt; backup section size 100M datafile 1;<br><br>List of Backup Pieces for backup set 32 Copy #1<br>BP KeyPc# StatusPiece Name<br>------- --- ----------- ----------<br>861 AVAILABLE +FRA/TST193/BACKUPSET/2020_08_06/nnndf0_tag20200806t171052_0.300.1047748253<br>...<br>949 AVAILABLE +FRA/TST193/BACKUPSET/2020_08_06/nnndf0_tag20200806t171052_0.280.1047748329<br>9510AVAILABLE +FRA/TST193/BACKUPSET/2020_08_06/nnndf0_tag20200806t171052_0.334.1047748337</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -12990,9 +12942,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 112632,
           "date": "Wed 17 Jun 2020 19:24",
-          "username": "veginhaald85ald85flaviogcmelo",
-          "content": "ADEH seems correct to meI Think ACEH (i think D and H are incompatible, I don't know)You are correct. https://docs.oracle.com/cd/B28359_01/backup.111/b28270/rcmcncpt.htm#BRADV89486The D option quotes \\\"blocks from multiple datafiles\\\", the documentation quotes multiple datafiles in a single backup pice or in the case of multisection multiple pices from a single datafile.",
-          "upvote_count": "4121",
+          "username": "veginha",
+          "content": "ADEH seems correct to me<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I Think ACEH (i think D and H are incompatible, I don't know)</li><li>You are correct. https://docs.oracle.com/cd/B28359_01/backup.111/b28270/rcmcncpt.htm#BRADV89486</li><li>The D option quotes \\\"blocks from multiple datafiles\\\", the documentation quotes multiple datafiles in a single backup pice or in the case of multisection multiple pices from a single datafile.</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -13072,9 +13024,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 162432,
           "date": "Thu 20 Aug 2020 20:32",
-          "username": "janwarpz",
-          "content": "E is correct<br><br>tested: backup pluggable database \\\"cdb$root\\\".the quotes due to the $ symbol.it backups only the root container files (no pdb datafiles).<br><br>tested CD: both incorrect<br>Tested b: correct<br>A is not correct due to the \\\"must\\\".you can connect to cdb and distinguish between tbs with same name in different pdbs with qualifying<br><br>RMAN> BACKUP TABLESPACE pdb1:system, pdb1:sysaux, pdb1:users, pdb2:system;Agree with Band E",
-          "upvote_count": "164",
+          "username": "janw",
+          "content": "E is correct<br><br>tested: backup pluggable database \\\"cdb$root\\\".the quotes due to the $ symbol.it backups only the root container files (no pdb datafiles).<br><br>tested CD: both incorrect<br>Tested b: correct<br>A is not correct due to the \\\"must\\\".you can connect to cdb and distinguish between tbs with same name in different pdbs with qualifying<br><br>RMAN> BACKUP TABLESPACE pdb1:system, pdb1:sysaux, pdb1:users, pdb2:system;<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree with Band E</li></ul>",
+          "upvote_count": "16",
           "selected_answers": ""
         },
         {
@@ -13120,9 +13072,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 324749,
           "date": "Wed 31 Mar 2021 07:06",
-          "username": "RinDRinD",
-          "content": "BD<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/backing-up-database.html#GUID-B416FCDB-1EA1-48F8-8162-F9181A75B6BB<br>To backup root: RMAN> BACKUP DATABASE ROOT;Recheck and D is false. So BE are correct.",
-          "upvote_count": "13",
+          "username": "RinD",
+          "content": "BD<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/backing-up-database.html#GUID-B416FCDB-1EA1-48F8-8162-F9181A75B6BB<br>To backup root: RMAN> BACKUP DATABASE ROOT;<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Recheck and D is false. So BE are correct.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -13160,9 +13112,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 117274,
           "date": "Tue 23 Jun 2020 11:31",
-          "username": "julicaNiciMilo",
-          "content": "correct A,BA is wrong because you can connect to a CDB to perform the tablespace backup<br>https://oracle-base.com/articles/12c/multitenant-rman-backup-recovery-cdb-and-pdb-12cr1#tablespace-and-datafile-backups",
-          "upvote_count": "41",
+          "username": "julica",
+          "content": "correct A,B<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A is wrong because you can connect to a CDB to perform the tablespace backup<br>https://oracle-base.com/articles/12c/multitenant-rman-backup-recovery-cdb-and-pdb-12cr1#tablespace-and-datafile-backups</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -13236,9 +13188,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 107591,
           "date": "Thu 11 Jun 2020 11:41",
-          "username": "taotsumiauveginha",
-          "content": "My answer is BEF. . any comment?i agree, B is correct",
-          "upvote_count": "91",
+          "username": "taotsumiau",
+          "content": "My answer is BEF. . any comment?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>i agree, B is correct</li></ul>",
+          "upvote_count": "9",
           "selected_answers": ""
         },
         {
@@ -13326,9 +13278,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 343564,
           "date": "Mon 26 Apr 2021 22:23",
-          "username": "SimoneFTrololoshko",
-          "content": "In 19c, you can actually flashback a PDB from a restore point even if it's not clean:<br><br>When using restore points, you can perform a flashback database operation either to a CDB restore point, PDB restore point, PDB clean restore point, or PDB guaranteed restore point.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-performing-flashback-dbpitr.html#GUID-C1215E86-9A7B-4EC9-9777-2A18BD627394<br><br>Following on the same page, the procedure is described, which suggests the right answer to be DI agree. tested in Lab.<br>D - CORRECT",
-          "upvote_count": "142",
+          "username": "SimoneF",
+          "content": "In 19c, you can actually flashback a PDB from a restore point even if it's not clean:<br><br>When using restore points, you can perform a flashback database operation either to a CDB restore point, PDB restore point, PDB clean restore point, or PDB guaranteed restore point.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-performing-flashback-dbpitr.html#GUID-C1215E86-9A7B-4EC9-9777-2A18BD627394<br><br>Following on the same page, the procedure is described, which suggests the right answer to be D<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I agree. tested in Lab.<br>D - CORRECT</li></ul>",
+          "upvote_count": "14",
           "selected_answers": ""
         },
         {
@@ -13342,25 +13294,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 115684,
           "date": "Sun 21 Jun 2020 17:48",
-          "username": "ald85SimoneFTrololoshkoTrololoshko",
-          "content": "I think E<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/sqlrf/FLASHBACK-DATABASE. html#GUID-BE0ACF9A-BC13-4810-B08B-33326440258B<br><br>PLUGGABLE<br>Specify PLUGGABLE to flash back a PDB.  You must specify this clause whether the current container is the root or the PDB you want to flash back.<br>Restrictions on Flashing Back a PDB<br>You cannot flash back a proxy PDB. <br>If the CDB is in shared undo mode, then you can only flash back a PDB to a clean PDB restore point. Refer to the CLEAN clause of CREATE RESTOREPOINT for more information.But that's a 12.2 doc page: in 19c, and I believe in 18c too, you apparently can do that, while connected to CDB via RMAN:<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-performing-flashback-dbpitr.html#GUID-C1215E86-9A7B-4EC9-9777-2A18BD627394I agree. tested in Lab.not true, sorry",
-          "upvote_count": "9411",
+          "username": "ald85",
+          "content": "I think E<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/sqlrf/FLASHBACK-DATABASE. html#GUID-BE0ACF9A-BC13-4810-B08B-33326440258B<br><br>PLUGGABLE<br>Specify PLUGGABLE to flash back a PDB.  You must specify this clause whether the current container is the root or the PDB you want to flash back.<br>Restrictions on Flashing Back a PDB<br>You cannot flash back a proxy PDB. <br>If the CDB is in shared undo mode, then you can only flash back a PDB to a clean PDB restore point. Refer to the CLEAN clause of CREATE RESTOREPOINT for more information.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>But that's a 12.2 doc page: in 19c, and I believe in 18c too, you apparently can do that, while connected to CDB via RMAN:<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-performing-flashback-dbpitr.html#GUID-C1215E86-9A7B-4EC9-9777-2A18BD627394</li><li>I agree. tested in Lab.</li><li>not true, sorry</li></ul>",
+          "upvote_count": "9",
           "selected_answers": ""
         },
         {
           "id": 343566,
           "date": "Mon 26 Apr 2021 22:25",
-          "username": "SimoneFTrololoshkoTrololoshko",
-          "content": "But that's a 12.2 doc page: in 19c, and I believe in 18c too, you apparently can do that, while connected to CDB via RMAN:<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-performing-flashback-dbpitr.html#GUID-C1215E86-9A7B-4EC9-9777-2A18BD627394I agree. tested in Lab.not true, sorry",
-          "upvote_count": "411",
+          "username": "SimoneF",
+          "content": "But that's a 12.2 doc page: in 19c, and I believe in 18c too, you apparently can do that, while connected to CDB via RMAN:<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-performing-flashback-dbpitr.html#GUID-C1215E86-9A7B-4EC9-9777-2A18BD627394<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I agree. tested in Lab.</li><li>not true, sorry</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
           "id": 631689,
           "date": "Fri 15 Jul 2022 12:22",
-          "username": "TrololoshkoTrololoshko",
-          "content": "I agree. tested in Lab.not true, sorry",
-          "upvote_count": "11",
+          "username": "Trololoshko",
+          "content": "I agree. tested in Lab.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>not true, sorry</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -13374,9 +13326,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 469412,
           "date": "Thu 28 Oct 2021 19:55",
-          "username": "smartvanegore0496",
-          "content": "you can flashback either by using RMAN or SQL.<br><br>So the answer most probably is E, cause many others are correct also and you can select just one of them.not only RMAN,SQL too",
-          "upvote_count": "21",
+          "username": "smartvan",
+          "content": "you can flashback either by using RMAN or SQL.<br><br>So the answer most probably is E, cause many others are correct also and you can select just one of them.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>not only RMAN,SQL too</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -13398,9 +13350,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 420042,
           "date": "Thu 05 Aug 2021 06:00",
-          "username": "Kishor123MartinDBA2",
-          "content": "Answer : D<br>Here Two point need to consider 1. shared undo mode 2. Clean restore point.<br>In a CDB that uses shared undo, one set of tablespaces is shared by all PDBs. Undo data for multiple PDBs may be mixed within the undo tablespaces and even within individual data blocks. Therefore, to perform a flashback database operation for a PDB, RMAN automatically uses an auxiliary instance to restore shared undo tablespaces and certain tablespaces in the root and then recovers data to the required point in time. This process may involve restoring backups for a relatively small amount of data. When you perform a flashback database operation on a PDB to a clean PDB restore point, no auxiliary instance or restoring of backups is required.<br><br>By default, the auxiliary instance is created in the FRA.  You can use the AUXILIARY DESTINATION clause in the FLASHBACK DATABASE command to specify an alternate location for the auxiliary instance.<br><br>Here in this question AUXILIARY DESTINATION clause is omitted(which is optional) so this RMAN command from CDB$ROOT will execute.D is correct.<br>For a CDB that uses Shared undo only RMAN can be used to flashback a PDB because an auxiliary instance must be created to accomplish this.",
-          "upvote_count": "33",
+          "username": "Kishor123",
+          "content": "Answer : D<br>Here Two point need to consider 1. shared undo mode 2. Clean restore point.<br>In a CDB that uses shared undo, one set of tablespaces is shared by all PDBs. Undo data for multiple PDBs may be mixed within the undo tablespaces and even within individual data blocks. Therefore, to perform a flashback database operation for a PDB, RMAN automatically uses an auxiliary instance to restore shared undo tablespaces and certain tablespaces in the root and then recovers data to the required point in time. This process may involve restoring backups for a relatively small amount of data. When you perform a flashback database operation on a PDB to a clean PDB restore point, no auxiliary instance or restoring of backups is required.<br><br>By default, the auxiliary instance is created in the FRA.  You can use the AUXILIARY DESTINATION clause in the FLASHBACK DATABASE command to specify an alternate location for the auxiliary instance.<br><br>Here in this question AUXILIARY DESTINATION clause is omitted(which is optional) so this RMAN command from CDB$ROOT will execute.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D is correct.<br>For a CDB that uses Shared undo only RMAN can be used to flashback a PDB because an auxiliary instance must be created to accomplish this.</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -13430,9 +13382,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 328576,
           "date": "Mon 05 Apr 2021 12:45",
-          "username": "AsmodeusSimoneF",
-          "content": "If you try to reproduce this test case, then you will get ora-39883 from SQL*Plus (both PDB and CDB$ROOT), RMAN-07536 while connected to PDB and you'll be succeeded performing \\\"flashback pluggable database...\\\" from CDB$ROOT.<br><br>So for me correct answer is D. I guess the difference between your test and others' is the DB version, if you're using 18c or higher.",
-          "upvote_count": "74",
+          "username": "Asmodeus",
+          "content": "If you try to reproduce this test case, then you will get ora-39883 from SQL*Plus (both PDB and CDB$ROOT), RMAN-07536 while connected to PDB and you'll be succeeded performing \\\"flashback pluggable database...\\\" from CDB$ROOT.<br><br>So for me correct answer is D. <br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I guess the difference between your test and others' is the DB version, if you're using 18c or higher.</li></ul>",
+          "upvote_count": "7",
           "selected_answers": ""
         },
         {
@@ -13454,9 +13406,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 152440,
           "date": "Fri 07 Aug 2020 10:49",
-          "username": "CyborgQMartinDBA2",
-          "content": "For a PDB that uses shared undo, you can optionally include the AUXILIARY DESTINATION clause to specify a location for the auxiliary instance that stores data files restored as part of the Flashback Database operation. If you omit this clause, then the auxiliary instance is created in the fast recovery area.<br>LOCAL_UNDO_ENABLEDFALSE then is in shared undo mode<br>If you are using shared undo mode, then the syntax is a little different as you will have to specify a location for an auxiliary instance.<br>FLASHBACK PLUGGABLE DATABASE PDB1 TO RESTORE POINT R1 AUXILIARY DESTINATION '/u01/aux';<br>The correct is EYou dont have to specify a location. By default, the auxiliary instance is created in the fast recovery area.",
-          "upvote_count": "31",
+          "username": "CyborgQ",
+          "content": "For a PDB that uses shared undo, you can optionally include the AUXILIARY DESTINATION clause to specify a location for the auxiliary instance that stores data files restored as part of the Flashback Database operation. If you omit this clause, then the auxiliary instance is created in the fast recovery area.<br>LOCAL_UNDO_ENABLEDFALSE then is in shared undo mode<br>If you are using shared undo mode, then the syntax is a little different as you will have to specify a location for an auxiliary instance.<br>FLASHBACK PLUGGABLE DATABASE PDB1 TO RESTORE POINT R1 AUXILIARY DESTINATION '/u01/aux';<br>The correct is E<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>You dont have to specify a location. By default, the auxiliary instance is created in the fast recovery area.</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -13536,9 +13488,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 111865,
           "date": "Tue 16 Jun 2020 21:55",
-          "username": "ald85monad2006",
-          "content": "I think CEI think CE also.",
-          "upvote_count": "137",
+          "username": "ald85",
+          "content": "I think CE<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I think CE also.</li></ul>",
+          "upvote_count": "13",
           "selected_answers": ""
         },
         {
@@ -13600,9 +13552,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 198163,
           "date": "Mon 12 Oct 2020 07:47",
-          "username": "proactSchmeili",
-          "content": "Definetly correct answers are: D, E (check it at https://docs.oracle.com/database/121/BRADV/rcmrepai.htm#BRADV89716)D is wrong...quote from your link:<br>You can use CHANGE FAILURE to change the status of an open failure to CLOSED if you have fixed it manually. However, it makes sense to use CHANGE FAILURE ... CLOSED only if for some reason the failure was not closed automatically. If a failure still exists when you use CHANGE to close it manually, then Data Recover Advisor re-creates it with a different failure ID when the appropriate data integrity check is executed.",
-          "upvote_count": "11",
+          "username": "proact",
+          "content": "Definetly correct answers are: D, E (check it at https://docs.oracle.com/database/121/BRADV/rcmrepai.htm#BRADV89716)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D is wrong...quote from your link:<br>You can use CHANGE FAILURE to change the status of an open failure to CLOSED if you have fixed it manually. However, it makes sense to use CHANGE FAILURE ... CLOSED only if for some reason the failure was not closed automatically. If a failure still exists when you use CHANGE to close it manually, then Data Recover Advisor re-creates it with a different failure ID when the appropriate data integrity check is executed.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -13624,9 +13576,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 132928,
           "date": "Sun 12 Jul 2020 14:31",
-          "username": "taotsumiaujulicanavingupta52",
-          "content": "Correct DE,<br>C- Data Recovery Advisor can be used if a database is closed. Not correct, DB should be no mount.D is wrong: CHANGE FAILURE (to change the status or priority of your failure)D is incorrect as CHANE FAILURE command is used both for changing priorities and changing status of the failure. \\\"only\\\" word in the statement makes it false.<br><br>C & E are definitely correct.",
-          "upvote_count": "211",
+          "username": "taotsumiau",
+          "content": "Correct DE,<br>C- Data Recovery Advisor can be used if a database is closed. Not correct, DB should be no mount.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D is wrong: CHANGE FAILURE (to change the status or priority of your failure)</li><li>D is incorrect as CHANE FAILURE command is used both for changing priorities and changing status of the failure. \\\"only\\\" word in the statement makes it false.<br><br>C &amp; E are definitely correct.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -13746,9 +13698,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 362356,
           "date": "Thu 20 May 2021 18:39",
-          "username": "ObserverPLjackymakAmaora",
-          "content": "A is CORRECT, no doubts here<br>B is rather not correct because you can create your own gold-image with both binaries and DB files.<br>C is CORRECT. You just create TAR in the command line with the golden image and you are happy.<br>D is not correct - it does not use any RPM<br>E is not correct rather, because it can be used for install but NOT for upgrade.About C, the doc mentions that:<br>To install Oracle Database, create the new Oracle home, extract the image file into the newly-created Oracle home, and [run the setup wizard] to register the Oracle Database product.E is CORRECT<br>Using image-based installation, you can install and upgrade Oracle Database for single-instance and cluster configurations.https://docs.oracle.com/en/database/oracle/oracle-database/21/upgrd/image-based-oracle-database-installations.html#GUID-0315AA15-1C03-4E96-B801-3A8E5F5D4B39",
-          "upvote_count": "212",
+          "username": "ObserverPL",
+          "content": "A is CORRECT, no doubts here<br>B is rather not correct because you can create your own gold-image with both binaries and DB files.<br>C is CORRECT. You just create TAR in the command line with the golden image and you are happy.<br>D is not correct - it does not use any RPM<br>E is not correct rather, because it can be used for install but NOT for upgrade.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>About C, the doc mentions that:<br>To install Oracle Database, create the new Oracle home, extract the image file into the newly-created Oracle home, and [run the setup wizard] to register the Oracle Database product.</li><li>E is CORRECT<br>Using image-based installation, you can install and upgrade Oracle Database for single-instance and cluster configurations.https://docs.oracle.com/en/database/oracle/oracle-database/21/upgrd/image-based-oracle-database-installations.html#GUID-0315AA15-1C03-4E96-B801-3A8E5F5D4B39</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -13770,17 +13722,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 349388,
           "date": "Tue 04 May 2021 14:18",
-          "username": "Aldridbrolembrolem",
-          "content": "Why B and C is Incorrect ?C is incorrect due to the following statement:<br>To install Oracle Database, create the new Oracle home, extract the image file into the newly-created Oracle home, and run the setup wizard to register the Oracle Database product.From <https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-image-based-database-installation.html#GUID-0315AA15-1C03-4E96-B801-3A8E5F5D4B39>B is CORRECT<br>You must extract the image software (db_home.zip) into the directory where you want your Oracle Database home to be located, and then run the Oracle Database Setup Wizard to start the Oracle Database installation and configuration.<br><br>From <https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-image-based-database-installation.html#GUID-0315AA15-1C03-4E96-B801-3A8E5F5D4B39>",
-          "upvote_count": "111",
+          "username": "Aldrid",
+          "content": "Why B and C is Incorrect ?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C is incorrect due to the following statement:<br>To install Oracle Database, create the new Oracle home, extract the image file into the newly-created Oracle home, and run the setup wizard to register the Oracle Database product.From &lt;https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-image-based-database-installation.html#GUID-0315AA15-1C03-4E96-B801-3A8E5F5D4B39&gt;</li><li>B is CORRECT<br>You must extract the image software (db_home.zip) into the directory where you want your Oracle Database home to be located, and then run the Oracle Database Setup Wizard to start the Oracle Database installation and configuration.<br><br>From &lt;https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-image-based-database-installation.html#GUID-0315AA15-1C03-4E96-B801-3A8E5F5D4B39&gt;</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 582782,
           "date": "Fri 08 Apr 2022 11:05",
-          "username": "brolembrolem",
-          "content": "C is incorrect due to the following statement:<br>To install Oracle Database, create the new Oracle home, extract the image file into the newly-created Oracle home, and run the setup wizard to register the Oracle Database product.From <https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-image-based-database-installation.html#GUID-0315AA15-1C03-4E96-B801-3A8E5F5D4B39>B is CORRECT<br>You must extract the image software (db_home.zip) into the directory where you want your Oracle Database home to be located, and then run the Oracle Database Setup Wizard to start the Oracle Database installation and configuration.<br><br>From <https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-image-based-database-installation.html#GUID-0315AA15-1C03-4E96-B801-3A8E5F5D4B39>",
-          "upvote_count": "11",
+          "username": "brolem",
+          "content": "C is incorrect due to the following statement:<br>To install Oracle Database, create the new Oracle home, extract the image file into the newly-created Oracle home, and run the setup wizard to register the Oracle Database product.From <https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-image-based-database-installation.html#GUID-0315AA15-1C03-4E96-B801-3A8E5F5D4B39><br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>B is CORRECT<br>You must extract the image software (db_home.zip) into the directory where you want your Oracle Database home to be located, and then run the Oracle Database Setup Wizard to start the Oracle Database installation and configuration.<br><br>From &lt;https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-image-based-database-installation.html#GUID-0315AA15-1C03-4E96-B801-3A8E5F5D4B39&gt;</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -14037,9 +13989,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 349248,
           "date": "Tue 04 May 2021 09:55",
-          "username": "RinDanddeyypKishor123",
-          "content": "BCD<br><br>\\\"This method for transporting tablespaces requires that you place the tablespaces to be transported in read-only mode until you complete the transporting process. If this is undesirable, you can use the transportable tablespaces from backup feature\\\" -> BC correct<br><br>MAX_DATAPUMP_JOBS_PER_PDB determines the maximum number of concurrent Oracle Data Pump jobs per PDB.  -> D correct<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/transporting-data.html#GUID-9304426D-9D40-4F0D-8661-F53B608A652F<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/MAX_DATAPUMP_JOBS_PER_PDB. html#GUID-E911645F-2CA4-447D-AFB7-EBD4753AA09FC is wrong for me. The question is about import, it`s not about \\\"backup feature\\\".<br>ABDI think its ABD<br>A: there are 2 metjods of transporting tablesapces.<br>First, put source database live tablespace in read only mode and take metadata backup using Expdp.<br>Second, backup based using Rman that doesn't require source database tablespace to put in read only mode.<br>But during operation oracle create auxiliary instance restore & recover tablesapce from backup and take export of tablespace by puting them in read only mode.<br>so tablesapces never remain in read write mode during transportable tablespace operations.<br>B: TRANSPORTABLEKEEP_READ_ONLY clause plugged0in tableapse can remain in read only mode.<br>D: init parameter MAX_DATAPUMP_JOBS_PER_PDB limits simultaneous data pump job at pdb level",
-          "upvote_count": "1021",
+          "username": "RinD",
+          "content": "BCD<br><br>\\\"This method for transporting tablespaces requires that you place the tablespaces to be transported in read-only mode until you complete the transporting process. If this is undesirable, you can use the transportable tablespaces from backup feature\\\" -> BC correct<br><br>MAX_DATAPUMP_JOBS_PER_PDB determines the maximum number of concurrent Oracle Data Pump jobs per PDB.  -> D correct<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/transporting-data.html#GUID-9304426D-9D40-4F0D-8661-F53B608A652F<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/MAX_DATAPUMP_JOBS_PER_PDB. html#GUID-E911645F-2CA4-447D-AFB7-EBD4753AA09F<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C is wrong for me. The question is about import, it`s not about \\\"backup feature\\\".<br>ABD</li><li>I think its ABD<br>A: there are 2 metjods of transporting tablesapces.<br>First, put source database live tablespace in read only mode and take metadata backup using Expdp.<br>Second, backup based using Rman that doesn't require source database tablespace to put in read only mode.<br>But during operation oracle create auxiliary instance restore &amp; recover tablesapce from backup and take export of tablespace by puting them in read only mode.<br>so tablesapces never remain in read write mode during transportable tablespace operations.<br>B: TRANSPORTABLEKEEP_READ_ONLY clause plugged0in tableapse can remain in read only mode.<br>D: init parameter MAX_DATAPUMP_JOBS_PER_PDB limits simultaneous data pump job at pdb level</li></ul>",
+          "upvote_count": "10",
           "selected_answers": ""
         },
         {
@@ -14061,9 +14013,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 511249,
           "date": "Tue 28 Dec 2021 16:19",
-          "username": "leozanon94asduta",
-          "content": "BCD<br><br>This is a new feature in 19c and latest<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/newft/new-features.html#GUID-8BAADCB7-F93A-48D0-BF24-369C4947C56B<br><br>\\\"You can now import tablespace files mounted on two different databases as long as the files are set as read-only.\\\"<br>You can set read/only, so its not mandatory.<br><br>D is also correct for MAX_DATAPUMP_JOBS_PER_PBD parameterThe problem with this explanation is \\\"You can now *import* as long as set to read only\\\" not \\\"You can *set to read only* to import\\\"<br><br>so it does says that read only is mandatory, just the import itself is on you.",
-          "upvote_count": "21",
+          "username": "leozanon94",
+          "content": "BCD<br><br>This is a new feature in 19c and latest<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/newft/new-features.html#GUID-8BAADCB7-F93A-48D0-BF24-369C4947C56B<br><br>\\\"You can now import tablespace files mounted on two different databases as long as the files are set as read-only.\\\"<br>You can set read/only, so its not mandatory.<br><br>D is also correct for MAX_DATAPUMP_JOBS_PER_PBD parameter<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>The problem with this explanation is \\\"You can now *import* as long as set to read only\\\" not \\\"You can *set to read only* to import\\\"<br><br>so it does says that read only is mandatory, just the import itself is on you.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: BCD"
         },
         {
@@ -14085,9 +14037,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 349891,
           "date": "Wed 05 May 2021 05:29",
-          "username": "mporislavmporislav",
-          "content": "A, B, Fchanged to BCD",
-          "upvote_count": "11",
+          "username": "mporislav",
+          "content": "A, B, F<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>changed to BCD</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -14404,9 +14356,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 350996,
           "date": "Thu 06 May 2021 14:22",
-          "username": "mporislavRogazan",
-          "content": "B, E, FOK BEF:<br>Database link must be created in master application root (local CDB) referring to replica application root (remote CDB). Option B<br>Proxy PDB must be created in master application root (local CDB) using this database link. Option F<br>Replica application root must exist in remote CDB (created or upgraded using SYNC in local Proxy PDB). Option E<br>With this, we can make a SELECT that will show data from local and remote PDB applications (Query in local master application root using CONTAINERS clause).",
-          "upvote_count": "75",
+          "username": "mporislav",
+          "content": "B, E, F<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>OK BEF:<br>Database link must be created in master application root (local CDB) referring to replica application root (remote CDB). Option B<br>Proxy PDB must be created in master application root (local CDB) using this database link. Option F<br>Replica application root must exist in remote CDB (created or upgraded using SYNC in local Proxy PDB). Option E<br>With this, we can make a SELECT that will show data from local and remote PDB applications (Query in local master application root using CONTAINERS clause).</li></ul>",
+          "upvote_count": "7",
           "selected_answers": ""
         },
         {
@@ -14592,9 +14544,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 362500,
           "date": "Thu 20 May 2021 23:04",
-          "username": "ObserverPLwqui",
-          "content": "In 19c - A, D - new featureseven, from 18c https://docs.oracle.com/en/database/oracle/oracle-database/18/cwsol/about-upgrading-grid-infrastructure-using-rhp.html#GUID-FC0B8E52-D6F4-42A8-94BF-734C95A412C7",
-          "upvote_count": "31",
+          "username": "ObserverPL",
+          "content": "In 19c - A, D - new features<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>even, from 18c https://docs.oracle.com/en/database/oracle/oracle-database/18/cwsol/about-upgrading-grid-infrastructure-using-rhp.html#GUID-FC0B8E52-D6F4-42A8-94BF-734C95A412C7</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -14608,9 +14560,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 361172,
           "date": "Wed 19 May 2021 10:30",
-          "username": "ssseeessseee",
-          "content": "Provision, Scale, Patch, and Upgrade Oracle Grid Infrastructure<br><br>The Rapid Home Provisioning Server can provision Oracle Grid Infrastructure (11g release 2 (11.2.0.4), and 12c release 1 (12.1.0.2) and release 2 (12.2)) homes, add or delete nodes from an Oracle Grid Infrastructure configuration, and can also be used to patch and upgrade Oracle Grid Infrastructure homes. In addition, there is a rollback capability that facilitates reverting from a patch procedure. While patching Oracle Grid infrastructure, you can use Rapid Home Provisioning to optionally patch any database homes hosted on the cluster.<br>Note:Rapid Home Provisioning does not provision, patch, or upgrade Oracle Restart, but you can provision single-instance databases on Oracle Restart, as explained in the subsequent sectionsorry this doc is for 12cR2<br><br>for 19c, it AD",
-          "upvote_count": "13",
+          "username": "ssseee",
+          "content": "Provision, Scale, Patch, and Upgrade Oracle Grid Infrastructure<br><br>The Rapid Home Provisioning Server can provision Oracle Grid Infrastructure (11g release 2 (11.2.0.4), and 12c release 1 (12.1.0.2) and release 2 (12.2)) homes, add or delete nodes from an Oracle Grid Infrastructure configuration, and can also be used to patch and upgrade Oracle Grid Infrastructure homes. In addition, there is a rollback capability that facilitates reverting from a patch procedure. While patching Oracle Grid infrastructure, you can use Rapid Home Provisioning to optionally patch any database homes hosted on the cluster.<br>Note:Rapid Home Provisioning does not provision, patch, or upgrade Oracle Restart, but you can provision single-instance databases on Oracle Restart, as explained in the subsequent section<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>sorry this doc is for 12cR2<br><br>for 19c, it AD</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -14703,9 +14655,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 350799,
           "date": "Thu 06 May 2021 09:07",
-          "username": "RinDABAJ",
-          "content": "AC correct<br><br>RMAN automatically manages files in the fast recovery area by deleting obsolete backups and archiving files no longer required for recovery.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/18/ssdbi/about-the-fast-recovery-area-and-the-fast-recovery-area-disk-group.html#GUID-05343E2B-24CF-427E-A068-9AC2104BEF81correct",
-          "upvote_count": "131",
+          "username": "RinD",
+          "content": "AC correct<br><br>RMAN automatically manages files in the fast recovery area by deleting obsolete backups and archiving files no longer required for recovery.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/18/ssdbi/about-the-fast-recovery-area-and-the-fast-recovery-area-disk-group.html#GUID-05343E2B-24CF-427E-A068-9AC2104BEF81<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>correct</li></ul>",
+          "upvote_count": "13",
           "selected_answers": ""
         },
         {
@@ -14727,9 +14679,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 404066,
           "date": "Sun 11 Jul 2021 16:54",
-          "username": "niabsFranta1",
-          "content": "I will choose A and F.  Because if backups are not located in the FRA then C is falsePlease be aware, that option F is talking about the destination for FRA.  If there is an option with DB_RECOVERY_FILE_DEST_SIZE parameter, I will vote for it..",
-          "upvote_count": "11",
+          "username": "niabs",
+          "content": "I will choose A and F.  Because if backups are not located in the FRA then C is false<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Please be aware, that option F is talking about the destination for FRA.  If there is an option with DB_RECOVERY_FILE_DEST_SIZE parameter, I will vote for it..</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -14962,9 +14914,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 367671,
           "date": "Thu 27 May 2021 09:16",
-          "username": "Rogazanarpz",
-          "content": "We can verify that, by default, neither PDB$SEED nor APP SEED create temporary tablespace (at least that's how it seems to work in 19.3.0)<br><br>SQL> show pdbs<br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 TOYS_ROOTREAD WRITE NO<br> 4 TOYS_ROOT$SEED READ WRITE NO<br> 5 PDB1 READ WRITE NO<br> 6 HR_ROOTREAD WRITE NO<br> 7 OPERATIONS READ WRITE NO<br> 8 RESEARCH READ WRITE NO<br><br>SQL> select name from v$pdbs where con_id not in (select con_id from cdb_temp_files);<br>NAME<br>---------------<br>PDB$SEED<br>TOYS_ROOT$SEED<br><br>I think A is correct (CDB$ROOT + pdb1 + pdb2 + app_root + app_pdb1 + app_pdb26)Agree, i dont see any tempfiles in 19c.<br><br>SQL> select con_id, file_name from cdb_temp_files;<br><br>CON_ID<br>----------<br>FILE_NAME<br>--------------------------------------------------------------------------------<br> 1<br>E:\\ORADATA\\CEQTESTDB\\DATAFILE\\O1_MF_TEMP_JKT0HX3S_.TMP<br><br> 3<br>E:\\ORADATA\\CEQTESTDB\\0D866E7293684B4AB3DFA708272C5DB4\\DATAFILE\\O1_MF_TEMP_JKT2N9<br>BQ_.DBFSQL> show pdbs;<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 EQTESTDB READ WRITE NO",
-          "upvote_count": "62",
+          "username": "Rogazan",
+          "content": "We can verify that, by default, neither PDB$SEED nor APP SEED create temporary tablespace (at least that's how it seems to work in 19.3.0)<br><br>SQL> show pdbs<br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 TOYS_ROOTREAD WRITE NO<br> 4 TOYS_ROOT$SEED READ WRITE NO<br> 5 PDB1 READ WRITE NO<br> 6 HR_ROOTREAD WRITE NO<br> 7 OPERATIONS READ WRITE NO<br> 8 RESEARCH READ WRITE NO<br><br>SQL> select name from v$pdbs where con_id not in (select con_id from cdb_temp_files);<br>NAME<br>---------------<br>PDB$SEED<br>TOYS_ROOT$SEED<br><br>I think A is correct (CDB$ROOT + pdb1 + pdb2 + app_root + app_pdb1 + app_pdb26)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree, i dont see any tempfiles in 19c.<br><br>SQL&gt; select con_id, file_name from cdb_temp_files;<br><br>CON_ID<br>----------<br>FILE_NAME<br>--------------------------------------------------------------------------------<br> 1<br>E:\\ORADATA\\CEQTESTDB\\DATAFILE\\O1_MF_TEMP_JKT0HX3S_.TMP<br><br> 3<br>E:\\ORADATA\\CEQTESTDB\\0D866E7293684B4AB3DFA708272C5DB4\\DATAFILE\\O1_MF_TEMP_JKT2N9<br>BQ_.DBFSQL&gt; show pdbs;<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 EQTESTDB READ WRITE NO</li></ul>",
+          "upvote_count": "6",
           "selected_answers": ""
         },
         {
@@ -14986,9 +14938,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 368891,
           "date": "Fri 28 May 2021 18:40",
-          "username": "ABAJegore0496ABAJABAJ",
-          "content": "B is the right answer. pdb$seed and app seed can also have their own tempfiles as shown below from lab output.So the correct answer is 8 .<br><br>SQL> select TABLESPACE_NAME,file_name from dba_temp_files;<br><br>TABLESPACE_NAME<br>------------------------------<br>FILE_NAME<br>--------------------------------------------------------------------------------<br>TEMP<br>C:\\USERS\\APP\\ORACLE\\ORADATA\\ORCL\\PDBSEED\\TEMP012021-03-08_15-37-15-070-PM.DBF6 only in 19.13<br>select TABLESPACE_NAME,file_name from cdb_temp_files;I mean 8D is the right answer",
-          "upvote_count": "3145",
+          "username": "ABAJ",
+          "content": "B is the right answer. pdb$seed and app seed can also have their own tempfiles as shown below from lab output.So the correct answer is 8 .<br><br>SQL> select TABLESPACE_NAME,file_name from dba_temp_files;<br><br>TABLESPACE_NAME<br>------------------------------<br>FILE_NAME<br>--------------------------------------------------------------------------------<br>TEMP<br>C:\\USERS\\APP\\ORACLE\\ORADATA\\ORCL\\PDBSEED\\TEMP012021-03-08_15-37-15-070-PM.DBF<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>6 only in 19.13<br>select TABLESPACE_NAME,file_name from cdb_temp_files;</li><li>I mean 8</li><li>D is the right answer</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -15002,9 +14954,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 392324,
           "date": "Sun 27 Jun 2021 21:56",
-          "username": "ABAJABAJ",
-          "content": "I mean 8D is the right answer",
-          "upvote_count": "45",
+          "username": "ABAJ",
+          "content": "I mean 8<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D is the right answer</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -15018,9 +14970,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 350825,
           "date": "Thu 06 May 2021 09:53",
-          "username": "RinDegore0496RinD",
-          "content": "B is correct<br><br>A default temporary tablespace exists for every container in the CDB.  Therefore, the CDB root and every PDB, application root, and application PDB has its own default temporary tablespace.>> Therefore, the CDB root and every PDB, application root, and application PDB has its own default temporary tablespace.<br>1+1*2+1+1*2?I recheck and agree with @mporislav. CDB$ROOT, PDB$SEED, Two PDBs, Application Root, Application Seed, 2 Application PDBs. So 8 is correct.",
-          "upvote_count": "414",
+          "username": "RinD",
+          "content": "B is correct<br><br>A default temporary tablespace exists for every container in the CDB.  Therefore, the CDB root and every PDB, application root, and application PDB has its own default temporary tablespace.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>&gt;&gt; Therefore, the CDB root and every PDB, application root, and application PDB has its own default temporary tablespace.<br>1+1*2+1+1*2?</li><li>I recheck and agree with @mporislav. CDB$ROOT, PDB$SEED, Two PDBs, Application Root, Application Seed, 2 Application PDBs. So 8 is correct.</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -15264,9 +15216,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 352777,
           "date": "Sun 09 May 2021 05:39",
-          "username": "mporislavRinD",
-          "content": "B, D<br>Depending on number of allocated channels (can be created serially/parallel).<br>Starting with Oracle Database 12c Release 1 (12.1), you can create multisection full backups that are stored as image copies. e.g.<br>backup as copy database section size 500m;I recheck and agree with you.",
-          "upvote_count": "83",
+          "username": "mporislav",
+          "content": "B, D<br>Depending on number of allocated channels (can be created serially/parallel).<br>Starting with Oracle Database 12c Release 1 (12.1), you can create multisection full backups that are stored as image copies. e.g.<br>backup as copy database section size 500m;<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I recheck and agree with you.</li></ul>",
+          "upvote_count": "8",
           "selected_answers": ""
         },
         {
@@ -15304,9 +15256,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 449792,
           "date": "Thu 23 Sep 2021 01:25",
-          "username": "nobody347DBA007",
-          "content": "DE<br>If you specify the SECTION SIZE parameter on the BACKUP command, then RMAN can<br>create a multisection backup. In this case, a single backup set can contain multiple<br>backup pieces, each containing a file section. The purposeD,E is the correct answer. The question is simply about RMAN Multisection backups and as per oracle docs \\\"The purpose of multisection backups is to enable RMAN channels to back up a single large file in parallel.\\\"<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/backing-up-database-advanced.html#GUID-F2D9FF2D-9E1C-4D38-AD8E-88B6B32F02B4<br><br>Therefore this question should be answered assuming all the pre-requisties are already in place for multisection backups (eg SECTION SIZE parameter, enough channels allocated for parallelism)",
-          "upvote_count": "21",
+          "username": "nobody347",
+          "content": "DE<br>If you specify the SECTION SIZE parameter on the BACKUP command, then RMAN can<br>create a multisection backup. In this case, a single backup set can contain multiple<br>backup pieces, each containing a file section. The purpose<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D,E is the correct answer. The question is simply about RMAN Multisection backups and as per oracle docs \\\"The purpose of multisection backups is to enable RMAN channels to back up a single large file in parallel.\\\"<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/backing-up-database-advanced.html#GUID-F2D9FF2D-9E1C-4D38-AD8E-88B6B32F02B4<br><br>Therefore this question should be answered assuming all the pre-requisties are already in place for multisection backups (eg SECTION SIZE parameter, enough channels allocated for parallelism)</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -15320,9 +15272,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 351496,
           "date": "Fri 07 May 2021 02:18",
-          "username": "RinDRinD",
-          "content": "DE correctUpdate: mporislav is right. B,D correct",
-          "upvote_count": "22",
+          "username": "RinD",
+          "content": "DE correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Update: mporislav is right. B,D correct</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -15399,9 +15351,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 351505,
           "date": "Fri 07 May 2021 02:35",
-          "username": "RinDRinD",
-          "content": "I think ABDUpdate: mporislav is right. BCD correct",
-          "upvote_count": "15",
+          "username": "RinD",
+          "content": "I think ABD<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Update: mporislav is right. BCD correct</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -15481,17 +15433,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 532953,
           "date": "Wed 26 Jan 2022 15:28",
-          "username": "egore0496egore0496egore0496",
-          "content": "NOT C<br>DE<br>https://web.stanford.edu/dept/itss/docs/oracle/10gR2/backup.102/b14191/rcmcatdb003.htm<br><br>RMAN> register database;<br><br>database registered in recovery catalog<br>starting full resync of recovery catalog<br>full resync complete<br><br>RMAN> backup current controlfile;<br><br>Starting backup at 26.01.2022 18:24:45<br>starting full resync of recovery catalog<br>full resync complete<br>allocated channel: ORA_DISK_1C.  when a new tablespace is added to a registered target database<br>do not automaticly<br>if schema changed backup command do it automaticlybut if do it in rman session, connected to catalog then<br>RMAN> CREATETABLESPACE tbs_test2<br>DATAFILE '/opt/oracle/oradata/CDB1/test.dbf2'<br>SIZE 10M<br>AUTOEXTEND ON;2> 3> 4><br><br>Statement processed<br>starting full resync of recovery catalog<br>full resync complete<br><br>CE?",
-          "upvote_count": "111",
+          "username": "egore0496",
+          "content": "NOT C<br>DE<br>https://web.stanford.edu/dept/itss/docs/oracle/10gR2/backup.102/b14191/rcmcatdb003.htm<br><br>RMAN> register database;<br><br>database registered in recovery catalog<br>starting full resync of recovery catalog<br>full resync complete<br><br>RMAN> backup current controlfile;<br><br>Starting backup at 26.01.2022 18:24:45<br>starting full resync of recovery catalog<br>full resync complete<br>allocated channel: ORA_DISK_1<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C.  when a new tablespace is added to a registered target database<br>do not automaticly<br>if schema changed backup command do it automaticly</li><li>but if do it in rman session, connected to catalog then<br>RMAN&gt; CREATETABLESPACE tbs_test2<br>DATAFILE '/opt/oracle/oradata/CDB1/test.dbf2'<br>SIZE 10M<br>AUTOEXTEND ON;2&gt; 3&gt; 4&gt;<br><br>Statement processed<br>starting full resync of recovery catalog<br>full resync complete<br><br>CE?</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 532966,
           "date": "Wed 26 Jan 2022 15:39",
-          "username": "egore0496egore0496",
-          "content": "C.  when a new tablespace is added to a registered target database<br>do not automaticly<br>if schema changed backup command do it automaticlybut if do it in rman session, connected to catalog then<br>RMAN> CREATETABLESPACE tbs_test2<br>DATAFILE '/opt/oracle/oradata/CDB1/test.dbf2'<br>SIZE 10M<br>AUTOEXTEND ON;2> 3> 4><br><br>Statement processed<br>starting full resync of recovery catalog<br>full resync complete<br><br>CE?",
-          "upvote_count": "11",
+          "username": "egore0496",
+          "content": "C.  when a new tablespace is added to a registered target database<br>do not automaticly<br>if schema changed backup command do it automaticly<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>but if do it in rman session, connected to catalog then<br>RMAN&gt; CREATETABLESPACE tbs_test2<br>DATAFILE '/opt/oracle/oradata/CDB1/test.dbf2'<br>SIZE 10M<br>AUTOEXTEND ON;2&gt; 3&gt; 4&gt;<br><br>Statement processed<br>starting full resync of recovery catalog<br>full resync complete<br><br>CE?</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -15505,9 +15457,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 519277,
           "date": "Sat 08 Jan 2022 02:32",
-          "username": "kvfbrolem",
-          "content": "I think D, E for 'automatic full resynchronization'.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/managing-recovery-catalog.html#GUID-87642B50-AF67-482E-A93D-291B8D2EED92<br><br>Most 'RMAN commands' perform a resynchronization automatically when the target control file is mounted and the catalog is available.<br><br>RMAN> backup current controlfile;<br><br>Starting backup at 08-JAN-22 12:14:16<br>starting full resync of recovery catalog<br>full resync complete<br>allocated channel: ORA_DISK_1https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/RESYNC-CATALOG.html#GUID-DF91BD12-A00D-49CC-99C5-E8EDD0094CCE<br><br>Typically, you run RESYNC CATALOG in the following situations:<br><br>You made changes to the physical structure of the target database such as adding or dropping a tablespace. As with log archiving, the recovery catalog is NOT updated automatically when the physical schema changes.C is correct: In a full resynchronization, RMAN updates all changed records, including those for the database schema. RMAN performs a full resynchronization after structural changes to database (adding or dropping database files, creating new incarnation, and so on) or after changes to the RMAN persistent configuration.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/managing-recovery-catalog.html#GUID-A7B674BE-0E9C-444D-8517-E7F7D83115D0",
-          "upvote_count": "21",
+          "username": "kvf",
+          "content": "I think D, E for 'automatic full resynchronization'.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/managing-recovery-catalog.html#GUID-87642B50-AF67-482E-A93D-291B8D2EED92<br><br>Most 'RMAN commands' perform a resynchronization automatically when the target control file is mounted and the catalog is available.<br><br>RMAN> backup current controlfile;<br><br>Starting backup at 08-JAN-22 12:14:16<br>starting full resync of recovery catalog<br>full resync complete<br>allocated channel: ORA_DISK_1https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/RESYNC-CATALOG.html#GUID-DF91BD12-A00D-49CC-99C5-E8EDD0094CCE<br><br>Typically, you run RESYNC CATALOG in the following situations:<br><br>You made changes to the physical structure of the target database such as adding or dropping a tablespace. As with log archiving, the recovery catalog is NOT updated automatically when the physical schema changes.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C is correct: In a full resynchronization, RMAN updates all changed records, including those for the database schema. RMAN performs a full resynchronization after structural changes to database (adding or dropping database files, creating new incarnation, and so on) or after changes to the RMAN persistent configuration.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/managing-recovery-catalog.html#GUID-A7B674BE-0E9C-444D-8517-E7F7D83115D0</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -15584,9 +15536,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 363358,
           "date": "Sat 22 May 2021 04:39",
-          "username": "ABAJsaserdi",
-          "content": "B and E are correct answers . to platform or for transport any of the command can be used and the source DB needs to be in mounted mode.<br>https://blog.enmotech.com/2018/01/10/oracle-12cr2-cross-platform-pdb-transport-using-xtts/BE correct",
-          "upvote_count": "73",
+          "username": "ABAJ",
+          "content": "B and E are correct answers . to platform or for transport any of the command can be used and the source DB needs to be in mounted mode.<br>https://blog.enmotech.com/2018/01/10/oracle-12cr2-cross-platform-pdb-transport-using-xtts/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>BE correct</li></ul>",
+          "upvote_count": "7",
           "selected_answers": ""
         },
         {
@@ -15624,17 +15576,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 533067,
           "date": "Wed 26 Jan 2022 17:47",
-          "username": "egore0496egore0496egore0496",
-          "content": "BE<br>https://blog.enmotech.com/2018/01/10/oracle-12cr2-cross-platform-pdb-transport-using-xtts/<br>BVerify the prerequisites: The source PDB must be closed in MOUNTED mode and the COMPATIBLE parameter must be set to 12.2 or higher.<br>EFor performing cross-platform PDB transport, you may need the exact name of the destination platform to which you are transporting data and may need to verify that the destination platform is of the same endian format.<br><br>SQL> SELECT PLATFORM_ID, PLATFORM_NAME, ENDIAN_FORMAT FROM V$TRANSPORTABLE_PLATFORM<br>WHERE UPPER(PLATFORM_NAME) LIKE =E2=80=98%LINUX%';DE<br>run<br>{<br>allocate channel ch1 type disk;<br>BACKUP to platform 'Microsoft Windows x86 64-bit'<br>pluggable database PDB1;<br>}run<br>{<br>allocate channel ch1 type disk;<br>BACKUP FOR TRANSPORT PLUGGABLE DATABASE PDB2;<br>}",
-          "upvote_count": "131",
+          "username": "egore0496",
+          "content": "BE<br>https://blog.enmotech.com/2018/01/10/oracle-12cr2-cross-platform-pdb-transport-using-xtts/<br>BVerify the prerequisites: The source PDB must be closed in MOUNTED mode and the COMPATIBLE parameter must be set to 12.2 or higher.<br>EFor performing cross-platform PDB transport, you may need the exact name of the destination platform to which you are transporting data and may need to verify that the destination platform is of the same endian format.<br><br>SQL> SELECT PLATFORM_ID, PLATFORM_NAME, ENDIAN_FORMAT FROM V$TRANSPORTABLE_PLATFORM<br>WHERE UPPER(PLATFORM_NAME) LIKE =E2=80=98%LINUX%';<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>DE<br>run<br>{<br>allocate channel ch1 type disk;<br>BACKUP to platform 'Microsoft Windows x86 64-bit'<br>pluggable database PDB1;<br>}</li><li>run<br>{<br>allocate channel ch1 type disk;<br>BACKUP FOR TRANSPORT PLUGGABLE DATABASE PDB2;<br>}</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 533107,
           "date": "Wed 26 Jan 2022 18:32",
-          "username": "egore0496egore0496",
-          "content": "DE<br>run<br>{<br>allocate channel ch1 type disk;<br>BACKUP to platform 'Microsoft Windows x86 64-bit'<br>pluggable database PDB1;<br>}run<br>{<br>allocate channel ch1 type disk;<br>BACKUP FOR TRANSPORT PLUGGABLE DATABASE PDB2;<br>}",
-          "upvote_count": "31",
+          "username": "egore0496",
+          "content": "DE<br>run<br>{<br>allocate channel ch1 type disk;<br>BACKUP to platform 'Microsoft Windows x86 64-bit'<br>pluggable database PDB1;<br>}<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>run<br>{<br>allocate channel ch1 type disk;<br>BACKUP FOR TRANSPORT PLUGGABLE DATABASE PDB2;<br>}</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -15648,9 +15600,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 433944,
           "date": "Sat 28 Aug 2021 16:14",
-          "username": "BrianGfreemun05",
-          "content": "From this documentation I think Answer is A & B. <br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-transporting-data-across-platforms.html#GUID-A41CEF69-4D73-45F4-BDF8-DCCAEB20C08F<br><br>Perform the following steps on the source CDB:<br>Connect to the root as a common user with the SYSDBA or SYSBACKUP privilege.<br>Close the PDB that needs to be transported.<br>The following statement closes the PDB hr_pdb.<br>Copy<br>RMAN> ALTER PLUGGABLE DATABASE hr_pdb CLOSE IMMEDIATE;<br>Create a cross-platform full backup of the PDB that must be transported by using the BACKUP PLUGGABLE DATABASE command.<br>To create a cross-platform backup, include either the FOR TRANSPORT or TO PLATFORM clause.<br>The following example creates a cross-platform backup of the PDB hr_pdb for the Linux x86 64-bit platform. The metadata required to plug this PDB into the destination CDB is specified using the UNPLUG INTO clause and stored in the XML file metadata_hrpdb.xml.Use the FOR TRANSPORT or TO PLATFORM clause in the BACKUP command to create cross-platform backups.A - wrong",
-          "upvote_count": "21",
+          "username": "BrianG",
+          "content": "From this documentation I think Answer is A & B. <br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-transporting-data-across-platforms.html#GUID-A41CEF69-4D73-45F4-BDF8-DCCAEB20C08F<br><br>Perform the following steps on the source CDB:<br>Connect to the root as a common user with the SYSDBA or SYSBACKUP privilege.<br>Close the PDB that needs to be transported.<br>The following statement closes the PDB hr_pdb.<br>Copy<br>RMAN> ALTER PLUGGABLE DATABASE hr_pdb CLOSE IMMEDIATE;<br>Create a cross-platform full backup of the PDB that must be transported by using the BACKUP PLUGGABLE DATABASE command.<br>To create a cross-platform backup, include either the FOR TRANSPORT or TO PLATFORM clause.<br>The following example creates a cross-platform backup of the PDB hr_pdb for the Linux x86 64-bit platform. The metadata required to plug this PDB into the destination CDB is specified using the UNPLUG INTO clause and stored in the XML file metadata_hrpdb.xml.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Use the FOR TRANSPORT or TO PLATFORM clause in the BACKUP command to create cross-platform backups.A - wrong</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -15704,25 +15656,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 356368,
           "date": "Thu 13 May 2021 14:28",
-          "username": "AldridAldridAldridnobody347Aldrid",
-          "content": "I think<br>A,D<br><br>Source Database Must be in Read only, but you can open it in Read Only Mode.<br><br>alter database open read only;Step 4. Transport phase (source data is READ ONLY)<br>4.1- Make tablespaces in source database READ ONLYE.  is correct<br><br>To transport an entire PDB to a different platform, the source platform and destination<br>platform must use the same endian format.<br><br>Backup and Restore Guide 19c.if using XTTS, the same endian format is not necessary.B, E - Final..<br>Based on https://blog.enmotech.com/2018/01/10/oracle-12cr2-cross-platform-pdb-transport-using-xtts/<br><br>A - Not must..",
-          "upvote_count": "11113",
+          "username": "Aldrid",
+          "content": "I think<br>A,D<br><br>Source Database Must be in Read only, but you can open it in Read Only Mode.<br><br>alter database open read only;<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Step 4. Transport phase (source data is READ ONLY)<br>4.1- Make tablespaces in source database READ ONLY</li><li>E.  is correct<br><br>To transport an entire PDB to a different platform, the source platform and destination<br>platform must use the same endian format.<br><br>Backup and Restore Guide 19c.</li><li>if using XTTS, the same endian format is not necessary.</li><li>B, E - Final..<br>Based on https://blog.enmotech.com/2018/01/10/oracle-12cr2-cross-platform-pdb-transport-using-xtts/<br><br>A - Not must..</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 356378,
           "date": "Thu 13 May 2021 14:37",
-          "username": "AldridAldridnobody347Aldrid",
-          "content": "Step 4. Transport phase (source data is READ ONLY)<br>4.1- Make tablespaces in source database READ ONLYE.  is correct<br><br>To transport an entire PDB to a different platform, the source platform and destination<br>platform must use the same endian format.<br><br>Backup and Restore Guide 19c.if using XTTS, the same endian format is not necessary.B, E - Final..<br>Based on https://blog.enmotech.com/2018/01/10/oracle-12cr2-cross-platform-pdb-transport-using-xtts/<br><br>A - Not must..",
-          "upvote_count": "1113",
+          "username": "Aldrid",
+          "content": "Step 4. Transport phase (source data is READ ONLY)<br>4.1- Make tablespaces in source database READ ONLY<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>E.  is correct<br><br>To transport an entire PDB to a different platform, the source platform and destination<br>platform must use the same endian format.<br><br>Backup and Restore Guide 19c.</li><li>if using XTTS, the same endian format is not necessary.</li><li>B, E - Final..<br>Based on https://blog.enmotech.com/2018/01/10/oracle-12cr2-cross-platform-pdb-transport-using-xtts/<br><br>A - Not must..</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 356396,
           "date": "Thu 13 May 2021 14:54",
-          "username": "Aldridnobody347Aldrid",
-          "content": "E.  is correct<br><br>To transport an entire PDB to a different platform, the source platform and destination<br>platform must use the same endian format.<br><br>Backup and Restore Guide 19c.if using XTTS, the same endian format is not necessary.B, E - Final..<br>Based on https://blog.enmotech.com/2018/01/10/oracle-12cr2-cross-platform-pdb-transport-using-xtts/<br><br>A - Not must..",
-          "upvote_count": "113",
+          "username": "Aldrid",
+          "content": "E.  is correct<br><br>To transport an entire PDB to a different platform, the source platform and destination<br>platform must use the same endian format.<br><br>Backup and Restore Guide 19c.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>if using XTTS, the same endian format is not necessary.</li><li>B, E - Final..<br>Based on https://blog.enmotech.com/2018/01/10/oracle-12cr2-cross-platform-pdb-transport-using-xtts/<br><br>A - Not must..</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -15744,9 +15696,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 351563,
           "date": "Fri 07 May 2021 04:19",
-          "username": "RinDRinD",
-          "content": "A,B correct<br><br>https://www.oracle.com/technetwork/database/availability/oow14-con7681-rman-2332008.pdfRecheck and I think Aldrid is right. A,D correct",
-          "upvote_count": "11",
+          "username": "RinD",
+          "content": "A,B correct<br><br>https://www.oracle.com/technetwork/database/availability/oow14-con7681-rman-2332008.pdf<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Recheck and I think Aldrid is right. A,D correct</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -15820,9 +15772,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 351565,
           "date": "Fri 07 May 2021 04:21",
-          "username": "RinDsaserdixRodge",
-          "content": "DFG correct<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-recovering-tables-partitions.html#GUID-526969ED-37C3-44C6-B205-AF1621008DCEA, B, C, E are false.agree DFG correctTo quote from RinD's link, it specifically states that ABCE are wrong:<br><br>22.1.4 Limitations of Recovering Tables and Table Partitions from RMAN Backups<br>Recovering tables and table partitions from RMAN backups by using the RECOVER command is subject to certain limitations.<br><br>The limitations include the following:<br><br>Tables and table partitions belonging to SYS schema cannot be recovered.<br>Tables and table partitions from SYSTEM and SYSAUX tablespaces cannot be recovered.<br>Tables and table partitions on standby databases cannot be recovered.<br><br>So, DFG definitely correct.",
-          "upvote_count": "1422",
+          "username": "RinD",
+          "content": "DFG correct<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-recovering-tables-partitions.html#GUID-526969ED-37C3-44C6-B205-AF1621008DCE<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A, B, C, E are false.agree DFG correct</li><li>To quote from RinD's link, it specifically states that ABCE are wrong:<br><br>22.1.4 Limitations of Recovering Tables and Table Partitions from RMAN Backups<br>Recovering tables and table partitions from RMAN backups by using the RECOVER command is subject to certain limitations.<br><br>The limitations include the following:<br><br>Tables and table partitions belonging to SYS schema cannot be recovered.<br>Tables and table partitions from SYSTEM and SYSAUX tablespaces cannot be recovered.<br>Tables and table partitions on standby databases cannot be recovered.<br><br>So, DFG definitely correct.</li></ul>",
+          "upvote_count": "14",
           "selected_answers": ""
         },
         {
@@ -15982,9 +15934,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 357173,
           "date": "Fri 14 May 2021 14:14",
-          "username": "AldridRinD",
-          "content": "D - is Correct. (OSOPER)<br>For most installations, it is sufficient to create only the OSDBA group.<br><br>A is Incorrect (You must designate a group as the OSASM group (asmadmin) during installation. )it's about database, not grid infrastructure so I think D is incorrect.",
-          "upvote_count": "23",
+          "username": "Aldrid",
+          "content": "D - is Correct. (OSOPER)<br>For most installations, it is sufficient to create only the OSDBA group.<br><br>A is Incorrect (You must designate a group as the OSASM group (asmadmin) during installation. )<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>it's about database, not grid infrastructure so I think D is incorrect.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -16138,9 +16090,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 357239,
           "date": "Fri 14 May 2021 15:32",
-          "username": "Aldridmporislav",
-          "content": "C.  Only CDB$ROOT, PDB$SEED, and PDB1 are upgraded.<br><br>CDB$ROOT - In Upgrade MOde<br>PDB$SEED - in Upgrade Mode<br>PDB1- In Upgrade Mode (Alter .. Open Upgrade)<br>PDB2- Excluded<br><br>A - Incorrect<br>When a PDB is in open migrate mode, you can run database upgrade scripts on the PDB<br><br>F-Incorrect -it's excluded.C<br>You are correct so does RinD",
-          "upvote_count": "31",
+          "username": "Aldrid",
+          "content": "C.  Only CDB$ROOT, PDB$SEED, and PDB1 are upgraded.<br><br>CDB$ROOT - In Upgrade MOde<br>PDB$SEED - in Upgrade Mode<br>PDB1- In Upgrade Mode (Alter .. Open Upgrade)<br>PDB2- Excluded<br><br>A - Incorrect<br>When a PDB is in open migrate mode, you can run database upgrade scripts on the PDB<br><br>F-Incorrect -it's excluded.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C<br>You are correct so does RinD</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -16154,9 +16106,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 353436,
           "date": "Mon 10 May 2021 05:50",
-          "username": "mporislavRinD",
-          "content": "A<br>procedure (-c exclude PDB2):<br>SQL> startup upgrade;<br>SQL> alter pluggable database all open upgrade; <br>run parallel upgrade utilityI rechecked and found that:<br>-c include<br>-C exclude<br><br>So in this case it exclude PDB2 as you said.<br>So I think C correct: When a PDB is in open migrate mode, you can run database upgrade scripts on the PDB. ",
-          "upvote_count": "11",
+          "username": "mporislav",
+          "content": "A<br>procedure (-c exclude PDB2):<br>SQL> startup upgrade;<br>SQL> alter pluggable database all open upgrade; <br>run parallel upgrade utility<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I rechecked and found that:<br>-c include<br>-C exclude<br><br>So in this case it exclude PDB2 as you said.<br>So I think C correct: When a PDB is in open migrate mode, you can run database upgrade scripts on the PDB. </li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -16249,9 +16201,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 446800,
           "date": "Fri 17 Sep 2021 23:11",
-          "username": "nobody347rodriguesJCDBA007",
-          "content": "what is wrong with F?<br>Question asks abot whole backup.Because \\\"the server parameter file\\\" is not a database file, only a \\\"configuration file\\\".\\\"A whole backup includes the complete contents of all data files of the database, plus the control file, archived redo log files, and server parameter file. You can perform a complete recovery with the files from a whole backup.\\\"<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/tutorial-perf-back/index.html?opt-release-19c<br><br>The problem could be with option F is, the word \\\"Always\\\" and \\\"archive redo logs\\\".This can be true only when we have taken whole database backup using the command \\\"BACKUP DATABASE PLUS ARCHIVELOG;\\\"<br><br>So if you check the above-mentioned link, the Whole Database Backup is considered when using the command \\\"BACKUP DATABASE PLUS ARCHIVELOG;\\\" therefore Answer should be A,C,F",
-          "upvote_count": "211",
+          "username": "nobody347",
+          "content": "what is wrong with F?<br>Question asks abot whole backup.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Because \\\"the server parameter file\\\" is not a database file, only a \\\"configuration file\\\".</li><li>\\\"A whole backup includes the complete contents of all data files of the database, plus the control file, archived redo log files, and server parameter file. You can perform a complete recovery with the files from a whole backup.\\\"<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/tutorial-perf-back/index.html?opt-release-19c<br><br>The problem could be with option F is, the word \\\"Always\\\" and \\\"archive redo logs\\\".This can be true only when we have taken whole database backup using the command \\\"BACKUP DATABASE PLUS ARCHIVELOG;\\\"<br><br>So if you check the above-mentioned link, the Whole Database Backup is considered when using the command \\\"BACKUP DATABASE PLUS ARCHIVELOG;\\\" therefore Answer should be A,C,F</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -16281,9 +16233,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 362834,
           "date": "Fri 21 May 2021 10:33",
-          "username": "ObserverPLObserverPL",
-          "content": "Agree with Aldrid - BCE. <br>B because in case case of NOARCHIVELOG you have to CLOSE the DB (for RMAN open MOUNT) and then you have to take backup of WHOLE database.... and again Aldrid was right :-)<br>To reduce backup sizes for NOARCHIVELOG databases. Instead of making a whole database backup every time, you can make incremental backups.<br><br>so ACE",
-          "upvote_count": "11",
+          "username": "ObserverPL",
+          "content": "Agree with Aldrid - BCE. <br>B because in case case of NOARCHIVELOG you have to CLOSE the DB (for RMAN open MOUNT) and then you have to take backup of WHOLE database.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>... and again Aldrid was right :-)<br>To reduce backup sizes for NOARCHIVELOG databases. Instead of making a whole database backup every time, you can make incremental backups.<br><br>so ACE</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -16297,17 +16249,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 357252,
           "date": "Fri 14 May 2021 15:44",
-          "username": "AldridAldridRinDRogazanAldrid",
-          "content": "BCE<br><br>https://docs.oracle.com/cd/B10501_01/server.920/a96519/backup.htm#1004644You can backup offline tablespace in noarchivemode... but question about database backup.. not tablespace... so you can do only whole DB backup in noarchive mode.I don't understand, your argument seem conflict. Question is about whole database backup, not limited to only database backup.If it can be inconsistent (option E), then it has to be done with the Database open and that is only possible in ARCHIVELOG mode, therefore option B is False.<br>correct answers ACE. Change to ACE<br>https://docs.oracle.com/cd/B19306_01/backup.102/b14192/bkup004.htm<br><br>It is possible to make Incremental Backup In NOARCHIVELOG",
-          "upvote_count": "11111",
+          "username": "Aldrid",
+          "content": "BCE<br><br>https://docs.oracle.com/cd/B10501_01/server.920/a96519/backup.htm#1004644<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>You can backup offline tablespace in noarchivemode... but question about database backup.. not tablespace... so you can do only whole DB backup in noarchive mode.</li><li>I don't understand, your argument seem conflict. Question is about whole database backup, not limited to only database backup.</li><li>If it can be inconsistent (option E), then it has to be done with the Database open and that is only possible in ARCHIVELOG mode, therefore option B is False.<br>correct answers ACE. </li><li>Change to ACE<br>https://docs.oracle.com/cd/B19306_01/backup.102/b14192/bkup004.htm<br><br>It is possible to make Incremental Backup In NOARCHIVELOG</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 357259,
           "date": "Fri 14 May 2021 15:51",
-          "username": "AldridRinD",
-          "content": "You can backup offline tablespace in noarchivemode... but question about database backup.. not tablespace... so you can do only whole DB backup in noarchive mode.I don't understand, your argument seem conflict. Question is about whole database backup, not limited to only database backup.",
-          "upvote_count": "11",
+          "username": "Aldrid",
+          "content": "You can backup offline tablespace in noarchivemode... but question about database backup.. not tablespace... so you can do only whole DB backup in noarchive mode.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I don't understand, your argument seem conflict. Question is about whole database backup, not limited to only database backup.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -16395,9 +16347,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 363078,
           "date": "Fri 21 May 2021 16:13",
-          "username": "ObserverPLleozanon94Rogazan",
-          "content": "A and E in my opinion - in 19c (new feature) FlashBack Logs are deleted fully automatically once they reach retention, there is no wait for space pressure. If you lower the retention manually then flashback logs are deleted immediatelly.agree AE<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/newft/new-features.html#GUID-4DE9FA4A-BA27-434A-A68E-0B58D8FD686BI agree with ObserverPL: AE since 19c",
-          "upvote_count": "922",
+          "username": "ObserverPL",
+          "content": "A and E in my opinion - in 19c (new feature) FlashBack Logs are deleted fully automatically once they reach retention, there is no wait for space pressure. If you lower the retention manually then flashback logs are deleted immediatelly.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>agree AE<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/newft/new-features.html#GUID-4DE9FA4A-BA27-434A-A68E-0B58D8FD686B</li><li>I agree with ObserverPL: AE since 19c</li></ul>",
+          "upvote_count": "9",
           "selected_answers": ""
         },
         {
@@ -16435,9 +16387,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 374009,
           "date": "Fri 04 Jun 2021 03:55",
-          "username": "ABAJABAJ",
-          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/maintaining-rman-backups.html#GUID-26C1A1E8-5555-4399-9DD1-39BA90E45A0C<br>Starting with Oracle Database Release 19c, the management of space in the fast recovery area is simplified. Oracle Database monitors flashback logs in the fast recovery area and automatically deletes flashback logs that are beyond the retention period. When the retention target is reduced, flashback logs that are beyond the retention period are deleted immediately.<br><br>The COMPATIBLE initialization parameter must be set to 19.0.0 or higher for flashback logs to be automatically deleted.<br><br>In scenarios where a sudden workload spike causes a large number of flashback logs to be created, the workload is monitored for several days before deleting flashback logs that are beyond the retention period. This avoids the overhead of recreating the flashback logs, if another peak workload occurs soon after.<br>Not convinced with the always. Looks like BC can be rightChanged to AE",
-          "upvote_count": "15",
+          "username": "ABAJ",
+          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/maintaining-rman-backups.html#GUID-26C1A1E8-5555-4399-9DD1-39BA90E45A0C<br>Starting with Oracle Database Release 19c, the management of space in the fast recovery area is simplified. Oracle Database monitors flashback logs in the fast recovery area and automatically deletes flashback logs that are beyond the retention period. When the retention target is reduced, flashback logs that are beyond the retention period are deleted immediately.<br><br>The COMPATIBLE initialization parameter must be set to 19.0.0 or higher for flashback logs to be automatically deleted.<br><br>In scenarios where a sudden workload spike causes a large number of flashback logs to be created, the workload is monitored for several days before deleting flashback logs that are beyond the retention period. This avoids the overhead of recreating the flashback logs, if another peak workload occurs soon after.<br>Not convinced with the always. Looks like BC can be right<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Changed to AE</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -16491,9 +16443,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 351702,
           "date": "Fri 07 May 2021 08:07",
-          "username": "RinDRinD",
-          "content": "CE correctI recheck and agree with @dunhill.<br><br>BC correct",
-          "upvote_count": "22",
+          "username": "RinD",
+          "content": "CE correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I recheck and agree with @dunhill.<br><br>BC correct</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -16562,9 +16514,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 488956,
           "date": "Sun 28 Nov 2021 08:56",
-          "username": "vnhoang76momi0205",
-          "content": "PDB Memory Parameters<br>The following parameters can be set at the PDB level.<br><br>DB_CACHE_SIZE : The minimum buffer cache size for the PDB. <br>SHARED_POOL_SIZE : The minimum shared pool size for the PDB. <br>PGA_AGGREGATE_LIMIT : The maximum PGA size for the PDB. <br>PGA_AGGREGATE_TARGET : The target PGA size for the PDB. <br>SGA_MIN_SIZE : The minimum SGA size for the PDB. <br>SGA_TARGET : The maximum SGA size for the PDB. <br><br>A,C: Correct<br>D is correct for SGA_MIN_SIZE, but not for SGA_TARGETI agree",
-          "upvote_count": "51",
+          "username": "vnhoang76",
+          "content": "PDB Memory Parameters<br>The following parameters can be set at the PDB level.<br><br>DB_CACHE_SIZE : The minimum buffer cache size for the PDB. <br>SHARED_POOL_SIZE : The minimum shared pool size for the PDB. <br>PGA_AGGREGATE_LIMIT : The maximum PGA size for the PDB. <br>PGA_AGGREGATE_TARGET : The target PGA size for the PDB. <br>SGA_MIN_SIZE : The minimum SGA size for the PDB. <br>SGA_TARGET : The maximum SGA size for the PDB. <br><br>A,C: Correct<br>D is correct for SGA_MIN_SIZE, but not for SGA_TARGET<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I agree</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
@@ -16578,9 +16530,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 530742,
           "date": "Sun 23 Jan 2022 19:33",
-          "username": "egore0496Datajimm",
-          "content": "ACE<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/SGA_TARGET.html#GUID-4702FDB7-BADC-4997-BC49-1B91088234AE<br>>>SGA_TARGET value acts as the minimum value for the size of the SGA. E is wrong.<br>From the article you linked: \\\"When this parameter is set for a PDB, it specifies the maximum SGA that the PDB can use at any time.\\\"<br><br>not minimum, but maximum",
-          "upvote_count": "21",
+          "username": "egore0496",
+          "content": "ACE<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/SGA_TARGET.html#GUID-4702FDB7-BADC-4997-BC49-1B91088234AE<br>>>SGA_TARGET value acts as the minimum value for the size of the SGA. <br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>E is wrong.<br>From the article you linked: \\\"When this parameter is set for a PDB, it specifies the maximum SGA that the PDB can use at any time.\\\"<br><br>not minimum, but maximum</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -16602,9 +16554,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 470272,
           "date": "Sat 30 Oct 2021 16:18",
-          "username": "rodriguesJCfreemun05",
-          "content": "F is false:<br>SGA_MIN_SIZE - Sets the minimum SGA size for the PDB. <br><br>D is True:<br>It must be less than or equal to 50% of the setting for the SHARED_POOL_SIZE in the CDB root.<br><br>Answer is ACD<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/using-oracle-resource-manager-for-pdbs-with-sql-plus.html#GUID-A3459A8B-A36A-44D4-9FCD-75CA0E3D3252SGA_MIN_SIZE - It must be less than or equal to 50% of the setting for the SGA_TARGET in the PDB. ",
-          "upvote_count": "21",
+          "username": "rodriguesJC",
+          "content": "F is false:<br>SGA_MIN_SIZE - Sets the minimum SGA size for the PDB. <br><br>D is True:<br>It must be less than or equal to 50% of the setting for the SHARED_POOL_SIZE in the CDB root.<br><br>Answer is ACD<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/using-oracle-resource-manager-for-pdbs-with-sql-plus.html#GUID-A3459A8B-A36A-44D4-9FCD-75CA0E3D3252<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>SGA_MIN_SIZE - It must be less than or equal to 50% of the setting for the SGA_TARGET in the PDB. </li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -16650,9 +16602,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 357273,
           "date": "Fri 14 May 2021 16:14",
-          "username": "AldridAldridRogazan",
-          "content": "AC<br><br>A- Correct<br>B WRONG - The value of SHARED_POOL_SIZE set in a PDB must be less than or equal to 50% of the SHARED_POOL_SIZE value at the CDB level.<br>C Correct. SHARED_POOL_SIZE. it guarantees the shared pool size for the PDB. <br>D WRONG - You must set SGA_TARGET in a PDB to a value that is less than or equal to the SGA_TARGET value set at the CDB level<br>E WRONG - SGA_TARGET for a PDB specifies the maximum SGA that the PDB can use at any time.<br>F WRONG - SGA_MIN_SIZE- - In a PDB, to a value that is less than or equal to 50% of the value of SGA_TARGET in the PDBD is correct for SGA_MIN_SIZE, but not for SGA_TARGETI also think that only options A and C are true. All the others are clearly false.",
-          "upvote_count": "412",
+          "username": "Aldrid",
+          "content": "AC<br><br>A- Correct<br>B WRONG - The value of SHARED_POOL_SIZE set in a PDB must be less than or equal to 50% of the SHARED_POOL_SIZE value at the CDB level.<br>C Correct. SHARED_POOL_SIZE. it guarantees the shared pool size for the PDB. <br>D WRONG - You must set SGA_TARGET in a PDB to a value that is less than or equal to the SGA_TARGET value set at the CDB level<br>E WRONG - SGA_TARGET for a PDB specifies the maximum SGA that the PDB can use at any time.<br>F WRONG - SGA_MIN_SIZE- - In a PDB, to a value that is less than or equal to 50% of the value of SGA_TARGET in the PDB<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D is correct for SGA_MIN_SIZE, but not for SGA_TARGET</li><li>I also think that only options A and C are true. All the others are clearly false.</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -16674,17 +16626,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 355640,
           "date": "Wed 12 May 2021 18:23",
-          "username": "FibouFibousenator",
-          "content": "A,C,E I thinkA,C,D is correctD is wrong Correct answer is ACE. see explanation for D: The SGA_TARGET setting in the PDB is enforced only if the SGA_TARGET initialization parameter is set to a non-zero value in the CDB root. The SGA_TARGET setting in the PDB must be less than or equal to the SGA_TARGET setting in the CDB root.",
-          "upvote_count": "241",
+          "username": "Fibou",
+          "content": "A,C,E I think<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A,C,D is correct</li><li>D is wrong Correct answer is ACE. see explanation for D: The SGA_TARGET setting in the PDB is enforced only if the SGA_TARGET initialization parameter is set to a non-zero value in the CDB root. The SGA_TARGET setting in the PDB must be less than or equal to the SGA_TARGET setting in the CDB root.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 355645,
           "date": "Wed 12 May 2021 18:29",
-          "username": "Fibousenator",
-          "content": "A,C,D is correctD is wrong Correct answer is ACE. see explanation for D: The SGA_TARGET setting in the PDB is enforced only if the SGA_TARGET initialization parameter is set to a non-zero value in the CDB root. The SGA_TARGET setting in the PDB must be less than or equal to the SGA_TARGET setting in the CDB root.",
-          "upvote_count": "41",
+          "username": "Fibou",
+          "content": "A,C,D is correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D is wrong Correct answer is ACE. see explanation for D: The SGA_TARGET setting in the PDB is enforced only if the SGA_TARGET initialization parameter is set to a non-zero value in the CDB root. The SGA_TARGET setting in the PDB must be less than or equal to the SGA_TARGET setting in the CDB root.</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -16877,9 +16829,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 673126,
           "date": "Mon 19 Sep 2022 11:23",
-          "username": "mycert00mycert00",
-          "content": "In Oracle 18c the DBCA can now duplicate container databases. In the following example we have a container database called \\\"cdb1\\\". We use the following command to attempt<br>to create a new CDB called \\\"cdb2\\\" as a clone of \\\"cdb1\\\", but it fails because the source database is not in archivelog mode.<br><br>...<br>dbca -silent \\<br> -createDuplicateDB \\<br> -gdbName cdb2 \\<br> -primaryDBConnectionString \\\"localhost:1521/cdb1\\\" \\<br> -sid cdb2 \\<br> -sysPassword SysPassword1<br>[FATAL] [DBT-16051] Archive log mode is not enabled in the primary database.<br> ACTION: Primary database should be configured with archive log mode for creating a duplicate or standby database.<br><br>ARCHIVELOG IS REQUIRED<br>D - INCORRECT<br><br>And then: ABEClarifying the Question...<br>D - the response specify that \\\"no configuration required\\\" but a previous configuration is required as \\\"enable archivelog mode\\\" and then D is INCORRECT as you can check in the laboratory output alteady typed.<br><br>Correct: ABE",
-          "upvote_count": "11",
+          "username": "mycert00",
+          "content": "In Oracle 18c the DBCA can now duplicate container databases. In the following example we have a container database called \\\"cdb1\\\". We use the following command to attempt<br>to create a new CDB called \\\"cdb2\\\" as a clone of \\\"cdb1\\\", but it fails because the source database is not in archivelog mode.<br><br>...<br>dbca -silent \\<br> -createDuplicateDB \\<br> -gdbName cdb2 \\<br> -primaryDBConnectionString \\\"localhost:1521/cdb1\\\" \\<br> -sid cdb2 \\<br> -sysPassword SysPassword1<br>[FATAL] [DBT-16051] Archive log mode is not enabled in the primary database.<br> ACTION: Primary database should be configured with archive log mode for creating a duplicate or standby database.<br><br>ARCHIVELOG IS REQUIRED<br>D - INCORRECT<br><br>And then: ABE<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Clarifying the Question...<br>D - the response specify that \\\"no configuration required\\\" but a previous configuration is required as \\\"enable archivelog mode\\\" and then D is INCORRECT as you can check in the laboratory output alteady typed.<br><br>Correct: ABE</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -16975,9 +16927,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 523729,
           "date": "Fri 14 Jan 2022 21:25",
-          "username": "egore0496leozanon94",
-          "content": "may be AE?i took the exam yesterday and answers are the same of exam. IDK. I tried to put AE and i think i did wrong ... could be AC but there isn't documentation about C answer...",
-          "upvote_count": "21",
+          "username": "egore0496",
+          "content": "may be AE?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>i took the exam yesterday and answers are the same of exam. IDK. I tried to put AE and i think i did wrong ... could be AC but there isn't documentation about C answer...</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -16991,9 +16943,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 485340,
           "date": "Tue 23 Nov 2021 19:48",
-          "username": "fzyleozanon94",
-          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/ssdbi/installing-and-configuring-oracle-grid-infrastructure-for-a-standalone-server.html#GUID-DA3B90BE-EE1F-4347-8A5E-ED1BBFF29D93<br><br>If you install Oracle Grid Infrastructure for a standalone server on a host computer on which a database already exists, then you must manually add the database, the listener, the Oracle ASM instance, and other components to the Oracle Restart configuration before you are able to configure automatic database restarts.<br><br>eg B is incorrect<br><br>I would say that C E is correct<br><br>*) remember this is OCP19cA is true(https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-oracle-grid-infrastructure-for-a-standlone-server.html#GUID-D13A1F20-F513-4448-808C-A19AFCDAE135)<br>\\\"Oracle Grid Infrastructure for a standalone server is a version of Oracle Grid Infrastructure that supports single instance databases. This support includes volume management, file system, and automatic restart capabilities. Oracle Grid Infrastructure for a standalone server includes Oracle Restart and Oracle Automatic Storage Management. Oracle combined the two infrastructure products into a single set of binaries that is installed into an Oracle Restart home.\\\"",
-          "upvote_count": "31",
+          "username": "fzy",
+          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/ssdbi/installing-and-configuring-oracle-grid-infrastructure-for-a-standalone-server.html#GUID-DA3B90BE-EE1F-4347-8A5E-ED1BBFF29D93<br><br>If you install Oracle Grid Infrastructure for a standalone server on a host computer on which a database already exists, then you must manually add the database, the listener, the Oracle ASM instance, and other components to the Oracle Restart configuration before you are able to configure automatic database restarts.<br><br>eg B is incorrect<br><br>I would say that C E is correct<br><br>*) remember this is OCP19c<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A is true(https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-oracle-grid-infrastructure-for-a-standlone-server.html#GUID-D13A1F20-F513-4448-808C-A19AFCDAE135)<br>\\\"Oracle Grid Infrastructure for a standalone server is a version of Oracle Grid Infrastructure that supports single instance databases. This support includes volume management, file system, and automatic restart capabilities. Oracle Grid Infrastructure for a standalone server includes Oracle Restart and Oracle Automatic Storage Management. Oracle combined the two infrastructure products into a single set of binaries that is installed into an Oracle Restart home.\\\"</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -17023,17 +16975,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 463406,
           "date": "Sun 17 Oct 2021 06:15",
-          "username": "senatorsenatorleozanon94",
-          "content": "AB is correct<br>If you plan to use Oracle Automatic Storage Management (Oracle ASM), then you must install Oracle Restart before installing your database.<br><br>Oracle Grid Infrastructure for a standalone server is a version of Oracle Grid Infrastructure that supports single instance databases. This support includes volume management, file system, and automatic restart capabilities. Oracle Grid Infrastructure for a standalone server includes Oracle Restart and Oracle Automatic Storage Management. Oracle combined the two infrastructure products into a single set of binaries that is installed into an Oracle Restart home.https://docs.huihoo.com/oracle/database/11gr2/install.112/e24186/oraclerestart.htmthe answer B is about Oracle software, not Oracle restart.<br><br>(https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/installing-and-configuring-oracle-grid-infrastructure-for-a-standalone-server.html#GUID-DA3B90BE-EE1F-4347-8A5E-ED1BBFF29D93)<br>=E2=80=9CIf you install Oracle Grid Infrastructure for a standalone server on a host computer on which a database already exists, then you must manually add the database, the listener, the Oracle ASM instance, and other components to the Oracle Restart configuration before you are able to configure automatic database restarts.=E2=80=9D",
-          "upvote_count": "211",
+          "username": "senator",
+          "content": "AB is correct<br>If you plan to use Oracle Automatic Storage Management (Oracle ASM), then you must install Oracle Restart before installing your database.<br><br>Oracle Grid Infrastructure for a standalone server is a version of Oracle Grid Infrastructure that supports single instance databases. This support includes volume management, file system, and automatic restart capabilities. Oracle Grid Infrastructure for a standalone server includes Oracle Restart and Oracle Automatic Storage Management. Oracle combined the two infrastructure products into a single set of binaries that is installed into an Oracle Restart home.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://docs.huihoo.com/oracle/database/11gr2/install.112/e24186/oraclerestart.htm</li><li>the answer B is about Oracle software, not Oracle restart.<br><br>(https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/installing-and-configuring-oracle-grid-infrastructure-for-a-standalone-server.html#GUID-DA3B90BE-EE1F-4347-8A5E-ED1BBFF29D93)<br>=E2=80=9CIf you install Oracle Grid Infrastructure for a standalone server on a host computer on which a database already exists, then you must manually add the database, the listener, the Oracle ASM instance, and other components to the Oracle Restart configuration before you are able to configure automatic database restarts.=E2=80=9D</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 463407,
           "date": "Sun 17 Oct 2021 06:23",
-          "username": "senatorleozanon94",
-          "content": "https://docs.huihoo.com/oracle/database/11gr2/install.112/e24186/oraclerestart.htmthe answer B is about Oracle software, not Oracle restart.<br><br>(https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/installing-and-configuring-oracle-grid-infrastructure-for-a-standalone-server.html#GUID-DA3B90BE-EE1F-4347-8A5E-ED1BBFF29D93)<br>=E2=80=9CIf you install Oracle Grid Infrastructure for a standalone server on a host computer on which a database already exists, then you must manually add the database, the listener, the Oracle ASM instance, and other components to the Oracle Restart configuration before you are able to configure automatic database restarts.=E2=80=9D",
-          "upvote_count": "11",
+          "username": "senator",
+          "content": "https://docs.huihoo.com/oracle/database/11gr2/install.112/e24186/oraclerestart.htm<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>the answer B is about Oracle software, not Oracle restart.<br><br>(https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/installing-and-configuring-oracle-grid-infrastructure-for-a-standalone-server.html#GUID-DA3B90BE-EE1F-4347-8A5E-ED1BBFF29D93)<br>=E2=80=9CIf you install Oracle Grid Infrastructure for a standalone server on a host computer on which a database already exists, then you must manually add the database, the listener, the Oracle ASM instance, and other components to the Oracle Restart configuration before you are able to configure automatic database restarts.=E2=80=9D</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -17137,17 +17089,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 420873,
           "date": "Fri 06 Aug 2021 16:20",
-          "username": "anddeyypegore0496JorgeZG",
-          "content": "B & C<br>A - wrong because service configuration script is not part of RPM installation (not run when install RPM)B - not only<br>Starting with Oracle Database 18c, you can install a single-instance Oracle Database or an Oracle Database Instant Client software using RPM packages.They are talking about Database server Installation.. it can be only Single-instance.",
-          "upvote_count": "411",
+          "username": "anddeyyp",
+          "content": "B & C<br>A - wrong because service configuration script is not part of RPM installation (not run when install RPM)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>B - not only<br>Starting with Oracle Database 18c, you can install a single-instance Oracle Database or an Oracle Database Instant Client software using RPM packages.</li><li>They are talking about Database server Installation.. it can be only Single-instance.</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
           "id": 533625,
           "date": "Thu 27 Jan 2022 10:04",
-          "username": "egore0496JorgeZG",
-          "content": "B - not only<br>Starting with Oracle Database 18c, you can install a single-instance Oracle Database or an Oracle Database Instant Client software using RPM packages.They are talking about Database server Installation.. it can be only Single-instance.",
-          "upvote_count": "11",
+          "username": "egore0496",
+          "content": "B - not only<br>Starting with Oracle Database 18c, you can install a single-instance Oracle Database or an Oracle Database Instant Client software using RPM packages.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>They are talking about Database server Installation.. it can be only Single-instance.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -17177,9 +17129,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 360720,
           "date": "Tue 18 May 2021 19:21",
-          "username": "RogazanrodriguesJC",
-          "content": "B True: \\\"Starting with Oracle Database 18c, you can install a single-instance Oracle Database...\\\"<br><br>C True: \\\"An RPM-based installation performs a software-only Oracle Database installation and creates an Oracle home. After the Oracle home is created, you can then use Oracle Database Configuration Assistant (Oracle DBCA) to create an Oracle Database\\\"A: False - \\\"create a single-instance database\\\"<br>D: False - \\\"Preinstallation RPM\\\" is another rpm<br>E: False - You don't need ULN",
-          "upvote_count": "51",
+          "username": "Rogazan",
+          "content": "B True: \\\"Starting with Oracle Database 18c, you can install a single-instance Oracle Database...\\\"<br><br>C True: \\\"An RPM-based installation performs a software-only Oracle Database installation and creates an Oracle home. After the Oracle home is created, you can then use Oracle Database Configuration Assistant (Oracle DBCA) to create an Oracle Database\\\"<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A: False - \\\"create a single-instance database\\\"<br>D: False - \\\"Preinstallation RPM\\\" is another rpm<br>E: False - You don't need ULN</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
@@ -17420,9 +17372,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 459108,
           "date": "Fri 08 Oct 2021 10:20",
-          "username": "Amaoraleozanon94",
-          "content": "A,C no doubt!<br><br>About Concurrency and Scalability<br>The better your application handles concurrency, the more scalable it is.<br><br>Concurrency is the simultaneous execution of multiple transactions. Statements within concurrent transactions can update the same data. Concurrent transactions must produce meaningful and consistent results. Therefore, a multiuser database must provide the following:<br><br>Data concurrency , which ensures that users can access data at the same time.<br><br>Data consistency, which ensures that each user sees a consistent view of the data, including visible changes from his or her own transactions and committed transactions of other usersConfirm, in exam i put D and it was wrong... sure C is right 100%",
-          "upvote_count": "31",
+          "username": "Amaora",
+          "content": "A,C no doubt!<br><br>About Concurrency and Scalability<br>The better your application handles concurrency, the more scalable it is.<br><br>Concurrency is the simultaneous execution of multiple transactions. Statements within concurrent transactions can update the same data. Concurrent transactions must produce meaningful and consistent results. Therefore, a multiuser database must provide the following:<br><br>Data concurrency , which ensures that users can access data at the same time.<br><br>Data consistency, which ensures that each user sees a consistent view of the data, including visible changes from his or her own transactions and committed transactions of other users<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Confirm, in exam i put D and it was wrong... sure C is right 100%</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -17436,9 +17388,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 421592,
           "date": "Sun 08 Aug 2021 13:08",
-          "username": "Neil107senator",
-          "content": "I think AD. https://docs.oracle.com/database/121/TGDBA/pfgrf_design.htm#TGDBA94090",
-          "upvote_count": "21",
+          "username": "Neil107",
+          "content": "I think AD. <br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://docs.oracle.com/database/121/TGDBA/pfgrf_design.htm#TGDBA94090</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -17528,9 +17480,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 353397,
           "date": "Mon 10 May 2021 03:39",
-          "username": "RinDABAJ",
-          "content": "BCD correct<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/database-backup-and-recovery-reference.pdfCorrect. Tested inlab",
-          "upvote_count": "82",
+          "username": "RinD",
+          "content": "BCD correct<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/database-backup-and-recovery-reference.pdf<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Correct. Tested inlab</li></ul>",
+          "upvote_count": "8",
           "selected_answers": ""
         },
         {
@@ -17552,9 +17504,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 633982,
           "date": "Wed 20 Jul 2022 12:34",
-          "username": "momi0205momi0205",
-          "content": "ABF<br>current FRAnot RECOVERY 'FILES',<br>recovery 'area'",
-          "upvote_count": "11",
+          "username": "momi0205",
+          "content": "ABF<br>current FRA<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>not RECOVERY 'FILES',<br>recovery 'area'</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -17671,17 +17623,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 421184,
           "date": "Sat 07 Aug 2021 14:38",
-          "username": "Neil107Eric_FEric_F",
-          "content": "A and D are correct.<br>Between E and F, I think E is correct.<br>So I say, ADE.  Anybody agree?Pfile can re-create from spfile or moemory, but not alter log.but can recovery from alter log by text editor, nor sql*plus",
-          "upvote_count": "111",
+          "username": "Neil107",
+          "content": "A and D are correct.<br>Between E and F, I think E is correct.<br>So I say, ADE.  Anybody agree?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Pfile can re-create from spfile or moemory, but not alter log.</li><li>but can recovery from alter log by text editor, nor sql*plus</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 604372,
           "date": "Fri 20 May 2022 13:24",
-          "username": "Eric_FEric_F",
-          "content": "Pfile can re-create from spfile or moemory, but not alter log.but can recovery from alter log by text editor, nor sql*plus",
-          "upvote_count": "11",
+          "username": "Eric_F",
+          "content": "Pfile can re-create from spfile or moemory, but not alter log.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>but can recovery from alter log by text editor, nor sql*plus</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -17695,9 +17647,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 366922,
           "date": "Wed 26 May 2021 09:39",
-          "username": "Marco_MAldrid",
-          "content": "I think A - D - E. <br>A- create spfile from memory<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-SPFILE. html#GUID-D3E295B7-A3A4-43D3-8BBD-5CBE171A2E52<br><br>D- create password file using orapwd<br>https://www.thegeekdiary.com/how-to-create-the-oracle-password-file-using-orapwd-command/<br><br>E- create pfile from log<br>https://docs.oracle.com/en/database/oracle/oracle-database/18/tutorial-recover-a-lost-or-damaged-server-parameter-file/index.html#CreateSPFILEE- is Incorrect<br><br>U can't create pfile from log only with sqlplus. You must use text editor for that.<br><br>\\\"Locate the alert_ORCLCDB. log file, which you need to use to extract the initialization parameters and their values.\\\"",
-          "upvote_count": "15",
+          "username": "Marco_M",
+          "content": "I think A - D - E. <br>A- create spfile from memory<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-SPFILE. html#GUID-D3E295B7-A3A4-43D3-8BBD-5CBE171A2E52<br><br>D- create password file using orapwd<br>https://www.thegeekdiary.com/how-to-create-the-oracle-password-file-using-orapwd-command/<br><br>E- create pfile from log<br>https://docs.oracle.com/en/database/oracle/oracle-database/18/tutorial-recover-a-lost-or-damaged-server-parameter-file/index.html#CreateSPFILE<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>E- is Incorrect<br><br>U can't create pfile from log only with sqlplus. You must use text editor for that.<br><br>\\\"Locate the alert_ORCLCDB. log file, which you need to use to extract the initialization parameters and their values.\\\"</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -17801,9 +17753,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 519295,
           "date": "Sat 08 Jan 2022 04:15",
-          "username": "kvfkvf",
-          "content": "I agree B, but when tested in my lab (oracle 19c, flashback on, local_undo_enabled is true), I got A in the end.<br><br>Flashback completed, but alter pluggable database app_root open failed with ORA-01113: file 59 needs media recovery. Did a few media recoveries, and when the app_root finally opened, the table app_root_tab is back.B is correct. Do alter pluggable approot open resetlogs - don't recover",
-          "upvote_count": "11",
+          "username": "kvf",
+          "content": "I agree B, but when tested in my lab (oracle 19c, flashback on, local_undo_enabled is true), I got A in the end.<br><br>Flashback completed, but alter pluggable database app_root open failed with ORA-01113: file 59 needs media recovery. Did a few media recoveries, and when the app_root finally opened, the table app_root_tab is back.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>B is correct. Do alter pluggable approot open resetlogs - don't recover</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -17891,9 +17843,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 368436,
           "date": "Fri 28 May 2021 04:24",
-          "username": "ABAJAldrid",
-          "content": "BC are correct answer. Tested in lab for B. <br>https://docs.oracle.com/cd/E11882_01/backup.112/e10643/rcmsynta007.htm#RCMRF107<br>A is incorrect - zdlra backups are sbt backups but not written to tape always<br>E is incorrect - Not all are supportedBC<br><br>B: If the media manager cannot proxy copy the file, then RMAN backs up the file as if the PROXY option had not been used<br><br>From: https://docs.oracle.com/cd/E11882_01/backup.112/e10642/rcmcncpt.htm#BRADV89487",
-          "upvote_count": "62",
+          "username": "ABAJ",
+          "content": "BC are correct answer. Tested in lab for B. <br>https://docs.oracle.com/cd/E11882_01/backup.112/e10643/rcmsynta007.htm#RCMRF107<br>A is incorrect - zdlra backups are sbt backups but not written to tape always<br>E is incorrect - Not all are supported<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>BC<br><br>B: If the media manager cannot proxy copy the file, then RMAN backs up the file as if the PROXY option had not been used<br><br>From: https://docs.oracle.com/cd/E11882_01/backup.112/e10642/rcmcncpt.htm#BRADV89487</li></ul>",
+          "upvote_count": "6",
           "selected_answers": ""
         },
         {
@@ -18018,9 +17970,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 353416,
           "date": "Mon 10 May 2021 04:39",
-          "username": "RinDRinD",
-          "content": "I think ABFI recheck, ACF correct",
-          "upvote_count": "13",
+          "username": "RinD",
+          "content": "I think ABF<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I recheck, ACF correct</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -18089,9 +18041,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 357657,
           "date": "Sat 15 May 2021 09:11",
-          "username": "mporislavmd1994",
-          "content": "A, C, F<br>By default , RMAN searches the flashback logs for good copies of the blocks, and then searches for the blocks in full or level 0 incremental backups.You could use the EXCLUDE FLASHBACK LOG option to restrict RMAN from searching the flashback logs. (Not B).<br>A, C main features<br>You can perform block recovery only on blocks that are marked corrupt or fail a corruption check (Not D)<br>The target database must run in ARCHIVELOG mode and be open or mounted with a current control file (Not E).F is false: Block media recovery may not be able to repair all logical block corruptions.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-block-media-recovery.html#GUID-BBD0093C-AC8D-490C-868C-FB5F83CB0870",
-          "upvote_count": "151",
+          "username": "mporislav",
+          "content": "A, C, F<br>By default , RMAN searches the flashback logs for good copies of the blocks, and then searches for the blocks in full or level 0 incremental backups.You could use the EXCLUDE FLASHBACK LOG option to restrict RMAN from searching the flashback logs. (Not B).<br>A, C main features<br>You can perform block recovery only on blocks that are marked corrupt or fail a corruption check (Not D)<br>The target database must run in ARCHIVELOG mode and be open or mounted with a current control file (Not E).<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>F is false: Block media recovery may not be able to repair all logical block corruptions.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-block-media-recovery.html#GUID-BBD0093C-AC8D-490C-868C-FB5F83CB0870</li></ul>",
+          "upvote_count": "15",
           "selected_answers": ""
         },
         {
@@ -18105,9 +18057,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 383774,
           "date": "Thu 17 Jun 2021 01:52",
-          "username": "wiprooraclefreemun05",
-          "content": "A, B, C<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-block-media-recovery.html#GUID-C1164158-496C-4D8A-8A06-D343935FC3B9<br><br>tells that flashback is a must \\\"Flashback Database must be enabled on the target database for RMAN to search the flashback logs for good copies of corrupt blocks.\\\"<br><br>It also says \\\"Block media recovery may not be able to repair all logical block corruptions. In these cases, alternate recovery methods, such as tablespace point-in-time recovery, or dropping and re-creating the affected objects, may repair the corruption.\\\"wrong<br>\\\" By default, RMAN first searches for good blocks in the real-time query physical standby database, then flashback logs and then blocks in full or level 0 incremental backups.\\\"<br><br>\\\" You could use the FROM BACKUPSET option to restrict the type of backup that RMAN searches, or the EXCLUDE FLASHBACK LOG option to restrict RMAN from searching the flashback logs.\\\"",
-          "upvote_count": "51",
+          "username": "wiprooracle",
+          "content": "A, B, C<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-block-media-recovery.html#GUID-C1164158-496C-4D8A-8A06-D343935FC3B9<br><br>tells that flashback is a must \\\"Flashback Database must be enabled on the target database for RMAN to search the flashback logs for good copies of corrupt blocks.\\\"<br><br>It also says \\\"Block media recovery may not be able to repair all logical block corruptions. In these cases, alternate recovery methods, such as tablespace point-in-time recovery, or dropping and re-creating the affected objects, may repair the corruption.\\\"<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>wrong<br>\\\" By default, RMAN first searches for good blocks in the real-time query physical standby database, then flashback logs and then blocks in full or level 0 incremental backups.\\\"<br><br>\\\" You could use the FROM BACKUPSET option to restrict the type of backup that RMAN searches, or the EXCLUDE FLASHBACK LOG option to restrict RMAN from searching the flashback logs.\\\"</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
@@ -18145,17 +18097,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 487626,
           "date": "Fri 26 Nov 2021 21:40",
-          "username": "LlamonicaLlamonicaegore0496vnhoang76",
-          "content": "ABC<br>B is true because, on the prerequisites, oracle told us that we need have flashback database enabled :https://docs.oracle.com/database/121/BRADV/rcmblock.htm#BRADV89785And in this note say:<br>\\\"Block media recovery may not be able to repair all logical block corruptions\\\"<br>So F is false, because LBC can repair logical corruption, but not always.Not BFlashback Database must be enabled on the target database for RMAN to search the flashback logs for good copies of corrupt blocks.<br><br>If flashback logging is enabled and contains older, uncorrupted versions of the corrupt blocks, then RMAN can use these blocks, possibly speeding up the recovery.<br>flashbackis NOT mandatory<br>only >> possibly speeding up the recoveryAgree with you.<br>Flashback Database must be enabled on the target database for RMAN to search the flashback logs for good copies of corrupt blocks.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-block-media-recovery.html#GUID-21EFB177-2AC7-457C-80A0-63B11A80CD0B",
-          "upvote_count": "3131",
+          "username": "Llamonica",
+          "content": "ABC<br>B is true because, on the prerequisites, oracle told us that we need have flashback database enabled :https://docs.oracle.com/database/121/BRADV/rcmblock.htm#BRADV89785<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>And in this note say:<br>\\\"Block media recovery may not be able to repair all logical block corruptions\\\"<br>So F is false, because LBC can repair logical corruption, but not always.</li><li>Not BFlashback Database must be enabled on the target database for RMAN to search the flashback logs for good copies of corrupt blocks.<br><br>If flashback logging is enabled and contains older, uncorrupted versions of the corrupt blocks, then RMAN can use these blocks, possibly speeding up the recovery.<br>flashbackis NOT mandatory<br>only &gt;&gt; possibly speeding up the recovery</li><li>Agree with you.<br>Flashback Database must be enabled on the target database for RMAN to search the flashback logs for good copies of corrupt blocks.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-block-media-recovery.html#GUID-21EFB177-2AC7-457C-80A0-63B11A80CD0B</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
           "id": 487628,
           "date": "Fri 26 Nov 2021 21:43",
-          "username": "Llamonicaegore0496",
-          "content": "And in this note say:<br>\\\"Block media recovery may not be able to repair all logical block corruptions\\\"<br>So F is false, because LBC can repair logical corruption, but not always.Not BFlashback Database must be enabled on the target database for RMAN to search the flashback logs for good copies of corrupt blocks.<br><br>If flashback logging is enabled and contains older, uncorrupted versions of the corrupt blocks, then RMAN can use these blocks, possibly speeding up the recovery.<br>flashbackis NOT mandatory<br>only >> possibly speeding up the recovery",
-          "upvote_count": "13",
+          "username": "Llamonica",
+          "content": "And in this note say:<br>\\\"Block media recovery may not be able to repair all logical block corruptions\\\"<br>So F is false, because LBC can repair logical corruption, but not always.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Not BFlashback Database must be enabled on the target database for RMAN to search the flashback logs for good copies of corrupt blocks.<br><br>If flashback logging is enabled and contains older, uncorrupted versions of the corrupt blocks, then RMAN can use these blocks, possibly speeding up the recovery.<br>flashbackis NOT mandatory<br>only &gt;&gt; possibly speeding up the recovery</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -18193,9 +18145,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 414053,
           "date": "Sun 25 Jul 2021 17:42",
-          "username": "xRodgefreemun05",
-          "content": "A - TRUE - only the corrupt block is inaccessable, all others are fine and usable.<br>B - FALSE.  If Flashback is enabled, it can speed up recovery. But it is not required. B states \\\"MUST\\\", which is incorrect. Oracle tries to trick people with the use of MUST/MAY....<br>C - TRUE - the entire issue is that Oracle can't read the block!<br>D - FALSE - you can run a \\\"validate\\\" to check blocks, but you cannot use block recovery to recover something that is not corrupt.<br>E - FALSE - you can do this type of recovery in the MOUNT state.<br>F - TRUE - It is a different process to fix a logical block corruption.<br><br>So, ACF are correct.here you go:<br>RMAN> RECOVERDATAFILE 3 BLOCK 10 ;<br><br>Starting recover at 31-MAR-2022 07:15:49<br>using channel ORA_DISK_1<br><br>starting media recovery<br>media recovery complete, elapsed time: 00:00:00<br><br>Finished recover at 31-MAR-2022 07:15:49<br><br>uncorrupted block recovery",
-          "upvote_count": "21",
+          "username": "xRodge",
+          "content": "A - TRUE - only the corrupt block is inaccessable, all others are fine and usable.<br>B - FALSE.  If Flashback is enabled, it can speed up recovery. But it is not required. B states \\\"MUST\\\", which is incorrect. Oracle tries to trick people with the use of MUST/MAY....<br>C - TRUE - the entire issue is that Oracle can't read the block!<br>D - FALSE - you can run a \\\"validate\\\" to check blocks, but you cannot use block recovery to recover something that is not corrupt.<br>E - FALSE - you can do this type of recovery in the MOUNT state.<br>F - TRUE - It is a different process to fix a logical block corruption.<br><br>So, ACF are correct.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>here you go:<br>RMAN&gt; RECOVERDATAFILE 3 BLOCK 10 ;<br><br>Starting recover at 31-MAR-2022 07:15:49<br>using channel ORA_DISK_1<br><br>starting media recovery<br>media recovery complete, elapsed time: 00:00:00<br><br>Finished recover at 31-MAR-2022 07:15:49<br><br>uncorrupted block recovery</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -18217,9 +18169,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 359478,
           "date": "Mon 17 May 2021 13:10",
-          "username": "Aldridsenator",
-          "content": "A, C, F<br><br>A,C: With block media recovery, only the blocks actually being recovered are unavailable during the recovery.<br><br>F: Block media recovery may not be able to repair all logical block corruptions.<br><br>Not B about Flahback:then RMAN can use these blocks, possibly speeding up the recovery. Not MUST.F is wrong and B is right since it also works for some logical block corruptions not all, with other recovery alternatives for those cases that can not be recovered.",
-          "upvote_count": "21",
+          "username": "Aldrid",
+          "content": "A, C, F<br><br>A,C: With block media recovery, only the blocks actually being recovered are unavailable during the recovery.<br><br>F: Block media recovery may not be able to repair all logical block corruptions.<br><br>Not B about Flahback:then RMAN can use these blocks, possibly speeding up the recovery. Not MUST.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>F is wrong and B is right since it also works for some logical block corruptions not all, with other recovery alternatives for those cases that can not be recovered.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -18479,17 +18431,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 573895,
           "date": "Wed 23 Mar 2022 21:53",
-          "username": "mtnetmakermtnetmakerfreemun05Eric_F",
-          "content": "Connected to:<br>Oracle Database 19c Standard Edition 2 Release 19.0.0.0.0 - Production<br>Version 19.12.0.0.0<br><br>SQL> SHOW PDBS<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 PDB1 READ WRITE NO<br>SQL> alter session set containerPDB1;<br><br>Session altered.<br><br>SQL> ALTER DATABASE BACKUP CONTROLFILE TO '/tmp/control1.bak';<br>ALTER DATABASE BACKUP CONTROLFILE TO '/tmp/control1.bak'<br>*<br>ERROR at line 1:<br>ORA-65040: operation not allowed from within a pluggable databaseSQL>B and C1)<br>RMAN> connect target \\\"backup@pdb1 AS SYSBACKUP\\\"<br><br>target database Password:<br>connected to target database: ORADB:PDB1 (DBID1492547052)<br><br>RMAN> backup current controlfile;<br><br>Starting backup at 31-MAR-2022 07:51:08<br>using target database control file instead of recovery catalog<br>allocated channel: ORA_DISK_1<br>channel ORA_DISK_1: SID279 device typeDISK<br>channel ORA_DISK_1: starting full datafile backup set<br>channel ORA_DISK_1: specifying datafile(s) in backup set<br>including current control file in backup set<br>channel ORA_DISK_1: starting piece 1 at 31-MAR-2022 07:51:10<br>channel ORA_DISK_1: finished piece 1 at 31-MAR-2022 07:51:11<br>piece handle+DATADISK/ORADB/A98B865CBFAF359CE0537F01A8C08251/BACKUPSET/2022_03_31/ncnnf0_tag20220331t075109_0.292.1100764271 tagTAG20220331T075109 commentNONE<br>channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01<br>Finished backup at 31-MAR-2022 07:51:11<br><br>2) C - wrong, read docs.the question need creating RMAN backups, nor by SQL*Plus.",
-          "upvote_count": "1321",
+          "username": "mtnetmaker",
+          "content": "Connected to:<br>Oracle Database 19c Standard Edition 2 Release 19.0.0.0.0 - Production<br>Version 19.12.0.0.0<br><br>SQL> SHOW PDBS<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 PDB1 READ WRITE NO<br>SQL> alter session set containerPDB1;<br><br>Session altered.<br><br>SQL> ALTER DATABASE BACKUP CONTROLFILE TO '/tmp/control1.bak';<br>ALTER DATABASE BACKUP CONTROLFILE TO '/tmp/control1.bak'<br>*<br>ERROR at line 1:<br>ORA-65040: operation not allowed from within a pluggable databaseSQL><br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>B and C</li><li>1)<br>RMAN&gt; connect target \\\"backup@pdb1 AS SYSBACKUP\\\"<br><br>target database Password:<br>connected to target database: ORADB:PDB1 (DBID1492547052)<br><br>RMAN&gt; backup current controlfile;<br><br>Starting backup at 31-MAR-2022 07:51:08<br>using target database control file instead of recovery catalog<br>allocated channel: ORA_DISK_1<br>channel ORA_DISK_1: SID279 device typeDISK<br>channel ORA_DISK_1: starting full datafile backup set<br>channel ORA_DISK_1: specifying datafile(s) in backup set<br>including current control file in backup set<br>channel ORA_DISK_1: starting piece 1 at 31-MAR-2022 07:51:10<br>channel ORA_DISK_1: finished piece 1 at 31-MAR-2022 07:51:11<br>piece handle+DATADISK/ORADB/A98B865CBFAF359CE0537F01A8C08251/BACKUPSET/2022_03_31/ncnnf0_tag20220331t075109_0.292.1100764271 tagTAG20220331T075109 commentNONE<br>channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01<br>Finished backup at 31-MAR-2022 07:51:11<br><br>2) C - wrong, read docs.</li><li>the question need creating RMAN backups, nor by SQL*Plus.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 573896,
           "date": "Wed 23 Mar 2022 21:53",
-          "username": "mtnetmakerfreemun05",
-          "content": "B and C1)<br>RMAN> connect target \\\"backup@pdb1 AS SYSBACKUP\\\"<br><br>target database Password:<br>connected to target database: ORADB:PDB1 (DBID1492547052)<br><br>RMAN> backup current controlfile;<br><br>Starting backup at 31-MAR-2022 07:51:08<br>using target database control file instead of recovery catalog<br>allocated channel: ORA_DISK_1<br>channel ORA_DISK_1: SID279 device typeDISK<br>channel ORA_DISK_1: starting full datafile backup set<br>channel ORA_DISK_1: specifying datafile(s) in backup set<br>including current control file in backup set<br>channel ORA_DISK_1: starting piece 1 at 31-MAR-2022 07:51:10<br>channel ORA_DISK_1: finished piece 1 at 31-MAR-2022 07:51:11<br>piece handle+DATADISK/ORADB/A98B865CBFAF359CE0537F01A8C08251/BACKUPSET/2022_03_31/ncnnf0_tag20220331t075109_0.292.1100764271 tagTAG20220331T075109 commentNONE<br>channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01<br>Finished backup at 31-MAR-2022 07:51:11<br><br>2) C - wrong, read docs.",
-          "upvote_count": "32",
+          "username": "mtnetmaker",
+          "content": "B and C<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>1)<br>RMAN&gt; connect target \\\"backup@pdb1 AS SYSBACKUP\\\"<br><br>target database Password:<br>connected to target database: ORADB:PDB1 (DBID1492547052)<br><br>RMAN&gt; backup current controlfile;<br><br>Starting backup at 31-MAR-2022 07:51:08<br>using target database control file instead of recovery catalog<br>allocated channel: ORA_DISK_1<br>channel ORA_DISK_1: SID279 device typeDISK<br>channel ORA_DISK_1: starting full datafile backup set<br>channel ORA_DISK_1: specifying datafile(s) in backup set<br>including current control file in backup set<br>channel ORA_DISK_1: starting piece 1 at 31-MAR-2022 07:51:10<br>channel ORA_DISK_1: finished piece 1 at 31-MAR-2022 07:51:11<br>piece handle+DATADISK/ORADB/A98B865CBFAF359CE0537F01A8C08251/BACKUPSET/2022_03_31/ncnnf0_tag20220331t075109_0.292.1100764271 tagTAG20220331T075109 commentNONE<br>channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01<br>Finished backup at 31-MAR-2022 07:51:11<br><br>2) C - wrong, read docs.</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -18535,17 +18487,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 352855,
           "date": "Sun 09 May 2021 09:09",
-          "username": "dunhilldunhillnavingupta52",
-          "content": "I think BDRinD, mporislav, Aldrid are right. It's BC. <br>I miss the key word \\\"application\\\" root.BC are perfectly correct but I think even E is correct. I connected to a PDB on my system and backed up controlfile.<br><br>target database Password:<br>connected to target database: CRYPTODB:PDB2 (DBID1223325248)<br><br>RMAN> backup current controlfile;<br><br>Starting backup at 29-JUN-21<br>using target database control file instead of recovery catalog<br>allocated channel: ORA_DISK_1<br>channel ORA_DISK_1: SID402 device typeDISK<br>channel ORA_DISK_1: starting full datafile backup set<br>channel ORA_DISK_1: specifying datafile(s) in backup set<br>including current control file in backup set<br>channel ORA_DISK_1: starting piece 1 at 29-JUN-21<br>channel ORA_DISK_1: finished piece 1 at 29-JUN-21<br>piece handleH:\\ORACLE\\ORACLE19C\\FRA2\\CRYPTODB\\195AE5877EB842D6AD88571743F1FBA0\\BACKUPSET\\2021_06_29\\O1_MF_NCNNF_TAG20210629T200025_JFPCN4YJ_.BKP tagTAG20210629T200025 commentNONE<br>channel ORA_DISK_1: backup set complete, elapsed time: 00:00:02<br>Finished backup at 29-JUN-21",
-          "upvote_count": "113",
+          "username": "dunhill",
+          "content": "I think BD<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>RinD, mporislav, Aldrid are right. It's BC. <br>I miss the key word \\\"application\\\" root.</li><li>BC are perfectly correct but I think even E is correct. I connected to a PDB on my system and backed up controlfile.<br><br>target database Password:<br>connected to target database: CRYPTODB:PDB2 (DBID1223325248)<br><br>RMAN&gt; backup current controlfile;<br><br>Starting backup at 29-JUN-21<br>using target database control file instead of recovery catalog<br>allocated channel: ORA_DISK_1<br>channel ORA_DISK_1: SID402 device typeDISK<br>channel ORA_DISK_1: starting full datafile backup set<br>channel ORA_DISK_1: specifying datafile(s) in backup set<br>including current control file in backup set<br>channel ORA_DISK_1: starting piece 1 at 29-JUN-21<br>channel ORA_DISK_1: finished piece 1 at 29-JUN-21<br>piece handleH:\\ORACLE\\ORACLE19C\\FRA2\\CRYPTODB\\195AE5877EB842D6AD88571743F1FBA0\\BACKUPSET\\2021_06_29\\O1_MF_NCNNF_TAG20210629T200025_JFPCN4YJ_.BKP tagTAG20210629T200025 commentNONE<br>channel ORA_DISK_1: backup set complete, elapsed time: 00:00:02<br>Finished backup at 29-JUN-21</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 362308,
           "date": "Thu 20 May 2021 17:20",
-          "username": "dunhillnavingupta52",
-          "content": "RinD, mporislav, Aldrid are right. It's BC. <br>I miss the key word \\\"application\\\" root.BC are perfectly correct but I think even E is correct. I connected to a PDB on my system and backed up controlfile.<br><br>target database Password:<br>connected to target database: CRYPTODB:PDB2 (DBID1223325248)<br><br>RMAN> backup current controlfile;<br><br>Starting backup at 29-JUN-21<br>using target database control file instead of recovery catalog<br>allocated channel: ORA_DISK_1<br>channel ORA_DISK_1: SID402 device typeDISK<br>channel ORA_DISK_1: starting full datafile backup set<br>channel ORA_DISK_1: specifying datafile(s) in backup set<br>including current control file in backup set<br>channel ORA_DISK_1: starting piece 1 at 29-JUN-21<br>channel ORA_DISK_1: finished piece 1 at 29-JUN-21<br>piece handleH:\\ORACLE\\ORACLE19C\\FRA2\\CRYPTODB\\195AE5877EB842D6AD88571743F1FBA0\\BACKUPSET\\2021_06_29\\O1_MF_NCNNF_TAG20210629T200025_JFPCN4YJ_.BKP tagTAG20210629T200025 commentNONE<br>channel ORA_DISK_1: backup set complete, elapsed time: 00:00:02<br>Finished backup at 29-JUN-21",
-          "upvote_count": "13",
+          "username": "dunhill",
+          "content": "RinD, mporislav, Aldrid are right. It's BC. <br>I miss the key word \\\"application\\\" root.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>BC are perfectly correct but I think even E is correct. I connected to a PDB on my system and backed up controlfile.<br><br>target database Password:<br>connected to target database: CRYPTODB:PDB2 (DBID1223325248)<br><br>RMAN&gt; backup current controlfile;<br><br>Starting backup at 29-JUN-21<br>using target database control file instead of recovery catalog<br>allocated channel: ORA_DISK_1<br>channel ORA_DISK_1: SID402 device typeDISK<br>channel ORA_DISK_1: starting full datafile backup set<br>channel ORA_DISK_1: specifying datafile(s) in backup set<br>including current control file in backup set<br>channel ORA_DISK_1: starting piece 1 at 29-JUN-21<br>channel ORA_DISK_1: finished piece 1 at 29-JUN-21<br>piece handleH:\\ORACLE\\ORACLE19C\\FRA2\\CRYPTODB\\195AE5877EB842D6AD88571743F1FBA0\\BACKUPSET\\2021_06_29\\O1_MF_NCNNF_TAG20210629T200025_JFPCN4YJ_.BKP tagTAG20210629T200025 commentNONE<br>channel ORA_DISK_1: backup set complete, elapsed time: 00:00:02<br>Finished backup at 29-JUN-21</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -18670,9 +18622,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 358929,
           "date": "Sun 16 May 2021 18:41",
-          "username": "RogazanRogazan",
-          "content": "ABD (DBMS_WORKLOAD_REPOSITORY.create_snapshot)sorry I was wrong. The correct answer is ABE",
-          "upvote_count": "11",
+          "username": "Rogazan",
+          "content": "ABD (DBMS_WORKLOAD_REPOSITORY.create_snapshot)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>sorry I was wrong. The correct answer is ABE</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -18694,9 +18646,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 352853,
           "date": "Sun 09 May 2021 09:02",
-          "username": "dunhilldunhill",
-          "content": "I think ABCI correct myself. It's ABE. ",
-          "upvote_count": "11",
+          "username": "dunhill",
+          "content": "I think ABC<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I correct myself. It's ABE. </li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -18765,9 +18717,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 363159,
           "date": "Fri 21 May 2021 18:10",
-          "username": "ObserverPLjorche",
-          "content": "AB correct - no doubts<br>D is correct instead of C, because - on the PDB level you manage resources more/less the same as in non-CDB database hence you can limit uncommitted UNDO per consumer group:<br>https://docs.oracle.com/database/121/ADMIN/dbrm.htm#ADMIN11853<br>while from CDB level you cannot limit CPU on particular session level in PDB (it can be done on PDB level) but you can \\\"only\\\" limit CPU generally for particular PDB:<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/using-oracle-resource-manager-for-pdbs-with-sql-plus.html#GUID-19400E80-882F-424F-A19A-9FEB54F83577D: corectThe amount of undo generated by users in a PDB can be implemented with a PDB-level resource plan<br>https://blogs.oracle.com/oraclemagazine/multitenant-database-management",
-          "upvote_count": "122",
+          "username": "ObserverPL",
+          "content": "AB correct - no doubts<br>D is correct instead of C, because - on the PDB level you manage resources more/less the same as in non-CDB database hence you can limit uncommitted UNDO per consumer group:<br>https://docs.oracle.com/database/121/ADMIN/dbrm.htm#ADMIN11853<br>while from CDB level you cannot limit CPU on particular session level in PDB (it can be done on PDB level) but you can \\\"only\\\" limit CPU generally for particular PDB:<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/using-oracle-resource-manager-for-pdbs-with-sql-plus.html#GUID-19400E80-882F-424F-A19A-9FEB54F83577<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D: corectThe amount of undo generated by users in a PDB can be implemented with a PDB-level resource plan<br>https://blogs.oracle.com/oraclemagazine/multitenant-database-management</li></ul>",
+          "upvote_count": "12",
           "selected_answers": ""
         },
         {
@@ -18781,9 +18733,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 353497,
           "date": "Mon 10 May 2021 08:45",
-          "username": "RinDABAJ",
-          "content": "I think ABDRight asnwer",
-          "upvote_count": "102",
+          "username": "RinD",
+          "content": "I think ABD<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Right asnwer</li></ul>",
+          "upvote_count": "10",
           "selected_answers": ""
         },
         {
@@ -18813,9 +18765,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 363550,
           "date": "Sat 22 May 2021 11:33",
-          "username": "gon20ogdru",
-          "content": "and why not F<br>\\\"When you create one or more PDB resource plans and there is no CDB<br>resource plan, the CDB uses the DEFAULT_CDB_PLAN that is supplied with Oracle<br>Database.\\\"<br>then A B Fagree with F",
-          "upvote_count": "21",
+          "username": "gon20",
+          "content": "and why not F<br>\\\"When you create one or more PDB resource plans and there is no CDB<br>resource plan, the CDB uses the DEFAULT_CDB_PLAN that is supplied with Oracle<br>Database.\\\"<br>then A B F<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>agree with F</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -18829,9 +18781,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 356275,
           "date": "Thu 13 May 2021 12:55",
-          "username": "KSFflaviogcmelo",
-          "content": "ABC correctA CDB-level resource plan specifies the number of resources allocated to each PDB.  A PDB-level resource plan can be used to allocate resources among the consumer groups (a maximum of eight) within a PDB.  So it's not correct to say that a CDB-level resource plan will limit session CPU utilization.I would go with ABF. ",
-          "upvote_count": "11",
+          "username": "KSF",
+          "content": "ABC correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A CDB-level resource plan specifies the number of resources allocated to each PDB.  A PDB-level resource plan can be used to allocate resources among the consumer groups (a maximum of eight) within a PDB.  So it's not correct to say that a CDB-level resource plan will limit session CPU utilization.I would go with ABF. </li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -18903,9 +18855,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 353518,
           "date": "Mon 10 May 2021 09:21",
-          "username": "RinDrodriguesJC",
-          "content": "A correct<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/admin/administering-a-cdb-with-sql-plus.html#GUID-1AAB032F-D13A-4E06-A062-59E0487C2FC5A correct, here is the 19C Documentation:<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/administering-a-cdb-with-sql-plus.html#GUID-1AAB032F-D13A-4E06-A062-59E0487C2FC5",
-          "upvote_count": "103",
+          "username": "RinD",
+          "content": "A correct<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/admin/administering-a-cdb-with-sql-plus.html#GUID-1AAB032F-D13A-4E06-A062-59E0487C2FC5<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A correct, here is the 19C Documentation:<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/administering-a-cdb-with-sql-plus.html#GUID-1AAB032F-D13A-4E06-A062-59E0487C2FC5</li></ul>",
+          "upvote_count": "10",
           "selected_answers": ""
         },
         {
@@ -19293,25 +19245,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 522827,
           "date": "Thu 13 Jan 2022 13:33",
-          "username": "egore0496egore0496egore0496leozanon94",
-          "content": "BCE<br>FG wrong - tested in stend<br>E not existARCHIVAL attribute<br>see about C https://www.examtopics.com/discussions/oracle/view/23424-exam-1z0-083-topic-1-question-79-discussion/RMAN-03002: failure of backup command at 01/19/2022 21:54:57<br>ORA-19811: cannot have files in DB_RECOVERY_FILE_DEST with keep attributesBDE<br>NOT C<br>using channel ORA_DISK_1<br>backup will be obsolete on date 28.02.2022 21:54:56i took yesterday the exam, correct answers are BDE (there is \\\"ARCHIVAL attribute\\\" in the exam too)",
-          "upvote_count": "1151",
+          "username": "egore0496",
+          "content": "BCE<br>FG wrong - tested in stend<br>E not existARCHIVAL attribute<br>see about C https://www.examtopics.com/discussions/oracle/view/23424-exam-1z0-083-topic-1-question-79-discussion/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>RMAN-03002: failure of backup command at 01/19/2022 21:54:57<br>ORA-19811: cannot have files in DB_RECOVERY_FILE_DEST with keep attributes</li><li>BDE<br>NOT C<br>using channel ORA_DISK_1<br>backup will be obsolete on date 28.02.2022 21:54:56</li><li>i took yesterday the exam, correct answers are BDE (there is \\\"ARCHIVAL attribute\\\" in the exam too)</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 527791,
           "date": "Wed 19 Jan 2022 18:56",
-          "username": "egore0496egore0496leozanon94",
-          "content": "RMAN-03002: failure of backup command at 01/19/2022 21:54:57<br>ORA-19811: cannot have files in DB_RECOVERY_FILE_DEST with keep attributesBDE<br>NOT C<br>using channel ORA_DISK_1<br>backup will be obsolete on date 28.02.2022 21:54:56i took yesterday the exam, correct answers are BDE (there is \\\"ARCHIVAL attribute\\\" in the exam too)",
-          "upvote_count": "151",
+          "username": "egore0496",
+          "content": "RMAN-03002: failure of backup command at 01/19/2022 21:54:57<br>ORA-19811: cannot have files in DB_RECOVERY_FILE_DEST with keep attributes<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>BDE<br>NOT C<br>using channel ORA_DISK_1<br>backup will be obsolete on date 28.02.2022 21:54:56</li><li>i took yesterday the exam, correct answers are BDE (there is \\\"ARCHIVAL attribute\\\" in the exam too)</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 527799,
           "date": "Wed 19 Jan 2022 19:04",
-          "username": "egore0496leozanon94",
-          "content": "BDE<br>NOT C<br>using channel ORA_DISK_1<br>backup will be obsolete on date 28.02.2022 21:54:56i took yesterday the exam, correct answers are BDE (there is \\\"ARCHIVAL attribute\\\" in the exam too)",
-          "upvote_count": "51",
+          "username": "egore0496",
+          "content": "BDE<br>NOT C<br>using channel ORA_DISK_1<br>backup will be obsolete on date 28.02.2022 21:54:56<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>i took yesterday the exam, correct answers are BDE (there is \\\"ARCHIVAL attribute\\\" in the exam too)</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
@@ -19326,24 +19278,24 @@ var Data_1Z0_083_Part1 =
           "id": 449271,
           "date": "Wed 22 Sep 2021 06:16",
           "username": "hkshado",
-          "content": "Some of facts about archival backup:<br>\t- Use KEEP clause to create archival backup<br>\t- Use RESTORE POINT clause to assign a name to a specific SCN<br>\t\t=E2=97=8B It create a consistency point in the control file<br>\t\t=E2=97=8B The SCN is captured after the data file backup complete<br>\t- They are either considered obsolete only after a specific time that you specify or never considered obsolete<br>\t- Any files that need to restore this backup (to a consistent state) are kept, include data files, control files, SPFILE, archived log files, and relevant autobackup files (so what are relevant autobackup files)<br>\t- Cannot be stored in FRA, DBA must provide a FORMAT clause to specify a different location<br>\t- Recovery catalog is required to create archival backup of an OPEN DB.  Without recovery catalog, you must put the DB in MOUNT state<br>\t- Without recovery catalog, you cannot use KEEP FOREVER as the backup will eventually age out of the control file",
+          "content": "Some of facts about archival backup:<br> - Use KEEP clause to create archival backup<br> - Use RESTORE POINT clause to assign a name to a specific SCN<br>=E2=97=8B It create a consistency point in the control file<br>=E2=97=8B The SCN is captured after the data file backup complete<br> - They are either considered obsolete only after a specific time that you specify or never considered obsolete<br> - Any files that need to restore this backup (to a consistent state) are kept, include data files, control files, SPFILE, archived log files, and relevant autobackup files (so what are relevant autobackup files)<br> - Cannot be stored in FRA, DBA must provide a FORMAT clause to specify a different location<br> - Recovery catalog is required to create archival backup of an OPEN DB.  Without recovery catalog, you must put the DB in MOUNT state<br> - Without recovery catalog, you cannot use KEEP FOREVER as the backup will eventually age out of the control file",
           "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 368135,
           "date": "Thu 27 May 2021 18:41",
-          "username": "Marco_Mjorchejorche",
-          "content": "E: Not sure about 'ARCHIVAL' attribute. I use 'keep until' or 'keep forever', not 'ARCHIVAL'<br>I think that BDF is correct answer.<br><br>https://www.oracledistilled.com/oracle-database/backup-and-recovery/archival-backups-rman-backups-for-long-term-retention/E: is incorrect. F is correct.<br> You can create archival backups with KEEP. Clause KEEP specifies the backup as an archival backup, which is a self-contained backup that is exempt from the configured retention policy.<br>RMAN does not consider backup pieces with the KEEP option when computing the retention policy. If available, RMAN uses these backups for disaster recovery restore operations, but their purpose is to produce a snapshot of the database that can be restored on another system for testing or historical usage.<br><br>Note: You cannot use KEEP to override the retention policy for files stored in the fast recovery area. If you specify KEEP when backing up to the recovery area, then RMAN issues an error.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/keepOption.html#GUID-36E9008E-48A5-4AB9-8C9D-2D477342594BF is incorect too - If you specify KEEP when backing up to the recovery area, then RMAN issues an error.",
-          "upvote_count": "412",
+          "username": "Marco_M",
+          "content": "E: Not sure about 'ARCHIVAL' attribute. I use 'keep until' or 'keep forever', not 'ARCHIVAL'<br>I think that BDF is correct answer.<br><br>https://www.oracledistilled.com/oracle-database/backup-and-recovery/archival-backups-rman-backups-for-long-term-retention/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>E: is incorrect. F is correct.<br> You can create archival backups with KEEP. Clause KEEP specifies the backup as an archival backup, which is a self-contained backup that is exempt from the configured retention policy.<br>RMAN does not consider backup pieces with the KEEP option when computing the retention policy. If available, RMAN uses these backups for disaster recovery restore operations, but their purpose is to produce a snapshot of the database that can be restored on another system for testing or historical usage.<br><br>Note: You cannot use KEEP to override the retention policy for files stored in the fast recovery area. If you specify KEEP when backing up to the recovery area, then RMAN issues an error.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/keepOption.html#GUID-36E9008E-48A5-4AB9-8C9D-2D477342594B</li><li>F is incorect too - If you specify KEEP when backing up to the recovery area, then RMAN issues an error.</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
           "id": 422217,
           "date": "Mon 09 Aug 2021 17:42",
-          "username": "jorchejorche",
-          "content": "E: is incorrect. F is correct.<br> You can create archival backups with KEEP. Clause KEEP specifies the backup as an archival backup, which is a self-contained backup that is exempt from the configured retention policy.<br>RMAN does not consider backup pieces with the KEEP option when computing the retention policy. If available, RMAN uses these backups for disaster recovery restore operations, but their purpose is to produce a snapshot of the database that can be restored on another system for testing or historical usage.<br><br>Note: You cannot use KEEP to override the retention policy for files stored in the fast recovery area. If you specify KEEP when backing up to the recovery area, then RMAN issues an error.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/keepOption.html#GUID-36E9008E-48A5-4AB9-8C9D-2D477342594BF is incorect too - If you specify KEEP when backing up to the recovery area, then RMAN issues an error.",
-          "upvote_count": "12",
+          "username": "jorche",
+          "content": "E: is incorrect. F is correct.<br> You can create archival backups with KEEP. Clause KEEP specifies the backup as an archival backup, which is a self-contained backup that is exempt from the configured retention policy.<br>RMAN does not consider backup pieces with the KEEP option when computing the retention policy. If available, RMAN uses these backups for disaster recovery restore operations, but their purpose is to produce a snapshot of the database that can be restored on another system for testing or historical usage.<br><br>Note: You cannot use KEEP to override the retention policy for files stored in the fast recovery area. If you specify KEEP when backing up to the recovery area, then RMAN issues an error.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/keepOption.html#GUID-36E9008E-48A5-4AB9-8C9D-2D477342594B<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>F is incorect too - If you specify KEEP when backing up to the recovery area, then RMAN issues an error.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -19381,25 +19333,25 @@ var Data_1Z0_083_Part1 =
         {
           "id": 353126,
           "date": "Sun 09 May 2021 16:54",
-          "username": "dunhillnavingupta52DBA007DBA007",
-          "content": "I think BEG<br>https://oraclemantra.wordpress.com/2013/04/25/archival-backups/G is wrong since it doesn't \\\"always\\\" require recovery catalog. Its is required only when command is using \\\"keep forever\\\" clause.G is correct, since the question is about \\\"Restore Point\\\" therefore you have to use either \\\"Keep forever\\\" or \\\"Keep until\\\" and Hence Correct Answer is B,E,GMy mistake Recovery Catalog is only required with \\\"Keep Forever\\\", other clause \\\"Keep Until\\\" do not require a Recovery Catalog.",
-          "upvote_count": "2111",
+          "username": "dunhill",
+          "content": "I think BEG<br>https://oraclemantra.wordpress.com/2013/04/25/archival-backups/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>G is wrong since it doesn't \\\"always\\\" require recovery catalog. Its is required only when command is using \\\"keep forever\\\" clause.</li><li>G is correct, since the question is about \\\"Restore Point\\\" therefore you have to use either \\\"Keep forever\\\" or \\\"Keep until\\\" and Hence Correct Answer is B,E,G</li><li>My mistake Recovery Catalog is only required with \\\"Keep Forever\\\", other clause \\\"Keep Until\\\" do not require a Recovery Catalog.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 394138,
           "date": "Tue 29 Jun 2021 20:09",
-          "username": "navingupta52DBA007DBA007",
-          "content": "G is wrong since it doesn't \\\"always\\\" require recovery catalog. Its is required only when command is using \\\"keep forever\\\" clause.G is correct, since the question is about \\\"Restore Point\\\" therefore you have to use either \\\"Keep forever\\\" or \\\"Keep until\\\" and Hence Correct Answer is B,E,GMy mistake Recovery Catalog is only required with \\\"Keep Forever\\\", other clause \\\"Keep Until\\\" do not require a Recovery Catalog.",
-          "upvote_count": "111",
+          "username": "navingupta52",
+          "content": "G is wrong since it doesn't \\\"always\\\" require recovery catalog. Its is required only when command is using \\\"keep forever\\\" clause.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>G is correct, since the question is about \\\"Restore Point\\\" therefore you have to use either \\\"Keep forever\\\" or \\\"Keep until\\\" and Hence Correct Answer is B,E,G</li><li>My mistake Recovery Catalog is only required with \\\"Keep Forever\\\", other clause \\\"Keep Until\\\" do not require a Recovery Catalog.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 562650,
           "date": "Mon 07 Mar 2022 14:38",
-          "username": "DBA007DBA007",
-          "content": "G is correct, since the question is about \\\"Restore Point\\\" therefore you have to use either \\\"Keep forever\\\" or \\\"Keep until\\\" and Hence Correct Answer is B,E,GMy mistake Recovery Catalog is only required with \\\"Keep Forever\\\", other clause \\\"Keep Until\\\" do not require a Recovery Catalog.",
-          "upvote_count": "11",
+          "username": "DBA007",
+          "content": "G is correct, since the question is about \\\"Restore Point\\\" therefore you have to use either \\\"Keep forever\\\" or \\\"Keep until\\\" and Hence Correct Answer is B,E,G<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>My mistake Recovery Catalog is only required with \\\"Keep Forever\\\", other clause \\\"Keep Until\\\" do not require a Recovery Catalog.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -19476,9 +19428,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 375091,
           "date": "Sat 05 Jun 2021 14:36",
-          "username": "MSShaikhABAJ",
-          "content": "Seems ABD is correct because GSMROOTUSER is only for CDB$ROOTABD is the correct answer",
-          "upvote_count": "53",
+          "username": "MSShaikh",
+          "content": "Seems ABD is correct because GSMROOTUSER is only for CDB$ROOT<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>ABD is the correct answer</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
@@ -19492,9 +19444,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 585969,
           "date": "Thu 14 Apr 2022 21:24",
-          "username": "flaviogcmeloflaviogcmelo",
-          "content": "ABD.  I created pdb3 with con_id9.<br>SQL> select con_id, count(1) from cdb_users where con_id in (1,9) and common'YES' group by con_id;<br><br>CON_ID COUNT(1)<br>---------- ----------<br> 9 36<br> 1 37<br><br>SQL> select con_id, count(1) from cdb_roles where con_id in (1,9) and common'YES' group by con_id;<br><br>CON_ID COUNT(1)<br>---------- ----------<br> 9 89<br> 1 89The number of roles are the sema even when the condition common'YES' is removed.<br>SQL> select con_id, count(1) from cdb_roles where con_id in (1,9) group by con_id;<br><br>CON_ID COUNT(1)<br>---------- ----------<br> 1 89<br> 9 89<br><br>Ref.:<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/overview-of-the-multitenant-architecture.html#GUID-3BB161DA-9CC0-4D61-A2C1-5D3662E0DECF<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/overview-of-the-multitenant-architecture.html#GUID-16473474-7F47-4E40-A592-01836E7D911C",
-          "upvote_count": "21",
+          "username": "flaviogcmelo",
+          "content": "ABD.  I created pdb3 with con_id9.<br>SQL> select con_id, count(1) from cdb_users where con_id in (1,9) and common'YES' group by con_id;<br><br>CON_ID COUNT(1)<br>---------- ----------<br> 9 36<br> 1 37<br><br>SQL> select con_id, count(1) from cdb_roles where con_id in (1,9) and common'YES' group by con_id;<br><br>CON_ID COUNT(1)<br>---------- ----------<br> 9 89<br> 1 89<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>The number of roles are the sema even when the condition common'YES' is removed.<br>SQL&gt; select con_id, count(1) from cdb_roles where con_id in (1,9) group by con_id;<br><br>CON_ID COUNT(1)<br>---------- ----------<br> 1 89<br> 9 89<br><br>Ref.:<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/overview-of-the-multitenant-architecture.html#GUID-3BB161DA-9CC0-4D61-A2C1-5D3662E0DECF<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/overview-of-the-multitenant-architecture.html#GUID-16473474-7F47-4E40-A592-01836E7D911C</li></ul>",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: ABD"
         },
         {
@@ -19508,9 +19460,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 581334,
           "date": "Tue 05 Apr 2022 17:47",
-          "username": "FeaRoXfreemun05",
-          "content": "SQL> select count(*) from dba_users where common'YES';<br><br>COUNT(*)<br>----------<br>36<br><br>SQL> alter session set containerCDB$ROOT;<br><br>Session altered.<br><br>SQL> select count(*) from dba_users where common'YES';<br><br>COUNT(*)<br>----------<br>37<br><br>SQL> select count(*) from dba_roles;<br><br>COUNT(*)<br>----------<br>89<br><br>SQL> alter session set containerPDB1;<br><br>Session altered.<br><br>SQL> select count(*) from dba_roles;<br><br>COUNT(*)<br>----------<br>89<br><br>Seems like ABDagree with ABD . tested",
-          "upvote_count": "21",
+          "username": "FeaRoX",
+          "content": "SQL> select count(*) from dba_users where common'YES';<br><br>COUNT(*)<br>----------<br>36<br><br>SQL> alter session set containerCDB$ROOT;<br><br>Session altered.<br><br>SQL> select count(*) from dba_users where common'YES';<br><br>COUNT(*)<br>----------<br>37<br><br>SQL> select count(*) from dba_roles;<br><br>COUNT(*)<br>----------<br>89<br><br>SQL> alter session set containerPDB1;<br><br>Session altered.<br><br>SQL> select count(*) from dba_roles;<br><br>COUNT(*)<br>----------<br>89<br><br>Seems like ABD<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>agree with ABD . tested</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -19540,9 +19492,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 353135,
           "date": "Sun 09 May 2021 17:06",
-          "username": "dunhilldunhill",
-          "content": "I think AEFRinD is right. I missed the keyword \\\"roles\\\". I thought it was \\\"user\\\".",
-          "upvote_count": "12",
+          "username": "dunhill",
+          "content": "I think AEF<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>RinD is right. I missed the keyword \\\"roles\\\". I thought it was \\\"user\\\".</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -19566,7 +19518,7 @@ var Data_1Z0_083_Part1 =
       "is_partially_correct": true,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: AC</p>",
+      "general_feedback": "<p>Correct Answer: BE</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -19575,17 +19527,17 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. PDB1 will be created in CDB2 and automatically opened.<br></p>",
-              "correct": true,
-              "feedback": ""
-            },
-            {
-              "choice": "<p>B. PDB1 will be created in CDB2 and left in MOUNT state.<br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>C. PDB1_C1_SRV in CDB1 will be renamed PDB1_C2_SRV.<br></p>",
+              "choice": "<p>B. PDB1 will be created in CDB2 and left in MOUNT state.<br></p>",
               "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. PDB1_C1_SRV in CDB1 will be renamed PDB1_C2_SRV.<br></p>",
+              "correct": false,
               "feedback": ""
             },
             {
@@ -19595,7 +19547,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. PDB1_C2_SRV will be created but not started.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -19606,15 +19558,23 @@ var Data_1Z0_083_Part1 =
         {
           "id": 354247,
           "date": "Tue 11 May 2021 03:59",
-          "username": "RinD",
+          "username": "\t\t\t\tRinD\t\t\t",
           "content": "BE correct<br><br>After you create the PDB, it is in mounted mode, and its status is NEW",
-          "upvote_count": "18",
+          "upvote_count": "20",
           "selected_answers": ""
+        },
+        {
+          "id": 828811,
+          "date": "Sat 04 Mar 2023 11:06",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "B and E, see example from ObserverPL",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BE"
         },
         {
           "id": 541015,
           "date": "Sat 05 Feb 2022 14:39",
-          "username": "DBA007",
+          "username": "\t\t\t\tDBA007\t\t\t",
           "content": "B, D is Correct. Tested.",
           "upvote_count": "1",
           "selected_answers": ""
@@ -19622,7 +19582,7 @@ var Data_1Z0_083_Part1 =
         {
           "id": 449777,
           "date": "Thu 23 Sep 2021 00:44",
-          "username": "nobody347",
+          "username": "\t\t\t\tnobody347\t\t\t",
           "content": "D 100%<br>after created database sservice status can be checked through listener utilite<br>lsnrctl status",
           "upvote_count": "1",
           "selected_answers": ""
@@ -19630,7 +19590,7 @@ var Data_1Z0_083_Part1 =
         {
           "id": 421119,
           "date": "Sat 07 Aug 2021 11:37",
-          "username": "Neil107",
+          "username": "\t\t\t\tNeil107\t\t\t",
           "content": "I believe it's B and C. ",
           "upvote_count": "1",
           "selected_answers": ""
@@ -19638,31 +19598,39 @@ var Data_1Z0_083_Part1 =
         {
           "id": 363187,
           "date": "Fri 21 May 2021 19:12",
-          "username": "ObserverPLAldridgon20",
-          "content": "Sorry guys, but B and D are CORRECT as I tested in practice couple of minutes ago:<br><br>SQL> CREATE PLUGGABLE DATABASE pdb3 FROM pdb1 SERVICE_NAME_CONVERT('my_new_service_1','my_new_service_3');<br><br>Pluggable database created.<br><br>SQL> show pdbs<br><br>CON_ID CON_NAME\t\t\tOPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br>\t 2 PDB$SEED\t\t\tREAD ONLYNO<br>\t 3 PDB_PHRDB\t\t\tMOUNTED<br>\t 4 PDB1 \t\t\tREAD WRITE NO<br>\t 5 PDB2 \t\t\tMOUNTED<br>\t 6 PDB3 \t\t\tMOUNTED<br><br>SQL> alter session set containerPDB3;<br><br>SQL> exec DBMS_SERVICE. start_service('my_new_service_3');<br>BEGIN DBMS_SERVICE. start_service('my_new_service_3'); END;<br><br>*<br>ERROR at line 1:<br>ORA-06550: line 1, column 7:<br>PLS-00201: identifier 'DBMS_SERVICE. START_SERVICE' must be declared<br>ORA-06550: line 1, column 7:<br>PL/SQL: Statement ignored<br><br>SQL> alter database open;<br><br>Database altered.<br><br>SQL> exec DBMS_SERVICE. start_service('my_new_service_3');<br><br>PL/SQL procedure successfully completed.D Incorrect.D.  PDB1_C2_SRV will be created and started automatically.<br>It's not started automatically.. You start it manualybut you have had to start the service, then the service existed but was closed. Then Option E is correct??",
-          "upvote_count": "345",
+          "username": "\t\t\t\tObserverPL\t\t\t",
+          "content": "Sorry guys, but B and D are CORRECT as I tested in practice couple of minutes ago:<br><br>SQL> CREATE PLUGGABLE DATABASE pdb3 FROM pdb1 SERVICE_NAME_CONVERT('my_new_service_1','my_new_service_3');<br><br>Pluggable database created.<br><br>SQL> show pdbs<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br>2 PDB$SEED READ ONLYNO<br>3 PDB_PHRDB MOUNTED<br>4 PDB1READ WRITE NO<br>5 PDB2MOUNTED<br>6 PDB3MOUNTED<br><br>SQL> alter session set containerPDB3;<br><br>SQL> exec DBMS_SERVICE. start_service('my_new_service_3');<br>BEGIN DBMS_SERVICE. start_service('my_new_service_3'); END;<br><br>*<br>ERROR at line 1:<br>ORA-06550: line 1, column 7:<br>PLS-00201: identifier 'DBMS_SERVICE. START_SERVICE' must be declared<br>ORA-06550: line 1, column 7:<br>PL/SQL: Statement ignored<br><br>SQL> alter database open;<br><br>Database altered.<br><br>SQL> exec DBMS_SERVICE. start_service('my_new_service_3');<br><br>PL/SQL procedure successfully completed.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>with your example it should be B and<br>E (PDB1_C2_SRV will be created but not started.)<br>not D (PDB1_C2_SRV will be created and started automatically.)</li><li>D Incorrect.D.  PDB1_C2_SRV will be created and started automatically.<br>It's not started automatically.. You start it manualy</li><li>but you have had to start the service, then the service existed but was closed. Then Option E is correct??</li></ul>",
+          "upvote_count": "4",
+          "selected_answers": ""
+        },
+        {
+          "id": 828808,
+          "date": "Sat 04 Mar 2023 11:05",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "with your example it should be B and<br>E (PDB1_C2_SRV will be created but not started.)<br>not D (PDB1_C2_SRV will be created and started automatically.)",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 365614,
           "date": "Mon 24 May 2021 15:09",
-          "username": "Aldrid",
+          "username": "\t\t\t\tAldrid\t\t\t",
           "content": "D Incorrect.D.  PDB1_C2_SRV will be created and started automatically.<br>It's not started automatically.. You start it manualy",
-          "upvote_count": "4",
+          "upvote_count": "6",
           "selected_answers": ""
         },
         {
           "id": 365687,
           "date": "Mon 24 May 2021 17:18",
-          "username": "gon20",
+          "username": "\t\t\t\tgon20\t\t\t",
           "content": "but you have had to start the service, then the service existed but was closed. Then Option E is correct??",
-          "upvote_count": "5",
+          "upvote_count": "6",
           "selected_answers": ""
         },
         {
           "id": 361917,
           "date": "Thu 20 May 2021 09:37",
-          "username": "Aldrid",
+          "username": "\t\t\t\tAldrid\t\t\t",
           "content": "B, C<br><br>C: https://docs.oracle.com/database/121/ADMIN/cdb_plug.htm#ADMIN13549",
           "upvote_count": "4",
           "selected_answers": ""
@@ -19670,7 +19638,7 @@ var Data_1Z0_083_Part1 =
         {
           "id": 353138,
           "date": "Sun 09 May 2021 17:15",
-          "username": "dunhill",
+          "username": "\t\t\t\tdunhill\t\t\t",
           "content": "I think AD",
           "upvote_count": "1",
           "selected_answers": ""
@@ -19728,31 +19696,47 @@ var Data_1Z0_083_Part1 =
         {
           "id": 354257,
           "date": "Tue 11 May 2021 04:06",
-          "username": "RinD",
-          "content": "A correct",
-          "upvote_count": "14",
+          "username": "\t\t\t\tRinD\t\t\t",
+          "content": "A correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>From the tests:<br>ORA-65049: Creation of local user or role is not allowed in this container.<br>Cause: An attempt was made to create a local user or role in CDB$ROOT or an application root.<br>Action: If trying to create a common user or role, specify CONTAINERALL.</li></ul>",
+          "upvote_count": "17",
+          "selected_answers": ""
+        },
+        {
+          "id": 828817,
+          "date": "Sat 04 Mar 2023 11:30",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "From the tests:<br>ORA-65049: Creation of local user or role is not allowed in this container.<br>Cause: An attempt was made to create a local user or role in CDB$ROOT or an application root.<br>Action: If trying to create a common user or role, specify CONTAINERALL.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 767496,
+          "date": "Fri 06 Jan 2023 11:08",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "A correct test",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 599213,
           "date": "Mon 09 May 2022 19:46",
-          "username": "mtnetmaker",
+          "username": "\t\t\t\tmtnetmaker\t\t\t",
           "content": "SQL> alter system set common_user_prefix'' scopespfile;<br>System altered.<br><br>SQL> shut immediate<br>Database closed.<br>Database dismounted.<br>ORACLE instance shut down.<br>SQL> startup<br>ORACLE instance started.<br><br>Total System Global Area960495072 bytes<br>Fixed Size9141728 bytes<br>Variable Size 306184192 bytes<br>Database Buffers637534208 bytes<br>Redo Buffers7634944 bytes<br>Database mounted.<br>Database opened.<br>SQL> show parameter prefix<br><br>NAME TYPEVALUE<br>------------------------------------ ----------- ------------------------------<br>common_user_prefix string<br>os_authent_prefixstringops$<br>private_temp_table_prefixstringORA$PTT_<br>SQL><br>SQL><br>SQL> create role role1 containercurrent;<br>create role role1 containercurrent<br>*<br>ERROR at line 1:<br>ORA-65049: Creation of local user or role is not allowed in this container<br>SQL>",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
           "id": 474874,
           "date": "Tue 09 Nov 2021 16:05",
-          "username": "abebeWG_C",
-          "content": "E<br>Due to lack of C##Consider the word \\\"must\\\" in answer E.  Common roles CAN start with C##, so answer A is correct not E as you wrote.",
-          "upvote_count": "11",
+          "username": "\t\t\t\tabebeW\t\t\t",
+          "content": "E<br>Due to lack of C##<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Consider the word \\\"must\\\" in answer E.  Common roles CAN start with C##, so answer A is correct not E as you wrote.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 687720,
           "date": "Thu 06 Oct 2022 13:38",
-          "username": "G_C",
+          "username": "\t\t\t\tG_C\t\t\t",
           "content": "Consider the word \\\"must\\\" in answer E.  Common roles CAN start with C##, so answer A is correct not E as you wrote.",
           "upvote_count": "1",
           "selected_answers": ""
@@ -19760,7 +19744,7 @@ var Data_1Z0_083_Part1 =
         {
           "id": 446797,
           "date": "Fri 17 Sep 2021 23:02",
-          "username": "nobody347",
+          "username": "\t\t\t\tnobody347\t\t\t",
           "content": "A 100%<br>Tested in lab<br>alter system set common_user_prefix'' scopespfile;<br>start force;<br>create role role1 containercurrent;<br><br>ERROR at line 1:<br>ORA-65049: Creation of local user or role is not allowed in this container.",
           "upvote_count": "3",
           "selected_answers": ""
@@ -19768,23 +19752,23 @@ var Data_1Z0_083_Part1 =
         {
           "id": 435948,
           "date": "Tue 31 Aug 2021 04:37",
-          "username": "arpzvnhoang76freemun05",
-          "content": "Should be D<br><br>If COMMON_USER_PREFIX is set to an empty string, Oracle will not enforce any restrictions on the names of common or local users, roles, and profiles.<br><br>Setting this parameter to an empty string will result in no restrictions being placed on names of common and local users, roles, and profilesAgree with you.<br>If COMMON_USER_PREFIX is set to an empty string, Oracle will not enforce any restrictions on the names of common or local users, roles, and profiles.<br><br>Setting this parameter to an empty string will result in no restrictions being placed on names of common and local users, roles, and profiles, which could lead to conflicts between the names of local and common users, roles, and profiles when a PDB is plugged into a different CDB, or when opening a PDB that was closed when a common user was created.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/COMMON_USER_PREFIX.html#GUID-516ADCCF-3661-4B54-908A-7041854EA14Fset the parameter and try it )",
-          "upvote_count": "221",
+          "username": "\t\t\t\tarpz\t\t\t",
+          "content": "Should be D<br><br>If COMMON_USER_PREFIX is set to an empty string, Oracle will not enforce any restrictions on the names of common or local users, roles, and profiles.<br><br>Setting this parameter to an empty string will result in no restrictions being placed on names of common and local users, roles, and profiles<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree with you.<br>If COMMON_USER_PREFIX is set to an empty string, Oracle will not enforce any restrictions on the names of common or local users, roles, and profiles.<br><br>Setting this parameter to an empty string will result in no restrictions being placed on names of common and local users, roles, and profiles, which could lead to conflicts between the names of local and common users, roles, and profiles when a PDB is plugged into a different CDB, or when opening a PDB that was closed when a common user was created.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/COMMON_USER_PREFIX.html#GUID-516ADCCF-3661-4B54-908A-7041854EA14F</li><li>set the parameter and try it )</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 485670,
           "date": "Wed 24 Nov 2021 07:44",
-          "username": "vnhoang76freemun05",
-          "content": "Agree with you.<br>If COMMON_USER_PREFIX is set to an empty string, Oracle will not enforce any restrictions on the names of common or local users, roles, and profiles.<br><br>Setting this parameter to an empty string will result in no restrictions being placed on names of common and local users, roles, and profiles, which could lead to conflicts between the names of local and common users, roles, and profiles when a PDB is plugged into a different CDB, or when opening a PDB that was closed when a common user was created.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/COMMON_USER_PREFIX.html#GUID-516ADCCF-3661-4B54-908A-7041854EA14Fset the parameter and try it )",
-          "upvote_count": "21",
+          "username": "\t\t\t\tvnhoang76\t\t\t",
+          "content": "Agree with you.<br>If COMMON_USER_PREFIX is set to an empty string, Oracle will not enforce any restrictions on the names of common or local users, roles, and profiles.<br><br>Setting this parameter to an empty string will result in no restrictions being placed on names of common and local users, roles, and profiles, which could lead to conflicts between the names of local and common users, roles, and profiles when a PDB is plugged into a different CDB, or when opening a PDB that was closed when a common user was created.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/COMMON_USER_PREFIX.html#GUID-516ADCCF-3661-4B54-908A-7041854EA14F<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>set the parameter and try it )</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 582130,
           "date": "Thu 07 Apr 2022 04:47",
-          "username": "freemun05",
+          "username": "\t\t\t\tfreemun05\t\t\t",
           "content": "set the parameter and try it )",
           "upvote_count": "1",
           "selected_answers": ""
@@ -19792,15 +19776,15 @@ var Data_1Z0_083_Part1 =
         {
           "id": 408965,
           "date": "Sun 18 Jul 2021 15:29",
-          "username": "BriC",
+          "username": "\t\t\t\tBriC\t\t\t",
           "content": "Correct answer is A.  You cannot execute create role statement with CONTAINERCURRENT from CDB$ROOT<br><br>CONTAINER Clause<br><br>The CONTAINER clause applies when you are connected to a CDB.  However, it is not necessary to specify the CONTAINER clause because its default values are the only allowed values.<br><br>To create a common role, you must be connected to the root. You can optionally specify CONTAINERALL, which is the default when you are connected to the root.<br><br>To create a local role, you must be connected to a PDB.  You can optionally specify CONTAINERCURRENT, which is the default when you are connected to a PDB. ",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
           "id": 404137,
           "date": "Sun 11 Jul 2021 18:51",
-          "username": "niabs",
+          "username": "\t\t\t\tniabs\t\t\t",
           "content": "the command should work no as COMMON_USER_PREFIX is set set to empty string? So I think A is false",
           "upvote_count": "1",
           "selected_answers": ""
@@ -19808,7 +19792,7 @@ var Data_1Z0_083_Part1 =
         {
           "id": 363188,
           "date": "Fri 21 May 2021 19:15",
-          "username": "ObserverPL",
+          "username": "\t\t\t\tObserverPL\t\t\t",
           "content": "Agree, A is correct:<br><br>SQL> create role testrole containercurrent;<br>create role testrole containercurrent<br>*<br>ERROR at line 1:<br>ORA-65049: Creation of local user or role is not allowed in this container.",
           "upvote_count": "4",
           "selected_answers": ""
@@ -19922,9 +19906,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 377563,
           "date": "Tue 08 Jun 2021 15:37",
-          "username": "Aldridfreemun05",
-          "content": "B.  It is a set of recommendations by the optimizer to restructure a SQL statement to avoid suboptimal execution plans.<br><br>\\\"The recommendation relates to a collection of statistics on objects, creation of new indexes, restructuring of the SQL statement, or creation of a SQL profile\\\"read it again please",
-          "upvote_count": "12",
+          "username": "Aldrid",
+          "content": "B.  It is a set of recommendations by the optimizer to restructure a SQL statement to avoid suboptimal execution plans.<br><br>\\\"The recommendation relates to a collection of statistics on objects, creation of new indexes, restructuring of the SQL statement, or creation of a SQL profile\\\"<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>read it again please</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -20004,17 +19988,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 524942,
           "date": "Sun 16 Jan 2022 13:51",
-          "username": "egore0496leozanon94leozanon94",
-          "content": "RECOVER DATABASE UNTIL AVAILABLE;<br><br>RMAN-00571: <br>RMAN-00569:ERROR MESSAGE STACK FOLLOWS <br>RMAN-00571: <br>RMAN-00558: error encountered while parsing input commands<br>RMAN-01009: syntax error: found \\\";\\\": expecting one of: \\\"redo\\\"<br>RMAN-01007: at line 1 column 33 file: standard input<br><br>RMAN> RECOVER DATABASE NOREDO;<br><br>Starting recover at 16.01.2022 16:50:40<br>using channel ORA_DISK_1<br><br>Finished recover at 16.01.2022 16:50:40<br>So C must be incorrect.<br>B - okyou are right, its possible that the question is truncated or this is a tricky question.<br>Anyway it will be to pay attention during the examIn exam there are:<br>6. RECOVER DATABASE NOREDO<br>7. RECOVER DATABASE UNTIL AVAILABLE<br><br>So confirm that answer B is right",
-          "upvote_count": "411",
+          "username": "egore0496",
+          "content": "RECOVER DATABASE UNTIL AVAILABLE;<br><br>RMAN-00571: <br>RMAN-00569:ERROR MESSAGE STACK FOLLOWS <br>RMAN-00571: <br>RMAN-00558: error encountered while parsing input commands<br>RMAN-01009: syntax error: found \\\";\\\": expecting one of: \\\"redo\\\"<br>RMAN-01007: at line 1 column 33 file: standard input<br><br>RMAN> RECOVER DATABASE NOREDO;<br><br>Starting recover at 16.01.2022 16:50:40<br>using channel ORA_DISK_1<br><br>Finished recover at 16.01.2022 16:50:40<br>So C must be incorrect.<br>B - ok<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>you are right, its possible that the question is truncated or this is a tricky question.<br>Anyway it will be to pay attention during the exam</li><li>In exam there are:<br>6. RECOVER DATABASE NOREDO<br>7. RECOVER DATABASE UNTIL AVAILABLE<br><br>So confirm that answer B is right</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
           "id": 535571,
           "date": "Sat 29 Jan 2022 17:12",
-          "username": "leozanon94leozanon94",
-          "content": "you are right, its possible that the question is truncated or this is a tricky question.<br>Anyway it will be to pay attention during the examIn exam there are:<br>6. RECOVER DATABASE NOREDO<br>7. RECOVER DATABASE UNTIL AVAILABLE<br><br>So confirm that answer B is right",
-          "upvote_count": "11",
+          "username": "leozanon94",
+          "content": "you are right, its possible that the question is truncated or this is a tricky question.<br>Anyway it will be to pay attention during the exam<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>In exam there are:<br>6. RECOVER DATABASE NOREDO<br>7. RECOVER DATABASE UNTIL AVAILABLE<br><br>So confirm that answer B is right</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -20028,9 +20012,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 445169,
           "date": "Wed 15 Sep 2021 13:24",
-          "username": "leader79leader79",
-          "content": "I think B is the correct because of the \\\"minimum required steps\\\" restriction.<br>(The C sames to be also correct, but in this case one aditional step to reapplying the redo entries will be made also)Just one another remark.<br>The correct syntax should be \\\"UNTIL AVAILABLE REDO\\\" and not \\\"UNTIL AVAILABLE\\\".<br>So C must be incorrect.",
-          "upvote_count": "13",
+          "username": "leader79",
+          "content": "I think B is the correct because of the \\\"minimum required steps\\\" restriction.<br>(The C sames to be also correct, but in this case one aditional step to reapplying the redo entries will be made also)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Just one another remark.<br>The correct syntax should be \\\"UNTIL AVAILABLE REDO\\\" and not \\\"UNTIL AVAILABLE\\\".<br>So C must be incorrect.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -20044,9 +20028,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 434029,
           "date": "Sat 28 Aug 2021 18:24",
-          "username": "saserdifreemun05",
-          "content": "C is correct 12.2 NEW FEATURE : -RECOVER DATABASE UNTIL AVAILABLE REDO (Doc ID 2300465.1)you should try it)))",
-          "upvote_count": "21",
+          "username": "saserdi",
+          "content": "C is correct 12.2 NEW FEATURE : -RECOVER DATABASE UNTIL AVAILABLE REDO (Doc ID 2300465.1)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>you should try it)))</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -20060,9 +20044,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 424201,
           "date": "Fri 13 Aug 2021 11:53",
-          "username": "Neil107freemun05",
-          "content": "It's C. nope it's not",
-          "upvote_count": "21",
+          "username": "Neil107",
+          "content": "It's C. <br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>nope it's not</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -20084,17 +20068,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 359204,
           "date": "Mon 17 May 2021 04:46",
-          "username": "ABAJgon20ABAJ",
-          "content": "F is the correct answer. Recover database until available is a new feature of 19c.<br>https://web.stanford.edu/dept/itss/docs/oracle/10gR2/backup.102/b14191/recoscen008.htm#i1006564F ? what F ?I meant to say C is the correct answer. Don't know how come I typed F. ",
-          "upvote_count": "123",
+          "username": "ABAJ",
+          "content": "F is the correct answer. Recover database until available is a new feature of 19c.<br>https://web.stanford.edu/dept/itss/docs/oracle/10gR2/backup.102/b14191/recoscen008.htm#i1006564<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>F ? what F ?</li><li>I meant to say C is the correct answer. Don't know how come I typed F. </li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 362910,
           "date": "Fri 21 May 2021 12:42",
-          "username": "gon20ABAJ",
-          "content": "F ? what F ?I meant to say C is the correct answer. Don't know how come I typed F. ",
-          "upvote_count": "23",
+          "username": "gon20",
+          "content": "F ? what F ?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I meant to say C is the correct answer. Don't know how come I typed F. </li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -20116,17 +20100,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 354263,
           "date": "Tue 11 May 2021 04:22",
-          "username": "RinDRinDegore0496",
-          "content": "B correctI recheck, C is correctCorrect is UNTIL AVAILABLE REDO<br>but not UNTIL AVAILABLE",
-          "upvote_count": "152",
+          "username": "RinD",
+          "content": "B correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I recheck, C is correct</li><li>Correct is UNTIL AVAILABLE REDO<br>but not UNTIL AVAILABLE</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 360134,
           "date": "Tue 18 May 2021 08:09",
-          "username": "RinDegore0496",
-          "content": "I recheck, C is correctCorrect is UNTIL AVAILABLE REDO<br>but not UNTIL AVAILABLE",
-          "upvote_count": "52",
+          "username": "RinD",
+          "content": "I recheck, C is correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Correct is UNTIL AVAILABLE REDO<br>but not UNTIL AVAILABLE</li></ul>",
+          "upvote_count": "5",
           "selected_answers": ""
         },
         {
@@ -20203,17 +20187,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 354286,
           "date": "Tue 11 May 2021 05:10",
-          "username": "RinDABAJRinD",
-          "content": "ABD correctABE can also be correct. There can be one application ?application pdbs can be create from application$seed (belong to that application pdb) and cdb$seed, I doubt that it can be shared.",
-          "upvote_count": "1312",
+          "username": "RinD",
+          "content": "ABD correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>ABE can also be correct. There can be one application ?</li><li>application pdbs can be create from application$seed (belong to that application pdb) and cdb$seed, I doubt that it can be shared.</li></ul>",
+          "upvote_count": "13",
           "selected_answers": ""
         },
         {
           "id": 359214,
           "date": "Mon 17 May 2021 05:07",
-          "username": "ABAJRinD",
-          "content": "ABE can also be correct. There can be one application ?application pdbs can be create from application$seed (belong to that application pdb) and cdb$seed, I doubt that it can be shared.",
-          "upvote_count": "12",
+          "username": "ABAJ",
+          "content": "ABE can also be correct. There can be one application ?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>application pdbs can be create from application$seed (belong to that application pdb) and cdb$seed, I doubt that it can be shared.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -20306,9 +20290,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 563091,
           "date": "Tue 08 Mar 2022 09:46",
-          "username": "DBA007FeaRoX",
-          "content": "Answer: B,D,F<br>\\\"Flashback Database can only be used if flashback logs are available.\\\"<br>\\\"Any remaining changes are recovered using online and archived redo logs if available.\\\"<br><br>https://blogs.oracle.com/maa/post/flashback-database-and-flashback-logs#:~:textFlashback%20Database%20can%20only%20be,target%20to%20use%20Flashback%20Database.as per your justification - not ONLY flashback logs are used each time.",
-          "upvote_count": "22",
+          "username": "DBA007",
+          "content": "Answer: B,D,F<br>\\\"Flashback Database can only be used if flashback logs are available.\\\"<br>\\\"Any remaining changes are recovered using online and archived redo logs if available.\\\"<br><br>https://blogs.oracle.com/maa/post/flashback-database-and-flashback-logs#:~:textFlashback%20Database%20can%20only%20be,target%20to%20use%20Flashback%20Database.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>as per your justification - not ONLY flashback logs are used each time.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -20338,9 +20322,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 449138,
           "date": "Tue 21 Sep 2021 21:37",
-          "username": "nobody347G_C",
-          "content": "I think B is wrong.<br>RMAN have to be used to flashback datatabaseYou are wrong. RMAN can be used for that as well as SQL*Plus do not follow an examples from official documentation because it just an example.",
-          "upvote_count": "21",
+          "username": "nobody347",
+          "content": "I think B is wrong.<br>RMAN have to be used to flashback datatabase<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>You are wrong. RMAN can be used for that as well as SQL*Plus do not follow an examples from official documentation because it just an example.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -20362,9 +20346,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 354321,
           "date": "Tue 11 May 2021 07:08",
-          "username": "RinDG_C",
-          "content": "BCF correctCan you clarify why do you think that queries generate FLASHBACK LOG? I think it is trueFLASHBACK DATA ARCHIVE but it is different feature than FLASHBACK DATABASE. ",
-          "upvote_count": "11",
+          "username": "RinD",
+          "content": "BCF correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Can you clarify why do you think that queries generate FLASHBACK LOG? I think it is trueFLASHBACK DATA ARCHIVE but it is different feature than FLASHBACK DATABASE. </li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -20433,9 +20417,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 354908,
           "date": "Tue 11 May 2021 19:24",
-          "username": "gon20Eric_F",
-          "content": "B D F<br>Patchset is not a PSU. Doc ID 1339140.1Why was Oracle 11 docs invoked , nor 19c ??",
-          "upvote_count": "81",
+          "username": "gon20",
+          "content": "B D F<br>Patchset is not a PSU. Doc ID 1339140.1<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Why was Oracle 11 docs invoked , nor 19c ??</li></ul>",
+          "upvote_count": "8",
           "selected_answers": ""
         },
         {
@@ -20465,9 +20449,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 354363,
           "date": "Tue 11 May 2021 08:04",
-          "username": "RinDRinD",
-          "content": "I think AEF<br><br>Patch Set Updates for Oracle Products (Doc ID 854428.1)@gon is right. DBF correct",
-          "upvote_count": "12",
+          "username": "RinD",
+          "content": "I think AEF<br><br>Patch Set Updates for Oracle Products (Doc ID 854428.1)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>@gon is right. DBF correct</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -20555,9 +20539,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 596709,
           "date": "Wed 04 May 2022 12:25",
-          "username": "flaviogcmeloG_C",
-          "content": "I believe that the options chosen should be B and C.  Based on the following reference it is clear that blocks below the watermark are not included in the backup and that there is CPU overhead in the backup operations with compression.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-backup-concepts.html#GUID-50F8DBCD-C285-491F-B8E7-E1B2140E1B51As documentation says \\\"When employing unused block compression, RMAN skips reading, and backing up, any database blocks that are not currently allocated to some database object. This is regardless of whether those blocks had previously been allocated.\\\" so you are wrong unfortunetally.",
-          "upvote_count": "21",
+          "username": "flaviogcmelo",
+          "content": "I believe that the options chosen should be B and C.  Based on the following reference it is clear that blocks below the watermark are not included in the backup and that there is CPU overhead in the backup operations with compression.<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-backup-concepts.html#GUID-50F8DBCD-C285-491F-B8E7-E1B2140E1B51<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>As documentation says \\\"When employing unused block compression, RMAN skips reading, and backing up, any database blocks that are not currently allocated to some database object. This is regardless of whether those blocks had previously been allocated.\\\" so you are wrong unfortunetally.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: BC"
         },
         {
@@ -20653,9 +20637,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 501402,
           "date": "Tue 14 Dec 2021 15:02",
-          "username": "vnhoang76egore0496",
-          "content": "D is right.<br>The Memory Advisors provide graphical analyses of total memory target settings, SGA and PGA target settings, or SGA component size settings. You use these analyses to tune database performance and for what-if planning. Depending on the current memory management mode, different memory advisors are available.<br><br>If Automatic Memory Management is enabled, only the Memory Advisor is available. This advisor provides advice for the total memory target for the instance.<br><br>If Automatic Shared Memory Management is enabled, the SGA Advisor and PGA Advisor are available.<br><br>If Manual Shared Memory Management is enabled, the Shared Pool Advisor, Buffer Cache Advisor, and PGA Advisor are available.>If Manual Shared Memory Management is enabled, the Shared Pool Advisor, Buffer Cache Advisor, and PGA Advisor are available.<br>D not ONLY,PGA Advisor are available too<br>C -true - advisors use data from Automatic Workload Repository, if its available",
-          "upvote_count": "13",
+          "username": "vnhoang76",
+          "content": "D is right.<br>The Memory Advisors provide graphical analyses of total memory target settings, SGA and PGA target settings, or SGA component size settings. You use these analyses to tune database performance and for what-if planning. Depending on the current memory management mode, different memory advisors are available.<br><br>If Automatic Memory Management is enabled, only the Memory Advisor is available. This advisor provides advice for the total memory target for the instance.<br><br>If Automatic Shared Memory Management is enabled, the SGA Advisor and PGA Advisor are available.<br><br>If Manual Shared Memory Management is enabled, the Shared Pool Advisor, Buffer Cache Advisor, and PGA Advisor are available.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>&gt;If Manual Shared Memory Management is enabled, the Shared Pool Advisor, Buffer Cache Advisor, and PGA Advisor are available.<br>D not ONLY,PGA Advisor are available too<br>C -true - advisors use data from Automatic Workload Repository, if its available</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -20693,9 +20677,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 366528,
           "date": "Tue 25 May 2021 17:17",
-          "username": "Rogazanleozanon94",
-          "content": "From https://docs.oracle.com/en/database/oracle/oracle-database/19/admqs/monitoring-and-tuning-the-database.html#GUID-8DE70F1D-E161-45D2-BE01-E9972883BCEC<br><br>Memory advisors: Memory Advisor, SGA Advisor, Buffer Cache Advisor, Shared Pool Advisor, PGA Advisor<br><br>If Automatic Memory Management is enabled, only the Memory Advisor is available. This advisor provides advice for the total memory target for the instance.<br>If Automatic Shared Memory Management is enabled, the SGA Advisor and PGA Advisor are available.<br>If Manual Shared Memory Management is enabled, the Shared Pool Advisor, Buffer Cache Advisor, and PGA Advisor are available.<br><br>Then:A.  TrueB.  FalseD.  FalseE.  False<br><br>And then, C True. I think that memory advisors get their input from AWR (at least a part of their input), although the statistics are not optimal in the case that AWR is not updating (STATISTICS_LEVELBASIC)<br><br>It is very difficult to find detailed information on how the memory advisors processes work !!!agree, all memory advisors use ADDM (link below)<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admqs/monitoring-and-tuning-the-database.html#GUID-EF2702E2-F15E-4CCA-A1DE-B88228B437FD<br><br>so indirectly the answer C should be Correct",
-          "upvote_count": "41",
+          "username": "Rogazan",
+          "content": "From https://docs.oracle.com/en/database/oracle/oracle-database/19/admqs/monitoring-and-tuning-the-database.html#GUID-8DE70F1D-E161-45D2-BE01-E9972883BCEC<br><br>Memory advisors: Memory Advisor, SGA Advisor, Buffer Cache Advisor, Shared Pool Advisor, PGA Advisor<br><br>If Automatic Memory Management is enabled, only the Memory Advisor is available. This advisor provides advice for the total memory target for the instance.<br>If Automatic Shared Memory Management is enabled, the SGA Advisor and PGA Advisor are available.<br>If Manual Shared Memory Management is enabled, the Shared Pool Advisor, Buffer Cache Advisor, and PGA Advisor are available.<br><br>Then:A.  TrueB.  FalseD.  FalseE.  False<br><br>And then, C True. I think that memory advisors get their input from AWR (at least a part of their input), although the statistics are not optimal in the case that AWR is not updating (STATISTICS_LEVELBASIC)<br><br>It is very difficult to find detailed information on how the memory advisors processes work !!!<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>agree, all memory advisors use ADDM (link below)<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admqs/monitoring-and-tuning-the-database.html#GUID-EF2702E2-F15E-4CCA-A1DE-B88228B437FD<br><br>so indirectly the answer C should be Correct</li></ul>",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
@@ -20709,9 +20693,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 363262,
           "date": "Fri 21 May 2021 22:10",
-          "username": "ObserverPLObserverPL",
-          "content": "A - memory advisors are available for ASMM when it is enabled, and it is enabled when STATISTICS_LEVEL > BASIC, so it is correct<br>B - not correct<br>C - not correct, advisors are still availabe even in Standard Edition with control_management_pack_accessNONE<br>D - not correct, the PGA advisor is still available<br>E - not correct, you can set shared_pool and db_cache_size parameters but they will set the MINIMAL sizes of those areas, not MAXIMUM... I think the body of answers are not accurate with exam, because in case of D as I've just checked in practice - when I switch to Manual Shared Memory Management - for SGA the JAVA_POOL advisor is NOT available and only SHARED_POOL and DB_CACHE_SIZE are available. Of course still PGA advisor is available, but I assume that on exam the question will be more detailed to limit advisors for SGA only.<br><br>So I suppose D has to be correct in exam.",
-          "upvote_count": "13",
+          "username": "ObserverPL",
+          "content": "A - memory advisors are available for ASMM when it is enabled, and it is enabled when STATISTICS_LEVEL > BASIC, so it is correct<br>B - not correct<br>C - not correct, advisors are still availabe even in Standard Edition with control_management_pack_accessNONE<br>D - not correct, the PGA advisor is still available<br>E - not correct, you can set shared_pool and db_cache_size parameters but they will set the MINIMAL sizes of those areas, not MAXIMUM<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>... I think the body of answers are not accurate with exam, because in case of D as I've just checked in practice - when I switch to Manual Shared Memory Management - for SGA the JAVA_POOL advisor is NOT available and only SHARED_POOL and DB_CACHE_SIZE are available. Of course still PGA advisor is available, but I assume that on exam the question will be more detailed to limit advisors for SGA only.<br><br>So I suppose D has to be correct in exam.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -20743,7 +20727,7 @@ var Data_1Z0_083_Part1 =
       "is_partially_correct": true,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: CDE</p>",
+      "general_feedback": "<p>Correct Answer: ACE</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -20752,7 +20736,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. PDB2 will be MOUNTED. <br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -20767,7 +20751,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. PDB2 will be opened READ WRITE. <br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -20788,39 +20772,63 @@ var Data_1Z0_083_Part1 =
         {
           "id": 354386,
           "date": "Tue 11 May 2021 08:28",
-          "username": "RinD",
+          "username": "\t\t\t\tRinD\t\t\t",
           "content": "ACE correct",
-          "upvote_count": "15",
+          "upvote_count": "16",
+          "selected_answers": ""
+        },
+        {
+          "id": 829808,
+          "date": "Sun 05 Mar 2023 10:52",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "ACE is correct",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: ACE"
+        },
+        {
+          "id": 822335,
+          "date": "Sun 26 Feb 2023 13:05",
+          "username": "\t\t\t\tErikJanssen\t\t\t",
+          "content": "I think ABC is correct:<br>B: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/ALTER-PLUGGABLE-DATABASE. html#GUID-A29491AD-8F0F-4E52-9D94-57FC3FF8FBC7<br>And PDB$SEED is always opened readonly",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 767762,
+          "date": "Fri 06 Jan 2023 14:52",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "ACE correct sure",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 450556,
           "date": "Fri 24 Sep 2021 00:32",
-          "username": "nobody347",
+          "username": "\t\t\t\tnobody347\t\t\t",
           "content": "ACE 100%<br>tested in lab",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
           "id": 435705,
           "date": "Mon 30 Aug 2021 19:44",
-          "username": "BrianG",
+          "username": "\t\t\t\tBrianG\t\t\t",
           "content": "ACE<br><br>https://oracledbwr.com/oracle-pluggable-database-automatic-startup/",
-          "upvote_count": "3",
+          "upvote_count": "4",
           "selected_answers": ""
         },
         {
           "id": 412995,
           "date": "Sat 24 Jul 2021 07:26",
-          "username": "DhanushbhEric_FxRodge",
-          "content": "SQL> show pdbs;<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 TEST MOUNTED<br> 5 TEST3MOUNTED<br>SQL> alter pluggable database test open;<br><br>Pluggable database altered.<br><br>SQL> alter pluggable database test save state;<br><br>Pluggable database altered.<br><br>SQL> alter pluggable database test close;<br><br>Pluggable database altered.<br><br>SQL> alter pluggable database test3 open;<br><br>Pluggable database altered.<br><br>SQL> show pdbs;<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 TEST MOUNTED<br> 5 TEST3READ WRITE NO<br><br>CDE is correctNOTE=EF=BC=9A \\\"CDB is then Restart.\\\" You aren't do it.@Dhanushbh<br>You have missed the most important part of the question.<br>After all the steps, that you did, you needed to restart the CDB!<br>You didn't do that, so your answer is, completely, incorrect.",
-          "upvote_count": "111",
+          "username": "\t\t\t\tDhanushbh\t\t\t",
+          "content": "SQL> show pdbs;<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 TEST MOUNTED<br> 5 TEST3MOUNTED<br>SQL> alter pluggable database test open;<br><br>Pluggable database altered.<br><br>SQL> alter pluggable database test save state;<br><br>Pluggable database altered.<br><br>SQL> alter pluggable database test close;<br><br>Pluggable database altered.<br><br>SQL> alter pluggable database test3 open;<br><br>Pluggable database altered.<br><br>SQL> show pdbs;<br><br>CON_ID CON_NAME OPEN MODERESTRICTED<br>---------- ------------------------------ ---------- ----------<br> 2 PDB$SEED READ ONLYNO<br> 3 TEST MOUNTED<br> 5 TEST3READ WRITE NO<br><br>CDE is correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>NOTE=EF=BC=9A \\\"CDB is then Restart.\\\" You aren't do it.</li><li>@Dhanushbh<br>You have missed the most important part of the question.<br>After all the steps, that you did, you needed to restart the CDB!<br>You didn't do that, so your answer is, completely, incorrect.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 604654,
           "date": "Sat 21 May 2022 01:33",
-          "username": "Eric_F",
+          "username": "\t\t\t\tEric_F\t\t\t",
           "content": "NOTE=EF=BC=9A \\\"CDB is then Restart.\\\" You aren't do it.",
           "upvote_count": "1",
           "selected_answers": ""
@@ -20828,7 +20836,7 @@ var Data_1Z0_083_Part1 =
         {
           "id": 414084,
           "date": "Sun 25 Jul 2021 18:26",
-          "username": "xRodge",
+          "username": "\t\t\t\txRodge\t\t\t",
           "content": "@Dhanushbh<br>You have missed the most important part of the question.<br>After all the steps, that you did, you needed to restart the CDB!<br>You didn't do that, so your answer is, completely, incorrect.",
           "upvote_count": "1",
           "selected_answers": ""
@@ -20836,15 +20844,15 @@ var Data_1Z0_083_Part1 =
         {
           "id": 359563,
           "date": "Mon 17 May 2021 15:13",
-          "username": "gon20navingupta52",
-          "content": "I think PDB$SEED will be mounted. AEFNo it will be open read only, so ACE are correct.",
-          "upvote_count": "11",
+          "username": "\t\t\t\tgon20\t\t\t",
+          "content": "I think PDB$SEED will be mounted. AEF<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>No it will be open read only, so ACE are correct.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 394212,
           "date": "Tue 29 Jun 2021 22:02",
-          "username": "navingupta52",
+          "username": "\t\t\t\tnavingupta52\t\t\t",
           "content": "No it will be open read only, so ACE are correct.",
           "upvote_count": "1",
           "selected_answers": ""
@@ -20852,7 +20860,7 @@ var Data_1Z0_083_Part1 =
         {
           "id": 354750,
           "date": "Tue 11 May 2021 15:41",
-          "username": "Rogazan",
+          "username": "\t\t\t\tRogazan\t\t\t",
           "content": "Correct Answer: ACE",
           "upvote_count": "4",
           "selected_answers": ""
@@ -20932,7 +20940,7 @@ var Data_1Z0_083_Part1 =
           "id": 422102,
           "date": "Mon 09 Aug 2021 14:03",
           "username": "marpayer",
-          "content": "but F is correct as well, the SYSAUX tablespace has another schemas data apart from AWR<br>F. \tNo AWR data is stored in the CDB$ROOT SYSAUX tablespaspce",
+          "content": "but F is correct as well, the SYSAUX tablespace has another schemas data apart from AWR<br>F.  No AWR data is stored in the CDB$ROOT SYSAUX tablespaspce",
           "upvote_count": "1",
           "selected_answers": ""
         },
@@ -21126,7 +21134,7 @@ var Data_1Z0_083_Part1 =
       "is_partially_correct": true,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: BEF</p>",
+      "general_feedback": "<p>Correct Answer: BEG</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -21160,12 +21168,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>F. creating a database link from CDB$ROOT in the remote database to the PDB in the local database<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p><br>G.opening the cloned PDB<br></p>",
-              "correct": false,
+              "choice": "<p>G.opening the cloned PDB<br></p>",
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -21176,23 +21184,39 @@ var Data_1Z0_083_Part1 =
         {
           "id": 354407,
           "date": "Tue 11 May 2021 08:50",
-          "username": "RinD",
+          "username": "\t\t\t\tRinD\t\t\t",
           "content": "I think BEG",
-          "upvote_count": "7",
+          "upvote_count": "8",
+          "selected_answers": ""
+        },
+        {
+          "id": 829832,
+          "date": "Sun 05 Mar 2023 11:24",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "BEG, but A should be also OK,when you read the documentation:<br>\\\"The database link connects from the local CDB to either to the root of the remote CDB or to the remote source PDB. \\\"",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: BEG"
+        },
+        {
+          "id": 762039,
+          "date": "Fri 30 Dec 2022 15:44",
+          "username": "\t\t\t\tKushal22\t\t\t",
+          "content": "F is Incorrect - from oracle doc<br>Prerequisites for the Database Link<br><br>The following prerequisites must be met:<br><br>A database link must enable a connection from the destination CDB (the CDB to which the PDB is being cloned) to the PDB in the source CDB. <br>source is remote and destination is local",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 449320,
           "date": "Wed 22 Sep 2021 08:36",
-          "username": "hkshado",
+          "username": "\t\t\t\thkshado\t\t\t",
           "content": "From the following reference, we can know the answer should be AEG or BEG.<br>Combine with other comments, I believe it is BEG.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/cloning-a-pdb.html#GUID-13FF2CE2-532C-4816-8E88-7A5A6E16A279<br><br>About Cloning a Remote PDB<br>When the source is a PDB is in a remote CDB, you must use a database link to clone the PDB into the local CDB. <br><br>The database link must exist in the local CDB (not the remote CDB). When you issue the CREATE PLUGGABLE DATABASE statement from the root of the local CDB, you must specify a database link to the remote CDB that contains the PDB being cloned in the FROM clause. The database link connects from the local CDB to either to the root of the remote CDB or to the remote source PDB. <br><br>The following figure illustrates how this technique creates a new PDB when the source PDB is remote.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/cloning-a-pdb.html#GUID-32AE49B1-13A7-4A4D-AB43-BA781ECA99D6",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 367151,
           "date": "Wed 26 May 2021 15:08",
-          "username": "ABAJ",
+          "username": "\t\t\t\tABAJ\t\t\t",
           "content": "BEG is the right answer.",
           "upvote_count": "3",
           "selected_answers": ""
@@ -21200,15 +21224,15 @@ var Data_1Z0_083_Part1 =
         {
           "id": 363720,
           "date": "Sat 22 May 2021 16:01",
-          "username": "RogazanRogazan",
-          "content": "E is FALSE.  This is the error that occurs if the database link already exists:<br>[FATAL] [DBT-19405] Database link (RCAT_CLON_CLONE_LINK) is already exists.<br>If the clone process fails after create database link, you have to manually delete this database link in the local CDB$ROOT to try again.... But in Oracle docs. 19c and Learnig Subscription curses, all says \\\"Checks the presence of the database link. If the database link exists, DBCA drops it.\\\". Then, E is true for exam (That reality does not destroy your hope...)",
-          "upvote_count": "12",
+          "username": "\t\t\t\tRogazan\t\t\t",
+          "content": "E is FALSE.  This is the error that occurs if the database link already exists:<br>[FATAL] [DBT-19405] Database link (RCAT_CLON_CLONE_LINK) is already exists.<br>If the clone process fails after create database link, you have to manually delete this database link in the local CDB$ROOT to try again.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>... But in Oracle docs. 19c and Learnig Subscription curses, all says \\\"Checks the presence of the database link. If the database link exists, DBCA drops it.\\\". Then, E is true for exam (That reality does not destroy your hope...)</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 367232,
           "date": "Wed 26 May 2021 16:58",
-          "username": "Rogazan",
+          "username": "\t\t\t\tRogazan\t\t\t",
           "content": "... But in Oracle docs. 19c and Learnig Subscription curses, all says \\\"Checks the presence of the database link. If the database link exists, DBCA drops it.\\\". Then, E is true for exam (That reality does not destroy your hope...)",
           "upvote_count": "2",
           "selected_answers": ""
@@ -21216,7 +21240,7 @@ var Data_1Z0_083_Part1 =
         {
           "id": 363379,
           "date": "Sat 22 May 2021 05:32",
-          "username": "ObserverPL",
+          "username": "\t\t\t\tObserverPL\t\t\t",
           "content": "RinD is right, BEG",
           "upvote_count": "4",
           "selected_answers": ""
@@ -21224,23 +21248,23 @@ var Data_1Z0_083_Part1 =
         {
           "id": 353937,
           "date": "Mon 10 May 2021 18:51",
-          "username": "dunhillssseeedunhillAlvinzzz",
-          "content": "I think ABE<br>https://oracle-base.com/articles/19c/multitenant-dbca-pdb-remote-clone-19cA and B can be both answer?Sorry, my bad. I change my answer to EFG<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/cloning-a-pdb.html#GUID-05702CEB-A43C-452C-8081-4CA68DDA8007\\\"A\\\" can be true if cloned manually, but not by DBCA. ",
-          "upvote_count": "1121",
+          "username": "\t\t\t\tdunhill\t\t\t",
+          "content": "I think ABE<br>https://oracle-base.com/articles/19c/multitenant-dbca-pdb-remote-clone-19c<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A and B can be both answer?</li><li>Sorry, my bad. I change my answer to EFG<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/cloning-a-pdb.html#GUID-05702CEB-A43C-452C-8081-4CA68DDA8007</li><li>\\\"A\\\" can be true if cloned manually, but not by DBCA. </li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 361925,
           "date": "Thu 20 May 2021 09:42",
-          "username": "ssseeedunhillAlvinzzz",
-          "content": "A and B can be both answer?Sorry, my bad. I change my answer to EFG<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/cloning-a-pdb.html#GUID-05702CEB-A43C-452C-8081-4CA68DDA8007\\\"A\\\" can be true if cloned manually, but not by DBCA. ",
-          "upvote_count": "121",
+          "username": "\t\t\t\tssseee\t\t\t",
+          "content": "A and B can be both answer?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Sorry, my bad. I change my answer to EFG<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/cloning-a-pdb.html#GUID-05702CEB-A43C-452C-8081-4CA68DDA8007</li><li>\\\"A\\\" can be true if cloned manually, but not by DBCA. </li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 363498,
           "date": "Sat 22 May 2021 09:56",
-          "username": "dunhill",
+          "username": "\t\t\t\tdunhill\t\t\t",
           "content": "Sorry, my bad. I change my answer to EFG<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/cloning-a-pdb.html#GUID-05702CEB-A43C-452C-8081-4CA68DDA8007",
           "upvote_count": "2",
           "selected_answers": ""
@@ -21248,7 +21272,7 @@ var Data_1Z0_083_Part1 =
         {
           "id": 604221,
           "date": "Fri 20 May 2022 04:20",
-          "username": "Alvinzzz",
+          "username": "\t\t\t\tAlvinzzz\t\t\t",
           "content": "\\\"A\\\" can be true if cloned manually, but not by DBCA. ",
           "upvote_count": "1",
           "selected_answers": ""
@@ -21330,9 +21354,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 523632,
           "date": "Fri 14 Jan 2022 18:01",
-          "username": "egore0496Alvinzzz",
-          "content": "FLASHBACK DATA ARCHIVE<br>tested<br>https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/4421812.pdf<br>SELECT ... AS OF TIMESTAMP...<br>SELECT ... VERSIONS BETWEEN TIMESTAMP and TIMESTAM<br> SELECT * FROM t1VERSIONS BETWEEN SCN 14759823 AND 14761165<br> SELECT * FROM t1AS OF SCN 14759823;<br>truncate<br> SELECT * FROM t1AS OF SCN 14761249;<br><br> SELECT current_scn, TO_CHAR(SYSTIMESTAMP, 'YYYY-MM-DD HH24:MI:SS') FROM v$database;Although Flashback Data Archive could flashback a truncated table, it can only recover until last flashback archive creation time but not point-in-time before the error occurs.<br><br>Thus, choose E if point-in-time recovery required.",
-          "upvote_count": "22",
+          "username": "egore0496",
+          "content": "FLASHBACK DATA ARCHIVE<br>tested<br>https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/4421812.pdf<br>SELECT ... AS OF TIMESTAMP...<br>SELECT ... VERSIONS BETWEEN TIMESTAMP and TIMESTAM<br> SELECT * FROM t1VERSIONS BETWEEN SCN 14759823 AND 14761165<br> SELECT * FROM t1AS OF SCN 14759823;<br>truncate<br> SELECT * FROM t1AS OF SCN 14761249;<br><br> SELECT current_scn, TO_CHAR(SYSTIMESTAMP, 'YYYY-MM-DD HH24:MI:SS') FROM v$database;<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Although Flashback Data Archive could flashback a truncated table, it can only recover until last flashback archive creation time but not point-in-time before the error occurs.<br><br>Thus, choose E if point-in-time recovery required.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -21394,33 +21418,33 @@ var Data_1Z0_083_Part1 =
         {
           "id": 354745,
           "date": "Tue 11 May 2021 15:32",
-          "username": "RogazanRinDRogazanRinDRogazan",
-          "content": "Correct answer: EI think E is wrong because it will flashback whole database, we just need to flashback a tableIt is not possible to do a FlashbackTable to retrieve from Drop Table. Backup and Recovery User's Guide 19c, 18.2.1 Prerequisites for Flashback Table:<br>....<br>For an object to be eligible to be flashed back, the following prerequisites must be met:<br>....<br>The structure of the table must not have been changed between the current time and the target flashback time.<br><br>The following Data Definition Language (DDL) operations change the structure of a table: upgrading, moving, or truncating a table; adding a constraint to a table, adding a table to a cluster; modifying or dropping a column; adding, dropping, merging, splitting, coalescing, or truncating a partition or subpartition (except adding a range partition).Flashback Data Archive supports only these DDL statements:<br>...<br>TRUNCATE TABLE statement<br><br>https://docs.oracle.com/database/121/ADFNS/adfns_flashback.htm#ADFNS640Without Flashback data archive (default configuration):<br>SQL> insert into t1 values (1);<br>1 row created.<br><br>SQL> commit;<br>Commit complete.<br><br>SQL> select current_scn from v$database;<br>CURRENT_SCN<br>-----------<br>1754160<br><br>SQL> truncate table t1;<br>Table truncated.<br><br>SQL> flashback table t1 to SCN 1754160;<br>flashback table t1 to SCN 1754160<br>*<br>ERROR at line 1:<br>ORA-01466: unable to read data - table definition has changed<br><br>And the same error occurs after creating flashback data archive:<br>SQL> CREATE FLASHBACK ARCHIVE DEFAULT mytest TABLESPACE users Quota 1M Retention 1 Day;<br>Flashback archive created.<br><br>and modifying t1 table to use it:<br>SQL> alter table t1 flashback archive;<br>Table altered.",
-          "upvote_count": "32111",
+          "username": "Rogazan",
+          "content": "Correct answer: E<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I think E is wrong because it will flashback whole database, we just need to flashback a table</li><li>It is not possible to do a FlashbackTable to retrieve from Drop Table. Backup and Recovery User's Guide 19c, 18.2.1 Prerequisites for Flashback Table:<br>....<br>For an object to be eligible to be flashed back, the following prerequisites must be met:<br>....<br>The structure of the table must not have been changed between the current time and the target flashback time.<br><br>The following Data Definition Language (DDL) operations change the structure of a table: upgrading, moving, or truncating a table; adding a constraint to a table, adding a table to a cluster; modifying or dropping a column; adding, dropping, merging, splitting, coalescing, or truncating a partition or subpartition (except adding a range partition).</li><li>Flashback Data Archive supports only these DDL statements:<br>...<br>TRUNCATE TABLE statement<br><br>https://docs.oracle.com/database/121/ADFNS/adfns_flashback.htm#ADFNS640</li><li>Without Flashback data archive (default configuration):<br>SQL&gt; insert into t1 values (1);<br>1 row created.<br><br>SQL&gt; commit;<br>Commit complete.<br><br>SQL&gt; select current_scn from v$database;<br>CURRENT_SCN<br>-----------<br>1754160<br><br>SQL&gt; truncate table t1;<br>Table truncated.<br><br>SQL&gt; flashback table t1 to SCN 1754160;<br>flashback table t1 to SCN 1754160<br>*<br>ERROR at line 1:<br>ORA-01466: unable to read data - table definition has changed<br><br>And the same error occurs after creating flashback data archive:<br>SQL&gt; CREATE FLASHBACK ARCHIVE DEFAULT mytest TABLESPACE users Quota 1M Retention 1 Day;<br>Flashback archive created.<br><br>and modifying t1 table to use it:<br>SQL&gt; alter table t1 flashback archive;<br>Table altered.</li></ul>",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
           "id": 355999,
           "date": "Thu 13 May 2021 06:43",
-          "username": "RinDRogazanRinDRogazan",
-          "content": "I think E is wrong because it will flashback whole database, we just need to flashback a tableIt is not possible to do a FlashbackTable to retrieve from Drop Table. Backup and Recovery User's Guide 19c, 18.2.1 Prerequisites for Flashback Table:<br>....<br>For an object to be eligible to be flashed back, the following prerequisites must be met:<br>....<br>The structure of the table must not have been changed between the current time and the target flashback time.<br><br>The following Data Definition Language (DDL) operations change the structure of a table: upgrading, moving, or truncating a table; adding a constraint to a table, adding a table to a cluster; modifying or dropping a column; adding, dropping, merging, splitting, coalescing, or truncating a partition or subpartition (except adding a range partition).Flashback Data Archive supports only these DDL statements:<br>...<br>TRUNCATE TABLE statement<br><br>https://docs.oracle.com/database/121/ADFNS/adfns_flashback.htm#ADFNS640Without Flashback data archive (default configuration):<br>SQL> insert into t1 values (1);<br>1 row created.<br><br>SQL> commit;<br>Commit complete.<br><br>SQL> select current_scn from v$database;<br>CURRENT_SCN<br>-----------<br>1754160<br><br>SQL> truncate table t1;<br>Table truncated.<br><br>SQL> flashback table t1 to SCN 1754160;<br>flashback table t1 to SCN 1754160<br>*<br>ERROR at line 1:<br>ORA-01466: unable to read data - table definition has changed<br><br>And the same error occurs after creating flashback data archive:<br>SQL> CREATE FLASHBACK ARCHIVE DEFAULT mytest TABLESPACE users Quota 1M Retention 1 Day;<br>Flashback archive created.<br><br>and modifying t1 table to use it:<br>SQL> alter table t1 flashback archive;<br>Table altered.",
-          "upvote_count": "2111",
+          "username": "RinD",
+          "content": "I think E is wrong because it will flashback whole database, we just need to flashback a table<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>It is not possible to do a FlashbackTable to retrieve from Drop Table. Backup and Recovery User's Guide 19c, 18.2.1 Prerequisites for Flashback Table:<br>....<br>For an object to be eligible to be flashed back, the following prerequisites must be met:<br>....<br>The structure of the table must not have been changed between the current time and the target flashback time.<br><br>The following Data Definition Language (DDL) operations change the structure of a table: upgrading, moving, or truncating a table; adding a constraint to a table, adding a table to a cluster; modifying or dropping a column; adding, dropping, merging, splitting, coalescing, or truncating a partition or subpartition (except adding a range partition).</li><li>Flashback Data Archive supports only these DDL statements:<br>...<br>TRUNCATE TABLE statement<br><br>https://docs.oracle.com/database/121/ADFNS/adfns_flashback.htm#ADFNS640</li><li>Without Flashback data archive (default configuration):<br>SQL&gt; insert into t1 values (1);<br>1 row created.<br><br>SQL&gt; commit;<br>Commit complete.<br><br>SQL&gt; select current_scn from v$database;<br>CURRENT_SCN<br>-----------<br>1754160<br><br>SQL&gt; truncate table t1;<br>Table truncated.<br><br>SQL&gt; flashback table t1 to SCN 1754160;<br>flashback table t1 to SCN 1754160<br>*<br>ERROR at line 1:<br>ORA-01466: unable to read data - table definition has changed<br><br>And the same error occurs after creating flashback data archive:<br>SQL&gt; CREATE FLASHBACK ARCHIVE DEFAULT mytest TABLESPACE users Quota 1M Retention 1 Day;<br>Flashback archive created.<br><br>and modifying t1 table to use it:<br>SQL&gt; alter table t1 flashback archive;<br>Table altered.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 358812,
           "date": "Sun 16 May 2021 16:37",
-          "username": "RogazanRinDRogazan",
-          "content": "It is not possible to do a FlashbackTable to retrieve from Drop Table. Backup and Recovery User's Guide 19c, 18.2.1 Prerequisites for Flashback Table:<br>....<br>For an object to be eligible to be flashed back, the following prerequisites must be met:<br>....<br>The structure of the table must not have been changed between the current time and the target flashback time.<br><br>The following Data Definition Language (DDL) operations change the structure of a table: upgrading, moving, or truncating a table; adding a constraint to a table, adding a table to a cluster; modifying or dropping a column; adding, dropping, merging, splitting, coalescing, or truncating a partition or subpartition (except adding a range partition).Flashback Data Archive supports only these DDL statements:<br>...<br>TRUNCATE TABLE statement<br><br>https://docs.oracle.com/database/121/ADFNS/adfns_flashback.htm#ADFNS640Without Flashback data archive (default configuration):<br>SQL> insert into t1 values (1);<br>1 row created.<br><br>SQL> commit;<br>Commit complete.<br><br>SQL> select current_scn from v$database;<br>CURRENT_SCN<br>-----------<br>1754160<br><br>SQL> truncate table t1;<br>Table truncated.<br><br>SQL> flashback table t1 to SCN 1754160;<br>flashback table t1 to SCN 1754160<br>*<br>ERROR at line 1:<br>ORA-01466: unable to read data - table definition has changed<br><br>And the same error occurs after creating flashback data archive:<br>SQL> CREATE FLASHBACK ARCHIVE DEFAULT mytest TABLESPACE users Quota 1M Retention 1 Day;<br>Flashback archive created.<br><br>and modifying t1 table to use it:<br>SQL> alter table t1 flashback archive;<br>Table altered.",
-          "upvote_count": "111",
+          "username": "Rogazan",
+          "content": "It is not possible to do a FlashbackTable to retrieve from Drop Table. Backup and Recovery User's Guide 19c, 18.2.1 Prerequisites for Flashback Table:<br>....<br>For an object to be eligible to be flashed back, the following prerequisites must be met:<br>....<br>The structure of the table must not have been changed between the current time and the target flashback time.<br><br>The following Data Definition Language (DDL) operations change the structure of a table: upgrading, moving, or truncating a table; adding a constraint to a table, adding a table to a cluster; modifying or dropping a column; adding, dropping, merging, splitting, coalescing, or truncating a partition or subpartition (except adding a range partition).<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Flashback Data Archive supports only these DDL statements:<br>...<br>TRUNCATE TABLE statement<br><br>https://docs.oracle.com/database/121/ADFNS/adfns_flashback.htm#ADFNS640</li><li>Without Flashback data archive (default configuration):<br>SQL&gt; insert into t1 values (1);<br>1 row created.<br><br>SQL&gt; commit;<br>Commit complete.<br><br>SQL&gt; select current_scn from v$database;<br>CURRENT_SCN<br>-----------<br>1754160<br><br>SQL&gt; truncate table t1;<br>Table truncated.<br><br>SQL&gt; flashback table t1 to SCN 1754160;<br>flashback table t1 to SCN 1754160<br>*<br>ERROR at line 1:<br>ORA-01466: unable to read data - table definition has changed<br><br>And the same error occurs after creating flashback data archive:<br>SQL&gt; CREATE FLASHBACK ARCHIVE DEFAULT mytest TABLESPACE users Quota 1M Retention 1 Day;<br>Flashback archive created.<br><br>and modifying t1 table to use it:<br>SQL&gt; alter table t1 flashback archive;<br>Table altered.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 359300,
           "date": "Mon 17 May 2021 07:55",
-          "username": "RinDRogazan",
-          "content": "Flashback Data Archive supports only these DDL statements:<br>...<br>TRUNCATE TABLE statement<br><br>https://docs.oracle.com/database/121/ADFNS/adfns_flashback.htm#ADFNS640Without Flashback data archive (default configuration):<br>SQL> insert into t1 values (1);<br>1 row created.<br><br>SQL> commit;<br>Commit complete.<br><br>SQL> select current_scn from v$database;<br>CURRENT_SCN<br>-----------<br>1754160<br><br>SQL> truncate table t1;<br>Table truncated.<br><br>SQL> flashback table t1 to SCN 1754160;<br>flashback table t1 to SCN 1754160<br>*<br>ERROR at line 1:<br>ORA-01466: unable to read data - table definition has changed<br><br>And the same error occurs after creating flashback data archive:<br>SQL> CREATE FLASHBACK ARCHIVE DEFAULT mytest TABLESPACE users Quota 1M Retention 1 Day;<br>Flashback archive created.<br><br>and modifying t1 table to use it:<br>SQL> alter table t1 flashback archive;<br>Table altered.",
-          "upvote_count": "11",
+          "username": "RinD",
+          "content": "Flashback Data Archive supports only these DDL statements:<br>...<br>TRUNCATE TABLE statement<br><br>https://docs.oracle.com/database/121/ADFNS/adfns_flashback.htm#ADFNS640<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Without Flashback data archive (default configuration):<br>SQL&gt; insert into t1 values (1);<br>1 row created.<br><br>SQL&gt; commit;<br>Commit complete.<br><br>SQL&gt; select current_scn from v$database;<br>CURRENT_SCN<br>-----------<br>1754160<br><br>SQL&gt; truncate table t1;<br>Table truncated.<br><br>SQL&gt; flashback table t1 to SCN 1754160;<br>flashback table t1 to SCN 1754160<br>*<br>ERROR at line 1:<br>ORA-01466: unable to read data - table definition has changed<br><br>And the same error occurs after creating flashback data archive:<br>SQL&gt; CREATE FLASHBACK ARCHIVE DEFAULT mytest TABLESPACE users Quota 1M Retention 1 Day;<br>Flashback archive created.<br><br>and modifying t1 table to use it:<br>SQL&gt; alter table t1 flashback archive;<br>Table altered.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -21513,17 +21537,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 465278,
           "date": "Wed 20 Oct 2021 18:45",
-          "username": "Felix_brmarameoFelix_brfiko666",
-          "content": "So, as this was the last question .... Who passed the exam ? any comments ? I will be doing mine in 5 days ..i'll take the exam. how did the exam go? is the same the questions?I finally did the test and passed . We have 85 questions and i had around 60 questions very similar with the questions here . the other questions all new, but easy if you study the question topics from exam.good luckHI.Did you pass exam?",
-          "upvote_count": "2121",
+          "username": "Felix_br",
+          "content": "So, as this was the last question .... Who passed the exam ? any comments ? I will be doing mine in 5 days ..<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>i'll take the exam. how did the exam go? is the same the questions?</li><li>I finally did the test and passed . We have 85 questions and i had around 60 questions very similar with the questions here . the other questions all new, but easy if you study the question topics from exam.good luck</li><li>HI.Did you pass exam?</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
           "id": 471399,
           "date": "Mon 01 Nov 2021 21:15",
-          "username": "marameoFelix_br",
-          "content": "i'll take the exam. how did the exam go? is the same the questions?I finally did the test and passed . We have 85 questions and i had around 60 questions very similar with the questions here . the other questions all new, but easy if you study the question topics from exam.good luck",
-          "upvote_count": "12",
+          "username": "marameo",
+          "content": "i'll take the exam. how did the exam go? is the same the questions?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I finally did the test and passed . We have 85 questions and i had around 60 questions very similar with the questions here . the other questions all new, but easy if you study the question topics from exam.good luck</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -21577,9 +21601,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 366591,
           "date": "Tue 25 May 2021 19:13",
-          "username": "Rogazanbrolem",
-          "content": "From https://docs.oracle.com/en/database/oracle/oracle-database/12.2/upgrd/upgrading-oracle-database-upgrade-assistant-dbua.html#GUID-BBF591A5-EB02-405A-9F99-572429838C73<br><br>A True. \\\"During the prerequisite phase, DBUA runs the Pre-Upgrade Information Tool script\\\"<br>B True. \\\"You can start DBUA as part of the database software installation, or you can start it manually after installing the software\\\"<br>C False. \\\"By default, CDB$ROOT, PDB$SEED, and all PDBs that are plugged into the CDB are upgraded. If you do not want some PDBs to be upgraded at this time, then unplug those PDBs\\\"D.  True. \\\"Select Recovery Options... To recover the database if a failure occurs during upgrade, select from one of the following options: Use RMAN Backup..., Use Latest Available RMAN Backup..., Use Flashback and Guaranteed Restore Point..., I have my own backup and restore strategy...E.  False. The database does NOT have to be in read only.F.  False. \\\"You can select only one database at a time.\\\"D is false as it is not MANDATORY (\\\"MUST\\\") that a whole database backup exist. However, the Select Recovery Options window allows you to select a recovery method to recover the database if a failure occurs during upgrade.This includes Flashback and Guaranteed Restore Point, Use RMAN Backup, and I have my own backup and restore strategy.",
-          "upvote_count": "11",
+          "username": "Rogazan",
+          "content": "From https://docs.oracle.com/en/database/oracle/oracle-database/12.2/upgrd/upgrading-oracle-database-upgrade-assistant-dbua.html#GUID-BBF591A5-EB02-405A-9F99-572429838C73<br><br>A True. \\\"During the prerequisite phase, DBUA runs the Pre-Upgrade Information Tool script\\\"<br>B True. \\\"You can start DBUA as part of the database software installation, or you can start it manually after installing the software\\\"<br>C False. \\\"By default, CDB$ROOT, PDB$SEED, and all PDBs that are plugged into the CDB are upgraded. If you do not want some PDBs to be upgraded at this time, then unplug those PDBs\\\"D.  True. \\\"Select Recovery Options... To recover the database if a failure occurs during upgrade, select from one of the following options: Use RMAN Backup..., Use Latest Available RMAN Backup..., Use Flashback and Guaranteed Restore Point..., I have my own backup and restore strategy...E.  False. The database does NOT have to be in read only.F.  False. \\\"You can select only one database at a time.\\\"<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D is false as it is not MANDATORY (\\\"MUST\\\") that a whole database backup exist. However, the Select Recovery Options window allows you to select a recovery method to recover the database if a failure occurs during upgrade.This includes Flashback and Guaranteed Restore Point, Use RMAN Backup, and I have my own backup and restore strategy.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -21609,17 +21633,17 @@ var Data_1Z0_083_Part1 =
         {
           "id": 354782,
           "date": "Tue 11 May 2021 16:33",
-          "username": "dunhillRinDssseeedunhill",
-          "content": "I think ABCB is wrong. If you have earlier release Oracle Database installations, then these installations are listed as available to upgrade. I tested in lab too.why B is wrong? I dont und. We launch the dbua from the new database home.Sorry, I change my answers. I think BCF.  A looks wrong... precheck is provided by a jar file.<br>https://oracle-base.com/articles/19c/multitenant-upgrading-to-19c<br>I am still not sure but full backup is important but not must be?",
-          "upvote_count": "1121",
+          "username": "dunhill",
+          "content": "I think ABC<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>B is wrong. If you have earlier release Oracle Database installations, then these installations are listed as available to upgrade. I tested in lab too.</li><li>why B is wrong? I dont und. We launch the dbua from the new database home.</li><li>Sorry, I change my answers. I think BCF.  A looks wrong... precheck is provided by a jar file.<br>https://oracle-base.com/articles/19c/multitenant-upgrading-to-19c<br>I am still not sure but full backup is important but not must be?</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
           "id": 355989,
           "date": "Thu 13 May 2021 06:30",
-          "username": "RinDssseee",
-          "content": "B is wrong. If you have earlier release Oracle Database installations, then these installations are listed as available to upgrade. I tested in lab too.why B is wrong? I dont und. We launch the dbua from the new database home.",
-          "upvote_count": "12",
+          "username": "RinD",
+          "content": "B is wrong. If you have earlier release Oracle Database installations, then these installations are listed as available to upgrade. I tested in lab too.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>why B is wrong? I dont und. We launch the dbua from the new database home.</li></ul>",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -21641,9 +21665,9 @@ var Data_1Z0_083_Part1 =
         {
           "id": 354432,
           "date": "Tue 11 May 2021 09:27",
-          "username": "RinDnavingupta52brolem",
-          "content": "ACD correctD is incorrect. A backup can be created by DBUA itself before the upgrade.<br>ABC seems correct answers as DEF are incorrect.C is incorrect. By default, CDB$ROOT, PDB$SEED, and all PDBs that are plugged into the CDB are upgraded. If you do not want some PDBs to be upgraded now, then unplug those PDBs.",
-          "upvote_count": "211",
+          "username": "RinD",
+          "content": "ACD correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D is incorrect. A backup can be created by DBUA itself before the upgrade.<br>ABC seems correct answers as DEF are incorrect.</li><li>C is incorrect. By default, CDB$ROOT, PDB$SEED, and all PDBs that are plugged into the CDB are upgraded. If you do not want some PDBs to be upgraded now, then unplug those PDBs.</li></ul>",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -21665,6 +21689,180 @@ var Data_1Z0_083_Part1 =
       ]
     },
     {
+      "question_id": "#153",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You must migrate a non-CDB Oracle 11g Database to a CDB without first performing an upgrade to the non-CDB. <br><br>User-defined objects are stored in several tablespaces in the non-CDB. <br><br>Which three methods can you use? (Choose three.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: ACE</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#153",
+          "answers": [
+            {
+              "choice": "<p>A. the DBMS_PDB package<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Data Pump full database export and import<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Data Pump transportable tablespaces<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. replication using GoldenGate<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. cloning the non-CDB as a PDB<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. Data Pump full transportable database<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 153 discussion",
+      "discusstion": [
+        {
+          "id": 799234,
+          "date": "Sun 05 Feb 2023 23:37",
+          "username": "\t\t\t\tdmees\t\t\t",
+          "content": "https://oracle-base.com/articles/12c/multitenant-migrate-non-cdb-to-pdb-12cr1#using-replication<br>A- false(The DBMS_PDB package allows you to generate an XML metadata file from a non-CDB 12c database)<br>E - false (The 12.1.0.2 patchset introduced the ability to create a PDB as a clone of a remote non-CDB)<br>C - true ( If the non-CDB is pre-11.2.0.3, then you can still consider using transportable tablespaces)<br>D - true (use a replication product like Golden Gate)<br>F- true (If the non-CDB is version 11.2.0.3 onward, you can consider using Transport Database)",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 791630,
+          "date": "Sun 29 Jan 2023 13:39",
+          "username": "\t\t\t\tTrololoshko\t\t\t",
+          "content": "CDF - is correct",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 776584,
+          "date": "Sun 15 Jan 2023 14:24",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "AE is not correct, because it requires 12c; in my opinion BCDF are all corrects",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 768391,
+          "date": "Sat 07 Jan 2023 10:23",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "ADE i think<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>sorry BDE</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 768393,
+          "date": "Sat 07 Jan 2023 10:24",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "sorry BDE",
+          "upvote_count": "2",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#154",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which three are true about backing up the control file? (Choose three.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: BCD</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#154",
+          "answers": [
+            {
+              "choice": "<p>A. It gets backed up automatically by RMAN when the BACKUP SPFILE command is used<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. It can get backed up automatically as a binary copy<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. It can be backed up manually as a binary copy<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. It can be backed up manually as a trace file containing SQL statements for control file re-creation<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. It gets backed up automatically by RMAN as a trace file containing SQL statements for control file re-creation when a database backup occurs<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. It cannot be backed up manually as a binary copy<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 154 discussion",
+      "discusstion": [
+        {
+          "id": 829897,
+          "date": "Sun 05 Mar 2023 13:07",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/managing-control-files.html#GUID-204AF8CF-6C51-4D0F-ADE2-BA804352EA93 :<br>You have two options:<br>Back up the control file to a binary file (duplicate of existing control file) using the following statement:<br>> ALTER DATABASE BACKUP CONTROLFILE TO '/oracle/backup/control.bkp';<br>Produce SQL statements that can later be used to re-create your control file:<br>> ALTER DATABASE BACKUP CONTROLFILE TO TRACE;<br>This command writes a SQL script to a trace file where it can be captured and edited to reproduce the control file.<br>View the alert log to determine the name and location of the trace file.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BCD"
+        },
+        {
+          "id": 772475,
+          "date": "Wed 11 Jan 2023 13:31",
+          "username": "\t\t\t\tLeandroHPN\t\t\t",
+          "content": "BCD is correct",
+          "upvote_count": "4",
+          "selected_answers": "Selected Answer: BCD"
+        },
+        {
+          "id": 768395,
+          "date": "Sat 07 Jan 2023 10:28",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "BCD i think",
+          "upvote_count": "4",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
       "question_id": "#155",
       "topic_id": 1,
       "course_id": 1,
@@ -21675,7 +21873,7 @@ var Data_1Z0_083_Part1 =
       "is_partially_correct": true,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: AD</p>",
+      "general_feedback": "<p>Correct Answer: EF</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -21684,7 +21882,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. They contain all the data files only in compressed form for a PDB<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -21699,17 +21897,17 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. They must be created using the DBMS_PDB package<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>E. They contain a PDB manifest file and all the data files in compressed form for a PDB<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>F. DBMS_PDB. CHECK_PLUG_COMPATIBILITY can be run against a PDB archive<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -21718,11 +21916,865 @@ var Data_1Z0_083_Part1 =
       "topic_name": "Exam 1z0-083 topic 1 question 155 discussion",
       "discusstion": [
         {
+          "id": 829911,
+          "date": "Sun 05 Mar 2023 13:29",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "E is correct:<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/admin/creating-and-removing-pdbs-with-sql-plus.html#GUID-75C46F1B-00D8-4FB9-A8E7-6F7FE3DE4CA0 :<br>This ALTER PLUGGABLE DATABASE statement unplugs the PDB salespdb and creates the sales.pdb archive file in the /oracle/data/ directory. The sales.pdb archive file is a compressed file that includes the XML metadata file and the PDB's files (such as the data files and wallet file).<br>> ALTER PLUGGABLE DATABASE salespdb UNPLUG INTO '/oracle/data/sales.pdb';<br><br>F is correct:<br>https://docs.oracle.com/en/database/oracle/oracle-database/12.2/admin/creating-and-removing-pdbs-with-sql-plus.html#GUID-F23F5352-F456-48EE-AED7-71E3DEBAAED0 :<br>\\\"You can specify a .pdb archive file in the pdb_descr_file parameter.\\\"",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: EF"
+        },
+        {
           "id": 750865,
           "date": "Tue 20 Dec 2022 13:40",
-          "username": "sykoram",
+          "username": "\t\t\t\tsykoram\t\t\t",
           "content": "EF<br>An XML metadata file describes the unplugged PDB and the files associated with the PDB (such as the data files and wallet file). An archive file includes both the XML metadata file and the PDB files.<br>The USING clause of the CREATE PLUGGABLE DATABASE statement specifies a XML metadata file or a compressed archive file with a .pdb extension.",
+          "upvote_count": "4",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#156",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You want to install Oracle Grid Infrastructure for a Standalone Server using Oracle Universal Installer (OUI).<br><br>There is no existing Oracle installation on the server.<br><br>Which two are prerequisites? (Choose two.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: BC</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#156",
+          "answers": [
+            {
+              "choice": "<p>A. a group called dba<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. the Oracle Inventory group oinstall<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. an operating system user to own this installation<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. an operating system account called grid<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. the installation of Oracle ASMLIB<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 156 discussion",
+      "discusstion": [
+        {
+          "id": 772465,
+          "date": "Wed 11 Jan 2023 13:21",
+          "username": "\t\t\t\tLeandroHPN\t\t\t",
+          "content": "E is FALSE<br>https://www.oracle.com/linux/technologies/asmlib/<br>Oracle ASMLib<br>ASMLib is an optional support library for the Automatic Storage Management feature of the Oracle Database. Automatic Storage Management (ASM) simplifies database administration and greatly reduces kernel resource usage (e.g. the number of open file descriptors). It eliminates the need for the DBA to directly manage potentially thousands of Oracle database files, requiring only the management of groups of disks allocated to the Oracle Database. ASMLib allows an Oracle Database using ASM more efficient and capable access to the disk groups it is using.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C - true,An operating system user needs to be created to own the Oracle Clusterware installation.</li></ul>",
+          "upvote_count": "6",
+          "selected_answers": "Selected Answer: BC"
+        },
+        {
+          "id": 799269,
+          "date": "Mon 06 Feb 2023 00:55",
+          "username": "\t\t\t\tdmees\t\t\t",
+          "content": "C - true,An operating system user needs to be created to own the Oracle Clusterware installation.",
           "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 785055,
+          "date": "Mon 23 Jan 2023 07:59",
+          "username": "\t\t\t\tKushal22\t\t\t",
+          "content": "BD - Nianry owner can be oracle or Grid with Oinstall as the primary grp",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 768413,
+          "date": "Sat 07 Jan 2023 10:55",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "BC i think<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>sorry C E<br>https://www.oracle.com/webfolder/technetwork/tutorials/obe/db/11g/r2/prod/install/gridinstss/gridinstss.htm#p</li><li>you're wrong. E is false, asmlib is not mandatory</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 768417,
+          "date": "Sat 07 Jan 2023 11:02",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "sorry C E<br>https://www.oracle.com/webfolder/technetwork/tutorials/obe/db/11g/r2/prod/install/gridinstss/gridinstss.htm#p<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>you're wrong. E is false, asmlib is not mandatory</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 813013,
+          "date": "Sat 18 Feb 2023 14:35",
+          "username": "\t\t\t\tcrucinal1\t\t\t",
+          "content": "you're wrong. E is false, asmlib is not mandatory",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#157",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>You execute this command successfully:<br><br>SQL&gt; ALTER DATABASE BACKUP CONTROLFILE TO TRACE;<br><br>What is the outcome?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: A</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#157",
+          "answers": [
+            {
+              "choice": "<p>A. It creates a file that contains SQL statements to re-create the control file<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. It creates a file that contains RMAN scripts to create a duplicate database<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. It creates a copy of the control file in the fast recovery area (FRA)<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. It creates a binary backup of the control file<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. It updates the alert log with the location and contents of the control file<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 157 discussion",
+      "discusstion": [
+        {
+          "id": 766975,
+          "date": "Thu 05 Jan 2023 20:10",
+          "username": "\t\t\t\tLeandroHPN\t\t\t",
+          "content": "A correct.<br><br>BACKUP CONTROLFILE Clause<br>TO TRACE<br><br>Specify TO TRACE if you want Oracle Database to write SQL statements to a trace file rather than making a physical backup of the control file. You can use SQL statements written to the trace file to start up the database, re-create the control file, and recover and open the database appropriately, based on the created control file.",
+          "upvote_count": "6",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 830043,
+          "date": "Sun 05 Mar 2023 16:43",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "I think also A<br>but E is not far away:<br>\\\"This command writes a SQL script to a trace file where it can be captured and edited to reproduce the control file. View the alert log to determine the name and location of the trace file.\\\" from :<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/managing-control-files.html#GUID-204AF8CF-6C51-4D0F-ADE2-BA804352EA93<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>It must be A because:<br>\\\"E.  It updates the alert log with the location and contents of the control file\\\"<br>The \\\"location\\\" is true but not the \\\"content of the control file\\\" is in the alert log.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 830045,
+          "date": "Sun 05 Mar 2023 16:46",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "It must be A because:<br>\\\"E.  It updates the alert log with the location and contents of the control file\\\"<br>The \\\"location\\\" is true but not the \\\"content of the control file\\\" is in the alert log.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 781553,
+          "date": "Thu 19 Jan 2023 20:50",
+          "username": "\t\t\t\tfrankkk\t\t\t",
+          "content": "A correct",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 768418,
+          "date": "Sat 07 Jan 2023 11:03",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "A correct",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#158",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which three are true about upgrading an application in an application container? (Choose three.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: BCE</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#158",
+          "answers": [
+            {
+              "choice": "<p>A. The upgrade can be performed when connected either to CDB$ROOT or to PDB$SEED<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. An application root clone gets created automatically<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. After an application upgrade, the application container's PDBs remain synchronized with the existing application root<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. The upgrade must be performed when connected to CDB$ROOT<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. An application name and version number must be specified to upgrade the application<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. After an application upgrade, the application container's PDBs are automatically synchronized with the application root clone<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 158 discussion",
+      "discusstion": [
+        {
+          "id": 767452,
+          "date": "Fri 06 Jan 2023 10:24",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "The correct answer are BCE<br>E as \\\"ALTER PLUGGABLE DATABASE APPLICATION saas_sales_app<br>BEGIN UPGRADE '1.0' to '2.0'\\\"<br>During an application upgrade, the application remains available. To make this availability<br>possible, Oracle Database clones the application root. applications pdbs remain syncronzed with clone application root<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>bcf After the upgrade, the application root clone remains and continues to support any<br>application PDB that still use the preupgrade version of the application in the root<br>clone. Application PDBs that upgrade are pointed to the upgraded application root.<br>Application PDBs that do not upgrade might continue to use the clone, and application<br>PDBs that are plugged into the application root might also use the same application<br>version as the root clone.</li><li>https://www.youtube.com/watch?vyDDOEMuYxQs</li></ul>",
+          "upvote_count": "5",
+          "selected_answers": "Selected Answer: BCE"
+        },
+        {
+          "id": 776643,
+          "date": "Sun 15 Jan 2023 15:06",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "bcf After the upgrade, the application root clone remains and continues to support any<br>application PDB that still use the preupgrade version of the application in the root<br>clone. Application PDBs that upgrade are pointed to the upgraded application root.<br>Application PDBs that do not upgrade might continue to use the clone, and application<br>PDBs that are plugged into the application root might also use the same application<br>version as the root clone.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://www.youtube.com/watch?vyDDOEMuYxQs</li></ul>",
+          "upvote_count": "3",
+          "selected_answers": ""
+        },
+        {
+          "id": 799357,
+          "date": "Mon 06 Feb 2023 04:10",
+          "username": "\t\t\t\tjackymak\t\t\t",
+          "content": "https://www.youtube.com/watch?vyDDOEMuYxQs",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 848007,
+          "date": "Thu 23 Mar 2023 10:21",
+          "username": "\t\t\t\tdrfloh\t\t\t",
+          "content": "BCE according to docs",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 768423,
+          "date": "Sat 07 Jan 2023 11:16",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "BCE correct",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#159",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which two are true about RMAN virtual private catalogs (VPCs)? (Choose two.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: AD</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#159",
+          "answers": [
+            {
+              "choice": "<p>A. RMAN uses Oracle Virtual Private Database (VPD) to implement VPCs<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Each VPC is owned by the recovery catalog schema owner<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. VPC functionality is enabled by default<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. The RMAN catalog owner can grant access for an already registered database to a new virtual catalog owner<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Only one target database can be registered in a VPC<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 159 discussion",
+      "discusstion": [
+        {
+          "id": 766896,
+          "date": "Thu 05 Jan 2023 18:51",
+          "username": "\t\t\t\tLeandroHPN\t\t\t",
+          "content": "A - Correct.<br>13.5.2 About Using the VPD Model for Virtual Private Catalogs<br>RMAN uses the Virtual Private Database (VPD) functionality to implement virtual private catalogs.<br><br>D - Correct.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/managing-recovery-catalog.html#GUID-DA362C55-5B94-4AB8-A8A1-163BF08FE594</li></ul>",
+          "upvote_count": "6",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
+          "id": 830686,
+          "date": "Mon 06 Mar 2023 10:18",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/managing-recovery-catalog.html#GUID-DA362C55-5B94-4AB8-A8A1-163BF08FE594",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#160",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which two are true about backup encryption? (Choose two.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: AD</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#160",
+          "answers": [
+            {
+              "choice": "<p>A. Keystore-based encryption is the default mode for RMAN backup encryption<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Vendor-specific media management software can be used for making encrypted RMAN backups to media<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Image copies can be encrypted<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Backup encryption can be enabled selectively for specific tablespaces<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. The BACKUP BACKUPSET command can encrypt and decrypt backup sets<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. The Transparent Data Encryption (TDE) keystore is backed up using RMAN<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 160 discussion",
+      "discusstion": [
+        {
+          "id": 830696,
+          "date": "Mon 06 Mar 2023 10:45",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "D - TRUE :<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/CONFIGURE. html#GUID-B5094E73-C26C-4FED-AE39-8C2E9540050A :<br>ENCRYPTION : This configuration applies unless overridden with the SET ENCRYPTION command. Options specified for an individual tablespace take precedence over options specified for the whole database.<br>A - TRUE:<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/configuring-rman-client-advanced.html#GUID-6ED708C7-1092-45FC-80C6-236F062D0DAC :<br>Note: Keystore-based encryption is more secure than password-based encryption because no passwords are involved. Use password-based encryption only when it is absolutely necessary because your backups must be transportable.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>E - FALSE :<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/BACKUP.html#GUID-73642FF2-43C5-48B2-9969-99001C52EB50 :<br>Note: When you use the BACKUP BACKUPSET command with encrypted backup sets, the backup sets are backed up in their encrypted form. Because BACKUP BACKUPSET just copies the encrypted backup set to disk or tape, no decryption key is needed during a BACKUP BACKUPSET operation. The data is never decrypted during any part of the operation. The BACKUP BACKUPSET command can neither encrypt nor decrypt backup sets.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
+          "id": 830697,
+          "date": "Mon 06 Mar 2023 10:46",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "E - FALSE :<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/BACKUP.html#GUID-73642FF2-43C5-48B2-9969-99001C52EB50 :<br>Note: When you use the BACKUP BACKUPSET command with encrypted backup sets, the backup sets are backed up in their encrypted form. Because BACKUP BACKUPSET just copies the encrypted backup set to disk or tape, no decryption key is needed during a BACKUP BACKUPSET operation. The data is never decrypted during any part of the operation. The BACKUP BACKUPSET command can neither encrypt nor decrypt backup sets.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 812957,
+          "date": "Sat 18 Feb 2023 13:51",
+          "username": "\t\t\t\tcrucinal1\t\t\t",
+          "content": "AD is right<br><br>E is false -->The BACKUP BACKUPSET command can neither encrypt nor decrypt backup sets.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 781575,
+          "date": "Thu 19 Jan 2023 21:19",
+          "username": "\t\t\t\tfrankkk\t\t\t",
+          "content": "AD correct",
+          "upvote_count": "3",
+          "selected_answers": ""
+        },
+        {
+          "id": 781562,
+          "date": "Thu 19 Jan 2023 21:03",
+          "username": "\t\t\t\tfrankkk\t\t\t",
+          "content": "E is False: The BACKUP BACKUPSET command can neither encrypt nor decrypt backup sets.<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/BACKUP.html#GUID-73642FF2-43C5-48B2-9969-99001C52EB50<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/BACKUP.html#:~:textThe%20BACKUP%20BACKUPSET%20command%20can%20neither%20encrypt%20nor%20decrypt%20backup%20sets.</li></ul>",
+          "upvote_count": "4",
+          "selected_answers": ""
+        },
+        {
+          "id": 799483,
+          "date": "Mon 06 Feb 2023 08:02",
+          "username": "\t\t\t\tjackymak\t\t\t",
+          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/rcmrf/BACKUP.html#:~:textThe%20BACKUP%20BACKUPSET%20command%20can%20neither%20encrypt%20nor%20decrypt%20backup%20sets.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 777424,
+          "date": "Mon 16 Jan 2023 08:53",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "AE correct",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 767591,
+          "date": "Fri 06 Jan 2023 12:55",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "AE: Transparent encryption is the default mode and it uses the Oracle software keystore . keystore is a password-protected container used to store a Transparent Data Encryption (TDE) key.<br>RMAN enables you to create encrypted backups of unencrypted backup sets. Before<br>you back up the unencrypted backup sets, use the SET ENCRYPTION FOR DATABASE ON<br>command to enable encryption.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AE"
+        }
+      ]
+    },
+    {
+      "question_id": "#161",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Examine this configuration:<br><br>1. CDB1 is a container database.<br>2. DEFAULT_SHARING is METADATA. <br>3. APP_ROOT is an application root contained in CDB1.<br>4. APP_PDB1 is an application PDB contained in APP_ROOT.<br>5. COMPANYAPP is an application contained in APP_ROOT.<br>6. EMP is a common table created in APP_ROOT and all its application PDBs, created when version 1.0 of COMPANYAPP was installed.<br><br>You execute these commands:<br><br><img src=\"https://img.examtopics.com/1z0-083/image1.png\"><br><br>What will be the outcome and why?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: A</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#161",
+          "answers": [
+            {
+              "choice": "<p>A. It will return an error because EMP is not empty in APP_ROOT<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. It will return an error because the SYNC operation is not allowed when constraints are added to common objects<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. SAL will be added to APP_PDB1.EMP, with NULLs in columns of existing rows<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. SAL will be added to APP_PDB1.EMP, with 0 in columns of existing rows<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. It will return an error because EMP.SAL is empty in APP_ROOT<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 161 discussion",
+      "discusstion": [
+        {
+          "id": 830735,
+          "date": "Mon 06 Mar 2023 11:55",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "General:<br>If a table has already rows inside and you try to add a column with a NOT NULL constraint, then you get an error ORA-01758. So the common table \\\"emp\\\" in app_root must be empty at the moment for the statement: ALTER TABLE emp ADD (sal NUMBER NOT NULL).<br><br>A - FALSE: The SHARING mode is DATA, so why should an error occurs for the sync statement?<br>B - FALSE: Contraints are allowed:<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/overview-of-the-multitenant-architecture.html#GUID-D9FDDB3D-E3B8-40FA-9EC5-F88467733C92<br>C/D - FALSE : makes no sense<br>E - FALSE: makes no sense, why should it returns an error due to the table is empty?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 768483,
+          "date": "Sat 07 Jan 2023 12:35",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "A is corect",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 767675,
+          "date": "Fri 06 Jan 2023 13:45",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "A in my opinion",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
+    },
+    {
+      "question_id": "#162",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which two are true about various Oracle security and auditing capabilities? (Choose two.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: BE</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#162",
+          "answers": [
+            {
+              "choice": "<p>A. Application-common Transparent Security Data Protection (TSDP) policies can be created only if all the PDBs in the application container are closed.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Application-common TSDP policies are always container specific.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Application-common OLS policies can be created only if all the PDBs in the application container are closed.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Fine-grained auditing (FGA) policies in an application root are automatically synchronized to all application PDBs contained in the application container when they are updated.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Unified auditing can be automatically synchronized to all application PDBs in an application container.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 162 discussion",
+      "discusstion": [
+        {
+          "id": 767706,
+          "date": "Fri 06 Jan 2023 14:08",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "In a multitenant environment, you can apply Transparent Sensitive Data Protection policies to the current PDB or current application PDB only.<br>Unified audit policies are automatic sync in app pdb<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I agree with BE</li></ul>",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: BE"
+        },
+        {
+          "id": 781595,
+          "date": "Thu 19 Jan 2023 21:58",
+          "username": "\t\t\t\tfrankkk\t\t\t",
+          "content": "I agree with BE",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#163",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Examine this configuration:<br>1. CDB1 is a container database.<br>2. There are several pluggable databases (PDBs) in CDB1.<br>3. Each PDB has several tables with referential integrity constraints.<br>4. FLASHBACK DATABASE is ON.<br>5. UNDO RETENTION GUARANTEE is enabled.<br><br>Multiple undesired multitable changes were made in all the PDBs.<br><br>Which method can be used to undo the changes using a single command?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: C</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#163",
+          "answers": [
+            {
+              "choice": "<p>A. restore and recover database<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. flashback transaction<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. flashback database<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. flashback table<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. flashback table and transaction<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 163 discussion",
+      "discusstion": [
+        {
+          "id": 781597,
+          "date": "Thu 19 Jan 2023 22:00",
+          "username": "\t\t\t\tfrankkk\t\t\t",
+          "content": "C is Correct",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 768489,
+          "date": "Sat 07 Jan 2023 12:39",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "C is correct",
+          "upvote_count": "3",
+          "selected_answers": ""
+        },
+        {
+          "id": 767679,
+          "date": "Fri 06 Jan 2023 13:50",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "C IN MY OPINION",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
+    },
+    {
+      "question_id": "#164",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Examine this extract from the show parameters command:<br><br><img src=\"https://img.examtopics.com/1z0-083/image2.png\"><br><br>How are System Global Area (SGA) and Program Global Area (PGA) memory managed by an instance using these parameter settings?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: E</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#164",
+          "answers": [
+            {
+              "choice": "<p>A. SGA and PGA memory are manually managed<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. SGA memory is manually managed and PGA memory is managed by using Automated SQL Execution Memory Management<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. SGA memory is managed by using Automatic Shared Memory Management (ASMM) and PGA memory is manually managed<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. SGA memory is managed by using Automatic Shared Memory Management (ASMM) and PGA memory is managed by using Automated SQL Execution Memory Management<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. SGA and PGA memory are managed by using Automatic Memory Management (AMM)<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 164 discussion",
+      "discusstion": [
+        {
+          "id": 830746,
+          "date": "Mon 06 Mar 2023 12:19",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/managing-memory.html#GUID-0F348EAB-9970-4207-8EF3-0F58B64E959A :<br>The simplest way to manage instance memory is to allow the Oracle Database instance to automatically manage and tune it for you. To do so (on most platforms), you set only a target memory size initialization parameter (MEMORY_TARGET) and optionally a maximum memory size initialization parameter (MEMORY_MAX_TARGET).<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/managing-memory.html#GUID-0E201F66-D280-472A-AD80-20AB8F7E9C01 :<br>You can omit the statements that set the SGA_TARGET and PGA_AGGREGATE_TARGET parameter values to zero and leave either or both of the values as positive numbers. In this case, the values act as minimum values for the sizes of the SGA or instance PGA. <br>In addition, you can use the PGA_AGGREGATE_LIMIT initialization parameter to set an instance-wide hard limit for PGA memory. You can set PGA_AGGREGATE_LIMIT whether or not you use automatic memory management. See \\\"Using Automatic PGA Memory Management\\\".<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>About ASMM:<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/managing-memory.html#GUID-B8B8923C-4213-42A9-8ED3-4ABE48C23914</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: E"
+        },
+        {
+          "id": 830751,
+          "date": "Mon 06 Mar 2023 12:27",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "About ASMM:<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/managing-memory.html#GUID-B8B8923C-4213-42A9-8ED3-4ABE48C23914",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 781932,
+          "date": "Fri 20 Jan 2023 07:40",
+          "username": "\t\t\t\tfrankkk\t\t\t",
+          "content": "E correct",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 768507,
+          "date": "Sat 07 Jan 2023 12:53",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "E correct",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 767710,
+          "date": "Fri 06 Jan 2023 14:11",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "correct",
+          "upvote_count": "4",
+          "selected_answers": "Selected Answer: E"
+        }
+      ]
+    },
+    {
+      "question_id": "#165",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which are two of the steps taken by Database Configuration Assistant (DBCA) to clone a remote pluggable database (PDB) starting from Oracle 19c? (Choose two.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: BC</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#165",
+          "answers": [
+            {
+              "choice": "<p>A. backing up the cloned PDB<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. opening the cloned PDB<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. creating a database link from CDB$ROOT in the local database to CDB$ROOT in the remote system that is to be cloned<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. creating a database link from CDB$ROOT in the local database to the PDB in the remote system that is to be cloned<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. leaving the cloned PDB in mount state<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 165 discussion",
+      "discusstion": [
+        {
+          "id": 830939,
+          "date": "Mon 06 Mar 2023 16:11",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "BC<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/cloning-a-pdb.html#GUID-32AE49B1-13A7-4A4D-AB43-BA781ECA99D6<br>https://oracle-base.com/articles/19c/multitenant-dbca-pdb-remote-clone-19c<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/creating-and-configuring-an-oracle-database.html#GUID-6EDDC43D-9BD6-4096-8192-7E548B826360<br>The database link can connect as a common user to the root of the source CDB, or as a common or local user to the source PDB.  The source PDB can be either a standard PDB or application PDB.  > so D could be also TRUE, but who knows what DBCA does.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BC"
+        },
+        {
+          "id": 799299,
+          "date": "Mon 06 Feb 2023 02:10",
+          "username": "\t\t\t\tdmees\t\t\t",
+          "content": "BC<br>The DBCA operation executes the following steps:<br>1. Checks the presence of the database link. If the database link exists, DBCA drops it.<br>2. Creates the database link<br>3. Creates the PDB from the remote PDB<br>4. Checks the status of the cloned PDB to verify that it is in mounted mode<br>5. Opens the cloned PDB",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 777433,
+          "date": "Mon 16 Jan 2023 09:02",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "BC i think",
+          "upvote_count": "3",
           "selected_answers": ""
         }
       ]
@@ -21781,6 +22833,1112 @@ var Data_1Z0_083_Part1 =
           "username": "Hunkie",
           "content": "I think C should be as follows:<br><br>The results of the ADDM analysis are stored in the Automatic Workload Repository (AWR)<br><br>And B as:<br><br>The ADDM runs after each AWR snapshot is collected automatically by MMON",
           "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#167",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which three are true about Data Pump in an Oracle multitenant environment? (Choose three.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: BCE</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#167",
+          "answers": [
+            {
+              "choice": "<p>A. It can be used to clone a CDB. <br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. It can be used to transport data from a PDB to a non-CDB. <br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. It can be used to transport data between PDBs.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. It can be used to create a new PDB. <br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. It can be used to transport data from a non-CDB to a PDB. <br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 167 discussion",
+      "discusstion": [
+        {
+          "id": 776687,
+          "date": "Sun 15 Jan 2023 15:50",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "bce correct",
+          "upvote_count": "3",
+          "selected_answers": ""
+        },
+        {
+          "id": 771243,
+          "date": "Tue 10 Jan 2023 10:24",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "BCE correct",
+          "upvote_count": "3",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#168",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which three are true about Oracle Grid Infrastructure for a Standalone Server? (Choose three.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: DEF</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#168",
+          "answers": [
+            {
+              "choice": "<p>A. It requires Oracle ASM Filter Driver (ASMFD) to manage Automatic Storage Management (ASM) disks.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. It requires the operating system ORACLE_BASE environment variable to be predefined before installation.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. It requires Oracle ASMLib to manage Automatic Storage Management (ASM) disks.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Automatic Storage Management (ASM) requires that O/S groups OSASM and OSDBA be assigned as secondary groups for its installation owner.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. It creates one disk group during installation.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. It includes both Oracle Restart and Oracle Automatic Storage Management (ASM) software.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 168 discussion",
+      "discusstion": [
+        {
+          "id": 839142,
+          "date": "Tue 14 Mar 2023 19:43",
+          "username": "\t\t\t\tErikJanssen\t\t\t",
+          "content": "I think DEF as well.<br>D: https://docs.oracle.com/en/database/oracle/oracle-database/19/cwlin/about-oracle-installation-owner-accounts.html#GUID-39A48A63-E41F-4034-8C54-08D8E11A4F4C",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 800641,
+          "date": "Tue 07 Feb 2023 08:10",
+          "username": "\t\t\t\tjackymak\t\t\t",
+          "content": "D: https://docs.oracle.com/database/121/OSTMG/GUID-5DAEB139-6FAD-4129-A0ED-DF61EDA1B2B8.htm#OSTMG-GUID-5DAEB139-6FAD-4129-A0ED-DF61EDA1B2B8<br><br>F: https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/about-oracle-grid-infrastructure-for-a-standlone-server.html#:~:textOracle%20Grid%20Infrastructure%20for%20a%20standalone%20server%20includes%20Oracle%20Restart%20and%20Oracle%20Automatic%20Storage%20Management",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: DEF"
+        },
+        {
+          "id": 771248,
+          "date": "Tue 10 Jan 2023 10:32",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "CEF my opinion it requires ASMLIB<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Sorry DEF ASMLIB not mandotory</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 777440,
+          "date": "Mon 16 Jan 2023 09:07",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "Sorry DEF ASMLIB not mandotory",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 767884,
+          "date": "Fri 06 Jan 2023 17:23",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "as per documentation https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/database-installation-guide-linux.pdf oracle_base is UNSET and of couse a disk grup is created by oui at the end of process",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: DEF"
+        }
+      ]
+    },
+    {
+      "question_id": "#169",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which two are true about Lockdown profiles in a container database (CDB) and its pluggable databases (PDBs)? (Choose two.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: BD</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#169",
+          "answers": [
+            {
+              "choice": "<p>A. A Lockdown profile created from a base Lockdown profile is always automatically modified if the profile on which it is based is modified.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. A PDB Lockdown profile can be created in an application root.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. A Lockdown profile created from a base Lockdown profile is never automatically modified if the profile on which it is based is modified.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. A PDB Lockdown profile can be created in CDB$ROOT.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. A PDB Lockdown profile can be created in a regular PDB. <br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 169 discussion",
+      "discusstion": [
+        {
+          "id": 782708,
+          "date": "Fri 20 Jan 2023 20:35",
+          "username": "\t\t\t\tfrankkk\t\t\t",
+          "content": "BD correct<br><br>https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-LOCKDOWN-PROFILE. html#GUID-1CDEC3A3-F3F1-4279-9370-36AACF416E0A<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>B: If you set PDB_LOCKDOWN while connected to an application root, then the lockdown profile applies to the application root and all PDBs in the application container.<br><br>D: If you set PDB_LOCKDOWN while connected to a CDB root, then the lockdown profile applies to all PDBs in the CDB.  It does not apply to the CDB root.</li></ul>",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 800649,
+          "date": "Tue 07 Feb 2023 08:24",
+          "username": "\t\t\t\tjackymak\t\t\t",
+          "content": "B: If you set PDB_LOCKDOWN while connected to an application root, then the lockdown profile applies to the application root and all PDBs in the application container.<br><br>D: If you set PDB_LOCKDOWN while connected to a CDB root, then the lockdown profile applies to all PDBs in the CDB.  It does not apply to the CDB root.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 777447,
+          "date": "Mon 16 Jan 2023 09:11",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "BD correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://blogs.oracle.com/database/post/a-simple-guide-to-lockdown-profiles</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 833259,
+          "date": "Wed 08 Mar 2023 19:18",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "https://blogs.oracle.com/database/post/a-simple-guide-to-lockdown-profiles",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 767935,
+          "date": "Fri 06 Jan 2023 18:44",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "as per documentation, lockdown profiles can be created in cdb$root and application root.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: BD"
+        }
+      ]
+    },
+    {
+      "question_id": "#170",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which two are true about a read-only Oracle home? (Choose two.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: DE</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#170",
+          "answers": [
+            {
+              "choice": "<p>A. Its configuration data and log files reside in subdirectories under the Oracle home.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. It is enabled by performing an Oracle Database installation with database creation and then running the roohctl -enable script.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. It requires the Rapid Home Provisioning service.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. It contains an image that can be distributed across multiple servers.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. It is enabled by performing a software-only Oracle Database installation and then running the roohctl -enable script.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 170 discussion",
+      "discusstion": [
+        {
+          "id": 777449,
+          "date": "Mon 16 Jan 2023 09:13",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "D E correct",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 767937,
+          "date": "Fri 06 Jan 2023 18:52",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "Configure your Oracle home as a read-only Oracle home after you have performed a software-only Oracle Database installation.<br>To enable a read-only Oracle home:<br>1. Perform a software-only Oracle Database installation.<br>2. Run the roohctl -enable script.<br>3. Run Oracle Database Configuration Assistant (Oracle DBCA) to create a database.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://docs.oracle.com/en/database/oracle/oracle-database/19/ssdbi/enabling-read-only-oracle-home.html#GUID-7B2FA40E-8FBA-4494-934A-A284532AF702</li></ul>",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: DE"
+        },
+        {
+          "id": 800655,
+          "date": "Tue 07 Feb 2023 08:35",
+          "username": "\t\t\t\tjackymak\t\t\t",
+          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/ssdbi/enabling-read-only-oracle-home.html#GUID-7B2FA40E-8FBA-4494-934A-A284532AF702",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#171",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Some archived log backups have been accidentally deleted from storage.<br><br>Which two commands should be used to update the status of backups in the recovery catalog to display only the missing backups? (Choose two.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: DF</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#171",
+          "answers": [
+            {
+              "choice": "<p>A. RESYNC CATALOG<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. REPORT OBSOLETE<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. LIST ARCHIVELOG ALL<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. CROSSCHECK BACKUP OF ARCHIVELOG ALL<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. LIST ARCHIVELOG<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. LIST EXPIRED<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 171 discussion",
+      "discusstion": [
+        {
+          "id": 771322,
+          "date": "Tue 10 Jan 2023 12:09",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "DF correct",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 767942,
+          "date": "Fri 06 Jan 2023 18:56",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "crosscheck archived log is needed. list expired show archive log not available into storage and present into recovery catalog<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>not A :<br>Typically, you run RESYNC CATALOG in the following situations:<br>The recovery catalog was unavailable when you executed RMAN commands that automatically perform a resynchronization.<br>The target database is running in ARCHIVELOG mode, because the recovery catalog is not updated automatically when an online redo log switch occurs or when a redo log is archived.<br>You made changes to the physical structure of the target database such as adding or dropping a tablespace. As with log archiving, the recovery catalog is not updated automatically when the physical schema changes.<br>RMAN is connected as TARGET to a standby database. You want to update the recovery catalog with metadata about RMAN operations performed on this database or about a physical change on the primary database.</li></ul>",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: DF"
+        },
+        {
+          "id": 833767,
+          "date": "Thu 09 Mar 2023 10:24",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "not A :<br>Typically, you run RESYNC CATALOG in the following situations:<br>The recovery catalog was unavailable when you executed RMAN commands that automatically perform a resynchronization.<br>The target database is running in ARCHIVELOG mode, because the recovery catalog is not updated automatically when an online redo log switch occurs or when a redo log is archived.<br>You made changes to the physical structure of the target database such as adding or dropping a tablespace. As with log archiving, the recovery catalog is not updated automatically when the physical schema changes.<br>RMAN is connected as TARGET to a standby database. You want to update the recovery catalog with metadata about RMAN operations performed on this database or about a physical change on the primary database.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#172",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which three are true about post-upgrade activities when upgrading an Oracle database using Database Upgrade Assistant? (Choose three.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: ACE</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#172",
+          "answers": [
+            {
+              "choice": "<p>A. The Oracle Application Express configuration should be updated after upgrading Oracle Database.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Time zone files must be upgraded manually using the DBMS_DST PL/SQL package.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Any Recovery Manager (RMAN) recovery catalog must be upgraded manually.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. The new extended data type capability must be enabled by running the utlrp.sql script.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. After a manual upgrade, TNSNAMES.ORA entries must be updated to reflect the new ORACLE_HOME. <br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 172 discussion",
+      "discusstion": [
+        {
+          "id": 801155,
+          "date": "Tue 07 Feb 2023 18:00",
+          "username": "\t\t\t\thaaris786\t\t\t",
+          "content": "Agree with ACE",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 767954,
+          "date": "Fri 06 Jan 2023 19:13",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "Oracle Database 12c Release 2 (12.2) DBUA : Understanding New Changes / Features (Doc ID 2171985.1)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://docs.oracle.com/en/database/oracle/oracle-database/19/upgrd/upgrading-oracle-database-upgrade-assistant-dbua.html#GUID-F929338D-48EE-434F-A5F9-A9E7CD61B17F</li></ul>",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: ACE"
+        },
+        {
+          "id": 833776,
+          "date": "Thu 09 Mar 2023 10:30",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/upgrd/upgrading-oracle-database-upgrade-assistant-dbua.html#GUID-F929338D-48EE-434F-A5F9-A9E7CD61B17F",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#173",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which three are true about configuring CONTROLFILE AUTOBACKUP by using RMAN? (Choose three.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: BEF</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#173",
+          "answers": [
+            {
+              "choice": "<p>A. The control file is backed up automatically each time the SPFILE is backed up manually.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. The control file is backed up whenever an RMAN backup is successfully recorded in the catalog.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. It requires the use of fast recovery area (FRA).<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. The control file is backed up whenever a new table is created.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. The control file is backed up whenever a new tablespace is created.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. The server parameter file (SPFILE) is automatically backed up each time the control file is backed up.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 173 discussion",
+      "discusstion": [
+        {
+          "id": 771358,
+          "date": "Tue 10 Jan 2023 12:51",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "BEF correct<br>https://www.dbi-services.com/blog/oracle-12c-automatic-control-file-backups/",
+          "upvote_count": "3",
+          "selected_answers": ""
+        },
+        {
+          "id": 767959,
+          "date": "Fri 06 Jan 2023 19:21",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "For non-CDBs, if CONFIGURE CONTROLFILE AUTOBACKUP is ON, then RMAN automatically backs<br>up the control file and the current server parameter file (if used to start the database) after a<br>successful BACKUP command. For CDBs and standalone databases with the COMPATIBLE<br>initialization parameter set to 12.0 or higher, by default, the control file autobackup is turned<br>on.<br>Chapter 8<br>About RMAN Control File and Server Parameter File Autobackups<br>8-15<br>If the database runs in ARCHIVELOG mode, RMAN makes control file autobackups when<br>a structural change to the database affects the contents of the control file.",
+          "upvote_count": "4",
+          "selected_answers": "Selected Answer: BEF"
+        },
+        {
+          "id": 767953,
+          "date": "Fri 06 Jan 2023 19:13",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "Oracle Database 12c Release 2 (12.2) DBUA : Understanding New Changes / Features (Doc ID 2171985.1)",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: ACE"
+        }
+      ]
+    },
+    {
+      "question_id": "#174",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which three are true about cloning databases into an existing CDB with RMAN? (Choose three.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: BEF</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#174",
+          "answers": [
+            {
+              "choice": "<p>A. A user with SYSDBA or SYSBKUP must be logged in with RMAN to the non-CDB being cloned when cloning a non-CDB. <br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. The target and auxiliary instance passwords must be the same.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Two or more PDBs can be cloned with the same command.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. A non-CDB can be cloned into a PDB. <br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Only one PDB can be cloned at a time.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. A user with SYSDBA or SYSBKUP must be logged in with RMAN to CDB$ROOT when cloning a PDB. <br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 174 discussion",
+      "discusstion": [
+        {
+          "id": 777463,
+          "date": "Mon 16 Jan 2023 09:38",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "BEF correct",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 771653,
+          "date": "Tue 10 Jan 2023 18:54",
+          "username": "\t\t\t\tLeandroHPN\t\t\t",
+          "content": "25.5.3.2 Restrictions on Duplicating a PDB to an Existing CDB<br>Duplicating a PDB to an existing CDB is subject to certain restrictions.<br><br>Only active database duplication is supported.<br><br>Only the following clauses of the DUPLICATE command are supported: NORESUME, DB_FILE_NAME_CONVERT, SECTION SIZE, and USING COMPRESSED BACKUPSET.<br><br>The following clauses of the DUPLICATE command are not supported: SPFILE, NO STANDBY, FARSYNC STANDBY, and LOG_FILE_NAME_CONVERT.<br><br>Duplicating a PDB to a CDB that is a standby database is not supported.<br><br>Only one PDB can be duplicated at a time.<br><br>Partial PDB duplication is not supported, only complete PDB duplication is supported. For example, you cannot include or exclude specific tablespaces while duplicating a PDB. <br><br>Duplicating a non-CDB as a PDB in an existing CDB is not supported.<br><br>Duplicating PDBs that contain TDE-encrypted tablespaces is not supported.",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: BEF"
+        },
+        {
+          "id": 771365,
+          "date": "Tue 10 Jan 2023 12:59",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "BCF<br>Two or more PDBs can be cloned with the same command.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-duplicating-databases.html#GUID-8AEC7767-8572-435C-9320-8B589CA4F224</li><li>25.5.3.2 Restrictions on Duplicating a PDB to an Existing CDB<br>Duplicating a PDB to an existing CDB is subject to certain restrictions.<br><br>Only active database duplication is supported.<br><br>Only the following clauses of the DUPLICATE command are supported: NORESUME, DB_FILE_NAME_CONVERT, SECTION SIZE, and USING COMPRESSED BACKUPSET.<br><br>The following clauses of the DUPLICATE command are not supported: SPFILE, NO STANDBY, FARSYNC STANDBY, and LOG_FILE_NAME_CONVERT.<br><br>Duplicating a PDB to a CDB that is a standby database is not supported.<br><br>Only one PDB can be duplicated at a time.</li><li>Agree After read</li></ul>",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 771369,
+          "date": "Tue 10 Jan 2023 13:01",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/rman-duplicating-databases.html#GUID-8AEC7767-8572-435C-9320-8B589CA4F224<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>25.5.3.2 Restrictions on Duplicating a PDB to an Existing CDB<br>Duplicating a PDB to an existing CDB is subject to certain restrictions.<br><br>Only active database duplication is supported.<br><br>Only the following clauses of the DUPLICATE command are supported: NORESUME, DB_FILE_NAME_CONVERT, SECTION SIZE, and USING COMPRESSED BACKUPSET.<br><br>The following clauses of the DUPLICATE command are not supported: SPFILE, NO STANDBY, FARSYNC STANDBY, and LOG_FILE_NAME_CONVERT.<br><br>Duplicating a PDB to a CDB that is a standby database is not supported.<br><br>Only one PDB can be duplicated at a time.</li><li>Agree After read</li></ul>",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 776710,
+          "date": "Sun 15 Jan 2023 16:12",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "25.5.3.2 Restrictions on Duplicating a PDB to an Existing CDB<br>Duplicating a PDB to an existing CDB is subject to certain restrictions.<br><br>Only active database duplication is supported.<br><br>Only the following clauses of the DUPLICATE command are supported: NORESUME, DB_FILE_NAME_CONVERT, SECTION SIZE, and USING COMPRESSED BACKUPSET.<br><br>The following clauses of the DUPLICATE command are not supported: SPFILE, NO STANDBY, FARSYNC STANDBY, and LOG_FILE_NAME_CONVERT.<br><br>Duplicating a PDB to a CDB that is a standby database is not supported.<br><br>Only one PDB can be duplicated at a time.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree After read</li></ul>",
+          "upvote_count": "3",
+          "selected_answers": ""
+        },
+        {
+          "id": 777459,
+          "date": "Mon 16 Jan 2023 09:35",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "Agree After read",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 768016,
+          "date": "Fri 06 Jan 2023 20:33",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "Only one PDB can be duplicated at a time. Duplicating and existing pdb into a cdb require sysdba or sysbackup connections. of course password files must be identical",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: BEF"
+        }
+      ]
+    },
+    {
+      "question_id": "#175",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which two are true about creating pluggable databases (PDBs) in Oracle 19c and later releases? (Choose two.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: BE</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#175",
+          "answers": [
+            {
+              "choice": "<p>A. A snapshot copy PDB can be a full copy of a source PDB. <br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. A PDB snapshot can be a sparse copy of a source PDB. <br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. A snapshot copy PDB does not depend on an existing storage snapshot of the source PDB. <br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. A PDB snapshot depends on an existing storage snapshot of the source PDB. <br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. A PDB snapshot can be a full copy of a source PDB. <br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 175 discussion",
+      "discusstion": [
+        {
+          "id": 768031,
+          "date": "Fri 06 Jan 2023 20:48",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "IT'S CORRECT<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A \\\"PDB snapshot\\\" is a point-in-time copy of a PDB.  The source PDB can be open read-only or read/write while the snapshot is created. A clone from a PDB snapshot is a full, standalone PDB. <br>A \\\"snapshot copy PDB\\\" is based on a copy of the underlying storage system. Snapshot copy PDBs reduce the amount of storage required for testing purposes and reduce creation time significantly.</li></ul>",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: BE"
+        },
+        {
+          "id": 833855,
+          "date": "Thu 09 Mar 2023 11:47",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "A \\\"PDB snapshot\\\" is a point-in-time copy of a PDB.  The source PDB can be open read-only or read/write while the snapshot is created. A clone from a PDB snapshot is a full, standalone PDB. <br>A \\\"snapshot copy PDB\\\" is based on a copy of the underlying storage system. Snapshot copy PDBs reduce the amount of storage required for testing purposes and reduce creation time significantly.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#176",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>SQL Performance Analyzer (SPA) has reported several regressed SQL statements for one of your databases.<br><br>Which action could help in the performance management of these regressed SQL statements?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: B</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#176",
+          "answers": [
+            {
+              "choice": "<p>A. Create SQL plan directives for each of the regressed statements.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Use the SQL Tuning Advisor for each of the regressed statements.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Use the SQL Access Advisor for each of the regressed statements.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Create an adaptive execution plan for each of the regressed statements.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 176 discussion",
+      "discusstion": [
+        {
+          "id": 799859,
+          "date": "Mon 06 Feb 2023 15:46",
+          "username": "\t\t\t\thaaris786\t\t\t",
+          "content": "B<br>https://docs.oracle.com/database/121/RATUG/GUID-9D5A985E-0BB0-43FA-955A-599B2E6A58AA. htm#RATUG174",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 777465,
+          "date": "Mon 16 Jan 2023 09:41",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "B i think<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree with B<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ratug/comparing-sql-trials.html#GUID-A86879DB-BB8B-4F97-91BF-12CB045932C0<br>In cases when only a few SQL statements have regressed, consider using one of the following tuning methods to implement a point solution for them:<br>Creating SQL Plan Baselines<br>Running SQL Tuning Advisor</li></ul>",
+          "upvote_count": "4",
+          "selected_answers": ""
+        },
+        {
+          "id": 800188,
+          "date": "Mon 06 Feb 2023 20:34",
+          "username": "\t\t\t\tdmees\t\t\t",
+          "content": "Agree with B<br>https://docs.oracle.com/en/database/oracle/oracle-database/19/ratug/comparing-sql-trials.html#GUID-A86879DB-BB8B-4F97-91BF-12CB045932C0<br>In cases when only a few SQL statements have regressed, consider using one of the following tuning methods to implement a point solution for them:<br>Creating SQL Plan Baselines<br>Running SQL Tuning Advisor",
+          "upvote_count": "3",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#177",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Which two restrictions apply when the RMAN BACKUP AS COPY command is used to create a backup? (Choose two.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: BC</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#177",
+          "answers": [
+            {
+              "choice": "<p>A. Backups can be written only if checksums are stored for each block.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Binary compression cannot be applied to the backup.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Backups can be written only to disk.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Backups can be written only to media.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. Backups can be taken only if a fast recovery area is configured.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. Backups can be taken only for data files.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 177 discussion",
+      "discusstion": [
+        {
+          "id": 771386,
+          "date": "Tue 10 Jan 2023 13:16",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "B F correct<br>backup as copy can be take for only datafile<br>backup as copy datafile 4 format 'c:\\datafile4.dbf';<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Backup as copy is possible to sbt<br>https://docs.oracle.com/database/121/BRADV/rcmbckba.htm#BRADV89510</li><li>Sorry forget this<br>BC is the answer <br>https://www.druva.com/blog/oracle-in-depth-part-3-sbt-direct-to-cloud/</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 777479,
+          "date": "Mon 16 Jan 2023 09:52",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "Backup as copy is possible to sbt<br>https://docs.oracle.com/database/121/BRADV/rcmbckba.htm#BRADV89510<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Sorry forget this<br>BC is the answer <br>https://www.druva.com/blog/oracle-in-depth-part-3-sbt-direct-to-cloud/</li></ul>",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 779650,
+          "date": "Wed 18 Jan 2023 07:36",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "Sorry forget this<br>BC is the answer <br>https://www.druva.com/blog/oracle-in-depth-part-3-sbt-direct-to-cloud/",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 768085,
+          "date": "Fri 06 Jan 2023 22:14",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "image copies cannot be compressed nor backup on tape<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/getting-started-rman.html#GUID-096D8191-5DB3-4F49-83EF-14DC13DEA022 :<br>If you specify BACKUP AS COPY, then RMAN copies each file as an image copy, which is a bit-for-bit copy of a database file created on disk. Image copies are identical to copies created with operating system commands like cp on Linux or COPY on Windows, but are recorded in the RMAN repository and so are usable by RMAN. You can use RMAN to make image copies while the database is open.</li></ul>",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: BC"
+        },
+        {
+          "id": 833868,
+          "date": "Thu 09 Mar 2023 11:57",
+          "username": "\t\t\t\tvkra\t\t\t",
+          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/getting-started-rman.html#GUID-096D8191-5DB3-4F49-83EF-14DC13DEA022 :<br>If you specify BACKUP AS COPY, then RMAN copies each file as an image copy, which is a bit-for-bit copy of a database file created on disk. Image copies are identical to copies created with operating system commands like cp on Linux or COPY on Windows, but are recorded in the RMAN repository and so are usable by RMAN. You can use RMAN to make image copies while the database is open.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#178",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Examine this configuration:<br><br>1. CDB1 is a container database.<br>2. APP1_ROOT is an application container contained in CDB1.<br>3. APP1_ROOT$SEED is the application seed contained in APP1_ROOT and synchronized with APP1_ROOT.<br>4. APP1_PDB1 and APP1_PDB2 are application PDBs contained in APP1_ROOT.<br>5. APP1_USER_APP is an application installed in APP1_ROOT at version 1.0.<br>6. USER1 is a common user in APP1_ROOT and all its application PDBs, created when version 1.0 of APP1_USER_APP was installed.<br><br>You execute these commands:<br><br>$ sqlplus sys/oracle@localhost:1521/cdb1 as sysdba<br><br>SQL&gt; ALTER SESSION SET CONTAINERapp1_root;<br>Session altered.<br><br>SQL&gt; ALTER PLUGGABLE DATABASE APPLICATION app1_user1_app BEGIN UPGRADE '1.0' TO '2.0';<br>Pluggable database altered.<br><br>SQL&gt; GRANT CREATE SESSION TO USER1;<br>Grant succeeded.<br><br>SQL&gt; ALTER PLUGGABLE DATABASE APPLICATION app1_user1_app END UPGRADE TO '2.0';<br>Pluggable database altered.<br><br>SQL&gt; ALTER SESSION SET CONTAINERapp1_pdb1;<br>Session altered.<br><br>SQL&gt; ALTER PLUGGABLE DATABASE APPLICATION app1_userl_app SYNC;<br>Pluggable database altered.<br><br>Which two are true? (Choose two.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: AF</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#178",
+          "answers": [
+            {
+              "choice": "<p>A. USER1 can connect to APP1_ROOT and APP1_PDB1.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. USER1 can connect only to APP1_ROOT.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. USER1 can connect to APP1_ROOT, APP1_ROOT$SEED, and APP1_PDB1.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. USER1 can connect only to APP1_PDB1.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. USER1 can connect to CDB1.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. USER1 is defined in APP1_PDB2.<br></p>",
+              "correct": true,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 178 discussion",
+      "discusstion": [
+        {
+          "id": 768095,
+          "date": "Fri 06 Jan 2023 22:39",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "grant will be propagated after sync only to synced pdbs<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>AF agree</li></ul>",
+          "upvote_count": "6",
+          "selected_answers": "Selected Answer: AF"
+        },
+        {
+          "id": 771413,
+          "date": "Tue 10 Jan 2023 13:42",
+          "username": "\t\t\t\thilaire\t\t\t",
+          "content": "AF agree",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
+    },
+    {
+      "question_id": "#179",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A container database, CDB1, contains a pluggable database PDB1.<br><br>Another container database is called CDB2.<br><br>You want to relocate PDB1 from CDB1 to CDB2 with near-zero down time.<br><br>Which three are required? (Choose three.)</p>",
+      "mark": 1,
+      "is_partially_correct": true,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: ABE</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#179",
+          "answers": [
+            {
+              "choice": "<p>A. CDB2 must be in archivelog mode.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. CDB1 and CDB2 must both be in local UNDO mode.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. CDB2 must be in shared UNDO mode only.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. CDB1 must be in shared UNDO mode only.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. CDB1 must be in archivelog mode.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. CDB1 and CDB2 must be in shared UNDO mode.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 179 discussion",
+      "discusstion": [
+        {
+          "id": 782722,
+          "date": "Fri 20 Jan 2023 20:44",
+          "username": "\t\t\t\tjeylightyear1\t\t\t",
+          "content": "https://oracle-base.com/articles/12c/multitenant-relocate-pdb-12cr2source and target CDBs need to have local undo mode so C,D,F is false<br><br>Agree with A,B,E",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 776732,
+          "date": "Sun 15 Jan 2023 16:23",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "abe in my opinion",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: ABE"
+        }
+      ]
+    },
+    {
+      "question_id": "#181",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>Examine this configuration:<br><br>1. CDB1 is an Oracle container database from an older release.<br>2. PDB1, PDB2, PDB3, and PDB4 are pluggable databases in CDB1.<br><br>A priority list UpgrdList has these entries:<br><br>1, pdb2<br>2, pdb1, pdb3<br><br>You execute this command:<br><br>$ /u01/app/oracle/product/18.1.0/db_1/rdbms/admin/dbupgrade -L UpgrdList<br><br>In which order will the upgrade occur?</p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: C</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#181",
+          "answers": [
+            {
+              "choice": "<p>A. CDB$ROOT, PDB1, PDB2, PDB3, and PDB4<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. CDB$ROOT, PDB2, PDB1, and PDB3<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. CDB$ROOT, PDB$SEED, PDB2, PDB1, PDB3, and PDB4<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. CDB$ROOT, PDB$SEED, PDB1, PDB3, PDB2, and PDB4<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>E. CDB$ROOT, PDB$SEED, PDB2, PDB1, and PDB3<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "Exam 1z0-083 topic 1 question 181 discussion",
+      "discusstion": [
+        {
+          "id": 776743,
+          "date": "Sun 15 Jan 2023 16:33",
+          "username": "\t\t\t\tilputto\t\t\t",
+          "content": "c as x docs<br>Upgrades PDBs using a priority list during an Oracle Database upgrade, and<br>specifies the priority list name. The priority list updates priority status in the<br>database during upgrade. This priority listing is maintained in future upgrades.<br>By default the CDB$ROOT and PDB$SEED databases are always processed<br>first. They are processed first even if they are not added to a priority list. All PDBs<br>in the priority list are processed before PDBs not in the priority list",
+          "upvote_count": "5",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 782647,
+          "date": "Fri 20 Jan 2023 19:30",
+          "username": "\t\t\t\tjeylightyear1\t\t\t",
+          "content": "https://docs.oracle.com/en/database/oracle/oracle-database/19/upgrd/manual-upgrade-scenarios-multitenant-architecture-oracle-databases.html#GUID-6471F9F4-5151-4FA3-B5EC-B5AEBD99B0AA<br><br>1) CDB$ROOT: Priority 1. Upgrading the container database first is a mandatory priority. You cannot change the priority for the container database upgrade. CDB$ROOT is always processed first.<br><br>2) PDB$SEED: Priority 1. Upgrading the PDB seed database is a mandatory priority. You cannot change the priority for the PDB seed upgrade. PDB$SEED always upgraded after CDB$ROOT, and with the first batch of PDB upgrades.<br><br>since -C argument is not used PDB4 is not excluded and will be upgraded in the end<br><br>Agree with \\\"C\\\"",
+          "upvote_count": "2",
           "selected_answers": ""
         }
       ]
