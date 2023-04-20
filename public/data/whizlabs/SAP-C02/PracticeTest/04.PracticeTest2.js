@@ -2240,25 +2240,25 @@ var SAP_C02_Whiz_PracticeTest2 = {
               "question_id": "98701",
               "choice": "<p>1. Users make a request to IdP and get authenticated<br />\n2. IdP sends a SAML assertion to STS using AssumeRolewithSAML API on behalf of the users<br />\n3. STS returns temporary security credentials to IdP<br />\n4. IdP forwards this security credential to users allowing access to the Amazon S3 bucket<br />\n&nbsp;</p>",
               "feedback": "",
-              "correct": "0"
+              "correct": 0
             },
             {
               "question_id": "98701",
               "choice": "<p>1. Users make a request to IdP and get authenticated<br />\n2. IdP sends a SAML assertion to users<br />\n3. Users forward this SAML assertion to STS using AssumeRolewithSAML API<br />\n4. STS returns a temporary security credential that allows users to access the Amazon S3 bucket<br />\n&nbsp;</p>",
               "feedback": "",
-              "correct": "1"
+              "correct": 1
             },
             {
               "question_id": "98701",
               "choice": "<p>1. Users make a request to IdP and get authenticated<br />\n2. IdP sends a SAML assertion to users<br />\n3. Users forward this SAML assertion to STS using AssumeRoleWithWebIdentity API<br />\n4. STS returns temporary security credentials that allow users to access the Amazon S3 bucket<br />\n&nbsp;</p>",
               "feedback": "",
-              "correct": "0"
+              "correct": 0
             },
             {
               "question_id": "98701",
               "choice": "<p>1. Users make a request to IdP and get authenticated<br />\n2. IdP sends a SAML assertion to STS using AssumeRoleWithWebIdentity API on behalf of the users<br />\n3. STS returns temporary security credentials to IdP<br />\n4. IdP forwards this security credential to users allowing access to the Amazon S3 bucket<br />\n&nbsp;</p>",
               "feedback": "",
-              "correct": "0"
+              "correct": 0
             }
           ]
         }
@@ -2287,25 +2287,25 @@ var SAP_C02_Whiz_PracticeTest2 = {
               "question_id": "98702",
               "choice": "<p>Create a new OU named Development. Move the Development account to this OU. Create a new SCP allowing access to launch the c5. xlarge instance type. Make no changes to the existing SCP attached to the root.</p>",
               "feedback": "",
-              "correct": "0"
+              "correct": 0
             },
             {
               "question_id": "98702",
               "choice": "<p>Create a new OU named Development. Move the Development account to this OU. Create a new SCP allowing to launch c5. xlarge instance type and attach it to the new OU. Detach existing SCP from the root and attach it to the OU which has a Production account.</p>",
               "feedback": "",
-              "correct": "1"
+              "correct": 1
             },
             {
               "question_id": "98702",
               "choice": "<p>Detach existing SCP from the root of the Organization. Attach a new SCP which will allow the launch of the c5. xlarge instance type. Post testing phase, revert these SCP.</p>",
               "feedback": "",
-              "correct": "0"
+              "correct": 0
             },
             {
               "question_id": "98702",
               "choice": "<p>Attach a new SCP to the Development account which will allow the launch of the c5. xlarge instance type. Make no changes is the existing SCP attached to the root of the Organizations.</p>",
               "feedback": "",
-              "correct": "0"
+              "correct": 0
             }
           ]
         }
@@ -2757,25 +2757,25 @@ var SAP_C02_Whiz_PracticeTest2 = {
               "question_id": "98712",
               "choice": "<p>Use AWS Transfer family to store files from an on-premises location to Amazon S3. Use Amazon Athena to perform analysis on the data stored in the Amazon S3 bucket.</p>",
               "feedback": "",
-              "correct": "1"
+              "correct": 1
             },
             {
               "question_id": "98712",
               "choice": "<p>Use AWS Data Sync to store files from an on-premises location to Amazon S3. Use Amazon Athena to perform analysis on the data stored in the Amazon S3 bucket.</p>",
               "feedback": "",
-              "correct": "0"
+              "correct": 0
             },
             {
               "question_id": "98712",
               "choice": "<p>Use AWS Storage Gateway to transfer data from on-premises to Amazon EBS. Use third-party tools deployed on Amazon EC2 instances to analyze data stored in Amazon EBS.</p>",
               "feedback": "",
-              "correct": "0"
+              "correct": 0
             },
             {
               "question_id": "98712",
               "choice": "<p>Use AWS Data Sync to store files from an on-premises location to Amazon EFS. Use Amazon Athena to perform analysis on the data stored in the Amazon EFS bucket.</p>",
               "feedback": "",
-              "correct": "0"
+              "correct": 0
             }
           ]
         }
