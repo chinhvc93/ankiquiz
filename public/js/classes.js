@@ -511,7 +511,6 @@ class Exam {
         userChoice = [...userChoice, $(item).val()];
       });
 
-      // console.log(index, userChoice.sort().toString(), self.getAnswer(question.answer_list).sort().toString());
       if (userChoice.sort().toString() != "") {
         if(userChoice.sort().toString() == self.getAnswer(question.answer_list).sort().toString()) {
           correctCount += 1;
@@ -533,6 +532,9 @@ class Exam {
 
   renderTestQuickView(scoreInfo, targetId = "#quickReviewContent") {
     let html = "";
+    let xRate = (scoreInfo.total - scoreInfo.notSelected > 0) ? scoreInfo.total - scoreInfo.notSelected : 1;
+    let rateCorrect = Math.round((scoreInfo.correctCount / (scoreInfo.total - xRate)) * 1000) / 10;
+    let rateInCorrect = Math.round((scoreInfo.inCorrectCount / (scoreInfo.total - xRate)) * 1000) / 10;
     html += `
      <div class="text-center">
       <span class="badge badge-pill badge-primary">${scoreInfo.correctCount}</span>
@@ -541,13 +543,63 @@ class Exam {
       / <span class="badge badge-pill badge-info">${scoreInfo.total}</span>
      </div>
      <div class="text-center">
-      <div>Correct (Correct/Answered): <span class="badge badge-pill badge-primary">${scoreInfo.correctCount} (${Math.round((scoreInfo.correctCount / (scoreInfo.total - scoreInfo.notSelected)) * 1000) / 10}%)</span></div>
-      <div>InCorrect (InCorrect/Answered): <span class="badge badge-pill badge-danger">${scoreInfo.inCorrectCount} (${Math.round((scoreInfo.inCorrectCount / (scoreInfo.total - scoreInfo.notSelected)) * 1000) / 10}%)</span></div>
+      <div>Correct (Correct/Answered): <span class="badge badge-pill badge-primary">${scoreInfo.correctCount} (${rateCorrect}%)</span></div>
+      <div>InCorrect (InCorrect/Answered): <span class="badge badge-pill badge-danger">${scoreInfo.inCorrectCount} (${rateInCorrect}%)</span></div>
       <div>NotAnswer (NotAnswer/Total): <span class="badge badge-pill badge-warning">${scoreInfo.notSelected} (${Math.round((scoreInfo.notSelected / scoreInfo.total) * 1000) / 10}%)</span></div>
       <div>Total: <span class="badge badge-pill badge-info"> ${scoreInfo.total} (100%)</span></div>
      </div>
     `
     // let percentPoint = Math.round((total_point / self.count) * 1000) / 10;
+    $(targetId).html(html);
+  }
+
+  renderTestQuickViewTable(listQuestion, targetId = "#tableQuickReviewDetails") {
+    let self = this;
+    let htmlTableBody = "";
+    $(targetId).html("");
+    listQuestion.forEach(function(question, index) {
+      let userChoice = [];
+      $(`#QuestionBlockItem_${index} .ip-radio:checked`).each((key, item) => {
+        userChoice = [...userChoice, $(item).val()];
+      });
+
+      let checkStatus = "";
+      if (userChoice.sort().toString() != "") {
+        if(userChoice.sort().toString() == self.getAnswer(question.answer_list).sort().toString()) {
+          checkStatus = `<span class="badge badge-pill bg-success">Correct (${userChoice.sort().toString()})</span>`;
+        } else {
+          checkStatus = `<span class="badge badge-pill bg-danger">InCorrect (${userChoice.sort().toString()} <> ${self.getAnswer(question.answer_list).sort().toString()})</span>`;
+        }
+      } else {
+        checkStatus = `<span class="badge badge-pill bg-secondary">No Choice</span>`;
+      }
+
+      htmlTableBody += `
+      <tr>
+        <td>${index + 1}</td>
+        <td class="text-start">${question.question_text.substring(0, 60)}...</td>
+        <td>${checkStatus}</td>
+        <td><a class="btn btn-sm btn-warning btnScrollToQuestion" data-index="${index}" href="javascript:void(0)">View</a></td>
+      </tr>
+    `;
+    });
+
+    let html = `
+      <table class="table table-sm">
+        <thead>
+          <tr>
+            <th>#</th>  
+            <th>Question</th>  
+            <th>Check</th>  
+            <th>View</th>  
+          </tr>
+        </thead>
+        <tbody>
+          ${htmlTableBody}
+        </tbody>
+      </table>
+    `;
+
     $(targetId).html(html);
   }
 

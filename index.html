@@ -117,7 +117,27 @@
                         <!-- Edit -->
                         <!-- <button class="btn-editQuestion btn btn-warning">Edit</button> -->
                         
-                        <!-- Show Memo -->
+                        <!-- Show Edit -->
+                        <div class="edit-ques-block">
+                            <button class="btn btn-sm btn-warning d-none" id="btnEditQuestionModal">Edit Memo</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="editQuestionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content" style="background-color: #6c757d;">
+                                    <div class="modal-header">
+                                        <div class="modal-title" id="exampleModalLongTitle" style="color: #fff">Seft Comment (E)</div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <textarea class="txtContent form-control" style="background: #282620; color: #ffffff;" aria-label="Enter comment" rows="5"></textarea>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btnSave btn btn-success">Save</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="my-3 comment-block"></div>
                         <div class="my-3 explanation-block"></div>
                         <div class="discussion-container"></div>
@@ -274,13 +294,18 @@
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="quickReviewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLongTitle">Quick Review (R)</h5>
                         </div>
                         <div class="modal-body">
                             <div id="quickReviewContent"></div>
+                            <hr>
+                            <div class="text-center">
+                                <a class="btnQuickReviewDetails" href="javascript:void(0)">Show Details</a>
+                                <div id="tableQuickReviewDetails"></div>    
+                            </div>
                         </div>
                         <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

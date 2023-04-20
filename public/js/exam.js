@@ -93,6 +93,25 @@ $(".btn-showAnswer").on("click", function () {
 });
 
 // EDIT QUESION
+$("#btnEditQuestionModal").on("click", function() {
+  if($("#editQuestionModal").hasClass("show")) {
+    $('#editQuestionModal').modal('hide');
+  } else {
+    $('#editQuestionModal').modal('show');
+    $('#editQuestionModal .txtContent').val(exam.getComment(exam.current));
+  }
+});
+
+$("#editQuestionModal").on("click", ".btnSave", function() {
+  let content = $('#editQuestionModal .txtContent').val();
+  exam.setComment(exam.current, content);
+  $('#editQuestionModal').modal('hide');
+});
+
+$("#editQuestionModal").on("click", ".btn-secondary", function() {
+  $('#editQuestionModal').modal('hide');
+});
+
 $(".btn-editQuestion").on("click", function () {
   console.log("btn editques");
 });
@@ -200,6 +219,11 @@ $(document).keydown(function (e) {
     case 82: //R = Review
       e.preventDefault();
       $("#testBlock .btnQuickReview").click();
+      break;
+      // case 67: //C = Edit self comment
+    case 69: //E = Edit self comment
+      e.preventDefault();
+      $("#btnEditQuestionModal").click();
       break;
     default:
       break
@@ -344,6 +368,7 @@ function switchDesk(groupId, examId) {
 
 // CREATE TEST
 let testQuestion = [];
+let showDetail = false;
 $(".btn-createTest").on("click", function () {
   $(".ExamQuestionsBlock").addClass("d-none");
   $(".examBlock").addClass("d-none");
@@ -442,8 +467,31 @@ $("#testBlock").on("click", ".btnQuickReview", function () {
     $('#quickReviewModal').modal('show');
     let score = exam.calculateScore(testQuestion);
     exam.renderTestQuickView(score, "#quickReviewContent");
+    $("#tableQuickReviewDetails").html("");
+    if(showDetail) {
+      exam.renderTestQuickViewTable(testQuestion, "#tableQuickReviewDetails");
+    }
   }
 });
+
+$("#testBlock").on("click", ".btnQuickReviewDetails", function () {
+  if(!showDetail) {
+    exam.renderTestQuickViewTable(testQuestion, "#tableQuickReviewDetails");
+    $("#testBlock .btnQuickReviewDetails").text("Hide Details");
+  } else {
+    $("#testBlock .btnQuickReviewDetails").text("Show Details");
+    $("#tableQuickReviewDetails").html("");
+  }
+  showDetail = !showDetail;
+});
+
+$("#testBlock").on("click", ".btnScrollToQuestion", function () {
+  let id = "QuestionBlockItem_" + $(this).data("index")
+  document.getElementById(id).scrollIntoView();
+  $('#quickReviewModal').modal('hide');
+  // exam.renderTestQuickViewTable(testQuestion, "#tableQuickReviewDetails");
+});
+
 
 $("#quickReviewModal").on("click", ".btn-secondary", function () {
   $('#quickReviewModal').modal('hide');
