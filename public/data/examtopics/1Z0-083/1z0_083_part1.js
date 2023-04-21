@@ -1995,12 +1995,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. V$SESSION_WAIT_CLASS displays waits broken down by wait class only for waiting sessions.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>D. V$SESSION_WAIT and V$SESSION both contain details of the event on which a non-waiting session last waited.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -2706,7 +2706,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. PDB1 data files already exist in the correct location.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -2721,7 +2721,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. /u01/app/oracle/oradata/pdb1.xml does not contain the current locations of data files for PDB1.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -2918,7 +2918,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. PDB_FILE_NAME_CONVERT must be set before executing the command.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -2928,7 +2928,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. PDB1 must be dropped from CDB1.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -3038,7 +3038,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. By default, the transported database will use Oracle Managed Files (OMF)<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -3058,7 +3058,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. Databases can be transported between systems with different endian formats.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -3253,7 +3253,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. to switch an existing Oracle Database home to a newer release of Oracle software on the same server<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -3263,7 +3263,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. to switch back to the previous Oracle home as part of a rollback operation<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -3396,7 +3396,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. Any new PDB and existing PDBs are automatically configured to use the default undo tablespace in CDB$ROOT.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -3416,7 +3416,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>F. After the change, each existing PDB has to be reopened for the new undo mode to take effect.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -3640,12 +3640,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. It provides before and after execution statistics for each SQL statement in the analysis task<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>D. It offers fine-grained analysis of all the SQL statements in the analysis task as a group.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -4028,12 +4028,12 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. Any PDB not specified in the plan will be unable to execute statements in parallel.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>B. PDB3 can use all available parallel execution processes at times.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -4975,7 +4975,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. A target database's persistent RMAN configuration settings are always stored in the target's control file<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -4985,7 +4985,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. Backups written to the fast recovery area (FRA) that are obsolete based on the redundancy retention policy can be deleted automatically to free space.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -4995,7 +4995,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. A target database's persistent RMAN configuration settings are always synchronized automatically with the RMAN catalog.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -5005,7 +5005,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p><br>G.A DBA must specify either a redundancy retention policy or a recovery window retention policy.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -5162,12 +5162,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. It always analyzes all schemas in the database.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>E. It runs automatically every night by default.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -5298,7 +5298,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. All Oracle recovery files not in the current FRA that have not been backed up already, are backed up.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -5308,17 +5308,17 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. All Oracle recovery files in the current FRA that have not been backed up already, are backed up.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>D. All Oracle recovery files in the current fast recovery area (FRA) are backed up.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>E. These backups can be written to disk or SBT.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -5542,7 +5542,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. Tuning activities should stop once agreed service levels for performance have been met.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -5552,7 +5552,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. SQL statements should always be tuned before tuning any file systems.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -5706,12 +5706,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. If an RMAN BACKUP VALIDATE command takes roughly the same time as an actual backup, then read I/O is a likely bottleneck.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>E. Data files with a high value in V$BACKUP_SYNC_IO.DISCRETE_BYTES_PER_SECOND are a potential performance bottleneck when synchronous I/O is used.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -5895,7 +5895,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. The inserts on USER1.EMP remain uncommitted when the session connected to PDB2.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -5905,17 +5905,17 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. The insert on USER2.DEPT fails because of the active transaction in the parent container.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>D. The insert on USER2.DEPT is a recursive autonomous transaction by the child session and is committed.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>E. The inserts on USER1.EMP were rolled back when the session connected to PDB2.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -6157,12 +6157,12 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. FLASHBACK QUERY can retrieve REDO records from ONLINE and ARCHIVED REDO LOG files.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>B. FLASHBACK VERSION QUERY can retrieve REDO records from ONLINE and ARCHIVED REDO LOG files.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -6172,12 +6172,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. FLASHBACK DROP can undrop an index when undropping a table.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>E. After a database is restored from flashback logs using the FLASHBACK DATABASE command, it is sometimes rolled forward using redo logs.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -6265,12 +6265,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. A new application PDB created by cloning an application seed PDB can have an old version of the application installed after cloning completes.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>D. It is automatically synchronized with its application root PDB when an application is installed.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -6630,12 +6630,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. Set only the PDB_FILE_NAME_CONVERT parameter.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>D. Set the PDB_FILE_NAME_CONVERT parameter and enable OMF. <br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -6736,7 +6736,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. RMAN error stacks should be read from the bottom up as that is the order in which errors are generated.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -6756,7 +6756,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>F. Media Management messages for SBT devices are written to an Oracle trace file.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -6887,7 +6887,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. With Automatic Memory Management, the database instance can increase the System Global Area size by reducing the Program Global Area size.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -6902,7 +6902,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. With Automatic Shared Memory Management, the database instance can increase the Program Global Area size by reducing the System Global Area size.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -7139,22 +7139,22 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. The database must have FLASHBACK DATABASE ON to perform Database Point-in-Time Recovery.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>B. The database must be in MOUNT state when performing Database Point-in-Time Recovery.<br></p>",
-              "correct": false,
-              "feedback": ""
-            },
-            {
-              "choice": "<p>C. Database Point-in-Time Recovery is performed by the Managed Recovery Process (MRP)<br></p>",
               "correct": true,
               "feedback": ""
             },
             {
-              "choice": "<p>D. The Database must be in ARCHIVELOG mode.<br></p>",
+              "choice": "<p>C. Database Point-in-Time Recovery is performed by the Managed Recovery Process (MRP)<br></p>",
               "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. The Database must be in ARCHIVELOG mode.<br></p>",
+              "correct": true,
               "feedback": ""
             },
             {
@@ -7449,7 +7449,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. Two or more PDBs can be duplicated with the same RMAN DUPLICATE command.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -7459,17 +7459,17 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. The auxiliary instance is automatically created with ENABLE_PLUGGABLE_DATABASETRUE. <br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>D. A user with SYSDBA or SYSBKUP must use RMAN logged in to a PDB in order to duplicate it.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>E. CDB$ROOT and PDB$SEED are automatically duplicated if a PDB is duplicated.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -7682,7 +7682,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. APP1_USER1 can be created in PDB1.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -7692,12 +7692,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. APP1_USER1 can have different privileges in each Application PDB contained in APP1_ROOT.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>D. C##_APP_USER1 can be created in CDB1.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -7707,7 +7707,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>F. C##_USER1 will have the same privileges and roles granted in all PDBs in CDB1.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -8082,7 +8082,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. It sets all user tablespaces to \"read-only\" before starting the upgrade.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -8092,7 +8092,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>F. It increases tablespace size, if required, to meet upgrade requirements.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -8314,7 +8314,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. SBT tape compression can be used even if no RMAN compression is configured.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -8329,7 +8329,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. SBT tape compression and RMAN backup compression should be used in parallel.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -8428,7 +8428,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. oracle will be an owner of the Oracle Inventory.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -8438,17 +8438,17 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. oracle can own an Oracle Database installation but not an Oracle Grid Infrastructure installation.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>D. oracle will be granted the SYSASM privilege when installing the Oracle Database software.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>E. The user account, oracle, and group, oinstall, can be used for all Oracle software installations.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -9206,12 +9206,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. Cloning HR_ROOT automatically clones HR_PDB1.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>E. The HR_PDB1 clone created in CDB2 will be in mount state when cloning ends.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -10132,7 +10132,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. Index balanced B*Tree height is considered when evaluating the cost of using an index.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -10142,7 +10142,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. Statistics collected using DBMS_STATS always yield the best optimizer result.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -11181,12 +11181,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. The NOREDO clause can be used if the backups of the database being duplicated were taken when the database was in ARCHIVELOG mode.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>E. RMAN SBT-based backups of the database to be duplicated can be used by the auxiliary instance.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -11447,22 +11447,22 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. Virtual Private Database (VPD) policies on objects in an application root are automatically synchronized with all application PDBs contained in the application container.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>B. Application-common TSDP policies are always container specific.<br></p>",
-              "correct": false,
-              "feedback": ""
-            },
-            {
-              "choice": "<p>C. Application-common Transparent Security Data Protection (TSDP) policies can be created only within an application install/patch BEGIN-END block.<br></p>",
               "correct": true,
               "feedback": ""
             },
             {
-              "choice": "<p>D. Application-common Oracle Label Security (OLS) policies cannot be created in an application root outside an install/patch BEGIN-END block.<br></p>",
+              "choice": "<p>C. Application-common Transparent Security Data Protection (TSDP) policies can be created only within an application install/patch BEGIN-END block.<br></p>",
               "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Application-common Oracle Label Security (OLS) policies cannot be created in an application root outside an install/patch BEGIN-END block.<br></p>",
+              "correct": true,
               "feedback": ""
             },
             {
@@ -11751,7 +11751,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. Real-Time Query must be enabled on a primary database for automatic block repair to be done on any of its physical standby databases.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -11761,7 +11761,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. Real-Time Query must be enabled on a physical standby database for automatic block repair to be done on its primary database.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -11887,22 +11887,22 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. Application PDBs that are subsequently created in the APP1 application container will be cloned from APP1$SEED. <br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>B. An application seed PDB is created for APP1.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>C. An application root PDB is created for APP1.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>D. A default service is created for the application root APP1.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -11990,7 +11990,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. RMAN encryption keys are stored in a database keystore.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -12000,7 +12000,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. Dual-mode encrypted backups can be restored only if both the password and the keystore used for encryption are available.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -12114,12 +12114,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. It allows you to select the languages supported by the Oracle database server.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>D. It can be done before installing Grid Infrastructure for a Standalone Server.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -12129,12 +12129,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>F. It can be done after installing Grid Infrastructure for a Standalone Server.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p><br>G.The Oracle database administrator must be granted access to the root operating system account to tun root privileged scripts.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -12437,7 +12437,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. All the Oracle-supplied accounts are Schema Only accounts.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -12452,7 +12452,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>F. Unified Auditing can be configured to audit only events that are issued directly by an audited user.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -13152,12 +13152,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. cloning a remote pluggable database in silent mode<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>C. relocating a remote pluggable database in interactive mode<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -13252,7 +13252,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. Execute FLASHBACK PLUGGABLE DATABASE PDB1 TO RESTORE POINT R1 by using SQL while connected to PDB1.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -13262,7 +13262,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. Execute FLASHBACK PLUGGABLE DATABASE PDB1 TO RESTORE POINT R1 by using RMAN while connected to CDB$ROOT.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -13467,12 +13467,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. Data Recovery Advisor can be used if a database is closed.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>D. The Data Recovery Advisor CHANGE FAILURE command can be used only to change failure priorities.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -13775,12 +13775,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. They can be created by using the RMAN CONFIGURE command to specify duplexing before taking a backup.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>D. They can be created only by using the COPIES option of a BACKUP command.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -14077,7 +14077,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. The installer will prompt for the root or sudo password.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -14087,7 +14087,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. The response file must contain the root or sudo password.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -14241,7 +14241,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. The ADR command-line utility (ADRCI) can package incident information to send to Oracle Support.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -14256,17 +14256,17 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. RMAN can always repair corrupt blocks.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>E. The ADR can store metadata in an Oracle Database repository.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>F. The Data Recovery Advisor uses the ADR.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -14325,7 +14325,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. A database link must exist in the local CDB root referring to the remote CDB. <br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -14335,7 +14335,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. A database link must exist in the remote CDB referring to the local CDB. <br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -14497,12 +14497,12 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. It can be used for applications and middleware.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>B. It can be used only for Oracle Grid Infrastructure, excluding Oracle Restart.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -14512,12 +14512,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. It can be used for both Oracle Database and Oracle Grid Infrastructure, including Oracle Restart.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>E. It can be used for both Oracle Database and Oracle Grid Infrastructure, excluding Oracle Restart.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -14619,7 +14619,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. the archived log deletion policy<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -14639,7 +14639,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. the DB_CREATE_ONLINE_LOG_DEST_n parameter setting<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -14730,12 +14730,12 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. It can be launched from both the command line and the Universal Installer (OUI) interfaces.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>B. It can be used to change the character set of an existing database.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -14745,12 +14745,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. It can be used to create container databases and non-container databases.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>E. It can only be launched from the command line interface.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -14893,12 +14893,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. five<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>D. eight<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -15110,12 +15110,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. Row Movement must be enabled on the table being flashed back.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>E. The FLASHBACK ANY TABLE system privilege or the FLASHBACK object privilege must be granted to the table owner.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -15190,7 +15190,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. The four sections can be created serially.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -15205,7 +15205,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. The four sections must be contained in backup sets.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -15312,12 +15312,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. It considers the filters in WHERE clauses when generating execution plans for SQL statements.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>C. It can re-optimize execution plans after previous executions detect suboptimal plans.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -15327,12 +15327,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. It updates stale object statistics in the Data Dictionary.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>F. It can only use SQL Plan Directives tied to the SQL statement for which a plan is being generated.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -15500,12 +15500,12 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. A backup of the PDB must exist, taken using the BACKUP command with the TO PLATFORM clause.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>B. The source PDB must be in MOUNT state.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -15731,7 +15731,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. RMAN can recover tables in the SYSAUX tablespace.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -15741,7 +15741,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. RMAN can recover tables in the SYSTEM tablespace.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -15756,12 +15756,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>F. RMAN can recover a table after a DDL operation has altered the table structure.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p><br>G.RMAN can recover tables owed by the SYSTEM user.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -16048,7 +16048,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. Only CDB$ROOT, PDB$SEED, and PDB1 are upgraded.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -16058,7 +16058,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. Only CDB$ROOT and PDB$SEED are upgraded.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -16316,7 +16316,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. Space is always reclaimed automatically when the retention period for Flashback logs is lowered.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -16326,17 +16326,17 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. Space might be reclaimed automatically when the retention period for Flashback logs is lowered.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>D. Space is only reclaimed when there is space pressure in the Fast Recovery Area. (FRA)<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>E. Space is always reclaimed proactively before space pressure occurs.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -16478,7 +16478,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. Setting DB_CACHE_SIZE for a PDB guarantees a minimum amount of Database Buffer Cache memory for that PDB. <br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -16493,17 +16493,17 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. The SGA_TARGET setting for a PDB cannot exceed 50% of the SGA_TARGET value of the root container.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>E. Setting SGA_TARGET for a PDB guarantees a minimum amount of SGA memory for that PDB. <br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>F. SGA_MIN_SIZE cannot be set for a PDB. <br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -16698,17 +16698,17 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. creating a disk group using the CREATE DISKGROUP SQL statement<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>C. creating a database using the CREATE DATABASE SQL statement<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>D. creating a database service using DBMS_SERVICE. CREATE_SERVICE<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -16718,7 +16718,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>F. creating an Oracle Automatic Storage Management (ASM) instance with ASM Configuration Assistant (ASMCA)<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -16785,7 +16785,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. A PDB snapshot depends on an existing storage snapshot of the source PDB. <br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -16795,17 +16795,17 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. A CDB can be duplicated using the Database Configuration Assistant (DBCA) in silent mode with no configuration required before starting the duplication.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>E. A PDB snapshot can be a full copy of a source PDB. <br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>F. A snapshot copy PDB can be a full copy of a source PDB. <br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -16885,12 +16885,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. It must be installed before the Oracle database software is installed.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>C. The CSS daemon runs from the Grid Infrastructure home.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -17042,7 +17042,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. It uses a service configuration script to create a single-instance database as part of the installation.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -17052,17 +17052,17 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. It performs a software-only Oracle Database installation.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>D. It includes the Oracle Preinstallation RPM.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>E. It requires an Unbreakable Linux Network (ULN) subscription.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -17238,7 +17238,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. It can be used only on nodes with Oracle Grid Infrastructure installed.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -17248,17 +17248,17 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. It can be used to create templates of Oracle homes as gold images of only Oracle databases.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>D. It can be used to deploy new homes without disrupting active databases.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>E. It can be used to create a single-instance Oracle Database in an already-installed Oracle home.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -17330,12 +17330,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. the number of tablespaces containing tables updated by a transaction<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>C. poorly trained users who do not commit transactions<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -17698,12 +17698,12 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. CDB1_TAB, APP_ROOT_TAB, and APP_PDB1_TAB<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>B. CDB1_TAB and APP_PDB1_TAB<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -17812,22 +17812,22 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. A media manager always writes RMAN requested backups to tape.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>B. By default, a request for a proxy copy may result in a backup set being created.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>C. A media manager is required to create RMAN proxy copies.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>D. A media manager is required to create RMAN image copies.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -17918,7 +17918,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. Some messages in the error stack are not errors.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -17938,7 +17938,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. Media Management errors appear as a line with \"sbtio\".<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -18010,12 +18010,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. To use it, Flashback Database must be enabled.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>C. A block being recovered is not accessible.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -18025,12 +18025,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. The target database for which one or more blocks are to be recovered must be in the OPEN state.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>F. It cannot repair logical corruption.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -18278,12 +18278,12 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. The private SQL area (UGA) is located in the System Global Area (SGA) when using dedicated servers.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>B. PGA_AGGREGATE_LIMIT is a hard limit on the PGA size for any one session.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -18293,12 +18293,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. Sorts and Hash Joins use PGA memory.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>E. The private SQL area (UGA) is located in the System Global Area (SGA) when using shared servers.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -18386,7 +18386,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. The BACKUP TABLESPACE command can back up a PDB tablespace even if RMAN is connected to CDB$ROOT.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -18396,7 +18396,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. Control file backups can be created while connected to a nonroot container.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -18681,32 +18681,32 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. A PDB-level resource plan can limit session PGA memory.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>B. A CDB-level resource plan can limit PDB CPU utilization.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>C. A CDB-level resource plan can limit session CPU utilization.<br></p>",
-              "correct": true,
-              "feedback": ""
-            },
-            {
-              "choice": "<p>D. PDB-level resource plans can limit uncommitted UNDO per consumer group.<br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>E. A CDB-level resource plan can limit PDB UNDO use.<br></p>",
+              "choice": "<p>D. PDB-level resource plans can limit uncommitted UNDO per consumer group.<br></p>",
               "correct": true,
               "feedback": ""
             },
             {
+              "choice": "<p>E. A CDB-level resource plan can limit PDB UNDO use.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
               "choice": "<p>F. A CDB-level resource plan is mandatory when using PDB-level resource plans.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -18824,12 +18824,12 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. Open the CDB instance in upgrade mode. In CDB$ROOT, execute ALTER DATABASE LOCAL UNDO ON, and then restart the CDB instance.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>B. Open the CDB instance in restricted mode. In CDB$ROOT, execute ALTER DATABASE LOCAL UNDO ON, and create an UNDO tablespace in each PDB, then restart the CDB instance.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -19017,7 +19017,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. converting an application PDB to a regular PDB<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -19027,12 +19027,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. converting an application seed to an application PDB<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>D. converting an application PDB to an application seed<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -19047,7 +19047,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p><br>G.converting an application container into another application container in the same CDB<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -19109,7 +19109,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. They can view data from any data dictionary view or dynamic performance view.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -19119,7 +19119,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. They cannot drop tablespaces.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -19129,7 +19129,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. They can drop any tablespace.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -19204,7 +19204,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. All archive logs are retained after an archival backup is taken, until the next archival backup is taken of the same database.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -19219,17 +19219,17 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. Archive logs are retained if they are necessary to allow the database to be recovered to a consistent state when an archival backup is restored.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>E. The ARCHIVAL attribute for a backup overrides the RMAN retention policy.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>F. They can optionally be written to a fast recovery area (FRA).<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -19665,7 +19665,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. It will return an error because creation of a local role is not allowed in CDB$ROOT.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -19680,7 +19680,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. ROLE1 will be created only in CDB$ROOT.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -19824,7 +19824,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. It is a set of recommendations by the optimizer to restructure a SQL statement to avoid suboptimal execution plans.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -19834,7 +19834,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. It is auxiliary information collected by the optimizer for a SQL statement to eliminate estimation error.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -20156,7 +20156,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. It can contain multiple applications.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -20176,7 +20176,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>F. An application PDB can belong to multiple application containers.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -20256,7 +20256,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. Queries and DML have the same FLASHBACK LOG overhead when flashback is enabled for a database.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -20266,7 +20266,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. It always generates REDO and UNDO.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -20386,7 +20386,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. They can introduce new features.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -20401,7 +20401,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. They are only released quarterly.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -20494,7 +20494,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. Unused blocks below the high water mark are backed up.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -20504,7 +20504,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. Compression can be done only for locally managed tablespaces.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -20603,12 +20603,12 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. If Automatic Memory Management is enabled, no memory advisors are available.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>C. All memory advisors use data from Automatic Workload Repository.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -20887,17 +20887,17 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. ADDM can run in a nonroot container.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>B. AWR snapshots can be created in CDB$ROOT.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>C. AWR reports can be generated while connected to any container.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -20912,7 +20912,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>F. No AWR data is stored in the CDB$ROOT SYSAUX tablespace.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -21309,7 +21309,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>C. FLASHBACK DATA ARCHIVE<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -21319,7 +21319,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>E. FLASHBACK DATABASE<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             }
           ]
@@ -21482,7 +21482,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>B. DBUA must be launched from the target Oracle Home.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -21492,7 +21492,7 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. A whole database backup must exist before upgrade<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -21708,7 +21708,7 @@ var Data_1Z0_083_Part1 =
           "answers": [
             {
               "choice": "<p>A. the DBMS_PDB package<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -21723,17 +21723,17 @@ var Data_1Z0_083_Part1 =
             },
             {
               "choice": "<p>D. replication using GoldenGate<br></p>",
-              "correct": false,
-              "feedback": ""
-            },
-            {
-              "choice": "<p>E. cloning the non-CDB as a PDB<br></p>",
               "correct": true,
               "feedback": ""
             },
             {
-              "choice": "<p>F. Data Pump full transportable database<br></p>",
+              "choice": "<p>E. cloning the non-CDB as a PDB<br></p>",
               "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>F. Data Pump full transportable database<br></p>",
+              "correct": true,
               "feedback": ""
             }
           ]
