@@ -9465,7 +9465,16 @@ var SAP_C02_Part2 =
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 877884,
+          "date": "Sun 23 Apr 2023 07:08",
+          "username": "\t\t\t\tYowie351\t\t\t",
+          "content": "Answer is B.  https://aws.amazon.com/data-exchange/?adx-cards2.sort-by=item.additionalFields.eventDate&adx-cards2.sort-order=desc",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
     },
     {
       "question_id": "#179",
@@ -9509,7 +9518,24 @@ var SAP_C02_Part2 =
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 879025,
+          "date": "Mon 24 Apr 2023 06:44",
+          "username": "\t\t\t\tOCHT\t\t\t",
+          "content": "The solution that will meet the requirements is Option A.  Send event details to an Amazon Simple Notification Service (Amazon SNS) topic. Configure an AWS Lambda function as a subscriber to the SNS topic to process the events. Add an on-failure destination to the function. Set an Amazon Simple Queue Service (Amazon SQS) queue as the target.<br><br>This solution allows for automatic scaling of the AWS Lambda function based on the number of events received. If a processing error occurs, the event will be moved to the specified SQS queue for review.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 877888,
+          "date": "Sun 23 Apr 2023 07:11",
+          "username": "\t\t\t\tYowie351\t\t\t",
+          "content": "SQSQ with DLQ",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
     },
     {
       "question_id": "#180",
@@ -9553,7 +9579,40 @@ var SAP_C02_Part2 =
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 879123,
+          "date": "Mon 24 Apr 2023 08:58",
+          "username": "\t\t\t\tLittleboy95\t\t\t",
+          "content": "B is correct, you can integrate SQS with API Gateway HTTP. I have checked it in AWS API Gateway Console<br>https://repost.aws/knowledge-center/api-gateway-rest-api-sqs-errors<br><br>A is incorrect because you can not set SQS queue as the target of ALB <br>C is incorrect because a fleet of EC2 instances and ASG can lead instances to terminated unexpectedly → data loss<br>D is incorrect because Kinesis Data Streams is a provisioned service, It can not handle unpredictable bursts",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 879027,
+          "date": "Mon 24 Apr 2023 06:52",
+          "username": "\t\t\t\tOCHT\t\t\t",
+          "content": "The unique keywords combination for the right answer is: Create an Application Load Balancer (ALB) for the RESTful API. Create an Amazon Simple Queue Service (Amazon SQS) queue. Create a listener and a target group for the ALB.  Add the SQS queue as the target. Use a container that runs in Amazon Elastic Container Service (Amazon ECS) with the Fargate launch type to process messages in the queue.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 878869,
+          "date": "Mon 24 Apr 2023 01:49",
+          "username": "\t\t\t\tSelega1\t\t\t",
+          "content": "You canintegrate API Gateway with an SQS queue using the AWS SDK, you can write code within your API Gateway implementation to send messages directly to an SQS queue.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 877899,
+          "date": "Sun 23 Apr 2023 07:21",
+          "username": "\t\t\t\tYowie351\t\t\t",
+          "content": "Kinesis Data Stream use case. https://aws.amazon.com/kinesis/data-streams/",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: D"
+        }
+      ]
     },
     {
       "question_id": "#181",
@@ -9566,7 +9625,7 @@ var SAP_C02_Part2 =
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: D</p>",
+      "general_feedback": "<p>Correct Answer: C</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -9585,19 +9644,44 @@ var SAP_C02_Part2 =
             },
             {
               "choice": "<p>C. Provision a transit gateway in an account in each OU. Share the transit gateway across the organization by using AWS Resource Access Manager (AWS RAM). Create transit gateway VPC attachments for each VPC. <br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>D. In each OU, create a dedicated networking account that has a single VPC.  Establish a VPN connection between the networking account and the other accounts in the OU. Use third-party routing software to route transitive traffic between the VPCs.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 879029,
+          "date": "Mon 24 Apr 2023 06:54",
+          "username": "\t\t\t\tOCHT\t\t\t",
+          "content": "The solution that will meet the requirements with the least operational overhead is Option C.  Provision a transit gateway in an account in each OU. Share the transit gateway across the organization by using AWS Resource Access Manager (AWS RAM). Create transit gateway VPC attachments for each VPC. <br><br>This solution allows VPCs in the same OU to communicate with each other through the transit gateway while preventing communication with VPCs in other OUs. It also minimizes operational overhead by leveraging the transit gateway's ability to route traffic between multiple VPCs and AWS RAM's ability to share resources across accounts.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 877904,
+          "date": "Sun 23 Apr 2023 07:28",
+          "username": "\t\t\t\tYowie351\t\t\t",
+          "content": "Transit gateway makes the solution much easier to administer! https://aws.amazon.com/transit-gateway/",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 877490,
+          "date": "Sat 22 Apr 2023 19:40",
+          "username": "\t\t\t\tAzureBP\t\t\t",
+          "content": "Answer is C",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
     }
   ]
 }

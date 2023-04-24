@@ -177,7 +177,7 @@ class Question {
   }
 
   loadQueTextHtml() {
-    $(".que-text").html(this.question_text);
+    $(".ExamQuestionsBlock .que-text").html(this.question_text);
     $("#queDomain").html(`<span class="fw-bold text-primary">${this.question_id}</span> ${this.topic_name}`);
   }
 
@@ -434,6 +434,7 @@ class Exam {
         <tr>
           <th scope="col">#</th>
           <th scope="col">Question</th>
+          <th scope="col">Commnet</th>
           <th scope="col">Point</th>
           <th scope="col">Correct</th>
           <th scope="col">Choice</th>
@@ -468,7 +469,8 @@ class Exam {
       resultBlock += `
       <tr>
         <td>${index + 1}</td>
-        <td>${question.question_text.substring(0, 70)}...</td>
+        <td>${question.question_text.substring(0, 36)}...</td>
+        <td><div class="multiline">${self.getComment(index)}</div></td>
         <td>${pointText}</td>
         <td>${correctAnswers.toString()}</td>
         <td>${
@@ -578,6 +580,7 @@ class Exam {
       <tr>
         <td>${index + 1}</td>
         <td class="text-start">${question.question_text.substring(0, 60)}...</td>
+        <td><div class="px-2 text-start bg-secondary text-warning multiline">${self.getComment(question.queNo)}</div></td>
         <td>${checkStatus}</td>
         <td><a class="btn btn-sm btn-warning btnScrollToQuestion" data-index="${index}" href="javascript:void(0)">View</a></td>
       </tr>
@@ -590,6 +593,7 @@ class Exam {
           <tr>
             <th>#</th>  
             <th>Question</th>  
+            <th>My Comments</th>  
             <th>Check</th>  
             <th>View</th>  
           </tr>

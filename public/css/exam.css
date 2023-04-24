@@ -334,14 +334,14 @@ body.dark-mode .ExamQuestionsBlock .right .attempts-que ul li.choice,
 }
 
 .resultBlock .btnViewQue {
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #000;
+    color: #000;
 }
 
 .resultBlock .btnViewQue:hover {
-    border: 1px solid #fff;
-    color: #000;
-    background-color: #fff;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #000;
 }
 
 .resultBlock .btnViewQue.mark {
@@ -351,6 +351,33 @@ body.dark-mode .ExamQuestionsBlock .right .attempts-que ul li.choice,
 
 .resultBlock .btnViewQue.mark:hover {
     border: 1px solid #fff;
+    color: #fff;
+    background-color: #fab005;
+}
+
+body.dark-mode #resultBlock table{
+    color: #fff;
+}
+
+body.dark-mode .resultBlock .btnViewQue {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+body.dark-mode .resultBlock .btnViewQue:hover {
+    border: 1px solid #fff;
+    color: #000;
+    background-color: #fff;
+}
+
+body.dark-mode .resultBlock .btnViewQue.mark {
+    border: 1px solid #fab005;
+    color: #fab005;
+    background-color: transparent;
+}
+
+body.dark-mode .resultBlock .btnViewQue.mark:hover {
+    border: 1px solid #fab005;
     color: #fff;
     background-color: #fab005;
 }
@@ -387,6 +414,9 @@ body.dark-mode .ExamQuestionsBlock .right .attempts-que ul li.choice,
     /* font-weight: bold; */
 }
 
+.multiline {
+   white-space: pre-wrap;
+}
 
 /* DARK-MODE */
 body.dark-mode .ExamQuestionsBlock .left .exam-nav {
