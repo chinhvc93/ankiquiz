@@ -535,8 +535,8 @@ class Exam {
   renderTestQuickView(scoreInfo, targetId = "#quickReviewContent") {
     let html = "";
     let xRate = (scoreInfo.notSelected != scoreInfo.total) ? (scoreInfo.correctCount + scoreInfo.inCorrectCount) : 1;
-    let rateCorrect = Math.round((scoreInfo.correctCount / (scoreInfo.total - xRate)) * 1000) / 10;
-    let rateInCorrect = Math.round((scoreInfo.inCorrectCount / (scoreInfo.total - xRate)) * 1000) / 10;
+    let rateCorrect = Math.round((scoreInfo.correctCount / xRate) * 1000) / 10;
+    let rateInCorrect = Math.round((scoreInfo.inCorrectCount / xRate) * 1000) / 10;
     html += `
      <div class="text-center">
       <span class="badge badge-pill badge-primary">${scoreInfo.correctCount}</span>
