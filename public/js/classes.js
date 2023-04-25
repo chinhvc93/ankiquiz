@@ -534,7 +534,7 @@ class Exam {
 
   renderTestQuickView(scoreInfo, targetId = "#quickReviewContent") {
     let html = "";
-    let xRate = (scoreInfo.total - scoreInfo.notSelected > 0) ? scoreInfo.total - scoreInfo.notSelected : 1;
+    let xRate = (scoreInfo.notSelected != scoreInfo.total) ? (scoreInfo.correctCount + scoreInfo.inCorrectCount) : 1;
     let rateCorrect = Math.round((scoreInfo.correctCount / (scoreInfo.total - xRate)) * 1000) / 10;
     let rateInCorrect = Math.round((scoreInfo.inCorrectCount / (scoreInfo.total - xRate)) * 1000) / 10;
     html += `
