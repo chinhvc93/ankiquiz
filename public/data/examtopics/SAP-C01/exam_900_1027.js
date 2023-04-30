@@ -5251,12 +5251,12 @@ var ExamTopic_900_1027 = {
           "answers": [
             {
               "choice": "<p>A. Use the cluster endpoint of the Aurora database.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
               "choice": "<p>B. Use RDS Proxy to set up a connection pool to the reader endpoint of the Aurora database.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -5266,12 +5266,12 @@ var ExamTopic_900_1027 = {
             },
             {
               "choice": "<p>D. Move the code for opening the database connection in the Lambda function outside of the event handler.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
               "choice": "<p>E. Change the API Gateway endpoint to an edge-optimized endpoint.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -7675,7 +7675,7 @@ var ExamTopic_900_1027 = {
           "answers": [
             {
               "choice": "<p>A. Deploy an Amazon RDS Proxy layer in front of the DB instance. Store the connection credentials as a secret in AWS Secrets Manager.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -7685,7 +7685,7 @@ var ExamTopic_900_1027 = {
             },
             {
               "choice": "<p>C. Create an Aurora Replica. Store the connection credentials as a secret in AWS Secrets Manager.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
