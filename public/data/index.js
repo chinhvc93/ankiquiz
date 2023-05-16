@@ -68,7 +68,12 @@ var listExamGroup = [
         id: "SAA_C03_Exam_401_500",
         name: "[SAA_C03] ExamTopic 401_500",
         data: SAA_C03_Exam_401_500.data,
-      }
+      },
+      {
+        id: "SAA_C03_Exam_501_600",
+        name: "[SAA_C03] ExamTopic 501_600",
+        data: SAA_C03_Exam_501_600.data,
+      },
     ]
   },
 
@@ -317,16 +322,16 @@ var listExamGroup = [
     ]
   },
   
-  //GROUP 6
-  {
-    id: "1Z0_083",
-    name: "[1Z0-083] Oracle Database Administration II",
-    list: [
-      {
-        id: "Data_1Z0_083_Part1",
-        name: "[1Z0-083] Part1",
-        data: Data_1Z0_083_Part1.data,
-      },
-    ]
-  },
+  // //GROUP 6
+  // {
+  //   id: "1Z0_083",
+  //   name: "[1Z0-083] Oracle Database Administration II",
+  //   list: [
+  //     {
+  //       id: "Data_1Z0_083_Part1",
+  //       name: "[1Z0-083] Part1",
+  //       data: Data_1Z0_083_Part1.data,
+  //     },
+  //   ]
+  // },
 ]
