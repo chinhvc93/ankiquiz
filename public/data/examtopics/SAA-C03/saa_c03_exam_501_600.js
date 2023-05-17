@@ -43,7 +43,16 @@ var SAA_C03_Exam_501_600 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899343,
+          "date": "Tue 16 May 2023 18:19",
+          "username": "\t\t\t\tkailu\t\t\t",
+          "content": "Shouldn't C be more appropriate?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
     },
     {
       "question_id": "#502",
@@ -92,7 +101,16 @@ var SAA_C03_Exam_501_600 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899340,
+          "date": "Tue 16 May 2023 18:17",
+          "username": "\t\t\t\tkailu\t\t\t",
+          "content": "I agree with E but not with D.  It should be C and E imo. Thoughts anyone?",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
     },
     {
       "question_id": "#503",

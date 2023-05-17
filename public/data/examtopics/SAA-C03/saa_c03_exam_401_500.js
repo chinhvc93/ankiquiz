@@ -2,6 +2,107 @@ var SAA_C03_Exam_401_500 = {
   "msg": "Quiz Questions",
   "data": [
     {
+      "question_id": "#400",
+      "topic_id": 1,
+      "course_id": 1,
+      "case_study_id": null,
+      "lab_id": 0,
+      "question_text": "<p>A meteorological startup company has a custom web application to sell weather data to its users online. The company uses Amazon DynamoDB to store its data and wants to build a new service that sends an alert to the managers of four internal teams every time a new weather event is recorded. The company does not want this new service to affect the performance of the current application.<br><br>What should a solutions architect do to meet these requirements with the LEAST amount of operational overhead?<br><br></p>",
+      "mark": 1,
+      "is_partially_correct": false,
+      "question_type": "1",
+      "difficulty_level": "0",
+      "general_feedback": "<p>Correct Answer: C</p>",
+      "is_active": true,
+      "answer_list": [
+        {
+          "question_answer_id": 1,
+          "question_id": "#400",
+          "answers": [
+            {
+              "choice": "<p>A. Use DynamoDB transactions to write new event data to the table. Configure the transactions to notify internal teams.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>B. Have the current application publish a message to four Amazon Simple Notification Service (Amazon SNS) topics. Have each team subscribe to one topic.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>C. Enable Amazon DynamoDB Streams on the table. Use triggers to write to a single Amazon Simple Notification Service (Amazon SNS) topic to which the teams can subscribe.<br></p>",
+              "correct": true,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>D. Add a custom attribute to each record to flag new items. Write a cron job that scans the table every minute for items that are new and notifies an Amazon Simple Queue Service (Amazon SQS) queue to which the teams can subscribe.<br></p>",
+              "correct": false,
+              "feedback": ""
+            }
+          ]
+        }
+      ],
+      "topic_name": "",
+      "discusstion": [
+        {
+          "id": 850654,
+          "date": "Sun 26 Mar 2023 03:45",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "The best solution to meet these requirements with the least amount of operational overhead is to enable Amazon DynamoDB Streams on the table and use triggers to write to a single Amazon Simple Notification Service (Amazon SNS) topic to which the teams can subscribe. This solution requires minimal configuration and infrastructure setup, and Amazon DynamoDB Streams provide a low-latency way to capture changes to the DynamoDB table. The triggers automatically capture the changes and publish them to the SNS topic, which notifies the internal teams.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Answer A is not a suitable solution because it requires additional configuration to notify the internal teams, and it could add operational overhead to the application.<br><br>Answer B is not the best solution because it requires changes to the current application, which may affect its performance, and it creates additional work for the teams to subscribe to multiple topics.<br><br>Answer D is not a good solution because it requires a cron job to scan the table every minute, which adds additional operational overhead to the system.<br><br>Therefore, the correct answer is C.  Enable Amazon DynamoDB Streams on the table. Use triggers to write to a single Amazon SNS topic to which the teams can subscribe.</li></ul>",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 850655,
+          "date": "Sun 26 Mar 2023 03:46",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "Answer A is not a suitable solution because it requires additional configuration to notify the internal teams, and it could add operational overhead to the application.<br><br>Answer B is not the best solution because it requires changes to the current application, which may affect its performance, and it creates additional work for the teams to subscribe to multiple topics.<br><br>Answer D is not a good solution because it requires a cron job to scan the table every minute, which adds additional operational overhead to the system.<br><br>Therefore, the correct answer is C.  Enable Amazon DynamoDB Streams on the table. Use triggers to write to a single Amazon SNS topic to which the teams can subscribe.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 849314,
+          "date": "Fri 24 Mar 2023 14:26",
+          "username": "\t\t\t\tHemanthgowda1932\t\t\t",
+          "content": "C is correct",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 847244,
+          "date": "Wed 22 Mar 2023 17:16",
+          "username": "\t\t\t\tSantosh43\t\t\t",
+          "content": "definitely C",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 845254,
+          "date": "Mon 20 Mar 2023 22:27",
+          "username": "\t\t\t\tBezha\t\t\t",
+          "content": "DynamoDB Streams",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 836394,
+          "date": "Sat 11 Mar 2023 19:30",
+          "username": "\t\t\t\tsitha\t\t\t",
+          "content": "Answer : C",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 835189,
+          "date": "Fri 10 Mar 2023 16:55",
+          "username": "\t\t\t\ttaehyeki\t\t\t",
+          "content": "cccccccc",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
+    },
+    {
       "question_id": "#401",
       "topic_id": 1,
       "course_id": 1,
@@ -45,6 +146,62 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 850647,
+          "date": "Sun 26 Mar 2023 03:38",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "The correct answer is A.  Deploy the application servers by using Amazon EC2 instances in an Auto Scaling group across multiple Availability Zones. Use an Amazon RDS DB instance in a Multi-AZ configuration.<br><br>To make an existing application highly available and resilient while avoiding any single points of failure and giving the application the ability to scale to meet user demand, the best solution would be to deploy the application servers using Amazon EC2 instances in an Auto Scaling group across multiple Availability Zones and use an Amazon RDS DB instance in a Multi-AZ configuration.<br><br>By using an Amazon RDS DB instance in a Multi-AZ configuration, the database is automatically replicated across multiple Availability Zones, ensuring that the database is highly available and can withstand the failure of a single Availability Zone. This provides fault tolerance and avoids any single points of failure.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 846892,
+          "date": "Wed 22 Mar 2023 10:39",
+          "username": "\t\t\t\tThief\t\t\t",
+          "content": "Why not D?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Answer D, deploying the primary and secondary database servers on EC2 instances across multiple Availability Zones and using Amazon Elastic Block Store (Amazon EBS) Multi-Attach to create shared storage between the instances, may provide high availability for the database but may introduce additional complexity, and management overhead, and potential performance issues.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 850643,
+          "date": "Sun 26 Mar 2023 03:34",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "Answer D, deploying the primary and secondary database servers on EC2 instances across multiple Availability Zones and using Amazon Elastic Block Store (Amazon EBS) Multi-Attach to create shared storage between the instances, may provide high availability for the database but may introduce additional complexity, and management overhead, and potential performance issues.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 844532,
+          "date": "Mon 20 Mar 2023 05:31",
+          "username": "\t\t\t\tWherecanIstart\t\t\t",
+          "content": "Highly available = Multi-AZ approach",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 841585,
+          "date": "Fri 17 Mar 2023 05:48",
+          "username": "\t\t\t\tnileshlg\t\t\t",
+          "content": "Answers is A",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 841177,
+          "date": "Thu 16 Mar 2023 17:26",
+          "username": "\t\t\t\tdcp\t\t\t",
+          "content": "Option A is the correct solution. Deploying the application servers in an Auto Scaling group across multiple Availability Zones (AZs) ensures high availability and fault tolerance. An Auto Scaling group allows the application to scale horizontally to meet user demand. Using Amazon RDS DB instance in a Multi-AZ configuration ensures that the database is automatically replicated to a standby instance in a different AZ. This provides database redundancy and avoids any single point of failure.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 837972,
+          "date": "Mon 13 Mar 2023 15:30",
+          "username": "\t\t\t\tquentin17\t\t\t",
+          "content": "Highly available",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 836005,
           "date": "Sat 11 Mar 2023 14:04",
           "username": "\t\t\t\tKAUS2\t\t\t",
@@ -73,7 +230,7 @@ var SAA_C03_Exam_401_500 = {
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: C</p>",
+      "general_feedback": "<p>Correct Answer: A</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -82,7 +239,7 @@ var SAA_C03_Exam_401_500 = {
           "answers": [
             {
               "choice": "<p>A. Update the Kinesis Data Streams default settings by modifying the data retention period.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -92,7 +249,7 @@ var SAA_C03_Exam_401_500 = {
             },
             {
               "choice": "<p>C. Update the number of Kinesis shards to handle the throughput of the data that is sent to Kinesis Data Streams.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -106,11 +263,171 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 835380,
+          "date": "Fri 10 Mar 2023 21:04",
+          "username": "\t\t\t\tcegama543\t\t\t",
+          "content": "C.  Update the number of Kinesis shards to handle the throughput of the data that is sent to Kinesis Data Streams.<br><br>The best option is to update the number of Kinesis shards to handle the throughput of the data that is sent to Kinesis Data Streams. Kinesis Data Streams scales horizontally by increasing or decreasing the number of shards, which controls the throughput capacity of the stream. By increasing the number of shards, the application will be able to send more data to Kinesis Data Streams, which can help ensure that S3 receives all the data.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>lets say you had infinity shards... if the retention period is 24 hours and you get the data every 48 hours, you will lose 24 hours of data no matter the amount of shards no?</li><li>Amazon Kinesis Data Streams supports changes to the data record retention period of your data stream. A Kinesis data stream is an ordered sequence of data records meant to be written to and read from in real time. Data records are therefore stored in shards in your stream temporarily. The time period from when a record is added to when it is no longer accessible is called the retention period. A Kinesis data stream stores records from 24 hours by default, up to 8760 hours (365 days).</li><li>Answer C:C.  Update the number of Kinesis shards to handle the throughput of the data that is sent to Kinesis Data Streams.<br><br>- Answer C updates the number of Kinesis shards to handle the throughput of the data that is sent to Kinesis Data Streams. By increasing the number of shards, the data is distributed across multiple shards, which allows for increased throughput and ensures that all data is ingested and processed by Kinesis Data Streams.<br>- Monitoring the Kinesis Data Streams and adjusting the number of shards as needed to handle changes in data throughput can ensure that the application can handle large amounts of streaming data.</li><li>@cegama543, my apologies. Moderator if you can disapprove of the post above? I made a mistake. It is supposed to be intended on the post that I submitted.<br><br>Thanks.</li></ul>",
+          "upvote_count": "8",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 842791,
+          "date": "Sat 18 Mar 2023 14:13",
+          "username": "\t\t\t\tCapJackSparrow\t\t\t",
+          "content": "lets say you had infinity shards... if the retention period is 24 hours and you get the data every 48 hours, you will lose 24 hours of data no matter the amount of shards no?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Amazon Kinesis Data Streams supports changes to the data record retention period of your data stream. A Kinesis data stream is an ordered sequence of data records meant to be written to and read from in real time. Data records are therefore stored in shards in your stream temporarily. The time period from when a record is added to when it is no longer accessible is called the retention period. A Kinesis data stream stores records from 24 hours by default, up to 8760 hours (365 days).</li></ul>",
+          "upvote_count": "4",
+          "selected_answers": ""
+        },
+        {
+          "id": 843922,
+          "date": "Sun 19 Mar 2023 17:10",
+          "username": "\t\t\t\tenzomv\t\t\t",
+          "content": "Amazon Kinesis Data Streams supports changes to the data record retention period of your data stream. A Kinesis data stream is an ordered sequence of data records meant to be written to and read from in real time. Data records are therefore stored in shards in your stream temporarily. The time period from when a record is added to when it is no longer accessible is called the retention period. A Kinesis data stream stores records from 24 hours by default, up to 8760 hours (365 days).",
+          "upvote_count": "4",
+          "selected_answers": ""
+        },
+        {
+          "id": 850630,
+          "date": "Sun 26 Mar 2023 03:12",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "Answer C:C.  Update the number of Kinesis shards to handle the throughput of the data that is sent to Kinesis Data Streams.<br><br>- Answer C updates the number of Kinesis shards to handle the throughput of the data that is sent to Kinesis Data Streams. By increasing the number of shards, the data is distributed across multiple shards, which allows for increased throughput and ensures that all data is ingested and processed by Kinesis Data Streams.<br>- Monitoring the Kinesis Data Streams and adjusting the number of shards as needed to handle changes in data throughput can ensure that the application can handle large amounts of streaming data.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>@cegama543, my apologies. Moderator if you can disapprove of the post above? I made a mistake. It is supposed to be intended on the post that I submitted.<br><br>Thanks.</li></ul>",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 850633,
+          "date": "Sun 26 Mar 2023 03:18",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "@cegama543, my apologies. Moderator if you can disapprove of the post above? I made a mistake. It is supposed to be intended on the post that I submitted.<br><br>Thanks.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 844535,
+          "date": "Mon 20 Mar 2023 05:37",
+          "username": "\t\t\t\tWherecanIstart\t\t\t",
+          "content": "\\\"A Kinesis data stream stores records from 24 hours by default, up to 8760 hours (365 days).\\\"<br>https://docs.aws.amazon.com/streams/latest/dev/kinesis-extended-retention.html<br><br>The question mentioned Kinesis data stream default settings and \\\"every other day\\\". After 24hrs, the data isn't in the Data stream if the default settings is not modified to store data more than 24hrs.",
+          "upvote_count": "6",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 891375,
+          "date": "Sun 07 May 2023 14:38",
+          "username": "\t\t\t\tsmd_\t\t\t",
+          "content": "By default, a Kinesis data stream is created with one shard. If the data throughput to the stream is higher than the capacity of the single shard, the data stream may not be able to handle all the incoming data, and some data may be lost.<br><br>Therefore, to handle the high volume of data that the application sends to Kinesis Data Streams, the number of Kinesis shards should be increased to handle the required throughput",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 879414,
+          "date": "Mon 24 Apr 2023 16:04",
+          "username": "\t\t\t\tarjundevops\t\t\t",
+          "content": "both Option A and Option C could be valid solutions to resolving the issue of data loss, depending on the root cause of the problem. It would be best to analyze the root cause of the data loss issue to determine which solution is most appropriate for this specific scenario.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 876153,
+          "date": "Fri 21 Apr 2023 04:59",
+          "username": "\t\t\t\tneosis91\t\t\t",
+          "content": "CCCCCCCCC",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 859033,
+          "date": "Sun 02 Apr 2023 18:16",
+          "username": "\t\t\t\tkraken21\t\t\t",
+          "content": "Also: https://www.examtopics.com/discussions/amazon/view/61067-exam-aws-certified-solutions-architect-associate-saa-c02/ for Option A. ",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 859030,
+          "date": "Sun 02 Apr 2023 18:15",
+          "username": "\t\t\t\tkraken21\t\t\t",
+          "content": "It comes down to is it a compute issue or a storage issue. Since the keywords of \\\"Default\\\", \\\"every other day\\\" were used and the issue is some data is missing, I am voting for Option A. ",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 858509,
+          "date": "Sun 02 Apr 2023 06:13",
+          "username": "\t\t\t\tchannn\t\t\t",
+          "content": "ChapGPT gives answer B or C.  also mention that Option A and option D are not directly related to the issue of data loss and may not help to resolve the problem.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 850629,
+          "date": "Sun 26 Mar 2023 03:11",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "A comparison of Answer A and Answer C:<br><br>Answer A:A.  Update the Kinesis Data Streams default settings by modifying the data retention period.<br><br>- Answer A modifies the data retention period of Kinesis Data Streams, which defines how long the data is retained in the stream. Increasing the retention period may ensure that all data is eventually ingested and processed by Kinesis Data Streams, but it does not address the immediate issue of data not being ingested by Kinesis Data Streams.<br>- Modifying the data retention period may also lead to increased storage costs if the data is retained for a longer period of time.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Answer C:C.  Update the number of Kinesis shards to handle the throughput of the data that is sent to Kinesis Data Streams.<br><br>- Answer C updates the number of Kinesis shards to handle the throughput of the data that is sent to Kinesis Data Streams. By increasing the number of shards, the data is distributed across multiple shards, which allows for increased throughput and ensures that all data is ingested and processed by Kinesis Data Streams.<br>- Monitoring the Kinesis Data Streams and adjusting the number of shards as needed to handle changes in data throughput can ensure that the application can handle large amounts of streaming data.</li><li>In comparison, while both options can help address the issue of data not being ingested by Kinesis Data Streams, Answer C is a more direct solution that addresses the underlying issue of insufficient capacity to handle the data throughput. Answer A may delay the issue of incomplete data ingestion by increasing the retention period, but it does not address the root cause of the problem.<br><br>In conclusion, Answer C is a more effective solution for handling large amounts of streaming data and ensuring that all data is ingested and processed by Kinesis Data Streams.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 850631,
+          "date": "Sun 26 Mar 2023 03:12",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "Answer C:C.  Update the number of Kinesis shards to handle the throughput of the data that is sent to Kinesis Data Streams.<br><br>- Answer C updates the number of Kinesis shards to handle the throughput of the data that is sent to Kinesis Data Streams. By increasing the number of shards, the data is distributed across multiple shards, which allows for increased throughput and ensures that all data is ingested and processed by Kinesis Data Streams.<br>- Monitoring the Kinesis Data Streams and adjusting the number of shards as needed to handle changes in data throughput can ensure that the application can handle large amounts of streaming data.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>In comparison, while both options can help address the issue of data not being ingested by Kinesis Data Streams, Answer C is a more direct solution that addresses the underlying issue of insufficient capacity to handle the data throughput. Answer A may delay the issue of incomplete data ingestion by increasing the retention period, but it does not address the root cause of the problem.<br><br>In conclusion, Answer C is a more effective solution for handling large amounts of streaming data and ensuring that all data is ingested and processed by Kinesis Data Streams.</li></ul>",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 850632,
+          "date": "Sun 26 Mar 2023 03:13",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "In comparison, while both options can help address the issue of data not being ingested by Kinesis Data Streams, Answer C is a more direct solution that addresses the underlying issue of insufficient capacity to handle the data throughput. Answer A may delay the issue of incomplete data ingestion by increasing the retention period, but it does not address the root cause of the problem.<br><br>In conclusion, Answer C is a more effective solution for handling large amounts of streaming data and ensuring that all data is ingested and processed by Kinesis Data Streams.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 845549,
+          "date": "Tue 21 Mar 2023 06:24",
+          "username": "\t\t\t\tGrace83\t\t\t",
+          "content": "A is the correct answer",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 841583,
+          "date": "Fri 17 Mar 2023 05:44",
+          "username": "\t\t\t\tnileshlg\t\t\t",
+          "content": "Correct answer is A.  Keywords to consider are,<br>1. Default Parameters<br>2. Every Other Day",
+          "upvote_count": "4",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 841174,
+          "date": "Thu 16 Mar 2023 17:22",
+          "username": "\t\t\t\tdcp\t\t\t",
+          "content": "C.  Update the number of Kinesis shards to handle the throughput of the data that is sent to Kinesis Data Streams.<br><br>The issue is that the Amazon S3 bucket is not receiving all the data sent to Kinesis Data Streams. This indicates that the bottleneck is most likely in the Kinesis Data Streams configuration.<br><br>To resolve this issue, a solutions architect should increase the number of Kinesis shards. Kinesis Data Streams partitions data into shards, and each shard can handle a specific amount of data throughput. By default, Kinesis Data Streams is configured with a single shard, which may not be enough to handle the application's data throughput.<br><br>Increasing the number of shards will distribute the data more evenly and improve the throughput, allowing all the data to be processed and sent to Amazon S3 for further analysis.",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 840665,
+          "date": "Thu 16 Mar 2023 09:00",
+          "username": "\t\t\t\tkampatra\t\t\t",
+          "content": "Need to increase default retention period",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 838154,
+          "date": "Mon 13 Mar 2023 19:29",
+          "username": "\t\t\t\tUnluckyDucky\t\t\t",
+          "content": "By default, Kinesis Data Streams hold your data for 24 hours. Everything that is 24 hours and 1 second old gets deleted unless the retention policy is changed.<br><br>Key words: Every other day and default settings for that Kinesis streams.",
+          "upvote_count": "4",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 837191,
           "date": "Sun 12 Mar 2023 17:06",
           "username": "\t\t\t\tKarlos99\t\t\t",
           "content": "https://docs.aws.amazon.com/streams/latest/dev/developing-producers-with-kpl.html<br><br>Role of the KPL<br>The KPL is an easy-to-use, highly configurable library that helps you write to a Kinesis data stream. It acts as an intermediary between your producer application code and the Kinesis Data Streams API actions. The KPL performs the following primary tasks:<br>Writes to one or more Kinesis data streams with an automatic and configurable retry mechanism<br>Collects records and uses PutRecords to write multiple records to multiple shards per request<br>Aggregates user records to increase payload size and improve throughput",
-          "upvote_count": "1",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -119,14 +436,6 @@ var SAA_C03_Exam_401_500 = {
           "username": "\t\t\t\tKAUS2\t\t\t",
           "content": "C is the correct answer. Agree with cegama543's explanation.",
           "upvote_count": "1",
-          "selected_answers": "Selected Answer: C"
-        },
-        {
-          "id": 835380,
-          "date": "Fri 10 Mar 2023 21:04",
-          "username": "\t\t\t\tcegama543\t\t\t",
-          "content": "C.  Update the number of Kinesis shards to handle the throughput of the data that is sent to Kinesis Data Streams.<br><br>The best option is to update the number of Kinesis shards to handle the throughput of the data that is sent to Kinesis Data Streams. Kinesis Data Streams scales horizontally by increasing or decreasing the number of shards, which controls the throughput capacity of the stream. By increasing the number of shards, the application will be able to send more data to Kinesis Data Streams, which can help ensure that S3 receives all the data.",
-          "upvote_count": "4",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -190,6 +499,38 @@ var SAA_C03_Exam_401_500 = {
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 850525,
+          "date": "Sat 25 Mar 2023 23:35",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "To grant the necessary permissions to an AWS Lambda function to upload files to Amazon S3, a solutions architect should create an IAM execution role with the required permissions and attach the IAM role to the Lambda function. This approach follows the principle of least privilege and ensures that the Lambda function can only access the resources it needs to perform its specific task.<br><br>Therefore, the correct answer is D.  Create an IAM execution role with the required permissions and attach the IAM role to the Lambda function.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 846049,
+          "date": "Tue 21 Mar 2023 15:15",
+          "username": "\t\t\t\tBilalglg93350\t\t\t",
+          "content": "D.  Créez un rôle d'exécution IAM avec les autorisations requises et attachez le rôle IAM à la fonction Lambda.<br><br>L'architecte de solutions doit créer un rôle d'exécution IAM ayant les autorisations nécessaires pour accéder à Amazon S3 et effectuer les opérations requises (par exemple, charger des fichiers). Ensuite, le rôle doit être associé à la fonction Lambda, de sorte que la fonction puisse assumer ce rôle et avoir les autorisations nécessaires pour interagir avec Amazon S3.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 841576,
+          "date": "Fri 17 Mar 2023 05:35",
+          "username": "\t\t\t\tnileshlg\t\t\t",
+          "content": "Answer is D",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 840669,
+          "date": "Thu 16 Mar 2023 09:03",
+          "username": "\t\t\t\tkampatra\t\t\t",
+          "content": "D - correct ans",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
         {
           "id": 836356,
           "date": "Sat 11 Mar 2023 19:01",
@@ -268,6 +609,54 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 850645,
+          "date": "Sun 26 Mar 2023 03:36",
+          "username": "\t\t\t\tRusss99\t\t\t",
+          "content": "D is the correct answer",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 850511,
+          "date": "Sat 25 Mar 2023 23:07",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "To improve the architecture of this application, the best solution would be to use Amazon Simple Queue Service (Amazon SQS) to buffer the requests and decouple the S3 bucket from the Lambda function. This will ensure that the documents are not lost and can be processed at a later time if the Lambda function is not available.<br><br>This will ensure that the documents are not lost and can be processed at a later time if the Lambda function is not available. By using Amazon SQS, the architecture is decoupled and the Lambda function can process the documents in a scalable and fault-tolerant manner.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 846044,
+          "date": "Tue 21 Mar 2023 15:11",
+          "username": "\t\t\t\tBilalglg93350\t\t\t",
+          "content": "D.  Créez une file d'attente Amazon Simple Queue Service (Amazon SQS). Envoyez les demandes à la file d'attente. Configurez la file d'attente en tant que source d'événement pour Lambda.<br><br>Cette solution permet de gérer efficacement les pics de charge et d'éviter la perte de documents en cas d'augmentation soudaine du trafic. Lorsque de nouveaux documents sont chargés dans le compartiment Amazon S3, les demandes sont envoyées à la file d'attente Amazon SQS, qui agit comme un tampon. La fonction Lambda est déclenchée en fonction des événements dans la file d'attente, ce qui permet un traitement équilibré et évite que l'application ne soit submergée par un grand nombre de documents simultanés.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>exactement. si je pouvais explique come cela en Francais aussi</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 850644,
+          "date": "Sun 26 Mar 2023 03:35",
+          "username": "\t\t\t\tRusss99\t\t\t",
+          "content": "exactement. si je pouvais explique come cela en Francais aussi",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 844538,
+          "date": "Mon 20 Mar 2023 05:40",
+          "username": "\t\t\t\tWherecanIstart\t\t\t",
+          "content": "D is the correct answer.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 840671,
+          "date": "Thu 16 Mar 2023 09:05",
+          "username": "\t\t\t\tkampatra\t\t\t",
+          "content": "D is correct",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
           "id": 837533,
           "date": "Mon 13 Mar 2023 02:40",
           "username": "\t\t\t\tdcp\t\t\t",
@@ -296,7 +685,7 @@ var SAA_C03_Exam_401_500 = {
       "is_partially_correct": true,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: AE</p>",
+      "general_feedback": "<p>Correct Answer: DE</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -305,7 +694,7 @@ var SAA_C03_Exam_401_500 = {
           "answers": [
             {
               "choice": "<p>A. Use AWS Auto Scaling to adjust the ALB capacity based on request rate.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             },
             {
@@ -320,7 +709,7 @@ var SAA_C03_Exam_401_500 = {
             },
             {
               "choice": "<p>D. Use a target tracking scaling policy to scale the Auto Scaling group based on instance CPU utilization.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -333,6 +722,134 @@ var SAA_C03_Exam_401_500 = {
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 878562,
+          "date": "Sun 23 Apr 2023 17:49",
+          "username": "\t\t\t\tJoe94KR\t\t\t",
+          "content": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html#target-tracking-choose-metrics<br><br>Based on docs, ASG can't track ALB's request rate, so the answer is D&E<br>meanwhile ASG can track CPU rates.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: DE"
+        },
+        {
+          "id": 859096,
+          "date": "Sun 02 Apr 2023 18:46",
+          "username": "\t\t\t\tkraken21\t\t\t",
+          "content": "Scaling should be at the ASG not ALB.  So, not sure about \\\"Use AWS Auto Scaling to adjust the ALB capacity based on request rate\\\"",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: DE"
+        },
+        {
+          "id": 858514,
+          "date": "Sun 02 Apr 2023 06:30",
+          "username": "\t\t\t\tchannn\t\t\t",
+          "content": "A.  Use AWS Auto Scaling to adjust the ALB capacity based on request rate: This will allow the system to scale up or down based on incoming traffic demand. The solutions architect should use AWS Auto Scaling to monitor the request rate and adjust the ALB capacity as needed.<br>D.  Use a target tracking scaling policy to scale the Auto Scaling group based on instance CPU utilization: This will allow the system to scale up or down based on the CPU utilization of the EC2 instances in the Auto Scaling group. The solutions architect should use a target tracking scaling policy to maintain a specific CPU utilization target and adjust the number of EC2 instances in the Auto Scaling group accordingly.",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
+          "id": 852773,
+          "date": "Tue 28 Mar 2023 06:40",
+          "username": "\t\t\t\tneosis91\t\t\t",
+          "content": "A.  Use a target tracking scaling policy to scale the Auto Scaling group based on instance CPU utilization. This approach allows the Auto Scaling group to automatically adjust the number of instances based on the specified metric, ensuring that the system can scale to meet demand during working hours.<br>D.  Use scheduled scaling to change the Auto Scaling group minimum, maximum, and desired capacity to zero for weekends. Revert to the default values at the start of the week. This approach allows the Auto Scaling group to reduce the number of instances to zero during weekends when traffic is expected to be low. It will help the organization to save costs by not paying for instances that are not needed during weekends.<br><br>Therefore, options A and D are the correct answers. Options B and C are not relevant to the scenario, and option E is not a scalable solution as it would require manual intervention to adjust the group capacity every week.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
+          "id": 852731,
+          "date": "Tue 28 Mar 2023 05:31",
+          "username": "\t\t\t\tzooba72\t\t\t",
+          "content": "This is why I don't believe A is correct use auto scaling to adjust the ALB .... D&E",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: DE"
+        },
+        {
+          "id": 850657,
+          "date": "Sun 26 Mar 2023 03:49",
+          "username": "\t\t\t\tRusss99\t\t\t",
+          "content": "AD<br>D there is no requirement for cost minimization in the scenario therefore, A & D are the answers",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: AD"
+        },
+        {
+          "id": 850493,
+          "date": "Sat 25 Mar 2023 22:56",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "A comparison of Answers D and E VERSUS another possible answer Answers A and E:<br><br>Answers D and E:D.  Use a target tracking scaling policy to scale the Auto Scaling group based on instance CPU utilization.E.  Use scheduled scaling to change the Auto Scaling group minimum, maximum, and desired capacity to zero for weekends. Revert to the default values at the start of the week.<br><br>- Answer D scales the Auto Scaling group based on instance CPU utilization, which ensures that the number of instances in the group can be adjusted to handle the increase in traffic during working hours and reduce capacity during periods of low traffic.<br>- Answer E uses scheduled scaling to change the Auto Scaling group minimum, maximum, and desired capacity to zero for weekends, which ensures that the Auto Scaling group scales down to zero during weekends to save costs.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Answers A and E:A.  Use AWS Auto Scaling to adjust the ALB capacity based on request rate.E.  Use scheduled scaling to change the Auto Scaling group minimum, maximum, and desired capacity to zero for weekends. Revert to the default values at the start of the week.<br><br>- Answer A adjusts the capacity of the ALB based on request rate, which ensures that the ALB can handle the increase in traffic during working hours and reduce capacity during periods of low traffic.<br>- Answer E uses scheduled scaling to change the Auto Scaling group minimum, maximum, and desired capacity to zero for weekends, which ensures that the Auto Scaling group scales down to zero during weekends to save costs.</li><li>Comparing the two options, both Answers D and A are valid choices for scaling the application based on demand. However, Answer D scales the Auto Scaling group based on instance CPU utilization, which is a more granular metric than request rate and can provide better performance and cost optimization. Answer A only scales the ALB based on the request rate, which may not be sufficient for handling sudden spikes in traffic.<br><br>Answer E is a common choice for scaling down to zero during weekends to save costs. Both Answers D and A can be used in conjunction with Answer E to ensure that the Auto Scaling group scales down to zero during weekends. However, Answer D provides more granular control over the scaling of the Auto Scaling group based on instance CPU utilization, which can result in better performance and cost optimization.</li><li>In conclusion, answers D and E provide a more granular and flexible solution for scaling the application based on demand and scaling down to zero during weekends, while Answers A and E may not be as granular and may not provide as much performance and cost optimization.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: DE"
+        },
+        {
+          "id": 850496,
+          "date": "Sat 25 Mar 2023 22:57",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "Answers A and E:A.  Use AWS Auto Scaling to adjust the ALB capacity based on request rate.E.  Use scheduled scaling to change the Auto Scaling group minimum, maximum, and desired capacity to zero for weekends. Revert to the default values at the start of the week.<br><br>- Answer A adjusts the capacity of the ALB based on request rate, which ensures that the ALB can handle the increase in traffic during working hours and reduce capacity during periods of low traffic.<br>- Answer E uses scheduled scaling to change the Auto Scaling group minimum, maximum, and desired capacity to zero for weekends, which ensures that the Auto Scaling group scales down to zero during weekends to save costs.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Comparing the two options, both Answers D and A are valid choices for scaling the application based on demand. However, Answer D scales the Auto Scaling group based on instance CPU utilization, which is a more granular metric than request rate and can provide better performance and cost optimization. Answer A only scales the ALB based on the request rate, which may not be sufficient for handling sudden spikes in traffic.<br><br>Answer E is a common choice for scaling down to zero during weekends to save costs. Both Answers D and A can be used in conjunction with Answer E to ensure that the Auto Scaling group scales down to zero during weekends. However, Answer D provides more granular control over the scaling of the Auto Scaling group based on instance CPU utilization, which can result in better performance and cost optimization.</li><li>In conclusion, answers D and E provide a more granular and flexible solution for scaling the application based on demand and scaling down to zero during weekends, while Answers A and E may not be as granular and may not provide as much performance and cost optimization.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 850497,
+          "date": "Sat 25 Mar 2023 22:59",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "Comparing the two options, both Answers D and A are valid choices for scaling the application based on demand. However, Answer D scales the Auto Scaling group based on instance CPU utilization, which is a more granular metric than request rate and can provide better performance and cost optimization. Answer A only scales the ALB based on the request rate, which may not be sufficient for handling sudden spikes in traffic.<br><br>Answer E is a common choice for scaling down to zero during weekends to save costs. Both Answers D and A can be used in conjunction with Answer E to ensure that the Auto Scaling group scales down to zero during weekends. However, Answer D provides more granular control over the scaling of the Auto Scaling group based on instance CPU utilization, which can result in better performance and cost optimization.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>In conclusion, answers D and E provide a more granular and flexible solution for scaling the application based on demand and scaling down to zero during weekends, while Answers A and E may not be as granular and may not provide as much performance and cost optimization.</li></ul>",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 850499,
+          "date": "Sat 25 Mar 2023 22:59",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "In conclusion, answers D and E provide a more granular and flexible solution for scaling the application based on demand and scaling down to zero during weekends, while Answers A and E may not be as granular and may not provide as much performance and cost optimization.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 849335,
+          "date": "Fri 24 Mar 2023 14:52",
+          "username": "\t\t\t\tthaotnt\t\t\t",
+          "content": "A: The system will experience significant increases in traffic during working hours<br>E: but is not required to operate on weekends.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 846349,
+          "date": "Tue 21 Mar 2023 22:02",
+          "username": "\t\t\t\tKunj7\t\t\t",
+          "content": "Even though the question doesn't say anything about CPU utilisation. It does mention there will be \\\" increase in traffic during working hours \\\" which means the CPU utilisation will go up for the instance. Hence I think D & E is still correct.",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: DE"
+        },
+        {
+          "id": 843786,
+          "date": "Sun 19 Mar 2023 14:49",
+          "username": "\t\t\t\tisoman\t\t\t",
+          "content": "Auto scaling group can't adjust ALB capacity.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>AWS Auto Scaling can adjust the Application Load Balancer (ALB) capacity based on request rate. You can use target tracking scaling policies to scale your ALB automatically based on a target value for a specific metric. For example, you can create a target tracking scaling policy that maintains an average request count per target of 1000 requests per minute. When you use target tracking scaling policies with Application Load Balancers, you can specify a target value for a request metric such as RequestCountPerTarget.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: DE"
+        },
+        {
+          "id": 858286,
+          "date": "Sat 01 Apr 2023 22:50",
+          "username": "\t\t\t\tklayytech\t\t\t",
+          "content": "AWS Auto Scaling can adjust the Application Load Balancer (ALB) capacity based on request rate. You can use target tracking scaling policies to scale your ALB automatically based on a target value for a specific metric. For example, you can create a target tracking scaling policy that maintains an average request count per target of 1000 requests per minute. When you use target tracking scaling policies with Application Load Balancers, you can specify a target value for a request metric such as RequestCountPerTarget.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 838174,
+          "date": "Mon 13 Mar 2023 19:45",
+          "username": "\t\t\t\tUnluckyDucky\t\t\t",
+          "content": "Weird question, there's no mention to high CPU utilization therefore option D seems irrelevant.<br><br>Option A - Dealing with increased traffic by scaling according to request rate.<br>Option E - Obvious reasons, shutdown on weekend, revert back when week starts.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>i agree. AE is correct answer</li></ul>",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: AE"
+        },
+        {
+          "id": 843409,
+          "date": "Sun 19 Mar 2023 04:57",
+          "username": "\t\t\t\ttest_devops_aws\t\t\t",
+          "content": "i agree. AE is correct answer",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 837531,
           "date": "Mon 13 Mar 2023 02:38",
@@ -432,6 +949,38 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 889182,
+          "date": "Thu 04 May 2023 07:58",
+          "username": "\t\t\t\tdatmd77\t\t\t",
+          "content": "Remember guys that SG is not used for Deny action, just Allow",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: CD"
+        },
+        {
+          "id": 850473,
+          "date": "Sat 25 Mar 2023 22:26",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "To meet the requirements of allowing access to the web servers in the public subnet on port 443 and the Amazon RDS for MySQL DB instance in the database subnet on port 3306, the best solution would be to create a security group for the web servers and another security group for the DB instance, and then define the appropriate inbound and outbound rules for each security group.<br><br>1. Create a security group for the web servers in the public subnet. Add a rule to allow traffic from 0.0.0.0/0 on port 443.<br>2. Create a security group for the DB instance. Add a rule to allow traffic from the web servers' security group on port 3306.<br><br>This will allow the web servers in the public subnet to receive traffic from the internet on port 443, and the Amazon RDS for MySQL DB instance in the database subnet to receive traffic only from the web servers on port 3306.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: CD"
+        },
+        {
+          "id": 840681,
+          "date": "Thu 16 Mar 2023 09:18",
+          "username": "\t\t\t\tkampatra\t\t\t",
+          "content": "CD - Correct ans.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: CD"
+        },
+        {
+          "id": 839036,
+          "date": "Tue 14 Mar 2023 17:28",
+          "username": "\t\t\t\tEden\t\t\t",
+          "content": "I choose CE",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
           "id": 837664,
           "date": "Mon 13 Mar 2023 06:48",
           "username": "\t\t\t\tlili_9\t\t\t",
@@ -459,8 +1008,16 @@ var SAA_C03_Exam_401_500 = {
           "id": 835715,
           "date": "Sat 11 Mar 2023 08:18",
           "username": "\t\t\t\tKS2020\t\t\t",
-          "content": "why not CE?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Characteristics of security group rules<br><br>You can specify allow rules, but not deny rules.<br>https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html</li></ul>",
+          "content": "why not CE?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>By default Security Group deny all trafic and we need to configure to enable.</li><li>Characteristics of security group rules<br><br>You can specify allow rules, but not deny rules.<br>https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html</li></ul>",
           "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 840682,
+          "date": "Thu 16 Mar 2023 09:18",
+          "username": "\t\t\t\tkampatra\t\t\t",
+          "content": "By default Security Group deny all trafic and we need to configure to enable.",
+          "upvote_count": "1",
           "selected_answers": ""
         },
         {
@@ -524,6 +1081,30 @@ var SAA_C03_Exam_401_500 = {
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 850464,
+          "date": "Sat 25 Mar 2023 22:16",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "To meet the requirements of a shared storage solution for a gaming application that can be accessed using Lustre clients and is fully managed, the best solution would be to use Amazon FSx for Lustre.<br><br>Amazon FSx for Lustre is a fully managed file system that is optimized for compute-intensive workloads, such as high-performance computing, machine learning, and gaming. It provides a POSIX-compliant file system that can be accessed using Lustre clients and offers high performance, scalability, and data durability.<br><br>This solution provides a highly available, scalable, and fully managed shared storage solution that can be accessed using Lustre clients. Amazon FSx for Lustre is optimized for compute-intensive workloads and provides high performance and durability.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Answer A, creating an AWS DataSync task that shares the data as a mountable file system and mounting the file system to the application server, may not provide the required performance and scalability for a gaming application.<br><br>Answer B, creating an AWS Storage Gateway file gateway and connecting the application server to the file share, may not provide the required performance and scalability for a gaming application.<br><br>Answer C, creating an Amazon Elastic File System (Amazon EFS) file system and configuring it to support Lustre, may not provide the required performance and scalability for a gaming application and may require additional configuration and management overhead.</li></ul>",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 850465,
+          "date": "Sat 25 Mar 2023 22:18",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "Answer A, creating an AWS DataSync task that shares the data as a mountable file system and mounting the file system to the application server, may not provide the required performance and scalability for a gaming application.<br><br>Answer B, creating an AWS Storage Gateway file gateway and connecting the application server to the file share, may not provide the required performance and scalability for a gaming application.<br><br>Answer C, creating an Amazon Elastic File System (Amazon EFS) file system and configuring it to support Lustre, may not provide the required performance and scalability for a gaming application and may require additional configuration and management overhead.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 840684,
+          "date": "Thu 16 Mar 2023 09:21",
+          "username": "\t\t\t\tkampatra\t\t\t",
+          "content": "D - correct ans",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: D"
+        },
         {
           "id": 836349,
           "date": "Sat 11 Mar 2023 18:57",
@@ -602,11 +1183,51 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 838183,
+          "date": "Mon 13 Mar 2023 19:49",
+          "username": "\t\t\t\tUnluckyDucky\t\t\t",
+          "content": "Key words: geographically dispersed, UDP.<br><br>Geographically dispersed (related to UDP) - Global Accelerator - multiple entrances worldwide to the AWS network to provide better transfer rates.<br>UDP - NLB (Network Load Balancer).",
+          "upvote_count": "5",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 859128,
+          "date": "Sun 02 Apr 2023 19:06",
+          "username": "\t\t\t\tkraken21\t\t\t",
+          "content": "Global accelerator for multi region automatic failover. NLB for UDP.",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 858716,
+          "date": "Sun 02 Apr 2023 11:45",
+          "username": "\t\t\t\tMaxMa\t\t\t",
+          "content": "why not A?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>NLBs do not support lambda target type. Tricky!!! https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 859129,
+          "date": "Sun 02 Apr 2023 19:06",
+          "username": "\t\t\t\tkraken21\t\t\t",
+          "content": "NLBs do not support lambda target type. Tricky!!! https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html",
+          "upvote_count": "6",
+          "selected_answers": ""
+        },
+        {
+          "id": 850461,
+          "date": "Sat 25 Mar 2023 22:08",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "To meet the requirements of minimizing latency for data transmission from the devices and providing rapid failover to another AWS Region, the best solution would be to use AWS Global Accelerator in combination with a Network Load Balancer (NLB) and Amazon Elastic Container Service (Amazon ECS).<br><br>AWS Global Accelerator is a service that improves the availability and performance of applications by using static IP addresses (Anycast) to route traffic to optimal AWS endpoints. With Global Accelerator, you can direct traffic to multiple Regions and endpoints, and provide automatic failover to another AWS Region.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 835644,
           "date": "Sat 11 Mar 2023 05:07",
           "username": "\t\t\t\tRuhi02\t\t\t",
           "content": "Answer should be B. . there is typo mistake in B.  Correct Answer is :Use AWS Global Accelerator. Create a Network Load Balancer (NLB) in each of the two Regions as an endpoint. Create an Amazon Elastic Container Service (Amazon ECS) cluster with the Fargate launch type. Create an ECS service on the cluster. Set the ECS service as the target for the NLB.  Process the data in Amazon ECS.",
-          "upvote_count": "2",
+          "upvote_count": "3",
           "selected_answers": ""
         },
         {
@@ -663,12 +1284,60 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 858521,
+          "date": "Sun 02 Apr 2023 06:51",
+          "username": "\t\t\t\tchannn\t\t\t",
+          "content": "A) RDS is a database service<br>B) Storage Gateway is a hybrid cloud storage service that connects on-premises applications to AWS storage services.<br>D) provides shared file storage for Linux-based workloads, but it does not natively support Windows-based workloads.",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 850454,
+          "date": "Sat 25 Mar 2023 21:59",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "The most resilient and durable replacement for the on-premises file share in this scenario would be Amazon FSx for Windows File Server.<br><br>Amazon FSx is a fully managed Windows file system service that is built on Windows Server and provides native support for the SMB protocol. It is designed to be highly available and durable, with built-in backup and restore capabilities. It is also fully integrated with AWS security services, providing encryption at rest and in transit, and it can be configured to meet compliance standards.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Migrating the file share to Amazon RDS or AWS Storage Gateway is not appropriate as these services are designed for database workloads and block storage respectively, and do not provide native support for the SMB protocol.<br><br>Migrating the file share to Amazon EFS (Linux ONLY) could be an option, but Amazon FSx for Windows File Server would be more appropriate in this case because it is specifically designed for Windows file shares and provides better performance for Windows applications.</li></ul>",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 850455,
+          "date": "Sat 25 Mar 2023 22:00",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "Migrating the file share to Amazon RDS or AWS Storage Gateway is not appropriate as these services are designed for database workloads and block storage respectively, and do not provide native support for the SMB protocol.<br><br>Migrating the file share to Amazon EFS (Linux ONLY) could be an option, but Amazon FSx for Windows File Server would be more appropriate in this case because it is specifically designed for Windows file shares and provides better performance for Windows applications.",
+          "upvote_count": "3",
+          "selected_answers": ""
+        },
+        {
+          "id": 845602,
+          "date": "Tue 21 Mar 2023 07:58",
+          "username": "\t\t\t\tGrace83\t\t\t",
+          "content": "Obviously C is the correct answer - FSx for Windows - Windows",
+          "upvote_count": "4",
+          "selected_answers": ""
+        },
+        {
+          "id": 838186,
+          "date": "Mon 13 Mar 2023 19:51",
+          "username": "\t\t\t\tUnluckyDucky\t\t\t",
+          "content": "FSx for Windows - Windows.<br>EFS - Linux.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 838018,
           "date": "Mon 13 Mar 2023 16:15",
           "username": "\t\t\t\telearningtakai\t\t\t",
-          "content": "Amazon EFS is a scalable and fully-managed file storage service that is designed to provide high availability and durability. It can be accessed by multiple EC2 instances across multiple Availability Zones simultaneously. Additionally, it offers automatic and instantaneous data replication across different availability zones within a region, which makes it resilient to failures.",
+          "content": "Amazon EFS is a scalable and fully-managed file storage service that is designed to provide high availability and durability. It can be accessed by multiple EC2 instances across multiple Availability Zones simultaneously. Additionally, it offers automatic and instantaneous data replication across different availability zones within a region, which makes it resilient to failures.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>EFS is a wrong choice because it can only work with Linux instances. That application has a Windows web server , so its OS is Windowsand EFS cannot connect to it</li></ul>",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 843300,
+          "date": "Sun 19 Mar 2023 01:28",
+          "username": "\t\t\t\tasoli\t\t\t",
+          "content": "EFS is a wrong choice because it can only work with Linux instances. That application has a Windows web server , so its OS is Windowsand EFS cannot connect to it",
+          "upvote_count": "2",
+          "selected_answers": ""
         },
         {
           "id": 837520,
@@ -756,6 +1425,46 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 856582,
+          "date": "Fri 31 Mar 2023 06:03",
+          "username": "\t\t\t\telearningtakai\t\t\t",
+          "content": "The other options either do not meet the requirement of encrypting data at rest (A and C) or do so in a more complex or less efficient manner (D).",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 850452,
+          "date": "Sat 25 Mar 2023 21:52",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "The solution that will meet the requirement of ensuring that all data that is written to the EBS volumes is encrypted at rest is B.  Create the EBS volumes as encrypted volumes and attach the encrypted EBS volumes to the EC2 instances.<br><br>When you create an EBS volume, you can specify whether to encrypt the volume. If you choose to encrypt the volume, all data written to the volume is automatically encrypted at rest using AWS-managed keys. You can also use customer-managed keys (CMKs) stored in AWS KMS to encrypt and protect your EBS volumes. You can create encrypted EBS volumes and attach them to EC2 instances to ensure that all data written to the volumes is encrypted at rest.<br><br>Answer A is incorrect because attaching an IAM role to the EC2 instances does not automatically encrypt the EBS volumes.<br><br>Answer C is incorrect because adding an EC2 instance tag does not ensure that the EBS volumes are encrypted.",
+          "upvote_count": "4",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 846258,
+          "date": "Tue 21 Mar 2023 19:52",
+          "username": "\t\t\t\tBofi\t\t\t",
+          "content": "Why not D, EBS encryption require the use of KMS key<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Answer D is incorrect because creating a KMS key policy that enforces EBS encryption does not automatically encrypt EBS volumes. You need to create encrypted EBS volumes and attach them to EC2 instances to ensure that all data written to the volumes are encrypted at rest.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 850450,
+          "date": "Sat 25 Mar 2023 21:50",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "Answer D is incorrect because creating a KMS key policy that enforces EBS encryption does not automatically encrypt EBS volumes. You need to create encrypted EBS volumes and attach them to EC2 instances to ensure that all data written to the volumes are encrypted at rest.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 844545,
+          "date": "Mon 20 Mar 2023 05:53",
+          "username": "\t\t\t\tWherecanIstart\t\t\t",
+          "content": "Create encrypted EBS volumes and attach encrypted EBS volumes to EC2 instances..",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 836038,
           "date": "Sat 11 Mar 2023 14:34",
           "username": "\t\t\t\tsitha\t\t\t",
@@ -825,11 +1534,51 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 858528,
+          "date": "Sun 02 Apr 2023 06:59",
+          "username": "\t\t\t\tchannn\t\t\t",
+          "content": "C: Aurora Serverless is a MySQL-compatible relational database engine that automatically scales compute and memory resources based on application usage. no upfront costs or commitments required. <br>A: DynamoDB is a NoSQL<br>B: Fixed cost on RDS class<br>D: More operation requires",
+          "upvote_count": "4",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 850449,
+          "date": "Sat 25 Mar 2023 21:46",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "Answer C, MySQL-compatible Amazon Aurora Serverless, would be the best solution to meet the company's requirements.<br><br>Aurora Serverless can be a cost-effective option for databases with sporadic or unpredictable usage patterns since it automatically scales up or down based on the current workload. Additionally, Aurora Serverless is compatible with MySQL, so it does not require any modifications to the application's database code.",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
+          "id": 850054,
+          "date": "Sat 25 Mar 2023 12:04",
+          "username": "\t\t\t\tklayytech\t\t\t",
+          "content": "Amazon RDS for MySQL is a cost-effective database platform that will not require database modifications. It makes it easier to set up, operate, and scale MySQL deployments in the cloud. With Amazon RDS, you can deploy scalable MySQL servers in minutes with cost-efficient and resizable hardware capacity². <br><br>Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. DynamoDB is a good choice for applications that require low-latency data access¹.<br><br>MySQL-compatible Amazon Aurora Serverless is an on-demand, auto-scaling configuration for Amazon Aurora (MySQL-compatible edition), where the database will automatically start up, shut down, and scale capacity up or down based on your application's needs³.<br><br>So, Amazon RDS for MySQL is the best option for your requirements.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>sorry i will change to C , because<br><br>Amazon RDS for MySQL is a fully-managed relational database service that makes it easy to set up, operate, and scale MySQL deployments in the cloud. Amazon Aurora Serverless is an on-demand, auto-scaling configuration for Amazon Aurora (MySQL-compatible edition), where the database will automatically start up, shut down, and scale capacity up or down based on your application's needs. It is a simple, cost-effective option for infrequent, intermittent, or unpredictable workloads.</li></ul>",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 858292,
+          "date": "Sat 01 Apr 2023 23:09",
+          "username": "\t\t\t\tklayytech\t\t\t",
+          "content": "sorry i will change to C , because<br><br>Amazon RDS for MySQL is a fully-managed relational database service that makes it easy to set up, operate, and scale MySQL deployments in the cloud. Amazon Aurora Serverless is an on-demand, auto-scaling configuration for Amazon Aurora (MySQL-compatible edition), where the database will automatically start up, shut down, and scale capacity up or down based on your application's needs. It is a simple, cost-effective option for infrequent, intermittent, or unpredictable workloads.",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
+          "id": 841182,
+          "date": "Thu 16 Mar 2023 17:30",
+          "username": "\t\t\t\tboxu03\t\t\t",
+          "content": "Amazon Aurora Serverless : a simple, cost-effective option for infrequent, intermittent, or unpredictable workloads",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 835223,
           "date": "Fri 10 Mar 2023 17:29",
           "username": "\t\t\t\ttaehyeki\t\t\t",
           "content": "cccccccccccccccccccc",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: C"
         }
       ]
@@ -882,8 +1631,32 @@ var SAA_C03_Exam_401_500 = {
           "date": "Sat 11 Mar 2023 05:23",
           "username": "\t\t\t\tRuhi02\t\t\t",
           "content": "Answer is D ladies and gentlemen. While guard duty helps to monitor s3 for potential threats its a reactive action. We should always be proactive and not reactive in our solutions so D, block public access to avoid any possibility of the info becoming publicly accessible",
-          "upvote_count": "3",
+          "upvote_count": "9",
           "selected_answers": ""
+        },
+        {
+          "id": 856917,
+          "date": "Fri 31 Mar 2023 12:43",
+          "username": "\t\t\t\telearningtakai\t\t\t",
+          "content": "This is the most effective solution to meet the requirements.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 850447,
+          "date": "Sat 25 Mar 2023 21:38",
+          "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
+          "content": "Answer D is the correct solution that meets the requirements. The S3 Block Public Access feature allows you to restrict public access to S3 buckets and objects within the account. You can enable this feature at the account level to prevent any S3 bucket from being made public, regardless of the bucket policy settings. AWS Organizations can be used to apply a Service Control Policy (SCP) to the account to prevent IAM users from changing this setting, ensuring that all S3 objects remain private. This is a straightforward and effective solution that requires minimal operational overhead.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 846262,
+          "date": "Tue 21 Mar 2023 20:02",
+          "username": "\t\t\t\tBofi\t\t\t",
+          "content": "Option D provided real solution by using bucket policy to restrict public access. Other options were focus on detection which wasn't what was been asked",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: D"
         },
         {
           "id": 835224,
@@ -939,11 +1712,19 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 856923,
+          "date": "Fri 31 Mar 2023 12:46",
+          "username": "\t\t\t\telearningtakai\t\t\t",
+          "content": "Amazon SES is a cost-effective and scalable email service that enables businesses to send and receive email using their own email addresses and domains. Configuring the web instance to send email through Amazon SES is a simple and effective solution that can reduce the time spent resolving complex email delivery issues and minimize operational overhead.",
+          "upvote_count": "3",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 850439,
           "date": "Sat 25 Mar 2023 21:23",
           "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
           "content": "The best option for addressing the company's needs of minimizing operational overhead and reducing time spent resolving email delivery issues is to use Amazon Simple Email Service (Amazon SES).<br><br>Answer A of creating a separate application tier for email processing may add additional complexity to the architecture and require more operational overhead.<br><br>Answer C of using Amazon Simple Notification Service (Amazon SNS) is not an appropriate solution for sending marketing and order confirmation emails since Amazon SNS is a messaging service that is designed to send messages to subscribed endpoints or clients.<br><br>Answer D of creating a separate application tier using EC2 instances dedicated to email processing placed in an Auto Scaling group is a more complex solution than necessary and may result in additional operational overhead.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         },
         {
@@ -960,7 +1741,7 @@ var SAA_C03_Exam_401_500 = {
           "username": "\t\t\t\tRuhi02\t\t\t",
           "content": "Answer B. . SES is meant for sending high volume e-mail efficiently and securely.<br>SNS is meant as a channel publisher/subscriber service",
           "upvote_count": "4",
-          "selected_answers": "Selected Answer: B"
+          "selected_answers": ""
         },
         {
           "id": 835228,
@@ -1015,6 +1796,46 @@ var SAA_C03_Exam_401_500 = {
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 883832,
+          "date": "Fri 28 Apr 2023 20:54",
+          "username": "\t\t\t\tkruasan\t\t\t",
+          "content": "The correct solution here is:<br>B.  Create an Amazon S3 File Gateway. Update the business system to use a new network share from the S3 File Gateway.<br><br>This option requires the least administrative overhead because:<br><br>- It presents a simple network file share interface that the business system can write to, just like a standard network share. This requires minimal changes to the business system.<br><br>- The S3 File Gateway automatically uploads all files written to the share to an S3 bucket in the background. This handles the transfer and upload to S3 without requiring any scheduled tasks, scripts or automation.<br><br>- All ongoing management like monitoring, scaling, patching etc. is handled by AWS for the S3 File Gateway.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>The other options would require more ongoing administrative effort:<br><br>A) AWS DataSync would require creating and managing scheduled tasks and monitoring them. <br><br>C) Using the DataSync API would require developing an application and then managing and monitoring it. <br><br>D) The SFTP option would require creating scripts, managing SFTP access and keys, and monitoring the file transfer process.<br><br>So overall, the S3 File Gateway requires the least amount of ongoing management and administration as it presents a simple file share interface but handles the upload to S3 in a fully managed fashion. The business system can continue writing to a network share as is, while the files are transparently uploaded to S3.<br><br>The S3 File Gateway is the most hands-off, low-maintenance solution in this scenario.</li></ul>",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 883833,
+          "date": "Fri 28 Apr 2023 20:54",
+          "username": "\t\t\t\tkruasan\t\t\t",
+          "content": "The other options would require more ongoing administrative effort:<br><br>A) AWS DataSync would require creating and managing scheduled tasks and monitoring them. <br><br>C) Using the DataSync API would require developing an application and then managing and monitoring it. <br><br>D) The SFTP option would require creating scripts, managing SFTP access and keys, and monitoring the file transfer process.<br><br>So overall, the S3 File Gateway requires the least amount of ongoing management and administration as it presents a simple file share interface but handles the upload to S3 in a fully managed fashion. The business system can continue writing to a network share as is, while the files are transparently uploaded to S3.<br><br>The S3 File Gateway is the most hands-off, low-maintenance solution in this scenario.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
+        {
+          "id": 858534,
+          "date": "Sun 02 Apr 2023 07:12",
+          "username": "\t\t\t\tchannn\t\t\t",
+          "content": "Key words: <br>1. near-real-time (A is out)<br>2. LEAST administrative (C n D is out)",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 856931,
+          "date": "Fri 31 Mar 2023 12:51",
+          "username": "\t\t\t\telearningtakai\t\t\t",
+          "content": "A - creating a scheduled task is not near-real time.<br>B - The S3 File Gateway caches frequently accessed data locally and automatically uploads it to Amazon S3, providing near-real-time access to the data.<br>C - creating an application that uses the DataSync API in the automation workflow may provide near-real-time data access, but it requires additional development effort.<br>D - it requires additional development effort.",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
+          "id": 855192,
+          "date": "Thu 30 Mar 2023 04:05",
+          "username": "\t\t\t\tzooba72\t\t\t",
+          "content": "It's B. DataSync has a scheduler and it runs on hour intervals, it cannot be used real-time",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
         {
           "id": 850431,
           "date": "Sat 25 Mar 2023 21:09",
@@ -1109,11 +1930,19 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 858538,
+          "date": "Sun 02 Apr 2023 07:14",
+          "username": "\t\t\t\tchannn\t\t\t",
+          "content": "Key words: 'The company does not know access patterns for all the data', so A. ",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
           "id": 850424,
           "date": "Sat 25 Mar 2023 20:59",
           "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
           "content": "The correct answer is A.  <br><br>Creating an S3 Lifecycle configuration with a rule to transition the objects in the S3 bucket to S3 Intelligent-Tiering would be the most efficient solution to optimize the cost of S3 usage. S3 Intelligent-Tiering is a storage class that automatically moves objects between two access tiers (frequent and infrequent) based on changing access patterns. It is a cost-effective solution that does not require any manual intervention to move data to different storage classes, unlike the other options.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Answer B, Using the S3 storage class analysis tool to determine the correct tier for each object and manually moving objects to the identified storage tier would be time-consuming and require more operational overhead. <br><br>Answer C, Transitioning objects to S3 Glacier Instant Retrieval would be appropriate for data that is accessed less frequently and does not require immediate access. <br><br>Answer D, S3 One Zone-IA would be appropriate for data that can be recreated if lost and does not require the durability of S3 Standard or S3 Standard-IA. </li></ul>",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: A"
         },
         {
@@ -1207,11 +2036,19 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 854867,
+          "date": "Wed 29 Mar 2023 21:23",
+          "username": "\t\t\t\tSamDouk\t\t\t",
+          "content": "B and D",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: BD"
+        },
+        {
           "id": 850422,
           "date": "Sat 25 Mar 2023 20:51",
           "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
           "content": "To resolve the issue of slow page loads for a rapidly growing e-commerce website hosted on AWS, a solutions architect can take the following two actions:<br><br>1. Set up an Amazon CloudFront distribution<br>2. Create a read replica for the RDS DB instance<br><br>Configuring an Amazon Redshift cluster is not relevant to this issue since Redshift is a data warehousing service and is typically used for the analytical processing of large amounts of data.<br><br>Hosting the dynamic web content in Amazon S3 may not necessarily improve performance since S3 is an object storage service, not a web application server. While S3 can be used to host static web content, it may not be suitable for hosting dynamic web content since S3 doesn't support server-side scripting or processing.<br><br>Configuring a Multi-AZ deployment for the RDS DB instance will improve high availability but may not necessarily improve performance.",
-          "upvote_count": "1",
+          "upvote_count": "3",
           "selected_answers": "Selected Answer: BD"
         },
         {
@@ -1348,11 +2185,19 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 855243,
+          "date": "Thu 30 Mar 2023 05:33",
+          "username": "\t\t\t\telearningtakai\t\t\t",
+          "content": "Connect Lambda to Private Subnet contains EC2",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        },
+        {
           "id": 850418,
           "date": "Sat 25 Mar 2023 20:44",
           "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
           "content": "Answer C is the best solution that meets the company's requirements.<br><br>By purchasing a Compute Savings Plan, the company can save on the costs of running both EC2 instances and Lambda functions. The Lambda functions can be connected to the private subnet that contains the EC2 instances through a VPC endpoint for AWS services or a VPC peering connection. This provides direct network access to the EC2 instances while keeping the traffic within the private network, which helps to minimize network latency.<br><br>Optimizing the Lambda functions' duration, memory usage, number of invocations, and amount of data transferred can help to further minimize costs and improve performance. Additionally, using a private subnet helps to ensure that the EC2 instances are not directly accessible from the public internet, which is a security best practice.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Answer A is not the best solution because connecting the Lambda functions directly to the private subnet that contains the EC2 instances may not be scalable as the number of Lambda functions increases. Additionally, using an EC2 Instance Savings Plan may not provide savings on the costs of running Lambda functions.<br><br>Answer B is not the best solution because connecting the Lambda functions to a public subnet may not be as secure as connecting them to a private subnet. Also, keeping the EC2 instances in a private subnet helps to ensure that they are not directly accessible from the public internet.<br><br>Answer D is not the best solution because keeping the Lambda functions in the Lambda service VPC may not provide direct network access to the EC2 instances, which may impact the performance of the application.</li></ul>",
-          "upvote_count": "2",
+          "upvote_count": "4",
           "selected_answers": "Selected Answer: C"
         },
         {
@@ -1360,7 +2205,7 @@ var SAA_C03_Exam_401_500 = {
           "date": "Sat 25 Mar 2023 20:44",
           "username": "\t\t\t\tBuruguduystunstugudunstuy\t\t\t",
           "content": "Answer A is not the best solution because connecting the Lambda functions directly to the private subnet that contains the EC2 instances may not be scalable as the number of Lambda functions increases. Additionally, using an EC2 Instance Savings Plan may not provide savings on the costs of running Lambda functions.<br><br>Answer B is not the best solution because connecting the Lambda functions to a public subnet may not be as secure as connecting them to a private subnet. Also, keeping the EC2 instances in a private subnet helps to ensure that they are not directly accessible from the public internet.<br><br>Answer D is not the best solution because keeping the Lambda functions in the Lambda service VPC may not provide direct network access to the EC2 instances, which may impact the performance of the application.",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": ""
         },
         {
@@ -2265,6 +3110,14 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 899054,
+          "date": "Tue 16 May 2023 12:20",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "B is right",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 898201,
           "date": "Mon 15 May 2023 13:08",
           "username": "\t\t\t\tEfren\t\t\t",
@@ -2318,6 +3171,14 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 899658,
+          "date": "Wed 17 May 2023 04:35",
+          "username": "\t\t\t\tEfren\t\t\t",
+          "content": "ML== SageMaker",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        },
+        {
           "id": 898278,
           "date": "Mon 15 May 2023 14:40",
           "username": "\t\t\t\tnosense\t\t\t",
@@ -2369,7 +3230,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899058,
+          "date": "Tue 16 May 2023 12:23",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "Denies tag: modify",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
     },
     {
       "question_id": "#434",
@@ -2418,9 +3288,17 @@ var SAA_C03_Exam_401_500 = {
           "id": 898286,
           "date": "Mon 15 May 2023 14:55",
           "username": "\t\t\t\tnosense\t\t\t",
-          "content": "D for me<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I would go for A.  If we have DNS failover, why to burden with lambda updating the DNS records?</li></ul>",
+          "content": "D for me<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Misunderstanding. Only A valid</li><li>I would go for A.  If we have DNS failover, why to burden with lambda updating the DNS records?</li></ul>",
           "upvote_count": "1",
           "selected_answers": "Selected Answer: D"
+        },
+        {
+          "id": 899062,
+          "date": "Tue 16 May 2023 12:25",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "Misunderstanding. Only A valid",
+          "upvote_count": "2",
+          "selected_answers": ""
         },
         {
           "id": 899002,
@@ -2443,7 +3321,7 @@ var SAA_C03_Exam_401_500 = {
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: D</p>",
+      "general_feedback": "<p>Correct Answer: A</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -2452,7 +3330,7 @@ var SAA_C03_Exam_401_500 = {
           "answers": [
             {
               "choice": "<p>A. Order an AWS Snowball Edge Storage Optimized device. Use AWS Database Migration Service (AWS DMS) with AWS Schema Conversion Tool (AWS SCT) to migrate the database with replication of ongoing changes. Send the Snowball Edge device to AWS to finish the migration and continue the ongoing replication.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -2467,7 +3345,7 @@ var SAA_C03_Exam_401_500 = {
             },
             {
               "choice": "<p>D. Order a 1 GB dedicated AWS Direct Connect connection to establish a connection with the data center. Use AWS Database Migration Service (AWS DMS) with AWS Schema Conversion Tool (AWS SCT) to migrate the database with replication of ongoing changes.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -2475,6 +3353,22 @@ var SAA_C03_Exam_401_500 = {
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 899118,
+          "date": "Tue 16 May 2023 13:35",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "A) 300 first 10 days. 150 shipping<br>D) 750 for 2 weeks<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Thanks, i was checking the speed more than price. Thanks for the clarification</li></ul>",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: A"
+        },
+        {
+          "id": 899663,
+          "date": "Wed 17 May 2023 04:39",
+          "username": "\t\t\t\tEfren\t\t\t",
+          "content": "Thanks, i was checking the speed more than price. Thanks for the clarification",
+          "upvote_count": "1",
+          "selected_answers": ""
+        },
         {
           "id": 899004,
           "date": "Tue 16 May 2023 10:42",
@@ -2529,6 +3423,14 @@ var SAA_C03_Exam_401_500 = {
       "topic_name": "",
       "discusstion": [
         {
+          "id": 899119,
+          "date": "Tue 16 May 2023 13:36",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "A for me, because without adding additional infrastructure",
+          "upvote_count": "2",
+          "selected_answers": ""
+        },
+        {
           "id": 898206,
           "date": "Mon 15 May 2023 13:14",
           "username": "\t\t\t\tth3k33n\t\t\t",
@@ -2557,7 +3459,7 @@ var SAA_C03_Exam_401_500 = {
       "is_partially_correct": false,
       "question_type": "1",
       "difficulty_level": "0",
-      "general_feedback": "<p>Correct Answer: D</p>",
+      "general_feedback": "<p>Correct Answer: B</p>",
       "is_active": true,
       "answer_list": [
         {
@@ -2571,7 +3473,7 @@ var SAA_C03_Exam_401_500 = {
             },
             {
               "choice": "<p>B. Deploy AWS WAF, associate it with the ALB, and configure a rate-limiting rule.<br></p>",
-              "correct": false,
+              "correct": true,
               "feedback": ""
             },
             {
@@ -2581,7 +3483,7 @@ var SAA_C03_Exam_401_500 = {
             },
             {
               "choice": "<p>D. Deploy Amazon GuardDuty and enable rate-limiting protection when configuring GuardDuty.<br></p>",
-              "correct": true,
+              "correct": false,
               "feedback": ""
             }
           ]
@@ -2589,6 +3491,14 @@ var SAA_C03_Exam_401_500 = {
       ],
       "topic_name": "",
       "discusstion": [
+        {
+          "id": 899130,
+          "date": "Tue 16 May 2023 13:44",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "B obv for this",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        },
         {
           "id": 899007,
           "date": "Tue 16 May 2023 10:45",
@@ -2641,7 +3551,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899146,
+          "date": "Tue 16 May 2023 13:51",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "D for me",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: D"
+        }
+      ]
     },
     {
       "question_id": "#439",
@@ -2685,7 +3604,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899148,
+          "date": "Tue 16 May 2023 13:52",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "A valid",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
     },
     {
       "question_id": "#440",
@@ -2795,7 +3723,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899377,
+          "date": "Tue 16 May 2023 18:58",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "c for me",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
     },
     {
       "question_id": "#442",
@@ -2883,7 +3820,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899383,
+          "date": "Tue 16 May 2023 19:01",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "i WILL Go with A. ",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
     },
     {
       "question_id": "#444",
@@ -2927,7 +3873,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899386,
+          "date": "Tue 16 May 2023 19:03",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "B is correct. HA ensured by DB in Mutli-AZ and EC2 in AG",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
     },
     {
       "question_id": "#445",
@@ -2971,7 +3926,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899170,
+          "date": "Tue 16 May 2023 14:18",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "A for me, bcs egde storage up to 100tb",
+          "upvote_count": "2",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
     },
     {
       "question_id": "#446",
@@ -3015,7 +3979,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899176,
+          "date": "Tue 16 May 2023 14:27",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "D for me, bcs no sense to recopy all data",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        }
+      ]
     },
     {
       "question_id": "#447",
@@ -3065,7 +4038,7 @@ var SAA_C03_Exam_401_500 = {
           "date": "Tue 16 May 2023 14:31",
           "username": "\t\t\t\tnosense\t\t\t",
           "content": "B, bcs a cant' provide regional failover",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: B"
         }
       ]
@@ -3156,7 +4129,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899402,
+          "date": "Tue 16 May 2023 19:08",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "not sure, but b probably",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
     },
     {
       "question_id": "#450",
@@ -3279,7 +4261,7 @@ var SAA_C03_Exam_401_500 = {
           "date": "Tue 16 May 2023 14:56",
           "username": "\t\t\t\tnosense\t\t\t",
           "content": "Bcf for me",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: BCF"
         }
       ]
@@ -3423,7 +4405,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899408,
+          "date": "Tue 16 May 2023 19:14",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "only c mapping relationships",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
     },
     {
       "question_id": "#455",
@@ -3614,7 +4605,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899414,
+          "date": "Tue 16 May 2023 19:16",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "bc for me",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
     },
     {
       "question_id": "#459",
@@ -3658,7 +4658,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899438,
+          "date": "Tue 16 May 2023 19:33",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "a for me",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
     },
     {
       "question_id": "#460",
@@ -3746,7 +4755,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899470,
+          "date": "Tue 16 May 2023 20:01",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "AWS Global Accelerator is a better solution for the mobile gaming app than CloudFront",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
     },
     {
       "question_id": "#462",
@@ -3878,7 +4896,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899477,
+          "date": "Tue 16 May 2023 20:10",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "i guess aa",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
     },
     {
       "question_id": "#465",
@@ -3966,7 +4993,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899480,
+          "date": "Tue 16 May 2023 20:15",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "it's A",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
     },
     {
       "question_id": "#467",
@@ -4054,7 +5090,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899486,
+          "date": "Tue 16 May 2023 20:25",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "b is right, bcs vpc link provided security connection",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
     },
     {
       "question_id": "#469",
@@ -4098,7 +5143,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899490,
+          "date": "Tue 16 May 2023 20:30",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "S3 Inventory can't to move files to another class",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
     },
     {
       "question_id": "#470",
@@ -4148,7 +5202,7 @@ var SAA_C03_Exam_401_500 = {
           "date": "Mon 15 May 2023 20:09",
           "username": "\t\t\t\tradev\t\t\t",
           "content": "Egress-Only internet Gateway",
-          "upvote_count": "1",
+          "upvote_count": "2",
           "selected_answers": "Selected Answer: D"
         }
       ]
@@ -4195,7 +5249,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899494,
+          "date": "Tue 16 May 2023 20:37",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "vpc endpoint for s3",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: C"
+        }
+      ]
     },
     {
       "question_id": "#472",
@@ -4239,7 +5302,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899496,
+          "date": "Tue 16 May 2023 20:44",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "a is valid",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
     },
     {
       "question_id": "#473",
@@ -4283,7 +5355,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899498,
+          "date": "Tue 16 May 2023 20:46",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "a for me",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: A"
+        }
+      ]
     },
     {
       "question_id": "#474",
@@ -4371,7 +5452,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899503,
+          "date": "Tue 16 May 2023 20:56",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "shared file system that is highly durable and can recover data",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
     },
     {
       "question_id": "#476",
@@ -4415,7 +5505,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899509,
+          "date": "Tue 16 May 2023 21:01",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "should be b",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
     },
     {
       "question_id": "#477",
@@ -4436,22 +5535,22 @@ var SAA_C03_Exam_401_500 = {
           "question_id": "#477",
           "answers": [
             {
-              "choice": "<p>A. <br></p>",
+              "choice": "<p>A. <img src=\"https://img.examtopics.com/aws-certified-solutions-architect-associate-saa-c03/image7.png\"><br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>B. <br></p>",
+              "choice": "<p>B. <img src=\"https://img.examtopics.com/aws-certified-solutions-architect-associate-saa-c03/image8.png\"><br></p>",
               "correct": false,
               "feedback": ""
             },
             {
-              "choice": "<p>C. <br></p>",
+              "choice": "<p>C. <img src=\"https://img.examtopics.com/aws-certified-solutions-architect-associate-saa-c03/image9.png\"><br></p>",
               "correct": true,
               "feedback": ""
             },
             {
-              "choice": "<p>D. <br></p>",
+              "choice": "<p>D. <img src=\"https://img.examtopics.com/aws-certified-solutions-architect-associate-saa-c03/image10.png\"><br></p>",
               "correct": false,
               "feedback": ""
             }
@@ -4459,7 +5558,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899516,
+          "date": "Tue 16 May 2023 21:04",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "d work",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: D"
+        }
+      ]
     },
     {
       "question_id": "#478",
@@ -4547,7 +5655,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899520,
+          "date": "Tue 16 May 2023 21:13",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "b obvious",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
     },
     {
       "question_id": "#480",
@@ -4635,7 +5752,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899525,
+          "date": "Tue 16 May 2023 21:17",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "write-through caching strategy updates the cache at the same time as the database",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
     },
     {
       "question_id": "#482",
@@ -4723,7 +5849,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899531,
+          "date": "Tue 16 May 2023 21:27",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "b most cost effective",
+          "upvote_count": "1",
+          "selected_answers": "Selected Answer: B"
+        }
+      ]
     },
     {
       "question_id": "#484",
@@ -4772,7 +5907,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899538,
+          "date": "Tue 16 May 2023 21:29",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "ae is right",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
     },
     {
       "question_id": "#485",
@@ -4816,7 +5960,16 @@ var SAA_C03_Exam_401_500 = {
         }
       ],
       "topic_name": "",
-      "discusstion": []
+      "discusstion": [
+        {
+          "id": 899544,
+          "date": "Tue 16 May 2023 21:32",
+          "username": "\t\t\t\tnosense\t\t\t",
+          "content": "glacier expedited retrieval times of typically 1-5 minutes.",
+          "upvote_count": "1",
+          "selected_answers": ""
+        }
+      ]
     },
     {
       "question_id": "#486",
