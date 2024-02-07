@@ -273,6 +273,17 @@ var listExamGroup = [
       },
     ]
   },
+  {
+    id: "SCS_C02",
+    name: "[SCS-C02] Security - Specialty",
+    list: [
+      {
+        id: "SCS_C02_Part1",
+        name: "[SCS-C02] Part1",
+        data: SCS_C02_Part1.data,
+      },
+    ]
+  },
 
   //GROUP 7
   {
