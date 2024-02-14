@@ -2275,7 +2275,7 @@ var SCS_C02_Part1 = {
         "is_partially_correct": true,
         "question_type": "1",
         "difficulty_level": "0",
-        "general_feedback": "<p>Correct Answer: BD</p>",
+        "general_feedback": "<p>Correct Answer: BDF</p>",
         "is_active": true,
         "answer_list": [
           {
@@ -2303,8 +2303,13 @@ var SCS_C02_Part1 = {
                 "feedback": ""
               },
               {
-                "choice": "<p>Update each stack to use the service role.F Add a policy to each member role to allow the iam:PassRole action. Set the policy's resource field to the ARN of the service role.<br></p>",
+                "choice": "<p>Update each stack to use the service role.<br></p>",
                 "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Add a policy to each member role to allow the iam:PassRole action. Set the policy's resource field to the ARN of the service role.<br></p>",
+                "correct": true,
                 "feedback": ""
               }
             ]
@@ -4177,22 +4182,22 @@ var SCS_C02_Part1 = {
             "question_id": "#34",
             "answers": [
               {
-                "choice": "<p>Update the IAM policy attached to the role in the identity account to be:<br></p>",
+                "choice": "<p>Update the IAM policy attached to the role in the identity account to be:<br><img title=\"image4\" src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image4.png\"></p>",
                 "correct": false,
                 "feedback": ""
               },
               {
-                "choice": "<p>Update the trust policy on the role in the target account to be:<br></p>",
+                "choice": "<p>Update the trust policy on the role in the target account to be:<br><img title=\"image5\" src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image5.png\"></p>",
                 "correct": true,
                 "feedback": ""
               },
               {
-                "choice": "<p>Update the trust policy on the role in the identity account to be:<br></p>",
+                "choice": "<p>Update the trust policy on the role in the identity account to be:<br><img title=\"image6\" src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image6.png\"></p>",
                 "correct": false,
                 "feedback": ""
               },
               {
-                "choice": "<p>Update the IAM policy attached to the role in the target account to be:<br></p>",
+                "choice": "<p>Update the IAM policy attached to the role in the target account to be:<br><img title=\"image7\" src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image7.png\"></p>",
                 "correct": false,
                 "feedback": ""
               }
@@ -5794,6 +5799,6428 @@ var SCS_C02_Part1 = {
             "content": "Agree. SSM can create secure API string as well but the emphasis here is on MOST secure. Therefore, Secret Manager is the answer.",
             "upvote_count": "3",
             "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#51",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company's AWS CloudTrail logs are all centrally stored in an Amazon S3 bucket. The security team controls the company's AWS account. The security team must prevent unauthorized access and tampering of the CloudTrail logs.<br>Which combination of steps should the security team take? (Choose three.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: ADE</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#51",
+            "answers": [
+              {
+                "choice": "<p>Configure server-side encryption with AWS KMS managed encryption keys (SSE-KMS).<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Compress log files with secure gzip.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an Amazon EventBridge rule to notify the security team of any modifications on CloudTrail log files.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Implement least privilege access to the S3 bucket by configuring a bucket policy.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure CloudTrail log file integrity validation.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure Access Analyzer for S3.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 51 discussion",
+        "discusstion": [
+          {
+            "id": 1076931,
+            "date": "Wed 22 Nov 2023 06:27",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Here's what it describes about the usage of log file integration and the SSE-KMS usecase scenario:<br><br>\\\"If you use SSE-KMS and log file validation, and you have modified your Amazon S3 bucket policy to only allow SSE-KMS encrypted files, you will not be able to create trails that utilize that bucket unless you modify your bucket policy to specifically allow AES256 encryption, as shown in the following example policy line.<br><br>\\\"StringNotEquals\\\": { \\\"s3:x-amz-server-side-encryption\\\": [\\\"aws:kms\\\", \\\"AES256\\\"] }<br>\\\"",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: ADE"
+          },
+          {
+            "id": 1054317,
+            "date": "Thu 26 Oct 2023 07:58",
+            "username": "\t\t\t\tahrentom\t\t\t",
+            "content": "ADE<br>https://docs.aws.amazon.com/awscloudtrail/latest/userguide/best-practices-security.html",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: ADE"
+          }
+        ]
+      },
+      {
+        "question_id": "#52",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company has several petabytes of data. The company must preserve this data for 7 years to comply with regulatory requirements. The company's compliance team asks a security officer to develop a strategy that will prevent anyone from changing or deleting the data.<br>Which solution will meet this requirement MOST cost-effectively?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: C</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#52",
+            "answers": [
+              {
+                "choice": "<p>Create an Amazon S3 bucket. Configure the bucket to use S3 Object Lock in compliance mode. Upload the data to the bucket. Create a resource-based bucket policy that meets all the regulatory requirements.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an Amazon S3 bucket. Configure the bucket to use S3 Object Lock in governance mode. Upload the data to the bucket. Create a user-based IAM policy that meets all the regulatory requirements.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create a vault in Amazon S3 Glacier. Create a Vault Lock policy in S3 Glacier that meets all the regulatory requirements. Upload the data to the vault.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an Amazon S3 bucket. Upload the data to the bucket. Use a lifecycle rule to transition the data to a vault in S3 Glacier. Create a Vault Lock policy that meets all the regulatory requirements.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 52 discussion",
+        "discusstion": [
+          {
+            "id": 1100501,
+            "date": "Tue 19 Dec 2023 10:58",
+            "username": "\t\t\t\ttrashbox\t\t\t",
+            "content": "Exam on 2023-12-18",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1067414,
+            "date": "Fri 10 Nov 2023 18:38",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock-policy.html",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1059807,
+            "date": "Wed 01 Nov 2023 15:40",
+            "username": "\t\t\t\tcjkuga\t\t\t",
+            "content": "Both A and C work here but C is the MOST cost-effective.",
+            "upvote_count": "4",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1055780,
+            "date": "Fri 27 Oct 2023 20:16",
+            "username": "\t\t\t\tpupsik\t\t\t",
+            "content": "Question doesn't ask for a backup solution, so Glacier is not a good fir here.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>No, it clearly states that \\\"The company must preserve this data for 7 years\\\"... so how would you keep such large data safe and specifically complianced with all the regulatory reqs. That's why going with C here.</li></ul>",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1076935,
+            "date": "Wed 22 Nov 2023 06:45",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "No, it clearly states that \\\"The company must preserve this data for 7 years\\\"... so how would you keep such large data safe and specifically complianced with all the regulatory reqs. That's why going with C here.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1051066,
+            "date": "Sun 22 Oct 2023 22:24",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Correction, answer C",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1049979,
+            "date": "Sun 22 Oct 2023 02:08",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "The correct answer here is C.  This option ticks all the boxes.<br><br> Several petabytes of data + 7 years + Regulatory Compliance + MOST cost-effective solution.<br><br>D is close but we don't S3 at all.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Thanks AgboolKun! What are your thoughts on #49?<br>Agree with answer C as well. Can set the policy on Vault Lock that cannot be altered.<br>https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-access-policy.html</li><li>@100fold, I agree with your answer (C) in #49. There is no better option to C!!<br><br>I upvoted your answer already!!</li><li>@AgboolaKun, I sat the exam Friday and marked 926. 80% from this study were on my exam. 6-7 new questions, one related to AWS KMS keyrings. Good luck everyone!</li><li>Wow!! Congratulations!! I am happy for you. I will be sitting for the exam soon. I will let you know!!</li><li>@AgboolKun. Awesome! All The Best wishes throughout your career =F0=9F=91=8D</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1051063,
+            "date": "Sun 22 Oct 2023 22:22",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Thanks AgboolKun! What are your thoughts on #49?<br>Agree with answer C as well. Can set the policy on Vault Lock that cannot be altered.<br>https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-access-policy.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>@100fold, I agree with your answer (C) in #49. There is no better option to C!!<br><br>I upvoted your answer already!!</li><li>@AgboolaKun, I sat the exam Friday and marked 926. 80% from this study were on my exam. 6-7 new questions, one related to AWS KMS keyrings. Good luck everyone!</li><li>Wow!! Congratulations!! I am happy for you. I will be sitting for the exam soon. I will let you know!!</li><li>@AgboolKun. Awesome! All The Best wishes throughout your career =F0=9F=91=8D</li></ul>",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1063168,
+            "date": "Sun 05 Nov 2023 19:15",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "@100fold, I agree with your answer (C) in #49. There is no better option to C!!<br><br>I upvoted your answer already!!<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>@AgboolaKun, I sat the exam Friday and marked 926. 80% from this study were on my exam. 6-7 new questions, one related to AWS KMS keyrings. Good luck everyone!</li><li>Wow!! Congratulations!! I am happy for you. I will be sitting for the exam soon. I will let you know!!</li><li>@AgboolKun. Awesome! All The Best wishes throughout your career =F0=9F=91=8D</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1064188,
+            "date": "Mon 06 Nov 2023 20:22",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "@AgboolaKun, I sat the exam Friday and marked 926. 80% from this study were on my exam. 6-7 new questions, one related to AWS KMS keyrings. Good luck everyone!<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Wow!! Congratulations!! I am happy for you. I will be sitting for the exam soon. I will let you know!!</li><li>@AgboolKun. Awesome! All The Best wishes throughout your career =F0=9F=91=8D</li></ul>",
+            "upvote_count": "5",
+            "selected_answers": ""
+          },
+          {
+            "id": 1069853,
+            "date": "Tue 14 Nov 2023 01:16",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "Wow!! Congratulations!! I am happy for you. I will be sitting for the exam soon. I will let you know!!<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>@AgboolKun. Awesome! All The Best wishes throughout your career =F0=9F=91=8D</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1072513,
+            "date": "Thu 16 Nov 2023 16:03",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "@AgboolKun. Awesome! All The Best wishes throughout your career =F0=9F=91=8D",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1047097,
+            "date": "Wed 18 Oct 2023 19:17",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Answer A. <br>Compliance mode will prevent anyone from changing or deleting the data including the root user. Requested by the company's compliance team. <br><br>https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock-overview.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Correction to Answer C. <br>https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-access-policy.html</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1051064,
+            "date": "Sun 22 Oct 2023 22:23",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Correction to Answer C. <br>https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-access-policy.html",
+            "upvote_count": "1",
+            "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#53",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A-company uses a third-party identity provider and SAML-based SSO for its AWS accounts. After the third-party identity provider renewed an expired signing certificate, users saw the following message when trying to log in:<br>Error: Response Signature Invalid (Service: AWSSecurityTokenService; Status Code: 400; Error Code: InvalidIdentityToken)<br>A security engineer needs to provide a solution that corrects the error and minimizes operational overhead.<br>Which solution meets these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: C</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#53",
+            "answers": [
+              {
+                "choice": "<p>Upload the third-party signing certificate's new private key to the AWS identity provider entity defined in AWS Identity and Access Management (IAM) by using the AWS Management Console.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Sign the identity provider's metadata file with the new public key. Upload the signature to the AWS identity provider entity defined in AWS Identity and Access Management (IAM) by using the AWS CLI.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Download the updated SAML metadata file from the identity service provider. Update the file in the AWS identity provider entity defined in AWS Identity and Access Management (IAM) by using the AWS CLI.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure the AWS identity provider entity defined in AWS Identity and Access Management (IAM) to synchronously fetch the new public key by using the AWS Management Console.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 53 discussion",
+        "discusstion": [
+          {
+            "id": 1047110,
+            "date": "Wed 18 Oct 2023 19:32",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Answer C. <br><br>https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_saml.html#troubleshoot_saml_invalid-metadata<br>https://www.examtopics.com/discussions/amazon/view/69166-exam-aws-certified-security-specialty-topic-1-question-292/",
+            "upvote_count": "8",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1103350,
+            "date": "Fri 22 Dec 2023 13:12",
+            "username": "\t\t\t\tyorkicurke\t\t\t",
+            "content": "nice link by user:100fold<br>thanks bud",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1086274,
+            "date": "Sat 02 Dec 2023 16:03",
+            "username": "\t\t\t\tawssecuritynewbie\t\t\t",
+            "content": "Cis the correct answer",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          }
+        ]
+      },
+      {
+        "question_id": "#54",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company has several workloads running on AWS. Employees are required to authenticate using on-premises ADFS and SSO to access the AWS Management Console. Developers migrated an existing legacy web application to an Amazon EC2 instance. Employees need to access this application from anywhere on the internet, but currently, there is no authentication system built into the application.<br>How should the security engineer implement employee-only access to this system without changing the application?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: A</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#54",
+            "answers": [
+              {
+                "choice": "<p>Place the application behind an Application Load Balancer (ALB). Use Amazon Cognito as authentication for the ALB.  Define a SAML-based Amazon Cognito user pool and connect it to ADFS.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Implement AWS IAM Identity Center (AWS Single Sign-On) in the management account and link it to ADFS as an identity provider. Define the EC2 instance as a managed resource, then apply an IAM policy on the resource.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Define an Amazon Cognito identity pool, then install the connector on the Active Directory server. Use the Amazon Cognito SDK on the application instance to authenticate the employees using their Active Directory user names and passwords.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an AWS Lambda custom authorizer as the authenticator for a reverse proxy on Amazon EC2. Ensure the security group on Amazon EC2 only allows access from the Lambda function.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 54 discussion",
+        "discusstion": [
+          {
+            "id": 1047303,
+            "date": "Thu 19 Oct 2023 00:55",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Answer A. <br><br>https://docs.aws.amazon.com/elasticloadbalancing/latest/application/listener-authenticate-users.html<br>https://www.examtopics.com/discussions/amazon/view/30063-exam-aws-certified-security-specialty-topic-1-question-143/",
+            "upvote_count": "9",
+            "selected_answers": "Selected Answer: A"
+          }
+        ]
+      },
+      {
+        "question_id": "#55",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company is using AWS to run a long-running analysis process on data that is stored in Amazon S3 buckets. The process runs on a fleet of Amazon EC2 instances that are in an Auto Scaling group. The EC2 instances are deployed in a private subnet of a VPC that does not have internet access. The EC2 instances and the S3 buckets are in the same AWS account.<br>The EC2 instances access the S3 buckets through an S3 gateway endpoint that has the default access policy. Each EC2 instance is associated with an instance profile role that has a policy that explicitly allows the s3:GetObject action and the s3:PutObject action for only the required S3 buckets.<br>The company learns that one or more of the EC2 instances are compromised and are exfiltrating data to an S3 bucket that is outside the company's organization in AWS Organizations. A security engineer must implement a solution to stop this exfiltration of data and to keep the EC2 processing job functional.<br>Which solution will meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: D</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#55",
+            "answers": [
+              {
+                "choice": "<p>Update the policy on the S3 gateway endpoint to allow the S3 actions only if the values of the aws:ResourceOrgID and aws:PrincipalOrgID condition keys match the company's values.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Update the policy on the instance profile role to allow the S3 actions only if the value of the aws:ResourceOrgID condition key matches the company's value.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Add a network ACL rule to the subnet of the EC2 instances to block outgoing connections on port 443.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Apply an SCP on the AWS account to allow the S3 actions only if the values of the aws:ResourceOrgID and aws:PrincipalOrgID condition keys match the company's values.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 55 discussion",
+        "discusstion": [
+          {
+            "id": 1067484,
+            "date": "Fri 10 Nov 2023 20:26",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "Answer D based on the syntax of these answers.<br>A.  This could work, but you don't need aws:ResourceOrgID and aws:PrincipalOrgID You can add allowed buckets (internal or external) as needed which is much more flexible IMO.https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html#edit-vpc-endpoint-policy-s3<br>B.  This doesn't prevent S3 actions on external accounts.<br>C.  This does nothing as the S3 endpoint is inside the VPC. <br>D.  This solution matches the answer exactly.<br>Example 3: https://aws.amazon.com/blogs/security/how-to-control-access-to-aws-resources-based-on-aws-account-ou-or-organization/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I agree totally. I have always thought that D is the correct answer but I could not locate any supported documentation online. Thank you for providing the link. The example 3 in the link as you pointed out tallies with the scenario in this question.</li></ul>",
+            "upvote_count": "8",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1070990,
+            "date": "Wed 15 Nov 2023 02:21",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "I agree totally. I have always thought that D is the correct answer but I could not locate any supported documentation online. Thank you for providing the link. The example 3 in the link as you pointed out tallies with the scenario in this question.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1049185,
+            "date": "Sat 21 Oct 2023 01:45",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "D<br>https://aws.amazon.com/blogs/security/how-to-control-access-to-aws-resources-based-on-aws-account-ou-or-organization/",
+            "upvote_count": "6",
+            "selected_answers": ""
+          },
+          {
+            "id": 1141293,
+            "date": "Mon 05 Feb 2024 17:55",
+            "username": "\t\t\t\tLazyAutonomy\t\t\t",
+            "content": "Answer is A. <br>D is wrong because attackers wont use EC2 instance credentials to exfil data - no attacker is that stupid.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html#edit-vpc-endpoint-policy-s3<br>https://developer.squareup.com/blog/adopting-aws-vpc-endpoints-at-square/</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1141296,
+            "date": "Mon 05 Feb 2024 18:00",
+            "username": "\t\t\t\tLazyAutonomy\t\t\t",
+            "content": "https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html#edit-vpc-endpoint-policy-s3<br>https://developer.squareup.com/blog/adopting-aws-vpc-endpoints-at-square/",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1140555,
+            "date": "Sun 04 Feb 2024 22:58",
+            "username": "\t\t\t\tmark16dc\t\t\t",
+            "content": "Given the effectiveness and direct impact on preventing data exfiltration to external S3 buckets, Option D is the correct solution. It leverages the organizational control provided by AWS Organizations to enforce policy restrictions at the account level, ensuring that S3 actions are confined to the company's organizational boundaries, thus meeting the security requirements without disrupting the EC2 processing jobs.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1113737,
+            "date": "Thu 04 Jan 2024 15:15",
+            "username": "\t\t\t\tRNan\t\t\t",
+            "content": "Answer: B<br>The compromised EC2 instances are exfiltrating data to an S3 bucket outside the company's organization. By updating the policy on the instance profile role, you can restrict the S3 actions to only allow access to the required S3 buckets within the company's organization.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1111065,
+            "date": "Mon 01 Jan 2024 10:37",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "Between A and D, A must be ruled out because:<br>\\\"An endpoint policy does not override or replace identity-based policies or resource-based policies. \\\" So, either the compromised ec2 instance or the external s3 can override the endpoint policy.<br>https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1108709,
+            "date": "Fri 29 Dec 2023 14:26",
+            "username": "\t\t\t\tDebbieB67\t\t\t",
+            "content": "Answer D",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1103364,
+            "date": "Fri 22 Dec 2023 13:45",
+            "username": "\t\t\t\tyorkicurke\t\t\t",
+            "content": "This ensures that only resources from within the company's AWS Organization can access the S3 bucket through the endpoint. This prevents any exfiltration of data from compromised EC2 instances to external S3 buckets, while STILL allowing the processing job on the instances to function normally by accessing the company's internal S3 resources through the private endpoint.<br>https://repost.aws/questions/QU2Qx3s51DQ9SyrlWueh9L_Q/restrict-access-to-s3-bucket",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1098256,
+            "date": "Sat 16 Dec 2023 15:58",
+            "username": "\t\t\t\tOralinux\t\t\t",
+            "content": "Answer B",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1097575,
+            "date": "Fri 15 Dec 2023 19:24",
+            "username": "\t\t\t\t1c7c461\t\t\t",
+            "content": "The answer is B.  You all missed the part that EC2 instance is compromised. The restriction has to be added to the instance profile of the ec2 instance to restrict which S3 buckets it can connect to. This question is about limiting access from EC2 to external S3 buckets.",
+            "upvote_count": "4",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1094477,
+            "date": "Tue 12 Dec 2023 13:33",
+            "username": "\t\t\t\tWeepingMaplte\t\t\t",
+            "content": "I will go with A although D is also a possible method.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1088721,
+            "date": "Tue 05 Dec 2023 19:40",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "D is the correct option.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1086484,
+            "date": "Sun 03 Dec 2023 00:57",
+            "username": "\t\t\t\tsnowmaggedon\t\t\t",
+            "content": "D.  I have seen this is many other practice tests.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1086277,
+            "date": "Sat 02 Dec 2023 16:10",
+            "username": "\t\t\t\tawssecuritynewbie\t\t\t",
+            "content": "if they are exfiltrating data via the EC2 to a S3 bucket, then ACL will not help either SCP, you would need to modify the S3 endpoint so allow access to only the Aws Org and not other S3 buckets in AWS.<br>Answer would be A:",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1086247,
+            "date": "Sat 02 Dec 2023 15:17",
+            "username": "\t\t\t\tmarco25\t\t\t",
+            "content": "Choosing between a and D, A has the issue of not able to prevent direct we access bypassing the gateway.So voted d",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1079256,
+            "date": "Fri 24 Nov 2023 13:38",
+            "username": "\t\t\t\tmarlonchin\t\t\t",
+            "content": "Does this Q mention any company resources needed to access the S3? EC2 access only through the S3 gateway endpoint. Ithink it should be A",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1058414,
+            "date": "Tue 31 Oct 2023 03:27",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Please disregard my previous answer to eliminate any confusion. Weighing out A or B. <br><br>The solution request is to stop exfiltration of data",
+            "upvote_count": "2",
+            "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#56",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company that operates in a hybrid cloud environment must meet strict compliance requirements. The company wants to create a report that includes evidence from on-premises workloads alongside evidence from AWS resources. A security engineer must implement a solution to collect, review, and manage the evidence to demonstrate compliance with company policy.<br>Which solution will meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: A</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#56",
+            "answers": [
+              {
+                "choice": "<p>Create an assessment in AWS Audit Manager from a prebuilt framework or a custom framework. Upload manual evidence from the on-premises workloads. Add the evidence to the assessment. Generate an assessment report after Audit Manager collects the necessary evidence from the AWS resources.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Install the Amazon CloudWatch agent on the on-premises workloads. Use AWS Config to deploy a conformance pack from a sample conformance pack template or a custom YAML template. Generate an assessment report after AWS Config identifies noncompliant workloads and resources.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Set up the appropriate security standard in AWS Security Hub. Upload manual evidence from the on-premises workloads. Wait for Security Hub to collect the evidence from the AWS resources. Download the list of controls as a .csv file.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Install the Amazon CloudWatch agent on the on-premises workloads. Create a CloudWatch dashboard to monitor the on-premises workloads and the AWS resources. Run a query on the workloads and resources. Download the results.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 56 discussion",
+        "discusstion": [
+          {
+            "id": 1094522,
+            "date": "Tue 12 Dec 2023 13:57",
+            "username": "\t\t\t\tWeepingMaplte\t\t\t",
+            "content": "The keyword in the question is \\\"evidence\\\".AWS Audit Manager manages evidences.<br>https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1087728,
+            "date": "Mon 04 Dec 2023 16:02",
+            "username": "\t\t\t\tconfusedyeti69\t\t\t",
+            "content": "voted A",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1083959,
+            "date": "Thu 30 Nov 2023 04:27",
+            "username": "\t\t\t\tbrpjp\t\t\t",
+            "content": "Requirement is company policy compliance, which security hub supports and not Audit Manager. C is correct answer.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Source for this statement pls?... See the below Audit Manager link which justifies option A instead:<br>https://aws.amazon.com/blogs/aws/aws-audit-manager-simplifies-audit-preparation/</li></ul>",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1088746,
+            "date": "Tue 05 Dec 2023 20:00",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Source for this statement pls?... See the below Audit Manager link which justifies option A instead:<br>https://aws.amazon.com/blogs/aws/aws-audit-manager-simplifies-audit-preparation/",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1047326,
+            "date": "Thu 19 Oct 2023 01:37",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Answer A",
+            "upvote_count": "4",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1027523,
+            "date": "Sat 07 Oct 2023 18:15",
+            "username": "\t\t\t\tkk2000\t\t\t",
+            "content": "A<br>https://aws.amazon.com/blogs/aws/aws-audit-manager-simplifies-audit-preparation/",
+            "upvote_count": "4",
+            "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#57",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>To meet regulatory requirements, a security engineer needs to implement an IAM policy that restricts the use of AWS services to the us-east-1 Region.<br>What policy should the engineer implement?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: C</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#57",
+            "answers": [
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image8.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image9.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image10.png\"><br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image11.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 57 discussion",
+        "discusstion": [
+          {
+            "id": 1047328,
+            "date": "Thu 19 Oct 2023 01:44",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Answer C<br><br>https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_aws_deny-requested-region.html",
+            "upvote_count": "6",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1104278,
+            "date": "Sat 23 Dec 2023 21:32",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "Answer is C",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1071124,
+            "date": "Wed 15 Nov 2023 07:02",
+            "username": "\t\t\t\tlmimi\t\t\t",
+            "content": "Why not A? C is just not denied, but not explicit allow.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A can't be correct since the 'Deny' always takes the precedence over 'Allow' if any similar SID policy statement is defined. The option C looks correct since it denies the access of the aws resources explicitly through the condition that 'IF' the region is not equal to 'us-east-1'. Since the question states that the access restriction should be limited to just us-east-1 region only.</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079049,
+            "date": "Fri 24 Nov 2023 06:33",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "A can't be correct since the 'Deny' always takes the precedence over 'Allow' if any similar SID policy statement is defined. The option C looks correct since it denies the access of the aws resources explicitly through the condition that 'IF' the region is not equal to 'us-east-1'. Since the question states that the access restriction should be limited to just us-east-1 region only.",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1027531,
+            "date": "Sat 07 Oct 2023 18:27",
+            "username": "\t\t\t\tkk2000\t\t\t",
+            "content": "C is Correct",
+            "upvote_count": "2",
+            "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#58",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company has a web server in the AWS Cloud. The company will store the content for the web server in an Amazon S3 bucket. A security engineer must use an Amazon CloudFront distribution to speed up delivery of the content. None of the files can be publicly accessible from the S3 bucket directly.<br>Which solution will meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: B</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#58",
+            "answers": [
+              {
+                "choice": "<p>Configure the permissions on the individual files in the S3 bucket so that only the CloudFront distribution has access to them.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an origin access control (OAC). Associate the OAC with the CloudFront distribution. Configure the S3 bucket permissions so that only the OAC can access the files in the S3 bucket.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an S3 role in AWS Identity and Access Management (IAM). Allow only the CloudFront distribution to assume the role to access the files in the S3 bucket.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an S3 bucket policy that uses only the CloudFront distribution ID as the principal and the Amazon Resource Name (ARN) as the target.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 58 discussion",
+        "discusstion": [
+          {
+            "id": 1047329,
+            "date": "Thu 19 Oct 2023 01:53",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Answer B. <br>Amazon CloudFront introduces Origin Access Control (OAC) <br>https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-cloudfront-introduces-origin-access-control-oac/",
+            "upvote_count": "9",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1108078,
+            "date": "Thu 28 Dec 2023 20:54",
+            "username": "\t\t\t\tnouns\t\t\t",
+            "content": "Option B: When you associate an OAI with a CloudFront distribution, it acts as a pseudo-user for the distribution, and you can configure S3 bucket permissions to grant access only to that OAI. This allows CloudFront to fetch and serve objects from the S3 bucket on behalf of the end-users without making the objects directly accessible from the S3 bucket.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: B"
+          }
+        ]
+      },
+      {
+        "question_id": "#59",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer logs in to the AWS Lambda console with administrator permissions. The security engineer is trying to view logs in Amazon CloudWatch for a Lambda function that is named myFunction. When the security engineer chooses the option in the Lambda console to view logs in CloudWatch, an \"error loading Log Streams\" message appears.<br>The IAM policy for the Lambda function's execution role contains the following:<br><img title=\"image12\" src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image12.png\"><br>How should the security engineer correct the error?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: D</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#59",
+            "answers": [
+              {
+                "choice": "<p>Move the logs:CreateLogGroup action to the second Allow statement.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Add the logs:PutDestination action to the second Allow statement.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Add the logs:GetLogEvents action to the second Allow statement.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Add the logs:CreateLogStream action to the second Allow statement.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 59 discussion",
+        "discusstion": [
+          {
+            "id": 1132194,
+            "date": "Fri 26 Jan 2024 02:16",
+            "username": "\t\t\t\tmynickc\t\t\t",
+            "content": "putlogevent require logstream. so it is createlogstream. https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/permissions-reference-cwl.html",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1128511,
+            "date": "Mon 22 Jan 2024 11:28",
+            "username": "\t\t\t\tGafa255\t\t\t",
+            "content": "C is correct options because Security Engineer wants to see LOG. logs:GetLogEvents<br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/iam-identity-based-access-control-cwl.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Sorry the correct options is D because the issue is when the Lambda function want to create the streams.</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1128514,
+            "date": "Mon 22 Jan 2024 11:30",
+            "username": "\t\t\t\tGafa255\t\t\t",
+            "content": "Sorry the correct options is D because the issue is when the Lambda function want to create the streams.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079411,
+            "date": "Fri 24 Nov 2023 16:45",
+            "username": "\t\t\t\tmarlonchin\t\t\t",
+            "content": "D I don't think adding logs is not the responsibility of the Lamda function here",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1077803,
+            "date": "Wed 22 Nov 2023 21:53",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "Seems poorly written to me.. The engineer is trying to view the logs. So they'll need \\\"logs:GetLogEvents \\\" permission. However the policy is also missing\\\"logs:CreateLogStream\\\" so they will also need that in order for the Lambda to \\\"create a new log stream\\\". Doubt something this bad will be on the exam",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1072812,
+            "date": "Thu 16 Nov 2023 22:15",
+            "username": "\t\t\t\tYR4591\t\t\t",
+            "content": "When creating log group, there should be a permission to put log streams in the log group",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1067529,
+            "date": "Fri 10 Nov 2023 22:11",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "Answer C.  The security engineer wants to view logs in CloudWatch.<br>A.  logs:CreateLogGroup - Required to create a new log groupB.  logs:PutDestination - Required to create or update a destination log streamC.  Add the logs:GetLogEvents - Required to retrieve log events from a log streamD.  Add the logs:CreateLogStream - Required to create a new log stream in a log group<br><br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/permissions-reference-cwl.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>But w/o creating the LogStream, how can the PutLogStream going to work from option C?.. that looks missing to me though..</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1088762,
+            "date": "Tue 05 Dec 2023 20:40",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "But w/o creating the LogStream, how can the PutLogStream going to work from option C?.. that looks missing to me though..",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1047348,
+            "date": "Thu 19 Oct 2023 01:59",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Answer D<br>https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/iam-identity-based-access-control-cwl.html",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1027534,
+            "date": "Sat 07 Oct 2023 18:31",
+            "username": "\t\t\t\tkk2000\t\t\t",
+            "content": "Correct Answer is D",
+            "upvote_count": "3",
+            "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#60",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company has a new partnership with a vendor. The vendor will process data from the company's customers. The company will upload data files as objects into an Amazon S3 bucket. The vendor will download the objects to perform data processing. The objects will contain sensitive data.<br>A security engineer must implement a solution that prevents objects from residing in the S3 bucket for longer than 72 hours.<br>Which solution will meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: B</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#60",
+            "answers": [
+              {
+                "choice": "<p>Use Amazon Macie to scan the S3 bucket for sensitive data every 72 hours. Configure Macie to delete the objects that contain sensitive data when they are discovered.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure an S3 Lifecycle rule on the S3 bucket to expire objects that have been in the S3 bucket for 72 hours.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an Amazon EventBridge scheduled rule that invokes an AWS Lambda function every day. Program the Lambda function to remove any objects that have been in the S3 bucket for 72 hours.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use the S3 Intelligent-Tiering storage class for all objects that are uploaded to the S3 bucket. Use S3 Intelligent-Tiering to expire objects that have been in the $3 bucket for 72 hours.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 60 discussion",
+        "discusstion": [
+          {
+            "id": 1047387,
+            "date": "Thu 19 Oct 2023 02:26",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "B<br><br>https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html<br>https://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-set-lifecycle-configuration-intro.html",
+            "upvote_count": "6",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1087120,
+            "date": "Sun 03 Dec 2023 22:06",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "B is self-explanatory and sufficient.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          }
+        ]
+      },
+      {
+        "question_id": "#61",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company accidentally deleted the private key for an Amazon Elastic Block Store (Amazon EBS)-backed Amazon EC2 instance. A security engineer needs to regain access to the instance.<br>Which combination of steps will meet this requirement? (Choose two.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: AC</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#61",
+            "answers": [
+              {
+                "choice": "<p>Stop the instance. Detach the root volume. Generate a new key pair.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Keep the instance running. Detach the root volume. Generate a new key pair.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>When the volume is detached from the original instance, attach the volume to another instance as a data volume. Modify the authorized_keys file with a new public key. Move the volume back to the original instance. Start the instance.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>When the volume is detached from the original instance, attach the volume to another instance as a data volume. Modify the authorized_keys file with a new private key. Move the volume back to the original instance. Start the instance.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>When the volume is detached from the original instance, attach the volume to another instance as a data volume. Modify the authorized_keys file with a new public key. Move the volume back to the original instance that is running.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 61 discussion",
+        "discusstion": [
+          {
+            "id": 1047390,
+            "date": "Thu 19 Oct 2023 02:28",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Answer AC<br><br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html#replacing-lost-key-pair",
+            "upvote_count": "7",
+            "selected_answers": "Selected Answer: AC"
+          },
+          {
+            "id": 1088913,
+            "date": "Wed 06 Dec 2023 01:59",
+            "username": "\t\t\t\tjeff001\t\t\t",
+            "content": "A & C. Stop the instance, detach its root volume and attach it to another instance as a data volume, modify the authorized_keys file with a new public key, move the volume back to the original instance, and restart the instance",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: AC"
+          },
+          {
+            "id": 1083042,
+            "date": "Wed 29 Nov 2023 02:32",
+            "username": "\t\t\t\t352ae9a\t\t\t",
+            "content": "Answer AC",
+            "upvote_count": "2",
+            "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#62",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company purchased a subscription to a third-party cloud security scanning solution that integrates with AWS Security Hub. A security engineer needs to implement a solution that will remediate the findings from the third-party scanning solution automatically.<br>Which solution will meet this requirement?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: A</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#62",
+            "answers": [
+              {
+                "choice": "<p>Set up an Amazon EventBridge rule that reacts to new Security Hub findings. Configure an AWS Lambda function as the target for the rule to remediate the findings.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Set up a custom action in Security Hub. Configure the custom action to call AWS Systems Manager Automation runbooks to remediate the findings.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Set up a custom action in Security Hub. Configure an AWS Lambda function as the target for the custom action to remediate the findings.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Set up AWS Config rules to use AWS Systems Manager Automation runbooks to remediate the findings.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 62 discussion",
+        "discusstion": [
+          {
+            "id": 1047404,
+            "date": "Thu 19 Oct 2023 02:44",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Answer A<br>https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-remediation-for-aws-security-hub-standard-findings.html",
+            "upvote_count": "5",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1133087,
+            "date": "Sat 27 Jan 2024 06:55",
+            "username": "\t\t\t\tDerets\t\t\t",
+            "content": "Answer B<br>Custom action is a native feature for Security Hub when using a 3rd-party library. Then you need to use Systems Manager Automation runbooks.<br>Answer A (EventBridge+Lambda) can be used for standard findings.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1104499,
+            "date": "Sun 24 Dec 2023 09:21",
+            "username": "\t\t\t\tyorkicurke\t\t\t",
+            "content": "Verty tricky one. A,B and C can all be implemented. and we havent asked for easy,quickly or something like that a solution. so reason for not picking others<br><br>A:- could also be used but would require additional steps to configure rules to route findings from this specific third-party source to the appropriate target. Custom actions provide a native option within Security Hub.<br><br>C:- identical to B.  same reasoning that Custom actions provide a native option within Security Hub.<br><br>to be honest i could go for any out of these three. even though i chose B.  Arghhhh",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1088777,
+            "date": "Tue 05 Dec 2023 20:54",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "To remediate the findings automatically, option A describes about the best practices..",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          }
+        ]
+      },
+      {
+        "question_id": "#63",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>An application is running on an Amazon EC2 instance that has an IAM role attached. The IAM role provides access to an AWS Key Management Service (AWS KMS) customer managed key and an Amazon S3 bucket. The key is used to access 2 TB of sensitive data that is stored in the S3 bucket.<br>A security engineer discovers a potential vulnerability on the EC2 instance that could result in the compromise of the sensitive data. Due to other critical operations, the security engineer cannot immediately shut down the EC2 instance for vulnerability patching.<br>What is the FASTEST way to prevent the sensitive data from being exposed?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: C</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#63",
+            "answers": [
+              {
+                "choice": "<p>Download the data from the existing S3 bucket to a new EC2 instance. Then delete the data from the S3 bucket. Re-encrypt the data with a client-based key. Upload the data to a new S3 bucket.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Block access to the public range of S3 endpoint IP addresses by using a host-based firewall. Ensure that internet-bound traffic from the affected EC2 instance is routed through the host-based firewall.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Revoke the IAM role's active session permissions. Update the S3 bucket policy to deny access to the IAM role. Remove the IAM role from the EC2 instance profile.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Disable the current key. Create a new KMS key that the IAM role does not have access to, and re-encrypt all the data with the new key. Schedule the compromised key for deletion.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 63 discussion",
+        "discusstion": [
+          {
+            "id": 1093168,
+            "date": "Mon 11 Dec 2023 08:10",
+            "username": "\t\t\t\ttapupa\t\t\t",
+            "content": "itexamstest.com<br><br>no disscusion c :)",
+            "upvote_count": "13",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1092467,
+            "date": "Sun 10 Dec 2023 12:46",
+            "username": "\t\t\t\tOralinux\t\t\t",
+            "content": "C.  Revoke the IAM role's active session permissions.",
+            "upvote_count": "3",
+            "selected_answers": ""
+          },
+          {
+            "id": 1091422,
+            "date": "Sat 09 Dec 2023 04:11",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "This contains more detail response. Refer to part 2 for containment step. The first step is always to deal with the role access first.<br>https://www.bicarait.com/2021/04/27/aws-incident-response-unintended-access-to-s3-bucket/<br>It only takes a few minutes for policy updates to effectively revoke the role's temporary security credentials to force all users assuming the role to reauthenticate and request new credentials. (as compare to re-encrypt entire s3 bucket data to a single new key)<br>https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_control-access_disable-perms.html#deny-access-to-all-sessions<br>Furthermore, though unrelated to the requirement:<br>The s3 bucket may be encrypted by multiple data keys which is intended. by re-encrypting the entire bucket, you may affect data that are encrypted by other legitimate keys unaffected by this vulnerable ec2.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1079432,
+            "date": "Fri 24 Nov 2023 17:56",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Still v confusing btw C and D. ... but I'd probably go with C. ",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1067550,
+            "date": "Fri 10 Nov 2023 23:10",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "Answer D.  The fastest way to prevent sensitive data from being exposed is to disable the current key.<br>A.  Not fastB.  Not fastC.  AWSRevokeOlderSessions is fast, however bad actors can immediately reconnect with new sessions before you remove the IAM role from the EC2 instance profile.If these steps were reversed to prevent that its no longer the fastest solution because its 2 steps.D.  Disable the current key...1st step prevents sensitive data exposure and the rest of the steps to re-encrypt the data with a new key can follow.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>If your bucket has millions of objects, re-encryption is slower. Ans is C</li><li>No, that's not the point here. The req. is to implement it 'FASTER' to get it secured on the first attempt which I also feel Option D provides it. Disabling the key right away can atleast help ensure that no sensitive data would get exposed further IMO... and then the rest of the steps to re-encrypting the data can be done as a 2nd step to follow...</li></ul>",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1088192,
+            "date": "Tue 05 Dec 2023 06:01",
+            "username": "\t\t\t\tconfusedyeti69\t\t\t",
+            "content": "If your bucket has millions of objects, re-encryption is slower. Ans is C<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>No, that's not the point here. The req. is to implement it 'FASTER' to get it secured on the first attempt which I also feel Option D provides it. Disabling the key right away can atleast help ensure that no sensitive data would get exposed further IMO... and then the rest of the steps to re-encrypting the data can be done as a 2nd step to follow...</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1088786,
+            "date": "Tue 05 Dec 2023 21:14",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "No, that's not the point here. The req. is to implement it 'FASTER' to get it secured on the first attempt which I also feel Option D provides it. Disabling the key right away can atleast help ensure that no sensitive data would get exposed further IMO... and then the rest of the steps to re-encrypting the data can be done as a 2nd step to follow...",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1047407,
+            "date": "Thu 19 Oct 2023 02:48",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Answer C<br>https://www.examtopics.com/discussions/amazon/view/60659-exam-aws-certified-security-specialty-topic-1-question-287/",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          }
+        ]
+      },
+      {
+        "question_id": "#64",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company is building an application on AWS that will store sensitive information. The company has a support team with access to the IT infrastructure, including databases. The company's security engineer must introduce measures to protect the sensitive data against any data breach while minimizing management overhead. The credentials must be regularly rotated.<br>What should the security engineer recommend?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: C</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#64",
+            "answers": [
+              {
+                "choice": "<p>Enable Amazon RDS encryption to encrypt the database and snapshots. Enable Amazon Elastic Block Store (Amazon EBS) encryption on Amazon EC2 instances. Include the database credential in the EC2 user data field. Use an AWS Lambda function to rotate database credentials. Set up TLS for the connection to the database.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Install a database on an Amazon EC2 instance. Enable third-party disk encryption to encrypt the Amazon Elastic Block Store (Amazon EBS) volume. Store the database credentials in AWS CloudHSM with automatic rotation. Set up TLS for the connection to the database.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Enable Amazon RDS encryption to encrypt the database and snapshots. Enable Amazon Elastic Black Store (Amazon EBS) encryption on Amazon EC2 instances. Store the database credentials in AWS Secrets Manager with automatic rotation. Set up TLS for the connection to the RDS hosted database.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Set up an AWS CloudHSM cluster with AWS Key Management Service (AWS KMS) to store KMS keys. Set up Amazon RDS encryption using AWS KMS to encrypt the database. Store database credentials in the AWS Systems Manager Parameter Store with automatic rotation. Set up TLS for the connection to the RDS hosted database.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 64 discussion",
+        "discusstion": [
+          {
+            "id": 1067553,
+            "date": "Fri 10 Nov 2023 23:18",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "Answer C<br>https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotate-secrets_turn-on-for-db.html",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1047409,
+            "date": "Thu 19 Oct 2023 02:50",
+            "username": "\t\t\t\t100fold\t\t\t",
+            "content": "Answer C<br>https://www.examtopics.com/discussions/amazon/view/60739-exam-aws-certified-security-specialty-topic-1-question-268/",
+            "upvote_count": "4",
+            "selected_answers": "Selected Answer: C"
+          }
+        ]
+      },
+      {
+        "question_id": "#65",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company is using Amazon Route 53 Resolver for its hybrid DNS infrastructure. The company has set up Route 53 Resolver forwarding rules for authoritative domains that are hosted on on-premises DNS servers.<br><br>A new security mandate requires the company to implement a solution to log and query DNS traffic that goes to the on-premises DNS servers. The logs must show details of the source IP address of the instance from which the query originated. The logs also must show the DNS name that was requested in Route 53 Resolver.<br><br>Which solution will meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: C</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#65",
+            "answers": [
+              {
+                "choice": "<p>Use VPC Traffic Mirroring. Configure all relevant elastic network interfaces as the traffic source, include amazon-dns in the mirror filter, and set Amazon CloudWatch Logs as the mirror target. Use CloudWatch Insights on the mirror session logs to run queries on the source IP address and DNS name.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure VPC flow logs on all relevant VPCs. Send the logs to an Amazon S3 bucket. Use Amazon Athena to run SQL queries on the source IP address and DNS name.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure Route 53 Resolver query logging on all relevant VPCs. Send the logs to Amazon CloudWatch Logs. Use CloudWatch Insights to run queries on the source IP address and DNS name.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Modify the Route 53 Resolver rules on the authoritative domains that forward to the on-premises DNS servers. Send the logs to an Amazon S3 bucket. Use Amazon Athena to run SQL queries on the source IP address and DNS name.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 65 discussion",
+        "discusstion": [
+          {
+            "id": 1111089,
+            "date": "Mon 01 Jan 2024 11:12",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "C is the only answer as you need to config resolver query logging on all vpc, and cloudwatch log insight indeed allow you to query the source IP address.<br><br>https://aws.amazon.com/blogs/aws/log-your-vpc-dns-queries-with-route-53-resolver-query-logs/",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1110722,
+            "date": "Sun 31 Dec 2023 18:21",
+            "username": "\t\t\t\tbrpjp\t\t\t",
+            "content": "Correct answer is D.  https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html. Please read this statement : Resolver rules enable you to create one forwarding rule for each domain name and specify the name of the domain for which you want to forward DNS queries from your VPC to an on-premises DNS resolver and from your on-premises to your VPC.  Rules are applied directly to your VPC and can be shared across multiple accounts. so correct answer, based on above statement is D and not C, as it does not specify the requirements to send outbound connections to on-premise.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1087558,
+            "date": "Mon 04 Dec 2023 11:16",
+            "username": "\t\t\t\tahrentom\t\t\t",
+            "content": "For me it=C2=B4s anwser C<br>https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-query-logs.html",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1079476,
+            "date": "Fri 24 Nov 2023 18:56",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "Seems like it's C<br><br>https://medium.com/@sisodiyapradeep/dns-query-logging-aggregation-control-tower-environment-well-architected-telemetry-workload-266dcdbf7195",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1078682,
+            "date": "Thu 23 Nov 2023 20:11",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1078633,
+            "date": "Thu 23 Nov 2023 19:16",
+            "username": "\t\t\t\tmarlonchin\t\t\t",
+            "content": "https://repost.aws/knowledge-center/route53-view-endpoint-traffic",
+            "upvote_count": "2",
+            "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#66",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer is configuring account-based access control (ABAC) to allow only specific principals to put objects into an Amazon S3 bucket. The principals already have access to Amazon S3.<br><br>The security engineer needs to configure a bucket policy that allows principals to put objects into the S3 bucket only if the value of the Team tag on the object matches the value of the Team tag that is associated with the principal. During testing, the security engineer notices that a principal can still put objects into the S3 bucket when the tag values do not match.<br><br>Which combination of factors are causing the PutObject operation to succeed when the tag values are different? (Choose two.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: AC</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#66",
+            "answers": [
+              {
+                "choice": "<p>The principal's identity-based policy grants access to put objects into the S3 bucket with no conditions.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>The principal's identity-based policy overrides the condition because the identity-based policy contains an explicit allow.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>The S3 bucket's resource policy does not deny access to put objects.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>The S3 bucket's resource policy cannot allow actions to the principal.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>The bucket policy does not apply to principals in the same zone of trust.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 66 discussion",
+        "discusstion": [
+          {
+            "id": 1104509,
+            "date": "Sun 24 Dec 2023 09:52",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "AC is the correct ones",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AC"
+          },
+          {
+            "id": 1092525,
+            "date": "Sun 10 Dec 2023 14:58",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_attribute-based-access-control.html<br>Look out for step 2- create ABAC policy example.<br>To ensure that resources is only granted when principal and resource tag match, there should be condition for the access, and disallow when tag not match.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: AC"
+          },
+          {
+            "id": 1079487,
+            "date": "Fri 24 Nov 2023 19:28",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "BDE Don't appear to make much sense. So A C it is.<br><br>The resource policy should be setup to DENY if a tag DOES NOT MATCH the desired tags. Not ALLOW the tag listed alone. Otherwise, a IAM policy without conditions may be enough to provide access. Not a fan of this question as it leaves a ton up in the air but hey..",
+            "upvote_count": "3",
+            "selected_answers": ""
+          },
+          {
+            "id": 1078683,
+            "date": "Thu 23 Nov 2023 20:13",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: AC"
+          },
+          {
+            "id": 1078650,
+            "date": "Thu 23 Nov 2023 19:32",
+            "username": "\t\t\t\tmarlonchin\t\t\t",
+            "content": "Sorry not D I need the explanation for E if it is right answer",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1078645,
+            "date": "Thu 23 Nov 2023 19:28",
+            "username": "\t\t\t\tmarlonchin\t\t\t",
+            "content": "BE can some explain how it is possible for D to be answer",
+            "upvote_count": "1",
+            "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#67",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company is hosting multiple applications within a single VPC in its AWS account. The applications are running behind an Application Load Balancer that is associated with an AWS WAF web ACL. The company's security team has identified that multiple port scans are originating from a specific range of IP addresses on the internet.<br><br>A security engineer needs to deny access from the offending IP addresses.<br><br>Which solution will meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: A</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#67",
+            "answers": [
+              {
+                "choice": "<p>Modify the AWS WAF web ACL with an IP set match rule statement to deny incoming requests from the IP address range.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Add a rule to all security groups to deny the incoming requests from the IP address range.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Modify the AWS WAF web ACL with a rate-based rule statement to deny the incoming requests from the IP address range.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure the AWS WAF web ACL with regex match conditions. Specify a pattern set to deny the incoming requests based on the match condition.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 67 discussion",
+        "discusstion": [
+          {
+            "id": 1098202,
+            "date": "Sat 16 Dec 2023 14:35",
+            "username": "\t\t\t\t3633f8f\t\t\t",
+            "content": "As per below discussion.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1092814,
+            "date": "Sun 10 Dec 2023 21:06",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "https://docs.aws.amazon.com/waf/latest/developerguide/listing-managed-ips.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>agree, should be C. </li><li>agree, should be A instead.</li><li>You will use rate limit if it is normal HTTP/s traffic. For port scanning is a network reconnaissance technique used to identify which ports on a computer system are open and potentially vulnerable. You will want to block it 100%.</li><li>The question is how to apply what the security engineer wants to do which is to block every single request coming from that IP set. Hence, I also think correct answer is A. </li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1111123,
+            "date": "Mon 01 Jan 2024 12:50",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "agree, should be C. <br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>agree, should be A instead.</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1111124,
+            "date": "Mon 01 Jan 2024 12:50",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "agree, should be A instead.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1097796,
+            "date": "Sat 16 Dec 2023 02:08",
+            "username": "\t\t\t\tWeepingMaplte\t\t\t",
+            "content": "You will use rate limit if it is normal HTTP/s traffic. For port scanning is a network reconnaissance technique used to identify which ports on a computer system are open and potentially vulnerable. You will want to block it 100%.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>The question is how to apply what the security engineer wants to do which is to block every single request coming from that IP set. Hence, I also think correct answer is A. </li></ul>",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1098201,
+            "date": "Sat 16 Dec 2023 14:34",
+            "username": "\t\t\t\t3633f8f\t\t\t",
+            "content": "The question is how to apply what the security engineer wants to do which is to block every single request coming from that IP set. Hence, I also think correct answer is A. ",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079482,
+            "date": "Fri 24 Nov 2023 19:11",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "Agreed on A",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1078685,
+            "date": "Thu 23 Nov 2023 20:15",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: A"
+          }
+        ]
+      },
+      {
+        "question_id": "#68",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company has contracted with a third party to audit several AWS accounts. To enable the audit, cross-account IAM roles have been created in each account targeted for audit. The auditor is having trouble accessing some of the accounts.<br><br>Which of the following may be causing this problem? (Choose three.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: ACF</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#68",
+            "answers": [
+              {
+                "choice": "<p>The external ID used by the auditor is missing or incorrect.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>The auditor is using the incorrect password.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>The auditor has not been granted sts:AssumeRole for the role in the destination account.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>The Amazon EC2 role used by the auditor must be set to the destination account role.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>The secret key used by the auditor is missing or incorrect.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>The role ARN used by the auditor is missing or incorrect.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 68 discussion",
+        "discusstion": [
+          {
+            "id": 1104514,
+            "date": "Sun 24 Dec 2023 10:08",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "ACF for sure",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: ACF"
+          },
+          {
+            "id": 1092834,
+            "date": "Sun 10 Dec 2023 21:37",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "B &E, if its due to external ID or secret key used by auditor, then access to all accounts shd be affected.<br>D, ec2 is irrelevant in account access.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: ACF"
+          },
+          {
+            "id": 1079481,
+            "date": "Fri 24 Nov 2023 19:11",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "ACF for sure",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: ACF"
+          },
+          {
+            "id": 1078686,
+            "date": "Thu 23 Nov 2023 20:17",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: ACF"
+          }
+        ]
+      },
+      {
+        "question_id": "#69",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer needs to configure an Amazon S3 bucket policy to restrict access to an S3 bucket that is named DOC-EXAMPLE-BUCKET. The policy must allow access to only DOC-EXAMPLE-BUCKET from only the following endpoint: vpce-1a2b3c4d. The policy must deny all access to DOC-EXAMPLE-BUCKET if the specified endpoint is not used.<br><br>Which bucket policy statement meets these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: B</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#69",
+            "answers": [
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image13.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image14.png\"><br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image15.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image16.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 69 discussion",
+        "discusstion": [
+          {
+            "id": 1104516,
+            "date": "Sun 24 Dec 2023 10:11",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "B is the correct one",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1085692,
+            "date": "Sat 02 Dec 2023 05:11",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "No doubt, it's B. ",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1079489,
+            "date": "Fri 24 Nov 2023 19:29",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "B is correcto",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1078687,
+            "date": "Thu 23 Nov 2023 20:18",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: B"
+          }
+        ]
+      },
+      {
+        "question_id": "#70",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company has a group of Amazon EC2 instances in a single private subnet of a VPC with no internet gateway attached. A security engineer has installed the Amazon CloudWatch agent on all instances in that subnet to capture logs from a specific application. To ensure that the logs flow securely, the company's networking team has created VPC endpoints for CloudWatch monitoring and CloudWatch logs. The networking team has attached the endpoints to the VPC. <br><br>The application is generating logs However, when the security engineer queries CloudWatch, the logs do not appear.<br><br>Which combination of steps should the security engineer take to troubleshoot this issue? (Choose three.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: ACD</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#70",
+            "answers": [
+              {
+                "choice": "<p>Ensure that the EC2 instance profile that is attached to the EC2 instances has permissions to create log streams and write logs.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create a metric filter on the logs so that they can be viewed in the AWS Management Console.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Check the CloudWatch agent configuration file on each EC2 instance to make sure that the CloudWatch agent is collecting the proper log files.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Check the VPC endpoint policies of both VPC endpoints to ensure that the EC2 instances have permissions to use them.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create a NAT gateway in the subnet so that the EC2 instances can communicate with CloudWatch.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Ensure that the security groups allow all the EC2 instances to communicate with each other to aggregate logs before sending.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 70 discussion",
+        "discusstion": [
+          {
+            "id": 1104519,
+            "date": "Sun 24 Dec 2023 10:18",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "ACD are the correct ones. for sure",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: ACD"
+          },
+          {
+            "id": 1085696,
+            "date": "Sat 02 Dec 2023 05:17",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "ACD makes a good comb. logically.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: ACD"
+          },
+          {
+            "id": 1079490,
+            "date": "Fri 24 Nov 2023 19:35",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "ACD seem correct",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: ACD"
+          },
+          {
+            "id": 1078691,
+            "date": "Thu 23 Nov 2023 20:21",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: ACD"
+          }
+        ]
+      },
+      {
+        "question_id": "#71",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company uses AWS Signer with all of the company's AWS Lambda functions. A developer recently stopped working for the company. The company wants to ensure that all the code that the developer wrote can no longer be deployed to the Lambda functions.<br><br>Which solution will meet this requirement?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: A</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#71",
+            "answers": [
+              {
+                "choice": "<p>Revoke all versions of the signing profile assigned to the developer.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Examine the developer's IAM roles. Remove all permissions that grant access to Signer.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Re-encrypt all source code with a new AWS Key Management Service (AWS KMS) key.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use Amazon CodeGuru to profile all the code that the Lambda functions use.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 71 discussion",
+        "discusstion": [
+          {
+            "id": 1104526,
+            "date": "Sun 24 Dec 2023 10:22",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "https://docs.aws.amazon.com/signer/latest/developerguide/revocation.html",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1096159,
+            "date": "Thu 14 Dec 2023 08:44",
+            "username": "\t\t\t\tvincentsr7\t\t\t",
+            "content": "The privilege has to be removed from signer , for this option b is the right answer",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1096044,
+            "date": "Thu 14 Dec 2023 06:13",
+            "username": "\t\t\t\tvincentsr7\t\t\t",
+            "content": "Option A suggests revoking all versions of the signing profile assigned to the developer, but this is not the most effective solution for preventing the developer from deploying code to Lambda functions. Signing profiles primarily deal with the integrity and authenticity of code, rather than controlling the ability to deploy code",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1083095,
+            "date": "Wed 29 Nov 2023 05:01",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "Answer A<br>New URL: https://docs.aws.amazon.com/signer/latest/developerguide/revocation.html",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1079692,
+            "date": "Sat 25 Nov 2023 04:03",
+            "username": "\t\t\t\tlmimi\t\t\t",
+            "content": "A<br>Refer to https://docs.aws.amazon.com/signer/latest/developerguide/revoking.html<br>https://docs.aws.amazon.com/signer/latest/developerguide/revoking.html",
+            "upvote_count": "3",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079617,
+            "date": "Fri 24 Nov 2023 23:00",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "A is the correct answer. Revoke the developer signing profile - https://docs.aws.amazon.com/signer/latest/developerguide/revocation.html",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1079497,
+            "date": "Fri 24 Nov 2023 19:46",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "A will handle prevention",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1078694,
+            "date": "Thu 23 Nov 2023 20:22",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Source pls?</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1079731,
+            "date": "Sat 25 Nov 2023 05:47",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Source pls?",
+            "upvote_count": "1",
+            "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#72",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company plans to use AWS Key Management Service (AWS KMS) to implement an encryption strategy to protect data at rest. The company requires client-side encryption for company projects. The company is currently conducting multiple projects to test the company's use of AWS KMS. These tests have led to a sudden increase in the company's AWS resource consumption. The test projects include applications that issue multiple requests each second to KMS endpoints for encryption activities.<br><br>The company needs to develop a solution that does not throttle the company's ability to use AWS KMS. The solution must improve key usage for client-side encryption and must be cost optimized.<br><br>Which solution will meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: B</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#72",
+            "answers": [
+              {
+                "choice": "<p>Use keyrings with the AWS Encryption SDK. Use each keyring individually or combine keyrings into a multi-keyring. Decrypt the data by using a keyring that has the primary key in the multi-keyring.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use data key caching. Use the local cache that the AWS Encryption SDK provides with a caching cryptographic materials manager.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use KMS key rotation. Use a local cache in the AWS Encryption SDK with a caching cryptographic materials manager.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use keyrings with the AWS Encryption SDK. Use each keyring individually or combine keyrings into a multi-keyring. Use any of the wrapping keys in the multi-keyring to decrypt the data.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 72 discussion",
+        "discusstion": [
+          {
+            "id": 1108627,
+            "date": "Fri 29 Dec 2023 12:15",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "\\\"Caching can reduce your use of cryptographic services, such as AWS Key Management Service (AWS KMS). If you are hitting your AWS KMS requests-per-second limit, caching can help.\\\"<br>https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/data-key-caching.html",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1097943,
+            "date": "Sat 16 Dec 2023 07:02",
+            "username": "\t\t\t\tWeepingMaplte\t\t\t",
+            "content": "Local key cache: Implement local key caching in your applications to store frequently used encryption keys, reducing the number of calls to KMS. Consider libraries like AWS Encryption SDK for secure key cache management.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079726,
+            "date": "Sat 25 Nov 2023 05:38",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Shouldn't it be 'D'? Couldn't verify the source for the option of 'C' being correct anywhere.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079691,
+            "date": "Sat 25 Nov 2023 03:48",
+            "username": "\t\t\t\tlmimi\t\t\t",
+            "content": "I vote for B",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079624,
+            "date": "Fri 24 Nov 2023 23:21",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "Data key caching helps to improve performance, reduce cost, and help stay within limit as your key usage increases without throttling - https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/data-key-caching.html",
+            "upvote_count": "4",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1079502,
+            "date": "Fri 24 Nov 2023 19:52",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "B seems right<br><br>https://repost.aws/knowledge-center/kms-throttlingexception-error",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1078697,
+            "date": "Thu 23 Nov 2023 20:24",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C is correct</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1078699,
+            "date": "Thu 23 Nov 2023 20:26",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "C is correct",
+            "upvote_count": "1",
+            "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#73",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security team is working on a solution that will use Amazon EventBridge to monitor new Amazon S3 objects. The solution will monitor for public access and for changes to any S3 bucket policy or setting that result in public access. The security team configures EventBridge to watch for specific API calls that are logged from AWS CloudTrail. EventBridge has an action to send an email notification through Amazon Simple Notification Service (Amazon SNS) to the security team immediately with details of the API call.<br><br>Specifically, the security team wants EventBridge to watch for the s3:PutObjectAcl, s3:DeleteBucketPolicy, and s3:PutBucketPolicy API invocation logs from CloudTrail. While developing the solution in a single account, the security team discovers that the s3:PutObjectAcl API call does not invoke an EventBridge event However, the s3:DeleteBucketPolicy API call and the s3:PutBucketPolicy API call do invoke an event.<br><br>The security team has enabled CloudTrail for AWS management events with a basic configuration in the AWS Region in which EventBridge is being tested. Verification of the EventBridge event pattern indicates that the pattern is set up correctly. The security team must implement a solution so that the s3:PutObjectAcl API call will invoke an EventBridge event. The solution must not generate false notifications.<br><br>Which solution will meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: D</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#73",
+            "answers": [
+              {
+                "choice": "<p>Modify the EventBridge event pattern by selecting Amazon S3. Select All Events as the event type.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Modify the EventBridge event pattern by selecting Amazon S3. Select Bucket Level Operations as the event type.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Enable CloudTrail Insights to identify unusual API activity.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Enable CloudTrail to monitor data events for read and write operations to S3 buckets.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 73 discussion",
+        "discusstion": [
+          {
+            "id": 1079512,
+            "date": "Fri 24 Nov 2023 20:01",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "You need to enable data events for that API event to trigger<br><br>https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudtrail-logging-s3-info.html#cloudtrail-object-level-tracking",
+            "upvote_count": "6",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1104529,
+            "date": "Sun 24 Dec 2023 10:41",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "you need to enable data events in cloudtrail",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1097948,
+            "date": "Sat 16 Dec 2023 07:10",
+            "username": "\t\t\t\tWeepingMaplte\t\t\t",
+            "content": "By default, CloudTrail only logs bucket-level API calls in S3, not object-level actions. This means it logs events like creating or deleting buckets, but not actions like uploading or downloading objects.<br>To enable object-level logging, you need to explicitly configure CloudTrail for your S3 buckets. You can do this in the S3 console, CLI, or SDK.",
+            "upvote_count": "3",
+            "selected_answers": ""
+          },
+          {
+            "id": 1078706,
+            "date": "Thu 23 Nov 2023 20:31",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          }
+        ]
+      },
+      {
+        "question_id": "#74",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company uses Amazon GuardDuty. The company's security team wants all High severity findings to automatically generate a ticket in a third-party ticketing system through email integration.<br><br>Which solution will meet this requirement?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: B</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#74",
+            "answers": [
+              {
+                "choice": "<p>Create a verified identity for the third-party ticketing email system in Amazon Simple Email Service (Amazon SES). Create an Amazon EventBridge rule that includes an event pattern that matches High severity GuardDuty findings. Specify the SES identity as the target for the EventBridge rule.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an Amazon Simple Notification Service (Amazon SNS) topic. Subscribe the third-party ticketing email system to the SNS topic. Create an Amazon EventBridge rule that includes an event pattern that matches High severity GuardDuty findings. Specify the SNS topic as the target for the EventBridge rule.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use the GuardDuty CreateFilter API operation to build a filter in GuardDuty to monitor for High severity findings. Export the results of the filter to an Amazon Simple Notification Service (Amazon SNS) topic. Subscribe the third-party ticketing email system to the SNS topic.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use the GuardDuty CreateFilter API operation to build a filter in GuardDuty to monitor for High severity findings. Create an Amazon Simple Notification Service (Amazon SNS) topic. Subscribe the third-party ticketing email system to the SNS topic. Create an Amazon EventBridge rule that includes an event pattern that matches GuardDuty findings that are selected by the filter. Specify the SNS topic as the target for the EventBridge rule.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 74 discussion",
+        "discusstion": [
+          {
+            "id": 1104530,
+            "date": "Sun 24 Dec 2023 10:42",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "B is the right one- you do it with EventBridge",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1098220,
+            "date": "Sat 16 Dec 2023 15:11",
+            "username": "\t\t\t\t3633f8f\t\t\t",
+            "content": "Create a high severity Eventbridge based on GuardDuty High Severity Findings: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings_cloudwatch.html",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1097952,
+            "date": "Sat 16 Dec 2023 07:14",
+            "username": "\t\t\t\tWeepingMaplte\t\t\t",
+            "content": "Key steps for integration:<br>1. Create a Eventbridge/CloudWatch event rule: Define the event pattern to trigger the rule based on specific GuardDuty findings.<br>2. Configure the rule target: Choose where to send the findings data, like an SNS topic",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1081292,
+            "date": "Mon 27 Nov 2023 08:57",
+            "username": "\t\t\t\tlmimi\t\t\t",
+            "content": "B. <br>Users can define filter in EventBridge. Not necessary to use GuardDuty CreateFilter API.",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079757,
+            "date": "Sat 25 Nov 2023 06:41",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "D sounds pretty legit IMO.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Sorry, after reviewing it again, looks like Option 'B' looks to be more correct ans.</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1080148,
+            "date": "Sat 25 Nov 2023 17:05",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Sorry, after reviewing it again, looks like Option 'B' looks to be more correct ans.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079518,
+            "date": "Fri 24 Nov 2023 20:10",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "B. . Use Eventbridge (formally Cloudwatch Events)<br><br>https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings_cloudwatch.html",
+            "upvote_count": "4",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1078714,
+            "date": "Thu 23 Nov 2023 20:33",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>D is correct</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1078718,
+            "date": "Thu 23 Nov 2023 20:35",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "D is correct",
+            "upvote_count": "1",
+            "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#75",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company is using AWS Organizations to implement a multi-account strategy. The company does not have on-premises infrastructure. All workloads run on AWS. The company currently has eight member accounts. The company anticipates that it will have no more than 20 AWS accounts total at any time.<br><br>The company issues a new security policy that contains the following requirements:<br><br>- No AWS account should use a VPC within the AWS account for workloads.<br>- The company should use a centrally managed VPC that all AWS accounts can access to launch workloads in subnets.<br>- No AWS account should be able to modify another AWS account's application resources within the centrally managed VPC. <br>- The centrally managed VPC should reside in an existing AWS account that is named Ac-count-A within an organization.<br><br>The company uses an AWS CloudFormation template to create a VPC that contains multiple subnets in Account-A.  This template exports the subnet IDs through the CloudFormation Outputs section.<br><br>Which solution will complete the security setup to meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: C</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#75",
+            "answers": [
+              {
+                "choice": "<p>Use a CloudFormation template in the member accounts to launch workloads. Configure the template to use the Fn::ImportValue function to obtain the subnet ID values.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use a transit gateway in the VPC within Account-A.  Configure the member accounts to use the transit gateway to access the subnets in Account-A to launch workloads.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use AWS Resource Access Manager (AWS RAM) to share Account-A's VPC subnets with the remaining member accounts. Configure the member accounts to use the shared subnets to launch workloads.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create a peering connection between Account-A and the remaining member accounts. Configure the member accounts to use the subnets in Account-A through the VPC peering connection to launch workloads.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 75 discussion",
+        "discusstion": [
+          {
+            "id": 1121697,
+            "date": "Sat 13 Jan 2024 14:52",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "C.  Explanation:<br>using AWS RAM, allows for centralized control over the VPC in Account-A, shared access to subnets with other member accounts, and isolation between the resources of different accounts within the VPC.  This aligns well with the specified security requirements.<br><br>VPC Peering or Transit Gateway: While VPC peering (Option D) or Transit Gateway (Option B) could facilitate communication between VPCs, they might not provide the level of isolation required in this scenario. With VPC peering, all resources in the peered VPCs have the ability to communicate with each other directly.<br><br>CloudFormation Fn::ImportValue: While using CloudFormation's Fn::ImportValue (Option A) is a common approach to share values between stacks, in this scenario, AWS RAM provides a more structured and scalable way to share resources (subnets) across accounts.",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1104532,
+            "date": "Sun 24 Dec 2023 10:44",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "RAM is used to share subnets",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1079634,
+            "date": "Sat 25 Nov 2023 00:22",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "Yes, you can use the AWS Resource Access Manager (AWS RAM) to share your subnets and resources in VPC owner, Account-A with other accounts - https://aws.amazon.com/blogs/networking-and-content-delivery/vpc-sharing-a-new-approach-to-multiple-accounts-and-vpc-management/",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1079526,
+            "date": "Fri 24 Nov 2023 20:18",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "C is correct. B and D will require multiple VPCs and A is not applicable here",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1078721,
+            "date": "Thu 23 Nov 2023 20:37",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          }
+        ]
+      },
+      {
+        "question_id": "#76",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company's security team needs to receive a notification whenever an AWS access key has not been rotated in 90 or more days. A security engineer must develop a solution that provides these notifications automatically.<br><br>Which solution will meet these requirements with the LEAST amount of effort?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: A</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#76",
+            "answers": [
+              {
+                "choice": "<p>Deploy an AWS Config managed rule to run on a periodic basis of 24 hours. Select the access-keys-rotated managed rule, and set the maxAccessKeyAge parameter to 90 days. Create an Amazon EventBridge rule with an event pattern that matches the compliance type of NON_ COMPLIANT from AWS Config for the managed rule. Configure EventBridge to send an Amazon Simple Notification Service (Amazon SNS) notification to the security team.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create a script to export a .csv file from the AWS Trusted Advisor check for IAM access key rotation. Load the script into an AWS Lambda function that will upload the .csv file to an Amazon S3 bucket. Create an Amazon Athena table query that runs when the .csv file is uploaded to the S3 bucket. Publish the results for any keys older than 90 days by using an invocation of an Amazon Simple Notification Service (Amazon SNS) notification to the security team.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create a script to download the IAM credentials report on a periodic basis. Load the script into an AWS Lambda function that will run on a schedule through Amazon EventBridge. Configure the Lambda script to load the report into memory and to filter the report for records in which the key was last rotated at least 90 days ago. If any records are detected, send an Amazon Simple Notification Service (Amazon SNS) notification to the security team.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an AWS Lambda function that queries the IAM API to list all the users. Iterate through the users by using the ListAccessKeys operation. Verify that the value in the CreateDate field is not at least 90 days old. Send an Amazon Simple Notification Service (Amazon SNS) notification to the security team if the value is at least 90 days old. Create an Amazon EventBridge rule to schedule the Lambda function to run each day.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 76 discussion",
+        "discusstion": [
+          {
+            "id": 1121703,
+            "date": "Sat 13 Jan 2024 15:00",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "AWS Config managed rule (access-keys-rotated): This managed rule checks whether IAM access keys have been rotated within a specified timeframe. By configuring it to run on a periodic basis of 24 hours and setting the maxAccessKeyAge parameter to 90 days, it will automatically detect access keys that haven't been rotated in 90 or more days.<br><br>Amazon EventBridge rule: Create an EventBridge rule with an event pattern that matches the compliance type of NON_COMPLIANT from AWS Config for the access-keys-rotated managed rule. This ensures that EventBridge triggers an action when the IAM access keys are found to be non-compliant.<br><br>Amazon SNS Notification: Configure EventBridge to send an SNS notification to the security team when the event pattern matches. This will automatically notify the security team when access keys have not been rotated within the specified timeframe.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1104524,
+            "date": "Sun 24 Dec 2023 10:19",
+            "username": "\t\t\t\tyorkicurke\t\t\t",
+            "content": "The rest of the options are garbage",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1079536,
+            "date": "Fri 24 Nov 2023 20:23",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "Yup.. A",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1078722,
+            "date": "Thu 23 Nov 2023 20:38",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: A"
+          }
+        ]
+      },
+      {
+        "question_id": "#77",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company maintains an open-source application that is hosted on a public GitHub repository. While creating a new commit to the repository, an engineer uploaded their AWS access key and secret access key. The engineer reported the mistake to a manager, and the manager immediately disabled the access key.<br><br>The company needs to assess the impact of the exposed access key. A security engineer must recommend a solution that requires the least possible managerial overhead.<br><br>Which solution meets these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: D</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#77",
+            "answers": [
+              {
+                "choice": "<p>Analyze an AWS Identity and Access Management (IAM) use report from AWS Trusted Advisor to see when the access key was last used.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Analyze Amazon CloudWatch Logs for activity by searching for the access key.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Analyze VPC flow logs for activity by searching for the access key.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Analyze a credential report in AWS Identity and Access Management (IAM) to see when the access key was last used.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 77 discussion",
+        "discusstion": [
+          {
+            "id": 1115256,
+            "date": "Sat 06 Jan 2024 15:52",
+            "username": "\t\t\t\tbrpjp\t\t\t",
+            "content": "Selected Answer: B is correct. Question is to analyze impact of exposed access key. From credential report you know only key last used, but not able to determine how many times key used and what activities performed.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1104534,
+            "date": "Sun 24 Dec 2023 10:50",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1098236,
+            "date": "Sat 16 Dec 2023 15:28",
+            "username": "\t\t\t\t3633f8f\t\t\t",
+            "content": "Least effort.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1083106,
+            "date": "Wed 29 Nov 2023 05:26",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1079538,
+            "date": "Fri 24 Nov 2023 20:24",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "D 99.999999% sure",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1078724,
+            "date": "Thu 23 Nov 2023 20:40",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          }
+        ]
+      },
+      {
+        "question_id": "#78",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company plans to create individual child accounts within an existing organization in AWS Organizations for each of its DevOps teams. AWS CloudTrail has been enabled and configured on all accounts to write audit logs to an Amazon S3 bucket in a centralized AWS account. A security engineer needs to ensure that DevOps team members are unable to modify or disable this configuration.<br><br>How can the security engineer meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: C</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#78",
+            "answers": [
+              {
+                "choice": "<p>Create an IAM policy that prohibits changes to the specific CloudTrail trail and apply the policy to the AWS account root user.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an S3 bucket policy in the specified destination account for the CloudTrail trail that prohibits configuration changes from the AWS account root user in the source account.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an SCP that prohibits changes to the specific CloudTrail trail and apply the SCP to the appropriate organizational unit or account in Organizations.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an IAM policy that prohibits changes to the specific CloudTrail trail and apply the policy to a new IAM group. Have team members use individual IAM accounts that are members of the new IAM group.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 78 discussion",
+        "discusstion": [
+          {
+            "id": 1121706,
+            "date": "Sat 13 Jan 2024 15:07",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "SCPs in AWS Organizations are used to set fine-grained permissions and restrictions on AWS accounts within an organization. They operate at the root level or organizational unit level.<br>the security engineer can enforce a policy at the organizational level, ensuring that no accounts under the specified organizational unit can make modifications or disable the CloudTrail configuration.While IAM policies and S3 bucket policies can control access to resources, they are typically more focused on granting permissions rather than restricting actions on CloudTrail trails globally across the organization.<br><br>Option C, using an SCP, provides centralized control and is well-suited for enforcing organization-wide policies. It ensures that even if DevOps team members have administrative permissions in their individual accounts, they won't be able to modify or disable the specified CloudTrail trail due to the SCP restrictions.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1098238,
+            "date": "Sat 16 Dec 2023 15:30",
+            "username": "\t\t\t\t3633f8f\t\t\t",
+            "content": "C is correct.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1080209,
+            "date": "Sat 25 Nov 2023 18:39",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "For sure it should be 'D'.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>typo: 'C'.</li></ul>",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1080210,
+            "date": "Sat 25 Nov 2023 18:39",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "typo: 'C'.",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079574,
+            "date": "Fri 24 Nov 2023 20:43",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "C sounds good",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1078726,
+            "date": "Thu 23 Nov 2023 20:41",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          }
+        ]
+      },
+      {
+        "question_id": "#79",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company's policy requires that all API keys be encrypted and stored separately from source code in a centralized security account. This security account is managed by the company's security team. However, an audit revealed that an API key is stored with the source code of an AWS Lambda function in an AWS CodeCommit repository in the DevOps account.<br><br>How should the security team securely store the API key?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: C</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#79",
+            "answers": [
+              {
+                "choice": "<p>Create a CodeCommit repository in the security account using AWS Key Management Service (AWS KMS) for encryption. Require the development team to migrate the Lambda source code to this repository.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Store the API key in an Amazon S3 bucket in the security account using server-side encryption with Amazon S3 managed encryption keys (SSE-S3) to encrypt the key. Create a presigned URL for the S3 key, and specify the URL in a Lambda environmental variable in the AWS CloudFormation template. Update the Lambda function code to retrieve the key using the URL and call the API.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create a secret in AWS Secrets Manager in the security account to store the API key using AWS Key Management Service (AWS KMS) for encryption. Grant access to the IAM role used by the Lambda function so that the function can retrieve the key from Secrets Manager and call the API.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an encrypted environment variable for the Lambda function to store the API key using AWS Key Management Service (AWS KMS) for encryption. Grant access to the IAM role used by the Lambda function so that the function can decrypt the key at runtime.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 79 discussion",
+        "discusstion": [
+          {
+            "id": 1098242,
+            "date": "Sat 16 Dec 2023 15:33",
+            "username": "\t\t\t\t3633f8f\t\t\t",
+            "content": "C is correct among others. In case there is something related to AWS Systems Manager Parameter Store as Secure String would be even better more accurate choice.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1094911,
+            "date": "Tue 12 Dec 2023 21:02",
+            "username": "\t\t\t\tRaphaello\t\t\t",
+            "content": "C<br>Whenever there is an AWS can do the job, in this scenario Secrets Manager, then it is the right choice.<br>Environment variable is not the right answer, despite using KMS for encryption.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1080214,
+            "date": "Sat 25 Nov 2023 18:44",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Def. 'C' is the best practice way.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1079580,
+            "date": "Fri 24 Nov 2023 20:45",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "C for the win",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1078728,
+            "date": "Thu 23 Nov 2023 20:42",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          }
+        ]
+      },
+      {
+        "question_id": "#80",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer is asked to update an AWS CloudTrail log file prefix for an existing trail. When attempting to save the change in the CloudTrail console, the security engineer receives the following error message: \"There is a problem with the bucket policy.\"<br><br>What will enable the security engineer to save the change?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: C</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#80",
+            "answers": [
+              {
+                "choice": "<p>Create a new trail with the updated log file prefix, and then delete the original trail. Update the existing bucket policy in the Amazon S3 console with the new log file prefix, and then update the log file prefix in the CloudTrail console.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Update the existing bucket policy in the Amazon S3 console to allow the security engineer's principal to perform PutBucketPolicy, and then update the log file prefix in the CloudTrail console.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Update the existing bucket policy in the Amazon S3 console with the new log file prefix, and then update the log file prefix in the CloudTrail console.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Update the existing bucket policy in the Amazon S3 console to allow the security engineer's principal to perform GetBucketPolicy, and then update the log file prefix in the CloudTrail console.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 80 discussion",
+        "discusstion": [
+          {
+            "id": 1139935,
+            "date": "Sun 04 Feb 2024 10:26",
+            "username": "\t\t\t\tSHERLOCKAWS\t\t\t",
+            "content": "Explained here >> https://docs.aws.amazon.com/awscloudtrail/latest/userguide/create-s3-bucket-policy-for-cloudtrail.html#cloudtrail-add-change-or-remove-a-bucket-prefix",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1121710,
+            "date": "Sat 13 Jan 2024 15:10",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "C.  Updating Bucket Policy: The error message indicates that there is a problem with the bucket policy. To resolve this, the security engineer needs to update the existing bucket policy in the Amazon S3 console with the new log file prefix. This ensures that the bucket policy is correctly configured to allow CloudTrail to write logs to the specified location.<br><br>Updating Log File Prefix in CloudTrail Console: Once the bucket policy is updated, the security engineer can then go back to the CloudTrail console and update the log file prefix there. This will ensure that CloudTrail knows the correct destination in the S3 bucket for storing the log files.<br><br>Option C is the correct choice as it addresses the issue by first updating the bucket policy and then updating the log file prefix in the CloudTrail console. The other options involve unnecessary steps or do not directly address the reported problem.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1098063,
+            "date": "Sat 16 Dec 2023 11:26",
+            "username": "\t\t\t\tWeepingMaplte\t\t\t",
+            "content": "Verify the S3 bucket policy:<br>Open the S3 bucket policy in the S3 console, CLI, or SDK.<br>Ensure the policy grants CloudTrail permission to write log files with the new prefix to the specified S3 bucket. Look for permissions like s3:PutObject with the correct bucket prefix included.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1096197,
+            "date": "Thu 14 Dec 2023 09:03",
+            "username": "\t\t\t\tvincentsr7\t\t\t",
+            "content": "B.  As C does not provide the required privileges to the security engineer",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1080223,
+            "date": "Sat 25 Nov 2023 18:59",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "C looks legit.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1079639,
+            "date": "Sat 25 Nov 2023 00:44",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "The correct answer is C - https://docs.aws.amazon.com/awscloudtrail/latest/userguide/create-s3-bucket-policy-for-cloudtrail.html#cloudtrail-add-change-or-remove-a-bucket-prefix",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1079582,
+            "date": "Fri 24 Nov 2023 20:47",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/create-s3-bucket-policy-for-cloudtrail.html#cloudtrail-add-change-or-remove-a-bucket-prefix",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1078731,
+            "date": "Thu 23 Nov 2023 20:44",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          }
+        ]
+      },
+      {
+        "question_id": "#81",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company uses AWS Organizations. The company wants to implement short-term credentials for third-party AWS accounts to use to access accounts within the company's organization. Access is for the AWS Management Console and third-party software-as-a-service (SaaS) applications. Trust must be enhanced to prevent two external accounts from using the same credentials. The solution must require the least possible operational effort.<br><br>Which solution will meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: D</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#81",
+            "answers": [
+              {
+                "choice": "<p>Use a bearer token authentication with OAuth or SAML to manage and share a central Amazon Cognito user pool across multiple Amazon API Gateway APIs.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Implement AWS IAM Identity Center (AWS Single Sign-On), and use an identity source of choice. Grant access to users and groups from other accounts by using permission sets that are assigned by account.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create a unique IAM role for each external account. Create a trust policy Use AWS Secrets Manager to create a random external key.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create a unique IAM role for each external account. Create a trust policy that includes a condition that uses the sts:ExternalId condition key.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 81 discussion",
+        "discusstion": [
+          {
+            "id": 1139937,
+            "date": "Sun 04 Feb 2024 10:28",
+            "username": "\t\t\t\tSHERLOCKAWS\t\t\t",
+            "content": "Explained here > https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1121717,
+            "date": "Sat 13 Jan 2024 15:15",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "Creating a unique IAM role for each external account allows you to grant specific permissions to each external account independently. Including a condition in the trust policy that uses the sts:ExternalId condition key allows you to enhance the trust between the accounts and prevent one external account from using the credentials intended for another external account. The sts:ExternalId condition ensures that the request is accompanied by the expected external ID, adding an extra layer of security.<br><br>Options A, B, and C do not specifically address the requirement to prevent two external accounts from using the same credentials and may introduce unnecessary complexity or dependencies.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1098069,
+            "date": "Sat 16 Dec 2023 11:30",
+            "username": "\t\t\t\tWeepingMaplte\t\t\t",
+            "content": "What is an external ID:<br>An external ID is a unique identifier that is managed by a third-party identity provider (IdP). It's used to verify the identity of a user without requiring them to have an AWS IAM account.<br><br>Creating a role with an external ID:<br><br>You can create a role in your AWS account and specify an external ID source (e.g., SAML provider, OIDC provider).<br>You can define trust relationships between the role and the external IdP. This ensures that only authorized users with the correct external ID can assume the role.<br>You can attach IAM policies to the role to grant specific permissions to access AWS resources.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1084839,
+            "date": "Fri 01 Dec 2023 00:56",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1080244,
+            "date": "Sat 25 Nov 2023 19:34",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "C looks a bit reasonable but with a condition on the role makes it more secured so going with 'D'.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1079585,
+            "date": "Fri 24 Nov 2023 20:54",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "D will do it. The rest are distractors / incorrect",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1078733,
+            "date": "Thu 23 Nov 2023 20:45",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          }
+        ]
+      },
+      {
+        "question_id": "#82",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company is evaluating its security posture. In the past, the company has observed issues with specific hosts and host header combinations that affected the company's business. The company has configured AWS WAF web ACLs as an initial step to mitigate these issues.<br><br>The company must create a log analysis solution for the AWS WAF web ACLs to monitor problematic activity. The company wants to process all the AWS WAF logs in a central location. The company must have the ability to filter out requests based on specific hosts.<br><br>A security engineer starts to enable access logging for the AWS WAF web ACLs.<br><br>What should the security engineer do next to meet these requirements with the MOST operational efficiency?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: B</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#82",
+            "answers": [
+              {
+                "choice": "<p>Specify Amazon Redshift as the destination for the access logs. Deploy the Amazon Athena Redshift connector. Use Athena to query the data from Amazon Redshift and to filter the logs by host.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Specify Amazon CloudWatch as the destination for the access logs. Use Amazon CloudWatch Logs Insights to design a query to filter the logs by host.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Specify Amazon CloudWatch as the destination for the access logs. Export the CloudWatch logs to an Amazon S3 bucket. Use Amazon Athena to query the logs and to filter the logs by host.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Specify Amazon CloudWatch as the destination for the access logs. Use Amazon Redshift Spectrum to query the logs and to filter the logs by host.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 82 discussion",
+        "discusstion": [
+          {
+            "id": 1121719,
+            "date": "Sat 13 Jan 2024 15:20",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "B. <br>CloudWatch Logs Insights is a fully managed service that enables you to search and analyze your log data efficiently. It allows you to interactively explore and analyze your logs directly in the CloudWatch console.<br><br>Operational Efficiency: CloudWatch is a native AWS service that can directly receive and store AWS WAF access logs. Using CloudWatch Logs Insights, you can design and run queries to filter logs based on specific hosts. This provides a quick and efficient way to analyze and monitor AWS WAF logs centrally.<br><br>Options C and D involve additional steps such as exporting logs to S3 or using Amazon Redshift Spectrum, which may introduce additional complexity and operational overhead. Option A suggests using Amazon Redshift directly, which may not be the most efficient option for log analysis in this scenario.<br><br>Therefore, option B is the most operationally efficient solution for analyzing and filtering AWS WAF access logs in a central location.",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1098252,
+            "date": "Sat 16 Dec 2023 15:48",
+            "username": "\t\t\t\t3633f8f\t\t\t",
+            "content": "B indeed.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1098075,
+            "date": "Sat 16 Dec 2023 11:34",
+            "username": "\t\t\t\tWeepingMaplte\t\t\t",
+            "content": "Log Insights: Provides a powerful query interface for searching and analyzing WAF logs based on various criteria like IP addresses, user agents, and rule IDs.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1081737,
+            "date": "Mon 27 Nov 2023 16:56",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "Agree. B is theMOST operational efficiency - https://aws.amazon.com/blogs/mt/analyzing-aws-waf-logs-in-amazon-cloudwatch-logs/",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1080261,
+            "date": "Sat 25 Nov 2023 20:01",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Agreed. It asks specifically about the Operational Efficiency on this. Option C seems to be good as well but it takes a bit more steps to setup/configure those steps. Where from Option 'B', you can get it from the CW Insights features.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1079653,
+            "date": "Sat 25 Nov 2023 01:24",
+            "username": "\t\t\t\tlmimi\t\t\t",
+            "content": "I think B is the MOST operational efficiency",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079587,
+            "date": "Fri 24 Nov 2023 20:58",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "voting B",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1079586,
+            "date": "Fri 24 Nov 2023 20:58",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "I'd argue B is more efficient. Less moving parts than C. <br><br>https://aws.amazon.com/blogs/mt/analyzing-aws-waf-logs-in-amazon-cloudwatch-logs/",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1078734,
+            "date": "Thu 23 Nov 2023 20:46",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          }
+        ]
+      },
+      {
+        "question_id": "#83",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer is trying to use Amazon EC2 Image Builder to create an image of an EC2 instance. The security engineer has configured the pipeline to send logs to an Amazon S3 bucket. When the security engineer runs the pipeline, the build fails with the following error: \"AccessDenied: Access Denied status code: 403\".<br><br>The security engineer must resolve the error by implementing a solution that complies with best practices for least privilege access.<br><br>Which combination of steps will meet these requirements? (Choose two.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: BE</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#83",
+            "answers": [
+              {
+                "choice": "<p>Ensure that the following policies are attached to the IAM role that the security engineer is using=C2=B7EC2InstanceProfileForImageBuilder, EC2InstanceProfileForImageBuilderECRContainerBuilds, and AmazonSSMManagedInstanceCore.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Ensure that the following policies are attached to the instance profile for the EC2 instance: EC2InstanceProfileForImageBuilder, EC2InstanceProfileForImageBuilderECRContainerBuilds, and AmazonSSMManagedInstanceCore.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Ensure that the AWSImageBuilderFullAccess policy is attached to the instance profile for the EC2 instance.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Ensure that the security engineer's IAM role has the s3:PutObject permission for the S3 bucket.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Ensure that the instance profile for the EC2 instance has the s3:PutObject permission for the S3 bucket.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 83 discussion",
+        "discusstion": [
+          {
+            "id": 1121734,
+            "date": "Sat 13 Jan 2024 15:30",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "A.  The IAM role used by Amazon EC2 Image Builder needs to have the necessary policies attached to perform the required actions. In this case, the role needs policies such as EC2InstanceProfileForImageBuilder,EC2InstanceProfileForImageBuilderECRContainerBuilds, and AmazonSSMManagedInstanceCore.<br><br>D: The IAM role must have the s3:PutObject permission for the specified S3 bucket. This permission is required for storing logs in the S3 bucket.<br><br>Options B and E involve attaching policies directly to the instance profile, which is not the recommended approach for Amazon EC2 Image Builder. The IAM role associated with EC2 Image Builder is used for the build process, and it is the role that needs the required permissions.<br><br>Option C is not specific to the IAM role or instance profile used by Amazon EC2 Image Builder, and it's generally not recommended to attach broad policies like AWSImageBuilderFullAccess without following the principle of least privilege.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1106008,
+            "date": "Tue 26 Dec 2023 13:44",
+            "username": "\t\t\t\tgiancesarini2023\t\t\t",
+            "content": "The correct answer is B/E. ",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1098253,
+            "date": "Sat 16 Dec 2023 15:53",
+            "username": "\t\t\t\t3633f8f\t\t\t",
+            "content": "BE choice as Instance Profile >> Role for the Instance on start up - usually -",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BE"
+          },
+          {
+            "id": 1098079,
+            "date": "Sat 16 Dec 2023 11:39",
+            "username": "\t\t\t\tWeepingMaplte\t\t\t",
+            "content": "EC2InstanceProfileForImageBuilder, EC2InstanceProfileForImageBuilderECRContainerBuilds, and AmazonSSMManagedInstanceCore are policies.<br>https://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html<br><br>Ensure the IAM roles used by Image Builder have the necessary permissions to access resources involved in the build process, like S3 buckets, EC2 instances, and SSM automation documents.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BE"
+          },
+          {
+            "id": 1086382,
+            "date": "Sat 02 Dec 2023 20:29",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Thanks folks!... got the EC2 Instance profile concept now so def. going with B and E now.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BE"
+          },
+          {
+            "id": 1084783,
+            "date": "Thu 30 Nov 2023 22:16",
+            "username": "\t\t\t\tsnowmaggedon\t\t\t",
+            "content": "A pipeline is running so that means the engineer's role is not relevant. Answer is BE",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1081764,
+            "date": "Mon 27 Nov 2023 17:16",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "Please note that an instance profile is an IAM role for the EC2 instance. Therefore, the option A which states that \\\"IAM role attached to the engineer\\\" is wrong. Please check this link for more information - https://docs.aws.amazon.com/imagebuilder/latest/userguide/troubleshooting.html#ts-access-denied",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: BE"
+          },
+          {
+            "id": 1080269,
+            "date": "Sat 25 Nov 2023 20:15",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "\\\"Solution:<br><br>Depending on the cause, this issue can be resolved as follows:<br>Instance profile is missing managed policies =E2=80=93 Add the missing policies to your instance profile role. Then run the pipeline again.<br>Instance profile is missing write permissions for S3 bucket =E2=80=93 Add a policy to your instance profile role that grants PutObject permissions to write to your S3 bucket. Then run the pipeline again.\\\"<br><br>The sol. states that it's EC2 Instance Profile \\\"Role\\\" as per their documentation. Whereas, in option B and E, it states EC2 Instance profile only. Does it mean the same thing? Can someone pls. help clarify on this.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079856,
+            "date": "Sat 25 Nov 2023 10:00",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "B and E as per the following<br><br>https://docs.aws.amazon.com/imagebuilder/latest/userguide/troubleshooting.html#ts-access-denied",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: BE"
+          },
+          {
+            "id": 1078737,
+            "date": "Thu 23 Nov 2023 20:48",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: DE"
+          }
+        ]
+      },
+      {
+        "question_id": "#84",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer must use AWS Key Management Service (AWS KMS) to design a key management solution for a set of Amazon Elastic Block Store (Amazon EBS) volumes that contain sensitive data. The solution needs to ensure that the key material automatically expires in 90 days.<br><br>Which solution meets these criteria?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: A</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#84",
+            "answers": [
+              {
+                "choice": "<p>A customer managed key that uses customer provided key material<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>A customer managed key that uses AWS provided key material<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>An AWS managed key<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Operating system encryption that uses GnuPG<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 84 discussion",
+        "discusstion": [
+          {
+            "id": 1122152,
+            "date": "Sun 14 Jan 2024 01:34",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "AWS Managed Key (AWS KMS): AWS managed keys (AWS KMS keys) are created, managed, and rotated by AWS KMS. AWS automatically handles key rotation for these keys. With an AWS managed key, you can set the key rotation interval, and AWS KMS will automatically rotate the key material.<br><br>Expiration: While AWS managed keys don't have an explicit \\\"expiration\\\" property, you can achieve similar functionality by configuring key rotation every 90 days. This ensures that the key material is automatically rotated, effectively providing a new key every 90 days.<br><br>Options A and B refer to customer managed keys, and the expiration of key material would need to be managed manually by the customer. Option D mentions GnuPG, which is not applicable for managing AWS EBS volume encryption keys.<br><br>Therefore, option C (AWS managed key) is the most suitable choice for this scenario.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1104660,
+            "date": "Sun 24 Dec 2023 15:41",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "You may set an expiration period for an imported key. AWS KMS will automatically delete the key material after the expiration period. You can also delete imported key material on demand. In both cases the key material itself is deleted but the KMS key reference in AWS KMS and associated metadata are retained so that the key material can be re-imported in the future. Keys generated by AWS KMS do not have an expiration time and cannot be deleted immediately; there is a mandatory 7 to 30 day wait period. All customer managed KMS keys, regardless of whether the key material was imported, can be manually disabled or scheduled for deletion. In this case the KMS key itself is deleted, not just the underlying key material.<br><br>https://aws.amazon.com/kms/faqs/",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1098088,
+            "date": "Sat 16 Dec 2023 11:50",
+            "username": "\t\t\t\tWeepingMaplte\t\t\t",
+            "content": "A will be the answer. The key word in the question is automatically expires. For answer B and C, it does not have the expiration date option. It only has the rotate option.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1096407,
+            "date": "Thu 14 Dec 2023 12:37",
+            "username": "\t\t\t\tvincentsr7\t\t\t",
+            "content": "Option C. <br>A customer managed key (option A) that uses customer provided key material would not have the automatic expiration capability by default.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1095465,
+            "date": "Wed 13 Dec 2023 13:57",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "When you import key material, you can set an optional expiration time.<br>https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-managing.html",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1080277,
+            "date": "Sat 25 Nov 2023 20:27",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "A sounds legit.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1079858,
+            "date": "Sat 25 Nov 2023 10:02",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "Definitely A",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1079651,
+            "date": "Sat 25 Nov 2023 01:21",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "A is correct - https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/import-key-material.html",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1078740,
+            "date": "Thu 23 Nov 2023 20:50",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          }
+        ]
+      },
+      {
+        "question_id": "#85",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer is building a Java application that is running on Amazon EC2. The application communicates with an Amazon RDS instance and authenticates with a user name and password.<br><br>Which combination of steps can the engineer take to protect the credentials and minimize downtime when the credentials are rotated? (Choose two.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: CE</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#85",
+            "answers": [
+              {
+                "choice": "<p>Have a database administrator encrypt the credentials and store the ciphertext in Amazon S3. Grant permission to the instance role associated with the EC2 instance to read the object and decrypt the ciphertext.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure a scheduled job that updates the credential in AWS Systems Manager Parameter Store and notifies the engineer that the application needs to be restarted.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure automatic rotation of credentials in AWS Secrets Manager.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Store the credential in an encrypted string parameter in AWS Systems Manager Parameter Store. Grant permission to the instance role associated with the EC2 instance to access the parameter and the AWS KMS key that is used to encrypt it.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure the Java application to catch a connection failure and make a call to AWS Secrets Manager to retrieve updated credentials when the password is rotated. Grant permission to the instance role associated with the EC2 instance to access Secrets Manager.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 85 discussion",
+        "discusstion": [
+          {
+            "id": 1122153,
+            "date": "Sun 14 Jan 2024 01:36",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "AWS Secrets Manager (Option C and E): AWS Secrets Manager provides a solution for managing and rotating sensitive information, such as database credentials. You can configure automatic rotation of credentials in AWS Secrets Manager, and the Java application can catch a connection failure and make a call to Secrets Manager to retrieve updated credentials when the password is rotated.<br><br>Systems Manager Parameter Store (Option D): While storing credentials in an encrypted string parameter in AWS Systems Manager Parameter Store is a valid approach, Secrets Manager provides a more specialized solution for credential rotation.<br><br>Option A involves storing ciphertext in Amazon S3, which adds complexity and may not be as secure as using dedicated services like AWS Secrets Manager.<br><br>Option B suggests manually updating the credential in Systems Manager Parameter Store and notifying the engineer, which is less automated and may introduce downtime.",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1098264,
+            "date": "Sat 16 Dec 2023 16:16",
+            "username": "\t\t\t\t3633f8f\t\t\t",
+            "content": "Systems Manager provides integration with RDS and in combination with Java Try and Catch makes possible rotate credentials as frequent as required.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: CE"
+          },
+          {
+            "id": 1086386,
+            "date": "Sat 02 Dec 2023 20:38",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Def. C and E makes perfect comb.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: CE"
+          },
+          {
+            "id": 1080290,
+            "date": "Sat 25 Nov 2023 20:56",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "V confusing btw CE and DE.  The question states about protecting the creds which gives the hint towards option D since it talks about leveraging KMS keys with SSM parameter store options too... No doubt on option E cuz that looks more reasonable but there's a confusion over option C or D. .. :(<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>C is correct because Systems Manager Parameter Store cannot be used for key rotation. Key rotation is a feature of Secrets Manager. I hope that helps.</li><li>Ah ok, got it now, thanks so much AgboolaKun! :)</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1081772,
+            "date": "Mon 27 Nov 2023 17:23",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "C is correct because Systems Manager Parameter Store cannot be used for key rotation. Key rotation is a feature of Secrets Manager. I hope that helps.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Ah ok, got it now, thanks so much AgboolaKun! :)</li></ul>",
+            "upvote_count": "4",
+            "selected_answers": ""
+          },
+          {
+            "id": 1086385,
+            "date": "Sat 02 Dec 2023 20:37",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Ah ok, got it now, thanks so much AgboolaKun! :)",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079861,
+            "date": "Sat 25 Nov 2023 10:03",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "I'll vote C and E.  Secrets Manager for rotation",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: CE"
+          },
+          {
+            "id": 1078747,
+            "date": "Thu 23 Nov 2023 21:05",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: CE"
+          }
+        ]
+      },
+      {
+        "question_id": "#86",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company uses SAML federation to grant users access to AWS accounts. A company workload that is in an isolated AWS account runs on immutable infrastructure with no human access to Amazon EC2. The company requires a specialized user known as a break glass user to have access to the workload AWS account and instances in the case of SAML errors. A recent audit discovered that the company did not create the break glass user for the AWS account that contains the workload.<br><br>The company must create the break glass user. The company must log any activities of the break glass user and send the logs to a security team.<br><br>Which combination of solutions will meet these requirements? (Choose two.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: AE</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#86",
+            "answers": [
+              {
+                "choice": "<p>Create a local individual break glass IAM user for the security team. Create a trail in AWS CloudTrail that has Amazon CloudWatch Logs turned on. Use Amazon EventBridge to monitor local user activities.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create a break glass EC2 key pair for the AWS account. Provide the key pair to the security team. Use AWS CloudTrail to monitor key pair activity. Send notifications to the security team by using Amazon Simple Notification Service (Amazon SNS).<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create a break glass IAM role for the account. Allow security team members to perform the AssumeRoleWithSAML operation. Create an AWS CloudTrail trail that has Amazon CloudWatch Logs turned on. Use Amazon EventBridge to monitor security team activities.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create a local individual break glass IAM user on the operating system level of each workload instance. Configure unrestricted security groups on the instances to grant access to the break glass IAM users.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure AWS Systems Manager Session Manager for Amazon EC2. Configure an AWS CloudTrail filter based on Session Manager. Send the results to an Amazon Simple Notification Service (Amazon SNS) topic.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 86 discussion",
+        "discusstion": [
+          {
+            "id": 1084846,
+            "date": "Fri 01 Dec 2023 01:25",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "A and E<br>\\\"Although the use and creation of AWS IAM users is highly discouraged, break glass users are an exception.<br>To ensure human break-glass access to your environment, we recommend that you create the following in your AWS organization:<br>At least two IAM users...\\\"<br>https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/break-glass-access.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>I think ur option A might be right here cuz it asks about the IAM break-glass user and not any roles for the whole security team if I understood the question correctly...</li></ul>",
+            "upvote_count": "5",
+            "selected_answers": "Selected Answer: AE"
+          },
+          {
+            "id": 1086390,
+            "date": "Sat 02 Dec 2023 20:52",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "I think ur option A might be right here cuz it asks about the IAM break-glass user and not any roles for the whole security team if I understood the question correctly...",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1132899,
+            "date": "Fri 26 Jan 2024 22:13",
+            "username": "\t\t\t\tmynickc\t\t\t",
+            "content": "read the question carefully, it is asking for a user incase SAML error so assuming role with AssumeRoleWithSAML is not gonna work.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AE"
+          },
+          {
+            "id": 1122160,
+            "date": "Sun 14 Jan 2024 01:45",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "C, E. <br>Creating a break glass IAM role allows for temporary access when needed. Allowing security team members to perform the AssumeRoleWithSAML operation ensures that the break glass user can assume the role during incidents. Configuring AWS CloudTrail with CloudWatch Logs turned on allows for the logging of activities, and EventBridge can be used to monitor those logs for security team activities.Configuring CloudTrail filters based on Session Manager actions allows logging of activities, and sending the results to an SNS topic can notify the security team.<br><br>A & B involve local user or key pair management, which may not be as scalable or auditable compared to using IAM roles and Systems Manager Session Manager.<br><br>D suggests creating local individual IAM users on the operating system level, which is not the recommended approach, as it's more challenging to manage and audit compared to IAM roles and System Manager Session Manager.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1109335,
+            "date": "Sat 30 Dec 2023 02:57",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "The rest of the options:<br>B- key pair is very vulnerable. very often, breakglass is sealed in physical envelope and kept in safe.<br>C- the question requires breakglass user. This option did not provide any user but role.<br>D- the question require breakglass user at account level but this option provide instance level. Besides, unrestricted security group for all such instances make them vulnerable to password guessing.<br><br>The best approach is still create breakglass at account level, seal the breakglass accounts with procedure and physical security, use cloudtrail to ensure its usage is accountable and notification to the entire security team is sent via SNS topic. The account level user allows breakglass user to access to all EC2 instances through session manager.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: AE"
+          },
+          {
+            "id": 1107289,
+            "date": "Thu 28 Dec 2023 01:35",
+            "username": "\t\t\t\tbrpjp\t\t\t",
+            "content": "Correct Answer D & E:<br>Question is to log any activities of the break glass user and send the logs to a security team. Because of sending logs to security team, security can not be a break glass user to have adequate segregation of duties. Answer A, B and C refer to security team be a break glass user.<br>So correct answer is D and E. ",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1103902,
+            "date": "Sat 23 Dec 2023 08:06",
+            "username": "\t\t\t\tyorkicurke\t\t\t",
+            "content": "and why i did not go for C;<br>Because it relies on SAMLfor the AssumeRoleWithSAML operation. Questionmentions that there might be SAML errors. If SAML is not functioning correctly, then the AssumeRoleWithSAML operation would also fail. This means that the security team members would not be able to assume the break glass IAM role when needed, defeating the purpose of having a break glass user for emergency access.<br>Peace Out:)",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: AE"
+          },
+          {
+            "id": 1102635,
+            "date": "Thu 21 Dec 2023 15:56",
+            "username": "\t\t\t\ttayman\t\t\t",
+            "content": "Vote for A and E. ",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AE"
+          },
+          {
+            "id": 1102539,
+            "date": "Thu 21 Dec 2023 14:08",
+            "username": "\t\t\t\tdexterryu\t\t\t",
+            "content": "AE are correct. C would not work in the case of SAML issues which the question specifically states is the purpose.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AE"
+          },
+          {
+            "id": 1102537,
+            "date": "Thu 21 Dec 2023 14:07",
+            "username": "\t\t\t\tdexterryu\t\t\t",
+            "content": "AE are correct. C would not work in the case of SAML issues which the question specifically states is the purpose.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1088076,
+            "date": "Tue 05 Dec 2023 00:19",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "CE are the correct answers to this question. Folks choosing AE need to read these \\\"A break glass role that is deployed to all the accounts in the organization, and that can only be 'assumed' by the break glass users from the management account. These roles are needed to allow access from the management account to apply and update guardrails, to troubleshoot and resolve issues with the automation tooling from the security tooling account, or to remediate security and operational issues in one of the member accounts in the AWS organization.\\\" sentences from the following link - https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/break-glass-access.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>But if you read the question again, this is whatthey're asking specifically:<br>\\\"The company must create the break glass user. The company must log any activities of the break glass user and send the logs to a security team.\\\"<br>When even the break glass user doesn't exist then how can the role be a choice here for this usecase??... You must need to create a local users first inorder to grant the role to it right?... I know it's still v confusing but that's how I interpreted this question..</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: CE"
+          },
+          {
+            "id": 1088842,
+            "date": "Tue 05 Dec 2023 23:31",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "But if you read the question again, this is whatthey're asking specifically:<br>\\\"The company must create the break glass user. The company must log any activities of the break glass user and send the logs to a security team.\\\"<br>When even the break glass user doesn't exist then how can the role be a choice here for this usecase??... You must need to create a local users first inorder to grant the role to it right?... I know it's still v confusing but that's how I interpreted this question..",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1087839,
+            "date": "Mon 04 Dec 2023 19:22",
+            "username": "\t\t\t\tMihBP340\t\t\t",
+            "content": "Its A rather than C due to SAML att whileusing IAM roles.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: AE"
+          },
+          {
+            "id": 1086405,
+            "date": "Sat 02 Dec 2023 21:33",
+            "username": "\t\t\t\tmarco25\t\t\t",
+            "content": "A is correct need local user in case same is broken",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: AE"
+          },
+          {
+            "id": 1080314,
+            "date": "Sat 25 Nov 2023 21:25",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "C and E makes a good combo imo.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: CE"
+          },
+          {
+            "id": 1079873,
+            "date": "Sat 25 Nov 2023 10:23",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "I'll vote C E as well<br><br>https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/break-glass-access.html",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: CE"
+          },
+          {
+            "id": 1078756,
+            "date": "Thu 23 Nov 2023 21:13",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: CE"
+          }
+        ]
+      },
+      {
+        "question_id": "#87",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer is working with a product team building a web application on AWS. The application uses Amazon S3 to host the static content, Amazon API Gateway to provide RESTful services, and Amazon DynamoDB as the backend data store. The users already exist in a directory that is exposed through a SAML identity provider.<br><br>Which combination of the following actions should the engineer take to allow users to be authenticated into the web application and call APIs? (Choose three.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: BCF</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#87",
+            "answers": [
+              {
+                "choice": "<p>Create a custom authorization service using AWS Lambda.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure a SAML identity provider in Amazon Cognito to map attributes to the Amazon Cognito user pool attributes.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure the SAML identity provider to add the Amazon Cognito user pool as a relying party.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure an Amazon Cognito identity pool to integrate with social login providers.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Update DynamoDB to store the user email addresses and passwords.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Update API Gateway to use a COGNITO_USER_POOLS authorizer.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 87 discussion",
+        "discusstion": [
+          {
+            "id": 1109342,
+            "date": "Sat 30 Dec 2023 03:27",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "For API to refer to Cognito user pool, use \\\"COGNITO_USER_POOLS\\\" authorizer<br>https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-enable-cognito-user-pool.html<br><br>For Cognito user pool to act as relying party to SAML IdP<br>https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-saml-idp.html<br><br>Other options:<br>A- \\\"As an alternative to using IAM roles and policies or Lambda authorizers (formerly known as custom authorizers), you can use an Amazon Cognito user pool to control who can access your API in Amazon API Gateway.\\\"<br>https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-integrate-with-cognito.html<br>D - social login users not required for this question.<br>E - Dynamo DB is irrelevant- never store store password in db without all the additional overheads required to keep them secure.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BCF"
+          },
+          {
+            "id": 1104845,
+            "date": "Sun 24 Dec 2023 22:15",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "BCF is logical here",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BCF"
+          },
+          {
+            "id": 1079879,
+            "date": "Sat 25 Nov 2023 10:30",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "BCF.  This was on the other exam topics practice set",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: BCF"
+          },
+          {
+            "id": 1078765,
+            "date": "Thu 23 Nov 2023 21:30",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BCF"
+          }
+        ]
+      },
+      {
+        "question_id": "#88",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company needs to improve its ability to identify and prevent IAM policies that grant public access or cross-account access to resources. The company has implemented AWS Organizations and has started using AWS Identity and Access Management Access Analyzer to refine overly broad access to accounts in the organization.<br><br>A security engineer must automate a response in the company's organization for any newly created policies that are overly permissive. The automation must remediate external access and must notify the company's security team.<br><br>Which combination of steps should the security engineer take to meet these requirements? (Choose three.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: ACF</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#88",
+            "answers": [
+              {
+                "choice": "<p>Create an AWS Step Functions state machine that checks the resource type in the finding and adds an explicit Deny statement in the trust policy for the IAM role. Configure the state machine to publish a notification to an Amazon Simple Notification Service (Amazon SNS) topic.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an AWS Batch job that forwards any resource type findings to an AWS Lambda function. Configure the Lambda function to add an explicit Deny statement in the trust policy for the IAM role. Configure the AWS Batch job to publish a notification to an Amazon Simple Notification Service (Amazon SNS) topic.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>In Amazon EventBridge, create an event rule that matches active IAM Access Analyzer findings and invokes AWS Step Functions for resolution.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>In Amazon CloudWatch, create a metric filter that matches active IAM Access Analyzer findings and invokes AWS Batch for resolution.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an Amazon Simple Queue Service (Amazon SQS) queue. Configure the queue to forward a notification to the security team that an external principal has been granted access to the specific IAM role and has been blocked.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an Amazon Simple Notification Service (Amazon SNS) topic for external or cross-account access notices. Subscribe the security team's email addresses to the topic.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 88 discussion",
+        "discusstion": [
+          {
+            "id": 1079885,
+            "date": "Sat 25 Nov 2023 10:44",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "ACF make thr most sense Herr. See below:<br><br>https://aws.amazon.com/blogs/compute/orchestrating-a-security-incident-response-with-aws-step-functions/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>the* here*</li></ul>",
+            "upvote_count": "5",
+            "selected_answers": "Selected Answer: ACF"
+          },
+          {
+            "id": 1079913,
+            "date": "Sat 25 Nov 2023 11:16",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "the* here*",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1102662,
+            "date": "Thu 21 Dec 2023 16:21",
+            "username": "\t\t\t\ttayman\t\t\t",
+            "content": "Vote for A C F",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: ACF"
+          },
+          {
+            "id": 1080323,
+            "date": "Sat 25 Nov 2023 21:55",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "ACF most likely.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: ACF"
+          },
+          {
+            "id": 1078766,
+            "date": "Thu 23 Nov 2023 21:32",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: CEF"
+          }
+        ]
+      },
+      {
+        "question_id": "#89",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer is configuring a mechanism to send an alert when three or more failed sign-in attempts to the AWS Management Console occur during a 5-minute period. The security engineer creates a trail in AWS CloudTrail to assist in this work.<br><br>Which solution will meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: B</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#89",
+            "answers": [
+              {
+                "choice": "<p>In CloudTrail, turn on Insights events on the trail. Configure an alarm on the insight with eventName matching ConsoleLogin and errorMessage matching \"Failed authentication''. Configure a threshold of 3 and a period of 5 minutes.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure CloudTrail to send events to Amazon CloudWatch Logs. Create a metric filter for the relevant log group. Create a filter pattern with eventName matching ConsoleLogin and errorMessage matching \"Failed authentication\". Create a CloudWatch alarm with a threshold of 3 and a period of 5 minutes.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an Amazon Athena table from the CloudTrail events. Run a query for eventName matching ConsoleLogin and for errorMessage matching \"Failed authentication\". Create a notification action from the query to send an Amazon Simple Notification Service (Amazon SNS) notification when the count equals 3 within a period of 5 minutes.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>In AWS Identity and Access Management Access Analyzer, create a new analyzer. Configure the analyzer to send an Amazon Simple Notification Service (Amazon SNS) notification when a failed sign-in event occurs 3 times for any IAM user within a period of 5 minutes.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 89 discussion",
+        "discusstion": [
+          {
+            "id": 1136924,
+            "date": "Wed 31 Jan 2024 16:38",
+            "username": "\t\t\t\tcloudbusting\t\t\t",
+            "content": "Because it says alert the answer is B",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1110096,
+            "date": "Sat 30 Dec 2023 23:29",
+            "username": "\t\t\t\tbrpjp\t\t\t",
+            "content": "C is correct. Because SNS generated using detail information on finding that help security, while only CloudWatch Alarm generated do not have information as with SNS notification.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1104962,
+            "date": "Mon 25 Dec 2023 02:24",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "This is how it is done:<br>https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudwatch-alarms-for-cloudtrail.html#cloudwatch-alarms-for-cloudtrail-signin<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>For option c, you will need Eventbridge, Lambda on top of SNS topic.<br>https://stackoverflow.com/questions/62823521/i-need-to-create-alerts-based-on-the-results-returned-by-queries-in-amazon-athen<br>Option b doesnt include SNS topic, but that is fine because the question ask for \\\"alert\\\" (you can find it in the console) but not \\\"notification\\\".</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1104965,
+            "date": "Mon 25 Dec 2023 02:32",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "For option c, you will need Eventbridge, Lambda on top of SNS topic.<br>https://stackoverflow.com/questions/62823521/i-need-to-create-alerts-based-on-the-results-returned-by-queries-in-amazon-athen<br>Option b doesnt include SNS topic, but that is fine because the question ask for \\\"alert\\\" (you can find it in the console) but not \\\"notification\\\".",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1104849,
+            "date": "Sun 24 Dec 2023 22:26",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "B is the answer. need an Alarm here",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1080328,
+            "date": "Sat 25 Nov 2023 21:59",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "CW alarm is best suited here for this scenario.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1079890,
+            "date": "Sat 25 Nov 2023 10:48",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "B it is. Insights does not do alarming",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1078767,
+            "date": "Thu 23 Nov 2023 21:33",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          }
+        ]
+      },
+      {
+        "question_id": "#90",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company's security engineer is developing an incident response plan to detect suspicious activity in an AWS account for VPC hosted resources. The security engineer needs to provide visibility for as many AWS Regions as possible.<br><br>Which combination of steps will meet these requirements MOST cost-effectively? (Choose two.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: BD</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#90",
+            "answers": [
+              {
+                "choice": "<p>Turn on VPC Flow Logs for all VPCs in the account.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Activate Amazon GuardDuty across all AWS Regions.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Activate Amazon Detective across all AWS Regions.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an Amazon Simple Notification Service (Amazon SNS) topic. Create an Amazon EventBridge rule that responds to findings and publishes the findings to the SNS topic.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an AWS Lambda function. Create an Amazon EventBridge rule that invokes the Lambda function to publish findings to Amazon Simple Email Service (Amazon SES).<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 90 discussion",
+        "discusstion": [
+          {
+            "id": 1081827,
+            "date": "Mon 27 Nov 2023 18:32",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "BD are the correct options here. The keywords here are \\\"developing an incident response plan to detect suspicious activity\\\". There is no better way to develop incident response plan without providing a way for the relevant stakeholders to take actions or respond to suspicious activities.<br><br>B is an obvious option because GuardDuty can monitor and analyze API calls across all AWS Regions, andnetwork activities found in Amazon CloudTrail Events, Amazon VPC Flow Logs, and DNS Logs. Therefore, option A is not needed since GuardDuty monitoring activities include the VPC Flow Logs.<br><br>There is no better way to respond to the findings generated by GuardDuty than the services described in option D. <br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Ok, but why the Detective svc. wasn't a good choice here as it's for developing an incident response plan to 'detect' right?... Agree with option D on the other hand cuz it makes sense..</li></ul>",
+            "upvote_count": "8",
+            "selected_answers": "Selected Answer: BD"
+          },
+          {
+            "id": 1086407,
+            "date": "Sat 02 Dec 2023 21:46",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Ok, but why the Detective svc. wasn't a good choice here as it's for developing an incident response plan to 'detect' right?... Agree with option D on the other hand cuz it makes sense..",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1104853,
+            "date": "Sun 24 Dec 2023 22:34",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "VPC Flow logs are very expensive.... Guardduty is the right tool to do that with eventbridge",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BD"
+          },
+          {
+            "id": 1098115,
+            "date": "Sat 16 Dec 2023 12:42",
+            "username": "\t\t\t\tWeepingMaplte\t\t\t",
+            "content": "A.  Turn on VPC Flow Logs for all VPCs in the account: While VPC Flow Logs offer detailed information about network traffic, analyzing and storing logs for all VPCs across Regions can incur significant storage and processing costs.C.  Activate Amazon Detective across all AWS Regions: Detective focuses on root cause analysis and investigation, which might be overkill for initial detection and notification. Additionally, its per-hour billing model can quickly become expensive for continuous monitoring across multiple Regions.E.  Create an AWS Lambda function for publishing findings to SES: While Lambda offers flexibility, creating and maintaining a custom Lambda function specifically for publishing findings can add development and operational overhead compared to the readily available options with EventBridge and SNS.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BD"
+          },
+          {
+            "id": 1080332,
+            "date": "Sat 25 Nov 2023 22:09",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "AB options best suited. Self-explantory too.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AB"
+          },
+          {
+            "id": 1079893,
+            "date": "Sat 25 Nov 2023 10:54",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "AB are correcto",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AB"
+          },
+          {
+            "id": 1078768,
+            "date": "Thu 23 Nov 2023 21:35",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AB"
+          }
+        ]
+      },
+      {
+        "question_id": "#91",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company stores images for a website in an Amazon S3 bucket. The company is using Amazon CloudFront to serve the images to end users. The company recently discovered that the images are being accessed from countries where the company does not have a distribution license.<br><br>Which actions should the company take to secure the images to limit their distribution? (Choose two.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: AC</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#91",
+            "answers": [
+              {
+                "choice": "<p>Update the S3 bucket policy to restrict access to a CloudFront origin access control (OAC).<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Update the website DNS record to use an Amazon Route 53 geolocation record deny list of countries where the company lacks a license.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Add a CloudFront geo restriction deny list of countries where the company lacks a license.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Update the S3 bucket policy with a deny list of countries where the company lacks a license.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Enable the Restrict Viewer Access option in CloudFront to create a deny list of countries where the company lacks a license.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 91 discussion",
+        "discusstion": [
+          {
+            "id": 1128879,
+            "date": "Mon 22 Jan 2024 17:48",
+            "username": "\t\t\t\tGafa255\t\t\t",
+            "content": "AC correct options. https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/georestrictions.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AC"
+          },
+          {
+            "id": 1128880,
+            "date": "Mon 22 Jan 2024 17:48",
+            "username": "\t\t\t\tGafa255\t\t\t",
+            "content": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1084849,
+            "date": "Fri 01 Dec 2023 01:49",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/georestrictions.html",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: AC"
+          },
+          {
+            "id": 1080338,
+            "date": "Sat 25 Nov 2023 22:15",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "A describes how to limit the access via the policy to bound the access within OAC. <br>C describes about using the geo restriction based R53 policy you can use to limit the access on the unwanted countries.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>typo: It's Geo restriction list in CloudFront and not R53 policy, my bad!...</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AC"
+          },
+          {
+            "id": 1080342,
+            "date": "Sat 25 Nov 2023 22:18",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "typo: It's Geo restriction list in CloudFront and not R53 policy, my bad!...",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079900,
+            "date": "Sat 25 Nov 2023 10:57",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "A so the object requests do not bypass Cloudfront, and C for georestrictions. Careful with this oioi fella =F0=9F=91=80<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Fully agreed on ur 'oioi' feedback:D. .</li></ul>",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: AC"
+          },
+          {
+            "id": 1080335,
+            "date": "Sat 25 Nov 2023 22:12",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Fully agreed on ur 'oioi' feedback:D. .",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1078772,
+            "date": "Thu 23 Nov 2023 21:37",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: CE"
+          }
+        ]
+      },
+      {
+        "question_id": "#92",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company has deployed servers on Amazon EC2 instances in a VPC.  External vendors access these servers over the internet. Recently, the company deployed a new application on EC2 instances in a new CIDR range. The company needs to make the application available to the vendors.<br><br>A security engineer verified that the associated security groups and network ACLs are allowing the required ports in the inbound direction. However, the vendors cannot connect to the application.<br><br>Which solution will provide the vendors access to the application?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: B</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#92",
+            "answers": [
+              {
+                "choice": "<p>Modify the security group that is associated with the EC2 instances to have the same outbound rules as inbound rules.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Modify the network ACL that is associated with the CIDR range to allow outbound traffic to ephemeral ports.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Modify the inbound rules on the internet gateway to allow the required ports.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Modify the network ACL that is associated with the CIDR range to have the same outbound rules as inbound rules.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 92 discussion",
+        "discusstion": [
+          {
+            "id": 1129133,
+            "date": "Tue 23 Jan 2024 01:45",
+            "username": "\t\t\t\tJamshif01\t\t\t",
+            "content": "I don't understand why they are called 'ephmeral' ports",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1102690,
+            "date": "Thu 21 Dec 2023 16:44",
+            "username": "\t\t\t\ttayman\t\t\t",
+            "content": "Definitely B. ",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1101952,
+            "date": "Wed 20 Dec 2023 22:16",
+            "username": "\t\t\t\tykhan321\t\t\t",
+            "content": "Did someone take the test recently? How many questons appeared from here?",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1080345,
+            "date": "Sat 25 Nov 2023 22:24",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Agreed with B. ",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1079903,
+            "date": "Sat 25 Nov 2023 11:02",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "B.  You must allow the ephemeral ports in the outbound NACL for the CIDR range.",
+            "upvote_count": "4",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1078776,
+            "date": "Thu 23 Nov 2023 21:39",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          }
+        ]
+      },
+      {
+        "question_id": "#93",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company uses infrastructure as code (IaC) to create AWS infrastructure. The company writes the code as AWS CloudFormation templates to deploy the infrastructure. The company has an existing CI/CD pipeline that the company can use to deploy these templates.<br><br>After a recent security audit, the company decides to adopt a policy-as-code approach to improve the company's security posture on AWS. The company must prevent the deployment of any infrastructure that would violate a security policy, such as an unencrypted Amazon Elastic Block Store (Amazon EBS) volume.<br><br>Which solution will meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: C</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#93",
+            "answers": [
+              {
+                "choice": "<p>Turn on AWS Trusted Advisor. Configure security notifications as webhooks in the preferences section of the CI/CD pipeline.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Turn on AWS Config. Use the prebuilt rules or customized rules. Subscribe tile CI/CD pipeline to an Amazon Simple Notification Service (Amazon SNS) topic that receives notifications from AWS Config.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create rule sets in AWS CloudFormation Guard. Run validation checks for CloudFormation templates as a phase of the CI/CD process.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create rule sets as SCPs. Integrate the SCPs as a part of validation control in a phase of the CI/CD process.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 93 discussion",
+        "discusstion": [
+          {
+            "id": 1096533,
+            "date": "Thu 14 Dec 2023 15:10",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "https://aws.amazon.com/blogs/mt/policy-as-code-for-securing-aws-and-third-party-resource-types/",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1080476,
+            "date": "Sun 26 Nov 2023 05:23",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "C definitely. CFN Guard defined rule sets help in preventing from the derivation of Infrastructure resource security policies..",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1079904,
+            "date": "Sat 25 Nov 2023 11:04",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "C for sure",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1078780,
+            "date": "Thu 23 Nov 2023 21:41",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          }
+        ]
+      },
+      {
+        "question_id": "#94",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company is running an Amazon RDS for MySQL DB instance in a VPC.  The VPC must not send or receive network traffic through the internet.<br><br>A security engineer wants to use AWS Secrets Manager to rotate the DB instance credentials automatically. Because of a security policy, the security engineer cannot use the standard AWS Lambda function that Secrets Manager provides to rotate the credentials.<br><br>The security engineer deploys a custom Lambda function in the VPC.  The custom Lambda function will be responsible for rotating the secret in Secrets Manager. The security engineer edits the DB instance's security group to allow connections from this function. When the function is invoked, the function cannot communicate with Secrets Manager to rotate the secret properly.<br><br>What should the security engineer do so that the function can rotate the secret?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: D</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#94",
+            "answers": [
+              {
+                "choice": "<p>Add an egress-only internet gateway to the VPC.  Allow only the Lambda function's subnet to route traffic through the egress-only internet gateway.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Add a NAT gateway to the VPC.  Configure only the Lambda function's subnet with a default route through the NAT gateway.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure a VPC peering connection to the default VPC for Secrets Manager. Configure the Lambda function's subnet to use the peering connection for routes.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure a Secrets Manager interface VPC endpoint. Include the Lambda function's private subnet during the configuration process.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 94 discussion",
+        "discusstion": [
+          {
+            "id": 1096535,
+            "date": "Thu 14 Dec 2023 15:14",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/vpc-endpoint-overview.html",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1080489,
+            "date": "Sun 26 Nov 2023 06:03",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "D looks legit.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1079908,
+            "date": "Sat 25 Nov 2023 11:09",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "D is the winner",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1078782,
+            "date": "Thu 23 Nov 2023 21:43",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          }
+        ]
+      },
+      {
+        "question_id": "#95",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>The security engineer is managing a traditional three-tier web application that is running on Amazon EC2 instances. The application has become the target of increasing numbers of malicious attacks from the internet.<br><br>What steps should the security engineer take to check for known vulnerabilities and limit the attack surface? (Choose two.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: BD</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#95",
+            "answers": [
+              {
+                "choice": "<p>Use AWS Certificate Manager to encrypt all traffic between the client and application servers.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Review the application security groups to ensure that only the necessary ports are open.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use Elastic Load Balancing to offload Secure Sockets Layer encryption.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use Amazon Inspector to periodically scan the backend instances.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use AWS Key Management Service (AWS KMS) to encrypt all the traffic between the client and application servers.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 95 discussion",
+        "discusstion": [
+          {
+            "id": 1081903,
+            "date": "Mon 27 Nov 2023 20:29",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "Security groups for reducing the attack surface,<br>Amazon Inspector to scan for and mitigate known vulnerabilities",
+            "upvote_count": "7",
+            "selected_answers": "Selected Answer: BD"
+          },
+          {
+            "id": 1080490,
+            "date": "Sun 26 Nov 2023 06:08",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "B and D , self-explanatory..",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BD"
+          },
+          {
+            "id": 1079910,
+            "date": "Sat 25 Nov 2023 11:10",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "B D.  Moderator, please correct the default answers",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BD"
+          },
+          {
+            "id": 1078783,
+            "date": "Thu 23 Nov 2023 21:45",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BD"
+          }
+        ]
+      },
+      {
+        "question_id": "#96",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company is using Amazon Elastic Container Service (Amazon ECS) to run its container-based application on AWS. The company needs to ensure that the container images contain no severe vulnerabilities. The company also must ensure that only specific IAM roles and specific AWS accounts can access the container images.<br><br>Which solution will meet these requirements with the LEAST management overhead?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: C</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#96",
+            "answers": [
+              {
+                "choice": "<p>Pull images from the public container registry. Publish the images to Amazon Elastic Container Registry (Amazon ECR) repositories with scan on push configured in a centralized AWS account. Use a CI/CD pipeline to deploy the images to different AWS accounts. Use identity-based policies to restrict access to which IAM principals can access the images.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Pull images from the public container registry. Publish the images to a private container registry that is hosted on Amazon EC2 instances in a centralized AWS account. Deploy host-based container scanning tools to EC2 instances that run Amazon ECS. Restrict access to the container images by using basic authentication over HTTPS.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Pull images from the public container registry. Publish the images to Amazon Elastic Container Registry (Amazon ECR) repositories with scan on push configured in a centralized AWS account. Use a CI/CD pipeline to deploy the images to different AWS accounts. Use repository policies and identity-based policies to restrict access to which IAM principals and accounts can access the images.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Pull images from the public container registry. Publish the images to AWS CodeArtifact repositories in a centralized AWS account. Use a CI/CD pipeline to deploy the images to different AWS accounts. Use repository policies and identity-based policies to restrict access to which IAM principals and accounts can access the images.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 96 discussion",
+        "discusstion": [
+          {
+            "id": 1128890,
+            "date": "Mon 22 Jan 2024 18:07",
+            "username": "\t\t\t\tGafa255\t\t\t",
+            "content": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-policies.html",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1096547,
+            "date": "Thu 14 Dec 2023 15:25",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-policies.html",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1081909,
+            "date": "Mon 27 Nov 2023 20:37",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "C is the correct answer. Please refer to https://aws.amazon.com/premiumsupport/knowledge-center/secondary-account-access-ecr/",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1080492,
+            "date": "Sun 26 Nov 2023 06:19",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Should be C as it logically answers for not only the question of providing a solution of vulnerable free container image process but also covers the method of its access restrictions via IAM roles/principals and accounts as well.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1079911,
+            "date": "Sat 25 Nov 2023 11:13",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "I like C.  More hardened than A?<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A also doesn't mention account restrictions so C for sure</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1079912,
+            "date": "Sat 25 Nov 2023 11:14",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "A also doesn't mention account restrictions so C for sure",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1078785,
+            "date": "Thu 23 Nov 2023 21:47",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          }
+        ]
+      },
+      {
+        "question_id": "#97",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company's data scientists want to create artificial intelligence and machine learning (AI/ML) training models by using Amazon SageMaker. The training models will use large datasets in an Amazon S3 bucket. The datasets contain sensitive information.<br><br>On average, the data scientists need 30 days to train models. The S3 bucket has been secured appropriately. The company's data retention policy states that all data that is older than 45 days must be removed from the S3 bucket.<br><br>Which action should a security engineer take to enforce this data retention policy?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: A</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#97",
+            "answers": [
+              {
+                "choice": "<p>Configure an S3 Lifecycle rule on the S3 bucket to delete objects after 45 days.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an AWS Lambda function to check the last-modified date of the S3 objects and delete objects that are older than 45 days. Create an S3 event notification to invoke the Lambda function for each PutObject operation.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an AWS Lambda function to check the last-modified date of the S3 objects and delete objects that are older than 45 days. Create an Amazon EventBridge rule to invoke the Lambda function each month.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure S3 Intelligent-Tiering on the S3 bucket to automatically transition objects to another storage class.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 97 discussion",
+        "discusstion": [
+          {
+            "id": 1105166,
+            "date": "Mon 25 Dec 2023 11:16",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "A is correct. need to be removed",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1101968,
+            "date": "Wed 20 Dec 2023 22:50",
+            "username": "\t\t\t\tykhan321\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1080973,
+            "date": "Sun 26 Nov 2023 20:01",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Option A is sufficient to complete the required asks.",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1079914,
+            "date": "Sat 25 Nov 2023 11:18",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "A.  The rest are just pure comedy<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Laughing!!! I agree, they are just pure comedy.</li></ul>",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1081910,
+            "date": "Mon 27 Nov 2023 20:40",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "Laughing!!! I agree, they are just pure comedy.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1078788,
+            "date": "Thu 23 Nov 2023 21:48",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          }
+        ]
+      },
+      {
+        "question_id": "#98",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer is troubleshooting an AWS Lambda function that is named MyLambdaFunction. The function is encountering an error when the function attempts to read the objects in an Amazon S3 bucket that is named DOC-EXAMPLE-BUCKET. The S3 bucket has the following bucket policy:<br><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image17.png\"><br><br>Which change should the security engineer make to the policy to ensure that the Lambda function can read the bucket objects?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: C</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#98",
+            "answers": [
+              {
+                "choice": "<p>Remove the Condition element. Change the Principal element to the following: <img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image18.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Change the Action element to the following:<img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image19.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Change the Resource element to \"arn:aws:s3:::DOC-EXAMPLE- BUCKET/*''.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Change the Resource element to \"arn:aws:lambda:::function:MyLambdaFunction\". Change the Principal element to the following: <img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image20.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 98 discussion",
+        "discusstion": [
+          {
+            "id": 1080980,
+            "date": "Sun 26 Nov 2023 20:14",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Yup, option C is absolutely correct since there's nothing wrong on any other areas except the missing ' * ' under the Resource element.",
+            "upvote_count": "6",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1128892,
+            "date": "Mon 22 Jan 2024 18:12",
+            "username": "\t\t\t\tGafa255\t\t\t",
+            "content": "missing the *",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1079915,
+            "date": "Sat 25 Nov 2023 11:20",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "C.  Missing the *",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          }
+        ]
+      },
+      {
+        "question_id": "#99",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>An IAM user receives an Access Denied message when the user attempts to access objects in an Amazon S3 bucket. The user and the S3 bucket are in the same AWS account. The S3 bucket is configured to use server-side encryption with AWS KMS keys (SSE-KMS) to encrypt all of its objects at rest by using a customer managed key from the same AWS account. The S3 bucket has no bucket policy defined. The IAM user has been granted permissions through an IAM policy that allows the kms:Decrypt permission to the customer managed key. The IAM policy also allows the s3:List* and s3:Get* permissions for the S3 bucket and its objects.<br><br>Which of the following is a possible reason that the IAM user cannot access the objects in the S3 bucket?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: D</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#99",
+            "answers": [
+              {
+                "choice": "<p>The IAM policy needs to allow the kms:DescribeKey permission.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>The S3 bucket has been changed to use the AWS managed key to encrypt objects at rest.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>An S3 bucket policy needs to be added to allow the IAM user to access the objects.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>The KMS key policy has been edited to remove the ability for the AWS account to have full access to the key.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 99 discussion",
+        "discusstion": [
+          {
+            "id": 1122985,
+            "date": "Mon 15 Jan 2024 02:07",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "The IAM user has been granted the kms:Decrypt permission for the customer managed key used for server-side encryption in the S3 bucket. If the KMS key policy has been modified to restrict access, it might override the IAM user's permissions, resulting in an Access Denied error.<br><br>It's crucial to ensure that the KMS key policy grants the necessary permissions to the AWS account (and by extension, the IAM user) to perform the required decryption operations.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1105069,
+            "date": "Mon 25 Dec 2023 07:53",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "If you allow by IAM policy to a key, it still can be denied by key policy (which is another policy) unless you explicitly allows.<br>\\\"Unless the key policy explicitly allows it, you cannot use IAM policies to allow access to a KMS key. Without permission from the key policy, IAM policies that allow permissions have no effect.\\\"<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html</li></ul>",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1105070,
+            "date": "Mon 25 Dec 2023 07:53",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1096776,
+            "date": "Thu 14 Dec 2023 21:00",
+            "username": "\t\t\t\tazure4life\t\t\t",
+            "content": "The possible reason that the IAM user cannot access the objects in the S3 bucket is that the KMS key policy has been edited to remove the ability for the AWS account to have full access to the key.<br><br>Since the S3 bucket is using SSE-KMS encryption with a customer managed key, the key policy for that KMS key needs to grant the appropriate permissions to allow decryption of the objects. The IAM policy grants the kms:Decrypt permission, but if the key policy no longer gives the AWS account full access, the decrypt permission will still be denied.<br><br>Options A and B relate to the kms:DescribeKey permission and AWS managed keys, but a customer managed key is being used here. Option C is incorrect because an S3 bucket policy is not required when using IAM policies for permissions. Therefore, option D that mentions the KMS key policy having inappropriate access for the account is the likely reason for the access being denied.",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1084858,
+            "date": "Fri 01 Dec 2023 02:25",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-default.html#key-policy-default-allow-root-enable-iam",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1080994,
+            "date": "Sun 26 Nov 2023 20:39",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "The following statement leads me to believe that option D could be the best option:<br>'The S3 bucket is configured to use server-side encryption with AWS KMS keys (SSE-KMS) to encrypt all of its objects at rest by using a customer managed key from the same AWS account'.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1079919,
+            "date": "Sat 25 Nov 2023 11:22",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "D is correct",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1078791,
+            "date": "Thu 23 Nov 2023 21:51",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          }
+        ]
+      },
+      {
+        "question_id": "#100",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company has a guideline that mandates the encryption of all Amazon S3 bucket data in transit. A security engineer must implement an S3 bucket policy that denies any S3 operations if data is not encrypted.<br><br>Which S3 bucket policy will meet this requirement?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: B</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#100",
+            "answers": [
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image21.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image22.png\"><br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image23.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image24.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 100 discussion",
+        "discusstion": [
+          {
+            "id": 1127317,
+            "date": "Sat 20 Jan 2024 15:16",
+            "username": "\t\t\t\tcannoe\t\t\t",
+            "content": "The question is a bit tricky for me.<br><br>The requirement is: \\\"A security engineer must implement an S3 bucket policy that denies any S3 operations if data is not encrypted.\\\"<br><br>Using HTTPS as a connection does not encrypt the data, it encrypts the connection. When using HTTPS to access an Amazon S3 bucket, the HTTPS encryption is de-encapsulated at the S3 service endpoint. This means the data transmitted between your application and the S3 endpoint is encrypted in transit using HTTPS, but once it reaches the S3 endpoint, the encryption is removed before the data is stored in S3.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1086561,
+            "date": "Sun 03 Dec 2023 04:27",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Updated selection: Def. B",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1084860,
+            "date": "Fri 01 Dec 2023 02:30",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "Enforce encryption of data in transit<br>https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html#security-best-practices-prevent",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1081927,
+            "date": "Mon 27 Nov 2023 21:01",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "This question is requesting to make objects accessible only through HTTPS. Option B is correct because it specifies the bucket policy condition with correct syntax.<br><br>Please refer to \\\"Defense-in-depth requirement 2: Data must be accessible only by a limited set of public IP addresses\\\" section in this link - https://aws.amazon.com/blogs/security/how-to-use-bucket-policies-and-apply-defense-in-depth-to-help-secure-your-amazon-s3-data/<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Thnx so much... got the concept cleared now so def. going with B here now..</li></ul>",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1086560,
+            "date": "Sun 03 Dec 2023 04:21",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Thnx so much... got the concept cleared now so def. going with B here now..",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1081003,
+            "date": "Sun 26 Nov 2023 20:52",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Not sure if I'm fully correct here in selecting this ans. I'd go with C here cuz I feel like it is asked about no S3 bucket operation IF the data is not encrypted. It doesn't say about if the data is not securely in transit. That's why in my opinion, the AES256 encryption method should be mentioned under the conditional logic area in the bucket policy.<br><br>But I'd appreciate if anyone else would like to discuss and clarify my understandings on this if I'm incorrect here... Thnx so much!",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1079920,
+            "date": "Sat 25 Nov 2023 11:25",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "B.  You want to deny where secure transport is false<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>https://repost.aws/knowledge-center/s3-bucket-policy-for-config-rule</li></ul>",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1081911,
+            "date": "Mon 27 Nov 2023 20:41",
+            "username": "\t\t\t\tWije1\t\t\t",
+            "content": "https://repost.aws/knowledge-center/s3-bucket-policy-for-config-rule",
+            "upvote_count": "2",
+            "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#101",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer wants to use Amazon Simple Notification Service (Amazon SNS) to send email alerts to a company's security team for Amazon GuardDuty findings that have a High severity level. The security engineer also wants to deliver these findings to a visualization tool for further examination. <br>Which solution will meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: B</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#101",
+            "answers": [
+              {
+                "choice": "<p>Set up GuardDuty to send notifications to an Amazon CloudWatch alarm with two targets in CloudWatch. From CloudWatch, stream the findings through Amazon Kinesis Data Streams into an Amazon Open Search Service domain as the first target for delivery. Use Amazon QuickSight to visualize the findings. Use OpenSearch queries for further analysis. Deliver email alerts to the security team by configuring an SNS topic as a second target for the CloudWatch alarm. Use event pattern matching with an Amazon EventBridge event rule to send only High severity findings in the alerts.</p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Set up GuardDuty to send notifications to AWS CloudTrail with two targets in CloudTrail. From CloudTrail, stream the findings through Amazon Kinesis Data Firehose into an Amazon OpenSearch Service domain as the first target for delivery. Use OpenSearch Dashboards to visualize the findings. Use OpenSearch queries for further analysis. Deliver email alerts to the security team by configuring an SNS topic as a second target for CloudTrail. Use event pattern matching with a CloudTrail event rule to send only High severity findings in the alerts.</p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Set up GuardDuty to send notifications to Amazon EventBridge with two targets. From EventBridge, stream the findings through Amazon Kinesis Data Firehose into an Amazon OpenSearch Service domain as the first target for delivery. Use OpenSearch Dashboards to visualize the findings. Use OpenSearch queries for further analysis. Deliver email alerts to the security team by configuring an SNS topic as a second target for EventBridge. Use event pattern matching with an EventBridge event rule to send only High severity findings in the alerts.</p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Set up GuardDuty to send notifications to Amazon EventBridge with two targets. From EventBridge, stream the findings through Amazon Kinesis Data Streams into an Amazon OpenSearch Service domain as the first target for delivery. Use Amazon QuickSight to visualize the findings. Use OpenSearch queries for further analysis. Deliver email alerts to the security team by configuring an SNS topic as a second target for EventBridge. Use event pattern matching with an EventBridge event rule to send only High severity findings in the alerts.</p>",
+                "correct": false,
+                "feedback": ""
+              },
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 100 discussion",
+        "discusstion": [
+          {
+            "id": 1129478,
+            "date": "Tue 23 Jan 2024 12:57",
+            "username": "\t\t\t\tmynickc \t\t\t",
+            "content": "D is not right because you need to perform a few activities to establish connection b/w Opensearch and QuickSight which is missing in choice D",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1129478,
+            "date": "Tue 23 Jan 2024 12:57",
+            "username": "\t\t\t\tmynickc  \t\t\t",
+            "content": "C - it filters only High alerts.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+        ]
+      },
+      {
+        "question_id": "#102",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer needs to implement a write-once-read-many (WORM) model for data that a company will store in Amazon S3 buckets. The company uses the S3 Standard storage class for all of its S3 buckets. The security engineer must ensure that objects cannot be overwritten or deleted by any user, including the AWS account root user.<br><br>Which solution will meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: A</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#102",
+            "answers": [
+              {
+                "choice": "<p>Create new S3 buckets with S3 Object Lock enabled in compliance mode. Place objects in the S3 buckets.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use S3 Glacier Vault Lock to attach a Vault Lock policy to new S3 buckets. Wait 24 hours to complete the Vault Lock process. Place objects in the S3 buckets.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create new S3 buckets with S3 Object Lock enabled in governance mode. Place objects in the S3 buckets.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create new S3 buckets with S3 Object Lock enabled in governance mode. Add a legal hold to the S3 buckets. Place objects in the S3 buckets.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 102 discussion",
+        "discusstion": [
+          {
+            "id": 1129478,
+            "date": "Tue 23 Jan 2024 12:57",
+            "username": "\t\t\t\tJamshif01\t\t\t",
+            "content": "A<br>https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock-configure.html",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1089047,
+            "date": "Wed 06 Dec 2023 08:24",
+            "username": "\t\t\t\tconfusedyeti69\t\t\t",
+            "content": "In compliance mode, a protected object version can't be overwritten or deleted by any user, including the root user in your AWS account. When an object is locked in compliance mode, its retention mode can't be changed, and its retention period can't be shortened. Compliance mode helps ensure that an object version can't be overwritten or deleted for the duration of the retention period.<br><br>In governance mode, users can't overwrite or delete an object version or alter its lock settings unless they have special permissions. With governance mode, you protect objects against being deleted by most users, but you can still grant some users permission to alter the retention settings or delete the objects if necessary. You can also use governance mode to test retention-period settings before creating a compliance-mode retention period.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1084926,
+            "date": "Fri 01 Dec 2023 04:55",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "https://aws.amazon.com/s3/features/object-lock/",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1081014,
+            "date": "Sun 26 Nov 2023 21:49",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Option A would work in this usecase.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1079922,
+            "date": "Sat 25 Nov 2023 11:29",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "A rings the most bells",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1078802,
+            "date": "Thu 23 Nov 2023 21:56",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "coorect",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          }
+        ]
+      },
+      {
+        "question_id": "#103",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company needs complete encryption of the traffic between external users and an application. The company hosts the application on a fleet of Amazon EC2 instances that run in an Auto Scaling group behind an Application Load Balancer (ALB).<br><br>How can a security engineer meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: D</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#103",
+            "answers": [
+              {
+                "choice": "<p>Create a new Amazon-issued certificate in AWS Secrets Manager. Export the certificate from Secrets Manager. Import the certificate into the ALB and the EC2 instances.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create a new Amazon-issued certificate in AWS Certificate Manager (ACM). Associate the certificate with the ALExport the certificate from ACM. Install the certificate on the EC2 instances.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Import a new third-party certificate into AWS Identity and Access Management (IAM). Export the certificate from IAM. Associate the certificate with the ALB and the EC2 instances.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Import a new third-party certificate into AWS Certificate Manager (ACM). Associate the certificate with the ALB.  Install the certificate on the EC2 instances.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 103 discussion",
+        "discusstion": [
+          {
+            "id": 1082040,
+            "date": "Tue 28 Nov 2023 01:51",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "Because of the wording of this question, I did not first know which of the options B and D is correct.<br><br>However, my conviction that you can't directly install Amazon-issued certificates on EC2 instances (refer to - https://repost.aws/knowledge-center/associate-acm-certificate-alb-nlb for more information) made me to study a few documentations to be sure D is the correct answer.<br><br>Please check the Accepted answer in the following thread - https://repost.aws/questions/QUIo7PWvZ3T6aFYCByhZ5f0A/load-certificate-on-alb-and-ec2",
+            "upvote_count": "7",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1123008,
+            "date": "Mon 15 Jan 2024 03:07",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "B. <br>To achieve complete encryption of the traffic between external users and an application hosted on Amazon EC2 instances behind an Application Load Balancer (ALB), you would typically use SSL/TLS encryption. AWS Certificate Manager (ACM) provides a managed service for provisioning and renewing SSL/TLS certificates.<br><br>Here's how the process works:<br><br>Create a new Amazon-issued certificate in ACM.<br>Associate the certificate with the ALB.  This ensures that the ALB can terminate SSL/TLS connections on behalf of the EC2 instances.<br>Export the certificate from ACM.<br>Install the exported certificate on the EC2 instances. This ensures that the communication between the ALB and EC2 instances is also encrypted.<br>By using ACM, you benefit from the managed certificate service, automated certificate renewal, and easy integration with other AWS services like ALB.  This approach ensures secure communication from external users to the ALB and between the ALB and EC2 instances.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1097965,
+            "date": "Sat 16 Dec 2023 08:06",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "ACM should be used, so A and C are out.<br>Between B and D, B is out because Amazon-issued public cert cannot be installed on EC2 instances.<br>https://repost.aws/knowledge-center/associate-acm-certificate-alb-nlb",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1096791,
+            "date": "Thu 14 Dec 2023 21:11",
+            "username": "\t\t\t\tazure4life\t\t\t",
+            "content": "Option D is the correct solution.<br><br>To encrypt traffic between external users and the application behind the Application Load Balancer (ALB), a certificate should be imported into AWS Certificate Manager (ACM) and associated with the ALB.  The same certificate should also be installed on the EC2 instances.<br><br>Option A is incorrect because Secrets Manager is used for storing secrets, not SSL/TLS certificates.<br><br>Option B is incorrect because Amazon-issued ACM certificates can only be used with Elastic Load Balancers and Amazon CloudFront. They cannot be exported and installed on EC2 instances.<br><br>Option C is incorrect because IAM does not support importing or managing SSL/TLS certificates.<br><br>Option D uses a third-party certificate imported into ACM, associated with the ALB, and installed on the EC2 instances. This provides complete encryption between the users and application.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1092674,
+            "date": "Sun 10 Dec 2023 18:07",
+            "username": "\t\t\t\tOralinux\t\t\t",
+            "content": "Bad question; I think it should be B since AWSalways tries to promote and use internal services and not go to third parties. We deploy SSL in ALB terminate and send non-SSL to EC2. In my opinion, the provided answers are incorrect.",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1084624,
+            "date": "Thu 30 Nov 2023 18:43",
+            "username": "\t\t\t\tsnowmaggedon\t\t\t",
+            "content": "CAN'T use an ACM cert on ec2 instance. D is the right answer.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1081019,
+            "date": "Sun 26 Nov 2023 22:17",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "I think it's asking about the key difference btw creating Amazon based Cert versus creating/using 3rd party Certs.... specially on leveraging the feature of 'exporting the Cert' from ACM which looks valid in option B only whereas on other choices, it's not a good fit. I could be wrong but that's what makes me feel to go with option B here..",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1079927,
+            "date": "Sat 25 Nov 2023 11:40",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "Kind of a bad question here, so I can't really make a proper decision between B and D. .What certificate is being applied? ALB does not pass encrypted traffic to a target. NLB will do that.<br><br>you must deploy at least one SSL server certificate on your load balancer. The load balancer uses a server certificate to terminate the front-end connection and then decrypt requests from clients before sending them to the targets. You must also specify a security policy, which is used to negotiate secure connections between clients and the load balancer.<br><br>If you need to pass encrypted traffic to targets without the load balancer decrypting it, you can create a Network Load Balancer or Classic Load Balancer with a TCP listener on port 443. With a TCP listener, the load balancer passes encrypted traffic through to the targets without decrypting it.https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1078803,
+            "date": "Thu 23 Nov 2023 21:58",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          }
+        ]
+      },
+      {
+        "question_id": "#104",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company has an organization with SCPs in AWS Organizations. The root SCP for the organization is as follows:<br><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image25.png\"><br><br>The company's developers are members of a group that has an IAM policy that allows access to Amazon Simple Email Service (Amazon SES) by allowing ses:* actions. The account is a child to an OU that has an SCP that allows Amazon SES. The developers are receiving a not-authorized error when they try to access Amazon SES through the AWS Management Console.<br><br>Which change must a security engineer implement so that the developers can access Amazon SES?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: D</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#104",
+            "answers": [
+              {
+                "choice": "<p>Add a resource policy that allows each member of the group to access Amazon SES.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Add a resource policy that allows \"Principal\": {\"AWS\": \"arn:aws:iam::account-number:group/Dev\"}.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Remove the AWS Control Tower control (guardrail) that restricts access to Amazon SES.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Remove Amazon SES from the root SCP.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 104 discussion",
+        "discusstion": [
+          {
+            "id": 1105203,
+            "date": "Mon 25 Dec 2023 12:06",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "D is the correct one",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1102005,
+            "date": "Thu 21 Dec 2023 00:04",
+            "username": "\t\t\t\tykhan321\t\t\t",
+            "content": "Why most of the answers are incorrect here.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1096794,
+            "date": "Thu 14 Dec 2023 21:16",
+            "username": "\t\t\t\tazure4life\t\t\t",
+            "content": "Option D is the correct solution. The root SCP is denying access to Amazon SES across the organization. Even though the OU SCP and IAM policy allow SES access, the root SCP takes precedence and blocks it. Removing Amazon SES from the root SCP whitelist will resolve the issue and allow the developers to access SES based on the permissions granted in their IAM policy.<br><br>Option A is incorrect because resource policies apply at the service level, not for IAM users/groups.<br><br>Option B is also related to resource policies, not the issue with the SCP whitelist.<br><br>Option C mentions AWS Control Tower which is not referenced in the question. The SCP is set through AWS Organizations.<br><br>So the root cause is the root SCP denying access to SES, and it needs to be removed from that SCP to allow access that is permitted in the lower levels of permissions.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1092680,
+            "date": "Sun 10 Dec 2023 18:17",
+            "username": "\t\t\t\tOralinux\t\t\t",
+            "content": "Answer D:<br>a resource policy attached directly to an AWS resource (such as Amazon SES) cannot override an SCP (Service Control Policy) set at the root level in AWS Organizations.<br><br>Service Control Policies (SCPs) at the root level act as \\\"guardrails\\\" and define the maximum permissions that accounts within the organization can have. They are evaluated before resource policies.<br><br>If an SCP denies access to a particular service, even a resource policy allowing access on the specific resource won't take effect. The SCP at the root level will override any resource policy attached to individual resources.<br><br>So, while a resource policy can be useful for granting permissions on a specific resource, it cannot be used to override the restrictions imposed by an SCP at a higher level in the organization's hierarchy. In this scenario, removing the restriction for Amazon SES from the root SCP would be the effective solution.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1087041,
+            "date": "Sun 03 Dec 2023 19:47",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Leads me towards option D only cuz it seems like the denial of ses* actions explicitly defined under the SCP is probably blocking their authorization requests... not sure if Control Tower here makes any big difference..",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1079930,
+            "date": "Sat 25 Nov 2023 11:42",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "The answer is D",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: D"
+          }
+        ]
+      },
+      {
+        "question_id": "#105",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company hosts a public website on an Amazon EC2 instance. HTTPS traffic must be able to access the website. The company uses SSH for management of the web server.<br><br>The website is on the subnet 10.0.1.0/24. The management subnet is 192.168.100.0/24. A security engineer must create a security group for the EC2 instance.<br><br>Which combination of steps should the security engineer take to meet these requirements in the MOST secure manner? (Choose two.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: BC</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#105",
+            "answers": [
+              {
+                "choice": "<p>Allow port 22 from source 0.0.0.0/0.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Allow port 443 from source 0.0 0 0/0.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Allow port 22 from 192.168.100.0/24.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Allow port 22 from 10.0.1.0/24.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Allow port 443 from 10.0.1.0/24.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 105 discussion",
+        "discusstion": [
+          {
+            "id": 1105204,
+            "date": "Mon 25 Dec 2023 12:09",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "BC is the correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BC"
+          },
+          {
+            "id": 1103852,
+            "date": "Sat 23 Dec 2023 04:46",
+            "username": "\t\t\t\ttayman\t\t\t",
+            "content": "BC 100%",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BC"
+          },
+          {
+            "id": 1102007,
+            "date": "Thu 21 Dec 2023 00:07",
+            "username": "\t\t\t\tykhan321\t\t\t",
+            "content": "Another wrong answer here. My head is spinning.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BC"
+          },
+          {
+            "id": 1092687,
+            "date": "Sun 10 Dec 2023 18:25",
+            "username": "\t\t\t\tOralinux\t\t\t",
+            "content": "Answer: BC",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1082060,
+            "date": "Tue 28 Nov 2023 02:28",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Yup, agreed with B and C. ",
+            "upvote_count": "4",
+            "selected_answers": "Selected Answer: BC"
+          },
+          {
+            "id": 1079934,
+            "date": "Sat 25 Nov 2023 11:47",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "Quite sure the subnet \\\"10.0.1.0/24\\\" is a distractor, so B and C are my vote.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agree. I almost fell for it until I read the question again and paid attention to \\\"HTTPS traffic must be able to access the website\\\". This means any (0.0.0.0/0) https traffic.</li></ul>",
+            "upvote_count": "4",
+            "selected_answers": "Selected Answer: BC"
+          },
+          {
+            "id": 1082062,
+            "date": "Tue 28 Nov 2023 02:33",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "Agree. I almost fell for it until I read the question again and paid attention to \\\"HTTPS traffic must be able to access the website\\\". This means any (0.0.0.0/0) https traffic.",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1078805,
+            "date": "Thu 23 Nov 2023 22:00",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: BC"
+          }
+        ]
+      },
+      {
+        "question_id": "#106",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer wants to forward custom application-security logs from an Amazon EC2 instance to Amazon CloudWatch. The security engineer installs the CloudWatch agent on the EC2 instance and adds the path of the logs to the CloudWatch configuration file.<br><br>However, CloudWatch does not receive the logs. The security engineer verifies that the awslogs service is running on the EC2 instance.<br><br>What should the security engineer do next to resolve the issue?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: D</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#106",
+            "answers": [
+              {
+                "choice": "<p>Add AWS CloudTrail to the trust policy of the EC2 in stance. Send the custom logs to CloudTrail instead of CloudWatch.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Add Amazon S3 to the trust policy of the EC2 instance. Configure the application to write the custom logs to an S3 bucket that CloudWatch can use to ingest the logs.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Add Amazon Inspector to the trust policy of the EC2 instance. Use Amazon Inspector instead of the CloudWatch agent to collect the custom logs.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Attach the CloudWatchAgentServerPolicy AWS managed policy to the EC2 instance role.<br></p>",
+                "correct": true,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 106 discussion",
+        "discusstion": [
+          {
+            "id": 1129494,
+            "date": "Tue 23 Jan 2024 13:13",
+            "username": "\t\t\t\tJamshif01\t\t\t",
+            "content": "D<br>All other answers are irrelevant",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1105206,
+            "date": "Mon 25 Dec 2023 12:10",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "D for sure",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1104554,
+            "date": "Sun 24 Dec 2023 12:05",
+            "username": "\t\t\t\tyorkicurke\t\t\t",
+            "content": "Uses of CloudWatchAgentServerPolicy ;<br>It allows the CloudWatch agent to publish metrics and logs to CloudWatch on behalf of the IAM role or user the policy is attached to.<br>It provides permissions for the agent to access and manage its own configuration files stored in S3.<br>The policy grants permissions across multiple AWS services like CloudWatch, S3, KMS etc. to allow end-to-end functionality of the monitoring agent.",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1102008,
+            "date": "Thu 21 Dec 2023 00:09",
+            "username": "\t\t\t\tykhan321\t\t\t",
+            "content": "Only EC2 & Cloudwatch are in questions here.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1092690,
+            "date": "Sun 10 Dec 2023 18:29",
+            "username": "\t\t\t\tOralinux\t\t\t",
+            "content": "Answer: D",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1082074,
+            "date": "Tue 28 Nov 2023 03:16",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "No doubt about D. ",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1079935,
+            "date": "Sat 25 Nov 2023 11:48",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "D is correcto",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1078807,
+            "date": "Thu 23 Nov 2023 22:05",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: D"
+          }
+        ]
+      },
+      {
+        "question_id": "#107",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A systems engineer is troubleshooting the connectivity of a test environment that includes a virtual security appliance deployed inline. In addition to using the virtual security appliance, the development team wants to use security groups and network ACLs to accomplish various security requirements in the environment.<br><br>What configuration is necessary to allow the virtual security appliance to route the traffic?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: C</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#107",
+            "answers": [
+              {
+                "choice": "<p>Disable network ACLs.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Configure the security appliance's elastic network interface for promiscuous mode.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Disable the Network Source/Destination check on the security appliance's elastic network interface.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Place the security appliance in the public subnet with the internet gateway.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 107 discussion",
+        "discusstion": [
+          {
+            "id": 1123009,
+            "date": "Mon 15 Jan 2024 03:18",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "C,<br>When you deploy a virtual security appliance inline in a subnet, you need to ensure that it can effectively route traffic between different subnets. The \\\"Network Source/Destination check\\\" is a feature in Amazon EC2 that controls whether source/destination checking is enabled or disabled on a network interface.<br><br>In this context, the virtual security appliance acts as a router, and the \\\"Network Source/Destination check\\\" should be disabled on its elastic network interface. When this check is disabled, the network interface can handle traffic that is not specifically destined for the instance it is attached to, allowing it to route traffic between different subnets.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1105207,
+            "date": "Mon 25 Dec 2023 12:11",
+            "username": "\t\t\t\trahav\t\t\t",
+            "content": "C for sure",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1097997,
+            "date": "Sat 16 Dec 2023 08:54",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "Source/destination checking<br>You can enable or disable source/destination checks, which ensure that the instance is either the source or the destination of any traffic that it receives. Source/destination checks are enabled by default. You must disable source/destination checks if the instance runs services such as network address translation, routing, or firewalls.<br>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1096811,
+            "date": "Thu 14 Dec 2023 21:28",
+            "username": "\t\t\t\tazure4life\t\t\t",
+            "content": "Option C is the correct solution.<br><br>To allow a virtual security appliance deployed inline to route traffic between subnets, the Network Source/Destination Check needs to be disabled on its elastic network interface. This enables the appliance to receive traffic that is not specifically addressed to itself.<br><br>Option A is incorrect because disabling network ACLs is not required for a virtual appliance deployment and would reduce security.<br><br>Option B mentions promiscuous mode which applies to physical network interfaces, not virtual ones in AWS.<br><br>Option D places the appliance in the public subnet which may help route internet traffic but does not address routing between private subnets. Disabling the Source/Destination Check is required to enable that routing functionality.",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1092692,
+            "date": "Sun 10 Dec 2023 18:30",
+            "username": "\t\t\t\tOralinux\t\t\t",
+            "content": "Answer: C",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1084935,
+            "date": "Fri 01 Dec 2023 05:24",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1079936,
+            "date": "Sat 25 Nov 2023 11:50",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "C is correct",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: C"
+          },
+          {
+            "id": 1078811,
+            "date": "Thu 23 Nov 2023 22:08",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: C"
+          }
+        ]
+      },
+      {
+        "question_id": "#108",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer needs to create an Amazon S3 bucket policy to grant least privilege read access to IAM user accounts that are named User1, User2, and User3. These IAM user accounts are members of the AuthorizedPeople IAM group. The security engineer drafts the following S3 bucket policy:<br><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image26.png\"><br><br>When the security engineer tries to add the policy to the S3 bucket, the following error message appears: \"Missing required field Principal.\"<br><br>The security engineer is adding a Principal element to the policy. The addition must provide read access to only User1, User2, and User3.<br><br>Which solution meets these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: A</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#108",
+            "answers": [
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image27.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image28.png\"><br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image29.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image30.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 108 discussion",
+        "discusstion": [
+          {
+            "id": 1079941,
+            "date": "Sat 25 Nov 2023 11:54",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "Agree with AgboolaKun. What a lovely question<br><br>You can specify any of the following principals in a policy:<br>AWS account and root user<br>IAM roles<br>Role sessions<br>IAM users<br>Federated user sessions<br>AWS services<br>All principals<br><br>You cannot identify a user group as a principal in a policy (such as a resource-based policy) because groups relate to permissions, not authentication, and principals are authenticated IAM entities.<br><br>https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html#Principal_specifying",
+            "upvote_count": "8",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1092698,
+            "date": "Sun 10 Dec 2023 18:40",
+            "username": "\t\t\t\tOralinux\t\t\t",
+            "content": "Answer A: \\\" IAM user accounts that are named User1, User2, and User3. These IAM user accounts are members of the AuthorizedPeople IAM group\\\"<br>we do not want to give read access to other accounts that are part of the AuthorizedPeople IAM group. > then only A satisfy this criteria",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1087052,
+            "date": "Sun 03 Dec 2023 20:09",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "All others are not the valid choices since the Principal needs to be selected only for User1, User2 and User3 'only' explicitly... plus, groups can't be identified as a Principal anyways..",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1079646,
+            "date": "Sat 25 Nov 2023 01:04",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "The correct answer is A - https://www.examtopics.com/discussions/amazon/view/60777-exam-aws-certified-security-specialty-topic-1-question-258/",
+            "upvote_count": "4",
+            "selected_answers": "Selected Answer: A"
+          }
+        ]
+      },
+      {
+        "question_id": "#109",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer recently rotated all IAM access keys in an AWS account. The security engineer then configured AWS Config and enabled the following AWS Config managed rules: mfa-enabled-for-iam-console-access, iam-user-mfa-enabled, access-keys-rotated, and iam-user-unused-credentials-check.<br><br>The security engineer notices that all resources are displaying as noncompliant after the IAM GenerateCredentialReport API operation is invoked.<br><br>What could be the reason for the noncompliant status?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: A</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#109",
+            "answers": [
+              {
+                "choice": "<p>The IAM credential report was generated within the past 4 hours.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>The security engineer does not have the GenerateCredentialReport permission.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>The security engineer does not have the GetCredenlialReport permission.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>The AWS Config rules have a MaximumExecutionFrequency value of 24 hours.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 109 discussion",
+        "discusstion": [
+          {
+            "id": 1079645,
+            "date": "Sat 25 Nov 2023 01:02",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "The report was generated within the past 4 hours - https://repost.aws/knowledge-center/config-credential-report",
+            "upvote_count": "8",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1123010,
+            "date": "Mon 15 Jan 2024 03:25",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "When these AWS Config rules are triggered, they rely on the latest IAM credential report to evaluate compliance. If the IAM credential report has been generated within the past 4 hours, it might not reflect the most recent changes, such as the rotation of access keys.<br>To address this, it's a good practice to ensure that the IAM credential report is generated and updated at regular intervals, and AWS Config rules are then evaluated against the most recent report. You can schedule the generation of the IAM credential report and the evaluation of AWS Config rules accordingly.<br><br>A &C are incorrect because the noncompliance is related to the timeliness of the IAM credential report rather than permissions. Option D is incorrect because the MaximumExecutionFrequency value doesn't affect the initial evaluation of the rules; it determines how often the rule is re-evaluated after its first evaluation.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1109355,
+            "date": "Sat 30 Dec 2023 04:02",
+            "username": "\t\t\t\tbrpjp\t\t\t",
+            "content": "Answer D may be correct, on assumption that if maximumexecutionfrequency is 24 hours, then report is one day old rather than 4 hours mentioned on option A.  Anyone can clarify my understanding.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1103967,
+            "date": "Sat 23 Dec 2023 11:19",
+            "username": "\t\t\t\tyorkicurke\t\t\t",
+            "content": "Explained in the following link;<br><br>https://repost.aws/knowledge-center/config-credential-report<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>oh shootAgboolaKunalready mentioned it. ok thumbs up for youAgboolaKun</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1103968,
+            "date": "Sat 23 Dec 2023 11:20",
+            "username": "\t\t\t\tyorkicurke\t\t\t",
+            "content": "oh shootAgboolaKunalready mentioned it. ok thumbs up for youAgboolaKun",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1082118,
+            "date": "Tue 28 Nov 2023 04:54",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Agreed on A. ",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1079945,
+            "date": "Sat 25 Nov 2023 11:58",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "I agree with AgboolaKun. Read the link for some good insight",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1078816,
+            "date": "Thu 23 Nov 2023 22:10",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Anything else besides correct?</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1102025,
+            "date": "Thu 21 Dec 2023 00:22",
+            "username": "\t\t\t\tykhan321\t\t\t",
+            "content": "Anything else besides correct?",
+            "upvote_count": "1",
+            "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#110",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company is using AWS WAF to protect a customized public API service that is based on Amazon EC instances. The API uses an Application Load Balancer.<br><br>The AWS WAF web ACL is configured with an AWS Managed Rules rule group. After a software upgrade to the API and the client application, some types of requests are no longer working and are causing application stability issues. A security engineer discovers that AWS WAF logging is not turned on for the web ACL.<br><br>The security engineer needs to immediately return the application to service, resolve the issue, and ensure that logging is not turned off in the future. The security engineer turns on logging for the web ACL and specifies Amazon CloudWatch Logs as the destination.<br><br>Which additional set of steps should the security engineer take to meet the requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: A</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#110",
+            "answers": [
+              {
+                "choice": "<p>Edit the rules in the web ACL to include rules with Count actions. Review the logs to determine which rule is blocking the request. Modify the IAM policy of all AWS WAF administrators so that they cannot remove the logging configuration for any AWS WAF web ACLs.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Edit the rules in the web ACL to include rules with Count actions. Review the logs to determine which rule is blocking the request. Modify the AWS WAF resource policy so that AWS WAF administrators cannot remove the logging configuration for any AWS WAF web ACLs.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Edit the rules in the web ACL to include rules with Count and Challenge actions. Review the logs to determine which rule is blocking the request. Modify the AWS WAF resource policy so that AWS WAF administrators cannot remove the logging configuration for any AWS WAF web ACLs.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Edit the rules in the web ACL to include rules with Count and Challenge actions. Review the logs to determine which rule is blocking the request. Modify the IAM policy of all AWS WAF administrators so that they cannot remove the logging configuration for any AWS WAF web ACLs.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 110 discussion",
+        "discusstion": [
+          {
+            "id": 1123016,
+            "date": "Mon 15 Jan 2024 03:36",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "B.  A Count action allows rules to collect data about requests that match the conditions but does not block or allow the requests. After making this change, the SE can review the logs in CloudWatch Logs to determine which rule is blocking the specific requests causing the application stability issues. To ensure that logging is not turned off in the future, the security engineer should modify the AWS WAF resource policy. This modification should restrict AWS WAF administrators from removing the logging configuration for any AWS WAF web ACLs, adding an extra layer of protection against inadvertent changes.<br><br>C & D suggest including rules with Count and Challenge actions, which may not be necessary for the immediate resolution of the issue. Option A recommends modifying IAM policies, but modifying the AWS WAF resource policy is a more direct and suitable approach for preventing changes to logging configurations.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1103992,
+            "date": "Sat 23 Dec 2023 12:35",
+            "username": "\t\t\t\tyorkicurke\t\t\t",
+            "content": "As many have suggested of why i'ts unnecessary to go for 'challenge' so C&D -> OUT<br><br>As of why not picking B(resource-based) is because resource policy would only control access to that single web ACL.<br><br>The question asks to ensure logging is not turned off for any web ACLs[well that's what's implied], which modifying IAM policies globally achieves but modifying a single resource policy does not.<br><br>AWS documentation recommends applying least privilege permissions through IAM policies when managing access to resources across multiple accounts. This helps ensure permissions are restricted at the identity level rather than at the individual resource level.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1082147,
+            "date": "Tue 28 Nov 2023 05:40",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "It's def. not B.  Going with option A cuz of IAM policy capability in this use case rather than resource policies.",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1079956,
+            "date": "Sat 25 Nov 2023 12:11",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "Challenge logs are not necessary here (CAPTCHA). We'll also want to restrict with IAM policies and NOT resource policies. Perhaps with SCPs as well. Answer is A<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Challenge:<br>Runs a silent background check on the client session to verify if it's a legitimate browser.<br>Doesn't involve any user interaction, keeping the experience seamless.<br>Less effective against sophisticated bots that can mimic browser behavior.</li></ul>",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1102557,
+            "date": "Thu 21 Dec 2023 14:30",
+            "username": "\t\t\t\tWeepingMaplte\t\t\t",
+            "content": "Challenge:<br>Runs a silent background check on the client session to verify if it's a legitimate browser.<br>Doesn't involve any user interaction, keeping the experience seamless.<br>Less effective against sophisticated bots that can mimic browser behavior.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1078819,
+            "date": "Thu 23 Nov 2023 22:12",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          }
+        ]
+      },
+      {
+        "question_id": "#111",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A security engineer is creating an AWS Lambda function. The Lambda function needs to use a role that is named LambdaAuditRole to assume a role that is named AcmeAuditFactoryRole in a different AWS account.<br><br>When the code is processed, the following error message appears: \"An error occurred (AccessDenied) when calling the AssumeRole operation.\"<br><br>Which combination of steps should the security engineer take to resolve this error? (Choose two.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: AC</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#111",
+            "answers": [
+              {
+                "choice": "<p>Ensure that LambdaAuditRole has the sts:AssumeRole permission for AcmeAuditFactoryRole.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Ensure that LambdaAuditRole has the AWSLambdaBasicExecutionRole managed policy attached.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Ensure that the trust policy for AcmeAuditFactoryRole allows the sts:AssumeRole action from LambdaAuditRole.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Ensure that the trust policy for LambdaAuditRole allows the sts:AssumeRole action from the lambda.amazonaws.com service.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Ensure that the sts:AssumeRole API call is being issued to the us-east-1 Region endpoint.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 111 discussion",
+        "discusstion": [
+          {
+            "id": 1084943,
+            "date": "Fri 01 Dec 2023 05:39",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "https://repost.aws/knowledge-center/lambda-function-assume-iam-role",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: AC"
+          },
+          {
+            "id": 1082152,
+            "date": "Tue 28 Nov 2023 05:49",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "makes the perfect logic.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: AC"
+          },
+          {
+            "id": 1079960,
+            "date": "Sat 25 Nov 2023 12:19",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "A and C seems right",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AC"
+          },
+          {
+            "id": 1078824,
+            "date": "Thu 23 Nov 2023 22:20",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "coorect",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AC"
+          }
+        ]
+      },
+      {
+        "question_id": "#112",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company has AWS accounts in an organization in AWS Organizations. The organization includes a dedicated security account.<br><br>All AWS account activity across all member accounts must be logged and reported to the dedicated security account. The company must retain all the activity logs in a secure storage location within the dedicated security account for 2 years. No changes or deletions of the logs are allowed.<br><br>Which combination of steps will meet these requirements with the LEAST operational overhead? (Choose two.)</p>",
+        "mark": 1,
+        "is_partially_correct": true,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: BD</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#112",
+            "answers": [
+              {
+                "choice": "<p>In the dedicated security account, create an Amazon S3 bucket. Configure S3 Object Lock in compliance mode and a retention period of 2 years on the S3 bucket. Set the bucket policy to allow the organization's management account to write to the S3 bucket.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>In the dedicated security account, create an Amazon S3 bucket. Configure S3 Object Lock in compliance mode and a retention period of 2 years on the S3 bucket. Set the bucket policy to allow the organization's member accounts to write to the S3 bucket.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>In the dedicated security account, create an Amazon S3 bucket that has an S3 Lifecycle configuration that expires objects after 2 years. Set the bucket policy to allow the organization's member accounts to write to the S3 bucket.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Create an AWS CloudTrail trail for the organization. Configure logs to be delivered to the logging Amazon S3 bucket in the dedicated security account.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Turn on AWS CloudTrail in each account. Configure logs to be delivered to an Amazon S3 bucket that is created in the organization's management account. Forward the logs to the S3 bucket in the dedicated security account by using AWS Lambda and Amazon Kinesis Data Firehose.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 112 discussion",
+        "discusstion": [
+          {
+            "id": 1084033,
+            "date": "Thu 30 Nov 2023 07:33",
+            "username": "\t\t\t\tahrentom\t\t\t",
+            "content": "I go with BD, because each Member Account has to write into the security Account S3 bucket, not only the Organization Management Account.<br>https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-set-bucket-policy-for-multiple-accounts.html<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Agreed.CloudTrail for Org requires the destination S3 bucket to allow writes from each member account.Object Lock is enabled to prevent the data from being overwritten/deleted.</li></ul>",
+            "upvote_count": "8",
+            "selected_answers": "Selected Answer: BD"
+          },
+          {
+            "id": 1084947,
+            "date": "Fri 01 Dec 2023 05:45",
+            "username": "\t\t\t\tkejam\t\t\t",
+            "content": "Agreed.CloudTrail for Org requires the destination S3 bucket to allow writes from each member account.Object Lock is enabled to prevent the data from being overwritten/deleted.",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1133354,
+            "date": "Sat 27 Jan 2024 14:06",
+            "username": "\t\t\t\tErnestokoro\t\t\t",
+            "content": "The organization includes a dedicated security account Member account while ALL OTHER Management account. this means to me that granting the permission from the Management account reduces operational overhead than doing it at individual member accounts. Therefore I go with option AD. ",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1123022,
+            "date": "Mon 15 Jan 2024 03:46",
+            "username": "\t\t\t\tvikasj1in\t\t\t",
+            "content": "A, D<br>Option B covers the storage aspect by configuring a dedicated S3 bucket in the security account, allowing member accounts to write logs. S3 Object Lock in compliance mode ensures the retention requirements.<br><br>Option D complements this by configuring CloudTrail to capture the logs and deliver them to the dedicated S3 bucket directly.<br><br>Together, these options cover the log storage, retention, and collection requirements with the least operational overhead.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1106742,
+            "date": "Wed 27 Dec 2023 12:24",
+            "username": "\t\t\t\tWeepingMaplte\t\t\t",
+            "content": "Enable Organization Trail: In the Management Console or CLI, activate an organization trail that logs all events from all member accounts.<br>https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-trail-organization.html",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AD"
+          },
+          {
+            "id": 1099821,
+            "date": "Mon 18 Dec 2023 16:31",
+            "username": "\t\t\t\tjeff001\t\t\t",
+            "content": "Member account needs to write to S3.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: BD"
+          },
+          {
+            "id": 1086458,
+            "date": "Sun 03 Dec 2023 00:06",
+            "username": "\t\t\t\tmarco25\t\t\t",
+            "content": "trails across member accounts, needs permissions to the sender bucket",
+            "upvote_count": "4",
+            "selected_answers": "Selected Answer: BD"
+          },
+          {
+            "id": 1082161,
+            "date": "Tue 28 Nov 2023 06:08",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "If I understand correctly, the reason why the option B can't be a correct one cuz the use case has asked about the logs which must not be deleted or changed which can't be met in option B if we opt for each member's accounts to be given with the full S3 logs access under an organization.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>A has only one account and option B has all the aws accounts.</li><li>If following your logic, the management account can delete and change the logs too.<br>And the options also says to only give write access to S3 only.<br>It is not A because members need to write S3, not only management.<br><br>In compliance mode, a protected object version can't be overwritten or deleted by any user, including the root user in your AWS account.<br>https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AD"
+          },
+          {
+            "id": 1102039,
+            "date": "Thu 21 Dec 2023 00:36",
+            "username": "\t\t\t\tykhan321\t\t\t",
+            "content": "A has only one account and option B has all the aws accounts.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1089471,
+            "date": "Wed 06 Dec 2023 16:04",
+            "username": "\t\t\t\tconfusedyeti69\t\t\t",
+            "content": "If following your logic, the management account can delete and change the logs too.<br>And the options also says to only give write access to S3 only.<br>It is not A because members need to write S3, not only management.<br><br>In compliance mode, a protected object version can't be overwritten or deleted by any user, including the root user in your AWS account.<br>https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079963,
+            "date": "Sat 25 Nov 2023 12:23",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "A and D are correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AD"
+          },
+          {
+            "id": 1078837,
+            "date": "Thu 23 Nov 2023 22:31",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: AD"
+          }
+        ]
+      },
+      {
+        "question_id": "#113",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company is testing its incident response plan for compromised credentials. The company runs a database on an Amazon EC2 instance and stores the sensitive database credentials as a secret in AWS Secrets Manager. The secret has rotation configured with an AWS Lambda function that uses the generic rotation function template. The EC2 instance and the Lambda function are deployed in the same private subnet. The VPC has a Secrets Manager VPC endpoint.<br><br>A security engineer discovers that the secret cannot rotate. The security engineer determines that the VPC endpoint is working as intended. The Amazon CloudWatch logs contain the following error: \"setSecret: Unable to log into database\".<br><br>Which solution will resolve this error?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: B</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#113",
+            "answers": [
+              {
+                "choice": "<p>Use the AWS Management Console to edit the JSON structure of the secret in Secrets Manager so that the secret automatically conforms with the structure that the database requires.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Ensure that the security group that is attached to the Lambda function allows outbound connections to the EC2 instance. Ensure that the security group that is attached to the EC2 instance allows inbound connections from the security group that is attached to the Lambda function.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use the Secrets Manager list-secrets command in the AWS CLI to list the secret. Identify the database credentials. Use the Secrets Manager rotate-secret command in the AWS CLI to force the immediate rotation of the secret.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Add an internet gateway to the VPC.  Create a NAT gateway in a public subnet. Update the VPC route tables so that traffic from the Lambda function and traffic from the EC2 instance can reach the Secrets Manager public endpoint.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 113 discussion",
+        "discusstion": [
+          {
+            "id": 1105284,
+            "date": "Mon 25 Dec 2023 13:59",
+            "username": "\t\t\t\tDaniel76\t\t\t",
+            "content": "a) when you use the console to store a database secret, Secrets Manager automatically creates it in the correct JSON structure.<br>c) secret manager already configured as auto-rotation. also, secret id should have been known instead of listing secrets .<br>d) accessing secret manager via public is not recommended.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1104559,
+            "date": "Sun 24 Dec 2023 12:29",
+            "username": "\t\t\t\tyorkicurke\t\t\t",
+            "content": "Hate questions like these which rather then testing your knoweledge of technologies trick you into these weired worded questions.<br><br>the statement 'Ensure that the security group that is attached to the Lambda function allows outbound' threw me off as Lambda does not have SGs.<br><br>But then through some internet digging came accross the fact that when a Lambda function needs to access resources inside a Virtual Private Cloud (VPC), it does so using ENI which resides in a subnet of the VPC and can have a security group associated with it. The security group acts as a virtual firewall for the ENI.",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1089480,
+            "date": "Wed 06 Dec 2023 16:13",
+            "username": "\t\t\t\tconfusedyeti69\t\t\t",
+            "content": "Why would the lambda need access to the EC2? The question is unclear about the exact job of the lambda. It is worded as if the lambda job is to change the creds in secrets manager only.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>The DB runs on the EC2 that's why the Lambda needs access to it to set the new credentials</li></ul>",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1101676,
+            "date": "Wed 20 Dec 2023 16:23",
+            "username": "\t\t\t\tJPSWS\t\t\t",
+            "content": "The DB runs on the EC2 that's why the Lambda needs access to it to set the new credentials",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1082184,
+            "date": "Tue 28 Nov 2023 06:32",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "B is the only one that logically seems right. All others are distracters except option C.  But option C describes the solution of this problem as a one time thing whereas, it's been asked to provide a permanent solution for this use case. That's why B looks much more secured and valid option among all others.",
+            "upvote_count": "4",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1079965,
+            "date": "Sat 25 Nov 2023 12:27",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "I'll vote B.  The rest are distractors but feel free to correct me if I'm wrong.",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: B"
+          },
+          {
+            "id": 1078840,
+            "date": "Thu 23 Nov 2023 22:35",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: B"
+          }
+        ]
+      },
+      {
+        "question_id": "#114",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company deploys a set of standard IAM roles in AWS accounts. The IAM roles are based on job functions within the company. To balance operational efficiency and security, a security engineer implemented AWS Organizations SCPs to restrict access to critical security services in all company accounts.<br><br>All of the company's accounts and OUs within AWS Organizations have a default FullAWSAccess SCP that is attached. The security engineer needs to ensure that no one can disable Amazon GuardDuty and AWS Security Hub. The security engineer also must not override other permissions that are granted by IAM policies that are defined in the accounts.<br><br>Which SCP should the security engineer attach to the root of the organization to meet these requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: A</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#114",
+            "answers": [
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image31.png\"><br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image32.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image33.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p><br><img src=\"https://img.examtopics.com/aws-certified-security-specialty-scs-c02/image34.png\"><br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 114 discussion",
+        "discusstion": [
+          {
+            "id": 1084043,
+            "date": "Thu 30 Nov 2023 07:54",
+            "username": "\t\t\t\tahrentom\t\t\t",
+            "content": "A is correct, key word in SCP is to Deny, because it overwrites the FullAccessSCP Alow statement.",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1083028,
+            "date": "Wed 29 Nov 2023 01:18",
+            "username": "\t\t\t\tAgboolaKun\t\t\t",
+            "content": "A is correct. The NotAction element cannot be used in this case.<br><br>You only need an explicit DENY here since all accounts and OUs already have a default FullAWSAccess SCP but you don't want them to be able to disable Amazon GuardDuty and AWS Security Hub.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Kindly correct me if I am wrong. When we attach a new SCP the default FullAWSAccess SCP is detached from the OU. isn't that right?</li></ul>",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1114819,
+            "date": "Fri 05 Jan 2024 23:05",
+            "username": "\t\t\t\tSab31\t\t\t",
+            "content": "Kindly correct me if I am wrong. When we attach a new SCP the default FullAWSAccess SCP is detached from the OU. isn't that right?",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1082755,
+            "date": "Tue 28 Nov 2023 17:55",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Probably going with D but still not 100% sure how is it going to work that way... would appreciate if someone could help in understanding this question..<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>SCPs do not support NotAction with effect Allow.</li><li>Ah ok, got it...thnx so much... in this way, probably looks like all other options are invalid except option A since on all others they've used 'NotAction' attribute with Allow directly and indirectly which won't work..</li></ul>",
+            "upvote_count": "2",
+            "selected_answers": "Selected Answer: D"
+          },
+          {
+            "id": 1085168,
+            "date": "Fri 01 Dec 2023 12:20",
+            "username": "\t\t\t\tLeoD\t\t\t",
+            "content": "SCPs do not support NotAction with effect Allow.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>Ah ok, got it...thnx so much... in this way, probably looks like all other options are invalid except option A since on all others they've used 'NotAction' attribute with Allow directly and indirectly which won't work..</li></ul>",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1087094,
+            "date": "Sun 03 Dec 2023 21:28",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Ah ok, got it...thnx so much... in this way, probably looks like all other options are invalid except option A since on all others they've used 'NotAction' attribute with Allow directly and indirectly which won't work..",
+            "upvote_count": "2",
+            "selected_answers": ""
+          },
+          {
+            "id": 1079971,
+            "date": "Sat 25 Nov 2023 12:39",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "A.  OU level will still have access to other services outside of Guardduty and Security Hub due to the OU level policy. D could work but is not necessary",
+            "upvote_count": "1",
+            "selected_answers": ""
+          }
+        ]
+      },
+      {
+        "question_id": "#115",
+        "topic_id": 1,
+        "course_id": 1,
+        "case_study_id": null,
+        "lab_id": 0,
+        "question_text": "<p>A company needs to follow security best practices to deploy resources from an AWS CloudFormation template. The CloudFormation template must be able to configure sensitive database credentials.<br><br>The company already uses AWS Key Management Service (AWS KMS) and AWS Secrets Manager.<br><br>Which solution will meet the requirements?</p>",
+        "mark": 1,
+        "is_partially_correct": false,
+        "question_type": "1",
+        "difficulty_level": "0",
+        "general_feedback": "<p>Correct Answer: A</p>",
+        "is_active": true,
+        "answer_list": [
+          {
+            "question_answer_id": 1,
+            "question_id": "#115",
+            "answers": [
+              {
+                "choice": "<p>Use a dynamic reference in the CloudFormation template to reference the database credentials in Secrets Manager.<br></p>",
+                "correct": true,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use a parameter in the CloudFormation template to reference the database credentials. Encrypt the CloudFormation template by using AWS KMS.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use a SecureString parameter in the CloudFormation template to reference the database credentials in Secrets Manager.<br></p>",
+                "correct": false,
+                "feedback": ""
+              },
+              {
+                "choice": "<p>Use a SecureString parameter in the CloudFormation template to reference an encrypted value in AWS KMS.<br></p>",
+                "correct": false,
+                "feedback": ""
+              }
+            ]
+          }
+        ],
+        "topic_name": "Unlimited AccessExam AWS Certified Security - Specialty SCS-C02 topic 1 question 115 discussion",
+        "discusstion": [
+          {
+            "id": 1095797,
+            "date": "Wed 13 Dec 2023 21:29",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Since this is the last question here so maybe I can post it here. I've passed this exam with a score of 926. Only few of the questions were not from this exam material but else, everything came from here. Would like to thanks to all of you who helped in answering my queries and got my concept clarified!... Man_Kind, Agboola and others, you guys simply rock, thanks once again so much! :)<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>@Aamee, do you think there is a question from 1 to 50? I'm only studying from 50 to 115.</li></ul>",
+            "upvote_count": "8",
+            "selected_answers": ""
+          },
+          {
+            "id": 1106429,
+            "date": "Tue 26 Dec 2023 23:52",
+            "username": "\t\t\t\tgiancesarini2023\t\t\t",
+            "content": "@Aamee, do you think there is a question from 1 to 50? I'm only studying from 50 to 115.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1141773,
+            "date": "Tue 06 Feb 2024 06:06",
+            "username": "\t\t\t\tnn67\t\t\t",
+            "content": "A<br>keyword dynamic reference",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1138449,
+            "date": "Fri 02 Feb 2024 11:54",
+            "username": "\t\t\t\tPmktechno\t\t\t",
+            "content": "Yesterday I took this exam (Feb 1st) single question also wasn't came from this set of questions. Please wait examtopics team should be update soon new set of questions.",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1125336,
+            "date": "Wed 17 Jan 2024 22:20",
+            "username": "\t\t\t\tbrpjp\t\t\t",
+            "content": "Hello, I passed exam with 956 score. Thank you all for contributing and correcting the answers.<br> <div> Replies:</div> <ul style='list-style-type: disclosure-closed;'><li>when did you take the exam?</li></ul>",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1134177,
+            "date": "Sun 28 Jan 2024 15:44",
+            "username": "\t\t\t\talexleely\t\t\t",
+            "content": "when did you take the exam?",
+            "upvote_count": "1",
+            "selected_answers": ""
+          },
+          {
+            "id": 1082166,
+            "date": "Tue 28 Nov 2023 06:14",
+            "username": "\t\t\t\tAamee\t\t\t",
+            "content": "Yup, for sure it should be A.  Here's the summary:<br><br>\\\"Updating a secret in Secrets Manager doesn't automatically update the secret in CloudFormation. In order for CloudFormation to update a secretsmanager dynamic reference, you must perform a stack update that updates the resource containing the dynamic reference, either by updating the resource property that contains the secretsmanager dynamic reference, or updating another of the resource's properties.\\\"",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1079975,
+            "date": "Sat 25 Nov 2023 12:47",
+            "username": "\t\t\t\t[Removed]\t\t\t",
+            "content": "A.  See below<br><br>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/dynamic-references.html#dynamic-references-secretsmanager",
+            "upvote_count": "3",
+            "selected_answers": "Selected Answer: A"
+          },
+          {
+            "id": 1078847,
+            "date": "Thu 23 Nov 2023 22:44",
+            "username": "\t\t\t\toioi\t\t\t",
+            "content": "correct",
+            "upvote_count": "1",
+            "selected_answers": "Selected Answer: A"
           }
         ]
       }
