@@ -9364,7 +9364,12 @@ var SCS_C01_Part4 = {
               "feedback": ""
             },
             {
-              "choice": "<p>Deactivate ACLs for objects that are in the bucket.D> Use AWS PrivateLink for Amazon S3 to access the bucket.<br></p>",
+              "choice": "<p>Deactivate ACLs for objects that are in the bucket.<br></p>",
+              "correct": false,
+              "feedback": ""
+            },
+            {
+              "choice": "<p>Use AWS PrivateLink for Amazon S3 to access the bucket.<br></p>",
               "correct": false,
               "feedback": ""
             }
