@@ -33,7 +33,6 @@ class Question {
         let correctAnswer = this.getCorrectAnswer();
         let SYMBOL_ANSWER = ["A", "B", "C", "D", "E", "F", "G", "H"];
         this.questionChoices.forEach(function(choice, index) {
-            console.log(choice);
             let item = `
             {
                 "choice": "<p>${choice}</p>",
@@ -90,23 +89,8 @@ function commonReplace(text) {
     text = text.replaceAll('=09 ', '');
     text = text.replaceAll('=09', '');
     text = text.replaceAll('=E2=80=9C', '\'');
-    text = text.replaceAll('=E2=80=9', '\' ');
-
-    text = text.replaceAll('A.', '');
-    text = text.replaceAll('B.', '');
-    text = text.replaceAll('C.', '');
-    text = text.replaceAll('D.', '');
-    text = text.replaceAll('E.', '');
-    text = text.replaceAll('F.', '');
-
-    text = text.replaceAll('<br>A.', '');
-    text = text.replaceAll('<br>B.', '');
-    text = text.replaceAll('<br>C.', '');
-    text = text.replaceAll('<br>D.', '');
-    text = text.replaceAll('<br>E.', '');
-    text = text.replaceAll('<br>F.', '');
-    text = text.replaceAll('<br><br>', '');
-
+    text = text.replaceAll('=E2=80=9D', '\' ');
+    text = text.replaceAll('<br><br><br> ', '');
     return text;
 }
 
@@ -133,6 +117,12 @@ function convert(html) {
     var questionBody = $("#tempHtml .question-body > p.card-text:first-child").html();
     questionBody = commonReplace(questionBody);
     questionBody = questionBody.replaceAll('Ximg', '<img class=\\"w-100\\"');
+    if (questionBody.indexOf("<br><br>") == 0) {
+      questionBody = questionBody.slice("<br><br>".length);
+    }
+    if (questionBody.lastIndexOf("<br><br>") == questionBody.length - "<br><br>".length) {
+        questionBody = questionBody.slice(0, questionBody.lastIndexOf("<br><br>"));
+    }
 
     // Answers
     var questionChoicesHtml = $("#tempHtml .question-body .question-choices-container ul li");
@@ -140,6 +130,16 @@ function convert(html) {
     questionChoicesHtml.each((key, questionChoice) => {
         questionChoiceText = questionChoice.innerText;
         questionChoiceText = commonReplace(questionChoiceText);
+        if (questionChoiceText.indexOf("A.") == 0 
+        || questionChoiceText.indexOf("B.") == 0 
+        || questionChoiceText.indexOf("C.") == 0
+        || questionChoiceText.indexOf("D.") == 0
+        || questionChoiceText.indexOf("E.") == 0
+        || questionChoiceText.indexOf("F.") == 0
+        || questionChoiceText.indexOf("G.") == 0
+        ) {
+            questionChoiceText = questionChoiceText.slice(2);
+        }
         questionChoiceText = questionChoiceText.replaceAll('Ximg', '<img class=\\"w-100\\"');
         questionChoices.push(questionChoiceText);
     });
