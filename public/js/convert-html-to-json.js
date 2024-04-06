@@ -33,6 +33,7 @@ class Question {
         let correctAnswer = this.getCorrectAnswer();
         let SYMBOL_ANSWER = ["A", "B", "C", "D", "E", "F", "G", "H"];
         this.questionChoices.forEach(function(choice, index) {
+            console.log(choice);
             let item = `
             {
                 "choice": "<p>${choice}</p>",
@@ -86,20 +87,25 @@ function commonReplace(text) {
     text = text.replaceAll('\n', '<br>');
     text = text.replaceAll('src="assets/media', 'src="https://examtopics.com/assets/media');
     text = text.replaceAll('<br>Most Voted<br>', '');
+    text = text.replaceAll('=09 ', '');
+    text = text.replaceAll('=09', '');
+    text = text.replaceAll('=E2=80=9C', '\'');
+    text = text.replaceAll('=E2=80=9', '\' ');
 
-    text = text.replaceAll('A.', 'A. ');
-    text = text.replaceAll('B.', 'B. ');
-    text = text.replaceAll('C.', 'C. ');
-    text = text.replaceAll('D.', 'D. ');
-    text = text.replaceAll('E.', 'E. ');
-    text = text.replaceAll('F.', 'F. ');
+    text = text.replaceAll('A.', '');
+    text = text.replaceAll('B.', '');
+    text = text.replaceAll('C.', '');
+    text = text.replaceAll('D.', '');
+    text = text.replaceAll('E.', '');
+    text = text.replaceAll('F.', '');
 
-    text = text.replaceAll('<br>A.', 'A.');
-    text = text.replaceAll('<br>B.', 'B.');
-    text = text.replaceAll('<br>C.', 'C.');
-    text = text.replaceAll('<br>D.', 'D.');
-    text = text.replaceAll('<br>E.', 'E.');
-    text = text.replaceAll('<br>F.', 'F.');
+    text = text.replaceAll('<br>A.', '');
+    text = text.replaceAll('<br>B.', '');
+    text = text.replaceAll('<br>C.', '');
+    text = text.replaceAll('<br>D.', '');
+    text = text.replaceAll('<br>E.', '');
+    text = text.replaceAll('<br>F.', '');
+    text = text.replaceAll('<br><br>', '');
 
     return text;
 }
@@ -126,6 +132,7 @@ function convert(html) {
     // Question
     var questionBody = $("#tempHtml .question-body > p.card-text:first-child").html();
     questionBody = commonReplace(questionBody);
+    questionBody = questionBody.replaceAll('Ximg', '<img class=\\"w-100\\"');
 
     // Answers
     var questionChoicesHtml = $("#tempHtml .question-body .question-choices-container ul li");
@@ -133,6 +140,7 @@ function convert(html) {
     questionChoicesHtml.each((key, questionChoice) => {
         questionChoiceText = questionChoice.innerText;
         questionChoiceText = commonReplace(questionChoiceText);
+        questionChoiceText = questionChoiceText.replaceAll('Ximg', '<img class=\\"w-100\\"');
         questionChoices.push(questionChoiceText);
     });
     
@@ -162,7 +170,7 @@ function convert(html) {
             if(sub_commnent != "") {
                 content += `\n <div>\tReplies:</div> <ul style='list-style-type: disclosure-closed;'>${sub_commnent}</ul>`
             }
-            username = username.replaceAll('  ', '').replaceAll('\n', '');
+            username = username.replaceAll('  ', '').replaceAll('\n', '').replaceAll('\t', '');
             content = commonReplace(content);
             
             let comment = {
@@ -243,6 +251,7 @@ function splitQuestionRawFreeCam(htmlRaw) {
 $("#btn-submit-json").on("click", function () {
     $("#csv-result").text("");
     var htmlRaw = $("#html-source").val();
+    htmlRaw = htmlRaw.replace(/<img/g, 'Ximg')
     var listQuestionRawHtml = splitQuestionRaw(htmlRaw);
 
     var csvText = "";
