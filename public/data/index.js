@@ -74,6 +74,11 @@ var listExamGroup = [
         name: "[SAA_C03] ExamTopic 501_600",
         data: SAA_C03_Exam_501_600.data,
       },
+      {
+        id: "SAA_C03_Exam_601_700",
+        name: "[SAA_C03] ExamTopic 601_700",
+        data: SAA_C03_Exam_601_700.data,
+      },
     ]
   },
 
