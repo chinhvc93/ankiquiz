@@ -79,6 +79,26 @@ var listExamGroup = [
         name: "[SAA_C03] ExamTopic 601_700",
         data: SAA_C03_Exam_601_700.data,
       },
+      {
+        id: "SAA_C03_Exam_701_800",
+        name: "[SAA_C03] ExamTopic 701_800",
+        data: SAA_C03_Exam_701_800.data,
+      },
+      {
+        id: "SAA_C03_Exam_801_900",
+        name: "[SAA_C03] ExamTopic 801_900",
+        data: SAA_C03_Exam_801_900.data,
+      },
+      {
+        id: "SAA_C03_Exam_901_1000",
+        name: "[SAA_C03] ExamTopic 901_1000",
+        data: SAA_C03_Exam_901_1000.data,
+      },
+      {
+        id: "SAA_C03_Exam_1001_1100",
+        name: "[SAA_C03] ExamTopic 1001_1100",
+        data: SAA_C03_Exam_1001_1100.data,
+      },
     ]
   },
 
