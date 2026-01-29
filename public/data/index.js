@@ -38,6 +38,32 @@ var listExamGroup = [
       },
     ]
   },
+  {
+    id: "AIF_C01",
+    name: "[AIF-C01] AWS Certified AI Practitioner (AIF-C01)",
+    list: [
+      {
+        id: "AIF_C01_001_100",
+        name: "[AIF-C01] AIF_C01_001_100",
+        data: AIF_C01_001_100.data,
+      },
+      {
+        id: "AIF_C01_101_200",
+        name: "[AIF-C01] AIF_C01_101_200",
+        data: AIF_C01_101_200.data,
+      },
+      {
+        id: "AIF_C01_201_300",
+        name: "[AIF-C01] AIF_C01_201_300",
+        data: AIF_C01_201_300.data,
+      },
+      {
+        id: "AIF_C01_301_400",
+        name: "[AIF-C01] AIF_C01_301_400",
+        data: AIF_C01_301_400.data,
+      },
+    ]
+  },
 
   //GROUP 3
   {
