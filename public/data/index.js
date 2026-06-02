@@ -64,6 +64,17 @@ var listExamGroup = [
       },
     ]
   },
+  {
+    id: "AIP_C01",
+    name: "[AIP-C01] Amazon AWS Certified Generative AI Developer - Professional (AIP-C01)",
+    list: [
+      {
+        id: "AIP_C01_001_100",
+        name: "[AIP-C01] AIP_C01_001_100",
+        data: AIP_C01_001_100.data,
+      },
+    ]
+  },
 
   //GROUP 3
   {

@@ -15,7 +15,7 @@ pip install beautifulsoup4 lxml
 
 Trước khi chạy, hãy đảm bảo cấu trúc thư mục như sau:
 
-* `quiz_parser.py`: File script Python.
+* `QuizDataParser.py`: File script Python.
 * `input/`: Thư mục chứa các file `.html` hoặc `.mhtml` đầu vào.
 
 ## 3. Cách chạy script
@@ -23,7 +23,7 @@ Trước khi chạy, hãy đảm bảo cấu trúc thư mục như sau:
 ### Chạy trực tiếp và nhập tham số thủ công:
 
 ```bash
-python quiz_parser.py
+python QuizDataParser.py
 
 ```
 
