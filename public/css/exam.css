@@ -157,6 +157,16 @@ body.white-mode .starMarkToReview.true {
 
 .ExamQuestionsBlock .left .block-head {
     position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.ExamQuestionsBlock .left .block-head .top-head {
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 .ExamQuestionsBlock .left {
@@ -243,7 +253,23 @@ body.white-mode .starMarkToReview.true {
 
 .que-content.hiddenColor.true,
 .que-content.hiddenColor.false {
-    background-color: initial !important; 
+    background-color: initial !important;
+}
+
+.answerResultIcon {
+    margin-left: 8px;
+}
+
+.answerResultIcon.true {
+    color: #00a862;
+}
+
+.answerResultIcon.false {
+    color: #dc3545;
+}
+
+.que-content.hiddenColor .answerResultIcon {
+    display: none;
 }
 
 .exam-nav {
@@ -258,14 +284,12 @@ body.white-mode .starMarkToReview.true {
 .exam-nav.top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0;
     margin: 0;
     border: 0;
     border-top: none !important;
-    position: absolute;
-    right: 55px;
-    top: 4px;
+    flex: 0 0 auto;
 }
 
 /* btn reviewAttemts*/
@@ -531,7 +555,7 @@ body.white-mode {
 /* CSS FOR IPAD DEVICES */
 @media only screen and (min-device-width: 500px)  and (max-device-width: 900px)  and (orientation: portrait)  {
     .ExamQuestionsBlock .left {
-        max-width: calc(100% - 100px);
+        max-width: calc(100% - 180px);
     }
 
     .ExamQuestionsBlock .left .block-head {
@@ -539,17 +563,20 @@ body.white-mode {
     }
 
     .ExamQuestionsBlock .right {
-        max-width: 100px;
+        max-width: 180px;
         max-height: 768px;
         overflow-y: scroll;
-    } 
+    }
 
     .ExamQuestionsBlock .right .attempts-que ul {
         grid-template-columns: repeat(2,1fr);
     }
 
-    .ExamQuestionsBlock .right .btn-review {
+    .ExamQuestionsBlock .right .btn-review,
+    .ExamQuestionsBlock .right a[href="#attempts-que"] {
         font-size: 12px;
+        white-space: normal;
+        line-height: 1.3;
     }
 
     .ExamQuestionsBlock .right .attempts-que ul li {
@@ -590,7 +617,7 @@ body.white-mode {
 /* CSS FOR IPHONES DEVICES */
 @media only screen and (max-device-width: 500px)  and (orientation: portrait)  {
     .ExamQuestionsBlock {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .ExamQuestionsBlock .left .block-head {
@@ -625,6 +652,37 @@ body.white-mode {
 
     .ExamQuestionsBlock img {
         max-width: 100%;
+    }
+
+    .ip-radio {
+        width: 28px;
+        height: 28px;
+    }
+
+    .custom_label {
+        align-items: flex-start !important;
+    }
+
+    /* .examBlock has overflow:hidden (for border-radius), which disables
+       position:sticky on any descendant, so we anchor to the viewport
+       with fixed instead and pad the content so it isn't covered. */
+    .ExamQuestionsBlock .left .content {
+        padding-bottom: 70px;
+    }
+
+    .ExamQuestionsBlock .left .content > .exam-nav {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--bg-primary-color);
+        z-index: 1000;
+        margin: 0;
+        box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    body.dark-mode .ExamQuestionsBlock .left .content > .exam-nav {
+        background: var(--dark-bg-primary-color);
     }
 
     body {

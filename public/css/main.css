@@ -80,3 +80,81 @@ body.dark-mode .accessGateBox {
     color: #dc3545;
     font-size: 13px;
 }
+
+/* QUESTION SEARCH */
+.questionSearchResults {
+    max-height: 260px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 5px;
+    background: #fff;
+}
+
+body.dark-mode .questionSearchResults {
+    background: var(--dark-bg-primary-color);
+    border-color: #46484d;
+}
+
+.questionSearchItem {
+    padding: 6px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+.questionSearchItem:last-child {
+    border-bottom: none;
+}
+
+.questionSearchItem:hover {
+    background: rgba(0, 124, 255, 0.1);
+}
+
+body.dark-mode .questionSearchItem {
+    border-bottom-color: #46484d;
+}
+
+.questionSearchItemNo {
+    font-weight: bold;
+    margin-right: 6px;
+    color: #007cff;
+}
+
+.questionSearchItemSnippet mark {
+    background: #ffc107;
+    padding: 0 1px;
+}
+
+.questionSearchEmpty {
+    padding: 10px;
+    font-size: 13px;
+    color: #888;
+    text-align: center;
+}
+
+/* SYSTEM PROMPT (visually separated from the main action buttons) */
+.system-prompt-block {
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1px dashed #ddd;
+}
+
+body.dark-mode .system-prompt-block {
+    border-top-color: #46484d;
+}
+
+.system-prompt-toggle {
+    text-decoration: none;
+    font-size: 12px;
+    padding-left: 0;
+    color: #6c757d !important;
+}
+
+body.dark-mode .system-prompt-toggle {
+    color: var(--dark-primary-color) !important;
+}
+
+.system-prompt-toggle:hover {
+    text-decoration: underline;
+}

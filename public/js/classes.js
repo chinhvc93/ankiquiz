@@ -191,8 +191,12 @@ class Question {
     
     self.answer_list.forEach(function (answer, index) {
       let queContentAwnswer = "";
+      let answerResultIcon = "";
       if (isShowAnswer) {
         queContentAwnswer = answer.correct ? "true" : "false";
+        answerResultIcon = answer.correct
+          ? `<i class="fa-solid fa-circle-check answerResultIcon true" aria-label="Correct"></i>`
+          : `<i class="fa-solid fa-circle-xmark answerResultIcon false" aria-label="Incorrect"></i>`;
       }
 
       let checked = "";
@@ -218,6 +222,7 @@ class Question {
           <span class="que-content ${queContentAwnswer}">
               <span class="symbolAnswer">${SYMBOL_ANSWERS[index]}.</span>
               ${answer.choice}
+              ${answerResultIcon}
           </span>
       </label>
       `;

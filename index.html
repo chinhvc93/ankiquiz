@@ -129,8 +129,8 @@
                         <button class="btn-showDiscussion btn btn-info px-1">Show Discussion</button>
 
                         <!-- System Prompt (for Gemini sidebar) -->
-                        <div class="my-3 system-prompt-block">
-                            <button type="button" class="btn btn-outline-secondary btn-sm" id="btnToggleSystemPrompt">
+                        <div class="system-prompt-block">
+                            <button type="button" class="btn btn-link btn-sm system-prompt-toggle" id="btnToggleSystemPrompt">
                                 <i class="fa-solid fa-robot"></i> System Prompt (Gemini)
                             </button>
                             <div id="systemPromptPanel" class="d-none mt-2">
@@ -181,6 +181,10 @@
                         Hide/Show List Question
                     </a>
                     <div id="attempts-que" class="attempts-que collapse hide">
+                        <div class="questionSearchBlock mb-2">
+                            <input type="text" id="questionSearchInput" class="form-control form-control-sm" placeholder="Tìm câu hỏi theo từ khóa...">
+                            <div id="questionSearchResults" class="questionSearchResults d-none"></div>
+                        </div>
                         <ul>
                         </ul>
                         <a class="btnClearAllAnswer btn btn-sm btn-danger rounded-pill w-100 my-2">
@@ -483,6 +487,7 @@
     <script src="./public/js/desks.js"></script>
     <script src="./public/js/exam.js"></script>
     <script src="./public/js/system-prompt.js"></script>
+    <script src="./public/js/question-search.js"></script>
     <script src="./public/js/access-gate.js"></script>
 
     <!-- /SCRIPTS -->
