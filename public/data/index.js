@@ -252,9 +252,24 @@ var listExamGroup = [
         data: SAP_C02_Part2.data,
       },
       {
-        id: "SAP_C02_All",
-        name: "[SAP-C02] All Parts",
-        data: SAP_C02_All.data,
+        id: "SAP_C02_Part3",
+        name: "[SAP-C02] Part3",
+        data: SAP_C02_Part3.data,
+      },
+      {
+        id: "SAP_C02_Part4",
+        name: "[SAP-C02] Part4",
+        data: SAP_C02_Part4.data,
+      },
+      {
+        id: "SAP_C02_Part5",
+        name: "[SAP-C02] Part5",
+        data: SAP_C02_Part5.data,
+      },
+      {
+        id: "SAP_C02_Part6",
+        name: "[SAP-C02] Part6",
+        data: SAP_C02_Part6.data,
       },
       {
         id: "SAP_C02_Whiz_PracticeTest1",
