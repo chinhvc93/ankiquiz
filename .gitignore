@@ -1,0 +1,35 @@
+# Claude Code cấu hình cục bộ
+.claude/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node.js (nếu dùng trong tương lai)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Logs & Temporary files
+*.log
+.tmp/
+temp/
+
+# Dữ liệu cục bộ/cache
+.cache/
+*.cache
