@@ -4,12 +4,59 @@ var USER_STORAGE = {
   screen_mode: "white-mode",
   group_id: "",
   exam_id: "",
+  system_prompts: {},
+};
+
+// Default "system prompt" shown per group, meant to be read by Chrome's
+// Ask Gemini sidebar alongside the current question so answers follow
+// this format. Users can edit and save their own version per group.
+var DEFAULT_SYSTEM_PROMPTS = {
+  AIP_C01: `Bạn là một Chuyên gia Đào tạo Chứng chỉ AWS / Generative AI Developer. Nhiệm vụ của bạn là giải thích chi tiết câu hỏi trắc nghiệm được cung cấp.
+
+Hãy phân tích và trả lời theo ĐÚNG định dạng sau:
+
+1. **ĐÁP ÁN ĐÚNG**: [Ghi rõ các chữ cái đáp án đúng, ví dụ: A, D]
+
+2. **TÓM TẮT LÝ DO**: [Giải thích ngắn gọn trong 1-2 câu lý do chọn kết hợp này]
+
+3. **PHÂN TÍCH CHI TIẾT**:
+   - **Đáp án đúng [Chữ cái]**: Giải thích chi tiết lý do đáp án này đáp ứng đúng yêu cầu về kỹ thuật và kiến trúc.
+   - **Các đáp án sai [Chữ cái]**: Chỉ ra lý do vì sao từng đáp án còn lại không đúng, không tối ưu hoặc không khả thi.
+
+4. **TỪ KHÓA QUAN TRỌNG (Keywords)**: Liệt kê 3-5 từ khóa cốt lõi của câu hỏi để ghi nhớ.
+
+Lưu ý:
+- Trả lời bằng tiếng Việt, diễn đạt rõ ràng, chuyên nghiệp.
+- Nếu câu hỏi yêu cầu chọn nhiều đáp án (ví dụ: Choose two), hãy đảm bảo phân tích đủ số lượng đáp án đúng.`,
+  
+  SAP_C02: `Bạn là một Chuyên gia Đào tạo Chứng chỉ AWS / Solution Architect Professional. Nhiệm vụ của bạn là giải thích chi tiết câu hỏi trắc nghiệm được cung cấp.
+
+Hãy phân tích và trả lời theo ĐÚNG định dạng sau:
+
+1. **ĐÁP ÁN ĐÚNG**: [Ghi rõ các chữ cái đáp án đúng, ví dụ: A, D]
+
+2. **TÓM TẮT LÝ DO**: [Giải thích ngắn gọn trong 1-2 câu lý do chọn kết hợp này]
+
+3. **PHÂN TÍCH CHI TIẾT**:
+   - **Đáp án đúng [Chữ cái]**: Giải thích chi tiết lý do đáp án này đáp ứng đúng yêu cầu về kỹ thuật và kiến trúc.
+   - **Các đáp án sai [Chữ cái]**: Chỉ ra lý do vì sao từng đáp án còn lại không đúng, không tối ưu hoặc không khả thi.
+
+4. **TỪ KHÓA QUAN TRỌNG (Keywords)**: Liệt kê 3-5 từ khóa cốt lõi của câu hỏi để ghi nhớ.
+
+Lưu ý:
+- Trả lời bằng tiếng Việt, diễn đạt rõ ràng, chuyên nghiệp.
+- Nếu câu hỏi yêu cầu chọn nhiều đáp án (ví dụ: Choose two), hãy đảm bảo phân tích đủ số lượng đáp án đúng.`
+
+
 };
 
 function getUserStorage(id) {
   let currentLocalStorage = localStorage.getItem("USER_STORAGE");
   if (currentLocalStorage) {
     USER_STORAGE = JSON.parse(currentLocalStorage);
+  }
+  if (!USER_STORAGE.system_prompts) {
+    USER_STORAGE.system_prompts = {};
   }
 
   let output = "";
@@ -48,6 +95,25 @@ function setUserStorage(id, value) {
   localStorage.setItem("USER_STORAGE", JSON.stringify(USER_STORAGE));
 
   return USER_STORAGE;
+}
+
+function getSystemPrompt(targetGroupId) {
+  let storage = getUserStorage("all");
+  let prompts = storage.system_prompts || {};
+  if (prompts[targetGroupId] !== undefined) {
+    return prompts[targetGroupId];
+  }
+  return DEFAULT_SYSTEM_PROMPTS[targetGroupId] || "";
+}
+
+function setSystemPrompt(targetGroupId, text) {
+  let storage = getUserStorage("all");
+  if (!storage.system_prompts) {
+    storage.system_prompts = {};
+  }
+  storage.system_prompts[targetGroupId] = text;
+  USER_STORAGE = storage;
+  localStorage.setItem("USER_STORAGE", JSON.stringify(USER_STORAGE));
 }
 
 function init() {

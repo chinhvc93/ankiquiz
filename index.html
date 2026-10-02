@@ -128,6 +128,21 @@
                         <!-- Discussion -->
                         <button class="btn-showDiscussion btn btn-info px-1">Show Discussion</button>
 
+                        <!-- System Prompt (for Gemini sidebar) -->
+                        <div class="my-3 system-prompt-block">
+                            <button type="button" class="btn btn-outline-secondary btn-sm" id="btnToggleSystemPrompt">
+                                <i class="fa-solid fa-robot"></i> System Prompt (Gemini)
+                            </button>
+                            <div id="systemPromptPanel" class="d-none mt-2">
+                                <textarea id="systemPromptText" class="form-control" rows="8"></textarea>
+                                <div class="mt-2">
+                                    <button type="button" class="btn btn-success btn-sm" id="btnSaveSystemPrompt">Save</button>
+                                    <button type="button" class="btn btn-secondary btn-sm" id="btnResetSystemPrompt">Reset mặc định</button>
+                                    <span id="systemPromptSavedMsg" class="text-success ms-2 d-none">Đã lưu!</span>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Edit -->
                         <!-- <button class="btn-editQuestion btn btn-warning">Edit</button> -->
                         
@@ -467,6 +482,7 @@
     <script src="./public/js/classes.js"></script>
     <script src="./public/js/desks.js"></script>
     <script src="./public/js/exam.js"></script>
+    <script src="./public/js/system-prompt.js"></script>
     <script src="./public/js/access-gate.js"></script>
 
     <!-- /SCRIPTS -->
