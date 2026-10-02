@@ -18,6 +18,20 @@
 </head>
 
 <body class="white-mode">
+    <!-- ACCESS GATE -->
+    <div id="accessGateOverlay" class="accessGateOverlay">
+        <div class="accessGateBox">
+            <h5 class="mb-3">Nhập mã truy cập</h5>
+            <input type="password" id="accessGateInput" class="form-control mb-2" placeholder="Email hoặc mã truy cập" autocomplete="off">
+            <div class="form-check text-start mb-2">
+                <input type="checkbox" class="form-check-input" id="accessGateShowInput">
+                <label class="form-check-label" for="accessGateShowInput">Hiện</label>
+            </div>
+            <div id="accessGateError" class="accessGateError d-none mb-2"></div>
+            <button type="button" id="accessGateSubmit" class="btn btn-primary w-100">Vào xem</button>
+        </div>
+    </div>
+
     <!-- BANNER -->
     <div class="container">
         <div class="settingBlock text-end">
@@ -28,6 +42,7 @@
                 </button>
                 <ul class="dropdown-menu">
                     <li><a href="javascript:void(0)" class="dropdown-item btnToogleDarkMode btn btn-common btn-info btn-sm">Toogle DarkMode</a></li>
+                    <li><a href="javascript:void(0)" class="dropdown-item" onclick="window.AccessGate && window.AccessGate.logout()">Logout</a></li>
                     <li><hr class="dropdown-divider"></li>
                 </ul>
             </span>
@@ -452,6 +467,7 @@
     <script src="./public/js/classes.js"></script>
     <script src="./public/js/desks.js"></script>
     <script src="./public/js/exam.js"></script>
+    <script src="./public/js/access-gate.js"></script>
 
     <!-- /SCRIPTS -->
 </body>

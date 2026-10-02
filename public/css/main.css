@@ -47,3 +47,36 @@ body.dark-mode .examBlock {
     background:var(--dark-bg-primary-color) !important;
     color: var(--dark-primary-color);
 }
+
+/* ACCESS GATE */
+.accessGateOverlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(31, 36, 48, 0.92);
+    backdrop-filter: blur(4px);
+}
+
+.accessGateBox {
+    width: 90%;
+    max-width: 340px;
+    padding: 24px;
+    border-radius: 10px;
+    background: var(--bg-primary-color);
+    color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+body.dark-mode .accessGateBox {
+    background: var(--dark-bg-primary-color);
+    color: var(--dark-primary-color);
+}
+
+.accessGateError {
+    color: #dc3545;
+    font-size: 13px;
+}

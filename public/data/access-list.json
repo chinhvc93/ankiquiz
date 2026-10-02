@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "type": "email",
+      "mask": "chin***@vti.com.vn",
+      "hash": "cb0b120d74ccb7a8d3c6a63c2745beecaff7988396949d4855c92897e99d1096",
+      "expiresAt": "2027-01-02"
+    },
+    {
+      "type": "code",
+      "mask": "nat***",
+      "hash": "cc84f8622827c9f42a0db0a4e3466e02c25d749022b6dbd505c242b69746cfcd",
+      "expiresAt": "2027-10-02"
+    }
+  ]
+}
